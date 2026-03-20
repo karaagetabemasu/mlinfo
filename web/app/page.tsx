@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getArticles, getCategories, getLastUpdated } from "@/lib/data";
+import SearchBar from "@/app/components/SearchBar";
 
 export default function Home() {
   const categories = getCategories();
@@ -17,10 +18,13 @@ export default function Home() {
           <span className="text-zinc-700 text-xs hidden sm:block">|</span>
           <p className="text-zinc-500 text-xs hidden sm:block">日々更新される技術をキャッチアップ</p>
         </div>
-        <div className="flex items-center gap-4 text-xs text-zinc-500">
-          <span>{totalCategories} categories</span>
-          <span className="text-zinc-700">·</span>
-          <span>{totalArticles} articles</span>
+        <div className="flex items-center gap-4">
+          <SearchBar />
+          <div className="flex items-center gap-2 text-xs text-zinc-500 hidden sm:flex">
+            <span>{totalCategories} categories</span>
+            <span className="text-zinc-700">·</span>
+            <span>{totalArticles} articles</span>
+          </div>
         </div>
       </header>
 

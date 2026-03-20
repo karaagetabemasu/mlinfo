@@ -11,6 +11,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 import requests
+from deep_translator import GoogleTranslator
 
 # ─────────────────────────────────────────────
 # 設定
@@ -121,6 +122,25 @@ SUBCATEGORY_TO_CATEGORY = {
 }
 
 
+def load_translation_cache() -> dict[str, str]:
+    """既存のarticles.jsonからid→abstract_jaのキャッシュを読み込む"""
+    if OUTPUT_PATH.exists():
+        with open(OUTPUT_PATH, encoding="utf-8") as f:
+            data = json.load(f)
+        return {a["id"]: a["abstract_ja"] for a in data.get("articles", []) if a.get("abstract_ja")}
+    return {}
+
+
+def translate_to_ja(text: str) -> str:
+    """英語テキストを日本語に翻訳する（失敗時は原文を返す）"""
+    try:
+        # Google Translateは1回に5000文字まで
+        return GoogleTranslator(source="en", target="ja").translate(text[:4500])
+    except Exception as e:
+        print(f"  翻訳エラー: {e}")
+        return text
+
+
 def classify(text: str, default_category: str) -> tuple[str, str]:
     """タイトル+要約のテキストからカテゴリ・サブカテゴリを推定する"""
     text_lower = text.lower()
@@ -169,20 +189,22 @@ def fetch_arxiv() -> list[dict]:
             seen_ids.add(arxiv_id)
 
             title = (entry.findtext(f"{{{ARXIV_NS}}}title", "") or "").strip().replace("\n", " ")
-            summary = (entry.findtext(f"{{{ARXIV_NS}}}summary", "") or "").strip().replace("\n", " ")
-            summary = re.sub(r"\s+", " ", summary)
-            # 要約を120文字以内に
-            short_summary = summary[:120] + "…" if len(summary) > 120 else summary
+            abstract = (entry.findtext(f"{{{ARXIV_NS}}}summary", "") or "").strip().replace("\n", " ")
+            abstract = re.sub(r"\s+", " ", abstract)
+            # 一覧用の短い英語サマリー（翻訳前のフォールバック用）
+            summary = abstract[:120] + "…" if len(abstract) > 120 else abstract
 
             published_raw = entry.findtext(f"{{{ARXIV_NS}}}published", "")
             published = published_raw[:10] if published_raw else ""
 
-            category, subcategory = classify(title + " " + summary, default_cat)
+            category, subcategory = classify(title + " " + abstract, default_cat)
 
             articles.append({
                 "id": f"arxiv-{arxiv_id}",
                 "title": title,
-                "summary": short_summary,
+                "summary": summary,
+                "abstract": abstract,      # 翻訳用フルアブストラクト
+                "abstract_ja": None,       # 翻訳後に埋める
                 "source": "arxiv",
                 "url": f"https://arxiv.org/abs/{arxiv_id}",
                 "category": category,
@@ -238,9 +260,11 @@ def fetch_qiita() -> list[dict]:
 
             title = item.get("title", "")
             body = item.get("body", "")
-            # 本文冒頭を要約として使う
-            plain = re.sub(r"[#\*`\[\]!>]", "", body)[:120].replace("\n", " ").strip()
-            summary = plain + "…" if len(plain) >= 120 else plain
+            plain = re.sub(r"[#\*`\[\]!>]", "", body).replace("\n", " ").strip()
+            plain = re.sub(r"\s+", " ", plain)
+            summary = plain[:120] + "…" if len(plain) > 120 else plain
+            # Qiitaはすでに日本語なのでそのまま格納（最大1000文字）
+            abstract_ja = plain[:1000] + "…" if len(plain) > 1000 else plain
 
             published = (item.get("created_at", "") or "")[:10]
             url_item = item.get("url", "")
@@ -251,6 +275,8 @@ def fetch_qiita() -> list[dict]:
                 "id": f"qiita-{item_id}",
                 "title": title,
                 "summary": summary,
+                "abstract": plain[:1000],
+                "abstract_ja": abstract_ja,
                 "source": "qiita",
                 "url": url_item,
                 "category": category,
@@ -276,8 +302,23 @@ def main():
     qiita_articles = fetch_qiita()
 
     all_articles = arxiv_articles + qiita_articles
-    # 新しい順にソート
     all_articles.sort(key=lambda a: a["publishedAt"], reverse=True)
+
+    # 翻訳キャッシュを読み込んで、未翻訳のarXiv記事のみ翻訳する
+    cache = load_translation_cache()
+    to_translate = [a for a in all_articles if a["source"] == "arxiv" and not cache.get(a["id"])]
+    print(f"\n=== 翻訳開始: {len(to_translate)} 件（キャッシュ済み: {len(cache)} 件）===")
+
+    for i, article in enumerate(to_translate):
+        abstract = article.get("abstract", article["summary"])
+        print(f"  [{i+1}/{len(to_translate)}] {article['title'][:50]}…")
+        article["abstract_ja"] = translate_to_ja(abstract)
+        time.sleep(0.3)
+
+    # キャッシュ済みのものを反映
+    for article in all_articles:
+        if article["source"] == "arxiv" and article.get("abstract_ja") is None:
+            article["abstract_ja"] = cache.get(article["id"], article["summary"])
 
     output = {
         "lastUpdated": datetime.now(JST).isoformat(),

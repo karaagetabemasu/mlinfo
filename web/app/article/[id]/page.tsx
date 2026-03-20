@@ -80,7 +80,11 @@ export default async function ArticlePage({ params }: Props) {
             <span className="text-zinc-700 text-xs">{article.publishedAt}</span>
           </div>
           <h1 className="text-xl font-semibold mb-3">{article.title}</h1>
-          <p className="text-zinc-400 text-sm leading-relaxed">{article.summary}</p>
+          {article.abstract_ja ? (
+            <p className="text-zinc-400 text-sm leading-relaxed">{article.abstract_ja}</p>
+          ) : (
+            <p className="text-zinc-400 text-sm leading-relaxed">{article.summary}</p>
+          )}
         </div>
 
         {/* Links */}

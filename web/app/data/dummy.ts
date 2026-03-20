@@ -2,6 +2,8 @@ export type Article = {
   id: string;
   title: string;
   summary: string;
+  abstract?: string;
+  abstract_ja?: string;
   source: "arxiv" | "qiita";
   url: string;
   category: string;
