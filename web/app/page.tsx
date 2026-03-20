@@ -1,10 +1,11 @@
 import Link from "next/link";
-import { categories } from "./data/dummy";
+import { getArticles, getCategories, getLastUpdated } from "@/lib/data";
 
 export default function Home() {
-  const totalArticles = categories
-    .flatMap((c) => c.subcategories)
-    .reduce((sum, s) => sum + s.articleCount, 0);
+  const categories = getCategories();
+  const articles = getArticles();
+  const lastUpdated = getLastUpdated();
+  const totalArticles = articles.length || categories.flatMap((c) => c.subcategories).reduce((sum, s) => sum + s.articleCount, 0);
   const totalCategories = categories.length;
 
   return (
@@ -26,7 +27,9 @@ export default function Home() {
       <div className="px-6 py-8 max-w-6xl mx-auto">
         <div className="flex items-center justify-between mb-5">
           <h2 className="text-xs tracking-widest text-zinc-500 uppercase">Categories</h2>
-          <span className="text-zinc-700 text-xs">最終更新: 2026-03-21</span>
+          {lastUpdated && (
+            <span className="text-zinc-700 text-xs">最終更新: {lastUpdated.slice(0, 10)}</span>
+          )}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">

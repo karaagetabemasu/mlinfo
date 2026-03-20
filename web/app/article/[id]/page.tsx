@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { articles, categories } from "../../data/dummy";
+import { getArticles, getCategories } from "@/lib/data";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -35,10 +35,10 @@ class MultiHeadAttention(nn.Module):
 
 export default async function ArticlePage({ params }: Props) {
   const { id } = await params;
-  const article = articles.find((a) => a.id === id);
+  const article = getArticles().find((a) => a.id === id);
   if (!article) notFound();
 
-  const category = categories.find((c) => c.id === article.category);
+  const category = getCategories().find((c) => c.id === article.category);
 
   // Claude Codeに渡すプロンプト
   const claudePrompt = encodeURIComponent(

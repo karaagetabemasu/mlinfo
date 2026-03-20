@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { categories, articles } from "../../data/dummy";
+import { getArticles, getCategories } from "@/lib/data";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -8,10 +8,11 @@ type Props = {
 
 export default async function CategoryPage({ params }: Props) {
   const { id } = await params;
+  const categories = getCategories();
   const category = categories.find((c) => c.id === id);
   if (!category) notFound();
 
-  const categoryArticles = articles.filter((a) => a.category === id);
+  const categoryArticles = getArticles().filter((a) => a.category === id);
 
   return (
     <main className="min-h-screen bg-zinc-950 text-white">
