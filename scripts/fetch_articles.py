@@ -309,11 +309,24 @@ def main():
     to_translate = [a for a in all_articles if a["source"] == "arxiv" and not cache.get(a["id"])]
     print(f"\n=== 翻訳開始: {len(to_translate)} 件（キャッシュ済み: {len(cache)} 件）===")
 
-    for i, article in enumerate(to_translate):
-        abstract = article.get("abstract", article["summary"])
-        print(f"  [{i+1}/{len(to_translate)}] {article['title'][:50]}…")
-        article["abstract_ja"] = translate_to_ja(abstract)
-        time.sleep(0.3)
+    if to_translate:
+        # バッチ翻訳（まとめてAPIコール、1件ずつより大幅に高速）
+        BATCH_SIZE = 50  # Google Translateのバッチ上限
+        texts = [a.get("abstract", a["summary"])[:4500] for a in to_translate]
+        translated = []
+        for i in range(0, len(texts), BATCH_SIZE):
+            batch = texts[i:i + BATCH_SIZE]
+            print(f"  バッチ翻訳: {i+1}〜{min(i+BATCH_SIZE, len(texts))} 件目")
+            try:
+                results = GoogleTranslator(source="en", target="ja").translate_batch(batch)
+                translated.extend(results)
+            except Exception as e:
+                print(f"  バッチ翻訳エラー: {e} — 原文を使用")
+                translated.extend(batch)
+            time.sleep(1)
+
+        for article, ja in zip(to_translate, translated):
+            article["abstract_ja"] = ja or article["summary"]
 
     # キャッシュ済みのものを反映
     for article in all_articles:
