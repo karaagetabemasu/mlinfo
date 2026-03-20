@@ -19,9 +19,9 @@ import requests
 OUTPUT_PATH = Path(__file__).parent.parent / "web" / "data" / "articles.json"
 JST = timezone(timedelta(hours=9))
 
-# 1回の取得件数（初回は多め、日次更新は少なめにしてもよい）
-ARXIV_MAX_RESULTS = 50
-QIITA_PER_PAGE = 20
+# 1回の取得件数
+ARXIV_MAX_RESULTS = 25
+QIITA_PER_PAGE = 10
 
 # arXiv カテゴリ → 大カテゴリのマッピング
 ARXIV_CATEGORY_MAP = {
@@ -151,11 +151,11 @@ def fetch_arxiv() -> list[dict]:
             f"&max_results={ARXIV_MAX_RESULTS}"
         )
         try:
-            resp = requests.get(url, timeout=30)
+            resp = requests.get(url, timeout=(10, 20))  # (接続タイムアウト, 読み取りタイムアウト)
             resp.raise_for_status()
         except Exception as e:
             print(f"[arXiv] {arxiv_cat} fetch error: {e}")
-            time.sleep(3)
+            time.sleep(1)
             continue
 
         root = ET.fromstring(resp.text)
@@ -192,7 +192,7 @@ def fetch_arxiv() -> list[dict]:
             })
 
         print(f"[arXiv] {arxiv_cat}: {len(articles)} articles so far")
-        time.sleep(3)  # arXiv API レート制限対策
+        time.sleep(1)
 
     return articles
 
@@ -222,12 +222,12 @@ def fetch_qiita() -> list[dict]:
             f"?query=tag:{tag}&per_page={QIITA_PER_PAGE}&sort=created"
         )
         try:
-            resp = requests.get(url, timeout=30, headers={"User-Agent": "MLinfo/1.0"})
+            resp = requests.get(url, timeout=(10, 20), headers={"User-Agent": "MLinfo/1.0"})
             resp.raise_for_status()
             items = resp.json()
         except Exception as e:
             print(f"[Qiita] {tag} fetch error: {e}")
-            time.sleep(2)
+            time.sleep(1)
             continue
 
         for item in items:
