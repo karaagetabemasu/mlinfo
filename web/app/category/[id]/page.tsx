@@ -14,6 +14,9 @@ export default async function CategoryPage({ params }: Props) {
   if (!category) notFound();
 
   const categoryArticles = getArticles().filter((a) => a.category === id);
+  const subcategoryNameMap = Object.fromEntries(
+    category.subcategories.map((s) => [s.id, s.name])
+  );
 
   return (
     <main className="min-h-screen bg-zinc-950 text-white">
@@ -28,7 +31,7 @@ export default async function CategoryPage({ params }: Props) {
         <span className="text-zinc-500 text-xs">{categoryArticles.length} articles</span>
       </header>
 
-      <ArticleListWithFilter articles={categoryArticles} category={category} />
+      <ArticleListWithFilter articles={categoryArticles} category={category} subcategoryNameMap={subcategoryNameMap} />
     </main>
   );
 }

@@ -38,8 +38,15 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
           {categories.map((category) => {
-            const total = category.subcategories.reduce((sum, s) => sum + s.articleCount, 0);
-            const topSubs = category.subcategories.slice(0, 4);
+            const catArticles = articles.filter((a) => a.category === category.id);
+            const subCounts = catArticles.reduce((acc, a) => {
+              acc[a.subcategory] = (acc[a.subcategory] ?? 0) + 1;
+              return acc;
+            }, {} as Record<string, number>);
+            const topSubs = category.subcategories
+              .map((s) => ({ ...s, articleCount: subCounts[s.id] ?? 0 }))
+              .filter((s) => s.articleCount > 0)
+              .slice(0, 4);
             return (
               <Link
                 key={category.id}
@@ -49,7 +56,7 @@ export default function Home() {
                 {/* Card header */}
                 <div className="flex items-start justify-between mb-3">
                   <h3 className="font-semibold text-white text-sm">{category.name}</h3>
-                  <span className="text-zinc-400 text-xs font-mono">{total}</span>
+                  <span className="text-zinc-400 text-xs font-mono">{catArticles.length}</span>
                 </div>
 
                 {/* Subcategory list */}
@@ -63,9 +70,9 @@ export default function Home() {
                 </ul>
 
                 {/* More indicator */}
-                {category.subcategories.length > 4 && (
+                {Object.keys(subCounts).length > 4 && (
                   <p className="text-zinc-600 text-xs">
-                    他 {category.subcategories.length - 4} サブカテゴリ →
+                    他 {Object.keys(subCounts).length - 4} サブカテゴリ →
                   </p>
                 )}
               </Link>

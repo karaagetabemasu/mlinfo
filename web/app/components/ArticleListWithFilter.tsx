@@ -10,22 +10,35 @@ type SortKey = "date" | "likes";
 type Props = {
   articles: Article[];
   category: Category;
+  subcategoryNameMap: Record<string, string>;
 };
 
-export default function ArticleListWithFilter({ articles, category }: Props) {
+export default function ArticleListWithFilter({ articles, category, subcategoryNameMap }: Props) {
   const [source, setSource] = useState<Source>("all");
   const [sort, setSort] = useState<SortKey>("date");
+  const [subcategory, setSubcategory] = useState<string>("all");
 
-  const filtered = (source === "all" ? articles : articles.filter((a) => a.source === source))
+  const bySource = source === "all" ? articles : articles.filter((a) => a.source === source);
+
+  const availableSubs = Array.from(new Set(bySource.map((a) => a.subcategory))).sort();
+
+  // サブカテゴリ選択がフィルター後に存在しない場合はリセット
+  const activeSub = availableSubs.includes(subcategory) ? subcategory : "all";
+
+  const filtered = (activeSub === "all" ? bySource : bySource.filter((a) => a.subcategory === activeSub))
     .slice()
     .sort((a, b) => {
       if (sort === "likes") return (b.likes_count ?? 0) - (a.likes_count ?? 0);
       return b.publishedAt.localeCompare(a.publishedAt);
     });
 
+  const showLikesSort = source !== "arxiv";
+
+  const sortLabel = source === "qiita" ? "いいね順" : "人気順";
+
   return (
     <>
-      {/* フィルター＆ソートバー */}
+      {/* ソース & ソートバー */}
       <div className="border-b border-zinc-800 px-6 py-3 flex items-center justify-between gap-4 overflow-x-auto">
         <div className="flex gap-2">
           {(["all", "arxiv", "qiita"] as Source[]).map((s) => {
@@ -34,7 +47,7 @@ export default function ArticleListWithFilter({ articles, category }: Props) {
             return (
               <button
                 key={s}
-                onClick={() => setSource(s)}
+                onClick={() => { setSource(s); setSubcategory("all"); if (s === "arxiv" && sort === "likes") setSort("date"); }}
                 className={`text-xs px-3 py-1 border whitespace-nowrap transition-colors ${
                   active
                     ? `border-l-2 ${category.color} border border-zinc-600 border-l-0 bg-zinc-800 text-zinc-200`
@@ -48,21 +61,59 @@ export default function ArticleListWithFilter({ articles, category }: Props) {
           })}
         </div>
         <div className="flex gap-2 shrink-0">
-          {(["date", "likes"] as SortKey[]).map((s) => (
+          <button
+            onClick={() => setSort("date")}
+            className={`text-xs px-3 py-1 border transition-colors ${
+              sort === "date"
+                ? "border-zinc-600 bg-zinc-800 text-zinc-200"
+                : "border-zinc-800 bg-zinc-900 text-zinc-500 hover:text-zinc-300 hover:border-zinc-600"
+            }`}
+          >
+            新着順
+          </button>
+          {showLikesSort && (
             <button
-              key={s}
-              onClick={() => setSort(s)}
+              onClick={() => setSort("likes")}
               className={`text-xs px-3 py-1 border transition-colors ${
-                sort === s
+                sort === "likes"
                   ? "border-zinc-600 bg-zinc-800 text-zinc-200"
                   : "border-zinc-800 bg-zinc-900 text-zinc-500 hover:text-zinc-300 hover:border-zinc-600"
               }`}
             >
-              {s === "date" ? "新着順" : "いいね順"}
+              {sortLabel}
+            </button>
+          )}
+        </div>
+      </div>
+
+      {/* サブカテゴリフィルター */}
+      {availableSubs.length > 1 && (
+        <div className="border-b border-zinc-800/50 px-6 py-2 flex gap-2 overflow-x-auto">
+          <button
+            onClick={() => setSubcategory("all")}
+            className={`text-xs px-2.5 py-1 border whitespace-nowrap transition-colors ${
+              activeSub === "all"
+                ? "border-zinc-600 bg-zinc-800 text-zinc-200"
+                : "border-zinc-800 text-zinc-600 hover:text-zinc-400 hover:border-zinc-600"
+            }`}
+          >
+            すべて
+          </button>
+          {availableSubs.map((sub) => (
+            <button
+              key={sub}
+              onClick={() => setSubcategory(sub)}
+              className={`text-xs px-2.5 py-1 border whitespace-nowrap transition-colors ${
+                activeSub === sub
+                  ? "border-zinc-600 bg-zinc-800 text-zinc-200"
+                  : "border-zinc-800 text-zinc-600 hover:text-zinc-400 hover:border-zinc-600"
+              }`}
+            >
+              {subcategoryNameMap[sub] ?? sub}
             </button>
           ))}
         </div>
-      </div>
+      )}
 
       {/* 記事一覧 */}
       <div className="px-6 py-6 max-w-4xl mx-auto">
@@ -89,7 +140,7 @@ export default function ArticleListWithFilter({ articles, category }: Props) {
                           {article.source}
                         </span>
                         <span className="text-xs bg-zinc-800/60 border border-zinc-700 text-zinc-400 px-1.5 py-0.5 rounded">
-                          {article.subcategory}
+                          {subcategoryNameMap[article.subcategory] ?? article.subcategory}
                         </span>
                         {article.hasCode && (
                           <span className="text-xs bg-zinc-800 text-zinc-400 px-1.5 py-0.5 rounded">code</span>
