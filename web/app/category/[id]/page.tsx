@@ -19,16 +19,16 @@ export default async function CategoryPage({ params }: Props) {
   );
 
   return (
-    <main className="min-h-screen bg-zinc-950 text-white">
-      <header className="border-b border-zinc-800 px-6 py-4 flex items-center justify-between">
+    <main className="min-h-screen bg-zinc-50 text-zinc-900">
+      <header className="border-b border-zinc-200 bg-white px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Link href="/" className="text-zinc-500 hover:text-white text-sm transition-colors">
+          <Link href="/" className="text-zinc-400 hover:text-zinc-900 text-sm transition-colors">
             MLinfo
           </Link>
-          <span className="text-zinc-700">/</span>
-          <h1 className="text-sm font-semibold">{category.name}</h1>
+          <span className="text-zinc-300">/</span>
+          <h1 className="text-sm font-semibold text-zinc-900">{category.name}</h1>
         </div>
-        <span className="text-zinc-500 text-xs">{categoryArticles.length} articles</span>
+        <span className="text-zinc-400 text-xs">{categoryArticles.length} articles</span>
       </header>
 
       <ArticleListWithFilter articles={categoryArticles} category={category} subcategoryNameMap={subcategoryNameMap} />

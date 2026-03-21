@@ -47,40 +47,41 @@ export default async function ArticlePage({ params }: Props) {
   );
 
   return (
-    <main className="min-h-screen bg-black text-white">
-      <header className="border-b border-zinc-800 px-8 py-5 flex items-center gap-4">
-        <Link href="/" className="text-zinc-600 hover:text-white text-sm transition-colors">
+    <main className="min-h-screen bg-zinc-50 text-zinc-900">
+      <header className="border-b border-zinc-200 bg-white px-8 py-5 flex items-center gap-4">
+        <Link href="/" className="text-zinc-400 hover:text-zinc-900 text-sm transition-colors">
           MLinfo
         </Link>
-        <span className="text-zinc-700">/</span>
+        <span className="text-zinc-300">/</span>
         {category && (
           <>
             <Link
               href={`/category/${category.id}`}
-              className="text-zinc-600 hover:text-white text-sm transition-colors"
+              className="text-zinc-400 hover:text-zinc-900 text-sm transition-colors"
             >
               {category.name}
             </Link>
-            <span className="text-zinc-700">/</span>
+            <span className="text-zinc-300">/</span>
           </>
         )}
-        <span className="text-sm text-zinc-400 truncate max-w-xs">{article.title}</span>
+        <span className="text-sm text-zinc-500 truncate max-w-xs">{article.title}</span>
       </header>
 
       <div className="px-8 py-8 max-w-4xl mx-auto">
-        {/* Article meta */}
         <div className="mb-6">
           <div className="flex items-center gap-3 mb-3">
-            <span className={`text-xs px-2 py-0.5 border ${
+            <span className={`text-xs px-2 py-0.5 rounded font-mono ${
               article.source === "arxiv"
-                ? "border-zinc-600 text-zinc-400"
-                : "border-zinc-700 text-zinc-500"
+                ? "bg-violet-100 text-violet-700"
+                : article.source === "zenn"
+                ? "bg-sky-100 text-sky-700"
+                : "bg-emerald-100 text-emerald-700"
             }`}>
               {article.source}
             </span>
-            <span className="text-zinc-700 text-xs">{article.publishedAt}</span>
+            <span className="text-zinc-400 text-xs">{article.publishedAt}</span>
           </div>
-          <h1 className="text-xl font-semibold mb-3">{article.title}</h1>
+          <h1 className="text-xl font-semibold mb-3 text-zinc-900">{article.title}</h1>
           <AbstractSection
             abstract={article.abstract ?? article.summary}
             abstract_ja={article.abstract_ja}
@@ -94,7 +95,7 @@ export default async function ArticlePage({ params }: Props) {
             href={article.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-xs border border-zinc-700 px-4 py-2 hover:border-zinc-400 transition-colors"
+            className="text-xs border border-zinc-300 px-4 py-2 text-zinc-600 hover:border-zinc-500 hover:text-zinc-900 transition-colors"
           >
             論文・記事を開く →
           </a>
@@ -104,15 +105,15 @@ export default async function ArticlePage({ params }: Props) {
         {article.hasCode && (
           <div>
             <div className="flex items-center justify-between mb-3">
-              <h2 className="text-xs tracking-widest text-zinc-500 uppercase">Source Code</h2>
+              <h2 className="text-xs tracking-widest text-zinc-400 uppercase">Source Code</h2>
               <a
                 href={`claude://open?prompt=${claudePrompt}`}
-                className="text-xs bg-zinc-900 border border-zinc-700 px-4 py-2 hover:border-zinc-400 hover:bg-zinc-800 transition-all"
+                className="text-xs bg-white border border-zinc-300 px-4 py-2 text-zinc-600 hover:border-zinc-500 hover:text-zinc-900 transition-all"
               >
                 Claude Code で実装する →
               </a>
             </div>
-            <pre className="bg-zinc-950 border border-zinc-800 p-6 overflow-x-auto text-xs leading-relaxed text-zinc-300 font-mono">
+            <pre className="bg-zinc-100 border border-zinc-200 p-6 overflow-x-auto text-xs leading-relaxed text-zinc-700 font-mono">
               <code>{DUMMY_CODE}</code>
             </pre>
           </div>
