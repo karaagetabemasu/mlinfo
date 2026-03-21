@@ -52,7 +52,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
                 className={`text-xs px-3 py-1 border whitespace-nowrap transition-colors ${
                   active
                     ? `border-l-2 ${category.color} border border-zinc-300 border-l-0 bg-zinc-100 text-zinc-800`
-                    : "border-zinc-200 bg-white text-zinc-400 hover:text-zinc-700 hover:border-zinc-300"
+                    : "border-zinc-200 bg-white text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"
                 }`}
               >
                 {s === "all" ? "すべて" : s}
@@ -67,7 +67,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
             className={`text-xs px-3 py-1 border transition-colors ${
               sort === "date"
                 ? "border-zinc-300 bg-zinc-100 text-zinc-800"
-                : "border-zinc-200 bg-white text-zinc-400 hover:text-zinc-700 hover:border-zinc-300"
+                : "border-zinc-200 bg-white text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"
             }`}
           >
             新着順
@@ -78,7 +78,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
               className={`text-xs px-3 py-1 border transition-colors ${
                 sort === "likes"
                   ? "border-zinc-300 bg-zinc-100 text-zinc-800"
-                  : "border-zinc-200 bg-white text-zinc-400 hover:text-zinc-700 hover:border-zinc-300"
+                  : "border-zinc-200 bg-white text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"
               }`}
             >
               {sortLabel}
@@ -95,7 +95,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
             className={`text-xs px-2.5 py-1 border whitespace-nowrap transition-colors ${
               activeSub === "all"
                 ? "border-zinc-300 bg-white text-zinc-800"
-                : "border-zinc-200 text-zinc-400 hover:text-zinc-700 hover:border-zinc-300"
+                : "border-zinc-200 text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"
             }`}
           >
             すべて
@@ -107,7 +107,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
               className={`text-xs px-2.5 py-1 border whitespace-nowrap transition-colors ${
                 activeSub === sub
                   ? "border-zinc-300 bg-white text-zinc-800"
-                  : "border-zinc-200 text-zinc-400 hover:text-zinc-700 hover:border-zinc-300"
+                  : "border-zinc-200 text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"
               }`}
             >
               {subcategoryNameMap[sub] ?? sub}
@@ -120,7 +120,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
       <div className="px-6 py-6 max-w-4xl mx-auto">
         {filtered.length === 0 ? (
           <div className="text-center py-16">
-            <p className="text-zinc-400 text-sm">この条件の記事はありません</p>
+            <p className="text-zinc-500 text-sm">この条件の記事はありません</p>
           </div>
         ) : (
           <ul className="space-y-2">
@@ -149,14 +149,14 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
                           <span className="text-xs bg-zinc-100 text-zinc-500 px-1.5 py-0.5 rounded">code</span>
                         )}
                         {(article.likes_count ?? 0) > 0 && (
-                          <span className="text-xs text-zinc-400">♥ {article.likes_count}</span>
+                          <span className="text-xs text-zinc-500">♥ {article.likes_count}</span>
                         )}
-                        <span className="text-zinc-400 text-xs">{article.publishedAt}</span>
+                        <span className="text-zinc-500 text-xs">{article.publishedAt}</span>
                       </div>
                       <h3 className="font-semibold text-sm leading-snug text-zinc-900 mb-1">
                         {article.title}
                       </h3>
-                      <p className="text-zinc-600 text-xs leading-relaxed">{article.summary}</p>
+                      <p className="text-zinc-700 text-xs leading-relaxed">{article.summary}</p>
                     </div>
                     <span className="text-zinc-300 text-lg shrink-0 group-hover:text-zinc-500 transition-colors">→</span>
                   </div>

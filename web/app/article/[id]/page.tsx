@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getArticles, getCategories } from "@/lib/data";
 import AbstractSection from "@/app/components/AbstractSection";
+import SearchBar from "@/app/components/SearchBar";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -65,6 +66,9 @@ export default async function ArticlePage({ params }: Props) {
           </>
         )}
         <span className="text-sm text-zinc-500 truncate max-w-xs">{article.title}</span>
+        <div className="ml-auto">
+          <SearchBar />
+        </div>
       </header>
 
       <div className="px-8 py-8 max-w-4xl mx-auto">

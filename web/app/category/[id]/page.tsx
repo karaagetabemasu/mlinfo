@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getArticles, getCategories } from "@/lib/data";
 import ArticleListWithFilter from "@/app/components/ArticleListWithFilter";
+import SearchBar from "@/app/components/SearchBar";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -28,7 +29,10 @@ export default async function CategoryPage({ params }: Props) {
           <span className="text-zinc-300">/</span>
           <h1 className="text-sm font-semibold text-zinc-900">{category.name}</h1>
         </div>
-        <span className="text-zinc-400 text-xs">{categoryArticles.length} articles</span>
+        <div className="flex items-center gap-3">
+          <SearchBar />
+          <span className="text-zinc-400 text-xs">{categoryArticles.length} articles</span>
+        </div>
       </header>
 
       <ArticleListWithFilter articles={categoryArticles} category={category} subcategoryNameMap={subcategoryNameMap} />
