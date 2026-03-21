@@ -60,8 +60,8 @@ export default function Home() {
                 <ul className="space-y-1.5 mb-3">
                   {topSubs.map((sub) => (
                     <li key={sub.id} className="flex items-center justify-between">
-                      <span className="text-zinc-500 text-xs">{sub.name}</span>
-                      <span className="text-zinc-400 text-xs font-mono">{sub.articleCount}</span>
+                      <span className="text-zinc-600 text-xs">{sub.name}</span>
+                      <span className="text-zinc-500 text-xs font-mono">{sub.articleCount}</span>
                     </li>
                   ))}
                 </ul>

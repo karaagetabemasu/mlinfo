@@ -21,11 +21,11 @@ export default function SearchBar({ initialQuery = "" }: { initialQuery?: string
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="論文・記事を検索…"
-        className="bg-zinc-900 border border-zinc-700 text-zinc-200 text-xs px-3 py-1.5 w-48 focus:outline-none focus:border-zinc-500 placeholder:text-zinc-600"
+        className="bg-white border border-zinc-300 text-zinc-800 text-xs px-3 py-1.5 w-48 focus:outline-none focus:border-zinc-500 placeholder:text-zinc-400"
       />
       <button
         type="submit"
-        className="text-xs border border-zinc-700 px-3 py-1.5 text-zinc-400 hover:border-zinc-500 hover:text-zinc-200 transition-colors"
+        className="text-xs border border-zinc-300 px-3 py-1.5 text-zinc-600 hover:border-zinc-500 hover:text-zinc-900 transition-colors"
       >
         検索
       </button>

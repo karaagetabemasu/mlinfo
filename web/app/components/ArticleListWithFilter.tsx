@@ -153,10 +153,10 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
                         )}
                         <span className="text-zinc-400 text-xs">{article.publishedAt}</span>
                       </div>
-                      <h3 className="font-medium text-sm leading-snug text-zinc-800 group-hover:text-zinc-900 mb-1">
+                      <h3 className="font-semibold text-sm leading-snug text-zinc-900 mb-1">
                         {article.title}
                       </h3>
-                      <p className="text-zinc-500 text-xs leading-relaxed">{article.summary}</p>
+                      <p className="text-zinc-600 text-xs leading-relaxed">{article.summary}</p>
                     </div>
                     <span className="text-zinc-300 text-lg shrink-0 group-hover:text-zinc-500 transition-colors">→</span>
                   </div>

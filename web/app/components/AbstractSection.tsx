@@ -26,7 +26,7 @@ export default function AbstractSection({ abstract, abstract_ja, source }: Props
           </button>
         )}
       </div>
-      <p className="text-zinc-600 text-sm leading-relaxed">
+      <p className="text-zinc-700 text-sm leading-relaxed">
         {showJa && abstract_ja ? abstract_ja : abstract}
       </p>
     </div>
