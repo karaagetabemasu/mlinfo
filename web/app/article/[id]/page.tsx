@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getArticles, getCategories } from "@/lib/data";
 import AbstractSection from "@/app/components/AbstractSection";
 import SearchBar from "@/app/components/SearchBar";
+import Logo from "@/app/components/Logo";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -50,9 +51,7 @@ export default async function ArticlePage({ params }: Props) {
   return (
     <main className="min-h-screen bg-zinc-50 text-zinc-900">
       <header className="border-b border-zinc-200 bg-white px-8 py-5 flex items-center gap-4">
-        <Link href="/" className="text-zinc-400 hover:text-zinc-900 text-sm transition-colors">
-          MLinfo
-        </Link>
+        <Logo />
         <span className="text-zinc-300">/</span>
         {category && (
           <>

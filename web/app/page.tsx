@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getArticles, getCategories, getLastUpdated } from "@/lib/data";
 import SearchBar from "@/app/components/SearchBar";
+import Logo from "@/app/components/Logo";
 
 export default function Home() {
   const categories = getCategories();
@@ -13,11 +14,7 @@ export default function Home() {
     <main className="min-h-screen bg-zinc-50 text-zinc-900">
       {/* Header */}
       <header className="border-b border-zinc-200 bg-white px-8 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <h1 className="text-lg font-bold tracking-widest text-zinc-900">MLinfo</h1>
-          <span className="text-zinc-300 text-xs hidden sm:block">|</span>
-          <p className="text-zinc-400 text-xs hidden sm:block">日々更新される技術をキャッチアップ</p>
-        </div>
+        <Logo />
         <div className="flex items-center gap-4">
           <SearchBar />
           <div className="flex items-center gap-2 text-xs text-zinc-400 hidden sm:flex">

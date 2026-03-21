@@ -1,8 +1,8 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getArticles, getCategories } from "@/lib/data";
 import ArticleListWithFilter from "@/app/components/ArticleListWithFilter";
 import SearchBar from "@/app/components/SearchBar";
+import Logo from "@/app/components/Logo";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -23,9 +23,7 @@ export default async function CategoryPage({ params }: Props) {
     <main className="min-h-screen bg-zinc-50 text-zinc-900">
       <header className="border-b border-zinc-200 bg-white px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Link href="/" className="text-zinc-400 hover:text-zinc-900 text-sm transition-colors">
-            MLinfo
-          </Link>
+          <Logo />
           <span className="text-zinc-300">/</span>
           <h1 className="text-sm font-semibold text-zinc-900">{category.name}</h1>
         </div>

@@ -2,6 +2,14 @@
 
 import { useState } from "react";
 
+const TRUNCATE_LENGTH = 400;
+
+function truncate(text: string): { short: string; isTruncated: boolean } {
+  if (text.length <= TRUNCATE_LENGTH) return { short: text, isTruncated: false };
+  const cut = text.lastIndexOf(" ", TRUNCATE_LENGTH);
+  return { short: text.slice(0, cut > 0 ? cut : TRUNCATE_LENGTH), isTruncated: true };
+}
+
 type Props = {
   abstract: string;
   abstract_ja?: string;
@@ -10,8 +18,11 @@ type Props = {
 
 export default function AbstractSection({ abstract, abstract_ja, source }: Props) {
   const [showJa, setShowJa] = useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   const hasTranslation = source === "arxiv" && !!abstract_ja;
+  const text = showJa && abstract_ja ? abstract_ja : abstract;
+  const { short, isTruncated } = truncate(text);
 
   return (
     <div>
@@ -19,7 +30,7 @@ export default function AbstractSection({ abstract, abstract_ja, source }: Props
         <span className="text-xs tracking-widest text-zinc-400 uppercase">Abstract</span>
         {hasTranslation && (
           <button
-            onClick={() => setShowJa((v) => !v)}
+            onClick={() => { setShowJa((v) => !v); setExpanded(false); }}
             className="text-xs border border-zinc-300 px-2 py-0.5 text-zinc-400 hover:text-zinc-700 hover:border-zinc-400 transition-colors"
           >
             {showJa ? "原文" : "日本語訳"}
@@ -27,7 +38,18 @@ export default function AbstractSection({ abstract, abstract_ja, source }: Props
         )}
       </div>
       <p className="text-zinc-700 text-sm leading-relaxed">
-        {showJa && abstract_ja ? abstract_ja : abstract}
+        {expanded ? text : short}
+        {isTruncated && !expanded && (
+          <>
+            {"… "}
+            <button
+              onClick={() => setExpanded(true)}
+              className="text-zinc-400 hover:text-zinc-700 underline underline-offset-2 transition-colors"
+            >
+              続きを読む
+            </button>
+          </>
+        )}
       </p>
     </div>
   );
