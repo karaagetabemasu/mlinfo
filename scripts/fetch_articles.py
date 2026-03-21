@@ -21,8 +21,8 @@ OUTPUT_PATH = Path(__file__).parent.parent / "web" / "data" / "articles.json"
 JST = timezone(timedelta(hours=9))
 
 # 1回の取得件数
-ARXIV_MAX_RESULTS = 100
-QIITA_PER_PAGE = 20
+ARXIV_MAX_RESULTS = 200
+QIITA_PER_PAGE = 30
 
 # arXiv カテゴリ → 大カテゴリのマッピング
 ARXIV_CATEGORY_MAP = {
