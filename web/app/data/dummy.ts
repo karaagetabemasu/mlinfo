@@ -11,6 +11,7 @@ export type Article = {
   publishedAt: string;
   hasCode: boolean;
   codeUrl?: string;
+  likes_count?: number;
 };
 
 export type Category = {

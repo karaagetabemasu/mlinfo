@@ -21,8 +21,8 @@ OUTPUT_PATH = Path(__file__).parent.parent / "web" / "data" / "articles.json"
 JST = timezone(timedelta(hours=9))
 
 # 1回の取得件数
-ARXIV_MAX_RESULTS = 25
-QIITA_PER_PAGE = 10
+ARXIV_MAX_RESULTS = 100
+QIITA_PER_PAGE = 20
 
 # arXiv カテゴリ → 大カテゴリのマッピング
 ARXIV_CATEGORY_MAP = {
@@ -211,6 +211,7 @@ def fetch_arxiv() -> list[dict]:
                 "subcategory": subcategory,
                 "publishedAt": published,
                 "hasCode": False,
+                "likes_count": 0,
             })
 
         print(f"[arXiv] {arxiv_cat}: {len(articles)} articles so far")
@@ -268,6 +269,7 @@ def fetch_qiita() -> list[dict]:
 
             published = (item.get("created_at", "") or "")[:10]
             url_item = item.get("url", "")
+            likes_count = item.get("likes_count", 0)
 
             category, subcategory = classify(title + " " + body[:500], default_cat)
 
@@ -283,6 +285,7 @@ def fetch_qiita() -> list[dict]:
                 "subcategory": subcategory,
                 "publishedAt": published,
                 "hasCode": "```" in body,
+                "likes_count": likes_count,
             })
 
         print(f"[Qiita] {tag}: {len(articles)} articles so far")

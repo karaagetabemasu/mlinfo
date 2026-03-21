@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getArticles, getCategories } from "@/lib/data";
+import AbstractSection from "@/app/components/AbstractSection";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -80,11 +81,11 @@ export default async function ArticlePage({ params }: Props) {
             <span className="text-zinc-700 text-xs">{article.publishedAt}</span>
           </div>
           <h1 className="text-xl font-semibold mb-3">{article.title}</h1>
-          {article.abstract_ja ? (
-            <p className="text-zinc-400 text-sm leading-relaxed">{article.abstract_ja}</p>
-          ) : (
-            <p className="text-zinc-400 text-sm leading-relaxed">{article.summary}</p>
-          )}
+          <AbstractSection
+            abstract={article.abstract ?? article.summary}
+            abstract_ja={article.abstract_ja}
+            source={article.source}
+          />
         </div>
 
         {/* Links */}
