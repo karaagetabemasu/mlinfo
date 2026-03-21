@@ -314,8 +314,8 @@ def main():
 
     if to_translate:
         # バッチ翻訳（まとめてAPIコール、1件ずつより大幅に高速）
-        BATCH_SIZE = 50  # Google Translateのバッチ上限
-        texts = [a.get("abstract", a["summary"])[:4500] for a in to_translate]
+        BATCH_SIZE = 30
+        texts = [a.get("abstract", a["summary"])[:500] for a in to_translate]
         translated = []
         for i in range(0, len(texts), BATCH_SIZE):
             batch = texts[i:i + BATCH_SIZE]
