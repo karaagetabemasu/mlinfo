@@ -4,11 +4,13 @@ arXiv と Qiita から機械学習関連の記事を取得してカテゴリ分�
 web/data/articles.json に保存する。
 """
 
+import html
 import json
 import time
 import re
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 import requests
 from deep_translator import GoogleTranslator
@@ -295,6 +297,85 @@ def fetch_qiita() -> list[dict]:
 
 
 # ─────────────────────────────────────────────
+# Zenn 取得
+# ─────────────────────────────────────────────
+
+ZENN_TOPICS = [
+    ("machine-learning", "machine-learning"),
+    ("deep-learning", "deep-learning"),
+    ("llm", "nlp"),
+    ("nlp", "nlp"),
+    ("reinforcement-learning", "reinforcement-learning"),
+    ("pytorch", "deep-learning"),
+    ("kaggle", "machine-learning"),
+]
+
+
+def fetch_zenn() -> list[dict]:
+    articles = []
+    seen_urls = set()
+
+    for topic, default_cat in ZENN_TOPICS:
+        url = f"https://zenn.dev/topics/{topic}/feed"
+        try:
+            resp = requests.get(url, timeout=(10, 20), headers={"User-Agent": "MLinfo/1.0"})
+            resp.raise_for_status()
+        except Exception as e:
+            print(f"[Zenn] {topic} fetch error: {e}")
+            time.sleep(1)
+            continue
+
+        try:
+            root = ET.fromstring(resp.content)
+        except ET.ParseError as e:
+            print(f"[Zenn] {topic} parse error: {e}")
+            continue
+
+        channel = root.find("channel")
+        if channel is None:
+            continue
+
+        for item in channel.findall("item"):
+            link = (item.findtext("link") or "").strip()
+            if not link or link in seen_urls:
+                continue
+            seen_urls.add(link)
+
+            title = (item.findtext("title") or "").strip()
+            description = re.sub(r"<[^>]+>", "", item.findtext("description") or "")
+            description = re.sub(r"\s+", " ", html.unescape(description)).strip()
+            summary = description[:120] + "…" if len(description) > 120 else (description or title)
+
+            try:
+                published = parsedate_to_datetime(item.findtext("pubDate") or "").strftime("%Y-%m-%d")
+            except Exception:
+                published = ""
+
+            item_id = link.rstrip("/").split("/")[-1]
+            category, subcategory = classify(title + " " + description[:200], default_cat)
+
+            articles.append({
+                "id": f"zenn-{item_id}",
+                "title": title,
+                "summary": summary,
+                "abstract": description[:1000] or title,
+                "abstract_ja": description[:1000] or title,  # すでに日本語
+                "source": "zenn",
+                "url": link,
+                "category": category,
+                "subcategory": subcategory,
+                "publishedAt": published,
+                "hasCode": "```" in description,
+                "likes_count": 0,
+            })
+
+        print(f"[Zenn] {topic}: {len(articles)} articles so far")
+        time.sleep(1)
+
+    return articles
+
+
+# ─────────────────────────────────────────────
 # メイン
 # ─────────────────────────────────────────────
 
@@ -303,8 +384,9 @@ def main():
 
     arxiv_articles = fetch_arxiv()
     qiita_articles = fetch_qiita()
+    zenn_articles = fetch_zenn()
 
-    all_articles = arxiv_articles + qiita_articles
+    all_articles = arxiv_articles + qiita_articles + zenn_articles
     all_articles.sort(key=lambda a: a["publishedAt"], reverse=True)
 
     # 翻訳キャッシュを読み込んで、未翻訳のarXiv記事のみ翻訳する

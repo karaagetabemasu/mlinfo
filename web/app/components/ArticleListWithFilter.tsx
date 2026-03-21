@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import type { Article, Category } from "@/app/data/dummy";
 
-type Source = "all" | "arxiv" | "qiita";
+type Source = "all" | "arxiv" | "qiita" | "zenn";
 type SortKey = "date" | "likes";
 
 type Props = {
@@ -41,8 +41,9 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
       {/* ソース & ソートバー */}
       <div className="border-b border-zinc-800 px-6 py-3 flex items-center justify-between gap-4 overflow-x-auto">
         <div className="flex gap-2">
-          {(["all", "arxiv", "qiita"] as Source[]).map((s) => {
+          {(["all", "arxiv", "qiita", "zenn"] as Source[]).map((s) => {
             const count = s === "all" ? articles.length : articles.filter((a) => a.source === s).length;
+            if (s !== "all" && count === 0) return null;
             const active = source === s;
             return (
               <button
@@ -135,6 +136,8 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
                         <span className={`text-xs px-1.5 py-0.5 rounded font-mono ${
                           article.source === "arxiv"
                             ? "bg-violet-900/40 text-violet-400"
+                            : article.source === "zenn"
+                            ? "bg-sky-900/40 text-sky-400"
                             : "bg-emerald-900/40 text-emerald-500"
                         }`}>
                           {article.source}

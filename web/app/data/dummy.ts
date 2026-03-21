@@ -4,7 +4,7 @@ export type Article = {
   summary: string;
   abstract?: string;
   abstract_ja?: string;
-  source: "arxiv" | "qiita";
+  source: "arxiv" | "qiita" | "zenn";
   url: string;
   category: string;
   subcategory: string;
