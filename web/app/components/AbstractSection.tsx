@@ -5,7 +5,7 @@ import { useState } from "react";
 type Props = {
   abstract: string;
   abstract_ja?: string;
-  source: "arxiv" | "qiita";
+  source: "arxiv" | "qiita" | "zenn";
 };
 
 export default function AbstractSection({ abstract, abstract_ja, source }: Props) {
