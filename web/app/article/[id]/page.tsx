@@ -4,10 +4,34 @@ import { getArticles, getCategories } from "@/lib/data";
 import AbstractSection from "@/app/components/AbstractSection";
 import SearchBar from "@/app/components/SearchBar";
 import Logo from "@/app/components/Logo";
+import CopyUrlButton from "@/app/components/CopyUrlButton";
+import MarkAsRead from "@/app/components/MarkAsRead";
 
 type Props = {
   params: Promise<{ id: string }>;
 };
+
+export async function generateMetadata({ params }: Props) {
+  const { id } = await params;
+  const article = getArticles().find((a) => a.id === id);
+  if (!article) return {};
+  return {
+    title: `${article.title} | MLinfo`,
+    description: article.summary,
+    openGraph: {
+      title: article.title,
+      description: article.summary,
+      type: "article",
+      url: `https://mlinfo.vercel.app/article/${id}`,
+      siteName: "MLinfo",
+    },
+    twitter: {
+      card: "summary",
+      title: article.title,
+      description: article.summary,
+    },
+  };
+}
 
 const DUMMY_CODE = `import torch
 import torch.nn as nn
@@ -50,6 +74,7 @@ export default async function ArticlePage({ params }: Props) {
 
   return (
     <main className="min-h-screen bg-zinc-50 text-zinc-900">
+      <MarkAsRead id={article.id} />
       <header className="border-b border-zinc-200 bg-white px-8 py-5 flex items-center gap-4">
         <Logo />
         <span className="text-zinc-300">/</span>
@@ -102,6 +127,7 @@ export default async function ArticlePage({ params }: Props) {
           >
             論文・記事を開く →
           </a>
+          <CopyUrlButton />
         </div>
 
         {/* Source code */}

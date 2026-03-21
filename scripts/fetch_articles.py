@@ -143,6 +143,15 @@ def translate_to_ja(text: str) -> str:
         return text
 
 
+def extract_summary(text: str, max_sentences: int = 2, max_chars: int = 200) -> str:
+    """最初のN文を抽出してサマリーとする。文境界で切り、長すぎる場合は文字数で制限。"""
+    sentences = re.split(r'(?<=[.!?])\s+', text.strip())
+    summary = " ".join(sentences[:max_sentences])
+    if len(summary) > max_chars:
+        summary = summary[:max_chars].rsplit(" ", 1)[0] + "…"
+    return summary or text[:max_chars]
+
+
 def classify(text: str, default_category: str) -> tuple[str, str]:
     """タイトル+要約のテキストからカテゴリ・サブカテゴリを推定する"""
     text_lower = text.lower()
@@ -193,8 +202,7 @@ def fetch_arxiv() -> list[dict]:
             title = (entry.findtext(f"{{{ARXIV_NS}}}title", "") or "").strip().replace("\n", " ")
             abstract = (entry.findtext(f"{{{ARXIV_NS}}}summary", "") or "").strip().replace("\n", " ")
             abstract = re.sub(r"\s+", " ", abstract)
-            # 一覧用の短い英語サマリー（翻訳前のフォールバック用）
-            summary = abstract[:120] + "…" if len(abstract) > 120 else abstract
+            summary = extract_summary(abstract)
 
             published_raw = entry.findtext(f"{{{ARXIV_NS}}}published", "")
             published = published_raw[:10] if published_raw else ""
@@ -265,8 +273,7 @@ def fetch_qiita() -> list[dict]:
             body = item.get("body", "")
             plain = re.sub(r"[#\*`\[\]!>]", "", body).replace("\n", " ").strip()
             plain = re.sub(r"\s+", " ", plain)
-            summary = plain[:120] + "…" if len(plain) > 120 else plain
-            # Qiitaはすでに日本語なのでそのまま格納（最大1000文字）
+            summary = extract_summary(plain)
             abstract_ja = plain[:1000] + "…" if len(plain) > 1000 else plain
 
             published = (item.get("created_at", "") or "")[:10]
@@ -344,7 +351,7 @@ def fetch_zenn() -> list[dict]:
             title = (item.findtext("title") or "").strip()
             description = re.sub(r"<[^>]+>", "", item.findtext("description") or "")
             description = re.sub(r"\s+", " ", html.unescape(description)).strip()
-            summary = description[:120] + "…" if len(description) > 120 else (description or title)
+            summary = extract_summary(description) if description else title
 
             try:
                 published = parsedate_to_datetime(item.findtext("pubDate") or "").strftime("%Y-%m-%d")
