@@ -75,24 +75,22 @@ export default async function ArticlePage({ params }: Props) {
   return (
     <main className="min-h-screen bg-zinc-50 text-zinc-900">
       <MarkAsRead id={article.id} />
-      <header className="border-b border-zinc-200 bg-white px-8 py-5 flex items-center gap-4">
-        <Logo />
-        <span className="text-zinc-300">/</span>
-        {category && (
-          <>
-            <Link
-              href={`/category/${category.id}`}
-              className="text-zinc-400 hover:text-zinc-900 text-sm transition-colors"
-            >
-              {category.name}
-            </Link>
-            <span className="text-zinc-300">/</span>
-          </>
-        )}
-        <span className="text-sm text-zinc-500 truncate max-w-xs">{article.title}</span>
-        <div className="ml-auto">
-          <SearchBar />
+      <header className="border-b border-zinc-200 bg-white px-8 py-5 flex items-center justify-between gap-4">
+        <div className="flex items-center gap-4">
+          <Logo />
+          {category && (
+            <>
+              <span className="text-zinc-300">/</span>
+              <Link
+                href={`/category/${category.id}`}
+                className="text-zinc-400 hover:text-zinc-900 text-sm transition-colors"
+              >
+                {category.name}
+              </Link>
+            </>
+          )}
         </div>
+        <SearchBar />
       </header>
 
       <div className="px-8 py-8 max-w-4xl mx-auto">
