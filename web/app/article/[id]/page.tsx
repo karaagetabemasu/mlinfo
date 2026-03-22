@@ -111,7 +111,6 @@ export default async function ArticlePage({ params }: Props) {
           <AbstractSection
             abstract={article.abstract ?? article.summary}
             abstract_ja={article.abstract_ja}
-            source={article.source}
           />
         </div>
 

@@ -13,14 +13,13 @@ function truncate(text: string): { short: string; isTruncated: boolean } {
 type Props = {
   abstract: string;
   abstract_ja?: string;
-  source: "arxiv" | "huggingface" | "github";
 };
 
-export default function AbstractSection({ abstract, abstract_ja, source }: Props) {
-  const [showJa, setShowJa] = useState(false);
+export default function AbstractSection({ abstract, abstract_ja }: Props) {
+  const [showJa, setShowJa] = useState(true);
   const [expanded, setExpanded] = useState(false);
 
-  const hasTranslation = (source === "arxiv" || source === "huggingface") && !!abstract_ja;
+  const hasTranslation = !!abstract_ja;
   const text = showJa && abstract_ja ? abstract_ja : abstract;
   const { short, isTruncated } = truncate(text);
 
