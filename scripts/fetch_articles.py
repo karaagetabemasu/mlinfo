@@ -454,16 +454,17 @@ def main():
         if ja and ja != article.get("abstract", ""):
             article["summary"] = extract_summary(ja)
 
-    # GitHub: タイトルを「リポジトリ名 — 一言説明（日本語）」形式に変換
+    # GitHub: タイトルを「リポジトリ名 — 英語description」形式に変換
+    # 翻訳より元のdescriptionの方がリポジトリ固有の内容が出る
     for article in all_articles:
         if article["source"] != "github":
             continue
         repo_name = article["title"].split("/")[-1]
-        ja = article.get("abstract_ja") or ""
-        # 最初の文だけ取り出す（Language:/Topics: より前の説明部分）
-        first_sentence = re.split(r'[。．.!?！？]', ja)[0].strip()
-        if first_sentence:
-            article["title"] = f"{repo_name} — {first_sentence}"
+        # abstractの先頭がdescription（Language:/Topics: 付加前）
+        raw = article.get("abstract", "")
+        description = raw.split(" Language:")[0].split(" Topics:")[0].strip()
+        if description:
+            article["title"] = f"{repo_name} — {description}"
         else:
             article["title"] = repo_name
 
