@@ -17,7 +17,6 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 import requests
 import defusedxml.ElementTree as ET
-from deep_translator import GoogleTranslator
 
 # ─────────────────────────────────────────────
 # 設定
@@ -128,14 +127,6 @@ SUBCATEGORY_TO_CATEGORY = {
 }
 
 
-def load_translation_cache() -> dict[str, str]:
-    """既存のarticles.jsonからid→abstract_jaのキャッシュを読み込む"""
-    if OUTPUT_PATH.exists():
-        with open(OUTPUT_PATH, encoding="utf-8") as f:
-            data = json.load(f)
-        return {a["id"]: a["abstract_ja"] for a in data.get("articles", []) if a.get("abstract_ja")}
-    return {}
-
 
 def safe_url(url: str, allowed_prefixes: tuple = ("https://",)) -> str:
     """httpsで始まるURLのみ許可する。それ以外は空文字を返す。"""
@@ -213,7 +204,6 @@ def fetch_arxiv() -> list[dict]:
                 "title": title,
                 "summary": summary,
                 "abstract": abstract,
-                "abstract_ja": None,
                 "source": "arxiv",
                 "url": safe_url(f"https://arxiv.org/abs/{arxiv_id}"),
                 "category": category,
@@ -287,7 +277,6 @@ def fetch_huggingface(arxiv_id_map: dict) -> tuple[list[dict], dict]:
                 "title": title,
                 "summary": summary,
                 "abstract": abstract,
-                "abstract_ja": None,
                 "source": "huggingface",
                 "url": arxiv_url,
                 "category": category,
@@ -364,20 +353,15 @@ def fetch_github_trending() -> list[dict]:
             topics = repo.get("topics") or []
             category, subcategory = classify(full_name + " " + description + " " + " ".join(topics), default_cat)
 
-            # abstract: 翻訳元テキスト（説明 + 言語 + トピック情報を含める）
-            topic_str = ", ".join(topics[:5]) if topics else ""
-            abstract = description
-            if language:
-                abstract += f" Language: {language}."
-            if topic_str:
-                abstract += f" Topics: {topic_str}."
+            repo_name = full_name.split("/")[-1]
+            title = f"{repo_name} — {description}" if description else repo_name
+            summary = description[:200] if description else repo_name
 
             articles.append({
                 "id": f"github-{repo_id}",
-                "title": full_name,
-                "summary": description[:200] if description else full_name,  # 翻訳後に上書き
-                "abstract": abstract,
-                "abstract_ja": None,  # 翻訳後に埋める
+                "title": title,
+                "summary": summary,
+                "abstract": description,
                 "source": "github",
                 "url": html_url,
                 "category": category,
@@ -412,61 +396,6 @@ def main():
 
     all_articles = arxiv_articles + hf_articles + github_articles
     all_articles.sort(key=lambda a: a["publishedAt"], reverse=True)
-
-    # 全ソースの英語テキストを翻訳
-    # キャッシュ値が元テキストと同一（=未翻訳のまま保存された）場合も再翻訳する
-    cache = load_translation_cache()
-    def needs_translation(article: dict) -> bool:
-        cached = cache.get(article["id"], "")
-        if not cached:
-            return True
-        src = article.get("abstract", article["summary"])[:len(cached)]
-        return cached == src  # キャッシュ==原文なら未翻訳
-    to_translate = [a for a in all_articles if needs_translation(a)]
-    print(f"\n=== 翻訳開始: {len(to_translate)} 件（キャッシュ済み: {len(cache)} 件）===")
-
-    if to_translate:
-        BATCH_SIZE = 30
-        texts = [a.get("abstract", a["summary"])[:500] for a in to_translate]
-        translated = []
-        for i in range(0, len(texts), BATCH_SIZE):
-            batch = texts[i:i + BATCH_SIZE]
-            print(f"  バッチ翻訳: {i+1}〜{min(i+BATCH_SIZE, len(texts))} 件目")
-            try:
-                results = GoogleTranslator(source="en", target="ja").translate_batch(batch)
-                translated.extend(results)
-            except Exception as e:
-                print(f"  バッチ翻訳エラー: {e} — 原文を使用")
-                translated.extend(batch)
-            time.sleep(1)
-
-        for article, ja in zip(to_translate, translated):
-            article["abstract_ja"] = ja or article["summary"]
-
-    # キャッシュ済みのものを反映
-    for article in all_articles:
-        if article.get("abstract_ja") is None:
-            article["abstract_ja"] = cache.get(article["id"], article["summary"])
-
-    # summary を日本語版に差し替え（一覧で日本語表示）
-    for article in all_articles:
-        ja = article.get("abstract_ja") or ""
-        if ja and ja != article.get("abstract", ""):
-            article["summary"] = extract_summary(ja)
-
-    # GitHub: タイトルを「リポジトリ名 — 英語description」形式に変換
-    # 翻訳より元のdescriptionの方がリポジトリ固有の内容が出る
-    for article in all_articles:
-        if article["source"] != "github":
-            continue
-        repo_name = article["title"].split("/")[-1]
-        # abstractの先頭がdescription（Language:/Topics: 付加前）
-        raw = article.get("abstract", "")
-        description = raw.split(" Language:")[0].split(" Topics:")[0].strip()
-        if description:
-            article["title"] = f"{repo_name} — {description}"
-        else:
-            article["title"] = repo_name
 
     output = {
         "lastUpdated": datetime.now(JST).isoformat(),
