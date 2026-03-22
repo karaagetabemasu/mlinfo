@@ -8,7 +8,7 @@ import html
 import json
 import time
 import re
-import xml.etree.ElementTree as ET
+import defusedxml.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -143,6 +143,11 @@ def translate_to_ja(text: str) -> str:
         return text
 
 
+def safe_url(url: str, allowed_prefixes: tuple = ("https://",)) -> str:
+    """httpsで始まるURLのみ許可する。それ以外は空文字を返す。"""
+    return url if any(url.startswith(p) for p in allowed_prefixes) else ""
+
+
 def extract_summary(text: str, max_sentences: int = 2, max_chars: int = 200) -> str:
     """最初のN文を抽出してサマリーとする。文境界で切り、長すぎる場合は文字数で制限。"""
     sentences = re.split(r'(?<=[.!?])\s+', text.strip())
@@ -216,7 +221,7 @@ def fetch_arxiv() -> list[dict]:
                 "abstract": abstract,      # 翻訳用フルアブストラクト
                 "abstract_ja": None,       # 翻訳後に埋める
                 "source": "arxiv",
-                "url": f"https://arxiv.org/abs/{arxiv_id}",
+                "url": safe_url(f"https://arxiv.org/abs/{arxiv_id}"),
                 "category": category,
                 "subcategory": subcategory,
                 "publishedAt": published,
@@ -277,7 +282,7 @@ def fetch_qiita() -> list[dict]:
             abstract_ja = plain[:1000] + "…" if len(plain) > 1000 else plain
 
             published = (item.get("created_at", "") or "")[:10]
-            url_item = item.get("url", "")
+            url_item = safe_url(item.get("url", ""))
             likes_count = item.get("likes_count", 0)
 
             category, subcategory = classify(title + " " + body[:500], default_cat)
@@ -358,6 +363,9 @@ def fetch_zenn() -> list[dict]:
             except Exception:
                 published = ""
 
+            link = safe_url(link)
+            if not link:
+                continue
             item_id = link.rstrip("/").split("/")[-1]
             category, subcategory = classify(title + " " + description[:200], default_cat)
 
