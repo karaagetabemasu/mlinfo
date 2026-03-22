@@ -110,7 +110,6 @@ export default async function ArticlePage({ params }: Props) {
           <h1 className="text-xl font-semibold mb-3 text-zinc-900">{article.title}</h1>
           <AbstractSection
             abstract={article.abstract ?? article.summary}
-            abstract_ja={article.abstract_ja}
           />
         </div>
 
