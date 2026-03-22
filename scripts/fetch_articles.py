@@ -413,9 +413,16 @@ def main():
     all_articles = arxiv_articles + hf_articles + github_articles
     all_articles.sort(key=lambda a: a["publishedAt"], reverse=True)
 
-    # 全ソースの英語テキストを翻訳（キャッシュ未命中のもののみ）
+    # 全ソースの英語テキストを翻訳
+    # キャッシュ値が元テキストと同一（=未翻訳のまま保存された）場合も再翻訳する
     cache = load_translation_cache()
-    to_translate = [a for a in all_articles if not cache.get(a["id"])]
+    def needs_translation(article: dict) -> bool:
+        cached = cache.get(article["id"], "")
+        if not cached:
+            return True
+        src = article.get("abstract", article["summary"])[:len(cached)]
+        return cached == src  # キャッシュ==原文なら未翻訳
+    to_translate = [a for a in all_articles if needs_translation(a)]
     print(f"\n=== 翻訳開始: {len(to_translate)} 件（キャッシュ済み: {len(cache)} 件）===")
 
     if to_translate:
