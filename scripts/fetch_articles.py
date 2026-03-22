@@ -360,15 +360,24 @@ def fetch_github_trending() -> list[dict]:
 
             stars = repo.get("stargazers_count", 0)
             pushed_at = (repo.get("pushed_at") or "")[:10]
-            summary = description[:200] if description else f"GitHub: {full_name}"
-            category, subcategory = classify(full_name + " " + description, default_cat)
+            language = repo.get("language") or ""
+            topics = repo.get("topics") or []
+            category, subcategory = classify(full_name + " " + description + " " + " ".join(topics), default_cat)
+
+            # abstract: 翻訳元テキスト（説明 + 言語 + トピック情報を含める）
+            topic_str = ", ".join(topics[:5]) if topics else ""
+            abstract = description
+            if language:
+                abstract += f" Language: {language}."
+            if topic_str:
+                abstract += f" Topics: {topic_str}."
 
             articles.append({
                 "id": f"github-{repo_id}",
                 "title": full_name,
-                "summary": summary,
-                "abstract": description,
-                "abstract_ja": description,
+                "summary": description[:200] if description else full_name,  # 翻訳後に上書き
+                "abstract": abstract,
+                "abstract_ja": None,  # 翻訳後に埋める
                 "source": "github",
                 "url": html_url,
                 "category": category,
@@ -404,12 +413,9 @@ def main():
     all_articles = arxiv_articles + hf_articles + github_articles
     all_articles.sort(key=lambda a: a["publishedAt"], reverse=True)
 
-    # 英語記事（arXiv・HuggingFace）のみ翻訳
+    # 全ソースの英語テキストを翻訳（キャッシュ未命中のもののみ）
     cache = load_translation_cache()
-    to_translate = [
-        a for a in all_articles
-        if a["source"] in ("arxiv", "huggingface") and not cache.get(a["id"])
-    ]
+    to_translate = [a for a in all_articles if not cache.get(a["id"])]
     print(f"\n=== 翻訳開始: {len(to_translate)} 件（キャッシュ済み: {len(cache)} 件）===")
 
     if to_translate:
@@ -432,8 +438,14 @@ def main():
 
     # キャッシュ済みのものを反映
     for article in all_articles:
-        if article["source"] in ("arxiv", "huggingface") and article.get("abstract_ja") is None:
+        if article.get("abstract_ja") is None:
             article["abstract_ja"] = cache.get(article["id"], article["summary"])
+
+    # summary を日本語版に差し替え（一覧で日本語表示）
+    for article in all_articles:
+        ja = article.get("abstract_ja") or ""
+        if ja and ja != article.get("abstract", ""):
+            article["summary"] = extract_summary(ja)
 
     output = {
         "lastUpdated": datetime.now(JST).isoformat(),
