@@ -1,18 +1,22 @@
 """
 MLinfo データ収集スクリプト
-arXiv と Qiita から機械学習関連の記事を取得してカテゴリ分類し、
-web/data/articles.json に保存する。
+arXiv・HuggingFace Papers・GitHub Trending から機械学習関連の記事を取得して
+カテゴリ分類し、web/data/articles.json に保存する。
+
+利用規約確認済みソース:
+  - arXiv: メタデータはCC0（パブリックドメイン）、商用利用OK
+  - HuggingFace: 商用利用は原則許可と明記
+  - GitHub: 公開APIの商用利用OK
 """
 
-import html
 import json
+import os
 import time
 import re
-import defusedxml.ElementTree as ET
 from datetime import datetime, timezone, timedelta
-from email.utils import parsedate_to_datetime
 from pathlib import Path
 import requests
+import defusedxml.ElementTree as ET
 from deep_translator import GoogleTranslator
 
 # ─────────────────────────────────────────────
@@ -22,9 +26,9 @@ from deep_translator import GoogleTranslator
 OUTPUT_PATH = Path(__file__).parent.parent / "web" / "data" / "articles.json"
 JST = timezone(timedelta(hours=9))
 
-# 1回の取得件数
 ARXIV_MAX_RESULTS = 200
-QIITA_PER_PAGE = 30
+HF_FETCH_DAYS = 7       # HuggingFace: 過去N日分の注目論文
+GITHUB_PER_TOPIC = 30   # GitHub: トピックごとの取得件数
 
 # arXiv カテゴリ → 大カテゴリのマッピング
 ARXIV_CATEGORY_MAP = {
@@ -133,16 +137,6 @@ def load_translation_cache() -> dict[str, str]:
     return {}
 
 
-def translate_to_ja(text: str) -> str:
-    """英語テキストを日本語に翻訳する（失敗時は原文を返す）"""
-    try:
-        # Google Translateは1回に5000文字まで
-        return GoogleTranslator(source="en", target="ja").translate(text[:4500])
-    except Exception as e:
-        print(f"  翻訳エラー: {e}")
-        return text
-
-
 def safe_url(url: str, allowed_prefixes: tuple = ("https://",)) -> str:
     """httpsで始まるURLのみ許可する。それ以外は空文字を返す。"""
     return url if any(url.startswith(p) for p in allowed_prefixes) else ""
@@ -187,7 +181,7 @@ def fetch_arxiv() -> list[dict]:
             f"&max_results={ARXIV_MAX_RESULTS}"
         )
         try:
-            resp = requests.get(url, timeout=(10, 20))  # (接続タイムアウト, 読み取りタイムアウト)
+            resp = requests.get(url, timeout=(10, 20))
             resp.raise_for_status()
         except Exception as e:
             print(f"[arXiv] {arxiv_cat} fetch error: {e}")
@@ -218,8 +212,8 @@ def fetch_arxiv() -> list[dict]:
                 "id": f"arxiv-{arxiv_id}",
                 "title": title,
                 "summary": summary,
-                "abstract": abstract,      # 翻訳用フルアブストラクト
-                "abstract_ja": None,       # 翻訳後に埋める
+                "abstract": abstract,
+                "abstract_ja": None,
                 "source": "arxiv",
                 "url": safe_url(f"https://arxiv.org/abs/{arxiv_id}"),
                 "category": category,
@@ -236,156 +230,156 @@ def fetch_arxiv() -> list[dict]:
 
 
 # ─────────────────────────────────────────────
-# Qiita 取得
+# HuggingFace Papers 取得
+# 利用規約: 商用利用は原則許可と明記
 # ─────────────────────────────────────────────
 
-QIITA_TAGS = [
-    ("機械学習", "machine-learning"),
-    ("深層学習", "deep-learning"),
-    ("自然言語処理", "nlp"),
-    ("強化学習", "reinforcement-learning"),
-    ("LLM", "nlp"),
-    ("PyTorch", "deep-learning"),
-    ("Kaggle", "machine-learning"),
+def fetch_huggingface(arxiv_id_map: dict) -> tuple[list[dict], dict]:
+    """
+    HuggingFace の注目論文を取得する。
+    - arXiv既存記事にはupvoteを反映してlikeを更新
+    - arXivにない論文は新規エントリとして返す
+    戻り値: (新規hf記事リスト, 更新されたarxiv_id_map)
+    """
+    hf_only = []
+    seen_ids = set()
+    today = datetime.now(JST).date()
+
+    for days_ago in range(HF_FETCH_DAYS):
+        date_str = (today - timedelta(days=days_ago)).strftime("%Y-%m-%d")
+        url = f"https://huggingface.co/api/daily_papers?date={date_str}"
+        try:
+            resp = requests.get(url, timeout=(10, 20), headers={"User-Agent": "MLinfo/1.0"})
+            resp.raise_for_status()
+            papers = resp.json()
+        except Exception as e:
+            print(f"[HuggingFace] {date_str} fetch error: {e}")
+            time.sleep(1)
+            continue
+
+        for item in papers:
+            paper = item.get("paper", {})
+            paper_id = paper.get("id", "")
+            if not paper_id or paper_id in seen_ids:
+                continue
+            seen_ids.add(paper_id)
+
+            upvotes = paper.get("upvotes", 0)
+
+            # arXiv既存記事のupvoteを更新
+            if paper_id in arxiv_id_map:
+                arxiv_id_map[paper_id]["likes_count"] = upvotes
+                continue
+
+            title = paper.get("title", "").strip()
+            abstract = (paper.get("summary", "") or "").strip().replace("\n", " ")
+            abstract = re.sub(r"\s+", " ", abstract)
+            summary = extract_summary(abstract) if abstract else title
+            published = (paper.get("publishedAt", "") or "")[:10]
+            arxiv_url = safe_url(f"https://arxiv.org/abs/{paper_id}")
+            if not arxiv_url:
+                continue
+
+            category, subcategory = classify(title + " " + abstract, "machine-learning")
+
+            hf_only.append({
+                "id": f"hf-{paper_id}",
+                "title": title,
+                "summary": summary,
+                "abstract": abstract,
+                "abstract_ja": None,
+                "source": "huggingface",
+                "url": arxiv_url,
+                "category": category,
+                "subcategory": subcategory,
+                "publishedAt": published,
+                "hasCode": False,
+                "likes_count": upvotes,
+            })
+
+        print(f"[HuggingFace] {date_str}: {len(hf_only)} new articles so far")
+        time.sleep(1)
+
+    return hf_only, arxiv_id_map
+
+
+# ─────────────────────────────────────────────
+# GitHub Trending 取得
+# 利用規約: 公開APIの商用利用OK
+# ─────────────────────────────────────────────
+
+GITHUB_ML_TOPICS = [
+    ("machine-learning", "machine-learning"),
+    ("deep-learning", "deep-learning"),
+    ("large-language-model", "nlp"),
+    ("computer-vision", "computer-vision"),
+    ("reinforcement-learning", "reinforcement-learning"),
+    ("mlops", "mlops"),
+    ("diffusion-models", "generative-ai"),
+    ("pytorch", "deep-learning"),
+    ("nlp", "nlp"),
 ]
 
 
-def fetch_qiita() -> list[dict]:
+def fetch_github_trending() -> list[dict]:
     articles = []
     seen_ids = set()
 
-    for tag, default_cat in QIITA_TAGS:
+    github_token = os.environ.get("GITHUB_TOKEN", "")
+    headers = {"User-Agent": "MLinfo/1.0", "Accept": "application/vnd.github+json"}
+    if github_token:
+        headers["Authorization"] = f"Bearer {github_token}"
+
+    cutoff_date = (datetime.now(timezone.utc) - timedelta(days=30)).strftime("%Y-%m-%d")
+
+    for topic, default_cat in GITHUB_ML_TOPICS:
         url = (
-            f"https://qiita.com/api/v2/items"
-            f"?query=tag:{tag}&per_page={QIITA_PER_PAGE}&sort=created"
+            f"https://api.github.com/search/repositories"
+            f"?q=topic:{topic}+pushed:>{cutoff_date}&sort=stars&order=desc&per_page={GITHUB_PER_TOPIC}"
         )
         try:
-            resp = requests.get(url, timeout=(10, 20), headers={"User-Agent": "MLinfo/1.0"})
+            resp = requests.get(url, timeout=(10, 20), headers=headers)
             resp.raise_for_status()
-            items = resp.json()
+            repos = resp.json().get("items", [])
         except Exception as e:
-            print(f"[Qiita] {tag} fetch error: {e}")
-            time.sleep(1)
+            print(f"[GitHub] {topic} fetch error: {e}")
+            time.sleep(2)
             continue
 
-        for item in items:
-            item_id = item.get("id", "")
-            if item_id in seen_ids:
+        for repo in repos:
+            repo_id = str(repo.get("id", ""))
+            if repo_id in seen_ids:
                 continue
-            seen_ids.add(item_id)
+            seen_ids.add(repo_id)
 
-            title = item.get("title", "")
-            body = item.get("body", "")
-            plain = re.sub(r"[#\*`\[\]!>]", "", body).replace("\n", " ").strip()
-            plain = re.sub(r"\s+", " ", plain)
-            summary = extract_summary(plain)
-            abstract_ja = plain[:1000] + "…" if len(plain) > 1000 else plain
+            full_name = repo.get("full_name", "")
+            description = (repo.get("description") or "").strip()
+            html_url = safe_url(repo.get("html_url", ""))
+            if not html_url:
+                continue
 
-            published = (item.get("created_at", "") or "")[:10]
-            url_item = safe_url(item.get("url", ""))
-            likes_count = item.get("likes_count", 0)
-
-            category, subcategory = classify(title + " " + body[:500], default_cat)
+            stars = repo.get("stargazers_count", 0)
+            pushed_at = (repo.get("pushed_at") or "")[:10]
+            summary = description[:200] if description else f"GitHub: {full_name}"
+            category, subcategory = classify(full_name + " " + description, default_cat)
 
             articles.append({
-                "id": f"qiita-{item_id}",
-                "title": title,
+                "id": f"github-{repo_id}",
+                "title": full_name,
                 "summary": summary,
-                "abstract": plain[:1000],
-                "abstract_ja": abstract_ja,
-                "source": "qiita",
-                "url": url_item,
+                "abstract": description,
+                "abstract_ja": description,
+                "source": "github",
+                "url": html_url,
                 "category": category,
                 "subcategory": subcategory,
-                "publishedAt": published,
-                "hasCode": "```" in body,
-                "likes_count": likes_count,
+                "publishedAt": pushed_at,
+                "hasCode": True,
+                "likes_count": stars,
             })
 
-        print(f"[Qiita] {tag}: {len(articles)} articles so far")
-        time.sleep(1)
-
-    return articles
-
-
-# ─────────────────────────────────────────────
-# Zenn 取得
-# ─────────────────────────────────────────────
-
-ZENN_TOPICS = [
-    ("machine-learning", "machine-learning"),
-    ("deep-learning", "deep-learning"),
-    ("llm", "nlp"),
-    ("nlp", "nlp"),
-    ("reinforcement-learning", "reinforcement-learning"),
-    ("pytorch", "deep-learning"),
-    ("kaggle", "machine-learning"),
-]
-
-
-def fetch_zenn() -> list[dict]:
-    articles = []
-    seen_urls = set()
-
-    for topic, default_cat in ZENN_TOPICS:
-        url = f"https://zenn.dev/topics/{topic}/feed"
-        try:
-            resp = requests.get(url, timeout=(10, 20), headers={"User-Agent": "MLinfo/1.0"})
-            resp.raise_for_status()
-        except Exception as e:
-            print(f"[Zenn] {topic} fetch error: {e}")
-            time.sleep(1)
-            continue
-
-        try:
-            root = ET.fromstring(resp.content)
-        except ET.ParseError as e:
-            print(f"[Zenn] {topic} parse error: {e}")
-            continue
-
-        channel = root.find("channel")
-        if channel is None:
-            continue
-
-        for item in channel.findall("item"):
-            link = (item.findtext("link") or "").strip()
-            if not link or link in seen_urls:
-                continue
-            seen_urls.add(link)
-
-            title = (item.findtext("title") or "").strip()
-            description = re.sub(r"<[^>]+>", "", item.findtext("description") or "")
-            description = re.sub(r"\s+", " ", html.unescape(description)).strip()
-            summary = extract_summary(description) if description else title
-
-            try:
-                published = parsedate_to_datetime(item.findtext("pubDate") or "").strftime("%Y-%m-%d")
-            except Exception:
-                published = ""
-
-            link = safe_url(link)
-            if not link:
-                continue
-            item_id = link.rstrip("/").split("/")[-1]
-            category, subcategory = classify(title + " " + description[:200], default_cat)
-
-            articles.append({
-                "id": f"zenn-{item_id}",
-                "title": title,
-                "summary": summary,
-                "abstract": description[:1000] or title,
-                "abstract_ja": description[:1000] or title,  # すでに日本語
-                "source": "zenn",
-                "url": link,
-                "category": category,
-                "subcategory": subcategory,
-                "publishedAt": published,
-                "hasCode": "```" in description,
-                "likes_count": 0,
-            })
-
-        print(f"[Zenn] {topic}: {len(articles)} articles so far")
-        time.sleep(1)
+        print(f"[GitHub] {topic}: {len(articles)} articles so far")
+        time.sleep(2)
 
     return articles
 
@@ -397,20 +391,28 @@ def fetch_zenn() -> list[dict]:
 def main():
     print("=== MLinfo データ取得開始 ===")
 
+    # arXivを取得し、ID逆引きマップを作成
     arxiv_articles = fetch_arxiv()
-    qiita_articles = fetch_qiita()
-    zenn_articles = fetch_zenn()
+    arxiv_id_map = {a["id"].replace("arxiv-", ""): a for a in arxiv_articles}
 
-    all_articles = arxiv_articles + qiita_articles + zenn_articles
+    # HuggingFace: arXiv記事のupvoteを更新しつつ、新規論文を取得
+    hf_articles, arxiv_id_map = fetch_huggingface(arxiv_id_map)
+
+    # GitHub Trending
+    github_articles = fetch_github_trending()
+
+    all_articles = arxiv_articles + hf_articles + github_articles
     all_articles.sort(key=lambda a: a["publishedAt"], reverse=True)
 
-    # 翻訳キャッシュを読み込んで、未翻訳のarXiv記事のみ翻訳する
+    # 英語記事（arXiv・HuggingFace）のみ翻訳
     cache = load_translation_cache()
-    to_translate = [a for a in all_articles if a["source"] == "arxiv" and not cache.get(a["id"])]
+    to_translate = [
+        a for a in all_articles
+        if a["source"] in ("arxiv", "huggingface") and not cache.get(a["id"])
+    ]
     print(f"\n=== 翻訳開始: {len(to_translate)} 件（キャッシュ済み: {len(cache)} 件）===")
 
     if to_translate:
-        # バッチ翻訳（まとめてAPIコール、1件ずつより大幅に高速）
         BATCH_SIZE = 30
         texts = [a.get("abstract", a["summary"])[:500] for a in to_translate]
         translated = []
@@ -430,7 +432,7 @@ def main():
 
     # キャッシュ済みのものを反映
     for article in all_articles:
-        if article["source"] == "arxiv" and article.get("abstract_ja") is None:
+        if article["source"] in ("arxiv", "huggingface") and article.get("abstract_ja") is None:
             article["abstract_ja"] = cache.get(article["id"], article["summary"])
 
     output = {

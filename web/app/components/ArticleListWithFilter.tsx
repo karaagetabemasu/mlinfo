@@ -5,7 +5,7 @@ import { useState } from "react";
 import type { Article, Category } from "@/app/data/dummy";
 import { useReadArticles } from "@/app/hooks/useReadArticles";
 
-type Source = "all" | "arxiv" | "qiita" | "zenn";
+type Source = "all" | "arxiv" | "huggingface" | "github";
 type SortKey = "date" | "likes";
 type Period = "all" | "today" | "week" | "month";
 
@@ -54,7 +54,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
     });
 
   const showLikesSort = source !== "arxiv";
-  const sortLabel = source === "qiita" ? "いいね順" : "人気順";
+  const sortLabel = source === "github" ? "スター順" : "人気順";
   const unreadCount = filtered.filter((a) => !readIds.has(a.id)).length;
 
   return (
@@ -62,7 +62,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
       {/* ソース & ソートバー */}
       <div className="border-b border-zinc-200 bg-white px-6 py-3 flex items-center justify-between gap-4 overflow-x-auto">
         <div className="flex gap-2">
-          {(["all", "arxiv", "qiita", "zenn"] as Source[]).map((s) => {
+          {(["all", "arxiv", "huggingface", "github"] as Source[]).map((s) => {
             const count = s === "all" ? articles.length : articles.filter((a) => a.source === s).length;
             if (s !== "all" && count === 0) return null;
             const active = source === s;
@@ -179,8 +179,8 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
                           )}
                           <span className={`text-xs px-1.5 py-0.5 rounded font-mono ${
                             article.source === "arxiv" ? "bg-violet-100 text-violet-700"
-                            : article.source === "zenn" ? "bg-sky-100 text-sky-700"
-                            : "bg-emerald-100 text-emerald-700"
+                            : article.source === "huggingface" ? "bg-amber-100 text-amber-700"
+                            : "bg-zinc-100 text-zinc-600"
                           }`}>
                             {article.source}
                           </span>

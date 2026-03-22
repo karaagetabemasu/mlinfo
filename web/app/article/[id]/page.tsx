@@ -99,9 +99,9 @@ export default async function ArticlePage({ params }: Props) {
             <span className={`text-xs px-2 py-0.5 rounded font-mono ${
               article.source === "arxiv"
                 ? "bg-violet-100 text-violet-700"
-                : article.source === "zenn"
-                ? "bg-sky-100 text-sky-700"
-                : "bg-emerald-100 text-emerald-700"
+                : article.source === "huggingface"
+                ? "bg-amber-100 text-amber-700"
+                : "bg-zinc-100 text-zinc-600"
             }`}>
               {article.source}
             </span>

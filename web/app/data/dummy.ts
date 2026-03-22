@@ -4,7 +4,7 @@ export type Article = {
   summary: string;
   abstract?: string;
   abstract_ja?: string;
-  source: "arxiv" | "qiita" | "zenn";
+  source: "arxiv" | "huggingface" | "github";
   url: string;
   category: string;
   subcategory: string;
@@ -149,15 +149,14 @@ export const articles: Article[] = [
   },
   {
     id: "2",
-    title: "LightGBM を使った特徴量重要度の可視化",
-    summary: "LightGBMのSHAP値を使った特徴量重要度の可視化方法とKaggleでの活用例を解説。",
-    source: "qiita",
-    url: "https://qiita.com/",
+    title: "microsoft/LightGBM",
+    summary: "A fast, distributed, high performance gradient boosting framework based on decision tree algorithms.",
+    source: "github",
+    url: "https://github.com/microsoft/LightGBM",
     category: "machine-learning",
     subcategory: "feature",
     publishedAt: "2024-01-15",
     hasCode: true,
-    codeUrl: "https://github.com/",
   },
   {
     id: "3",
@@ -173,10 +172,10 @@ export const articles: Article[] = [
   },
   {
     id: "4",
-    title: "PPOを使った強化学習エージェントの実装",
-    summary: "Proximal Policy Optimizationの実装解説とOpenAI Gymでの実験結果。",
-    source: "qiita",
-    url: "https://qiita.com/",
+    title: "openai/baselines",
+    summary: "OpenAI Baselines: high-quality implementations of reinforcement learning algorithms including PPO.",
+    source: "github",
+    url: "https://github.com/openai/baselines",
     category: "reinforcement-learning",
     subcategory: "ppo",
     publishedAt: "2024-02-10",
