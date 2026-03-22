@@ -6,6 +6,7 @@ import SearchBar from "@/app/components/SearchBar";
 import Logo from "@/app/components/Logo";
 import CopyUrlButton from "@/app/components/CopyUrlButton";
 import MarkAsRead from "@/app/components/MarkAsRead";
+import { TASK_TAG_LABELS, MODALITY_TAG_LABELS, LEARNING_TAG_LABELS } from "@/app/data/dummy";
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -111,18 +112,54 @@ export default async function ArticlePage({ params }: Props) {
           <AbstractSection
             abstract={article.abstract ?? article.summary}
           />
+
+          {/* Tags (FR-01) */}
+          {article.tags && (article.tags.task.length > 0 || article.tags.modality.length > 0 || article.tags.learning.length > 0) && (
+            <div className="flex flex-wrap gap-1.5 mt-4">
+              {article.tags.task.map((tag) => (
+                <span key={tag} className="text-xs bg-blue-50 text-blue-700 border border-blue-100 px-2 py-0.5">
+                  {TASK_TAG_LABELS[tag] ?? tag}
+                </span>
+              ))}
+              {article.tags.modality.map((tag) => (
+                <span key={tag} className="text-xs bg-emerald-50 text-emerald-700 border border-emerald-100 px-2 py-0.5">
+                  {MODALITY_TAG_LABELS[tag] ?? tag}
+                </span>
+              ))}
+              {article.tags.learning.map((tag) => (
+                <span key={tag} className="text-xs bg-amber-50 text-amber-700 border border-amber-100 px-2 py-0.5">
+                  {LEARNING_TAG_LABELS[tag] ?? tag}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
 
         {/* Links */}
-        <div className="flex gap-3 mb-8">
+        <div className="flex gap-3 mb-8 flex-wrap">
           <a
             href={article.url}
             target="_blank"
             rel="noopener noreferrer"
             className="text-xs border border-zinc-300 px-4 py-2 text-zinc-600 hover:border-zinc-500 hover:text-zinc-900 transition-colors"
           >
-            論文・記事を開く →
+            {article.source === "github" ? "リポジトリを開く →" : "論文・記事を開く →"}
           </a>
+          {article.codeUrl && article.source !== "github" && (
+            <a
+              href={article.codeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs border border-zinc-300 px-4 py-2 text-zinc-600 hover:border-zinc-500 hover:text-zinc-900 transition-colors"
+            >
+              Official Code →
+            </a>
+          )}
+          {!article.hasCode && article.source !== "github" && (
+            <span className="text-xs border border-zinc-200 px-4 py-2 text-zinc-400">
+              実装なし
+            </span>
+          )}
           <CopyUrlButton />
         </div>
 

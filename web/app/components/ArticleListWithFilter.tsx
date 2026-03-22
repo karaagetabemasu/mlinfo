@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import type { Article, Category } from "@/app/data/dummy";
+import { TASK_TAG_LABELS, MODALITY_TAG_LABELS } from "@/app/data/dummy";
 import { useReadArticles } from "@/app/hooks/useReadArticles";
 
 type Source = "all" | "arxiv" | "huggingface" | "github";
@@ -35,6 +36,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
   const [sort, setSort] = useState<SortKey>("date");
   const [subcategory, setSubcategory] = useState<string>("all");
   const [period, setPeriod] = useState<Period>("all");
+  const [taskTag, setTaskTag] = useState<string>("all");
   const { readIds, markAllAsRead } = useReadArticles();
 
   const bySource = source === "all" ? articles : articles.filter((a) => a.source === source);
@@ -43,10 +45,15 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
   const availableSubs = Array.from(new Set(byPeriod.map((a) => a.subcategory))).sort((a, b) =>
     (subcategoryNameMap[a] ?? a).localeCompare(subcategoryNameMap[b] ?? b, "ja")
   );
-
   const activeSub = availableSubs.includes(subcategory) ? subcategory : "all";
+  const bySub = activeSub === "all" ? byPeriod : byPeriod.filter((a) => a.subcategory === activeSub);
 
-  const filtered = (activeSub === "all" ? byPeriod : byPeriod.filter((a) => a.subcategory === activeSub))
+  const availableTaskTags = Array.from(
+    new Set(bySub.flatMap((a) => a.tags?.task ?? []))
+  ).sort((a, b) => (TASK_TAG_LABELS[a] ?? a).localeCompare(TASK_TAG_LABELS[b] ?? b, "ja"));
+  const activeTaskTag = availableTaskTags.includes(taskTag) ? taskTag : "all";
+
+  const filtered = (activeTaskTag === "all" ? bySub : bySub.filter((a) => a.tags?.task.includes(activeTaskTag)))
     .slice()
     .sort((a, b) => {
       if (sort === "likes") return (b.likes_count ?? 0) - (a.likes_count ?? 0);
@@ -69,7 +76,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
             return (
               <button
                 key={s}
-                onClick={() => { setSource(s); setSubcategory("all"); if (s === "arxiv" && sort === "likes") setSort("date"); }}
+                onClick={() => { setSource(s); setSubcategory("all"); setTaskTag("all"); if (s === "arxiv" && sort === "likes") setSort("date"); }}
                 className={`text-xs px-3 py-1 border whitespace-nowrap transition-colors ${
                   active
                     ? `border-l-2 ${category.color} border border-zinc-300 border-l-0 bg-zinc-100 text-zinc-800`
@@ -106,7 +113,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
           {(["all", "today", "week", "month"] as Period[]).map((p) => (
             <button
               key={p}
-              onClick={() => { setPeriod(p); setSubcategory("all"); }}
+              onClick={() => { setPeriod(p); setSubcategory("all"); setTaskTag("all"); }}
               className={`text-xs px-2.5 py-1 border whitespace-nowrap transition-colors ${
                 period === p
                   ? "border-zinc-400 bg-zinc-100 text-zinc-800"
@@ -151,6 +158,27 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
         </div>
       )}
 
+      {/* タスクタグフィルター */}
+      {availableTaskTags.length > 1 && (
+        <div className="border-b border-zinc-100 bg-zinc-50 px-6 py-2 flex gap-2 overflow-x-auto">
+          <button
+            onClick={() => setTaskTag("all")}
+            className={`text-xs px-2.5 py-1 border whitespace-nowrap transition-colors ${activeTaskTag === "all" ? "border-zinc-300 bg-white text-zinc-800" : "border-zinc-200 text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"}`}
+          >
+            タスク: すべて
+          </button>
+          {availableTaskTags.map((tag) => (
+            <button
+              key={tag}
+              onClick={() => setTaskTag(tag)}
+              className={`text-xs px-2.5 py-1 border whitespace-nowrap transition-colors ${activeTaskTag === tag ? "border-blue-300 bg-blue-50 text-blue-700" : "border-zinc-200 text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"}`}
+            >
+              {TASK_TAG_LABELS[tag] ?? tag}
+            </button>
+          ))}
+        </div>
+      )}
+
       {/* 記事一覧 */}
       <div className="px-6 py-6 max-w-4xl mx-auto">
         {filtered.length === 0 ? (
@@ -187,6 +215,16 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
                           <span className="text-xs bg-zinc-100 border border-zinc-200 text-zinc-500 px-1.5 py-0.5 rounded">
                             {subcategoryNameMap[article.subcategory] ?? article.subcategory}
                           </span>
+                          {article.tags?.task.slice(0, 2).map((tag) => (
+                            <span key={tag} className="text-xs bg-blue-50 text-blue-700 border border-blue-100 px-1.5 py-0.5 rounded">
+                              {TASK_TAG_LABELS[tag] ?? tag}
+                            </span>
+                          ))}
+                          {article.tags?.modality.slice(0, 1).map((tag) => (
+                            <span key={tag} className="text-xs bg-emerald-50 text-emerald-700 border border-emerald-100 px-1.5 py-0.5 rounded">
+                              {MODALITY_TAG_LABELS[tag] ?? tag}
+                            </span>
+                          ))}
                           {article.hasCode && (
                             <span className="text-xs bg-zinc-100 text-zinc-500 px-1.5 py-0.5 rounded">code</span>
                           )}

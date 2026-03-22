@@ -128,6 +128,63 @@ SUBCATEGORY_TO_CATEGORY = {
 
 
 
+# ─────────────────────────────────────────────
+# タグ抽出（FR-01）
+# ─────────────────────────────────────────────
+
+TASK_TAG_KEYWORDS: dict[str, list[str]] = {
+    "classification": ["classification", "classifier", "categorization", "recognition"],
+    "detection": ["object detection", "detection", "detector", "localization", "bounding box"],
+    "generation": ["generation", "generative", "synthesis", "text-to-image", "text-to-video", "image synthesis"],
+    "segmentation": ["segmentation", "semantic segmentation", "instance segmentation", "panoptic"],
+    "regression": ["regression"],
+    "anomaly-detection": ["anomaly detection", "outlier detection", "out-of-distribution"],
+    "translation": ["machine translation", "neural machine translation"],
+    "summarization": ["summarization", "abstractive summarization", "document summarization"],
+    "qa": ["question answering", "visual question", "reading comprehension"],
+    "forecasting": ["forecasting", "time series prediction", "demand forecasting"],
+    "retrieval": ["information retrieval", "dense retrieval", "document retrieval"],
+    "embedding": ["representation learning", "sentence embedding"],
+}
+
+MODALITY_TAG_KEYWORDS: dict[str, list[str]] = {
+    "image": ["image", "visual", "pixel", "photograph"],
+    "text": ["natural language", "text", "language model", "corpus", "document"],
+    "audio": ["audio", "speech", "acoustic", "sound"],
+    "video": ["video", "action recognition"],
+    "tabular": ["tabular", "structured data"],
+    "3d": ["point cloud", "3d", "depth estimation", "lidar", "nerf", "gaussian splatting"],
+    "multimodal": ["multimodal", "vision-language", "cross-modal", "vision and language"],
+    "time-series": ["time series", "time-series"],
+}
+
+LEARNING_TAG_KEYWORDS: dict[str, list[str]] = {
+    "supervised": ["supervised learning"],
+    "unsupervised": ["unsupervised"],
+    "semi-supervised": ["semi-supervised"],
+    "self-supervised": ["self-supervised", "self supervised", "pretext task"],
+    "reinforcement": ["reinforcement learning"],
+}
+
+GITHUB_URL_RE = re.compile(r'https://github\.com/[\w.-]+/[\w.-]+')
+
+
+def extract_tags(text: str) -> dict:
+    """テキストからタスク・モダリティ・学習設定タグを抽出する"""
+    t = text.lower()
+    return {
+        "task": [tag for tag, kws in TASK_TAG_KEYWORDS.items() if any(kw in t for kw in kws)],
+        "modality": [tag for tag, kws in MODALITY_TAG_KEYWORDS.items() if any(kw in t for kw in kws)],
+        "learning": [tag for tag, kws in LEARNING_TAG_KEYWORDS.items() if any(kw in t for kw in kws)],
+    }
+
+
+def extract_github_url(text: str) -> str:
+    """abstractからGitHubリポジトリURLを抽出する（論文の公式実装URL取得）"""
+    m = GITHUB_URL_RE.search(text)
+    return m.group(0).rstrip(".,;)>\"'") if m else ""
+
+
 def safe_url(url: str, allowed_prefixes: tuple = ("https://",)) -> str:
     """httpsで始まるURLのみ許可する。それ以外は空文字を返す。"""
     return url if any(url.startswith(p) for p in allowed_prefixes) else ""
@@ -198,6 +255,8 @@ def fetch_arxiv() -> list[dict]:
             published = published_raw[:10] if published_raw else ""
 
             category, subcategory = classify(title + " " + abstract, default_cat)
+            tags = extract_tags(title + " " + abstract)
+            code_url = extract_github_url(abstract)
 
             articles.append({
                 "id": f"arxiv-{arxiv_id}",
@@ -209,8 +268,10 @@ def fetch_arxiv() -> list[dict]:
                 "category": category,
                 "subcategory": subcategory,
                 "publishedAt": published,
-                "hasCode": False,
+                "hasCode": bool(code_url),
+                "codeUrl": code_url if code_url else None,
                 "likes_count": 0,
+                "tags": tags,
             })
 
         print(f"[arXiv] {arxiv_cat}: {len(articles)} articles so far")
@@ -271,6 +332,8 @@ def fetch_huggingface(arxiv_id_map: dict) -> tuple[list[dict], dict]:
                 continue
 
             category, subcategory = classify(title + " " + abstract, "machine-learning")
+            tags = extract_tags(title + " " + abstract)
+            code_url = extract_github_url(abstract)
 
             hf_only.append({
                 "id": f"hf-{paper_id}",
@@ -282,8 +345,10 @@ def fetch_huggingface(arxiv_id_map: dict) -> tuple[list[dict], dict]:
                 "category": category,
                 "subcategory": subcategory,
                 "publishedAt": published,
-                "hasCode": False,
+                "hasCode": bool(code_url),
+                "codeUrl": code_url if code_url else None,
                 "likes_count": upvotes,
+                "tags": tags,
             })
 
         print(f"[HuggingFace] {date_str}: {len(hf_only)} new articles so far")
@@ -352,6 +417,7 @@ def fetch_github_trending() -> list[dict]:
             language = repo.get("language") or ""
             topics = repo.get("topics") or []
             category, subcategory = classify(full_name + " " + description + " " + " ".join(topics), default_cat)
+            tags = extract_tags(description + " " + " ".join(topics))
 
             repo_name = full_name.split("/")[-1]
             title = f"{repo_name} — {description}" if description else repo_name
@@ -369,6 +435,7 @@ def fetch_github_trending() -> list[dict]:
                 "publishedAt": pushed_at,
                 "hasCode": True,
                 "likes_count": stars,
+                "tags": tags,
             })
 
         print(f"[GitHub] {topic}: {len(articles)} articles so far")

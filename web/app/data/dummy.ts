@@ -1,9 +1,14 @@
+export type ArticleTags = {
+  task: string[];
+  modality: string[];
+  learning: string[];
+};
+
 export type Article = {
   id: string;
   title: string;
   summary: string;
   abstract?: string;
-  abstract_ja?: string;
   source: "arxiv" | "huggingface" | "github";
   url: string;
   category: string;
@@ -12,6 +17,41 @@ export type Article = {
   hasCode: boolean;
   codeUrl?: string;
   likes_count?: number;
+  tags?: ArticleTags;
+};
+
+export const TASK_TAG_LABELS: Record<string, string> = {
+  "classification": "分類",
+  "detection": "検出",
+  "generation": "生成",
+  "segmentation": "セグメンテーション",
+  "regression": "回帰",
+  "anomaly-detection": "異常検知",
+  "translation": "翻訳",
+  "summarization": "要約",
+  "qa": "QA",
+  "forecasting": "予測",
+  "retrieval": "検索",
+  "embedding": "埋め込み",
+};
+
+export const MODALITY_TAG_LABELS: Record<string, string> = {
+  "image": "画像",
+  "text": "テキスト",
+  "audio": "音声",
+  "video": "動画",
+  "tabular": "表形式",
+  "3d": "3D",
+  "multimodal": "マルチモーダル",
+  "time-series": "時系列",
+};
+
+export const LEARNING_TAG_LABELS: Record<string, string> = {
+  "supervised": "教師あり",
+  "unsupervised": "教師なし",
+  "semi-supervised": "半教師あり",
+  "self-supervised": "自己教師",
+  "reinforcement": "強化学習",
 };
 
 export type Category = {
