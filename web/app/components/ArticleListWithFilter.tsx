@@ -5,6 +5,9 @@ import { useState } from "react";
 import type { Article, Category } from "@/app/data/dummy";
 import { TASK_TAG_LABELS, MODALITY_TAG_LABELS } from "@/app/data/dummy";
 import { useReadArticles } from "@/app/hooks/useReadArticles";
+import { useBookmarks } from "@/app/hooks/useBookmarks";
+import BookmarkButton from "@/app/components/BookmarkButton";
+
 
 type Source = "all" | "arxiv" | "huggingface" | "github";
 type SortKey = "date" | "likes";
@@ -37,7 +40,9 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
   const [subcategory, setSubcategory] = useState<string>("all");
   const [period, setPeriod] = useState<Period>("all");
   const [taskTag, setTaskTag] = useState<string>("all");
+  const [onlyBookmarks, setOnlyBookmarks] = useState(false);
   const { readIds, markAllAsRead } = useReadArticles();
+  const { bookmarkIds } = useBookmarks();
 
   const bySource = source === "all" ? articles : articles.filter((a) => a.source === source);
   const byPeriod = bySource.filter((a) => isWithinPeriod(a.publishedAt, period));
@@ -54,6 +59,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
   const activeTaskTag = availableTaskTags.includes(taskTag) ? taskTag : "all";
 
   const filtered = (activeTaskTag === "all" ? bySub : bySub.filter((a) => a.tags?.task.includes(activeTaskTag)))
+    .filter((a) => !onlyBookmarks || bookmarkIds.has(a.id))
     .slice()
     .sort((a, b) => {
       if (sort === "likes") return (b.likes_count ?? 0) - (a.likes_count ?? 0);
@@ -128,6 +134,12 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
           {unreadCount > 0 && (
             <span className="text-xs text-zinc-400">未読 {unreadCount}件</span>
           )}
+          <button
+            onClick={() => setOnlyBookmarks((v) => !v)}
+            className={`text-xs transition-colors ${onlyBookmarks ? "text-amber-500 hover:text-zinc-500" : "text-zinc-400 hover:text-amber-500"}`}
+          >
+            ★ {onlyBookmarks ? "ブックマークのみ" : "ブックマーク"}
+          </button>
           <button
             onClick={() => markAllAsRead(filtered.map((a) => a.id))}
             className="text-xs text-zinc-400 hover:text-zinc-700 transition-colors"
@@ -238,7 +250,10 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
                         </h3>
                         <p className={`text-xs leading-relaxed ${isRead ? "text-zinc-400" : "text-zinc-700"}`}>{article.summary}</p>
                       </div>
-                      <span className="text-zinc-300 text-lg shrink-0 group-hover:text-zinc-500 transition-colors">→</span>
+                      <div className="flex items-center gap-2 shrink-0">
+                        <BookmarkButton id={article.id} />
+                        <span className="text-zinc-300 text-lg group-hover:text-zinc-500 transition-colors">→</span>
+                      </div>
                     </div>
                   </Link>
                 </li>

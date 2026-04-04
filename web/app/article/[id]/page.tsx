@@ -6,6 +6,7 @@ import SearchBar from "@/app/components/SearchBar";
 import Logo from "@/app/components/Logo";
 import CopyUrlButton from "@/app/components/CopyUrlButton";
 import MarkAsRead from "@/app/components/MarkAsRead";
+import BookmarkButton from "@/app/components/BookmarkButton";
 import { TASK_TAG_LABELS, MODALITY_TAG_LABELS, LEARNING_TAG_LABELS } from "@/app/data/dummy";
 
 type Props = {
@@ -108,7 +109,10 @@ export default async function ArticlePage({ params }: Props) {
             </span>
             <span className="text-zinc-400 text-xs">{article.publishedAt}</span>
           </div>
-          <h1 className="text-xl font-semibold mb-3 text-zinc-900">{article.title}</h1>
+          <div className="flex items-start gap-3 mb-3">
+            <h1 className="text-xl font-semibold text-zinc-900 flex-1">{article.title}</h1>
+            <BookmarkButton id={article.id} />
+          </div>
           <AbstractSection
             abstract={article.abstract ?? article.summary}
           />
