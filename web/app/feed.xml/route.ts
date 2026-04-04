@@ -2,6 +2,15 @@ import { getArticles } from "@/lib/data";
 
 const BASE_URL = "https://mlinfo.vercel.app";
 
+function escapeXml(str: string): string {
+  return str
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&apos;");
+}
+
 export async function GET() {
   const articles = getArticles().slice(0, 50);
 
@@ -12,7 +21,7 @@ export async function GET() {
       <link href="${BASE_URL}/article/${encodeURIComponent(a.id)}" />
       <summary><![CDATA[${a.summary}]]></summary>
       <updated>${a.publishedAt}T00:00:00Z</updated>
-      <category term="${a.category}" />
+      <category term="${escapeXml(a.category)}" />
     </entry>`).join("");
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>

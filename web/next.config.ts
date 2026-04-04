@@ -11,6 +11,21 @@ const securityHeaders = [
   { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
   // DNS プリフェッチ無効化
   { key: "X-DNS-Prefetch-Control", value: "off" },
+  // HTTPS接続を強制（1年間ブラウザに記憶させる）
+  { key: "Strict-Transport-Security", value: "max-age=31536000; includeSubDomains" },
+  // 許可するリソースの読み込み元を制限（XSS対策）
+  {
+    key: "Content-Security-Policy",
+    value: [
+      "default-src 'self'",
+      "script-src 'self' 'unsafe-inline'",  // Next.js のインラインスクリプトに必要
+      "style-src 'self' 'unsafe-inline'",   // Tailwind のインラインスタイルに必要
+      "img-src 'self' data: https:",         // 外部画像（OGP等）を許可
+      "font-src 'self'",
+      "connect-src 'self'",
+      "frame-ancestors 'none'",             // iframe埋め込みを全拒否
+    ].join("; "),
+  },
 ];
 
 const nextConfig: NextConfig = {
