@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "MLinfo",
   description: "日々更新される機械学習技術をキャッチアップ",
   verification: {
-    google: "iYpxzue0-DzbYkeCdNsqyNEHCgHc0QTKh9L7A2NHC1I",
+    google: "WxNLf5mcDz9v4sGSz4qE7blaPyuOEEhMh4lh_p2EELY",
   },
 };
 
