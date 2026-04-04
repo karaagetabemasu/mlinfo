@@ -17,6 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "MLinfo",
   description: "日々更新される機械学習技術をキャッチアップ",
+  verification: {
+    google: "iYpxzue0-DzbYkeCdNsqyNEHCgHc0QTKh9L7A2NHC1I",
+  },
 };
 
 export default function RootLayout({
