@@ -17,12 +17,14 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 import requests
 import defusedxml.ElementTree as ET
+import anthropic
 
 # ─────────────────────────────────────────────
 # 設定
 # ─────────────────────────────────────────────
 
 OUTPUT_PATH = Path(__file__).parent.parent / "web" / "data" / "articles.json"
+USE_CASE_CACHE_PATH = Path(__file__).parent.parent / "web" / "data" / "use_case_cache.json"
 JST = timezone(timedelta(hours=9))
 
 ARXIV_MAX_RESULTS = 200
@@ -445,6 +447,84 @@ def fetch_github_trending() -> list[dict]:
 
 
 # ─────────────────────────────────────────────
+# use_case 生成（Claude API）
+# ─────────────────────────────────────────────
+
+USE_CASE_BATCH_SIZE = 20  # 1回のAPI呼び出しで処理する記事数
+
+
+def load_use_case_cache() -> dict[str, str]:
+    """キャッシュファイルからuse_caseを読み込む"""
+    if USE_CASE_CACHE_PATH.exists():
+        try:
+            return json.loads(USE_CASE_CACHE_PATH.read_text(encoding="utf-8"))
+        except Exception:
+            pass
+    return {}
+
+
+def save_use_case_cache(cache: dict[str, str]) -> None:
+    USE_CASE_CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    USE_CASE_CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def generate_use_cases(articles: list[dict], cache: dict[str, str]) -> dict[str, str]:
+    """
+    キャッシュにない記事についてClaudeでuse_caseを生成する。
+    バッチ処理でAPIコストを削減。
+    """
+    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if not api_key:
+        print("[Claude] ANTHROPIC_API_KEY が未設定のためuse_case生成をスキップ")
+        return cache
+
+    client = anthropic.Anthropic(api_key=api_key)
+    new_articles = [a for a in articles if a["id"] not in cache and a.get("abstract")]
+
+    if not new_articles:
+        print("[Claude] use_cacheキャッシュ: 新規記事なし、スキップ")
+        return cache
+
+    print(f"[Claude] {len(new_articles)} 件のuse_caseを生成します")
+
+    for i in range(0, len(new_articles), USE_CASE_BATCH_SIZE):
+        batch = new_articles[i:i + USE_CASE_BATCH_SIZE]
+        lines = []
+        for j, a in enumerate(batch):
+            text = (a.get("abstract") or a.get("summary", ""))[:500]
+            lines.append(f"{j+1}. タイトル: {a['title']}\n要約: {text}")
+
+        prompt = (
+            "以下の機械学習論文・リポジトリについて、それぞれが「どんな問題を解決するか」を"
+            "15文字以内の日本語で答えてください。\n"
+            "番号と答えのみを返してください。例: 1. 少ないデータでの分類精度改善\n\n"
+            + "\n\n".join(lines)
+        )
+
+        try:
+            message = client.messages.create(
+                model="claude-haiku-4-5-20251001",
+                max_tokens=512,
+                messages=[{"role": "user", "content": prompt}],
+            )
+            response_text = message.content[0].text
+            for line in response_text.strip().split("\n"):
+                m = re.match(r"^(\d+)\.\s*(.+)", line.strip())
+                if m:
+                    idx = int(m.group(1)) - 1
+                    if 0 <= idx < len(batch):
+                        cache[batch[idx]["id"]] = m.group(2).strip()
+        except Exception as e:
+            print(f"[Claude] バッチ {i//USE_CASE_BATCH_SIZE + 1} エラー: {e}")
+
+        time.sleep(1)
+
+    save_use_case_cache(cache)
+    print(f"[Claude] use_case生成完了、キャッシュ: {len(cache)} 件")
+    return cache
+
+
+# ─────────────────────────────────────────────
 # メイン
 # ─────────────────────────────────────────────
 
@@ -463,6 +543,12 @@ def main():
 
     all_articles = arxiv_articles + hf_articles + github_articles
     all_articles.sort(key=lambda a: a["publishedAt"], reverse=True)
+
+    # use_case生成（Claude API）
+    use_case_cache = load_use_case_cache()
+    use_case_cache = generate_use_cases(all_articles, use_case_cache)
+    for a in all_articles:
+        a["use_case"] = use_case_cache.get(a["id"], "")
 
     output = {
         "lastUpdated": datetime.now(JST).isoformat(),

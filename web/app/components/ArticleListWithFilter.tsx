@@ -248,6 +248,9 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
                         <h3 className={`font-semibold text-sm leading-snug mb-1 ${isRead ? "text-zinc-500" : "text-zinc-900"}`}>
                           {article.title}
                         </h3>
+                        {article.use_case && (
+                          <p className="text-xs text-blue-600 mb-1">→ {article.use_case}</p>
+                        )}
                         <p className={`text-xs leading-relaxed ${isRead ? "text-zinc-400" : "text-zinc-700"}`}>{article.summary}</p>
                       </div>
                       <div className="flex items-center gap-2 shrink-0">

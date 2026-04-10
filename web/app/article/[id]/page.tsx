@@ -113,6 +113,12 @@ export default async function ArticlePage({ params }: Props) {
             <h1 className="text-xl font-semibold text-zinc-900 flex-1">{article.title}</h1>
             <BookmarkButton id={article.id} />
           </div>
+          {article.use_case && (
+            <div className="inline-flex items-center gap-1.5 bg-blue-50 border border-blue-100 px-3 py-1.5 mb-3">
+              <span className="text-xs text-blue-400">解決する問題</span>
+              <span className="text-xs font-medium text-blue-700">{article.use_case}</span>
+            </div>
+          )}
           <AbstractSection
             abstract={article.abstract ?? article.summary}
           />

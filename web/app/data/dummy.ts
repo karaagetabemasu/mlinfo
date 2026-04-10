@@ -18,6 +18,7 @@ export type Article = {
   codeUrl?: string;
   likes_count?: number;
   tags?: ArticleTags;
+  use_case?: string;
 };
 
 export const TASK_TAG_LABELS: Record<string, string> = {

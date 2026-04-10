@@ -13,6 +13,7 @@ jobs:
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
     steps:
       - name: Checkout
@@ -33,6 +34,6 @@ jobs:
         run: |
           git config user.name "MLinfo Bot"
           git config user.email "bot@mlinfo.app"
-          git add web/data/articles.json
+          git add web/data/articles.json web/data/use_case_cache.json || true
           git diff --staged --quiet || git commit -m "chore: update articles $(TZ=Asia/Tokyo date +'%Y-%m-%d %H:%M JST')"
           git push
