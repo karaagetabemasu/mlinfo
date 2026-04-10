@@ -17,7 +17,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 import requests
 import defusedxml.ElementTree as ET
-import anthropic
+from google import genai
 
 # ─────────────────────────────────────────────
 # 設定
@@ -470,22 +470,22 @@ def save_use_case_cache(cache: dict[str, str]) -> None:
 
 def generate_use_cases(articles: list[dict], cache: dict[str, str]) -> dict[str, str]:
     """
-    キャッシュにない記事についてClaudeでuse_caseを生成する。
-    バッチ処理でAPIコストを削減。
+    キャッシュにない記事についてGeminiでuse_caseを生成する。
+    バッチ処理でAPIリクエスト数を削減。
     """
-    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    api_key = os.environ.get("GEMINI_API_KEY", "")
     if not api_key:
-        print("[Claude] ANTHROPIC_API_KEY が未設定のためuse_case生成をスキップ")
+        print("[Gemini] GEMINI_API_KEY が未設定のためuse_case生成をスキップ")
         return cache
 
-    client = anthropic.Anthropic(api_key=api_key)
+    client = genai.Client(api_key=api_key)
     new_articles = [a for a in articles if a["id"] not in cache and a.get("abstract")]
 
     if not new_articles:
-        print("[Claude] use_cacheキャッシュ: 新規記事なし、スキップ")
+        print("[Gemini] use_caseキャッシュ: 新規記事なし、スキップ")
         return cache
 
-    print(f"[Claude] {len(new_articles)} 件のuse_caseを生成します")
+    print(f"[Gemini] {len(new_articles)} 件のuse_caseを生成します")
 
     for i in range(0, len(new_articles), USE_CASE_BATCH_SIZE):
         batch = new_articles[i:i + USE_CASE_BATCH_SIZE]
@@ -502,12 +502,11 @@ def generate_use_cases(articles: list[dict], cache: dict[str, str]) -> dict[str,
         )
 
         try:
-            message = client.messages.create(
-                model="claude-haiku-4-5-20251001",
-                max_tokens=512,
-                messages=[{"role": "user", "content": prompt}],
+            response = client.models.generate_content(
+                model="gemini-2.0-flash",
+                contents=prompt,
             )
-            response_text = message.content[0].text
+            response_text = response.text
             for line in response_text.strip().split("\n"):
                 m = re.match(r"^(\d+)\.\s*(.+)", line.strip())
                 if m:
@@ -515,12 +514,12 @@ def generate_use_cases(articles: list[dict], cache: dict[str, str]) -> dict[str,
                     if 0 <= idx < len(batch):
                         cache[batch[idx]["id"]] = m.group(2).strip()
         except Exception as e:
-            print(f"[Claude] バッチ {i//USE_CASE_BATCH_SIZE + 1} エラー: {e}")
+            print(f"[Gemini] バッチ {i//USE_CASE_BATCH_SIZE + 1} エラー: {e}")
 
         time.sleep(1)
 
     save_use_case_cache(cache)
-    print(f"[Claude] use_case生成完了、キャッシュ: {len(cache)} 件")
+    print(f"[Gemini] use_case生成完了、キャッシュ: {len(cache)} 件")
     return cache
 
 
