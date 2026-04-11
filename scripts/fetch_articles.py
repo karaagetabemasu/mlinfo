@@ -17,7 +17,7 @@ from datetime import datetime, timezone, timedelta
 from pathlib import Path
 import requests
 import defusedxml.ElementTree as ET
-from google import genai
+from groq import Groq
 
 # ─────────────────────────────────────────────
 # 設定
@@ -470,22 +470,28 @@ def save_use_case_cache(cache: dict[str, str]) -> None:
 
 def generate_use_cases(articles: list[dict], cache: dict[str, str]) -> dict[str, str]:
     """
-    キャッシュにない記事についてGeminiでuse_caseを生成する。
-    バッチ処理でAPIリクエスト数を削減。
+    キャッシュにない記事についてGroqでuse_caseを生成する。
+    バッチ処理でAPIリクエスト数を削減。初回は件数が多いので途中保存あり。
     """
-    api_key = os.environ.get("GEMINI_API_KEY", "")
+    api_key = os.environ.get("GROQ_API_KEY", "")
     if not api_key:
-        print("[Gemini] GEMINI_API_KEY が未設定のためuse_case生成をスキップ")
+        print("[Groq] GROQ_API_KEY が未設定のためuse_case生成をスキップ")
         return cache
 
-    client = genai.Client(api_key=api_key)
+    client = Groq(api_key=api_key)
     new_articles = [a for a in articles if a["id"] not in cache and a.get("abstract")]
 
     if not new_articles:
-        print("[Gemini] use_caseキャッシュ: 新規記事なし、スキップ")
+        print("[Groq] use_caseキャッシュ: 新規記事なし、スキップ")
         return cache
 
-    print(f"[Gemini] {len(new_articles)} 件のuse_caseを生成します")
+    # 1日の上限を考慮して初回でも300件まで処理（翌日以降は新着のみなので問題なし）
+    MAX_PER_RUN = 300
+    if len(new_articles) > MAX_PER_RUN:
+        print(f"[Groq] {len(new_articles)} 件中、本日は {MAX_PER_RUN} 件を処理します（残りは翌日以降）")
+        new_articles = new_articles[:MAX_PER_RUN]
+    else:
+        print(f"[Groq] {len(new_articles)} 件のuse_caseを生成します")
 
     for i in range(0, len(new_articles), USE_CASE_BATCH_SIZE):
         batch = new_articles[i:i + USE_CASE_BATCH_SIZE]
@@ -502,11 +508,12 @@ def generate_use_cases(articles: list[dict], cache: dict[str, str]) -> dict[str,
         )
 
         try:
-            response = client.models.generate_content(
-                model="gemini-2.0-flash",
-                contents=prompt,
+            response = client.chat.completions.create(
+                model="llama-3.1-8b-instant",
+                messages=[{"role": "user", "content": prompt}],
+                max_tokens=512,
             )
-            response_text = response.text
+            response_text = response.choices[0].message.content
             for line in response_text.strip().split("\n"):
                 m = re.match(r"^(\d+)\.\s*(.+)", line.strip())
                 if m:
@@ -514,12 +521,17 @@ def generate_use_cases(articles: list[dict], cache: dict[str, str]) -> dict[str,
                     if 0 <= idx < len(batch):
                         cache[batch[idx]["id"]] = m.group(2).strip()
         except Exception as e:
-            print(f"[Gemini] バッチ {i//USE_CASE_BATCH_SIZE + 1} エラー: {e}")
+            print(f"[Groq] バッチ {i//USE_CASE_BATCH_SIZE + 1} エラー: {e}")
 
-        time.sleep(1)
+        # レート制限対策（30 RPM）
+        time.sleep(2)
+
+        # 50件ごとに途中保存
+        if (i + USE_CASE_BATCH_SIZE) % 50 == 0:
+            save_use_case_cache(cache)
 
     save_use_case_cache(cache)
-    print(f"[Gemini] use_case生成完了、キャッシュ: {len(cache)} 件")
+    print(f"[Groq] use_case生成完了、キャッシュ: {len(cache)} 件")
     return cache
 
 
