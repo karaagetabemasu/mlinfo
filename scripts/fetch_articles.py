@@ -540,10 +540,21 @@ def main():
     # GitHub Trending
     github_articles = fetch_github_trending()
 
+    # arXivが極端に少ない場合は前回データを保持して中断
+    if OUTPUT_PATH.exists():
+        try:
+            prev = json.loads(OUTPUT_PATH.read_text(encoding="utf-8"))
+            prev_arxiv_count = sum(1 for a in prev["articles"] if a["source"] == "arxiv")
+            if prev_arxiv_count > 100 and len(arxiv_articles) < prev_arxiv_count * 0.5:
+                print(f"[安全チェック] arXiv取得数が激減 ({prev_arxiv_count}件 → {len(arxiv_articles)}件)。前回データを保持して終了します。")
+                return
+        except Exception:
+            pass
+
     all_articles = arxiv_articles + hf_articles + github_articles
     all_articles.sort(key=lambda a: a["publishedAt"], reverse=True)
 
-    # use_case生成（Claude API）
+    # use_case生成（Gemini API）
     use_case_cache = load_use_case_cache()
     use_case_cache = generate_use_cases(all_articles, use_case_cache)
     for a in all_articles:
