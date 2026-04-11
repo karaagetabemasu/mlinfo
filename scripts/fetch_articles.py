@@ -230,12 +230,19 @@ def fetch_arxiv() -> list[dict]:
             f"&sortBy=submittedDate&sortOrder=descending"
             f"&max_results={ARXIV_MAX_RESULTS}"
         )
-        try:
-            resp = requests.get(url, timeout=(10, 20))
-            resp.raise_for_status()
-        except Exception as e:
-            print(f"[arXiv] {arxiv_cat} fetch error: {e}")
-            time.sleep(1)
+        # タイムアウト時は1回リトライする
+        for attempt in range(2):
+            try:
+                resp = requests.get(url, timeout=(15, 60))
+                resp.raise_for_status()
+                break
+            except Exception as e:
+                print(f"[arXiv] {arxiv_cat} fetch error (attempt {attempt+1}): {e}")
+                if attempt == 0:
+                    time.sleep(5)
+                else:
+                    resp = None
+        if resp is None:
             continue
 
         root = ET.fromstring(resp.text)
