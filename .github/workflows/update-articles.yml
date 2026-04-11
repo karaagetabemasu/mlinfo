@@ -36,4 +36,5 @@ jobs:
           git config user.email "bot@mlinfo.app"
           git add web/data/articles.json web/data/use_case_cache.json || true
           git diff --staged --quiet || git commit -m "chore: update articles $(TZ=Asia/Tokyo date +'%Y-%m-%d %H:%M JST')"
+          git pull --rebase origin main
           git push
