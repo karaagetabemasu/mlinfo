@@ -10,10 +10,15 @@ export default function Home() {
   const totalArticles = articles.length || categories.flatMap((c) => c.subcategories).reduce((sum, s) => sum + s.articleCount, 0);
   const totalCategories = categories.length;
 
-  const trending = articles
-    .filter((a) => (a.likes_count ?? 0) > 0)
+  const trendingPapers = articles
+    .filter((a) => a.source !== "github" && (a.likes_count ?? 0) > 0)
     .sort((a, b) => (b.likes_count ?? 0) - (a.likes_count ?? 0))
     .slice(0, 5);
+
+  const trendingRepos = articles
+    .filter((a) => a.source === "github")
+    .sort((a, b) => (b.likes_count ?? 0) - (a.likes_count ?? 0))
+    .slice(0, 3);
 
   return (
     <main className="min-h-screen bg-zinc-50 text-zinc-900">
@@ -32,12 +37,12 @@ export default function Home() {
 
       <div className="px-6 py-8 max-w-6xl mx-auto">
 
-        {/* 注目ランキング */}
-        {trending.length > 0 && (
-          <div className="mb-10">
-            <h2 className="text-xs tracking-widest text-zinc-400 uppercase mb-4">Trending</h2>
+        {/* 注目論文ランキング */}
+        {trendingPapers.length > 0 && (
+          <div className="mb-8">
+            <h2 className="text-xs tracking-widest text-zinc-400 uppercase mb-4">注目論文</h2>
             <ol className="space-y-2">
-              {trending.map((article, i) => (
+              {trendingPapers.map((article, i) => (
                 <li key={article.id}>
                   <Link
                     href={`/article/${encodeURIComponent(article.id)}`}
@@ -47,13 +52,41 @@ export default function Home() {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-center gap-2 mb-1">
                         <span className={`text-xs px-1.5 py-0.5 rounded font-mono ${
-                          article.source === "arxiv" ? "bg-violet-100 text-violet-700"
-                          : article.source === "huggingface" ? "bg-amber-100 text-amber-700"
-                          : "bg-zinc-100 text-zinc-600"
+                          article.source === "huggingface" ? "bg-amber-100 text-amber-700" : "bg-violet-100 text-violet-700"
                         }`}>
                           {article.source}
                         </span>
-                        <span className="text-xs text-zinc-400">♥ {article.likes_count}</span>
+                        <span className="text-xs text-zinc-400">▲ {article.likes_count}</span>
+                      </div>
+                      <p className="text-sm font-medium text-zinc-900 truncate">{article.title}</p>
+                      {article.use_case && (
+                        <p className="text-xs text-blue-600 truncate mt-0.5">→ {article.use_case}</p>
+                      )}
+                    </div>
+                    <span className="text-zinc-300 group-hover:text-zinc-500 transition-colors shrink-0">→</span>
+                  </Link>
+                </li>
+              ))}
+            </ol>
+          </div>
+        )}
+
+        {/* 人気リポジトリ */}
+        {trendingRepos.length > 0 && (
+          <div className="mb-10">
+            <h2 className="text-xs tracking-widest text-zinc-400 uppercase mb-4">人気リポジトリ</h2>
+            <ol className="space-y-2">
+              {trendingRepos.map((article, i) => (
+                <li key={article.id}>
+                  <Link
+                    href={`/article/${encodeURIComponent(article.id)}`}
+                    className="flex items-start gap-4 bg-white border border-zinc-200 px-4 py-3 hover:bg-zinc-50 hover:border-zinc-300 transition-all group"
+                  >
+                    <span className="text-zinc-300 font-mono text-sm w-4 shrink-0">{i + 1}</span>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className="text-xs px-1.5 py-0.5 rounded font-mono bg-zinc-100 text-zinc-600">github</span>
+                        <span className="text-xs text-zinc-400">★ {article.likes_count}</span>
                       </div>
                       <p className="text-sm font-medium text-zinc-900 truncate">{article.title}</p>
                     </div>

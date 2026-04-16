@@ -251,7 +251,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
                         {article.use_case && (
                           <p className="text-xs text-blue-600 mb-1">→ {article.use_case}</p>
                         )}
-                        <p className={`text-xs leading-relaxed ${isRead ? "text-zinc-400" : "text-zinc-700"}`}>{article.summary}</p>
+                        <p className={`text-xs leading-relaxed ${isRead ? "text-zinc-400" : "text-zinc-700"}`}>{article.summary_ja || article.summary}</p>
                       </div>
                       <div className="flex items-center gap-2 shrink-0">
                         <BookmarkButton id={article.id} />

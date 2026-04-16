@@ -124,6 +124,7 @@ export default async function ArticlePage({ params }: Props) {
           )}
           <AbstractSection
             abstract={article.abstract ?? article.summary}
+            summary_ja={article.summary_ja}
           />
 
           {/* Tags (FR-01) */}

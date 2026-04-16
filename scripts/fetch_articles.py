@@ -475,9 +475,10 @@ def save_use_case_cache(cache: dict[str, str]) -> None:
     USE_CASE_CACHE_PATH.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def generate_use_cases(articles: list[dict], cache: dict[str, str]) -> dict[str, str]:
+def generate_use_cases(articles: list[dict], cache: dict[str, dict]) -> dict[str, dict]:
     """
-    キャッシュにない記事についてGroqでuse_caseを生成する。
+    キャッシュにない記事についてGroqでuse_caseとsummary_jaを生成する。
+    キャッシュ形式: { article_id: { "use_case": str, "summary_ja": str } }
     バッチ処理でAPIリクエスト数を削減。初回は件数が多いので途中保存あり。
     """
     api_key = os.environ.get("GROQ_API_KEY", "")
@@ -486,19 +487,24 @@ def generate_use_cases(articles: list[dict], cache: dict[str, str]) -> dict[str,
         return cache
 
     client = Groq(api_key=api_key)
-    new_articles = [a for a in articles if a["id"] not in cache and a.get("abstract")]
+    # キャッシュにない or summary_jaが未生成の記事を対象とする
+    new_articles = [
+        a for a in articles
+        if a.get("abstract") and (
+            a["id"] not in cache or not cache[a["id"]].get("summary_ja")
+        )
+    ]
 
     if not new_articles:
-        print("[Groq] use_caseキャッシュ: 新規記事なし、スキップ")
+        print("[Groq] キャッシュ: 新規記事なし、スキップ")
         return cache
 
-    # 1日の上限を考慮して初回でも300件まで処理（翌日以降は新着のみなので問題なし）
     MAX_PER_RUN = 300
     if len(new_articles) > MAX_PER_RUN:
         print(f"[Groq] {len(new_articles)} 件中、本日は {MAX_PER_RUN} 件を処理します（残りは翌日以降）")
         new_articles = new_articles[:MAX_PER_RUN]
     else:
-        print(f"[Groq] {len(new_articles)} 件のuse_caseを生成します")
+        print(f"[Groq] {len(new_articles)} 件を処理します")
 
     for i in range(0, len(new_articles), USE_CASE_BATCH_SIZE):
         batch = new_articles[i:i + USE_CASE_BATCH_SIZE]
@@ -508,9 +514,11 @@ def generate_use_cases(articles: list[dict], cache: dict[str, str]) -> dict[str,
             lines.append(f"{j+1}. タイトル: {a['title']}\n要約: {text}")
 
         prompt = (
-            "以下の機械学習論文・リポジトリについて、それぞれが「どんな問題を解決するか」を"
-            "15文字以内の日本語で答えてください。\n"
-            "番号と答えのみを返してください。例: 1. 少ないデータでの分類精度改善\n\n"
+            "以下の機械学習論文・リポジトリについて、各記事ごとに2つの情報を日本語で生成してください。\n"
+            "1) use_case: 「どんな問題を解決するか」を15文字以内で\n"
+            "2) summary_ja: 内容を2〜3文の自然な日本語で要約\n\n"
+            "以下の形式で番号順に返してください（他の文言は不要）:\n"
+            "1. use_case: XXX\n1. summary_ja: XXX\n2. use_case: ...\n\n"
             + "\n\n".join(lines)
         )
 
@@ -518,15 +526,22 @@ def generate_use_cases(articles: list[dict], cache: dict[str, str]) -> dict[str,
             response = client.chat.completions.create(
                 model="llama-3.1-8b-instant",
                 messages=[{"role": "user", "content": prompt}],
-                max_tokens=512,
+                max_tokens=1024,
             )
             response_text = response.choices[0].message.content
             for line in response_text.strip().split("\n"):
-                m = re.match(r"^(\d+)\.\s*(.+)", line.strip())
-                if m:
-                    idx = int(m.group(1)) - 1
+                m_uc = re.match(r"^(\d+)\.\s*use_case:\s*(.+)", line.strip())
+                m_sj = re.match(r"^(\d+)\.\s*summary_ja:\s*(.+)", line.strip())
+                if m_uc:
+                    idx = int(m_uc.group(1)) - 1
                     if 0 <= idx < len(batch):
-                        cache[batch[idx]["id"]] = m.group(2).strip()
+                        aid = batch[idx]["id"]
+                        cache.setdefault(aid, {})["use_case"] = m_uc.group(2).strip()
+                elif m_sj:
+                    idx = int(m_sj.group(1)) - 1
+                    if 0 <= idx < len(batch):
+                        aid = batch[idx]["id"]
+                        cache.setdefault(aid, {})["summary_ja"] = m_sj.group(2).strip()
         except Exception as e:
             print(f"[Groq] バッチ {i//USE_CASE_BATCH_SIZE + 1} エラー: {e}")
 
@@ -538,7 +553,7 @@ def generate_use_cases(articles: list[dict], cache: dict[str, str]) -> dict[str,
             save_use_case_cache(cache)
 
     save_use_case_cache(cache)
-    print(f"[Groq] use_case生成完了、キャッシュ: {len(cache)} 件")
+    print(f"[Groq] 生成完了、キャッシュ: {len(cache)} 件")
     return cache
 
 
@@ -573,11 +588,21 @@ def main():
     all_articles = arxiv_articles + hf_articles + github_articles
     all_articles.sort(key=lambda a: a["publishedAt"], reverse=True)
 
-    # use_case生成（Gemini API）
+    # use_case・summary_ja生成（Groq API）
     use_case_cache = load_use_case_cache()
     use_case_cache = generate_use_cases(all_articles, use_case_cache)
     for a in all_articles:
-        a["use_case"] = use_case_cache.get(a["id"], "")
+        entry = use_case_cache.get(a["id"])
+        if isinstance(entry, dict):
+            a["use_case"] = entry.get("use_case", "")
+            a["summary_ja"] = entry.get("summary_ja", "")
+        elif isinstance(entry, str):
+            # 旧形式（文字列のみ）との後方互換
+            a["use_case"] = entry
+            a["summary_ja"] = ""
+        else:
+            a["use_case"] = ""
+            a["summary_ja"] = ""
 
     output = {
         "lastUpdated": datetime.now(JST).isoformat(),
