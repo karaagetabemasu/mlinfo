@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
+import Script from "next/script";
 import CookieBanner from "@/app/components/CookieBanner";
 import "./globals.css";
 
@@ -33,6 +34,13 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-BHPR7WHHH0" strategy="afterInteractive" />
+        <Script id="ga4-init" strategy="afterInteractive">{`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-BHPR7WHHH0');
+        `}</Script>
         {children}
         <footer className="border-t border-zinc-200 bg-white px-8 py-4 mt-auto">
           <div className="max-w-6xl mx-auto flex items-center justify-between">

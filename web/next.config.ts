@@ -18,11 +18,11 @@ const securityHeaders = [
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      "script-src 'self' 'unsafe-inline'",  // Next.js のインラインスクリプトに必要
+      "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
       "style-src 'self' 'unsafe-inline'",   // Tailwind のインラインスタイルに必要
       "img-src 'self' data: https:",         // 外部画像（OGP等）を許可
       "font-src 'self'",
-      "connect-src 'self'",
+      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com",
       "frame-ancestors 'none'",             // iframe埋め込みを全拒否
     ].join("; "),
   },
