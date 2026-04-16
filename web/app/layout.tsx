@@ -16,10 +16,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MLinfo",
-  description: "日々更新される機械学習技術をキャッチアップ",
+  title: {
+    default: "MLinfo | 機械学習・AI論文まとめ",
+    template: "%s | MLinfo",
+  },
+  description: "arXiv・GitHub・HuggingFaceから機械学習・AI論文を毎日収集。日本語でわかりやすく解説。機械学習エンジニア・データサイエンティスト向け。",
   verification: {
     google: "WxNLf5mcDz9v4sGSz4qE7blaPyuOEEhMh4lh_p2EELY",
+  },
+  openGraph: {
+    siteName: "MLinfo",
+    locale: "ja_JP",
+    type: "website",
   },
 };
 
@@ -30,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="ja"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">

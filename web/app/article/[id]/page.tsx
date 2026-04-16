@@ -17,12 +17,15 @@ export async function generateMetadata({ params }: Props) {
   const { id } = await params;
   const article = getArticles().find((a) => a.id === id);
   if (!article) return {};
+  const description = article.use_case
+    ? `${article.use_case} — ${article.summary.slice(0, 100)}...`
+    : article.summary.slice(0, 120);
   return {
-    title: `${article.title} | MLinfo`,
-    description: article.summary,
+    title: article.title,
+    description,
     openGraph: {
       title: article.title,
-      description: article.summary,
+      description,
       type: "article",
       url: `https://mlinfo.vercel.app/article/${id}`,
       siteName: "MLinfo",
@@ -30,7 +33,7 @@ export async function generateMetadata({ params }: Props) {
     twitter: {
       card: "summary",
       title: article.title,
-      description: article.summary,
+      description,
     },
   };
 }

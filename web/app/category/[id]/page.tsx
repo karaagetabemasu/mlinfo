@@ -8,6 +8,24 @@ type Props = {
   params: Promise<{ id: string }>;
 };
 
+export async function generateMetadata({ params }: Props) {
+  const { id } = await params;
+  const category = getCategories().find((c) => c.id === id);
+  if (!category) return {};
+  const count = getArticles().filter((a) => a.category === id).length;
+  const description = `${category.name}に関する機械学習・AI論文を${count}件収録。arXiv・GitHub・HuggingFaceから毎日更新。`;
+  return {
+    title: category.name,
+    description,
+    openGraph: {
+      title: `${category.name} | MLinfo`,
+      description,
+      type: "website",
+      url: `https://mlinfo.vercel.app/category/${id}`,
+    },
+  };
+}
+
 export default async function CategoryPage({ params }: Props) {
   const { id } = await params;
   const categories = getCategories();
