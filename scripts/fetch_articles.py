@@ -487,6 +487,11 @@ def generate_use_cases(articles: list[dict], cache: dict[str, dict]) -> dict[str
         return cache
 
     client = Groq(api_key=api_key)
+    # 旧形式（文字列）を新形式（dict）に変換
+    for k, v in list(cache.items()):
+        if isinstance(v, str):
+            cache[k] = {"use_case": v, "summary_ja": ""}
+
     # キャッシュにない or summary_jaが未生成の記事を対象とする
     new_articles = [
         a for a in articles
