@@ -8,6 +8,10 @@ type Props = {
   params: Promise<{ id: string }>;
 };
 
+export async function generateStaticParams() {
+  return getCategories().map((c) => ({ id: c.id }));
+}
+
 export async function generateMetadata({ params }: Props) {
   const { id } = await params;
   const category = getCategories().find((c) => c.id === id);

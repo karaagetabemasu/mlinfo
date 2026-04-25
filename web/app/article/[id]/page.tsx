@@ -13,18 +13,25 @@ type Props = {
   params: Promise<{ id: string }>;
 };
 
+export async function generateStaticParams() {
+  return getArticles().map((a) => ({ id: a.id }));
+}
+
 export async function generateMetadata({ params }: Props) {
   const { id } = await params;
   const article = getArticles().find((a) => a.id === id);
   if (!article) return {};
   const description = article.use_case
-    ? `${article.use_case} — ${article.summary.slice(0, 100)}...`
-    : article.summary.slice(0, 120);
+    ? `${article.use_case} — ${(article.summary_ja || article.summary).slice(0, 100)}...`
+    : (article.summary_ja || article.summary).slice(0, 120);
+  const title = article.use_case
+    ? `${article.title}【${article.use_case}】`
+    : article.title;
   return {
-    title: article.title,
+    title,
     description,
     openGraph: {
-      title: article.title,
+      title,
       description,
       type: "article",
       url: `https://mlinfo.vercel.app/article/${id}`,
@@ -32,7 +39,7 @@ export async function generateMetadata({ params }: Props) {
     },
     twitter: {
       card: "summary",
-      title: article.title,
+      title,
       description,
     },
   };
