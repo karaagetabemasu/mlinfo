@@ -20,6 +20,7 @@ export type Article = {
   tags?: ArticleTags;
   use_case?: string;
   summary_ja?: string;
+  authors?: string[];
 };
 
 export const TASK_TAG_LABELS: Record<string, string> = {

@@ -27,15 +27,27 @@ export async function generateMetadata({ params }: Props) {
   const title = article.use_case
     ? `${article.title}【${article.use_case}】`
     : article.title;
+  const arxivId = article.source === "arxiv" ? id.replace("arxiv-", "") : null;
+  const keywords = [
+    ...(article.authors ?? []),
+    article.category,
+    article.subcategory,
+    "機械学習",
+    "arxiv",
+    ...(arxivId ? [arxivId] : []),
+  ].filter(Boolean);
+
   return {
     title,
     description,
+    keywords,
     openGraph: {
       title,
       description,
       type: "article",
       url: `https://mlinfo.vercel.app/article/${id}`,
       siteName: "MLinfo",
+      ...(article.authors?.length ? { authors: article.authors } : {}),
     },
     twitter: {
       card: "summary",
@@ -118,11 +130,17 @@ export default async function ArticlePage({ params }: Props) {
               {article.source}
             </span>
             <span className="text-zinc-400 text-xs">{article.publishedAt}</span>
+            {article.source === "arxiv" && (
+              <span className="text-zinc-400 text-xs font-mono">arXiv:{article.id.replace("arxiv-", "")}</span>
+            )}
           </div>
           <div className="flex items-start gap-3 mb-3">
             <h1 className="text-xl font-semibold text-zinc-900 flex-1">{article.title}</h1>
             <BookmarkButton id={article.id} />
           </div>
+          {article.authors && article.authors.length > 0 && (
+            <p className="text-xs text-zinc-400 mb-3">{article.authors.join(", ")}</p>
+          )}
           {article.use_case && (
             <div className="inline-flex items-center gap-1.5 bg-blue-50 border border-blue-100 px-3 py-1.5 mb-3">
               <span className="text-xs text-blue-400">解決する問題</span>

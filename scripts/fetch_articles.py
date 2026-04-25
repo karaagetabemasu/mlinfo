@@ -263,6 +263,11 @@ def fetch_arxiv() -> list[dict]:
             published_raw = entry.findtext(f"{{{ARXIV_NS}}}published", "")
             published = published_raw[:10] if published_raw else ""
 
+            authors = [
+                (a.findtext(f"{{{ARXIV_NS}}}name") or "").strip()
+                for a in entry.findall(f"{{{ARXIV_NS}}}author")
+            ][:5]  # 最大5名まで
+
             category, subcategory = classify(title + " " + abstract, default_cat)
             tags = extract_tags(title + " " + abstract)
             code_url = extract_github_url(abstract)
@@ -281,6 +286,7 @@ def fetch_arxiv() -> list[dict]:
                 "codeUrl": code_url if code_url else None,
                 "likes_count": 0,
                 "tags": tags,
+                "authors": authors,
             })
 
         print(f"[arXiv] {arxiv_cat}: {len(articles)} articles so far")

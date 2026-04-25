@@ -22,7 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${BASE_URL}/article/${encodeURIComponent(a.id)}`,
     lastModified: a.publishedAt,
     priority: 0.6,
-    changeFrequency: "never",
+    changeFrequency: "weekly",
   }));
 
   return [...staticPages, ...categoryPages, ...articlePages];
