@@ -5,6 +5,7 @@ import AbstractSection from "@/app/components/AbstractSection";
 import SearchBar from "@/app/components/SearchBar";
 import Logo from "@/app/components/Logo";
 import CopyUrlButton from "@/app/components/CopyUrlButton";
+import CopyPromptButton from "@/app/components/CopyPromptButton";
 import MarkAsRead from "@/app/components/MarkAsRead";
 import BookmarkButton from "@/app/components/BookmarkButton";
 import { TASK_TAG_LABELS, MODALITY_TAG_LABELS, LEARNING_TAG_LABELS } from "@/app/data/dummy";
@@ -57,32 +58,6 @@ export async function generateMetadata({ params }: Props) {
   };
 }
 
-const DUMMY_CODE = `import torch
-import torch.nn as nn
-
-class MultiHeadAttention(nn.Module):
-    def __init__(self, d_model: int, num_heads: int):
-        super().__init__()
-        self.num_heads = num_heads
-        self.d_k = d_model // num_heads
-
-        self.W_q = nn.Linear(d_model, d_model)
-        self.W_k = nn.Linear(d_model, d_model)
-        self.W_v = nn.Linear(d_model, d_model)
-        self.W_o = nn.Linear(d_model, d_model)
-
-    def forward(self, x: torch.Tensor) -> torch.Tensor:
-        B, T, C = x.shape
-        q = self.W_q(x).view(B, T, self.num_heads, self.d_k).transpose(1, 2)
-        k = self.W_k(x).view(B, T, self.num_heads, self.d_k).transpose(1, 2)
-        v = self.W_v(x).view(B, T, self.num_heads, self.d_k).transpose(1, 2)
-
-        attn = (q @ k.transpose(-2, -1)) / (self.d_k ** 0.5)
-        attn = attn.softmax(dim=-1)
-
-        out = (attn @ v).transpose(1, 2).contiguous().view(B, T, C)
-        return self.W_o(out)
-`;
 
 export default async function ArticlePage({ params }: Props) {
   const { id } = await params;
@@ -91,10 +66,23 @@ export default async function ArticlePage({ params }: Props) {
 
   const category = getCategories().find((c) => c.id === article.category);
 
-  // Claude Codeに渡すプロンプト
-  const claudePrompt = encodeURIComponent(
-    `以下のコードをベースに実装を行いたい。\n\n# 論文・記事\n${article.title}\n\n# 概要\n${article.summary}\n\n# コード\n\`\`\`python\n${DUMMY_CODE}\`\`\``
-  );
+  const codeRef = article.source === "github"
+    ? article.url
+    : article.codeUrl ?? null;
+
+  const implementPrompt = [
+    `# 論文・記事`,
+    article.title,
+    ``,
+    `# 解決する問題`,
+    article.use_case || article.summary_ja || article.summary,
+    ``,
+    `# 概要`,
+    article.summary_ja || article.summary,
+    ...(codeRef ? [``, `# 参考コード`, codeRef] : []),
+    ``,
+    `上記の論文・記事の手法を実装してください。`,
+  ].join("\n");
 
   return (
     <main className="min-h-screen bg-zinc-50 text-zinc-900">
@@ -200,25 +188,18 @@ export default async function ArticlePage({ params }: Props) {
             </span>
           )}
           <CopyUrlButton />
+          <CopyPromptButton prompt={implementPrompt} />
+          {codeRef && (
+            <a
+              href={codeRef.replace("github.com", "github.dev")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs border border-zinc-300 px-4 py-2 text-zinc-600 hover:border-zinc-500 hover:text-zinc-900 transition-colors"
+            >
+              github.dev で開く →
+            </a>
+          )}
         </div>
-
-        {/* Source code */}
-        {article.hasCode && (
-          <div>
-            <div className="flex items-center justify-between mb-3">
-              <h2 className="text-xs tracking-widest text-zinc-400 uppercase">Source Code</h2>
-              <a
-                href={`claude://open?prompt=${claudePrompt}`}
-                className="text-xs bg-white border border-zinc-300 px-4 py-2 text-zinc-600 hover:border-zinc-500 hover:text-zinc-900 transition-all"
-              >
-                Claude Code で実装する →
-              </a>
-            </div>
-            <pre className="bg-zinc-100 border border-zinc-200 p-6 overflow-x-auto text-xs leading-relaxed text-zinc-700 font-mono">
-              <code>{DUMMY_CODE}</code>
-            </pre>
-          </div>
-        )}
       </div>
     </main>
   );
