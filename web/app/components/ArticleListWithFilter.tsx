@@ -1,17 +1,21 @@
 "use client";
 
-import Link from "next/link";
 import { useState } from "react";
 import type { Article, Category } from "@/app/data/dummy";
-import { TASK_TAG_LABELS, MODALITY_TAG_LABELS } from "@/app/data/dummy";
+import { TASK_TAG_LABELS } from "@/app/data/dummy";
 import { useReadArticles } from "@/app/hooks/useReadArticles";
 import { useBookmarks } from "@/app/hooks/useBookmarks";
-import BookmarkButton from "@/app/components/BookmarkButton";
+import ArticleCard from "@/app/components/ArticleCard";
+import { estimateCost, estimateDifficulty, getImplementationStatus } from "@/lib/articleInsights";
+import { trackEvent } from "@/lib/analytics";
 
 
 type Source = "all" | "arxiv" | "huggingface" | "github";
 type SortKey = "date" | "likes";
 type Period = "all" | "today" | "week" | "month";
+type ImplementationFilter = "all" | "ready" | "github" | "huggingface";
+type LevelFilter = "all" | "Easy" | "Medium" | "Hard";
+type CostFilter = "all" | "Low" | "Medium" | "High";
 
 const PERIOD_LABELS: Record<Period, string> = {
   all: "全期間", today: "今日", week: "今週", month: "今月",
@@ -41,6 +45,9 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
   const [period, setPeriod] = useState<Period>("all");
   const [taskTag, setTaskTag] = useState<string>("all");
   const [onlyBookmarks, setOnlyBookmarks] = useState(false);
+  const [implementation, setImplementation] = useState<ImplementationFilter>("all");
+  const [difficulty, setDifficulty] = useState<LevelFilter>("all");
+  const [cost, setCost] = useState<CostFilter>("all");
   const { readIds, markAllAsRead } = useReadArticles();
   const { bookmarkIds } = useBookmarks();
 
@@ -58,7 +65,17 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
   ).sort((a, b) => (TASK_TAG_LABELS[a] ?? a).localeCompare(TASK_TAG_LABELS[b] ?? b, "ja"));
   const activeTaskTag = availableTaskTags.includes(taskTag) ? taskTag : "all";
 
-  const filtered = (activeTaskTag === "all" ? bySub : bySub.filter((a) => a.tags?.task.includes(activeTaskTag)))
+  const byImplementation = bySub.filter((a) => {
+    const statuses = getImplementationStatus(a);
+    if (implementation === "ready") return statuses.some((status) => status !== "Paper only");
+    if (implementation === "github") return statuses.includes("GitHubあり");
+    if (implementation === "huggingface") return statuses.includes("Hugging Faceあり");
+    return true;
+  });
+  const byDifficulty = difficulty === "all" ? byImplementation : byImplementation.filter((a) => estimateDifficulty(a).level === difficulty);
+  const byCost = cost === "all" ? byDifficulty : byDifficulty.filter((a) => estimateCost(a).level === cost);
+
+  const filtered = (activeTaskTag === "all" ? byCost : byCost.filter((a) => a.tags?.task.includes(activeTaskTag)))
     .filter((a) => !onlyBookmarks || bookmarkIds.has(a.id))
     .slice()
     .sort((a, b) => {
@@ -69,6 +86,10 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
   const showLikesSort = source !== "arxiv";
   const sortLabel = source === "github" ? "スター順" : "人気順";
   const unreadCount = filtered.filter((a) => !readIds.has(a.id)).length;
+  const applyFilter = (name: string, value: string, action: () => void) => {
+    trackEvent("filter_apply", { filter_name: name, filter_value: value, category: category.id });
+    action();
+  };
 
   return (
     <>
@@ -82,7 +103,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
             return (
               <button
                 key={s}
-                onClick={() => { setSource(s); setSubcategory("all"); setTaskTag("all"); if (s === "arxiv" && sort === "likes") setSort("date"); }}
+                onClick={() => applyFilter("source", s, () => { setSource(s); setSubcategory("all"); setTaskTag("all"); if (s === "arxiv" && sort === "likes") setSort("date"); })}
                 className={`text-xs px-3 py-1 border whitespace-nowrap transition-colors ${
                   active
                     ? `border-l-2 ${category.color} border border-zinc-300 border-l-0 bg-zinc-100 text-zinc-800`
@@ -97,14 +118,14 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
         </div>
         <div className="flex gap-2 shrink-0">
           <button
-            onClick={() => setSort("date")}
+            onClick={() => applyFilter("sort", "date", () => setSort("date"))}
             className={`text-xs px-3 py-1 border transition-colors ${sort === "date" ? "border-zinc-300 bg-zinc-100 text-zinc-800" : "border-zinc-200 bg-white text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"}`}
           >
             新着順
           </button>
           {showLikesSort && (
             <button
-              onClick={() => setSort("likes")}
+              onClick={() => applyFilter("sort", "likes", () => setSort("likes"))}
               className={`text-xs px-3 py-1 border transition-colors ${sort === "likes" ? "border-zinc-300 bg-zinc-100 text-zinc-800" : "border-zinc-200 bg-white text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"}`}
             >
               {sortLabel}
@@ -119,7 +140,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
           {(["all", "today", "week", "month"] as Period[]).map((p) => (
             <button
               key={p}
-              onClick={() => { setPeriod(p); setSubcategory("all"); setTaskTag("all"); }}
+              onClick={() => applyFilter("period", p, () => { setPeriod(p); setSubcategory("all"); setTaskTag("all"); })}
               className={`text-xs px-2.5 py-1 border whitespace-nowrap transition-colors ${
                 period === p
                   ? "border-zinc-400 bg-zinc-100 text-zinc-800"
@@ -149,11 +170,47 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
         </div>
       </div>
 
+      {/* 実装・難易度・コストフィルター */}
+      <div className="border-b border-zinc-100 bg-white px-6 py-2 flex gap-2 overflow-x-auto">
+        {([
+          ["all", "実装: すべて"],
+          ["ready", "実装あり"],
+          ["github", "GitHubあり"],
+          ["huggingface", "HFあり"],
+        ] as [ImplementationFilter, string][]).map(([value, label]) => (
+          <button
+            key={value}
+            onClick={() => applyFilter("implementation", value, () => setImplementation(value))}
+            className={`text-xs px-2.5 py-1 border whitespace-nowrap transition-colors ${implementation === value ? "border-emerald-300 bg-emerald-50 text-emerald-700" : "border-zinc-200 text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"}`}
+          >
+            {label}
+          </button>
+        ))}
+        {(["all", "Easy", "Medium", "Hard"] as LevelFilter[]).map((value) => (
+          <button
+            key={value}
+            onClick={() => applyFilter("difficulty", value, () => setDifficulty(value))}
+            className={`text-xs px-2.5 py-1 border whitespace-nowrap transition-colors ${difficulty === value ? "border-blue-300 bg-blue-50 text-blue-700" : "border-zinc-200 text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"}`}
+          >
+            難易度: {value === "all" ? "すべて" : value}
+          </button>
+        ))}
+        {(["all", "Low", "Medium", "High"] as CostFilter[]).map((value) => (
+          <button
+            key={value}
+            onClick={() => applyFilter("cost", value, () => setCost(value))}
+            className={`text-xs px-2.5 py-1 border whitespace-nowrap transition-colors ${cost === value ? "border-amber-300 bg-amber-50 text-amber-700" : "border-zinc-200 text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"}`}
+          >
+            コスト: {value === "all" ? "すべて" : value}
+          </button>
+        ))}
+      </div>
+
       {/* サブカテゴリフィルター（50音順） */}
       {availableSubs.length > 1 && (
         <div className="border-b border-zinc-100 bg-zinc-50 px-6 py-2 flex gap-2 overflow-x-auto">
           <button
-            onClick={() => setSubcategory("all")}
+            onClick={() => applyFilter("subcategory", "all", () => setSubcategory("all"))}
             className={`text-xs px-2.5 py-1 border whitespace-nowrap transition-colors ${activeSub === "all" ? "border-zinc-300 bg-white text-zinc-800" : "border-zinc-200 text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"}`}
           >
             すべて
@@ -161,7 +218,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
           {availableSubs.map((sub) => (
             <button
               key={sub}
-              onClick={() => setSubcategory(sub)}
+              onClick={() => applyFilter("subcategory", sub, () => setSubcategory(sub))}
               className={`text-xs px-2.5 py-1 border whitespace-nowrap transition-colors ${activeSub === sub ? "border-zinc-300 bg-white text-zinc-800" : "border-zinc-200 text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"}`}
             >
               {subcategoryNameMap[sub] ?? sub}
@@ -174,7 +231,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
       {availableTaskTags.length > 1 && (
         <div className="border-b border-zinc-100 bg-zinc-50 px-6 py-2 flex gap-2 overflow-x-auto">
           <button
-            onClick={() => setTaskTag("all")}
+            onClick={() => applyFilter("task_tag", "all", () => setTaskTag("all"))}
             className={`text-xs px-2.5 py-1 border whitespace-nowrap transition-colors ${activeTaskTag === "all" ? "border-zinc-300 bg-white text-zinc-800" : "border-zinc-200 text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"}`}
           >
             タスク: すべて
@@ -182,7 +239,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
           {availableTaskTags.map((tag) => (
             <button
               key={tag}
-              onClick={() => setTaskTag(tag)}
+              onClick={() => applyFilter("task_tag", tag, () => setTaskTag(tag))}
               className={`text-xs px-2.5 py-1 border whitespace-nowrap transition-colors ${activeTaskTag === tag ? "border-blue-300 bg-blue-50 text-blue-700" : "border-zinc-200 text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"}`}
             >
               {TASK_TAG_LABELS[tag] ?? tag}
@@ -198,71 +255,13 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
             <p className="text-zinc-500 text-sm">この条件の記事はありません</p>
           </div>
         ) : (
-          <ul className="space-y-2">
+          <div className="space-y-2">
             {filtered.map((article) => {
-              const isRead = readIds.has(article.id);
               return (
-                <li key={article.id}>
-                  <Link
-                    href={`/article/${encodeURIComponent(article.id)}`}
-                    className={`block border p-4 transition-all group ${
-                      isRead
-                        ? "bg-zinc-50 border-zinc-100 hover:border-zinc-200"
-                        : "bg-white border-zinc-200 hover:bg-zinc-50 hover:border-zinc-300"
-                    }`}
-                  >
-                    <div className="flex items-start gap-4">
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2 mb-1.5 flex-wrap">
-                          {!isRead && (
-                            <span className="w-1.5 h-1.5 rounded-full bg-blue-500 shrink-0" />
-                          )}
-                          <span className={`text-xs px-1.5 py-0.5 rounded font-mono ${
-                            article.source === "arxiv" ? "bg-violet-100 text-violet-700"
-                            : article.source === "huggingface" ? "bg-amber-100 text-amber-700"
-                            : "bg-zinc-100 text-zinc-600"
-                          }`}>
-                            {article.source}
-                          </span>
-                          <span className="text-xs bg-zinc-100 border border-zinc-200 text-zinc-500 px-1.5 py-0.5 rounded">
-                            {subcategoryNameMap[article.subcategory] ?? article.subcategory}
-                          </span>
-                          {article.tags?.task.slice(0, 2).map((tag) => (
-                            <span key={tag} className="text-xs bg-blue-50 text-blue-700 border border-blue-100 px-1.5 py-0.5 rounded">
-                              {TASK_TAG_LABELS[tag] ?? tag}
-                            </span>
-                          ))}
-                          {article.tags?.modality.slice(0, 1).map((tag) => (
-                            <span key={tag} className="text-xs bg-emerald-50 text-emerald-700 border border-emerald-100 px-1.5 py-0.5 rounded">
-                              {MODALITY_TAG_LABELS[tag] ?? tag}
-                            </span>
-                          ))}
-                          {article.hasCode && (
-                            <span className="text-xs bg-zinc-100 text-zinc-500 px-1.5 py-0.5 rounded">code</span>
-                          )}
-                          {(article.likes_count ?? 0) > 0 && (
-                            <span className="text-xs text-zinc-500">♥ {article.likes_count}</span>
-                          )}
-                          <span className={`text-xs ${isRead ? "text-zinc-400" : "text-zinc-500"}`}>{article.publishedAt}</span>
-                        </div>
-                        <h3 className={`font-semibold text-sm leading-snug mb-1 ${isRead ? "text-zinc-500" : "text-zinc-900"}`}>
-                          {article.title}
-                        </h3>
-                        {article.use_case && (
-                          <p className="text-xs text-blue-600 mb-1">→ {article.use_case}</p>
-                        )}
-                        <p className={`text-xs leading-relaxed ${isRead ? "text-zinc-400" : "text-zinc-700"}`}>{article.summary_ja || article.summary}</p>
-                      </div>
-                      <div className="flex items-center gap-2 shrink-0">
-                        <BookmarkButton id={article.id} />
-                        <span className="text-zinc-300 text-lg group-hover:text-zinc-500 transition-colors">→</span>
-                      </div>
-                    </div>
-                  </Link>
-                </li>
+                <ArticleCard key={article.id} article={article} categories={[category]} />
               );
             })}
-          </ul>
+          </div>
         )}
       </div>
     </>

@@ -5,6 +5,6 @@ import { useReadArticles } from "@/app/hooks/useReadArticles";
 
 export default function MarkAsRead({ id }: { id: string }) {
   const { markAsRead } = useReadArticles();
-  useEffect(() => { markAsRead(id); }, [id]);
+  useEffect(() => { markAsRead(id); }, [id, markAsRead]);
   return null;
 }
