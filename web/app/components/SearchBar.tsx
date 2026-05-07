@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { trackEvent } from "@/lib/analytics";
 
 export default function SearchBar({ initialQuery = "" }: { initialQuery?: string }) {
   const router = useRouter();
@@ -10,6 +11,7 @@ export default function SearchBar({ initialQuery = "" }: { initialQuery?: string
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (query.trim()) {
+      trackEvent("search_submit", { query: query.trim() });
       router.push(`/search?q=${encodeURIComponent(query.trim())}`);
     }
   };

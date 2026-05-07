@@ -1,18 +1,18 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const STORAGE_KEY = "mlinfo_bookmarks";
 
 export function useBookmarks() {
-  const [bookmarkIds, setBookmarkIds] = useState<Set<string>>(new Set());
-
-  useEffect(() => {
+  const [bookmarkIds, setBookmarkIds] = useState<Set<string>>(() => {
+    if (typeof window === "undefined") return new Set();
     try {
       const stored = localStorage.getItem(STORAGE_KEY);
-      if (stored) setBookmarkIds(new Set(JSON.parse(stored)));
+      if (stored) return new Set(JSON.parse(stored));
     } catch {}
-  }, []);
+    return new Set();
+  });
 
   const toggleBookmark = (id: string) => {
     setBookmarkIds((prev) => {

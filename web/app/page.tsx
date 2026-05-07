@@ -2,6 +2,9 @@ import Link from "next/link";
 import { getArticles, getCategories, getLastUpdated } from "@/lib/data";
 import SearchBar from "@/app/components/SearchBar";
 import Logo from "@/app/components/Logo";
+import ArticleCard from "@/app/components/ArticleCard";
+import AdSlot from "@/app/components/AdSlot";
+import { getImplementationStatus, isMaterialsInformatics } from "@/lib/articleInsights";
 
 export default function Home() {
   const categories = getCategories();
@@ -19,6 +22,13 @@ export default function Home() {
     .filter((a) => a.source === "github")
     .sort((a, b) => (b.likes_count ?? 0) - (a.likes_count ?? 0))
     .slice(0, 3);
+  const latestArticles = articles.slice().sort((a, b) => b.publishedAt.localeCompare(a.publishedAt)).slice(0, 8);
+  const implementationReady = articles
+    .filter((a) => getImplementationStatus(a).some((status) => status !== "Paper only"))
+    .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
+    .slice(0, 4);
+  const huggingFaceArticles = articles.filter((a) => a.source === "huggingface").slice(0, 4);
+  const materialsArticles = articles.filter(isMaterialsInformatics).slice(0, 4);
 
   return (
     <main className="min-h-screen bg-zinc-50 text-zinc-900">
@@ -36,6 +46,91 @@ export default function Home() {
       </header>
 
       <div className="px-6 py-8 max-w-6xl mx-auto">
+        <section className="mb-8">
+          <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="text-xs tracking-widest text-zinc-400 uppercase mb-2">Implementation Dashboard</p>
+              <h1 className="text-2xl font-semibold tracking-tight text-zinc-950 mb-2">
+                AI/機械学習技術を実装・検証するための入口
+              </h1>
+              <p className="text-sm text-zinc-600 max-w-2xl leading-relaxed">
+                論文、GitHub、Hugging Faceを横断し、用途、実装可否、難易度、推論コストの目安から短時間で読むべき技術を選べます。
+              </p>
+            </div>
+            {lastUpdated && (
+              <span className="text-zinc-400 text-xs shrink-0">最終更新: {lastUpdated.slice(0, 10)}</span>
+            )}
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-6">
+            <Link href="/search?q=github" className="bg-white border border-zinc-200 p-3 hover:border-zinc-300 transition-colors">
+              <span className="block text-xs text-zinc-400">GitHubあり</span>
+              <span className="text-lg font-semibold text-zinc-900">{articles.filter((a) => a.source === "github" || a.codeUrl || a.hasCode).length}</span>
+            </Link>
+            <Link href="/search?q=huggingface" className="bg-white border border-zinc-200 p-3 hover:border-zinc-300 transition-colors">
+              <span className="block text-xs text-zinc-400">Hugging Face</span>
+              <span className="text-lg font-semibold text-zinc-900">{articles.filter((a) => a.source === "huggingface").length}</span>
+            </Link>
+            <Link href="/category/nlp" className="bg-white border border-zinc-200 p-3 hover:border-zinc-300 transition-colors">
+              <span className="block text-xs text-zinc-400">RAG / LLM</span>
+              <span className="text-lg font-semibold text-zinc-900">{articles.filter((a) => a.category === "nlp").length}</span>
+            </Link>
+            <Link href="/search?q=materials" className="bg-white border border-zinc-200 p-3 hover:border-zinc-300 transition-colors">
+              <span className="block text-xs text-zinc-400">Materials候補</span>
+              <span className="text-lg font-semibold text-zinc-900">{materialsArticles.length}</span>
+            </Link>
+          </div>
+        </section>
+
+        <section className="mb-10">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-xs tracking-widest text-zinc-400 uppercase">新着・実装判断カード</h2>
+            <Link href="/search" className="text-xs text-zinc-500 hover:text-zinc-900">検索ページへ →</Link>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
+            {latestArticles.map((article) => (
+              <ArticleCard key={article.id} article={article} categories={categories} />
+            ))}
+          </div>
+        </section>
+
+        {implementationReady.length > 0 && (
+          <section className="mb-10">
+            <h2 className="text-xs tracking-widest text-zinc-400 uppercase mb-4">実装ありの記事</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              {implementationReady.map((article) => (
+                <ArticleCard key={article.id} article={article} categories={categories} compact />
+              ))}
+            </div>
+          </section>
+        )}
+
+        <AdSlot label="記事一覧内広告枠" className="mb-10" />
+
+        {(huggingFaceArticles.length > 0 || materialsArticles.length > 0) && (
+          <section className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-10">
+            {huggingFaceArticles.length > 0 && (
+              <div>
+                <h2 className="text-xs tracking-widest text-zinc-400 uppercase mb-4">Hugging Faceあり</h2>
+                <div className="space-y-2">
+                  {huggingFaceArticles.map((article) => (
+                    <ArticleCard key={article.id} article={article} categories={categories} compact />
+                  ))}
+                </div>
+              </div>
+            )}
+            {materialsArticles.length > 0 && (
+              <div>
+                <h2 className="text-xs tracking-widest text-zinc-400 uppercase mb-4">Materials Informatics関連</h2>
+                <div className="space-y-2">
+                  {materialsArticles.map((article) => (
+                    <ArticleCard key={article.id} article={article} categories={categories} compact />
+                  ))}
+                </div>
+              </div>
+            )}
+          </section>
+        )}
 
         {/* 注目論文ランキング */}
         {trendingPapers.length > 0 && (

@@ -1,17 +1,16 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const STORAGE_KEY = "mlinfo_cookie_consent";
 
 export default function CookieBanner() {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
+  const [visible, setVisible] = useState(() => {
+    if (typeof window === "undefined") return false;
     const consent = localStorage.getItem(STORAGE_KEY);
-    if (!consent) setVisible(true);
-  }, []);
+    return !consent;
+  });
 
   const accept = () => {
     localStorage.setItem(STORAGE_KEY, "accepted");
