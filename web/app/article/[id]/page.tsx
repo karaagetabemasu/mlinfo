@@ -13,6 +13,7 @@ import ScrollDepthTracker from "@/app/components/ScrollDepthTracker";
 import ArticleCard from "@/app/components/ArticleCard";
 import AdSlot from "@/app/components/AdSlot";
 import TrackedTagLink from "@/app/components/TrackedTagLink";
+import ImplementationChecklist from "@/app/components/ImplementationChecklist";
 import { LEARNING_TAG_LABELS, MODALITY_TAG_LABELS, TASK_TAG_LABELS } from "@/app/data/dummy";
 import {
   estimateCost,
@@ -298,6 +299,8 @@ export default async function ArticlePage({ params }: Props) {
                 </div>
               </dl>
             </section>
+
+            <ImplementationChecklist article={article} />
 
             <section className="bg-white border border-zinc-200 p-5">
               <h2 className="text-sm font-semibold text-zinc-900 mb-3">実装難易度</h2>

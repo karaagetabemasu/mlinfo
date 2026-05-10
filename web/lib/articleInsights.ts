@@ -97,7 +97,7 @@ export function getImplementationStatus(article: Article): string[] {
   return statuses;
 }
 
-function haystack(article: Article): string {
+export function getArticleSearchText(article: Article): string {
   return [
     article.title,
     article.summary,
@@ -127,7 +127,7 @@ export function estimateDifficulty(article: Article): { level: Difficulty; reaso
     };
   }
 
-  const text = haystack(article);
+  const text = getArticleSearchText(article);
   if (HARD_HINTS.some((hint) => text.includes(hint))) {
     return {
       level: "Hard",
@@ -148,7 +148,7 @@ export function estimateDifficulty(article: Article): { level: Difficulty; reaso
 }
 
 export function estimateCost(article: Article): { level: CostLevel; note: string } {
-  const text = haystack(article);
+  const text = getArticleSearchText(article);
   if (
     ["diffusion", "video", "3d", "multimodal", "llm", "large language model", "pretrain", "training"].some((hint) =>
       text.includes(hint)
@@ -199,8 +199,77 @@ export function getRelatedArticles(article: Article, articles: Article[], limit 
 }
 
 export function isMaterialsInformatics(article: Article): boolean {
-  const text = haystack(article);
+  const text = getArticleSearchText(article);
   return ["materials", "material", "chemistry", "molecule", "bayesian", "sensor", "manufacturing"].some((hint) =>
     text.includes(hint)
   );
+}
+
+export function getImplementationScore(article: Article): number {
+  const difficulty = estimateDifficulty(article).level;
+  const cost = estimateCost(article).level;
+  const statuses = getImplementationStatus(article);
+  const likes = Math.min(30, Math.log10((article.likes_count ?? 0) + 1) * 8);
+  const dateScore = Math.max(0, 20 - Math.floor((Date.now() - new Date(article.publishedAt).getTime()) / 86400000));
+
+  return Math.round(
+    (statuses.some((status) => status !== "Paper only") ? 25 : 0) +
+      (statuses.includes("Hugging Faceあり") ? 10 : 0) +
+      (difficulty === "Easy" ? 20 : difficulty === "Medium" ? 10 : 0) +
+      (cost === "Low" ? 10 : cost === "Medium" ? 5 : 0) +
+      likes +
+      dateScore
+  );
+}
+
+export type ImplementationChecklistItem = {
+  label: string;
+  status: "ok" | "warning" | "unknown";
+  detail: string;
+};
+
+export function getImplementationChecklist(article: Article): ImplementationChecklistItem[] {
+  const links = getResourceLinks(article);
+  const difficulty = estimateDifficulty(article);
+  const cost = estimateCost(article);
+
+  return [
+    {
+      label: "実装または配布ページ",
+      status: article.hasCode || article.source === "github" || article.source === "huggingface" ? "ok" : "warning",
+      detail: article.hasCode || article.source === "github" || article.source === "huggingface"
+        ? "コードまたはモデル配布ページから検証を始められます。"
+        : "Paper onlyの可能性があるため再実装前提で確認してください。",
+    },
+    {
+      label: "一次情報リンク",
+      status: links.length > 0 ? "ok" : "unknown",
+      detail: links.length > 0 ? links.map((link) => link.label).join(" / ") : "URL未取得です。",
+    },
+    {
+      label: "検証しやすさ",
+      status: difficulty.level === "Easy" ? "ok" : difficulty.level === "Medium" ? "unknown" : "warning",
+      detail: difficulty.reason,
+    },
+    {
+      label: "計算資源",
+      status: cost.level === "Low" ? "ok" : cost.level === "Medium" ? "unknown" : "warning",
+      detail: cost.note,
+    },
+    {
+      label: "ライセンス",
+      status: "unknown",
+      detail: "配布元のLICENSE、モデルカード、Paperの利用条件を確認してください。",
+    },
+    {
+      label: "商用利用",
+      status: "unknown",
+      detail: "研究利用限定、データセット由来制限、API規約の有無を確認してください。",
+    },
+  ];
+}
+
+export function matchesKeywords(article: Article, keywords: string[]): boolean {
+  const text = getArticleSearchText(article);
+  return keywords.some((keyword) => text.includes(keyword.toLowerCase()));
 }

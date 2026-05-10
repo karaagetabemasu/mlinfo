@@ -4,7 +4,8 @@ import SearchBar from "@/app/components/SearchBar";
 import Logo from "@/app/components/Logo";
 import ArticleCard from "@/app/components/ArticleCard";
 import AdSlot from "@/app/components/AdSlot";
-import { getImplementationStatus, isMaterialsInformatics } from "@/lib/articleInsights";
+import { getImplementationScore, getImplementationStatus, isMaterialsInformatics } from "@/lib/articleInsights";
+import { topics, useCases } from "@/lib/topicCatalog";
 
 export default function Home() {
   const categories = getCategories();
@@ -27,6 +28,10 @@ export default function Home() {
     .filter((a) => getImplementationStatus(a).some((status) => status !== "Paper only"))
     .sort((a, b) => b.publishedAt.localeCompare(a.publishedAt))
     .slice(0, 4);
+  const implementationPicks = articles
+    .slice()
+    .sort((a, b) => getImplementationScore(b) - getImplementationScore(a))
+    .slice(0, 6);
   const huggingFaceArticles = articles.filter((a) => a.source === "huggingface").slice(0, 4);
   const materialsArticles = articles.filter(isMaterialsInformatics).slice(0, 4);
 
@@ -36,6 +41,12 @@ export default function Home() {
       <header className="border-b border-zinc-200 bg-white px-8 py-4 flex items-center justify-between">
         <Logo />
         <div className="flex items-center gap-4">
+          <nav className="hidden lg:flex items-center gap-3 text-xs text-zinc-500">
+            <Link href="/weekly" className="hover:text-zinc-900">週次まとめ</Link>
+            <Link href="/topics" className="hover:text-zinc-900">トピック</Link>
+            <Link href="/compare" className="hover:text-zinc-900">比較</Link>
+            <Link href="/saved" className="hover:text-zinc-900">保存</Link>
+          </nav>
           <SearchBar />
           <div className="flex items-center gap-2 text-xs text-zinc-400 hidden sm:flex">
             <span>{totalCategories} categories</span>
@@ -79,6 +90,58 @@ export default function Home() {
               <span className="block text-xs text-zinc-400">Materials候補</span>
               <span className="text-lg font-semibold text-zinc-900">{materialsArticles.length}</span>
             </Link>
+          </div>
+        </section>
+
+        <section className="mb-10">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-xs tracking-widest text-zinc-400 uppercase">今日の実装注目</h2>
+            <Link href="/weekly" className="text-xs text-zinc-500 hover:text-zinc-900">週次まとめ →</Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            {implementationPicks.map((article) => (
+              <div key={article.id} className="relative">
+                <div className="absolute right-3 top-3 z-10 text-xs border border-blue-100 bg-blue-50 px-2 py-0.5 text-blue-700">
+                  Score {getImplementationScore(article)}
+                </div>
+                <ArticleCard article={article} categories={categories} compact />
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className="mb-10 grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <div>
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xs tracking-widest text-zinc-400 uppercase">トピックから探す</h2>
+              <Link href="/topics" className="text-xs text-zinc-500 hover:text-zinc-900">一覧 →</Link>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+              {topics.slice(0, 6).map((topic) => (
+                <Link key={topic.slug} href={`/topics/${topic.slug}`} className="bg-white border border-zinc-200 p-3 hover:border-zinc-300 transition-colors">
+                  <span className="block text-sm font-semibold text-zinc-900">{topic.title}</span>
+                  <span className="block text-xs text-zinc-500 mt-1 leading-relaxed">{topic.description}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+          <div>
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xs tracking-widest text-zinc-400 uppercase">用途から探す</h2>
+              <Link href="/use-cases/document-search" className="text-xs text-zinc-500 hover:text-zinc-900">用途ページ →</Link>
+            </div>
+            <div className="space-y-2">
+              {useCases.map((useCase) => (
+                <Link key={useCase.slug} href={`/use-cases/${useCase.slug}`} className="block bg-white border border-zinc-200 p-3 hover:border-zinc-300 transition-colors">
+                  <span className="block text-sm font-semibold text-zinc-900">{useCase.title}</span>
+                  <span className="block text-xs text-zinc-500 mt-1 leading-relaxed">{useCase.description}</span>
+                </Link>
+              ))}
+              <Link href="/saved" className="block bg-zinc-900 border border-zinc-900 p-3 text-white hover:bg-zinc-700 transition-colors">
+                <span className="block text-sm font-semibold">保存した記事を見る</span>
+                <span className="block text-xs text-zinc-300 mt-1">あとで実装・比較したい記事をブックマークから再開できます。</span>
+              </Link>
+            </div>
           </div>
         </section>
 
