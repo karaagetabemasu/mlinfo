@@ -228,6 +228,75 @@ export type ImplementationChecklistItem = {
   detail: string;
 };
 
+export type ManufacturingSignalKey =
+  | "smallData"
+  | "tabular"
+  | "interpretable"
+  | "lowResource"
+  | "materials"
+  | "sensor"
+  | "quality"
+  | "optimization"
+  | "visualInspection";
+
+export type ManufacturingSignal = {
+  key: ManufacturingSignalKey;
+  label: string;
+  active: boolean;
+  reason: string;
+};
+
+const MANUFACTURING_HINTS = {
+  smallData: ["bayesian", "gaussian process", "active learning", "few-shot", "small data", "experiment design", "doe"],
+  tabular: ["tabular", "table", "csv", "excel", "xgboost", "lightgbm", "random forest", "gradient boosting", "process condition"],
+  interpretable: ["interpretable", "interpretability", "explainable", "xai", "shap", "feature importance", "surrogate"],
+  lowResource: ["lightgbm", "xgboost", "random forest", "linear", "cpu", "scikit", "sklearn", "bayesian optimization"],
+  materials: [
+    "materials",
+    "material",
+    "matminer",
+    "smiles",
+    "perovskite",
+    "alloy",
+    "polymer",
+    "dft",
+    "density functional",
+    "molecule",
+    "crystal",
+    "catalyst",
+    "battery",
+    "composition",
+  ],
+  sensor: ["sensor", "time-series", "timeseries", "vibration", "signal", "forecasting", "predictive maintenance"],
+  quality: ["quality", "defect", "inspection", "anomaly", "yield", "process", "manufacturing"],
+  optimization: ["bayesian", "optimization", "black-box", "experiment design", "active learning", "multi-objective"],
+  visualInspection: ["inspection", "defect", "segmentation", "detection", "vision", "image", "surface"],
+} satisfies Record<ManufacturingSignalKey, string[]>;
+
+const MANUFACTURING_LABELS: Record<ManufacturingSignalKey, string> = {
+  smallData: "少数データ向き",
+  tabular: "表形式向き",
+  interpretable: "説明可能",
+  lowResource: "CPUで試しやすい",
+  materials: "MI向き",
+  sensor: "センサ/時系列",
+  quality: "品質予測/異常検知",
+  optimization: "条件最適化",
+  visualInspection: "画像検査",
+};
+
+const MANUFACTURING_REASONS: Record<ManufacturingSignalKey, string> = {
+  smallData: "ベイズ最適化、能動学習、実験計画など少数試行の文脈に近いキーワードがあります。",
+  tabular: "実験条件テーブル、CSV、表形式モデルから始めやすい可能性があります。",
+  interpretable: "SHAP、特徴量重要度、解釈可能性など説明に使える要素があります。",
+  lowResource: "LightGBM、scikit-learn系、最適化手法などCPU検証しやすい文脈です。",
+  materials: "材料、分子、組成、DFT、matminerなどMaterials Informaticsに近い文脈です。",
+  sensor: "センサ、時系列、予測保全、信号データの文脈があります。",
+  quality: "品質、欠陥、異常検知、製造プロセスの文脈があります。",
+  optimization: "工程条件、配合、実験条件の探索に使える最適化文脈があります。",
+  visualInspection: "外観検査、欠陥検出、画像認識に近い文脈があります。",
+};
+
 export function getImplementationChecklist(article: Article): ImplementationChecklistItem[] {
   const links = getResourceLinks(article);
   const difficulty = estimateDifficulty(article);
@@ -272,4 +341,86 @@ export function getImplementationChecklist(article: Article): ImplementationChec
 export function matchesKeywords(article: Article, keywords: string[]): boolean {
   const text = getArticleSearchText(article);
   return keywords.some((keyword) => text.includes(keyword.toLowerCase()));
+}
+
+export function getManufacturingSignals(article: Article): ManufacturingSignal[] {
+  const text = getArticleSearchText(article);
+  return (Object.keys(MANUFACTURING_HINTS) as ManufacturingSignalKey[]).map((key) => ({
+    key,
+    label: MANUFACTURING_LABELS[key],
+    active: MANUFACTURING_HINTS[key].some((hint) => text.includes(hint)),
+    reason: MANUFACTURING_REASONS[key],
+  }));
+}
+
+export function getActiveManufacturingSignals(article: Article, limit?: number): ManufacturingSignal[] {
+  const signals = getManufacturingSignals(article).filter((signal) => signal.active);
+  return typeof limit === "number" ? signals.slice(0, limit) : signals;
+}
+
+export function getManufacturingFitScore(article: Article): number {
+  const active = getActiveManufacturingSignals(article);
+  const implementationScore = getImplementationScore(article);
+  const base = active.length * 12;
+  const miBoost = active.some((signal) => signal.key === "materials") ? 16 : 0;
+  const practicalBoost = active.some((signal) => ["smallData", "tabular", "lowResource", "interpretable"].includes(signal.key)) ? 14 : 0;
+  return Math.min(100, Math.round(base + miBoost + practicalBoost + implementationScore * 0.25));
+}
+
+export function isManufacturingRelevant(article: Article): boolean {
+  return getManufacturingFitScore(article) >= 30;
+}
+
+export function getInternalizationSteps(article: Article): string[] {
+  const signals = getActiveManufacturingSignals(article);
+  const hasTabular = signals.some((signal) => signal.key === "tabular");
+  const hasOptimization = signals.some((signal) => signal.key === "optimization");
+  const hasSensor = signals.some((signal) => signal.key === "sensor");
+  const hasVision = signals.some((signal) => signal.key === "visualInspection");
+  const hasMaterials = signals.some((signal) => signal.key === "materials");
+
+  return [
+    hasTabular || hasMaterials
+      ? "まずExcel/CSVの実験条件、組成、物性値を1行1実験の表に整理します。"
+      : "まず自社データを、入力条件、目的変数、評価したい指標に分けて整理します。",
+    hasOptimization
+      ? "既存データで予測モデルを作り、ベイズ最適化で次に試す条件を提案する流れを作ります。"
+      : hasSensor
+        ? "正常データだけで動くベースラインを作り、異常スコアのしきい値を現場知見と合わせます。"
+        : hasVision
+          ? "良品/不良品または欠陥領域のラベル有無を確認し、分類・検出・セグメンテーションのどれで始めるか決めます。"
+          : "LightGBMやRandom Forestなどのベースラインを先に作り、この手法と比較します。",
+    "評価指標はR2/RMSE、AUC、異常検知の再現率、実験回数削減率など、現場の意思決定に近いものを選びます。",
+    "SHAPや特徴量重要度で、効いている因子が物理・化学・工程知識と矛盾しないか確認します。",
+  ];
+}
+
+export function getClaudeCodePrompt(article: Article): string {
+  return [
+    "# 目的",
+    "製造業・材料開発の自社データで、この論文/実装の考え方をPoCできる最小実装を作りたいです。",
+    "",
+    "# 対象技術",
+    article.title,
+    "",
+    "# 概要",
+    article.summary_ja || article.summary || article.abstract || "",
+    "",
+    "# 前提データ",
+    "- ExcelまたはCSVの表形式データから始めます",
+    "- 1行が1実験または1ロットです",
+    "- 入力: 組成、配合、工程条件、センサ統計量など",
+    "- 目的変数: 物性値、品質指標、不良有無、異常スコアなど",
+    "",
+    "# 作ってほしいもの",
+    "1. データ読み込みと前処理",
+    "2. まず比較するベースライン",
+    "3. この手法を試す最小実装",
+    "4. 評価指標と可視化",
+    "5. SHAPまたは特徴量重要度による説明",
+    "6. 次の実験条件や改善案",
+    "",
+    "# 注意",
+    "製造業の少数データを想定し、GPU必須の実装よりも社内PCで試せる構成を優先してください。",
+  ].join("\n");
 }

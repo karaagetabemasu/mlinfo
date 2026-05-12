@@ -31,7 +31,7 @@ export const topics: Topic[] = [
     slug: "materials-informatics",
     title: "Materials Informatics",
     description: "材料探索、分子・結晶、化学、製造プロセス最適化に応用しやすいAI技術を集めます。",
-    keywords: ["materials", "material", "chemistry", "molecule", "crystal", "manufacturing", "bayesian"],
+    keywords: ["materials", "material", "chemistry", "molecule", "crystal", "manufacturing", "bayesian", "matminer", "smiles", "perovskite", "alloy", "polymer", "dft", "density functional"],
     relatedTags: ["材料探索", "分子", "化学", "製造業"],
     kind: "topic",
   },
@@ -82,7 +82,7 @@ export const useCases: Topic[] = [
     slug: "material-discovery",
     title: "材料探索",
     description: "材料候補探索、分子生成、実験条件探索、ベイズ最適化に関係する技術です。",
-    keywords: ["materials", "material", "molecule", "chemistry", "bayesian", "optimization"],
+    keywords: ["materials", "material", "molecule", "chemistry", "bayesian", "optimization", "matminer", "smiles", "dft", "alloy", "polymer"],
     relatedTags: ["Materials Informatics", "ベイズ最適化", "分子", "探索"],
     kind: "use-case",
   },
@@ -92,6 +92,14 @@ export const useCases: Topic[] = [
     description: "センサ時系列、画像検査、予測保全、異常スコアリングに使えるAI技術を整理します。",
     keywords: ["manufacturing", "sensor", "anomaly", "detection", "time-series", "vision"],
     relatedTags: ["製造業", "異常検知", "センサ", "画像検査"],
+    kind: "use-case",
+  },
+  {
+    slug: "quality-prediction",
+    title: "品質予測",
+    description: "工程条件、原料ロット、検査値から品質指標や不良リスクを予測するための技術です。",
+    keywords: ["quality", "yield", "process", "tabular", "lightgbm", "xgboost", "manufacturing"],
+    relatedTags: ["品質予測", "表形式ML", "SHAP", "工程条件"],
     kind: "use-case",
   },
 ];
@@ -114,6 +122,12 @@ export const comparisons = [
     title: "異常検知手法比較",
     description: "センサ、画像、表形式データに対する異常検知手法を用途別に比較します。",
     keywords: ["anomaly", "detection", "sensor", "time-series", "vision"],
+  },
+  {
+    slug: "materials-informatics",
+    title: "Materials Informatics手法比較",
+    description: "記述子、GNN、ベイズ最適化、能動学習を、少数データと実装難易度の観点で比較します。",
+    keywords: ["materials", "matminer", "smiles", "molecule", "dft", "bayesian", "active learning"],
   },
 ];
 

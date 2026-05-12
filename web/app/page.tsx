@@ -4,8 +4,15 @@ import SearchBar from "@/app/components/SearchBar";
 import Logo from "@/app/components/Logo";
 import ArticleCard from "@/app/components/ArticleCard";
 import AdSlot from "@/app/components/AdSlot";
-import { getImplementationScore, getImplementationStatus, isMaterialsInformatics } from "@/lib/articleInsights";
+import {
+  getImplementationScore,
+  getImplementationStatus,
+  getManufacturingFitScore,
+  isManufacturingRelevant,
+  isMaterialsInformatics,
+} from "@/lib/articleInsights";
 import { topics, useCases } from "@/lib/topicCatalog";
+import { manufacturingGuides } from "@/lib/manufacturingCatalog";
 
 export default function Home() {
   const categories = getCategories();
@@ -32,6 +39,10 @@ export default function Home() {
     .slice()
     .sort((a, b) => getImplementationScore(b) - getImplementationScore(a))
     .slice(0, 6);
+  const manufacturingPicks = articles
+    .filter(isManufacturingRelevant)
+    .sort((a, b) => getManufacturingFitScore(b) - getManufacturingFitScore(a) || b.publishedAt.localeCompare(a.publishedAt))
+    .slice(0, 6);
   const huggingFaceArticles = articles.filter((a) => a.source === "huggingface").slice(0, 4);
   const materialsArticles = articles.filter(isMaterialsInformatics).slice(0, 4);
 
@@ -42,6 +53,7 @@ export default function Home() {
         <Logo />
         <div className="flex items-center gap-4">
           <nav className="hidden lg:flex items-center gap-3 text-xs text-zinc-500">
+            <Link href="/manufacturing-ai" className="hover:text-zinc-900">製造業AI</Link>
             <Link href="/weekly" className="hover:text-zinc-900">週次まとめ</Link>
             <Link href="/topics" className="hover:text-zinc-900">トピック</Link>
             <Link href="/compare" className="hover:text-zinc-900">比較</Link>
@@ -60,12 +72,12 @@ export default function Home() {
         <section className="mb-8">
           <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
             <div>
-              <p className="text-xs tracking-widest text-zinc-400 uppercase mb-2">Implementation Dashboard</p>
+              <p className="text-xs tracking-widest text-zinc-400 uppercase mb-2">Manufacturing AI / MI Navigator</p>
               <h1 className="text-2xl font-semibold tracking-tight text-zinc-950 mb-2">
-                AI/機械学習技術を実装・検証するための入口
+                製造業・材料開発チームのためのAI内製化ナビ
               </h1>
               <p className="text-sm text-zinc-600 max-w-2xl leading-relaxed">
-                論文、GitHub、Hugging Faceを横断し、用途、実装可否、難易度、推論コストの目安から短時間で読むべき技術を選べます。
+                配合最適化、品質予測、異常検知、材料探索などを、自社のExcel/CSVデータで試すための論文・実装・手順を整理します。
               </p>
             </div>
             {lastUpdated && (
@@ -74,24 +86,59 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-6">
-            <Link href="/search?q=github" className="bg-white border border-zinc-200 p-3 hover:border-zinc-300 transition-colors">
-              <span className="block text-xs text-zinc-400">GitHubあり</span>
-              <span className="text-lg font-semibold text-zinc-900">{articles.filter((a) => a.source === "github" || a.codeUrl || a.hasCode).length}</span>
+            <Link href="/manufacturing-ai" className="bg-white border border-zinc-200 p-3 hover:border-zinc-300 transition-colors">
+              <span className="block text-xs text-zinc-400">製造業AI候補</span>
+              <span className="text-lg font-semibold text-zinc-900">{articles.filter(isManufacturingRelevant).length}</span>
             </Link>
-            <Link href="/search?q=huggingface" className="bg-white border border-zinc-200 p-3 hover:border-zinc-300 transition-colors">
-              <span className="block text-xs text-zinc-400">Hugging Face</span>
-              <span className="text-lg font-semibold text-zinc-900">{articles.filter((a) => a.source === "huggingface").length}</span>
+            <Link href="/manufacturing-ai/formulation-optimization" className="bg-white border border-zinc-200 p-3 hover:border-zinc-300 transition-colors">
+              <span className="block text-xs text-zinc-400">配合・組成最適化</span>
+              <span className="text-lg font-semibold text-zinc-900">Guide</span>
             </Link>
-            <Link href="/category/nlp" className="bg-white border border-zinc-200 p-3 hover:border-zinc-300 transition-colors">
-              <span className="block text-xs text-zinc-400">RAG / LLM</span>
-              <span className="text-lg font-semibold text-zinc-900">{articles.filter((a) => a.category === "nlp").length}</span>
+            <Link href="/manufacturing-ai/process-anomaly-detection" className="bg-white border border-zinc-200 p-3 hover:border-zinc-300 transition-colors">
+              <span className="block text-xs text-zinc-400">工程異常検知</span>
+              <span className="text-lg font-semibold text-zinc-900">Guide</span>
             </Link>
-            <Link href="/search?q=materials" className="bg-white border border-zinc-200 p-3 hover:border-zinc-300 transition-colors">
+            <Link href="/manufacturing-ai/material-screening" className="bg-white border border-zinc-200 p-3 hover:border-zinc-300 transition-colors">
               <span className="block text-xs text-zinc-400">Materials候補</span>
               <span className="text-lg font-semibold text-zinc-900">{materialsArticles.length}</span>
             </Link>
           </div>
         </section>
+
+        <section className="mb-10">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-xs tracking-widest text-zinc-400 uppercase">あなたの課題はどれ？</h2>
+            <Link href="/manufacturing-ai" className="text-xs text-zinc-500 hover:text-zinc-900">製造業AIガイド一覧 →</Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+            {manufacturingGuides.slice(0, 6).map((guide) => (
+              <Link key={guide.slug} href={`/manufacturing-ai/${guide.slug}`} className="bg-white border border-zinc-200 p-4 hover:border-zinc-300 transition-colors">
+                <span className="block text-sm font-semibold text-zinc-900">{guide.shortTitle}</span>
+                <span className="block text-xs text-zinc-500 mt-2 leading-relaxed">{guide.problem}</span>
+                <span className="block text-xs text-cyan-700 mt-3">{guide.baseline}から始める →</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {manufacturingPicks.length > 0 && (
+          <section className="mb-10">
+            <div className="flex items-center justify-between mb-4">
+              <h2 className="text-xs tracking-widest text-zinc-400 uppercase">製造業MI向け注目</h2>
+              <Link href="/manufacturing-ai" className="text-xs text-zinc-500 hover:text-zinc-900">もっと見る →</Link>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+              {manufacturingPicks.map((article) => (
+                <div key={article.id} className="relative">
+                  <div className="absolute right-3 top-3 z-10 text-xs border border-cyan-100 bg-cyan-50 px-2 py-0.5 text-cyan-700">
+                    製造業 {getManufacturingFitScore(article)}
+                  </div>
+                  <ArticleCard article={article} categories={categories} compact />
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         <section className="mb-10">
           <div className="flex items-center justify-between mb-4">

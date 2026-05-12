@@ -6,7 +6,13 @@ import { TASK_TAG_LABELS } from "@/app/data/dummy";
 import { useReadArticles } from "@/app/hooks/useReadArticles";
 import { useBookmarks } from "@/app/hooks/useBookmarks";
 import ArticleCard from "@/app/components/ArticleCard";
-import { estimateCost, estimateDifficulty, getImplementationStatus } from "@/lib/articleInsights";
+import {
+  estimateCost,
+  estimateDifficulty,
+  getActiveManufacturingSignals,
+  getImplementationStatus,
+  type ManufacturingSignalKey,
+} from "@/lib/articleInsights";
 import { trackEvent } from "@/lib/analytics";
 
 
@@ -16,10 +22,24 @@ type Period = "all" | "today" | "week" | "month";
 type ImplementationFilter = "all" | "ready" | "github" | "huggingface";
 type LevelFilter = "all" | "Easy" | "Medium" | "Hard";
 type CostFilter = "all" | "Low" | "Medium" | "High";
+type ManufacturingFilter = "all" | ManufacturingSignalKey;
 
 const PERIOD_LABELS: Record<Period, string> = {
   all: "全期間", today: "今日", week: "今週", month: "今月",
 };
+
+const MANUFACTURING_FILTERS: [ManufacturingFilter, string][] = [
+  ["all", "製造業: すべて"],
+  ["smallData", "少数データ"],
+  ["tabular", "表形式"],
+  ["lowResource", "CPU可"],
+  ["interpretable", "説明可能"],
+  ["materials", "MI"],
+  ["sensor", "センサ"],
+  ["quality", "品質/異常"],
+  ["optimization", "最適化"],
+  ["visualInspection", "画像検査"],
+];
 
 function isWithinPeriod(publishedAt: string, period: Period): boolean {
   if (period === "all") return true;
@@ -48,6 +68,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
   const [implementation, setImplementation] = useState<ImplementationFilter>("all");
   const [difficulty, setDifficulty] = useState<LevelFilter>("all");
   const [cost, setCost] = useState<CostFilter>("all");
+  const [manufacturing, setManufacturing] = useState<ManufacturingFilter>("all");
   const { readIds, markAllAsRead } = useReadArticles();
   const { bookmarkIds } = useBookmarks();
 
@@ -74,8 +95,11 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
   });
   const byDifficulty = difficulty === "all" ? byImplementation : byImplementation.filter((a) => estimateDifficulty(a).level === difficulty);
   const byCost = cost === "all" ? byDifficulty : byDifficulty.filter((a) => estimateCost(a).level === cost);
+  const byManufacturing = manufacturing === "all"
+    ? byCost
+    : byCost.filter((a) => getActiveManufacturingSignals(a).some((signal) => signal.key === manufacturing));
 
-  const filtered = (activeTaskTag === "all" ? byCost : byCost.filter((a) => a.tags?.task.includes(activeTaskTag)))
+  const filtered = (activeTaskTag === "all" ? byManufacturing : byManufacturing.filter((a) => a.tags?.task.includes(activeTaskTag)))
     .filter((a) => !onlyBookmarks || bookmarkIds.has(a.id))
     .slice()
     .sort((a, b) => {
@@ -202,6 +226,19 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
             className={`text-xs px-2.5 py-1 border whitespace-nowrap transition-colors ${cost === value ? "border-amber-300 bg-amber-50 text-amber-700" : "border-zinc-200 text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"}`}
           >
             コスト: {value === "all" ? "すべて" : value}
+          </button>
+        ))}
+      </div>
+
+      {/* 製造業MIフィルター */}
+      <div className="border-b border-zinc-100 bg-white px-6 py-2 flex gap-2 overflow-x-auto">
+        {MANUFACTURING_FILTERS.map(([value, label]) => (
+          <button
+            key={value}
+            onClick={() => applyFilter("manufacturing", value, () => setManufacturing(value))}
+            className={`text-xs px-2.5 py-1 border whitespace-nowrap transition-colors ${manufacturing === value ? "border-cyan-300 bg-cyan-50 text-cyan-700" : "border-zinc-200 text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"}`}
+          >
+            {label}
           </button>
         ))}
       </div>

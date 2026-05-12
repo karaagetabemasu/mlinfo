@@ -1,5 +1,6 @@
 import { getArticles, getCategories } from "@/lib/data";
 import { topics, useCases } from "@/lib/topicCatalog";
+import { manufacturingGuides } from "@/lib/manufacturingCatalog";
 import type { MetadataRoute } from "next";
 
 const BASE_URL = "https://mlinfo.vercel.app";
@@ -11,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     { url: BASE_URL, priority: 1.0, changeFrequency: "daily" },
     { url: `${BASE_URL}/topics`, priority: 0.9, changeFrequency: "daily" },
+    { url: `${BASE_URL}/manufacturing-ai`, priority: 1.0, changeFrequency: "daily" },
     { url: `${BASE_URL}/weekly`, priority: 0.9, changeFrequency: "daily" },
     { url: `${BASE_URL}/compare`, priority: 0.8, changeFrequency: "weekly" },
     { url: `${BASE_URL}/saved`, priority: 0.4, changeFrequency: "monthly" },
@@ -42,5 +44,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "daily",
   }));
 
-  return [...staticPages, ...categoryPages, ...topicPages, ...useCasePages, ...articlePages];
+  const manufacturingPages: MetadataRoute.Sitemap = manufacturingGuides.map((guide) => ({
+    url: `${BASE_URL}/manufacturing-ai/${guide.slug}`,
+    priority: 0.95,
+    changeFrequency: "daily",
+  }));
+
+  return [...staticPages, ...categoryPages, ...topicPages, ...useCasePages, ...manufacturingPages, ...articlePages];
 }

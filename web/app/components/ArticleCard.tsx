@@ -7,6 +7,7 @@ import {
   estimateCost,
   estimateDifficulty,
   getArticleUrl,
+  getActiveManufacturingSignals,
   getFieldTags,
   getImplementationStatus,
   getShortDescription,
@@ -28,6 +29,7 @@ export default function ArticleCard({ article, categories, compact = false, onCl
   const cost = estimateCost(article);
   const shortDescription = getShortDescription(article);
   const href = getArticleUrl(article);
+  const manufacturingSignals = getActiveManufacturingSignals(article, compact ? 2 : 4);
 
   return (
     <article className="h-full">
@@ -60,6 +62,11 @@ export default function ArticleCard({ article, categories, compact = false, onCl
             <p className="text-xs leading-relaxed text-zinc-700 mb-3">{shortDescription}</p>
 
             <div className="flex flex-wrap gap-1.5 mb-3">
+              {manufacturingSignals.map((signal) => (
+                <span key={signal.key} className="text-xs bg-cyan-50 border border-cyan-100 text-cyan-700 px-1.5 py-0.5 rounded">
+                  {signal.label}
+                </span>
+              ))}
               {fieldTags.map((tag) => (
                 <span key={tag} className="text-xs bg-zinc-100 border border-zinc-200 text-zinc-600 px-1.5 py-0.5 rounded">
                   {tag}
