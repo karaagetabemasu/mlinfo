@@ -247,13 +247,14 @@ export type ManufacturingSignal = {
 };
 
 const MANUFACTURING_HINTS = {
-  smallData: ["bayesian", "gaussian process", "active learning", "few-shot", "small data", "experiment design", "doe"],
-  tabular: ["tabular", "table", "csv", "excel", "xgboost", "lightgbm", "random forest", "gradient boosting", "process condition"],
+  smallData: ["bayesian optimization", "gaussian process", "active learning", "few-shot", "small data", "experiment design", "design of experiments", "doe"],
+  tabular: ["tabular", "csv", "excel", "xgboost", "lightgbm", "random forest", "gradient boosting", "process condition"],
   interpretable: ["interpretable", "interpretability", "explainable", "xai", "shap", "feature importance", "surrogate"],
-  lowResource: ["lightgbm", "xgboost", "random forest", "linear", "cpu", "scikit", "sklearn", "bayesian optimization"],
+  lowResource: ["lightgbm", "xgboost", "random forest", "cpu", "scikit", "sklearn", "bayesian optimization"],
   materials: [
     "materials",
-    "material",
+    "materials informatics",
+    "material science",
     "matminer",
     "smiles",
     "perovskite",
@@ -267,10 +268,10 @@ const MANUFACTURING_HINTS = {
     "battery",
     "composition",
   ],
-  sensor: ["sensor", "time-series", "timeseries", "vibration", "signal", "forecasting", "predictive maintenance"],
-  quality: ["quality", "defect", "inspection", "anomaly", "yield", "process", "manufacturing"],
-  optimization: ["bayesian", "optimization", "black-box", "experiment design", "active learning", "multi-objective"],
-  visualInspection: ["inspection", "defect", "segmentation", "detection", "vision", "image", "surface"],
+  sensor: ["sensor", "sensing", "time-series", "timeseries", "vibration", "acoustic", "predictive maintenance", "equipment"],
+  quality: ["quality", "defect", "inspection", "anomaly detection", "yield", "manufacturing"],
+  optimization: ["bayesian optimization", "black-box optimization", "experiment design", "active learning", "multi-objective optimization"],
+  visualInspection: ["visual inspection", "surface defect", "defect inspection", "industrial inspection", "inspection image"],
 } satisfies Record<ManufacturingSignalKey, string[]>;
 
 const MANUFACTURING_LABELS: Record<ManufacturingSignalKey, string> = {
@@ -340,7 +341,17 @@ export function getImplementationChecklist(article: Article): ImplementationChec
 
 export function matchesKeywords(article: Article, keywords: string[]): boolean {
   const text = getArticleSearchText(article);
-  return keywords.some((keyword) => text.includes(keyword.toLowerCase()));
+  return keywords.some((keyword) => includesKeyword(text, keyword));
+}
+
+function includesKeyword(text: string, keyword: string): boolean {
+  const normalized = keyword.toLowerCase().trim();
+  if (!normalized) return false;
+  if (/^[a-z0-9][a-z0-9+\- ]*[a-z0-9]$/i.test(normalized)) {
+    const escaped = normalized.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/\s+/g, "\\s+");
+    return new RegExp(`(^|[^a-z0-9])${escaped}([^a-z0-9]|$)`, "i").test(text);
+  }
+  return text.includes(normalized);
 }
 
 export function getManufacturingSignals(article: Article): ManufacturingSignal[] {
@@ -348,7 +359,7 @@ export function getManufacturingSignals(article: Article): ManufacturingSignal[]
   return (Object.keys(MANUFACTURING_HINTS) as ManufacturingSignalKey[]).map((key) => ({
     key,
     label: MANUFACTURING_LABELS[key],
-    active: MANUFACTURING_HINTS[key].some((hint) => text.includes(hint)),
+    active: MANUFACTURING_HINTS[key].some((hint) => includesKeyword(text, hint)),
     reason: MANUFACTURING_REASONS[key],
   }));
 }
@@ -361,14 +372,21 @@ export function getActiveManufacturingSignals(article: Article, limit?: number):
 export function getManufacturingFitScore(article: Article): number {
   const active = getActiveManufacturingSignals(article);
   const implementationScore = getImplementationScore(article);
-  const base = active.length * 12;
-  const miBoost = active.some((signal) => signal.key === "materials") ? 16 : 0;
+  const domainSignals = active.filter((signal) =>
+    ["materials", "sensor", "quality", "optimization", "visualInspection"].includes(signal.key)
+  );
+  const base = domainSignals.length * 16 + active.length * 6;
+  const miBoost = active.some((signal) => signal.key === "materials") ? 18 : 0;
   const practicalBoost = active.some((signal) => ["smallData", "tabular", "lowResource", "interpretable"].includes(signal.key)) ? 14 : 0;
   return Math.min(100, Math.round(base + miBoost + practicalBoost + implementationScore * 0.25));
 }
 
 export function isManufacturingRelevant(article: Article): boolean {
-  return getManufacturingFitScore(article) >= 30;
+  const active = getActiveManufacturingSignals(article);
+  const hasDomainSignal = active.some((signal) =>
+    ["materials", "sensor", "quality", "optimization", "visualInspection"].includes(signal.key)
+  );
+  return hasDomainSignal && getManufacturingFitScore(article) >= 45;
 }
 
 export function getInternalizationSteps(article: Article): string[] {

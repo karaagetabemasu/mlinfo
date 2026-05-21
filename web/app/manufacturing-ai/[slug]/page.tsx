@@ -36,9 +36,34 @@ export default async function ManufacturingGuidePage({ params }: Props) {
   const articles = getArticles();
   const categories = getCategories();
   const matched = getManufacturingGuideArticles(guide, articles);
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: guide.faq.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
+  const howToJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: `${guide.title}のAI/MI実装手順`,
+    description: guide.description,
+    step: guide.firstSteps.map((step, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      text: step,
+    })),
+  };
 
   return (
     <main className="min-h-screen bg-zinc-50 text-zinc-900">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToJsonLd) }} />
       <header className="border-b border-zinc-200 bg-white px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <Logo />
@@ -53,19 +78,52 @@ export default async function ManufacturingGuidePage({ params }: Props) {
           <p className="text-xs tracking-widest text-zinc-400 uppercase mb-2">Internalization Guide</p>
           <h1 className="text-2xl font-semibold text-zinc-950 mb-3">{guide.title}のAI/MI実装ガイド</h1>
           <p className="text-sm text-zinc-600 leading-relaxed max-w-3xl">{guide.description}</p>
+          <p className="text-sm text-zinc-600 leading-relaxed max-w-3xl mt-3">{guide.searchIntent}</p>
         </section>
 
         <section className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_320px] gap-6 mb-10">
-          <div className="bg-white border border-zinc-200 p-5">
-            <h2 className="text-sm font-semibold text-zinc-900 mb-3">実装の始め方</h2>
-            <ol className="space-y-3 text-sm text-zinc-700">
-              {guide.firstSteps.map((step, index) => (
-                <li key={step} className="flex gap-3">
-                  <span className="text-xs font-mono text-zinc-400 w-5 shrink-0">{index + 1}</span>
-                  <span>{step}</span>
-                </li>
-              ))}
-            </ol>
+          <div className="space-y-6">
+            <section className="bg-white border border-zinc-200 p-5">
+              <h2 className="text-sm font-semibold text-zinc-900 mb-3">実装の始め方</h2>
+              <ol className="space-y-3 text-sm text-zinc-700">
+                {guide.firstSteps.map((step, index) => (
+                  <li key={step} className="flex gap-3">
+                    <span className="text-xs font-mono text-zinc-400 w-5 shrink-0">{index + 1}</span>
+                    <span>{step}</span>
+                  </li>
+                ))}
+              </ol>
+            </section>
+
+            <section className="bg-white border border-zinc-200 p-5">
+              <h2 className="text-sm font-semibold text-zinc-900 mb-3">自社データでPoCする時の考え方</h2>
+              <div className="space-y-3 text-sm text-zinc-700">
+                {guide.implementationNotes.map((note) => (
+                  <p key={note}>{note}</p>
+                ))}
+              </div>
+            </section>
+
+            <section className="bg-white border border-zinc-200 p-5">
+              <h2 className="text-sm font-semibold text-zinc-900 mb-3">よくある落とし穴</h2>
+              <ul className="space-y-2 text-sm text-zinc-700">
+                {guide.pitfalls.map((pitfall) => (
+                  <li key={pitfall}>・{pitfall}</li>
+                ))}
+              </ul>
+            </section>
+
+            <section className="bg-white border border-zinc-200 p-5">
+              <h2 className="text-sm font-semibold text-zinc-900 mb-3">よくある質問</h2>
+              <div className="space-y-4">
+                {guide.faq.map((item) => (
+                  <section key={item.question}>
+                    <h3 className="text-sm font-medium text-zinc-900">{item.question}</h3>
+                    <p className="text-sm text-zinc-700 leading-relaxed mt-1">{item.answer}</p>
+                  </section>
+                ))}
+              </div>
+            </section>
           </div>
 
           <aside className="space-y-3">
@@ -79,6 +137,16 @@ export default async function ManufacturingGuidePage({ params }: Props) {
                 <div>
                   <dt className="text-xs text-zinc-400">入力データ</dt>
                   <dd className="text-zinc-800">{guide.dataShape}</dd>
+                </div>
+                <div>
+                  <dt className="text-xs text-zinc-400">列の例</dt>
+                  <dd className="flex flex-wrap gap-1.5 mt-1">
+                    {guide.commonDataColumns.map((column) => (
+                      <span key={column} className="text-xs border border-zinc-200 bg-zinc-50 px-1.5 py-0.5 text-zinc-600">
+                        {column}
+                      </span>
+                    ))}
+                  </dd>
                 </div>
                 <div>
                   <dt className="text-xs text-zinc-400">最初のベースライン</dt>

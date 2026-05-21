@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { getArticles, getCategories, getLastUpdated } from "@/lib/data";
 import SearchBar from "@/app/components/SearchBar";
 import Logo from "@/app/components/Logo";
@@ -13,6 +14,24 @@ import {
 } from "@/lib/articleInsights";
 import { topics, useCases } from "@/lib/topicCatalog";
 import { manufacturingGuides } from "@/lib/manufacturingCatalog";
+
+export const metadata: Metadata = {
+  title: "製造業・材料開発のためのAI/MI内製化ナビ",
+  description:
+    "配合最適化、品質予測、異常検知、材料探索、画像検査を自社のExcel/CSVデータで試すためのAI/MI論文・実装・手順を整理します。",
+  alternates: {
+    canonical: "https://mlinfo.vercel.app",
+  },
+  openGraph: {
+    title: "製造業・材料開発のためのAI/MI内製化ナビ | MLinfo",
+    description:
+      "配合最適化、品質予測、異常検知、材料探索、画像検査を自社データで試すためのAI/MI論文・実装・手順を整理します。",
+    url: "https://mlinfo.vercel.app",
+    siteName: "MLinfo",
+    locale: "ja_JP",
+    type: "website",
+  },
+};
 
 export default function Home() {
   const categories = getCategories();

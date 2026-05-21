@@ -36,6 +36,26 @@ export default function ManufacturingAiPage() {
           <p className="text-sm text-zinc-600 leading-relaxed max-w-3xl">
             論文やGitHubを探すだけでなく、配合最適化、品質予測、異常検知、材料探索を自社のExcel/CSVデータで試す最初の一歩まで整理します。
           </p>
+          <div className="mt-5 grid grid-cols-1 md:grid-cols-3 gap-3">
+            <div className="bg-white border border-zinc-200 p-4">
+              <h2 className="text-sm font-semibold text-zinc-900 mb-2">少数データから始める</h2>
+              <p className="text-xs text-zinc-600 leading-relaxed">
+                製造業や材料開発では実験数が限られます。LightGBM、Gaussian Process、ベイズ最適化など、nが小さい段階でも試しやすい手法を優先します。
+              </p>
+            </div>
+            <div className="bg-white border border-zinc-200 p-4">
+              <h2 className="text-sm font-semibold text-zinc-900 mb-2">Excel/CSVを前提にする</h2>
+              <p className="text-xs text-zinc-600 leading-relaxed">
+                1行1実験、1行1ロットの表形式データを出発点にして、品質予測、配合最適化、異常検知へつなげます。
+              </p>
+            </div>
+            <div className="bg-white border border-zinc-200 p-4">
+              <h2 className="text-sm font-semibold text-zinc-900 mb-2">説明できるAIを重視する</h2>
+              <p className="text-xs text-zinc-600 leading-relaxed">
+                精度だけでなく、SHAPや特徴量重要度で現場・上司・研究チームに説明できることを重視します。
+              </p>
+            </div>
+          </div>
         </section>
 
         <section className="mb-10">
