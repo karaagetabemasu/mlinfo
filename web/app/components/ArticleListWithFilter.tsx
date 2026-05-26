@@ -69,6 +69,7 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
   const [difficulty, setDifficulty] = useState<LevelFilter>("all");
   const [cost, setCost] = useState<CostFilter>("all");
   const [manufacturing, setManufacturing] = useState<ManufacturingFilter>("all");
+  const [showManufacturingFilters, setShowManufacturingFilters] = useState(false);
   const { readIds, markAllAsRead } = useReadArticles();
   const { bookmarkIds } = useBookmarks();
 
@@ -231,11 +232,17 @@ export default function ArticleListWithFilter({ articles, category, subcategoryN
       </div>
 
       {/* 製造業MIフィルター */}
-      <div className="border-b border-zinc-100 bg-white px-6 py-2 flex gap-2 overflow-x-auto">
-        {MANUFACTURING_FILTERS.map(([value, label]) => (
+      <div className="border-b border-zinc-100 bg-white px-6 py-2 flex items-center gap-2 overflow-x-auto">
+        <button
+          onClick={() => setShowManufacturingFilters((v) => !v)}
+          className={`text-xs px-2.5 py-1 border whitespace-nowrap transition-colors shrink-0 ${manufacturing !== "all" ? "border-cyan-300 bg-cyan-50 text-cyan-700" : "border-zinc-200 text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"}`}
+        >
+          製造業MI {showManufacturingFilters ? "▲" : "▼"}
+        </button>
+        {showManufacturingFilters && MANUFACTURING_FILTERS.filter(([v]) => v !== "all").map(([value, label]) => (
           <button
             key={value}
-            onClick={() => applyFilter("manufacturing", value, () => setManufacturing(value))}
+            onClick={() => applyFilter("manufacturing", value, () => setManufacturing(manufacturing === value ? "all" : value))}
             className={`text-xs px-2.5 py-1 border whitespace-nowrap transition-colors ${manufacturing === value ? "border-cyan-300 bg-cyan-50 text-cyan-700" : "border-zinc-200 text-zinc-500 hover:text-zinc-700 hover:border-zinc-300"}`}
           >
             {label}

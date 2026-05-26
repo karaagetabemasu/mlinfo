@@ -24,7 +24,7 @@ export default function ManufacturingAiPage() {
 
   return (
     <main className="min-h-screen bg-zinc-50 text-zinc-900">
-      <header className="border-b border-zinc-200 bg-white px-6 py-4 flex items-center justify-between">
+      <header className="border-b border-zinc-200 bg-white px-8 py-4 flex items-center justify-between">
         <Logo />
         <SearchBar />
       </header>

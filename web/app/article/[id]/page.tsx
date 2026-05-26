@@ -279,27 +279,31 @@ export default async function ArticlePage({ params }: Props) {
               <p className="text-sm leading-relaxed text-zinc-700">{getUseCase(article)}</p>
             </section>
 
-            <section className="bg-white border border-zinc-200 p-5">
-              <h2 className="text-sm font-semibold text-zinc-900 mb-3">実装情報</h2>
-              <dl className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-                <div>
-                  <dt className="text-xs text-zinc-400">Paper URL</dt>
-                  <dd className="text-zinc-700">{article.source === "arxiv" ? "あり" : "未取得"}</dd>
-                </div>
-                <div>
-                  <dt className="text-xs text-zinc-400">GitHub URL</dt>
-                  <dd className="text-zinc-700">{article.source === "github" || article.codeUrl ? "あり" : "未取得"}</dd>
-                </div>
-                <div>
-                  <dt className="text-xs text-zinc-400">Hugging Face URL</dt>
-                  <dd className="text-zinc-700">{article.source === "huggingface" ? "あり" : "未取得"}</dd>
-                </div>
-                <div>
-                  <dt className="text-xs text-zinc-400">Demo / Colab</dt>
-                  <dd className="text-zinc-700">未取得</dd>
-                </div>
-              </dl>
-            </section>
+            {(article.source === "arxiv" || article.source === "github" || article.codeUrl || article.source === "huggingface") && (
+              <section className="bg-white border border-zinc-200 p-5">
+                <h2 className="text-sm font-semibold text-zinc-900 mb-3">実装情報</h2>
+                <dl className="flex flex-wrap gap-2 text-sm">
+                  {article.source === "arxiv" && (
+                    <div className="border border-violet-100 bg-violet-50 px-3 py-1.5">
+                      <dt className="text-xs text-violet-400">Paper URL</dt>
+                      <dd className="text-violet-700 font-medium">あり</dd>
+                    </div>
+                  )}
+                  {(article.source === "github" || article.codeUrl) && (
+                    <div className="border border-zinc-200 bg-zinc-50 px-3 py-1.5">
+                      <dt className="text-xs text-zinc-400">GitHub URL</dt>
+                      <dd className="text-zinc-700 font-medium">あり</dd>
+                    </div>
+                  )}
+                  {article.source === "huggingface" && (
+                    <div className="border border-amber-100 bg-amber-50 px-3 py-1.5">
+                      <dt className="text-xs text-amber-400">Hugging Face URL</dt>
+                      <dd className="text-amber-700 font-medium">あり</dd>
+                    </div>
+                  )}
+                </dl>
+              </section>
+            )}
 
             <ImplementationChecklist article={article} />
 

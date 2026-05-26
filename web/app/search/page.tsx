@@ -60,19 +60,16 @@ export default async function SearchPage({ searchParams }: Props) {
 
   return (
     <main className="min-h-screen bg-zinc-50 text-zinc-900">
-      <header className="border-b border-zinc-200 bg-white px-6 py-4 flex items-center justify-between">
+      <header className="border-b border-zinc-200 bg-white px-8 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <Logo />
           <span className="text-zinc-300">/</span>
           <span className="text-sm font-semibold text-zinc-700">検索</span>
         </div>
+        <SearchBar initialQuery={q} />
       </header>
 
       <div className="px-6 py-8 max-w-4xl mx-auto">
-        <div className="mb-6">
-          <SearchBar initialQuery={q} />
-        </div>
-
         {q && (
           <div className="mb-4 flex items-center justify-between gap-4">
             <p className="text-zinc-600 text-xs">

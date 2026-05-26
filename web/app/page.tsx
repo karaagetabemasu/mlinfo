@@ -79,13 +79,22 @@ export default function Home() {
             <Link href="/saved" className="hover:text-zinc-900">保存</Link>
           </nav>
           <SearchBar />
-          <div className="flex items-center gap-2 text-xs text-zinc-400 hidden sm:flex">
+          <div className="hidden sm:flex items-center gap-2 text-xs text-zinc-400">
             <span>{totalCategories} categories</span>
             <span className="text-zinc-300">·</span>
             <span>{totalArticles} articles</span>
           </div>
         </div>
       </header>
+      <nav className="lg:hidden border-b border-zinc-200 bg-white overflow-x-auto">
+        <div className="flex items-center px-6 py-2 gap-4 text-xs text-zinc-500 whitespace-nowrap">
+          <Link href="/manufacturing-ai" className="hover:text-zinc-900 py-1">製造業AI</Link>
+          <Link href="/weekly" className="hover:text-zinc-900 py-1">週次まとめ</Link>
+          <Link href="/topics" className="hover:text-zinc-900 py-1">トピック</Link>
+          <Link href="/compare" className="hover:text-zinc-900 py-1">比較</Link>
+          <Link href="/saved" className="hover:text-zinc-900 py-1">保存</Link>
+        </div>
+      </nav>
 
       <div className="px-6 py-8 max-w-6xl mx-auto">
         <section className="mb-8">
@@ -99,9 +108,6 @@ export default function Home() {
                 配合最適化、品質予測、異常検知、材料探索などを、自社のExcel/CSVデータで試すための論文・実装・手順を整理します。
               </p>
             </div>
-            {lastUpdated && (
-              <span className="text-zinc-400 text-xs shrink-0">最終更新: {lastUpdated.slice(0, 10)}</span>
-            )}
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-2 mt-6">
@@ -344,7 +350,7 @@ export default function Home() {
               <Link
                 key={category.id}
                 href={`/category/${category.id}`}
-                className={`border-l-2 ${category.color} border border-zinc-200 border-l-0 bg-white p-5 hover:bg-zinc-50 hover:border-zinc-300 transition-all group`}
+                className={`border border-zinc-200 border-l-4 ${category.color} bg-white p-5 hover:bg-zinc-50 hover:border-zinc-300 transition-all group`}
               >
                 <div className="flex items-start justify-between mb-3">
                   <h3 className="font-semibold text-zinc-900 text-sm">{category.name}</h3>

@@ -57,7 +57,7 @@ export default async function CategoryPage({ params }: Props) {
 
   return (
     <main className="min-h-screen bg-zinc-50 text-zinc-900">
-      <header className="border-b border-zinc-200 bg-white px-6 py-4 flex items-center justify-between">
+      <header className="border-b border-zinc-200 bg-white px-8 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
           <Logo />
           <span className="text-zinc-300">/</span>
