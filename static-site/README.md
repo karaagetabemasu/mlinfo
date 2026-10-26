@@ -7,13 +7,13 @@ Cloudflare Pages Free向けの静的サイトです。SSR、ISR、Functions、�
 Node 22.12以降とPython 3.11以降を用意し、リポジトリの `static-site` を作業ディレクトリにします。
 
 ```
-npm install --ignore-scripts --no-audit --no-fund
+npm ci --ignore-scripts --no-audit --no-fund
 SITE_URL=https://your-project.pages.dev npm run build
 ```
 
 収集済みデータを検証・保持ルールで選定し、AstroでHTMLを生成、Pagefindで日本語検索インデックスを生成してから容量検査します。公開するのは `static-site/dist` だけです。`build/`・`content/`・旧 `web/data` は公開しません。
 
-CIで最初のビルドが成功したら、生成されたpackage-lock.jsonを固定してnpm ciへ切り替えてください。AstroとPagefindの直接依存バージョンは固定していますが、ロックファイル生成前は推移的依存がまだ固定されていません。本番移行前の必須作業です。
+GitHub CIで生成したpackage-lock.jsonを保存し、npm ciで推移的依存も固定します。依存更新時はロックファイルとビルド検証をまとめて更新してください。
 
 ## データと削除
 
@@ -41,7 +41,7 @@ CIで最初のビルドが成功したら、生成されたpackage-lock.jsonを�
 ## 公開前に必ず確認
 
 1. 重要記事を選び、初回dry-runの削除予定を確認する。
-2. CIでビルドを通し、ロックファイルを固定する。
+2. CIでビルドを通し、固定したロックファイルで再現することを確認する。
 3. 本番URLを設定してビルドし直す。canonical、sitemap、RSSが新ホストを参照することを確認する。
 4. 既存記事、カテゴリ、ガイド、検索、保存、古い保存IDの引継ぎを確認する。
 5. 存在しないパスがHTTP404になり、関数実行が発生しないことをPagesで確認する。

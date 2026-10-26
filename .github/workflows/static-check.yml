@@ -26,17 +26,7 @@ jobs:
         run: python3 -m unittest discover -s tests -v
       - name: Install pinned static compiler and search indexer
         working-directory: static-site
-        run: npm install --ignore-scripts --no-audit --no-fund
-      - name: Export dependency lock for reproducibility
-        working-directory: static-site
-        run: |
-          python3 - <<'PY'
-          import base64
-          raw = open('package-lock.json','rb').read()
-          encoded = base64.b64encode(raw).decode()
-          for i in range(0,len(encoded),2000):
-              print('MLINFO_LOCK_CHUNK ' + str(i//2000) + ' ' + encoded[i:i+2000])
-          PY
+        run: npm ci --ignore-scripts --no-audit --no-fund
       - name: Compile static HTML and validate free-tier budgets
         working-directory: static-site
         run: npm run build
