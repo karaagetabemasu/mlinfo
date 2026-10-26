@@ -13,11 +13,13 @@ jobs:
       # Validation only: the final production URL is set in Pages before deployment.
       SITE_URL: https://mlinfo-static.pages.dev
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: '22'
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.11'
       - name: Retention and data safety tests
@@ -25,6 +27,16 @@ jobs:
       - name: Install pinned static compiler and search indexer
         working-directory: static-site
         run: npm install --ignore-scripts --no-audit --no-fund
+      - name: Export dependency lock for reproducibility
+        working-directory: static-site
+        run: |
+          python3 - <<'PY'
+          import base64
+          raw = open('package-lock.json','rb').read()
+          encoded = base64.b64encode(raw).decode()
+          for i in range(0,len(encoded),2000):
+              print('MLINFO_LOCK_CHUNK ' + str(i//2000) + ' ' + encoded[i:i+2000])
+          PY
       - name: Compile static HTML and validate free-tier budgets
         working-directory: static-site
         run: npm run build
