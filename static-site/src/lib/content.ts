@@ -1,8 +1,8 @@
 import fs from 'node:fs';
-import {fileURLToPath} from 'node:url';
+import path from 'node:path';
 import type {Article} from '../../../web/app/data/dummy';
 export {categories} from '../../../web/app/data/dummy';
-const data=JSON.parse(fs.readFileSync(fileURLToPath(new URL('../../../build/articles.json',import.meta.url)),'utf8'));
+const data=JSON.parse(fs.readFileSync(path.resolve(process.cwd(),'../build/articles.json'),'utf8'));
 export const articles:Article[]=data.articles;
 export const updated:string=data.lastUpdated;
 export const byID=new Map(articles.map(a=>[a.id,a]));
