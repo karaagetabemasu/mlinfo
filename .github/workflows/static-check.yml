@@ -1,0 +1,30 @@
+name: Check static site
+on:
+  pull_request:
+    paths: ['static-site/**', 'scripts/**', 'content/**', 'web/lib/**', 'web/app/data/**', '.github/workflows/static-check.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      # Validation only: the final production URL is set in Pages before deployment.
+      SITE_URL: https://mlinfo-static.pages.dev
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Retention and data safety tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Install pinned static compiler and search indexer
+        working-directory: static-site
+        run: npm install --ignore-scripts --no-audit --no-fund
+      - name: Compile static HTML and validate free-tier budgets
+        working-directory: static-site
+        run: npm run build

@@ -1,0 +1,17 @@
+---
+import Base from '../layouts/Base.astro';import Card from '../components/Card.astro';import {articles,categories,pagesFor,safeJSON} from '../lib/content';import {topics,useCases,comparisons,getTopicArticles} from '../../../web/lib/topicCatalog';import {manufacturingGuides,getManufacturingGuideArticles} from '../../../web/lib/manufacturingCatalog';
+export function getStaticPaths(){
+ const all:any[]=[];const add=(route:string,title:string,items:any[],intro='',guide:any=null)=>{for(const p of pagesFor(items))all.push({params:{route:p.page===1?route:`${route}/page/${p.page}`},props:{...p,base:'/'+route,title,intro,guide}});};
+ for(const c of categories)add('category/'+c.id,c.name,articles.filter(a=>a.category===c.id));
+ add('weekly','新着記事',articles,'日次更新の新着・公開記事を新しい順に掲載しています。');
+ add('topics','トピックから探す',[], '');add('manufacturing-ai','製造業AI・材料開発ガイド',[]);
+ for(const t of topics)add('topics/'+t.slug,t.title,getTopicArticles(t,articles),t.description);
+ for(const t of useCases)add('use-cases/'+t.slug,t.title,getTopicArticles(t,articles),t.description);
+ for(const g of manufacturingGuides)add('manufacturing-ai/'+g.slug,g.title,getManufacturingGuideArticles(g,articles),g.description,g);
+ add('compare','手法・実装を比較する',articles.slice(0,24),'用途とデータ条件を確認しながら、原典と実装を比較してください。');
+ return all;
+}
+const {title,intro,items,page,total,base,guide}=Astro.props;
+const link=(n:number)=>n===1?base:base+'/page/'+n;
+---
+<Base title={title} description={intro||title}><p class="eyebrow">MLINFO COLLECTION</p><h1>{title}</h1>{intro&&<p class="lead">{intro}</p>}{base==='/topics'&&<div class="grid guides">{topics.map(t=><a class="guide" href={'/topics/'+t.slug}><h2>{t.title}</h2><p>{t.description}</p></a>)}</div>}{base==='/manufacturing-ai'&&<div class="grid guides">{manufacturingGuides.map(g=><a class="guide" href={'/manufacturing-ai/'+g.slug}><h2>{g.shortTitle}</h2><p>{g.problem}</p></a>)}</div>}{guide&&page===1&&<div class="guide-detail"><section><h2>どこから始める？</h2><p>{guide.problem}</p><ol>{guide.firstSteps.map(s=><li>{s}</li>)}</ol></section><section><h2>データと評価</h2><p>{guide.dataShape}</p><pre>{guide.commonDataColumns.join(', ')}</pre><p>ベースライン：{guide.baseline}</p><p>評価：{guide.evaluation}</p></section><section><h2>実装時の注意</h2><ul>{[...guide.implementationNotes,...guide.pitfalls].map(s=><li>{s}</li>)}</ul></section><section><h2>よくある質問</h2>{guide.faq.map(f=><details><summary>{f.question}</summary><p>{f.answer}</p></details>)}</section></div>}{items.length>0&&<section><div class="heading"><h2>{guide?'関連する論文・実装':'記事一覧'}</h2><span class="muted">{page} / {total}</span></div><div class="grid">{items.map((a:any)=><Card article={a}/>)}</div><nav class="pagination" aria-label="ページ移動">{page>1&&<a href={link(page-1)}>← 前へ</a>}{page<total&&<a href={link(page+1)}>次へ →</a>}</nav></section>}</Base>

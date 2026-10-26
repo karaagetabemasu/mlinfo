@@ -5,15 +5,19 @@ on:
     - cron: '0 23 * * *'  # 毎日 08:00 JST (= UTC 23:00)
   workflow_dispatch:       # 手動実行も可能
 
+concurrency:
+  group: update-articles
+  cancel-in-progress: false
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     permissions:
       contents: write
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      GROQ_API_KEY: ${{ secrets.GROQAPI }}
 
     steps:
       - name: Checkout
@@ -30,11 +34,15 @@ jobs:
       - name: Fetch articles
         run: python scripts/fetch_articles.py
 
+      - name: Validate and merge retained article records
+        run: python scripts/content_store.py sync --apply
+
       - name: Commit and push
         run: |
           git config user.name "MLinfo Bot"
           git config user.email "bot@mlinfo.app"
-          git add web/data/articles.json web/data/use_case_cache.json || true
+          git add web/data/articles.json web/data/use_case_cache.json content/
           git diff --staged --quiet || git commit -m "chore: update articles $(TZ=Asia/Tokyo date +'%Y-%m-%d %H:%M JST')"
           git pull --rebase origin main
           git push
+
