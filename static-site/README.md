@@ -21,7 +21,7 @@ GitHub CIで生成したpackage-lock.jsonを保存し、npm ciで推移的依存
 - `content/retention.json` の `important` へ記事IDと保護理由を追加します。保護したIDが欠落すると処理は失敗します。
 - `python3 scripts/content_store.py prepare` はdry-run。原本を書き換えず、`build/content-report.json` に削除予定と検証不合格を出力します。
 - `python3 scripts/content_store.py sync --apply` は原本を `content/articles/<source>/<id>.json` に保存し、期限切れ・件数超過を適用します。Git履歴からは消しません。
-- 日次更新workflowは取得後にsyncします。取得対象から外れたことだけを理由には削除しません。
+- 移行中はmainの日次収集成功後、Sync static contentが記事JSONだけを静的版ブランチへ取り込みます。前回の公開記事を先に保存するため、取得対象から外れたことだけを理由には削除しません。
 - 新しい原本の作成・内容が変わった記事だけを書き換えます。公開URL台帳は `content/registry.json`。
 - 原典・概要はプレーンテキストです。HTML/MDXとして評価しません。
 
@@ -55,3 +55,15 @@ Google Analyticsは同意後のみ読み込みます。検索語・URLのquery/f
 ## 容量検査
 
 `check_static.py`は公開ファイル16,000件以上、20MiB以上の単体ファイル、500MiB超の合計、原本・Functionsの混入、CSP不足、404へのscript追加、記事URL欠損でビルドを失敗させます。検査失敗時に現行サイトを上書きしない運用です。無料枠の上限や脆弱性がなくなることを保証するものではありません。
+
+## 移行期間の日次反映
+
+- 現行収集先: `main`。Cloudflare Pagesの公開ブランチ: `feat/static-free-architecture`。
+- `main`の`Update Articles`成功を`workflow_run`で受け、固定した静的版ブランチ上で記事保持・12件のテスト・静的ビルド・容量検査を実行します。検証成功時だけ記事JSONと`content/`をコミットします。
+- 収集失敗・不正/空データ・容量超過・競合時は公開ブランチへのpushを行わず、公開済みサイトを維持します。変更がなければビルドとpushを省略します。GitHub Actionsのタイムアウトは20分で、自動無限リトライはしません。
+- 書き込みトークンはpushステップだけへ渡します。Cloudflare APIキー、デプロイフック、有料サービスの契約は不要です。
+- `main`の記事コミットには`[CF-Pages-Skip]`を付け、不要なCloudflareプレビューを抑止します。静的版への検証済みコミットには付けず、Pages Git連携で公開します。
+- GitHub Actionsの`Sync static content`を手動実行すると、収集APIを再度呼ばず最新のmain記事を取り込めます。
+- Cloudflare管理画面のプレビュー分岐制御は、このworkflowから変更しません。将来の他ブランチの不要なビルドを完全に止めるにはPagesの設定でプレビュー自動デプロイを無効化してください。
+- 現行Vercelは継続します。静的版PRのmainへのマージやVercel停止は、この処理では行いません。移行完了後は公開ブランチと収集先を一本化し、この橋渡しworkflowを整理してください。
+- 外部AI用のsecretは収集jobへ渡さず、AIによる追加生成を停止します。既存の生成済みテキストは保持します。
