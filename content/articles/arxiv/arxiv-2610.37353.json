@@ -1,0 +1,31 @@
+{
+  "abstract": "Objective: Variable selection for clinical prediction models is commonly done on statistical grounds related to model fit. Statistical approaches ignore the cost of misclassifications and the harm of measuring a variable. We aim to develop a decision-analytic variable selection algorithm based on net benefit. Materials and Methods: The proposed algorithm selects the set of predictors by exhaustively comparing the net benefit of all combinations using cross validation, with an extension based on backward elimination for settings with many predictors. Variables are selected if the increased net benefit from better predictiveness exceeds the net benefit reduction from the harm of variable measurement. Harm includes financial expense, time, resource allocation, and patient burden. We illustrate the algorithm through a simulated example and three real case studies. We compare its performance to traditional backward elimination and LASSO. Results: Across the case studies, parsimonious models were generated that optimized clinical utility with minimal impact on discrimination and calibration. Penalizing predictors based on their cost ensured that expensive or burdensome variables were only selected if they offer sufficient clinical utility. The algorithm was implemented in the R package NBvarsel. Discussion: Decision-analytic variable selection allows prediction models to maximize patient benefit while minimizing unnecessary clinical burden and costs. Conclusion: Clinical utility should not be an afterthought reserved only for implementation. By integrating a harm-adjusted net benefit metric directly into the variable selection process, NBvarsel allows researchers to select only the variables that sufficiently improve clinical utility.",
+  "abstract_ja": "",
+  "authors": [
+    "Lasai Barreñada",
+    "Andrew Vickers",
+    "Laure Wynants",
+    "Bieke Tack",
+    "Dirk Timmerman"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.37353",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Objective: Variable selection for clinical prediction models is commonly done on statistical grounds related to model fit. Statistical approaches ignore the cost of misclassifications and the harm of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Cost-based variable selection for prediction models",
+  "url": "https://arxiv.org/abs/2610.37353",
+  "use_case": ""
+}

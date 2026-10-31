@@ -1,0 +1,26 @@
+{
+  "abstract": "We study adversarial linear bandits with strong corruption, in which an adaptive adversary chooses the reward vectors and a strong adversary corrupts each observed reward after seeing the learner's action, subject to a known total corruption budget $C$. Strong corruption breaks the importance-weighted reward estimates used by adversarial bandit algorithms: by corrupting only the rounds in which a rarely sampled action is drawn, the adversary amplifies each unit of corruption by the inverse of its sampling probability. The best known bound for this problem, $\\tilde O(\\sqrt{d^3T} + dC)$ by Liu et al. (2024), is a factor $\\sqrt{d}$ above the corruption-free rate in its leading term, and whether $\\tilde O(d\\sqrt{T} + dC)$ regret is achievable was left open. We propose CRW-FTRL, which runs follow-the-regularized-leader with a radius-weighted entropy regularizer and estimates rewards with a normalized kernel estimator whose sensitivity to corruption is governed by per-action radii instead of inverse sampling probabilities. The radii are nondecreasing and are chosen jointly with the sampling distribution through a monotone log-determinant barrier problem, so that a negative linear term in the regularizer cancels both the corruption bias and the estimation error of every comparator. For $K$ actions in $\\mathbb{R}^d$, CRW-FTRL achieves $\\tilde O(\\sqrt{dT\\log K} + dC)$ regret with high probability against an adaptive adversary, which matches the best known corruption-free rate and the $Ω(dC)$ lower bound up to logarithmic factors. Applied to a discretization of a general compact action set, it yields $\\tilde O(d\\sqrt{T} + dC)$ regret, which settles the statistical rate of corrupted adversarial linear bandits under strong corruption.",
+  "abstract_ja": "",
+  "authors": [
+    "Qiwei Di",
+    "Quanquan Gu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38243",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "We study adversarial linear bandits with strong corruption, in which an adaptive adversary chooses the reward vectors and a strong adversary corrupts each observed reward after seeing the learner's…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Nearly Minimax Optimal Regret for Adversarial Linear Bandits with Strong Corruptions",
+  "url": "https://arxiv.org/abs/2610.38243",
+  "use_case": ""
+}

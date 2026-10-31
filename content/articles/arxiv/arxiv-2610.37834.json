@@ -1,0 +1,28 @@
+{
+  "abstract": "Deep neural networks learn data-dependent features, a capacity widely credited for their empirical success. However, explicitly characterizing what features emerge -- and when they improve generalization -- is challenging, since training is nonlinear and non-convex and the data is often anisotropic. Here, we give a closed-form account of feature learning for a deep linear network in a mean-field parameterization, trained by one gradient step from initialization on high-dimensional data carrying a low-dimensional (spiked) signal. In the infinite-width mean-field limit, one step updates each layer's feature kernel by a target-aligned rank-one spike, amplified by both the learning rate and the layer depth. We next assess how these features impact prediction through kernel ridge regression (KRR), finding that KRR on the learned feature kernel yields scalar inflation of the KRR estimator at initialization -- an \"anti-shrinkage\" mechanism that reinflates task-relevant directions suppressed by ridge, while also amplifying noise. To study when this inflation improves generalization, in the overparameterized proportional limit we derive closed-form expressions for the bias, variance, and generalization errors of these estimators in terms of key macroscopic parameters -- notably the spike strength and spike-target alignment. Crucially, we find that a one-step generalization advantage vanishes for isotropic inputs and appears when both the spike strength and an effective signal-to-noise ratio are sufficiently large, demonstrating that a successful first gradient step both requires and benefits from low-dimensional task structure.",
+  "abstract_ja": "",
+  "authors": [
+    "Shaunak Bhandarkar",
+    "Boris Hanin"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.37834",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Deep neural networks learn data-dependent features, a capacity widely credited for their empirical success. However, explicitly characterizing what features emerge -- and when they improve…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Investigating the Early Signatures of Feature Learning in Deep Linear Networks",
+  "url": "https://arxiv.org/abs/2610.37834",
+  "use_case": ""
+}

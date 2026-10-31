@@ -1,0 +1,30 @@
+{
+  "abstract": "Tabular foundation models based on prior-data fitted networks (PFNs) predict on a new data set in a single forward pass, but they cannot report which inputs their predictions depend on. We propose SelectPFN, a PFN that performs Bayesian variable selection and prediction jointly for sparse nonlinear regression. In one forward pass it returns posterior inclusion probabilities for every variable, and its predictions are computed from sampled subsets only, so excluded variables provably cannot affect them; we show this is exactly what the Bayesian model prescribes. The network is pretrained once on synthetic tasks from a meta-prior built around a group spike-and-slab sparse-input neural network. Column-permutation equivariance combined with random interleaving of original and knockoff columns yields knockoff statistics with exact finite-sample false discovery rate control, even when the meta-prior is wrong. We develop theory for amortized selection: a Bayes-regret bound for the amortized median probability model, a characterization showing that the information needed to detect a variable grows like $(2/λ)\\log(1/ω)$ in the prior weight $ω$ of structures that can use it, where $λ\\le1$ is an efficiency, and a negative result showing that average-case training does not transfer to frequentist guarantees at a fixed truth. On out-of-prior nonlinear designs with p up to 500, SelectPFN improves the area under the precision-recall curve by 0.23-0.28 over the lasso, BART, DART, LassoNet and a group-penalized sparse neural network, at a false discovery proportion of about 0.07 and 0.04 seconds per data set. The advantage persists on real covariate matrices, and, as the theory predicts, detection of interaction-only variables rises monotonically with their prior weight.",
+  "abstract_ja": "",
+  "authors": [
+    "Bin Luo"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.21950",
+  "likes_count": 0,
+  "publishedAt": "2026-10-15",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Tabular foundation models based on prior-data fitted networks (PFNs) predict on a new data set in a single forward pass, but they cannot report which inputs their predictions depend on. We propose…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "tabular"
+    ],
+    "task": [
+      "detection",
+      "regression"
+    ]
+  },
+  "title": "SelectPFN: Amortized Bayesian Variable Selection for Sparse Nonlinear Regression with Prior-Data Fitted Networks",
+  "url": "https://arxiv.org/abs/2610.21950",
+  "use_case": ""
+}

@@ -1,0 +1,29 @@
+{
+  "abstract": "Genetic Programming Guided Local Search (GPGLS) uses genetic programming to evolve utility functions for guided local search in large-scale vehicle routing problems (LSVRPs). Evaluating every GP individual on every training instance at every generation is expensive, so GPGLS is usually trained on small instance batches. Existing curriculum-based GPGLS orders these batches mainly by instance size. Adaptive Curriculum Learning GPGLS (ACL-GPGLS) improves training efficiency by adapting when the search moves between fixed curriculum stages, but the instance difficulty order remains predefined. We propose DCL-GPGLS, which estimates the difficulty of each training instance from the current population's solution quality and updates the estimates during evolution. Each generation then receives a batch near a scheduled difficulty level, with a correction that limits repeated selection of the same instances. Experiments on a fixed training-test split of the CVRPLIB X set show that DCL-GPGLS achieves the best observed average rank and mean test cost among six training policies. It obtains the lowest mean cost on 36 of 65 unseen test instances and is significantly better than the static feedback-derived curriculum, matched in total evaluator calls, on 6 instances, with no significant difference on the remaining 59.",
+  "abstract_ja": "",
+  "authors": [
+    "Saining Liu",
+    "Yi Mei",
+    "Mengjie Zhang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2609.24105",
+  "likes_count": 0,
+  "publishedAt": "2026-09-21",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Genetic Programming Guided Local Search (GPGLS) uses genetic programming to evolve utility functions for guided local search in large-scale vehicle routing problems (LSVRPs). Evaluating every GP…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "DCL-GPGLS: Dynamic Curriculum Learning for Genetic Programming Guided Local Search in Large-Scale Vehicle Routing",
+  "url": "https://arxiv.org/abs/2609.24105",
+  "use_case": ""
+}

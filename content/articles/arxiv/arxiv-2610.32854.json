@@ -1,0 +1,29 @@
+{
+  "abstract": "Low-rank adaptation (LoRA) is now a standard approach to parameter-efficient fine-tuning of large neural networks. Its low-rank factorization is inherently non-identifiable, making LoRA a singular statistical model whose learning complexity cannot be described by parameter dimension alone. We study this complexity using the real log canonical threshold (RLCT) from singular learning theory and how it depends on both the low-rank parameterization and the pretrained network. Under a local linearization, LoRA induces a low-rank trace regression model whose Kullback--Leibler geometry is controlled by a forward-backward covariance, constructed from activations and backpropagated sensitivities at the adapted layer. This covariance determines which low-rank perturbations are statistically observable. When it is nondegenerate along the relevant low-rank directions, we recover the classical learning complexity of reduced-rank regression; when its kernel meets these directions, additional statistically indistinguishable parameters change the singular geometry. We characterize this geometry locally through observable tangent directions and a residual singularity, and globally through affine linear sections of determinantal varieties. The global learning complexity need not be determined at a ground-truth parameter, as singularities on another rank stratum can dominate. We also introduce a curvature-corrected multi-temperature estimator of the RLCT. Experiments on multilayer perceptron and transformer architectures reveal strongly layer-dependent forward-backward geometry and show that ambient covariance degeneracy does not imply degeneracy along the low-rank directions relevant to adaptation.",
+  "abstract_ja": "",
+  "authors": [
+    "Kamillo Ferry",
+    "Anthea Monod",
+    "Keisuke Yano"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.32854",
+  "likes_count": 0,
+  "publishedAt": "2026-10-23",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Low-rank adaptation (LoRA) is now a standard approach to parameter-efficient fine-tuning of large neural networks. Its low-rank factorization is inherently non-identifiable, making LoRA a singular…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Singular Geometry of Low-Rank Adaptation",
+  "url": "https://arxiv.org/abs/2610.32854",
+  "use_case": ""
+}

@@ -1,0 +1,30 @@
+{
+  "abstract": "We study policy optimization for infinite-horizon, discounted constrained Markov decision processes. While primal-dual ($\\texttt{PD}$) methods are widely used in practice, their theoretical guarantees typically hold for an impractical mixture policy. In contrast, dual descent ($\\texttt{DD}$) methods output a single policy (\"last iterate\") with guarantees on its performance. However, such methods require iteratively solving entropy-regularized MDPs in an inner-loop, limiting their practical effectiveness. Moreover, existing analyses rely on strong coverage assumptions that are difficult to satisfy in practice. Consequently, we first provide a new analysis of $\\texttt{DD}$ methods that does not require coverage assumptions. We then employ entropy-regularized natural policy gradient and dual regularization to eliminate the inner loop, resulting in an efficient $\\texttt{PD}$ algorithm. We develop a novel tracking analysis which shows that, compared to existing methods, the proposed algorithm achieves improved last-iterate convergence guarantees. Furthermore, our theoretical framework allows us to analyze a truncated bilevel method that interpolates between $\\texttt{DD}$ and $\\texttt{PD}$ methods. Finally, we generalize our analysis to handle linear function approximation. Compared to prior last-iterate methods, we prove stronger guarantees under less restrictive assumptions.",
+  "abstract_ja": "",
+  "authors": [
+    "Michael Lu",
+    "Max Qiushi Lin",
+    "Mo Chen",
+    "Sharan Vaswani"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39524",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "We study policy optimization for infinite-horizon, discounted constrained Markov decision processes. While primal-dual ($\\texttt{PD}$) methods are widely used in practice, their theoretical…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Last-Iterate Convergence for Constrained MDPs: From Dual Descent to Primal-Dual",
+  "url": "https://arxiv.org/abs/2610.39524",
+  "use_case": ""
+}

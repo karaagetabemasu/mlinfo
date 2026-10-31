@@ -1,0 +1,27 @@
+{
+  "abstract": "We study an online trading problem where a trader, given a sequence of i.i.d. prices drawn from a known distribution $F$ on $[0,1]$, must make irrevocable buy, sell, or hold decisions subject to storage constraints. We investigate achievable algorithmic performance measured in terms of regret, the difference between the expected profit of the hindsight optimal policy that knows the entire price sequence and an online algorithm. We analyze finite atomic and continuous distributions characterized by their local behavior around the median which we capture using a parameter $β$. The parameter $β$ quantifies how the mass of prices accumulates around the distribution median. We identify a new driver of algorithmic performance, demonstrating that median gaps coupled with an initial inventory level of zero can force regret scaling of $Ω(T^{(β+ 1)/(2β+4)})$ --- establishing a novel spectrum of fundamental limits on algorithmic performance. We then study STARS, short for Storage Trading by Averaging Repeatedly across multiple Scenarios, which simulates possible future price scenarios to approximate the value-to-go function and make buy/sell/hold decisions. We show that STARS obtain near-optimal algorithmic performance (upto poly-logarithmic factors) across a broad range of distributions. In particular, it achieves $O(\\log T)$ regret for finite atomic prices, $\\widetilde{O}(T^{β/(2β+2)})$ for continuous distributions without a median gap and $\\widetilde{O}(T^{(β+1)/(2β+4)})$ for continuous distributions with a median gap for $β\\geq 0$.",
+  "abstract_ja": "",
+  "authors": [
+    "Jerry Anunrojwong",
+    "Akshit Kumar",
+    "Rachitesh Kumar"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.07285",
+  "likes_count": 0,
+  "publishedAt": "2026-10-05",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "We study an online trading problem where a trader, given a sequence of i.i.d. prices drawn from a known distribution $F$ on $[0,1]$, must make irrevocable buy, sell, or hold decisions subject to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Trading with the STARS: Algorithm Design & Spectrum of Fundamental Limits for Trading with Storage",
+  "url": "https://arxiv.org/abs/2610.07285",
+  "use_case": ""
+}

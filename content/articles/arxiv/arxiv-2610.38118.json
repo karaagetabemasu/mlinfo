@@ -1,0 +1,25 @@
+{
+  "abstract": "Synapse-resolution fruit-fly (Drosophila) connectomes enable neuron-by-neuron simulation of entire insect nervous systems, yet whole-brain models still require computationally demanding software or multiple neuromorphic chips, and single FPGAs support only small or statistical networks. Scaling to the full connectome, per-synapse spike expansion scales queue traffic with fan-out up to 11.2k, while 41-bit neuron states require 6.83 Mbit, exceeding the 6.27 Mbit on-chip block static RAM (BSRAM) of the target device. FPGAFly runs the 166.7k-neuron, 25.6M-connection leaky integrate-and-fire male central nervous system (CNS) connectome on one FPGA. Order-preserving deferred expansion queues one 64-bit descriptor per spike in source-ID order, cutting external memory traffic by 54.5%-57.9% and peak queue data by 95.6%-96.5% with bit-identical results. A 24-bit encoding shares codewords across normal, refractory, and quantized out-of-range states, reducing BSRAM usage from 438 to 270 with 1245 extra LUTs and zero changes across 10,000 MNIST predictions. At 80 MHz on a Gowin GW5AST-LV138, each 100 ms window finishes in 86.83 ms on average and within 93.05 ms across 2000 tests, realizing the first complete Drosophila CNS connectome simulation on one FPGA.",
+  "abstract_ja": "",
+  "authors": [
+    "YE Ziyang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38118",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Synapse-resolution fruit-fly (Drosophila) connectomes enable neuron-by-neuron simulation of entire insect nervous systems, yet whole-brain models still require computationally demanding software or…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "FPGAFly: A 166.7k-Neuron Fruit-Fly Connectome on One FPGA via Deferred Spike Expansion and Shared-Codeword States",
+  "url": "https://arxiv.org/abs/2610.38118",
+  "use_case": ""
+}

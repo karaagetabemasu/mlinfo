@@ -1,0 +1,29 @@
+{
+  "abstract": "The Moon changes gravity, terrain, and soil at once. Learned locomotion has studied reduced gravity on rigid ground and granular terrain mostly at Earth gravity, but not humanoids under both, generalist-controller transfer, or the Earth cost of lunar adaptation. On a simulated Unitree G1, we train 12 policies with one recipe, varying gravity, terrain geometry, and ground contact (rigid or three-dimensional resistive force theory, 3D RFT), and including Earth-to-Moon fine-tuning and gravity randomization. We test them at both gravities on rigid ground and 3D RFT, and at their training gravity on three held-out soil models. We also test the frozen SONIC, a released generalist humanoid controller, at both gravities on rigid ground only. Gravity transfer is asymmetric. Earth-trained policies keep 0.64 to 0.75 survival at the Moon on flat rigid ground, Moon-trained and fine-tuned policies cannot stand at Earth, and SONIC survives at most 0.10 at the Moon. Rough training lifts combined-tile survival from 0.53 to 0.98 at Earth and 0.80 to 0.99 at the Moon. In 3D RFT, soil training helps on Earth sand, on tiles and for rough-trained policies also on flat sand. On the stiffer lunar soil it helps only flat-trained Earth policies at Earth and changes the survival of Moon-trained policies by at most a few hundredths. In the sampled rollouts of the held-out soil models, Moon-trained policies keep most of their rigid-ground progress on lunar regolith at the low G1 foot pressure, with per-seed progress ratios of 0.84 to 1.39 apart from one seed with a short rigid reference. A gravity-randomized policy trained on rough 3D RFT terrain has a seed-mean survival of at least 0.84 at Earth and 0.96 at the Moon on every key test cell up to 20 degrees. Lunar results are simulation predictions conditional on the contact model and soil stiffness.",
+  "abstract_ja": "",
+  "authors": [
+    "Guillem Casadesus Vila",
+    "Sri Aditya Deevi",
+    "Grace X. Gao"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30080",
+  "likes_count": 0,
+  "publishedAt": "2026-10-21",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "The Moon changes gravity, terrain, and soil at once. Learned locomotion has studied reduced gravity on rigid ground and granular terrain mostly at Earth gravity, but not humanoids under both,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Do Earth-Trained Humanoid Controllers Walk on the Moon? Gravity, Terrain, and Soil Transfer",
+  "url": "https://arxiv.org/abs/2610.30080",
+  "use_case": ""
+}

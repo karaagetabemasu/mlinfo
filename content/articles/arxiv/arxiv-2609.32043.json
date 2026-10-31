@@ -1,0 +1,29 @@
+{
+  "abstract": "We introduce Distance-Residual Physics-Informed Neural Networks (DR-PINNs), a physics-informed learning framework for approximating solutions of ordinary and partial differential inclusions (DIs), governing laws in which a differential operator is constrained to lie in a set-valued map rather than equaling a prescribed function. The method replaces the classical pointwise PDE/ODE residual by the squared distance from the differential operator to the admissible set. This distance vanishes exactly when the inclusion is satisfied and measures the infimal correction needed for the operator to enter the admissible set. For a fixed closed convex admissible set, the squared distance is differentiable with respect to the operator value, with gradient given by the metric projection. When the admissible set also depends on the network state, that dependence is included through the chain rule. The framework encompasses ordinary and partial DIs with set-valued reaction terms. For both settings we prove consistency: under the stated closedness, measurability, convexity, and growth assumptions, any sequence of candidates satisfying the initial (and, in the parabolic case, boundary) conditions whose continuous distance-residual functional tends to zero admits a subsequence converging to an exact solution of the target inclusion. These are conditional statements for the continuous distance-residual functional; they do not cover the finite-collocation training loss, the behavior of the optimizer, or convergence rates. For admissible sets given as convex hulls of finitely many vertices, projection onto the set reduces to a small convex quadratic program, making the loss efficiently computable inside the training loop. Numerical experiments demonstrate high accuracy on the differential-inclusion benchmarks.",
+  "abstract_ja": "",
+  "authors": [
+    "Maria Filipkovska",
+    "Juan José Marín",
+    "Isil Oner",
+    "Francisco Periago",
+    "Krzysztof Rykaczewski"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2609.32043",
+  "likes_count": 0,
+  "publishedAt": "2026-09-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "We introduce Distance-Residual Physics-Informed Neural Networks (DR-PINNs), a physics-informed learning framework for approximating solutions of ordinary and partial differential inclusions (DIs),…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Distance-Residual Physics-Informed Neural Networks: A Deep Learning Framework for Differential and Partial Differential Inclusions",
+  "url": "https://arxiv.org/abs/2609.32043",
+  "use_case": ""
+}

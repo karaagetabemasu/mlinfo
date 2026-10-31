@@ -1,0 +1,29 @@
+{
+  "abstract": "Synthetic data are widely used for training modern AI systems. However, their statistical understanding remains limited. It is well recognized in statistics that repeated self-training on synthetic data can amplify errors inherited from pre-trained models, leading to model collapse. Verification plays a crucial role in selecting high-quality synthetic data to help prevent model collapse and improve model performance. We study verified self-training in a linear regression framework, where a pre-trained estimator generates synthetic data with injected generation noise and a verifier selects samples according to a verification threshold. Post-training on the accepted samples updates either all coordinates (full fine-tuning) or only an active subset (partial fine-tuning). Our analysis reveals three potentially counterintuitive effects. We establish that tighter verification does not always lead to lower prediction risk. We also find that a suitable level of injected generation noise can reduce prediction risk, while excessive noise can increase it. Moreover, full and partial fine-tuning can respond differently to the same verification rule, since pre-training error in the frozen coordinates affects both sample selection and post-training risk. We analyze these effects by deriving finite sample risk bounds for four separate regimes determined by the relative scales of the verification threshold, generation noise, and pre-training error. The bounds precisely characterize how verification affects prediction risk across these regimes. In particular, we quantify how the generation noise, the effective accepted sample size, and the covariance of the accepted covariates affect prediction risk. The analysis extends to iterative verified full fine-tuning, where sufficiently tight verification reduces the initial error contribution at a geometric rate.",
+  "abstract_ja": "",
+  "authors": [
+    "Heejune Sheen",
+    "Harrison H. Zhou"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.40254",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Synthetic data are widely used for training modern AI systems. However, their statistical understanding remains limited.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation",
+      "regression"
+    ]
+  },
+  "title": "Statistical Analysis of Synthetic Data with Verification: A Linear Regression Framework",
+  "url": "https://arxiv.org/abs/2610.40254",
+  "use_case": ""
+}

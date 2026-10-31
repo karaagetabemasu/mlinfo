@@ -1,0 +1,26 @@
+{
+  "abstract": "Recent work has shown that, in zero-sum games, an optimizer can extract $Ω(\\sqrt{T})$ strategic surplus---cumulative payoff above the minimax benchmark---against noiseless no-regret learners with a constant step size. However, in practice, learners often act on perturbed payoff scores and use decaying learning rates $η_t$. Since existing extraction mechanisms rely on exact scores, a natural question is whether noise shields the learner from exploitation and eliminates surplus altogether. We address this question for the widely used class of Follow-the-Regularized-Leader (FTRL) algorithms. Under standard regularity conditions, we establish three results, none of which assumes independence of the noise. First, under summability conditions, passive play of a strategy fixed independently of the horizon earns at most constant surplus. Second, we design a new mechanism that exploits the learner's noise-dependent response: a clairvoyant optimizer who knows the update rule and the limiting mean response secures $Ω(1/η_T)$ surplus whenever that mean is profitable. Third, even when that mean is not profitable, active alternating play extracts $Ω(\\sum_{t<T}η_t)$ surplus by exploiting the learner's movement rather than its location, under suitable responsiveness and stability conditions. Finally, at the canonical learning rate $η_t\\propto t^{-1/2}$, we recover the noiseless $Ω(\\sqrt{T})$ rate for mean-zero, finite-variance perturbations---whether fresh with arbitrary temporal dependence or accumulated from i.i.d. increments---provided the limiting mean response is profitable.",
+  "abstract_ja": "",
+  "authors": [
+    "Yiheng Su",
+    "Emmanouil-Vasileios Vlatakis-Gkaragkounis"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.36621",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "video",
+  "summary": "Recent work has shown that, in zero-sum games, an optimizer can extract $Ω(\\sqrt{T})$ strategic surplus---cumulative payoff above the minimax benchmark---against noiseless no-regret learners with a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Noise Shapes the Surplus: Strategic Play Against No-Regret Learners",
+  "url": "https://arxiv.org/abs/2610.36621",
+  "use_case": ""
+}

@@ -1,0 +1,34 @@
+{
+  "abstract": "Real-time magnetic resonance imaging of the vocal tract makes speech articulation directly observable, but the trade-off between temporal resolution and signal quality introduces substantial noise and obscures fine articulatory detail. Since clean references cannot be acquired for a moving vocal tract, supervised denoising approaches are not applicable in this setting. We propose a self-supervised denoising framework that combines spatiotemporal super-resolution learning with pseudo-supervision derived from a variance-stabilized non-local means filter. A dual-model fusion strategy balances noise suppression and preservation of high-frequency articulatory structure. Experiments on the USC-75 multi-speaker dataset under natural noise conditions show that the ensemble raises the signal-to-noise ratio by 11.9 dB on unseen subjects while attaining more high-frequency articulatory content in the frames. Among tuned implementations of anisotropic diffusion, block-matching filtering, non-local means and pre-smoothed non-local means, every configuration that achieves comparable noise suppression does so at the cost of high-frequency content or of structural fidelity. Under severe added Gaussian, Rayleigh and Rician noise, peak signal-to-noise ratio improves by 7.6 to 11.8 dB and structural similarity roughly triples. An ablation shows that the variance-stabilized pseudo-supervision is an essential element for denoising, and that the effect is attributable to the hard thresholding contained in the stabilization transform.",
+  "abstract_ja": "",
+  "authors": [
+    "Julian Andres Hernandez-Potes",
+    "Tomás Arias-Vergara",
+    "Daiqi Liu",
+    "Andreas Maier",
+    "Paula Andrea Perez-Toro"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39972",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "video",
+  "summary": "Real-time magnetic resonance imaging of the vocal tract makes speech articulation directly observable, but the trade-off between temporal resolution and signal quality introduces substantial noise…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [
+      "audio",
+      "video"
+    ],
+    "task": []
+  },
+  "title": "Blind Video Denoising for Vocal Tract rtMRI using a Self-Supervised Ensemble",
+  "url": "https://arxiv.org/abs/2610.39972",
+  "use_case": ""
+}

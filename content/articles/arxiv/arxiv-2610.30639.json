@@ -1,0 +1,33 @@
+{
+  "abstract": "Self-supervised Vision Transformers learn strong image-level representations, but their patch-level representations can be unreliable for dense prediction. We study this mismatch and find that the class token concentrates global semantics on a small number of representative patches, while dense prediction errors often occur on low-attention regions. We provide a local gradient analysis showing that, along the [CLS] attention readout, image-level self-distillation gradients are weighted by [CLS]-to-patch attention mass. To provide masked patches with global semantics without changing the architecture, we propose Cross Distillation (CODI), which mixes a small amount of the teacher class-token distribution into each teacher patch-token target. CODI gives every masked patch an attention-independent semantic correction while preserving the standard self-distillation architecture. Experiments on dense and image-level benchmarks show that CODI improves both dense and image-level performance under aligned pretraining settings. Code is available at https://github.com/EldercatSAM/CODI.",
+  "abstract_ja": "",
+  "authors": [
+    "Siran Dai",
+    "Qianqian Xu",
+    "Peisong Wen",
+    "Yang Liu",
+    "Xiaochun Cao"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/EldercatSAM/CODI",
+  "hasCode": true,
+  "id": "arxiv-2610.30639",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Self-supervised Vision Transformers learn strong image-level representations, but their patch-level representations can be unreliable for dense prediction. We study this mismatch and find that the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "CODI: Improving Self-Supervised Vision Transformers with Cross Distillation",
+  "url": "https://arxiv.org/abs/2610.30639",
+  "use_case": ""
+}

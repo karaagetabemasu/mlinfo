@@ -1,0 +1,28 @@
+{
+  "abstract": "Robotic systems with revolute joints evolve on circular state spaces, yet most control architectures represent these states using Euclidean variables that ignore this underlying geometry. We propose a fully spiking neural control architecture in which ring attractors encode joint states, enforcing representations consistent with the topology of revolute systems. Homeostatic regulation computes goal-state mismatch directly over these distributed representations, and opponent gain-modulated populations convert this mismatch into controlled phase shifts of the activity bump, implementing set-point regulation as motion on the ring. We show that the bump dynamics follow an SO(2) geometry, and that gain asymmetries induce a signed phase velocity on the ring. To interface distributed activity with scalar regulation signals, we derive an analytic Fourier phase decoder and implement its signed components using push-pull spiking populations. For multi-joint systems, we demonstrate that local ring-based Fourier features compose into product representations that linearly decode SO(3) orientations through forward kinematics. Experiments in NEST validate the full SO(2) regulation mechanism and the spiking product-feature decoder for lift, pitch, and yaw. Robot experiments on a Tiago arm show that decoded ring dynamics generate joint velocity commands, producing directed motion with joint-dependent accuracy. Together, these results establish a neuromorphic control framework in which representation, regulation, and action are unified within a ring-attractor substrate aligned with the geometry of revolute systems.",
+  "abstract_ja": "",
+  "authors": [
+    "Aung Htet",
+    "Alejandro Rodriguez Jimenez",
+    "Ruidong Ma",
+    "Alessandro Di Nuovo"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.26027",
+  "likes_count": 0,
+  "publishedAt": "2026-10-19",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Robotic systems with revolute joints evolve on circular state spaces, yet most control architectures represent these states using Euclidean variables that ignore this underlying geometry. We propose…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "A Spiking Ring-Attractor Architecture for Representation and Control of Revolute Robot Joints",
+  "url": "https://arxiv.org/abs/2610.26027",
+  "use_case": ""
+}

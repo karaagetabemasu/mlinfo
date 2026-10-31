@@ -1,0 +1,29 @@
+{
+  "abstract": "Event-based spiking neural networks (SNNs) encode information through temporal firing dynamics, but the same stateful computation makes their predictions sensitive to event loss, timestamp jitter, and speed variation. These perturbations alter evidence accumulation, yet late-layer firing trajectories can retain error-diagnostic structure that is absent from the final logits alone. We introduce Perturbation-Aware Firing Scaffolds (PAFS), a labeled post-training calibration method that exploits this structure without updating the pretrained backbone. PAFS associates standardized late-layer leaky integrate-and-fire trajectories with the class-probability residuals of an Adapter anchor, then applies singular value decomposition to extract compact residual-aligned channel directions. At inference, firing trajectories from the same backbone pass are projected onto this fixed low-rank scaffold and combined with anchor statistics to predict a residual logit correction. Across four matched dataset-backbone settings spanning three event datasets and two spiking Transformer architectures, PAFS improves corrupted-average and worst-condition accuracy over the corresponding Adapter anchors, with maximum gains of 3.06 and 3.65 percentage points. In the DailyAction-DVS/Spikingformer setting, the added trainable parameters amount to approximately 0.34% of the frozen backbone.",
+  "abstract_ja": "",
+  "authors": [
+    "Ning Liu",
+    "Jun Sun",
+    "Hao Guo",
+    "Sen Shen",
+    "Xiangfei Yang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.32409",
+  "likes_count": 0,
+  "publishedAt": "2026-10-23",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Event-based spiking neural networks (SNNs) encode information through temporal firing dynamics, but the same stateful computation makes their predictions sensitive to event loss, timestamp jitter,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "PAFS: Perturbation-Aware Firing Scaffolds for Robust Event-Based SNNs",
+  "url": "https://arxiv.org/abs/2610.32409",
+  "use_case": ""
+}

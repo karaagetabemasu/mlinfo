@@ -1,0 +1,28 @@
+{
+  "abstract": "Recent magnetometer-free inertial measurement unit (IMU) methods can reduce drift in joint motion estimation using rigid-body constraints, but they typically require pre-calibrated sensor locations, assumptions of specific joint models (e.g., hinge joints) or limited motion types, or an external reference for global orientation. Furthermore, challenges related to high-frequency impacts (e.g. at foot strikes during gait) and numerical differentiation of noisy measurements have not been explicitly addressed. We propose an extended Kalman filter that estimates relative IMU orientation and sensor location simultaneously, requiring neither offline sensor location calibration nor a global orientation anchor. A systematic simulation study shows that the quality of the relative orientation and the sensor location estimates depends on different motion-intensity sources: the joint center acceleration and the relative angular velocity, respectively. A low-pass filter (LPF) is used to mitigate real-signal outliers before applying the rigid-body constraint. When applied to the OpenSense dataset with real IMU measurements across four subjects with three lower-body joint types during walking and complex tasks including various motion types, the proposed method achieves an overall relative orientation error of 2.61°, compared with 10.40° for a baseline using offline-estimated sensor locations and 7.43° for a baseline using marker-derived sensor locations. These results show that the proposed calibration-free estimation framework handles real IMU data effectively and achieves accurate relative orientation without offline sensor location calibration.",
+  "abstract_ja": "",
+  "authors": [
+    "Ruiyuan Li",
+    "Hassan Osman",
+    "Ajay Seth",
+    "Manon Kok"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.31156",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "anomaly",
+  "summary": "Recent magnetometer-free inertial measurement unit (IMU) methods can reduce drift in joint motion estimation using rigid-body constraints, but they typically require pre-calibrated sensor locations,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Calibration-free IMU-based Relative Orientation Estimation under Dynamic Human Motion",
+  "url": "https://arxiv.org/abs/2610.31156",
+  "use_case": ""
+}

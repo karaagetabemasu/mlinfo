@@ -1,0 +1,30 @@
+{
+  "abstract": "Spiking neural networks (SNNs) offer low-energy sequence modeling through sparse, event-driven computation. However, interactions among spike encoding, neuronal dynamics, and information propagation complicate architecture design. Existing SNN sequence models often adapt artificial neural network (ANN) architectures designed for real-valued activations, potentially underusing spike-based communication and temporal state updates, motivating automated discovery of native SNN architectures. Most evolutionary neural architecture search (ENAS) methods operate within predefined configuration spaces, limiting discovery to mechanisms expressible within those spaces. We introduce OpenArchEvo, which uses large language models (LLMs) to evolve executable architecture code in an open program space under spiking-projection constraints. In this space, code differences need not reflect architectural novelty, while direct performance evaluation requires costly training. We construct a three-view representation spanning code, design rationale, and a behavioral fingerprint to support novelty estimation and performance prediction. The search treats predicted performance and estimated novelty as two objectives, using surrogate predictions to select candidates for expensive training evaluations. With an estimated candidate-training cost of 132 V100 GPU-days, the search uncovers multiple native SNN architectures, exemplified by three designs featuring mechanisms such as spike-activity-dependent control of state updates and residual pathways. The discovered NeuroGate surpasses the ANN DeltaNet on WikiText-103, and the discovered architectures reduce estimated architecture-level arithmetic energy by up to 50.6x (LoopMem) relative to a common dense Transformer (ANN) baseline. Code and all discovered architectures: https://github.com/Optima-CityU/OpenArchEvo",
+  "abstract_ja": "",
+  "authors": [
+    "Ruoyu Zhao",
+    "Jiaqi Wu",
+    "Chenyu Zhu",
+    "Zhichao Lu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/Optima-CityU/OpenArchEvo",
+  "hasCode": true,
+  "id": "arxiv-2609.40258",
+  "likes_count": 0,
+  "publishedAt": "2026-09-30",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Spiking neural networks (SNNs) offer low-energy sequence modeling through sparse, event-driven computation. However, interactions among spike encoding, neuronal dynamics, and information propagation…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Large Language Model-Guided Evolutionary Discovery of Native Neural Architectures for Spiking Sequence Modeling",
+  "url": "https://arxiv.org/abs/2609.40258",
+  "use_case": ""
+}

@@ -1,0 +1,27 @@
+{
+  "abstract": "We study satisficing regret minimization in bandits with knapsacks (BwK), where a learner sequentially selects randomized policies, i.e., distributions over arms, to obtain mean rewards above a satisficing threshold as frequently as possible while respecting finite resource budgets. The performance is measured by satisficing regret, the cumulative deficits of the selected policies' mean rewards below this threshold. Resource constraints introduce two difficulties: an algorithm can incur linear satisficing regret even with small standard regret as deficits to the threshold cannot be compensated, and random consumption can cause early resource depletion even when policies are feasible in expectation. To address these challenges, we propose SELECTwK, a general algorithmic template that uses a BwK learning oracle algorithm with sub-linear expected (standard) regret upper bound to search for and test candidate satisficing policies (i.e., policies whose mean rewards exceed satisficing threshold and whose expected resource consumption is feasible over the time horizon). Our regret analysis, supported by an LP-duality argument, establishes that SELECTwK attains constant expected satisficing regret when a satisficing policy exists. We further introduce a stronger regret condition that bounds the expected sum of positive reward deficits to the optimal one at each time step, under which SELECTwK achieves a sharper constant bound together with a sub-linear bound in the time horizon. As a complement, SELECTwK still preserves the oracle's sub-linear expected standard regret bound if the satisficing threshold is unattainable. Finally, we establish the oracle conditions and corresponding satisficing regret bound for existing finite-armed BwK and dynamic pricing algorithms, and conduct numerical experiments on dynamic pricing with limited inventory to demonstrate the empirical performance of SELECTwK.",
+  "abstract_ja": "",
+  "authors": [
+    "Qing Feng",
+    "Tianyi Ma",
+    "Ruihao Zhu"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39321",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "model-free",
+  "summary": "We study satisficing regret minimization in bandits with knapsacks (BwK), where a learner sequentially selects randomized policies, i.e., distributions over arms, to obtain mean rewards above a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Satisficing Regret Minimization in Bandits with Knapsacks",
+  "url": "https://arxiv.org/abs/2610.39321",
+  "use_case": ""
+}

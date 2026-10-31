@@ -1,0 +1,31 @@
+{
+  "abstract": "Variational inference with normalizing flows provides a flexible posterior approximation for Bayesian model calibration, but struggles when the posterior has several modes separated by regions of low probability mass. We study this behavior in a two-parameter twin experiment and regularize the variational objective. Under Gaussian observation errors and a Gaussian prior, the corresponding minimization objective is the expected Tikhonov calibration objective minus the differential entropy of the approximating distribution. However, the expected Tikhonov term favors concentration near one of the modes, while entropy maximization does not guarantee multimodality. We introduce a regularization term based on Rényi divergence that encourages the approximate posterior to cover the prior support. In the connected bimodal case, a flow approximation represents both modes; in the case with well-separated modes, the flow and Gaussian mixture frequently miss one mode. The introduced regularization reduces the near-collapse fraction from 50% to 25%. While the regularization improves mode coverage in this experiment, it changes the Bayesian variational objective, introduces a trade-off in approximation accuracy, and does not provide a general solution to mode collapse.",
+  "abstract_ja": "",
+  "authors": [
+    "Exaucè Luweh Adjim Ngarti",
+    "Élise Arnaud",
+    "Léo Nicoletti",
+    "Victor Trappler",
+    "Arthur Vidard"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.37169",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Variational inference with normalizing flows provides a flexible posterior approximation for Bayesian model calibration, but struggles when the posterior has several modes separated by regions of low…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Rènyi-Regularized Flow-Based Variational Inference for Bayesian Calibration",
+  "url": "https://arxiv.org/abs/2610.37169",
+  "use_case": ""
+}

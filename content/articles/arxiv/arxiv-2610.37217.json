@@ -1,0 +1,26 @@
+{
+  "abstract": "Autonomous vehicles in enclosed spaces such as tunnels and mines rely on range maps that smoke, dust and fog make inaccurate. Conformal prediction calibrates a keepout around the mapped walls that covers the true unsafe set at a chosen probability. Typically an unmodified planner treats the keepout as an inflated obstacle, and nothing ensures that the vehicle can stop before the keepout as it moves when sensing degrades. In narrow passages this margin and the planner's buffer close the route, and existing remedies recover reach by relaxing the coverage level. This paper conditions the conformal margin on a label-free severity estimate to hold coverage near its target as degradation varies. A planning and control layer enforces one braking-distance condition on the keepout at plan time and at every command, takes the measured tracking residual as its only margin and never alters the keepout. The keepout is validated on ground-robot smoke recordings and the closed loop in simulated quadrotor flights in a foggy tunnel against the standard deployment. In closed-loop simulation the proposed system substantially reduces entries into the calibrated keepout and reaches numerically more goals than the deployment pattern in both calibration regimes, an observed gain of 3.2 percentage points pooled whose per-regime confidence intervals include zero. The per-class keepout holds its coverage near the target on held-out recordings.",
+  "abstract_ja": "",
+  "authors": [
+    "Eric Minwoo Kim",
+    "Jong-Kook Kim"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.37217",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Autonomous vehicles in enclosed spaces such as tunnels and mines rely on range maps that smoke, dust and fog make inaccurate. Conformal prediction calibrates a keepout around the mapped walls that…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "KEPT: Conformal Keepouts Kept in Planning for Enclosed-Space Navigation in Degraded Sensing",
+  "url": "https://arxiv.org/abs/2610.37217",
+  "use_case": ""
+}

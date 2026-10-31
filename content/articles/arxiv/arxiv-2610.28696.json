@@ -1,0 +1,27 @@
+{
+  "abstract": "Most high-performing end-to-end autonomous driving agents (ADAs) are developed for the CARLA Leaderboard, tightly coupling them to CARLA's APIs, sensor layouts, coordinate systems, and internal clock. Reusing these models on real datasets, alternative simulators, or physical platforms necessitates substantial manual re-engineering. We present PCLA-Bridge, a deployable tool that runs unmodified CARLA Leaderboard agents from any sensor source to any control destination without an active CARLA server. With PCLA-Bridge handling dependency isolation, tensor marshalling, routing, and synthetic timing, integrators only need to provide a minimal interface. We validate the tool across two operational paradigms: offline replay on in-domain CARLA recordings and real-world nuScenes logs, and live closed-loop control across three diverse simulation engines: MetaDrive, AWSIM, and AlpaSim. We analyze the lightweight integration requirements for each platform, highlighting output translation (such as converting agent actions into target trajectory formats) and coordinate-frame transformations, showing that integration requires minimal glue code rather than structural changes. All eight evaluated agents execute across all three simulators without modification, confirming the reliability of PCLA-Bridge and establishing a foundation for systematic sim-to-real, cross-sim, and security testing.",
+  "abstract_ja": "",
+  "authors": [
+    "Masoud Jamshidiyan Tehrani",
+    "Jinhan Kim",
+    "Paolo Tonella"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.28696",
+  "likes_count": 0,
+  "publishedAt": "2026-10-20",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Most high-performing end-to-end autonomous driving agents (ADAs) are developed for the CARLA Leaderboard, tightly coupling them to CARLA's APIs, sensor layouts, coordinate systems, and internal…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "PCLA-Bridge: A Framework for Cross-Domain Deployment of CARLA Agents",
+  "url": "https://arxiv.org/abs/2610.28696",
+  "use_case": ""
+}

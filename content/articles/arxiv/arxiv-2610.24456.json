@@ -1,0 +1,27 @@
+{
+  "abstract": "We consider the metric distortion framework for voting, where $n$ voters and $m$ candidates are embedded in an unknown metric space. A voting rule selects a candidate using only voters' ordinal preferences, and its distortion is the worst-case ratio between the social cost of the selected candidate and the minimum social cost. We study how round complexity trades off against total communication in deterministic voting protocols with low distortion. Deterministic rules can achieve the optimal distortion of $3$ in one round by eliciting complete rankings using $Θ(nm\\log m)$ bits, while a direct sequential implementation of PluralityVeto achieves the same distortion using only $O(n\\log m)$ bits but requires $Θ(n)$ rounds. Our main result is TreePluralityVeto, a deterministic voting protocol that, for every $r\\ge 2$, achieves distortion at most $2r-1$ using at most $r$ rounds and $O(n\\log m+n s^{1/(r-1)}\\log s)$ bits of total communication, where $s = \\min\\{n, m\\}$. The protocol runs PluralityVeto on a hierarchical partition of the voters, collecting restricted rankings in parallel at each level. The branching factor controls the tradeoff between rounds and communication, and a matching-based analysis shows that each level increases the distortion bound by at most $2$.",
+  "abstract_ja": "",
+  "authors": [
+    "Gabriel Chen",
+    "Yu Cheng",
+    "Alice Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.24456",
+  "likes_count": 0,
+  "publishedAt": "2026-10-17",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "We consider the metric distortion framework for voting, where $n$ voters and $m$ candidates are embedded in an unknown metric space. A voting rule selects a candidate using only voters' ordinal…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Tree Plurality Veto: Voting in Few Rounds with Efficient Communication and Low Metric Distortion",
+  "url": "https://arxiv.org/abs/2610.24456",
+  "use_case": ""
+}

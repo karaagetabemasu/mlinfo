@@ -1,0 +1,27 @@
+{
+  "abstract": "A streaming estimator must compute from the evidence that fits in memory. We determine when storing an accurate mean is easier than computing it. For Gaussian mean estimation over the Euclidean unit ball in $\\mathbb{R}^d$, we establish the minimax rate under squared error with $K$ persistent states, a known horizon, and a public time index: $\\min\\{1, K^{-2/d}+\\frac{d}{n} (1+\\frac{\\log(ed)}{1+(\\log K)/d})\\}$. Unrestricted computation followed by $K$-level encoding has rate $\\min\\{1,d/n+K^{-2/d}\\}$. At a fixed sufficiently small error, statistically optimal sample size therefore requires order $d\\log d$ working bits, while order $d$ bits suffice to store the answer. The lower bound tracks repeated state compression through an entropy potential obtained by Gaussian smoothing. A matching construction combines a multiscale modular counter with workspace reused across coordinate groups. In one dimension, it attains the terminal rate $n^{-1}+K^{-2}$. Any fixed confidence requirement that the realized loss not exceed the zero baseline preserves these rates. Increasing confidence creates a further memory requirement: at fixed nontrivial risk in every fixed dimension, failure probability $e^{-γn}$ requires and permits order $\\log n$ working states for sufficiently small fixed $γ>0$. In the scalar problem, a fixed terminal alphabet suffices under the same protection. These bounds separate the memory needed to represent an answer from the memory needed to accumulate evidence and validate a decision.",
+  "abstract_ja": "",
+  "authors": [
+    "Zeyu Wu",
+    "Zihao Wang",
+    "Minghua Deng"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39540",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "A streaming estimator must compute from the evidence that fits in memory. We determine when storing an accurate mean is easier than computing it.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "The Cost of Working Memory in Streaming Mean Estimation",
+  "url": "https://arxiv.org/abs/2610.39540",
+  "use_case": ""
+}

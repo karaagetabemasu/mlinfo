@@ -1,0 +1,28 @@
+{
+  "abstract": "Modern gradient boosting algorithms are based on Newton's method, which excels empirically but lacks global convergence guarantees. While recent work on Gradient-Regularized Newton (GRN) boosting achieved a global $\\mathcal{O}(1/γ^{12}k^2)$ rate, its analysis was not able to exploit the natural Hessian geometry and suffers from a heavy $γ^{12}$ dependence on a worst-case `weak gradient edge' $γ$. In this paper, we tackle these theoretical drawbacks by generalizing the Affine-Invariant Cubic Newton (AICN) scheme to convex optimization with weak learners. Our analysis is based on average cosine values $\\overlineΘ_k$ along the optimization path and directional improvements $δ_k$ in the Hessian-induced norm. We show that the weak-AICN update reduces to a damped weak-Newton step with an explicit stepsize determined by $δ_k$. Under semi-strong self-concordance, we establish a global $\\mathcal{O}(1/\\overlineΘ_k^4 k^2)$ rate, significantly improving upon the weak-GRN bound. We further prove a local linear rate, global linear convergence for Hessian-dominated losses, cosine angle lower bounds, and present weak-AdaAICN, which adaptively tunes the cubic regularization. Finally, we demonstrate the broader applicability of this framework beyond gradient boosting by showing that Newton coordinate descent emerges naturally as a special case of optimization with weak learners.",
+  "abstract_ja": "",
+  "authors": [
+    "Nikita Zozoulenko",
+    "Daniel Falkowski",
+    "Thomas Cass",
+    "Lukas Gonon"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.33516",
+  "likes_count": 0,
+  "publishedAt": "2026-10-24",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Modern gradient boosting algorithms are based on Newton's method, which excels empirically but lacks global convergence guarantees. While recent work on Gradient-Regularized Newton (GRN) boosting…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Affine-invariant Cubic Newton with Weak Learners",
+  "url": "https://arxiv.org/abs/2610.33516",
+  "use_case": ""
+}

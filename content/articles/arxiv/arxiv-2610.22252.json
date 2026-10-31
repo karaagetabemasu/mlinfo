@@ -1,0 +1,31 @@
+{
+  "abstract": "We study how to evaluate $K$ target policies simultaneously in stochastic contextual bandits with linear reward structure. Given a known $d$-dimensional feature map and reward-free access to policy queries, we propose PRISMA (Policy evaluation through Regularized Information Sharing and Mixture Allocation), an algorithm that estimates every target policy's value to accuracy $\\varepsilon$ with probability at least $1-δ$. The algorithm uses $\\widetilde{\\mathcal{O}}\\!\\left( \\frac{(L^2S^2+β^2)(1\\veeρ^\\star)}{\\varepsilon^2} \\cdot \\log(K) \\right)$ context draws and reward observations, where $ρ^\\star\\le d$ is an instance-dependent measure of the difficulty of designing a shared sampling distribution. Here, $L$, $S$, and $β$ bound the feature norm, reward parameter norm, and reward noise, respectively, and the suppressed factors are logarithmic in $K$, $d$, and $1/δ$. Our method combines reward-free planning, a regularized sampling design, and a single ridge regression estimator shared across all target policies. An adaptive doubling procedure selects the regularization scale without knowledge of $ρ^\\star$. The guarantees require no numerical lower bound on second-moment eigenvalues and have no explicit dependence on the cardinalities of the context and action spaces. Policy-query costs are accounted for separately, with $K$ queries per shared planning context.",
+  "abstract_ja": "",
+  "authors": [
+    "Spyros Dragazis",
+    "Yilei Chen",
+    "Aldo Pacchiano"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.22252",
+  "likes_count": 0,
+  "publishedAt": "2026-10-15",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "We study how to evaluate $K$ target policies simultaneously in stochastic contextual bandits with linear reward structure. Given a known $d$-dimensional feature map and reward-free access to policy…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Explore Once, Evaluate Many: Multiple Policy Evaluation for Stochastic Linear Bandits",
+  "url": "https://arxiv.org/abs/2610.22252",
+  "use_case": ""
+}

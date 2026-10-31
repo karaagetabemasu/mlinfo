@@ -1,0 +1,29 @@
+{
+  "abstract": "Spiking Vision Transformers (SViTs) are developed as an energy-efficient alternative to conventional ViTs for computer vision tasks at the edge. However, huge parameter counts and complex multi-head self-attention (MHSA) operations make it challenging to achieve high energy efficiency in SViT inference, especially in tightly constrained applications. To maximize efficiency gains of SViT processing, we propose MorphAtt, a novel digital accelerator that expedites SViT inference through streamlined processing. Specifically, it processes MHSA operations using cascaded hardware modules: a Spiking Query-Key-Value generator (SpikeQKV), a low-complexity Spiking Multi-Head Self-Attention engine (SpikeAtten), and Reparameterization Convolution (RepConv) modules. To mitigate traffic congestion in on-chip memory accesses and data reuse, specialized inter-module buffers are integrated within the dataflow. Under synthesis using 32nm CMOS technology, MorphAtt achieves 792-1605 GOPS of throughput, while incurring ~39-55 mW of power consumption and 1.5 mm^2 of area, which lead to 20.3-29.1 TOPS/W of energy efficiency. These results also demonstrate that our MorphAtt offers better performance and efficiency trade-offs than state-of-the-art, thereby enabling highly energy-efficient vision-based AI systems at the edge.",
+  "abstract_ja": "",
+  "authors": [
+    "Rachmad Vidya Wicaksana Putra",
+    "Amirhesam Jafari Rad",
+    "Muhammad Shafique"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2609.33207",
+  "likes_count": 0,
+  "publishedAt": "2026-09-27",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Spiking Vision Transformers (SViTs) are developed as an energy-efficient alternative to conventional ViTs for computer vision tasks at the edge. However, huge parameter counts and complex multi-head…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "MorphAtt: A Neuromorphic Accelerator for Efficient Multi-Head Attention Processing in Spiking Vision Transformers",
+  "url": "https://arxiv.org/abs/2609.33207",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Alignment of large language models typically relies on pairwise preference feedback, though ranked feedback can capture more comprehensive information across multiple responses within a single annotation. However, ranked-preference alignment is underexplored in practice compared to simpler pairwise approaches, potentially resulting in suboptimal behavior. Concurrently, recent research has conceptualized large language model alignment objectives as divergence estimators between aligned (preferred) and unaligned (less-preferred) response distributions, resulting in a family of objectives with an interpretable theoretical foundation and strong empirical performance. This work unifies these perspectives by introducing $f$-RPO, a $f$-divergence objective for ranked preference optimization that extends divergence-based alignment to ranked feedback and recovers pairwise preference alignment as a special case. Our theoretical analysis establishes rank-order consistency, showing that $f$-RPO preserves the underlying preference ordering at convergence. Empirical results indicate that total-variation and reverse-KL variants of the proposed objective consistently outperform ranked-alignment baselines in both ranking and generation quality across Qwen, Llama, & Gemma models ranging from 0.5B to 8B parameters.",
+  "abstract_ja": "",
+  "authors": [
+    "Rajdeep Haldar",
+    "Yue Xing",
+    "Qifan Song"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.25588",
+  "likes_count": 0,
+  "publishedAt": "2026-10-18",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Alignment of large language models typically relies on pairwise preference feedback, though ranked feedback can capture more comprehensive information across multiple responses within a single…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Divergence based Ranked Preference Alignment for LLMs",
+  "url": "https://arxiv.org/abs/2610.25588",
+  "use_case": ""
+}

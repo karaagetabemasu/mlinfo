@@ -1,0 +1,29 @@
+{
+  "abstract": "Noise synthesis is commonly approached through physical models of image formation or neural networks trained to generate noisy images. We explore a middle ground: an explicit statistical model fitted directly from paired clean and noisy images. A normalized convolution correlates a Gaussian field across pixels and color channels, and a lookup maps each Gaussian value to a residual given the clean intensity. Because the field stays standard Gaussian, the two components are fitted separately, without reproducing the physical process or training a neural generator. With one formulation for camera noise from SIDD and simulated film grain from Newson, the model has the lowest average distribution and correlation errors on SIDD among the evaluated methods and remains competitive on film grain. A denoiser trained on its noise comes closest to one trained on real noise, and a 1080p frame renders in 10 ms on GPU.",
+  "abstract_ja": "",
+  "authors": [
+    "Mingyang Song"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39868",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Noise synthesis is commonly approached through physical models of image formation or neural networks trained to generate noisy images. We explore a middle ground: an explicit statistical model fitted…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Parametric Gaussian Noise Mixer (PGNM): Unified Synthesis of Camera Noise and Film Grain",
+  "url": "https://arxiv.org/abs/2610.39868",
+  "use_case": ""
+}

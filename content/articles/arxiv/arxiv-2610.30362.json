@@ -1,0 +1,28 @@
+{
+  "abstract": "Long-horizon node outages are harder than conventional missing-value imputation because complete sensor trajectories remain unobserved for extended periods, while the usefulness of spatial and temporal dependencies varies across outage locations and operating regimes. Existing graph, diffusion, and flow-based methods typically impose a fixed structural bias, which can oversmooth abrupt changes or propagate errors from unreliable neighbors. We introduce CTRL-FM, an observation-preserving flow-matching framework that treats structural guidance as an outage-conditioned inference-time decision. A missing-only flow-matching backbone learns a conditional velocity field while keeping observed measurements exactly fixed. For each realized outage, CTRL-FM constructs self-supervised proxy outages from surviving measurements and uses their known values to select among uncontrolled, graph-dominant, temporal-dominant, and balanced control policies. The selected policy is locally modulated by graph and temporal reliability estimated exclusively from surviving observations, while boundary-anchored trends provide structural guidance. Control is applied only to missing entries and is rejected when proxy evidence does not sufficiently improve over uncontrolled sampling. Across PeMS08, METR-LA, Air-36, and AQI, CTRL-FM achieves the strongest overall performance under 30% and 60% node outages. Stress tests with up to 75% sensor loss further show graceful degradation and consistent gains over training-time and fixed structural control. These results demonstrate that validating, selecting, and locally adapting structural guidance for each realized outage is more effective than imposing a single global structural prior.",
+  "abstract_ja": "",
+  "authors": [
+    "Boshra Khalili",
+    "Andrew Smyth"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30362",
+  "likes_count": 0,
+  "publishedAt": "2026-10-21",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Long-horizon node outages are harder than conventional missing-value imputation because complete sensor trajectories remain unobserved for extended periods, while the usefulness of spatial and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "CTRL-FM: Inference-Time Structural Control for Flow-Based Virtual Sensing under Long-Horizon Node Outages",
+  "url": "https://arxiv.org/abs/2610.30362",
+  "use_case": ""
+}

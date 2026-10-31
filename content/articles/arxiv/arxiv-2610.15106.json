@@ -1,0 +1,26 @@
+{
+  "abstract": "Latent recursion repeatedly processes internal representations through the same neural network. Recent work has shown this approach to be effective on structured reasoning tasks such as Sudoku and maze solving. However, whether latent recursion can support neural routing remains unclear. We introduce RELAGRAM (Recursive Latent Graph Model), a novel approach that brings latent recursion to graph combinatorial optimization. RELAGRAM encodes a capacitated vehicle routing problem (CVRP) instance as edge tokens; a compact transformer recurrently updates the latent representations of these tokens. An output head maps the answer state to an edge heatmap, from which an autoregressive decoder constructs a feasible solution. On CVRP-100 instances, the 0.53M-parameter RELAGRAM achieves gaps to a PyVRP reference of 13.4%, 9.8%, and 8.3% under greedy decoding, eightfold symmetry augmentation, and 256-candidate search, respectively. Trained only on CVRP-100, RELAGRAM generalizes zero-shot to CVRP-500 and CVRP-1000, achieving gaps of 15.6% and 21.7% under 256-candidate search. Together, these results demonstrate that latent recursion is a promising approach to neural routing.",
+  "abstract_ja": "",
+  "authors": [
+    "Vladimir Kirill Bickov",
+    "Neil Yorke-Smith"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.15106",
+  "likes_count": 0,
+  "publishedAt": "2026-10-10",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Latent recursion repeatedly processes internal representations through the same neural network. Recent work has shown this approach to be effective on structured reasoning tasks such as Sudoku and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "RELAGRAM: Recursive Latent Graph Model for the Capacitated Vehicle Routing Problem",
+  "url": "https://arxiv.org/abs/2610.15106",
+  "use_case": ""
+}

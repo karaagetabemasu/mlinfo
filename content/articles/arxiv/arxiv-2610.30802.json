@@ -1,0 +1,27 @@
+{
+  "abstract": "Synthetic pretraining under distribution shift requires deciding what synthetic data to use. A natural criterion is to match the spectral predictability $Ω$ of the source to the target, but is $Ω$ sufficient? We test this hypothesis, which we call predictability-aware pretraining, across three architectures (LSTM, PatchTST, TCN) and three seeds. Under ideal synthetic-to-synthetic conditions, $Ω$-matched pretraining can outperform even an oracle baseline (+46.8% MSE reduction, LSTM), though the benefit is already architecture-dependent. On the real-world ETTm1 benchmark, however, this relationship does not hold: sine-plus-noise pretraining at matched $Ω$ yields only a marginal mean improvement +2.3% averaged over all three architectures, up to +65.5% on individual channels), whereas $Ω$ matched chaotic ODE trajectories systematically degrade performance -13.2%). The two sources agree on the direction of transfer for only 53% of configurations across all three architectures (Pearson r=-0.02), indicating that $Ω$ carries little information about which source will transfer beneficially. We further observe an architecture-dependent asymmetry in the response to the direction of the $Ω$ gap. We conclude that $Ω$ matching can help in controlled settings but is not sufficient to predict transfer across sources, and we discuss additional signal properties that a source-selection criterion may need to consider.",
+  "abstract_ja": "",
+  "authors": [
+    "Edric Castel C. Hao",
+    "Juan Raphael S. Seña",
+    "Neon S. De Jesus"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30802",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "Synthetic pretraining under distribution shift requires deciding what synthetic data to use. A natural criterion is to match the spectral predictability $Ω$ of the source to the target, but is $Ω$…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Is spectral predictability enough? Testing Ω-matching for synthetic pretraining under distribution shift",
+  "url": "https://arxiv.org/abs/2610.30802",
+  "use_case": ""
+}

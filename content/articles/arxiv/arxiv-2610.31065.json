@@ -1,0 +1,36 @@
+{
+  "abstract": "The performance of medical image segmentation depends on a large amount of annotated data, and most segmentation models experience a significant drop in performance in low-sample-size scenarios. Existing semi-supervised and weakly supervised methods rely on specific network architectures, while traditional multi-view-assisted segmentation methods require strictly paired samples, which limits their clinical applications. To address these issues, we propose DPIF, a general-purpose plug-and-play dual-path interaction framework compatible with arbitrary encoder-decoder segmentation networks, which leverages cross-view anatomical complementarity to reduce annotation reliance. DPIF first performs Sinkhorn optimal transport-based cross-view distribution alignment to establish global semantic correspondence without sample-level pairing. It then adopts conditional mutual information-guided feature decoupling to enable bidirectional knowledge transfer only within the shared semantic space, suppressing view-specific noise. Finally, persistent homology-based topological regularization encodes anatomical invariants as unsupervised priors to mitigate overfitting. Experiments were conducted using 24 baseline models on a private multicenter echocardiography dataset and two public datasets. The results show that DPIF-enhanced models outperform single-view baseline models when trained on comparable amounts of data. Notably, most dual-path variants trained on 40\\% - 60\\% of the data achieve performance comparable to that of single-view models trained on the full dataset. This demonstrates that DPIF provides a general-purpose and scalable solution for data-scarce multi-view medical image segmentation problems.",
+  "abstract_ja": "",
+  "authors": [
+    "Shuhuan Wang",
+    "Yuanyuan Cui",
+    "Pengju Wang",
+    "Huimin Guo",
+    "Ling Yue"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.31065",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "The performance of medical image segmentation depends on a large amount of annotated data, and most segmentation models experience a significant drop in performance in low-sample-size scenarios.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised",
+      "semi-supervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "A General-Purpose Dual-Path Interaction Framework for Multi-View Medical Image Segmentation: Alleviating Data Volume Dependency in Small-Sample Regimes",
+  "url": "https://arxiv.org/abs/2610.31065",
+  "use_case": ""
+}

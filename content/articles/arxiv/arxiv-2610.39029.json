@@ -1,0 +1,31 @@
+{
+  "abstract": "Skywalker Sound, a premier audio post-production facility, operates more than 200 M4 Max Mac Studios on a 10Gb Ethernet network. When not in use by artists, these machines sit idle, representing massive untapped unified memory and compute capacity. While these fleets are excellent candidates for distributed machine learning alongside existing NVIDIA GPU clusters, PyTorch lacks an accelerated distributed backend for Apple's Metal Performance Shaders (MPS). To bridge this gap, we introduce the Metal Communication Collective Library (MCCL), the first open-source MPS backend for multi-node PyTorch training over switched Ethernet. We evaluate its performance and scalability across 24 nodes, demonstrating that large all-reduce operations reach 98-99.7% of TCP goodput. Training a 113.5M-parameter Vision Transformer (ViT) scales from 198 to 4,568 samples/s, achieving 95.9% parallel efficiency. Benchmarked against an NVIDIA A100 GPU, one M4 Max Mac equals roughly 1.7x the throughput of FP32 matrix multiplication, and 5.5 Macs match an A100 using TF32. Harnessing 100 idle Macs for 12 hours nightly offsets approximately $200,000 annually in equivalent cloud compute costs. Our results demonstrate that existing Mac infrastructure can be seamlessly repurposed for high performance distributed training without abandoning the standard PyTorch codebase.",
+  "abstract_ja": "",
+  "authors": [
+    "Kevin Sasso",
+    "Chris Fiegel",
+    "Francis Aitken",
+    "Nicolas Tsingos",
+    "Nicholas Tong"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39029",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Skywalker Sound, a premier audio post-production facility, operates more than 200 M4 Max Mac Studios on a 10Gb Ethernet network. When not in use by artists, these machines sit idle, representing…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": []
+  },
+  "title": "MCCL: Training Pytorch models across a fleet of Macs at Skywalker Sound",
+  "url": "https://arxiv.org/abs/2610.39029",
+  "use_case": ""
+}

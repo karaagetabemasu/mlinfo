@@ -1,0 +1,27 @@
+{
+  "abstract": "Closed-loop neuromodulation requires sleep staging that respects stage-specific minimum dwells: stimulation policies switch by sleep stage, and a policy change is permitted only after the current stage has persisted for its minimum duration. Discriminative classifiers fragment stage trajectories---for example, a 30 s Wake segment inside a 10 min N2 run---and even hidden semi-Markov smoothing leaves 11.3% of segments below the minimum dwell threshold. This paper presents a world model in which a recurrent state-space model (RSSM) learns dwell structure endogenously from EEG, via duration-aware latent sampling, a survival-curve dwell prior, and transition-matrix calibration, and a trajectory-level hard-constraint layer guarantees the minimum dwell at decoding. On SHHS-1 (200 subjects, 160/20/20, three repeated splits), the model reaches a test accuracy of 0.690 +/- 0.053 (95% CI over 3 folds) versus 0.641 +/- 0.042 for an identically split discriminative baseline, with macro-F1 +17.5 pp and better accuracy on all three folds. On Sleep-EDF the constraint layer cuts below-threshold segments from 71.8% to 0.1% with no accuracy loss (0.734 to 0.737), and an online locked scheduler reduces RL policy switches by 87% per night while keeping every policy run at least 90 s. To the best of the author's knowledge, this is the first system to couple learned dwell statistics with a decoding-time hard guarantee. Code and pretrained weights will be released.",
+  "abstract_ja": "",
+  "authors": [
+    "Junhui Gao"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.33033",
+  "likes_count": 0,
+  "publishedAt": "2026-10-14",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "Closed-loop neuromodulation requires sleep staging that respects stage-specific minimum dwells: stimulation policies switch by sleep stage, and a policy change is permitted only after the current…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Duration-Aware World Models for Sleep Staging with Dwell-Time Constraints",
+  "url": "https://arxiv.org/abs/2610.33033",
+  "use_case": ""
+}

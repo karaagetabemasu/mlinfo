@@ -1,0 +1,31 @@
+{
+  "abstract": "Operational strategies for long-horizon robotic tasks require reliable evaluation to determine whether execution is progressing, stalling, regressing, or recovering from errors. Yet real- world robot datasets that capture error recovery and provide frame-level error annotations remain scarce. To address this gap, we introduce and open-source ReSTEP, a dataset of 3,156 episodes across two manipulation tasks with semantic stage labels and frame-level er- ror annotations. ReSTEP supports training and benchmarking progress monitors through successful execution, mistakes, and recovery. Existing progress estimators can struggle to distinguish visually similar task stages and maintain temporally consistent predictions while responding to genuine setbacks. We therefore propose REMORA, an online progress esti- mator that combines recurrent visual memory, distributional prediction, and causal peak selection. Memory retains execution history to help resolve visual ambiguity, while distribu- tional prediction represents alternative progress hypotheses and causal peak selection tracks a supported hypothesis over time. Together, these components enable consistent progress tracking that remains responsive to errors and recovery. Experiments on both ReSTEP tasks demonstrate that REMORA outperforms the state-of-the-art SARM baseline in progress ac- curacy and temporal consistency.",
+  "abstract_ja": "",
+  "authors": [
+    "Chen Wang",
+    "Xinze Niu",
+    "Zihao Zhu",
+    "Keru Zhou",
+    "Yicheng Xu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39125",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "Operational strategies for long-horizon robotic tasks require reliable evaluation to determine whether execution is progressing, stalling, regressing, or recovering from errors. Yet real- world robot…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Tracking Task Progress Through Errors and Recovery:A Benchmark and Recurrent Distributional Model",
+  "url": "https://arxiv.org/abs/2610.39125",
+  "use_case": ""
+}

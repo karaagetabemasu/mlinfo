@@ -1,0 +1,27 @@
+{
+  "abstract": "In neural networks, continual learning (CL) is a prominent approach for enabling deployed systems to adapt to dynamic operational environments by effectively learning from new unseen data at runtime. Recently, the neuromorphic continual learning (NCL) concept has emerged as an energy-efficient alternative to CL by leveraging sparse event-based operations. However, NCL performance can be undermined by transient faults in the hardware platforms, which may come from high-energy particle strikes at any time. Currently, NCL reliability under transient faults has not been studied, and hence the corresponding fault-tolerance techniques remain unexplored. To address this, we propose a novel RobustNCL framework to improve NCL reliability in the presence of transient faults in the DRAM-based off-chip memory of hardware platforms through a lightweight detect-and-cure strategy. Specifically, it first monitors the presence of faults during weight data access from off-chip memory, and then cures the accessed weights if anomalous signatures are detected. It provides three curing variants: replacement with zero, min/max value, and most-probable value from the original/clean weight distribution. To support this, the weight curing values are stored in the radiation-hardened memory. Experimental results show that, in the presence of high fault rates (e.g., 5x10^{-4} for memory replay), RobustNCL maintains high accuracy close to the accuracy of fault-free models (i.e., within -0.5% accuracy for the best RobustNCL variant) and significantly improves accuracy from the baseline without fault mitigation across different NCL methods and datasets (i.e., Split MNIST, Split Fashion-MNIST, Split CIFAR-10, and Split CIFAR-100), while incurring negligible latency and energy overheads. These results highlight that our RobustNCL framework is a promising approach for enabling reliable and energy-efficient NCL systems.",
+  "abstract_ja": "",
+  "authors": [
+    "Rachmad Vidya Wicaksana Putra",
+    "Shuochen Zhou",
+    "Muhammad Shafique"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.31954",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "In neural networks, continual learning (CL) is a prominent approach for enabling deployed systems to adapt to dynamic operational environments by effectively learning from new unseen data at runtime.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "RobustNCL: Robustifying Neuromorphic Continual Learning under Transient Faults with Lightweight Detect-and-Cure Strategy",
+  "url": "https://arxiv.org/abs/2610.31954",
+  "use_case": ""
+}

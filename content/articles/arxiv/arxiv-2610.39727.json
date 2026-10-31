@@ -1,0 +1,36 @@
+{
+  "abstract": "Zero-shot anomaly detection aims to transfer anomaly discrimination from auxiliary training domains to unseen categories while localizing subtle defects. A key challenge is to construct discriminative references that combine contextual representations with complementary local evidence. We present Cross-Encoder Anchor Refinement (CEAR), which connects two visual encoding paths for the same image at the anchor stage, before normal and anomalous prototypes are constructed. An independent convolutional encoder pretrained for industrial product recognition builds an image-specific memory shared across selected vision transformer (ViT) layers. Spatial anchors read from ViT patch features query this memory through cross-attention and undergo residual refinement. Image-conditioned normal and anomalous queries then gate anchor aggregation to construct prototypes for anomaly scoring. Across 13 industrial and medical datasets, CEAR achieves the best performance in 57 of 68 evaluations spanning image-level detection and pixel-level localization. Notably, CEAR surpasses all other state-of-the-art methods in 41 of 44 pixel-level comparisons. Across 11 localization datasets, mean gains in pixel-level maximum F1 score and average precision are 4.45 and 3.79 percentage points, respectively. This study shows how cross-encoder interaction at the anchor stage can integrate complementary visual representations for fine-grained anomaly localization across domains.",
+  "abstract_ja": "",
+  "authors": [
+    "Kaisong Ji",
+    "Ziyang Xu",
+    "Chang Bian",
+    "Yu Zhou",
+    "Wenyu Liu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39727",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Zero-shot anomaly detection aims to transfer anomaly discrimination from auxiliary training domains to unseen categories while localizing subtle defects. A key challenge is to construct…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification",
+      "detection",
+      "anomaly-detection"
+    ]
+  },
+  "title": "Cross-Encoder Anchor Refinement for Zero-Shot Anomaly Detection",
+  "url": "https://arxiv.org/abs/2610.39727",
+  "use_case": ""
+}

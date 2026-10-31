@@ -1,0 +1,29 @@
+{
+  "abstract": "Artificial Intelligence (AI) systems provide critical computation services in the Manufacturing Industrial Internet (MII), and their resilience depends on timely diagnosis of hazards across the data, AI pipeline, and cyber-physical layers. During operation, new hazard types keep emerging with only a few samples each, hazards co-occur, and the diagnosis model runs on memory-constrained computation nodes. Replay-based class-incremental learning (CIL) can learn new hazard classes while revisiting a small memory of past samples, but existing methods assume single-label, balanced streams, store high-dimensional raw samples, and select them independently of the classifier. We propose Class-aware Latent Attention Replay (CLAR), which combines a dual buffer that stores mostly compact latent representations with a few raw samples, an Attention Leverage Score (ALS) that upper-bounds the classifier logit and guides class-balanced reservoir sampling, and an exponential-moving-average teacher that slows latent-space drift. For an idealized buffer model, we prove that the buffer is class-balanced and follows an ALS-weighted class distribution, and that below a critical per-class capacity, ALS-guided replay has a lower replay-gradient error than class-balanced uniform replay. In the case study, On hazard diagnosis data from an MII testbed, CLAR achieves the highest mean average weighted F1 score among the evaluated replay methods with the same buffer size",
+  "abstract_ja": "",
+  "authors": [
+    "Avranshu Mahanty",
+    "Ran Jin",
+    "Yingyan Zeng"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39323",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Artificial Intelligence (AI) systems provide critical computation services in the Manufacturing Industrial Internet (MII), and their resilience depends on timely diagnosis of hazards across the data,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Class-aware Latent Attention Replay (CLAR): Class Incremental Hazard Diagnosis for Resilient AI in the Manufacturing Industrial Internet",
+  "url": "https://arxiv.org/abs/2610.39323",
+  "use_case": ""
+}

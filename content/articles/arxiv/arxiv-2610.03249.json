@@ -1,0 +1,30 @@
+{
+  "abstract": "Deploying a pretrained controller exposes it to conditions that are absent from its training data. Sensor drift, outright sensor failure and accumulating measurement noise all induce a distribution shift that can collapse an otherwise competent policy; typically at a point in time where no expert is available to supply corrective labels. We present a method that lets a policy recover from such shifts online and without supervision. Our controller is an ensemble of recurrent networks, each of which observes a randomly masked subset of the observation vector, and whose Gaussian outputs are combined through sequential Kalman fusion so that confident members dominate the consensus action. At deployment, we treat this consensus as a self-supervised label and fine-tune each member towards it, scaling each member's contribution proportional to the complement of its squared Kalman gain. Gradients are computed using RFLO, an efficient and biologically plausible approximation of Real-Time Recurrent Learning, so that a parameter update follows every environment step and the policy reacts to a shift as it unfolds. On a range of simulated continuous control tasks, our approach recovers close to the original performance after a sensor shift, while ensembles that see the full observation are unable to recover. The same framework subsumes fully online interactive imitation learning: when an expert is present, the consensus label is replaced by the expert action and the identical update rule refines the policy during teleoperation.",
+  "abstract_ja": "",
+  "authors": [
+    "Julian Lemmel",
+    "Pedro D. Wendel Garcia",
+    "Taisuke Kobayashi",
+    "Radu Grosu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.03249",
+  "likes_count": 0,
+  "publishedAt": "2026-10-02",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "Deploying a pretrained controller exposes it to conditions that are absent from its training data. Sensor drift, outright sensor failure and accumulating measurement noise all induce a distribution…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "Self-Repairing Recurrent Ensembles for Real-Time Recovery from Distribution Shift",
+  "url": "https://arxiv.org/abs/2610.03249",
+  "use_case": ""
+}

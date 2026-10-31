@@ -1,0 +1,31 @@
+{
+  "abstract": "Human judgment calls made throughout the data science life cycle can change the conclusions drawn from data. Independent analysts often make different choices when given the same data, leading to often unacceptable variations in results and contributing to the ongoing reproducibility crisis across scientific disciplines. The rapid adoption of agentic tools threatens to amplify this crisis. Several approaches have been developed to address this variation by following the same strategy: repeating an analysis under different combinations of analytical decisions and inspecting the distribution of outcomes. Examples include multiverse analysis, specification curve analysis, and vibration of effects. More broadly, the Predictability-Computability-Stability (PCS) framework assesses how documented judgment calls across the data science life cycle affect conclusions, with predictability serving as a reality-check that a model captures signal. Each of these approaches results in a \"multiverse\" object. While the distribution of outcomes reflects the overall variability of conclusions, estimating the influence of each individual decision requires additional tools. A common heuristic is to train a model to predict the outcome from these decisions and treat its coefficients or feature importances as proxies for each decision's influence. Although this strategy may work in certain cases, it assumes the model is correctly specified and accurately predicts the outcome, which we show is not always the case. In this work, we introduce DECIDE, a model-free framework that quantifies each decision's importance from the actual outcomes across the plausible decision space, avoiding issues of predictability by design. We demonstrate the effectiveness of DECIDE by applying it to real-world multiverse analyses. We further provide what is, to our knowledge, the first formal definition of the multiverse.",
+  "abstract_ja": "",
+  "authors": [
+    "Zachary T. Rewolinski",
+    "Jan Simson",
+    "Frauke Kreuter",
+    "Christoph Kern",
+    "Bin Yu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38797",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Human judgment calls made throughout the data science life cycle can change the conclusions drawn from data. Independent analysts often make different choices when given the same data, leading to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Pinpointing Pivot Points: The DECIDE Framework for Data Analysis Decision Importances",
+  "url": "https://arxiv.org/abs/2610.38797",
+  "use_case": ""
+}

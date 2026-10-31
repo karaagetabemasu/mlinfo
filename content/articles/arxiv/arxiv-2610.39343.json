@@ -1,0 +1,27 @@
+{
+  "abstract": "This letter proposes MulClip, a lightweight activation function for reservoir computing (RC) on microcontrollers (MCUs). In a ring reservoir, a representative sparse RC topology, multiply-accumulate operations are few, and evaluating tanh accounted for 75% of the state-update time on a Cortex-M4. MulClip introduces curvature into the response using only comparison, absolute value, multiplication, and subtraction, and places its clipping threshold not at the extremum but at the point where the response returns to zero after passing the extremum. As a result, a single function has both a monotonic regime and a nonmonotonic folding regime that increases the expressiveness of a single unit. Which regime is used is determined by the usual hyperparameter search, e.g., over the input scale, so no task-specific threshold tuning is required. The state-update time measured on hardware was 0.34 times that of tanh and shorter than that of any of the 11 evaluated tanh approximations. In PC-based evaluation, third-order MulClip achieved a 22% lower NMSE than tanh on NARMA-20, where the pre-activations remained in the monotonic regime, and on 8-bit parity it raised the accuracy from 0.76-0.78 for the monotonic-clip variant without folding to 0.97-0.98. For these two tasks, on-device inference yielded nearly the same values as on the PC.",
+  "abstract_ja": "",
+  "authors": [
+    "Guren Matsumura",
+    "Masato Takemoto",
+    "Shinzo Koyama"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39343",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "This letter proposes MulClip, a lightweight activation function for reservoir computing (RC) on microcontrollers (MCUs). In a ring reservoir, a representative sparse RC topology, multiply-accumulate…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "MulClip: A table-free activation function with monotonic and folding regimes for reservoir computing on microcontrollers",
+  "url": "https://arxiv.org/abs/2610.39343",
+  "use_case": ""
+}

@@ -1,0 +1,27 @@
+{
+  "abstract": "In sampled cascade linear active disturbance rejection control (LADRC) of quadrotors, the extended-state observer typically receives the instantaneous command, although the delayed measurement reflects an earlier, rotor-filtered acceleration. This paper proposes actuator-aware (AA) observer inputs: altitude and attitude observers use limited virtual inputs filtered by an assumed rotor model and aligned with the measurement delay, and horizontal observers use acceleration reconstructed from measured attitude. Fixed gains are selected on the discrete-time model under sensitivity and step-response requirements and stationary covariance ceilings on each channel's control variance and increment and on the noise-induced inner-loop increment of the full cascade. In paired set-point trials, PID-Budget, AA-Budget and AA-HalfGain reach mean RMSEs of 65.5, 19.2 and 16.9~mm; under a stricter common cascade ceiling, the AA designs reach 29.9 and 26.4~mm versus 72.3~mm for a PID that uses roughly double their rotor-command increment. PX4 software-in-the-loop runs reproduce these results. Behind EKF2, a noise model fitted to the estimation errors predicts the roll/pitch and yaw increments within 5\\% on held-out and out-of-sample runs and the total rotor-command increment within 14\\%. Redesigned for this stack under the same sensitivity and response specification and estimator-aware ceilings, AA-Budget-E reduces the set-point RMSE from 59.1~mm (PID-E) to 44.0~mm with a lower rotor-command increment in every paired set-point and lemniscate run (mean S6 rotor-command-increment reductions relative to PID-E: 45\\% before and 15\\% after output quantization); AA-HalfGain-E beats PID-E only on the lemniscate. The evidence is simulation-based, and the ceilings are nominal tuning constraints.",
+  "abstract_ja": "",
+  "authors": [
+    "Xuan-Quy Dao",
+    "Ngoc-Bich Le",
+    "Le-Minh Nguyen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39126",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "In sampled cascade linear active disturbance rejection control (LADRC) of quadrotors, the extended-state observer typically receives the instantaneous command, although the delayed measurement…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Actuator-Aware Observer Inputs for Cascade ADRC of Quadrotors Under Rotor Lag, Measurement Delay and Sensor Noise",
+  "url": "https://arxiv.org/abs/2610.39126",
+  "use_case": ""
+}

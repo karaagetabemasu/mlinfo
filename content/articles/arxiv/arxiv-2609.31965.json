@@ -1,0 +1,31 @@
+{
+  "abstract": "Mathematical expressions and the numerical behavior they produce are two views of the same underlying function, and connecting them is central to scientific discovery. Symbolic Regression (SR) relies on this connection directly: it searches for an expression that reproduces a given behavior. Recent multi-modal models learn this connection by embedding symbolic expressions and their numerical behavior in a shared representation space. We show that this embedding space is only globally aligned: complete expressions correspond to complete behaviors, but the contribution of individual parts of an expression is not represented. This granularity gap leaves the model unable to tell how a local edit to an expression changes its behavior, the central operation in SR. We introduce a compositional alignment method that closes this gap: a structural positional encoding exposes the substructure of an expression to the encoder, and a multi-granularity contrastive objective grounds each subexpression in the behavior it produces before propagating this grounding to the full expression. The resulting representations close much of the modality gap between symbolic and numerical embeddings, reliably distinguish the effects of local edits that the original alignment cannot, and transfer to external SR corpora.",
+  "abstract_ja": "",
+  "authors": [
+    "Benjamin Léger",
+    "Shubham Gupta",
+    "Samy Mammeri",
+    "Kazem Meidani",
+    "Cem Subakan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2609.31965",
+  "likes_count": 0,
+  "publishedAt": "2026-09-25",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Mathematical expressions and the numerical behavior they produce are two views of the same underlying function, and connecting them is central to scientific discovery. Symbolic Regression (SR) relies…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "SNIP++: Fine-Grained Symbolic-Numerical Alignment for Symbolic Regression",
+  "url": "https://arxiv.org/abs/2609.31965",
+  "use_case": ""
+}

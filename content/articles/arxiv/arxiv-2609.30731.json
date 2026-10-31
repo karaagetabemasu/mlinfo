@@ -1,0 +1,27 @@
+{
+  "abstract": "Neurons in the visual system are selective for specific spatial and temporal stimulus features, described by their \\emph{receptive field}. Estimating one means a coefficient per pixel per time bin from few trials -- a high-dimensional problem requiring regularization. Sparse regularizers such as the LASSO handle the dimension but select pixels independently at each time point, with nothing to keep the region coherent in space or smooth in time; it can fragment or reorganize discontinuously even when the true response evolves smoothly, a failure since this evolving pattern is what a receptive-field estimate should capture. We formulate dynamic receptive-field estimation as a high-dimensional Bayesian problem: a Poisson model combining a Gaussian Markov random field in space with an autoregressive process in time, so the estimated field is smooth and coherent across space and time. On recordings from $155$ salamander retinal ganglion cells, fitting this model independently per neuron recovers a coherent surface, where a pixel-level Poisson-LASSO comparison instead returns a fragmented one. Summarizing each neuron's surface by its space-averaged temporal response and clustering these curves with a model-based functional-clustering procedure, BIC selects three balanced temporal-response phenotypes ($85$, $32$, $38$ neurons), against a degenerate grouping from clustering the raw surfaces. A simulation study with known ground truth confirms the same pattern, with the model beating an unregularized Poisson GLM, LASSO, and the elastic net on recovery and estimation accuracy, though LASSO controls false positives better. The per-neuron field identification, its contrast with LASSO, and the functional-clustering population typing constitute this paper's contribution.",
+  "abstract_ja": "",
+  "authors": [
+    "Alokesh Manna"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2609.30731",
+  "likes_count": 0,
+  "publishedAt": "2026-09-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Neurons in the visual system are selective for specific spatial and temporal stimulus features, described by their \\emph{receptive field}. Estimating one means a coefficient per pixel per time bin…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Structured Bayesian Modeling of Dynamic Receptive1 Fields in Salamander Retinal Ganglion Cells",
+  "url": "https://arxiv.org/abs/2609.30731",
+  "use_case": ""
+}

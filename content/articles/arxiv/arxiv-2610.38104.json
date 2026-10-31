@@ -1,0 +1,26 @@
+{
+  "abstract": "Robot-learning studies often compare position and velocity actions as though each label identified a single experimental treatment, yet the label alone does not determine what the robot executes. Before affecting robot motion, bounded policy output passes through filtering, physical scaling, reference construction, feedback, timing, and effort limits. We study how these omitted properties affect attribution under one shared learner and training budget. Across three contact-rich Factory tasks (PegInsert, GearMesh, and NutThread), we compare five joint-space interfaces, with ten independently trained policies per condition. We first remain within the same position-feedback law and vary the executed interface: substituting only the physical action scale as the directly modified component changes sample-median evaluation success by 0.645-1.000 across tasks, while removing an exponential moving average produces task-dependent changes. We then move to a cross-law comparison and choose a velocity scale that exactly matches the position interface's local raw-torque command gain. This calibration raises the sample median on GearMesh and NutThread, with no median change on PegInsert. Yet clear residual sample-median gaps remain on PegInsert and GearMesh, while the NutThread interval includes zero. Thus, even this explicit equality leaves feedback and held-action dynamics unmatched and does not establish position-velocity trained-outcome equivalence. Action-interface comparisons should therefore report the executed pathway and state the physical quantity they match.",
+  "abstract_ja": "",
+  "authors": [
+    "Arshia Sangwan",
+    "Zhongyang Zhang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38104",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Robot-learning studies often compare position and velocity actions as though each label identified a single experimental treatment, yet the label alone does not determine what the robot executes.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Same Label, Different Interface: Beyond Action-Space Labels in Robot Learning",
+  "url": "https://arxiv.org/abs/2610.38104",
+  "use_case": ""
+}

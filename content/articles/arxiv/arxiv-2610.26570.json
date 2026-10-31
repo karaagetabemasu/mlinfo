@@ -1,0 +1,26 @@
+{
+  "abstract": "The goal of this paper is to distill insight around the trade-offs present on Bayesian equilibria of transaction fee mechanism (TFM) design under $n$ multiple concurrent proposers (MCP). We conceptualize a technical toolkit that unlocks the analysis of hard-to-characterize equilibria of finite Bayesian MCP TFM games by examining sequences of joint user--proposer mixed equilibria as the number of users increases and keeping the relative congestion $ρ$ that they cause fixed in the sequence limit. We first consider the popular mechanisms of \"pay-once\" (which charges transactions its bid only once regardless of the duplicate copies that end up being included by proposers) and \"pay-per-inclusion\" (PPI in short, which charges a transaction for each copy that appears). We prove that PPI is efficient in the limit of equilibria sequences, and incentivizes users to route to only one proposer. We characterize $m$ users' asymptotic behavior in PPI even in finite markets varying with $O(\\sqrt{m})$, where we show users in a $Θ(n\\sqrt{ρ(1-ρ)/m})$ window near an efficient cutoff exhibit fixed inclusion probability akin to a normal distribution's CDF. We additionally show that on a value-dependent basis, pay-once exhibits a higher degree of duplication and lower probability of inclusion for higher-value transactions than PPI. Pay-once's inefficiency persists even in the large market limit and even in regimes with ample blockspace where all transactions fit across all blocks. We study interpolations between these two mechanisms proving that some higher coefficients (towards PPI) reduce duplication and increase inclusion probability. We then use our tools to show that exclusive proposer payments yield inefficient equilibria (in fact, with maximal possible duplication), even if users still pay multiple times when included more than once and their payment is burnt when non-exclusive.",
+  "abstract_ja": "",
+  "authors": [
+    "Jason Milionis",
+    "Kushal Babel"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.26570",
+  "likes_count": 0,
+  "publishedAt": "2026-10-19",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "The goal of this paper is to distill insight around the trade-offs present on Bayesian equilibria of transaction fee mechanism (TFM) design under $n$ multiple concurrent proposers (MCP). We…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Bayesian Analysis of Inclusion Transaction Fee Mechanisms with Multiple Concurrent Proposers",
+  "url": "https://arxiv.org/abs/2610.26570",
+  "use_case": ""
+}

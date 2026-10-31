@@ -1,0 +1,33 @@
+{
+  "abstract": "Contextual embeddings represent chunks of a document with respect to the document's global context. These models are typically trained and evaluated under the assumption that a relevant document contains only a single relevant chunk. In this work, we argue that in real-world use cases a retriever should not only find answers spread over several chunks but also surface the evidence needed to verify them. To address this, we introduce pplx-embed-v2-context, a family of contextual embedding models trained by distilling graded chunk-level relevance from a query-aware context compression model. This removes the need for gold-chunk labels and makes the training targets independent of the chunking. We utilize a vision-language backbone for training and release pplx-embed-v2-context in 9B and 0.6B sizes with compatible embedding spaces. On the evaluation side, we introduce two benchmarks that label both the chunks that answer a query and the evidence needed to verify the answer. Context-bench is a controlled diagnostic, and Q2D-Chunk is built from real-world search queries. To encourage further research, we also publish Q2D-Chunk as a public leaderboard. Our 9B model sets a new state of the art on both benchmarks and ConTEB. We find that the visual retrieval capabilities of our 9B model transfer from its vision-language base model and propose to extend chunking to image inputs. We demonstrate that our models achieve state-of-the-art performance among dense retrievers on visual ViDoRe-V3 and that performance improves with granular image chunking.",
+  "abstract_ja": "",
+  "authors": [
+    "Sedigheh Eslami",
+    "Markus Krimmel",
+    "William Barber",
+    "Antoine Chaffin",
+    "Maximilian Schall"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38854",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Contextual embeddings represent chunks of a document with respect to the document's global context. These models are typically trained and evaluated under the assumption that a relevant document…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Contextual Embeddings Beyond the Gold Chunk",
+  "url": "https://arxiv.org/abs/2610.38854",
+  "use_case": ""
+}

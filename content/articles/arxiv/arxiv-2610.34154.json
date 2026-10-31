@@ -1,0 +1,25 @@
+{
+  "abstract": "Within the broader landscape of artificial intelligence architectures, this paper introduces a compact, edge-centric neural framework that resolves the computational bottlenecks of modern edge-activated paradigms like Kolmogorov-Arnold Networks (KANs) while retaining their expressiveness over traditional Multi-Layer Perceptrons (MLPs). While KANs demonstrate remarkable representational capacity by placing learnable univariate functions on connection edges rather than hidden nodes, their reliance on non-local B-splines introduces severe optimization hurdles, high memory overhead, and poor hardware scaling. To bridge this gap, we propose the Parametric Tanh Connection Function, a smooth, bounded architectural primitive defined as $a_{\\tanh}(x;δ,α,β,γ) = δ+ α\\tanh(βx + γ)$. This formulation unifies offset, amplitude, local slope, and horizontal displacement into a lightweight, 4-parameter differentiable mapping optimized edge-by-edge via backpropagation. Evaluated on dense architectures using MNIST and CIFAR-10, our parametric tanh connection model achieves significant absolute accuracy gains over traditional affine baselines-reaching 95.63% $\\pm$ 0.08% on MNIST and 44.74% $\\pm$ 0.18% on CIFAR-10. Crucially, it matches or exceeds the expressiveness of unconstrained 7-parameter exponential connection baselines while requiring up to 85% less training runtime. By replacing complex splines or hyper-flexible exponents with a bounded, analytically smooth hyperbolic tangent kernel, this work delivers a highly scalable, hardware-friendly compromise for heterogeneous connection-level deep learning.",
+  "abstract_ja": "",
+  "authors": [
+    "Andreas Falkenberg"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.34154",
+  "likes_count": 0,
+  "publishedAt": "2026-10-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Within the broader landscape of artificial intelligence architectures, this paper introduces a compact, edge-centric neural framework that resolves the computational bottlenecks of modern…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Edge-Centric Adaptive Neural Activation via Parametric Tanh Functions",
+  "url": "https://arxiv.org/abs/2610.34154",
+  "use_case": ""
+}

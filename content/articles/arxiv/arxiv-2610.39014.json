@@ -1,0 +1,33 @@
+{
+  "abstract": "Images produced by generative models appear strikingly similar to real ones. In this work, we study whether perfection has been reached by generated content in terms of matching the properties of real data. We train deep neural networks to separate real data from fake and observe their test accuracies. Only a chance performance has any scope of proving statistical indistinguishability. However, since generative models are known to sometimes introduce small errors, e.g., low level checkerboard artifacts, we create progressive abstractions of the original real/fake images to potentially bring them to a space where those artifacts get wiped away. These include operations such as blurring, downsizing, cropping, converting RGB images into edge/semantic maps, etc. To our surprise, almost none of the abstractions are able to make fake data indistinguishable from real. The only cases when neural network based classifiers fail to separate the two categories is when the data is abstracted to such an extent that the original content seems mostly lost to the human eye, e.g., downsizing a $256 \\times 256$ RGB image of human face to $4 \\times 4$ resolution. We observe this trend across four different datasets of varying complexity (MNIST, CelebA, FFHQ and GenImage) and across various types of generative models (GANs, VAEs, diffusion models). This shows that the nature of fake artifacts extends all the way from low level to very high level in images. The simple implication is that fake images are much more different from real than we are used to think.",
+  "abstract_ja": "",
+  "authors": [
+    "Mohaimin Rafi",
+    "Otavio Moraes Rosa",
+    "Anshuman Chhabra",
+    "Utkarsh Ojha"
+  ],
+  "category": "generative-ai",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39014",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "diffusion",
+  "summary": "Images produced by generative models appear strikingly similar to real ones. In this work, we study whether perfection has been reached by generated content in terms of matching the properties of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "generation"
+    ]
+  },
+  "title": "The Search for Statistical Indistinguishability Between Real and Fake Images",
+  "url": "https://arxiv.org/abs/2610.39014",
+  "use_case": ""
+}

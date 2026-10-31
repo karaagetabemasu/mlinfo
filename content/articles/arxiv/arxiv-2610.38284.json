@@ -1,0 +1,32 @@
+{
+  "abstract": "Vision Transformers (ViTs) achieve strong image recognition performance, but their self-attention increases quadratically with the number of input tokens and makes them computationally expensive. The standard implementation of ViT models treats all patch tokens with equal importance across every layer of the model. This uniform treatment introduces redundant computation and may reduce the model's focus on the most discriminative object regions. In this paper, we propose ConvRoute-ViT, a convolutional token routing mechanism for efficient vision transformers that performs token reduction through convolutional routing. Our model preserves the most relevant patch tokens according to class-token attention at selected layers, while the remaining tokens are spatially reorganized and compressed into a compact set of convolutional summary tokens. This design reduces the sequence length without completely removing the contextual information of the less informative tokens. By applying the routing process hierarchically, the proposed framework constructs compact and discriminative representations for deeper layers. Experiments on CIFAR-100 and TinyImageNet show that ConvRoute-ViT improves computational efficiency while maintaining classification accuracy compared with the base ViT.",
+  "abstract_ja": "",
+  "authors": [
+    "Manish Das",
+    "Shiv Ram Dubey",
+    "Satish Kumar Singh"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38284",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Vision Transformers (ViTs) achieve strong image recognition performance, but their self-attention increases quadratically with the number of input tokens and makes them computationally expensive. The…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "ConvRoute-ViT: Convolutional Token Routing for Efficient Vision Transformers",
+  "url": "https://arxiv.org/abs/2610.38284",
+  "use_case": ""
+}

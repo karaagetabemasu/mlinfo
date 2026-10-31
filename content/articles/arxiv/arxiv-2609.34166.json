@@ -1,0 +1,27 @@
+{
+  "abstract": "We study the knowledge matrix of a trained feedforward network as a higher representation of its inputs. A network is a pair $(W,f)$, a thin representation $W$ of its quiver and an activation $f$; its function factorizes through the space of quiver representations, each input $x$ inducing a representation, and the knowledge matrix $M(x)\\in\\mathbb{R}^{C\\times(d+1)}$ is the contraction of that representation to one matrix whose rows sum exactly to the logits. At one trained network we ask what determines it, what it is invariant to, what it determines, and what its geometry measures. Under (LCS), a locally constant slope diagonal, as for ReLU, the matrix at a regular input is a function of the realized germ; its stabilizer among encodings regular there is exactly the germ stabilizer at inputs with no vanishing coordinate, neuron permutation a special case; and it recovers the germ, whereas hidden activations, gauge-covariant and germ-incomplete, are not enough. Under (LCS) it equals per-class gradient$\\times$input plus an exact aggregate bias attribution, grounding it in attribution theory and computing it by $C$ vector-Jacobian products instead of probing. The fixed shape gives an alignment-free per-sample distance between ResNet-152, DenseNet-121 and GoogLeNet; the row-sum identity gives an exact visible/invisible displacement decomposition whose unit-free coherence $A=(d_Ψ/d_M)^2$ puts adversarial germ motion at median $A\\le 0.23$, with an attack-family ordering concordant across six architectures (Kendall $W=0.921$; $0.97$ on the three networks at full scale). Two honest negatives: on AlexNet/CIFAR-10 penultimate features win 5 of 6 detectors and all 16 attacks, and a matrix-direction counterfactual fails 0/54.",
+  "abstract_ja": "",
+  "authors": [
+    "Marco Armenta"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2609.34166",
+  "likes_count": 0,
+  "publishedAt": "2026-09-28",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "We study the knowledge matrix of a trained feedforward network as a higher representation of its inputs. A network is a pair $(W,f)$, a thin representation $W$ of its quiver and an activation $f$;…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Hidden Activations are not Enough I: Knowledge Matrices as Higher Representations",
+  "url": "https://arxiv.org/abs/2609.34166",
+  "use_case": ""
+}

@@ -1,0 +1,29 @@
+{
+  "abstract": "LLM-guided evolutionary search iteratively selects existing programs, uses LLMs as mutation operators to generate a new program, and evaluates it to guide subsequent search. To preserve diversity and reduce the risk of premature convergence, it often adopts the island model, in which groups of programs, called islands, evolve separately. However, this structure alone does not guarantee distinct search directions, as islands may start from similar programs or converge toward similar solutions during evolution. This suggests that diversity must be considered throughout the search process, from initializing islands with distinct programs to developing island trajectories and sharing discoveries across islands. To this end, we propose HoliDivEvolve , a holistic approach to establishing and effectively utilizing island diversity throughout evolutionary search. Specifically, we introduce diverse initialization to establish different initial programs, trajectory adaptive island selection to allocate computation based on current score, recent growth, and the remaining search budget, and growth adaptive migration to share alternative ideas across islands. Experiments across diverse benchmarks show that HoliDivEvolve achieves competitive performance on most evaluated tasks. We further conduct controlled analyses to examine how our design choices affect search behavior and final performance.",
+  "abstract_ja": "",
+  "authors": [
+    "Seockbean Song",
+    "Youngsik Yoon",
+    "Sungjae Lee",
+    "Siwei Wang",
+    "Wei Chen"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38407",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "LLM-guided evolutionary search iteratively selects existing programs, uses LLMs as mutation operators to generate a new program, and evaluates it to guide subsequent search. To preserve diversity and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Holistic Diversity Management in LLM-Guided Evolutionary Search",
+  "url": "https://arxiv.org/abs/2610.38407",
+  "use_case": ""
+}

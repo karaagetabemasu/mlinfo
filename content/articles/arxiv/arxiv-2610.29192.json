@@ -1,0 +1,26 @@
+{
+  "abstract": "Sharpness-Aware Minimization (SAM) has established itself as a widely used method for training deep neural networks. Despite its popularity, existing convergence guarantees for SAM-type methods require smoothness, a restrictive assumption. Generalized smoothness conditions have recently been proposed in the analysis of gradient methods but remain underexplored for SAM. To analyze the effect of SAM's perturbation under generalized smoothness, we use relative gradient distortion to quantify how the sharpness-aware direction departs from the original gradient. Under $(L_0,L_1)$-smoothness, we show that this distortion can become unbounded near stationarity for SAM and at large gradients for its unnormalized variant (USAM), with examples where SAM cycles and USAM diverges. We then establish a necessary condition for uniform distortion control among perturbations along the gradient whose nonnegative multipliers depend only on its norm. Motivated by this condition, we propose Curvature-Scaled SAM (CS-SAM), which scales both the perturbation and the descent step by suitable curvature upper bounds, and prove that it uniformly bounds the distortion. Under both $(L_0,L_1)$- and $(H_0,H_1)$-smoothness, we establish deterministic $\\mathcal{O}(1/T)$ rates for the best squared gradient norm on nonconvex objectives, last-iterate $\\mathcal{O}(1/T)$ rates for the function gap on convex objectives with a minimizer, and linear convergence under the Polyak-Lojasiewicz condition. With zero perturbation, our guarantees recover the rates for gradient descent with $(L_0,L_1)$- or $(H_0,H_1)$-based step-sizes. Minibatch experiments on computer vision tasks demonstrate competitive performance for both variants, with the $(H_0,H_1)$ variant achieving the highest mean best-test accuracy in all four settings against tuned SAM and USAM with constant and cosine annealing schedules.",
+  "abstract_ja": "",
+  "authors": [
+    "Dimitris Oikonomou",
+    "Nicolas Loizou"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.29192",
+  "likes_count": 0,
+  "publishedAt": "2026-10-21",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Sharpness-Aware Minimization (SAM) has established itself as a widely used method for training deep neural networks. Despite its popularity, existing convergence guarantees for SAM-type methods…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Curvature-Scaled Sharpness-Aware Minimization: Convergence Beyond Smoothness",
+  "url": "https://arxiv.org/abs/2610.29192",
+  "use_case": ""
+}

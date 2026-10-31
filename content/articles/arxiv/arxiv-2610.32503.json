@@ -1,0 +1,26 @@
+{
+  "abstract": "We study preemptive single-machine scheduling with predictions, where a prediction of the order of the jobs (or of their sizes) is available, and the objective is to minimize the total completion time. An algorithm is $c$-consistent if it is $c$-competitive when the prediction is correct, and $R$-robust if it is $R$-competitive whatever the prediction. Since the introduction of this problem as one of the first examples of learning-augmented algorithms, the best possible trade-off between consistency and robustness has remained open. We determine it exactly for deterministic algorithms. For every $R>2$, we give an $R$-robust algorithm whose consistency is \\[ c(R)=R\\Big(1-\\Big(1-\\frac{R+2}{R^2}\\Big)^{\\frac R{R+2}}\\Big), \\] and we prove that no deterministic $R$-robust algorithm, with either predicted order or predicted job sizes, has better consistency. In particular, consistency $1+\\eps$ is achievable with robustness $\\eps^{-1/2}+\\frac16+O(\\sqrt\\eps)$, whereas all previous algorithms required robustness $Θ(1/\\eps)$. Our algorithm is greedy: it follows the predicted order as fast as possible, subject to the invariant that the cost paid so far is at most $R$ times the optimum of the instance in which every unfinished job would end immediately. The matching lower bound rests on the observation that every robust deterministic algorithm must satisfy the same invariant along its run on correct predictions.",
+  "abstract_ja": "",
+  "authors": [
+    "Ziyad Benomar",
+    "Vianney Perchet"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.32503",
+  "likes_count": 0,
+  "publishedAt": "2026-10-23",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "We study preemptive single-machine scheduling with predictions, where a prediction of the order of the jobs (or of their sizes) is available, and the objective is to minimize the total completion…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Pareto-optimal Scheduling with Predictions",
+  "url": "https://arxiv.org/abs/2610.32503",
+  "use_case": ""
+}

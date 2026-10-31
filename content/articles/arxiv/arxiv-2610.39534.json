@@ -1,0 +1,30 @@
+{
+  "abstract": "Missing-sequence completion is important for comprehensive brain tumor characterization, but cross-modal fusion can obscure sequence-specific contrast and lose fine-grained three-dimensional tumor detail. To address this challenge, we introduce Modality-aware Orthogonal-axis Status-conditioned Attentive Integration for Completion (MOSAIC-Flow), a unified framework for missing-sequence completion that learns a target-conditioned velocity field while keeping the seven acquired volumes fixed throughout the transport. Specifically, modality-aware stems independently encode each sequence, and orthogonal-axis refinement captures axial, coronal, and sagittal dependencies while retaining the three-dimensional representation. Status-conditioned prototype fusion uses compact modality and availability tokens to route and modulate pooled queries from the fused visual representation, enabling target-adaptive conditioning without dense voxel-to-voxel attention. A conditional flow matching objective transports target-channel noise toward the single missing sequence, while four Heun trajectories are averaged to produce the completion. Evaluation across structural, diffusion, and contrast-enhanced MRI in UCSF-PDGM demonstrates consistent whole-brain and tumor-region fidelity across all eight single-target completion tasks, with the strongest performance on structural sequences. Code is available at https://github.com/CUHK-AIM-Group/MOSAIC-FLOW.",
+  "abstract_ja": "",
+  "authors": [
+    "Pengli Zhu",
+    "Zhihao Peng",
+    "Yixuan Yuan"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/CUHK-AIM-Group/MOSAIC-FLOW",
+  "hasCode": true,
+  "id": "arxiv-2610.39534",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Missing-sequence completion is important for comprehensive brain tumor characterization, but cross-modal fusion can obscure sequence-specific contrast and lose fine-grained three-dimensional tumor…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "MOSAIC-Flow: Orthogonal-Axis and Status-Conditioned Fusion for Missing-Sequence Completion in Brain Tumor MRI",
+  "url": "https://arxiv.org/abs/2610.39534",
+  "use_case": ""
+}

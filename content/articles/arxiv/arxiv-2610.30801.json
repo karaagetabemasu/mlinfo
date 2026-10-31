@@ -1,0 +1,30 @@
+{
+  "abstract": "We study episodic linear Markov decision processes with unknown transitions, adversarial losses, and bandit feedback. The state-of-the-art result for this setting (Liu et al., 2024) either achieves $\\sqrt{K}$ regret with a computationally inefficient algorithm or achieves suboptimal $K^{3/4}$ regret, where $K$ is the number of episodes. Our work gives the first $\\sqrt{K}$ regret with a polynomial-time algorithm. Our method reduces adversarial linear MDPs to adversarial linear bandits whose action set consists of policies' expected feature vectors. The central challenge is that this action set is unknown and can be estimated only through exploration. We address this challenge by constructing an approximate separation oracle for the action set that either generates executable policies from queried features, or refines an outer approximation of the action set. This approach draws inspiration from the reduction of van Erven et al. (2025) for linear contextual bandits and the oracle-efficient linear bandit algorithm of Ito et al. (2019), but additionally deals with the imprecision of the oracle. The resulting algorithm requires only aggregate loss feedback, and to our knowledge. This is the first polynomial-time algorithm for adversarial MDPs with aggregate feedback beyond the tabular case.",
+  "abstract_ja": "",
+  "authors": [
+    "Haolin Liu",
+    "Chen-Yu Wei",
+    "Hanbin Zhou"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30801",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "We study episodic linear Markov decision processes with unknown transitions, adversarial losses, and bandit feedback. The state-of-the-art result for this setting (Liu et al., 2024) either achieves…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "tabular"
+    ],
+    "task": []
+  },
+  "title": "A Computationally Efficient and Rate-Optimal Algorithm for Adversarial Linear MDPs with (Aggregate) Bandit Feedback",
+  "url": "https://arxiv.org/abs/2610.30801",
+  "use_case": ""
+}

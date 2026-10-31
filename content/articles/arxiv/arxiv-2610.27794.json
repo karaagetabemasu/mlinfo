@@ -1,0 +1,31 @@
+{
+  "abstract": "Action-free videos are an appealing substitute for costly teleoperated data. Latent action models (LAMs) turn videos into a supervision signal by inferring abstract actions between frames. Existing LAMs observe a single camera view, which resolves 6D robot actions only ambiguously missing out-of-plane movements and potential occlusions. We propose a LAM that ingests synchronized multi-camera views using cross-attention to resolve depth and occlusions before compressing them into latent actions. The latent actions are fed into a policy in which a latent expert and an action expert are coupled by sequential flow matching around a frozen VLM backbone. We further evaluate in strict cross-embodiment settings where task-specific demonstrations come from other embodiments. We show that dual-view LAM pretraining improves the decodability of ground-truth 6D actions by 17% compared to single-view, while scaling single-view data by two orders of magnitude is not sufficient to fully recover out-of-plane motions. The downstream policy improves success rate by +13.5% compared to +6.2% for single-view LAM. A single cross-embodiment is sufficient for skill transfer, and adding a second viewpoint outperforms adding up to four further embodiments. The results transfer to hardware where demonstrations come from a human hand improving success rate by +20% over action-only policies in 850 rollouts. We show that video and robot data are complementary, and that benefits of learning from video are task-dependent. Website: https://learnsyslab.github.io/multiview_latent_action_pretraining/",
+  "abstract_ja": "",
+  "authors": [
+    "Oliver Hausdörfer",
+    "Felix Minzenmay",
+    "Mani Majd",
+    "Maximilian P. Christof",
+    "Shiyuan Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.27794",
+  "likes_count": 0,
+  "publishedAt": "2026-10-20",
+  "source": "arxiv",
+  "subcategory": "attention",
+  "summary": "Action-free videos are an appealing substitute for costly teleoperated data. Latent action models (LAMs) turn videos into a supervision signal by inferring abstract actions between frames.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": []
+  },
+  "title": "Multi-View Latent Action Pretraining for Cross-Embodiment Robot Learning from Videos",
+  "url": "https://arxiv.org/abs/2610.27794",
+  "use_case": ""
+}

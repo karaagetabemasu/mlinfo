@@ -1,0 +1,30 @@
+{
+  "abstract": "Progressive image compression reconstructs images from prefixes of a single bitstream and therefore involves sequential latent inference under partial observations. Existing trit-plane codecs mainly treat decoded trits as discrete symbols for probability prediction, without fully exploiting their role as interval constraints on the underlying continuous latents. We propose bound-conditioned latent inference (BLI), a framework that reformulates progressive trit-plane coding as sequential latent inference under shrinking interval constraints. At each coding step, the trits decoded so far define lower and upper bounds for each latent element. BLI uses the center and width of these bounds, together with hyperprior information shared by the encoder and decoder, to jointly refine the Gaussian parameters $(μ,σ)$ for entropy modeling and the latent estimate $\\hat{y}$ for reconstruction. As additional trits are decoded, the feasible intervals shrink monotonically, yielding tighter constraints for the next inference step and enabling flexible in-plane refinement schedules. Experiments on Kodak, CLIC, and JPEG-AI show that BLI achieves state-of-the-art rate-distortion performance among progressive image codecs, reducing BD-rate by $17.78\\%$ over DPICT and by $7.96\\%$ over CTC on Kodak, while replacing CTC's plane-specific predictors with a shared model that uses about $5.3\\times$ fewer parameters and achieves lower latency than CTC.",
+  "abstract_ja": "",
+  "authors": [
+    "Jaeseok Jang",
+    "Seungmin Jeon",
+    "Kwang Pyo Choi",
+    "Chang-Su Kim"
+  ],
+  "category": "mlops",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30966",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "deployment",
+  "summary": "Progressive image compression reconstructs images from prefixes of a single bitstream and therefore involves sequential latent inference under partial observations. Existing trit-plane codecs mainly…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Bound-Conditioned Latent Inference for Progressive Image Compression",
+  "url": "https://arxiv.org/abs/2610.30966",
+  "use_case": ""
+}

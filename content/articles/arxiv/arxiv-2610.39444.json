@@ -1,0 +1,25 @@
+{
+  "abstract": "Masked diffusion models train a denoiser on masked cross-entropy and generate by unmasking many positions in parallel. Existing MDM sampling bounds assume an exact denoiser or leave its error uncontrolled while training bounds cover only the masking distribution on which the model was trained. We present an end-to-end guarantee for a learned denoiser under conditional mixing (CM): stationary sources (e.g. floored order-$r$ Markov and two-sided-Doeblin hidden-Markov sources) for which revealing distant visible tokens moves a masked token's posterior on average exponentially little in the distance with correlation length $τ_c$. We show the empirical risk minimizer trained under any masking distribution attains per-token excess $\\varepsilon'$ on that distribution from $\\varepsilon'^{-\\mathcal{O}(τ_c\\log|\\mathcal{V}|)}$ training sequences, independent of sequence length $N$ -- one sample budget serves every decoding schedule when each schedule's denoiser is trained under its own weighting. We further show that the exponent's order $Θ(τ_c\\log|\\mathcal{V}|)$ is minimax-optimal up to constants; more efficient rates require added structure. With this, we bound the end-to-end KL as $\\mathrm{KL}(π\\Vert p_{\\mathrm{alg}})\\leq \\varepsilon+N\\varepsilon'$ under a dilated schedule of $T=\\mathcal{O}(τ_c\\log(N|\\mathcal{V}|/\\varepsilon))$ denoising steps versus $Ω(N)$ steps for a fixed random order on an explicit CM source. Finally, we show that block-autoregressive samplers chain across blocks with no added error and that a $Λ$-looped order-$r$ message-passing class on order-$r$ sources achieves polynomial sample complexity, with approximation error improving per loop until saturation at $Λr\\approx τ_c\\log(1/\\varepsilon')$. Experiments on released and retrained models support our results' qualitative predictions.",
+  "abstract_ja": "",
+  "authors": [
+    "Fareed Sheriff"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39444",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Masked diffusion models train a denoiser on masked cross-entropy and generate by unmasking many positions in parallel. Existing MDM sampling bounds assume an exact denoiser or leave its error…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "End-to-End Guarantees for Masked Diffusion Models under Conditional Mixing",
+  "url": "https://arxiv.org/abs/2610.39444",
+  "use_case": ""
+}

@@ -1,0 +1,34 @@
+{
+  "abstract": "Diffusion models evolve noisy states toward a learned data distribution, so their sampling behavior depends on the geometry of the representation in which denoising occurs. This dependence is especially important for multimodal data: independently trained encoders can map synchronized views to incompatible latent regions, while uniform alignment can let an uncertain view distort the shared geometry. To address this gap, we introduce a novel reliability-guided alignment rule that uses normalized VAE posterior variance to control directional cross-modal influence before diffusion training. We study this issue in minority-attack generation for imbalanced Internet-of-Things intrusion detection. Tabular flow attributes, a DeepInsight image, and a packet sequence are encoded by modality-specific variational autoencoders. Per-modality normalized VAE posterior variances provide bounded, sample-specific weighting signals in an asymmetric stop-gradient alignment objective. We use these quantities as heuristic encoder-derived reliability proxies rather than calibrated probabilistic uncertainties. The full modality-specific latent means obtained after alignment fine-tuning are standardized and modeled jointly by a class-conditional EDM; a second-order sampler then generates paired attack-conditioned latent blocks for the three decoders. In controlled experiments on TON-IoT, uncertainty-aware alignment obtains the highest mean precision, recall, density, and coverage among three diffusion variants. Augmenting only the training split yields ROC-AUC 0.9515, PR-AUC 0.8954, balanced accuracy 0.8395, and attack-class F1 0.7940 on an untouched real test set. Among the two variants with matched alignment fine-tuning, posterior-variance-based weighting improves both tabular generative fidelity and downstream detection relative to uniform weighting.",
+  "abstract_ja": "",
+  "authors": [
+    "Mahdi Arab Loodaricheh",
+    "Anita Raja",
+    "Mohammad Hossein Manshaei"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39117",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Diffusion models evolve noisy states toward a learned data distribution, so their sampling behavior depends on the geometry of the representation in which denoising occurs. This dependence is…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "tabular",
+      "multimodal"
+    ],
+    "task": [
+      "detection",
+      "generation"
+    ]
+  },
+  "title": "Uncertainty-Guided Cross-Modal Alignment for Diffusion-Based IoT Intrusion Detection",
+  "url": "https://arxiv.org/abs/2610.39117",
+  "use_case": ""
+}

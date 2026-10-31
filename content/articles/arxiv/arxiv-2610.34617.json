@@ -1,0 +1,30 @@
+{
+  "abstract": "Diffusion models can sometimes reproduce examples from their training data, a phenomenon known as memorization. Existing memorization detection methods for unconditional diffusion models typically operate at a pre-selected timestep and therefore cannot adapt the detection time to the evolving denoising trajectory. Sequential monitoring enables adaptive detection but repeated testing across timesteps complicates trajectory-level false-alarm control. We study two ways of combining split conformal calibration with sequential monitoring for prompt-free memorization detection: per-step Bonferroni calibration and direct trajectory-level calibration of the maximum memorization score. The former controls repeated testing by splitting the false-alarm budget across timesteps, whereas the latter calibrates the event of ever crossing a threshold directly through the trajectory-level maximum. We evaluate this formulation on an unconditional CIFAR-10 EDM using two complementary per-step statistics based on geometry and representation spikiness. Experiments show that sequential monitoring improves the power-timing tradeoff over fixed-time detection. Compared with Bonferroni calibration, trajectory-level calibration achieves comparable detection power while using the false-alarm budget less conservatively and enabling earlier detection at higher noise levels.",
+  "abstract_ja": "",
+  "authors": [
+    "Yixiao Jing",
+    "Chia-Yu Hsu",
+    "Milad Hoseinpour",
+    "Zekai Zhang"
+  ],
+  "category": "generative-ai",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.34617",
+  "likes_count": 0,
+  "publishedAt": "2026-10-25",
+  "source": "arxiv",
+  "subcategory": "diffusion",
+  "summary": "Diffusion models can sometimes reproduce examples from their training data, a phenomenon known as memorization. Existing memorization detection methods for unconditional diffusion models typically…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Valid Early Detection of Memorization in Diffusion Models",
+  "url": "https://arxiv.org/abs/2610.34617",
+  "use_case": ""
+}

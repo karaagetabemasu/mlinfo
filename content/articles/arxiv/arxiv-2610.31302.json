@@ -1,0 +1,33 @@
+{
+  "abstract": "Exoskeletons have shown great potential for augmenting human physical capabilities, yet generating reliable assistance remains challenging because human motion patterns and interaction requirements vary substantially in practice. To address this problem, a dual-loop assistance strategy is proposed to couple multimodal exoskeleton trajectory generation with variable admittance control, where trajectory variance links the outer-loop generator and the inner-loop controller. The generator synthesizes future exoskeleton trajectories through denoising, primarily using whole-body human motion and exoskeleton proprioception, with task descriptions as auxiliary semantic cues. To reduce cross-modal representation mismatch, a three-stage training pipeline is introduced to progressively optimize the human motion encoder, the exoskeleton proprioception encoder, and the trajectory generator. In the inner loop, multiple future trajectories are sampled from the generator to estimate the trajectory mean and variance. The mean is used as the control reference, while the variance provides an uncertainty measure for prediction reliability. This measure is further incorporated into a stiffness regulation law, enabling compliant assistance with input-to-state stability under bounded lumped interaction input. Experimental results demonstrate that the proposed method significantly reduces muscle activation levels compared with standard baselines, while also decreasing users' metabolic energy expenditure relative to the unassisted condition.",
+  "abstract_ja": "",
+  "authors": [
+    "Muyuan Ma",
+    "Long Cheng",
+    "Lijun Han",
+    "Haotian Zhai",
+    "Xinpan Meng"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.31302",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Exoskeletons have shown great potential for augmenting human physical capabilities, yet generating reliable assistance remains challenging because human motion patterns and interaction requirements…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Whole-Body Motion Guided Reference Generation for Uncertainty-Aware Compliant Assistance",
+  "url": "https://arxiv.org/abs/2610.31302",
+  "use_case": ""
+}

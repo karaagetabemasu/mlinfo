@@ -1,0 +1,30 @@
+{
+  "abstract": "Traditional weight of evidence assigns a credit characteristic a value based on its association with default across a population. Credit analysis also requires an assessment of that characteristic in the context of an individual applicant's record. We study conditional weight of evidence for this purpose. It measures the change in default log odds from observing a characteristic after the remaining credit information is known. Its sign identifies whether the characteristic adds adverse or favorable information for that applicant, and its magnitude measures the strength of that information. The same characteristic value can therefore receive different assessments for applicants with different payment histories or other credit attributes. We develop estimators using gradient-boosted trees and evaluate their accuracy in a bureau-style simulation. Regressions of the full model's predicted probabilities recover conditional evidence more accurately than separate models fitted to default outcomes, provided the full model is accurate. They also recover a deliberately constructed file-age effect whose direction varies with utilization and is often missed by marginal weight of evidence. Local class-frequency estimates improve on marginal weight of evidence but remain inaccurate for some weak effects. An application to FICO HELOC data illustrates estimation when the population evidence is unknown. Conditional weight of evidence provides an applicant-specific interpretation of the information in a credit characteristic; its population summary, a conditional information value, splits the joint information in the record across blocks when averaged over orderings. Neither is an adverse action reason, which explains the fitted score difference between the applicant and chosen passing records.",
+  "abstract_ja": "",
+  "authors": [
+    "Agus Sudjianto",
+    "Denis Burakov"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.24586",
+  "likes_count": 0,
+  "publishedAt": "2026-10-17",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Traditional weight of evidence assigns a credit characteristic a value based on its association with default across a population. Credit analysis also requires an assessment of that characteristic in…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Conditional Weight of Evidence for Gradient-Boosted Credit Models: Estimation, Additivity and Its Relation to Adverse Action Reasons",
+  "url": "https://arxiv.org/abs/2610.24586",
+  "use_case": ""
+}

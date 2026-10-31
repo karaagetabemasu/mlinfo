@@ -1,0 +1,27 @@
+{
+  "abstract": "Network-wide flooding in mobile multihop networks selects relays from locally maintained topology information. Mobility makes this information outdated, leaving two basic responses: add redundant relays or refresh the topology and re-select relays more frequently. How these mechanisms trade reliability for overhead, however, is not well quantified. We quantify this trade-off on a public trace of 157 vehicles using Optimized Link State Routing version 2 (OLSRv2) and exact minimum-cost relay sets. Twofold coverage increases median relay-cover lifetime by only 2.3x, rather than about an order of magnitude as predicted by an independent-hazard model. The limitation is structural: 43.6 % of two-hop neighbours have only one possible relay, and newly appearing neighbours invalidate existing covers. Moreover, the delivery gain of a second relay falls from 0.061 to 0.016 when relay selection uses instantaneous link state, showing that redundancy mainly compensates for outdated topology information. Relay coverage and topology refresh therefore form a measurable redundancy-freshness trade-off rather than independent robustness mechanisms. In our trace, twofold coverage has lower overhead below about 100 bit/s of application flooding per node, whereas fresher topology information has lower overhead above it. This makes relay redundancy a load-dependent design choice rather than a fixed heuristic robustness setting.",
+  "abstract_ja": "",
+  "authors": [
+    "Johannes F. Loevenich",
+    "Thies Möhlenhof",
+    "Roberto Rigolin F. Lopes"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39561",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Network-wide flooding in mobile multihop networks selects relays from locally maintained topology information. Mobility makes this information outdated, leaving two basic responses: add redundant…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Quantifying the Relay-Coverage Trade-off in Mobile Multihop Flooding",
+  "url": "https://arxiv.org/abs/2610.39561",
+  "use_case": ""
+}

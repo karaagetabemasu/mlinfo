@@ -1,0 +1,29 @@
+{
+  "abstract": "We propose a multimodal transformer framework for efficiently modeling long1 financial documents that combine structured tabular data with noisy, unstructured2 textual disclosures. The framework represents financial tables as semantically3 enriched token sequences and integrates them with long-form text through a cross-4 attention mechanism that explicitly captures cross-modal dependencies. In par-5 ticular, we augment each numerical variable with a semantic embedding derived6 from its textual definition, enabling the model to encode both numerical magnitude7 and economic meaning. This design yields a more expressive and parameter-8 efficient representation of tabular data compared to value-only embeddings. Using9 a large-scale dataset of financial statements and MD&A disclosures, we show that10 structured numerical features remain the dominant source of predictive signal;11 however, textual information provides consistent incremental gains when incor-12 porated via cross-attention rather than simple concatenation. Our results further13 demonstrate that noisy textual disclosures are most useful when conditioned on a14 stable, semantically structured tabular representation. In particular, using frozen15 variable-level tabular representations as cross-attention queries enables the model16 to weight MD&A chunks differently for each financial variable and observation.17 These findings suggest that cross-attention provides an efficient mechanism for18 table-conditioned aggregation of long-form narrative evidence.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiaoyu Hu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.37913",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "We propose a multimodal transformer framework for efficiently modeling long1 financial documents that combine structured tabular data with noisy, unstructured2 textual disclosures. The framework…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "tabular",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Grounding Long Financial Text with Semantically-Enriched Tables via Multimodal Learning",
+  "url": "https://arxiv.org/abs/2610.37913",
+  "use_case": ""
+}

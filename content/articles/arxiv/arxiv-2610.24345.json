@@ -1,0 +1,27 @@
+{
+  "abstract": "Before a new policy replaces a deployed one, we often want a certificate, computed from logged episodes, that it is better. We ask how many episodes such a certificate needs when the logging policy is known but history-dependent, and the error probability must stay below $δ$ in every environment consistent with the logs. The answer is an exponent $K^\\star$: the smallest KL divergence from the logged law to a law with the same logged action probabilities under which the target does not improve. No sound certifier stops in fewer than $\\log(1/δ)/K^\\star$ expected episodes, at any $δ$, and whenever $0<K^\\star<\\infty$ a plug-in Kelly certifier attains this rate to first order as $δ\\to0$. Coverage, computed by one backward induction, decides whether certification is impossible ($K^\\star=0$), possible at a finite rate, or possible in a constant number of episodes ($K^\\star=\\infty$). By convex duality, the optimal certificate bets on the importance-weighted advantage and also places fair bets on the logged actions, so doubly robust control variates act as hedges rather than estimators. As a consequence, no choice of off-policy estimator changes $K^\\star$, a coverage ceiling explains the curse of memory, and structural assumptions can be priced in exponent units. A cushion certifier extends the approach to trees too large to enumerate. In experiments the plug-in's median stopping time is 1.13-1.43x the lower bound on memory tasks, 1.13-1.51x on Tiger ($H\\le5$) and 1.17-1.64x on random trees. The best scalar betting baselines need up to 2.65x (memory) and 4.1x (Tiger) the plug-in's episodes; only on a few shallow random trees is a doubly robust bet faster, by at most 18%.",
+  "abstract_ja": "",
+  "authors": [
+    "Rui Wang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.24345",
+  "likes_count": 0,
+  "publishedAt": "2026-10-17",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Before a new policy replaces a deployed one, we often want a certificate, computed from logged episodes, that it is better. We ask how many episodes such a certificate needs when the logging policy…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": []
+  },
+  "title": "The Certification Exponent: Instance-Optimal Sequential Certification of Policy Improvement from History Dependent Logs",
+  "url": "https://arxiv.org/abs/2610.24345",
+  "use_case": ""
+}

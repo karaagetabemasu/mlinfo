@@ -1,0 +1,30 @@
+{
+  "abstract": "A track fitting pipeline is presented that converts a measured racetrack point cloud into a closed, $C^4$ differentiable, three-dimensional surface model suitable for high-fidelity Modelica race-car optimization. The surface is a Monge patch, parametrised by a curvilinear arc-length coordinate measured along the minimum-curvature line (MCL) and a signed lateral offset, with a height polynomial of user-selectable degree capturing the cross-sectional elevation profile. The choice of MCL as the reference line is deliberate since anchoring the same surface on the geometric centre-line can cause adjacent normals to cross inside the drivable region on tight corners. The resulting non-injective parametrisation assigns multiple curvilinear addresses to the same three-dimensional point and returns invalid road geometry. The MCL is obtained from a quadratic program that minimises integrated curvature subject to track-boundary, periodicity, and jerk-regularisation constraints. By reducing total curvature while remaining within the track bounds, the MCL moves the region of parametrisation breakdown outside the drivable strip on all circuits studied, keeps the normal map injective across the full track width, and yields a more linear time-to-arc-length transformation for minimum lap-time problems. The fitted surface and the associated track widths are exported as periodic piecewise-quintic $C^4$ B-splines, solved as a nonlinear program.",
+  "abstract_ja": "",
+  "authors": [
+    "Adwait Verulkar",
+    "Behzad Danaei",
+    "Srikanth Sivaramakrishnan",
+    "Ryan Trinter"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.36430",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "A track fitting pipeline is presented that converts a measured racetrack point cloud into a closed, $C^4$ differentiable, three-dimensional surface model suitable for high-fidelity Modelica race-car…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "A Singularity Avoiding Track Model for Race Car Optimization",
+  "url": "https://arxiv.org/abs/2610.36430",
+  "use_case": ""
+}

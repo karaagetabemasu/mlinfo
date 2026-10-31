@@ -1,0 +1,26 @@
+{
+  "abstract": "Dropout and zoneout are routinely added to long short-term memory (LSTM) and gated recurrent unit (GRU) networks, but, to our knowledge, their placements have not been crossed with gate initialisation in a factorial design, and it is not known whether early gradient propagation tells which runs will learn long dependencies. We trained one-layer LSTMs and GRUs on the adding problem and on delayed recall in a factorial grid of 720 runs, crossing conventional and chrono gate initialisation with up to six recurrent regulariser placements at one rate each, with pre-specified follow-ups, and recorded how sensitive the final hidden state was to the input at every lag. Because both tasks supply fresh or exhaustive training data, the study measures the regularisers' effects on optimisation and does not assess generalisation from a finite training set. At lengths chosen to make conventional initialisation difficult, all 360 chrono-initialised runs reached the validation criterion within 5000 updates, as did 119 of 120 unregularised runs with a horizon about four times too short or too long, whereas conventionally initialised networks learned slowly or did not reach the criterion within the budget at the longer lengths. Under conventional initialisation, dropout generally delayed learning and zoneout helped only in some conditions. The early input sensitivity added little to predicting which conditions learn once the early validation loss was modelled per task, architecture and initialisation. Within conditions, a flatter early decay went with the seeds that learned, but in a pre-specified test the association was modest (concordance 0.61), condition-dependent and not robust to resampling seeds. The results support chrono initialisation, even with a rough horizon, on such tasks.",
+  "abstract_ja": "",
+  "authors": [
+    "Oleksandr Kholodniak",
+    "Oleksandr Prokhorov"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.29034",
+  "likes_count": 0,
+  "publishedAt": "2026-10-21",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Dropout and zoneout are routinely added to long short-term memory (LSTM) and gated recurrent unit (GRU) networks, but, to our knowledge, their placements have not been crossed with gate…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Gate Initialisation versus Recurrent Dropout and Zoneout in Learning Long Dependencies: A Controlled Study of LSTM and GRU Networks on Synthetic Tasks",
+  "url": "https://arxiv.org/abs/2610.29034",
+  "use_case": ""
+}

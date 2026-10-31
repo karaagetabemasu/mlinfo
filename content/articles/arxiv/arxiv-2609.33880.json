@@ -1,0 +1,32 @@
+{
+  "abstract": "Convolutional EEG decoders are trained at a fixed width, usually set by their authors on other data. Growing methods add neurons during training where the loss could decrease the most, but whether they improve compared to a reference width is untested on EEG. Here, we grow three convolutional backbones on 12 motor-imagery datasets under three protocols and compare each with its reference model per subject. The growing ShallowFBCSPNet scores 2.9 points above its reference model with only half the parameters (0.57x), SCCNet changes by at most 1.2 points. Deep4Net growing models show decreased accuracy, but they require adaptation that prevent to compare faithfully the results. These differences follow the selection step, which keeps a candidate neuron relying on a dynamic threshold from singular values decomposition. Overall, these results suggest that growth helps when its criterion can rank the candidate neurons, and that the rate of skipped neuron addition tells where a decoder can be grown small from scratch.",
+  "abstract_ja": "",
+  "authors": [
+    "Adam Mounir",
+    "Stella Douka",
+    "Arnault H. Caillet",
+    "Bruno Aristimunha",
+    "Sylvain Chevallier"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2609.33880",
+  "likes_count": 0,
+  "publishedAt": "2026-09-27",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Convolutional EEG decoders are trained at a fixed width, usually set by their authors on other data. Growing methods add neurons during training where the loss could decrease the most, but whether…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "time-series"
+    ],
+    "task": []
+  },
+  "title": "Neuron-Level Architecture Growth: A Controlled Evaluation for EEG Time-Series Decoding",
+  "url": "https://arxiv.org/abs/2609.33880",
+  "use_case": ""
+}

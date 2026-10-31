@@ -1,0 +1,28 @@
+{
+  "abstract": "Controlling continuum robots' shape to operate in confined, enclosed environments is challenging, since it cannot rely on external observation. Existing embedded shape sensing methods, although they can provide shape reconstruction, are insufficient to enable real-time shape control due to limitations in reconstruction accuracy, computational speed, and compatibility with shape-state representation. In this work, we present an embedded shape-sensing framework that uses readily available IMU and actuator feedback to reconstruct the continuum-robot shape with a neural network, providing accurate shape feedback at $400~\\mathrm{Hz}$ for physical closed-loop control. We systematically investigate four key reconstruction design choices: shape-state representation, network architecture, training objective, and sensing inputs, through more than $5{,}000$ trained models on one- and three-segment continuum robots. The selected framework achieves global shape errors of $0.9\\%L$ and $1.7\\%L$ (of the robot length) for the one- and three-segment systems, respectively. In closed-loop control, one-segment tip tracking achieves a $6.1\\%L$ error and three-segment shape control achieves a $2.3\\%L$ global shape error, whereas IMU--PCC reconstruction using the same uncompensated measurements fails. Enclosed-space experiments further demonstrate operation without external observation. These results provide a practical framework for translating readily available embedded sensing into high-rate feedback for continuum robot closed-loop control.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiahe Wang",
+    "Sultan Haidar Ali",
+    "Eric Weissman",
+    "Jiefeng Sun"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39055",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Controlling continuum robots' shape to operate in confined, enclosed environments is challenging, since it cannot rely on external observation. Existing embedded shape sensing methods, although they…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Controlling Continuum Robot Shape in Enclosed Space with Embedded Sensing using IMU and Actuator Feedback",
+  "url": "https://arxiv.org/abs/2610.39055",
+  "use_case": ""
+}

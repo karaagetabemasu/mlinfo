@@ -1,0 +1,34 @@
+{
+  "abstract": "Spectroscopic diagnostics provide rich information for characterizing plasma states in tokamak fusion experiments, while existing learning-based approaches are often designed for individual tasks and rely heavily on labeled data. In this work, we propose SpectralTF-MAE, a self-supervised spectral foundation model for tokamak plasma diagnostics. The model is pretrained on paired charge-exchange recombination spectroscopy (CXRS) and X-ray crystal spectroscopy (XCS) measurements through masked spectral reconstruction. To better capture diagnostically important spectral structures, we introduce a peak-aware masking strategy together with a peak-enhanced reconstruction objective, encouraging the model to focus on characteristic spectral regions. A shared Transformer encoder is employed to learn transferable representations across different diagnostic modalities. The pretrained model is further adapted to several downstream tasks, including plasma-parameter prediction, cross-diagnostic spectral generation, and spectral peak analysis. Experiments on EAST diagnostic data demonstrate that the proposed framework achieves competitive performance across different tasks and consistently benefits from self-supervised spectral pretraining. These results indicate the potential of SpectralTF-MAE as a general and transferable representation learning framework for plasma spectroscopic diagnostics.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiao Wang",
+    "Zhijie Lu",
+    "Duoqing Yang",
+    "Jiangtao Yu",
+    "Jin Tang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38593",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Spectroscopic diagnostics provide rich information for characterizing plasma states in tokamak fusion experiments, while existing learning-based approaches are often designed for individual tasks and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [],
+    "task": [
+      "generation",
+      "embedding"
+    ]
+  },
+  "title": "SpectralTF-MAE: A Pre-trained Spectral Foundation Model for Tokamak Fusion Plasma Diagnostics",
+  "url": "https://arxiv.org/abs/2610.38593",
+  "use_case": ""
+}

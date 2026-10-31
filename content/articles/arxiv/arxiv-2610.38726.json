@@ -1,0 +1,29 @@
+{
+  "abstract": "Frontier language models express coherent preferences, but behavioral evidence alone cannot say whether these belong to the model or to a character it portrays. Following Hofstadter's view of the self as a self-description, we ask whether a model's description of itself works as a portable specification of its preference profile, a quine test: can the text a model writes about itself regenerate its behavior elsewhere? Ten models from nine labs write self-descriptions; we place each one in the prompt of other models (receivers) and of fresh instances of the author, and measure how closely their choices on a 110-item preference battery match the author's. First, the tested native self-descriptions (native: the profile measured under a generic assistant prompt) show no average reconstruction gain across variations in length, framing, wording and prompt placement: on a 0 to 1 fidelity scale where a model's fidelity to a fresh instance of itself is 0.979 and to unrelated models about 0.89, the one-sided 95% upper bound on the pooled gain is below +0.01 in every tested system-prompt condition, and descriptions based on the author's observed choices do no better. Second, the channel itself is strong: explicitly listing the author's answers lets receivers reproduce its profile at fidelity 0.955 to 0.960 across three model grids, within 0.03 of same-model repeatability. Third, self-descriptions written under an explicit preference policy transfer the assigned preferences almost as well as the policy text itself. Fourth, reading its own self-description shifts even the author away from its baseline, modestly more than unrelated prose of the same length. For the preferences measured here, native self-descriptions influence behavior without reliably specifying how to reproduce it in another model. We release the pipeline, battery, raw call logs, and 198 model-written descriptions.",
+  "abstract_ja": "",
+  "authors": [
+    "Bibin Babu",
+    "Ivan P. Yamshchikov",
+    "Aleksei Shpilman"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38726",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Frontier language models express coherent preferences, but behavioral evidence alone cannot say whether these belong to the model or to a character it portrays. Following Hofstadter's view of the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "The Quine Test: How Much of a Model's Self Survives Its Own Description?",
+  "url": "https://arxiv.org/abs/2610.38726",
+  "use_case": ""
+}

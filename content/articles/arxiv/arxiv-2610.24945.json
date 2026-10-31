@@ -1,0 +1,29 @@
+{
+  "abstract": "Direct Preference Optimization (DPO) is widely used for offline Reinforcement Learning from Human Feedback. However, recent works have shown that DPO can be easily manipulated by adversarial preference label flip attacks, which are specifically designed to mislead the learner toward an attacker-chosen target policy. To address this issue, we design robust DPO methods that can defend against such attacks. Building on the property that lable flips induce parameter-independent gradient shifts in log-linear DPO, we propose Trim-$K$ Robust-DPO, which removes the $K$ highest-impact pairs, and Soft-Trim-$K$ Robust-DPO, which smoothly downweights them. We establish deterministic gradient perturbation bounds uniformly over all attack sets containing at most $K$ flips, explicitly separating defense-induced bias from surviving attack effects. Under bounded-region assumptions, these bounds yield time-uniform parameter and policy deviation guarantees. We further quantify how quadratic regularization improves curvature while introducing additional bias. Experiments on Stanford Human Preferences, HH-RLHF, and UltraFeedback-Binarized validate our analysis.",
+  "abstract_ja": "",
+  "authors": [
+    "Chenye Yang",
+    "Weiyu Xu",
+    "Lifeng Lai"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.24945",
+  "likes_count": 0,
+  "publishedAt": "2026-10-18",
+  "source": "arxiv",
+  "subcategory": "rlhf",
+  "summary": "Direct Preference Optimization (DPO) is widely used for offline Reinforcement Learning from Human Feedback. However, recent works have shown that DPO can be easily manipulated by adversarial…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "Robust Direct Preference Optimization under Preference Label-Flip Attacks",
+  "url": "https://arxiv.org/abs/2610.24945",
+  "use_case": ""
+}

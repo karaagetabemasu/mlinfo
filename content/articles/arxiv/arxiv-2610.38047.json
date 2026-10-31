@@ -1,0 +1,31 @@
+{
+  "abstract": "Airborne magnetic anomaly navigation provides a passive, unjammable alternative to Global Navigation Satellite Systems positioning by matching magnetometer measurements against a lithospheric magnetic anomaly map. Existing map-matching algorithms either assume a Gaussian posterior (extended Kalman filter), require Monte Carlo sampling (particle filter), or discard posterior uncertainty in favour of a single optimal path (Viterbi algorithm). Here we formulate map matching as inference on a chain-structured factor graph and solve it segment by segment using the forward-backward algorithm, which yields a discrete posterior over candidate positions and its Shannon entropy $H_t$ at time $t$. Over the \\texttt{Renfrew\\_395} map, $10^3$ synthetic trials yield a median position error of $32.7$ m, $91\\%$ below the median inertial drift of $362$ m. On these trials and $10^3$ flight paths, the median error is $43\\%$ below the extended Kalman filter and particle filter. Across these paths, a threshold on segment-level entropy detects $47\\%$ of segments with errors above two map cells and $94\\%$ of those above three, at a $10\\%$ false-alarm rate. The foregoing results indicate that $H_t$ provides a truth-free diagnostic of map-conditioned navigation ambiguity.",
+  "abstract_ja": "",
+  "authors": [
+    "Joseph O'Leary",
+    "Tapio Simula",
+    "Tom Kimpson",
+    "Corey Davey",
+    "Wenchao Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38047",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Airborne magnetic anomaly navigation provides a passive, unjammable alternative to Global Navigation Satellite Systems positioning by matching magnetometer measurements against a lithospheric…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Forward-Backward Map Matching for Airborne Magnetic Anomaly Navigation",
+  "url": "https://arxiv.org/abs/2610.38047",
+  "use_case": ""
+}

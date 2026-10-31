@@ -1,0 +1,30 @@
+{
+  "abstract": "In this paper, we present a lightweight algorithm for modelling tabular data containing both continuous and discrete variables. The method uses empirical marginal distributions and a selected quantile function to transform the data into a continuous latent space, where a distribution of choice, e.g. a multivariate Gaussian, can be efficiently estimated and applied. While this approach is closely related to classical well-established machine learning methods, we present a novel adaptation that fits well within the contemporary computational ecosystem. Unlike in the case of deep architectures, it results in a simple implementation with few dependencies, robust training/estimation, as well as efficient sampling. The transformation preserves complex marginal distributions and correlations, providing high-fidelity models, especially for data with unimodal distributions. One of the key characteristics of the proposed approach is its continuous representation of discrete variables. While highly desirable, this introduces a significant challenge, since a single observation corresponds to a region rather than a point in the latent space. We show that this ambiguity naturally leads to a Monte Carlo expectation-maximisation (MCEM) formulation, whose auxiliary objective can be expressed as a weighted latent-space likelihood. This, in turn, allows conventional maximum-likelihood estimators to be used within an efficient and robust optimisation procedure.",
+  "abstract_ja": "",
+  "authors": [
+    "Bartosz Barzdajn",
+    "Mateusz Krzysztoń"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.21674",
+  "likes_count": 0,
+  "publishedAt": "2026-10-15",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "In this paper, we present a lightweight algorithm for modelling tabular data containing both continuous and discrete variables. The method uses empirical marginal distributions and a selected…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "tabular"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Classical methods for modern applications: synthetic tabular data generation using lightweight discrete response continuous latent variable model",
+  "url": "https://arxiv.org/abs/2610.21674",
+  "use_case": ""
+}

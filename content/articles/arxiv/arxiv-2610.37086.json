@@ -1,0 +1,32 @@
+{
+  "abstract": "Relay and reseller APIs have become a common way to access large language models (LLMs), yet users cannot directly verify whether they receive the models they request and pay for. This opacity motivates LLM relay auditing, but existing methods struggle to combine low cost, robustness to benign deployment changes, and statistically interpretable decisions under black-box access. To address these limitations, we propose distributional fingerprint auditing (DFA), a statistical method that requires only textual responses from suspect and trusted reference endpoints. DFA repeatedly queries semantically simple finite-choice probes and uses the resulting categorical response distributions to construct endpoint fingerprints. It compares the suspect and reference fingerprints probe by probe and aggregates the resulting evidence using the Cauchy combination test, yielding an approximate endpoint-level $p$-value for audit decisions at a prespecified nominal significance level. Using registered fingerprints of candidate models, a likelihood-based formulation further supports model attribution under full substitution and joint estimation of substitute identity and substitution ratio under constant-ratio mixed routing. Our benchmark includes 16 proprietary and open-weight LLMs from 10 model families. Across 240 ordered full-substitution pairs, DFA achieves high detection rates at a nominal significance level of $α=0.05$, using five probes and 250 relay requests per audit with stored reference fingerprints. Configuration overrides can lead to rejection even when the served model remains unchanged, with effects varying across models and configurations. Simulations based on stored empirical fingerprints demonstrate accurate model attribution and estimate substitution ratios, with estimation error decreasing as the audit budget increases.",
+  "abstract_ja": "",
+  "authors": [
+    "Fangran Miao",
+    "Shengjie Niu",
+    "Jian Huang",
+    "Ting Li"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.37086",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Relay and reseller APIs have become a common way to access large language models (LLMs), yet users cannot directly verify whether they receive the models they request and pay for. This opacity…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Is Your LLM Relay Serving What It Claims? A low-cost and high-power test for LLM Relay Auditing",
+  "url": "https://arxiv.org/abs/2610.37086",
+  "use_case": ""
+}
