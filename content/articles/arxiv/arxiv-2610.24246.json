@@ -1,0 +1,32 @@
+{
+  "abstract": "Conformal prediction (CP) provides distribution-free coverage guarantees under exchangeability, but the efficiency of its prediction regions depends critically on the choice of the conformity score. This is particularly important in multivariate regression, where dependencies across output dimensions induce complex joint uncertainty structures. This paper introduces CoCoNet (Convex Conformal Network) for learning convex conformity scores that induce flexible, data-adaptive prediction regions. CoCoNet learns the score from held-out data by optimizing prediction-region efficiency while enforcing convexity with respect to the residual. CoCoNet then applies split-conformal calibration to retain finite-sample coverage guarantees. The paper presents two variants of the method: CoCoNet$_{\\mathrm{Spline}}$, based on piecewise-linear scores, and CoCoNet$_{\\mathrm{ICNN}}$, based on Input Convex Neural Networks. Experiments compare CoCoNet with other CP baselines over synthetic and real-world datasets with output dimensions ranging from 2 to 16. The results demonstrate the flexibility of CoCoNet in learning different response types. Across 8 models and 30 multi-dimensional regression tasks, CoCoNet$_\\text{ICNN}$ and CoCoNet$_{\\mathrm{Spline}\\text{-}\\ell_1}$ achieve the best efficiencies with average ranks of 1.45 and 2.75, respectively. In particular, CoCoNet$_\\text{ICNN}$ ranks first on 22 tasks out of 30 in terms of efficiency.",
+  "abstract_ja": "",
+  "authors": [
+    "Alireza Moradi",
+    "Thomas Bruys",
+    "Pascal Van Hentenryck",
+    "Reza Zandehshahvar"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.24246",
+  "likes_count": 0,
+  "publishedAt": "2026-10-16",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Conformal prediction (CP) provides distribution-free coverage guarantees under exchangeability, but the efficiency of its prediction regions depends critically on the choice of the conformity score.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "CoCoNet: Convex Conformal Network for Multi-Dimensional Uncertainty Regions",
+  "url": "https://arxiv.org/abs/2610.24246",
+  "use_case": ""
+}

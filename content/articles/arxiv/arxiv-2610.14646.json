@@ -1,0 +1,26 @@
+{
+  "abstract": "Conversational assistants are becoming the place where people ask what to buy, and sponsored content is moving into their answers. Several advertisers then compete for one sponsored slot, and all of them read the same conversation, so their willingness to pay usually moves together. Existing auctions for LLM advertising treat these values as independent. We therefore present AffMyerson, an auction that captures this correlation and turns it into revenue. We model the advertisers' values given the conversation as a multivariate normal and turn the economic premise of positive dependence (affiliation) into a sign condition on the precision matrix. We design a neural parameterization whose every output satisfies it. We prove that every prior in this family yields a truthful, ex-post individually rational auction, so estimation error can cost revenue but never truthfulness. We derive the conditional virtual values in closed form. By the design of the prior, pricing an auction needs no matrix inversion and takes O(n^2) time, fast enough to run at query time. We also work out the log-normal family used in empirical ad-auction work. There we prove that the auction is truthful for every prior and revenue-optimal when the prior is correct, and that the virtual value is regular everywhere whenever the conditional spread is below a loose threshold, which our fitted priors stay well under. With LLM-agent bidders, AffMyerson earns 6.2% more than a second-price auction with a tuned reserve, 6.1% more than Ronen's lookahead auction with the same prior, and 9.2% more than Myerson's auction run as if values were independent. This gain is still 4.5% on real keyword search queries where willingness to pay is hard to read. The correlation comes from common demand. Agents that judge the conversation bid together and agents told to calculate do not. The gain from conditioning moves with the correlation.",
+  "abstract_ja": "",
+  "authors": [
+    "Shiman Sheng",
+    "Mingyu Guo"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.14646",
+  "likes_count": 0,
+  "publishedAt": "2026-10-10",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Conversational assistants are becoming the place where people ask what to buy, and sponsored content is moving into their answers. Several advertisers then compete for one sponsored slot, and all of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Beyond Independent Values: Optimal Auctions with Correlated Valuations for LLM-Native Advertising",
+  "url": "https://arxiv.org/abs/2610.14646",
+  "use_case": ""
+}

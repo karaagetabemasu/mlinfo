@@ -1,0 +1,27 @@
+{
+  "abstract": "Spiking neural networks (SNNs) promise event-driven, low-power inference, but on vision tasks they still acquire rotation invariance only through data augmentation. Group-equivariant CNNs build such symmetries into the architecture, yet a faithful spiking analogue is missing: a leaky integrate-and-fire (LIF) neuron placed after a $G$-equivariant convolution can break equivariance through its membrane recurrence. We give a necessary and sufficient condition for this not to happen. The layer is equivariant at every time step if and only if the neuron parameters $(β, v_{\\mathrm{th}})$ are constant along the joint orbits of the group action on the (group, space) index. We solve it in closed form, and it covers any elementwise stateful neuron. Its sufficiency half specialises a known result for equivariant recurrent networks; its necessity half rules out the heterogeneous per-neuron parameters common in SNNs. The per-channel parameterisation that satisfies it, Group-Coupled LIF (GC-LIF), is combined with $p4$ and $p4m$-equivariant convolutions and a spike-rate group max-pool into SGE-Net. On MNIST, KMNIST, Fashion-MNIST, CIFAR-10 and CIFAR-100, evaluating each checkpoint on the clean test set and all its group-transformed copies, SGE-Net trained without rotations is invariant under $C_4$ and $D_4$ and outperforms a plain SNN trained with rotations in nine of ten dataset-group pairs, whereas non-equivariant baselines lose up to $72$ percentage points in the worst case. Operator-level tests confirm the theory before and after training, and an analytical estimate places SGE-Net at $1.7\\times$ the arithmetic energy of a standard CNN and $2.3\\times$ below its ANN counterpart at eight time steps.",
+  "abstract_ja": "",
+  "authors": [
+    "Nhan Trong Luu",
+    "Duong Trung Luu",
+    "Thang Cong Truong"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39601",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Spiking neural networks (SNNs) promise event-driven, low-power inference, but on vision tasks they still acquire rotation invariance only through data augmentation. Group-equivariant CNNs build such…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "GC-LIF: Spiking Group-Equivariant Neural Network With Group-Coupled Membrane Dynamics",
+  "url": "https://arxiv.org/abs/2610.39601",
+  "use_case": ""
+}

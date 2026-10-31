@@ -1,0 +1,27 @@
+{
+  "abstract": "Occupancy-state reductions make dynamic programming possible for zero-sum partially observable stochastic games (zs-POSGs). Existing point-based solvers usually optimise a central value function. This restores Bellman recursion, but it requires point-based updates over high-dimensional occupancy spaces. We introduce an approximate policy-iteration algorithm for finite-horizon zs-POSGs. The method maintains one policy per player and updates both jointly along occupancy trajectories induced by conservative policy updates. Instead of approximating a full central value function, each update uses a single supporting hyperplane induced by the current joint policy. The algorithm alternates local policy improvements, conservative updates, and persistent exploration. Computation is therefore concentrated on occupancy regions where the current joint policy is exploitable. On finite-horizon zero-sum POSG benchmarks, the method is competitive at small horizons and often improves the runtime-exploitability trade-off at larger horizons compared with PBVI, HSVI, and CFR+.",
+  "abstract_ja": "",
+  "authors": [
+    "Erwan C. Escudie",
+    "Matthia Sabatelli",
+    "Jilles Steeve Dibangoye"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.36847",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Occupancy-state reductions make dynamic programming possible for zero-sum partially observable stochastic games (zs-POSGs). Existing point-based solvers usually optimise a central value function.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Conservative Policy Iteration For Zero-Sum POSGs",
+  "url": "https://arxiv.org/abs/2610.36847",
+  "use_case": ""
+}

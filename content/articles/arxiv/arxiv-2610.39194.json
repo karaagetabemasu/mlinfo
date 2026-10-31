@@ -1,0 +1,32 @@
+{
+  "abstract": "Parameter estimation and classification in binary logistic regression deteriorate severely when the number of minority class observations ($n_1$) is smaller than the feature dimension ($p$). Under such rank-deficient rarity ($n_1 < p$), maximum likelihood estimators suffer from quasi-complete separation, penalized likelihood methods exhibit severe intercept bias, and convex minority oversampling techniques such as SMOTE collapse into an $(n_1 - 1)$-dimensional affine subspace. In this paper, we propose a novel \\textit{Self-Calibrated Zero-Complement} estimator that shifts the paradigm from minority interpolation to majority fringe extrapolation. Grounded in Stein's Lemma, we prove that the conditional expectation shift of the abundant majority class ($Y=0$) induced by logistic truncation uniquely identifies the true hyperplane normal $\\boldsymbolβ$ after Mahalanobis whitening. We further establish that extrapolating synthetic minority instances outward from the high-quantile density fringe of the majority distribution along the conjugate direction preserves full-rank covariance regularity ($\\mathrm{rank} = p$). To accommodate both semi-supervised environments (with an unlabeled background mean) and strictly supervised subsamples, we introduce a hybrid estimator incorporating the intrinsic third-moment skewness of the majority class alongside a location-shift-invariant zero-boundary intercept calibration. Extensive Monte Carlo simulations and real-world benchmark applications (Wisconsin Diagnostic Breast Cancer and Banknote Authentication) under extreme rarity ($n_1 \\in \\{3, 5\\}$) demonstrate that our approach prevents parameter divergence, recovers the oracle hyperplane with high fidelity, and substantially outperforms Firth's regression and SMOTE in F1-score and estimation stability.",
+  "abstract_ja": "",
+  "authors": [
+    "Chongsun Park"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39194",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Parameter estimation and classification in binary logistic regression deteriorate severely when the number of minority class observations ($n_1$) is smaller than the feature dimension ($p$). Under…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "semi-supervised"
+    ],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification",
+      "regression"
+    ]
+  },
+  "title": "Zero-Complement Extrapolation: Parameter Recovery and Classification in Severely Imbalanced Logistic Regression under Rank-Deficient Regimes",
+  "url": "https://arxiv.org/abs/2610.39194",
+  "use_case": ""
+}

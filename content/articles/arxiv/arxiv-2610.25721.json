@@ -1,0 +1,25 @@
+{
+  "abstract": "The block generalized-power method pairs threshold-based support selection with inexpensive Stiefel updates, but the standard block formulation conflates two nonequivalent objectives and leaves inactive components, threshold ties, and post-selection refitting ill-specified. We rebuild the model from the primal. Eliminating each loading column from the normalized loading-ball problem gives a sum of soft-thresholded Euclidean norms (A-SUM); the squared-threshold objective in common use arises from a quadratic lift (A-SQ). We prove both identities, exhibit a two-component instance whose maximizers disagree, and specify explicit conventions for zero-response columns, ties, rank deficiency, and mask-before-refit. For A-SQ we separate the historical full-polar iteration from a safeguarded Riemannian ascent and prove, for the latter, whole-sequence convergence via a sufficient-ascent lemma, a relative-error lemma, and the Kurdyka-Lojasiewicz property, which applies because the soft-threshold objective and the Stiefel constraint are semi-algebraic. A strict threshold margin then forces finite identification of the support and sign pattern. The post-identification map is ordinary power iteration on the active covariance for a rank-one hard threshold, and the Frechet derivative of a coupled polar map for component-specific supports; a radius-based safe-screening rule follows from the same local analysis. Planted-spike experiments match the predicted identification time and local rates. On modern-AI panels (GPT-2 residual stream, ViT CLS stream, Pitprops) the thresholded block-sparse components match dense PCA on reconstruction and improve on it in monosemanticity and class specialisation. On three native-label scRNA datasets (Zheng17 FACS-sorted PBMCs, 68k donor-A with FACS-correlated labels, Tabula Muris) A-SQ beats dense PCA on cluster-recovery AMI by +0.023 to +0.044 at matched sparsity.",
+  "abstract_ja": "",
+  "authors": [
+    "Omid Shams Solari"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.25721",
+  "likes_count": 0,
+  "publishedAt": "2026-10-19",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "The block generalized-power method pairs threshold-based support selection with inexpensive Stiefel updates, but the standard block formulation conflates two nonequivalent objectives and leaves…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Corrected Block Sparse Spectral Optimization: Exact Models, Finite Identification, and Local Dynamics",
+  "url": "https://arxiv.org/abs/2610.25721",
+  "use_case": ""
+}

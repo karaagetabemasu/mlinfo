@@ -1,0 +1,31 @@
+{
+  "abstract": "Skill-evolution methods typically analyze execution trajectories to guide agent skill refinement. However, policy updates can change the behavioral effects and marginal utility of an unchanged skill. Attribution based on earlier trajectories may therefore no longer reflect the skill's contribution under the updated policy. Moreover, trajectory failures can arise from multiple factors, making individual skill contributions difficult to isolate. We evaluate whether policy-update signals contain predictive information about changes in skill marginal utility. At fixed contexts from pre-update training rollouts, we measure how policy updates change the contrast in token preferences between skill and control conditions. Combining these interaction shifts with advantage estimates yields reward-directed readouts for diagnosing utility changes. The readouts reuse existing training rollouts and require only forward passes for single-step action scoring, without additional post-update rollout evaluation. Our experiments show that policy updates can alter skill marginal utility and that policy-update readouts carry diagnostic information for identifying skills with declining utility. Integrating readout-guided prioritization into skill evolution improves downstream performance while reducing policy and editor token consumption.",
+  "abstract_ja": "",
+  "authors": [
+    "Yifan Wang",
+    "Zhenyi Gai",
+    "Yiwen Zhao",
+    "Mingxuan Jiang",
+    "Keyang Chen"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39358",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Skill-evolution methods typically analyze execution trajectories to guide agent skill refinement. However, policy updates can change the behavioral effects and marginal utility of an unchanged skill.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Before the Next Rollout: Diagnosing Skill Utility Shifts from Policy Updates",
+  "url": "https://arxiv.org/abs/2610.39358",
+  "use_case": ""
+}

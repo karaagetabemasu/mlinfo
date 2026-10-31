@@ -1,0 +1,27 @@
+{
+  "abstract": "Neural receivers for 5G New Radio (NR) match classical model-based receivers in link-level performance, but their robustness to adversarial perturbations at the receiver input remains underexplored. We show that standard gradient-based attacks applied end-to-end through an unrolled low-density parity-check (LDPC) decoder fail to significantly outperform a matched-power Gaussian perturbation. We identify the failure as gradient masking caused by tanh saturation in the boxplus operation of the belief-propagation (BP) check-node update, with a per-iteration gradient norm decay of more than four orders of magnitude across ten unrolled BP iterations. Based on this finding, we propose two structurally independent loss functions that restore attack efficacy. L_BP routes the gradient through the unsaturated early iterations via per-iteration supervision, while L_LLR is a margin loss on pre-decoder log-likelihood ratios (LLRs) whose gradient bypasses the LDPC decoder entirely. Both loss functions increase the block-error rate (BLER) by one to four orders of magnitude at matched perturbation power, with the results reproduced on both the Sionna NeuralReceiver and DeepRx. At low PSR, L_LLR-optimized perturbations achieve up to three orders of magnitude higher BLER on unseen channel realizations than LBP-optimized perturbations.",
+  "abstract_ja": "",
+  "authors": [
+    "Aakash Saini",
+    "Jafar Aco Mohammadi",
+    "Wolfgang Gerstacker"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30345",
+  "likes_count": 0,
+  "publishedAt": "2026-10-21",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Neural receivers for 5G New Radio (NR) match classical model-based receivers in link-level performance, but their robustness to adversarial perturbations at the receiver input remains underexplored.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "On the Adversarial Vulnerability of Neural Receivers with Unrolled LDPC Decoders",
+  "url": "https://arxiv.org/abs/2610.30345",
+  "use_case": ""
+}

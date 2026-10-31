@@ -1,0 +1,28 @@
+{
+  "abstract": "Margin bounds explain why weighted votes generalize after training error vanishes, but dependent observations require concentration arguments that keep the dependence model and failure budget explicit. We study stationary mixing streams without treating dependence as a formal substitution of an \"effective sample size.\" For a finite base class, we combine independent-block Rademacher theory for stationary $β$-mixing processes with a clipped margin loss to obtain an explicit uniform voting-margin certificate, whose dependence penalty is set by the number of approximately independent blocks and the coupling budget $4(μ-1)β(a)$. A black-box transfer theorem shows that any i.i.d. voting-margin guarantee remains valid on a regularly spaced subsequence, with only an additive $β$-mixing failure probability. For votes fixed independently of a stationary finite-state reversible Markov stream, spectral concentration gives the cleaner $\\sqrt{t_{rel}/n}$ rate, and a sticky-refresh construction shows this exponent is unavoidable. The constant is statistic-specific: the effective sample size is $n/τ_{int}(g)$, with $τ_{int}(g) \\le 2t_{rel}-1$. When the dependence scale is unknown, a batch-means Student-t interval is valid up to an explicit remainder vanishing in the number of batches, with width governed by $τ_{int}(g)$ rather than the worst-case $t_{rel}$. Experiments show: the learned-vote certificate is nonvacuous once the block count is large; a two-timescale construction gives a batch-means interval 8.1x narrower than the worst-case interval at nominal coverage (0.945); block-bootstrap and batch-means intervals undercover under strong dependence while the certificate stays valid; and on real, ordered UCI HAR sensor data the dependence-agnostic certificate reaches 0.95 coverage where naive intervals reach only 0.38.",
+  "abstract_ja": "",
+  "authors": [
+    "Adria Binte Habib",
+    "Ibne Farabi Shihab"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.24166",
+  "likes_count": 0,
+  "publishedAt": "2026-10-16",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Margin bounds explain why weighted votes generalize after training error vanishes, but dependent observations require concentration arguments that keep the dependence model and failure budget…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Margin Certificates for Voting Classifiers under Mixing Dependence",
+  "url": "https://arxiv.org/abs/2610.24166",
+  "use_case": ""
+}

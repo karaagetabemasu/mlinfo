@@ -1,0 +1,29 @@
+{
+  "abstract": "Multi-robot SLAM allows robots to improve their estimates by exchanging map information, but repeated exchanges create unknown correlations between local estimators. Covariance intersection (CI) can fuse estimates without tracking these correlations. In right-invariant extended Kalman filter (RI-EKF) SLAM, however, point features obtain their invariant errors through the robot rotation, so a neighbor's map estimate is expressed in its own error coordinates and is correlated with its pose, and cannot be fused by CI directly. This paper presents Joint-CI, a unified fusion method for distributed RI-EKF SLAM with point, object, and mixed point--object maps. Using a neighboring robot's local posterior and an inter-robot observation, a joint estimate of the receiving robot's pose and the common features is constructed in the receiving robot's error coordinates, retaining the robot--feature and feature--feature correlations. Partial-state CI then fuses this estimate with the receiving robot's local posterior. We show that the unified formulation and the fusion preserve the six unobservable directions associated with global rotation and translation, and that communication and fusion preserve first-order covariance consistency given consistent local posteriors. Monte Carlo simulations and a real-world dataset-derived experiment show that Joint-CI improves estimation accuracy while maintaining consistent, mildly conservative uncertainty.",
+  "abstract_ja": "",
+  "authors": [
+    "Mengya Xu",
+    "Xianjia Yu",
+    "Ha Sier",
+    "Shoudong Huang",
+    "Tomi Westerlund"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.31221",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Multi-robot SLAM allows robots to improve their estimates by exchanging map information, but repeated exchanges create unknown correlations between local estimators. Covariance intersection (CI) can…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Consistent Distributed Invariant EKF SLAM with Point and Object Features",
+  "url": "https://arxiv.org/abs/2610.31221",
+  "use_case": ""
+}

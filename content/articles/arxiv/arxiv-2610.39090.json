@@ -1,0 +1,30 @@
+{
+  "abstract": "Local-commerce and food-delivery marketplaces run large ads businesses: across hundreds of thousands of stores, merchants pay to be surfaced on browse and search surfaces, and a ranker decides which ads each consumer sees. Ranking well demands strong per-consumer personalization, yet a consumer's raw interaction history is sparse and high-cardinality. Our production ranker had personalized only through hand-engineered signals: aggregate engagement counts, categorical embeddings, and order-agnostic pooled history, with no learned per-consumer sequence representation. We learn one by training a GPT-style generative model of the consumer's engagement sequence to predict their next few engagements, and read its last-token hidden state as the consumer embedding. That single frozen vector becomes one shared personalization input for every ad surface: a daily job refreshes it, and each ranker consumes it as an ordinary dense feature. Offline it is the largest single-feature gain in our ranking-AUC ladder, a relative Eval-AUC gain of +0.59% on a browse-driven feed and +0.57% on a query-driven search surface. Online, it shipped as one component of bundled ranker retrains on both surfaces: Discovery (revenue +0.79%, conversion rate +1.17%) and Search (revenue +0.94%, conversion rate +1.50%). Three design choices adapt the generative objective to a repurchase-heavy marketplace, and are the core of our contribution: an exploration-weighted loss that up-weights businesses new to the consumer over ones already engaged; a two-stage curriculum: a click pretrain that keeps the representation broad and exploratory, then a conversion fine-tune that sharpens purchase intent; and a designed negative set that pairs a fixed popular-business pool and businesses shown but not ordered with random and in-batch negatives.",
+  "abstract_ja": "",
+  "authors": [
+    "Sizhang Zhao",
+    "Praveen Gondhi",
+    "Bin Li",
+    "Utsaw Kumar"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39090",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Local-commerce and food-delivery marketplaces run large ads businesses: across hundreds of thousands of stores, merchants pay to be surfaced on browse and search surfaces, and a ranker decides which…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "PALATE: Pretrained Autoregressive LATent Embeddings",
+  "url": "https://arxiv.org/abs/2610.39090",
+  "use_case": ""
+}

@@ -1,0 +1,27 @@
+{
+  "abstract": "Computer-model calibration is usually undertaken in service of prediction, yet neither Bayesian Kennedy-O'Hagan (KOH) calibration nor amortized simulation-based inference is built to control the predictive error of the calibrated simulator. When parameters are weakly identified or the data-model discrepancy is misspecified, the simulator-output bands induced by a nominal posterior level can be far from nominal. We propose a two-layer framework that targets predictive miscoverage directly. First, a conditional flow-matching model learns an amortized posterior for the calibration parameters, trained on simulator outputs perturbed with Gaussian-process discrepancies of varying structure. Second, conformal risk control arranges posterior draws for the target observation into nested candidate sets and selects the smallest one whose fixed-rank pointwise bands attain a prescribed time-averaged miscoverage on a synthetic calibration sample. Under exchangeability of calibration and target observations, the bands control expected miscoverage in finite samples. In a synthetic benchmark, the proposed bands are roughly 20% the width of KOH-MCMC bands with miscoverage near the 10% target. In calibrating an age-structured SEIR model to the 2010 Malawi measles outbreak, they are again sharper and near-nominal, and the weeks they fail to cover coincide with the asymmetric epidemic decline, exposing structural inadequacy of the mechanistic model.",
+  "abstract_ja": "",
+  "authors": [
+    "Ryan Heejoon Byun",
+    "Dayeon Yoon",
+    "Won Chang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.31163",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Computer-model calibration is usually undertaken in service of prediction, yet neither Bayesian Kennedy-O'Hagan (KOH) calibration nor amortized simulation-based inference is built to control the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Prediction Uncertainty Controlled Computer Model Calibration",
+  "url": "https://arxiv.org/abs/2610.31163",
+  "use_case": ""
+}

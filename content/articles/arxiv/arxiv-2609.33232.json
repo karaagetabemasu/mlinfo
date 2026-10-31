@@ -1,0 +1,29 @@
+{
+  "abstract": "Continuous-time sensing and monitoring with timely and accurate decision-making are critical for many real-world applications. In healthcare monitoring systems, physiological signals are often available or sampled at irregular time intervals, hence requiring continuous-time processing to provide accurate prediction. Moreover, such systems often need to solve multiple detection/prediction tasks to provide a comprehensive patient review from different physiological aspects for more accurate decision-making. To solve this, continuous-time neural networks (CTNNs) can be employed. However, state-of-the-art works typically solve only one task at each network, thereby limiting their efficiency gains. To address this limitation, we propose MTLiquid, a novel methodology to enable efficient multi-task learning in continuous-time processing for healthcare monitoring systems through effective network design and training strategy. MTLiquid employs: (1) multiple input and output heads to accommodate different tasks, while sharing the same backbone network across tasks; as well as (2) an effective training strategy that leverages a loss-weighting technique to balance learning updates across different tasks and a proportional data presentation technique to address imbalanced dataset sizes. Experimental results for mortality prediction (P12) and sepsis early detection (P19) tasks for ICU patients show that, MTLiquid achieves strong performance (AUROC: 0.84 for P12 and 0.94 for P19) comparable to the state-of-the-art single-task learning in both continuous-time networks (AUROC: 0.84 for P12 and 0.95 for P19) and discrete-time networks (AUROC: 0.79-0.82 for P12 and 0.92-0.94 for P19), while incurring significantly smaller memory cost by 44%-94%. These results highlight the potential of our MTLiquid methodology to enable lightweight continuous-time healthcare monitoring systems for better decision-making.",
+  "abstract_ja": "",
+  "authors": [
+    "Rachmad Vidya Wicaksana Putra",
+    "Fahad Abdul Rauf",
+    "Muhammad Shafique"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2609.33232",
+  "likes_count": 0,
+  "publishedAt": "2026-09-27",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Continuous-time sensing and monitoring with timely and accurate decision-making are critical for many real-world applications. In healthcare monitoring systems, physiological signals are often…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "MTLiquid: Enabling Efficient Multi-Task Learning using Liquid Neural Networks for Lightweight Healthcare Monitoring Systems",
+  "url": "https://arxiv.org/abs/2609.33232",
+  "use_case": ""
+}

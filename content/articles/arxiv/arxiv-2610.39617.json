@@ -1,0 +1,31 @@
+{
+  "abstract": "Super-telephoto imaging on mobile phones suffers from complex, device-dependent degradations that are poorly captured by conventional handcrafted pipelines. Collecting large-scale aligned training pairs across different phones and diverse scenes, however, is both costly and difficult to scale. We therefore study whether device-specific degradations can be learned from only a small number of physical captures and transferred for training a unified super-resolution (SR) model. Our key idea is to factor degradation learning into two learnable components: one captures the device-specific imaging characteristics under well-resolved conditions, while the other captures the additional information loss and artifacts that arise in super-telephoto imaging. We build a paired benchmark across three phone brands (Huawei, Apple, and vivo) by photographing the same content at two display sizes and zoom settings. The larger displayed image is captured at the phone's maximum optical zoom setting, while the smaller image is photographed directly at the phone's highest native zoom setting through the phone's native imaging pipeline. The benchmark contains 519 training and 60 held-out pairs. We use the benchmark to learn device-specific degradation, then apply it to external images to synthesize thousands of additional pairs to train our UniTele SR model. Relative to the pretrained Qwen and FLUX backbones before adaptation, the full UniTele training recipe substantially improves paired restoration fidelity and perceptual similarity on the held-out benchmark and yields markedly more stable and visually faithful restorations.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuchen Zhang",
+    "Aojie Li",
+    "Wei Cheng",
+    "Xianfang Zeng",
+    "Runxing Liu"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39617",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Super-telephoto imaging on mobile phones suffers from complex, device-dependent degradations that are poorly captured by conventional handcrafted pipelines. Collecting large-scale aligned training…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "UniTele: Learning Device-Conditioned Degradations for Unified Smartphone Telephoto Super-Resolution",
+  "url": "https://arxiv.org/abs/2610.39617",
+  "use_case": ""
+}

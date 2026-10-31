@@ -1,0 +1,35 @@
+{
+  "abstract": "Before acting on an object, a robot needs to anticipate how its hand motion will change the physical world and what the resulting scene will look like. Existing approaches typically entangle action-conditioned dynamics, camera motion, and visual synthesis within a video generation model, or represent dynamics as point trajectories without explicit object structure. We introduce DeXplicit, a dexterous manipulation world model that instead predicts how the world evolves explicitly in metric 3D before rendering its visual consequences. Given an initial scene and a future hand trajectory, a lightweight 3D dynamics network predicts object-centric motion and deformation, providing structured and geometrically grounded future world states. These predictions then serve as a strong scaffold for video generation: appearance is transported through the predicted 3D motion and projected into future views, allowing the renderer to focus on completing uncertain and newly visible content rather than implicitly learning world dynamics from pixels. This explicit-3D-first decomposition also enables efficient causal generation, requiring only two denoising steps per block while conditioning on generated history. Across HOT3D, OakInk2, and PhysTwin, DeXplicit reduces moved-point error by 27-40% relative to PointWorld and improves object fidelity IoU+ by 47% on HOT3D under a shared renderer. Our design with two-step causal generation achieves a 57x speedup from our 14B bi-directional configuration in video synthesis.",
+  "abstract_ja": "",
+  "authors": [
+    "Adam Lee",
+    "Mutian Xu",
+    "Yukang Cao",
+    "Shulin Tian",
+    "Ziwei Liu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30781",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Before acting on an object, a robot needs to anticipate how its hand motion will change the physical world and what the resulting scene will look like. Existing approaches typically entangle…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video",
+      "3d"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "DeXplicit: Making Physical State Explicit in Dexterous Manipulation World Models",
+  "url": "https://arxiv.org/abs/2610.30781",
+  "use_case": ""
+}

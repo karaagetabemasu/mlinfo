@@ -1,0 +1,25 @@
+{
+  "abstract": "The Independent Chip Model (ICM) converts the chip stacks of the players remaining in a poker tournament into finishing-place probabilities and prize equities. It is the standard model in tournament solvers, but its definition considers all possible finishing orders, and exact computation has been regarded as intractable for large fields. The same mathematics appears in other fields; for instance, the ICM is a Plackett-Luce ranking model with stacks as weights. We present DE-ICM, a deterministic algorithm that computes the placement probabilities of all $n$ players for all paid places in $O(M n^{2})$ time, where the number $M$ of quadrature nodes is fixed for the admissible inputs and the target accuracy. Its numerical scheme allows the target to be set close to the accuracy of double-precision arithmetic. The algorithm evaluates a classical integral representation in which, conditional on a player's exponential clock, the number of players ahead is Poisson-binomial. A double-exponential quadrature on a single grid evaluates every integral; its truncation errors have closed-form bounds, and the step size, which controls the discretization error, follows from the field size. A numerically stable deconvolution then recovers each player's leave-one-out coefficients in $O(n)$ time from one shared product. On exactly solvable instances with up to 4,000 players, the worst observed relative error of an equity is $4.0 \\times 10^{-14}$ and the worst absolute error of a placement probability $1.1 \\times 10^{-14}$. The full placement matrix for 1,000 players takes 0.2 seconds on one CPU core.",
+  "abstract_ja": "",
+  "authors": [
+    "Wataru Inariba"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.06028",
+  "likes_count": 0,
+  "publishedAt": "2026-10-05",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "The Independent Chip Model (ICM) converts the chip stacks of the players remaining in a poker tournament into finishing-place probabilities and prize equities. It is the standard model in tournament…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Near-Exact Computation of Independent Chip Model Placement Probabilities for Thousands of Players",
+  "url": "https://arxiv.org/abs/2610.06028",
+  "use_case": ""
+}

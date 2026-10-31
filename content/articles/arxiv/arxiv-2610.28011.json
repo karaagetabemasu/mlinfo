@@ -1,0 +1,28 @@
+{
+  "abstract": "A planner using a learned world model can improve its predicted outcome while choosing a worse action. We study when expected free energy (EFE) can help decide how much computation to spend on a plan. An EFE-inspired objective combines goal distance with disagreement among stochastic predictions. We test candidate scoring, stopping, and online predictor updates separately. Stopping when elite cost stalls reduces refinement on tasks whose success plateaus with depth, with mean success close to fixed-depth references. At the larger tested weights, rewarding disagreement lowers success with a frozen model. Penalizing it helps at some task and weight settings but harms others. When training data omit a region needed to reach the goal, online updates recover part of the resulting loss. The tested cost-stall rule can fail when further optimization exploits model errors, because predicted cost keeps falling after task success peaks. Cost progress can guide computation on a plateau, but protecting performance after a peak requires information about the consequences of the chosen actions.",
+  "abstract_ja": "",
+  "authors": [
+    "Tong Zhang",
+    "Zhiyuan Shi",
+    "Yun Peng",
+    "Tao Xie"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.28011",
+  "likes_count": 0,
+  "publishedAt": "2026-10-20",
+  "source": "arxiv",
+  "subcategory": "model-based",
+  "summary": "A planner using a learned world model can improve its predicted outcome while choosing a worse action. We study when expected free energy (EFE) can help decide how much computation to spend on a plan.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Knowing When to Stop Thinking: A Dissection of Expected Free Energy as a Test-Time Compute Controller for Latent World-Model Planning",
+  "url": "https://arxiv.org/abs/2610.28011",
+  "use_case": ""
+}

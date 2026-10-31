@@ -1,0 +1,29 @@
+{
+  "abstract": "Lane-changing (LC) maneuvers are highly challenging vehicle interactions, with substantial implications for traffic safety and efficiency. Developing effective LC strategies for connected and automated vehicles in mixed traffic is complicated by the uncertainty associated with surrounding-vehicle behavior and the computational burden of embedding realistic prediction models within optimization schemes. To capture these complex interactions while retaining tractability, this study proposes a data-driven optimization framework that embeds neural network (NN) surrogates for safety and lateral comfort within a Bézier-curve-based trajectory planner. Specifically, the safety cost during the LC process is quantified via a surrogate composed of an input convex recurrent neural network (ICRNN) encoding the planned trajectory, a fully input convex neural network (FICNN) embedding the LC duration, and a partially input convex neural network (PICNN) decoder fusing them with historical traffic states; separately, another FICNN surrogate approximates the optimal lateral comfort cost as a function of the LC duration. Both surrogates are embedded via linear programming (LP) formulations, avoiding the binary variables required by conventional mixed-integer programming (MIP) approaches for NN-embedded optimization. We further theoretically establish their exactness at optimality and extend the framework to problems with additional analytical objective terms and multiple surrogates. Experiments on a hybrid dataset combining real-world and simulated trajectories demonstrate that the proposed method achieves surrogate accuracy competitive with unconstrained baselines while substantially improving optimization efficiency over conventional MIPs. Closed-loop simulations further show that the proposed planners markedly reduce the weighted planning cost and consistently outperform baseline methods.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuanxiang Yang",
+    "Yu Liu",
+    "Fabricio Oliveira",
+    "Yu Han",
+    "Claudio Roncoli"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38939",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Lane-changing (LC) maneuvers are highly challenging vehicle interactions, with substantial implications for traffic safety and efficiency. Developing effective LC strategies for connected and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Optimization-based lane-changing trajectory planning in mixed traffic with embedded input convex neural networks",
+  "url": "https://arxiv.org/abs/2610.38939",
+  "use_case": ""
+}

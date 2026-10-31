@@ -1,0 +1,35 @@
+{
+  "abstract": "Predicting where to grasp and how to move is fundamentally a geometry problem. Vision-language models treat it as language generation instead. They tokenize spatial coordinates into text and decode them autoregressively. This mechanism ignores spatial structure and truncates continuous precision. Errors compound across coordinate tokens during decoding. In this paper, we show that compact off-the-shelf VLMs with 0.5-2B parameters already encode rich spatial information in their intermediate hidden states. Autoregressive decoding is the dominant bottleneck for trajectory prediction, while affordance prediction depends additionally on feature depth and decoder architecture. We expose the latent spatial information with a lightweight, geometry-compatible prediction head that attaches to a frozen backbone. It reads features from an intermediate hidden layer, conditions a learned query on the task instruction and refines it via cross-attention over the visual tokens to regress affordance boxes and trajectory waypoints directly as continuous values, without modifying the backbone. We evaluate on ShareRobot-Bench and AGD20K. Our 2B variant reduces trajectory error by over 60% and improves ShareRobot-Bench affordance mAP by 85% relative to the autoregressive baseline. It approaches RoboBrain on trajectory prediction (0.251 vs 0.191 DFD) at 3.8x higher throughput. These results demonstrate a favorable accuracy-efficiency trade-off for instruction-conditioned 2D geometric prediction.",
+  "abstract_ja": "",
+  "authors": [
+    "Akila Ayanthi",
+    "Darshana Priyasad",
+    "Tharindu Fernando",
+    "Dimity Miller",
+    "Sridha Sridharan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39416",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "attention",
+  "summary": "Predicting where to grasp and how to move is fundamentally a geometry problem. Vision-language models treat it as language generation instead.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Decoding Geometry, Not Tokens: Efficient VLMs for Robot Affordance and Trajectory Prediction",
+  "url": "https://arxiv.org/abs/2610.39416",
+  "use_case": ""
+}

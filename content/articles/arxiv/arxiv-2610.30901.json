@@ -1,0 +1,33 @@
+{
+  "abstract": "Concept bottleneck models (CBMs) let clinicians inspect and correct skin disease diagnoses through clinical concepts, but only if the concept annotations are reliable. We therefore audit the reliability of SkinCon, a widely used dermatology concept dataset, across skin tones. Within the same disease and with near duplicates removed, erythema is annotated far less often on dark than on light skin, with an odds ratio of 0.17. In contrast, hyperpigmentation and hypopigmentation are annotated more often, with odds ratios of 6.2 and 4.5, respectively. We refer to this pattern as tone-dependent concept annotation. An evidential concept model trained on these annotations learns the same pattern and reproduces it on unseen images. Such a model may agree with potential erythema omissions rather than contradict them. Consistent with this, three label error detectors underperform a disease-only baseline at finding erythema that dermatologist captions mention but SkinCon labels as absent. The three detectors are based on confident learning, training dynamics, and the model's own evidential uncertainty. Concept annotations should thus be audited within each subgroup before explanations built on them can be trusted.",
+  "abstract_ja": "",
+  "authors": [
+    "Y. Li",
+    "M. Bigliardi-Qi",
+    "S. Bedros",
+    "P. Bigliardi",
+    "N. Papanikolopoulos"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30901",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Concept bottleneck models (CBMs) let clinicians inspect and correct skin disease diagnoses through clinical concepts, but only if the concept annotations are reliable. We therefore audit the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "When Annotation Patterns Are Learned: Skin-Tone Dependence in Dermatology Concepts",
+  "url": "https://arxiv.org/abs/2610.30901",
+  "use_case": ""
+}

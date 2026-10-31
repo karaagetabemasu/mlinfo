@@ -1,0 +1,30 @@
+{
+  "abstract": "Although low-dose, sparse-view, and limited-angle CT involve distinct degradation mechanisms, all three pose reconstruction challenges due to limited measurement information and can therefore be addressed within a unified framework. In iterative image restoration with flow matching, prediction errors may cause inference states to deviate from the prescribed training path, while a fixed initialization may be unsuitable for inputs with varying degradation severity. We propose a unified conditional flow matching method that conditions on the initial reconstruction and combines feedback-aware training with degradation-adaptive initialization. During training, a teacher network simulates inference updates to generate shifted states, from which a student network learns to recover high-quality reference images, improving its ability to handle prediction errors. During inference, the starting time is selected based on the noise level or extent of missing projection data, and the noise added to the initial state is adjusted accordingly to adapt the starting point to the input. Experiments on public benchmark datasets show that the proposed method achieves better quantitative results than the compared methods across all three reconstruction tasks, effectively suppressing noise and artifacts while preserving anatomical structures and details.",
+  "abstract_ja": "",
+  "authors": [
+    "Jigang Duan",
+    "Heran Wang",
+    "Genwei Ma",
+    "Xing Zhao"
+  ],
+  "category": "mlops",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39517",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "deployment",
+  "summary": "Although low-dose, sparse-view, and limited-angle CT involve distinct degradation mechanisms, all three pose reconstruction challenges due to limited measurement information and can therefore be…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "FFAI: Flow Matching with Feedback Training and Adaptive Initialization for CT Reconstruction",
+  "url": "https://arxiv.org/abs/2610.39517",
+  "use_case": ""
+}

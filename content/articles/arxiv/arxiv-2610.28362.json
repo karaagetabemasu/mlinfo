@@ -1,0 +1,31 @@
+{
+  "abstract": "Navigation Among Movable Obstacles (NAMO) requires a robot to rearrange objects that block access to its goal. For a pushing robot, progress may depend on a setup push that enables a later opening without itself clearing a passage. The number of candidate sequences can grow exponentially with sequence length, making physics-based search costly. We introduce the Search-trained Push Action Ranker (SPAR), which learns to prioritize push primitives from simulated search outcomes. Searches over sequences of up to two pushes per object provide supervision that distinguishes immediate openings from setup pushes. A transformer trained with regression and ranking losses scores primitives using contact tokens conditioned on scene geometry and reachability regions. The same model guides simulator evaluations in SPAR Search and selects actions for direct execution in SPAR Policy. Both modes solve successive keyhole problems that open access to neighboring free-space regions within a NAMO planner. Across successful runs on $300$ simulated two-push keyhole problems, SPAR Search reduces median simulator calls by $7.0\\times$, leading to a $3.8\\times$ reduction in planning time relative to Random Search. Without retraining, the same ranker guides search on $600$ keyhole problems which have no solution within two pushes. At a depth limit of five pushes, SPAR Search achieves $50.7\\%$ success within $100$ simulator calls, compared with $20.2\\%$ for Random Search. These gains carry over to NAMO planning: on hard simulated scenes, SPAR Search achieves $47\\%$ success within $100$ simulator calls, compared with $21\\%$ for Random Search. In real-robot experiments, SPAR Policy succeeds in $37/40$ trials without a physics-based digital twin, compared with $33/40$ for SPAR Search and $27/40$ for Random Search.",
+  "abstract_ja": "",
+  "authors": [
+    "Dhruv Metha Ramesh",
+    "Tri-An Nguyen",
+    "Junshan Huang",
+    "Jingjin Yu",
+    "Kostas E. Bekris"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.28362",
+  "likes_count": 0,
+  "publishedAt": "2026-10-20",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Navigation Among Movable Obstacles (NAMO) requires a robot to rearrange objects that block access to its goal. For a pushing robot, progress may depend on a setup push that enables a later opening…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "SPAR: Search-trained Push Action Ranker for Efficient Navigation Among Movable Obstacles",
+  "url": "https://arxiv.org/abs/2610.28362",
+  "use_case": ""
+}

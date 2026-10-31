@@ -1,0 +1,33 @@
+{
+  "abstract": "Large vision-language models (LVLMs) represent images and videos as long visual-token sequences, substantially increasing inference costs. These costs motivate visual-token pruning, whose effectiveness depends on both what signal is used for selection and when that signal becomes available. Our analysis reveals complementary limitations: visual-side [CLS] attention produces scattered, background-biased selections under aggressive compression, while stronger query-conditioned signals become available after substantial computation within the large language model (LLM). This raises a natural question: can structurally coherent, query-aware token selection be performed before consulting the LLM? We therefore propose ST-Pruner (Spectral-Textual Pruner), a training-free framework for pre-LLM visual-token selection. It combines attention-independent spectral saliency with inverted patch-text similarity through parameter-free multiplicative fusion. Across diverse LVLMs, ST-Pruner retains over 95% of full-token performance using at most 11.1% of visual tokens and achieves a 3.2x end-to-end speedup on LLaVA-NeXT. Code is available at https://github.com/sejong-rcv/ST-Pruner.",
+  "abstract_ja": "",
+  "authors": [
+    "Intaek Shin",
+    "Geuntaek Lim",
+    "Sungjune Park",
+    "Yukyung Choi"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/sejong-rcv/ST-Pruner",
+  "hasCode": true,
+  "id": "arxiv-2610.38303",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Large vision-language models (LVLMs) represent images and videos as long visual-token sequences, substantially increasing inference costs. These costs motivate visual-token pruning, whose…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Don't Ask the LLM: Visual Token Pruning with Spectral Structure and Semantic Relevance",
+  "url": "https://arxiv.org/abs/2610.38303",
+  "use_case": ""
+}

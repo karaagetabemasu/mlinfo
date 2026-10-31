@@ -1,0 +1,31 @@
+{
+  "abstract": "Medical severity estimation commonly relies on absolute grade annotations, which are fundamentally ordinal, yet existing methods often treat the grades as independent categories. Learning-to-rank methods, which can be trained using relative annotations based on severity comparisons of image pairs, can provide continuous severity rankings but cannot directly predict discrete severity grades. We propose Dominance-guided Ordinal Severity Estimation from Sparse Relative Annotations (DOSE), a framework for learning ordinal medical severity from sparse pairwise comparisons without using absolute annotations. DOSE aggregates the observed comparisons through a global comparison graph to estimate a dominance score for each image. Differences between dominance scores set cumulative margins in the embedding space, so that pairs with larger estimated severity differences are separated more strongly, and also generate pseudo-pairs that supervise a scalar severity head alongside the observed comparisons. The learned continuous severity axis is converted into discrete grades via label-free score calibration, with tie-anchored segmentation as the main calibration method. In the experiment, DOSE consistently outperformed pairwise-ranking baselines on ACNE04, IDRiD, and LIMUC under different pair budgets. Code is available at https://github.com/TushirSahu/DOSE",
+  "abstract_ja": "",
+  "authors": [
+    "Tushir Sahu",
+    "Hideaki Hayashi",
+    "Hajime Nagahara"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/TushirSahu/DOSE",
+  "hasCode": true,
+  "id": "arxiv-2610.39584",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Medical severity estimation commonly relies on absolute grade annotations, which are fundamentally ordinal, yet existing methods often treat the grades as independent categories. Learning-to-rank…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "DOSE: Dominance-Guided Ordinal Severity Estimation from Sparse Relative Annotations",
+  "url": "https://arxiv.org/abs/2610.39584",
+  "use_case": ""
+}

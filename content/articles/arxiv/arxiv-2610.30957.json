@@ -1,0 +1,33 @@
+{
+  "abstract": "Offline contextual pricing often relies on logged observational data, but faces challenges from distributional shifts between training and deployment environments. Distributionally robust optimization (DRO) provides a principled approach to off-policy evaluation and learning (OPE/L). However, existing methods are mostly limited to discrete actions. Recent work has explored DRO for continuous treatments using inverse propensity weighting (IPW), while such IPW-based estimators can be sensitive to the convergence rate of propensity score estimates, particularly when estimated nonparametrically, which may lead to larger estimation errors and regret. In this work, we develop a doubly robust (DR) framework for distributionally robust OPE/L in continuous pricing settings. For evaluation, we propose a localized DR estimator that addresses the computational challenges of worst-case expectations by fitting only a small number of regressions, comparable to standard non-robust DR, while achieving semiparametric efficiency under mild product rate conditions. For learning, we leverage the inherent smoothness of demand noise to handle pricing-specific discontinuities in revenue outcomes (e.g., threshold-based purchase decisions), establishing a finite-sample regret bound of $\\tilde{\\mathcal{O}}_p(T^{-s/(2s+1)})$ for smoothness orders $s=1,2$. This bound improves upon existing regret rates in existing DRO-based off-policy learning (OPL) for continuous treatments. Extensive experiments under various levels of distribution shift validate our proposed framework.",
+  "abstract_ja": "",
+  "authors": [
+    "Min Xu",
+    "Xinyi Yin",
+    "Yunfan Zhang",
+    "Yuxuan Han",
+    "Houcai Shen"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30957",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Offline contextual pricing often relies on logged observational data, but faces challenges from distributional shifts between training and deployment environments. Distributionally robust…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Doubly Robust Distributionally Robust Offline Contextual Pricing",
+  "url": "https://arxiv.org/abs/2610.30957",
+  "use_case": ""
+}

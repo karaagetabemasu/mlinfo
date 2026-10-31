@@ -1,0 +1,33 @@
+{
+  "abstract": "Visual perception should be iterative and task-directed, with representations refined in response to the question and the need for further processing. While Vision-Language Models (VLMs) increasingly support extended reasoning, their visual tokens are still typically acquired in a single, task-agnostic encoder pass. This creates an evidence-acquisition bottleneck: models may reason longer without refining the visual evidence needed to answer the question. We propose LoopLook, a lightweight encoder-side recurrent perception framework that equips pretrained VLMs with adaptive visual depth. LoopLook recurrently revisits a middle-to-late window of the vision encoder, injecting question representations at each loop to guide visual refinement. A learned stopping mechanism adaptively determines the recurrent depth, while a token-wise Mixture-of-Looks (MoL) combines representations from different loops, allowing each visual token to selectively integrate information acquired across recurrent steps. Across four backbones and eight benchmarks, LoopLook consistently improves performance over the baseline, yielding gains of up to 8.6% on MMStar and 8.1% on HallusionBench. Our analysis shows that LoopLook progressively refines visual attention and adaptively allocates depth according to task difficulty. It also better preserves task-relevant visual information under reduced input resolution, while increasing time to first token (TTFT) by only 5.1-6.5%. By bringing recurrence from reasoning back into perception, LoopLook transforms visual perception from a one-shot glimpse into an adaptive process of recurrent refinement.",
+  "abstract_ja": "",
+  "authors": [
+    "Wencheng Ye",
+    "Anning Hu",
+    "Hongye Fang",
+    "Tianyi Wang",
+    "Junchi Yan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30824",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "Visual perception should be iterative and task-directed, with representations refined in response to the question and the need for further processing. While Vision-Language Models (VLMs) increasingly…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Loop to Look Better: Learning Adaptive Depth for Question-Guided Perception in Vision-Language Models",
+  "url": "https://arxiv.org/abs/2610.30824",
+  "use_case": ""
+}

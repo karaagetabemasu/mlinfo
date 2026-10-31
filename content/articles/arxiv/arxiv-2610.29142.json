@@ -1,0 +1,31 @@
+{
+  "abstract": "Traditional robotic navigation systems separate mapping, planning, and low-level control through cascaded modules, introducing computational overhead and accumulated latency. End-to-end reinforcement learning offers a compact unified policy that maps onboard observations directly to control actions. However, on inherently unstable platforms such as two-wheeled inverted-pendulum robots, navigation progress and obstacle avoidance can conflict with attitude stabilization in a strongly state-dependent manner. We propose a lightweight state-dependent objective coordination method for integrated navigation and control. A pitch-conditioned scalarization coefficient $β(s)\\in[0,1]$ adjusts the relative contributions of balance stabilization and navigation objectives during training, without extra control hierarchies or auxiliary attitude-stabilization controllers, such as proportional-integral-derivative (PID) or linear-quadratic regulator (LQR) controllers. To support zero-shot deployment, simulation training models execution delay, action hold, asynchronous and noisy observations, and dynamics uncertainty. Gradient analysis reveals persistent directional interference and state-dependent variation in the objectives' relative scales. Comparisons with alternative reward-weighting, constraint, training, and control-structure strategies show that PPO+$β(s)$, where PPO denotes proximal policy optimization, achieves 98% and 95% success rates with small attitude excursions on the fixed obstacle map and the randomly generated high-obstacle-density map, respectively. Zero-shot hardware experiments further demonstrate bounded attitude behavior and consistent obstacle avoidance using only onboard observations. Training and evaluation code will be made publicly available upon acceptance.",
+  "abstract_ja": "",
+  "authors": [
+    "Xuhao Huang",
+    "Xitao Xu",
+    "Yuxin Zheng",
+    "Yunfan Ren",
+    "Zheng Gong"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.29142",
+  "likes_count": 0,
+  "publishedAt": "2026-10-21",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Traditional robotic navigation systems separate mapping, planning, and low-level control through cascaded modules, introducing computational overhead and accumulated latency. End-to-end reinforcement…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "State-Dependent Objective Coordination for End-to-End Balance and Navigation",
+  "url": "https://arxiv.org/abs/2610.29142",
+  "use_case": ""
+}

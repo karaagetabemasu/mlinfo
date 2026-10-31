@@ -1,0 +1,27 @@
+{
+  "abstract": "Calibrated uncertainty quantification is essential to ensuring AI agents are trustworthy and reliable. However, when agents seek to maximize user engagement or revenue, confidence reports may be strategically distorted, detracting from their informativeness. We formalize this problem in the Confidence Game: a repeated signaling game with imperfect monitoring in which an agent of unknown honesty and ability reports its confidence, and a user decides whether to delegate the task or complete it herself. The agent manages the tradeoff between manipulating signals and maintaining its reputation. We characterize the Markov Perfect Bayesian Equilibria of the two-period game and show that honest reporting is not an equilibrium, inflation is the unique best response once the agent is sufficiently myopic, and under-reporting requires that the user believe honesty to be a minority. We then place an LLM in the agent role, supplying it with its true probability of success so that any gap between what it knows and what it reports is attributable to incentives rather than to miscalibration. The model claims high confidence on 56% of tasks it has been told it will probably fail. This persists on real tasks, where it must estimate its own accuracy and causes miscalibration to increase while the agent's signal becomes less informative. Furthermore, we find that the LLM agent's decisions are coherent, but it systematically underestimates both how likely the user is to delegate and how secure its reputation is, resulting in less extreme behavior. Pricing the agent's reporting rule, we find that it destroys 68% of the gains from delegation, of which 71% is information the report no longer carries and no amount of user sophistication recovers. Overall, we establish confidence reporting under delegation as a strategic problem and provide a tractable basis for modeling, analyzing, and testing agent behavior.",
+  "abstract_ja": "",
+  "authors": [
+    "Raghu Arghal",
+    "Saswati Sarkar",
+    "Shirin Saeedi Bidokhti"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.09371",
+  "likes_count": 0,
+  "publishedAt": "2026-10-07",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Calibrated uncertainty quantification is essential to ensuring AI agents are trustworthy and reliable. However, when agents seek to maximize user engagement or revenue, confidence reports may be…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "The Confidence Game: Strategic Miscalibration in Human-AI Delegation",
+  "url": "https://arxiv.org/abs/2610.09371",
+  "use_case": ""
+}

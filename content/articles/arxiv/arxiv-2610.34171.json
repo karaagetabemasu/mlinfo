@@ -1,0 +1,31 @@
+{
+  "abstract": "Time Series Foundation Models have demonstrated that pretraining on diverse datasets enables effective transfer to new forecasting tasks. Classical methods like ARIMA, however, remain configured and trained independently for each series, discarding knowledge from previous experiments. Consequently, selecting and training an ARIMA configuration remains challenging and often relies on heuristic approaches based on in-sample goodnessof-fit measures. We propose MetaARIMA, a pretrained configuration policy based on metalearning that brings transfer learning to classical statistical forecasting at the configuration level rather than the model level. The policy learns from historical experiments which ARIMA configurations achieve top-quantile performance, and recommends promising candidates for new series while preserving interpretability and local estimation. At inference, it selects a diverse set of candidates via maximal marginal relevance and efficiently identifies the final configuration using successive halving. Experiments in a transfer learning setting, training on M4 and evaluating on M1, M3, and Tourism, show that MetaARIMA outperforms AutoARIMA and other classical methods while being more dataefficient. In a comparison with recent zero-shot foundation models, MetaARIMA remains competitive with Chronos2, Moirai2, and TimesFM. The experiments are publicly available at https://github.com/vcerqueira/experiments-metaarima.",
+  "abstract_ja": "",
+  "authors": [
+    "Vitor Cerqueira",
+    "Ricardo Inácio",
+    "Carlos Soares"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/vcerqueira/experiments-metaarima",
+  "hasCode": true,
+  "id": "arxiv-2610.34171",
+  "likes_count": 0,
+  "publishedAt": "2026-10-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Time Series Foundation Models have demonstrated that pretraining on diverse datasets enables effective transfer to new forecasting tasks. Classical methods like ARIMA, however, remain configured and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "time-series"
+    ],
+    "task": [
+      "forecasting"
+    ]
+  },
+  "title": "MetaARIMA: Configuration-Level Transfer Learning for ARIMA Models",
+  "url": "https://arxiv.org/abs/2610.34171",
+  "use_case": ""
+}

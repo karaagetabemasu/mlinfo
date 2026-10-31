@@ -1,0 +1,31 @@
+{
+  "abstract": "Functional magnetic resonance imaging (fMRI) commonly characterizes large-scale brain organization through functional connectivity (FC). However, an observed FC matrix is not a fixed brain graph but a statistical estimate determined by the finite BOLD frames used to compute it. Conventional FC-based approaches typically represent each scan with a single Pearson-correlation matrix, leaving frame-resolved variations in regional interactions unexploited. To address this limitation, we introduce CoFlu-Brain, which organizes framewise cofluctuation observations into multiple retained and dropped views, each summarized as an FC matrix. The model learns connectivity structure reproducible across retained views and predicts the representations of the corresponding dropped views, while adopting SIGReg from LeJEPA to prevent representation collapse. We pretrained CoFlu-Brain on 13,444 subjects from eight dataset groups and evaluated its representations via frozen-encoder linear probing on seven classification and two age-prediction tasks across seven datasets. CoFlu-Brain showed strong transfer across demographic, developmental, and clinical prediction tasks, outperforming the evaluated released models on most tasks. Random frame partitioning improved aggregate transfer, while the complete objective achieved the strongest overall performance. Code is available.",
+  "abstract_ja": "",
+  "authors": [
+    "Ziteng Sui",
+    "Junfeng Xia",
+    "Wenhao Ye",
+    "Mo Wang",
+    "Quanying Liu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.15450",
+  "likes_count": 0,
+  "publishedAt": "2026-10-11",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Functional magnetic resonance imaging (fMRI) commonly characterizes large-scale brain organization through functional connectivity (FC). However, an observed FC matrix is not a fixed brain graph but…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "CoFlu-Brain: An fMRI Connectivity Foundation Model with Cofluctuation-Based Pretraining",
+  "url": "https://arxiv.org/abs/2610.15450",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Many questions about a video concern one physical object. Where does the ball end up after the cups are shuffled? Which card is the queen? How often was the mug covered? Video-language models (Video-LMs) recognise such objects in single frames but do not keep them apart over time. On real shell-game videos, open models from 8B to 235B parameters, their thinking variants, a reinforcement-learned tool agent and three training-free tool agents all stay within ten points of chance. We separate semantic identity binding from temporal identity maintenance. An object's identity should be fixed at a moment when the evidence for it is visible, and carried afterwards by a tracker. \\emph{Track, Then Bind} implements this principle without training. A promptable video tracker follows every candidate object and draws it with a track number. A frozen vision-language model answers a static question about the identifying evidence, which binds the target to a track. The answer is then derived from the tracked state in text, without asking the model to reinterpret the original video during read-out. A single configuration covers all benchmarks. With Qwen3-VL-32B it solves both VET-Bench tasks, where a fine-tuned trajectory model reaches 92\\% and 90\\% and the same VLM voting over 16 samples stays at 30--32\\%. It answers 55.4\\% of the hardest Perception Test cup games, where the best published model answers 41.5\\%, and, using track-derived timelines, 48.6\\% of TOC-Bench questions, against 37.1\\% for the same model answering directly. Drawing the same tracks on the video and asking the question directly falls 12--19 points short of the agent on real cup games.",
+  "abstract_ja": "",
+  "authors": [
+    "Di Yang",
+    "Xiaochang Li",
+    "Muyang Liu",
+    "Yufei Wang",
+    "Yanhai Xiong"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.31471",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Many questions about a video concern one physical object. Where does the ball end up after the cups are shuffled?",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Ask About the Right Moment: Training-Free Object Identity Reasoning for Video-Language Models",
+  "url": "https://arxiv.org/abs/2610.31471",
+  "use_case": ""
+}

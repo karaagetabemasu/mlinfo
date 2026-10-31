@@ -1,0 +1,31 @@
+{
+  "abstract": "Estimating propeller rates from a moving event camera requires separating blade rotation from the changing image geometry. Background activity mixes with blade events, while repeated blade appearances admit half- and double-rate ambiguities. We propose CoHelix, a recursive filter that estimates one shared homography and separate rotation states for four rigidly mounted, coplanar propellers. Each admitted event updates its assigned rotation state, and its accepted geometry measurements correct the shared homography used to interpret later events from every propeller. We report lock, the fraction of evaluated time for which an estimate remains within 2% of synchronized ground truth, because mean error alone does not show how long a tracker follows the true rate. With fixed-rate initialization, leave-one-recording-out evaluation on moving-camera data gives CoHelix 62.9% lock, compared with 39.8% for HelixTrack and 22.2% for EventPro. With other settings fixed, allowing four geometry contributors instead of one raises lock from 3.4% to 62.9%. On a private target-follower dataset with a different target quadcopter, CoHelix retains the measurement settings selected on moving-camera data and uses a fixed initial rate. It reaches 95.9% lock, compared with 56.2% for HelixTrack and 61.1% for EventPro.",
+  "abstract_ja": "",
+  "authors": [
+    "Radim Spetlik",
+    "Tobiáš Vinklárek",
+    "Jan Klivan",
+    "Tomáš Kestřánek",
+    "Matouš Vrba"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.31384",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Estimating propeller rates from a moving event camera requires separating blade rotation from the changing image geometry. Background activity mixes with blade events, while repeated blade…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "CoHelix: Event-Based Multi-Propeller Rotation-Rate Tracking with Shared Projective Geometry",
+  "url": "https://arxiv.org/abs/2610.31384",
+  "use_case": ""
+}

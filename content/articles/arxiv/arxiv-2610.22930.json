@@ -1,0 +1,28 @@
+{
+  "abstract": "Artificial-intelligence (AI) policies are increasingly used to make consequential decisions in medicine, finance, education, and public services, yet deploying them responsibly requires knowing not only whether a policy helps on average, but for whom. Existing tools for off-policy evaluation and safe policy learning provide population-level guarantees, but some individuals may experience adverse treatment effects. We recast targeted deployment as a multiple-testing problem: for each candidate unit, test whether the outcome under the AI policy would exceed a user-specified threshold, and control the false discovery rate (FDR) among the selected set. Our method, Conformal Policy Selection, combines weighted conformal $p$-values that account for the distributional shift from behavior to target policy with a two-step selection-and-pruning procedure. We prove finite-sample FDR control and establish a doubly robust asymptotic guarantee, where FDR remains controlled if either the outcome model or the propensity model is correctly specified. Synthetic experiments verify these guarantees across four misspecification regimes, and a semi-synthetic study built on real electronic-health-record covariates illustrates how the same FDR control can act as a deployment safety gate, bounding the harmful treatments that a globally trained policy would otherwise administer to a high-risk subpopulation where it misgeneralizes. The framework offers a principled method for safe AI deployment in high-stakes applications.",
+  "abstract_ja": "",
+  "authors": [
+    "Junyu Cao",
+    "Ruijiang Gao",
+    "Maytal Saar-Tsechansky",
+    "Mingzhang Yin"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.22930",
+  "likes_count": 0,
+  "publishedAt": "2026-10-16",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Artificial-intelligence (AI) policies are increasingly used to make consequential decisions in medicine, finance, education, and public services, yet deploying them responsibly requires knowing not…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Conformal Policy Selection: When to Deploy AI Decisions for Targeted Intervention",
+  "url": "https://arxiv.org/abs/2610.22930",
+  "use_case": ""
+}

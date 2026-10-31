@@ -1,0 +1,30 @@
+{
+  "abstract": "Large language model (LLM) agents have demonstrated strong capabilities in automating complex information-seeking and transactional tasks across the open web. However, their real-world reliability remains limited by access barriers, such as dead links, authentication walls, rate limits, and anti-scraping defenses. These barriers block the primary execution path, causing agents to abort prematurely, loop indefinitely, or quietly compromise the user's original constraints. Existing evaluations either implicitly assume that target resources are freely accessible or focus on transient perturbations that simple retries can resolve, failing to capture scenarios where agents must actively reroute around impassable bottlenecks. To bridge this gap, this paper introduces AgentHeal, a comprehensive benchmark evaluating goal-preserving resource recovery, defined as the ability of web agents to detect non-transient access barriers, pivot to legitimate alternative sources, and fulfill the user's exact original objective. Spanning nine barrier families across a counterfactual sandbox and real-website replay, our experiments on leading LLM backbones show that average task success drops sharply from 89.4% to 43.7% under access barriers. Further analysis reveals that agents frequently fall for deceptive look-alikes, fail to escalate to users when necessary, violate access policies, or waste computation on futile retries, providing actionable diagnostics for developing resilient web agents.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhiyi Liu",
+    "Haohua Du",
+    "Haoqi Sun",
+    "Haisheng Tan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39234",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Large language model (LLM) agents have demonstrated strong capabilities in automating complex information-seeking and transactional tasks across the open web. However, their real-world reliability…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "AgentHeal: Evaluating Goal-Preserving Resource Recovery of Web Agents under Access Barriers",
+  "url": "https://arxiv.org/abs/2610.39234",
+  "use_case": ""
+}

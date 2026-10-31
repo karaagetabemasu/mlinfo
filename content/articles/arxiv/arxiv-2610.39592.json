@@ -1,0 +1,28 @@
+{
+  "abstract": "Statistical downscaling is the task of reconstructing high-resolution meteorological fields from coarse inputs. A principled approach formulates downscaling as a Bayesian inverse problem, using a diffusion prior over high-resolution fields and incorporating the coarse field only at inference through a likelihood. This decouples the prior from the coarse source, allowing one pretrained model to adapt to different sources. However, two challenges limit this flexibility: (1) when coarse and target fields come from different reanalysis systems, no fixed coarsening operator can capture their relationship; and (2) guidance gradients can differ by orders of magnitude across variables, making a single guidance strength ineffective. This paper addresses both challenges within the guidance loop, leaving the prior unchanged. We learn the forward operator from paired data and normalize the gradient per channel. We show that this normalization corresponds to steepest descent under a block-max norm, allowing a single guidance strength across variables. Our code is publicly available at https://github.com/CarloSaccardi/operator-aware-weather-downscaling.",
+  "abstract_ja": "",
+  "authors": [
+    "Carlo Saccardi",
+    "Rudolf Saathof",
+    "Geethu Joseph",
+    "Justin Dauwels"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/CarloSaccardi/operator-aware-weather-downscaling",
+  "hasCode": true,
+  "id": "arxiv-2610.39592",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Statistical downscaling is the task of reconstructing high-resolution meteorological fields from coarse inputs. A principled approach formulates downscaling as a Bayesian inverse problem, using a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Operator-Aware Posterior Sampling for Multivariate Weather Downscaling",
+  "url": "https://arxiv.org/abs/2610.39592",
+  "use_case": ""
+}

@@ -1,0 +1,40 @@
+{
+  "abstract": "Deep learning models for whole-body positron emission tomography/computed tomography (PET/CT) hold significant clinical potential for disease detection, treatment planning, and response assessment. However, the time and cost associated with expert annotations remain major bottlenecks in developing robust and generalizable models. Although self-supervised learning (SSL) has emerged as a promising approach to mitigating annotation scarcity, its application to whole-body PET/CT remains relatively underexplored due to the limited availability of large-scale datasets and the challenges associated with learning complementary cross-modal representations. To address these limitations, we curate a heterogeneous, multi-tracer, multi-institutional cohort comprising 6,531 whole-body PET/CT scans and propose LoRe-MIM (Lost-Or-Replaced Masked Image Modelling), a novel self-supervised framework designed to learn multimodal representations through masked image reconstruction. Specifically, LoRe-MIM introduces a masking strategy in which image regions are either replaced with zeros (Lost) or substituted with corresponding complementary imaging modality (Replaced), encouraging the model to capture both modality-specific characteristics and cross-modal relationships. We evaluate the learned representations across multiple downstream tasks, including multimodal PET/CT image reconstruction, patch-based classification into cancer vs. non-cancer, whole-body lesion segmentation, label-efficient training, and robustness assessment. Experimental results demonstrate that LoRe-MIM consistently outperforms the corresponding state-of-the-art baselines across these tasks, highlighting its potential as a scalable and generalizable self-supervised learning framework for whole-body PET/CT analysis.",
+  "abstract_ja": "",
+  "authors": [
+    "Amartya Bhattacharya",
+    "Bashirul Azam Biswas",
+    "Biratal Raj Wagle",
+    "Michael S. Leapman",
+    "Matthew E. Maeder"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.40284",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Deep learning models for whole-body positron emission tomography/computed tomography (PET/CT) hold significant clinical potential for disease detection, treatment planning, and response assessment.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "supervised",
+      "self-supervised"
+    ],
+    "modality": [
+      "image",
+      "multimodal"
+    ],
+    "task": [
+      "classification",
+      "detection",
+      "segmentation",
+      "embedding"
+    ]
+  },
+  "title": "LoRe-MIM: Lost-or-Replaced Masked Image Modeling for Self-Supervised Representation Learning in Whole-Body PET/CT",
+  "url": "https://arxiv.org/abs/2610.40284",
+  "use_case": ""
+}

@@ -1,0 +1,32 @@
+{
+  "abstract": "Compositional diffusion planners have demonstrated remarkable success on long-horizon diffusion planning by sampling short trajectories, namely chunks, and composing them into a long trajectory. However, averaging overlapping chunks can induce the mode-averaging problem, resulting in discontinuous trajectories. Several works aim to address this problem, whereas a non-negligible portion of plans remains infeasible. In this work, we propose Selective Compositional Diffuser (SCD), handling this problem by measuring reachability. To this end, we present a self-supervised learning method for the reachability classifier. This is trained on offline data and generated chunks jointly to address potential distributional mismatch, while reducing the bias inherited from the generated data. Based on this, we construct a graph whose edge costs represent whether consecutive chunks are reachable, and traverse the graph to find effective yet efficient routes. Lastly, we generate bridging trajectories and refine the composed trajectory for smooth transitions. We evaluate our method on OGBench stitching tasks. It practically reduces incompatible mode compositions and the mode-averaging problem compared to the studied baselines. Across tasks, SCD improves success rates, reaching state-of-the-art results on HumanoidMaze-Large and Giant tasks.",
+  "abstract_ja": "",
+  "authors": [
+    "Chanyoung Park",
+    "Youngjoong Kim",
+    "Jaesik Park"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38291",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Compositional diffusion planners have demonstrated remarkable success on long-horizon diffusion planning by sampling short trajectories, namely chunks, and composing them into a long trajectory.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "supervised",
+      "self-supervised"
+    ],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Compositional Diffusion Planning with Chunk Selection and Reachability Measure",
+  "url": "https://arxiv.org/abs/2610.38291",
+  "use_case": ""
+}

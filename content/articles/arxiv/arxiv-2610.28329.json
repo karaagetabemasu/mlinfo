@@ -1,0 +1,30 @@
+{
+  "abstract": "Trajectory tracking for compliant robots is challenging due to nonlinear dynamics and modeling uncertainties, often requiring learning-based methods to avoid explicit parameter identification. Iterative Learning Control (ILC) ensures theoretically high precision and preserves the passive compliance of the robot. However, traditional ILC requires a separate learning phase for each new trajectory. Conversely, Reinforcement Learning (RL) generalizes to new trajectories, but practically suffers from high sample complexity and limited tracking precision. This work proposes Reinforced Iterative Learning Control (RILC) that combines the strengths of both approaches to achieve fast adaptation and guaranteed tracking convergence across diverse trajectories. By establishing a concurrent coupling between the two controllers, RILC overcomes the high initial errors and slow adaptation of traditional ILC, enabling high-performance tracking from the very first trials. In this architecture, ILC provides high-quality samples, while RL contributes as a generalizing best-effort policy across iterations. Additionally, a theoretical proof is presented to show that the RL component preserves ILC stability and, under specific conditions, can also reduce the error bound asymptotically. The efficacy of this framework is demonstrated through simulation and experiments on an underactuated 4-degree-of-freedom serial elastic robot using different trajectories and modeling mismatches.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuri De Santis",
+    "Michele Pierallini",
+    "Franco Angelini",
+    "Manolo Garabini"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.28329",
+  "likes_count": 0,
+  "publishedAt": "2026-10-20",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Trajectory tracking for compliant robots is challenging due to nonlinear dynamics and modeling uncertainties, often requiring learning-based methods to avoid explicit parameter identification.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "Reinforced Iterative Learning Control for elastic joint arms: Guaranteed cross-trajectory generalization under model uncertainties",
+  "url": "https://arxiv.org/abs/2610.28329",
+  "use_case": ""
+}

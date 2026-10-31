@@ -1,0 +1,33 @@
+{
+  "abstract": "Subpixel mapping (SPM) of crop types from \\SI{250}{m} Moderate Resolution Imaging Spectroradiometer (MODIS) time series to field-scale Agriculture and Agri-Food Canada (AAFC) labels supports acreage estimation and agricultural monitoring. Three difficulties remain: (i)~spectral-temporal coupling and mixed pixels that break direct coarse-to-fine classifiers; (ii)~intra-class endmember variability that a single spectrum per crop cannot capture; and (iii)~uniform refinement on the high-resolution (HR) grid, which treats every subpixel the same, so most of the effort goes to easy pixels while errors remain in the minority class. UnMixMamba addresses them as follows. For~(i), a temporal-spectral-spatial decoupled (TSSD) factorization estimates simplex fractions and drives AAFC classification from the same mixture field, instead of mapping low-resolution (LR) observations directly to HR logits. For~(ii), \\(\\times 8\\) abundance super-resolution and a learnable per-crop variant endmember bank reconstruct the MODIS cube at LR and HR under a linear mixing model. For~(iii), the predicted crop fractions decide where a fixed Mamba token budget is spent, so HR refinement focuses on the minority class instead of the full grid. On Alberta 2015 under a fixed spatial-block protocol, UnMixMamba reaches OA 0.8397, mIoU 0.6640, AA 0.7837, and Kappa 0.7715, ahead of ST-DRes, ESPCN, FineCrop, AgriFM, and classical SPM baselines. The task is closed-set four-crop mapping inside a known agricultural mask.",
+  "abstract_ja": "",
+  "authors": [
+    "Motasem Alkayid",
+    "Yimin Zhu",
+    "Naser El-Sheimy",
+    "Lincoln Linlin Xu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38507",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Subpixel mapping (SPM) of crop types from \\SI{250}{m} Moderate Resolution Imaging Spectroradiometer (MODIS) time series to field-scale Agriculture and Agri-Food Canada (AAFC) labels supports acreage…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "time-series"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "UnMixMamba: Unmixing Guided State Space Subpixel Mapping of Crops from MODIS Time Series",
+  "url": "https://arxiv.org/abs/2610.38507",
+  "use_case": ""
+}

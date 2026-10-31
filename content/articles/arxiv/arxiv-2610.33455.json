@@ -1,0 +1,28 @@
+{
+  "abstract": "Permissionless blockchains use transaction fee mechanisms to allocate the resources that transactions consume, such as execution, data bandwidth, and state creation. Recent blockchain designs explore pricing these resources separately rather than through a single unit. We study this shift on Ethereum, whose roadmap moves in stages from a one-dimensional fee mechanism to a multi-dimensional one. We build a demand model for the three resources, calibrated from Ethereum's 2025 block-capacity increases, and find that state creation is the most price-responsive. We then evaluate both mechanisms at higher block capacity, combining the model with transaction-level metering reconstruction and block-level simulation. Under a one-dimensional mechanism, state creation determines the fee and suppresses execution throughput. Adjusting how state is metered can align resource usage under constant demand, but a single fee cannot track all resources when demand varies, leaving all underutilized. A multi-dimensional mechanism removes this fee coupling, but execution still generates data that must be propagated. Across different allocations between block execution and propagation time, the multi-dimensional mechanism delivers 4--34\\% more execution throughput at similarly low congestion, with higher target utilization and state growth near its intended level.",
+  "abstract_ja": "",
+  "authors": [
+    "Fei Wu",
+    "Maria Inês Silva",
+    "Stefanos Leonardos",
+    "Carmine Ventre"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.33455",
+  "likes_count": 0,
+  "publishedAt": "2026-10-24",
+  "source": "arxiv",
+  "subcategory": "model-free",
+  "summary": "Permissionless blockchains use transaction fee mechanisms to allocate the resources that transactions consume, such as execution, data bandwidth, and state creation. Recent blockchain designs explore…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "More Meters or More Prices? One- vs. Multi-dimensional Fee Mechanisms on Ethereum",
+  "url": "https://arxiv.org/abs/2610.33455",
+  "use_case": ""
+}

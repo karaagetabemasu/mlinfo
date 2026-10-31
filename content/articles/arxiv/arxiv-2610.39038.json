@@ -1,0 +1,33 @@
+{
+  "abstract": "Recent generation methods produce 3D assets with detailed geometry and rich textures. However, these assets are non-emissive: they reflect light but emit none. We study a new task, emission generation: predicting spatially varying RGB emission over a 3D asset's surface from its geometry, non-emissive materials, and a rendered view. To support this task, we introduce LightGenBench. Our benchmark makes three contributions. First, we curate a dataset of 37k artist-authored emissive assets in UV, voxel, and multi-view form. Second, we establish baselines across four method families: UV-domain, sparse-voxel, multi-view, and segmentation-based generation. Third, we design an evaluation protocol that measures where an asset emits and how, complemented by user-study comparisons on renderings with varying emission strength. Across the four families, the sparse-voxel baseline TRELLIS.2-Emission performs best because generating emission natively in 3D avoids the failure modes of the other representations, such as the fracturing artifacts of UV space and the occluded emitters that multi-view generation cannot see. However, TRELLIS.2-Emission only reaches an IoU of 0.271, leaving the task far from solved. We hope LightGenBench establishes emission generation as a benchmarkable problem for 3D generation.",
+  "abstract_ja": "",
+  "authors": [
+    "Dongchen Yang",
+    "Xingguang Yan",
+    "Manolis Savva"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39038",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Recent generation methods produce 3D assets with detailed geometry and rich textures. However, these assets are non-emissive: they reflect light but emit none.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "3d"
+    ],
+    "task": [
+      "generation",
+      "segmentation"
+    ]
+  },
+  "title": "LightGenBench: A Benchmark for 3D Emission Generation",
+  "url": "https://arxiv.org/abs/2610.39038",
+  "use_case": ""
+}

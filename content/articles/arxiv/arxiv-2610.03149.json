@@ -1,0 +1,29 @@
+{
+  "abstract": "Edge intelligence requires models to sense continuously in real time and to keep adapting on-device, all under tight compute, energy, and memory budgets. Although spiking neural networks (SNNs) enable efficient event-driven inference, standard surrogate-gradient backpropagation (BP) serializes updates and blocks ongoing inference. We investigate Bidirectional Spike-Based Distillation (BSD) as an on-device learning principle that lets edge SNNs learn while inferring. BSD couples a stimulus-driven forward network with an independent target-driven reverse network and aligns their intermediate representations through local objectives. Because the two pathways have disjoint computation graphs until alignment, forward inference, reverse inference, and stage-wise updates can run concurrently. On 25 benchmarks spanning the five sensing modalities of SOUL, BSD stays within 3.8 percentage points of matched BP baselines on average, while only its forward branch is needed at deployment. The learned representations also transfer well to few-shot class-incremental learning without replaying past data. By removing the dense floating-point backward chain, BSD reduces the projected training latency to $0.72\\times$ and the estimated training energy to $0.36\\times$ that of BP.",
+  "abstract_ja": "",
+  "authors": [
+    "Yanxun Zhang",
+    "Yifei Wang",
+    "Changze Lv",
+    "Jingwen Xu",
+    "Yiyang Lu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.03149",
+  "likes_count": 0,
+  "publishedAt": "2026-10-02",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Edge intelligence requires models to sense continuously in real time and to keep adapting on-device, all under tight compute, energy, and memory budgets. Although spiking neural networks (SNNs)…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Learning While Inferring: Local and Parallel Learning for Edge SNNs across Sensing Modalities",
+  "url": "https://arxiv.org/abs/2610.03149",
+  "use_case": ""
+}

@@ -1,0 +1,29 @@
+{
+  "abstract": "AI models, and time-series models in particular are typically ranked by accuracy and deployed under constraints absent from that ranking. In this paper, we study a real setting where these constraints are explicit and measurable: handover pre- diction in cellular networks, where inference runs on the User Equipment once per 40 ms measurement period and must complete before the network acts. The timing bound is hard: a late prediction is superseded by the measurement it was predicting, while energy is a cumulative budget spent for the life of the device. Neither appears in the objective these models are selected on. We evaluate eight architectures under a protocol that screens for deadline feasibility at the tail rather than the mean, then ranks the feasible models on measured inference energy, count- ing the feature computation that precedes the forward pass and is usually omitted. Gradient-boosted trees on handcrafted temporal features are the most accurate model (F1=0.974) and among the cheapest to run, while the neural architecture an accuracy-only benchmark would rank first (CNN-1D, F1=0.914) costs over 3 times more energy per inference under a realistic duty-cycled deployment pattern. We give three conditions under which this outcome should be expected, so the finding applies beyond telecommunications. Accuracy-only benchmarking does not merely under-report deployment cost. It can rank first a model that cannot be deployed.",
+  "abstract_ja": "",
+  "authors": [
+    "Shruti Bothe",
+    "Illyyne Saffar",
+    "Ayush K. Varshney"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30965",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "AI models, and time-series models in particular are typically ranked by accuracy and deployed under constraints absent from that ranking. In this paper, we study a real setting where these…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "time-series"
+    ],
+    "task": []
+  },
+  "title": "Energy and Latency First: How Deployment Constraints Reverse Time-Series Model Selection",
+  "url": "https://arxiv.org/abs/2610.30965",
+  "use_case": ""
+}

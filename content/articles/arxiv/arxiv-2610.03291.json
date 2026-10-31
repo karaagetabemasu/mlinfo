@@ -1,0 +1,31 @@
+{
+  "abstract": "Integer-valued leaky integrate-and-fire (I-LIF) neurons and spike firing approximation (SFA) reduce temporal training cost by representing spike trains as firing counts and normalized firing rates, respectively. However, applying spiking self-attention (SSA) directly to these compressed query, key, and value representations introduces cross-time interactions that are absent during spike-driven inference. We term this operator-level discrepancy Temporal Interaction Mismatch (TIM). We propose Parallel Time-Aligned Spiking Self-Attention (PT-SSA), which reconstructs consecutive virtual spike slices from either I-LIF counts or SFA firing rates, computes attention only between time-aligned slices in parallel, and sums the per-step outputs. To accommodate the reduced attention output scale under SFA, we further introduce Adaptive PT-SSA, which learns a positive per-block rescaling before the output SFA neuron to improve firing-level utilization. Experiments on CIFAR-10, CIFAR-100, and ImageNet-1K show that the proposed methods substantially reduce train--inference mismatch. On CIFAR-100 with I-LIF, PT-SSA reduces the mean Top-1 gap from 1.85 to 0.29 percentage points. On ImageNet-1K, Adaptive PT-SSA reduces the Top-1 gap from 27.78 to 0.06 percentage points and achieves 74.53\\% spike-driven Top-1 accuracy. A Triton-fused PT-SSA training kernel retains a $2.91\\times$ throughput advantage over recurrent LIF SSA.",
+  "abstract_ja": "",
+  "authors": [
+    "Peng Xue",
+    "Wei Fang",
+    "Kaiwei Che",
+    "Qingyan Meng",
+    "Zhengyu Ma"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.03291",
+  "likes_count": 0,
+  "publishedAt": "2026-10-02",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Integer-valued leaky integrate-and-fire (I-LIF) neurons and spike firing approximation (SFA) reduce temporal training cost by representing spike trains as firing counts and normalized firing rates,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Parallel Time-Aligned Spiking Self-Attention for Consistent Integer-Valued Training and Spike-Driven Inference",
+  "url": "https://arxiv.org/abs/2610.03291",
+  "use_case": ""
+}

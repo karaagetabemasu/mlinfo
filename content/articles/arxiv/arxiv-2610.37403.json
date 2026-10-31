@@ -1,0 +1,33 @@
+{
+  "abstract": "Modern simulators can generate synthetic camera and LiDAR data with accurate annotations for downstream tasks. In contrast, automotive radar simulation remains less mature because it requires not only a 3D engine to model dynamic objects in the scenes but also electromagnetic material properties, antenna configurations, wave propagation mechanisms, and coherent signal synthesis. Existing frameworks are either proprietary or overly simplified, limiting the scalability of radar raw measurements. This paper presents AuRaSim, a ray-tracing-based automotive frequency-modulated continuous wave (FMCW) radar simulation framework for dynamic scenarios. Rather than implementing all components from scratch, AuRaSim builds on Blender for efficient dynamic-scene construction and Sionna RT for graphics processing unit (GPU) accelerated electromagnetic ray tracing, while introducing radar-specific adaptations for path-resolved propagation with complex coefficients, motion-aware Doppler modeling, and subsequently coherent multi-channel analog-to-digital converter (ADC) cube synthesis based on waveform configurations. Quantitative comparison between simulated and measured range-Doppler maps in digital-twin scenarios achieves a root-mean-square error (RMSE) of 0.147 and a peak signal-to-noise ratio (PSNR) of 16.93 dB, demonstrating the accuracy and fidelity of the synthetic signal. AuRaSim therefore provides a complete and extensible platform for reproducible automotive radar simulation and research. Project homepage: https://wangzhaoze.github.io/aurasim.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhaoze Wang",
+    "Changxu Zhang",
+    "Tai Fei",
+    "Christopher Grimm",
+    "Yi Jin"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.37403",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Modern simulators can generate synthetic camera and LiDAR data with accurate annotations for downstream tasks. In contrast, automotive radar simulation remains less mature because it requires not…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "AuRaSim: A Ray-Tracing Based Automotive FMCW Radar Simulator for Dynamic Scenarios",
+  "url": "https://arxiv.org/abs/2610.37403",
+  "use_case": ""
+}

@@ -1,0 +1,34 @@
+{
+  "abstract": "Recent diffusion models have achieved impressive progress in single image to multi-view generation by synthesizing consistent novel views efficiently. Existing methods usually explicitly or implicitly couple geometry inference and texture synthesis, making generation vulnerable to inaccurate geometry prediction. Although several geometry-guided methods have explored decoupling, they usually treat predicted geometry as a fixed condition and do not explicitly model whether the geometry is reliable. We therefore propose Reliability-Guided Multi-View Generation (RGMV), which comprises a parameter-free Self-Consistency Geometry Gate (SCG) and a Reliability-aware Geometry Injection (RGI) module. Specifically, a geometry proposal generator produces multiple geometry predictions for the same reference image and target viewpoints under different stochastic sampling configurations. SCG measures their spatial agreement to derive a reliability map, which RGI uses to modulate the injection strength of geometry-conditioned residuals in the RGB synthesis model. Moreover, RGMV can adapt to different geometry proposal generators. As a result, RGMV preserves stronger geometric guidance in stable regions while attenuating unreliable geometry cues before they propagate into multi-view RGB generation. Extensive experiments show that reliability-aware geometry injection improves the geometric quality of multi-view generation. Code: https://github.com/WISLab-GDUT/RGMV.",
+  "abstract_ja": "",
+  "authors": [
+    "Yupeng Xiao",
+    "Yankai Wu",
+    "Jianjie Luo",
+    "Jiajie Lin",
+    "Yi Yu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/WISLab-GDUT/RGMV",
+  "hasCode": true,
+  "id": "arxiv-2610.38518",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Recent diffusion models have achieved impressive progress in single image to multi-view generation by synthesizing consistent novel views efficiently. Existing methods usually explicitly or…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Self-Consistency Geometry Injection for Multi-view Consistent Image Generation",
+  "url": "https://arxiv.org/abs/2610.38518",
+  "use_case": ""
+}

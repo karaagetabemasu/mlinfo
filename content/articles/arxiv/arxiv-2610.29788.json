@@ -1,0 +1,31 @@
+{
+  "abstract": "Object detection models rely on large-scale annotated datasets that require substantial manual annotation effort. The labeling costs further increase when annotation uncertainty is captured through soft labels, as multiple annotations must be collected for each object. We address this challenge by introducing a semi-supervised framework for the uncertainty-aware annotation of object detection datasets. Our approach leverages open-vocabulary object detectors to generate region proposals and semantically meaningful object representations. Based on these representations, we construct an object-level similarity graph and propagate probabilistic label information. Our framework assigns soft labels to previously unlabeled objects, quantifying both aleatoric and epistemic uncertainty. We evaluate our method on four object detection benchmarks with soft-label annotations and demonstrate that high-quality annotations can be obtained with only a small fraction of manually labeled objects. Furthermore, we show that detectors trained on semi-automatically annotated data achieve performance comparable to models trained on fully manually annotated data. We achieve state-of-the-art downstream detection performance for the task of semi-supervised object detection on the COCO dataset, with 40.5% AP virtually matching the performance of the model trained on fully manually constructed data (40.9%) at only 1% of labeling costs. These results highlight the potential of open-vocabulary models and graph-based label propagation for efficient, accurate and uncertainty-aware pseudo-labeling.",
+  "abstract_ja": "",
+  "authors": [
+    "Jonathan Klees",
+    "Timo Heller",
+    "Matthias Rottmann"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.29788",
+  "likes_count": 0,
+  "publishedAt": "2026-10-21",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Object detection models rely on large-scale annotated datasets that require substantial manual annotation effort. The labeling costs further increase when annotation uncertainty is captured through…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "semi-supervised"
+    ],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Open-Vocabulary Models and Label Propagation for Uncertainty-aware Pseudo-Labeling of Object Detection Datasets",
+  "url": "https://arxiv.org/abs/2610.29788",
+  "use_case": ""
+}

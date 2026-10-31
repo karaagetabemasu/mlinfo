@@ -1,0 +1,34 @@
+{
+  "abstract": "Unified multimodal models (UMMs) jointly support visual understanding and image generation, yet information flow between these two capabilities remains largely asymmetric: understanding representations routinely condition generation, whereas generative representations are rarely reused for multimodal reasoning. In this work, we investigate whether intermediate representations from a UMM's native diffusion branch can enhance spatial reasoning without compromising general multimodal understanding. We propose DiFuse, which selectively incorporates intermediate diffusion representations into the understanding pathway of UMMs. Through systematic layer-wise analysis, we identify which diffusion representations are most informative and where they can be integrated with minimal interference to semantic processing. Guided by these findings, DiFuse spatially aligns diffusion features with visual tokens and injects them into selected multimodal decoder layers via residual fusion. Extensive experiments on UniWorld-V1 show that, DiFuse consistently improves spatial reasoning over a matched SFT baseline while maintaining broadly comparable performance on general multimodal benchmarks. Further analyses show that these gains depend critically on the choice of diffusion representations, injection positions, and the preservation of spatial correspondence between diffusion features and visual tokens. Results on OmniGen2 further demonstrate the transferability of DiFuse across unified multimodal architectures. Overall, our findings show that native diffusion representations can provide complementary spatial cues for multimodal reasoning when selectively integrated in a structure-preserving manner.",
+  "abstract_ja": "",
+  "authors": [
+    "Ruixin Fan",
+    "Weining Wang",
+    "Jiahui Sun",
+    "Tailai Chen",
+    "Jing Liu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39609",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Unified multimodal models (UMMs) jointly support visual understanding and image generation, yet information flow between these two capabilities remains largely asymmetric: understanding…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "DiFuse: Fusing Native Diffusion Representations for Spatial Reasoning in Unified Multimodal Models",
+  "url": "https://arxiv.org/abs/2610.39609",
+  "use_case": ""
+}

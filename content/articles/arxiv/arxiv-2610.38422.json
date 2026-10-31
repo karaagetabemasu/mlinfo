@@ -1,0 +1,28 @@
+{
+  "abstract": "Repeating transformer layers can improve language model performance without adding parameters. However, the added computational depth increases both forward and backward computation costs during training. Training such models requires choosing a backward window that controls how many final layer repetitions retain gradients during backpropagation. Longer windows improve per-token learning efficiency but increase per-update cost, while shorter windows reduce per-update cost but sacrifice per-token efficiency. Understanding which window performs better requires examining different training budgets. Prior work compares backward windows across computational budgets. When training budgets increase, it remains unclear whether the same window continues to perform best. We measure how the relative performance of two windows shifts as training budgets grow. Our method isolates per-token efficiency by training both windows on identical data, and compares complete training recipes at approximately equal training time at each budget. Results show that shorter windows lose much of their advantage as budgets grow. Controlled experiments show that both benefits decrease at larger budgets, with a greater decline in the benefit of extended training. Backward window comparisons depend on the available budget, and the preferred window among the tested candidates can change as the budget grows.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiarun Shen",
+    "Xiao Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38422",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Repeating transformer layers can improve language model performance without adding parameters. However, the added computational depth increases both forward and backward computation costs during…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Deeper Backpropagation or More Updates? Training Looped Language Models Across Budgets",
+  "url": "https://arxiv.org/abs/2610.38422",
+  "use_case": ""
+}

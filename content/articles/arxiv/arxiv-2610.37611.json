@@ -1,0 +1,30 @@
+{
+  "abstract": "Artificial intelligence offers statisticians a new paradigm for modelling and analysing complex datasets. Agents based on large language models can reason about data and automate key stages of the statistical modelling workflow, from model fitting to validation. In this paper we propose a method that uses such an agent to estimate the conditional density of a response given a vector of covariates from an iid sample. The agent examines the sample, chooses a model for the conditional distribution of the response and the procedure to fit it, and returns the estimator as a short computer program. The program is built from a library of probability distributions. The returned law can therefore be a parametric distribution, a mixture or a multivariate factorization, with distribution parameters given by explicit formulas in the covariates. We call this approach agentic distributional regression (ADR). Unlike in the classical approach, the statistician no longer chooses the estimator, but asks an agent to build one. Treating the returned program as a random conditional density estimator, we derive a finite-sample error bound under assumptions on the number of admissible models and on the accuracy of the agent's fit, and an oracle inequality for the selection of a model among fitted candidates using independent validation data. Finally, assuming that, as the sample size grows, the agent selects the same smooth parametric model with probability tending to one and fits it accurately, we show that the estimated parameters are asymptotically normal. In simulation studies, on twelve real datasets and on a new dataset whose responses postdate the agents' training data, ADR with Claude Opus 5.5 has the best average performance among the existing methods from the statistical literature with which it is compared.",
+  "abstract_ja": "",
+  "authors": [
+    "Lorenzo Tedesco",
+    "Francesco Finazzi"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.37611",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Artificial intelligence offers statisticians a new paradigm for modelling and analysing complex datasets. Agents based on large language models can reason about data and automate key stages of the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Agentic Distributional Regression: Conditional Density Estimation through Agent-Written Programs",
+  "url": "https://arxiv.org/abs/2610.37611",
+  "use_case": ""
+}

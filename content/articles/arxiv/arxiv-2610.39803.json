@@ -1,0 +1,30 @@
+{
+  "abstract": "We study contextual dynamic pricing in a non-stationary environment. In each round, a seller observes a buyer's context, posts a price, and receives only binary purchase feedback. The buyer's value is linear in the context and an unobserved feature vector that may change over time, subject to a known total variation budget $V$. We measure dynamic regret against the first-best benchmark that extracts each buyer's full value. For identical contexts, we develop a deterministic algorithm that combines binary-search exploration, lower-envelope pricing, and periodic and inconsistency-triggered restarts. It achieves regret $O((\\sqrt{TV}+1)\\log T)$. With heterogeneous contexts, a new geometric difficulty arises: small feature changes can leave a relaxed feasible set narrow but far from the current feature vector. We address this difficulty through a multiscale shallow-pricing algorithm that maintains relaxed feasible sets and enclosing ellipsoids at several variation scales. Larger scales provide reliable localization certificates, while the smallest active scale determines the exploitation price. The algorithm achieves dynamic regret $O((d^2+d^{3/2}\\sqrt{TV})\\log^2 T)$, where $d$ is the context dimension. For fixed $d$, both guarantees match the lower bound $Ω(\\sqrt{TV}+\\log\\log T)$ up to logarithmic factors in $T$, establishing near-optimality among deterministic algorithms for every $V\\in[0,T]$, including the stationary case.",
+  "abstract_ja": "",
+  "authors": [
+    "Yiding Feng",
+    "Alireza Rezaeimoghadam"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39803",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "We study contextual dynamic pricing in a non-stationary environment. In each round, a seller observes a buyer's context, posts a price, and receives only binary purchase feedback.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Optimal Contextual Pricing in Non-Stationary Environments",
+  "url": "https://arxiv.org/abs/2610.39803",
+  "use_case": ""
+}

@@ -1,0 +1,26 @@
+{
+  "abstract": "Solving imperfect-information games at scale rests on counterfactual regret minimization with the regret matching$^{+}$ (RM$^{+}$) update, and a seemingly minor implementation choice accounts for much of its practical speed: alternating the two players' updates, so that the second player responds to the strategy the first player just produced. A widely repeated intuition explains why: seeing the opponent's fresh strategy should act like optimism. We treat this intuition as a testable hypothesis about deterministic two-player zero-sum self-play dynamics and find that its canonical additive form fails an information-matched test. On an analytic witness family we compare alternating RM$^{+}$ against a one-sided predictive RM$^{+}$ that receives the same information channel each round and differs only in where the fresh signal enters, a persistent regret state versus a transient prediction term. Our main result is a dichotomy theorem that reduces trajectory separation to the recurrence of exact-vertex play by the predictive dynamics: under an interior-band assumption on the alternating iterate, either vertex times recur and the profile distance is at least, infinitely often, an explicit constant that our measurements nearly attain, or they terminate. Across the tested self-play regimes, any correct explanation of the alternation speedup must reproduce a staleness cost present at the smallest tested stale fraction, an advantage that persists across seven orders of payoff conditioning, regime crossings of the optimism family, and a measured per-perturbation cost of weakening the injection path that is far steeper for staleness than for partial persistence.",
+  "abstract_ja": "",
+  "authors": [
+    "Boning Li",
+    "Longbo Huang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.21970",
+  "likes_count": 0,
+  "publishedAt": "2026-10-15",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Solving imperfect-information games at scale rests on counterfactual regret minimization with the regret matching$^{+}$ (RM$^{+}$) update, and a seemingly minor implementation choice accounts for…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Why Alternation Speeds Up Counterfactual Regret Minimization?",
+  "url": "https://arxiv.org/abs/2610.21970",
+  "use_case": ""
+}

@@ -1,0 +1,34 @@
+{
+  "abstract": "Large language models have been reported to encode the harmfulness of a request separately from their decision to refuse it, and latent safety monitors such as Latent Guard build on this report by classifying prompts as harmful from the internal activations of the model, with the aim of catching harmful intent even when the model complies. Whether these representations give a signal of harm that survives distribution shift and is independent of model behaviour is unclear. We test this on out-of-distribution prompts made by rewriting existing harmful and benign requests with surface rewording, persuasive framing and jailbreak-style wrappers. Across 15 instruction-tuned LLMs and 38 activation-based readers, we compare harm detection with that of TF-IDF and sentence-embedding classifiers, with independently trained safety classifiers, and with the refusal of each model. Activations are read at the last token of the user instruction, where the model has read the whole request, and at the last chat-template token before the reply, where the planned response can be represented. Because models disagree about which prompts to refuse, we can separate a signal of the harmfulness of the prompt from a signal of the refusal decision of the model. At the end of the instruction, the representation is largely independent of the refusal behaviour of each model but degrades under distribution shift, so that a TF-IDF classifier ranks harm better than the original Latent Guard in every model we test, and linear and MLP probes do about as well as sentence-embedding classifiers trained on the same examples. The representation just before generation detects more, catching 44 percent of harmful prompts at a matched false-alarm rate against 32 percent for the refusal of the model, but that gain follows the refusal decision itself, and part of it comes from refusals that string-matching evaluation misses.",
+  "abstract_ja": "",
+  "authors": [
+    "Abhishek Mishra",
+    "Sagnik Chatterjee",
+    "Suyash Maniyar"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30727",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Large language models have been reported to encode the harmfulness of a request separately from their decision to refuse it, and latent safety monitors such as Latent Guard build on this report by…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification",
+      "detection",
+      "generation",
+      "anomaly-detection"
+    ]
+  },
+  "title": "Faithful Latent Harm Monitors Work No Better Than the Models Own Behaviour at a Matched False Alarm Rate",
+  "url": "https://arxiv.org/abs/2610.30727",
+  "use_case": ""
+}

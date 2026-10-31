@@ -1,0 +1,27 @@
+{
+  "abstract": "Spoken Dialogue Models (SDMs) typically share a speech-token space for generation and synthesis, leading to long autoregressive sequences and costly inference. Lower-rate speech tokenizers shorten sequences but may introduce compression-quality trade-offs and costly replacement without breaking this coupling. To address this limitation, we propose CoSTA, a compatibility-preserving post-hoc framework that decouples generation and synthesis token spaces while retaining the original speech tokenizer and decoder. CoSTA extends the generation token space with compressed representations via mean-initialized vocabulary extension, pronunciation adaptation, and dialogue adaptation, followed by deterministic expansion back to the original speech-token space before synthesis. On bilingual speech-dialogue benchmarks, CoSTA achieves approximately 1.7times expanded speech-token generation speed, lower full-response latency, and higher throughput while preserving response quality. Analyses show more sustained interaction under limited budgets and a practical trade-off among compression, decoding efficiency, and quality. Further experiments demonstrate cross-architecture transfer and complementarity to low-rate tokenization.",
+  "abstract_ja": "",
+  "authors": [],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "hf-2610.21143",
+  "likes_count": 11,
+  "publishedAt": "2026-10-15",
+  "source": "huggingface",
+  "subcategory": "efficient",
+  "summary": "Spoken Dialogue Models (SDMs) typically share a speech-token space for generation and synthesis, leading to long autoregressive sequences and costly inference. Lower-rate speech tokenizers shorten…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "CoSTA: Compressed Speech Token Adaptation for Efficient Spoken Dialogue Models",
+  "url": "https://arxiv.org/abs/2610.21143",
+  "use_case": ""
+}

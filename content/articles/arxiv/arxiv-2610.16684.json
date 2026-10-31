@@ -1,0 +1,28 @@
+{
+  "abstract": "We study the \\emph{voter model with opinion graph}, a generalization of the standard (pull) voter model that adds a notion of bounded confidence. In this process, we consider a finite set $A$ of $n$ agents. Each agent $u \\in A$ has an opinion $x_u \\in O$, where we model opinions as vertices in an undirected opinion graph $G = (O,E)$ with $|O|=q$. In each step, an agent $u$ interacts with another agent $v \\in A$. In contrast to classical voting, $u$ adopts the opinion $x_v$ if and only if $x_v$ and $x_u$ are neighbors in $G$. The process is stable once all remaining opinions are an independent set in $G$. We analyze two variants of the process: the ordinary EdgeVOG process, which samples a pair of interacting agents uniformly at random from all possible pairs, and the productive EdgeVOG process, which samples only pairs with neighboring opinions in $G$. We show the following: - For every opinion graph and every initial configuration, ordinary EdgeVOG stabilizes within $O(n^2\\log n)$ steps in expectation and with high probability. The expectation bound is asymptotically tight. For the productive EdgeVOG process, the expected stabilization time is exactly the initial number of compatible agent pairs, while $O(n^2\\log n)$ steps suffice with high probability. - An opinion $i$ with initial support $s_i$ survives with probability at least $p_i:=s_i/(s_i+\\sum_{j\\in N(i)}s_j)$. Further, let $μ= \\sum_{i \\in O} p_i$, then we show the probability that less than $(1-δ)μ$ opinions survive is at most $\\exp(-δ^2μ/(2(Δ^2+1)))$ for every $0\\leqδ\\leq1$. -If $G$ has maximum degree $Δ$ and every opinion initially has support at most $\\hat{s}$, then no opinion ever acquires more than $\\tilde{O}(\\min\\{n,Δ^6\\hat{s}\\})$ agents with high probability. This yields near-linear stabilization bounds for productive EdgeVOG for a large class of configurations.",
+  "abstract_ja": "",
+  "authors": [
+    "Petra Berenbrink",
+    "Thorsten Götte",
+    "Martin Hoefer",
+    "Tim Koglin"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.16684",
+  "likes_count": 0,
+  "publishedAt": "2026-10-12",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "We study the \\emph{voter model with opinion graph}, a generalization of the standard (pull) voter model that adds a notion of bounded confidence. In this process, we consider a finite set $A$ of $n$…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "The Voter Model with Opinion Graph",
+  "url": "https://arxiv.org/abs/2610.16684",
+  "use_case": ""
+}

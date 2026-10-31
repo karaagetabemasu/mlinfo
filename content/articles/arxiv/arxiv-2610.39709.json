@@ -1,0 +1,31 @@
+{
+  "abstract": "Adaptive inference systems balance accuracy and inference cost by routing inputs to models with varying capabilities. Although jointly training models and routers is empirically more sample-efficient than training them separately, principled losses for joint training remain underexplored. We address this gap in a classification setting by proposing cost-sensitive hinge losses for jointly training classifiers with single-stage or cascade routers. Single-stage routers directly select a model per input, whereas cascade routers sequentially decide at each stage whether to predict with the current model or defer to the next stage, which uses a more accurate but more costly model. For both settings, we prove linear calibration bounds establishing Bayes consistency: minimizing the hinge risk recovers the Bayes-optimal risk under the target cost-sensitive zero-one loss. Moreover, since routers can require more labeled data to train than classifiers, we propose a novel post-training prediction-powered inference (PPI) procedure that uses unlabeled data to refine a trained single-stage router. Experiments on synthetic and real datasets demonstrate that the proposed hinge losses are effective for joint training and that PPI can correct routing errors when labeled data is scarce.",
+  "abstract_ja": "",
+  "authors": [
+    "Shirley Xiaoqi Liu",
+    "Florence Regol",
+    "Antonios Valkanas",
+    "Patrick Rebeschini",
+    "Mark Coates"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39709",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Adaptive inference systems balance accuracy and inference cost by routing inputs to models with varying capabilities. Although jointly training models and routers is empirically more sample-efficient…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Bayes-Consistent Losses for Adaptive Inference in Classification",
+  "url": "https://arxiv.org/abs/2610.39709",
+  "use_case": ""
+}

@@ -1,0 +1,25 @@
+{
+  "abstract": "Particle Gibbs samplers with backward sampling are widely used for sampling the smoothing distribution of state-space models, but, with few particles, the new trajectory often coincides with the current one at many time steps. A known but rarely used remedy replaces the random selection of the final particle by a Metropolis--Hastings move which avoids the current particle. We show that, with backward sampling, this remedy only helps at the last time steps, because its effect on the update rates decays geometrically with the distance to the final time. We propose instead Metropolized backward sampling, which makes such a move at every step of the backward pass, forcibly switching trajectories whenever possible. Additionally, we introduce a coupled version which prevents proposing the current trajectory, maximizing the chances of an actual switch versus the current trajectory and performing perfect sampling when the state-space model has no observations, a feature not shared by backward sampling. We prove that, at every time step, both methods dominate backward sampling as they update the state more often and have smaller lag-one autocorrelations than it does. Our methods are drop-in replacements for backward sampling, and can be used to improve any particle Gibbs sampler.",
+  "abstract_ja": "",
+  "authors": [
+    "Adrien Corenflos"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38753",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Particle Gibbs samplers with backward sampling are widely used for sampling the smoothing distribution of state-space models, but, with few particles, the new trajectory often coincides with the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Metropolized backward sampling for conditional sequential Monte Carlo",
+  "url": "https://arxiv.org/abs/2610.38753",
+  "use_case": ""
+}

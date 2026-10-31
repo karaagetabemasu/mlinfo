@@ -1,0 +1,28 @@
+{
+  "abstract": "Sparse Mixture-of-Experts (SMoE) models improve scalability by routing input tokens to only a subset of expert networks, but they often suffer from representation collapse, in which multiple experts converge toward similar functions and lose their intended diversity. Prior work has addressed this limitation either by improving router architectures or by introducing auxiliary loss terms that implicitly penalize similarity among experts. However, router-based approaches remain vulnerable to routing collapses, and loss-based approaches can conflict with the task's original objective during optimization. In this work, we propose GaP-MoE (Gradient Accumulation and Projection in MoE), which induces expert specialization by directly manipulating expert output gradients rather than modifying the loss function. At each training step, GaP-MoE stochastically selects one of the $TopK$ routed experts as a leader based on normalized routing scores, and projects the gradients of the remaining follower experts onto the orthogonal complement of the subspace spanned by the leader's recent gradients. This removes directional overlap between expert gradients without altering the task loss, allowing specialization to emerge as a direct consequence of the optimization dynamics rather than an externally imposed constraint. We evaluate GaP-MoE in both fine-tuning settings (BERT-based, on GLUE) and from-scratch pretraining settings (GPT-2-based, on WikiText-103, enwik8, and text8), and further confirm its compatibility as a drop-in module for existing SMoE architectures. Experimental results show that GaP-MoE achieves performance comparable to or better than standard SMoE.",
+  "abstract_ja": "",
+  "authors": [
+    "Donghyun Jeong",
+    "Yoon-Yeong Kim"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.29355",
+  "likes_count": 0,
+  "publishedAt": "2026-10-21",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Sparse Mixture-of-Experts (SMoE) models improve scalability by routing input tokens to only a subset of expert networks, but they often suffer from representation collapse, in which multiple experts…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "GaP-MoE : Explicit Expert Specialization in Mixture-of-Experts via Orthogonal Gradient Accumulation and Projection",
+  "url": "https://arxiv.org/abs/2610.29355",
+  "use_case": ""
+}

@@ -1,0 +1,27 @@
+{
+  "abstract": "This paper considers coordinating a heterogeneous team of unmanned aerial vehicles (UAVs) and unmanned ground vehicles (UGVs) traversing a domain containing an unknown number of potentially hazardous targets. The UAVs provide aerial sensing using onboard optical cameras, adapting their trajectories to ground routes and target information. We formulate the aerial search problem using ergodic control, which distributes sensing effort according to a spatial information density to balance exploration and target localization. The formulation incorporates dynamic camera field-of-view footprints and pose-dependent probabilistic detection models. Angles-only measurements are processed through Bayesian inference and marginalization over data-association hypotheses to obtain a Poisson multi-Bernoulli (PMB) approximation of the target posterior, representing both detected and undetected targets. This belief directs aerial sensing toward unexplored regions along the ground routes and viewpoints that improve target localization. Ground planning combines chance-constrained target avoidance, enforced through confidence sets, with a void-probability objective that favors routes unlikely to contain threats. We solve each team's optimization problem in a fully decentralized manner using a nested SCvx*--C-ADMM scheme, with outer sequential convex programming iterations and inner distributed consensus optimization, accounting for nonlinearities, nonseparable objectives, and continuous-time inter-agent separation constraints. A closed-loop scheme updates both fleets' trajectories as information becomes available and permits ground motion when the remaining route risk falls below a prescribed threshold. Numerical case studies examine sensing geometry and target uncertainty, compare decentralized and centralized solvers, and demonstrate full closed-loop collaboration between multiple UAVs and UGVs.",
+  "abstract_ja": "",
+  "authors": [
+    "Joshua Yuriv Pilipovsky"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39379",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "This paper considers coordinating a heterogeneous team of unmanned aerial vehicles (UAVs) and unmanned ground vehicles (UGVs) traversing a domain containing an unknown number of potentially hazardous…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Information-Driven Collaborative Autonomy for Heterogeneous UAV/UGV Teams",
+  "url": "https://arxiv.org/abs/2610.39379",
+  "use_case": ""
+}

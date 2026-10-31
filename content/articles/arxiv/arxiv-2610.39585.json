@@ -1,0 +1,33 @@
+{
+  "abstract": "Understanding how humans interact with the world requires a representation of physical interactions at the hand surface. Tactile sensing captures these interactions, but collecting tactile data at scale requires specialized hardware. We introduce TactoHand, a model that predicts three dense hand-surface interaction fields---contact, proximity, and 3D force---from monocular video. We derive geometry-based contact and proximity labels and motion-derived force labels from eligible training data within a curated collection spanning approximately 50 million source frames. TactoHand uses a temporal transformer to aggregate visual evidence across frames, while three learned queries decode the corresponding hand-surface fields. A differentiable physics layer further constrains force predictions using observed object motion. Across in-domain and out-of-domain benchmarks, TactoHand improves contact and proximity estimation over prior methods. In addition, physics supervision reduces position and rotation errors in motion rollouts, and the predicted contact and proximity fields improve downstream hand-object reconstruction. Together, these results show a scalable, low-cost path to learning hand-surface interaction fields without collecting tactile measurements. Code will be released at https://github.com/zhenqis123/Tactohand.",
+  "abstract_ja": "",
+  "authors": [
+    "Ziheng Xi",
+    "Weibo Li",
+    "Jiayi Yu",
+    "Sipeng Zheng",
+    "Wanpeng Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/zhenqis123/Tactohand",
+  "hasCode": true,
+  "id": "arxiv-2610.39585",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Understanding how humans interact with the world requires a representation of physical interactions at the hand surface. Tactile sensing captures these interactions, but collecting tactile data at…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "TactoHand: Learning Geometry-Based Dense Hand-Surface Interaction Fields from Video",
+  "url": "https://arxiv.org/abs/2610.39585",
+  "use_case": ""
+}

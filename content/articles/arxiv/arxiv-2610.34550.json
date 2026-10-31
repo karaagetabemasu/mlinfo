@@ -1,0 +1,31 @@
+{
+  "abstract": "Foundation models provide powerful representations for unstructured data, such as text and images, and parameter-efficient fine-tuning (PEFT) makes their adaptation to downstream tasks increasingly practical. For neural estimators that lack a tractable sampling distribution, resampling-based procedures offer a flexible route to statistical inference, but they often require hundreds of model fits, making them computationally prohibitive at foundation-model scale. We introduce HIFI, a two-stage fine-tuning framework for statistical inference on parameters such as conditional means. Stage 1 adapts a foundation model once on a larger sample, capturing the complex structure of the data and controlling estimation bias through a single fit. Stage 2 applies a resampling inference procedure to a smaller independent sample, concurrently fitting multiple lightweight PEFT estimators to the residual to quantify estimation variability without relearning the full task. HIFI accommodates a broad class of resampling procedures, including ensemble subsampling and the nonparametric bootstrap. Across vision and text experiments, HIFI scales to pretrained models ranging from tens of millions to more than ten billion parameters while providing accurate point estimates and well-calibrated confidence intervals across diverse architectures, and reduces training compute by up to 91.9% relative to direct resampling. An application to gene-expression inference illustrates the practical value of the framework for uncertainty-aware scientific inference.",
+  "abstract_ja": "",
+  "authors": [
+    "Po-Wei Chen",
+    "Shan Yu",
+    "Chunlin Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.34550",
+  "likes_count": 0,
+  "publishedAt": "2026-10-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Foundation models provide powerful representations for unstructured data, such as text and images, and parameter-efficient fine-tuning (PEFT) makes their adaptation to downstream tasks increasingly…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "tabular"
+    ],
+    "task": []
+  },
+  "title": "HIFI: A Highly Efficient Framework for Statistical Inference with Foundation Models",
+  "url": "https://arxiv.org/abs/2610.34550",
+  "use_case": ""
+}

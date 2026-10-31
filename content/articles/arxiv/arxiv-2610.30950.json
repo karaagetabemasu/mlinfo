@@ -1,0 +1,33 @@
+{
+  "abstract": "Time series foundation models (TSFMs) use self-supervised pretraining to learn reusable representations for downstream tasks such as multivariate time series classification (MTSC). We examine how much pretrained weights contribute beyond the architecture itself by comparing seven publicly released instances from four TSFM families with architecture-matched randomly initialized counterparts on the UEA MTSC archive. For each instance, five random initializations are evaluated using four classifiers on frozen representations: ridge classification, logistic regression, RBF SVM, and random forest. After model-specific exclusions due to computational constraints, the study comprises 183 paired dataset-level comparisons. Pretraining improves mean accuracy for all seven instances, but the gains are modest, ranging from 1.43 to 5.19 percentage points, with an overall average improvement of 2.58 points. Three of seven per-instance Wilcoxon signed-rank tests have raw $p$-values below 0.05, but only NuTime remains significant after Holm correction. A secondary pooled test across all 183 pairs gives $p < 0.001$, while the corrected per-instance tests remain the primary evidence. We also compare with ROCKET, Hydra, and Quant, which remain competitive without requiring large-scale pretraining. These findings suggest that MTSC evaluations should distinguish the effect of pretrained weights from that of the underlying architecture and should include both architecture-matched random initialization and strong non-pretrained baselines.",
+  "abstract_ja": "",
+  "authors": [
+    "Pinar Sungu Isiacik",
+    "Georgiana Ifrim"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30950",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Time series foundation models (TSFMs) use self-supervised pretraining to learn reusable representations for downstream tasks such as multivariate time series classification (MTSC). We examine how…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [
+      "time-series"
+    ],
+    "task": [
+      "classification",
+      "regression"
+    ]
+  },
+  "title": "Random Initialization as a Baseline for Time Series Foundation Models",
+  "url": "https://arxiv.org/abs/2610.30950",
+  "use_case": ""
+}

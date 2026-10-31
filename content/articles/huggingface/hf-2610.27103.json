@@ -1,0 +1,28 @@
+{
+  "abstract": "Recent Omni LLMs (OLLMs) have demonstrated remarkable capabilities in joint audio-visual reasoning, yet cross-modal hallucinations remain a major challenge. Existing mitigation methods mainly operate at the output level, overlooking the entanglement of grounding evidence and learned priors within fused representations. To address this issue, we propose Omni-Woodpecker (OWP), a training-free framework that shifts hallucination mitigation from output-level manipulation to conflict-conditioned representation rebalancing. Specifically, OWP first identifies cross-modal conflicts from complementary modality-specific views. It then employs orthogonal decomposition to separate grounding evidence from competing priors within the hidden states. Finally, OWP adaptively rebalances fused representations by suppressing misleading priors and restoring ignored evidence before decoding. Extensive experiments demonstrate the effectiveness and strong cross-architecture generalization of OWP. Using Qwen2.5-Omni-7B as the backbone, OWP improves performance by 12.9 and 8.6 points on CMM and AVHBench, respectively, while consistently achieving gains of 0.67-2.25 points across four general OLLM reasoning benchmarks. Furthermore, OWP generalizes effectively to VideoLLaMA2-AV, improving performance by 4.6 and 3.9 points on the same benchmarks. Code is publicly available at https://github.com/ZiiJianLiu/Omni-Woodpecker",
+  "abstract_ja": "",
+  "authors": [],
+  "category": "nlp",
+  "codeUrl": "https://github.com/ZiiJianLiu/Omni-Woodpecker",
+  "hasCode": true,
+  "id": "hf-2610.27103",
+  "likes_count": 40,
+  "publishedAt": "2026-10-19",
+  "source": "huggingface",
+  "subcategory": "llm",
+  "summary": "Recent Omni LLMs (OLLMs) have demonstrated remarkable capabilities in joint audio-visual reasoning, yet cross-modal hallucinations remain a major challenge. Existing mitigation methods mainly operate…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "audio",
+      "video",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Omni-Woodpecker: Hallucination Correction via Evidence-Prior Rebalancing for Omni LLMs",
+  "url": "https://arxiv.org/abs/2610.27103",
+  "use_case": ""
+}

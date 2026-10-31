@@ -1,0 +1,27 @@
+{
+  "abstract": "The claim that speculative-decoding acceptance rate decays as a chain-of-thought grows longer has become a de facto industry narrative, motivating draft-model co-design and position-aware training. Nearly all direct evidence comes from trained drafters whose offline training length is far shorter than inference, so a purely positional law has never been isolated. We present the first systematic, full-length measurement of acceptance rate as a function of generation position on MATH-500 (all 500 problems), under greedy and sampling decoding, with two independent drafts against DeepSeek-R1-Distill-Qwen-7B: a same-family draft (DeepSeek-R1-Distill-Qwen-1.5B) and a cross-family draft (Qwen2.5-1.5B-Instruct), yielding about 1.78M verification rounds. Using within-problem paired tests, we find that after isolating a greedy-decoding repetition pathology, acceptance rate does not decay with position in any of the four configurations within the supported ranges (greedy 0-8K, sampling 0-12K); the second half of each trajectory is slightly but significantly higher than the first. A controlled temperature sweep shows that the apparent sampling-mode degradation of high-entropy reflection tokens is a visibility artifact of argmax agreement, not a drop in expected acceptance probability. Rejections concentrate with high precision on reflection trigger tokens such as \"wait\", \"however\" and \"check\", an entropy-selective failure that a lightweight three-arm LoRA trajectory-alignment intervention (uniform, reflection-marked, entropy-weighted) fails to improve in mean accepted length. We thus supply the positional baseline that independent draft-target pairs were missing, and localize the residual failure to decision-point entropy rather than position.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhiming Meng"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30644",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "The claim that speculative-decoding acceptance rate decays as a chain-of-thought grows longer has become a de facto industry narrative, motivating draft-model co-design and position-aware training.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Speculative Acceptance Does Not Decay with Position: A Full-Length Diagnostic on Long Chain-of-Thought with Independent Drafts",
+  "url": "https://arxiv.org/abs/2610.30644",
+  "use_case": ""
+}

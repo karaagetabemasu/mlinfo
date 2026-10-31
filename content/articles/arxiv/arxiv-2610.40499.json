@@ -1,0 +1,29 @@
+{
+  "abstract": "We study high-dimensional integration on bounded convex domains. Given a non-negative integrand $r$, the goal is to estimate $Z=\\int_{D}r(x)\\,\\mathrm dx$ on $D\\subset\\mathbb R^d$. Standard Quasi-Monte Carlo does not adapt its evaluation points to the integrand, while effective importance sampling requires a proposal that captures its concentration. Learned diffusion samplers can supply such a proposal, but existing methods are formulated on $\\mathbb R^d$ and do not respect the domain constraint $x\\in D$. We instead build the proposal from reflected dynamics that stay in $D$ by construction. A reflected diffusion progressively transforms the target distribution toward the uniform distribution on $D$, and a neural score model is trained to reverse this process. A change-of-measure formula for reflected diffusions yields a training objective without additional boundary terms and an unbiased importance-sampling estimator of $Z$. For non-smooth integrands, where reparameterization gradients may be undefined or uninformative, we derive a REINFORCE estimator of the training gradient using Gaussian proposal densities before reflection, without evaluating reflected transition densities or differentiating $r$. We evaluate on numerous synthetic targets and real-world problems, demonstrating strong performance of the proposed method, as well as favorable scaling with the dimension of the problem and the number of points used for the Monte Carlo estimate.",
+  "abstract_ja": "",
+  "authors": [
+    "Kirill Korolev",
+    "Artur Goldman",
+    "Timofei Gritsaev",
+    "Tigran Ramazyan",
+    "Nikita Morozov"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.40499",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "We study high-dimensional integration on bounded convex domains. Given a non-negative integrand $r$, the goal is to estimate $Z=\\int_{D}r(x)\\,\\mathrm dx$ on $D\\subset\\mathbb R^d$.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Numerical Integration on Bounded Domains via Learned Reflected Diffusions",
+  "url": "https://arxiv.org/abs/2610.40499",
+  "use_case": ""
+}

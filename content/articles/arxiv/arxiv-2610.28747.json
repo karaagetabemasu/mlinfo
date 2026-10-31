@@ -1,0 +1,29 @@
+{
+  "abstract": "Gold's theorem shows that no learner can identify an arbitrary language in a superfinite class from positive presentations alone. We prove a positive result of a different shape. Fix an innate \\emph{recursive contrast operator} $R$ mapping any string to a finite set of structurally bounded perturbations of it, and a discriminative scorer of bounded capacity trained by InfoNCE-style contrastive estimation \\citep{vandenoord2018,macollins2018} on self-generated perturbations. Under a faithfulness condition relating operator, scorer, and target, the trained scorer achieves \\emph{PAC conditional identification} from positive data alone: with high probability it ranks all but an $\\varepsilon$-fraction of positives above every out-of-language perturbation in their own orbit, with sample complexity polynomial in the capacity, the orbit size, the score bound, and $1/\\varepsilon$. The negatives are constructed by the learner, not supplied by an oracle, and no global normalizing constant over strings is ever computed. The misranking bound follows from the geometry of the contrastive loss---per-example loss floors plus a definite loss increment under misranking---yielding an $\\varepsilon^{-2}$ rate, together with an explicit approximation gap that quantifies the cost of in-language (``colliding'') perturbations and vanishes for orbit-pure operators. The ranking guarantee lifts to a global membership classifier under a margin condition, and the same operator composed with the learned scorer is a normalization-free Metropolis--Hastings generator. We instantiate the hypotheses for substitutable context-free languages \\citep{clarkeyraud2007} and the subregular classes \\citep{heinz2010,hayashikamigaito2025}, and state an open conjecture locating the construction in the mildly context-sensitive hierarchy.",
+  "abstract_ja": "",
+  "authors": [
+    "Rakesh Sengupta"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.28747",
+  "likes_count": 0,
+  "publishedAt": "2026-10-20",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Gold's theorem shows that no learner can identify an arbitrary language in a superfinite class from positive presentations alone. We prove a positive result of a different shape.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "A Reverse-Gold Theorem: Positive-Data Identification by Substrate-Bounded Contrastive Learners",
+  "url": "https://arxiv.org/abs/2610.28747",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "The short-time Fourier transform (STFT) characterizes the local frequency content of time-varying signals by evaluating the discrete Fourier transform over a sliding analysis window. The STFT is governed by a fundamental resolution trade-off: a short window localizes rapid transients in time at the cost of frequency resolution, whereas a long window resolves closely spaced harmonics at the expense of temporal resolution. The Universal Short-Time Fourier Transform (U-STFT) resolves this trade-off sequentially by modeling the analysis window duration as a data-adaptive state variable that indexes the number of hops included in the current observation interval. At each frame, a bank of candidate window durations is scored using normalized order-three Rényi entropy to quantify joint time-frequency concentration. A window length trellis aggregates the resulting $\\mathcal{O}(3^M)$ candidate window schedules with linear complexity per frame, guaranteeing a cumulative mix-loss regret bound of $\\mathcal{O}((k+1)\\log M)$ relative to any hindsight window schedule with $k$ resolution changes over $M$ frames. By linearity of the Fourier transform, posterior expectation across the candidate bank yields a single spectrum equivalent to an STFT evaluated with a data-adaptive effective window, while an envelope-normalized synthesis stream guarantees exact overlap-add reconstruction. Evaluations on synthetic and marine bioacoustic signals demonstrate adaptive resolution tracking, enhanced spectral concentration, and exact time-domain invertibility.",
+  "abstract_ja": "",
+  "authors": [
+    "Manan Mittal",
+    "Kanad Sarkar",
+    "Ryan M. Corey",
+    "John R. Buck",
+    "Andrew C. Singer"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.37795",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "video",
+  "summary": "The short-time Fourier transform (STFT) characterizes the local frequency content of time-varying signals by evaluating the discrete Fourier transform over a sliding analysis window. The STFT is…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Universal Short-Time Fourier Transform: Data-Adaptive Window-Length Selection for Time-Frequency Analysis",
+  "url": "https://arxiv.org/abs/2610.37795",
+  "use_case": ""
+}

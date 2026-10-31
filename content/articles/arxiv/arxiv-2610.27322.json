@@ -1,0 +1,28 @@
+{
+  "abstract": "Deep latent variable models (DLVMs) underpin many modern analysis pipelines, for example in single-cell genomics, yet their prior distributions have received markedly little attention. The VampPrior approximates the optimal prior (the aggregate posterior) and often attains high model evidence. Here, we identify two key limitations of the VampPrior: it ties prior and posterior uncertainty to a single amortized covariance and clusters poorly due to its fixed uniform mixture weights. We unleash the VampPrior by decoupling its prior and posterior covariances, resolving the conflict of generating high prior and low posterior entropy with the same shared parameters and substantially improving model evidence. We then replace the uniform mixture with a Dirichlet process. When combined, our proposals provide higher model evidence than the VampPrior and robust non-parametric clustering. Augmenting single cell Variational Inference (scVI) with our prior improves single-cell integration and clustering across six atlases while significantly raising model evidence. Our approach changes only the prior and thus can be applied to any DLVM with a continuous latent space.",
+  "abstract_ja": "",
+  "authors": [
+    "Andrew A. Stirn",
+    "Abhejit Rajagopal",
+    "David A. Knowles",
+    "Grace Huynh"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.27322",
+  "likes_count": 0,
+  "publishedAt": "2026-10-19",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Deep latent variable models (DLVMs) underpin many modern analysis pipelines, for example in single-cell genomics, yet their prior distributions have received markedly little attention. The VampPrior…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "VampPrior Unleashed",
+  "url": "https://arxiv.org/abs/2610.27322",
+  "use_case": ""
+}

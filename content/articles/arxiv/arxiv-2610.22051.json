@@ -1,0 +1,26 @@
+{
+  "abstract": "In the best-arm identification problem, an algorithm adaptively selects arms to find the arm of the largest mean reward. Successive Rejects (SR) is a simple fixed-budget best-arm identification algorithm that eliminates one candidate arm at each phase. At first glance, SR seems to have limited adaptivity, since it follows predetermined phase lengths. However, for Gaussian arms with common variance, SR's worst-instance error exponent normalized by the popular complexity measure $H_1(P)$ is optimal up to a constant factor, which partly explains why SR's performance is competitive compared with state-of-the-art adaptive sampling algorithms. In this paper, we extend the framework of SR by optimizing its predefined schedule of phase lengths. We formulate phase-schedule design as an optimization problem for the normalized error exponent. Then, we introduce a version of SR with the optimized schedule, which we call $H_1$-balanced Successive Rejects ($H_1$-SR). This schedule is optimal within the class of SR-type algorithms with deterministic equal-count schedules. For Gaussian arms with common variance, $H_1$-SR achieves at least $11/12$ of the optimal normalized rate over all adaptive algorithms for every $K\\ge2$, and this approximation ratio converges to one as $1-O(1/\\log K)$ as $K\\to\\infty$. This is a significant improvement over original SR, whose corresponding fraction of the optimal normalized rate converges to $1/4$. Finally, experiments on ten synthetic instances and two dataset-derived Gaussian benchmarks compare the optimized schedule with original SR at finite horizons. They show substantial gains on many instances while also exposing a regime in which more aggressive early elimination is costly.",
+  "abstract_ja": "",
+  "authors": [
+    "Mohamed Khair",
+    "Junpei Komiyama"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.22051",
+  "likes_count": 0,
+  "publishedAt": "2026-10-15",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "In the best-arm identification problem, an algorithm adaptively selects arms to find the arm of the largest mean reward. Successive Rejects (SR) is a simple fixed-budget best-arm identification…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Rethinking Successive Rejects Algorithms",
+  "url": "https://arxiv.org/abs/2610.22051",
+  "use_case": ""
+}

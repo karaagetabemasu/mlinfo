@@ -1,0 +1,28 @@
+{
+  "abstract": "Accurate oriented detection requires a box to follow object boundaries, yet a standard regression head predicts its center, size, and angle from a pooled region representation. Small errors in these coupled parameters can displace long boundaries even when the object is correctly classified. We propose NIF, a refinement module that replaces an additional box regressor with normal-intersection fields. Given a coarse oriented box, the module observes local features at 20 boundary anchors and predicts signed distances along their outward normals. These observations admit an exact affine representation in five geometric variables. A differentiable, reliability-weighted least-squares fit projects the predicted field onto this representation and analytically recovers a refined rectangle. Tangential pooling preserves the normal position profile, while shared projection limits the added network to 0.132M parameters. On DOTA-v1.0, NIF reaches 78.00%, 79.11%, and 79.02% mAP with Oriented R-CNN, LSKNet-S, and Strip R-CNN, respectively, achieving the highest single-scale SOTA result in Table 1. It reaches 68.19% on DIOR-R, improves matched FAIR1M/DIOR-R baselines by 0.30/0.68%, and raises HRSC mean IoU from 0.867 to 0.888 while reducing field error by 24.5%. Across four different detector frameworks with the detectors frozen, relative AP75 improves by 1.57-4.18% and COCO-style mAP by 0.42-3.74%, without detector retraining. Code is available at https://github.com/zsk466991125-collab/Normal-Intersection-Fields.",
+  "abstract_ja": "",
+  "authors": [
+    "Shaokai Zheng"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/zsk466991125-collab/Normal-Intersection-Fields",
+  "hasCode": true,
+  "id": "arxiv-2610.39715",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Accurate oriented detection requires a box to follow object boundaries, yet a standard regression head predicts its center, size, and angle from a pooled region representation. Small errors in these…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection",
+      "regression"
+    ]
+  },
+  "title": "NIF: Normal-Intersection Fields for Geometrically Consistent Oriented Box Refinement",
+  "url": "https://arxiv.org/abs/2610.39715",
+  "use_case": ""
+}

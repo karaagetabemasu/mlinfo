@@ -1,0 +1,31 @@
+{
+  "abstract": "Humanoid motion-tracking policies can reproduce diverse behaviors, yet connecting independently acquired motions into a continuous sequence remains challenging. Interpolation connects boundary poses without considering whether their relative position, heading, and timing provide suitable conditions for a transition. A generative motion prior can produce richer motion, but poorly arranged boundaries may cause it to generate excessive locomotion, turning, or another unintended action. We present Spatio-Temporal Alignment with a Motion Prior (STAMP), a framework for connecting independently acquired humanoid motions through a Robot-to-Human-to-Robot process. STAMP uses human motion space to draw on rich motion priors and reuse transition knowledge across robot embodiments. Its key component is a learned alignment model that determines the boundary conditions for motion inbetweening. Given the two motions retargeted to a human rig, the alignment model ranks candidate positions, headings, and transition durations for the following motion. A human motion prior generates the transition under the selected alignment. The completed sequence is retargeted to the robot and used as a reference to train a motion-tracking policy. We evaluate the tracking success of the generated transitions on Unitree~G1 and~ROBOTIS K1. Physical robot demonstrations further show that STAMP connects independently acquired motions into long-horizon sequences. Project page: https://childtoy.github.io/STAMP-project",
+  "abstract_ja": "",
+  "authors": [
+    "Taehyun Byun",
+    "Taemoon Jeong",
+    "Yoonbyung Chai",
+    "Woojin Wie",
+    "Insu Park"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30817",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "video",
+  "summary": "Humanoid motion-tracking policies can reproduce diverse behaviors, yet connecting independently acquired motions into a continuous sequence remains challenging. Interpolation connects boundary poses…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Robot Motion Transition with Human Motion Prior",
+  "url": "https://arxiv.org/abs/2610.30817",
+  "use_case": ""
+}

@@ -1,0 +1,32 @@
+{
+  "abstract": "Plurality-voting ensembles aggregate the predictions of multiple base classifiers and output the most voted class, with ties typically broken at random. Despite the simple aggregation rule, attributing the impact of each base classifier to the ensemble's predictions is far from straightforward. That is, a single base classifier's impact depends on how it interacts with the votes of all other classifiers in the ensemble, for example, in resolving ties, and not only on its own predictions. We address the attribution problem using established tools from cooperative game theory, studying the Banzhaf and Shapley power indices for new games modeling plurality voting and random tie-breaking, for binary and multiclass classification settings. Computing power indices is, in general, intractable. Surprisingly, our methods, collectively named ENPOWER, enable the exact computation of Banzhaf and Shapley values in linear time for the binary classification setting and in low-degree polynomial time for the multiclass setting. The algorithms in ENPOWER rely on new combinatorial formulations of the Banzhaf and Shapley indices, yielding closed-form solutions for the binary case and ordinary generating function representations for the multiclass case. We validate empirically the methods in ENPOWER demonstrating their high applicability, providing attribution values not captured by existing methods. We apply the attribution of ENPOWER to: ensemble pruning and prompt-based ensembling of vision-language models.",
+  "abstract_ja": "",
+  "authors": [
+    "Ilie Sarpe",
+    "Theofanis Georgakopoulos",
+    "Aristides Gionis"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.17980",
+  "likes_count": 0,
+  "publishedAt": "2026-10-13",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Plurality-voting ensembles aggregate the predictions of multiple base classifiers and output the most voted class, with ties typically broken at random. Despite the simple aggregation rule,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Exact power indices for plurality-voting ensembles",
+  "url": "https://arxiv.org/abs/2610.17980",
+  "use_case": ""
+}

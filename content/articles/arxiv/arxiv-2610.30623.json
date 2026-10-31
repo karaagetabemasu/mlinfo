@@ -1,0 +1,35 @@
+{
+  "abstract": "Contrastive Language-Image Pre-training (CLIP) has shown superior performance in the image-level open-vocabulary classification task, benefiting from its powerful alignment of visual features and text embeddings. However, dense prediction tasks require models to perform pixel-level predictions, necessitating modifications to CLIP for region-text alignment. In this paper, we adjust the attention layers within the vanilla visual encoder of CLIP. With a novel attention calculation method for selective attention features, the model retains more regional semantic information. To further mitigate the negative impact of the modality gap, we introduce additional visual prototypes to refine the original predictor solely based on text embeddings. Specifically, patch features with confident predictions are selected to form an additional auxiliary memory-based classifier for more accurate prediction. We further integrate an optimizable feature extractor with an exponential moving average updating strategy to enhance prediction quality. Extensive experiments on $5$ semantic segmentation datasets demonstrate the effectiveness of our method.",
+  "abstract_ja": "",
+  "authors": [
+    "Aijing Yu",
+    "Zhengbo Wang",
+    "Lijun Sheng",
+    "Jian Liang",
+    "Xiao-Yu Zhang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30623",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Contrastive Language-Image Pre-training (CLIP) has shown superior performance in the image-level open-vocabulary classification task, benefiting from its powerful alignment of visual features and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification",
+      "segmentation"
+    ]
+  },
+  "title": "Refining Open-Vocabulary Semantic Segmentation via Regional Semantics and Visual Prototypes",
+  "url": "https://arxiv.org/abs/2610.30623",
+  "use_case": ""
+}

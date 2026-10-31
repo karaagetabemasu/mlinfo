@@ -1,0 +1,35 @@
+{
+  "abstract": "Current zero-shot anomaly detection methods often rely on complex prompt-learning techniques or computationally expensive sliding-window strategies to achieve fine-grained visual alignment to detect small-scale anomalies. This reliance stems from the fundamental limitation of standard CLIP architectures, where [CLS] token attention and spatial patch pooling struggle to capture subtle, localized anomaly features. While prompt-learning approaches aim to bridge this gap, they typically require a large number of ground-truth segmentation masks from auxiliary datasets, which are often unavailable in specialized domains. In this work, we show an emerging property of multi-head attention pooling in vision-language models: remarkable zero-shot anomaly localization and detection right out of the box. We translate this property into a single-pass anomaly detection technique, RADIOlogy, that does not require dense, windowed execution and significantly outperforms other training-free baselines. Instead, the method relies on a simple contrastive scoring approach that compares the average similarity between vision features and a suite of normal and abnormal prompts. Furthermore, we leverage the agglomerative features of RADIO models to enhance pixel-level anomaly segmentation using a dense anomaly refinement pipeline. Finally, we show how the vision-language family of training-free zero-shot anomaly detection techniques can be applied successfully to the medical domain with minimal modifications. Code is available at https://github.com/jacomof/RADIOlogy.",
+  "abstract_ja": "",
+  "authors": [
+    "Joaquín Figueira",
+    "Giacomo D'Amicantonio",
+    "Egor Bondarau"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/jacomof/RADIOlogy",
+  "hasCode": true,
+  "id": "arxiv-2610.40580",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "attention",
+  "summary": "Current zero-shot anomaly detection methods often rely on complex prompt-learning techniques or computationally expensive sliding-window strategies to achieve fine-grained visual alignment to detect…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "detection",
+      "segmentation",
+      "anomaly-detection"
+    ]
+  },
+  "title": "RADIOlogy: A Single-Pass Approach to Training-Free Zero-Shot Anomaly Detection",
+  "url": "https://arxiv.org/abs/2610.40580",
+  "use_case": ""
+}

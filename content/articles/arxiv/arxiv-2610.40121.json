@@ -1,0 +1,32 @@
+{
+  "abstract": "Unsupervised 4D medical image interpolation reconstructs intermediate anatomical states from temporally sparse observations without intermediate supervision. Distinct motion fields may attain comparable endpoint agreement while producing different intermediate anatomy, giving rise to motion ambiguity. This ambiguity is difficult to constrain when many independently adjustable motion variables must be estimated from the observed endpoints. We develop a framework that learns a motion manifold to restrict candidate motion fields while retaining sample-specific variation. Cross-Sample Spectral Basis Learning extracts recurring motion structure from endpoint-derived dense estimates and encodes it in a shared spectral basis. Sample-Conditioned Cayley Basis Reorientation uses predicted motion coordinates to rotate the effective motion directions for each endpoint pair without increasing the number of independent coordinates. Their composition defines a nonlinear family of complete velocity fields across endpoint pairs, accommodating anatomical and motion-state differences within a restricted representation. Integrating each predicted field supports bidirectional reconstruction at arbitrary intermediate times. Theoretical analysis establishes sufficient conditions under which endpoint observations distinguish nearby motions within the learned family. Experiments on ACDC and 4D-Lung demonstrate state-of-the-art performance among the evaluated methods trained without intermediate volumes and competitive results against methods using intermediate supervision.",
+  "abstract_ja": "",
+  "authors": [
+    "Haojin Li",
+    "Huazhu Fu",
+    "Heng Li",
+    "Jiang Liu"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.40121",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Unsupervised 4D medical image interpolation reconstructs intermediate anatomical states from temporally sparse observations without intermediate supervision. Distinct motion fields may attain…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Learning a Motion Manifold to Constrain Ambiguity in Unsupervised 4D Medical Image Interpolation",
+  "url": "https://arxiv.org/abs/2610.40121",
+  "use_case": ""
+}

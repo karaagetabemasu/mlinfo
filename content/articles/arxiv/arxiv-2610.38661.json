@@ -1,0 +1,32 @@
+{
+  "abstract": "Post-training quantization (PTQ) reduces the memory footprint of vision-language-action (VLA) models, but lowering bit widths while maintaining task performance remains challenging. Existing work has used sensitivity estimates from calibration data to assign bit widths to different model components. However, using task success directly to guide mixed-precision allocation is underexplored because closed-loop evaluations are costly and the effect of quantizing one component depends on the precision of other components. To this end, we propose \\textbf{QbD-VLA}, a task-guided mixed-precision quantization method that uses task success from short closed-loop evaluations to assign weight and activation bit widths while accounting for interactions between model components. Experiments covering four VLA models and all four LIBERO suites show strong task performance at average precisions of approximately 4 bits for weights and fewer than 6 bits for activations. On SIMPLER, the gain over uniform quantization is small. On a Franka Research 3 robot arm, simulation-selected allocations show no detected success-rate loss on X-VLA but fail on $π_{0.5}$. These findings support using task success to guide mixed-precision VLA quantization, while highlighting the need for real-world evaluation before deployment. Code is available at \\href{https://github.com/jiuyixu25/QbD-VLA}{\\texttt{github.com/jiuyixu25/QbD-VLA}}.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiuyi Xu",
+    "Xiao Hu",
+    "Meida Chen",
+    "Song Wang",
+    "Yang Ye"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/jiuyixu25/QbD-VLA",
+  "hasCode": true,
+  "id": "arxiv-2610.38661",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Post-training quantization (PTQ) reduces the memory footprint of vision-language-action (VLA) models, but lowering bit widths while maintaining task performance remains challenging. Existing work has…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Quantize by Doing: Task-Guided Mixed-Precision Quantization of Vision-Language-Action Models",
+  "url": "https://arxiv.org/abs/2610.38661",
+  "use_case": ""
+}

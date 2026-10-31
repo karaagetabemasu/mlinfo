@@ -1,0 +1,25 @@
+{
+  "abstract": "Genetic programming was conceived as a way of evolving solutions: the program is the answer, and fitness is the error of its own output. A substantial line of work instead makes the program an input to a separate learner, so fitness measures the learner's output rather than the program's. Which learner to attach matters, with no account of what decides it. What makes a target hard for genetic programming is how much nonlinearity the program must build by composing primitives; whatever nonlinearity the learner supplies, the program need not. The quantity to measure is therefore how much of a target's nonlinearity a learner can take over, though on continuous benchmarks it can only be estimated. Here we show that how much the program must still build is decided by which learner is attached, and is measurable on the programs themselves. Moving to Boolean domains, where a target's nonlinearity is exactly its Fourier degree, we tune that degree from one to six with everything else fixed. Conditioned on success, a linear learner forces the evolved program to the target's degree exactly, at one through six without exception over thirty runs per setting, while tree ensembles succeed with far simpler programs and four times as often. This gives the field two things: a learner can be chosen from a target's structure instead of its reputation for difficulty, and the degree of the evolved program is a diagnostic free to compute during any run. Our control target has lower degree than the parity problems yet gains nothing from a nonlinear learner, while targets reducible to a simple statistic gain a great deal. The latter comes with a warning: evolution internalises what the learner supplies in only four of sixty-three conditions, and grows more dependent on it in forty-four, so the more capable the learner, the less of the model is legible in the program.",
+  "abstract_ja": "",
+  "authors": [
+    "Nam H. Le"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.09347",
+  "likes_count": 0,
+  "publishedAt": "2026-10-07",
+  "source": "arxiv",
+  "subcategory": "ensemble",
+  "summary": "Genetic programming was conceived as a way of evolving solutions: the program is the answer, and fitness is the error of its own output. A substantial line of work instead makes the program an input…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Relocating Nonlinearity: How a Downstream Learner Reshapes What Genetic Programming Must Evolve",
+  "url": "https://arxiv.org/abs/2610.09347",
+  "use_case": ""
+}

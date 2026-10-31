@@ -1,0 +1,32 @@
+{
+  "abstract": "Tabular-to-image encoding methods, which transform tabular data into image-like representations, have shown promising results in predictive tasks. Despite their benefits, these methods follow a centralized paradigm, in which the data are collected and models are trained on a central device. This raises privacy and security concerns, particularly the risk of data leakage, unauthorized data collection and access to users' private information. Federated Learning (FL) provides a decentralized framework in which multiple clients jointly optimize a shared model without directly sharing training data. We introduce Fed-IGTD, a horizontal FL-based approach in which clients share a common feature space and upload only local statistics, from which the server reconstructs the global correlation matrix and obtains a feature-to-pixel mapping to train a convolutional neural network via Federated Averaging (FedAvg). We studied two differential privacy (DP) mechanisms: (i) a one-shot Gaussian mechanism protecting the correlation-aggregation step; and (ii) a client-level DP-FedAvg variant protecting the training with privacy loss composed via a Renyi-DP accountant. We evaluated Fed-IGTD on five datasets under a systematic sweep of non-IID severity and privacy budgets. Privacy protection applied to the mapping-construction step has little impact on predictive performance. By contrast, DP-FedAvg substantially degrades utility at moderate privacy budgets with a small client cohort (K=5). Ablation study indicates that this degradation is driven mainly by the injected noise rather than by uniform averaging or update clipping. Macro-F1 exhibits sensitivity to performance degradation than accuracy under non-IID heterogeneity and class imbalance.",
+  "abstract_ja": "",
+  "authors": [
+    "David Chushig-Muzo",
+    "Eva Milara",
+    "Francisco J. Lara Abelenda",
+    "Luis Carlos Estrada-Petrocelli",
+    "Diego H. Peluffo-Ordóñez"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39008",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Tabular-to-image encoding methods, which transform tabular data into image-like representations, have shown promising results in predictive tasks. Despite their benefits, these methods follow a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "tabular"
+    ],
+    "task": []
+  },
+  "title": "Fed-IGTD: A federated learning-based framework for tabular-to-image encoding",
+  "url": "https://arxiv.org/abs/2610.39008",
+  "use_case": ""
+}

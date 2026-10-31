@@ -1,0 +1,32 @@
+{
+  "abstract": "Automated optical inspection of precision components with tiny surface defects remains challenging when different regions of the same component exhibit different defect characteristics and, therefore, different acceptance criteria. This paper presents a region-aware, dual-model inspection framework that combines instance segmentation of localized seat-region defects with image-level classification of global shaft-region anomalies. Rather than treating these two model detections as sufficient evidence for component rejection, a deterministic decision fusion layer that formalizes industrial Standard Operating Procedures is applied to the model outputs to make the final component level decision. A PLC-synchronized imaging system acquires 18 seat and 18 shaft images over a full 360-degree rotation to provide multi-view circumferential coverage. The framework was evaluated on 380 automotive fuel injector needles, covering representative operational defect types, using identical model predictions in all configurations. Direct model-output aggregation via simple union logic (where any single-view detection flags a rejection) identified all 104 non-conforming components but produced a component level false rejection rate of 57.6%. Inclusion of a complete decision layer maintained the observed non-conforming (NOK) recall of 100% while reducing the false rejection rate to 10.9%, corresponding to an 81.1% reduction in false-positive component decisions. The results demonstrate that formalized manufacturing acceptance criteria can complement sensitive visual models by translating frame-level detections into practical and traceable component-level decisions.",
+  "abstract_ja": "",
+  "authors": [
+    "Srivishnu Ethirajulu Krishnaraj",
+    "Rishikesh R. Chopade"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.29398",
+  "likes_count": 0,
+  "publishedAt": "2026-10-21",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Automated optical inspection of precision components with tiny surface defects remains challenging when different regions of the same component exhibit different defect characteristics and,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "detection",
+      "segmentation"
+    ]
+  },
+  "title": "Region-Aware Multi-View Inspection Using Deep Learning and Domain-Informed Decision Fusion",
+  "url": "https://arxiv.org/abs/2610.29398",
+  "use_case": ""
+}

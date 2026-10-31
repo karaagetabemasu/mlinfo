@@ -1,0 +1,33 @@
+{
+  "abstract": "Auxiliary patient data can improve chest X-ray report generation, but directly concatenating heterogeneous clinical information with visual tokens produces long, variable-length decoder prompts and may expose the model to redundant or image-irrelevant context. We propose ICGF-CXRMate, an image-conditioned clinical context compression and gated fusion framework. Learnable queries are first conditioned on the current chest X-ray representations and then attend to the patient-data sequence, compressing it into a fixed number of clinical context tokens. Gated cross-attention selectively integrates these tokens into the visual stream, while the compressed tokens are retained in the decoder prompt as a direct clinical pathway. Experiments on linked MIMIC-CXR and MIMIC-IV-ED examinations show that ICGF-CXRMate improves report quality while reducing the average prompt length. In Stage~2, it improves RadGraph-F1 from 24.00 to 28.86, CXR-BERT similarity from 56.86 to 62.80, and BLEU-4 from 5.14 to 7.96 compared with CXRMate-ED, while reducing the average prompt length from 373.89 to 288.37 tokens, corresponding to a 22.9\\% reduction. After self-critical sequence training, ICGF-CXRMate outperforms CXRMate-ED on six of eight report-quality metrics in Stage~3. Ablation studies confirm the complementary contributions of image-conditioned compression, gated fusion, and direct retention of the compressed clinical tokens.",
+  "abstract_ja": "",
+  "authors": [
+    "Vu Minh Tran",
+    "Thuc Huynh",
+    "Son Thanh Luu",
+    "Doanh C. Bui"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30928",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Auxiliary patient data can improve chest X-ray report generation, but directly concatenating heterogeneous clinical information with visual tokens produces long, variable-length decoder prompts and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "ICGF-CXRMate: Image-Conditioned Clinical Context Compression and Gated Fusion for Chest X-ray Report Generation",
+  "url": "https://arxiv.org/abs/2610.30928",
+  "use_case": ""
+}

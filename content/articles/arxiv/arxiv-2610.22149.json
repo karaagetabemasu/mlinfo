@@ -1,0 +1,26 @@
+{
+  "abstract": "Our understanding of turn-based stochastic games is reminiscent of our understanding of linear programming in the 1970s. Instead of the simplex method, we have two families of algorithms - policy iteration and value iteration - which work well in practice but are known to run in exponential time on some input instances, and we still lack an algorithm that runs in polynomial time on all instances. A recent result by Loff and Skomra showed that, for deterministic discounted and mean-payoff games played on an ergodic graph, a variant of policy iteration runs in smoothed polynomial time. This offered an explanation of why policy iteration performs well in practice, analogous to Spielman and Teng's explanation for the simplex method. In this paper, we drop the ergodicity assumption: we show that their policy iteration algorithms run in smoothed polynomial time for any game graph. We do this by defining a condition number that naturally generalizes theirs, showing that sufficiently-perturbed games are well-conditioned with high probability, and showing that their algorithms are efficient on well-conditioned instances. Although the outline is similar, our proof requires a substantially new approach, based on log-Lipschitz distributions which recently appeared in work on the smoothed analysis of the simplex method. For our second contribution, we propose three new value iteration algorithms for solving deterministic mean-payoff games (also on any graph). All three are based on iterative methods for finding fixed points of non-expansive operators, which we show can be applied to the Shapley operator. The first two are simple applications of Krasnoselskii-Mann iteration and Halpern iteration. The third is quadratically faster but more complicated: it runs Zwick-Paterson and Halpern iterations in parallel. We prove that all three algorithms are correct and run in smoothed polynomial time.",
+  "abstract_ja": "",
+  "authors": [
+    "Bruno Loff",
+    "Mateusz Skomra"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.22149",
+  "likes_count": 0,
+  "publishedAt": "2026-10-15",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Our understanding of turn-based stochastic games is reminiscent of our understanding of linear programming in the 1970s. Instead of the simplex method, we have two families of algorithms - policy…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Smoothed analysis of policy iteration and value iteration for deterministic discounted and mean-payoff games played on any graph",
+  "url": "https://arxiv.org/abs/2610.22149",
+  "use_case": ""
+}

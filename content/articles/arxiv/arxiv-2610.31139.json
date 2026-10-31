@@ -1,0 +1,37 @@
+{
+  "abstract": "The scarcity of positive cases remains a major bottleneck in developing automated diagnostic systems for fetal Congenital Heart Defects~(CHDs), particularly for rare subtypes. Although normal cases are accessible with effort, positive cases are hard to collect due to low incidence rates and privacy concerns, causing severe class imbalance or absence of positive training samples. Existing works resort to synthesizing positives with conditional generative models, but they are task-specific and require positive training samples, hindering application for fetal CHDs. To this end, we propose a positive-free mask-guided counterfactual generation framework for fetal echocardiography, namely Pos4CHD, which enables realistic, high-quality synthesis of pseudo-positive samples from semantic masks, with only normal samples at hand. Technically, we first develop FE-Gen, a mask-guided generative model tailored for fetal heart ultrasound synthesis that mitigates histogram drift and enhances image-mask spatial alignment. Building on FE-Gen, Pos4CHD employs a mask-to-image generation paradigm for CHD synthesis. It first manipulates semantic masks to simulate fetal-heart structural anomalies and then renders anatomically consistent images. Extensive experiments on in-house datasets, together with expert evaluations, demonstrate the visual fidelity~($-12.97$ FID) and anatomical consistency~($+3.96\\%$ DSC) of synthesized images. Further validations across diverse real-world CHD diagnosis tasks exhibit promising results and consistent increments, including zero-shot classification~(achieving $93.25\\%$ ACC on EbA and $72.92\\%$ ACC on TAPVC), lesion detection~($+6.95\\%$ mAP50 on VSD), and anatomy segmentation~($+10.49\\%$ DSC on fetal heart) compared with baselines. Codes and models are publicly available on \\href{https://github.com/DREAMXFAR/Pos4CHD}{GitHub}.",
+  "abstract_ja": "",
+  "authors": [
+    "Wenjie Xuan",
+    "Yapeng Li",
+    "Hang Su",
+    "Chen Cheng",
+    "Juhua Liu"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/DREAMXFAR/Pos4CHD",
+  "hasCode": true,
+  "id": "arxiv-2610.31139",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "The scarcity of positive cases remains a major bottleneck in developing automated diagnostic systems for fetal Congenital Heart Defects~(CHDs), particularly for rare subtypes. Although normal cases…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "audio"
+    ],
+    "task": [
+      "classification",
+      "detection",
+      "generation",
+      "segmentation"
+    ]
+  },
+  "title": "Pos4CHD: A Positive-Free Mask-Guided Counterfactual Synthesis Framework for Fetal Congenital Heart Defect Analysis",
+  "url": "https://arxiv.org/abs/2610.31139",
+  "use_case": ""
+}

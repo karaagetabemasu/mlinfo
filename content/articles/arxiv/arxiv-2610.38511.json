@@ -1,0 +1,33 @@
+{
+  "abstract": "Video captioning models are increasingly evaluated with metrics designed for single-sentence image captions. We test whether those metrics recover human judgement on dense, multi-window video description, and find that they do not. Six frontier models captioned 196 short clips. Trained annotators post-edited every caption against a failure taxonomy fixed before annotation, once as a whole-clip overview and once window by window, and a quality-control reviewer checked each annotation, yielding 1,144 overview verdicts and 4,672 window verdicts. Reference-overlap metrics do not separate the captions reviewers accepted from those they rejected: BLEU-4 reaches an AUC of 0.510 and a CIDEr-style tf-idf cosine 0.528, and restricting references to reviewer corrections leaves BLEU-4 at 0.479 (95% CI 0.431-0.529), indistinguishable from chance. Review granularity changes what is detected. The same annotators record camera and shot errors on 2.7% of captions when reading the overview and on 12.8% when reading window by window, a 4.7x gap that holds across every robustness check we ran, on the mode most likely to need a near-total rewrite. Correct-overview rates span 54.1-72.7%, but only 4 of 15 pairwise gaps survive Bonferroni correction (5 after adjusting for reviewer and clip effects), and accuracy and derived severity order the models differently. Models with statistically indistinguishable accuracy have sharply different failure profiles, which no single scalar shows. We argue that caption evaluation should record what was wrong rather than only how often, and we report the taxonomy, the per-model profiles, the corpus properties that predict difficulty, and the code that regenerates every number in the paper.",
+  "abstract_ja": "",
+  "authors": [
+    "Ankit Khedia",
+    "Astitva Jaiswal",
+    "Chaitanya Prasad",
+    "Anisha Raju",
+    "Aangeeras"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38511",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Video captioning models are increasingly evaluated with metrics designed for single-sentence image captions. We test whether those metrics recover human judgement on dense, multi-window video…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video"
+    ],
+    "task": []
+  },
+  "title": "Similar Scores, Opposite Failures: Human Correction as an Instrument for Video Caption Evaluation",
+  "url": "https://arxiv.org/abs/2610.38511",
+  "use_case": ""
+}

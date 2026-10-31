@@ -1,0 +1,30 @@
+{
+  "abstract": "FP8 formats specify how values are stored, not how products are summed; this gap can break checkpoints. Evo 2, a DNA language model, documents a Hopper FP8 requirement for its 1B and 40B checkpoints. On two Blackwell (sm_120) GPUs both fail the developers' forward test (the 7B passes); on an RTX 5070 Ti the 40B's next-base accuracy is 25.7%, near guessing. Greater accuracy breaks them, as BioNeMo saw for the 40B on Hopper: natively, 99.996% of one projection's outputs are correctly rounded (H100: about 30%), and fp32 accumulation of the same operands fails. Our H100 FP8 GEMM emulator, mmaemu (bit-exact on captured 1B projections), localises the dependence to the 1B's first projection (of 21), where exact sums fail but pass when shrunk by the H100's 1.4% (measured in-sample), not 2.1%. The 40B fails with only its first projection native. Emulating only that projection, weights unchanged, raises 40B BRCA1 variant-classification AUROC from 0.434 to 0.869 (H100: 0.868) on the RTX 5070 Ti, despite a narrow forward-test miss, and 0.481 to 0.867 on an RTX PRO 6000. We tested one model family but not training origin; releases should specify reference arithmetic.",
+  "abstract_ja": "",
+  "authors": [
+    "Xun Ding",
+    "Ziyuan Qin"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39415",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "FP8 formats specify how values are stored, not how products are summed; this gap can break checkpoints. Evo 2, a DNA language model, documents a Hopper FP8 requirement for its 1B and 40B checkpoints.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Accuracy is not compatibility: two Evo 2 checkpoints hinge on one FP8 matrix multiplication",
+  "url": "https://arxiv.org/abs/2610.39415",
+  "use_case": ""
+}

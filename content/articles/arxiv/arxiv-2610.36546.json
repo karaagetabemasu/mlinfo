@@ -1,0 +1,33 @@
+{
+  "abstract": "Humanoid locomotion in confined spaces requires continuous height adaptation across multiple locomotion modes, yet most existing approaches remain limited to height-adjustable bipedal walking. We present REACH, an RL-based hierarchical framework that enables a Unitree G1 humanoid to traverse height-constrained environments through variable-height bipedal walking and crawling. The learned policies regulate body height over complementary command ranges of 1.27--0.50m in bipedal locomotion and 0.50--0.20m in crawling, extending traversal beyond the clearance limits of crouched walking. To address contact-rich crawling dynamics, we employ a history-conditioned latent representation that captures terrain and interaction context from proprioceptive observations. A bidirectional transition policy further connects crouched bipedal locomotion and crawling across large kinematic and contact discontinuities. These skills are integrated with a LiDAR-based planner that converts point clouds into collision-free three-dimensional paths and locomotion commands, including proactive height targets. Real-world experiments demonstrate accurate height and velocity tracking, robust terrain traversal, reliable mode transitions and confined-space traversal with the proposed pipeline. Code and videos are available at https://aislab-sustech.github.io/REACH/.",
+  "abstract_ja": "",
+  "authors": [
+    "Shengzhang Xu",
+    "Yuning Guo",
+    "Weiyi Hu",
+    "Yifeng Xu",
+    "Zhongyu Li"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.36546",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "3d",
+  "summary": "Humanoid locomotion in confined spaces requires continuous height adaptation across multiple locomotion modes, yet most existing approaches remain limited to height-adjustable bipedal walking. We…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "video",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "REACH: An RL-based Hierarchical Humanoid Crawling Framework for Adaptable Confined Space Traversal",
+  "url": "https://arxiv.org/abs/2610.36546",
+  "use_case": ""
+}

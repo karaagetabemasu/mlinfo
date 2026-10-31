@@ -1,0 +1,29 @@
+{
+  "abstract": "Computing equilibria in high-dimensional continuous games requires learning and representing rich, multi-modal strategy distributions, something conventional neural policies struggle to achieve. Diffusion models offer a natural solution, but standard diffusion training requires direct samples from a fixed target distribution, which are generally unavailable under iterative game-solving updates. We propose a diffusion-based framework for equilibrium computation that enables diffusion-based variants of Online Mirror Descent (OMD) and Fictitious Play (FP). Our approach derives a reweighted score-matching objective that trains diffusion policies without requiring direct samples from each updated policy. Our main method, DiffNash, combines the fast convergence of OMD with the sample efficiency of FP by reusing past actions through a replay buffer. To correct the resulting distribution shift from sample reuse, we derive an unbiased estimator of the difference between current and past policies' Evidence Lower Bounds, whose exponential provides a tractable proxy for the corresponding importance weight without evaluating diffusion likelihoods. We evaluate our approach on forest protection games and continuous Colonel Blotto games, reducing the Nash gap over the strongest baseline by 35.6% and 24.7%, respectively, with minimal hyperparameter tuning.",
+  "abstract_ja": "",
+  "authors": [
+    "Haichuan Wang",
+    "Anagha Satish",
+    "Jiale Zheng",
+    "Saisneha Ghatti",
+    "Lingkai Kong"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.15932",
+  "likes_count": 0,
+  "publishedAt": "2026-10-11",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Computing equilibria in high-dimensional continuous games requires learning and representing rich, multi-modal strategy distributions, something conventional neural policies struggle to achieve.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "DiffNash: Finding Nash Equilibrium in High-Dimensional Continuous Action Spaces with Diffusion Policies",
+  "url": "https://arxiv.org/abs/2610.15932",
+  "use_case": ""
+}

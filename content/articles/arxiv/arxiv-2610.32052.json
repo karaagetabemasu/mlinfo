@@ -1,0 +1,29 @@
+{
+  "abstract": "Spiking neural networks (SNNs) are well suited to event-driven edge intelligence, but the arithmetic complexity, memory footprint, and power consumption associated with conventional floating-point implementations can limit their deployment on resource-constrained hardware. This paper presents a precision-scalable and resource-efficient SNN hardware accelerator architecture based on parameterized minifloat arithmetic. The proposed architecture implements recurrent leaky integrate-and-fire (LIF) neurons and leaky-integrator (LI) readout neurons using a unified minifloat datapath whose word length and mantissa width can be configured at synthesis time. A valid-driven arithmetic subsystem employs pipelined minifloat multiplication and addition, while time-multiplexed processing enables arithmetic resources to be shared across synaptic accumulation, neuron-state updates, recurrent connections, and output processing. This organization reduces replicated arithmetic hardware and provides a scalable design approach for different SNN sizes and precision requirements. The architecture supports E8M23, E5M10, E5M6, and E4M3 formats within the same RTL framework, allowing precision, memory capacity, timing, and power to be traded without modifying the underlying neuron architecture. FPGA implementation results demonstrate that reducing minifloat precision substantially decreases arithmetic-resource utilization and estimated dynamic power, while also reducing the theoretical storage requirement of synaptic parameters. A recurrent event-based classification network is used as a hardware validation case, demonstrating that substantial precision reduction can be achieved while retaining competitive inference accuracy. The results establish parameterized minifloat computation as an effective basis for scalable, low-resource, and energy-efficient FPGA SNN accelerators.",
+  "abstract_ja": "",
+  "authors": [
+    "Ali Mehrabi",
+    "Philip C. Jose"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.32052",
+  "likes_count": 0,
+  "publishedAt": "2026-10-23",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "Spiking neural networks (SNNs) are well suited to event-driven edge intelligence, but the arithmetic complexity, memory footprint, and power consumption associated with conventional floating-point…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "generation"
+    ]
+  },
+  "title": "A Resource-Efficient and Precision-Scalable FPGA Accelerator for Spiking Neural Networks Using Minifloat Arithmetic",
+  "url": "https://arxiv.org/abs/2610.32052",
+  "use_case": ""
+}

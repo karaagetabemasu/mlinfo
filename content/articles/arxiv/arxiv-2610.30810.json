@@ -1,0 +1,33 @@
+{
+  "abstract": "Loco-manipulation extends the workspace of conventional manipulation by combining mobility with physical interaction, while aerial loco-manipulation further expands this capability into three-dimensional space, enabling robots to reach environments inaccessible to ground-based systems. Moving to an aerial platform, however, gives rise to a demanding control problem, since the vehicle must track trajectories accurately in three dimensions while the motion of the arm and its interaction with the environment continuously shift the center of mass, alter the inertia, and impose force and moment disturbances on the body. Conventional controllers address these effects through explicit models and estimation, whereas learning-based controllers infer dynamics from experience, yet control rewards provide no direct target for the response information retained from history, and fixed task sampling can leave persistent tracking difficulties insufficiently explored. We present ALMA, an aerial loco-manipulation framework for adaptive flight control under external arm commands. ALMA employs a contextual flight policy that adapts from recent measurements and actions, using action-conditioned prediction of future measurement representations to train its context to retain response information relevant to flight control. To expand the experience available for this adaptation, an evolutionary process uses a large language model (LLM) to analyze observed control difficulties and propose new structures of arm motion for subsequent training. In simulation, ALMA reduces position root-mean-square error (RMSE) by up to 24.7% relative to the strongest baseline, while the same policy transfers zero-shot to the aerial manipulator and reduces hover position RMSE by 79.6% during periodic arm motion relative to the real-world baseline.",
+  "abstract_ja": "",
+  "authors": [
+    "Jingyu Ru",
+    "Xiangyuan Xie",
+    "Lixuan Jin",
+    "Jian An",
+    "Xingming Zhang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30810",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Loco-manipulation extends the workspace of conventional manipulation by combining mobility with physical interaction, while aerial loco-manipulation further expands this capability into…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Adaptive Aerial Loco-Manipulation Policy Learning via LLM-Assisted Proactive Task Generation",
+  "url": "https://arxiv.org/abs/2610.30810",
+  "use_case": ""
+}

@@ -1,0 +1,30 @@
+{
+  "abstract": "In this paper, we study the regret minimization problem in episodic tabular MDPs. Our algorithm achieves the first expected regret bound scaling as $\\sqrt{H^3 S A K}$ for sufficiently large $K$, where $H$ is the episode length, $K$ is the number of episodes, and $S$ and $A$ are the numbers of states and actions, respectively. Our method is the first to match the minimax lower bound \\emph{without extra polylog factors}. We introduce a variant of UCBVI which does not maintain strictly optimistic estimates, and uses MOSS-style exploration bonuses whose logarithmic terms adapt to both visit counts and estimated variances. A key challenge is controlling the propagation of errors caused by under-optimism, which we accomplish in an occupancy-weighted way, avoiding logarithmic overhead that would be incurred by uniform-over-rows concentration. Our analysis develops time-uniform and variance-aware concentration bounds that may be of independent interest. As a corollary we also develop an algorithm for $(\\varepsilon, δ)$-PAC best-policy identification, which is the first to match the $Ω\\big(H^3 SA\\log(\\frac{1}δ)\\varepsilon^{-2}\\big)$ minimax lower bound up to constants in some regimes.",
+  "abstract_ja": "",
+  "authors": [
+    "Guy Zamir",
+    "Victor Boone",
+    "Matthew Zurek",
+    "Yudong Chen"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.40165",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "In this paper, we study the regret minimization problem in episodic tabular MDPs. Our algorithm achieves the first expected regret bound scaling as $\\sqrt{H^3 S A K}$ for sufficiently large $K$,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "tabular"
+    ],
+    "task": []
+  },
+  "title": "Closing the Log Gap: Minimax-Optimal Regret for Episodic RL",
+  "url": "https://arxiv.org/abs/2610.40165",
+  "use_case": ""
+}

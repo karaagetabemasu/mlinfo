@@ -1,0 +1,31 @@
+{
+  "abstract": "Can a Watershed transform, the classical tool of morphological segmentation, be placed at the end of a deep network and trained through? The Power Watershed (PW) is the limit of the seeded Random Walker (RW) as p grows to infinity with edge weights raised to the power p. At every finite p the RW solves a sparse positive-definite linear system and is exactly differentiable with respect to the edge weights and the unaries through one adjoint solve; its multi-label form costs one right-hand side per label, and its limit is the PW. We study this family as the last layer of a segmentation network, the watershed layer (WS layer). A conditioning study measures how the solve, the gradient and the distance to the limit evolve with p, and the implicit gradient is checked against unrolling. On synthetic data with correct edge costs the WS layer transforms a soft prediction into an exact boundary. On nuclei segmentation (PanNuke), a binary WS layer is level with a thresholded U-Net. With the instances as labels, the WS layer turns the U-Net into an instance segmenter whose number of labels is set per image by the markers rather than by the output layout, and the network is trained through that partition: instance F1 score rises from 0.656 to 0.795 over a U-Net with connected components, level with the same network followed by a tuned marker watershed. At the training temperature the partition is a watershed of the learned costs, and the finite temperature lets the solve hedge, discounting weak markers and sharing contested pixels. The hedging puts the WS layer 0.015--0.020 F1 ahead of the baseline when trained on a tenth of the data, at the price of having to deploy the finite-p solve rather than its exact limit at inference. Code and the full experimental record are released.",
+  "abstract_ja": "",
+  "authors": [
+    "Galia Akl",
+    "Laurent Najman",
+    "Hugues Talbot"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38516",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Can a Watershed transform, the classical tool of morphological segmentation, be placed at the end of a deep network and trained through? The Power Watershed (PW) is the limit of the seeded Random…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "The Power Watershed as a Differentiable Segmentation Layer",
+  "url": "https://arxiv.org/abs/2610.38516",
+  "use_case": ""
+}

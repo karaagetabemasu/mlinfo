@@ -1,0 +1,30 @@
+{
+  "abstract": "Retargeting human motion to humanoids requires preserving motion semantics while accounting for the robot's physical constraints. Kinematic pipelines prescribe a robot trajectory through geometric matching, without establishing whether it can be executed under the robot's dynamics. Prior physics-supervised neural methods train bidirectional full-sequence models on physics-refined kinematic trajectories, remaining tied to prescribed kinematic solutions and requiring noncausal context. We propose SMR, a streaming neural motion retargeter learned from semantic-conditioned physics experts. We convert human motion into robot-aware task-space targets for body landmark positions, orientations, and velocities. Physics experts track these targets directly in simulation under contact, dynamics, and actuator constraints. We train a single strictly causal Transformer on their executed state trajectories that complete the motion and pass semantic and physical validity checks. At each incoming frame, the student uses only current and past human observations to generate a robot motion reference for a downstream whole-body controller. Experiments demonstrate that semantic-conditioned physics experts generate motion with higher semantic fidelity and physical validity than direct optimization-based retargeting, while the resulting streaming retargeter achieves improved closed-loop performance over kinematic and physics-refined baselines under a common whole-body controller.",
+  "abstract_ja": "",
+  "authors": [
+    "Chun Gu",
+    "Juntong Zhang",
+    "Jingyu Li",
+    "Li Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.29169",
+  "likes_count": 0,
+  "publishedAt": "2026-10-21",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Retargeting human motion to humanoids requires preserving motion semantics while accounting for the robot's physical constraints. Kinematic pipelines prescribe a robot trajectory through geometric…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "SMR: Learning streaming motion retargeting for humanoids from human semantic",
+  "url": "https://arxiv.org/abs/2610.29169",
+  "use_case": ""
+}

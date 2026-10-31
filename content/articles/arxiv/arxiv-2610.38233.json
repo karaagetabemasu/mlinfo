@@ -1,0 +1,29 @@
+{
+  "abstract": "Mobile manipulator robots rarely reposition their base during manipulation, because doing so requires real-time knowledge of how well the arm can reach its surroundings among obstacles. Reachability maps (RMs) encode this knowledge, but existing methods are slow, coarse (typically 5 cm), or ignore real obstacles. This article asks whether a neural network can predict an obstacle-aware RM at 2 cm resolution from a live depth camera, on embedded hardware, fast enough for online use. We present HERON, a 3D U-Net trained on RMs computed with the GPU-accelerated inverse kinematics of cuRobo, first on synthetic scenes and then on real depth data, and deployed on a Jetson AGX Orin with TensorRT and INT8 quantization. HERON predicts the RM of a 2.56 m cube around the arm in 115 ms on average, for a measured system rate of 8.57 Hz, close to the 10 Hz update rate of the obstacle map, whereas computing the same map with cuRobo takes about 90 min. Against the cuRobo ground truth, 95% of the voxels lie within 1 class out of 51 with the FP32 model and within 3 classes with the INT8 model, with a Pearson correlation of 0.99 and a quadratic weighted kappa above 0.9. Accuracy degrades mainly at the workspace boundaries.",
+  "abstract_ja": "",
+  "authors": [
+    "G. Dupoiron",
+    "F. Michaud",
+    "J. P. Roberge"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38233",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Mobile manipulator robots rarely reposition their base during manipulation, because doing so requires real-time knowledge of how well the arm can reach its surroundings among obstacles. Reachability…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "HERON: Real-Time Obstacle-Aware Reachability Maps for Mobile Manipulators",
+  "url": "https://arxiv.org/abs/2610.38233",
+  "use_case": ""
+}

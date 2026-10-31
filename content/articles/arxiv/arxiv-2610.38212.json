@@ -1,0 +1,28 @@
+{
+  "abstract": "Kernel methods face two recurrent bottlenecks: the cubic cost of inverting an $n\\times n$ kernel matrix, as in kernel ridge regression, and the evaluation of kernel integrals, as required in kernel quadrature. Existing low-rank kernel and Gaussian process approximations primarily address the former bottleneck, but do not control the downstream quadrature error when both the kernel matrix and kernel mean are approximated, particularly when the integrand lies outside the kernel reproducing kernel Hilbert space. We address both challenges through an operator-adapted finite-feature approximation. Specifically, we construct a finite-dimensional working kernel from the eigenvalues and eigenfunctions of a second-order differential operator. We establish convergence guarantees for the resulting finite-feature estimators in kernel quadrature, with extension to other related kernel methods. Our results show that, with $m \\lesssim n$ basis functions, the truncated estimator attains the corresponding benchmark statistical rates. The theory covers fixed/random designs, noisy/noiseless observations, oversmoothing/undersmoothing regimes, and Matérn/Gaussian-type weights. We provide explicit error bounds that quantify the roles of the spectral cutoff, regularization parameter, lengthscale, sampling geometry, and operator boundary condition. We verify the convergence results in numerical experiments.",
+  "abstract_ja": "",
+  "authors": [
+    "Huanyan Zhu",
+    "Cheng Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38212",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Kernel methods face two recurrent bottlenecks: the cubic cost of inverting an $n\\times n$ kernel matrix, as in kernel ridge regression, and the evaluation of kernel integrals, as required in kernel…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Scalable Bayesian Quadrature via Operator-Adapted Features",
+  "url": "https://arxiv.org/abs/2610.38212",
+  "use_case": ""
+}

@@ -1,0 +1,28 @@
+{
+  "abstract": "This paper studies the problem of aggregation in multiclass classification, generalizing existing results for binary classification. Given a finite dictionary of score functions F={f_1,...,f_M} and a training sample, the goal is to construct a data-driven aggregate whose risk is as close as possible to that of the best aggregate (oracle) in a prescribed subset of span(F) with respect to a given loss. In particular, we investigate model selection and convex aggregation under the 0/1 and multinomial logistic losses. For the 0/1 loss, we show that the optimal aggregation rates remarkably do not depend on the number of classes K, and the corresponding empirical risk minimization (ERM) aggregates are rate-optimal for model selection and nearly-optimal for convex aggregation (up to an additional sqrt(ln(K)) factor). The situation under the multinomial logistic loss is more subtle. Although the optimal aggregation rates remain independent of K, restricting aggregation to proper aggregates in conv(F) leads to a deterioration of the achievable rates with K in certain regimes. This reveals a fundamental limitation of proper aggregation in multiclass classification. To overcome it, we propose improper probability-mixture aggregates that average the induced class probabilities rather than the original score functions and map the result back to score-function space. These aggregates achieve optimal or nearly optimal convergence rates independent of K. Finally, we introduce a different aggregation framework in which both the aggregation class and the oracle are defined directly in probability space.",
+  "abstract_ja": "",
+  "authors": [
+    "Felix Abramovich",
+    "Or Davidovitch-Servadio"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.28025",
+  "likes_count": 0,
+  "publishedAt": "2026-10-20",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "This paper studies the problem of aggregation in multiclass classification, generalizing existing results for binary classification. Given a finite dictionary of score functions F={f_1,...,f_M} and a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Optimal aggregation in multiclass classification",
+  "url": "https://arxiv.org/abs/2610.28025",
+  "use_case": ""
+}

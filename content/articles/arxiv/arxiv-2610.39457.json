@@ -1,0 +1,25 @@
+{
+  "abstract": "We study first-order and best-of-both-worlds regret guarantees in multi-armed bandits. Pogodin and Lattimore (2019) proposed an algorithm that combines minimax-optimal worst-case regret with a first-order guarantee whose loss-dependent term is $\\mathcal{O}(\\sqrt{K L^\\star}\\log T)$, where $T$ denotes the horizon, $L^\\star$ denotes the smallest expected cumulative loss among fixed arms, and $K$ denotes the number of arms. However, a logarithmic gap remains between this loss-dependent term and the optimal first-order scale. In this paper, we remove this logarithmic factor by proposing an efficient and parameter-free algorithm that achieves the minimax optimal first-order regret guarantee $\\mathcal{O}(\\sqrt{K L^\\star})$. Technically, our algorithm is built upon FTRL with a Tsallis entropy regularizer (Zimmert and Seldin,2021), with a learning rate adapted to the learner's cumulative loss and a sampling distribution determined by a scalar fixed point. This construction controls the combined estimation and stability cost in terms of the learner's loss. Moreover, we show that the same algorithm achieves a best-of-both-worlds guarantee, with $\\mathcal{O}(\\sum_{i\\ne i^\\star}\\frac{\\log T}{Δ_i})$ regret for i.i.d. losses with a unique best arm $i^\\star$, where $Δ_i$ denotes the suboptimality gap of arm $i$.",
+  "abstract_ja": "",
+  "authors": [
+    "Mengxiao Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39457",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "We study first-order and best-of-both-worlds regret guarantees in multi-armed bandits. Pogodin and Lattimore (2019) proposed an algorithm that combines minimax-optimal worst-case regret with a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Achieving Minimax-Optimal First-Order and Best-of-Both-Worlds Regret Simultaneously in Multi-Armed Bandits",
+  "url": "https://arxiv.org/abs/2610.39457",
+  "use_case": ""
+}

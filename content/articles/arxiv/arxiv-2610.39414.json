@@ -1,0 +1,33 @@
+{
+  "abstract": "Accurate lung tumor segmentation in computed tomography (CT) is essential for treatment planning, response assessment, and quantitative imaging analysis. However, 3D lung tumor segmentation remains challenging because tumors occupy only a small portion of the whole volume and exhibit heterogeneous appearances across anatomical locations. In patch-based training and sliding-window inference for 3D medical image segmentation, location-dependent heterogeneity is further amplified because cropped image patches provide limited global anatomical context, making it difficult for a model to adapt its feature processing according to the anatomical region from which each patch is extracted. To address this limitation, we propose an Anatomical Prior-guided Routing Module (APRM) for lung tumor segmentation. For each image patch, we obtain anatomical prior information of regional occupancy and deterministically select an anatomical routing gate. The selected gate then performs sparse feature routing over a shared expert adapter pool, enabling anatomy-specific feature adaptation while sharing expert capacity across regions. We evaluate APRM on two datasets with various backbone networks and demonstrate consistent improvements over baseline models. Furthermore, feature visualizations show that APRM produces different feature responses depending on patch location, indicating that the proposed routing mechanism effectively adapts feature processing according to anatomical context.",
+  "abstract_ja": "",
+  "authors": [
+    "Uihyeon Maeng",
+    "Jonghun Kim",
+    "Hyunjin Park"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39414",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Accurate lung tumor segmentation in computed tomography (CT) is essential for treatment planning, response assessment, and quantitative imaging analysis. However, 3D lung tumor segmentation remains…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "Anatomical Prior-Guided Routing for 3D Lung Tumor Segmentation",
+  "url": "https://arxiv.org/abs/2610.39414",
+  "use_case": ""
+}

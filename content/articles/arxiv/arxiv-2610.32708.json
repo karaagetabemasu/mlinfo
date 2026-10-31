@@ -1,0 +1,29 @@
+{
+  "abstract": "Continual learning (CL) aims to learn from sequential tasks while mitigating catastrophic forgetting when historical data are no longer accessible. We study continual learning for high-dimensional sparse linear regression, where $\\ell_1$ regularization creates a difficulty absent from continual ridge regression: that recursively reusing an $\\ell_1$-penalized estimator can propagate earlier shrinkage and accumulate regularization bias across tasks. We propose score-preserving continual Lasso (SP-CL), which separates sparse estimation from state transmission by preserving the historical squared-loss score. Under squared loss, its cumulative estimator exactly recovers a full-history Lasso minimizer. When task coefficients coincide, it inherits the full-history sparse rate. For related task-specific coefficients, SP-CL uses a regularized current-task correction that leaves the transmitted state unchanged and attains the offline source-assisted rate under an oracle related-task condition. We also derive Overall/BWT/FWT decompositions that distinguish historical information loss, task conflict, and current-task specialization, and validate the resulting regimes in simulation.",
+  "abstract_ja": "",
+  "authors": [
+    "Jingyi Guo",
+    "Runze Li",
+    "Lingzhou Xue"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.32708",
+  "likes_count": 0,
+  "publishedAt": "2026-10-23",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Continual learning (CL) aims to learn from sequential tasks while mitigating catastrophic forgetting when historical data are no longer accessible. We study continual learning for high-dimensional…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Score-Preserving Continual Lasso under Task Shift",
+  "url": "https://arxiv.org/abs/2610.32708",
+  "use_case": ""
+}

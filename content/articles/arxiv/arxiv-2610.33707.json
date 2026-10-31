@@ -1,0 +1,26 @@
+{
+  "abstract": "Position auctions require assigning advertisers to positions and determining their display order. Under cascade behavior, earlier clicks prevent users from reaching later placements, coupling the click probabilities of selected advertisements. Existing methods achieve constant-factor welfare approximation and monotone logarithmic-factor approximation separately, leaving open whether both guarantees can be attained simultaneously. The difficulty is that welfare-preserving rounding need not maintain the monotonicity of individual click-through rates required for truthful bidding. We resolve this problem by developing a polynomial-time randomized mechanism that achieves a factor-6 welfare approximation and truthfulness in expectation for arbitrary public advertiser-position click probabilities. The mechanism optimizes a reach-weighted linear relaxation and converts its solution into feasible ordered allocations through matching decomposition, probability-bounded grouping, and calibrated attenuation. This construction compensates for cascade dependence and ensures that each advertiser's expected click-through rate equals exactly one sixth of its fractional click coordinate. The resulting identity transfers the monotonicity of the fractional allocation to the implemented mechanism, enabling exact incentive-compatible payments while preserving the welfare guarantee. The allocation lottery and payments are computable in polynomial bit time, with exact sampling in expected polynomial time.",
+  "abstract_ja": "",
+  "authors": [
+    "Qiuyu Chen",
+    "Baao Xie"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.33707",
+  "likes_count": 0,
+  "publishedAt": "2026-10-24",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Position auctions require assigning advertisers to positions and determining their display order. Under cascade behavior, earlier clicks prevent users from reaching later placements, coupling the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "A Factor-6 Truthful-in-Expectation Mechanism for Cascade Position Auctions",
+  "url": "https://arxiv.org/abs/2610.33707",
+  "use_case": ""
+}

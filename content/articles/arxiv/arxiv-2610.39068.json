@@ -1,0 +1,28 @@
+{
+  "abstract": "In transformer language models with gated multilayer perceptrons (MLPs), adjacent layers write partly against each other into the residual stream. Previous work interpreted this cancellation as layers proposing features and the next layer selectively rejecting the inappropriate ones. We decompose the cancellation by removing the previous layer's write from the input of the next MLP: what the next layer writes along that write splits into what it writes anyway and how much less its MLP writes because the write is present, which we call the damping, and we trace the damping to the neurons that carry it. In gated MLPs the damping is carried by neurons whose gates are closed. SiLU and GELU are slightly negative below zero, so a closed gate still passes a small negative multiple of what the neuron reads, and a neuron whose output weight points along its input weight then subtracts a fraction of the direction it read. Summed over such neurons, closed gates contract the average direction a gated MLP reads, and the previous layer's write is not singled out: the same layer's write at another token is damped as much or more, and the eigenvalue signature from which that work concluded that the correction is selective appears for another token's write as well. Over training the damping grows while what the next layer writes anyway stays flat, and cancellation begins when the damping overtakes it; annealing the negative side of the gate activation away in continued pretraining removes the damping and the cancellation. Adjacent-layer cancellation is therefore weak evidence about which features a model rejects: it is produced by a contraction that gated MLPs apply, on average over directions, to whatever they read.",
+  "abstract_ja": "",
+  "authors": [
+    "Harvey Dam",
+    "Ganesh Gopalakrishnan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39068",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "In transformer language models with gated multilayer perceptrons (MLPs), adjacent layers write partly against each other into the residual stream. Previous work interpreted this cancellation as…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Closed Gates Leak: Decomposing Adjacent-Layer Cancellation in Gated Language Models",
+  "url": "https://arxiv.org/abs/2610.39068",
+  "use_case": ""
+}

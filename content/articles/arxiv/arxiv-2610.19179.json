@@ -1,0 +1,26 @@
+{
+  "abstract": "We study packet routing in queuing systems where queues act as selfish, myopic agents that use no-regret learning algorithms to select servers with unknown service rates. To model the small buffers used in data centers, we assume that each server has a single-packet buffer. Even such a tiny buffer already captures the features of buffering: routers can exploit multiple servers while accepted packets remain in service, but packets can occupy servers for multiple rounds, complicating future service and learning. We first analyze a single queue routing packets to $m$ buffered servers with service rates $μ_1, \\dots, μ_m$. This setting is equivalent to an instance of the recharging bandits problem with geometric recharge. We prove that any no-regret learner achieves a long-run average throughput of at least the Hamacher sum of the server rates, and that this bound is tight. Consequently, a single no-regret queue is stable if and only if its arrival rate is below the Hamacher sum of the server rates. Moreover, comparing against an optimal policy, we show that any no-regret learner is at least $0.77$-competitive, which is also tight. We then study multi-queue systems where $n$ queues with arrival rates $λ_1, \\dots, λ_n$, each at most $λ_{\\max}$, compete for service from $m$ buffered servers. We show that the smallest overprovisioning factor that guarantees the system to be stable under high-probability no-regret learning is $\\frac{1}{1-λ_{\\max}}$. Equivalently, in terms of the total arrival and service rates, the condition $\\sum_{i=1}^n λ_i < (1-λ_{\\max})\\sum_{j=1}^m μ_j$ is sufficient, and sometimes necessary, for stability under no-regret learning. In particular, for $λ_{\\max} = 1/2$, this improves the upper bound of Abel et al. (EC 2026) from $3$ to $2$, matching their lower bound and resolving their open question.",
+  "abstract_ja": "",
+  "authors": [
+    "Cristian Palma Foster",
+    "Eva Tardos"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.19179",
+  "likes_count": 0,
+  "publishedAt": "2026-10-13",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "We study packet routing in queuing systems where queues act as selfish, myopic agents that use no-regret learning algorithms to select servers with unknown service rates. To model the small buffers…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Learning in Strategic Queuing with Geometric Recharge: From Bandits to Systems",
+  "url": "https://arxiv.org/abs/2610.19179",
+  "use_case": ""
+}

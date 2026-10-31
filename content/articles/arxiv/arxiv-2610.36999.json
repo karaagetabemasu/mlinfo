@@ -1,0 +1,30 @@
+{
+  "abstract": "Field applications in chemical sensing, from portable safety monitors to mobile robots, require models that are lightweight, fast to respond, and can be recalibrated from limited labelled data. Current gas classification pipelines assume controlled sampling cycles and offline feature extraction, and rely on computationally expensive models. With a few thousand neurons and sub-milliwatt power consumption, insects reliably classify odours in open environments. Inspired by the insect olfactory system, we present a neural network architecture that classifies raw sensor array readings using a sparse, high-dimensional binary representation. We evaluate it on random sequences of single gases and binary mixtures, introducing new samples dynamically and classifying gas identity from the transient sensor response. In this setting, the architecture out-performs a linear \\gls{svm} on gas mixtures and matches an optimised non-linear \\gls{svm}, while maintaining online class-level frequency estimates that distinguish familiar from novel stimuli. It relies exclusively on binary weights and Hebbian-based local learning, remaining computationally lightweight and well suited to ultra-low-power neuromorphic processors. We demonstrated the network on-chip with a hazardous gas detection experiment running on the mixed-signal neuromorphic chip TEXEL. The on-chip classifier yielded an accuracy of 74.6\\% while running at 482 $\\unit{\\nano\\joule}$ per inference and 27 \\unit{\\micro\\watt} of static-power.",
+  "abstract_ja": "",
+  "authors": [
+    "Ton Juny Pina",
+    "Hugh Greatorex",
+    "Elisabetta Chicca"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.36999",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Field applications in chemical sensing, from portable safety monitors to mobile robots, require models that are lightweight, fast to respond, and can be recalibrated from limited labelled data.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "Online gas classification at the edge",
+  "url": "https://arxiv.org/abs/2610.36999",
+  "use_case": ""
+}

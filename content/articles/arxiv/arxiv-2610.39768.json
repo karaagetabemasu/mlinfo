@@ -1,0 +1,31 @@
+{
+  "abstract": "Anaerobic digestion (AD) requires close monitoring of key process variables, including pH, the ratio of volatile organic acids to alkaline buffer capacity and biogas production, to maintain biological stability and prevent process failure. While mechanistic frameworks such as the Anaerobic Digestion Model No. 1 are highly parameterised, computationally expensive, and difficult to calibrate for real-time applications, data-driven Long Short-Term Memory (LSTM) networks offer a potentially more adaptable alternative. However, current data-driven approaches in AD are predominantly limited to single-output architectures that focus solely on production yields, as opposed to simultaneous prediction of vital stability indicators. Furthermore, industrial AD datasets are typically sparse and skewed toward steady-state operations. Baseline evaluations demonstrated this scarcity prevents standard algorithms (Random Forest, XGBoost) and unaugmented LSTMs from recognising the transition to unstable operations, resulting in poor estimation of stability indicators. To overcome these challenges, this study proposes a novel generative data augmentation framework using an LSTM-beta-Variational Autoencoder coupled with a multi-output LSTM (MO-LSTM) soft sensor. By synthesising physically valid sequences of these transitions to unstable operations from one year of full-scale plant data, the method safely populates sparse regions of the feature space. Trained on this augmented dataset, the MO-LSTM achieved robust simultaneous estimation across all targets. This approach mitigates data sparsity, providing a basis for hybrid mechanistic-data-driven modelling and early-warning soft sensors in industrial bioprocesses.",
+  "abstract_ja": "",
+  "authors": [
+    "Rohit Murali",
+    "Benaissa Dekhici",
+    "Tao Chen",
+    "Dongda Zhang",
+    "Michael Short"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39768",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Anaerobic digestion (AD) requires close monitoring of key process variables, including pH, the ratio of volatile organic acids to alkaline buffer capacity and biogas production, to maintain…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Multi-output LSTM soft sensors for industrial anaerobic co-digestion using LSTM-beta-VAE generative data augmentation",
+  "url": "https://arxiv.org/abs/2610.39768",
+  "use_case": ""
+}

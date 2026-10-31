@@ -1,0 +1,25 @@
+{
+  "abstract": "The metric distortion framework asks voting rules to elect a candidate close to the voters using only their rankings. SimultaneousPluralityVeto elects from the plurality veto core and achieves the optimal worst-case distortion of 3, but it is not Pareto-efficient: it can declare a tie between two candidates even when every voter prefers one of them. Removing Pareto-dominated candidates afterward would break the convexity of tied winner sets. We instead introduce regularization, which adds a small $\\varepsilon$ to every candidate's weight, restoring Pareto-efficiency. To study its effect on distortion, we introduce the rank score veto core, whose candidate weights come from a positional scoring vector $\\mathbf{s}$, and prove that its distortion lies in $[1 + 2(||\\mathbf{s}|| - s_m),\\, 1 + 2||\\mathbf{s}||]$; we conjecture that the lower bound is tight. A fixed $\\varepsilon$ can increase distortion, but letting $\\varepsilon$ depend on the number of voters preserves the distortion guarantee of the original veto core. Regularized SimultaneousPluralityVeto thus has optimal distortion, is Pareto-efficient, and has convex tied winner sets, resolving an open question of Kızılkaya and Kempe.",
+  "abstract_ja": "",
+  "authors": [
+    "M. August Rossi"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.26535",
+  "likes_count": 0,
+  "publishedAt": "2026-10-19",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "The metric distortion framework asks voting rules to elect a candidate close to the voters using only their rankings. SimultaneousPluralityVeto elects from the plurality veto core and achieves the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Regularizing the Veto Core",
+  "url": "https://arxiv.org/abs/2610.26535",
+  "use_case": ""
+}

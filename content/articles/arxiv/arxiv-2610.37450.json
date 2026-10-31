@@ -1,0 +1,29 @@
+{
+  "abstract": "Graph neural networks (GNNs) rely critically on neighborhood aggregation, yet conventional mean aggregation may fail to capture class-relevant distributional information, particularly in heterophilic graphs. We propose ExpectileGCN, an adaptive graph aggregation framework that introduces a learnable expectile level to capture neighborhood information beyond the mean. The proposed operator continuously adjusts aggregation between minimum- and maximum-type behaviors, with mean aggregation as a special case. A differentiable approximation based on sigmoid smoothing and fixed-point iterations enables end-to-end optimization. Theoretically, we establish stability properties and transductive generalization guarantees for ExpectileGCN. We further investigate its classification risk under heterophilic neighborhood models. For informative neighborhoods, we show that expectile aggregation can exploit class-dependent scale differences to achieve a classification advantage over mean aggregation. Under a local asymptotic regime with diminishing per-neighbor label informativeness, we establish that this advantage can persist in terms of limiting classification risk. Experiments on homophilic and heterophilic benchmark graphs demonstrate strong predictive performance and improved robustness under feature corruption and structural perturbations.",
+  "abstract_ja": "",
+  "authors": [
+    "Tianyi Zhu",
+    "Wei Lan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.37450",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "gnn",
+  "summary": "Graph neural networks (GNNs) rely critically on neighborhood aggregation, yet conventional mean aggregation may fail to capture class-relevant distributional information, particularly in heterophilic…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "embedding"
+    ]
+  },
+  "title": "Graph Representation Learning via Adaptive Expectile Aggregation",
+  "url": "https://arxiv.org/abs/2610.37450",
+  "use_case": ""
+}

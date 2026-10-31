@@ -1,0 +1,25 @@
+{
+  "abstract": "We study episodic finite-horizon Bayesian bandits, or meta-bandits, with independent arms. Each episode draws fresh arm qualities from unknown recurring priors. Observations arrive after known delays, and plays obey hard per-episode caps and total budgets. A play earns reward and informs both the current quality and the recurring prior: the learner must explore, use, and generalize. We formulate a common planning optimization over learning trajectories. Its LP relaxation values experiments through current reward, resource consumption and continuation: the value of future decisions from the learning state produced. Dual prices separate the arms into local programs and certify every admissible policy, including hierarchical Thompson sampling. Execution enforces the hard constraints while preserving the promised learning transitions or accounting for their loss. The framework also represents risk-sensitive objectives and prices purchased observations and buyout options. Delayed reports create planned restlessness: an arm's information changes while it is not played, through reports of its own earlier plays arriving on a known calendar. For stationary priors, finite reward alphabets, bounded report lag and nonbinding budgets, posterior sampling over the recurring priors bounds the price of not knowing them by $O(\\sqrt{N})$ over $N$ episodes, with other parameters fixed. For one undelayed $T$-step episode with arms capped at $T/X$ plays each, we obtain the LP-relative approximation factor $1+(2πX)^{-1/2}+O(X^{-1})$, improving previous factors, with a matching lower bound for the leading term.",
+  "abstract_ja": "",
+  "authors": [
+    "Sudipto Guha"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38955",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "We study episodic finite-horizon Bayesian bandits, or meta-bandits, with independent arms. Each episode draws fresh arm qualities from unknown recurring priors.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Planned Restlessness: Delayed Meta Bandits with Budgets",
+  "url": "https://arxiv.org/abs/2610.38955",
+  "use_case": ""
+}

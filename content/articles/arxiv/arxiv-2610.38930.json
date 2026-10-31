@@ -1,0 +1,27 @@
+{
+  "abstract": "Quadrotor control under disturbances such as wind gusts and payload variations remains challenging. First-order sliding mode control (SMC) and matched/unmatched uncertainty distinction are classical approaches; however, neither tells a practitioner which loops in a cascaded controller should be made robust to sustain disturbances, how to tune those loops, nor what the additional costs are on an embedded processor. Applying robust control uniformly across all axes addresses disturbances indiscriminately, adding tuning effort on axes where no disturbance acts. On inherently underactuated vehicles, disturbances along some axes cannot be opposed directly at all. We propose a principled methodology for deciding where robust control belongs in a cascaded architecture, with all control running onboard the vehicle. We recover the acting disturbance from PID hover flights under disturbance by inverting the equations of motion, use the recovered signal to identify and quantify the excited axes, and deploy robust control where it counts. Experiments on a Crazyflie 2.1 quadrotor under slung-payload and oblique-wind disturbances show tracking improvements concentrated on the axes the rule selects, and gain sweeps confirm that the switching gain reduces error on matched axes but has no effect on an excited unmatched axis, as the analysis predicts.",
+  "abstract_ja": "",
+  "authors": [
+    "Anoop Kiran",
+    "Thales C. Silva",
+    "Nora Ayanian"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38930",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "Quadrotor control under disturbances such as wind gusts and payload variations remains challenging. First-order sliding mode control (SMC) and matched/unmatched uncertainty distinction are classical…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Selective Sliding Mode Control Enhances Robustness of Aerial Robots Under Disturbances",
+  "url": "https://arxiv.org/abs/2610.38930",
+  "use_case": ""
+}

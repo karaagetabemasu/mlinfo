@@ -1,0 +1,33 @@
+{
+  "abstract": "Thinking vision-language models reason for thousands of tokens, yet still miss small details in high-resolution images. Zooming methods pay for extra inference passes, and outcome rewards never tell the model where to look at. In Qwen3.5-4B, we find that the bottleneck is selection, not seeing: a few attention heads, which we call localization heads, pick the evidence out of thousands of visual tokens; ablating four of them costs 13.2 points more than ablating four random heads, and their focus fades as the reasoning grows. We therefore propose Localization-Head Alignment (LHA), which makes attention a training signal: whenever the reasoning states a visual fact, these heads learn to look at the focal region rather than the background, as an auxiliary loss in both SFT and RL training. On benchmarks of V*, HR-Bench 4K and TreeBench, LHA lifts Qwen3.5-4B from 74.1% to 76.6% accuracy, the best single-pass 4B result we evaluate, ahead of multi-pass zooming and released 7B models. Alignment alone adds 1.8 points over otherwise identical training while shortening reasoning by 20%, and the gains carry over to Qwen2.5-VL-3B.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuan Wang",
+    "Wei Wu",
+    "Hongning Wang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39649",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Thinking vision-language models reason for thousands of tokens, yet still miss small details in high-resolution images. Zooming methods pay for extra inference passes, and outcome rewards never tell…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Look at Where You Think: Localization-Head Alignment for Fine-Grained Perception in Thinking VLMs",
+  "url": "https://arxiv.org/abs/2610.39649",
+  "use_case": ""
+}

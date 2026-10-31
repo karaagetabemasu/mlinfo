@@ -487,6 +487,10 @@ def generate_use_cases(articles: list[dict], cache: dict[str, dict]) -> dict[str
     キャッシュ形式: { article_id: { "use_case": str, "summary_ja": str } }
     バッチ処理でAPIリクエスト数を削減。初回は件数が多いので途中保存あり。
     """
+    # Opt-in only after the operator verifies no-card, no-overage conditions.
+    if os.environ.get("MLINFO_ENABLE_FREE_AI") != "1":
+        print("[Groq] Free AI integration is disabled; retaining existing summaries")
+        return cache
     api_key = os.environ.get("GROQ_API_KEY", "")
     if not api_key:
         print("[Groq] GROQ_API_KEY が未設定のためuse_case生成をスキップ")
@@ -629,3 +633,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

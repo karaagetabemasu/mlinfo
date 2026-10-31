@@ -1,0 +1,27 @@
+{
+  "abstract": "Active inference casts perception, learning and planning as variational inference, where the Expected Free Energy (EFE) defines the planning objective. Recent work showed that EFE minimization can be written as Variational Free Energy (VFE) minimization on a generative model augmented with epistemic priors, and that the resulting entropy-corrected objective is minimized by sum-product message passing (SP-MP) on modified factor functions. These formulations treat model uncertainty as inference over a finite set of known models. We extend them to planning during learning, where beliefs over the observation and transition parameters $θ_A$, $θ_B$ are Dirichlet priors. Closed-form Dirichlet updates are usually obtained by a structured mean-field factorization between parameters and states, but under exactly that factorization the information-gain corrections vanish. We resolve this by giving every factor its own parameter prior, frozen during a rollout. Conjugacy then makes each factor belief a product of a marginal over the categorical variables and a one-step Bayes posterior of the parameters. This reintroduces the datum-dependent parameter posteriors that mean-field factorization destroys. We show that evaluating the epistemic priors under the resulting Bethe joint recovers the information gains. Stationarity of this single closed-form objective yields SP-MP whose factor functions are augmented by the information-gain weight. Experiments on two grid POMDPs, in which only a planner that learns the model finds the safe route, show that the method plans to efficiently learn $θ_A$ and $θ_B$. It reaches the goal on every episode, whereas SP-MP planners with the same inference update plateau or take the risky route.",
+  "abstract_ja": "",
+  "authors": [
+    "Benedikt Waldeck"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30899",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Active inference casts perception, learning and planning as variational inference, where the Expected Free Energy (EFE) defines the planning objective. Recent work showed that EFE minimization can be…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Parameter Learning in Active Inference via Variational Message Passing",
+  "url": "https://arxiv.org/abs/2610.30899",
+  "use_case": ""
+}

@@ -1,0 +1,30 @@
+{
+  "abstract": "Whole-prompt translation evaluates a request in different languages but does not compare which component carries a language. We introduce a paired reversal: translate the complete request component or the complete operation component into the same target language, holding behaviour, English frame and translated-span count fixed. Component identity and non-English text quantity change together. Assigning English, Chinese and Spanish independently to the two components yields nine configurations on 190 of 300 sampled harmful behaviours retained after consensus annotation and automatic gating. Refusal scored by language-model judges is the primary outcome; unsafe compliance is reported separately. On Gemini 2.5 Flash and DeepSeek, three refusal swaps are about 5.3 percentage points and the fourth is -0.5; none survives the pre-specified six-test Holm correction. In an exploratory extension, Mistral Small 4 has a 13.7-point Spanish swap (95% interval [8.4, 18.9]), which survives the twelve-test Holm sensitivity correction under the primary judge, and 12.1 points under a second judge. GPT-5.4-mini estimates are within 2 points of zero. Component assignment supplies an additional evaluation dimension. Evaluations should record component languages and translated text quantity, comparing matched behaviours at equal translated-span count while interpreting refusal and unsafe compliance separately.",
+  "abstract_ja": "",
+  "authors": [
+    "Yongxi Zhou",
+    "Junwei Yao",
+    "Wenbo Ye",
+    "Jiahui Ge"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38181",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Whole-prompt translation evaluates a request in different languages but does not compare which component carries a language. We introduce a paired reversal: translate the complete request component…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Component Translation and Judge-Labelled Refusal: A Multilingual Safety Evaluation",
+  "url": "https://arxiv.org/abs/2610.38181",
+  "use_case": ""
+}

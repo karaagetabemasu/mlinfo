@@ -1,0 +1,29 @@
+{
+  "abstract": "Estimating the conditional distribution of multivariate responses with continuous and binary components requires capturing their dependence, respecting their different supports, and accommodating potentially heavy-tailed continuous outcomes. We propose mixed engression, which fits a continuous generator using energy losses induced by bounded discrepancies and then thresholds its soft binary outputs to produce mixed-response samples. Because the discrepancies are bounded, the population objective remains well defined without response-moment assumptions. However, we show that the full-response energy distance for the complete response vector can tend to zero before thresholding yet remain bounded away from zero afterward as response dimensions grow. A separate energy loss on the entire binary vector captures discrepancies obscured by the full-response comparison and controls the effect of thresholding. The generator is therefore fitted using an augmented energy loss that combines the full-response and binary components. Under compositional smoothness of the structural functions and a uniform threshold-margin condition, we derive nonasymptotic bounds on the final sampler's full-response error for sparse ReLU estimators of models driven by Gaussian or Student-t structural noise, yielding polynomial convergence rates up to logarithmic factors. We also establish consistency when the covariate, response, and noise dimensions grow under suitable conditions. Simulations show improved accuracy relative to the comparison methods under the full-response energy distance, including in heavy-tailed settings. Moderate binary augmentation substantially improves binary-distribution accuracy while largely preserving full-response accuracy.",
+  "abstract_ja": "",
+  "authors": [
+    "Seyong Hwang",
+    "Kean Ming Tan",
+    "Ji Zhu"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.32850",
+  "likes_count": 0,
+  "publishedAt": "2026-10-23",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Estimating the conditional distribution of multivariate responses with continuous and binary components requires capturing their dependence, respecting their different supports, and accommodating…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Mixed Engression: Distributional Regression for Multivariate Mixed-Type Responses",
+  "url": "https://arxiv.org/abs/2610.32850",
+  "use_case": ""
+}

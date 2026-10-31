@@ -1,0 +1,25 @@
+{
+  "abstract": "A predictor is multicalibrated with respect to a class of subpopulations (formally, of functions on the inputs, called auditors) if, for every subpopulation in the class and every value the predictor outputs, the average outcome among the members of that subpopulation who receive that value is close to the value itself. For finite classes, about $\\varepsilon^{-3}$ samples are necessary and sufficient to learn a predictor with multicalibration error $\\varepsilon$, but the algorithms that attain this rate enumerate the class, which is impossible for the large classes of interest. We ask how many samples suffice when the learner accesses the class only through an empirical risk minimization (ERM) oracle. We give an algorithm that uses $\\tilde{O}(d/\\varepsilon^{3})$ samples and polynomially many ERM calls, where $d$ is the VC dimension of the class. Its dependence on $\\varepsilon$ is optimal for all learners. When $d$ is at least about $1/\\varepsilon$, every learner that can only access the class through polynomially many ERM calls needs $\\tildeΩ(d/\\varepsilon^{3})$ samples. Learners with unlimited computation need only $\\tilde{O}(\\varepsilon^{-3}+d\\varepsilon^{-2})$ samples, so the extra factor $1/\\varepsilon$ on the dimension term is the price of oracle efficiency. For swap multicalibration, which allows a different function from the class for each predicted value, $\\tildeΘ(d/\\varepsilon^{3})$ samples are necessary and sufficient. For estimating the error of a given predictor, the ordinary notion is the harder one: the swap error can be estimated with an ERM oracle, whereas the ordinary error is NP-hard to approximate even for classes with linear-time ERM. Consequently, there are classes for which it is computationally easier to learn a multicalibrated predictor than to compute the multicalibration error of a given predictor.",
+  "abstract_ja": "",
+  "authors": [
+    "Princewill Okoroafor"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.14363",
+  "likes_count": 0,
+  "publishedAt": "2026-10-09",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "A predictor is multicalibrated with respect to a class of subpopulations (formally, of functions on the inputs, called auditors) if, for every subpopulation in the class and every value the predictor…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "The Sample Complexity of Multicalibration with an ERM Oracle",
+  "url": "https://arxiv.org/abs/2610.14363",
+  "use_case": ""
+}

@@ -1,0 +1,29 @@
+{
+  "abstract": "Expanding the vocabulary of conditional text-to-speech (TTS) models typically requires extensive fine-tuning with paired audio, creating a major bottleneck for low-resource and cross-lingual adaptation. To address this, we introduce SEAM, a zero-audio initialization method that constructs embeddings for unseen tokens from known subtokens. Unlike standard pooling strategies that ignore sequential structure, SEAM applies a spectral filter to preserve temporal phonetic order and uses closed-form ridge regression to align the new embeddings with the pretrained conditioning manifold. Across three languages and two TTS architectures, SEAM approaches or matches baseline performance using up to four times less training data, reducing sample complexity by 75\\% compared to random initialization and mean pooling. Our approach provides a lightweight, reproducible, and theoretically grounded solution for vocabulary expansion in low-resource speech synthesis.",
+  "abstract_ja": "",
+  "authors": [],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "hf-2610.26252",
+  "likes_count": 7,
+  "publishedAt": "2026-10-19",
+  "source": "huggingface",
+  "subcategory": "efficient",
+  "summary": "Expanding the vocabulary of conditional text-to-speech (TTS) models typically requires extensive fine-tuning with paired audio, creating a major bottleneck for low-resource and cross-lingual…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "audio"
+    ],
+    "task": [
+      "generation",
+      "regression"
+    ]
+  },
+  "title": "SEAM: Spectral Embedding Alignment and Merging for Low-Resource TTS",
+  "url": "https://arxiv.org/abs/2610.26252",
+  "use_case": ""
+}

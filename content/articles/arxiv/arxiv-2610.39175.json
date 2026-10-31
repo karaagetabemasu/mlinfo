@@ -1,0 +1,29 @@
+{
+  "abstract": "Sequential recommenders typically construct history inputs from item identifiers or content features using an embedding map shared across users. The same item therefore yields the same initial embedding representation, even when users have different relationships to the item. We propose personalized item representations in user history, where each item's embedding expresses its relationship to the user. Personalization becomes a property of the history inputs themselves, supplying richer evidence for later sequence modeling. We instantiate this idea with PRISM, which reuses upstream ranking computation to generate personalized item embeddings. An autoencoder jointly compresses all layer states from a user tower, a user--item tower, and same-request candidate mixing into one embedding per scored pair for downstream replay. Offline evaluation on Surface 1, a major recommendation surface at billion scale, reports an average downstream normalized entropy (NE) change of $-0.15\\%$, compared with $-0.07\\%$ for VISTA at similar history lengths. We further identify an empirical sequence-length scaling law: over history lengths of 26--240 events, NE gain follows a fitted power law with exponent 0.468, increasing from 0.06\\% to 0.17\\%. Therefore, personalized item representations in user history provide a new scaling dimension for improving recommendation quality.",
+  "abstract_ja": "",
+  "authors": [
+    "Renzhi Wu",
+    "Zikun Cui",
+    "Junjie Yang",
+    "Li Sheng",
+    "Yongjun Xie"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39175",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Sequential recommenders typically construct history inputs from item identifiers or content features using an embedding map shared across users. The same item therefore yields the same initial…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "PRISM: Personalized Item Representations in User History",
+  "url": "https://arxiv.org/abs/2610.39175",
+  "use_case": ""
+}

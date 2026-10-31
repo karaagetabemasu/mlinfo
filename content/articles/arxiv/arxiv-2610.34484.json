@@ -1,0 +1,32 @@
+{
+  "abstract": "Broad classes of deep generative models (DGMs) operate by learning to map a simple source distribution, such as a standard Gaussian, to a complex high-dimensional target distribution. Despite their success, DGMs often empirically struggle to accurately represent distributions with heavy tails or well-separated modes. In this work, we show that these difficulties reflect intrinsic properties of the underlying transport problem rather than particular neural network architectures or training procedures. We establish quantitative lower bounds on the gradients and Jacobians of pushforward mappings that transport log-concave source distributions to such targets. For heavy-tailed target distributions, the required gradient magnitude grows as the target develops increasingly large moments. For multimodal target distributions, the low-probability regions between well-separated modes similarly force large gradients in the transport map. We discuss how such large derivatives relate to trade-offs between expressivity and numerical stability. Our results hold under substantially weaker regularity conditions than previous analyses and remain stable under perturbations of the target distribution. Finally, we show that these obstructions can be mitigated when the goal is approximation of a given density rather than generative modeling. Specifically, we propose simple classes of bijective reparametrizations that can alleviate the difficult geometric structure and reduce the gradient burden placed on the learned generative map. Numerical experiments support our theoretical analysis.",
+  "abstract_ja": "",
+  "authors": [
+    "Edric Tam",
+    "Qingyang Liu",
+    "Barbara Engelhardt",
+    "Ray Bai"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.34484",
+  "likes_count": 0,
+  "publishedAt": "2026-10-25",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Broad classes of deep generative models (DGMs) operate by learning to map a simple source distribution, such as a standard Gaussian, to a complex high-dimensional target distribution. Despite their…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Intrinsic Gradient Barriers in Pushforward Deep Generative Models",
+  "url": "https://arxiv.org/abs/2610.34484",
+  "use_case": ""
+}

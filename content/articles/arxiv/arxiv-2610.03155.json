@@ -1,0 +1,29 @@
+{
+  "abstract": "Aggregate accuracy cannot reveal which utterances are locally vulnerable or how internal activity changes when labels remain stable. We retain every prediction for 725,070 adjacent-bin, one-count changes around 100 validation utterances of a frozen SpikeSCR-based classifier. The canonical native-horizon GPU singleton path reaches 86.0836% validation accuracy. Equal-source expected accuracy under a uniformly chosen neighbor rises from 84.00% to 84.54%, although 13 of 84 initially correct sources admit adverse neighbors. Five sources carry 93.21% of adverse moves. Margin-guided and surrogate-gradient searches miss sparse cases at fixed query budgets; a post hoc gradient prefix finds all 13 at 73.45% of the census of initially correct sources. Source-matched traces and clean-state interventions distinguish internal change from harmful direction and recoverability. Two count-readout replicas have similar validation accuracies but a 5.21-fold class-change gap concentrated in four sources. Controlled query/key source isolation eliminates 531 batch-order label changes and restores bitwise order invariance across all 9,981 validation score vectors. Isolated batch predictions reproduce padding-matched singleton labels on 9,980 of 9,981 inputs. Paired CPU/GPU replay of all 25,820 class-changing neighbors gives 99.8993% label agreement and preserves all 13 vulnerable sources and their fixed witnesses. Complete source-conditioned maps distinguish vulnerability incidence, concentration, internal change, and execution dependence that aggregate accuracy leaves unresolved.",
+  "abstract_ja": "",
+  "authors": [
+    "İsmail Can Dikmen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.03155",
+  "likes_count": 0,
+  "publishedAt": "2026-10-02",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Aggregate accuracy cannot reveal which utterances are locally vulnerable or how internal activity changes when labels remain stable. We retain every prediction for 725,070 adjacent-bin, one-count…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Aggregate accuracy conceals concentrated temporal vulnerability in a spiking speech classifier",
+  "url": "https://arxiv.org/abs/2610.03155",
+  "use_case": ""
+}

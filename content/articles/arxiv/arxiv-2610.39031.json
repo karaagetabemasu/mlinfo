@@ -1,0 +1,30 @@
+{
+  "abstract": "Fair classification faces a twofold challenge: maintaining high classification accuracy while limiting reliance on sensitive information. Our method FairSplit achieves this by learning a decomposition of the embedding space into a Fair Space used for prediction and a Sensitive Space that isolates sensitive information. During training, the model must simultaneously learn the classification task and separate fair from sensitive information. The Sensitive Space gives sensitive attributes a destination, so the Fair Space can be used for prediction without relying on them. This decomposition is guided via a learnable mask and the Hilbert-Schmidt Independence Criterion (HSIC) as a measure of statistical dependence. We provide theoretical guarantees showing that the demographic parity gap is upper-bounded by both (i) the learned dimensionality of the Fair Space and (ii) the HSIC between the Fair Space and sensitive attributes. FairSplit effectively handles multiclass tasks and non-binary sensitive attributes, overcoming key limitations of existing fair classification methods. Experiments on established fairness benchmarks show that FairSplit achieves competitive accuracy-fairness trade-offs. Code is available at https://github.com/shkabrii/fairsplit.",
+  "abstract_ja": "",
+  "authors": [
+    "Andrii Shkabrii",
+    "Anna Beer",
+    "Ylli Sadikaj",
+    "Claudia Plant"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/shkabrii/fairsplit",
+  "hasCode": true,
+  "id": "arxiv-2610.39031",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Fair classification faces a twofold challenge: maintaining high classification accuracy while limiting reliance on sensitive information. Our method FairSplit achieves this by learning a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "FairSplit: Decomposing the Embedding Space for Fair Classification",
+  "url": "https://arxiv.org/abs/2610.39031",
+  "use_case": ""
+}

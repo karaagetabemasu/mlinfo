@@ -1,0 +1,35 @@
+{
+  "abstract": "Learning across medical imaging modalities requires making use of images without paired text and accommodating new domains while retaining existing representations. We propose a medical vision-language technique built around an expandable bank of modality experts. Its Multiway Transformer combines shared visual computation with deterministically routed feed-forward experts and a separate text pathway. A modality-aware visual tokenizer supplies targets for masked pretraining on 19.4 million unpaired image rows across seven modalities; contrastive alignment then uses 3.23 million image-text pairs. Additional fundus and optical coherence tomography experts learn from paired data while the original image and text embedding paths remain frozen. With a ViT-Large backbone, the proposed technique achieves the best or tied-best result in 24 of 25 benchmark settings across nine modalities: 10 of 11 zero-shot classification benchmarks, all 10 linear probes, and all four retrieval benchmarks. Mean balanced accuracy is 0.674 for zero-shot classification and 0.856 for linear probing, and mean bidirectional retrieval recall is 20.70%. A separate three-seed sequential experiment with matched adaptation data yields fundus and OCT retrieval gains of 14.95 and 9.31 percentage points, with no measured loss on preceding fundus or pathology tasks. The preservation argument requires unchanged existing computation paths and inference conditions, and feature-identity checks verify retention on evaluated inputs. The proposed technique provides a modular approach to learning and expanding medical vision-language representations.",
+  "abstract_ja": "",
+  "authors": [
+    "DM BAPPY",
+    "Eunsu Kim",
+    "Hanjoo Lee",
+    "Sung Hak Lee",
+    "Sangjeong Ahn"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.29881",
+  "likes_count": 0,
+  "publishedAt": "2026-10-21",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Learning across medical imaging modalities requires making use of images without paired text and accommodating new domains while retaining existing representations. We propose a medical…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Expandable Modality Experts for Medical Vision-Language Learning",
+  "url": "https://arxiv.org/abs/2610.29881",
+  "use_case": ""
+}

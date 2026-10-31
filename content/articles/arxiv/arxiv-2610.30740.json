@@ -1,0 +1,35 @@
+{
+  "abstract": "Shadows are observable consequences of latent physical causes, arising from the interaction between illumination, object geometry, and scene structure. A model that understands shadows should be able not only to read a shadow's direction, but also to infer where a shadow should fall when it is absent, and to judge whether a shadow is physically consistent with the scene. We introduce ShadowBench, built from real photographs, which poses these three questions to vision-language models (VLMs). From each scene, we build a correct-shadow, a shadow-removed, and a human-annotated wrong-direction state. Evaluating 19 open VLMs (2B to 78B) and frontier proprietary models, we find that VLMs read a visible shadow's direction well above chance and improve with scale, yet infer the absent direction only weakly and fall to chance at judging physical consistency even under a bias-free two-alternative test that removes the yes-bias of single-image naturalness questions. Only Gemini-3.1-pro exceeds chance on validity, and even then only modestly and far below humans. Chain-of-Thought (CoT) does not help. The missing ingredient is not reasoning but knowledge that image generation models (IGMs) already hold. Routing a VLM through an IGM lifts its inference well above its direct attempt and helps it flag the wrong-direction shadows it otherwise accepts. Cast-shadow direction is a single facet of illumination understanding, but the sharp gap it reveals between VLMs and IGMs suggests image-generation or reconstruction objectives as a route toward illumination-aware VLMs.",
+  "abstract_ja": "",
+  "authors": [
+    "Ryugo Morita",
+    "Shunsuke Kitada",
+    "Stanislav Frolov",
+    "Brian Bernhard Moser",
+    "Ko Watanabe"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30740",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Shadows are observable consequences of latent physical causes, arising from the interaction between illumination, object geometry, and scene structure. A model that understands shadows should be able…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Where Did the Light Come From? Diagnosing Cast-Shadow Reasoning in VLMs and Borrowing the Missing Shadow Prior from Image Generation Models",
+  "url": "https://arxiv.org/abs/2610.30740",
+  "use_case": ""
+}

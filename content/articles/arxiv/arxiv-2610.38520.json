@@ -1,0 +1,33 @@
+{
+  "abstract": "Hallucination remains one of the most critical challenges in deploying large language models (LLMs) reliably and safely. Yet the term is used inconsistently across the research community. We argue for a strict definition of hallucinations in LLMs. First, hallucinations should be confident incorrectness, kept separate from expressed uncertainty (UNK)1. UNK reveals that the model may be wrong, whereas a hallucination does not reveal it and is therefore more dangerous in practice. Conflating the two obscures their distinct behaviors and makes them hard to study. Second, hallucinations should be split by a simple re-elicitation test: does any semantically equivalent prompt recover the correct response? This test probes whether the relevant knowledge2 is accessible. If none does, the knowledge is likely absent or inaccessible, and the error type is a confabulation (CF) that likely requires external knowledge or retraining; if some does, the knowledge is accessible from the model but applied inconsistently, and the error type is a semantic illusion (SI) that simple prompt or decoding changes can mitigate3. Re-evaluating 14 recent hallucination methods under this taxonomy yields three findings. (1) Detection methods flag UNK more often than hallucinated responses (i.e., SI and CF). (2) Mitigation methods are far more effective for SI than for CF. (3) Latent signals are more informative than output-level signals for CF. An audit of recent hallucination papers shows that most conflate these categories. We recommend reporting CF, SI, and UNK separately, and introduce a practical labeling protocol that needs only a modest number of semantically equivalent prompts.",
+  "abstract_ja": "",
+  "authors": [
+    "Hazel H. Kim",
+    "Jakub Binkowski",
+    "Ekaterina Fadeeva",
+    "Juan David Guerra",
+    "Yijie Hao"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38520",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Hallucination remains one of the most critical challenges in deploying large language models (LLMs) reliably and safely. Yet the term is used inconsistently across the research community.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "What Hallucinations Have We Measured? Semantic Illusion, Confabulation, and Expressed Uncertainty",
+  "url": "https://arxiv.org/abs/2610.38520",
+  "use_case": ""
+}

@@ -1,0 +1,25 @@
+{
+  "abstract": "In stochastic multi-objective bandits, Pareto optimal arms may represent different trade-offs among objectives. Balanced sampling across them is important in practical settings such as online advertising. Yet, there seems to be little consensus on how to measure fairness, to our best knowledge. Achieving fairness is also tough as the set of Pareto optimal arms is unknown, and early sampling decisions may create imbalances that are difficult to erase afterwards. We measure unfairness by the KL divergence from the uniform distribution over the true Pareto set to the empirical measure induced by the sampling trajectory. Nicely, this measure admits an exact decomposition that separates the cost of sampling suboptimal arms from the imbalance among Pareto optimal arms. With a recursive form for unfairness, we develop \\emph{adaptive top-two sampling}, which combines sampling counts and empirical evidence of Pareto membership to define a gain for each arm and guide sampling without committing to an estimated Pareto set. When the Pareto set is stable under small perturbations, we establish an $O(\\log T/T)$ and $O(T^{-1})$ bound on expected unfairness and variance, respectively. Information-theoretic lower bounds show that the $\\log T/T$ rate can be unavoidable for uniformly fair policies on stable instances, matching our upper bound. More surprisingly, stability is indeed crucial, as the expected unfairness can be $ω(\\log T/T)$ without it. Finally, we create a variant that encourages exploration of undersampled arms to reduce the risk of persistent underallocation. At sufficiently large horizons, it preserves the rate on the expected unfairness while admitting a sharper bound of $O(\\log^2 T/T^2)$ on variance. Numerical studies support these findings and suggest practical insights.",
+  "abstract_ja": "",
+  "authors": [
+    "Mengfan Xu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.35551",
+  "likes_count": 0,
+  "publishedAt": "2026-10-26",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "In stochastic multi-objective bandits, Pareto optimal arms may represent different trade-offs among objectives. Balanced sampling across them is important in practical settings such as online…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Balanced Sampling in Stochastic Multi-objective Bandits",
+  "url": "https://arxiv.org/abs/2610.35551",
+  "use_case": ""
+}

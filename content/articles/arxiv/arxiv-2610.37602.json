@@ -1,0 +1,32 @@
+{
+  "abstract": "We present RESPLE2, a recursive multi-sensor state estimation framework using non-uniform B-splines for 6-DoF motion representation. By exploiting the knot-clamping boundary property, we propose a theoretically grounded mechanism for exact control-point prediction directly informed by inertial kinematics along the trajectory, with knot placement adapted to motion and measurement availability. Within an iterated extended Kalman filter, we perform this prediction using a subset of inertial measurements. A subsequent reset step preserves trajectory consistency as the knots extend. The update step further incorporates heterogeneous sensor measurements at their native timestamps through continuous-time observation models, supporting flexible combinations of LiDARs, cameras, inertial measurement units, and leg kinematics. We further develop a lightweight global optimization module that directly refines non-uniform B-spline control points by incorporating loop-closure constraints derived from LiDAR-visual cues. We conduct extensive evaluations on public and experimental datasets across handheld, tracked, legged, and hybrid aerial-legged platforms, covering highly dynamic maneuvers with extreme accelerations. Compared with state-of-the-art multi-sensor odometry systems, RESPLE2 achieves competitive or superior estimation accuracy and robustness in the corresponding sensor configurations, particularly under aggressive motion, while maintaining real-time operation. We publicly release our code and experimental datasets at https://github.com/ASIG-X/RESPLE2.",
+  "abstract_ja": "",
+  "authors": [
+    "Ziyu Cao",
+    "William Talbot",
+    "Song Li",
+    "Pakpong Chirarattananon",
+    "Fredrik Gustafsson"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/ASIG-X/RESPLE2",
+  "hasCode": true,
+  "id": "arxiv-2610.37602",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "We present RESPLE2, a recursive multi-sensor state estimation framework using non-uniform B-splines for 6-DoF motion representation. By exploiting the knot-clamping boundary property, we propose a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "RESPLE2: Inertial-Informed Recursive Non-Uniform Spline Estimation for Multi-Sensor Odometry with Global Refinement",
+  "url": "https://arxiv.org/abs/2610.37602",
+  "use_case": ""
+}

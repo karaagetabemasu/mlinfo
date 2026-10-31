@@ -1,0 +1,31 @@
+{
+  "abstract": "Topology-agnostic motion generation aims to synthesize motions for diverse characters with arbitrary skeletons. Unlike conventional motion generation, which assumes a fixed skeletal template, this setting must handle diverse joint configurations and inconsistent joint semantics across characters. Existing methods address this challenge through dense full-joint modeling, which incurs substantial computational cost and hinders learning transferable motion patterns across diverse skeletal topologies. We present ETA-Motion, a topology-agnostic motion generation framework based on sparse joint learning. Instead of learning motion from all joints, our method uses a compact subset of joints to reduce redundancy and trains the motion generator on the resulting sparse skeleton. To facilitate correspondence across diverse topologies, we introduce semantic joint embeddings that combine textual and visual cues, together with topology-aware training objectives for preserving skeletal structure. Although ETA-Motion is trained only on sparse skeletal observations, it supports full-skeleton motion generation during inference. Experimental results demonstrate that ETA-Motion outperforms existing topology-agnostic baselines while significantly improving efficiency and generalization to unseen motions and unseen topologies.",
+  "abstract_ja": "",
+  "authors": [
+    "Seoyoung Hwang",
+    "Tae-Kyun Kim"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38259",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Topology-agnostic motion generation aims to synthesize motions for diverse characters with arbitrary skeletons. Unlike conventional motion generation, which assumes a fixed skeletal template, this…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "ETA-Motion: Efficient Topology-Agnostic Motion Diffusion via Sparse Joint Learning",
+  "url": "https://arxiv.org/abs/2610.38259",
+  "use_case": ""
+}

@@ -1,0 +1,27 @@
+{
+  "abstract": "We develop R2-GP, an R2D2-type prior for Gaussian process (GP) generalised additive models (GAMs) that calibrates explained variance ($R^2$) for Matérn covariance kernels. The function variance for standard Matérn kernels depends jointly on the effect magnitude and length-scale. As such, smooth and rough components with identical amplitudes contribute very different amounts of variation. With independent priors on component amplitudes, this variation results in variance overestimation, especially in higher dimensions. We overcome this by taking direct control over each component's expected contribution to prior explained variance. We do this by rescaling each component based on its length scale and observed inputs, and modelling each rescaled variance as a share of the function variance induced by a global $R^2$ prior. This allows R2-GP to scale well to many components. To also scale to large sample sizes, we extend R2-GP to Hilbert space approximation methods, a framework for kernels exploiting their spectral decompositions for fast and efficient inference. Our simulations and real-world case studies demonstrate superior generalisation and parameter recovery over independent variance priors.",
+  "abstract_ja": "",
+  "authors": [
+    "Javier Enrique Aguilar",
+    "Soham Mukherjee",
+    "David Kohns"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.26437",
+  "likes_count": 0,
+  "publishedAt": "2026-10-19",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "We develop R2-GP, an R2D2-type prior for Gaussian process (GP) generalised additive models (GAMs) that calibrates explained variance ($R^2$) for Matérn covariance kernels. The function variance for…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "R2-GP: Variance-Calibrated Priors for Additive Gaussian Processes",
+  "url": "https://arxiv.org/abs/2610.26437",
+  "use_case": ""
+}

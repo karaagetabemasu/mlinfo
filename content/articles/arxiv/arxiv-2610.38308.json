@@ -1,0 +1,35 @@
+{
+  "abstract": "Football action valuation estimates players' contributions to future scoring. Existing multi-agent deep reinforcement learning (MADRL) models use 2D positions and velocities, omitting posture information relevant to imminent actions. We investigate whether adding 3D pose to a SARSA-based model improves observed-action values relative to attack returns: goals, conceded goals or final expected possession value. Using UEFA Champions League 2022/23 event, tracking and 3D pose data, we compare six representations (no pose, raw joints, torso and head orientation, and spatial-temporal graph convolutional network (ST-GCN) embeddings) across five learning settings and three seeds. The settings vary temporal-difference targets and action-prediction loss, with Monte Carlo return regression as a reference. Across 50 on-ball and off-ball comparisons, pose robustly improved return prediction in only three, all using torso and head orientation, while worsening it in twelve, mostly with ST-GCN. Training choices had greater effects: removing the action-prediction loss raised on-ball skill of position-only values from 0.003 to 0.040 and their correlation with expected goals from 0.23 to 0.60; the improvement in return prediction persisted at matched training length. Separately, pose improved prediction of the on-ball action 0.2 s ahead (macro AUC 0.914 to 0.934 with raw joints), while the passer's pose during execution improved pass-success prediction (AUC 0.844 to 0.856). Within this training protocol, pose informed imminent actions but rarely improved observed-action values.",
+  "abstract_ja": "",
+  "authors": [
+    "Rikuhei Umemoto",
+    "Kenjiro Ide",
+    "Soham Majumder",
+    "Ulf Brefeld",
+    "Keisuke Fujii"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38308",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Football action valuation estimates players' contributions to future scoring. Existing multi-agent deep reinforcement learning (MADRL) models use 2D positions and velocities, omitting posture…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Does 3D Pose Improve Action Valuation in Football? An Empirical Study of Pose Representations and Learning Objectives",
+  "url": "https://arxiv.org/abs/2610.38308",
+  "use_case": ""
+}

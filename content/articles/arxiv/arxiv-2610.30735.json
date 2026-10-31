@@ -1,0 +1,32 @@
+{
+  "abstract": "Flow matching is now the dominant approach for vision-language action (VLA) robot policies, thanks to its expressiveness and simple training objective. However, inference for standard flow matching requires iteratively solving an ODE, limiting the control frequency at deployment. While several works have proposed novel methods to allow for single-shot action generation, we ask whether such additional objectives are actually necessary. We find that across six flow matching VLAs, one-step action generation largely matches multi-step sampling at scale: multi-step integration confers little to no consistent advantage at inference. We empirically find that this holds as long as models are sufficiently trained and have enough capacity. Practically, the implication is that for large VLAs, the single-step policy comes essentially for free from the multi-step model, enabling low-latency deployment without retraining, distillation, or auxiliary objectives.",
+  "abstract_ja": "",
+  "authors": [
+    "Shivakanth Sujit",
+    "Luca Nunziante",
+    "Rousslan Fernand Julien Dossa",
+    "Kai Arulkumaran"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30735",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Flow matching is now the dominant approach for vision-language action (VLA) robot policies, thanks to its expressiveness and simple training objective. However, inference for standard flow matching…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "When One Step Is Enough: An Empirical Study of Euler Integration in Flow-Matching Policies",
+  "url": "https://arxiv.org/abs/2610.30735",
+  "use_case": ""
+}

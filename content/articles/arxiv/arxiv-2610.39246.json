@@ -1,0 +1,36 @@
+{
+  "abstract": "Accurate time series forecasting (TSF) is essential for Web applications, such as traffic monitoring and online resource management. Recent advances in leveraging pre-trained large language models (LLMs) have shown promising performance in TSF. However, existing LLM-based TSF methods largely optimize the overall forecasting objective while overlooking temporal pattern imbalance (TPI), where different temporal patterns occur at highly unequal frequencies. Our empirical analysis reveals that TPI is prevalent across widely used TSF benchmarks, with substantially higher forecasting errors on less frequent patterns. To address this issue, we propose IMRouter (Imbalance-aware Temporal Pattern Routing), a novel framework that mitigates TPI-induced biases in both temporal representation learning and cross-modal alignment. Specifically, IMRouter introduces Pattern-Adaptive Temporal Representation Learning (PATR), which leverages gradient conflict and local gradient density to guide expert specialization. By penalizing incompatible expert assignments with density-aware weighting, PATR reduces the dominance of frequent optimization signals in router training. Furthermore, Routing-Guided Semantic Alignment (RGSA) transfers the pattern-specific knowledge learned by the router to cross-modal alignment through mutual information maximization, preserving distinctive temporal information across different patterns. Extensive experiments on benchmark datasets demonstrate the effectiveness of IMRouter, particularly in improving forecasting performance on less frequent temporal patterns.",
+  "abstract_ja": "",
+  "authors": [
+    "Xin Yang",
+    "Cai Xu",
+    "Haishun Chen",
+    "Ying Liu",
+    "Jie Zhao"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39246",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Accurate time series forecasting (TSF) is essential for Web applications, such as traffic monitoring and online resource management. Recent advances in leveraging pre-trained large language models…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal",
+      "time-series"
+    ],
+    "task": [
+      "forecasting",
+      "embedding"
+    ]
+  },
+  "title": "IMRouter: Imbalance-aware Temporal Pattern Routing for LLM-based Time Series Forecasting",
+  "url": "https://arxiv.org/abs/2610.39246",
+  "use_case": ""
+}

@@ -1,0 +1,32 @@
+{
+  "abstract": "Clean-image prediction ($x$-prediction) and noise prediction yield equivalent population-optimal denoisers, yet can perform very differently in finite diffusion networks. For noisy input $Y_t$ with noise standard deviation $σ_t$, a noise predictor $f_{\\varepsilon,t}$ induces the clean-image estimate $\\widehat X_1=Y_t-σ_t f_{\\varepsilon,t}(Y_t)$. This reveals a noise-transmission burden: the predictor must preserve information needed to cancel the input corruption. Under Gaussian corruption of $d$-dimensional data, a linear input bottleneck of rank $r<d$ imposes a denoising-error floor $σ_t^2(d-r)$ even with unrestricted downstream computation, while the corresponding optimal risk for image prediction remains bounded. EDM attenuates this bottleneck contribution at high noise; exact preconditioning cancels it at every noise level. Without an input bottleneck, assuming exact affine recovery of the noisy patch from the model representation, we characterize how the covariance spectrum of corrections beyond linear denoising determines the width required above the patch dimension. ImageNet experiments with JiT show that measured denoising losses reflect the predicted bottleneck floor and its attenuation or cancellation through preconditioning. Further widening yields larger relative denoising gains at low noise, where corrections beyond linear denoising spread across more directions, consistent with our spectral characterization of the required model width. Together, these results provide a denoising-based account of practical generation-quality gaps across prediction targets, preconditioning choices, and model widths.",
+  "abstract_ja": "",
+  "authors": [
+    "Gyeonghun Kang",
+    "Pengxi Liu",
+    "Bingshuo Qian",
+    "Xiang Cheng"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.34834",
+  "likes_count": 0,
+  "publishedAt": "2026-10-26",
+  "source": "arxiv",
+  "subcategory": "classification",
+  "summary": "Clean-image prediction ($x$-prediction) and noise prediction yield equivalent population-optimal denoisers, yet can perform very differently in finite diffusion networks. For noisy input $Y_t$ with…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "The Noise-Transmission Burden of Diffusion Network: Why Image Prediction Can Outperform Noise Prediction",
+  "url": "https://arxiv.org/abs/2610.34834",
+  "use_case": ""
+}

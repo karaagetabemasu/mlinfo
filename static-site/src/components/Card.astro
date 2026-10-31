@@ -1,0 +1,5 @@
+---
+import {summary,articleURL} from '../lib/content';
+const {article:a}=Astro.props;
+---
+<article class="card"><div class="meta"><span>{a.source}</span><time datetime={a.publishedAt}>{a.publishedAt}</time>{a.hasCode&&<span>実装リンクあり</span>}</div><h3><a href={articleURL(a)} data-article-link data-article-id={a.id}>{a.title}</a></h3><p>{summary(a)}</p><div class="card-bottom"><span>{a.use_case||a.category}</span><button data-bookmark data-id={a.id} data-title={a.title} data-path={articleURL(a)} data-source={a.source} aria-label="記事を保存" aria-pressed="false">保存</button></div></article>

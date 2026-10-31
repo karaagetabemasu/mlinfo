@@ -1,0 +1,28 @@
+{
+  "abstract": "Hardware-accelerated spiking neural networks (SNNs) implemented on memristive crossbar arrays offer significant gains in energy efficiency, while device variability and analog noise are sometimes assumed to hinder information extraction. However, whether these hardware effects improve, preserve, or degrade privacy after deployment remains largely unexplored. Therefore, we ask whether model-inversion leakage characterized on an SNN remains representative after the same model is mapped to a non-ideal memristive substrate, and how hardware non-idealities and reliability faults affecting synapses, neuron thresholds, and spike processing reshape that leakage. To study this problem, we introduce Spiking Domain Model Inversion (SDMI), an inversion method that combines Expectation over Transformation (EOT) with surrogate gradients to optimize inputs through stochastic analog behavior and non-differentiable spiking dynamics. We use SDMI consistently across the SNN model, its memristive SNN, and the same memristive SNN under additional hardware perturbations. Across four datasets, reconstruction leakage does not vary monotonically with model accuracy or hardware variability. At comparable accuracy levels, neuron-threshold perturbations increase reconstruction fidelity, measured by SSIM, by up to 51.8%, whereas spike-level perturbations primarily degrade utility without consistently improving reconstruction. Weight noise, in contrast, reduces leakage under the same inversion procedure. These results show that hardware variability is not inherently privacy-preserving: model inversion leakage in memristive SNNs depends on the hardware state and cannot be inferred from model accuracy alone.",
+  "abstract_ja": "",
+  "authors": [
+    "Pablo Sorrentino",
+    "Fernando M. Quintana",
+    "Erika Covi",
+    "Fatih Turkmen"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39688",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Hardware-accelerated spiking neural networks (SNNs) implemented on memristive crossbar arrays offer significant gains in energy efficiency, while device variability and analog noise are sometimes…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Hardware-Aware Model Inversion in Memristive Spiking Neural Networks",
+  "url": "https://arxiv.org/abs/2610.39688",
+  "use_case": ""
+}

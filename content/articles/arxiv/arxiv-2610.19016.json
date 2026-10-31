@@ -1,0 +1,26 @@
+{
+  "abstract": "Regret matching (and its variants) and counterfactual regret minimization are central algorithms in practice for normal-form and extensive-form game solving. Yet these have historically lacked the stronger theoretical convergence guarantees available to optimistic and extra-gradient methods. Recent work introduced IREG-PRM+, a regret matching variant which does have strong theoretical convergence guarantees. However, it relies on a simultaneous, extra-gradient update. IREG-PRM+ is an instance of the more general IR-PRM framework, where empirically optimistic and alternating updates often have better performance. However, the prior extra-gradient analysis does not extend to these cases. We introduce a new approach that covers both settings. For simultaneous and alternating IR-PRM+ in finite two-player zero-sum matrix games, previous-utility prediction recovers the constant-regret and convergence-rate guarantees previously obtained with extra-gradient prediction: external regret bounded independently of T, an O(T^{-1}) average duality gap, and an O(T^{-1/2}) best-current-iterate gap. Moreover, the current duality gap vanishes and the current profile converges to the Nash equilibrium set. The key step bounds the component of consecutive strategy movement not controlled by the existing IR-PRM+ regret inequality using the relative growth of the nondecreasing regret-vector norm rho_t. Coupling this bound across the two players yields recurrences whose effective coefficient scales as 1/(rho_t^X rho_t^Y), preventing unbounded norm growth. We extend the analysis to finitely many simplex learners under a weighted Minty condition and, through the corresponding CFR variant IR-PCFR+, recover analogous guarantees for finite two-player zero-sum perfect-recall extensive-form games under the same full-reach condition as prior work.",
+  "abstract_ja": "",
+  "authors": [
+    "Michael Sullins",
+    "Ian A. Kash"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.19016",
+  "likes_count": 0,
+  "publishedAt": "2026-10-13",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Regret matching (and its variants) and counterfactual regret minimization are central algorithms in practice for normal-form and extensive-form game solving. Yet these have historically lacked the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "IR-PRM+ with Previous-Utility Prediction: Constant Regret and Best-Iterate Convergence",
+  "url": "https://arxiv.org/abs/2610.19016",
+  "use_case": ""
+}

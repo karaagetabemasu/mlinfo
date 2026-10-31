@@ -1,0 +1,29 @@
+{
+  "abstract": "First-derivative edge detectors such as Sobel, Prewitt, Roberts and Scharr measure absolute grey-level differences. We revisit the log-gradient magnitude, a relative-gradient edge operator, and motivate it by analogy with the superderivative, a multiplicative derivative in which the independent variable is perturbed multiplicatively rather than additively. In one and two dimensions the logarithm of the superderivative is a radial logarithmic derivative; its local, origin-free, isotropic analogue is the magnitude of the logarithmic gradient. The resulting operator measures relative rather than absolute change, giving an edge-strength map that is invariant under global intensity rescaling. We present the theory, show how the operator can be implemented in two steps---a classical gradient kernel plus a pointwise division---and compare it with standard first-derivative filters on synthetic images with ground-truth edges and on the official BSDS500 benchmark. We also study a parametric family that interpolates between the absolute gradient and the log-gradient; empirically, the best members are small intermediate exponents, which edge the classical kernels by a small but statistically detectable margin in the per-image metric and, with the same Gaussian smoothing as the single-$σ$ Canny, match it in ODS and lead it in OIS and AP, while the tuned Canny remains ahead in ODS. The single-threshold margin over the kernels does not replicate on the held-out test split, and the fully relative endpoint is never the best member, its ranking depending on the edge-map normalisation. The contribution is the construction and the invariance it buys, not a new state of the art.",
+  "abstract_ja": "",
+  "authors": [
+    "Alejandro Garnung Menéndez"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38530",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "First-derivative edge detectors such as Sobel, Prewitt, Roberts and Scharr measure absolute grey-level differences. We revisit the log-gradient magnitude, a relative-gradient edge operator, and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "From the Superderivative to a Relative-Gradient Edge Operator",
+  "url": "https://arxiv.org/abs/2610.38530",
+  "use_case": ""
+}

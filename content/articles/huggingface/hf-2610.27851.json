@@ -1,0 +1,29 @@
+{
+  "abstract": "This paper shows that JEPA-style latent world models (LWMs) can learn across diverse domains and data sources by adopting the language-conditioned interface of video generation models. We establish this approach as an effective and efficient basis for planning with imagination and downstream policy fine-tuning. To this end, we introduce LaLa-World, a Language-conditioned Latent World model that learns from simulation and robot trajectories together with broader image and video data. Two designs make this work. First, we describe both numerical actions and visual changes in language, enabling joint training of a single future predictor across heterogeneous datasets. Second, we build the predictor on a language model, allowing it to interpret language conditions while predicting future latent states. The resulting predictor achieves higher average MPC planning performance than existing LWMs trained separately for each domain or task. Adding image and video data further improves average planning performance and robustness to action phrasing. In a matched comparison with an RAEv2-based video generation model baseline, LaLa-World reaches comparable planning performance with 6times less training cost and 13.9times faster planning. Beyond planning, the pretrained LaLa-World serves as an initialization for LaLa-Policy, which jointly predicts actions and future visual representations. LaLa-Policy performs competitively with Cosmos Policy on LIBERO and RoboCasa, with up to 5.5times faster inference.",
+  "abstract_ja": "",
+  "authors": [],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "hf-2610.27851",
+  "likes_count": 38,
+  "publishedAt": "2026-10-21",
+  "source": "huggingface",
+  "subcategory": "efficient",
+  "summary": "This paper shows that JEPA-style latent world models (LWMs) can learn across diverse domains and data sources by adopting the language-conditioned interface of video generation models. We establish…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "LaLa-World: Scaling Latent World Models with Natural Language Actions",
+  "url": "https://arxiv.org/abs/2610.27851",
+  "use_case": ""
+}

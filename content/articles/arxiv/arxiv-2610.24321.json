@@ -1,0 +1,33 @@
+{
+  "abstract": "A universal forecaster is trained once and applied everywhere, so it must serve tasks whose schemas, forecast horizons, and temporal resolutions all differ. The number of targets and covariates changes from dataset to dataset, horizons vary by orders of magnitude, and sampling rates range from seconds to years. Existing time-series foundation models address these only in part, since they isolate each series or visit the two grid relations in separate blocks, and they fix the horizon and resolution before training begins. We introduce Morpheus-2.0, a compact encoder-only foundation model that represents targets and covariates on a single variable-time grid. Its dual-axis attention runs both relations side by side in every layer, one across variables at a timestep and one across time within a variable; a learned gate weights the two per layer, and an axis-aware rotary encoding preserves both grid coordinates. The forecast length is sampled during training, so one set of weights spans short to long horizons at no additional inference cost. Morpheus-2.0 Multiscale extends the model to several temporal resolutions at once, weighting them according to the series being forecast. Across GIFT-Eval, which spans several domains and frequencies, the two models give complementary operating points: Morpheus-2.0 attains 0.685 relative MASE with 81M parameters, while the larger Morpheus-2.0 Multiscale attains 0.646 relative MASE and 0.455 relative CRPS, the lowest of any published system on both metrics.",
+  "abstract_ja": "",
+  "authors": [
+    "Aakriti",
+    "Manoj Cherukumalli",
+    "Prathamesh Patil",
+    "Leonidas Tsepenekas",
+    "Amit Varshney"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.24321",
+  "likes_count": 0,
+  "publishedAt": "2026-10-16",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "A universal forecaster is trained once and applied everywhere, so it must serve tasks whose schemas, forecast horizons, and temporal resolutions all differ. The number of targets and covariates…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "time-series"
+    ],
+    "task": [
+      "forecasting"
+    ]
+  },
+  "title": "Morpheus-2.0: Multiscale Probabilistic Forecasting with Dual-Axis Attention",
+  "url": "https://arxiv.org/abs/2610.24321",
+  "use_case": ""
+}

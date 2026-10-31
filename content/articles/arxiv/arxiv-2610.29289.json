@@ -1,0 +1,28 @@
+{
+  "abstract": "Why large language models trained via log-loss minimization over massive and diverse datasets exhibit broad capabilities and generalizable skills is not yet fully understood. Grau-Moya et al. (ICML 2024) offer a conceptual explanation through the lens of meta-learning: if sequence-generating environments $ν$ are drawn from a prior $w_ν$, minimizing population log-loss recovers the corresponding Bayesian mixture predictor $ξ=\\sum_νw_νν$. In the idealized limit in which $w$ is a universal prior, the optimal predictor corresponds to Solomonoff universal induction. Practical machine learning algorithms, however, generally produce only \\emph{approximately} optimal predictors. This raises a natural question: \\emph{Does the prediction performance remain robust under approximation}? In this paper, we first provide a tight bound on the worst-case effect of approximation on prediction error. We show any predictor $ρ$ satisfying $D_{KL}(ξ\\|ρ)\\leq η$ retains bounded cumulative-expected-squared prediction error. However, while the Bayesian mixture predictor $ξ$ has error $O(\\log(1/w_μ))$ in an environment $μ$, we establish a tight $Θ(η/w_μ)$ bound on the excess error of $ρ$ relative to $ξ$. Thus, approximation can substantially degrade performance in environments assigned small prior probability. In sharp contrast, when environments are averaged according to prior $w$, we prove that the excess prediction error is only $O(η)$. Furthermore, we establish a distribution-shift theorem for dominated shifts from a training prior $w$ to a test prior $w'$, interpolating our average-case and worst-case guarantees. Finally, we extend our robustness analysis to a finite-sampling setting relevant to learning universal predictors with neural networks and Transformers, where $D_{KL}(ξ\\|ρ)$ could be unbounded. [For the full abstract, see the paper.]",
+  "abstract_ja": "",
+  "authors": [
+    "Qian Li",
+    "Shang-Hua Teng"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.29289",
+  "likes_count": 0,
+  "publishedAt": "2026-10-21",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Why large language models trained via log-loss minimization over massive and diverse datasets exhibit broad capabilities and generalizable skills is not yet fully understood. Grau-Moya et al.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Approximate Solomonoff Induction: On the Robustness of Learned Universal Predictors",
+  "url": "https://arxiv.org/abs/2610.29289",
+  "use_case": ""
+}

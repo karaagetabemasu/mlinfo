@@ -1,0 +1,25 @@
+{
+  "abstract": "Embedding-based verification often calibrates a false-accept threshold from all impostor pairs among $m$ identities, although these pairs share identities. We characterize a worst-case limit: when hub identities score highly against a fraction $ρ$ of the population, a calibration-only threshold with marginal false-accept rate (FAR) at most $α$ under every identity-exchangeable law reaches the hub score on hub-free calibration sets with probability at most $(m+2)α/(2ρ)$. Uniformly accepting near that score at levels well below $ρ/m$ therefore requires trial information. We propose COVE, which ranks the trial pair among all $N=\\binom{m+2}{2}$ pairs formed by augmenting the calibration units with the probe and reference. Under identity exchangeability, its marginal FAR is at most $\\lfloorαN\\rfloor/N$, with first possible acceptance at $1/N=O(1/m^2)$. The rule also retains this guarantee with a fixed symmetric cohort-normalized score using an independent cohort. On 6 benchmarks and 8 frozen encoders, realised FAR was consistent with the exact bound. Where both valid calibration-only baselines accepted nothing, COVE retained a median $100\\%$ of the sampled oracle's true-accept rate over reliable comparisons. In contrast, an empirical quantile over dependent pairs reached 2.87$\\,α$ FAR, and a binomial upper confidence bound over pairs missed its nominal 95\\% conditional-FAR target in up to 55\\% of calibration draws. Symmetric CSLS raised COVE's true-accept rate by up to 4.3-fold in the tested settings. The code is available in https://github.com/salimkhazem/Cove.git",
+  "abstract_ja": "",
+  "authors": [
+    "Salim Khazem"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/salimkhazem/Cove.git",
+  "hasCode": true,
+  "id": "arxiv-2610.35277",
+  "likes_count": 0,
+  "publishedAt": "2026-10-26",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Embedding-based verification often calibrates a false-accept threshold from all impostor pairs among $m$ identities, although these pairs share identities. We characterize a worst-case limit: when…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Identities, Not Pairs: Distribution-Free False-Accept Control for Embedding-Based Verification",
+  "url": "https://arxiv.org/abs/2610.35277",
+  "use_case": ""
+}

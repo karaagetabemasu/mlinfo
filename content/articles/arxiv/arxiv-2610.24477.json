@@ -1,0 +1,27 @@
+{
+  "abstract": "We study differentially private black-box evaluation of arbitrary high-dimensional functions. Given a dataset $S$ and query access to a function $f$---whose sensitivity may be unknown or unbounded---the goal is to privately output an approximation to $f(S)$. The black-box evaluator can only query the value of $f$ over a down neighborhood of $S$ (i.e., those subsets of $S$ that are obtained by removing a bounded number of elements from $S$). We design generic black-box evaluators for both pure and approximate differential privacy through a reduction to high-dimensional private quasi-concave optimization (QCO). Our black-box evaluator enjoys a geometric notion of utility. Consider the vectors obtained by applying $f$ on sets in a down neighborhood of $S$. With high probability, the evaluator's output is guaranteed to be in the convex hull of these vectors. Our work generalizes the result of Linder et al. [LRSS25] for real-valued function evaluation to high dimensions. It also recovers the private center-point guarantees of Beimel et al. [BMNS19], with an explicit additive approximation to maximum Tukey depth. We also apply our evaluators to user-level quasi-concave and convex optimization, showing how they can improve upon the sample-and-aggregate baseline of Nissim et al. [NRS07] by replacing the multiplicative data overhead with an additive overhead. Finally, we show that our formulation of high dimensional black-box evaluation and high dimensional private QCO are equivalent up to a factor of the dimension: the hardest private evaluation instances already arise from the cases that $f$ is a (non-private) quasi-concave optimizer.",
+  "abstract_ja": "",
+  "authors": [
+    "Mohammad Afzali",
+    "Hassan Ashtiani",
+    "Adam Smith"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.24477",
+  "likes_count": 0,
+  "publishedAt": "2026-10-17",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "We study differentially private black-box evaluation of arbitrary high-dimensional functions. Given a dataset $S$ and query access to a function $f$---whose sensitivity may be unknown or…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Private Evaluation of High-Dimensional Functions",
+  "url": "https://arxiv.org/abs/2610.24477",
+  "use_case": ""
+}

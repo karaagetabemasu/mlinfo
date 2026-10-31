@@ -1,0 +1,25 @@
+{
+  "abstract": "Automated market makers (AMMs) are central to decentralized exchanges, but their reserve curves make mechanism design different from classical double auctions. We study a batch double auction with buyers, sellers, and a liquidity-nondecreasing AMM: post-trade reserves must have weakly larger product than the initial reserves. Each user has two-dimensional private information: a unit value and a demand or supply quantity. User trades clear at one uniform price subject to AMM feasibility. The objective is user-side trading volume, benchmarked against the optimal feasible individually rational (IR) uniform-price allocation. We give a randomized uniform-price mechanism based on binary quantity buckets. It randomly chooses one of three clearing modes: peer-to-peer matching, AMM sales to buyers, and seller sales to the AMM. Every deterministic realization of the mechanism is ex-post feasible and satisfies IR and weak quantity incentive compatibility: conditional on any quantity report, truthful unit-value reporting is dominant whenever it gives a non-negative utility, no unit-value deviation gives a positive utility if the truthful one doesn't, and users cannot benefit by under-reporting the quantity together with their truthful unit value. Let $V^\\ast$ be the optimal feasible IR uniform-price volume without incentive constraints, and let $γ=\\bar q/\\underline q$, where $\\bar q$ and $\\underline q$ are the quantity-domain bounds. For $γ\\ge1$, the mechanism achieves an expected trading volume of $ Ω(1/(1+\\logγ)^2)V^\\ast - O(\\bar q). $ We also show that full incentive compatibility over the two-dimensional type space forces a worst-case approximation ratio of $O(1/γ)$ at every prescribed initial reserve ratio, even when both AMM reserves are scaled by an arbitrarily large common factor and the optimal volume $V^\\ast$ is arbitrarily large relative to $\\bar q$.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhike Peng"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.23547",
+  "likes_count": 0,
+  "publishedAt": "2026-10-16",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Automated market makers (AMMs) are central to decentralized exchanges, but their reserve curves make mechanism design different from classical double auctions. We study a batch double auction with…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Uniform-Price Mechanism Design for Automated Market Makers",
+  "url": "https://arxiv.org/abs/2610.23547",
+  "use_case": ""
+}

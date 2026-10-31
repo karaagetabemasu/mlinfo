@@ -1,0 +1,28 @@
+{
+  "abstract": "Although spiking neural networks (SNNs) show promise in energy-efficient computing through event-driven computation and stateful temporal processing, their recurrent membrane dynamics render their training inherently sequential and inefficient for long sequences. Existing methods achieve full-sequence parallelism in SNNs through two main strategies: redesigning or approximating spiking dynamics to avoid reset-coupled temporal dependencies, or relying on iterative relaxed fixed-point solvers that suffer from excessive memory costs and iteration-dependent backward overhead. To address these limitations, we present FidLIF, a novel framework that reconciles the incremental update and hard-reset behavior of standard spiking LIF neurons with parallel forward propagation and BPTT-equivalent backward propagation. FidLIF iteratively recovers the full-sequence membrane-potential trajectory in parallel. By exploiting the lower bidiagonal structure induced by the local recurrence of LIF neurons, FidLIF formulates each forward trajectory correction and backward adjoint propagation as associative scans with an $O(\\log T)$ temporal depth. This formulation also supports input-dependent neuronal parameters and allows the same neuron to perform full-sequence parallel training and incremental step-by-step inference at deployment. In our numerical convergence evaluation, FidLIF achieves a mean absolute error below $10^{-7}$ relative to the matched serial relaxed LIF dynamics, while yielding gradients numerically equivalent to exact BPTT. Our Triton implementation delivers favorable long-sequence latency and memory scaling, while achieving competitive performance on four sequential classification benchmarks. By reconciling parallel training with step-by-step execution, FidLIF enables high-fidelity spiking dynamics to benefit from parallel hardware without compromising incremental inference at deployment.",
+  "abstract_ja": "",
+  "authors": [
+    "Kaixiang He",
+    "Yujie Wu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.16924",
+  "likes_count": 0,
+  "publishedAt": "2026-10-12",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "Although spiking neural networks (SNNs) show promise in energy-efficient computing through event-driven computation and stateful temporal processing, their recurrent membrane dynamics render their…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "FidLIF: Parallel Training of High-Fidelity Spiking Neurons with Exact BPTT",
+  "url": "https://arxiv.org/abs/2610.16924",
+  "use_case": ""
+}

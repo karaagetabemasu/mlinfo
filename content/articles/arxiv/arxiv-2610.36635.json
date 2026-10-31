@@ -1,0 +1,31 @@
+{
+  "abstract": "Miner extractable value (MEV) poses a persistent challenge for blockchain ecosystems. It arises from the fact that a block builder can exploit its unilateral control over transaction inclusion and ordering to extract profit, potentially at users' expense. Recent work has explored consensus-aided mechanism design to mitigate MEV. This approach combines generic consensus-layer guarantees with application-layer mechanisms that use these guarantees to address application-specific MEV problems. Prior work exemplifies this approach for automated market makers (AMMs). When the consensus layer offers fair sequencing, which orders transactions according to their arrival times, their proposed mechanism achieves incentive compatibility (IC) and weak local efficiency (wLE). Informally, IC rules out profitable strategic deviations by users and builders. Meanwhile, wLE ensures that after execution, any order willing to trade at the initial price cannot benefit from further trade with the pool at the ending marginal price. In this work, we resolve the main open question left by prior works: whether IC and wLE can be achieved under plain consensus (e.g., current Ethereum) without fair sequencing. We prove that no deterministic, anonymous batch AMM can achieve both properties. The impossibility holds even when the consensus layer guarantees censorship resilience and block space is unlimited, establishing the first separation between censorship resilience and fair sequencing in the context of decentralized mechanism design. Our impossibility proof combines three strategic capabilities: creating Sybil identities, over-reporting budgets, and misreporting values. We further show the tightness of our impossibility result: removing any one from the strategy space restores feasibility under censorship resilience. Specifically, we construct a mechanism achieving IC and wLE for each restricted setting.",
+  "abstract_ja": "",
+  "authors": [
+    "Chengkai Zhang",
+    "Lirong Xia",
+    "Elaine Shi",
+    "Mengqian Zhang",
+    "Qishen Han"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.36635",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "model-free",
+  "summary": "Miner extractable value (MEV) poses a persistent challenge for blockchain ecosystems. It arises from the fact that a block builder can exploit its unilateral control over transaction inclusion and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Tight Characterizations of AMM Mechanism Design under Weak Efficiency",
+  "url": "https://arxiv.org/abs/2610.36635",
+  "use_case": ""
+}

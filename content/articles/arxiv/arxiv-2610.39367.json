@@ -1,0 +1,35 @@
+{
+  "abstract": "World Action Models (WAMs) can condition robot actions on generated visual futures, but this additional context is neither cost-free nor uniformly beneficial. We examine what a predicted future actually changes: the action delta $Δa$ between the future-conditioned and future-free execution paths of the same model. Under a shared WAM checkpoint, this delta barely shifts average benchmark success ($+0.8$ points on LIBERO, $-0.8$ on RoboTwin~2.0), while generating visual futures increases inference latency by 1.7--1.9$\\times$. These aggregate metrics conceal a concentrated failure mode that we term \\emph{future-induced negative transfer}: while predictive deltas benefit long-horizon tasks ($+2.4$ points on LIBERO-Long) and remain negligible on most routine manipulations, they induce severe degradation on precision tasks---with \\emph{Press Stapler} and \\emph{Place Can Basket} losing 54.0 and 34.0 points, recurring as top failure modes across independently trained WAM variants. We introduce \\textbf{Utility-WAM} for in-place correction of future-conditioned control. Its primary learning component is a residual adapter that repairs future-induced velocity deltas under a frozen shared WAM by aligning them with ground-truth dynamic guidance and penalizing excess error beyond the future-free baseline. The adapter selectively eliminates the majority of severe task drops (reducing losses to 6.0 and 14.0 points) while preserving long-horizon foresight. To eliminate superfluous video computation, a lightweight pre-generation gate reuses counterfactual action outcomes to selectively bypass video generation on 75.5\\% of RoboTwin queries, cutting latency by 38\\% while improving average success to 93.3\\% on RoboTwin~2.0 and 98.9\\% on LIBERO. On physical bimanual manipulation across three real-world tasks, Utility-WAM succeeds in 53 of 60 trials, compared to 43 for FAST-WAM.",
+  "abstract_ja": "",
+  "authors": [
+    "Feihong Zhang",
+    "Xi Lin",
+    "Yulong Shi",
+    "Zuxing Lu",
+    "Yanghong Mei"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39367",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "World Action Models (WAMs) can condition robot actions on generated visual futures, but this additional context is neither cost-free nor uniformly beneficial. We examine what a predicted future…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Utility-WAM: Correcting Future-Induced Action Changes",
+  "url": "https://arxiv.org/abs/2610.39367",
+  "use_case": ""
+}

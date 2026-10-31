@@ -1,0 +1,32 @@
+{
+  "abstract": "Synthetic data is an important data source in the AI era. This paper studies the generation of mixed-type tabular synthetic data in federated settings, where two key challenges arise: ensuring distributional fidelity and effectively handling mixed-type data. We propose Federated Integrative Two-Step Synthesis (FITS), a framework for mixed-type tabular data synthesis. At its core is a two-step federated algorithm for estimating conditional cumulative distribution functions (CDFs) using local linear regression. Building on this algorithm, we develop a federated synthesis procedure based on the probability chain rule to ensure distributional fidelity. To handle mixed-type data, FITS introduces a continualization method that lifts discrete variables into a continuous space and recovers their discrete distributions without loss at both the density-function and CDF levels. This transformation provides a unified continuous representation of mixed-type variables, facilitating the application of local linear regression and synthetic data generation. Our theoretical analysis characterizes the conditional density and cumulative distribution functions of the continualized mixed-type variables and establishes the uniform convergence of the resulting federated conditional CDF estimators. Experiments demonstrate that FITS-generated synthetic data improves downstream task performance for all clients, with the benefits depending on how the synthetic data is used.",
+  "abstract_ja": "",
+  "authors": [
+    "Zilong Cao",
+    "Hai Zhang",
+    "Xuan Bi"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.33403",
+  "likes_count": 0,
+  "publishedAt": "2026-10-24",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Synthetic data is an important data source in the AI era. This paper studies the generation of mixed-type tabular synthetic data in federated settings, where two key challenges arise: ensuring…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "tabular"
+    ],
+    "task": [
+      "generation",
+      "regression"
+    ]
+  },
+  "title": "Faithful Federated Tabular Data Synthesis",
+  "url": "https://arxiv.org/abs/2610.33403",
+  "use_case": ""
+}

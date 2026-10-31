@@ -1,0 +1,32 @@
+{
+  "abstract": "Prompt-tuning has emerged as a parameter-efficient technique for adapting large-scale vision-language models (VLMs) to downstream tasks while keeping the pre-trained weights frozen. However, prompt-tuned VLMs often suffer from a base-to-novel dual miscalibration problem, where models typically show underconfidence on base classes and overconfidence on novel classes. Current VLM calibration approaches address this dual miscalibration either separately or jointly, but lack a geometric understanding of the hyperspherical embedding space and thus fail to exploit angular discriminative properties to adjust distorted decision boundaries. To address this, we propose M-PFT, a novel angular-margin approach for prompt tuning that introduces two complementary objectives to promote class discriminability and semantic anchoring. This enlarges the angular margin by 1) minimizing the maximum cosine similarity between tunable class embeddings to reduce embedding collapse and 2) minimizing the angular distance between each tunable embedding and its corresponding zero-shot embedding to preserve semantic geometry. Extensive experiments across 9 prompt-tuning methods with various backbones on 15 diverse datasets show that our approach reduces the average calibration error on novel classes, while remaining competitive on base classes and maintaining comparable accuracy. Further analyses reveal that M-PFT effectively adjusts distorted decision boundaries induced by prompt tuning while preserving the pre-trained embedding space, improving calibration with negligible computational overhead.",
+  "abstract_ja": "",
+  "authors": [
+    "Shihab Aaqil Ahamed",
+    "Mohamed Ansaff",
+    "Nang Khin Myat Lay Phyu",
+    "Udaya Sampath K. Perera Miriya Thanthrige",
+    "Chamira U. S. Edussooriya"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39861",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Prompt-tuning has emerged as a parameter-efficient technique for adapting large-scale vision-language models (VLMs) to downstream tasks while keeping the pre-trained weights frozen. However,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "M-PFT: Angular Margin for Calibrated Prompt-Tuning of Fine-Tuned Vision-Language Models",
+  "url": "https://arxiv.org/abs/2610.39861",
+  "use_case": ""
+}

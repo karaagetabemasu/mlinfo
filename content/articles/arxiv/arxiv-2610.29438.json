@@ -1,0 +1,29 @@
+{
+  "abstract": "Recently, multi-node inertial measurement unit (multi-IMU) systems have shown promise for robust odometry in legged robots. Multi-IMU fusion can improve legged robot odometry but requires accurate spatiotemporal calibration among the sensors. Existing multi-IMU calibration methods, designed for aerial or handheld platforms, face challenges on legged robots because routine locomotion may provide insufficient excitation, while foot slips, impacts, and vibrations introduce measurement disturbances. To address these challenges, we propose A2I-Calib++, a kinematics-driven anti-noise active calibration framework for body-mounted IMUs covered by the robot kinematic model. It estimates temporal offsets, extrinsic rotations and translations, and inertial biases through temporal correlation search followed by analytic spatial and bias estimation, without artificial calibration targets or complex parameter tuning for the target IMU. A2I-Calib++ comprises three core modules: 1) a Noise-Isotropy-Inspired Trajectory supported by a finite-horizon conditioning proposition that generates sufficient excitation to limit noise sensitivity; 2) a constraint-aware Adversarial Motion Priors controller that combines the anti-noise excitation with a rolling-contact reward for contact-aware execution; and 3) a contact-constrained virtual IMU that fuses pre-calibrated calf IMUs and joint kinematics under a rolling-contact model to construct the calibration reference. Furthermore, evaluations on both simulation and real-world quadruped platforms demonstrate notably reduced noise sensitivity and simulation calibration errors compared to conventional methods, together with repeatable real-world calibration and improved proprioceptive odometry accuracy for legged robots.",
+  "abstract_ja": "",
+  "authors": [
+    "Fangyu Jiang",
+    "Chaoran Xiong",
+    "Kehui Ma",
+    "Zhen Sun",
+    "Zeyu Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.29438",
+  "likes_count": 0,
+  "publishedAt": "2026-10-21",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Recently, multi-node inertial measurement unit (multi-IMU) systems have shown promise for robust odometry in legged robots. Multi-IMU fusion can improve legged robot odometry but requires accurate…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "A2I-Calib++: A Kinematics-Driven Anti-noise Active Calibration Framework for Whole-Body Multi-IMU Systems on Legged Robots",
+  "url": "https://arxiv.org/abs/2610.29438",
+  "use_case": ""
+}

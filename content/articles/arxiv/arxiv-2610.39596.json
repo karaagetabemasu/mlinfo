@@ -1,0 +1,25 @@
+{
+  "abstract": "Differentiable decision trees (DDTs) support end-to-end optimisation and explicit decision paths, but dense oblique splits can obscure the role of individual input features. We propose the Euclidean-Concentrated Differentiable Decision Tree (EU-DDT), which regularises the relative absolute feature weights at each internal node using their normalised squared Euclidean distance from the uniform distribution. This encourages dominance by a small number of features while retaining probabilistic soft routing. Across five matched random seeds, EU-DDT reduces the mean effective number of features from 8.94 to 1.54 on Wine and from 45.28 to 9.06 on Digits. Mean test accuracy changes from 100.0% to 93.9% on Wine and from 92.3% to 94.6% on Digits, illustrating the dataset-dependent trade-off between concentration and predictive performance. We also use EU-DDT to parameterise a PPO actor with an MLP critic. Two random-seed runs per environment show a consistent qualitative increase in concentration while preserving effective task performance. In representative CartPole-v1 and MiniPacman runs, EU-DDT reaches 100% final evaluation success, while mean node concentration increases from 0.1272 to 0.7179 and from 0.0437 to 0.7237, respectively. These results support EU regularisation as a mechanism for reducing node-level feature complexity; the reinforcement-learning evidence remains preliminary because only two seeds are evaluated.",
+  "abstract_ja": "",
+  "authors": [
+    "Qiqi Yang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39596",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Differentiable decision trees (DDTs) support end-to-end optimisation and explicit decision paths, but dense oblique splits can obscure the role of individual input features. We propose the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Improving the Intrinsic Interpretability of Differentiable Decision Trees through Euclidean Feature-Concentration Regularisation",
+  "url": "https://arxiv.org/abs/2610.39596",
+  "use_case": ""
+}

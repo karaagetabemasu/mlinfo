@@ -1,0 +1,31 @@
+{
+  "abstract": "Reinforcement learning holds the promise of robots that learn manipulation skills from interaction alone, without pretrained priors or demonstration data. In practice, on-policy methods such as PPO routinely stall on long-horizon, contact-rich tasks: dense reward shaping carries the policy through stages, yet stitching them together and discovering sparsely rewarded events rarely succeeds. We trace this failure to the missing action discrimination in state-value credit assignment: a state-value critic judges progress only by episode outcomes, so when the policy converges to a partial solution all outcomes coincide, and improvement stops because no action can prove better than another. We therefore extend PPO with an action conditioned value critic which, can compare the executed action with alternatives sampled at the same state and aid the learning signal. Combined with Generalized Advantage Estimation and a bound on exploration noise, we show how the extended algorithm escapes the plateau and completes precise peg insertion within a training budget where PPO with identical exploration fails.",
+  "abstract_ja": "",
+  "authors": [
+    "Giovanni Minelli",
+    "Giulio Turrisi",
+    "Lorenzo Amatucci",
+    "Victor Barasuol",
+    "Claudio Semini"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38034",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Reinforcement learning holds the promise of robots that learn manipulation skills from interaction alone, without pretrained priors or demonstration data. In practice, on-policy methods such as PPO…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "Learning from Relative Action Credit for Escaping Local Minima",
+  "url": "https://arxiv.org/abs/2610.38034",
+  "use_case": ""
+}

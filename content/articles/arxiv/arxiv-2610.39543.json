@@ -1,0 +1,34 @@
+{
+  "abstract": "Reasoning informs decision-making by connecting intended actions with their expected consequences. Recent vision-language-action (VLA) models incorporate embodied chains of thought (ECoTs) to guide action generation. However, such guidance remains implicit, as actions are conditioned on ECoTs rather than explicitly optimized to align with them. We introduce CoRAct, a consequence-grounded reasoning-to-action alignment framework that explicitly aligns reasoning and action through reward-guided optimization in action noise space. CoRAct formulates two physically grounded ECoT components as verifiable signals: movement specifies intended motion, while waypoints encode expected spatial consequences. A unified Mixture-of-Transformers jointly models ECoT reasoning, action generation, and action-conditioned future prediction. For candidate actions generated from sampled noise, CoRAct computes alignment rewards based on movement consistency and agreement between predicted outcomes and specified waypoints. These rewards guide group-relative optimization of the initial noise distribution, steering action generation toward consistency with intended actions and expected consequences. Experiments across RoboCasa, VLABench, and real-world manipulation tasks demonstrate improvements in task success, generalization, and reasoning-execution alignment over strong ECoT-based VLA baselines. CoRAct also grounds externally provided ECoTs in executable behavior, enabling zero-shot adaptation to novel scenarios by leveraging knowledge from powerful vision-language models. Project page and dataset: https://onlyxingxingzyx.github.io/CoRAct/",
+  "abstract_ja": "",
+  "authors": [
+    "Yixue Zhang",
+    "Wenke Xia",
+    "Kun Wu",
+    "Wenbo Yu",
+    "Pei Ren"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39543",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Reasoning informs decision-making by connecting intended actions with their expected consequences. Recent vision-language-action (VLA) models incorporate embodied chains of thought (ECoTs) to guide…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "From Reasoning to Action: Consequence-Grounded Alignment for Vision-Language-Action Models",
+  "url": "https://arxiv.org/abs/2610.39543",
+  "use_case": ""
+}

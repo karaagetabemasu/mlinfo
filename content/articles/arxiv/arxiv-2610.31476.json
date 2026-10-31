@@ -1,0 +1,33 @@
+{
+  "abstract": "Open-vocabulary 3D semantic maps have emerged as a key spatial memory representation for long-horizon robot autonomy, enabling robots to reason about objects, their spatial relationships, and past observations across time. However, existing object-centric semantic maps are primarily designed for static environments and rely on an append-only point integration strategy, where newly observed points are accumulated but previously integrated points are rarely reevaluated. Consequently, perception errors accumulate over time, and outdated points persist after objects move or disappear. Although recent dynamic mapping methods update object-level representations in changing scenes, they do not explicitly revise noisy or obsolete points within each object. We propose an online refinable semantic mapping framework that continuously refines object representations through probabilistic point-level confidence updating. Each object point maintains a confidence score that is updated online using multi-view temporal evidence: consistent observations reinforce reliable points, while inconsistent segmentation masks, depth measurements, and visibility cues suppress spurious and outdated points. Combined with object tracking and re-identification to preserve instance identities under motion and relocation, our framework enables object-centric semantic maps to be continuously refined rather than monotonically accumulated. Experiments demonstrate improved mapping accuracy over the previous method by 3.46% on Replica and 2.55% on ScanNet, show robustness in dynamic environments and under perception noise, and provide an effective spatial memory for object navigation and embodied question-answering with success rates of 82.4% and 76.7%.",
+  "abstract_ja": "",
+  "authors": [
+    "Taimeng Fu",
+    "Yi Du",
+    "Zitong Zhan",
+    "Qiwei Du",
+    "Shaoshu Su"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.31476",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Open-vocabulary 3D semantic maps have emerged as a key spatial memory representation for long-horizon robot autonomy, enabling robots to reason about objects, their spatial relationships, and past…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "Point-Level Refinable Semantic Mapping for Spatial Understanding",
+  "url": "https://arxiv.org/abs/2610.31476",
+  "use_case": ""
+}

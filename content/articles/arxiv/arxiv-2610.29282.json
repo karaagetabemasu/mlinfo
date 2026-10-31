@@ -1,0 +1,33 @@
+{
+  "abstract": "World Action Models (WAMs) have shown strong potential for robot manipulation by jointly learning visual dynamics and executable actions. However, their video and action objectives do not explicitly constrain the 3D geometry that is crucial for precise manipulation. Recently, geometry-aware WAMs introduce depth or 4D prediction branches, whereas representation alignment methods supervise intermediate WAM features with pretrained 3D foundation models. Yet we find that such pointwise alignment benefits the video features but degrades action learning, since dense geometric feature targets overly restrict compact action features. To address this limitation, we propose Relational Geometry Forcing (RGF), which transfers geometric priors from a frozen 3D foundation model by aligning pairwise feature relations instead of pointwise features. Specifically, RGF applies three complementary relational objectives, where intra-frame and cross-view relations transfer scene geometry and multi-view correspondence to the video features, while action-temporal relations couple action dynamics to geometric scene evolution. Applied only during training, RGF requires no explicit geometry branch or extra inference module. Extensive experiments in simulation and the real world demonstrate the effectiveness of Relational Geometry Forcing, showing consistent gains across diverse manipulation scenarios and WAM paradigms.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuan Xu",
+    "Yixiang Chen",
+    "Qisen Ma",
+    "Jiabing Yang",
+    "Peiyan Li"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.29282",
+  "likes_count": 0,
+  "publishedAt": "2026-10-21",
+  "source": "arxiv",
+  "subcategory": "3d",
+  "summary": "World Action Models (WAMs) have shown strong potential for robot manipulation by jointly learning visual dynamics and executable actions. However, their video and action objectives do not explicitly…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Relational Geometry Forcing for World Action Models",
+  "url": "https://arxiv.org/abs/2610.29282",
+  "use_case": ""
+}

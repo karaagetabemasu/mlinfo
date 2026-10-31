@@ -1,0 +1,30 @@
+{
+  "abstract": "Electric vehicles produce no tailpipe emissions, but charging them produces emissions that depend on the time-varying generation mix of the electricity consumed. We study an Electric Vehicle Routing Problem with a carbon-aware objective that accounts for charging-related emissions alongside conventional routing costs. The problem determines routing, charging, and waiting decisions, allowing charging demand to be shifted toward periods with lower grid carbon intensity. Because these decisions depend on forecasts of future carbon intensity, we propose a decision-focused learning approach so that the training of the model employed for predicting the carbon intensity of the grid over time is solver-aware. In particular, we train a linear predictor using approximate SPO+ directions and employ a time-limited Large Neighborhood Search followed by exact postprocessing as the underlying solver. Experiments on realistic Germany-based instances show that explicitly considering charging-related emissions reduces realized emissions by 28.76% on average relative to carbon-blind optimization, although at the expense of higher non-carbon operating cost. Moreover, decision-focused training reduces realized total cost by 2.30% on average relative to conventional prediction-focused learning and performs better on 75.5% of the test instances, despite substantially lower pointwise predictive accuracy. Finally, we show that its average advantage remains positive across varied solver configurations and carbon-cost weights.",
+  "abstract_ja": "",
+  "authors": [
+    "Jaume Reixach",
+    "Wanru Chen",
+    "Jiaming Wu",
+    "Balázs Kulcsár"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39645",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Electric vehicles produce no tailpipe emissions, but charging them produces emissions that depend on the time-varying generation mix of the electricity consumed. We study an Electric Vehicle Routing…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Carbon-Aware Electric Vehicle Routing Problem with Decision-Focused Learning",
+  "url": "https://arxiv.org/abs/2610.39645",
+  "use_case": ""
+}

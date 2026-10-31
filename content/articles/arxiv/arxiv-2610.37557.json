@@ -1,0 +1,30 @@
+{
+  "abstract": "Threading a quadrotor through a moving narrow gap is a demanding test of agile flight, requiring centimeter-level spatial alignment and precise temporal execution. We address this challenge using a control policy that operates directly on onboard visual and inertial measurements to output collective thrust and body-rate commands. The task is difficult because success lies on a thin feasible manifold: small errors in timing, position, attitude, or visual observability cause collision. Prior planning and learning methods rely on privileged state, teachers, planners, or distillation; learning dynamic narrow-gap traversal directly, from scratch, remains open. We introduce a differentiable moving-gap formulation that gates centering, alignment, and smooth collision terms by signed distance to a time-varying gap plane, turning a sparse traversal event into a dense pathwise objective. We integrate this formulation into a visual-feature-to-command policy trained in one stage from random initialization, without a teacher, planner, or distillation. We validate our approach in both synthetic and real-world experiments. In controlled benchmarks, we demonstrate that pathwise gradients significantly outperform score-function gradients for precision-critical tasks, yielding a 99.3% success rate in simulation after only a few minutes of training on a single GPU. Furthermore, the policy transfers directly to a real quadrotor, successfully crossing a dynamic narrow gap from varied initial conditions using onboard sensing and inertial measurements, achieving an 80% success rate over 10 physical trials.",
+  "abstract_ja": "",
+  "authors": [
+    "Riccardo Bianco",
+    "Yunfan Ren",
+    "Jiaxu Xing",
+    "Davide Scaramuzza"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.37557",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Threading a quadrotor through a moving narrow gap is a demanding test of agile flight, requiring centimeter-level spatial alignment and precise temporal execution. We address this challenge using a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Learning Visuomotor Quadrotor Flight Through Dynamic Narrow Gaps via Differentiable Simulation",
+  "url": "https://arxiv.org/abs/2610.37557",
+  "use_case": ""
+}

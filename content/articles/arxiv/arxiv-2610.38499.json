@@ -1,0 +1,31 @@
+{
+  "abstract": "Continuous space-time video super-resolution produces a high-resolution, highframe-rate video from a low-resolution, low-frame-rate one at arbitrary spatial scales and temporal instants. Classical spatial multi-frame super-resolution has shown that detail beyond a single frame's sampling limit can be recovered by aligning complementary observations with sub-pixel precision and accumulating them on a finer grid. Existing learning-based methods largely depart from this principle: some align and fuse frames only at low resolution before regressing a continuous high-resolution representation, while others interpolate each frame to the output resolution before splatting. In both cases, the per-frame samples are resampled before fusion, so their sub-pixel positions are lost before frames are combined. Restoring this principle in a learned continuous model raises two challenges: estimating sub-pixel motion at unobserved times, and handling holes and occlusions when splatting a coarse grid onto a finer one. We address the first by predicting per-pixel continuous trajectories that refine linear optical-flow paths with smooth residual motion, using features integrated over the full video sequence. We address the second by directly splatting consecutive low-resolution features in a learned latent space onto a high-resolution grid at their predicted sub-pixel positions with predicted visibility weights, before a decoder resolves remaining ambiguities. This makes temporal interpolation and multi-frame superresolution a single operation. Our method improves both reconstruction fidelity and perceptual quality on multiple standard benchmarks over the state of the art, while running up to an order of magnitude faster.",
+  "abstract_ja": "",
+  "authors": [
+    "Vincent Herfeld",
+    "Eva Coupet{é}",
+    "Julien Mairal",
+    "Jean Ponce"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38499",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Continuous space-time video super-resolution produces a high-resolution, highframe-rate video from a low-resolution, low-frame-rate one at arbitrary spatial scales and temporal instants. Classical…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video"
+    ],
+    "task": []
+  },
+  "title": "Residual Motion Splatting for Continuous Space-Time Video Super-Resolution",
+  "url": "https://arxiv.org/abs/2610.38499",
+  "use_case": ""
+}

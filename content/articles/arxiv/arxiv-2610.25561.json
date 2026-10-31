@@ -1,0 +1,31 @@
+{
+  "abstract": "Agents that run for a long time have a memory problem, and it is not the one most systems optimize for. Storing every trace and retrieving the nearest neighbors works early and quietly stops working later: the store fills up with failures the agent then repeats, and with facts that were true fifty turns ago. RSPM (Recursive Self-Pruning Memory) borrows the fix biology already found. At intervals the agent sleeps. It clusters its recent failures, distills each cluster into a short rule, and deletes the raw episodes it just learned from. Rules decay unless something reinforces them, and rules that recur across many contexts get promoted into general ones. We tested this on three settings with little in common: a difficulty-calibrated SWE-bench simulation, temporal consistency across 12 conversational benchmarks, and long-horizon QA on LoCoMo-10. All three improve, by 9.1, 11.9, and 7.6 points respectively. More interestingly, the two studies that instrument the store itself converge on nearly the same operating point without being tuned toward it: roughly 93% fewer retry loops and roughly 30% fewer stored entries. That hints that knowing what to forget is a general property of agent memory rather than a benchmark-specific trick.",
+  "abstract_ja": "",
+  "authors": [
+    "Kargi Chauhan",
+    "Sadiba Nusrat Nur",
+    "Pratibha Revankar",
+    "Kyle Montgomery",
+    "Chenguang Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.25561",
+  "likes_count": 0,
+  "publishedAt": "2026-10-18",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Agents that run for a long time have a memory problem, and it is not the one most systems optimize for. Storing every trace and retrieving the nearest neighbors works early and quietly stops working…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Let Them Sleep: Recursive Self-Pruning Memory for Long-Horizon LLM Agents",
+  "url": "https://arxiv.org/abs/2610.25561",
+  "use_case": ""
+}

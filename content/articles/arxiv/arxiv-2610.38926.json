@@ -1,0 +1,32 @@
+{
+  "abstract": "Vision-language models (VLMs) increasingly process multiple views of the same scene, but it remains unclear whether they integrate these observations into a coherent scene-level representation. Existing multi-image evaluations do not isolate this capability, as tasks may admit correct solutions through independent per-view processing without requiring cross-view correspondence. We introduce OneScene-Bench, a controlled benchmark designed to explicitly distinguish when cross-view integration is necessary. Our benchmark evaluates three complementary capabilities on real-world multi-view scenes: unique object counting, cross-view consistency, and spatial reasoning. For counting, we control object overlap across views to separate cases solvable by simple per-view aggregation from those requiring instance-level correspondence. For consistency, we introduce localized edits in shared and view-specific regions, testing whether models distinguish genuine scene contradictions from differences caused by viewpoint and visibility. For spatial reasoning, we construct object relations that require combining spatial evidence across viewpoints to compare physical proximity. We evaluate twelve state-of-the-art open-weight and proprietary VLMs and find that counting accuracy drops substantially on complementary views, ranging from 4.5-50.0%, compared with 45.5-81.5% on complete-overlap examples. Moreover, cross-view consistency remains around 50% across models, including recent proprietary VLMs, despite substantially stronger performance on spatial reasoning. Our results reveal a substantial gap between processing multiple images and integrating evidence across them, highlighting the need for evaluations that explicitly test scene-level multi-view understanding. Code and data are available at https://github.com/swathisuhas/OneScene-Bench.",
+  "abstract_ja": "",
+  "authors": [
+    "Swathi Suhas",
+    "Anurag Das",
+    "Bernt Schiele",
+    "Jonas Fischer"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/swathisuhas/OneScene-Bench",
+  "hasCode": true,
+  "id": "arxiv-2610.38926",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Vision-language models (VLMs) increasingly process multiple views of the same scene, but it remains unclear whether they integrate these observations into a coherent scene-level representation.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "OneScene-Bench: Do Vision-Language Models Integrate Evidence Across Views?",
+  "url": "https://arxiv.org/abs/2610.38926",
+  "use_case": ""
+}

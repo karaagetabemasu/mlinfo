@@ -1,0 +1,28 @@
+{
+  "abstract": "Numbers computed from trained models, such as an example's difficulty or a model's benchmark lead, change with seed and prompt. We ask when such measurements can be corrected or compared. Noise shrinks correlations, and the textbook correction divides by the square root of two estimated reliabilities. On two CIFAR-100 difficulty scores, it returned correlations above one in 70 of 100 classes. We prove that its mean squared error is infinite even when the correlation and the reliabilities use separate seeds. Our rule corrects only when both reliabilities pass a significance test, then divides by their upper confidence bounds. Its output is always bounded, and its coverage guarantees assume Gaussian noise. It helps once reliability is well estimated, more than halving the error with 500 simulated units. Prompt settings can reverse rankings. On ARC, Qwen2-1.5B trails Llama-3.2-3B by 3.8 points with no examples in the prompt and leads by 16.6 with two. Across four benchmarks, averaging the two settings names one winner for 15 of 16 such reversals. We compare models within each setting, controlling family-wise error asymptotically in the number of items for a fixed prompt grid. Aligning embedding coordinates across seeds raises held-out per-dimension reliability from 0.003 to 0.813.",
+  "abstract_ja": "",
+  "authors": [
+    "Yifeng Li",
+    "Ziang Ni"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38015",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Numbers computed from trained models, such as an example's difficulty or a model's benchmark lead, change with seed and prompt. We ask when such measurements can be corrected or compared.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Measured or Real? When Model-Derived Measurements Can Be Corrected or Compared",
+  "url": "https://arxiv.org/abs/2610.38015",
+  "use_case": ""
+}

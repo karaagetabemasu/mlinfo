@@ -1,0 +1,33 @@
+{
+  "abstract": "Edited endpoint images make the target of an image-to-video transition explicit and can improve transition completion, but also preserve context in the source image's layout. Full-frame endpoint conditioning turns this preserved context into requirements on the video's final state, potentially inducing temporal artifacts. We measure discontinuity with Hard-Cut (HC), late background reversal with Background Motion Reversal (BMR), and motion suppression with Dynamic Degree (DD). These artifacts appear across five video models spanning training-free and learned endpoint conditioning, in model-specific forms. We study Partial, a selective conditioning scheme that constrains only an edit-relevant region estimated from image-editor attention and leaves the remaining terminal content to the video model. Across three backbones on TC-Bench-I2V, Partial reduces temporal artifacts relative to full-frame conditioning, with no significant difference in Transition Completion Ratio (TCR); on Wan2.2-Turbo, uniformly weakening conditioning does not reproduce these reductions. A donor-context intervention keeps full-frame conditioning and replaces only the context outside the edit-relevant region with the final frame of a Partial video. It lowers HC and BMR on HunyuanVideo-1.5 and lowers BMR while restoring DD on Wan2.2-Turbo, with no significant difference in TCR, so constraint extent alone does not account for these artifacts. Together, these findings suggest that edited endpoints should serve as partial future goals, although edit relevance does not guarantee future validity. Code and data will be released at https://github.com/wannagetacat/Edited-Endpoints-I2V.",
+  "abstract_ja": "",
+  "authors": [
+    "Sihyun Kim",
+    "Sanghyun Jo",
+    "Kyungsu Kim"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/wannagetacat/Edited-Endpoints-I2V",
+  "hasCode": true,
+  "id": "arxiv-2610.39179",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "video",
+  "summary": "Edited endpoint images make the target of an image-to-video transition explicit and can improve transition completion, but also preserve context in the source image's layout. Full-frame endpoint…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Edited Endpoints as Partial Goals for Image-to-Video Generation",
+  "url": "https://arxiv.org/abs/2610.39179",
+  "use_case": ""
+}

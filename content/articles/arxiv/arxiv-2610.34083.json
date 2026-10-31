@@ -1,0 +1,27 @@
+{
+  "abstract": "Time-sensitive neuromorphic architectures require predictable interconnects to preserve precise event timing. Statically scheduled time-division-multiplexed (TDM) circuit-switched networks-on-chip (NoCs) provide deterministic latency at the cost of linear configuration-memory scaling with schedule depth. Furthermore, jointly optimizing task placement, routing, and scheduling creates an intractable combinatorial search space. Existing deployment frameworks also ignore algorithmic axonal delays by forcing immediate spike injections that increase network contention. This paper proposes a hardware-software co-design to address these challenges. ChroNoC is a tableless TDM NoC that embeds precomputed full-grid broadcast trees into combinational logic as a fixed routing substrate. This fixed substrate reduces deployment to a spatial search via Delay-Aware Reservations and Spatial Annealing (DARSA). DARSA converts axonal delays into periodic scheduling slack to stagger network injections and reduce communication overhead. In a 130nm CMOS process, ChroNoC reduces per-hop energy consumption by more than 75% relative to the evaluated circuit- and packet-switched baselines. On UCI-HAR and N-MNIST workloads, DARSA reduces per-timestep communication cycles by approximately 60% and 45%, respectively, compared with immediate transmission, while also reducing provisioned communication memory. These results demonstrate how combining lightweight TDM switch design with delay-aware deployment improves both hardware efficiency and system-level communication performance while preserving neural event timing.",
+  "abstract_ja": "",
+  "authors": [
+    "Mohammad Rasoul Roshanshah",
+    "Mehdi Modarressi",
+    "Saeed Safari"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.34083",
+  "likes_count": 0,
+  "publishedAt": "2026-10-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Time-sensitive neuromorphic architectures require predictable interconnects to preserve precise event timing. Statically scheduled time-division-multiplexed (TDM) circuit-switched networks-on-chip…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "ChroNoC: A Tableless TDM Circuit-Switched NoC With Delay-Aware Deployment for Time-Sensitive Neuromorphic Computing",
+  "url": "https://arxiv.org/abs/2610.34083",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Clinical scalp electroencephalography (EEG) offers a noninvasive window into neural dynamics of neuropsychiatric disorders. However, discriminative deep models often lack anatomically indexed physiological interpretability. We propose NeuroDyn-EEG, a pretraining framework integrating generative priors from neural dynamics. It couples an extended Jansen-Rit neural mass model, leadfield-based source projection, and simulation-based parameter inversion. Trained on synthetic parameter-EEG pairs within physiological ranges, NeuroDyn-EEG estimates 11 regional parameter families across 90 AAL regions plus one global parameter from standard 19-channel EEG, using only ~2.43M trainable parameters. We evaluate the framework across three levels. First, controlled simulations demonstrate robust parameter recovery under diverse noise conditions, while real resting-state EEG evaluations confirm spectral and phase consistency in an inverse-forward closed loop. Second, on four clinical benchmarks (AD65, PD31, Figshare MDD, and TUAB), NeuroDyn-EEG achieves competitive classification performance, securing the highest BACC, AUROC, and AUCPR on PD31 and MDD, and highest BACC on AD65. Third, post hoc regional analyses reveal disease-specific alterations: local synaptic connectivity C_1 involves the most altered regions in AD65, whereas the firing threshold theta ranks first in MDD, offering testable mechanistic hypotheses. Overall, NeuroDyn-EEG maps scalp EEG to anatomically indexed dynamical parameters, bridging representation learning and mechanistic neurophysiology. Code: https://github.com/Gnosis-Neurodynamics/NeuroDyn-EEG.",
+  "abstract_ja": "",
+  "authors": [
+    "Yi Cui",
+    "Tong Zhao",
+    "Jiaxin Lei",
+    "Chuyi Yang",
+    "Yifan Cui"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/Gnosis-Neurodynamics/NeuroDyn-EEG",
+  "hasCode": true,
+  "id": "arxiv-2609.36773",
+  "likes_count": 0,
+  "publishedAt": "2026-09-29",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Clinical scalp electroencephalography (EEG) offers a noninvasive window into neural dynamics of neuropsychiatric disorders. However, discriminative deep models often lack anatomically indexed…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "generation",
+      "embedding"
+    ]
+  },
+  "title": "NeuroDyn-EEG: An Interpretable Pre-trained Model for EEG Based on Neural Dynamics",
+  "url": "https://arxiv.org/abs/2609.36773",
+  "use_case": ""
+}

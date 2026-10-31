@@ -1,0 +1,27 @@
+{
+  "abstract": "Modern cameras correct color via two or three pre-calibrated 3x3 matrices interpolated by Correlated Color Temperature (CCT). This collapses the illuminant SPD to a scalar. LEDs, fluorescents, and mixed sources sit off the Planckian locus, and metameric illuminants with the same chromaticity demand different optimal CCMs that a CCT pipeline cannot distinguish. We recover the illuminant SPD instead using non-negative least squares against a basis dictionary, conditioned on the camera white point and a multi-channel ambient-light sensor (ALS). A closed-form 3x3 CCM is then fit per shot. On a synthetic benchmark of 300 illuminants and 3,100 reflectances, mean angular error drops from 1.89 to 1.20 degrees, with a 1.7x tail reduction on the LED-like off-Planckian group (n=45) where metameric ambiguity is tangible. The gain holds under realistic ALS imperfections and observation noise, and the same off-Planckian advantage carries over to 1,684 real measured SPDs.",
+  "abstract_ja": "",
+  "authors": [
+    "Shuwei Yue",
+    "Hongke Wei",
+    "Qiao Chen"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.40175",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Modern cameras correct color via two or three pre-calibrated 3x3 matrices interpolated by Correlated Color Temperature (CCT). This collapses the illuminant SPD to a scalar.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Beyond CCT: Multi-channel SPD recovery for per-shot camera color correction",
+  "url": "https://arxiv.org/abs/2610.40175",
+  "use_case": ""
+}

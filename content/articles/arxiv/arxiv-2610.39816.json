@@ -1,0 +1,33 @@
+{
+  "abstract": "World action models (WAMs) increasingly couple internal visual or world representations with action generation, making their world-to-action pathways a critical yet poorly understood source of robustness. We investigate when perturbations to these internal representations actually become behaviorally consequential, and uncover a pronounced mismatch between representation perturbability and closed-loop vulnerability: attack effectiveness varies sharply across visual K/V routes, while larger representation displacement does not reliably imply stronger control failure. Our analysis attributes this mismatch to the action-conditioned readout, where keys determine where action queries read and values determine what content they receive. This motivates an action-facing view of vulnerability, in which the effect of a perturbation depends on how it is routed into action generation rather than on representation-space magnitude alone. We instantiate this view with Tail-AV, a short-probe signal for identifying vulnerable routes, and operationalize it in PASA-KV, which selects action-facing K/V targets before training a fresh task-shared attack. Experiments across multiple WAM systems and a physical robot validate readout-informed target selection, demonstrate strong closed-loop attacks, and reveal substantial system-level differences in resistance.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhongbo Wu",
+    "Jiakai Huang",
+    "Zheng Zhang",
+    "Siyu Xu",
+    "Kaixiang Chen"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.39816",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "World action models (WAMs) increasingly couple internal visual or world representations with action generation, making their world-to-action pathways a critical yet poorly understood source of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "PASA-KV: Attacking Action-Facing Visual Routes in World Action Models",
+  "url": "https://arxiv.org/abs/2610.39816",
+  "use_case": ""
+}

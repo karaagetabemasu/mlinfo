@@ -1,0 +1,30 @@
+{
+  "abstract": "Efficient object detection on resource-constrained edge devices is essential for safety-critical applications such as fire-smoke monitoring. However, current lightweight frameworks, such as YOLO26, still rely on the parameter-dense multi-branch Feature Pyramid Network (FPN), preventing full exploitation of their lightweight advantage. Replacing FPN with YOLOF's single-input-single-output (SiSo) neck is a promising solution but causes substantial accuracy loss. To alleviate this, we propose YOLOF-MLD, a CPU-efficient multi-level distillation (MLD) framework that combines a YOLO26n backbone, a SiSo neck, and MLD. It aligns features at the backbone via sliced-semantics matching, neck with receptive-field matching, and response levels. On D-Fire and Annotated Fire-Smoke (AFS) datasets, YOLOF-MLD reduces the parameter count of YOLO26n by 35.7\\% and achieves a 62.3\\% speedup on Raspberry Pi 5, attaining 71.6% and 59.9% mAP@50, respectively, compared with 75.5% and 60.0% for YOLO26n. These results demonstrate a competitive accuracy--latency trade-off for edge deployment. Our code is available at https://github.com/XiaolongWU111/YOLOF---MLD/blob/main/README.md.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiaolong Wu",
+    "Liming Zheng",
+    "Zitong Liu",
+    "Yue Zheng"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/XiaolongWU111/YOLOF---MLD",
+  "hasCode": true,
+  "id": "arxiv-2610.39408",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Efficient object detection on resource-constrained edge devices is essential for safety-critical applications such as fire-smoke monitoring. However, current lightweight frameworks, such as YOLO26,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "YOLOF-MLD: A Multi-Level Distillation Framework for Efficient Object Detection",
+  "url": "https://arxiv.org/abs/2610.39408",
+  "use_case": ""
+}

@@ -1,0 +1,29 @@
+{
+  "abstract": "Pacing equilibria describe how budget-constrained advertisers clear an ad market, but computing one at production scale is hard when every request fills several slots: the allocation jumps whenever two campaigns' scores cross. We consider the first-price pacing equilibrium (FPPE) of auctions with $K$ homogeneous slots and unit-demand campaigns, whose Eisenberg-Gale dual reduces, via a TopK identity, to a convex program over bids. Regularizing each request's allocation with the binary (Fermi-Dirac) entropy gives a smooth, strictly convex dual whose gradient is exactly spend minus budget and whose evaluation splits into independent one-dimensional threshold solves, one per request. The smoothed equilibrium converges to the hard one at an explicit $O(\\sqrt{T})$ rate, and a duality gap certifies how far any bids are from the hard equilibrium. We implement an efficient multi-GPU solver and test it on a production ad workload. We use it to compute an equilibrium price anchor: each campaign's hindsight equilibrium cost per key result.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuchen Xie",
+    "Shenyinying Tu",
+    "Yuan Gao",
+    "Yi Zhang",
+    "Deepak Kumar"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.24323",
+  "likes_count": 0,
+  "publishedAt": "2026-10-16",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Pacing equilibria describe how budget-constrained advertisers clear an ad market, but computing one at production scale is hard when every request fills several slots: the allocation jumps whenever…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Computing Multi-Slot First-Price Pacing Equilibria at Scale via Entropic Smoothing",
+  "url": "https://arxiv.org/abs/2610.24323",
+  "use_case": ""
+}

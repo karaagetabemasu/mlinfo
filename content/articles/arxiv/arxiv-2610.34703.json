@@ -1,0 +1,27 @@
+{
+  "abstract": "Simulation-based inference often encodes observations $Y$ into a fixed-dimensional summary $S$, with the posterior conditioning only on $S$. While exact preservation often requires infinite information, any such summary imposes a finite information budget on inference which is rarely an explicit choice or measurement. In this paper, we make the budget explicit by modeling the summary as a lossy channel from $Y$ to $S$, and ask two questions: how large must the budget be, and how best is it spent? First, we show for parametric models that this budget, measured by the mutual information $I(Y;S)$, grows unboundedly as the posterior concentrates, even when fixed-dimensional sufficient statistics exist. More generally, the required budget is set by the distribution of the random posterior, and we bound it from above by quantizing posteriors and from below by converses that weight each posterior state by its probability. Second, we show that a finite budget is best spent stochastically. Under a common-support condition on the simulator, covering the continuous observation spaces typical of simulators, a deterministic summary necessarily loses something: a stochastic summary achieves \\emph{strictly} lower distortion than every deterministic summary and every time-shared mixture of deterministic summaries at every positive budget too small for exact preservation. Motivated by these results, we insert a binary bottleneck into neural posterior estimators, measure each trained summary's rate, and compare summaries at matched rate. Across four simulator benchmarks and several encoder families, stochastic bottlenecks achieve favorable rate--loss tradeoffs, and architecture rankings change at different information budgets.",
+  "abstract_ja": "",
+  "authors": [
+    "Vansh Bansal",
+    "Pradip Sharma Poudel",
+    "James G. Scott"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.34703",
+  "likes_count": 0,
+  "publishedAt": "2026-10-26",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "Simulation-based inference often encodes observations $Y$ into a fixed-dimensional summary $S$, with the posterior conditioning only on $S$. While exact preservation often requires infinite…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Intrinsic Information Rates of Summaries in Simulation-Based Inference",
+  "url": "https://arxiv.org/abs/2610.34703",
+  "use_case": ""
+}

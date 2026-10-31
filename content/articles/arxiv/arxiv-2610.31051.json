@@ -1,0 +1,31 @@
+{
+  "abstract": "Tilt-rotor quadcopters redirect thrust for translation without banking, but complicate modeling, state estimation, and disturbance rejection. This paper presents a simulation-based flight stack for a \\SI{2.00}{\\kilo\\gram} tilt-rotor quadcopter. The system uses a six-degree-of-freedom nonlinear model with first-order motor dynamics and two-axis rotor tilt, parameterized using a 3D CAD model. A cascaded PD controller commands forward and lateral tilt angles. A 14-state EKF fuses sensor data across hover, early-transition, and transition modes using a hysteretic (Schmitt-trigger) classifier to prevent covariance discontinuities. Because the proportional position loop leaves a steady-state offset under constant wind, a small bounded neural residual is added on top of the unmodified PD controller. It is trained by behavioral cloning from a teacher with privileged access to the true wind, while the deployed network never observes wind. In simulation, the EKF achieves a post-settling position root mean square error (RMSE) of \\SI{0.226}{\\metre} (horizontal) and \\SI{0.03}{\\metre} (vertical) and an attitude RMSE below \\SI{0.8}{\\degree}, and it estimates a wind velocity of $(\\num{2.0}, \\num{-1.2})\\,\\unit{\\metre\\per\\second}$ to within \\SI{0.15}{\\metre\\per\\second} per axis. The residual reduces steady-state station-keeping error under wind by approximately \\SI{49}{\\percent}, from \\SI{0.117}{\\metre} to \\SI{0.060}{\\metre} at \\SI{1.5}{\\metre\\per\\second} and from \\SI{0.319}{\\metre} to \\SI{0.162}{\\metre} at an out-of-distribution \\SI{3.9}{\\metre\\per\\second}. The framework provides a basis for hardware-in-the-loop and flight-test studies.",
+  "abstract_ja": "",
+  "authors": [
+    "Ninad Joshi",
+    "Prabhat Kumar"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.31051",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "3d",
+  "summary": "Tilt-rotor quadcopters redirect thrust for translation without banking, but complicate modeling, state estimation, and disturbance rejection. This paper presents a simulation-based flight stack for a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "classification",
+      "anomaly-detection"
+    ]
+  },
+  "title": "Tilt-Rotor Quadcopter with Learned Residual Control and Mode-Dependent State Estimation",
+  "url": "https://arxiv.org/abs/2610.31051",
+  "use_case": ""
+}

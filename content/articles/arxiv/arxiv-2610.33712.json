@@ -1,0 +1,33 @@
+{
+  "abstract": "Federated learning trains a shared model across clients without exchanging their data, yet the updates they transmit still leak information about individual records. Enforcing differential privacy is harder still when the model parameters lie on a Riemannian manifold. Existing methods rebuild the noise added for privacy in the geometry of each new iterate, aggregate through intrinsic maps that often lack a closed form, and prove convergence only in restricted regimes. We introduce DP-RFedProj, a record-level differentially private federated learning method for compact submanifolds that aggregates through closed-form projections and privatises gradients in a fixed ambient geometry. Each client may run any stochastic first-order optimiser, take several local steps, and participate only intermittently. An explicit record-level $f$-DP guarantee holds for the entire training transcript, independently of the manifold, the aggregation scheme and the local optimiser. We establish convergence of DP-RFedProj when each client runs Riemannian SGD locally and the server aggregates by projected averaging, and show that privacy enters the rate through a term scaling with the manifold's intrinsic dimension rather than the ambient one. Synthetic experiments on federated PCA over the Grassmann manifold corroborate these findings. On EEG motor-imagery classification with SPDNet, whose weights lie on the Stiefel manifold, the method outperforms a Euclidean baseline at every privacy budget considered. In both experimental settings, our accounting requires five to six times less noise than that of the closest prior method for the same budget, which translates into higher utility.",
+  "abstract_ja": "",
+  "authors": [
+    "Thibault Pautrel",
+    "Florent Bouchard",
+    "Guillaume Ginolhac",
+    "Ammar Mian",
+    "Aurélien Bellet"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.33712",
+  "likes_count": 0,
+  "publishedAt": "2026-10-24",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Federated learning trains a shared model across clients without exchanging their data, yet the updates they transmit still leak information about individual records. Enforcing differential privacy is…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Projection-Based Federated Learning on Compact Submanifolds with Geometry-Independent Differential Privacy",
+  "url": "https://arxiv.org/abs/2610.33712",
+  "use_case": ""
+}

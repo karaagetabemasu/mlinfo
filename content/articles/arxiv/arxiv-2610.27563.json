@@ -1,0 +1,27 @@
+{
+  "abstract": "Stochastic optimization with high-fidelity nonlinear models is often computationally prohibitive because each objective evaluation requires sampling-based uncertainty quantification inside an outer optimization loop. Multi-fidelity estimators, such as approximate control variates (ACV), can reduce this cost by exploiting cheaper low-fidelity models, but they require model-output covariance information to determine control-variate weights and sample allocations. These covariances are generally unknown and must be estimated through pilot sampling. Existing pilot-sampling strategies primarily address one-off estimation and do not exploit the structure of iterative stochastic optimization, where covariance information may vary smoothly across the design domain and can be shared across optimization queries. We propose an active pilot-sampling framework that learns a probabilistic emulator of the model-output covariance matrix using a positive-definite parameterization based on matrix-logarithm-transformed correlations and log standard deviations. The emulator provides design-specific covariance estimates for constructing ACV estimators at new optimization queries, avoiding repeated independent covariance estimation at every design. Active-learning acquisition functions allocate pilot samples to designs where covariance information is most uncertain and most relevant to the outer optimization objective. We demonstrate the method on a four-branch benchmark and a multi-fidelity Bayesian optimal experimental design application for sensor placement and measurement-time selection in a convection-diffusion system. The results show improved optimization performance relative to single-fidelity Monte Carlo and simpler pilot-sampling strategies.",
+  "abstract_ja": "",
+  "authors": [
+    "Thomas E. Coons",
+    "Aniket Jivani",
+    "Xun Huan"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.27563",
+  "likes_count": 0,
+  "publishedAt": "2026-10-20",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Stochastic optimization with high-fidelity nonlinear models is often computationally prohibitive because each objective evaluation requires sampling-based uncertainty quantification inside an outer…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Active Pilot Sampling for Multi-fidelity Estimation in Stochastic Optimization",
+  "url": "https://arxiv.org/abs/2610.27563",
+  "use_case": ""
+}

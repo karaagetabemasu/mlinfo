@@ -1,0 +1,34 @@
+{
+  "abstract": "Ship-to-home fulfillment requires a retailer to select a fulfillment location and carrier before the delivery time is known. These decisions often rely on static transit-time estimates, which cannot represent how delivery-time uncertainty varies across orders and fulfillment options. This paper constructs conformal predictive distributions (CPDs) using Conformal Predictive Systems (CPS) for regression and the cross Venn-Abers predictor (CVAP) for multiclass classification, and uses them in a contextual optimization model for fulfillment decisions. The model is solved by contextual sample-average approximation (C-SAA). The regret of each fulfillment decision, its expected cost above that of the best decision, is bounded by forecast error, scenario-evaluation error, and the candidate-generation gap. The forecast term depends on how well calibration residuals or class probabilities represent the current order. On more than five million proprietary order records, CVAP raises exact-day accuracy from 49.5% for the rule-based estimate to 64.1%. Paired with a decision rule that selects a quantile weighting late errors more heavily, the split CPS (SCPS) gives a point estimate that raises late-delivery detection from 3.8% to 79.4%. Residual-based CPS distributions also meet or slightly exceed nominal interval-coverage targets. In decision experiments with a JD.com simulator over six test dates, C-SAA with CVAP lowers mean total cost by 7.1% and C-SAA with the Mondrian CPS (MCPS) lowers it by 6.7%, relative to C-SAA with the original nonconformal forecast. Both cut the late-delivery rate from 5.7% to below 4.0%.",
+  "abstract_ja": "",
+  "authors": [
+    "Tinghan Ye",
+    "Amira Hijazi",
+    "Pascal Van Hentenryck"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38046",
+  "likes_count": 0,
+  "publishedAt": "2026-10-27",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Ship-to-home fulfillment requires a retailer to select a fulfillment location and carrier before the delivery time is known. These decisions often rely on static transit-time estimates, which cannot…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification",
+      "detection",
+      "generation",
+      "regression"
+    ]
+  },
+  "title": "Conformal Predictive Distributions for Contextual Order Fulfillment Optimization",
+  "url": "https://arxiv.org/abs/2610.38046",
+  "use_case": ""
+}

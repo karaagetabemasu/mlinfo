@@ -1,0 +1,31 @@
+{
+  "abstract": "Discretizing continuous actions into discrete skills using methods like VQ-VAE has emerged as a powerful paradigm for robotic manipulation. However, quantization errors yield a suboptimal distribution for the skill prior, degrading its performance. While reinforcement learning offers a path for refinement, its direct application faces unstable encoder updates and a granularity dilemma in importance sampling. To address these challenges, we introduce Cascaded Skills Optimization (CSO), a two-stage post-training framework. First, Rejection-Sampling Supervised Fine-tuning aligns the model's observation-to-skill mapping with the distribution of successful online trajectories via supervised fine-tuning. Second, with the observation encoder frozen, Skills Policy Optimization computes an independent, clipped importance ratio for each complete skill, enabling stable and efficient updates. With a lightweight QueST-style policy, CSO raises overall LIBERO success from 80.1% to 97.5%, improves performance on RoboTwin2.0, and achieves 61.0% success across five physical single-arm tasks. Additional comparisons with FAST, discrete BEAST, and fixed-buffer IQL further validate the effectiveness of our two-stage post-training strategy.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhiyuan Xiang",
+    "Xiang Deng",
+    "Wanjie Tao",
+    "Xu Chen",
+    "Zhao Jielun"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.38357",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Discretizing continuous actions into discrete skills using methods like VQ-VAE has emerged as a powerful paradigm for robotic manipulation. However, quantization errors yield a suboptimal…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "CSO: Refining Robotic Policies via Skill Distribution Alignment and Skill-Grained Optimization",
+  "url": "https://arxiv.org/abs/2610.38357",
+  "use_case": ""
+}

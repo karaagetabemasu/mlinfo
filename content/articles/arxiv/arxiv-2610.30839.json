@@ -1,0 +1,29 @@
+{
+  "abstract": "Reliable traversability estimation is essential for autonomous navigation on unstructured terrain. State-of-the-art approaches typically evaluate traversability from deterministic terrain elevation, thereby overlooking spatial correlations in the terrain and failing to account for how elevation uncertainty propagates through nonlinear traversability mappings. We propose ProTrav, a probabilistic terrain representation that uses function-space sampling to generate spatially correlated terrain realizations and propagate elevation uncertainty to traversability cost. First, a Sparse Variational Gaussian Process (SVGP) reconstructs a probabilistic elevation field from observations. Then, posterior function-space sampling generates spatially correlated terrain realizations, preserving spatial dependencies between neighboring locations while propagating elevation uncertainty through geometric features into traversability cost. Consequently, a distribution of traversability cost at arbitrary location is established, where the mean and standard deviation quantify the expected traversability cost and associated uncertainty, respectively. A risk term is defined by moment-based Upper Confidence Bound (UCB) and incorporated into a Model Predictive Path Integral (MPPI) controller for risk-aware navigation. Simulation experiments demonstrate navigation success rates exceeding 90\\% on different terrains, compared with below 40\\% for a baseline, while reducing attitude variations. Furthermore, the proposed approach is validated on a robot traversing real-world off-road terrain.",
+  "abstract_ja": "",
+  "authors": [
+    "Chuanlin Zuo",
+    "Miloš Prágr",
+    "Arun Kumar Singh",
+    "Mohammad Loni",
+    "Reza Ghabcheloo"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.30839",
+  "likes_count": 0,
+  "publishedAt": "2026-10-22",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Reliable traversability estimation is essential for autonomous navigation on unstructured terrain. State-of-the-art approaches typically evaluate traversability from deterministic terrain elevation,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "ProTrav: Probabilistic Traversability with Elevation Uncertainty Propagation for Risk-aware Off-road Navigation",
+  "url": "https://arxiv.org/abs/2610.30839",
+  "use_case": ""
+}

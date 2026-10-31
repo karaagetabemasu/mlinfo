@@ -1,0 +1,33 @@
+{
+  "abstract": "Understanding and modeling light transport in human-centric scenes is a longstanding challenge. While recent progress in diffusion models has boosted research in relighting, precise illumination control still lags, primarily due to the scarcity of diverse, high-quality, precisely labeled video relighting datasets. Existing end-to-end relighting approaches model light transport implicitly through neural networks, which substantially complicates controllability. In contrast, some works resort to path-traced irradiance cues as an explicit blueprint for light transport. However, such constructed irradiance cues are prone to artifacts and hinder generative quality when directly used as control signals. With the key observation that noise corruption removes high-frequency artifacts and preserves low-frequency light transport, we introduce an asynchronous joint-modeling paradigm that facilitates fine-grained illumination control. During two-stage training, we force the model to jointly denoise RGB and ground-truth irradiance frames with separate timesteps scheduling. A domain matching strategy is applied to the second stage to bridge the domain gap between irradiance cues and ground-truth irradiance maps. At inference time, we introduce an asynchronous hijacked generation pipeline that facilitates flexible illumination control. For training data, we develop a multi-illumination high-quality synthetic video dataset with paired irradiance maps using a powerful game engine. Trained exclusively on this dataset, our model exhibits robust generalization to real- world scenarios and outperforms prior approaches in both lighting fidelity and generative quality. Project page: http://www.geometrylearning.com/JointLight/",
+  "abstract_ja": "",
+  "authors": [
+    "Henglei Lv",
+    "Bailin Deng",
+    "Xiaoqiang Liu",
+    "Yichen Wang",
+    "Haoxian Zhang"
+  ],
+  "category": "generative-ai",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.29780",
+  "likes_count": 0,
+  "publishedAt": "2026-10-21",
+  "source": "arxiv",
+  "subcategory": "diffusion",
+  "summary": "Understanding and modeling light transport in human-centric scenes is a longstanding challenge. While recent progress in diffusion models has boosted research in relighting, precise illumination…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "JointLight: Human-Centric Video Relighting with Asynchronous RGB-Irradiance Joint Modeling",
+  "url": "https://arxiv.org/abs/2610.29780",
+  "use_case": ""
+}
