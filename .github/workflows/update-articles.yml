@@ -5,22 +5,27 @@ on:
     - cron: '0 23 * * *'  # 毎日 08:00 JST (= UTC 23:00)
   workflow_dispatch:       # 手動実行も可能
 
+concurrency:
+  group: update-articles
+  cancel-in-progress: false
+
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     permissions:
       contents: write
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      GROQ_API_KEY: ${{ secrets.GROQAPI }}
+      # No external AI credential: optional generated use cases remain disabled.
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.11'
 
@@ -35,6 +40,6 @@ jobs:
           git config user.name "MLinfo Bot"
           git config user.email "bot@mlinfo.app"
           git add web/data/articles.json web/data/use_case_cache.json || true
-          git diff --staged --quiet || git commit -m "chore: update articles $(TZ=Asia/Tokyo date +'%Y-%m-%d %H:%M JST')"
+          git diff --staged --quiet || git commit -m "[CF-Pages-Skip] chore: update articles $(TZ=Asia/Tokyo date +'%Y-%m-%d %H:%M JST')"
           git pull --rebase origin main
           git push
