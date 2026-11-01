@@ -11,3 +11,5 @@ export const articleURL=(a:Article)=>'/article/'+encodeURIComponent(a.id);
 export const safeJSON=(value:unknown)=>JSON.stringify(value).replace(/</g,'\\u003c').replace(/\u2028/g,'\\u2028').replace(/\u2029/g,'\\u2029');
 export const pageSize=24;
 export function pagesFor<T>(items:T[]){return Array.from({length:Math.max(1,Math.ceil(items.length/pageSize))},(_,i)=>({page:i+1,total:Math.max(1,Math.ceil(items.length/pageSize)),items:items.slice(i*pageSize,(i+1)*pageSize)}));}
+
+export const englishSummary=(a:Article)=>(a.summary||a.abstract||'').replace(/\s+/g,' ').slice(0,220);
