@@ -73,3 +73,9 @@ Google Analyticsは同意後のみ読み込みます。検索語・URLのquery/f
 ヘッダーのEnglish / 日本語でメニュー・一部の固定文言・記事カードの概要・記事の原文概要・コピー用プロンプトを切り替えます。選択は端末のlocalStorageに保存します。翻訳APIやアクセスごとのサーバー処理は追加しません。概要の英語は収集済みの原文です。ガイド本文や編集コメントは未翻訳の部分が残り、英語表示中の注意書きで明示します。全文翻訳・英語URL・英語用のSEOメタデータや検索インデックスを追加したものではありません。JavaScript無効時は日本語の静的ページを表示します。
 
 ブラウザ確認: `node tests/browser/language.cjs`（静的ビルド後。環境にインストール済みのChromium/Playwrightを使用）。
+
+## GA4送信の回帰確認
+
+Google標準のgtagと同じく、dataLayerには配列ではなくArgumentsオブジェクトを渡します。解析同意前にはタグを読み込まず、許可後だけpage_viewと操作イベントを送ります。地域別のGoogle Analytics収集エンドポイントもCSPで許可し、unsafe-inlineや汎用unsafe-evalは追加しません。
+
+`PUBLIC_GA_MEASUREMENT_ID=G-BHPR7WHHH0 SITE_URL=https://mlinfo.pages.dev npm run build` の後、TLS検証付きでGoogle公式のgtag.jsを一時ファイルへ取得し、`node tests/browser/analytics.cjs /path/to/gtag.js` で検証できます。SDKの収集通信はテスト内で遮断・模擬応答し、本番GA4へテストデータを送りません。同意前の無通信、許可後のpage_viewと保存イベント、URLのquery除外、地域別CSP、拒否後のタグ非読込を確認します。GA4管理画面での受信確認は所有者のアカウントで別途必要です。
