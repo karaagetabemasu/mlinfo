@@ -1,0 +1,32 @@
+{
+  "abstract": "Modern data analysis pipelines increasingly rely on large datasets assembled through retrieval, scraping, automated filtering, and post-hoc curation, where the observed sample is often a contaminated mixture rather than the target population. Standard distributional objectives either ignore contamination and converge to the wrong target, or retain only a small trusted subset and discard most of the data. We study supervised and unsupervised learning when a clean reference sample is compared with a pooled sample from $r=(1-ε)q+εz$, where $q$ is the latent target distribution and $z$ is an unknown contaminant. Motivated by settings with noisy membership scores for all observations and exact labels for a small audited subset, we propose contamination-corrected maximum mean discrepancy (CC-MMD), a design-based estimator that combines proxy scores with audited residual corrections to recover the oracle MMD that would have been computed from the latent clean sample. CC-MMD requires no calibration assumption on the proxy scores and no structural assumptions on the contaminant beyond standard kernel regularity. We prove finite-population design-unbiasedness of the corrected kernel sums, establish asymptotic normality of the audit correction, and show consistency for the target discrepancy $\\mathrm{MMD}^2(p,q;k)$. Empirically, CC-MMD tracks the oracle under increasing contamination, improves parameter recovery and prediction in contaminated regression, and enables generative models trained on heavily corrupted mixtures to recover the clean target distribution. These results show that contaminated data need not be discarded or treated as the estimand. With sparse trusted labels and abundant noisy supervision, distributional objectives can be made robust by design.",
+  "abstract_ja": "",
+  "authors": [
+    "Nevena Gligić",
+    "Arya Farahi"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.40884",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Modern data analysis pipelines increasingly rely on large datasets assembled through retrieval, scraping, automated filtering, and post-hoc curation, where the observed sample is often a contaminated…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "supervised",
+      "unsupervised"
+    ],
+    "modality": [],
+    "task": [
+      "generation",
+      "regression"
+    ]
+  },
+  "title": "Robust-by-Design Distributional Learning from Contaminated Samples",
+  "url": "https://arxiv.org/abs/2610.40884",
+  "use_case": ""
+}

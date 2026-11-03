@@ -1,0 +1,31 @@
+{
+  "abstract": "Mitigating unfair disparities in sequential decision-making is a growing concern in machine learning. We study contextual bandits under a global covariate-based Lipschitz fairness constraint, pioneered by \\cite{dwork2012fairness}, requiring individuals with similar contexts to receive similar action distributions. We show that this constraint induces a randomisation region near the decision boundary and explicitly quantify the population level cost of fairness. We further establish a canonical representation of the optimal fair policy, which reduces the fair policy design to a lower-dimensional boundary optimisation problem. We develop a lazy fair greedy algorithm that exploits fairness-induced covariate diversity under continuous contexts, with policy updates computed via finite-dimensional linear programming. For general context distributions, including discrete and mixed contexts, we propose a lazy polyhedral upper confidence bound (UCB) algorithm, whose optimistic optimisation reduces to finitely many linear programs over confidence-set vertices. Both methods satisfy fairness at every round and achieve regret of order $O(\\sqrt{T} + T^{(d-2)/(d-1)}{\\indc\\{d\\geq 4\\}})$ up to poly-logarithmic factors, where $d$ is the dimension of the contexts. A matching minimax lower bound for $\\ell_1$-based fairness establishes optimality, and reveals an unavoidable nonparametric cost of learning the decision boundary, which dominates the parametric learning cost when $d \\geq 4$. Experiments on synthetic and real data support our theoretical findings and demonstrate the practical effectiveness of our methods.",
+  "abstract_ja": "",
+  "authors": [
+    "Gengyu Xue",
+    "Fan Wang",
+    "Feiyu Jiang",
+    "Zifeng Zhao",
+    "Yi Yu"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00979",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "Mitigating unfair disparities in sequential decision-making is a growing concern in machine learning. We study contextual bandits under a global covariate-based Lipschitz fairness constraint,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Optimal Learning in Fairness-Aware Contextual Bandits",
+  "url": "https://arxiv.org/abs/2611.00979",
+  "use_case": ""
+}

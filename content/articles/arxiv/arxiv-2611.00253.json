@@ -1,0 +1,34 @@
+{
+  "abstract": "Converting a raster image into a resolution-independent, stroke-editable vector sketch while faithfully preserving both structural contours and tonal texture remains challenging: raster-space rendering pipelines are difficult to edit at the stroke level, while generation-from-scratch vectorization methods struggle to remain faithful to an arbitrary input image. We present SketchForge, a training-free framework that converts an input raster image into a resolution-independent SVG sketch through per-instance test-time optimization of Bezier curves, requiring no additional training or fine-tuning. Strokes are seeded via a contour and attention-guided initialization, then refined by a vector-native differentiable rendering pipeline that decouples structural contour strokes from free-form texture strokes under dedicated objectives, composited via multiply-blend layering. Extensive experiments show that SketchForge consistently outperforms existing vector-based baselines in structural fidelity and generation quality. Project page: https://khangcntn123.github.io/SketchForge",
+  "abstract_ja": "",
+  "authors": [
+    "Quang-Thinh Nguyen",
+    "Duy-Khang Do",
+    "Hien Trinh",
+    "Tam V. Nguyen",
+    "Minh-Triet Tran"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00253",
+  "likes_count": 0,
+  "publishedAt": "2026-10-30",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Converting a raster image into a resolution-independent, stroke-editable vector sketch while faithfully preserving both structural contours and tonal texture remains challenging: raster-space…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "SketchForge: Training-Free Scene-to-Vector Sketching via Decoupled Structure and Texture Optimization",
+  "url": "https://arxiv.org/abs/2611.00253",
+  "use_case": ""
+}

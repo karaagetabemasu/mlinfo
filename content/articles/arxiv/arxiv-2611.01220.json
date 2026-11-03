@@ -1,0 +1,27 @@
+{
+  "abstract": "High-accuracy repetitive tracking is challenging for position-commanded manipulators whose low-level controllers are inaccessible, while constrained model-based iterative learning control (ILC) can require substantial manual parameter tuning. We present Differentiable Iterative Learning Control (Diff-ILC), an online bilevel framework that adapts the parameters of a constrained ILC update between physical robot executions. A closed-loop differential model is identified once from paired smooth perturbations and subsequently kept fixed. At each trial, a constrained quadratic program computes a feasible command correction, while a real-anchored next-trial prediction defines a task-level objective. Hypergradients are obtained by implicitly differentiating the locally active KKT system, enabling multiple computational parameter updates without additional robot executions. Experiments on a 6-DoF DOBOT CR3 across unseen planar and three-dimensional trajectories show substantially faster physical-trial convergence than fixed-parameter model-based ILC. Across the four primary trajectories, after only two trial-to-trial updates, Diff-ILC achieves 78.8% and 76.4% lower mean joint-vector and Cartesian RMSE, respectively, than fixed-parameter model-based ILC.",
+  "abstract_ja": "",
+  "authors": [
+    "Mohammed Al-Ghaili",
+    "Yakoop Qasim",
+    "Hassan Almubarak"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01220",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "model-based",
+  "summary": "High-accuracy repetitive tracking is challenging for position-commanded manipulators whose low-level controllers are inaccessible, while constrained model-based iterative learning control (ILC) can…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Differentiable Iterative Learning Control for Black-Box Position-Commanded Manipulators",
+  "url": "https://arxiv.org/abs/2611.01220",
+  "use_case": ""
+}

@@ -1,0 +1,32 @@
+{
+  "abstract": "A growing body of work reports benefits from orthogonality constraints in fine-tuning large language models (LLMs). These results raise an open question: do orthogonality constraints also help LLM pre-training? We conduct a systematic empirical study of decoder-only LLM pre-training with models ranging from 360M to 3.1B parameters, trained on nearly 200B tokens. We examine fourteen variants of orthogonality training: some constrain the weight matrix itself, while others use orthogonal factors to reparameterize it. Because a strictly orthogonal square matrix loses half of its degrees of freedom, we also study block-wise orthogonality, where every $d$ rows form a row-orthonormal (Stiefel) matrix and the block size $d$ is a hyperparameter. Among block sizes ranging from 1 to the shorter side of the matrix, no $d>1$ used throughout the network reliably outperforms $d=1$, and large blocks are clearly worse; the one placement that helps, symmetric positive-definite factors on the query and key projections, loses its small gain as models grow. At $d=1$, the constraint reduces to sphere optimization, with each row direction on its own unit sphere, which by itself already improves on tuned Muon. The same two findings hold for a diffusion transformer trained on ImageNet, and after fine-tuning, downstream accuracy does not separate the parameterizations. Our conclusion is that, across the realizations we tried, orthogonality between rows does not help language-model pre-training beyond sphere optimization. Since this appears to conflict with several prior results, we re-examine five prior methods in pre-training and fine-tuning that report orthogonality improvements. In each case the reported gain is attributable to numerical precision, training horizon, optimizer realization, or per-row norm control rather than to the orthogonality the methods impose.",
+  "abstract_ja": "",
+  "authors": [
+    "Kai Hu",
+    "Li Zhang",
+    "Weichen Yu",
+    "Matt Fredrikson",
+    "Haoqi Hu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00593",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "A growing body of work reports benefits from orthogonality constraints in fine-tuning large language models (LLMs). These results raise an open question: do orthogonality constraints also help LLM…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Do Orthogonality Constraints Help Language-Model Training Beyond Sphere Optimization?",
+  "url": "https://arxiv.org/abs/2611.00593",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Accurate posture feedback is essential for precise control of continuum robots. Off-the-shelf bend sensors measure curvature about only one axis; without a suitable mounting arrangement, they can restrict robot motion and provide incomplete posture information. SaddleSense introduces a 3D-printed thermoplastic polyurethane (TPU) saddle-shaped lattice that holds one commercial bend sensor along each curved edge. Because each sensor flexes within its own channel rather than spanning the segment axially, the lattice converts multi-axis body deformation into sensor curvature without tying segment length to sensor length. Each four-sensor module accommodates two-axis bending, contraction, and extension while quantifying all three deformation modes across its four readings. A hybrid calibration maps the sensor readings to piecewise constant curvature (PCC) parameters using a learned model paired with a physics-based fallback for out-of-distribution inputs. We demonstrate a six-module prototype with 24 off-the-shelf bend sensors on a 430~mm continuum body. Using only each module's four local readings, the physics-based model alone achieves a tip position root mean square error (RMSE) of 29.9~mm (7.0\\% of body length). The data-driven model reduces the tip RMSE to 13.2~mm (3.1\\%) on held-out samples of motions similar to the training set and 15.8~mm (3.7\\%) on separately recorded trials. Reducing each module from four sensors to one nearly triples the tip error.",
+  "abstract_ja": "",
+  "authors": [
+    "Dong Heon Han",
+    "Runze Zuo",
+    "Chankyo Kim",
+    "Saima Jamal",
+    "Daniel Bruder"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00582",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Accurate posture feedback is essential for precise control of continuum robots. Off-the-shelf bend sensors measure curvature about only one axis; without a suitable mounting arrangement, they can…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "anomaly-detection"
+    ]
+  },
+  "title": "SaddleSense: Saddle-Shaped Modules for 3D Shape Sensing with Single-Axis Off-the-Shelf Bend Sensors",
+  "url": "https://arxiv.org/abs/2611.00582",
+  "use_case": ""
+}

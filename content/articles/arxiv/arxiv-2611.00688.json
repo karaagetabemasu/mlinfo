@@ -1,0 +1,31 @@
+{
+  "abstract": "Understanding how animals move between behaviors is a central question in neuroethology, yet most segmentation methods first partition time into discrete states, leaving transitions as the unmodeled residue between them. We take the opposite view: in a suitable feature space, sustained behaviors are dense regions of the trajectory's density landscape, and transitions are the sparse corridors and loops that connect them. Because this structure is a property of the landscape's shape rather than of any particular coordinates, it can be read off directly with topology and should persist across feature spaces. We build this landscape from frame-by-frame trajectories, extract its discrete-Morse graph, and keep two kinds of structure: paths, the corridors a trajectory follows between dense behavioral regions, and cycles, closed routes whose entry and exit take different ways. Clustering these structures yields transitions directly, with no upstream state partition. On a rat behavior dataset across three feature spaces, including the latent space of a neural-network controller that imitates the animal in a physics simulator, the approach recovers transitions at coverage comparable to state-space and topological-clustering baselines, while carrying substantially more information about the transition identity, forming clusters at least as tight as the baselines', and matching annotated transitions with less reliance on time-warping. More broadly, the results show that behavioral transitions are a topological feature of a representation: recoverable from the shape of its trajectories, and consistent across distinct feature spaces.",
+  "abstract_ja": "",
+  "authors": [
+    "Kaiwen Bian",
+    "Eric J. Leonardis",
+    "Yuanjia Yang",
+    "Charles Zhang",
+    "Yusu Wang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00688",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Understanding how animals move between behaviors is a central question in neuroethology, yet most segmentation methods first partition time into discrete states, leaving transitions as the unmodeled…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "Shaped by What's Missing: Topological Invariance Simplification Discovers Behavioral Transitions",
+  "url": "https://arxiv.org/abs/2611.00688",
+  "use_case": ""
+}

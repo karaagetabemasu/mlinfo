@@ -1,0 +1,30 @@
+{
+  "abstract": "Deep neural network (DNN) accelerators for edge inference must meet tight energy, latency, and area (EDP) constraints, and their optimal hardware architecture and dataflow configuration is typically identified through design space exploration (DSE). However, on-chip memory technology including cell type, bank organization, and process node, is rarely treated as a first-class citizen in DSE. For example, increasing memory capacity can reduce memory accesses through greater data reuse, but at the cost of higher area and access energy, thereby limiting the compute units budget. Consequently, memory technology can fundamentally shift the optimal accelerator architecture for a given area and EDP budget. Existing machine learning (ML)-based DSE methods require repeating simulation, data generation, and model training for each new memory technology. We present TADA, a memory technology-aware DNN accelerator performance and energy estimator that predicts system latency and energy for a given workload, hardware configuration, and memory technology. TADA is trained on a synthetic dataset that generalizes across memory technologies. The dataset spans current and future technology trends while enforcing physics-based guardrails to preserve realistic area-energy trade-offs. Each memory technology is represented by a technology signature, a vector of read energy, write energy, and storage capacity across a range of areas, provided as input alongside the workload and hardware configuration. Across 21 unseen technology curves spanning SRAM, STTRAM, ReRAM, PCM, FeFET, eDRAM, and CTT, TADA predicts system energy and latency with 1.5-4.4% and 0.7-1.2% mean absolute percentage error, respectively. In three pairwise case studies, it matches the simulator-selected memory technology at 98.7-100% of area budgets, with a mean EDP loss of at most 0.21%, while achieving over 10^4x higher evaluation throughput.",
+  "abstract_ja": "",
+  "authors": [
+    "Tanvi Sharma",
+    "Surya Selvam",
+    "Anand Raghunathan",
+    "Kaushik Roy"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00292",
+  "likes_count": 0,
+  "publishedAt": "2026-10-30",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Deep neural network (DNN) accelerators for edge inference must meet tight energy, latency, and area (EDP) constraints, and their optimal hardware architecture and dataflow configuration is typically…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "TADA: Technology Aware DNN Accelerator Performance and Energy Estimator",
+  "url": "https://arxiv.org/abs/2611.00292",
+  "use_case": ""
+}

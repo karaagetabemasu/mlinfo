@@ -1,0 +1,30 @@
+{
+  "abstract": "Land-cover maps classified from wide-area hyperspectral surveys are least reliable along class boundaries and in ambiguous regions, so their errors are spatially structured. We study how this structure can direct a limited verification budget: when a low-altitude UAV or a ground crew can visit only a handful of sites, where it should go depends on how classifier uncertainty is arranged across the scene and how a fixed sensor footprint tiles that arrangement. We estimate a per-pixel uncertainty surface from the disagreement of an ensemble of spectral classifiers and select sites by greedy, field-of-view-aware coverage of the uncertainty mass. On seven benchmark scenes, the highest-uncertainty decile of pixels is 2.6 to 7.9 times richer in errors than the scene as a whole, and the coverage greedy covers up to 57% of the classifier's errors with 15 sites, 1.7 to 18 times as many as uncertainty-agnostic sampling of the same labelled region. A non-overlapping selection of the footprints richest in uncertainty does equally well, so the gain comes from scoring whole footprints by uncertainty mass. The advantage persists under spatially blocked evaluation and with a spectral-spatial classifier, although disagreement then ranks errors less well. It requires restricting the surface to labelled land cover: over the whole scene, disagreement peaks on unlabelled ground, where inspections cannot be scored. The best policy for covering connected high-uncertainty regions depends on the scene and on the threshold that defines them, and Gaussian-process selection covers less uncertainty than the coverage greedy on every scene. The pipeline runs on commodity CPUs.",
+  "abstract_ja": "",
+  "authors": [
+    "Ritesh Sharma",
+    "Yuichi Motai"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00478",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Land-cover maps classified from wide-area hyperspectral surveys are least reliable along class boundaries and in ambiguous regions, so their errors are spatially structured. We study how this…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Spatial Uncertainty Analytics for Budget-Limited Inspection of Hyperspectral Scenes",
+  "url": "https://arxiv.org/abs/2611.00478",
+  "use_case": ""
+}

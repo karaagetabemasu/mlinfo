@@ -1,5 +1,5 @@
 {
-  "abstract": "Statistical procedures often control expected loss at a prescribed level while leaving part of their risk budget unused. Building on the e-value representation of risk-controlled decisions and the e-closure principle for multiple testing, we formulate recertification, a general paradigm for improving procedures by exploiting computable slack in their validity certificates. A valid procedure's losses normalized by their risk budgets form a state-indexed e-value collection; conversely, decisions whose normalized losses are bounded by this collection inherit its risk guarantees. Recertification uses distributional structure to quantify slack, enlarge the certifying e-values while preserving validity, and construct less conservative decisions. We develop two applications. For conformal risk control (CRC) with a known loss family, recertification redistributes unused risk budget among the held-out points of each hypothetical augmented sample. The resulting controller is valid under every finite exchangeable law and no more conservative than CRC on any calibration sample. For convex losses on an interval of actions, repeated recertification converges geometrically to an admissible controller. For false discovery rate control with arbitrarily dependent e-values, recertification exploits unused conditional budgets in randomized e-BH. It yields a closed-form randomized procedure whose rejection set contains that of randomized e-BH for every realization of the shared randomization and whose expected number of rejections is maximal subject to the same conditional budget constraints. Recertifying with the larger e-collection of closed e-BH gives a second closed-form procedure whose rejection set contains that of the first. Experiments on CIFAR-100 hierarchical classification and multiple testing simulations demonstrate improved budget utilization, informativeness and power over the baselines.",
+  "abstract": "We extend the recently introduced e-closure principle for multiple testing to general state and action spaces and to arbitrary, including continuously indexed, families of risks. A collection of e-values indexed by states and risks certifies a menu of actions, and every data-dependent selection from this menu controls each expected loss at its prescribed level. Conversely, every valid procedure is certified by its own normalized losses, which often leave part of the risk budget unused. We introduce a method called recertification, which spends this unused budget. Using known distributional structure, it enlarges the certifying e-values while preserving validity and selects a less conservative action from the enlarged menu. One particularly compelling application is to the popular framework of conformal risk control (CRC) with a known loss family. Here, recertification redistributes unused risk budget among the held-out points of each hypothetical augmented sample. The resulting controller is valid under every finite exchangeable law and less (usually strictly) conservative than CRC. For convex losses on an interval of actions, repeated recertification converges geometrically to an admissible controller. As a second example involving false discovery rate control with e-values, recertifying randomized e-BH yields a closed-form procedure that rejects a superset of randomized e-BH for every realization of the randomization and maximizes the expected number of rejections under the same constraints. Recertifying with the larger e-collection of closed e-BH gives a second closed-form procedure that rejects a superset of the first. Experiments on CIFAR-100 hierarchical classification and simulations demonstrate improved budget utilization and gains in informativeness and power over the corresponding baselines.",
   "abstract_ja": "",
   "authors": [
     "Tian Bai",
@@ -13,7 +13,7 @@
   "publishedAt": "2026-10-26",
   "source": "arxiv",
   "subcategory": "segmentation",
-  "summary": "Statistical procedures often control expected loss at a prescribed level while leaving part of their risk budget unused. Building on the e-value representation of risk-controlled decisions and the…",
+  "summary": "We extend the recently introduced e-closure principle for multiple testing to general state and action spaces and to arbitrary, including continuously indexed, families of risks. A collection of…",
   "summary_ja": "",
   "tags": {
     "learning": [],
@@ -22,7 +22,7 @@
       "classification"
     ]
   },
-  "title": "Recertifying decisions via e-closure: uniform improvements of conformal risk control and randomized e-BH",
+  "title": "A uniform improvement to conformal risk control via a generalization of e-closure",
   "url": "https://arxiv.org/abs/2610.35821",
   "use_case": ""
 }

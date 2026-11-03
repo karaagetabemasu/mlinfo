@@ -1,0 +1,36 @@
+{
+  "abstract": "Reinforcement learning (RL) post-training has become an important paradigm for improving multimodal large language models (MLLMs), especially with automatically verifiable rewards. Self-supervised visual pretext tasks provide such rewards without human annotations. However, existing methods mainly exploit within-instance structure, offering limited supervision for cross-instance discrimination and fine-grained comparison. We introduce Group-and-Order Self-Supervised Reinforcement Learning (GO-SSL), a cross-instance jigsaw framework for vision-centric MLLM post-training. Given two visual instances, GO-SSL mixes their local elements and trains the model to group them by instance of origin while recovering the order within each group, coupling instance-level comparison with spatial, temporal, or geometric structure recovery. This paired formulation turns the same unlabeled data into richer verifiable supervision through diverse pairings, shuffles, and a random-to-hard curriculum. We instantiate GO-SSL mainly on cross-image jigsaw tasks and further extend it to 3D depth and video temporal ordering. Across diverse benchmarks, GO-SSL consistently improves over the base MLLM and prior self-supervised post-training baselines, with clear gains in fine-grained perception and spatial understanding. Further evaluations across model scales and families support its generality. These results suggest that cross-instance comparison provides a useful self-supervised RL signal for improving transferable visual understanding in MLLMs. Code is available at https://github.com/SEU-VIPGroup/GO-SSL.",
+  "abstract_ja": "",
+  "authors": [
+    "Songming Yang",
+    "Hong-Tao Yu",
+    "Xiu-Shen Wei"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/SEU-VIPGroup/GO-SSL",
+  "hasCode": true,
+  "id": "arxiv-2611.00892",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Reinforcement learning (RL) post-training has become an important paradigm for improving multimodal large language models (MLLMs), especially with automatically verifiable rewards. Self-supervised…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised",
+      "reinforcement"
+    ],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "3d",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Learning to Group and Order: Cross-Instance Self-Supervised RL for Vision-Centric MLLMs",
+  "url": "https://arxiv.org/abs/2611.00892",
+  "use_case": ""
+}

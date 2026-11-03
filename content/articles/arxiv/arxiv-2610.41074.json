@@ -1,0 +1,26 @@
+{
+  "abstract": "Low-precision training reduces computation but introduces additional rounding error. We theoretically study how stochastic rounding (SR) affects prediction risk as model size, training time, and precision change. We consider a two-layer linear network with a fixed random first layer, trained by mini-batch SGD on fresh Gaussian data with power-law spectra. At each SGD step, the features used in forward and backward computations are rounded independently. We prove matched upper and lower bounds on prediction error for the final model and for uniform parameter averaging, with general learning-rate and precision schedules chosen before training. For fixed precisions and constant learning rates with parameter averaging, we derive how the smallest prediction error decreases with compute, and we identify model sizes and training times that achieve this optimal-compute scaling. Rounding only the forward features preserves the compute scaling of exact arithmetic, while rounding backward features changes it. Averaging parameters can change which computation needs higher precision and when higher precision is useful. Our results also give bit requirements for a given accuracy tolerance and show how backward rounding can change learning-rate schedule design. At a fixed compute budget, lower precision can improve prediction when the benefit of a larger model or longer training outweighs the additional SR-induced error. Model simulations illustrate these tradeoffs, and experiments with an MLP and a small transformer examine rounding choices beyond the theoretical model.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhichao Wang",
+    "Michael W. Mahoney"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2610.41074",
+  "likes_count": 0,
+  "publishedAt": "2026-10-29",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Low-precision training reduces computation but introduces additional rounding error. We theoretically study how stochastic rounding (SR) affects prediction risk as model size, training time, and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Where, When, and How Many Bits? Scaling Laws for SGD with Stochastic Rounding",
+  "url": "https://arxiv.org/abs/2610.41074",
+  "use_case": ""
+}

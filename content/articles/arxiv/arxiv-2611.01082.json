@@ -1,0 +1,29 @@
+{
+  "abstract": "Anonymous credentials can hide which registered client participates in federated learning, but their unlinkability also makes repeated misconduct difficult to associate. We present VeilFL, a two-aggregator protocol that adds staged accountability to PINE (USENIX Security '24). Each submission binds two private PINE messages, a round-specific pseudonym, and a tracing pair to the same hidden credential secret. This design enables detection of duplicate submissions within a round without introducing a persistent identifier for normal participation. VeilFL implements accountability in two stages. After a confirmed duplicate or joint PINE rejection, a threshold tracing committee reveals a stable handle that links faults associated with the same credential. The client's registered identity is recoverable only after the public log records the requisite number of linked faults and a separate threshold committee authorizes identification. Accepted and unopened submissions remain unlinkable under the stated assumptions. This work establishes submission binding and duplicate detection, anonymity, fault non-frameability, controlled two-stage opening, and preservation of PINE's privacy and validity guarantees. In the prototype implementation, creating a submission requires a median of 2.11 ms, while verification requires 3.01 ms. Batch verification reduces the cost to 1.86 ms per submission for a batch of 1,000. The public part of each submission is 608 bytes, with 1,248 bytes of additional VeilFL protocol data across the two aggregator submissions. Each opening stage completes within 4.3 ms for the different committee configurations.",
+  "abstract_ja": "",
+  "authors": [
+    "Varesh Mishra",
+    "Aysajan Abidin",
+    "Bart Preneel"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01082",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Anonymous credentials can hide which registered client participates in federated learning, but their unlinkability also makes repeated misconduct difficult to associate. We present VeilFL, a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "VeilFL: Two-Stage Accountability for Anonymous Federated Learning",
+  "url": "https://arxiv.org/abs/2611.01082",
+  "use_case": ""
+}

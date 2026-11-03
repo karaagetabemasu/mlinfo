@@ -1,0 +1,27 @@
+{
+  "abstract": "Proper orthogonal decomposition (POD) represents physical fields with orthogonal modes ordered by variance, so that one decomposition gives reduced coordinates in every dimension, but it needs many modes when the data lie near a curved manifold. Nonlinear autoencoders are more compact, but their information loss happens inside a nonlinear encoder, and a model trained with one latent dimension gives no model with a smaller one. We introduce Orthogonal Projection in Invertible Nonlinear Embeddings (OPINE), which learns an invertible nonlinear change of coordinates and performs POD in the transformed coordinates. Because the map is invertible, all information loss occurs in the POD projection, and ordering its basis after training gives reduced coordinates of every smaller dimension from a single model. Training alternates gradient updates of the map with a damped update that tracks the evolving POD subspace, and we prove that this update converges locally to the exact POD subspace. We evaluate OPINE on synthetic manifolds, chaotic Kuramoto-Sivashinsky dynamics, forced Burgers turbulence, two-dimensional Kolmogorov flow, and three-dimensional minimal channel flow. OPINE is more accurate than POD at every tested retained dimension above one, and on the Kuramoto-Sivashinsky and Burgers dynamics, it is more accurate than convolutional and fully connected autoencoders by more than two orders of magnitude at the largest retained dimension.",
+  "abstract_ja": "",
+  "authors": [
+    "Anqiao Ouyang",
+    "Hongyi Ke",
+    "Qi Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00216",
+  "likes_count": 0,
+  "publishedAt": "2026-10-30",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Proper orthogonal decomposition (POD) represents physical fields with orthogonal modes ordered by variance, so that one decomposition gives reduced coordinates in every dimension, but it needs many…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "OPINE: Orthogonal Projection in Invertible Nonlinear Embeddings for Turbulent Flows",
+  "url": "https://arxiv.org/abs/2611.00216",
+  "use_case": ""
+}

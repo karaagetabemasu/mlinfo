@@ -1,0 +1,34 @@
+{
+  "abstract": "Deep learning-based object detection models are highly dependent on the quality of annotated training data. However, large-scale datasets often contain inevitable label noise, with bounding box localization errors being a prevalent and impactful form in object detection. While label noise handling techniques are well-studied for image classification, their adaptation to the more complex problem of bounding box errors remains underexplored. To address this, we propose a novel Smooth Bounding Box (SBB) strategy to mitigate the adverse effects of bounding box annotation inaccuracies. Our key insight is that annotation errors are often linked to annotator factors rather than specific image content, allowing for a statistical correction approach. Based on object size distribution within datasets, we implement the SBB strategy through two methods: 1) Global Scaling Correction (GSC), which applies a uniform scaling factor to estimate and correct a global average error; and 2) Interval Scaling Correction (ISC), which categorizes objects by size into intervals and estimates a dedicated correction factor for each, enabling more precise, fine-grained calibration. For efficient optimization of multiple parameters in ISC, we design a tailored model fine-tuning strategy. Furthermore, we introduce a Normalized Residual Fluctuation (NRF) metric to quantitatively assess the smoothing effect and training stability. Extensive experiments on multiple benchmarks demonstrate that our method consistently enhances detection accuracy across various model architectures. Both GSC and ISC achieve significant performance improvements over strong baselines, including the latest YOLOv11n, without adding inference overhead. The codes are available at https://github.com/Acui001/SBB.git.",
+  "abstract_ja": "",
+  "authors": [
+    "Chao Zhou",
+    "Shenghua He",
+    "Fengchuang Xing",
+    "Han Yang",
+    "Qiangguo Yu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/Acui001/SBB.git",
+  "hasCode": true,
+  "id": "arxiv-2611.00676",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Deep learning-based object detection models are highly dependent on the quality of annotated training data. However, large-scale datasets often contain inevitable label noise, with bounding box…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "Smooth bounding box for object detection",
+  "url": "https://arxiv.org/abs/2611.00676",
+  "use_case": ""
+}

@@ -1,0 +1,29 @@
+{
+  "abstract": "Energy-constrained aerial platforms require accurate object detection under strict power and latency budgets, yet conventional inference remains bottlenecked by multiply-accumulate (MAC) operations. While spiking neural networks (SNNs) offer bio-inspired efficiency, many SNN detectors retain hybrid MACs in intermediate layers, or use spike-driven inference where multi-level spikes are interpreted as repeated binary events. We propose SpikeAD, a direct-trained spike-controlled neuromorphic aerial detector. In SpikeAD, sparse bounded integer spikes act strictly as multiplexer control signals for multiplier-free shift-add inference, preserving spike boundaries throughout a four-scale bidirectional feature pyramid. We introduce the Spike-Gated Multi-Scale (SGMS) block, performing receptive field expansion with activity-driven channel selection, implementable with adders and comparators. Evaluated on VisDrone and DOTA and across Nano, Small, and Medium variants, SpikeAD achieves up to 46.2% mAP@50 on VisDrone (+4.8% over SNN prior art), and generalizes to oriented bounding box (77.6% mAP@50 on DOTA) using the proposed SpikeOBB head. Under the Horowitz 45nm arithmetic energy model following standard methodology in SNN literature, SpikeAD achieves up to 18.9x estimated reduction relative to an equivalent MAC-based implementation. We propose the Spike Processing Core (SPC), an RTL compute primitive to validate hardware realizability for reconfigurable and scalable custom accelerator chip design on FPGA/ASIC, highlighting a promising path toward next-generation ultra-low-power neuromorphic processors for aerial object detection. Link to the open-source and open-weight GitHub repository will be added upon publication.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhifan Song",
+    "Haralampos-G. Stratigopoulos"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00112",
+  "likes_count": 0,
+  "publishedAt": "2026-10-28",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Energy-constrained aerial platforms require accurate object detection under strict power and latency budgets, yet conventional inference remains bottlenecked by multiply-accumulate (MAC) operations.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection",
+      "generation"
+    ]
+  },
+  "title": "SpikeAD: Toward Multiplication-Free Spike-Controlled Neuromorphic Architecture for Energy-Efficient Small Object Detection",
+  "url": "https://arxiv.org/abs/2611.00112",
+  "use_case": ""
+}

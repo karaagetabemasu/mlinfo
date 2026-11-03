@@ -1,0 +1,27 @@
+{
+  "abstract": "Personalized cancer vaccines require prioritizing, among hundreds of candidate mutant peptides, the few that will induce a T-cell response. This study asks what general-purpose machine learning achieves on that task, and whether the features such models identify as important can be trusted. We make three contributions. The first is a benchmark of sixty models: twelve supervised classifier families, each in five configurations, evaluated on the Immunogenic Tumor Specific Neoantigen database (ITSNdb; 199 experimentally validated neoantigens, 129 immunogenic and 70 non-immunogenic). All sixty are compared under one stratified k-fold cross-validation protocol, in which the data used to choose a configuration are never the data used to score it. The second is an interpretability study that combines SHAP with feature ablation. The third is a shuffled-label control that tests whether a SHAP value has been earned. Two results follow, and both run against current practice. First, the classical linear models lead the ranking. The gradient-boosted ensembles and neural networks that dominate recent work bring no advantage. Second, SHAP can fail on high-cardinality categorical features. Ablation establishes the presenting HLA allele as the dominant input and the source gene as dispensable. SHAP reports the opposite, assigning 68.7% to 81.7% of its total value to the source gene in every model that gives each gene its own weight. Shuffling the gene labels at random among the peptides resolves the contradiction: the meaningless column earns the same SHAP value as the real one. That value measures only that ITSNdb contains 173 genes for 199 peptides. We therefore recommend that SHAP values for high-cardinality categorical annotations in cohorts of this size always be reported against such a shuffled-label control, and we describe one in full.",
+  "abstract_ja": "",
+  "authors": [
+    "Ramon Gonzalez"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00907",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Personalized cancer vaccines require prioritizing, among hundreds of candidate mutant peptides, the few that will induce a T-cell response. This study asks what general-purpose machine learning…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Benchmarking Machine-Learning Classifiers for Neoantigen Immunogenicity Prediction and the Limits of SHAP Interpretability",
+  "url": "https://arxiv.org/abs/2611.00907",
+  "use_case": ""
+}

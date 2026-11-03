@@ -1,0 +1,34 @@
+{
+  "abstract": "3D visual grounding localizes objects in 3D scenes from natural language descriptions, requiring reasoning over semantics, spatial relationships, and multi-view observations. Training-free approaches avoid costly annotations but often rely on explicit scene transformation or scene-level frame selection, which may waste limited visual capacity on query-irrelevant regions. We observe that effective grounding should prioritize observations that provide evidence for the query rather than uniformly represent the entire scene. Based on this insight, we introduce QVR3D, a query-guided visual reasoning framework that operates on RGB-D observations using off-the-shelf foundation models. QVR3D combines Query-Guided Maximum Coverage (QGMC) for selecting complementary query-relevant views with Grounding Probability Estimation (GPE) that integrates instance confidence, attribute consistency, and relationship consistency. The framework supports both single- and multi-object grounding without task-specific adaptation. Experiments on ScanRefer and Nr3D achieve state-of-the-art zero-shot performance, while QGMC also improves frame efficiency across multiple 3D vision-language tasks. Our code is available at https://github.com/jwliao1209/QVR3D.",
+  "abstract_ja": "",
+  "authors": [
+    "Jung-Hao Kao",
+    "Jing-En Huang",
+    "Jia-Wei Liao",
+    "Tzuhsuan Huang",
+    "Yu-Lun Liu"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/jwliao1209/QVR3D",
+  "hasCode": true,
+  "id": "arxiv-2611.01084",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "3D visual grounding localizes objects in 3D scenes from natural language descriptions, requiring reasoning over semantics, spatial relationships, and multi-view observations. Training-free approaches…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "QVR3D: Query-Guided Visual Reasoning for Training-Free 3D Grounding",
+  "url": "https://arxiv.org/abs/2611.01084",
+  "use_case": ""
+}

@@ -1,0 +1,34 @@
+{
+  "abstract": "We propose \\emph{Déjà Vu}, a test-time decoding module for semantic correspondence. Matching semantically equivalent keypoints across images of the same object category is challenging due to variations in appearance, viewpoint, and scale. While features from large pretrained vision models carry strong zero-shot correspondence ability, existing methods reduce final matching to greedy top-$1$ nearest-neighbor selection. We show that the correct correspondence appears among the top-ranked candidates far more often than top-$1$ matching achieves: with $30$ candidates, zero-shot features exceed the top-$1$ accuracy of a supervised model. This reveals a \\textit{decoding bottleneck} rather than a limit of the representation. Motivated by this observation, we formulate semantic correspondence as a \\textit{recall-then-rerank} problem. Our method first nominates an adaptive candidate set, larger when the similarity distribution is ambiguous and smaller when it is confident, then re-ranks the candidates with a graded cycle-consistency score: each candidate is matched back to the source image and penalized by how far its reverse match lands from the original keypoint. The module operates entirely on the similarity matrix already computed by the base method. It consistently improves three representative baselines on SPair-71k, its geometric subset, and PF-Pascal under both unsupervised and weakly supervised settings, with gains of up to $+1.8$ PCK@0.10 on SPair-71k and $+3.4$ PCK@0.15 on PF-Pascal, and $+4.9$ under Keypoint Average Precision.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiaoran Zhang",
+    "Huidong Liu",
+    "Yang Liu",
+    "Chien-Chih Wang",
+    "Jinfa Huang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00328",
+  "likes_count": 0,
+  "publishedAt": "2026-10-30",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "We propose \\emph{Déjà Vu}, a test-time decoding module for semantic correspondence. Matching semantically equivalent keypoints across images of the same object category is challenging due to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised"
+    ],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Déjà Vu: Cycle-Consistent Re-ranking for Semantic Correspondence",
+  "url": "https://arxiv.org/abs/2611.00328",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "In this paper, we formulate clustering analysis as discrete generative modeling. Specifically, when the generator is restricted to a finite candidate space, the generated samples naturally emerge as the most representative prototypes of the underlying data distribution. To model such a discrete candidate space, we employ a Discrete Distribution Network (DDN). However, DDN suffers from unstable training due to its hard nearest-neighbor selection. To stabilize training and encourage geometric consistency, we replace DDN's l2 loss between images with regularized Wasserstein distance between the empirical distributions of real and generated images. The resulting framework, termed Discrete Generative Clustering (DGC), offers four notable advantages: 1) the learned cluster centers are directly interpretable, as they are realistic synthetic samples; 2) the inference cost scales logarithmically with the number of clusters, i.e., O(log K), making the method scalable to extremely large K; 3) the regularized Wasserstein distance provides a smooth and well-behaved optimization objective that facilitates stable convergence, whereas DDN's l2 loss tends to converge to poor local optima; and 4) DGC replaces DDN's nearest-neighbor selection with random-neighbor selection, which avoids the density shift problem during multi-step forward. Extensive experiments on several benchmarks demonstrate the effectiveness and desirable properties of DGC. The code is publicly available at GitHub.",
+  "abstract_ja": "",
+  "authors": [
+    "Senmao Ye",
+    "Fei Liu",
+    "Dawei Zhang",
+    "Yuqian Zheng",
+    "Jun Zhang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00653",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "In this paper, we formulate clustering analysis as discrete generative modeling. Specifically, when the generator is restricted to a finite candidate space, the generated samples naturally emerge as…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Regularized Wasserstein Distance for Discrete Generative Modeling and Clustering Analysis",
+  "url": "https://arxiv.org/abs/2611.00653",
+  "use_case": ""
+}

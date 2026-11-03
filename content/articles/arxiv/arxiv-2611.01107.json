@@ -1,0 +1,31 @@
+{
+  "abstract": "Millimeter-wave (mmWave) communication relies on directional beam sweeping for initial access, which incurs substantial latency and signaling overhead as antenna arrays grow large and deployments become denser. Machine-learning-based beam prediction can reduce this overhead, but its effectiveness depends on training data that accurately reflects the deployment environment, a requirement that is difficult to meet in practice. This paper presents a latency-aware beam management architecture that integrates digital-twin-assisted prediction, regionbased localization, weighted ensemble learning, and explainability-driven beam pruning into a unified framework. A digital twin (DT) generates site-specific ray-traced channel knowledge offline, enabling environment-aware beam prediction without exhaustive real-world measurements and supporting both initial access and beam tracking. The proposed ensemble learning scheme combines a base classifier and a specialist classifier through reliability-weighted fusion to improve prediction accuracy and robustness, while explainable artificial intelligence (XAI)-based attribution pruning reduces the beam codebook to a small subset of the most informative beams for beam allocation. To capture the distributional mismatch between the DT and real-world environments: the network was trained on imperfect digital-twin data but evaluated on real-world surrobase data. Results show that the proposed method achieves 96.80% top-1 and 98.36% top-3 beam prediction accuracy, while reducing over-the-air sounding overhead by nearly an order of magnitude relative to exhaustive sweeping, outperforming convolutional and deep neural network baselines from prior work.",
+  "abstract_ja": "",
+  "authors": [
+    "Muhammad Kamran Saeed",
+    "Ashfaq Khokhar"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01107",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Millimeter-wave (mmWave) communication relies on directional beam sweeping for initial access, which incurs substantial latency and signaling overhead as antenna arrays grow large and deployments…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "Digital Twin-Assisted Fast Beam Alignment for mmWave MIMO Networks",
+  "url": "https://arxiv.org/abs/2611.01107",
+  "use_case": ""
+}

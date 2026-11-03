@@ -1,0 +1,27 @@
+{
+  "abstract": "Synthetic variants of known attacks, including feature-space adversarial perturbations, are sometimes used as stand-ins for unseen (\"zero-day\") attacks when evaluating machine-learning network intrusion detection systems (NIDS). We test whether this proxy holds. On the corrected CIC-IDS2017 release we train Random Forest, XGBoost, a 1D-CNN and an FT-Transformer and compare, at a fixed 1% false-positive rate over five seeds, detection under constrained perturbations of known attacks (gradient-based and black-box attacks on 42 attacker-controllable features) with leave-one-attack-family-out (LOAO) detection, where an entire family is absent from training. Detection under the strongest perturbation we tested, with budgets of at most 0.2, stays between 90.9% and 99.7%, yet mean detection of held-out families falls to 76.2% (RF), 40.2% (XGBoost), 25.8% (1D-CNN) and 22.8% (FT-Transformer). Robustness exceeds LOAO detection for every model (gaps of 24 to 72 percentage points, 23 to 66 when robustness is also averaged over families; Holm-adjusted p $\\le$ 0.00096), and the two measures agree at most on a coarse ranking of the models. An exact mixed-integer evasion search confirms the tree ensembles' scores. Benign-only anomaly detectors and a simple multi-class open-set baseline do not close the gap. A temporal split on 5 seeds (3 of the 4 models) leaves the gap in place. On CSE-CIC-IDS2018 the gap recurs for every model (16 to 68 points). On these benchmarks and under this threat model, a robustness score should not be read as a zero-day score, and the two should be reported separately. Code and per-seed results are publicly available.",
+  "abstract_ja": "",
+  "authors": [
+    "Abdulhamid Zaro"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00713",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Synthetic variants of known attacks, including feature-space adversarial perturbations, are sometimes used as stand-ins for unseen (\"zero-day\") attacks when evaluating machine-learning network…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Adversarial Robustness Is Not Zero-Day Generalization: A Controlled Evaluation of Flow-Based Intrusion Detectors on Corrected CIC-IDS2017",
+  "url": "https://arxiv.org/abs/2611.00713",
+  "use_case": ""
+}

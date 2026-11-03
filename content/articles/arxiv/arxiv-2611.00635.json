@@ -1,0 +1,27 @@
+{
+  "abstract": "Data-driven control in radio access networks (RANs) selects resource allocations using associations between control actions and key performance indicators (KPIs) learned from network telemetry. Because the shared radio environment influences both the scheduler's decisions and the resulting performance, a bias known as confounding, such associations overstate the effect of an allocation and misdirect resources toward user equipment (UEs) that cannot benefit. Moreover, individual UEs respond heterogeneously to the same decision, so even a corrected average effect does not identify which UEs gain from additional resources. While causal inference has recently been applied to RANs, existing approaches do not model the cross-layer mechanisms that connect an allocation to its outcome. In this paper, a hierarchical structural causal model (H-SCM) spanning the PHY, MAC, and network layers is proposed that separates cell-load confounding from UE-specific response heterogeneity. In particular, a counterfactual scheduling problem is formulated in which physical resource block (PRB) allocations are selected using per-UE counterfactual goodput rather than observational conditional averages. This problem is solved via a pipeline combining constrained causal discovery, structural-equation fitting, and abduction-action-prediction. Simulations demonstrate that naive observational estimation overstates the full-PRB response by 73.3%, whereas adjustment for cell-load confounding reduces the relative error to 9.8%. Held-out interventions are predicted with a coefficient of determination of 0.988. Counterfactual scheduling achieves a mean relative loss in total cell goodput below 0.5% against the ground-truth optimum, compared with 2.0-2.9% for a neural-network baseline.",
+  "abstract_ja": "",
+  "authors": [
+    "Artin Elhamirad",
+    "Christo Kurisummoottil Thomas",
+    "Ali Tajer"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00635",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Data-driven control in radio access networks (RANs) selects resource allocations using associations between control actions and key performance indicators (KPIs) learned from network telemetry.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "From Confounding to Counterfactuals: A Cross-Layer Causal Model for RAN Scheduling",
+  "url": "https://arxiv.org/abs/2611.00635",
+  "use_case": ""
+}
