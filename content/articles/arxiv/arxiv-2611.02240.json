@@ -1,0 +1,27 @@
+{
+  "abstract": "Safe navigation in interactive traffic requires autonomous vehicles to reason about unobservable human characteristics and the reciprocal nature of multi-agent interactions. Traditional architectures often decouple prediction from planning, leading to the \"Frozen Robot Problem\" or unsafe maneuvers under high ambiguity because they treat risk assessment and information acquisition as independent objectives. We argue that the notion of safety should not remain static but must instead dynamically co-evolve with the system's internal confidence: the robot should actively clarify ambiguity when necessary while also recognizing the diminishing returns of information, and naturally transition toward task execution. We introduce a unified belief-space Model Predictive Control (MPC) framework that couples multistep information planning with a clarity-adaptive Conditional Value-at-Risk (CVaR) barrier mechanism. By treating clarity, a scalar informational state, as an explicit planning variable, the controller co-designs its probing strategy with its safety specification, tightening conservatism under high ambiguity and relaxing constraints as confidence improves. We further provide a performance analysis showing that the cost of information seeking and the expected planning-cost gap to a controller that knows the true human characteristic are bounded by residual ambiguity and solver error. We evaluate the framework in lane-merging and unsignalized-intersection scenarios against representative interactive-planning baselines. Across 5,000 simulations, the proposed method achieves the highest success rates (94.6% and 93.2%) and the lowest collision rates (1.2% and 1.4%) among the compared methods, providing a principled foundation for robust decision-making in human-centric environments.",
+  "abstract_ja": "",
+  "authors": [
+    "Youran Wang",
+    "Devodita Chakravarty",
+    "Yiwei Lyu"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02240",
+  "likes_count": 0,
+  "publishedAt": "2026-11-01",
+  "source": "arxiv",
+  "subcategory": "multi-agent",
+  "summary": "Safe navigation in interactive traffic requires autonomous vehicles to reason about unobservable human characteristics and the reciprocal nature of multi-agent interactions. Traditional architectures…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "When to Probe and When to Act: Clarity-Aware Risk-Adaptive Control for Interactive Driving",
+  "url": "https://arxiv.org/abs/2611.02240",
+  "use_case": ""
+}

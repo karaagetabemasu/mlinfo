@@ -1,0 +1,28 @@
+{
+  "abstract": "Small students degrade on large reasoning models' (LRMs') long solutions, so recent work shortens them by interpolating an LRM with a short-answer model at ratio $λ$. We ask what student weights retain when this teacher stops thinking, comparing LoRA adapters of three students from three teacher pairs at each $λ$. In each pair, the adapters' update subspace shifts most where the teacher stops thinking and solutions shorten most, locating the change without attributing it. We identify a shared adapter subspace tied to thinking-like behavior (reflective markers, monologue format and long solutions). Shared by adapters before that point, it keeps about half (post hoc) while one pair's teacher halves its solutions but keeps its think tag, and largely empties after thinking stops. Removing it largely turns this behavior off for every pair, student and benchmark. Only in that pair and one other student does it leave clearly fewer markers than removing the update's top components; elsewhere, same-energy random directions often nearly match it. Grafted into a short-answer student at twice its weight, it turns early markers (a post hoc count) on, like the whole update, but the student rarely finishes. Our work identifies a weight subspace tied to distilled thinking-like behavior.",
+  "abstract_ja": "",
+  "authors": [
+    "Taeyeong Kim",
+    "Jaemin Jung",
+    "Ahhyun Kim",
+    "Unggi Lee"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.04141",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Small students degrade on large reasoning models' (LRMs') long solutions, so recent work shortens them by interpolating an LRM with a short-answer model at ratio $λ$. We ask what student weights…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Where Do Distilled Students Store Thinking?",
+  "url": "https://arxiv.org/abs/2611.04141",
+  "use_case": ""
+}

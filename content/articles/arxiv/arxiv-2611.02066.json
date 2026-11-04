@@ -1,0 +1,30 @@
+{
+  "abstract": "Language and vision models became data-efficient by pretraining on plentiful unlabelled data; physical field models have such data, over ten million 3D shapes, but geometry pretraining designs its targets rather than deriving them from the physics. Euler-Lagrange geometry pretraining derives them: for attached flow, a shape enters the flow's Euler-Lagrange equation only through coefficients that distance and normal line (the normal up to sign) fix to first order. Their reconstruction error therefore bounds what a representation loses about any field, and fine-tuning on costly simulations need only assemble the global field. We realise it in AREALS, a masked surface autoencoder whose areal tokens carry position, normal and area, pretrained self-supervised and sign-free on 61,822 raw meshes. Because the operating condition enters only through the far field, sensors can supply it: AREALS completes a hidden field in one forward pass without condition labels. It matches the accuracy of the same architecture trained from scratch with half the simulations on DrivAerML and DrivAerNet++ and about a quarter on WindsorML. On DoubleDelta wings, 20 sensors give $3.9\\times$ and $4.0\\times$ lower field and force error than GABI, a Bayesian inversion method with a learned prior, and beyond the training angles pretraining halves the error.",
+  "abstract_ja": "",
+  "authors": [
+    "Maggie Chlon",
+    "Leon Chlon"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02066",
+  "likes_count": 0,
+  "publishedAt": "2026-11-01",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Language and vision models became data-efficient by pretraining on plentiful unlabelled data; physical field models have such data, over ten million 3D shapes, but geometry pretraining designs its…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Large Geometry Models Are Priors For Fast Physics Pretraining",
+  "url": "https://arxiv.org/abs/2611.02066",
+  "use_case": ""
+}

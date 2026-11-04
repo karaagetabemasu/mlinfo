@@ -1,0 +1,30 @@
+{
+  "abstract": "Bayesian online changepoint detection provides a natural framework for quantifying uncertainty about whether and when a change has occurred. It also enables the use of prior information which can increase detection power. Exact Bayesian inference sequentially updates the posterior of whether and when a change has occurred. We present a unified approach to calculating and updating this posterior for a class of regression models covering standard changepoint scenarios, such as changes in mean and slope, whilst also allowing common structure such as seasonal effects. However, naive implementation has a computational cost that increases linearly over time. We, further, introduce approximate updates that keep this cost constant. These are based on novel ideas of merging changepoint times, and are an alternative to existing pruning approaches. We show that merging enables better approximations of the posterior of when a change occurs. Furthermore, we introduce a novel condition for merging that accounts for both the posterior probability of the changepoint times and the similarity of their corresponding post-change parameters. We show that this is more accurate than conditions that only consider the former. We demonstrate the advantage of our approach on simulated data, and the Azure LLM inference traces.",
+  "abstract_ja": "",
+  "authors": [
+    "Ziyang Yang",
+    "Paul Fearnhead",
+    "Dan Grose"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.03230",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Bayesian online changepoint detection provides a natural framework for quantifying uncertainty about whether and when a change has occurred. It also enables the use of prior information which can…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection",
+      "regression"
+    ]
+  },
+  "title": "Bagel: A Fast Bayesian Online Changepoint Detection Algorithm for Linear Models via Posterior Merging",
+  "url": "https://arxiv.org/abs/2611.03230",
+  "use_case": ""
+}

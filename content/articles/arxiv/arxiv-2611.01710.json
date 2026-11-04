@@ -1,0 +1,32 @@
+{
+  "abstract": "Web communities rely on moderators to catch harmful messages such as insults, hate speech, and scams, but no one can read every message. Existing tools give each message a risk score, which tells moderators where to look but not what to read or how to check it. Yet meaning depends on context: the same reply, \"I agree.\", can support or oppose removing someone from a group. Moderators therefore need source-grounded evidence, not just scores: a few key messages kept with their original wording and replies. We present CST, a lightweight triage pipeline that first decides where to look, then what to show. It scores risk by pairing character patterns, which capture exact wording, with sentence meaning from a fixed multilingual model, so it handles several languages and runs on an ordinary CPU. It then groups related messages and picks from each group in turn, so a small reading budget covers different parts of a discussion, and links every pick back to the original thread. Across six tasks from five datasets in several languages, CST ranks harmful messages more accurately than a fully fine-tuned multilingual model and, under the same budget, finds more of them than reading by score alone. In a user study, reviewers needed at least 27% less time with CST's grouped evidence while keeping decision accuracy above 94%. CST turns risk scores into evidence that moderators can read quickly and check in context. Code and dataset reconstruction resources will be released at https://github.com/Kirito14IT/CST-MIL.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhihua Wang",
+    "Yifeng Gao",
+    "Yunhao Feng",
+    "Rui Pan",
+    "Baiheng Zhao"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/Kirito14IT/CST-MIL",
+  "hasCode": true,
+  "id": "arxiv-2611.01710",
+  "likes_count": 0,
+  "publishedAt": "2026-11-01",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Web communities rely on moderators to catch harmful messages such as insults, hate speech, and scams, but no one can read every message. Existing tools give each message a risk score, which tells…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "audio"
+    ],
+    "task": []
+  },
+  "title": "CST: Lightweight Risk Triage with Source-Grounded Evidence for Web Discussions",
+  "url": "https://arxiv.org/abs/2611.01710",
+  "use_case": ""
+}

@@ -1,0 +1,25 @@
+{
+  "abstract": "User simulators generate responses in place of human participants, allowing researchers to estimate the result of a study. To use these estimates before collecting human responses, researchers need a way to assess their reliability. We test whether disagreement among simulators can identify unreliable estimates of a group's response proportions and of differences between groups. We evaluate this signal using 6 language-model simulators and existing GlobalOpinionQA responses for 60 questions in 12 countries. Disagreement predicts invalidity more accurately for differences between two groups than for a single group's response proportions (AUC 0.87 versus 0.71). Errors shared by the simulators remain invisible to this signal. When such an error affects both groups equally, it cancels in the comparison, helping explain the stronger result for group differences. We test this explanation by estimating the shared bias using one set of groups and subtracting it from predictions for a separate set. This correction reduces prediction error without changing disagreement among the simulators. In a retrospective analysis, we simulate referring the 20% of group comparisons with the greatest disagreement for human assessment. Among the remaining comparisons with a conclusive validity judgment, 54.8% are judged invalid, compared with 63.7% before referral.",
+  "abstract_ja": "",
+  "authors": [
+    "Saber Zerhoudi"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01354",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "User simulators generate responses in place of human participants, allowing researchers to estimate the result of a study. To use these estimates before collecting human responses, researchers need a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Wrong Together: Shared Bias in User Simulation",
+  "url": "https://arxiv.org/abs/2611.01354",
+  "use_case": ""
+}

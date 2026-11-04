@@ -1,0 +1,31 @@
+{
+  "abstract": "Diffusion driving vision-language-action models repeatedly execute the backbone at every denoising stage, incurring substantial inference cost, while it remains unclear whether all scenes require the same decoding computation. To distinguish when a trajectory becomes readable from how much further refinement it requires, we analyze trajectory readout across network depth and decoding progress. We identify a depth-decoding dissociation in which late-layer representations already support useful trajectory readout after the first forward sweep, whereas early-layer representations benefit more from continued decoding. We further find that both the preferred readout layer and decoding depth vary across scenes. Based on these observations, we propose a scene-adaptive readout and decoding framework. A scene-conditioned readout MoE adaptively weights and combines trajectory predictions from layer-specific late-layer representations after a single backbone sweep, while an adaptive decoding policy applies additional native refinement only when required by the scene. We evaluate our framework on two diffusion driving VLAs across the Waymo E2E and nuScenes benchmarks. Our method improves validation RFS by up to 0.56 while also improving test performance, and achieves an end-to-end speedup of up to $6.0\\times$ on Waymo E2E, while consistently reducing trajectory error on nuScenes. These results demonstrate that scene-level readout and decoding allocation improves planning quality while avoiding unnecessary decoding. Our code is available at https://github.com/sjyu001/SARD",
+  "abstract_ja": "",
+  "authors": [
+    "Seungjun Yu",
+    "Jiho Choi",
+    "Inha Kang",
+    "Hojun Choi",
+    "Seungwook Kim"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/sjyu001/SARD",
+  "hasCode": true,
+  "id": "arxiv-2611.02076",
+  "likes_count": 0,
+  "publishedAt": "2026-11-01",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Diffusion driving vision-language-action models repeatedly execute the backbone at every denoising stage, incurring substantial inference cost, while it remains unclear whether all scenes require the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Scene-Adaptive Readout and Decoding in Diffusion Driving VLAs",
+  "url": "https://arxiv.org/abs/2611.02076",
+  "use_case": ""
+}

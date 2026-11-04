@@ -1,0 +1,37 @@
+{
+  "abstract": "Understanding how cells respond to perturbations over time is central to cell biology and drug discovery. Live-cell imaging captures the dynamics of perturbation-induced phenotypes in individual cells. While fluorescence imaging can visualize specific molecular phenotypes, labeling and repeated illumination often affect cell health. Virtual staining offers an alternative by predicting these fluorescence images from images acquired without fluorescent labels. Although many virtual staining models have been developed, their performance on volumetric time-lapse data remains poorly characterized. We address this gap with an evaluation suite for 3D time-lapse virtual staining of live cells. The suite combines paired 3D time-lapse images acquired with and without fluorescent labels, a set of baseline models, and three metric tiers measuring pixel-level fidelity, organelle segmentation performance, and single-cell phenotype similarity. Using this evaluation suite, we study metric and model behavior across 3 cell types, 2 microscopes, 4 organelles, and 3 perturbation states. We find that regression baselines better predict the spatial localization of target organelles, whereas the generative baseline better captures the distribution of phenotypes across cells. These differences expose trade-offs between structural and phenotypic fidelity that are obscured by single-metric evaluation and suggest how virtual staining models can be developed for diverse downstream tasks such as localization, segmentation, tracking, and phenotypic profiling. We release the curated datasets, baseline checkpoints, and evaluation code as part of DynaCell, a broader framework for image-based profiling of cell-state dynamics.",
+  "abstract_ja": "",
+  "authors": [
+    "Alexandr A. Kalinin",
+    "Dihan Zheng",
+    "Taylla Milena Theodoro",
+    "Ivan Ivanov",
+    "Eduardo Hirata-Miyasaki"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02324",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Understanding how cells respond to perturbations over time is central to cell biology and drug discovery. Live-cell imaging captures the dynamics of perturbation-induced phenotypes in individual…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": [
+      "detection",
+      "generation",
+      "segmentation",
+      "regression"
+    ]
+  },
+  "title": "The DynaCell Evaluation Suite for Dynamic 3D Virtual Staining of Live Cells",
+  "url": "https://arxiv.org/abs/2611.02324",
+  "use_case": ""
+}

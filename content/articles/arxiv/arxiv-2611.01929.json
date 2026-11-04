@@ -1,0 +1,28 @@
+{
+  "abstract": "We study the implicit bias of Adam and its similarity to sign gradient descent on homogeneous models in binary classification tasks. Perhaps surprisingly, we uncover that these depend on the learning rate schedule. While previous works studied strongly decaying learning rate schedules $η(t)=\\mathrm o \\left(t^{1/L-1}\\right)$, where $L$ is the homogeneity degree, and showed $\\ell_\\infty$-margin-maximization biases, we focus on the more common complementary regime, including constant and weakly decaying schedules. For a polynomial schedule $t^α$ and homogeneity degree $L$, we show that when $α> \\frac 1L - \\frac12$, Adam has no trajectory-independent margin-maximization bias for deep linear networks (in the KKT sense): first, there is no non-trivial, locally Lipschitz, convex implicit regularizer in this setting, including any squared norm. Second, on width-$1$ networks, the result holds without requiring convexity, implying that any implicit regularizer for wide networks must be trivial when restricted to a width-$1$ network. Nevertheless, we positively characterize the implicit bias in this regime as maximizing a trajectory-dependent weighted-$\\ell_2$ margin for any $L$-homogeneous model. The fundamental mechanism behind our results is convergence of Adam's preconditioner to a trajectory-dependent vector, which also allows showing that the limiting parameter direction depends on initialization. In the intermediate regime $\\frac 1L - 1 \\leq α\\leq \\frac1L - \\frac12$ we prove an $\\ell_\\infty$ bias, conditional on gradient directional convergence to a full-support vector. Of independent interest, we establish a loss decay rate for full batch Adam on general homogeneous models, whose leading order depends only on the second-moment parameter.",
+  "abstract_ja": "",
+  "authors": [
+    "Eitan Gronich",
+    "Gal Vardi"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01929",
+  "likes_count": 0,
+  "publishedAt": "2026-11-01",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "We study the implicit bias of Adam and its similarity to sign gradient descent on homogeneous models in binary classification tasks. Perhaps surprisingly, we uncover that these depend on the learning…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Watch Your Step: Adam's Margin Maximization Bias Depends on the Learning Rate Schedule",
+  "url": "https://arxiv.org/abs/2611.01929",
+  "use_case": ""
+}

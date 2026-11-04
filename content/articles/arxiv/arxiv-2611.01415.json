@@ -1,0 +1,31 @@
+{
+  "abstract": "Harness engineering and self-evolving agents improve language-model agents quickly, yet their gains live outside the model. The harness is re-sent and re-paid on every call, and the standard route to internalization is a weight update that is costly to iterate and fixed once merged. We propose compiling the harness instead. Latent Harness distills an external condition into a rank-8 activation shift. The shift is applied at the output of every decoder block of a frozen backbone, at 0.03-0.05% of parameters. The condition is either an explicit process-level behavior instruction or the behavioral contract of an agentic harness. At inference the compiled bundle carries no harness text and adds no tokens. It exposes three runtime controls for injection strength, injection phase, and shift-space mixing. Compiled behaviors recover the source-harness gain in 8 of 10 preregistered settings. Where the explicit source pays the heaviest per-call token tax, the compiled form exceeds it. The same bundles transfer zero-shot across tasks (5 of 7 pairs positive) and compose in shift space, while stacked text instructions interfere destructively. Used as a search space, they lift budget-matched harness search by 1.45 times. On three agentic benchmarks the operator aligns policy to the harness con- tract. Under matched data, capacity, and effective strength it outperforms same-capacity LoRA, which needs 11.1 times the parameters to reach the same band, and it regresses nothing where the base policy is already strong. Across 1B-to-8B models the method skeleton is invariant while gain locations move with the model-task pair, which delimits where compiled harnesses should be deployed.",
+  "abstract_ja": "",
+  "authors": [
+    "Ran Li",
+    "Shimin Di",
+    "Zeyu Ren",
+    "Ling Yue",
+    "Jiachuan Wang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01415",
+  "likes_count": 0,
+  "publishedAt": "2026-11-01",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Harness engineering and self-evolving agents improve language-model agents quickly, yet their gains live outside the model. The harness is re-sent and re-paid on every call, and the standard route to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Latent Harness: Compiling Agent Behaviors into Post-Block Activation Shifts",
+  "url": "https://arxiv.org/abs/2611.01415",
+  "use_case": ""
+}

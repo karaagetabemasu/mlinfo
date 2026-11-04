@@ -1,0 +1,28 @@
+{
+  "abstract": "Attention-based rerankers score each candidate by the attention mass that retrieval heads route to it from the question, but the question, serving as a fixed query, carries limited information for locating relevant evidence. We propose Re$^3$Rank, a listwise reranker built on reasoning-conditioned retrieval heads (RRHeads). A generator first writes a reasoning trace over the question and the candidates, and a scorer then uses the trace tokens as the attention query of a few selected RRHeads, reading relevance as continuous scores. We present a straight-through estimator to propagate the ranking loss through the discrete trace, so that the generator and the scorer can be trained jointly for ranking. Averaged over 9 benchmarks, Re$^3$Rank outperforms 11 baseline rerankers: our 4B variant exceeds the strongest baseline by 3.11 NDCG@10 points on average, and even our 0.6B variant surpasses rerankers with up to 32B parameters.",
+  "abstract_ja": "",
+  "authors": [
+    "Ruiyi Yan",
+    "Zhuoyuan Mao",
+    "Yugo Murawaki",
+    "Yiwen Guo"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02550",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Attention-based rerankers score each candidate by the attention mass that retrieval heads route to it from the question, but the question, serving as a fixed query, carries limited information for…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Re$^3$Rank: Listwise Reranking with Reasoning-Conditioned Retrieval Heads",
+  "url": "https://arxiv.org/abs/2611.02550",
+  "use_case": ""
+}

@@ -1,0 +1,37 @@
+{
+  "abstract": "Robust multimodal perception for soft robotic grasping is challenged by modality-dependent noise, semantic ambiguity, and limited coordinated multisensory data. We introduce Soma, a dataset containing 100 objects, 1,000 continuous grasping trajectories, and 74,914 multimodal samples grouped by software acquisition cycle, spanning remote RGB, hand RGB, depth, tactile, IMU, and structured text observations. We also collect Soma-Success, an independent grasp-outcome dataset with 1,000 trials (998 retained after quality control), to evaluate frozen-encoder transfer for post-hoc grasp outcome classification and early grasp success prediction. Built on Soma, SomaAlign learns multimodal representations in three stages: masked reconstruction estimates relative modality reliability; reliability-aware contrastive alignment uses pair-specific adaptive temperatures to adjust alignment sharpness; and conflict-aware semantic constraints improve intra-sample cross-modal consistency while preserving global feature geometry. SomaAlign achieves an average Recall@10 of 90.66% across 30 directed cross-modal retrieval tasks. The learned representations also support physical attribute recognition, multimodal question answering, cross-modal generation, and cross-dataset transfer to grasp outcome prediction. On Soma-Success, frozen SomaAlign encoders with lightweight probes achieve 94.59% post-hoc classification accuracy and 84.07% early prediction accuracy. Together, Soma, Soma-Success, and SomaAlign provide a data and representation-learning foundation for robust and transferable multimodal perception in soft robotic manipulation.",
+  "abstract_ja": "",
+  "authors": [
+    "Haoyuan Wang",
+    "Shuai Peng",
+    "Yongkai Liao",
+    "Yuxiao Sun",
+    "Wei Luo"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02794",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Robust multimodal perception for soft robotic grasping is challenged by modality-dependent noise, semantic ambiguity, and limited coordinated multisensory data. We introduce Soma, a dataset…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "classification",
+      "generation",
+      "qa",
+      "embedding"
+    ]
+  },
+  "title": "SomaAlign: Reliability-Aware Multimodal Representation Learning for Soft Robotic Grasping",
+  "url": "https://arxiv.org/abs/2611.02794",
+  "use_case": ""
+}

@@ -1,0 +1,35 @@
+{
+  "abstract": "Multimodal retrieval must integrate complementary evidence from views that may be missing, noisy, or unequally informative. When a sample provides limited reliable evidence, learning from its views alone can hinder the acquisition of useful retrieval representations. Semantically related training samples may provide complementary observations, yet existing volume-based objectives jointly align modalities within each sample without explicitly enabling information exchange across samples. We therefore propose a training-time hypergraph fusion framework that connects observed modalities both within samples and across semantically related samples, allowing representation learning to draw on evidence beyond an individual sample while leaving the retrieval pipeline unchanged at inference. The framework includes HyVol as a special case and introduces two configurations: wHyVol learns view contribution weights and symmetric semantic affinities, whereas wRHG additionally models typed interactions and participant roles through relational propagation. Missing modalities are omitted rather than imputed, and the hypergraph is discarded after training, incurring no additional inference cost. Experiments on eleven zero-shot video-text and audio-text retrieval benchmarks demonstrate broad improvements with both GRAM and HyperGRAM. Across 17 video benchmark-modality settings evaluated in both retrieval directions, wRHG outperforms GRAM in all 34 comparisons and HyperGRAM in 33 of 34. Mean text-to-video R@1 increases from 63.4 to 68.2 with GRAM and from 64.8 to 68.4 with HyperGRAM, while the largest video-to-text gain reaches 13.3 percentage points on ActivityNet. Under missing-modality evaluation, both weighted configurations retain positive text-to-video gains over GRAM across seven benchmarks at every evaluated missingness rate, even when 90% of clips lack one modality.",
+  "abstract_ja": "",
+  "authors": [
+    "Anindya Nag",
+    "Ambuj Mehrish",
+    "Sebastiano Vascon"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.03370",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Multimodal retrieval must integrate complementary evidence from views that may be missing, noisy, or unequally informative. When a sample provides limited reliable evidence, learning from its views…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "audio",
+      "video",
+      "multimodal"
+    ],
+    "task": [
+      "generation",
+      "embedding"
+    ]
+  },
+  "title": "Fuse To Align: Multimodal Representation Learning for Retrieval via Hypergraph Regularization",
+  "url": "https://arxiv.org/abs/2611.03370",
+  "use_case": ""
+}

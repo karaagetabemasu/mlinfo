@@ -1,0 +1,26 @@
+{
+  "abstract": "This paper studies dual path following for a quadrotor carrying a three-degree-of-freedom arm. The center of mass of the combined system must follow a vehicle path and the end effector must follow a second path, while the arm respects its joint limits and avoids its singular postures. The vehicle and the arm are mechanically coupled, so one controller must handle both paths. With the center of mass and the end-effector path coordinates as outputs, and a dynamic extension of the thrust, the system admits a normal form without internal dynamics. We characterize the states where this normal form fails. We formulate the transverse feedback linearizing controller as a quadratic program that relaxes only the speed of the end effector along its path and imposes safety and actuator limits as inequality constraints. The program reduces to a scalar problem with a closed-form solution. If it remains strictly feasible for all time, the feedback is locally Lipschitz, both paths are invariant and attractive, and every constraint holds. In the physics engine Drake, the controller resolves a conflict between the two speed references by slowing the end effector while both paths remain invariant. By contrast, a cascade with a safety filter leaves both paths. Code and animations are available at https://gradslab.github.io/am_dual_pf-/",
+  "abstract_ja": "",
+  "authors": [
+    "Hamza Tariq",
+    "Adeel Akhtar"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01442",
+  "likes_count": 0,
+  "publishedAt": "2026-11-01",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "This paper studies dual path following for a quadrotor carrying a three-degree-of-freedom arm. The center of mass of the combined system must follow a vehicle path and the end effector must follow a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Dual Path Following for an Aerial Manipulator Under State and Input Constraints via Transverse Feedback Linearization",
+  "url": "https://arxiv.org/abs/2611.01442",
+  "use_case": ""
+}

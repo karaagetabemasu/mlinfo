@@ -1,0 +1,27 @@
+{
+  "abstract": "Routing benchmarks often judge a router against a hindsight oracle that counts a query as solved whenever any model's recorded answer is correct, but under stochastic decoding that oracle mixes two different objects: the clairvoyant ceiling of committing to one model per query and the premium of calling several models and keeping any correct answer. A companion study measured this premium at 3.5 percentage points (pp) for 11 small open models on MATH-500; how large it is once current reasoning models enter the pool was unknown. We measure it with a fixed-protocol, pre-committed generation on a single NVIDIA B300: all 500 MATH-500 problems, 30 seeded samples per problem, Llama-3.3-70B-Instruct and NVIDIA's Nemotron Nano 9B v2 and Nemotron Super 49B v1.5 (a NAS derivative of the same 70B) under vendor sampling, a 65,536-token cap, a pinned Math-Verify scorer, and an append-only attempt ledger, for 45,000 scored responses. The two reasoning models both reach 96.1% accuracy against 76.2% for the 70B baseline. The empirical product-coupling premium is 0.215-0.588 pp across all two- and three-model pools; the empirical plug-in selection headroom over always calling Nano is 1.27 pp; and resampling Nano three times gives practically the same empirical any-correct rate as calling all three models once. Only 31 responses reached the cap, 25 of them with exactly periodic tails, yet the capped responses account for up to 60.2% of a model's output-length-squared proxy, and long generations made a fourth planned model, Llama-3.1-8B, too slow to finish. The premium is far below the companion's 3.5 pp, but models, pool size and protocol changed together; an oracle gap should therefore be reported with the pool, the protocol, the samples per cell and the decoding budget that produced it.",
+  "abstract_ja": "",
+  "authors": [
+    "Teng-Ruei Chen"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.04098",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Routing benchmarks often judge a router against a hindsight oracle that counts a query as solved whenever any model's recorded answer is correct, but under stochastic decoding that oracle mixes two…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "When Strong Reasoners Join the Pool: Small Union Premiums and Costly Runaway Generations in LLM Routing",
+  "url": "https://arxiv.org/abs/2611.04098",
+  "use_case": ""
+}

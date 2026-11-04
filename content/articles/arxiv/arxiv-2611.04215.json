@@ -1,0 +1,28 @@
+{
+  "abstract": "Tokenization is a fundamental component of modern language models: before a model sees data, its tokenizer has already determined how the data appears. We identify and challenge three myths in the tokenization research literature. Myth #1: Bits-Per-Byte (BPB) is agnostic to the tokenizer and/or the vocabulary size: BPB is tokens per byte times bits per token, and the two factors do not cancel; using untrained models, we show that BPB prefers some tokenizers over others: the model has learned nothing, but the tokenizer--model pair has. Myth #2: lower BPB means a better model: On untrained models, BPB strongly prefers some vocabulary sizes, even though accuracy remains at chance, and on real models trained on the same data, BPB correlates weakly with downstream performance. Myth #3: different \"tokenizer-agnostic\" metrics yield consistent results: The \"unigram-normalized loss\" is not tokenizer-agnostic; its reported correlation of 0.989 with BPB comes from a confounder and falls to 0.057 once fixed; from the same data the two metrics select different vocabularies at each model size. We present a tokenizer trilemma: no metric can score only the true distribution best, give the same predictions the same score, and tie all untrained models, so choosing a metric is choosing a research question. We conclude with a caution for reading the tokenization literature and a conjecture for future work.",
+  "abstract_ja": "",
+  "authors": [
+    "Rylan Schaeffer",
+    "Sanmi Koyejo"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.04215",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Tokenization is a fundamental component of modern language models: before a model sees data, its tokenizer has already determined how the data appears. We identify and challenge three myths in the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Tokenizer Myths and Where To Find Them",
+  "url": "https://arxiv.org/abs/2611.04215",
+  "use_case": ""
+}

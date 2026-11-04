@@ -1,0 +1,35 @@
+{
+  "abstract": "Computed tomography (CT) provides diverse patient information and various clinical tasks, for which numerous deep learning models have been investigated. Recent years have seen the development of vision-language foundation models that can comprehensively extract clinical features, driven by representation learning that combines CT volumes with radiology reports. Existing approaches typically adopt Contrastive Language-Image Pre-training (CLIP)-based representation learning, where pairs from different cases are, in principle, treated as negative pairs such that the volume and report embeddings are pushed apart. In the biomedical imaging, however, treating different cases as negative pairs is not always appropriate, particularly when clinical similarity exists. In this study, we propose a supervised representation learning framework grounded in clinical knowledge from language foundation models, rather than the weak supervision used in CLIP. Specifically, we utilized a large language model to extract abnormal finding phrases from reports. We then explicitly constructed the target features that the image encoder should output, as the semantic representation of the extracted findings using a biomedical text embedding model. Our Findings-aware Language-Image Pre-training (FiLIP) outperformed weakly supervised approaches in multi-label zero-shot finding classification in both in-domain and external-domain evaluations, and also proved effective when fine-tuned for the downstream task of radiology report generation.",
+  "abstract_ja": "",
+  "authors": [
+    "Takuro Shimaya",
+    "Junya Inoh",
+    "Masahiro Saiko"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02327",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Computed tomography (CT) provides diverse patient information and various clinical tasks, for which numerous deep learning models have been investigated. Recent years have seen the development of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "classification",
+      "generation",
+      "embedding"
+    ]
+  },
+  "title": "Findings-aware Language-Image Pretraining for CT Volume Interpretation",
+  "url": "https://arxiv.org/abs/2611.02327",
+  "use_case": ""
+}

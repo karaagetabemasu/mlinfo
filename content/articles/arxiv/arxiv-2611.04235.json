@@ -1,0 +1,35 @@
+{
+  "abstract": "Separating touching nuclei requires local boundary detail, while cell type classification requires broader morphological context. These requirements also vary with the surrounding tissue environment. We propose the Tissue-Conditioned Adaptive Cross-Branch Interaction Network (TCINet), a single-stage model with Task-Specific Feature Adapters (TSFA) and Tissue-Conditioned Task-Aware Cross-Branch Interaction (TC-TACBI). TSFA produces branch-specific features at skip connections, and TC-TACBI controls three asymmetric paths among nucleus-presence (NP), horizontal-vertical (HV), and nucleus-type (NT) branches using predicted tissue probabilities. On PanNuke under standard three-fold cross-validation, TCINet achieves multiclass and binary panoptic quality scores of 0.519 and 0.692, respectively. Zero-shot tests on MoNuSeg yield a detection F1 score of 0.876. On PanNuke fold 0, adding TC-TACBI increases mPQ from 0.505 to 0.525. Code is available at https://github.com/celestial1321/TCINet.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhenghang Qian",
+    "Yang Liu",
+    "Yanzhi Yu",
+    "Peiwu Qin",
+    "Yibing Shen"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/celestial1321/TCINet",
+  "hasCode": true,
+  "id": "arxiv-2611.04235",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "Separating touching nuclei requires local boundary detail, while cell type classification requires broader morphological context. These requirements also vary with the surrounding tissue environment.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification",
+      "detection",
+      "segmentation"
+    ]
+  },
+  "title": "TCINet: Tissue-Conditioned Adaptive Cross-Branch Interaction Network for Nuclei Instance Segmentation",
+  "url": "https://arxiv.org/abs/2611.04235",
+  "use_case": ""
+}

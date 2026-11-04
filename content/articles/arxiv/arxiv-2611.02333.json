@@ -1,0 +1,29 @@
+{
+  "abstract": "Looped language models can stop iterating early, and recent work shows that post-hoc readouts of the loop trajectory often rival the learned exit gate of the looped model Ouro. Such comparisons reduce each method to one operating point chosen by a selection rule. We ask whether that rule decides the outcome. On a frozen Ouro-1.4B with four loops, we compared a trained stability probe ($π_1$-x) with Ouro's native gate, adapted to a per-question stopping decision, in pre-registered studies; the confirmatory study was designed after an exploratory finding on development data and evaluated once on a sealed test set of 8,517 questions. In the pre-registered confirmatory comparison, which selected operating points with a bootstrap-screened 1 pp accuracy-loss rule, the probe saved more of the four-loop budget than the native gate (+0.053 gross macro saving over three benchmarks, 95% CI [+0.049, +0.057]), mostly from CommonsenseQA, where the probe's test upper bound on accuracy loss exceeded 1 pp. Under a point-only rule, a pre-specified secondary analysis on the same test set reversed the preference (-0.022 [-0.026, -0.018]), with operating points that exceeded the budget. In pre-specified secondary comparisons, the probe showed no demonstrated advantage over an untrained KL divergence between successive loops (+0.00125 [-0.0041, +0.0065]); we emphasise this result post hoc and claim no equivalence. The probe also broke its budget on one of two out-of-distribution benchmarks (3.26 pp loss on Social IQa). Savings are estimated from stored full-depth traces, not measured inference time, and our screen carries no formal risk-control guarantee. We conclude that halting methods should be compared as signals together with selection procedures, with strong untrained baselines and out-of-distribution checks.",
+  "abstract_ja": "",
+  "authors": [
+    "Mahesh Reddy Pagadala"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02333",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Looped language models can stop iterating early, and recent work shows that post-hoc readouts of the loop trajectory often rival the learned exit gate of the looped model Ouro. Such comparisons…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "anomaly-detection"
+    ]
+  },
+  "title": "When Does Adaptive Halting Win? Selection Rules Matter in Looped Language Models",
+  "url": "https://arxiv.org/abs/2611.02333",
+  "use_case": ""
+}

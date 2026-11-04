@@ -1,0 +1,31 @@
+{
+  "abstract": "Multispectral imagery provides spectral information beyond the visible range for vegetation monitoring, but it typically suffers from limited spatial resolution, which can obscure fine crop structures and affect vegetation-index (VI) estimates.} This study evaluates whether single-image super-resolution (SISR) methods developed for red, green, and blue (RGB) imagery can enhance the spatial resolution of red, green, and near-infrared (RGN) crop images while preserving spectral fidelity. Eight pretrained methods are applied directly to RGN images without fine-tuning: bicubic and nearest-neighbor interpolation, Real-ESRGAN, HAT, HiT-SR, SRFormer, ResShift, and StableSR. Reconstruction at $4\\times$ and $16\\times$ is evaluated for whole images and manually segmented leaf regions. Reconstruction quality is assessed using mean absolute error (MAE), peak signal-to-noise ratio (PSNR), structural similarity index (SSIM), spectral angle mapper (SAM), and erreur relative globale adimensionnelle de synthèse (ERGAS). Eight VIs, computed from reference and super-resolved images, are evaluated using MAE, PSNR, and SSIM. Transformer-based methods \\modification{significantly} outperform GAN- and diffusion-based approaches in both evaluation settings \\modification{($p < 0.001$)}, with \\modification{HAT, HiT-SR, and SRFormer forming the highest-performing statistical tier}. These findings indicate that RGB-trained SISR can enhance spatial detail in RGN crop imagery while maintaining spectral consistency and VI reliability for high-resolution crop phenotyping.",
+  "abstract_ja": "",
+  "authors": [
+    "Abhiram Karukayil",
+    "João F. C. Mota",
+    "Mateo Vásquez-Guevara",
+    "Tito Arevalo-Ramirez",
+    "Fernando Auat Cheein"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02862",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Multispectral imagery provides spectral information beyond the visible range for vegetation monitoring, but it typically suffers from limited spatial resolution, which can obscure fine crop…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Performance evaluation of super-resolution techniques for characterization and phenotyping of commodity crops using multispectral imagery",
+  "url": "https://arxiv.org/abs/2611.02862",
+  "use_case": ""
+}

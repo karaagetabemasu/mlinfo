@@ -1,0 +1,30 @@
+{
+  "abstract": "Precise localization of pathologies in endoscopy is a critical task in medical imaging, with deep learning (DL) frameworks now serving as the primary methodology for automated lesion detection. Today, generic object detection methods, such as YOLO, provide state-of-the-art performance in this context. However, their robustness often decreases under real-world clinical conditions due to variations across endoscopic devices, intestinal content, dataset bias, and the presence of small or low-contrast lesions. Motivated by these challenges, we propose a novel polyp detection framework based on a Attention Residual U-Net offering enhanced polyp localization. Instead of directly regressing bounding boxes from global feature representations, the proposed method learns lesion-focused spatial representations and converts them into bounding-box predictions during inference. Unlike conventional encoder-decoder localization frameworks that directly propagate all encoder activations into the decoding pathway, the proposed method selectively suppresses irrelevant background responses before feature reconstruction. This encourages the network to focus on lesion-relevant spatial evidence under heterogeneous imaging conditions. To achieve this, the framework integrates residual feature propagation, attention-guided encoder filtering, and multi-scale contextual learning. The proposed framework was evaluated on multiple public endoscopic datasets acquired using different devices. The comparative experimental results validate its effectiveness over the relevant state-of-the-art methods, with an improvement up to 22.0% in terms of the area under the receiving operating characteristic (AUC).",
+  "abstract_ja": "",
+  "authors": [
+    "Romil Imtiaz",
+    "Dimitris K. Iakovidis"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02726",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Precise localization of pathologies in endoscopy is a critical task in medical imaging, with deep learning (DL) frameworks now serving as the primary methodology for automated lesion detection.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Attention Residual U-Net for Enhanced Cross-Dataset Polyp Localization in Endoscopy",
+  "url": "https://arxiv.org/abs/2611.02726",
+  "use_case": ""
+}

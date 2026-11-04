@@ -1,0 +1,29 @@
+{
+  "abstract": "Training models over data distributed across edge devices presents a trade-off: centralizing data simplifies training but raises privacy and regulatory concerns, while full local training may exceed the devices' compute and memory capacity. Split learning addresses this challenge by partitioning the model between clients and the server, allowing part of the computation to be offloaded. However, existing approaches typically rely on static split configurations or simplified assumptions that fail to capture the heterogeneity and complex dynamics of real deployments. We present DynSL, a framework that dynamically allocates model layers between clients and the server by continuously monitoring system metrics and periodically solving an optimization problem that accounts for client and server computation and communication. When beneficial, the system reconfigures the split, enabling the offloading strategy to adapt to changing device capabilities and system conditions. Extensive experiments on a testbed of 24 heterogeneous edge devices show that DynSL reduces training time by up to $\\sim\\!$30% over the strongest adaptive baseline and by more than 50% over a suboptimal uniform split, with no loss -- and sometimes a gain -- in accuracy.",
+  "abstract_ja": "",
+  "authors": [
+    "Boris Radovič",
+    "Istemi Ekin Akkus",
+    "Marco Canini",
+    "Ruichuan Chen",
+    "Alice Dethise"
+  ],
+  "category": "math-theory",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.03209",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "optimization",
+  "summary": "Training models over data distributed across edge devices presents a trade-off: centralizing data simplifies training but raises privacy and regulatory concerns, while full local training may exceed…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "DynSL: Resource-Adaptive Model Training across Heterogeneous Edge Devices",
+  "url": "https://arxiv.org/abs/2611.03209",
+  "use_case": ""
+}

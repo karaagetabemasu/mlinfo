@@ -1,0 +1,31 @@
+{
+  "abstract": "Studies of neural network generalization and robustness often summarize smoothness with a single number, such as a Lipschitz constant or a Hessian curvature statistic. However, Lipschitz constants summarize global worst-case sensitivity and Hessian statistics summarize local curvature; neither captures how model responses vary with the size, direction, and location of perturbations encountered in real-world deployment. To measure smoothness under these perturbations, we introduce a finite-difference roughness spectrum that profiles model responses across these conditions. Our roughness spectrum generalizes scalar smoothness measures, bringing Lipschitz sensitivity and directional Hessian curvature into a common framework across perturbation scales. We connect this spectrum to classical Besov theory, which describes how a function's variation changes with scale. Our theoretical analysis also proves that a larger output shift can cause less task damage than a smaller one, and that local curvature alone can miss the blocks most vulnerable to finite perturbations. In image classification, Roughness Source Control (RSC) suppresses margin roughness along noise directions and improves noise robustness in a comparison of 80 checkpoints across four model--dataset combinations. In post-training quantization, we identify blocks that need higher precision by measuring task-loss increases from perturbations matched to the size and direction of each block's quantization error. Our mixed-precision allocation achieves lower perplexity than the Hessian-based HAWQ-V2 baseline under the same GPTQ weights and bit budgets in all 14 settings across seven held-out large language models.",
+  "abstract_ja": "",
+  "authors": [
+    "Bum Jun Kim",
+    "Anastasis Kratsios"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02037",
+  "likes_count": 0,
+  "publishedAt": "2026-11-01",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Studies of neural network generalization and robustness often summarize smoothness with a single number, such as a Lipschitz constant or a Hessian curvature statistic. However, Lipschitz constants…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Scalar Smoothness Is One Point on a Besov Spectrum",
+  "url": "https://arxiv.org/abs/2611.02037",
+  "use_case": ""
+}

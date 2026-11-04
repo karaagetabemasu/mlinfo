@@ -1,0 +1,29 @@
+{
+  "abstract": "A mobile manipulator asked to \"put the toys away in the toy box\" must decide which objects are toys and which container the user means, then find base poses, grasps, and placements it can execute. Because a scene representation is built before the instruction is known, it may lack the attributes, affordances, or concepts needed to resolve the task. We present FEIJOA, a language-model agent that grounds the instruction at test time. It queries a grounding tool over a posed RGB-D scan, inspects the returned candidates, and refines its queries until they resolve the instruction. An embodiment-aware harness checks each skill's preconditions, samples base poses from which the target is reachable, and verifies the skill's effect from observations before and after execution. On 103 open-ended grounding queries, FEIJOA resolves 94.2% exactly, compared with 68.0% for the best prebuilt representation. Over 50 real-world trials on Spot, it completes 35 tasks; 17 of these successes follow recovery from a failed tool call or verification check. Of the 15 failed trials, 13 were caused by the robot's physical skills, and only 2 by grounding or the agent's reasoning. Project website: https://williamshen-nz.github.io/feijoa/.",
+  "abstract_ja": "",
+  "authors": [
+    "Aditya Agarwal",
+    "William Shen",
+    "Sahit Chintalapudi",
+    "Lucy Cai",
+    "Nishanth Kumar"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.04080",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "A mobile manipulator asked to \"put the toys away in the toy box\" must decide which objects are toys and which container the user means, then find base poses, grasps, and placements it can execute.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "FEIJOA: Task-Driven Grounding and Execution for Mobile Manipulation",
+  "url": "https://arxiv.org/abs/2611.04080",
+  "use_case": ""
+}

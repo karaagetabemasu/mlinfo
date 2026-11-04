@@ -1,0 +1,33 @@
+{
+  "abstract": "Urban photogrammetric point clouds are commonly processed as local 3D patches, limiting the context available for distinguishing geometrically similar categories. Orthographic projection of the same data yields a co-registered digital orthophoto map (DOM)/RGB-D representation that supports efficient large-context modeling but compresses vertical geometry. Existing projection--point methods mainly fuse these two representations at the feature level while retaining a classifier shared across all samples. We present the Aerial Content-Aware Sample-Adaptive Classifier (ACASAC), which complements feature fusion with decision-level adaptation. A point-aligned aerial region bridges the full aerial crop and local 3D patch. ACASAC models scene-to-local variation within the projection and the representation discrepancy between aligned 2D and 3D supports, then transfers both relations to refine the local point class representation. The refined representation, scene-level aerial context, and fixed fused-head prior jointly form a classifier for the current sample. ACASAC improves the fixed dual-representation head by 2.1 and 2.7 mIoU points on SensatUrban and UrbanBIS, respectively, and by 2.1--2.3 points across four tested encoder combinations.",
+  "abstract_ja": "",
+  "authors": [
+    "Chong Liu",
+    "Yonghua Lu",
+    "Zhanglin Cheng"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02844",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Urban photogrammetric point clouds are commonly processed as local 3D patches, limiting the context available for distinguishing geometrically similar categories. Orthographic projection of the same…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "3d"
+    ],
+    "task": [
+      "classification",
+      "segmentation"
+    ]
+  },
+  "title": "Aerial Content-Aware Sample-Adaptive Classifier for Urban Photogrammetric Point Cloud Segmentation",
+  "url": "https://arxiv.org/abs/2611.02844",
+  "use_case": ""
+}

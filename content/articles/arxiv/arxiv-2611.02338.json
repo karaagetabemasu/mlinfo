@@ -1,0 +1,33 @@
+{
+  "abstract": "AI assistants store values that a language model derived from a person's records under the person's own definitions, such as their important contacts. Keeping such a value correct takes two steps: detection, noticing that an input changed, and repair, producing the correct new value. Benchmarks that score only the final answer cannot tell which step failed, and they state every change as new text. Seeing this limitation, we present MemShift, a benchmark of five shifts: source revision, deletion, redefinition, writer switch, and export. The first three fork a synthetic world into branches that differ only in the shift. Gold values and dependencies are fixed before any text, and a deterministic scorer replaces an LLM judge. For a memory that reports its invalidations, MemShift shows for each changed item whether the memory noticed the change and whether its repair was right. Moreover, we build a reference memory with known detection and repair to validate the measure. By evaluating four open-weight LLMs, we find that detection helps only as much as repair allows: the LLMs re-derive few values computed by the person's definitions correctly, and programs that the LLM writes over typed records close most of the gap to exact recomputation. Code and data are available at https://github.com/zichuanxu/memshift.",
+  "abstract_ja": "",
+  "authors": [
+    "Zichuan Xu",
+    "Haochen Zhang",
+    "Yuyang Dong",
+    "Makoto Onizuka",
+    "Chuan Xiao"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/zichuanxu/memshift",
+  "hasCode": true,
+  "id": "arxiv-2611.02338",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "AI assistants store values that a language model derived from a person's records under the person's own definitions, such as their important contacts. Keeping such a value correct takes two steps:…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "MemShift: Separating Detection from Repair in LLM-Derived Personal Memory",
+  "url": "https://arxiv.org/abs/2611.02338",
+  "use_case": ""
+}

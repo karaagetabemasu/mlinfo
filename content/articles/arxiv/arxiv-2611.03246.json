@@ -1,0 +1,32 @@
+{
+  "abstract": "Dynamic graphs capture evolving interactions in Web systems, including online communication, user engagement, and recommendation. Graph foundation models aim to reuse predictive capabilities across networks, but extending this capability to dynamic graphs faces two challenges. First, node identities are graph-specific, and similar interaction patterns can appear at different temporal and activity scales, making histories difficult to represent consistently across networks. Second, the predictive roles of historical patterns vary across interaction dynamics, limiting transfer from a narrow range of training processes. In this paper, we show that a common interaction language, combined with learning across diverse interaction processes, offers a basis for dynamic graph foundation modeling. We propose CL-DGFM, a Common Language Dynamic Graph Foundation Model for temporal link prediction. Its Dynamic Interaction Tokenizer encodes interaction memory, historical connectivity, and ordered destination transitions into calibrated tabular inputs, making dynamic histories accessible to existing predictors without an additional trainable graph encoder. Its Dynamic Interaction Prior trains a pretrained tabular foundation predictor across diverse synthetic dynamics. Labeled historical context guides prediction, with a Contextual Value Adapter modulating attention values. The model transfers to real graphs without target-graph parameter updates. Experiments on TGB and TGB-Seq demonstrate competitive performance. Further comparisons show that the common language supports basic machine learning and neural models, and enables direct use of frozen tabular foundation models on dynamic graphs.",
+  "abstract_ja": "",
+  "authors": [
+    "Fuyuan Ma",
+    "Yili Wang",
+    "Xin He",
+    "Xin Zhang",
+    "Ying Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.03246",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Dynamic graphs capture evolving interactions in Web systems, including online communication, user engagement, and recommendation. Graph foundation models aim to reuse predictive capabilities across…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "tabular"
+    ],
+    "task": []
+  },
+  "title": "A Common Language for Dynamic Graphs: Interaction Tokenization Enables Foundation Models",
+  "url": "https://arxiv.org/abs/2611.03246",
+  "use_case": ""
+}

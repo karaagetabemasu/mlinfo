@@ -1,0 +1,28 @@
+{
+  "abstract": "Rewards for diversity, coverage and distribution matching make the reward of each sampled response depend on the rest of its group, and they are now routinely optimized with GRPO and RLOO. We prove that in this setting the group-relative baseline changes the objective. The expected update equals each response's own reward gradient plus $α$ times its effect on its groupmates' rewards, with $α=-1/(K-1)$ for groups of size $K$, so GRPO trains every response to beat its groupmates in a zero-sum tournament. It cannot see a pairwise diversity bonus when K=2, sees less than half of it at any K, and often does worse than using no baseline at all. Setting $α=+1$ gives Team-GRPO, an unbiased estimator for any group-dependent reward that works with two samples per prompt and requires no extra model calls for pairwise rewards. The theory predicts training quantitatively. It locates the fixed points of a 9B policy to within 0.02 in $\\ell_1$ and predicts how concentrated trained policies become with Pearson r=0.995. On GlobalOpinionQA, GRPO collapses onto the majority answer and ends further from human opinion than the untrained model, while Team-GRPO cuts the error from $0.20$ to $0.08$. On NoveltyBench, Team-GRPO avoids the diversity collapse of GRPO and significantly improves set utility.",
+  "abstract_ja": "",
+  "authors": [
+    "Junyi Gao",
+    "Yu Shi",
+    "Pingzhao Hu",
+    "Ewen M Harrison"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02404",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Rewards for diversity, coverage and distribution matching make the reward of each sampled response depend on the rest of its group, and they are now routinely optimized with GRPO and RLOO. We prove…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "When Rewards Depend on the Group, GRPO Plays a Tournament",
+  "url": "https://arxiv.org/abs/2611.02404",
+  "use_case": ""
+}

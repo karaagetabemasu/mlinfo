@@ -1,0 +1,28 @@
+{
+  "abstract": "Convex regression provides a flexible nonparametric estimation framework while incorporating appropriate shape information. However, its standard least-squares formulation has $O(n^2)$ supporting-hyperplane constraints creating a computational bottleneck as the sample size $n$ increases. We study a $K$-nearest-neighbor (KNN) localized relaxation for convex regression where we for each sample, we only maintain the $K$ nearest hyperplane constraints. Under mild regularity conditions, we establish statistical guarantees for our modified estimator in every fixed dimension $d\\ge2$. In particular, for $d>4$, the population risk of our modified problem can be shown to have equivalent convergence rates as the original least square convex regression estimator of $\\widetilde O(n^{-2/d})$ using neighborhoods sizes (i.e. $K=K_n$) of order $\\widetilde O(n^{2(d-1)/(2d-1)})$ for general convex functions and $\\widetilde O(n^{(d+1)/(d+2)})$ for strongly convex functions. To corroborate our theory, we implement iterative optimization methods to compare the prediction accuracy of the KNN relaxation with those of the full estimator across synthetic convex benchmarks. Our experiments demonstrate that KNN prediction risk approaches the full-estimator prediction risk at neighborhood sizes matching the theoretical scale.",
+  "abstract_ja": "",
+  "authors": [
+    "Anish Senapati",
+    "Jose Blanchet"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01744",
+  "likes_count": 0,
+  "publishedAt": "2026-11-01",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Convex regression provides a flexible nonparametric estimation framework while incorporating appropriate shape information. However, its standard least-squares formulation has $O(n^2)$…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Convex Regression at Scale: Geometry-Preserving Constraint Sparsification",
+  "url": "https://arxiv.org/abs/2611.01744",
+  "use_case": ""
+}

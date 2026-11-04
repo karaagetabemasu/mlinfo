@@ -1,0 +1,34 @@
+{
+  "abstract": "Joint nuclei instance segmentation and classification requires precise boundaries and neighborhood information that helps distinguish morphologically similar cell types. We present TME-ContextNet, a multi-task framework that learns class-conditioned spatial context from existing nuclear annotations and organizes decoding into geometry-related and semantic task groups. Class-conditioned spatial supervision extends nuclear labels into a dense target using Euclidean distance transforms, requiring no additional tissue-region annotation. We derive its nearest-region interpretation and characterize its stability to small annotation perturbations. A local--global context module combines dilated convolution and self-attention, while a grouped task decoder reduces redundant computation. The spatial head supplies training supervision and is omitted during inference. Experiments on PanMix, CoNSeP, and PanNuke yield Dice scores of 80.23%, 65.32%, and 79.13%, and mean multi-class panoptic quality (mPQ+) scores of 67.62%, 35.50%, and 43.74%, respectively. PanNuke results are averaged across three test folds. Target and decoder controls support the combination of distance-based supervision and grouped decoding while identifying their dependence on task configuration. The framework uses 36.40 million parameters, compared with 54.74 million for HoVer-Net. These findings support a compact, context-aware formulation for joint nuclei analysis in computational pathology.",
+  "abstract_ja": "",
+  "authors": [
+    "Rukang Ma",
+    "Bingxue Wang",
+    "Liwen Zou",
+    "Yingying Cao",
+    "Zhenghua Cai"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02671",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Joint nuclei instance segmentation and classification requires precise boundaries and neighborhood information that helps distinguish morphologically similar cell types. We present TME-ContextNet, a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification",
+      "segmentation"
+    ]
+  },
+  "title": "TME-ContextNet: Class-Conditioned Spatial Supervision and Grouped Decoding for Joint Nuclei Instance Segmentation and Classification",
+  "url": "https://arxiv.org/abs/2611.02671",
+  "use_case": ""
+}

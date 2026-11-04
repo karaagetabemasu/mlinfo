@@ -1,0 +1,28 @@
+{
+  "abstract": "Latent-space path planning (LSPP) compresses the configuration space of a robotic manipulator into a compact, differentiable manifold learned by a variational autoencoder, enabling fast gradient-based planning without explicit inverse kinematics. Existing LSPP frameworks enforce obstacle avoidance with a binary collision classifier, whose saturated gradients near obstacle boundaries and lack of temporal structure cause the optimizer to stall and provide no forward-invariance guarantee. We replace the classifier with a neural control barrier function (CBF) learned directly in the latent space. The barrier is trained with a three-term objective that combines safe and unsafe sign constraints with a discrete-time decrease condition evaluated on transitions of an obstacle-blind nominal planner, and it is enforced at planning time by a closed-form, first-order correction that projects each goal-directed latent step back onto the CBF constraint. On a 7-DoF Franka Panda manipulator, the CBF planner achieves a 75.6\\% success rate on a fixed-obstacle task, 12.0 percentage points above the best of 35 tuned classifier configurations, and 83.8\\% on a multi-position task. A sweep of the decay rate $α$ characterizes the safety--performance trade-off, with the best operating points in $α\\in [0.10, 0.20]$. In a fully general random-obstacle setting, success drops to 33.0\\%, which we trace to covariate shift between the obstacle-blind training transitions and the states visited by the corrected planner.",
+  "abstract_ja": "",
+  "authors": [
+    "Chandrakiran Ravula",
+    "Siddhanth Ramesh"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01814",
+  "likes_count": 0,
+  "publishedAt": "2026-11-01",
+  "source": "arxiv",
+  "subcategory": "video",
+  "summary": "Latent-space path planning (LSPP) compresses the configuration space of a robotic manipulator into a compact, differentiable manifold learned by a variational autoencoder, enabling fast…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Control Barrier Functions for Safety-Aware Latent-Space Motion Planning",
+  "url": "https://arxiv.org/abs/2611.01814",
+  "use_case": ""
+}

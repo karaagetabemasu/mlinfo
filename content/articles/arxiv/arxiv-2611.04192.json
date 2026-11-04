@@ -1,0 +1,32 @@
+{
+  "abstract": "Deployed language models are updated continually, and regulators increasingly accept changes that were declared in advance. Showing that an update changed behavior only where it was declared to is a different statistical problem from bounding how much it changed: a useful update is meant to change some decisions, so global disagreement and regression bounds cannot certify it. We formalize the problem with declared change envelopes. Before training, the developer commits to a region of inputs, and every decision that changes outside it counts as leakage. Leakage compares two models, so it can be certified from unlabeled traffic with anytime-valid tests whose sample cost we bound from above and below, and per-update certificates compose into a bound on lifetime drift outside all declared scopes. We measure leakage for LoRA and full fine-tuning, preference optimization, reinforcement learning, and knowledge editing on models from 1.5B to 72B parameters. Narrow updates leak widely: domain and policy LoRA updates keep only about 7-36% of the decisions they change inside the declared scope. Across 256 trained variants, leakage tracks the update's KL divergence to the incumbent on out-of-scope inputs (Spearman 0.94). None of the customary remedies we tested makes a rule-like update certifiable without giving up much of its intended change. Distilling the incumbent's decisions on unlabeled prompts in the deployment format does: anchored LoRA, GRPO, and (at a small learning rate) full fine-tuning updates certify 5% leakage from a few hundred to a few thousand unlabeled samples, and the certificates replicate on held-out traffic and on written answers. The certificates cover decision-like outputs only; on open-ended chat, re-batching alone changes 11-21% of responses and no update certifies. Code: https://github.com/Usama1002/declared-change-envelopes",
+  "abstract_ja": "",
+  "authors": [
+    "Muhammad Usama",
+    "Muhammad Saad Qadir"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/Usama1002/declared-change-envelopes",
+  "hasCode": true,
+  "id": "arxiv-2611.04192",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Deployed language models are updated continually, and regulators increasingly accept changes that were declared in advance. Showing that an update changed behavior only where it was declared to is a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Where Did the Update Go? Certifying Declared Change Envelopes for Model Updates",
+  "url": "https://arxiv.org/abs/2611.04192",
+  "use_case": ""
+}

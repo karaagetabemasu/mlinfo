@@ -1,0 +1,29 @@
+{
+  "abstract": "Autonomous mobility is essential for sustained lunar surface operations, as communication delays and line-of-sight occlusions limit continuous teleoperation. Although recent traversability estimation methods increasingly rely on deep learning, the domain gap between terrestrial analogue environments and real lunar terrain can limit their generalisation, and real lunar traversability labels are scarce, making fully supervised training difficult. To address these challenges, we build a weakly supervised framework trained on sparse pairwise annotations and study whether augmenting visual features with depth-derived geometric information: depth, surface normals, and combined geometric descriptors. We evaluate the models in both in-domain and cross-domain settings using two terrestrial analogue datasets and the real lunar Chang'E PCAM dataset. Contrary to expectations, we find that naive geometric augmentation yields no consistent improvement over a strong visual-only baseline in either setting, with effects small relative to seed-to-seed variance. Instead, the choice of training source emerges as the dominant factor in transfer quality: models trained on domain-relevant sources transfer substantially better to real lunar imagery than the geometric fusion strategy improves any single model. Our evaluation runs onboard a resource-constrained edge device and provides a controlled baseline for designing more expressive multimodal fusion architectures in future lunar perception systems.",
+  "abstract_ja": "",
+  "authors": [
+    "Jan Baturo",
+    "Bartosz Ptak"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.03430",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "multimodal",
+  "summary": "Autonomous mobility is essential for sustained lunar surface operations, as communication delays and line-of-sight occlusions limit continuous teleoperation. Although recent traversability estimation…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Evaluating Depth-Augmented Visual Features for Cross-Dataset Lunar Traversability Estimation",
+  "url": "https://arxiv.org/abs/2611.03430",
+  "use_case": ""
+}

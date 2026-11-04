@@ -1,0 +1,34 @@
+{
+  "abstract": "Misleading charts can lead vision-language models to conclusions that conflict with underlying data. Existing work focuses on inference-time strategies, while training-time supervision remains less explored. We present VizDAGuide, a DAG-structured supervision method for misleading-chart question answering. The method represents intermediate reasoning states and their dependencies as a directed acyclic graph, assigns supervision weights according to their roles, and serializes the graph into a unified training target for open-ended and multiple-choice QA with single-pass inference. Experiments on two benchmarks across Qwen3-VL and InternVL3.5 models show improvements over a content- and weight-matched Linear CoT-SFT baseline on both answer formats. Process-level evaluation shows gains in grounding and operation execution, while ablations indicate that dependency structure and weighted supervision are most effective when combined. These results support DAG-structured weighted supervision for misleading-chart question answering.",
+  "abstract_ja": "",
+  "authors": [
+    "Haiyang Zhang",
+    "Sicheng Song",
+    "Zixin Chen",
+    "Jie Gu",
+    "Huiya Ou"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.03023",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Misleading charts can lead vision-language models to conclusions that conflict with underlying data. Existing work focuses on inference-time strategies, while training-time supervision remains less…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "qa"
+    ]
+  },
+  "title": "VizDAGuide: Misleading Chart Question Answering in Compact Vision Language Models via DAG-Structured Supervision",
+  "url": "https://arxiv.org/abs/2611.03023",
+  "use_case": ""
+}

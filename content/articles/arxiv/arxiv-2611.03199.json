@@ -1,0 +1,31 @@
+{
+  "abstract": "Online large language model (LLM) services face a pricing cold start: providers initially lack the historical data and user information needed for precise pricing, while users' willingness to pay evolves with repeated use. We formulate this challenge as a \\emph{two-sided learning} problem between a provider and a user. The user learns from private usage experience, whereas the provider incurs a serving cost and dynamically adapts prices using only purchase decisions to maximize cumulative profit. The provider's central challenge is to learn to price against an evolving willingness to pay without observing the private experiences driving that evolution. We establish matching upper and lower bounds on the minimax regret over horizon $T$, identifying two cost-dependent regimes. When serving costs are sufficiently low, our Calibration-and-Tracking (CAT) algorithm achieves the optimal rate $Θ(T^{1/3})$. In the higher-cost regime, where the provider must learn whether continued service is profitable, Calibration-and-Tracking with Retirement (CAT-R) attains the optimal rate $Θ(\\sqrt{T})$. This phase transition shows that serving costs affect not only profit margins but also the fundamental difficulty of learning to price LLM services. Simulations support the predicted regret scaling and show that our algorithms outperform standard online learning baselines in the evaluated settings.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhicheng Du",
+    "Pinyan Lu",
+    "Keyu Wang",
+    "Zihe Wang",
+    "Xiang Yan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.03199",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Online large language model (LLM) services face a pricing cold start: providers initially lack the historical data and user information needed for precise pricing, while users' willingness to pay…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Cold-Start Pricing of LLM Services under Two-Sided Learning",
+  "url": "https://arxiv.org/abs/2611.03199",
+  "use_case": ""
+}

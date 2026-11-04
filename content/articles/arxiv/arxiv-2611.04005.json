@@ -1,0 +1,30 @@
+{
+  "abstract": "Generative search engines increasingly shape how users discover products, services, and commercial entities by generating answers from retrieved web content. This creates an opportunity to influence which brands appear in these answers by modifying the content available to the retrieval system. In this work, we study an adversarial generative engine optimization (GEO) setting in which a predefined brand is added to an article through a single contextually integrated mention. The challenge is to make the mention fit the surrounding article without making the content overtly promotional, while keeping it relevant enough to be retrieved and to influence the generated answer. To study this, we introduce Implicit Brand Injection (IBI), a multi-agent framework that identifies insertion locations, rewrites the selected sentence, verifies the edit, and selects the final candidate. To evaluate IBI at scale, we construct IBIBench, which contains 1,000 web articles and 60 synthetic brands across 12 diverse domains, with both endemic and non-endemic brand placements. We compare IBI with Direct Prompting and Best-of-N with ranking under an equivalent budget, evaluating insertion quality, target-chunk retrieval, and downstream brand propagation. Compared with the baselines, IBI produces insertions that better preserve semantics and disrupt perplexity less, while improving Hit@k across all evaluated cutoffs, query regimes, and placement settings. IBI achieves up to 82.2% Hit@10 and 0.74 MRR@10, while Brand Mention Rate (BMR) and Conditional Propagation (CP) reach up to 62.7% and 75.9%, respectively. These results show that a single brand mention can increase both retrieval exposure and brand visibility in generated responses, highlighting the need for defenses against implicit content manipulation in generative search.",
+  "abstract_ja": "",
+  "authors": [
+    "Shobhnik Kriplani",
+    "Haohan Wang"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.04005",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "Generative search engines increasingly shape how users discover products, services, and commercial entities by generating answers from retrieved web content. This creates an opportunity to influence…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Characterizing Adversarial GEO via Implicit Brand Injection",
+  "url": "https://arxiv.org/abs/2611.04005",
+  "use_case": ""
+}

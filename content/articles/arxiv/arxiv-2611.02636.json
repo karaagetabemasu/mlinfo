@@ -1,0 +1,30 @@
+{
+  "abstract": "Steering vectors align a model at inference time without touching its weights, but eliciting several personas at once is a different problem from eliciting one. Prior multi-persona steering approaches predetermine both how persona vectors are combined and the specific layers at which they are injected. Moreover, this static commitment introduces substantial offline search costs to identify suitable target layers, despite the fact that optimal intervention strengths vary dynamically across both decoding steps and distinct personas. We introduce SYNC (SensitivitY-guided iNference Control), a novel training-free inference control framework compatible with pre-existing steering vectors. SYNC dynamically estimates each layer's sensitivity to every persona via cosine similarity trajectories, assigning each persona to its optimal injection layer at every decoding step. Across two models, two persona profiles and steering vectors from both unsupervised and supervised extraction, SYNC leads on 21 of 28 persona configurations, significantly on 15. Code is available at \\href{https://github.com/yosefnuragaw/sync}{this https URL}.",
+  "abstract_ja": "",
+  "authors": [
+    "Yosef Nuraga Wicaksana",
+    "Muhammad Reza Qorib",
+    "Fadhil Muhammad",
+    "Alfan Farizki Wicaksono"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/yosefnuragaw/sync",
+  "hasCode": true,
+  "id": "arxiv-2611.02636",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Steering vectors align a model at inference time without touching its weights, but eliciting several personas at once is a different problem from eliciting one. Prior multi-persona steering…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "SYNC: A Training-Free Inference Controller for Dynamic Layer Selection in Multi-Persona Alignment",
+  "url": "https://arxiv.org/abs/2611.02636",
+  "use_case": ""
+}

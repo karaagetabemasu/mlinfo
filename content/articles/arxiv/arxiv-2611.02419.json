@@ -1,0 +1,31 @@
+{
+  "abstract": "Underwater object detectors are typically evaluated on pre-transmission images, overlooking additional degradation from bandwidth-constrained downscaling and compression. We introduce AquaTX, a controlled benchmark built from real underwater detection datasets with seen and held-out codecs. We also propose TERA, a metadata-blind receiver-side framework combining task-guided pixel restoration and dual-state feature correction while keeping the detector frozen. Under seen compound degradation, TERA improves mean average precision (mAP50:95, averaged over IoU thresholds from 0.50 to 0.95) from 37.7 to 50.0 on DUO-TX and from 31.5 to 41.3 on RUOD-TX relative to the frozen detector without restoration. TERA also preserves clean-input performance and remains competitive with detector fine-tuning under the held-out AVIF codec. These findings support transmission-aware evaluation and task-guided restoration for underwater object detection. Code is available at https://github.com/hijinkim/TERA.",
+  "abstract_ja": "",
+  "authors": [
+    "Heejin Kim",
+    "Joon-Seok Song",
+    "Eunil Park"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/hijinkim/TERA",
+  "hasCode": true,
+  "id": "arxiv-2611.02419",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Underwater object detectors are typically evaluated on pre-transmission images, overlooking additional degradation from bandwidth-constrained downscaling and compression. We introduce AquaTX, a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "TERA: Task-Evidence Restoration for Underwater Object Detection under Bandwidth-Constrained Transmission",
+  "url": "https://arxiv.org/abs/2611.02419",
+  "use_case": ""
+}

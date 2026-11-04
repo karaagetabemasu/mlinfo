@@ -1,0 +1,31 @@
+{
+  "abstract": "Face anti-spoofing (FAS) models often learn attack- and dataset-specific cues that degrade performance under unseen acquisition conditions and presentation attacks. We present DINOFAS, a DINOv3-based framework that formulates FAS as bonafide-centric representation learning. The proposed framework combines parameter-efficient DINOv3 adaptation using low-rank adaptation (LoRA), an attention style-content disentanglement (ASCD) module for reducing domain-specific appearance variations, and a dual-branch architecture that separates prototype-based liveness learning from attack-semantic supervision. The model is jointly optimized using a bonafide-centric prototype objective, an attack-semantic classification loss applied to detached features, and orthogonality regularization. DINOFAS achieves an average HTER of 9.09\\% under the standard OCIM leave-one-domain-out protocol, where training is performed on three source datasets and evaluation is conducted on the held-out unseen domain. We further evaluate synthetic-to-real generalization by training exclusively on SynthASpoof and testing on four unseen real-world datasets, where DINOFAS achieves the lowest average HTER of 21.41\\% and the highest average AUC of 86.14\\% among the compared methods. Evaluations on OULU-NPU and SiW-Mv2 additionally demonstrate robustness to variations in acquisition conditions, devices, and unseen presentation attacks.",
+  "abstract_ja": "",
+  "authors": [
+    "Shakeel Muhammad Ibrahim",
+    "Muhammad Sohail Ibrahim",
+    "Muhammad Shahid Jabbar",
+    "Shujaat Khan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02756",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Face anti-spoofing (FAS) models often learn attack- and dataset-specific cues that degrade performance under unseen acquisition conditions and presentation attacks. We present DINOFAS, a DINOv3-based…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "embedding"
+    ]
+  },
+  "title": "DINOFAS: Bonafide-Centric Representation Learning for Face Anti-Spoofing",
+  "url": "https://arxiv.org/abs/2611.02756",
+  "use_case": ""
+}

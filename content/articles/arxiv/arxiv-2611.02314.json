@@ -1,0 +1,33 @@
+{
+  "abstract": "Text-to-SQL systems answer natural language questions over structured data, but can fail before SQL generation by linking question mentions to the wrong table, column, value, or relation. Even valid SQL can then return an incorrect answer. This raises a central question: What pre-SQL information helps a SQL generator, and when does additional information cease to help? We investigate this question on TempTabQA-C and BIRD. Among the audited SQL Static failures, grounding errors form the largest category on both benchmarks. We introduce GRIPS (Grounding Representation and Input Processing for SQL generation), a three-stage method that derives structured pre-SQL information to make these decisions explicit before query generation. Across GPT-5-nano and Llama-70B, GRIPS-Adaptive improves over SQL Static in 18 of 20 settings, with an average accuracy gain of 11.8 percentage points, while reducing model-call token usage by 47.8%. Our controlled analysis shows which grounding information can improve SQL generation, whereas adding more pre-SQL information does not consistently help. By separating question-input grounding from SQL generation, GRIPS makes text-to-SQL more accurate, efficient, and easier to diagnose.",
+  "abstract_ja": "",
+  "authors": [
+    "Ekata Mitra",
+    "Yufei Tao",
+    "Kamalamalini Nagasundaram",
+    "Ameeta Agrawal"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02314",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Text-to-SQL systems answer natural language questions over structured data, but can fail before SQL generation by linking question mentions to the wrong table, column, value, or relation. Even valid…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "tabular"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "GRIPS: An Empirical Study of Pre-SQL Grounding Information for SQL Generation",
+  "url": "https://arxiv.org/abs/2611.02314",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Depression affects millions of Bengali speakers across South Asia, yet automated detection systems have relied almost entirely on datasets translated from English. Such datasets cannot capture the emoticons, romanized Bengali words, and elongated spellings that characterize real expressions of distress. We introduce BanglishDepYT, a Bengali depression dataset collected natively from YouTube, comprising 191,000 unlabeled comments and 1,000 samples verified through dual bilingual annotation. We propose EPH (Emotion-Preserving Hybrid preprocessing), which converts emoticons to semantic tags, preserves Banglish tokens, protects negation words, and normalizes emotional elongation. A key finding is that preprocessing choice substantially affects performance on informal text: standard cleaning reduces the Banglish Survival Rate to zero (SVM F1: 0.7062), while EPH preserves signals (CESS: 0.9996 vs. 0.6694) and raises SVM F1 to 0.8570, an improvement of 0.1508. We further apply domain-adaptive pretraining (DAPT), continuing SahajBERT pretraining on unlabeled in-domain comments. DAPT-SahajBERT achieves the highest mean F1 (0.8161) and MCC (0.6272), significantly outperforming the baseline (F1: 0.7805, p = 0.0013, d = 1.450) and matching MuRIL (p = 0.589). These results suggest that targeted domain pretraining is a competitive alternative to large-scale multilingual pretraining. LLM-assisted annotation using Qwen2.5-7B achieves substantial human agreement (kappa = 0.611), enabling pseudo-labeling of 96,071 comments. Semi-supervised training improves AUC from 0.8499 to 0.8731 (p = 0.044), offering a scalable path to expanding annotation. All code, models, and datasets are publicly released to support reproducible research.",
+  "abstract_ja": "",
+  "authors": [
+    "Ayon Roy",
+    "Sadman Sharif",
+    "Syed Shams Islam"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01633",
+  "likes_count": 0,
+  "publishedAt": "2026-11-01",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Depression affects millions of Bengali speakers across South Asia, yet automated detection systems have relied almost entirely on datasets translated from English. Such datasets cannot capture the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "semi-supervised"
+    ],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "BanglishDepYT: Depression Detection in Native Bengali Social Media with Emotion-Preserving Preprocessing and Domain-Adaptive Pretraining",
+  "url": "https://arxiv.org/abs/2611.01633",
+  "use_case": ""
+}

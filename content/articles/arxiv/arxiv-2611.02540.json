@@ -1,0 +1,34 @@
+{
+  "abstract": "Large language models (LLMs) can generate visual assets through text-based formats such as SVG and CAD, but these symbolic representations describe images using high-level primitives rather than explicit raster values. We ask whether LLMs can instead generate pixel images directly through their existing vocabulary, without a learned image tokenizer or decoder. We introduce PixelBench, a benchmark for text-to-pixel (T2P) and image-to-pixel (I2P) generation across multiple resolutions, together with a complementary pixel-understanding evaluation. Models generate an RGB color palette followed by a grid of indices specifying the palette color of each output pixel. In T2P, the strongest models produce recognizable images directly from text. In I2P, the strongest models outperform palette-matched downsampling and specialized pixelization algorithms at low resolutions. Pixel-understanding performance correlates strongly with generation performance. A resolution-scaling study shows that pixel-generation performance often improves initially before declining at high resolutions. Finally, we introduce Pixel Reconstruction Tuning (PRT), which augments visual instruction tuning with caption-palette-grid trajectories. We post-train Molmo2-4B from its pretraining checkpoint by mixing general instruction data with our curated PRT data, improving performance across 16 visual-centric benchmarks, indicating that explicit pixel reconstruction can provide useful auxiliary supervision.",
+  "abstract_ja": "",
+  "authors": [
+    "Haoquan Zhang",
+    "Feiyang Liu",
+    "Juanxi Tian",
+    "Wanhua Li",
+    "Haodong Duan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02540",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Large language models (LLMs) can generate visual assets through text-based formats such as SVG and CAD, but these symbolic representations describe images using high-level primitives rather than…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "PixelBench: Can LLMs Understand and Generate Images Pixel by Pixel?",
+  "url": "https://arxiv.org/abs/2611.02540",
+  "use_case": ""
+}

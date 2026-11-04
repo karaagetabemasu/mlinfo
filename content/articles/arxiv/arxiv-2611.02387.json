@@ -1,0 +1,34 @@
+{
+  "abstract": "Retrieval-augmented generation (RAG) extends large language models with external evidence, yet relevant evidence does not ensure that a generator can use it. Indiscriminate retrieval can degrade task performance while adding retrieval and long-context inference costs. Existing methods neither determine before large-scale execution whether a generator, task distribution, and retriever configuration is worth deploying nor diagnose multiple candidate retrievers under a shared budget. We introduce EviCast, a framework that forecasts retrieval value through interventional evidence-state decomposition. EviCast measures a generator's response to controlled evidence states once and combines this shared profile with the offline evidence-state distribution of each candidate retriever, yielding the end-to-end net utility and its 95% lower confidence bound without executing every RAG configuration. A state-refinement analysis characterizes when its binary and topology-aware instantiations are exact and when shared calibration is statistically more efficient than per-retriever calibration. In frozen evaluations, EviCast correctly decides all 14 HotpotQA retrieval configurations with a forecast error of 2.75 F1 points while reducing diagnostic generation calls by 80%, and it attains the lowest forecast error among seven predictors in the low-budget regime. Its topology-aware instantiation, EviCast-T, captures the complementarity between terminal and bridge evidence, correctly deciding all 16 configurations on MuSiQue and HotpotQA and 23 of 24 after prospective transfer to a third dataset. These results show that retrieval deployment depends on both evidence availability and the generator's ability to convert evidence structure into stable net utility. Code is available at https://github.com/YiboWang2002/EviCast.",
+  "abstract_ja": "",
+  "authors": [
+    "Yibo Wang",
+    "Jisheng Dang",
+    "Bimei Wang",
+    "Jiongpei Hou",
+    "Jingwen Zhao"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/YiboWang2002/EviCast",
+  "hasCode": true,
+  "id": "arxiv-2611.02387",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Retrieval-augmented generation (RAG) extends large language models with external evidence, yet relevant evidence does not ensure that a generator can use it. Indiscriminate retrieval can degrade task…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation",
+      "forecasting"
+    ]
+  },
+  "title": "EviCast: Forecasting Retrieval Gains Through Shared Response Calibration",
+  "url": "https://arxiv.org/abs/2611.02387",
+  "use_case": ""
+}

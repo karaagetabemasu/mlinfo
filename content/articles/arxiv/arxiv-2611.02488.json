@@ -1,0 +1,29 @@
+{
+  "abstract": "Online Active Learning (OAL) aims to extend deep learning from static inference after offline training to continuous adaptation during real-time interaction with a changing physical environment. This transition is essential for safety-critical applications, but it raises a central theoretical question: whether the online parameter update process remains stable when scaled to multilayer neural architectures. This paper develops a stability-focused OAL framework. The framework uses prediction error as a feedback signal to update a structured deep model, thereby linking online learning with Lyapunov-based energy minimization. We show that prediction error convergence alone is insufficient for global parameter convergence because multilayer networks may admit high-dimensional manifolds of equivalent output solutions. The analysis therefore separates output error regulation, internal zero dynamics, interlayer coupling, and parameter convergence. Persistency of excitation and active damping are then used to remove the residual null-space modes that remain after output error convergence. A cascaded Lyapunov analysis establishes asymptotic stability of the overall OAL learning process, while monotonic activation functions and diffeomorphic layer mappings provide the uniqueness condition for the target parameter trajectory. The resulting proof provides a theoretical basis for applying online adaptive learning to large-scale neural systems in nonstationary and safety-critical settings.",
+  "abstract_ja": "",
+  "authors": [
+    "Shuiwen Shen",
+    "Jinhua Zhang",
+    "Chenlei Hou",
+    "Peng Shi",
+    "Yong Han"
+  ],
+  "category": "mlops",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02488",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "deployment",
+  "summary": "Online Active Learning (OAL) aims to extend deep learning from static inference after offline training to continuous adaptation during real-time interaction with a changing physical environment. This…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "End-to-End Stability of Online Active Learning in Large-Scale Neural Systems",
+  "url": "https://arxiv.org/abs/2611.02488",
+  "use_case": ""
+}
