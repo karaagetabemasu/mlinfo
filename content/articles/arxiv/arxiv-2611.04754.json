@@ -1,0 +1,33 @@
+{
+  "abstract": "Recent literature widely used global metrics such as AUROC and AUPRO to quantify the detection performance. AUROC and AUPRO scores are approaching 100% in some public datasets such as MVTec AD dataset and VisA dataset, which misleadingly suggests that the pixel-level anomaly detection task has already been solved. Threshold-independent metrics represented by AUROC inherently ignore the threshold selection process, which is inevitable in practical applications. Although AUPRO restricts the False Positive rates (FPRs) to an acceptable range, extremely low FPRs can lead to increased false negative rates (FNRs). We argue that there is a lack of metrics capable of quantifying the separation between the anomaly score distributions of normal and anomalous samples, which hinders advancements in anomaly detection. In response, we propose the Bounded Area Under the Kolmogorov--Smirnov curve (Bounded AUKS), a partial integral metric that integrates the difference between TPR and FPR within a data-driven bounded range. Specifically, we introduce AUKS from KS integral as a direct measure of separability between the anomaly score distributions. The bounded range is determined only by score distributions of normal test samples. Lower bound excludes the uninformative high-FPR region. Upper bound avoids evaluation in extreme regions that aggressively push FPR towards zero, which result in a very low recall. Our experiments on 9 models across MVTec AD and VisA datasets show that Bounded AUKS can address the limitations of existing metrics and has a better performance in evaluating unsupervised anomaly detection models.",
+  "abstract_ja": "",
+  "authors": [
+    "Yanshuo Zhang",
+    "Juan Du"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.04754",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Recent literature widely used global metrics such as AUROC and AUPRO to quantify the detection performance. AUROC and AUPRO scores are approaching 100% in some public datasets such as MVTec AD…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection",
+      "anomaly-detection"
+    ]
+  },
+  "title": "Bounded AUKS: A Novel Evaluation Metric for Anomaly Detection via Bounded Area Under the Kolmogorov--Smirnov Curve",
+  "url": "https://arxiv.org/abs/2611.04754",
+  "use_case": ""
+}

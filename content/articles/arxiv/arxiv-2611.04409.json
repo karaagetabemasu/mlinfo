@@ -1,0 +1,32 @@
+{
+  "abstract": "Accurate lesion segmentation underpins automated dermoscopic analysis: masks enable measurements of asymmetry, border and size. Deployment in primary care or on mobile devices requires a compact network. Existing ultra-light Mamba U-Nets offer global context, but global-modeling cost depends on each Mamba block's resolution, while their local branches rely on a single square kernel. We introduce LCM-UNet, a 33,474-parameter U-shaped network that fuses every skip at its native resolution, restricts bidirectional Mamba to stages at one-sixteenth of the input resolution or coarser, and uses local convolutions at finer scales. A multi-basis reparameterizable adapter augments each local branch during training with dilated, horizontal and vertical depthwise kernels, then folds them into the host kernel before inference. Each skip connection also learns a stage-specific gain. Nine networks were retrained on the official ISIC 2017 and ISIC 2018 partitions under a harmonized protocol, with PH$^2$ reserved for external validation and ablations run on a development split. LCM-UNet achieved Dice scores of 88.62%, 89.73% and 90.46% on ISIC 2017, ISIC 2018 and PH$^2$, respectively, ranking first on both ISIC test sets and second on PH$^2$ among the compared models. In the native-resolution host, removing Mamba from the one-eighth-resolution decoder stage eliminated 63% of Mamba operations, corresponding to 5.3% of all operations, with a Dice change of $-0.03$ percentage points. The adapter improved Dice by 0.48 percentage points over a single host kernel without adding deployed parameters or operations. With latency so far measured only on a GPU, LCM-UNet is a candidate for resource-constrained deployment.",
+  "abstract_ja": "",
+  "authors": [
+    "Md Shihabul Islam Shovo",
+    "Nishi Kanta Paul",
+    "Dip Kumar Saha",
+    "Kishor Morol"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.04409",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Accurate lesion segmentation underpins automated dermoscopic analysis: masks enable measurements of asymmetry, border and size. Deployment in primary care or on mobile devices requires a compact…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "LCM-UNet: Scale-Selective Mamba with Reparameterizable Multi-Basis Local Modeling for Lightweight Skin Lesion Segmentation",
+  "url": "https://arxiv.org/abs/2611.04409",
+  "use_case": ""
+}

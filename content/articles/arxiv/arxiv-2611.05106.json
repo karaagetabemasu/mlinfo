@@ -1,0 +1,33 @@
+{
+  "abstract": "Accurate segmentation of the mitral valve from three-dimensional transesophageal echocardiography (3D TEE) is severely restricted by the scarcity of publicly available expert- annotated volumetric datasets. To address this critical limitation, we investigated Fourier Domain Adaptation (FDA), utilizing general-purpose generative-AI images (from platforms like Chat- GPT, Google Gemini, and Microsoft MAI) as annotation-free style donors for 3D mitral valve segmentation. We employed a DeepMitral residual U-Net model on the public MVSeg2023 dataset, comparing six conditions over three runs: real-only training, traditional augmentation, FDA with each generative source, and a non-AI FDA control using real-image style donors, plus an optimization-matched real-only control and a \\b{eta} sensitivity analysis. Case-level paired testing showed that FDA with these generative sources led to significant reductions in boundary- and surface-related errors across all three donor conditions relative to the primary real-only baseline. However, the impact on the core segmentation metric, Generalized Dice Score (GDS), proved generator-dependent. ChatGPT-FDA showed a significant GDS advantage over the optimization-matched control but not over the primary baseline, and Gemini-FDA showed no significant GDS difference. Notably, only MAI-FDA provided a statistically robust and significant increase in GDS compared to the primary baseline. The \\b{eta} sensitivity was not robust across training runs. These findings confirm that FDA remains an important augmentation mechanism. While generative-AI images offer a practical means of acquiring style diversity without new annotations, the non-AI control performed comparably to ChatGPT-FDA, so we do not conclude that this approach is superior to training with real-image donors.",
+  "abstract_ja": "",
+  "authors": [
+    "Javeria Javed",
+    "Ahmed Salim",
+    "Muhammad Mahboob Ur Rahman"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.05106",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Accurate segmentation of the mitral valve from three-dimensional transesophageal echocardiography (3D TEE) is severely restricted by the scarcity of publicly available expert- annotated volumetric…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": [
+      "generation",
+      "segmentation"
+    ]
+  },
+  "title": "Label-Preserving Fourier Domain Adaptation with Generative-AI and Real Style Donors for 3D Mitral Valve Segmentation",
+  "url": "https://arxiv.org/abs/2611.05106",
+  "use_case": ""
+}

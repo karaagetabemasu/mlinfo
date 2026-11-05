@@ -1,0 +1,30 @@
+{
+  "abstract": "Extreme events often occur sequentially, from earthquake-tsunami cascades to successive extreme losses in financial markets. We introduce an extremal token representation that encodes multivariate observations as a categorical sequence. A quiet token records the absence of threshold exceedances; otherwise, the token identifies the exceeding component with the largest marginal probability-scale score. The representation is invariant to componentwise strictly increasing transformations. It preserves the identity and temporal ordering of dominant exceedances but discards their magnitudes and the identities of nondominant simultaneous exceedances. A decoder-only transformer estimates the history-dependent next-token kernel on this representation, and recursive sampling generates future token sequences from the induced joint predictive law. We amortize our generative model by pretraining across simulated process families with varying parameters and dependence persistence. Next-token predictions are evaluated against exact conditional probabilities for held-out categorical processes and particle filter references for heavy-tailed vector autoregressive processes. Applied to ten-second returns for five semiconductor stocks, the pretrained model supports zero-shot transfer, while a few epochs of adaptation improve agreement between observed and generated token frequencies and transition patterns. These results support task-specific tokenization and simulation-based pretraining for modeling which dimensions dominate multivariate extremes.",
+  "abstract_ja": "",
+  "authors": [
+    "Miguel de Carvalho",
+    "Myung Won Lee",
+    "Jordan Richards",
+    "Sotirios Sabanis"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.05728",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Extreme events often occur sequentially, from earthquake-tsunami cascades to successive extreme losses in financial markets. We introduce an extremal token representation that encodes multivariate…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Generative Modeling for Cascading Extremes via Autoregressive Transformers",
+  "url": "https://arxiv.org/abs/2611.05728",
+  "use_case": ""
+}

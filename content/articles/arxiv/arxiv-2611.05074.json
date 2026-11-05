@@ -1,0 +1,29 @@
+{
+  "abstract": "Teleoperation of mobile robots in communication-denied environments requires maintaining a communication link while allowing the operator to maneuver freely. We propose a shared-autonomy framework in which a teleoperated leader is followed by a chain of autonomous robots that relays a line of sight to a fixed base station, a geometric proxy for the link. Connectivity is enforced geometrically through visibility-based Control Barrier Functions (CBFs), with each agent computing its control input locally through a quadratic program. A strict visibility constraint guarantees connectivity, but a follower with no independent motion objective remains stationary, stalling the leader at the boundary of the safe set. Relaxing it preserves mobility at the cost of the guarantee. Our framework resolves this conflict through nested hard-soft visibility constraints: a full field-of-view (FoV) constraint enforced strictly to guarantee connectivity and a contracted FoV constraint imposed on each follower as a relaxed behavioral objective that drives it inward before the connectivity boundary is reached. We prove feasibility of the local quadratic programs and forward invariance of the connected, collision-free set under the resulting distributed controller. The contraction parameter shapes follower behavior without affecting the guarantee, which follows from the strict constraint alone. The framework is evaluated in confined and cluttered environments on two simulated systems: a kinematic integrator and software-in-the-loop Crazyflie quadrotors. Compared with a baseline tuned to reach the goal in comparable time, the framework keeps the links far closer to the connected set and moves the followers less.",
+  "abstract_ja": "",
+  "authors": [
+    "Arthur Vangasse",
+    "Theo Cruz",
+    "Thales Soares",
+    "André Cid",
+    "Vinícius Gonçalves"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.05074",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Teleoperation of mobile robots in communication-denied environments requires maintaining a communication link while allowing the operator to maneuver freely. We propose a shared-autonomy framework in…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Nested Field-of-View Barriers for Teleoperated Multi-Robot Relay Chains",
+  "url": "https://arxiv.org/abs/2611.05074",
+  "use_case": ""
+}

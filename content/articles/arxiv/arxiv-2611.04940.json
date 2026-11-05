@@ -1,0 +1,26 @@
+{
+  "abstract": "High-order dependencies among views can be modeled by tensor singular value decomposition (t-SVD) in multi-view subspace clustering. However, the tensor nuclear norm often used with this framework assigns the same asymptotic marginal penalty to singular values of different magnitudes, which may excessively shrink dominant components that encode cluster structure. We propose HTNN-MSC, which replaces this norm with a bounded hyperbolic tangent tensor rank surrogate. The surrogate is strictly concave on the positive half-axis and has a Lipschitz continuous derivative. Its marginal penalty decreases as singular values grow. We develop an alternating direction method of multipliers solver in which the tensor subproblem decomposes into scalar frequency-domain shrinkage problems. Safeguarded multi-start Newton iterations and candidate-objective comparison implement the resulting hyperbolic tangent thresholding operator. The shape parameter is scaled by the input spectrum. We also establish o-minimal definability of the augmented objective. Under explicit boundedness, descent, relative-error, and exact-block conditions, the Kurdyka-Lojasiewicz framework guarantees convergence of the full sequence to a KKT point. On 23 datasets, HTNN-MSC achieves a mean clustering accuracy of 0.8404 and an average accuracy rank of 2.78 against nine representative methods. Friedman tests and Holm-adjusted Wilcoxon comparisons reveal significant overall differences, although several pairwise differences remain nonsignificant. HTNN-MSC records 19 wins, one tie, and three losses against the convex t-SVD-MSC skeleton. A same-skeleton ablation also shows that the proposed surrogate does not uniformly outperform alternative nonconvex penalties.",
+  "abstract_ja": "",
+  "authors": [
+    "Yiwen Dou",
+    "Yiqiang Ding"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.04940",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "High-order dependencies among views can be modeled by tensor singular value decomposition (t-SVD) in multi-view subspace clustering. However, the tensor nuclear norm often used with this framework…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "HTNN-MSC: Multi-view Subspace Clustering with a Hyperbolic Tangent Tensor Low-Rank Surrogate",
+  "url": "https://arxiv.org/abs/2611.04940",
+  "use_case": ""
+}

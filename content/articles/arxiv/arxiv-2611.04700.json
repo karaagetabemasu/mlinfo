@@ -1,0 +1,29 @@
+{
+  "abstract": "Distributed learning has drawn considerable attention due to its capability of learning from distributed data without aggregating raw observations. However, frequent exchange of model updates can become the main bottleneck of communication. Therefore, one-shot approaches where each worker fits a local model and sends it to the server to aggregate emerge. It is known that averaging can achieve the so-called pooled-data mean squared error (MSE) order of a hypothetical node that has access to data from the server and all the workers, and performs empirical risk minimization (ERM) on it. However, when the number of workers increases too fast compared to the local sample size, nonzero local estimation bias prevents averaging from achieving this order. In this paper, we study whether independent server data can overcome this limitation. We consider $m$ workers with $n$ observations each and a server with $p$ observations, all i.i.d., giving $N=mn+p$ observations in total. Under certain regularity conditions, a pooled-data ERM achieves MSE of order $\\mathcal O(N^{-1})$. We analyze deterministic nonnegative averaging of convex-loss M-estimators, with equal worker weights and the server's own estimator included. Under our assumptions, including nonzero local bias of order $n^{-α}$, $α\\geq1$, sample-size weighted averaging achieves the pooled-data MSE order whenever $m=\\mathcal O(n^{2α-1})$. Above this worker scale, it does so if and only if $p=Ω(nm\\cdot m/n^{2α-1})$. Hence, server-only estimation, whose MSE is of order $\\mathcal{O}(p^{-1})$, can achieve pooled-data order while sample-size weighting fails. Analytical examples and synthetic experiments illustrate when averaging matches the pooled-data MSE order, complemented by CIFAR-10 experiments comparing aggregation strategies with linear and nonlinear classifiers.",
+  "abstract_ja": "",
+  "authors": [
+    "Pavle Tepavčević",
+    "Dušan Jakovetić",
+    "Miloš Savić"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.04700",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Distributed learning has drawn considerable attention due to its capability of learning from distributed data without aggregating raw observations. However, frequent exchange of model updates can…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "One-shot Distributed Learning via Weighted Averaging with Server-side Information",
+  "url": "https://arxiv.org/abs/2611.04700",
+  "use_case": ""
+}

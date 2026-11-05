@@ -1,0 +1,35 @@
+{
+  "abstract": "Deep models for radiological diagnosis are typically trained to predict disease labels directly from images, which limits them to diseases seen during training and makes their decisions hard to interpret in radiologists' terms. Radiology, however, proceeds from visual findings to disease through published guidelines that make this decision rule explicit, interpretable, and reproducible. We introduce diagnosis by composition (DbC), a representation learning framework that encodes this findings-first logic. DbC learns a vocabulary of radiological findings by aligning image features with the text embeddings of the findings, each finding represented as a dense map over the scan. A disease is defined by a set of required findings derived from its guidelines, and its diagnosis map is a fixed, parameter-free composition of the corresponding finding maps. Because the finding-to-disease mapping is derived from guidelines rather than learned, DbC is interpretable and auditable by design, can extend to new diseases by specifying their findings without retraining, and can diagnose unseen diseases by composing their findings. On multi-phase liver CT, DbC detects and localizes unseen diseases, rare diseases from a different institution, and an external cohort significantly better than all comparators, including models that align images with disease names. DbC also improves detection and localization in the fully supervised setting and remains superior across training-set sizes. Although demonstrated on liver CT, DbC applies wherever radiological guidelines define diseases through findings.",
+  "abstract_ja": "",
+  "authors": [
+    "Kaihua Hou",
+    "Wei Liu",
+    "Yi Huang",
+    "Hao Zhang",
+    "Haibo Jin"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.05231",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Deep models for radiological diagnosis are typically trained to predict disease labels directly from images, which limits them to diseases seen during training and makes their decisions hard to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection",
+      "embedding"
+    ]
+  },
+  "title": "Diagnosis by Composition: Detecting and Localizing Unseen Diseases by Composing Learned Radiological Findings",
+  "url": "https://arxiv.org/abs/2611.05231",
+  "use_case": ""
+}

@@ -1,0 +1,34 @@
+{
+  "abstract": "Large Vision-Language Models (LVLMs) routinely name objects that are absent from the image. Latent steering can reduce this failure in one model forward pass, but a fixed gate treats early and late decoding steps by the same criterion. We observe that predictive entropy varies sharply within free-running generation, while states that commit to short answers occupy a narrow, confident band. We exploit this temporal mismatch by using uncertainty as a causally available, token-local control signal for an existing steering gate. We propose Entropy-Gated Dynamic Rectification (EGDR), which lowers the intervention threshold when entropy derived from the preceding step's already available logits is high and retains the calibrated operating point when it is low. On LLaVA-1.5-7B, the underlying static gate lowers CHAIR CS/CI from 53.00/15.30 to 32.00/14.30; replacing only its constant threshold with EGDR further lowers them to 29.00/13.60. At a matched 58% intervention rate, the corresponding static control obtains 30.50/14.00. The gain over the static gate holds on LLaVA-NeXT-7B and grows with the generation budget, while POPE scores and general multimodal capability remain effectively unchanged. EGDR requires no additional model forward pass and adds roughly 2% measured latency. Our code is available at https://github.com/alvi-uiu/EGDR.",
+  "abstract_ja": "",
+  "authors": [
+    "Riasad Alvi",
+    "Md. Asaduzzaman Shuvo",
+    "Md. Ahashan Habib",
+    "Md. Faiyaz Abdullah Sayeedi"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/alvi-uiu/EGDR",
+  "hasCode": true,
+  "id": "arxiv-2611.04438",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Large Vision-Language Models (LVLMs) routinely name objects that are absent from the image. Latent steering can reduce this failure in one model forward pass, but a fixed gate treats early and late…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Entropy-Gated Dynamic Rectification for Object Hallucination in Large Vision-Language Models",
+  "url": "https://arxiv.org/abs/2611.04438",
+  "use_case": ""
+}

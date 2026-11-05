@@ -1,0 +1,32 @@
+{
+  "abstract": "Saliency maps are offered as a safeguard for medical image classifiers, but whether they reveal individual errors at a new hospital remains largely untested. We trained a convolutional network and a vision transformer on NIH ChestX-ray14 and evaluated 303,768 decisions per model at the training hospital and at two external sites, in the USA and Vietnam, with radiologist-consensus labels. We scored each explanation by its anatomical enrichment, the area-normalized concentration of attribution in a segmented thoracic region, and tested whether it detects errors beyond the model's confidence. Grad-CAM localized findings less often than radiologists (hit rate at most 0.575 versus 0.888). Adding enrichment to a confidence-based error detector calibrated at the training hospital never raised its area under the curve by more than 0.011, and for the convolutional network the relation between enrichment and correctness reversed between hospitals, degrading the transferred detector. Model confidence, not saliency, should anchor deployment monitoring.",
+  "abstract_ja": "",
+  "authors": [
+    "Aashish Chapagai",
+    "Angad Singh Gurtatta",
+    "Erik Cambria"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.05011",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Saliency maps are offered as a safeguard for medical image classifiers, but whether they reveal individual errors at a new hospital remains largely untested. We trained a convolutional network and a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "Can saliency maps flag chest radiograph classifier errors at a new hospital? An external validation study",
+  "url": "https://arxiv.org/abs/2611.05011",
+  "use_case": ""
+}

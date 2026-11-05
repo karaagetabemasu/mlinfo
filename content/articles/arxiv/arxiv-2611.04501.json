@@ -1,0 +1,32 @@
+{
+  "abstract": "Machine unlearning aims to erase the influence of a designated forget set from a trained model while preserving strong utility on the retain set. Approximate unlearning methods efficiently achieve this goal without full retraining, but their effectiveness is primarily assessed using dataset-level aggregate metrics. These aggregate metrics can mask deviations from retraining at the level of individual samples. In this work, we focus on per-sample unlearning effectiveness. We introduce SALA (Sample-grained Likelihoods ALignment), a plug-in optimization framework that enables approximate unlearning methods to operate at the level of individual samples by steering each example toward its correct target distribution. To quantitatively assess this behavior, we further propose the sample-grained distribution gap, a metric that captures per-sample discrepancies between approximate unlearning and exact retraining output distributions. We provide theoretical guarantees showing that SALA contracts this gap and yields a bounded per-sample discrepancy to retraining. To make this framework practical, we develop a low-cost estimation method for the member and non-member target distributions. Extensive experiments on classification and generation tasks demonstrate that SALA reduces the sample-grained distribution gap by up to $86.67\\%$ when paired with existing approximate unlearning baselines, while also improving robustness to unlearning hyperparameters.",
+  "abstract_ja": "",
+  "authors": [
+    "Yaxin Xiao",
+    "Yulin Jin",
+    "Li Tang",
+    "Haoyang LI",
+    "Huadi Zheng"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.04501",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Machine unlearning aims to erase the influence of a designated forget set from a trained model while preserving strong utility on the retain set. Approximate unlearning methods efficiently achieve…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "generation"
+    ]
+  },
+  "title": "Sample-Grained Approximate Unlearning with Provable Per-Sample Bounds",
+  "url": "https://arxiv.org/abs/2611.04501",
+  "use_case": ""
+}

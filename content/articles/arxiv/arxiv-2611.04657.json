@@ -1,0 +1,29 @@
+{
+  "abstract": "Attention is known to be sparse in vision transformers. In particular, we analyze the unequal relevance of attention-matrix columns to the final computation and show that this phenomenon becomes increasingly pronounced with network depth. This can be interpreted as saying that tokens have an absolute importance for the attention process, independently of queries. Inspired by this, we propose a reformulation of the attention formula that makes this phenomenon explicit by adding an input-dependent bias to the query-key dot product. We show that this new term gives each token a scalar value indicating its anticipated influence on other tokens during the attention process, and can thus serve as a proxy for pruning attention maps. Across multiple transformer model sizes, this allows us to substantially reduce the computational cost of attention, in terms of both FLOPs and inference latency, while retaining most of the original classification accuracy. We publicly released the code and models at https://github.com/EIDOSLAB/AttentionWithBias.",
+  "abstract_ja": "",
+  "authors": [
+    "Charles Herr",
+    "Gabriele Spadaro",
+    "Enzo Tartaglione"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/EIDOSLAB/AttentionWithBias",
+  "hasCode": true,
+  "id": "arxiv-2611.04657",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Attention is known to be sparse in vision transformers. In particular, we analyze the unequal relevance of attention-matrix columns to the final computation and show that this phenomenon becomes…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Exploiting Biases in Attention for Transformers",
+  "url": "https://arxiv.org/abs/2611.04657",
+  "use_case": ""
+}
