@@ -1,0 +1,27 @@
+{
+  "abstract": "Boundary-layer Sliding Mode Control (SMC) has been applied to vision-based stabilization, but identifying its activation condition against simpler causal baselines (LPF, PID) has been elusive. The operational condition is plant binding: the disturbance velocity approaches or exceeds the actuator slew limit, so the bounded per-step actuation budget binds. We validate this in two independent vision domains: handheld translation stabilization (12 1080p clips; LPF, PID, SMC, L1) and angular re-framing against a virtual slew-rate-limited pan-tilt-zoom (PTZ) plant. Outside binding, leave-one-out cross-validation makes SMC and LPF on translation statistically indistinguishable, and PID beats SMC on the angular 99th-percentile pointing offset by 5.85 degrees (95% CI clear of zero); inside binding -- reached only by sweeping the simulated slew limit, as both captured datasets land outside it -- the translation gap stays a tie and SMC beats PID on the angular worst case (Cohen's d up to +0.83). The PTZ plant's 100 degrees/s default sits on the cross-over, which explains a small-margin PID result previously reported in the angular setting. A complementary ablation shows raising the SMC reaching gain k costs mean tracking outside a narrow window.",
+  "abstract_ja": "",
+  "authors": [
+    "Sooyeun Yang",
+    "Jongseong Brad Choi",
+    "Seung Bok choi"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.06028",
+  "likes_count": 0,
+  "publishedAt": "2026-11-04",
+  "source": "arxiv",
+  "subcategory": "multimodal",
+  "summary": "Boundary-layer Sliding Mode Control (SMC) has been applied to vision-based stabilization, but identifying its activation condition against simpler causal baselines (LPF, PID) has been elusive. The…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "The Effectiveness of Sliding Mode Control for Robust Vision Stabilization under the Plant-Binding Condition",
+  "url": "https://arxiv.org/abs/2611.06028",
+  "use_case": ""
+}

@@ -1,0 +1,28 @@
+{
+  "abstract": "Truncated backpropagation through time reduces the computational burden of training recurrent models by restricting gradient computations to shorter temporal contexts. This induces two distinct boundary effects: missing past information perturbs the forward state evolution, while truncating the backward recursion omits future information. This motivates decoupling the interval over which gradient contributions are averaged for the parameter update from the surrounding temporal context over which they are computed. Under exponential decay of the state-transition Jacobians and mild regularity conditions, this leads to a two-sided gradient turnpike property: the error between truncated- and full-context gradient contributions decays exponentially with the distance from both context boundaries. We derive bounds for the averaged update gradient, yielding guarantees on gradient alignment and approximate full-context stationarity; under unbiased interval sampling and a Polyak-Lojasiewicz condition, these further imply a bound on the resulting optimality gap. Numerical experiments on the Wiener-Hammerstein benchmark illustrate the role of past and future context and the trade-off between predictive performance and computational cost.",
+  "abstract_ja": "",
+  "authors": [
+    "Julian D. Schiller",
+    "Matthias A. Müller"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.07415",
+  "likes_count": 0,
+  "publishedAt": "2026-11-05",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "Truncated backpropagation through time reduces the computational burden of training recurrent models by restricting gradient computations to shorter temporal contexts. This induces two distinct…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Truncated backpropagation through time induces a two-sided gradient turnpike property",
+  "url": "https://arxiv.org/abs/2611.07415",
+  "use_case": ""
+}

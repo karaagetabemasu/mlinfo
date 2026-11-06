@@ -1,0 +1,31 @@
+{
+  "abstract": "Generating daily activity schedules from individual attributes (e.g., age and income) is valuable for activity-based travel modeling and human behavior simulation. The task is challenging because exact activity structures follow a highly imbalanced, long-tailed distribution, while the same structure can admit multiple duration allocations under a fixed full-day budget. Direct generation must therefore learn many exact activity structures from highly uneven observations while modeling their possible temporal realizations. However, many exact structures share recurring activity organization. Based on this observation, we propose Act-HiMotif, a hierarchical motif-based generative model that introduces learned, reusable activity-structure motifs as an intermediate representation between individual profiles and specific activity structures. Act-HiMotif first distinguishes home-only days from active days, then samples a motif from a profile-conditioned prior to guide activity-structure generation, and finally applies a budget-constrained duration allocator to generate activity durations that sum exactly to the full-day horizon. This hierarchy models home-only routing, activity-structure generation, and duration allocation at their corresponding levels, while motifs allow related structures to share statistical support without losing their distinct sequences. Experiments on large-scale travel survey data show that Act-HiMotif outperforms strong baselines in both in-distribution and spatial generalization settings, demonstrating the effectiveness of hierarchical generation and reusable activity-structure motifs for producing realistic profile-conditioned daily activity schedules.",
+  "abstract_ja": "",
+  "authors": [
+    "Yushi Bai",
+    "Kang Liu",
+    "Ling Yin",
+    "Wei Wang",
+    "Yilin Lyu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.06038",
+  "likes_count": 0,
+  "publishedAt": "2026-11-04",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Generating daily activity schedules from individual attributes (e.g., age and income) is valuable for activity-based travel modeling and human behavior simulation. The task is challenging because…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Act-HiMotif: Hierarchical Daily Activity Schedule Generation via Learned Activity-Structure Motifs",
+  "url": "https://arxiv.org/abs/2611.06038",
+  "use_case": ""
+}

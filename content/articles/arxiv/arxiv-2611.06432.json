@@ -1,0 +1,32 @@
+{
+  "abstract": "Reliable channel estimation and symbol detection in 5G New Radio (NR), as well as emerging 6G radio systems, rely on demodulation reference signals (DMRS). The density and placement of these pilots on the orthogonal frequency-division multiplexing (OFDM) time--frequency resource grid affect both receiver reliability and spectral efficiency. Sparse DMRS layouts increase the time--frequency distance between pilot observations and data resource elements (REs), which can make pilot information harder to exploit with purely local processing. This paper proposes \\textbf{PARGAR (Pilot-Aware Graph Attention Receiver)}, a graph-attention neural receiver that represents the OFDM resource grid as a graph for bit detection. The graph combines local time--frequency edges with pilot-anchor links from data REs to selected pilot REs, and we further study a channel-scaled pilot-anchor rule based on approximate coherence time and coherence bandwidth. Using Sionna-generated OFDM simulations, we evaluate \\textsc{PARGAR} against DeepRx, a convolutional neural network (CNN)-based receiver, across dense, two-symbol sparse, and single-symbol sparse DMRS layouts under channel-mismatch scenarios. Under the considered SISO uncoded setup, channel-scaled \\textsc{PARGAR} explicitly injects pilot-aware inductive bias and yields lower BER in selected sparse-pilot scenarios while remaining competitive under dense pilots.",
+  "abstract_ja": "",
+  "authors": [
+    "Sajedeh Norouzi",
+    "Mostafa Rahmani Ghourtani",
+    "Eric Samikwa",
+    "Torsten Braun"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.06432",
+  "likes_count": 0,
+  "publishedAt": "2026-11-04",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Reliable channel estimation and symbol detection in 5G New Radio (NR), as well as emerging 6G radio systems, rely on demodulation reference signals (DMRS). The density and placement of these pilots…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "PARGAR: Pilot-Aware Graph Attention for Sparse-Pilot Neural OFDM Receivers",
+  "url": "https://arxiv.org/abs/2611.06432",
+  "use_case": ""
+}

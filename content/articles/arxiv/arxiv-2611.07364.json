@@ -1,0 +1,28 @@
+{
+  "abstract": "Kinetic equations in the high-field regime describe particle transport dominated by electric-field acceleration and collisional relaxation. These equations are widely used in simulations of plasmas and semiconductor devices. Typical models include the Vlasov--Poisson--Fokker--Planck (VPFP) and Boltzmann--Poisson systems. Their high dimensionality and multiscale nature pose two of the major challenges to accurate and efficient numerical solution. To address these challenges, we propose an asymptotic-preserving tensor neural network (APTNN) method. Specifically, to reduce high-dimensional computational costs and memory requirements, we adopt the canonical polyadic (CP) decomposition structure of TNNs to approximate their solutions. We show that the equation residuals retain this decomposition form, allowing high-dimensional loss integrals to be evaluated through combinations of one-dimensional integrals. The resulting computational and storage costs are reduced from exponential to polynomial growth with dimension. To improve the prediction accuracy in the high-field limit, we enhance the baseline AP loss by incorporating the first moment equation. The added loss term directly constrains the limiting flux closure to reduce its approximation error in the high-field regime. The enhanced AP loss can still be evaluated dimension-wise. Numerical results show that APTNN improves prediction accuracy in the high-field regime with significantly reduced computational costs and memory usage. For a 3D3V VPFP problem with multiple random inputs, training takes less than 30 minutes on a single GPU.",
+  "abstract_ja": "",
+  "authors": [
+    "Shi Jin",
+    "Tian-ai Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.07364",
+  "likes_count": 0,
+  "publishedAt": "2026-11-05",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Kinetic equations in the high-field regime describe particle transport dominated by electric-field acceleration and collisional relaxation. These equations are widely used in simulations of plasmas…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Asymptotic-Preserving Tensor Neural Networks for 3D High-Field Kinetic Equations with Applications to Uncertainty Quantification",
+  "url": "https://arxiv.org/abs/2611.07364",
+  "use_case": ""
+}

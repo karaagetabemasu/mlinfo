@@ -1,0 +1,35 @@
+{
+  "abstract": "Predicting beyond the training domain necessarily requires assumptions about how the ground truth extrapolates, yet in most neural networks these assumptions are made only implicit through the architecture. We propose TrustMix, a lightweight post-hoc method that makes a pretrained model's extrapolative behaviour explicit and controllable. TrustMix combines the predictive distribution produced by a pretrained model with a user-specified fallback distribution $p_0(y|x)$, such that as the out-of-distribution (OOD) deviation statistic grows, we collapse towards $p_0(y|x)$. TrustMix provides graceful degradation: the predictive distribution converges toward the fallback distribution as the OOD signal grows. The fallback distribution $p_0(y|x)$ can reflect domain knowledge, if available, or rely on a domain-agnostic stationarity assumption. TrustMix does not require retraining of the base model and can be applied to both regression and classification problems. We evaluated TrustMix on several synthetic and real-world distribution shifts, including tabular, image, and natural language processing tasks. We tested TrustMix on datasets such as CIFAR-10/100 and ImageNet and on numerous architectures including Convolutional Neural Networks (CNNs) and Transformers. TrustMix remains competitive in-distribution while improving predictive uncertainty under distribution shift, with gains in predictive likelihood for regression and calibration for classification. Finally, we showed that TrustMix can provide useful predictive distributions for decision-making applications by utilizing it as a surrogate for Bayesian Optimisation.",
+  "abstract_ja": "",
+  "authors": [
+    "Juliusz Ziomek",
+    "Maike Osborne",
+    "Yee Whye Teh"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.07206",
+  "likes_count": 0,
+  "publishedAt": "2026-11-04",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Predicting beyond the training domain necessarily requires assumptions about how the ground truth extrapolates, yet in most neural networks these assumptions are made only implicit through the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "tabular"
+    ],
+    "task": [
+      "classification",
+      "regression",
+      "anomaly-detection"
+    ]
+  },
+  "title": "TrustMix: Graceful Degradation for Pretrained Models under Distribution Shift",
+  "url": "https://arxiv.org/abs/2611.07206",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Predictive models of human behavior trained on large-scale trajectory data optimize for statistical accuracy without representing the mental states that causally generate behavior. Such models support prediction but not principled intervention: they cannot answer how an agent's behavior would change if its beliefs or preferences were different. We introduce Structured Machine Theory of Mind (SMToM), a framework that attributes explicit, independently supervised belief and desire representations from observed trajectories within a Belief-Desire-Intention (BDI) causal structure. The central architectural element is a goal head that consumes only the predicted mental-state channels and a current-trajectory embedding; counterfactual intervention on beliefs and desires is a direct operation. We instantiate SMToM on a controlled pedestrian navigation domain where ground-truth mental states are known by construction, enabling evaluation of attribution accuracy, local channel interventions, and trajectory-level counterfactual diagnostics. The resulting model, BDIBottleneck, improves over trajectory-only and unsupervised-context neural baselines. It is also competitive with a matched auxiliary-supervised context baseline while providing an editable mental-state interface that the unbottlenecked baseline lacks. Counterfactual experiments on desires confirm that substituting an agent's inferred preferences with a different activity type coherently shifts predicted destinations toward relevant locations. Counterfactual experiments on beliefs confirm that marking a location as unavailable in the agent's belief state reduces its predicted probability as a destination, though in a complex way. These results demonstrate, in a controlled navigation setting, that explicit BDI-structured supervision is a viable foundation for interpretable and counterfactual analysis of longitudinal trajectory data.",
+  "abstract_ja": "",
+  "authors": [
+    "Nigel F. Doering",
+    "Rahath Malladi",
+    "Arshia Sangwan",
+    "M Tanjid Hasan Tonmoy",
+    "Jacob Doan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.07208",
+  "likes_count": 0,
+  "publishedAt": "2026-11-04",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Predictive models of human behavior trained on large-scale trajectory data optimize for statistical accuracy without representing the mental states that causally generate behavior. Such models…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised"
+    ],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Structured Machine Theory of Mind from Agent Trajectories",
+  "url": "https://arxiv.org/abs/2611.07208",
+  "use_case": ""
+}

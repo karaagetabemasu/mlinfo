@@ -1,0 +1,28 @@
+{
+  "abstract": "Tensor Network (TN) kernel machines accelerate supervised learning by using low-rank TNs to reduce computation and memory. However, most TN-based methods are deterministic with manually tuned ranks and feature dimensions, while the existing Bayesian TN kernel machine is restricted to the CANDECOMP/PARAFAC decomposition (CPD), whose single rank is shared by all modes. We extend this framework to the tensor train (TT) and propose Bayesian Tensor Train Kernel Machines (BTT-KM), whose hierarchical ARD-type priors on the TT cores infer the TT ranks and feature dimensions from data. Since each TT core is coupled to the others only through its neighbors, its closed-form posterior update requires propagating the contributions of all other cores along the chain. Mean-field variational inference yields a Bayesian alternating least squares algorithm with the same computational complexity as its deterministic counterpart and a closed-form predictive distribution. A synthetic experiment illustrates that BTT-KM recovers the true TT ranks and feature dimensions from an over-parameterized initialization.",
+  "abstract_ja": "",
+  "authors": [
+    "Afra Kilic",
+    "Kim Batselier"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.07129",
+  "likes_count": 0,
+  "publishedAt": "2026-11-04",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Tensor Network (TN) kernel machines accelerate supervised learning by using low-rank TNs to reduce computation and memory. However, most TN-based methods are deterministic with manually tuned ranks…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "supervised"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "Bayesian Tensor Train Kernel Machines with Automatic Model Complexity Inference",
+  "url": "https://arxiv.org/abs/2611.07129",
+  "use_case": ""
+}
