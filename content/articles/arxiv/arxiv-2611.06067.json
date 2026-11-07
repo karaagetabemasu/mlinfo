@@ -1,0 +1,27 @@
+{
+  "abstract": "We study how a seller can learn a reserve price for a second-price auction from censored historical bid data. Because values below past reserves are unobserved, even unlimited data may not reveal which reserve earns the most revenue. Under a monotone hazard rate (MHR) assumption, we characterize exactly when an optimal reserve is identified, even though the value distribution may not be: either revenue has not yet begun to fall at the lowest historical reserve, so the best reserve lies among the observed bids, or the censored fraction is as large as MHR allows, which pins down the entire distribution. When identification fails, we derive the reserve that minimizes worst-case revenue regret over distributions consistent with the data, and prove that this unique minimax reserve and its regret depend on just two observable quantities: the censored fraction and the hazard just above the lowest historical reserve. With $N$ historical bidders, the optimal reserve is learned with expected worst-case regret $O(N^{-1/2})$ when it lies among the observed bids, and $O(N^{-1})$ from the censored count alone when the censored fraction is as large as MHR allows and the optimum lies at or below the lowest reserve. In the nonidentifiable regime, plugging estimates of the two quantities into the minimax reserve gives expected worst-case regret within $O(N^{-2/5})$ of the population minimum under local density smoothness, with a matching minimax lower bound on a smooth class. Beyond MHR, we solve the minimax problem for regular and unrestricted distributions and prove an $O(N^{-2/5})$ learning bound in the regular nonidentifiable regime, given known bounds on the boundary parameters. Experiments on synthetic and eBay data show gains from exploiting MHR and the benefits of the robust rule when parametric models are misspecified.",
+  "abstract_ja": "",
+  "authors": [
+    "Lavanya Marla",
+    "Yunzong Xu",
+    "Boxuan Zhou"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.06067",
+  "likes_count": 0,
+  "publishedAt": "2026-11-04",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "We study how a seller can learn a reserve price for a second-price auction from censored historical bid data. Because values below past reserves are unobserved, even unlimited data may not reveal…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Offline Learning of Reserve Prices from Censored Bids",
+  "url": "https://arxiv.org/abs/2611.06067",
+  "use_case": ""
+}

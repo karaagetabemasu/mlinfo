@@ -1,0 +1,31 @@
+{
+  "abstract": "Personalized computational head models for biophysical simulations rely on accurate whole-head segmentations from T1-weighted (T1w) magnetic resonance imaging (MRI) scans. While T1w scans provide excellent contrast for intracranial anatomy, extracerebral tissues have partly almost no signal (compact bone) and also suffer from the so-called chemical shift artifact, which affects the fatty tissues in MRI and causes them to spatially shift in the frequency encoding direction of the scan. This artifact occurs primarily in two structures of the head: the spongy bone, a fatty compartment inside the compact bone, and the subcutaneous fat, located directly underneath the skin. The frequency-encoding direction is often set in the superior-inferior direction, causing the fatty tissues to shift down and, as a result, making the skull appear thinner than it actually is. Existing segmentation methods do not model this artifact, consequently leading to inaccurate labeling of the skull and scalp, which introduces a bias in biophysical simulations. The direction and magnitude of the fat-shift can be determined from the scan parameters, thus making it possible to explicitly model the shift and to recover the correct anatomy. This study introduces a probabilistic model that uses variational inference to segment head and brain structures from a T1w scan while accounting for the fat-shift artifact. The proposed Fat-shift-informed Label Optimization of the Whole head (FLOW) method reconstructs extracerebral anatomy more accurately than a fat-shift-agnostic segmentation approach while maintaining high segmentation accuracy in all other structures. FLOW-based fat-shift corrected segmentations significantly reduce bias in electric field simulations compared to a segmentation method that does not model the shift.",
+  "abstract_ja": "",
+  "authors": [
+    "Merle Diedrichsen",
+    "Koen Van Leemput",
+    "Douglas N. Greve",
+    "Oula Puonti",
+    "Axel Thielscher"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01222",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Personalized computational head models for biophysical simulations rely on accurate whole-head segmentations from T1-weighted (T1w) magnetic resonance imaging (MRI) scans. While T1w scans provide…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "Modeling Fat-shift for Improved Head Segmentation from MRI Scans using a Probabilistic Model",
+  "url": "https://arxiv.org/abs/2611.01222",
+  "use_case": ""
+}

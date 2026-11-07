@@ -1,0 +1,31 @@
+{
+  "abstract": "Smartphone applications increasingly require large language models to process long contexts, whereas high prefill latency and memory demands constrain local inference. Block-sparse attention reduces computation and memory traffic, but its irregular selections conflict with mobile NPUs' preference for large, regular tiles. Efficient execution must exploit cross-query reuse while avoiding redundant computation and preserving selections needed for accuracy. In this paper, we present TileWeave, which partitions sparse attention by this cross-query reuse: highly shared key blocks run in coarse NPU tiles, while low-reuse blocks run on the GPU only for the query blocks that selected them. In addition, we design an NPU-native pooled-key selector that keeps selection inexpensive, and a runtime that publishes GPU partials in the order the NPU consumes them and merges them in its existing output store. On RULER, HeteroSparse matches XAttention's accuracy with Qwen3-1.7B and improves it with Llama-3.2-3B-Instruct; its mean LongBench scores match XAttention as well. On Snapdragon SM8750 and SM8850 phones, it achieves 1.35--3.23$\\times$ faster full-model prefill than XAttention over 1k--16k tokens and up to 1.58$\\times$ faster than dense attention.",
+  "abstract_ja": "",
+  "authors": [
+    "Wentao Ni",
+    "Hong Cai",
+    "Mingu Lee",
+    "Chihao Yu",
+    "Zhongming Yu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00408",
+  "likes_count": 0,
+  "publishedAt": "2026-10-30",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Smartphone applications increasingly require large language models to process long contexts, whereas high prefill latency and memory demands constrain local inference. Block-sparse attention reduces…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "TileWeave: Heterogeneous Tiling for Sparse Prefill on Mobile SoCs",
+  "url": "https://arxiv.org/abs/2611.00408",
+  "use_case": ""
+}

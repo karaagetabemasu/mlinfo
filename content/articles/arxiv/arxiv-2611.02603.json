@@ -1,0 +1,35 @@
+{
+  "abstract": "Effective polyp segmentation in colonoscopy images is crucial for early detection of colorectal cancer, a leading cause of cancer-related death worldwide. While current deep learning models perform well on traditional Dice benchmarks, border segmentation remains difficult. Most methods use boundary information only as an additional loss signal during training, which prevents the network from explicitly learning border-guided feature selection or mask refinement. This paper introduces BGD-SF PolySegNet, a boundary-guided encoder-decoder architecture that controls three phases of the segmentation pipeline: dynamic multi-scale context aggregation, selective skip-feature fusion, and final mask refinement. The architecture comprises a pretrained EfficientNet-B4 backbone and three proposed modules: Boundary-Guided Dynamic Cascaded Multi-Scale Context Aggregation (BGD-CMSCA), Boundary-Guided Selective Attention Fusion (BG-SAGF), and a Multi-Level Boundary Guidance Head (MBGH). The model is trained on 3,535 annotated images from Kvasir-SEG, BKAI-IGH NeoPolyp-Small, and PolypGen, and evaluated on four held-out benchmark datasets. On the internal test set, BGD-SF achieves a Dice of 0.887, IoU of 0.839, mask-derived Boundary F1 of 0.531, HD95 of 30.32, and ASSD of 18.10, improving Boundary F1, HD95, and ASSD by 15.7%, 27.5%, and 34.6% over the strongest CNN baselines. External validation on CVC-ClinicDB, CVC-ColonDB, ETIS-Larib, and CVC-300 yielded Dice scores of 0.891, 0.776, 0.863, and 0.885, respectively. The model runs at 35 FPS with 22.51M parameters. Wilcoxon signed-rank tests confirm statistically significant mask-derived Boundary F1 improvements over six of seven ablation variants (p < 0.001; small-to-moderate effect sizes, r = 0.215-0.434), demonstrating that integrating boundary guidance as an active architectural component measurably advances polyp boundary delineation.",
+  "abstract_ja": "",
+  "authors": [
+    "Nishi Kanta Paul",
+    "Shamia Maherin",
+    "Morsheda Akter",
+    "Moinul Hossain",
+    "Md Kishor Morol"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02603",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Effective polyp segmentation in colonoscopy images is crucial for early detection of colorectal cancer, a leading cause of cancer-related death worldwide. While current deep learning models perform…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection",
+      "segmentation"
+    ]
+  },
+  "title": "BGD-SF PolySegNet: boundary-guided dynamic selective fusion network for robust polyp segmentation in colonoscopy images",
+  "url": "https://arxiv.org/abs/2611.02603",
+  "use_case": ""
+}

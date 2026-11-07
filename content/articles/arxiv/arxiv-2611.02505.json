@@ -1,0 +1,28 @@
+{
+  "abstract": "Quantum-inspired computer vision often reshapes high-dimensional features into tensors and applies tensor-network models. In face verification, this can be misleading: modern embeddings are optimized for cosine similarity, and tensorization alone does not establish the low-rank structure needed for tensor trains or matrix-product operators (MPOs). We study model placement through two controlled interfaces. First, cross-model embedding alignment requires a 512 x 512 operator to map AdaFace embeddings into ArcFace space. Dense Ridge and Procrustes mappings remain strong, while deterministic TT-SVD and MPO compression underperform even with basis changes and low-rank residuals. At a 64K-parameter storage budget, mean directional AUC is 0.9297 for dense Ridge, 0.8952 for rank-64 SVD, 0.8685 for the best low-rank-MPO hybrid, and approximately 0.649 for raw MPO. Second, before global pooling, we construct a 7 x 7 x 7 x 7 probe-gallery correspondence tensor from local AdaFace descriptors. A geometry-aware symmetric tensor train with bond dimension 2 uses 122 trainable parameters, compared with 2,403 for a dense linear matcher, while attaining an LFW AUC of 0.9802. Yet compression does not translate into better low-false-acceptance performance: on CFP-FP, TAR at FAR = 0.001 is 0.0102 versus 0.1734 for global cosine matching, and on CPLFW it is 0.7805 versus 0.8737. These results suggest that quantum-inspired factorization is most credible when the chosen interface provides task-aligned axes and compressible structure. They also show why aggregate AUC must be assessed alongside operational low-FAR metrics.",
+  "abstract_ja": "",
+  "authors": [
+    "Krishna Bhatia",
+    "Kavita Choudhary",
+    "Pruthwik Mishra",
+    "Praveen Kumar Chandaliya"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02505",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Quantum-inspired computer vision often reshapes high-dimensional features into tensors and applies tensor-network models. In face verification, this can be misleading: modern embeddings are optimized…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "QFacePlacement: From Arbitrary Tensorization to Semantic Spatial Correspondence in Modern Face Verification",
+  "url": "https://arxiv.org/abs/2611.02505",
+  "use_case": ""
+}

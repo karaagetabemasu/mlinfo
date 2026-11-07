@@ -1,0 +1,27 @@
+{
+  "abstract": "Evaluating a stochastic AI system often requires many repeated samples per instance, especially for metrics defined over long horizons. Recent work has shown that modeling instance-level success probabilities with a Beta distribution recovers Pass@$k$ from far fewer samples than direct estimation. We show that this framework supports a broader range of evaluation targets. We fit a mixture of Beta distributions by marginal maximum likelihood, with the number of components chosen by BIC. From that one fit, we compute Pass$^k$ and AUC@$k$ at any horizon in closed form. We also derive delta-method confidence intervals for these metrics and for Pass@$k$, which require no additional model calls. Treating configurations rather than tasks as instances extends the same model to sensitivity analysis. For repeated success metrics, we find that mixture priors yield more accurate estimators than naive estimation across competition mathematics and graduate-level science benchmarks when extrapolating beyond the observed number of trials, and the resulting intervals cover the full-data reference. When prompts are treated as instances, it estimates the distribution of prompt sensitivity more accurately than a comparable item-response baseline without external covariates. Direct estimators remain preferable once trials reach the target horizon.",
+  "abstract_ja": "",
+  "authors": [
+    "Gustavo Tironi",
+    "Felipe Maia Polo",
+    "Diego Mesquita"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00474",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Evaluating a stochastic AI system often requires many repeated samples per instance, especially for metrics defined over long horizons. Recent work has shown that modeling instance-level success…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Few Trials, Many Metrics: Beta Mixtures for Low-Budget AI Evaluation",
+  "url": "https://arxiv.org/abs/2611.00474",
+  "use_case": ""
+}

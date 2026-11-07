@@ -1,0 +1,32 @@
+{
+  "abstract": "Pose-driven human video diffusion animates a person from a single reference image and a target pose sequence, yet it struggles to preserve identity, rendering the face and garments unfaithfully as the pose departs from it. Personalization is the standard remedy, but its supervision is missing: one image fixes identity at a single pose, while a multi-pose subject video cannot be assumed in practice. Instead, we synthesize the missing supervision. A domain-tuned, pose-conditioned generator produces pseudo-ground-truth frames at selected key poses. An inference-time reference-only sampler steers these candidates toward the subject and keeps the most identity-consistent. A per-subject low-rank adapter then trains on static clips of them, configured from the reference alone, with no subject video, ground truth, or labels. Although lower in fidelity, these synthetic frames supervise more effectively than real ones. Real frames as captured carry motion that erodes the temporal prior, while a static clip conveys appearance alone. On TikTok and UBC Fashion, the adapted model improves the base on every metric, inverts the identity-versus-motion trade-off, and matches or surpasses adaptation on five real frames despite using none. Code and weights are available at https://github.com/SadmanPinon/one-image-is-enough.",
+  "abstract_ja": "",
+  "authors": [
+    "Sadman Rakib Pinon",
+    "Adamo Orsini",
+    "Yanis Falaki",
+    "Linlian Jiang",
+    "Jacob Kingi"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/SadmanPinon/one-image-is-enough",
+  "hasCode": true,
+  "id": "arxiv-2611.02964",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Pose-driven human video diffusion animates a person from a single reference image and a target pose sequence, yet it struggles to preserve identity, rendering the face and garments unfaithfully as…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video"
+    ],
+    "task": []
+  },
+  "title": "One Image Is Enough: Self-Generated Supervision for Personalizing Human Video Diffusion at Test Time",
+  "url": "https://arxiv.org/abs/2611.02964",
+  "use_case": ""
+}

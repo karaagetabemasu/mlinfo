@@ -1,0 +1,36 @@
+{
+  "abstract": "Recent advances in generative models have made synthetic images increasingly photorealistic, posing growing challenges to reliable and generalizable detection of AI-generated images. Existing methods typically rely on holistic image-level classification, which may overlook local artifacts, especially in high-resolution images. To address this limitation, we formulate this task as a falsification-driven multiple instance learning problem, where a single fake patch can falsify the whole image, while a real image requires all patches to be authentic. Based on this formulation, we propose \\textit{Learning to Falsify (LTF)}, a hierarchical multiple instance learning framework that models an image as multiple bags of instances across different spatial levels and aggregates their predictions under the falsification-inspired principle. We further introduce Cross-Shuffle during training to encourage the model to learn local artifact evidence rather than image-level shortcuts. Furthermore, we propose the \\textit{Falsification-driven Test-time Aggregation Strategy (FATAS)}, a plug-and-play module that extends the same falsification-inspired principle to existing detectors by aggregating patch-level predictions. Extensive experiments demonstrate that LTF achieves strong generalization and robustness across multiple benchmarks, while FATAS substantially improves representative detectors in high-resolution scenarios without retraining. Code is available at https://github.com/HuiGuanLab/LTF.git",
+  "abstract_ja": "",
+  "authors": [
+    "Haoran Chen",
+    "Daiqi Gao",
+    "Xinyuan Li",
+    "Yongwei Wang",
+    "Lei Zhu"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/HuiGuanLab/LTF.git",
+  "hasCode": true,
+  "id": "arxiv-2611.04529",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Recent advances in generative models have made synthetic images increasingly photorealistic, posing growing challenges to reliable and generalizable detection of AI-generated images. Existing methods…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification",
+      "detection",
+      "generation"
+    ]
+  },
+  "title": "Learning to Falsify: Hierarchical Multiple Instance Learning for High Resolution AI-Generated Image Detection",
+  "url": "https://arxiv.org/abs/2611.04529",
+  "use_case": ""
+}

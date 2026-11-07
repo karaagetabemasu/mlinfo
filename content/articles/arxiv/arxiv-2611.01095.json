@@ -1,0 +1,32 @@
+{
+  "abstract": "Many Automated Speaker Verification Systems (ASVs) commonly employ liveliness detection techniques, such as VoicePop, which identify genuine speech by analyzing low- frequency pop bursts from plosive phonemes using Gammatone Frequency Cepstral Coefficients (GFCC) and an SVM classifier. While effective against traditional replay attacks, such systems are vulnerable to data poisoning techniques. Prior work shows that broadly applied SyntheticPop attacks can collapse model to accuracy to as low as 14.01% using only 20% poisoned samples, but the resulting artifacts are easily detectable when visualizing the waveform energies. This paper introduces Pop Goes the Verifier, a stealthier phoneme injection poisoning attack. By leveraging FastSpeech 2 (FS2) with a modified HiFi-GAN vocoder, we inject localized pop bursts at plosive phoneme locations and overlay subtle Gaussian noise to reduce the visibility of injected artifacts in waveform and spectrogram analysis. Using the ASVSpoof 2019 as the dataset, we observe that the approach achieves a moderate poisoning attack while providing greater resistance to signal-level inspection than the original SyntheticPop attack.",
+  "abstract_ja": "",
+  "authors": [
+    "Eshaq Jamdar",
+    "Amith Kamath Belman"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01095",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Many Automated Speaker Verification Systems (ASVs) commonly employ liveliness detection techniques, such as VoicePop, which identify genuine speech by analyzing low- frequency pop bursts from plosive…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "audio"
+    ],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "Pop Goes the Verifier: Phoneme-Targeted Data Poisoning of Voice Liveness Detection",
+  "url": "https://arxiv.org/abs/2611.01095",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Persistent homology (PH) is a mathematically principled multi-scale topological descriptor of shape and connectivity in data. It is widely applied in image classification, segmentation, and shape analysis across medical and aerial imaging, providing structural information that pixel-wise deep learning may overlook. Standard cubical PH decomposes an image into cubical cells (vertices, edges, and squares) and reduces them sequentially in filtration order. This sequential reduction has $Θ(n)$ parallel depth for an $n$-pixel image, limiting within-image GPU parallelism and constraining its use in topology-aware deep learning. We introduce CuPH, a GPU-based parallel algorithm for computing cubical PH on 2D images that operates directly on pixels rather than cubical cells. CuPH buckets pixels by filtration values, activates them with a level-synchronous sweep, and tracks connected components with a lock-free union-find method. We prove that CuPH produces persistence diagrams identical to standard cubical PH on integer inputs, with a stability bound for floating-point inputs. CuPH reduces parallel depth from $Θ(n)$ to $O(L\\log n)$ for an image with $L$ intensity levels. We implement the level sweep as a single CUDA kernel, eliminating cross-level kernel-launch overhead. Empirically, CuPH is $18.6$--$99.6\\times$ faster than the existing GPU baseline (CMP). As a drop-in PH backend, CuPH accelerates topology-aware classification ($4.2$--$16.7\\times$) and segmentation ($8.3$--$44\\times$) while preserving accuracy. It also enables computing full-image PH losses on high-resolution images, improving segmentation Dice by $2.2$--$4.6$ points over patch-local PH baselines and accelerating training by $25$--$31\\times$.",
+  "abstract_ja": "",
+  "authors": [
+    "Guangyu Meng",
+    "Pengfei Gu",
+    "Erin Wolf Chambers",
+    "Danny Z. Chen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01078",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Persistent homology (PH) is a mathematically principled multi-scale topological descriptor of shape and connectivity in data. It is widely applied in image classification, segmentation, and shape…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "segmentation"
+    ]
+  },
+  "title": "CuPH: Parallel Cubical Persistent Homology via Level-Synchronous Component Tracking",
+  "url": "https://arxiv.org/abs/2611.01078",
+  "use_case": ""
+}

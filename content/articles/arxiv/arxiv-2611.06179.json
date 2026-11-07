@@ -1,0 +1,30 @@
+{
+  "abstract": "AI clusters keep data in remote object stores and rely on local caches to stop GPUs from waiting for data. A cache performs well only when its prefetching and eviction policies match the access pattern, yet these patterns differ across AI workloads and change between phases of one workflow. Existing methods either need code changes, which compromises user transparency, or use low-end heuristics, which cannot follow such changes. Large language models (LLMs) can infer access behavior without user hints, but direct LLM control of cache actions suffers from long reasoning delay, high token cost, and poor decision quality. We present Chiron, a cache system based on advisory switching control. An LLM asynchronously diagnoses the access pattern and recommends a policy. A deterministic harness gates this advice, executes expert-designed policies locally, and returns cache feedback for review. We implement Chiron atop JuiceFS and evaluate it on nine AI workloads. It reduces job completion time by 14.3-41.2% over the best baseline on popular AI workloads.",
+  "abstract_ja": "",
+  "authors": [
+    "Bohan Zhang",
+    "Renshu Ge",
+    "Tianze Wang",
+    "Chen Chen"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.06179",
+  "likes_count": 0,
+  "publishedAt": "2026-11-04",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "AI clusters keep data in remote object stores and rely on local caches to stop GPUs from waiting for data. A cache performs well only when its prefetching and eviction policies match the access…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Chiron: Cache Management Empowered by LLM Intelligence for AI Workloads",
+  "url": "https://arxiv.org/abs/2611.06179",
+  "use_case": ""
+}

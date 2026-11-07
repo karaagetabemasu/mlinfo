@@ -1,0 +1,28 @@
+{
+  "abstract": "Conformal prediction (CP) provides a distribution-free framework for uncertainty quantification with finite-sample marginal coverage guarantees. Yet, missing values introduce distributional heterogeneity, where marginal coverage can hide systematic undercoverage for certain missingness patterns. At the same time, existing methods based on distances or smoothness require a continuous representation of partially observed covariates. Although imputation restores continuity, it obscures the missingness patterns and introduces task-dependent overhead. We develop a new CP framework that is \\emph{adaptive to missingness patterns}, without imputing covariates. We rely on data augmentation by feature embedding that accounts for missingness. Our framework represents each input with missing values by a tree embedding together with its raw missingness mask, and then learns a regularized quantile score function. Varying the choices for the penalty function and the augmentation enables us to characterize three practically relevant validity levels: exact coordinate-wise validity, exact validity on observed masks, and approximate missingness-conditional guarantees for general mechanisms (MCAR, MAR, MNAR). Experiments on synthetic and real datasets support these guarantees and show that the proposed method reduces miscoverage risk while maintaining informative intervals, especially in non-MCAR settings. These results highlight the practical value of uncertainty quantification that adapts to missingness.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiarong Fan",
+    "Juhyun Park",
+    "Thi Phuong Thuy Vo",
+    "Nicolas J-B. Brunel"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01724",
+  "likes_count": 0,
+  "publishedAt": "2026-11-01",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Conformal prediction (CP) provides a distribution-free framework for uncertainty quantification with finite-sample marginal coverage guarantees. Yet, missing values introduce distributional…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Beyond Imputation: Mask-Adaptive Conformal Prediction via Tree Embeddings on General Missing Data Mechanisms",
+  "url": "https://arxiv.org/abs/2611.01724",
+  "use_case": ""
+}

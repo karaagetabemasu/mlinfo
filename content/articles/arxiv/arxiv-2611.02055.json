@@ -1,0 +1,27 @@
+{
+  "abstract": "We study finite-horizon reinforcement learning with a safety constraint on the probability of reaching a failure set. In contrast to the well-studied safe reinforcement learning literature, we consider problems where the probability of reaching the failure set is vanishingly small, but the consequences of reaching the failure set are catastrophic. Direct simulation and estimation of the optimal policy is naturally ineffective when the failure probability is extremely small. Moreover, on a real system the controller can only choose actions, and this is not enough to make failures frequent. In contrast to the rare event simulation literature, our goal is not to estimate the probability of the rare event occurrence, but to upper bound it such that the failure constraint is satisfied. Thus, instead of sampling failures, we use the large deviations principle. We define a damage variable that on exceeding a certain threshold indicates failure. We study the cumulant generating function (CGF) as its positive root provides an upper bound on the failure probability via Cramer's theorem. We extend this approach to Markov decision processes with hitting times through state-action CGFs, and give finite-horizon and state-dependent versions of the bound. The state-action CGFs do not depend on the policy and can be estimated from regular transitions, so the bound can be checked for any policy a priori. This gives a policy improvement algorithm in which every policy satisfies the failure constraint with high probability.",
+  "abstract_ja": "",
+  "authors": [
+    "Rahul Misra"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02055",
+  "likes_count": 0,
+  "publishedAt": "2026-11-01",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "We study finite-horizon reinforcement learning with a safety constraint on the probability of reaching a failure set. In contrast to the well-studied safe reinforcement learning literature, we…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "Rare Event Constrained Reinforcement Learning with Large Deviations",
+  "url": "https://arxiv.org/abs/2611.02055",
+  "use_case": ""
+}

@@ -1,0 +1,25 @@
+{
+  "abstract": "Fast adversarial training (FAT) makes robust training affordable by replacing the multi-step attack with a single-step one, but it suffers from catastrophic overfitting (CO): partway through training, robustness to multi-step attacks collapses to near zero while the single-step attack used for training keeps being repelled. We show that CO is a quiet escape of the weights. Across the event the network's clean behavior quietly improves, and moving from the weights just before CO to those just after it changes the training objective only marginally while destroying most of the robustness. The training objective is therefore nearly blind to the displacement it causes, so it exerts no force to undo it. The exponential moving average (EMA) of the weights, which FAT protocols already maintain, does not accumulate this drift and stays robust through the entire event. This observation suggests a nearly free fix: when validation robustness drops, reset the weights to their EMA. We build this guard on top of a coupling-based base method designed so that its average stays inside the robust region. The resulting training removes CO in every one of our runs and attains the strongest AutoAttack accuracy among fast methods on all three benchmark datasets, including a clear margin on CIFAR-100, where it also clears the multi-step reference at roughly half its cost. Code is available at https://github.com/fzjcdt/co-weight-drift.",
+  "abstract_ja": "",
+  "authors": [
+    "Chao Pan"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/fzjcdt/co-weight-drift",
+  "hasCode": true,
+  "id": "arxiv-2611.06082",
+  "likes_count": 0,
+  "publishedAt": "2026-11-04",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Fast adversarial training (FAT) makes robust training affordable by replacing the multi-step attack with a single-step one, but it suffers from catastrophic overfitting (CO): partway through…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Catastrophic Overfitting is Weight Drift the Training Loss Cannot See",
+  "url": "https://arxiv.org/abs/2611.06082",
+  "use_case": ""
+}

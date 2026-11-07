@@ -1,0 +1,29 @@
+{
+  "abstract": "Activation recomputation saves accelerator memory by replaying forward segments during the backward pass, but replay is only correct if it sees the state the original forward pass saw. Mutable buffers, aliased bytes and random-generator state can change in between, so re-executing unchanged code can differentiate a different computation. We make this state explicit. A versioned replay contract specifies what replay must restore, and a joint planner chooses, per segment, between activation retention, whole-buffer snapshots and selective-region preservation, charging each option its measured memory and recovery cost. Independent derivative and byte-level checks validate the contract, and a Torch/JAX cohort retains all 5,900 execution records, including matches, rejections and divergences. On frozen sparse-write H100 workloads, each measured over fifty fresh processes, joint planning reduces paired step time by 18.16% against a correctly costed eager/whole planner at a 44 GiB budget (approximate 97.5% ratio interval $[.8172,.8195]$). At 32 GiB, where the eager/whole planner has no feasible static policy, joint planning is 4.98% faster than fixed regions at 29.94 rather than 26.20 GiB. A complete CIFAR-100 dense-queue application runs seven methods for 100 encoder and 25 probe epochs at six training seeds, with byte-identical test scores within each seed. There, joint planning uses 22.41% more allocated memory than whole snapshots, with a process-time geometric-mean ratio of 1.0080 (seed range $[.9845,1.0191]$). Together, the results map where selective preservation pays off: sparse writes with large activations benefit, while in the dense-queue workload whole snapshots use less allocated memory.",
+  "abstract_ja": "",
+  "authors": [
+    "Annan Zhang",
+    "Shengjie Song",
+    "Wenshuai Yao",
+    "Lihao Zhang",
+    "Tianmiao"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00590",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Activation recomputation saves accelerator memory by replaying forward segments during the backward pass, but replay is only correct if it sees the state the original forward pass saw. Mutable…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "State-Aware Activation Recomputation with Replay Contracts and Selective Preservation",
+  "url": "https://arxiv.org/abs/2611.00590",
+  "use_case": ""
+}

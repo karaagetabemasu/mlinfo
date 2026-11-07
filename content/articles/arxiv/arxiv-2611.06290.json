@@ -1,0 +1,31 @@
+{
+  "abstract": "Encrypted traffic classifiers are routinely reported at 95-99% accuracy. We show that on one of two public corpora, the same model and code score macro-F1 0.992 under the evaluation protocol standard in the literature and 0.567 under a protocol that keeps flows from one packet capture on one side of the split. Nothing changes but the partition (gap 0.426 over eight seeds, p = 0.008 after Holm-Bonferroni correction). The inflation is not a property of random splitting as such. On a month of backbone QUIC traffic, we evaluate five split protocols at eight seeds each: random, temporal and client-disjoint splitting are statistically indistinguishable from session-disjoint, while server-disjoint splitting costs 0.192 macro-F1 (d = 17.0, p = 0.008). Which axis matters depends on how the corpus was collected, in a way invisible from its label space. We give a diagnostic that identifies the right axis before any model is trained: single-identifier probes. A decision tree on the capture identifier alone reaches 0.983 under a random split and exactly 0.000 under session-disjoint splitting. Under this evaluation, a metric-trained flow embedding leads four deep baselines but does not beat gradient-boosted trees on twenty packet sizes. Five of our own pre-registered architectural claims fail: distance-based rejection of unknown applications beats softmax thresholding, but ablating every metric objective makes rejection better, because class separation correlates at r = -0.88 with rejection quality. Few-shot enrollment is flat within a corpus but, across corpora, five labelled flows per class recover 91% of the deficit left by failed zero-shot transfer. All splits, results, code and negative findings are released.",
+  "abstract_ja": "",
+  "authors": [
+    "Mayan Sharma",
+    "Kriti Saini",
+    "Devansh Behl"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.06290",
+  "likes_count": 0,
+  "publishedAt": "2026-11-04",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Encrypted traffic classifiers are routinely reported at 95-99% accuracy. We show that on one of two public corpora, the same model and code score macro-F1 0.992 under the evaluation protocol standard…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "The Split Protocol Decides the Result: Re-Evaluating Encrypted Traffic Classification",
+  "url": "https://arxiv.org/abs/2611.06290",
+  "use_case": ""
+}

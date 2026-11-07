@@ -1,0 +1,31 @@
+{
+  "abstract": "Reliable deployment of LLM agents requires grounding diverse user expressions in their environments. Although RL-finetuned smaller large language model (sLLM) agents rival larger prompted LLMs on embodied tasks, their robustness to instruction paraphrases remains unclear. We introduce ALFWorld-Para to evaluate this robustness under controlled paraphrases, revealing 21-52% declines in success rates (SRs), predominantly driven by object synonyms. Despite retaining knowledge of synonym referents, agents often fail to take the corresponding objects even after observing them, exposing a gap between referential knowledge and object binding. Partial observability further complicates binding, as referents may remain unseen or have already been encountered under different labels. To address this challenge, we propose BINDIntent, a training-free framework that probabilistically binds referring expressions to observed labels using semantic proximity and estimated persistence against unseen candidates. Without additional training or LLM calls, BINDIntent improves synonym-paraphrase success of RL-finetuned sLLMs by 17.5-49.1 percentage points (pp) with only 0.4 ms of CPU overhead per step. It also raises GiGPO-7B's overall SR from 61.8% to 77.4%, surpassing a prompted 24B LLM. Code and benchmark are available at https://github.com/cau-hai-lab/ALFWorld-Para.",
+  "abstract_ja": "",
+  "authors": [
+    "Chanyoung Kim",
+    "Harim Song",
+    "Byoungchan Ko",
+    "Keonyoung Lee",
+    "Myungwon Lee"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/cau-hai-lab/ALFWorld-Para",
+  "hasCode": true,
+  "id": "arxiv-2611.07599",
+  "likes_count": 0,
+  "publishedAt": "2026-11-05",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Reliable deployment of LLM agents requires grounding diverse user expressions in their environments. Although RL-finetuned smaller large language model (sLLM) agents rival larger prompted LLMs on…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Binding Paraphrased Instructions to Encountered Objects in sLLM Agents under Partial Observability",
+  "url": "https://arxiv.org/abs/2611.07599",
+  "use_case": ""
+}

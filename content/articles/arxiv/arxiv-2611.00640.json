@@ -1,0 +1,29 @@
+{
+  "abstract": "Mechanistic interpretability (MI) explains a computation in a trained network by identifying the components and variables that implement it and testing them with interventions. Singular learning theory (SLT) describes the same network through the geometry of the loss around its parameters, summarized by the local learning coefficient. In pretrained language models the two have not been compared: SLT's estimates at this scale concern whole models or components whose roles were not independently established, and the estimator, which averages the loss over parameter settings drawn near the trained ones, has had no reference for how far those draws may move the parameters. We show that both are functions of one object, the map from a component's parameters to the model's predictions under inputs and interventions, whose first derivatives determine the Fisher information, the learning coefficient, and intervention effects, and whose higher derivatives add a quartic correction and pairwise terms. We test this correspondence in Pythia-1B on Dyck bracket matching at all 154 training checkpoints, against a five-stage circuit identified by interventions. We measure the local geometry of all 144 components inside the region where predictions are preserved, with the Fisher spectrum at every checkpoint, which gives the quadratic part of the learning-coefficient estimate at every temperature. Changes of the Fisher trace track changes of causal effect (median partial rank correlation 0.51), largely as a trend shared across the model, whereas the gain Fisher of a component's output and the large-temperature count are specific to the component. The count follows causal change across the population but not the growth of a formed circuit component. The quartic part is what a sampler that leaves the region registers beyond curvature. Pairwise interaction curvature tracks joint-ablation interactions.",
+  "abstract_ja": "",
+  "authors": [
+    "Ethan Ji",
+    "Wei Wang",
+    "Yizhou Sun"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00640",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Mechanistic interpretability (MI) explains a computation in a trained network by identifying the components and variables that implement it and testing them with interventions. Singular learning…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Bridging Singular Learning Theory and Mechanistic Interpretability at the Billion-Parameter Scale",
+  "url": "https://arxiv.org/abs/2611.00640",
+  "use_case": ""
+}

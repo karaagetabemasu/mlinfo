@@ -1,0 +1,29 @@
+{
+  "abstract": "The Transformer architecture plays a central role in modern deep learning, and its SE(3)-equivariant variants have been widely applied to molecular conformation modeling and optimization. Given its importance, many methods attempt to interpret and improve the Transformer through the lens of dynamics. However, they mainly focus on a single attention head rather than the full Transformer architecture and seldom consider SE(3)-equivariance in their proposed models. In this study, we propose an improved SE(3)-Transformer architecture, called HamFormer, which revisits the design of SE(3)-Transformer through the lens of Hamiltonian flow. In particular, we define a parametrized Hamiltonian flow in the phase space of position and velocity, corresponding to optimizing an energy functional that combines an optimal transport-based potential with a damped momentum. The Lie-Trotter splitting framework of the Hamiltonian flow leads to the proposed HamFormer architecture, whose feedforward computation achieves the optimization step of the proposed energy functional. Furthermore, we combine HamFormer with Equivariant Graph Neural Network (EGNN), build a new model for molecular conformation optimization. Extensive experiments on molecular ground-state conformation prediction show that HamFormer provides a strong and physically interpretable surrogate for classic SE(3)-Transformer and generally outperforms state-of-the-art competitors.",
+  "abstract_ja": "",
+  "authors": [
+    "Minjie Cheng",
+    "Zhenghao Liu",
+    "Yitian Wang",
+    "Fanmeng Wang",
+    "Anqi Dong"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00875",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "The Transformer architecture plays a central role in modern deep learning, and its SE(3)-equivariant variants have been widely applied to molecular conformation modeling and optimization. Given its…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "HamFormer: A Hamiltonian Flow-based SE(3)-Transformer for Conformation Optimization",
+  "url": "https://arxiv.org/abs/2611.00875",
+  "use_case": ""
+}

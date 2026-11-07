@@ -1,0 +1,33 @@
+{
+  "abstract": "Answering a complex question about a long video is a grounding problem: the answer turns on a few seconds of evidence, and vision-language models remain well below human accuracy at finding them. The standard way to spend extra test-time compute on this kind of video reasoning is best-of-N selection: sample several chain-of-thought answers from a fixed model, then let a second model re-watch the video and pick one. Such pipelines are reported by a single headline number, their margin over a majority vote. That number conflates two effects with opposite deployment consequences: the benefit the second model adds by selecting among candidates, and the benefit it would have supplied by solving the question itself. We separate them, measuring the Selection Increment (SI) -- selection accuracy minus the same verifier's accuracy with the candidates withheld -- alongside the margin over self-consistency, across five long-video benchmarks. The Selection Increment is largest for the weakest verifiers: a verifier that solves poorly on its own leaves the candidates the most room to help. Beating the majority vote follows the opposite profile: where the vote already sits near its ceiling no verifier we test improves on it; below that ceiling only the strongest do. On Video-Holmes, the two come apart on a single pool of candidates -- a weak verifier gains +19.3 points from the candidates yet lands 7.1 points below the vote, while the frontier verifier gains the least and beats the vote. The weakest verifier also shows a failure mode: on EgoSchema it picks by where an option sits in the list rather than by what the video shows. Read as a merit score, SI puts a verifier that fails to beat a majority vote at the top of its ranking; read as an audit, it says which of the two effects a headline number delivers. Code is available at https://github.com/facebookresearch/best-n-selection-video-reasoning.",
+  "abstract_ja": "",
+  "authors": [
+    "Martin Q. Ma",
+    "Yuxiao Qu",
+    "Ruslan Salakhutdinov",
+    "Louis-Philippe Morency",
+    "Paden Tomasello"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/facebookresearch/best-n-selection-video-reasoning",
+  "hasCode": true,
+  "id": "arxiv-2611.00507",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "Answering a complex question about a long video is a grounding problem: the answer turns on a few seconds of evidence, and vision-language models remain well below human accuracy at finding them. The…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Selecting or Solving? What Best-of-N Verification Delivers in Video Reasoning",
+  "url": "https://arxiv.org/abs/2611.00507",
+  "use_case": ""
+}

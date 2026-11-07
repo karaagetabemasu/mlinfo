@@ -1,0 +1,32 @@
+{
+  "abstract": "Probabilistic traffic forecasting is essential for reliable Intelligent Transportation Systems (ITS), as it captures uncertainties in complex road networks. Recent diffusion- and flow-based generative models have facilitated uncertainty modeling through a multi-step sampling process. However, beyond slow inference, this process is designed to capture complex multimodal distributions, which misaligns with the limited complexity of the conditional traffic data distribution, causing models to underperform deterministic baselines. To address this, we introduce the \\underline{Co}nsistency-\\underline{Re}laxed \\underline{Flow} Map (CoReFlow) model, presenting the first effort to leverage the one-step generation capability of flow maps, known as solution operators of probability-flow ordinary differential equations. Besides, we improve accuracy using a concise training objective that supervises the model via interpolation endpoints over finite time intervals. Unlike existing methods (e.g., self-distillation and MeanFlow Identity) that maintain trajectory consistency to model multimodal distributions, our objective leverages conditional mean to restrict the consistency, thereby achieving higher accuracy in the probabilistic traffic forecasting task. Extensive experiments on four real-world datasets show CoReFlow achieves state-of-the-art forecasting accuracy. It surpasses recent baselines, provides competitive uncertainty modeling, and reduces inference costs compared to existing generative baselines.",
+  "abstract_ja": "",
+  "authors": [
+    "Pengnan Chi",
+    "Zhiguo Zhang",
+    "Xiaoliang Ma"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.05715",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Probabilistic traffic forecasting is essential for reliable Intelligent Transportation Systems (ITS), as it captures uncertainties in complex road networks. Recent diffusion- and flow-based…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": [
+      "generation",
+      "forecasting"
+    ]
+  },
+  "title": "CoReFlow: Consistency-Relaxed Flow Maps for Probabilistic Traffic Forecasting",
+  "url": "https://arxiv.org/abs/2611.05715",
+  "use_case": ""
+}

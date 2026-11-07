@@ -1,0 +1,31 @@
+{
+  "abstract": "On-policy distillation (OPD) supplies dense token-level supervision by aligning a student to the teacher's next-token distribution on its own generated rollouts. Existing works mostly implement top-$k$ OPD, applying reverse Kullback-Leibler ($\\RKL$) divergence between the teacher's and the student's renormalized distributions over teacher top-$k$ support. However, the teacher scores student-generated rollouts that are inherently off-policy for itself, leaving the reliability of its next-token guidance unclear. Restricting the divergence to the teacher top-$k$ support also discards the remaining mass outside that support. These gaps leave two questions implicit: 1) which tokens to align, and 2) how to align those tokens. To answer these questions, we propose Overlap-gated On-Policy Distillation (O$^{2}$PD). As for 1), we quantitatively analyze the reliability of teacher supervision and find that alignment on the student's trajectory prefix is more reliable than alignment on the full context. Therefore, our O$^{2}$PD is applied only to the 20\\% prefix tokens of each student rollout. As for 2), we theoretically characterize two problems of top-$k$ OPD: the \\emph{Teacher-support Uncovering} and the \\emph{Dominant-Mode Mismatch}. Based on these analyses, we propose two support strategies: the \\emph{Reset Support} strategy attaches a reset atom to every token, pooling mass outside the teacher top-$k$, and the \\emph{Support Convergence} strategy converges the support to the already aligned intersection. Our O$^{2}$PD employs the designed overlap-gated $α$-divergence to interpolate between mode-covering and mode-seeking for per-token alignment, where the overlap is used as a gate to switch the support and adaptively modulate $α$.",
+  "abstract_ja": "",
+  "authors": [
+    "Shuaishuai Zu",
+    "Jihao Zhao",
+    "Pengfei Li",
+    "Guanghuan Fang",
+    "Ben Feng"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.07731",
+  "likes_count": 0,
+  "publishedAt": "2026-11-05",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "On-policy distillation (OPD) supplies dense token-level supervision by aligning a student to the teacher's next-token distribution on its own generated rollouts. Existing works mostly implement…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "O$^2$PD: Overlap-Gated On-Policy Distillation on Reliable Prefix",
+  "url": "https://arxiv.org/abs/2611.07731",
+  "use_case": ""
+}

@@ -1,0 +1,29 @@
+{
+  "abstract": "Phase I dose-finding trials must learn from sparse toxicity observations while limiting exposure to overly toxic doses. We develop a single reinforcement-learning policy for trials with different numbers of ordered dose levels. Each dose is represented as a token containing its normalized position, accumulated patient count, observed dose-limiting toxicities (DLTs), and current-dose indicator. A Transformer encoder summarizes the dose tokens, trial-conditioned cross-attention produces a fixed-dimensional trial representation, and a three-action policy chooses de-escalation, staying, or escalation. The final maximum tolerated dose (MTD) decision is deliberately kept outside the learned policy: after the planned sample size, weighted isotonic regression and a prespecified safety cap select the dose closest to the target toxicity probability. In the simulations, toxicity-penalized policies reduce DLT burden while unpenalized policies improve selection accuracy at the cost of greater toxicity. These results demonstrate a controllable safety--accuracy trade-off but do not establish superiority over conventional dose-finding designs.",
+  "abstract_ja": "",
+  "authors": [
+    "Shijie Yuan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00395",
+  "likes_count": 0,
+  "publishedAt": "2026-10-30",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Phase I dose-finding trials must learn from sparse toxicity observations while limiting exposure to overly toxic doses. We develop a single reinforcement-learning policy for trials with different…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Transformer-Based Reinforcement Learning for Phase I Dose Allocation",
+  "url": "https://arxiv.org/abs/2611.00395",
+  "use_case": ""
+}

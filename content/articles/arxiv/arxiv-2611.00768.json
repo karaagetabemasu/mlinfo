@@ -1,0 +1,31 @@
+{
+  "abstract": "Lifelong Person Re-identification (LReID) aims to match the same person using sequentially collected data. In practical long-term deployments, however, the model must handle both domain shifts across cameras and scenes, and irregular clothing changes of the same identity. This gives rise to the Cloth-Hybrid Lifelong Person Re-identification (CH-LReID) task, which demands balancing cloth-relevant and cloth-irrelevant knowledge in streaming data. While existing LReID methods have explored replay-based or distillation-based anti-forgetting strategies, they typically fail to sufficiently model stage-aware domain distributions and cross-stage feature continuity under exemplar-free training. To address this problem, we propose a Distribution-Aware Adaptive Differentiated Knowledge Consolidation (DADKC) framework. The core idea is to enhance the existing Differentiated Knowledge Consolidation (DKC) paradigm with adaptive distribution modeling. To this end, three lightweight modules are designed: (1) an Anchor Pool Adapter (APA) to retrieve learnable anchor cues for refining identity features; (2) a Phase Path Mixer (PPM) to perform stage-aware expert routing for integrating domain-specific distribution paths; and (3) a Stage Bridge Alignment (SBA) module to regularize the continuity of base, anchor, and path representations between adjacent stages. Extensive experiments on the CH-LReID and LReID benchmarks show that DADKC gains 4.1%/4.5% mAP/R1 on Order-1 and 3.6%/3.4% mAP/R1 on Order-2 over the DKC baseline, and lowers weighted forgetting from 2.4%/1.7% to 1.8%/1.4%, while storing neither historical images nor per-image features. The code is available at https://github.com/fire667/DADKC.",
+  "abstract_ja": "",
+  "authors": [
+    "Yan Zhang",
+    "Minghao Long",
+    "Meiqi Wan",
+    "Yan Yang",
+    "Xin Yuan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/fire667/DADKC",
+  "hasCode": true,
+  "id": "arxiv-2611.00768",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Lifelong Person Re-identification (LReID) aims to match the same person using sequentially collected data. In practical long-term deployments, however, the model must handle both domain shifts across…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "DADKC: Distribution-Aware Adaptive Differentiated Knowledge Consolidation for Cloth-Hybrid Lifelong Person Re-identification",
+  "url": "https://arxiv.org/abs/2611.00768",
+  "use_case": ""
+}

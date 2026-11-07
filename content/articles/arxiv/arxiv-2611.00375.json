@@ -1,0 +1,31 @@
+{
+  "abstract": "Future dynamic novel-view synthesis requires extrapolating multiple motion regimes within the same scene. A single dynamics model may not simultaneously represent stationary regions, coordinated motion, local interactions, and articulated trajectories. We introduce Motion Regime Expert Routing for Gaussian Splatting (MoRE-GS), a causal, render-aware framework for forecasting dynamic 3D Gaussian scenes. MoRE-GS freezes a Gaussian representation reconstructed exclusively from the observed temporal prefix and forecasts its control-keypoint motion using four complementary experts: persistence, a coefficient-space Transformer, a graph convolutional network, and a structured Transformer with rigid and non-rigid motion constraints. A compact routing table assigns expert mixtures across soft motion groups and forecast-horizon bins, while a persistence gate suppresses unreliable extrapolation. Across D-NeRF and HyperNeRF scenes, MoRE-GS achieves improved performance against other methods, and these results demonstrate that renderer-calibrated composition of complementary motion predictors improves causal dynamic Gaussian forecasting across heterogeneous motion regimes. Project page: https://advanced-vision-and-learning-lab.github.io/MoRE-GS-website/",
+  "abstract_ja": "",
+  "authors": [
+    "Shima Salehi",
+    "Joshua Peeples"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00375",
+  "likes_count": 0,
+  "publishedAt": "2026-10-30",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Future dynamic novel-view synthesis requires extrapolating multiple motion regimes within the same scene. A single dynamics model may not simultaneously represent stationary regions, coordinated…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "generation",
+      "forecasting"
+    ]
+  },
+  "title": "MoRE-GS: Motion-Regime Experts for Future Gaussian Splatting",
+  "url": "https://arxiv.org/abs/2611.00375",
+  "use_case": ""
+}

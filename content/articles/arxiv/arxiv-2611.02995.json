@@ -1,0 +1,34 @@
+{
+  "abstract": "Existing RAW-based detectors typically introduce learnable ISP modules to convert RAW inputs into sRGB-like formats to fit off-the-shelf detectors. However, this RAW-to-sRGB paradigm decouples representation learning from the downstream detection task. Crucially, it forces the network to inherit human-centric visual priors while discarding intrinsic RAW advantages, such as linear sensor responses and high-bit-depth, minimally processed scene cues. In this paper, we propose \\textbf{ILLRAW}, an \\textbf{ILL}umination-aware end-to-end \\textbf{RAW} object detection framework. Instead of reconstructing visually plausible sRGB images, ILLRAW directly learns detection-oriented RAW features through a lightweight feature adapter inserted at the input stage of existing detectors. ILLRAW estimates an illumination mask and introduces channel-sensitive embeddings to model Bayer-channel responses. These features are fused by an illumination attention fusion module. Experiments show clear improvements on the diverse AODRaw benchmark and competitive performance on LOD and PascalRAW, with particularly strong results under dark exposure.",
+  "abstract_ja": "",
+  "authors": [
+    "Xinzhe Wang",
+    "Xiao Liang",
+    "Xiaoli Zhang",
+    "Kang Ma"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02995",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Existing RAW-based detectors typically introduce learnable ISP modules to convert RAW inputs into sRGB-like formats to fit off-the-shelf detectors. However, this RAW-to-sRGB paradigm decouples…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection",
+      "embedding"
+    ]
+  },
+  "title": "ILLRAW: Illumination-Aware RAW Object Detection",
+  "url": "https://arxiv.org/abs/2611.02995",
+  "use_case": ""
+}

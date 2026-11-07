@@ -1,0 +1,28 @@
+{
+  "abstract": "Low Tucker rank tensors provide compact representations of multidimensional dependencies, but standard learning pipelines can incur substantial computational and memory overhead from redundant intermediate quantities. We reduce this overhead without modifying the underlying representation objective or parameterization. Our approach combines three complementary components: (i) sequential extraction of only task-required spectral components, avoiding unnecessary full decompositions; (ii) factor-wise multilinear contractions without materializing large Kronecker operators; and (iii) compact latent-state updates without storing full ambient tensor iterates. These components preserve the algebraic operations and learning trajectories of the original algorithms while reducing their computational and memory footprints. Across five low Tucker rank tensor estimators, our implementations match the original trajectories to numerical precision (relative discrepancies of $10^{-16}$ to $10^{-13}$), while reducing per-iteration runtime by up to $3.12\\times$ and resident memory by up to $616\\times$ ($99.8\\%$) on the main order-3 benchmark at $n=100$, with memory reductions exceeding $900\\times$ across the full evaluation suite. These results show that substantial computational redundancy can be eliminated from Tucker representation learning without changing the underlying model or learned representation.",
+  "abstract_ja": "",
+  "authors": [
+    "Hiroki Hasegawa",
+    "Yukihiko Okada"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01168",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Low Tucker rank tensors provide compact representations of multidimensional dependencies, but standard learning pipelines can incur substantial computational and memory overhead from redundant…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "embedding"
+    ]
+  },
+  "title": "Lightweight Representation Learning for Low Tucker Rank Tensors",
+  "url": "https://arxiv.org/abs/2611.01168",
+  "use_case": ""
+}

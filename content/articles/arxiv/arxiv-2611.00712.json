@@ -1,0 +1,27 @@
+{
+  "abstract": "We study federated model-free learning of a common linear quadratic regulator (LQR) gain under a limited uplink communication budget, with clients that share dynamics and costs but experience different process-noise levels. Conventionally, clients transmit gradient matrices whose dimension equals the number of controller parameters. Exploiting the structure of two-point zeroth-order estimates, we consider an implementation in which clients transmit only one scalar cost-difference coefficient per rollout pair, while the server regenerates the associated perturbation directions from shared seeds. Communication thus scales with the number of rollout pairs rather than the controller dimension, turning the uplink budget into a rollout budget. Because noise heterogeneity produces gradient estimates of widely differing variance and every client carries equal weight in the fleet objective, uniform rollout allocation allows noisy clients to dominate the aggregated update and increases the probability of destabilizing updates. We propose a rollout-allocation scheme that assigns rollout pairs in proportion to the standard deviation of each client's estimates and show that it minimizes the variance of the aggregated update. The scheme is implemented exactly through a greedy integer allocation rule whose weights are estimated from the communicated scalars. We further prove that a single allocation factor quantifies its improvement over uniform allocation in a one-round instability bound, the certified step size, and the error floor of a joint stability and convergence guarantee. Simulations show that, under the same communication budget, personalized allocation reduces the one-step instability rate from $37\\%$ to $0.3\\%$.",
+  "abstract_ja": "",
+  "authors": [
+    "Mohammadreza Rostami",
+    "Shahriar Talebi",
+    "Solmaz S. Kia"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00712",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "We study federated model-free learning of a common linear quadratic regulator (LQR) gain under a limited uplink communication budget, with clients that share dynamics and costs but experience…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Personalized Rollout Allocation for Federated LQR Policy Optimization under Heterogeneous Process Noise",
+  "url": "https://arxiv.org/abs/2611.00712",
+  "use_case": ""
+}

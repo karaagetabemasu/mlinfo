@@ -1,0 +1,31 @@
+{
+  "abstract": "Spectral shrinkage encompasses a broad family of estimators for high-dimensional linear regression that regularize estimation and prediction by applying spectral filters to the sample covariance matrix. Despite its widespread use, achieving oracle-optimal prediction risk under general covariance structures remains challenging, as the oracle filter requires unknown population quantities and has a closed form only for specific covariance models such as isotropic and spiked models. We propose \\textit{risk-targeted Krylov fitting} (RTK), a data-driven spectral estimator that adapts to the unknown covariance structure and attains the oracle risk asymptotically. Like partial least squares, RTK operates in an $m$-dimensional Krylov space, but it targets the oracle risk directly by minimizing the leave-one-out risk, which we compute exactly without refitting the model $n$ times. Under general distributions and covariance structures, RTK attains the optimal prediction risk in the Krylov space up to $O(1/n)$. Furthermore, its risk approaches that of the optimal analytic filter with $m$ of order $\\log n$. In simulations over a wide range of covariance structures, RTK and a truncated variant were robust to the choice of $m$ and consistently among the spectral estimators closest to the oracle. In applications to single-cell sequencing data and large-scale neural recordings, the proposed methods achieved higher prediction accuracy than competing estimators on most tasks.",
+  "abstract_ja": "",
+  "authors": [
+    "Tianfeng Lu",
+    "Geoffrey J. Goodhill",
+    "Hong Hu"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02122",
+  "likes_count": 0,
+  "publishedAt": "2026-11-01",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Spectral shrinkage encompasses a broad family of estimators for high-dimensional linear regression that regularize estimation and prediction by applying spectral filters to the sample covariance…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Optimal spectral shrinkage via Krylov approximation",
+  "url": "https://arxiv.org/abs/2611.02122",
+  "use_case": ""
+}

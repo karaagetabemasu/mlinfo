@@ -1,0 +1,33 @@
+{
+  "abstract": "High-fidelity 3D geometry generation requires maintaining global structural coherence alongside fine-grained surface details. While recent coarse-to-fine frameworks leverage Rotary Position Embeddings (RoPE) to condition local queries, we reveal a critical training-inference resolution discrepancy: coordinate guidance and geometric supervision are aligned during training, whereas inference decodes high-resolution geometry from coarse spatial coordinates. This mismatch introduces a severe distribution shift that degrades fine details. To overcome this, we propose Resolution-Decoupled Training (RDT), which anchors RoPE guidance at 512 resolution while supervising geometry at 1536, enabling robust detail extrapolation. Additionally, to eliminate high-resolution data bottlenecks, we present Dual3D-300K, a large-scale paired dataset comprising 300K watertight 3D point clouds explicitly aligned across 512 and 1536 resolutions. Extensive experiments demonstrate that RDT substantially improves sharp geometric regions, while Dual3D-300K offers a scalable benchmark for high-resolution 3D generation.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiale Zhang",
+    "Yang Liu",
+    "Chengyang Li",
+    "Jin Yuan",
+    "Qianxi Jia"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.06141",
+  "likes_count": 0,
+  "publishedAt": "2026-11-04",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "High-fidelity 3D geometry generation requires maintaining global structural coherence alongside fine-grained surface details. While recent coarse-to-fine frameworks leverage Rotary Position…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "RDT-3D: Resolution-Decoupled Training for High-Fidelity 3D Geometry Generation",
+  "url": "https://arxiv.org/abs/2611.06141",
+  "use_case": ""
+}

@@ -1,0 +1,30 @@
+{
+  "abstract": "Training with chain-of-thought (CoT) supervision is an effective approach for teaching models multi-step reasoning procedures. At inference time, however, models may need to continue reasoning beyond the finite teacher CoT sequences observed during training, and longer reasoning can instead degrade performance, a phenomenon known as overthinking. How the amount and structure of training-time CoT give rise to such failures remains theoretically poorly understood. To study this problem, we introduce an in-context weight prediction model trained on finite gradient descent trajectories for linear regression. Using high-dimensional asymptotic analysis, we show that the success and failure modes of long-horizon reasoning undergo phase transitions depending on the context length and the total amount of training CoT. We further distinguish two mechanisms of overthinking, error accumulation and error amplification, and show that with short training contexts, increasing the training CoT budget can worsen long-horizon error before eventually stabilizing reasoning. Experiments with fully trained linear and multi-head softmax attention further show that these qualitative behaviors persist. Our results provide a theoretical account linking properties of training-time CoT to inference-time failures and offer guidance for designing teacher CoT that supports stable reasoning.",
+  "abstract_ja": "",
+  "authors": [
+    "Kaito Takanami",
+    "Cengiz Pehlevan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01740",
+  "likes_count": 0,
+  "publishedAt": "2026-11-01",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "Training with chain-of-thought (CoT) supervision is an effective approach for teaching models multi-step reasoning procedures. At inference time, however, models may need to continue reasoning beyond…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "How Does Chain-of-Thought Supervision Teach Models to Reason? A Theoretical Analysis",
+  "url": "https://arxiv.org/abs/2611.01740",
+  "use_case": ""
+}

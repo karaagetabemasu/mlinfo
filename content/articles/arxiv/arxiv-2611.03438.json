@@ -1,0 +1,35 @@
+{
+  "abstract": "Foundational vision models have become the de facto standard for many vision tasks due to their strong performance. However, they are notoriously opaque and remain hard to interpret. We present ALOE (ALign Once to Explain), a one-time, label-free feature alignment approach that efficiently converts foundational vision models into inherently interpretable B-cos variants. Once aligned, the B-cos backbone is used as a drop-in replacement across several downstream tasks-amortizing the cost of interpretability. ALOE is robust across pre-training paradigms (supervised, self-supervised, vision-language) and can preserve teacher-level generalization with orders of magnitude less data than training from scratch. On classification, it strongly outperforms vanilla B-cosification (e.g., +10.5 p.p. top-1 on ImageNet for DINOv3 ViT-B/16), retains strong linear probing, k-NN, and zero-shot transfer competitive with foundational backbones (DINOv3, SigLIP2) across diverse downstream datasets. It also preserves spatially structured features useful for dense prediction, while yielding well-localized and highly human-interpretable explanations by design.",
+  "abstract_ja": "",
+  "authors": [
+    "Raphael Maser",
+    "Siddhartha Gairola",
+    "Sukrut Rao",
+    "Bernt Schiele"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.03438",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Foundational vision models have become the de facto standard for many vision tasks due to their strong performance. However, they are notoriously opaque and remain hard to interpret.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [
+      "image",
+      "multimodal"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Align Once to Explain: Feature Alignment for Scalable B-cosification of Foundational Vision Transformers",
+  "url": "https://arxiv.org/abs/2611.03438",
+  "use_case": ""
+}

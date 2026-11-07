@@ -1,0 +1,35 @@
+{
+  "abstract": "Vision-language models (VLMs) have shown promise for chest radiograph report generation, but adoption remains limited because of hallucinated findings that are not grounded in the image. Correcting these hallucinations and improving overall report quality remains a significant challenge. Prior work has addressed this problem by refining models with reinforcement learning, preference optimization, or chain-of-thought supervision, often at substantial compute cost. To address this gap, we introduce CheXPoT, a program-of-thought (PoT) framework that verifies each generated finding against image features and removes those it cannot ground. CheXPoT decomposes generated reports into predicates with RadGraph and an LLM, grounds these predicates against a DenseNet-121 and Grad-CAM visual evidence table, executes PoT verification code, and rewrites reports after removing unsupported predicates. On a 4,145-image held-out split, CheXPoT yields statistically significant precision gains on 8 of 14 CheXpert classes and F1 gains on 5, with no significant decreases in either metric. CheXPoT lifts micro-average precision from 19.2% (MedGemma-4B) to 46.8% (MedGemma-4B + CheXPoT) and micro-average F1 from 23.0% to 49.4%, absolute gains of 27.6% and 26.4% respectively. We also tested CheXPoT on other VLM report generators. On LLaVA-Med, CheXPoT lifts micro-average precision from 4.5% to 17.7% and micro-average F1 from 6.3% to 19.4%. On MAIRA-2, CheXPoT lifts micro-average precision from 15.6% to 42.1% and micro-average F1 from 21.0% to 45.3%. Our results suggest that inexpensive post-hoc visual verification may improve VLM trustworthiness by correcting unsupported findings from generated reports. CheXPoT lays a foundation for tools that help validate VLM-generated radiology reports and reduce unsupported findings. These innovations may subsequently help increase trust and adoption of VLM tools in Medicine.",
+  "abstract_ja": "",
+  "authors": [
+    "Joey Guo",
+    "Rayan Ansari",
+    "Alaa Youssef"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00785",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Vision-language models (VLMs) have shown promise for chest radiograph report generation, but adoption remains limited because of hallucinated findings that are not grounded in the image. Correcting…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "CheXPoT: Post-Hoc Visual Verification and Correction of VLM-Generated Radiology Reports",
+  "url": "https://arxiv.org/abs/2611.00785",
+  "use_case": ""
+}

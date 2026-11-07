@@ -1,0 +1,28 @@
+{
+  "abstract": "Digital image correlation (DIC) is a widely used non-contact technique for full-field displacement measurement. Data-driven deep-learning DIC offers rapid inference but may generalize poorly to unseen speckle patterns, deformation modes, noise levels, and illumination conditions. Classical optimization-based DIC and recent image-constrained neural formulations avoid labeled displacement data, yet their convergence and accuracy remain vulnerable to initialization, large rigid-body motion, fine non-uniform deformation, and gray-value disturbances. This paper presents a global-to-local hybrid neural DIC framework for robust pixelwise measurement. Stage 1 estimates a dominant in-plane rigid transformation through coarse rotation search, phase correlation, and masked refinement, providing a reliable initialization under large translation and rotation. Stage 2 represents the residual displacement with a hybrid Kolmogorov-Arnold network (KAN) and multilayer perceptron (MLP), and optimizes it using a valid-overlap, illumination-robust structural loss. The local gray-value model explicitly accommodates multiplicative and additive intensity changes. Simulated and real experiments demonstrate accurate and stable displacement recovery under noise, non-uniform deformation, large rotation, illumination variation, and degraded imaging conditions.",
+  "abstract_ja": "",
+  "authors": [
+    "Xianglong Guo",
+    "Jianyang Li"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01018",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Digital image correlation (DIC) is a widely used non-contact technique for full-field displacement measurement. Data-driven deep-learning DIC offers rapid inference but may generalize poorly to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Robust Pixel-wise Digital Image Correlation under Large Motions and Illumination Variations via a Global-to-Local Hybrid Neural Field",
+  "url": "https://arxiv.org/abs/2611.01018",
+  "use_case": ""
+}

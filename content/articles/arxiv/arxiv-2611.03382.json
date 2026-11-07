@@ -1,0 +1,35 @@
+{
+  "abstract": "Source-only domain generalization (DG) for remote sensing semantic segmentation seeks reliable predictions in unseen domains without target-domain data during training. Although vision foundation models offer transferable knowledge, category recognition remains sensitive to source-specific visual cues, while task-specific adaptation may weaken pretrained transferability. We propose ASCoR, an asymmetric semantic-spatial framework built on SAM3. Its text-conditioned semantic branch uses class-name prompts to provide explicit category guidance. Probe-Once Dynamic Adaptive LoRA distributes a fixed adaptation budget across encoder blocks to limit source-specific specialization. A complementary task-specific dense branch learns multi-scale spatial representations using a separate frozen SAM3 image encoder. A lightweight reliability router integrates the two branches through bounded spatial correction based on local prediction reliability. All components are trained using source-domain supervision only. Experiments on the ISPRS, LoveDA, and OpenEarthMap benchmarks cover nine cross-domain transfers. ASCoR achieves a state-of-the-art mean IoU of 68.61% across six ISPRS transfers, outperforming the previous best method by 2.69 percentage points. It also achieves the best results on all three LoveDA/OpenEarthMap transfers, with 59.07%, 47.95%, and 49.38% mIoU on Rural-to-Urban, Urban-to-Rural, and Urban-to-OpenEarthMap, respectively. Ablation studies, feature visualizations, and spatial reliability analyses support the effectiveness and complementarity of the proposed components. Code: https://github.com/WangZitong42/ASCoR.",
+  "abstract_ja": "",
+  "authors": [
+    "Zitong Wang",
+    "Shuchang Lyu",
+    "Meng Li",
+    "Qiang Wang",
+    "Guangliang Cheng"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/WangZitong42/ASCoR",
+  "hasCode": true,
+  "id": "arxiv-2611.03382",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Source-only domain generalization (DG) for remote sensing semantic segmentation seeks reliable predictions in unseen domains without target-domain data during training. Although vision foundation…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification",
+      "segmentation"
+    ]
+  },
+  "title": "ASCoR: Asymmetric Semantic-Spatial Learning for Remote Sensing Domain Generalization",
+  "url": "https://arxiv.org/abs/2611.03382",
+  "use_case": ""
+}

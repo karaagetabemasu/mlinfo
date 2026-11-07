@@ -1,0 +1,30 @@
+{
+  "abstract": "Coarse-to-fine image-to-point-cloud (I2P) registration risks discarding correct but ambiguous patch pairs, while retaining more candidates repeats fine matching over overlapping patches. SparseGraph-I2P aims to improve registration recall by increasing the inlier ratio at the pose solver, using sensor or monocular depth. A Coarse Hypothesis Graph combines appearance with depth-derived first- and second-order compatibility to select a fixed budget of patch pairs. Sparse Fine Matching decodes each queried pixel once and skips pixel--point comparisons covered by an ancestor patch paired with the same point-cloud region. With sensor depth, depth-aware filtering ranks correspondences by SC2 spectral support for a single EPnP solve. With monocular depth, depth or inverse depth is calibrated from correspondence geometry before filtering. SparseGraph-I2P achieves the highest registration recall and lowest latency among the compared methods on RGB-D Scenes V2 and 7-Scenes with sensor depth. With predicted depth, it retains the highest recall on RGB-D Scenes V2 at an additional calibration cost. Code will be released.",
+  "abstract_ja": "",
+  "authors": [
+    "Ziyang Yu",
+    "Xiang Li",
+    "Qiong Chang",
+    "Jun Miyazaki"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.04591",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Coarse-to-fine image-to-point-cloud (I2P) registration risks discarding correct but ambiguous patch pairs, while retaining more candidates repeats fine matching over overlapping patches.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "SparseGraph-I2P: Consistency-Guided Hypothesis Selection for Efficient Image-to-Point-Cloud Registration",
+  "url": "https://arxiv.org/abs/2611.04591",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Visual-inertial odometry relies on visual features that correspond to 3D points with consistent projections across sequential frames. In reflective indoor-floor environments, however, specular floor patterns can be detected and triangulated as virtual features below the physical ground plane, producing unreliable feature associations and inconsistent visual residuals. This paper proposes a lightweight reflection-aware front-end for feature-based stereo VIO. Rather than suppressing all floor-region features, the proposed method estimates the ground height in real time and rejects only feature candidates whose inferred 3D positions are below the estimated ground height. A floor-region mask restricts the validation process to reflection-prone regions, while stereo height uncertainty and pose uncertainty are used to construct frame-level ground-height measurements. A scalar Kalman filter with Normalized Innovation Squared (NIS) gating then provides a stable ground-height estimate, and an uncertainty-aware safety margin is used for selective below-ground virtual feature rejection. Experiments on real reflective-floor indoor sequences show that the proposed front-end generally improves trajectory accuracy in reflection-dominant environments while maintaining accurate ground-height estimates and recovering from actual ground-height changes.",
+  "abstract_ja": "",
+  "authors": [
+    "Uihyun Hwang",
+    "Sungjae Shin",
+    "Dongjae Kim",
+    "Hyun Myung"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.05938",
+  "likes_count": 0,
+  "publishedAt": "2026-11-04",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Visual-inertial odometry relies on visual features that correspond to 3D points with consistent projections across sequential frames. In reflective indoor-floor environments, however, specular floor…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Reflection-Robust Stereo Visual-Inertial Odometry via Kalman-Filtered Ground-Height Estimation",
+  "url": "https://arxiv.org/abs/2611.05938",
+  "use_case": ""
+}

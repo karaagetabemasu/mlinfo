@@ -1,0 +1,34 @@
+{
+  "abstract": "In healthcare, protecting patient privacy is crucial due to the sensitivity of medical data and its extensive accessibility. Federated Learning (FL) offers a decentralized and privacy-preserving training paradigm, making it an ideal solution for healthcare applications. A critical challenge in healthcare is that real-world medical data often exhibits long-tailed distributions in local and global views. Existing methods addressing long-tailed FL problem typically assume that the model will be evaluated on uniform test data distribution. However, practical test data in healthcare systems is often agnostic and unpredictable, leading to potential model failures in real-world scenarios. In this paper, we introduce a novel task termed Test-Agnostic Long-Tailed Federated Learning and propose GTAFL, a comprehensive framework to address this challenge. During the training stage, GTAFL employs adaptive re-sampling, expert classifier retraining, and self-supervised learning to correct biased classifiers and distorted feature spaces caused by long-tailed training distributions. During the inference stage, an ensemble mechanism combines retrained expert classifiers to handle test data with unknown distributions. Extensive experiments on CIFAR10 and two medical datasets manifest that our framework outperforms other state-of-the-art methods. The code is available at https://github.com/cgy-lavine/GTAFL",
+  "abstract_ja": "",
+  "authors": [
+    "Guangyu Chen",
+    "Jingyun Zeng",
+    "Hui Jiang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/cgy-lavine/GTAFL",
+  "hasCode": true,
+  "id": "arxiv-2611.08021",
+  "likes_count": 0,
+  "publishedAt": "2026-11-05",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "In healthcare, protecting patient privacy is crucial due to the sensitivity of medical data and its extensive accessibility. Federated Learning (FL) offers a decentralized and privacy-preserving…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "supervised",
+      "self-supervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "GTAFL: Addressing Test-Agnostic Long-Tailed Federated Learning in Medical Image",
+  "url": "https://arxiv.org/abs/2611.08021",
+  "use_case": ""
+}

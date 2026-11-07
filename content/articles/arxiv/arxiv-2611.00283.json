@@ -1,0 +1,27 @@
+{
+  "abstract": "Held-out validation loss is the standard offline signal for choosing checkpoints and comparing models, but its relation to closed-loop success on a real robot is rarely measured. We measure it for ACT, Diffusion Policy, SmolVLA and $π_{0.5}$ (action expert only), trained on nested subsets of 12 to 200 demonstrations of a pick-and-place task on an SO-101 arm. We score 82 checkpoints on 25 held-out demonstrations, with each policy's training loss and with the error of the actions it outputs, and compare the scores with 930 bench rollouts. We also score all 700 intermediate checkpoints of 70 training runs, and recover the ball positions of every training, held-out and bench episode from the front camera. Within each policy, hold-out action error correlates with bench success (Spearman $ρ$ from -0.23 to -0.88), but no more strongly than the number of training episodes alone, and not at all among seeds trained on the same data. Across policies the ranking is inverted ($ρ$ = +0.90 at 200 episodes): the policy with the lowest hold-out error succeeded in 3 of 110 rollouts. The most common failure, the arm never leaving its rest pose, ended 96% of rollouts for Diffusion Policy trained on untrimmed demonstrations and 47% for SmolVLA, and cannot occur in a hold-out set made of demonstrations. Among rollouts in which the arm moved, SmolVLA's hold-out action error predicts success well ($ρ$ = -0.81). For the diffusion and flow-matching policies, hold-out loss rises two- to five-fold during training while hold-out action error falls by up to 29%. Held-out metrics are a sound diagnostic of learning but no substitute for evaluation on the robot, and we recommend reporting initiation failure and success among started rollouts as separate bench outcomes.",
+  "abstract_ja": "",
+  "authors": [
+    "Simon Cowling"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00283",
+  "likes_count": 0,
+  "publishedAt": "2026-10-30",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Held-out validation loss is the standard offline signal for choosing checkpoints and comparing models, but its relation to closed-loop success on a real robot is rarely measured. We measure it for…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": []
+  },
+  "title": "Does Validation Loss Predict Real-Robot Success? Evidence from Four Imitation-Learning Policies on a Low-Cost Arm",
+  "url": "https://arxiv.org/abs/2611.00283",
+  "use_case": ""
+}

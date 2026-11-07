@@ -1,0 +1,31 @@
+{
+  "abstract": "Knowledge distillation (KD) enables the transfer of learned representations from a large teacher network to a small student network. In foundational KD, the student network uses the original training data of the teacher model to accomplish this task. However, due to privacy concerns, the original training data is often not available. To overcome this reliance on original training data, several data-free knowledge distillation methods have been developed. Some of these methods operate in the white-box setting, and a few methods generate synthetic data by training a generator network. White-box methods use the teacher model's parameters to obtain a synthetic dataset. To avoid relying on teacher parameters, some methods use computationally expensive generative approaches to obtain such a dataset. There also exist certain black-box methods that generate the synthetic data without accessing teacher parameters. These methods are also computationally intensive. We propose a data-free knowledge distillation method that utilizes just the teacher's output logits and does not require access to its architecture, parameters, or gradients. We generate synthetic data via Projected Gradient Ascent (PGA) starting from smooth random noise signals. Required gradients are obtained through zeroth-order gradient estimation rather than backpropagating through the teacher's parameters. The student is then trained on these synthetically generated samples. We evaluate the proposed method on several benchmark datasets and show that the distillation performance is comparable with approaches that have access to the teacher model parameters.",
+  "abstract_ja": "",
+  "authors": [
+    "Tuhin Subhra Mukherjee",
+    "Tiya Rose Pulikunnel",
+    "Vaidhav Adit",
+    "Devanand Thanissery",
+    "S. H. Shabbeer Basha"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00908",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Knowledge distillation (KD) enables the transfer of learned representations from a large teacher network to a small student network. In foundational KD, the student network uses the original training…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "ZOPGA-KD: Zeroth Order PGA Guided Data Free Knowledge Distillation",
+  "url": "https://arxiv.org/abs/2611.00908",
+  "use_case": ""
+}

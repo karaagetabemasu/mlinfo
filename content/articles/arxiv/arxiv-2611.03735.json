@@ -1,0 +1,30 @@
+{
+  "abstract": "We present HyVox, a hybrid neuromorphic--von Neumann system for low-energy open-set speaker identification under tight energy budgets. HyVox splits the workload at the speaker embedding. A neuromorphic processor embeds the speech with sparse, event-driven computation, and a von Neumann microcontroller holds the speaker gallery and makes every decision: it scores queries by cosine similarity, rejects unknown speakers, and enrolls new users by writing a prototype, with no weight update. On the neuromorphic processor, a hierarchical temporal abstraction (HTA) SNN backbone learns a synaptic time constant per leaky integrate-and-fire (LIF) neuron, allocating 832 neurons across fast, medium, and slow timescales. A 32-neuron spiking embedding extractor (SEE), pretrained on episodes that each enroll new speakers and reject outsiders, turns the backbone output into an embedding for speakers unseen in training; its 32 spike counts are the only interface between the two processors. To fit the chip's synapse and integer budgets, we compress the backbone 6.5x to 29.0k synapses, train it for integer bit-shift dynamics, and fine-tune it with chip-accurate spiking training (CAST). CAST trains through a differentiable replica of the chip's integer neuron update, derived from its cycle-accurate simulator, so that gradient descent optimizes the exact weights and thresholds the chip runs; it doubles the top-1 accuracy of the mapped backbone on unseen speakers. On 20 Common Voice households of unseen speakers, HyVox reaches 99.6\\% top-1 and 5.5\\% rejection EER with 2 members and 94.9\\% and 13.2\\% with 20, and the network deployed on the neuromorphic chip matches its trained model. Each inference on a 3-s window takes 0.96 s and 1.63 mJ of dynamic energy, 42\\% lower latency than the fastest embedded ANN baseline and 13.5x less dynamic and 5.8x less total energy than the most energy-efficient one.",
+  "abstract_ja": "",
+  "authors": [
+    "Snehasis Addy",
+    "Eduardo Calle Ortiz",
+    "Prashant Shenoy",
+    "Phuc Nguyen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.03735",
+  "likes_count": 0,
+  "publishedAt": "2026-11-01",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "We present HyVox, a hybrid neuromorphic--von Neumann system for low-energy open-set speaker identification under tight energy budgets. HyVox splits the workload at the speaker embedding.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": []
+  },
+  "title": "HyVox: Rethinking Low-Power Voice Intelligence towards Neuromorphic-von Neumann Edge Computing",
+  "url": "https://arxiv.org/abs/2611.03735",
+  "use_case": ""
+}

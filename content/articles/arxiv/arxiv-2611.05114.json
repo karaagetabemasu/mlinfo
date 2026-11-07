@@ -1,0 +1,32 @@
+{
+  "abstract": "We give an algorithm for PAC learning intersections of $k$ degree-2 polynomial threshold functions over $R^d$ under a Gaussian distribution. Our algorithm achieves classification error $ε$ using $d^{O(k)}2^{O_k(\\log^3(1/ε))}$ time and samples, improving over the $d^{O(k^2/ε^2)}$ running time of the polynomial regression approach. To our knowledge, our result is the first to obtain a dimension exponent independent of the accuracy parameter, even for $k=2$. We complement our algorithmic result with an SQ lower bound showing that the complexity dependence of $d^{Ω(k)}$ is unavoidable. Lifting the input to polynomial features turns the target into an intersection of $k$ halfspaces. This suggests using the first two labeled moments for subspace recovery. In the lifted space, however, these moments can reveal nothing. Our starting point is a Gaussian comparison theorem showing that, for sufficiently regular defining quadratics, the labeled moments needed for subspace recovery are approximately preserved. To handle arbitrary defining quadratics, we establish a new structural result showing that every direction with significant resampling influence can be detected through degree-$O(k)$ moments. These results yield an initial $d^{O(k)}2^{\\mathrm{poly}_k(1/ε)}$-time learner using adaptive restrictions. To improve the exponential dependence on $1/ε$, we develop a two-stage dimension-reduction approach that avoids the costly adaptive partitioning. After identifying a subspace containing all directions with large influence, we use generalized regularity and Gaussian comparison to recover the remaining relevant quadratic features through a new derivative-based moment operator. The recovered features support an intersection close to the target. Combining them with robust hinge-loss minimization gives our quasipolynomial-time learner.",
+  "abstract_ja": "",
+  "authors": [
+    "Ilias Diakonikolas",
+    "Daniel M. Kane",
+    "Mingchen Ma",
+    "Lisheng Ren",
+    "Trung Tran"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.05114",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "We give an algorithm for PAC learning intersections of $k$ degree-2 polynomial threshold functions over $R^d$ under a Gaussian distribution. Our algorithm achieves classification error $ε$ using…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "regression"
+    ]
+  },
+  "title": "Beyond Multi-Index Models: Learning Intersections of Degree-2 PTFs",
+  "url": "https://arxiv.org/abs/2611.05114",
+  "use_case": ""
+}

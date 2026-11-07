@@ -1,0 +1,25 @@
+{
+  "abstract": "System One decision models answer a choice question in one forward pass, but their answer depends on the order in which options are listed, and their probabilities carry a prior over answer labels. An invariant ordering operator is any fixed function that returns the same ordered option list for every input order of a fixed option set. Starting from any such order and averaging a listwise readout over its K cyclic shifts removes the input order, but the decision still depends on the chosen cyclic class: those $K$ shifts are only one of the (K-1)! classes, and different invariant operators can select different classes. We propose IJev, which repeatedly reorders the options by the cyclic-averaged, label-prior-corrected distribution and runs another cyclic average. Every iterate is exactly input-order-invariant. When the iteration does not converge, we average the round distributions rather than return the last round. On five benchmarks and five models, IJev has flip rate zero in every cell. The default uniform average over T=20 rounds substantially improves calibration over a single cyclic average, and its accuracy is comparable. A descriptive choice of horizon and averaging rule is best or tied-best for accuracy in all 25 settings.",
+  "abstract_ja": "",
+  "authors": [
+    "Youzhi Zhang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01015",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "System One decision models answer a choice question in one forward pass, but their answer depends on the order in which options are listed, and their probabilities carry a prior over answer labels.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "IJev: Order-Invariant Decisions via Iterated Cyclic Reordering",
+  "url": "https://arxiv.org/abs/2611.01015",
+  "use_case": ""
+}

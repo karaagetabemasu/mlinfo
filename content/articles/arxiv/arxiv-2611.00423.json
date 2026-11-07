@@ -1,0 +1,33 @@
+{
+  "abstract": "Dense action detection requires precisely localising multiple overlapping actions in long untrimmed videos. Transformer-based methods achieve strong accuracy but their $O(T^2)$ self-attention cost limits scalability. We present PAM-Mamba, a linear-time $O(T)$ architecture built on Mamba with a multi-branch temporal encoder. Gated Learnable Positional Encoding (GLPE) controls positional signal injection via a scalar gate initialised to zero, starting training without added positional signal. A Hub-and-Spoke Funnel extends the non-hierarchical multi-scale design of PAT with a direct residual from the original full-resolution input to each coarse branch, providing each coarse branch with a projection of the input features. Bi-TemBa (Bidirectional Temporal Mamba) first extracts local motion cues with a shallow Temporal Convolution Module, then applies a cascaded bidirectional Mamba scan; the backward pass refines the forward-scanned representation from the opposite direction, giving each temporal position access to context from both directions in linear time. Uncertainty-Based Mixup uses prediction entropy to guide the selection of mixup partners. Using the PAT evaluation implementation, we obtain 26.82 (Charades I3D), 34.59 (Charades CLIP), 46.56 (MultiTHUMOS I3D), and 46.92 mAP (MultiTHUMOS CLIP), with 26.1-27.9M parameters, 61-63% fewer than PAT.",
+  "abstract_ja": "",
+  "authors": [
+    "Dhruvraj Singh Rawat",
+    "Faegheh Sardari",
+    "Armin Mustafa"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00423",
+  "likes_count": 0,
+  "publishedAt": "2026-10-30",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Dense action detection requires precisely localising multiple overlapping actions in long untrimmed videos. Transformer-based methods achieve strong accuracy but their $O(T^2)$ self-attention cost…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "video",
+      "3d"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "PAM-Mamba - Efficient Dense Action Detection using Mamba",
+  "url": "https://arxiv.org/abs/2611.00423",
+  "use_case": ""
+}

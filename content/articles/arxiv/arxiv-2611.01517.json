@@ -1,0 +1,31 @@
+{
+  "abstract": "Visual-text compression renders long contexts as images and is engineered around how much of the text a vision-language model (VLM) can recover. Yet recovered text is not usable text. VLMs can transcribe the text in an image word for word and still fail to answer from it; given back their own transcript, they answer nearly as well as from the original text. We call this difference the read-use gap. Recognizing and using visual text have different resolution requirements: Qwen3-VL-8B's recognition saturates at 15-pixel characters while use catches up only at 24 pixels, and scaling from 2B to 32B raises recognition without narrowing the gap. Putting the evidence into words closes it: thinking VLMs recite the evidence in their thinking, and their own transcript, written without seeing the question, recovers most of what thinking adds. In a preregistered held-out test, the gap ranks how much eight VLMs gain from their own words over pixels (Spearman $ρ$ = 0.86), which recognition rates do not. We propose ALOUD, which spends visual resolution on finding and recognizing evidence and language tokens on using it. Without keeping the source text, it doubles the accuracy of a frozen Qwen3-VL-8B on long documents compressed 5x and 10x: at 5x, from 27.7% to 54.8%, near the original text's 58.5%, with a context smaller than the compressed pages themselves. For less than the cost of reading the original text, it leads at equal budget every method that does without it, at every level, and beats AGAR and VERA, which paste the original text back; at 5x it also beats LensVLM-9B, which is trained and keeps the original text. Visual-text compression is limited not by how much text a model can recover, but by how much it can use.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhiyun Shi"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01517",
+  "likes_count": 0,
+  "publishedAt": "2026-11-01",
+  "source": "arxiv",
+  "subcategory": "multimodal",
+  "summary": "Visual-text compression renders long contexts as images and is engineered around how much of the text a vision-language model (VLM) can recover. Yet recovered text is not usable text.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "VLMs Read Aloud: The Gap Between Recognizing and Using Visual Text",
+  "url": "https://arxiv.org/abs/2611.01517",
+  "use_case": ""
+}

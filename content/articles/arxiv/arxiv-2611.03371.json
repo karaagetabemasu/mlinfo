@@ -1,0 +1,36 @@
+{
+  "abstract": "Earth observation (EO) workflows require selecting among known outcomes, estimating confidence, and processing large volumes of imagery. Generative vision-language models can address these tasks, but autoregressive decoding is computationally costly and their confidence estimates are unreliable. Decision models offer an alternative, returning probabilities over candidate answers in a single forward pass. However, their accuracy, calibration, and transfer across EO tasks remain insufficiently understood. We investigate these properties through a diagnostic study of d3-flash (8.4B parameters) across 30 settings from 23 public EO benchmarks. We find that compositional reasoning transfers well and calibration improves over its Qwen3.5-9B backbone on 24 settings, while counting, change quantification, damage grading, and absent-object recognition remain challenging. To address these limitations, we adapt d3-flash through low-rank fine-tuning on public EO training splits, producing EO-Jev. EO-Jev improves significantly over d3-flash on 26 of 30 settings and matches or exceeds specialist references on 20 of 28. It also achieves an average gain of 8.0 points across 12 held-out settings and lower expected calibration error than specialists on 21 of 28 settings. These improvements come at a modest cost of 1.8 points in general decision performance. Our results demonstrate the potential of adapting general decision models into competitive EO generalists while highlighting persistent challenges in quantitative perception, option-order consistency, and calibration under distribution shift.",
+  "abstract_ja": "",
+  "authors": [
+    "Mohamed Atef Abouelhadid",
+    "Diaa Addeen Abuhani",
+    "Muhammad Akhtar Munir",
+    "Fahad Shahbaz Khan",
+    "Salman Khan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.03371",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Earth observation (EO) workflows require selecting among known outcomes, estimating confidence, and processing large volumes of imagery. Generative vision-language models can address these tasks, but…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "classification",
+      "generation"
+    ]
+  },
+  "title": "EO-Jev: Decision Model for Earth Observation",
+  "url": "https://arxiv.org/abs/2611.03371",
+  "use_case": ""
+}

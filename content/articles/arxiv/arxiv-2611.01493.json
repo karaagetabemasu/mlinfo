@@ -1,0 +1,31 @@
+{
+  "abstract": "Activation steering controls large language models at inference time by adding a vector to their internal representations. Most work asks how to build that vector, and far less attention has gone to where to add it, even though steering at a poorly chosen layer can be worse than not steering at all. Prior selectors choose a layer without ever steering the model to test it: they score how separable the target behavior is at that layer, and how consistently the individual examples point along the steering direction. We argue that what matters is not the separability of the two activation clouds, nor the alignment of individual displacements with their mean, but the extent of the cloud of per-example displacements that mean-difference steering averages. We propose a topology-based layer selection method, called TopoSteer, which scores a layer by the total H_0 persistence of its displacement cloud, computed as the length of the cloud's Euclidean minimum spanning tree. We show that the score focuses on the displacement cloud's relative geometry, while class separation affects it only through standardization. We also provide a theoretical explanation for our method by proving that, as example-level variation increases, TopoSteer and discriminability move in opposite directions, so the two criteria can rank layers in opposite ways. Across multiple language models and steering tasks, TopoSteer provides a principled alternative to discriminability- and separability-based layer selection and yields more effective steering without requiring held-out validation.",
+  "abstract_ja": "",
+  "authors": [
+    "Tuc Nguyen",
+    "Marcos Gutiérrez-del-Pozo",
+    "Eduardo Paluzo-Hidalgo",
+    "Yifan Hu",
+    "Adaku Uchendu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01493",
+  "likes_count": 0,
+  "publishedAt": "2026-11-01",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Activation steering controls large language models at inference time by adding a vector to their internal representations. Most work asks how to build that vector, and far less attention has gone to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "TopoSteer: Topological Layer Selection for Activation Steering in LLMs",
+  "url": "https://arxiv.org/abs/2611.01493",
+  "use_case": ""
+}

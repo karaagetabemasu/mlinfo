@@ -1,0 +1,34 @@
+{
+  "abstract": "Clinical evidence is inherently relational: medical images are interpreted with prior studies, cross-modal examinations, reports, and localized findings, and retrieving relevant evidence is therefore central to clinical interpretation. Recent foundation models increasingly encode these heterogeneous sources into shared embedding spaces, yet existing embedding evaluation often focuses on isolated matches, leaving unclear whether current models retrieve relevant evidence across changes in modality, appearance, and granularity. We introduce MedHEB, a unified benchmark with 107 retrieval tasks from 54 datasets, including both in-distribution and held-out-source evaluation, across three axes: evidence form (2D images, 3D volumes, text), pairing type (image--image, image--text, text--text, and modality-bridging visual matching), and relevance granularity (global, question-conditioned, region-level). Under a single ranking protocol, MedHEB varies clinically relevant evidence definitions to test whether embedding proximity remains meaningful across heterogeneous evidence, including modality-bridging visual retrieval and region-level text-to-region retrieval. Across representative models, performance is uneven across retrieval families: models strong on conventional image--text or text--text retrieval are less reliable on modality-bridging and region-level tasks. Current embedding spaces capture some clinical relationships well but do not yet provide balanced retrieval across heterogeneous evidence. We further provide MedEmb, an MLLM-based reference embedding model trained on the MedHEB ID split, as a reproducible baseline for unified 2D--3D--text medical retrieval. We release MedHEB with preprocessing scripts, evaluation code, access manifests, and MedEmb to support research on clinically meaningful medical embeddings.",
+  "abstract_ja": "",
+  "authors": [
+    "Yingshu Li",
+    "Shaoyang Zhou",
+    "Zhanyu Wang",
+    "Yunyi Liu",
+    "Xinyu Liang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02519",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Clinical evidence is inherently relational: medical images are interpreted with prior studies, cross-modal examinations, reports, and localized findings, and retrieving relevant evidence is therefore…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "MedHEB: Benchmarking Medical Embeddings Across Heterogeneous Clinical Evidence",
+  "url": "https://arxiv.org/abs/2611.02519",
+  "use_case": ""
+}

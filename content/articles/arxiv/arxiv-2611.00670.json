@@ -1,0 +1,31 @@
+{
+  "abstract": "Graph foundation models aim to serve unseen graphs across tasks, feature spaces, and label sets. Most current models learn how to represent a new graph by pre-training on other graphs. Because graph data are scarce and differ across domains in features and structures, what they learn may not transfer to a graph from an unseen domain. We show that a frozen time-series foundation model, pre-trained on abundant time series, can instead serve as a graph foundation model without graph pre-training and without any gradient update on the target graph. Such a model reads ordered multivariate sequences, but a graph has no time axis, and covering all its edges with sequences is nontrivial because a node can have many neighbors. We therefore propose GraphFlowFM, which decomposes a graph into parallel flows, sets of vertex-disjoint paths that jointly cover every edge, and reads each path as a multivariate time series with the nodes as time steps. A frozen TimesFM encodes the paths with causal attention, which gives each node a self token and a context token, and a closed-form ridge readout weighs these tokens by their alignment with the labels. In node classification, GraphFlowFM attains the best average rank on 21 datasets among graph foundation models published in 2025 and 2026, ranks first on 17 datasets, and leads on six of the seven heterophilous datasets. It also exceeds pre-trained graph foundation models in link prediction on all six datasets and ranks second in molecule classification, behind only a model fine-tuned after pre-training on molecules.",
+  "abstract_ja": "",
+  "authors": [
+    "Jielong Yang",
+    "Feng Ji"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00670",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Graph foundation models aim to serve unseen graphs across tasks, feature spaces, and label sets. Most current models learn how to represent a new graph by pre-training on other graphs.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "time-series"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Versatile Graph Foundation Models from Frozen Time-Series Foundation Models via Parallel Flows",
+  "url": "https://arxiv.org/abs/2611.00670",
+  "use_case": ""
+}

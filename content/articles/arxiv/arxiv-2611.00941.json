@@ -1,0 +1,38 @@
+{
+  "abstract": "Across heterogeneous real-world domains, time-series generation supports simulation, model development, and data augmentation by generating sequences that preserve target-domain statistics and temporal dependencies when real observations are scarce or costly. However, existing methods predominantly address in-domain generation, limiting their reuse in unseen domains. We study reference-conditioned zero-shot time series generation: target domains are unseen during pretraining, generation uses a single target-domain reference sequence, and no model parameters are updated. MarkovTS characterizes sequence evolution through local morphologies and their ordered transitions at multiple temporal scales. Its pretrained encoder quantizes normalized time-series patches into multiscale morphological states with a state codebook, while a transition codebook encodes contextual transitions between adjacent intervals. These transferable state-transition representations condition a pretrained flow-matching model. At generation, the frozen model combines a reference-derived condition with independent Gaussian noise to produce stochastic samples that retain the reference's temporal organization. Across 12 unseen target datasets, MarkovTS outperforms strong baselines in most distributional comparisons and generates diverse, reference-consistent sequences. As downstream augmentation, its samples yield overall gains across forecasting, classification, and anomaly detection benchmarks and diverse model families. Our code is available at https://github.com/blisky-li/MarkovTS.",
+  "abstract_ja": "",
+  "authors": [
+    "Yujie Li",
+    "Zezhi Shao",
+    "Jingbo Zhou",
+    "Yongjun Xu",
+    "Xueqi Cheng"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/blisky-li/MarkovTS",
+  "hasCode": true,
+  "id": "arxiv-2611.00941",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "Across heterogeneous real-world domains, time-series generation supports simulation, model development, and data augmentation by generating sequences that preserve target-domain statistics and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "time-series"
+    ],
+    "task": [
+      "classification",
+      "detection",
+      "generation",
+      "anomaly-detection",
+      "forecasting"
+    ]
+  },
+  "title": "MarkovTS: Pretrained State-Transition Representations for Zero-Shot Time Series Generation",
+  "url": "https://arxiv.org/abs/2611.00941",
+  "use_case": ""
+}

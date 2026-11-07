@@ -1,0 +1,31 @@
+{
+  "abstract": "Modeling land use starts with a choice of spatial units, typically a regular grid of pixels whose resolution is set by the spatial detail the process requires and, often more critically, by the computational budget. With Earth observation data more abundant than ever, we ask whether good land units can instead emerge from the data itself. To do that, we cluster AlphaEarth embeddings with a parallel Bayesian hierarchical clustering into adaptive land units, large where the land is uniform and small where it is highly heterogeneous. Using Denmark as a case study, we turn 402M land pixels into 1.27M newly defined units, about 320 times fewer, without any labels (i.e., unsupervised), making it possible to fit the whole country on a single consumer-grade GPU. Importantly, these units describe the land well, as a regular grid needs about 5 times as many cells to match them against land-use labels, and about 4 times as many against the declared crop of every field. Compared to clustering the satellite images themselves, the embeddings need half the units for the same purity. But more notably, they work as modeling units. Land-use maps learned on them are within a few points of accuracy of pixel models at a small fraction of the cost, and they make whole-country land-use estimates with reliable uncertainty possible in under a minute, where the same model on pixels does not even fit in device memory.",
+  "abstract_ja": "",
+  "authors": [
+    "Albert Alonso",
+    "Jamal Jokar Arsanjani",
+    "Andres R. Masegosa"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.01050",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Modeling land use starts with a choice of spatial units, typically a regular grid of pixels whose resolution is set by the spatial detail the process requires and, often more critically, by the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Adaptive Land Units from Earth Embeddings",
+  "url": "https://arxiv.org/abs/2611.01050",
+  "use_case": ""
+}

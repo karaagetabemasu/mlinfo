@@ -1,0 +1,25 @@
+{
+  "abstract": "Dynamic regret measures an online learner against a moving comparator, and standard analyses assume the learner may move freely at every round. We study what happens when it may not: the learner is given a hard budget $S$ on its total movement $\\sum_t \\|x_t - x_{t-1}\\|$. Our main result is that a movement budget creates a feasibility barrier. On a domain of diameter $D$ with $G$-Lipschitz convex losses, for every comparator path length $P_T \\in [D, DT]$ we exhibit a deterministic adversary that forces $R_d = Ω(GDT)$ on every budget-feasible algorithm whenever $S \\le c P_T$ for a universal constant $c>0$. This barrier is caused by the budget rather than by a volatile environment: for fixed $D$, it applies when $P_T = o(T)$, where the unconstrained minimax rate $Θ(G\\sqrt{D(D+P_T)T})$ is sublinear, so the same instances are learnable with an unbounded budget and unlearnable without one. Conversely, projected online gradient descent with a budget-aware step size is budget-feasible and attains $o(GDT)$ once $S = ω(D + P_T)$. Thus the critical movement scale is $D+P_T$: linear regret is unavoidable below a sufficiently small constant multiple of $P_T$, while sublinear regret is achievable when $S/(D+P_T)\\to\\infty$ in the learnable regime. The construction rests on a distinction we make explicit: what makes a comparator expensive to track under a movement budget is the distance it forces the learner to travel, not its path length. Above the threshold we give a budget-dependent upper bound and identify the tight minimax rate in this region as an open problem rather than claiming a product law. Experiments support the predicted transition location and the $1/S$ decay.",
+  "abstract_ja": "",
+  "authors": [
+    "Ridham Patel"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02812",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Dynamic regret measures an online learner against a moving comparator, and standard analyses assume the learner may move freely at every round. We study what happens when it may not: the learner is…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "When Is Tracking Affordable? A Movement-Budget Feasibility Threshold for Dynamic Regret",
+  "url": "https://arxiv.org/abs/2611.02812",
+  "use_case": ""
+}

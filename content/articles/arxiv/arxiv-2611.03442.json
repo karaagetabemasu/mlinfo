@@ -1,0 +1,29 @@
+{
+  "abstract": "We study the gradient query complexity of sampling from a density $π(x)\\propto\\mathrm{e}^{-V(x)}$ on $\\mathbb{R}^d$, where $V$ has a $β$-Lipschitz gradient but need not be convex. Our approach uses the proximal sampler, which alternates Gaussian perturbation with sampling a position conditional on the noisy observation. We implement its observation chain using the high-order noisy conditional sampler of [OpenAI 2026], obtaining improved dimension dependence under functional inequalities. If $π$ satisfies a log-Sobolev inequality (LSI) with constant $α$, then for every fixed $ν>0$, there is a finite constant $C_ν$ depending only on $ν$ such that the algorithm returns a sample within total-variation distance $\\varepsilon$ using at most $C_νκ(d+κ+\\varepsilon^{-1}+\\|\\nabla V(x_0)\\|^2/β)^ν$ queries, where $κ=β/α$ and $x_0$ is an arbitrary reference point for initialization. The analysis controls center-dependent local errors along exact proximal histories and removes the final observation noise by conditional decoding. Under a Poincaré inequality (PI), we obtain a corresponding guarantee from a warm start with a known bound on its Rényi divergence. An oracle lower bound shows that a stationary point alone, which suffices under LSI, is insufficient under PI.",
+  "abstract_ja": "",
+  "authors": [
+    "Wei Guo",
+    "Bo Yuan",
+    "Ye He",
+    "Jiaming Liang",
+    "Molei Tao"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.03442",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "We study the gradient query complexity of sampling from a density $π(x)\\propto\\mathrm{e}^{-V(x)}$ on $\\mathbb{R}^d$, where $V$ has a $β$-Lipschitz gradient but need not be convex. Our approach uses…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Subpolynomial-Query Proximal Sampling Beyond Log-Concavity",
+  "url": "https://arxiv.org/abs/2611.03442",
+  "use_case": ""
+}

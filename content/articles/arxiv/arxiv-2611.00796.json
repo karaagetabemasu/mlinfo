@@ -1,0 +1,31 @@
+{
+  "abstract": "Post training for large reasoning models remains insufficient on challenging problems, whose correct trajectories are hard to sample. Though prior works address this difficulty by integrating supervised fine tuning on expert trajectories with reinforcement learning, such external experts are not always available. Existing self improvement methods instead use reference solutions to create a privileged self-teacher. Yet privileged teacher correctness does not imply student reachability. Solution conditioning shifts the teacher distribution toward actions unlikely under the unprivileged student, producing seemingly \"correct\" trajectories that are unreachable or even mal-formed learning targets. Accordingly, we identify reachability alignment as the key to self constructed supervision and propose Self-Steered Reasoner (SSR). SSR realizes this principle through student support projection, which transforms the privileged teacher distribution into a directional signal only over reasoning actions locally reachable under the unguided student. Verification then retains correct trajectories sampled from this reachable space. To further boost the sampling efficiency, an iterative refinement framework is adopted, using diagnostic guidance based on current trajectories. On problems with pass@64 = 0 even after extensive RL, SSR recovers correct and learnable trajectories for 74.6% without parameter updates. Fine tuning on these trajectories followed by resumed reinforcement learning improves aggregate accuracy by 4.9 percentage points on AIME25/26 and HMMT26. These results show that privileged guidance becomes effective self-improvement data when aligned with the reasoning actions the student can reach.",
+  "abstract_ja": "",
+  "authors": [
+    "Zijian Wu",
+    "Lingkai Kong",
+    "Lin Yang",
+    "Haiteng Zhao",
+    "Kuikun Liu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00796",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Post training for large reasoning models remains insufficient on challenging problems, whose correct trajectories are hard to sample. Though prior works address this difficulty by integrating…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "Steer, Don't Tell: Breaking Reasoning Plateaus with Reachability-Aligned Self-Distillation",
+  "url": "https://arxiv.org/abs/2611.00796",
+  "use_case": ""
+}

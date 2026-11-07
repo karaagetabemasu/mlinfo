@@ -1,0 +1,31 @@
+{
+  "abstract": "We consider the probability that a reversible Markov chain started in a set $A$ is in a rare set $B$ after a fixed horizon, a quantity often needed for many start laws, down to single states. Twisted sequential Monte Carlo (SMC) estimates such probabilities without bias, with small variance when its proposal and twist approximate the dynamics conditioned on reaching $B$, but these components are usually learned from forward simulations, which contain almost no successful paths when the event is rare. We introduce Foresight-SMC, which learns both components from the target side: under reversibility, relaxations started in $B$ that return to $A$ are, read backwards, exact samples of the conditioned paths, and their number is governed by the return probability rather than by the rare probability. Extending this reversal to the recorded propose--accept decisions of a Metropolis-adjusted sampler, we fit a controlled Langevin proposal with exact likelihood ratios by maximum likelihood, together with a classifier twist; the resulting estimator is unbiased for any start law. A variance analysis shows that resampling reduces the variance when the importance weights degenerate, as they do over long horizons. On an Allen--Cahn field, the learned proposal alone suffices, and one trained model is more accurate than splitting at equal cost. On alanine tripeptide, resampling with the learned twist is necessary, and Foresight-SMC needs less computation per query than adaptive multilevel splitting on localized start sets.",
+  "abstract_ja": "",
+  "authors": [
+    "Ziyi Fan",
+    "Yuxuan Qiu",
+    "Haibo Wang",
+    "Wentao Cui",
+    "Chen Fang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00903",
+  "likes_count": 0,
+  "publishedAt": "2026-10-31",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "We consider the probability that a reversible Markov chain started in a set $A$ is in a rare set $B$ after a fixed horizon, a quantity often needed for many start laws, down to single states. Twisted…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Foresight: Learning Twisted SMC for Rare Events from Reversed Relaxations",
+  "url": "https://arxiv.org/abs/2611.00903",
+  "use_case": ""
+}

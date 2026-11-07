@@ -1,0 +1,27 @@
+{
+  "abstract": "Modeling the nonlinear acoustic wave propagation in biological tissues needs accuracy, especially in ultrasound imaging and therapeutic applications. The 1D Westervelt equation, \\( p_{xx} - p_{tt} + γ\\, p_{ttt} + η\\,(p^{2})_{tt}=0, \\) could be used to describe a finite-amplitude ultrasound propagation in these tissues. This equation accounts for nonlinearity, \\(η\\), and attenuation, \\(γ\\). To solve this equation, we observe that traditional solvers may struggle to do so correctly. This is due to the difficulties arising from the nonlinear nature of the equation. We solve the equation by defining three synthetic cases - linear (\\(η=0.001\\), \\(γ=10^{-6}\\)), shock-dominated (\\(η=0.02\\), \\(γ=10^{-6}\\)), and dissipation-dominated (\\(η=0.01\\), \\(γ=5\\times10^{-4}\\)) - and using Physics-Informed Neural Networks (PINNs) to showcase the solution. A sinusoidal activation function is used to capture the oscillatory behavior of the problem. The results of our study, with PDE residual converging to at least \\(10^{-6}\\), boundary condition loss to \\(10^{-5}\\), and the PINN loss converging to \\(10^{-5}\\) for each case at \\(30,000\\) epochs, show that \\(γ\\) scales the rate of amplitude decay, while \\(η\\) governs frequency-dependent phase speeds.",
+  "abstract_ja": "",
+  "authors": [
+    "Luke Oluwaseye Joel"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.05130",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Modeling the nonlinear acoustic wave propagation in biological tissues needs accuracy, especially in ultrasound imaging and therapeutic applications. The 1D Westervelt equation, \\( p_{xx} - p_{tt} +…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": []
+  },
+  "title": "Solving the Nonlinear Westervelt Equation in Ultrasound Propagation Using Physics-Informed Neural Networks",
+  "url": "https://arxiv.org/abs/2611.05130",
+  "use_case": ""
+}

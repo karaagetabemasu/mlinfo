@@ -1,0 +1,32 @@
+{
+  "abstract": "Dynamic hand gesture authentication (DHGA) is an emerging biometric technique that contains both physiological and behavioral identity characteristics. However, existing methods primarily rely on convolutional networks or manually designed motion representations, making it difficult to jointly capture fine-grained local identity differences and long-range behavioral dependencies during hand gesture execution. To address these challenges, we propose a two-stream identity representation learning framework, MambaHand Net, to combine CNNs with Mamba for DHGA. The proposed framework consists of a Local Identity Stream (LIS) and a Behavioral Sequential Stream (BSS). The LIS extracts frame-wise local identity cues with a convolutional network, while the BSS preserves spatial tokens from intermediate visual features and constructs first-order and second-order temporal difference sequences to model multi-order behavioral variations. Moreover, the bidirectional Mamba is incorporated into the BSS to model semantic motion across different spatial locations, enabling efficient long-range modeling of hand gesture execution habits. Finally, attention-guided spatial token aggregation and a two-stream fusion strategy are used to integrate local identity cues and multi-order behavioral patterns into a discriminative identity representation. Our method achieves state-of-the-art (SOTA) average performance on the SCUT-DHGA benchmark dataset, demonstrating that combining CNNs with Mamba is an effective new solution for DHGA.",
+  "abstract_ja": "",
+  "authors": [
+    "Zenan Lin",
+    "Junduan Huang",
+    "Xilai Wang",
+    "Wenxiong Kang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.04626",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Dynamic hand gesture authentication (DHGA) is an emerging biometric technique that contains both physiological and behavioral identity characteristics. However, existing methods primarily rely on…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "embedding"
+    ]
+  },
+  "title": "MambaHand: Local Identity and Behavioral Sequence Learning with Mamba for Dynamic Hand Gesture Authentication",
+  "url": "https://arxiv.org/abs/2611.04626",
+  "use_case": ""
+}

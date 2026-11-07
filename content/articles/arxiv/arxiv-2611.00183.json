@@ -1,0 +1,27 @@
+{
+  "abstract": "Implicit priors given by Gaussian denoisers successfully regularize a wide range of inverse problems in approaches such as plug-and-play (PnP), regularization by denoising (RED) and score-based methods. Such a prior depends on the noise level, and how it selects among signals consistent with the data remains largely uncharacterized. To put implicit and explicit priors on the same footing, we define the prior-force family $W_t=t^{-1}(D_t^{-1}-I)$ of any Gaussian denoiser $D_t$ at noise variance $t>0$ (inverse in the graph sense), the normalized denoising residual as an operator on clean signals. At a common effective prior weight, the equilibrium equations differ only in their prior terms: PnP uses $W_t$, RED/score-based methods the score force (the normalized residual as an operator on noisy inputs), and maximum a posteriori (MAP) estimation the MAP force (the negative log-prior gradient). For the minimum mean-square error (MMSE) denoisers of a prior $π$, we compare the corresponding energies at three levels. Without observation, raising the noise level favors PnP minima that retain more posterior variance. On signals consistent with the data, the leading-order PnP energy for separated modes is the proximal hull of the MAP energy, which lets PnP select signals between modes; modes of equal data fit are ranked by peak height at small noise levels and by mass at large ones. For recovery, $W_t$ at the truth bounds the local bias, and an oracle noise level balances this bias against denoiser error. These results show that the noise level is a parameter of the prior rather than a step size. Experiments with exact priors support these predictions, including the mixture components that PnP selects on unseen data.",
+  "abstract_ja": "",
+  "authors": [
+    "Weijie Liang",
+    "Chuling Wen",
+    "Jian Lu"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.00183",
+  "likes_count": 0,
+  "publishedAt": "2026-10-30",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Implicit priors given by Gaussian denoisers successfully regularize a wide range of inverse problems in approaches such as plug-and-play (PnP), regularization by denoising (RED) and score-based…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "The Prior-Force Family of Implicit Denoiser Priors and Its Decisions in Linear Inverse Problems",
+  "url": "https://arxiv.org/abs/2611.00183",
+  "use_case": ""
+}

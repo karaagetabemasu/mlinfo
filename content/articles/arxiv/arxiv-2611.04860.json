@@ -1,0 +1,29 @@
+{
+  "abstract": "Quantile-based summaries, such as prediction intervals and medians, are commonly used in economic forecasting, climate science, and public health. For highly skewed samples, experimental evidence suggests that estimates of the mean can be biased toward the median, whereas estimates of the median are relatively accurate. This motivates aggregating explicitly elicited quantiles rather than reported means. We study robust aggregation of quantile reports for bounded outcomes under squared loss, minimizing worst-case regret relative to an omniscient Bayesian aggregator who knows the information structure and observes all private signals. Without restrictions on the information structure, no rule improves on the constant forecast at the range midpoint in worst-case regret. We therefore consider weak substitutes, a diminishing-returns condition on the value of information, and characterize optimal aggregation rules under this condition. For central prediction intervals with common nominal coverage $α$, the optimal rule, which we call regularized simple average for prediction intervals, shrinks the average reported interval midpoint toward the range midpoint, with a weight determined by $α$ and the number $n$ of experts. This optimal rule strictly improves on the constant baseline in worst-case regret when $α<1/\\sqrt{n}$; at or above this threshold, the constant rule is optimal. The optimal worst-case regret is minimized at a unique interior coverage level, revealing a nonmonotonic relationship between coverage and aggregation performance. For median reports, regularized simple average for medians similarly shrinks the average reported median toward the range midpoint, assigning weight $1/n$ to the reported average and strictly improving on the constant baseline in worst-case regret for every finite $n\\ge2$.",
+  "abstract_ja": "",
+  "authors": [
+    "Mingyu Song",
+    "Yizhou Wang",
+    "Yuqing Kong"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.04860",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Quantile-based summaries, such as prediction intervals and medians, are commonly used in economic forecasting, climate science, and public health. For highly skewed samples, experimental evidence…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "forecasting"
+    ]
+  },
+  "title": "Robust Aggregation of Quantile Statistics: from Median to Interval",
+  "url": "https://arxiv.org/abs/2611.04860",
+  "use_case": ""
+}

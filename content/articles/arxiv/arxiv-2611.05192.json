@@ -1,0 +1,34 @@
+{
+  "abstract": "Transfer learning from natural images is standard in supervised and increasingly adopted in self-supervised medical image analysis, but its role in generative modelling, and in particular diffusion denoisers, remains underexplored. Medical diffusion models typically train the denoiser from scratch, with no systematic evaluation of natural-image transfer. We analyse this across latent and pixel paradigms, model sizes (131M-952M) and two radiology datasets (RadImageNet, BraTS), and ask which aspects of transfer support generation. We find that: i) Natural-image initialisation consistently improves generation, by 21-34% relative gFID in pixel space against 14% in latent space, where the tokeniser supplies much of the prior. gFID gains mirror downstream pathology classification and radiomic-feature FD, both proxies for clinical fidelity. ii) Benefits reflect spatial structure, not semantics: semantic probing does not predict generation quality, whereas a spatial-structure metric adapted to internal denoiser representations tracks gFID at $|r|=0.85$, positioning spatial organisation as a channel through which pretraining manifests. iii) Mixed-domain denoiser training shows that natural and medical images share similar layer-wise representations up to the late blocks, and mixing natural images into medical training improves fidelity. iv) Transfer benefit is tied to natural image initialisation, outperforming in-domain medical pretraining and several reinitialisation schemes. Overall, natural image denoisers transfer positively to medical ones in our setup. Code is available at https://github.com/CAIROLab-Bern/rad-dit",
+  "abstract_ja": "",
+  "authors": [
+    "Efthymios Georgiou",
+    "Ioannis Kakogeorgiou",
+    "Sarah Brüningk"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/CAIROLab-Bern/rad-dit",
+  "hasCode": true,
+  "id": "arxiv-2611.05192",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "classification",
+  "summary": "Transfer learning from natural images is standard in supervised and increasingly adopted in self-supervised medical image analysis, but its role in generative modelling, and in particular diffusion…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "generation"
+    ]
+  },
+  "title": "From Natural Images to Medical Scans: Transferability of Diffusion Models for Medical Image Generation",
+  "url": "https://arxiv.org/abs/2611.05192",
+  "use_case": ""
+}

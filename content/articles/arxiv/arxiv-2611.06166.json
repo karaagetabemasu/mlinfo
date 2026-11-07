@@ -1,0 +1,31 @@
+{
+  "abstract": "Multivariate probabilistic forecasting requires modeling cross-variable dependence alongside marginal uncertainty. The challenge is to learn this dependence while controlling marginal noise scales and avoiding dense covariance costs. We propose Factor-Correlated Diffusion (FaCoDiff), which couples a compact conditional statistical estimator with structured denoising. History-conditioned factor loadings use distinct coefficients for forecast-center correction, scale adjustment and noise dependence. Diagonal compensation preserves the estimated marginal noise variances, while low-rank operators enable residual Gaussian likelihood evaluation and noise transport without dense covariance storage or factorization. Factor-derived feature modulation explicitly conditions the denoiser, and a geometry-aware objective accounts for errors after noise transport. The same conditional geometry governs forward perturbations and reverse sampling. Across nine datasets, FaCoDiff achieves the lowest mean variogram score on eight datasets and ranks among the top two on 43 of 54 dataset-metric combinations in the reported comparisons. Matched ablations on Solar and Weather show that factor covariance improves mean Energy and Variogram scores under all four combinations of center and scale correction. Disrupting cross-variable sample pairings while preserving marginal trajectories worsens joint and aggregate scores on both datasets, demonstrating the predictive value of generated cross-variable dependence.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiaxuan Li",
+    "Yao Liu",
+    "Yuewei Xue",
+    "Shijie Dong",
+    "Zixiang Jin"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.06166",
+  "likes_count": 0,
+  "publishedAt": "2026-11-04",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Multivariate probabilistic forecasting requires modeling cross-variable dependence alongside marginal uncertainty. The challenge is to learn this dependence while controlling marginal noise scales…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "forecasting"
+    ]
+  },
+  "title": "FaCoDiff: Factor-Correlated Diffusion for Multivariate Probabilistic Forecasting",
+  "url": "https://arxiv.org/abs/2611.06166",
+  "use_case": ""
+}

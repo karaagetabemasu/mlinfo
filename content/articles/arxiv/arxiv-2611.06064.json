@@ -1,0 +1,32 @@
+{
+  "abstract": "Time series forecasting is shifting from locally trained, per-series models to global models trained across many heterogeneous series, which requires learning what sets the series apart. When the raw data cannot be centralized, such a global model is trained with federated learning (FL), one client per data owner. State-of-the-art forecasters such as the Temporal Fusion Transformer (TFT) tell series apart through a static input that describes each series and does not change over time. In the special case of a federated setting where each client holds a single series, this static input is constant within each client and varies only across clients. We ask whether a federated TFT can learn from it. Per-batch FedAdam, which aggregates gradients after every batch, uses the static input almost as well as central training, whereas communication-efficient schemes with local epochs (FedAvg, FedAdam+Prox) extract far less from it and gain nothing significant on either application dataset. At the same local computation, an Adam-compatible SCAFFOLD keeps the static pathway responsive on wind power and gains significantly there. On building energy its error still drops, but the static pathway falls silent, so drift and communication frequency cannot be fully separated as the cause. Only per-batch FedAdam matches or beats the per-client local models across all datasets. We confirm the effect on building-energy meter data, a wind-power dataset, and a controlled synthetic dataset. The loss is not specific to the TFT: on the synthetic and the wind data two further architectures with different static-conditioning mechanisms show it as well.",
+  "abstract_ja": "",
+  "authors": [
+    "Viktor Walter",
+    "Andreas Wagner",
+    "Fabian Stricker"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.06064",
+  "likes_count": 0,
+  "publishedAt": "2026-11-04",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Time series forecasting is shifting from locally trained, per-series models to global models trained across many heterogeneous series, which requires learning what sets the series apart. When the raw…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "time-series"
+    ],
+    "task": [
+      "forecasting"
+    ]
+  },
+  "title": "Learning From Static Context in Federated Time Series Forecasting",
+  "url": "https://arxiv.org/abs/2611.06064",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Large Language Models (LLMs) often generate fluent yet incorrect responses, making un- certainty estimation important for reliable deployment. Semantic Entropy (SE) estimates uncertainty by clustering responses based on semantic equivalence, but it relies on hard entailment-based clustering. We propose Embedding Semantic Entropy, which replaces entailment-based clustering with K-Medoids in semantic embedding space and uses dynamic cluster selection to account for intra-cluster compactness and inter-cluster separation. We evaluate the method on TriviaQA, SQuAD, NQ-Open, SVAMP, and BioASQ using Falcon- 7B-Instruct, LLaMA-2-7B, LLaMA-2-7B-Chat, and Gemma-7B. Results show competitive AUROC and AUARC performance, suggesting that NLI-based entailment clustering can be replaced with embedding-space clustering with limited degradation while improving the inspectability of semantic grouping. This matters because semantic uncertainty scores depend on underlying semantic groups; by making these groups explicit, compact, and separable in embedding space, Emb-SE turns uncertainty estimation from a black-box en- tailment decision into an inspectable clustering problem.",
+  "abstract_ja": "",
+  "authors": [
+    "Akshiya Raveendran",
+    "Praveenasarma Baskarakurukkal",
+    "Pragatheeswaran Vipulanandan",
+    "Kamal Premaratne",
+    "Uthayasanker Thayasivam"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.03876",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Large Language Models (LLMs) often generate fluent yet incorrect responses, making un- certainty estimation important for reliable deployment. Semantic Entropy (SE) estimates uncertainty by…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Embedding Semantic Entropy: NLI-Free Semantic Uncertainty Estimation with Geometry-Aware Clustering",
+  "url": "https://arxiv.org/abs/2611.03876",
+  "use_case": ""
+}

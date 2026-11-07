@@ -1,0 +1,30 @@
+{
+  "abstract": "Visualizing multivariate scientific simulation data is essential for understanding complex physical phenomena, yet the massive scale of such data imposes a severe storage bottleneck in high-performance computing environments. Implicit neural representations (INRs) have emerged as a promising continuous alternative to traditional lossy compressors, but existing methods struggle to explicitly capture cross-variable interactions and to adapt to the diverse spectral characteristics of physical variables. To address these limitations, we propose SWAP-INR, an architecture for high-fidelity compression of multivariate, time-varying simulation data. SWAP-INR introduces two key components: (1) The switchable attention path (SWAP) module explicitly models cross-variable interactions through a cross-variable attention layer, then routes each variable to an attention or non-attention path by a deterministic, loss-driven criterion, and prunes the inactive layers for structural compression. (2) The adaptability amplification SIREN (A2-SIREN) replaces rigid frequency scaling with channel-wise learnable modulation, adapting to heterogeneous physical features with negligible overhead. Combined with post-training 16-bit quantization, SWAP-INR achieves state-of-the-art performance on small modular reactor (SMR) datasets and remains competitive on public physics simulation datasets, while maintaining a constrained memory footprint. Our code is https://github.com/hvcl/SWAP-INR.",
+  "abstract_ja": "",
+  "authors": [
+    "Hyunsoo Son",
+    "Jeonghyun Noh",
+    "Chaoli Wang",
+    "Won-Ki Jeong"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/hvcl/SWAP-INR",
+  "hasCode": true,
+  "id": "arxiv-2611.04423",
+  "likes_count": 0,
+  "publishedAt": "2026-11-03",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Visualizing multivariate scientific simulation data is essential for understanding complex physical phenomena, yet the massive scale of such data imposes a severe storage bottleneck in…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "SWAP-INR: Implicit Neural Representation with Switchable Attention Paths for Time-varying Multivariate Scientific Data Compression",
+  "url": "https://arxiv.org/abs/2611.04423",
+  "use_case": ""
+}

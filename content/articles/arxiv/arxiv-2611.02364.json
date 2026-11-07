@@ -1,0 +1,32 @@
+{
+  "abstract": "Hyperspectral image (HSI) classification requires the representation of contiguous spectral signatures and spatial context under limited labeled supervision. Vision test-time training (TTT) offers an alternative to fixed-weight token mixing by performing self-supervised inner-model updates on the input sequence, but its application to center-pixel HSI classification remains insufficiently characterized. We present ViTTT-HSI, a spectral-spatial adaptation of the vision test-time training (ViT3) architecture. A spectral-aware embedding stem extracts ordered-band information using spectral convolution and forms spatial tokens without reducing their spatial resolution. Two ViT3-based TTT encoder blocks perform patch-conditioned token mixing, followed by the fusion of center-pixel and neighborhood-average features for classification. We evaluate the framework on Indian Pines, Pavia University, Salinas, and Houston 2013 using ten random seeds and dataset-specific training fractions of 1% or 5%. The mean overall accuracies are 97.6390%, 98.8753%, 99.3292%, and 98.4283%, respectively. Ablations reveal a substantial contribution from the TTT inner update on Indian Pines and a smaller positive contribution on Pavia University, while the relative benefits of the spectral stem and feature fusion depend on the dataset. The results demonstrate the feasibility of using patch-conditioned vision TTT for spectral--spatial HSI classification and highlight the role of the inner adaptation mechanism.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiang Zhao"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.02364",
+  "likes_count": 0,
+  "publishedAt": "2026-11-02",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Hyperspectral image (HSI) classification requires the representation of contiguous spectral signatures and spatial context under limited labeled supervision. Vision test-time training (TTT) offers an…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Spectral-spatial vision test-time training for hyperspectral image classification",
+  "url": "https://arxiv.org/abs/2611.02364",
+  "use_case": ""
+}
