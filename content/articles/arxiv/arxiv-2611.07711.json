@@ -1,0 +1,28 @@
+{
+  "abstract": "Monocular hand mesh estimators commonly predict rig parameters and project the mesh to obtain 2D keypoints. We find that directly predicted 3D joints agree better with 2D predictions, and fitting a mesh to predicted points reduces mesh error. We present FAH (Fast and Accurate Hand Estimation), a family of models built on SAM 3D Body's hand branch through fine-tuning and feature distillation. The models predict corresponding 2D and 3D joints and surface points, fit MANO or MHR-Hand, and optionally estimate anatomical parts and contact without object geometry at inference. Causal refinement reduces acceleration error, and camera estimation places the hands in world space. Experiments show improvements in image-space alignment, hand geometry, contact estimation and world-space tracking over the evaluated baselines. The default ViT-L model runs at 65 fps with mesh fitting on an RTX 4070 Ti SUPER, or 49 fps with parts and contact enabled. The smallest ViT-S model reaches 125 fps without mesh fitting, parts or contact. Code: https://github.com/noahcao/FAH.",
+  "abstract_ja": "",
+  "authors": [
+    "Jinkun Cao"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/noahcao/FAH",
+  "hasCode": true,
+  "id": "arxiv-2611.07711",
+  "likes_count": 0,
+  "publishedAt": "2026-11-05",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Monocular hand mesh estimators commonly predict rig parameters and project the mesh to obtain 2D keypoints. We find that directly predicted 3D joints agree better with 2D predictions, and fitting a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Fast and Accurate Hand Estimation in Pixels, Interaction and World Space",
+  "url": "https://arxiv.org/abs/2611.07711",
+  "use_case": ""
+}

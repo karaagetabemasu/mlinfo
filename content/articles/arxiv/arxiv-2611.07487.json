@@ -1,0 +1,28 @@
+{
+  "abstract": "Blockwise distillation methods for architecture search, such as DNA, DONNA, LANA and Puzzle, score each candidate replacement block in isolation and assemble a child network by minimizing the sum of per-block scores. We test this additive assumption on DeiT-S and DeiT-B with seven replacement blocks per layer, seven block-latency budgets from 70% to 40%, three fine-tuning seeds and paired bootstrap confidence intervals. (i) At mild compression the additive integer linear program (ILP) is close to a pairwise integer quadratic program (IQP) that models block interactions, but the post-fine-tuning gap widens sharply between the 60% and 55% budgets: at 55%-40% the ILP trails the IQP by 3.3-16.6 top-1 points on ImageNet-100. (ii) We split the KL additivity error into a metric component, caused by the non-linearity of the KL in summed logit changes and computable from cached single-block logits, and a functional component, the score-level effect of non-additive logit changes. The metric component accounts for most of the error on DeiT-S (59-65%), the functional component for most of it on DeiT-B (73-76%). (iii) A hybrid search ranks moves with the logit-sum predictor and measures only the best ones. It needs no dedicated pair measurements, costs 13-27% of the IQP's pair stage, and on ImageNet-100 significantly outperforms the IQP in 7 of 14 settings, with no significant difference in 6 and a significant loss in 1. Further reducing the pre-fine-tuning KL, or scoring after a short fine-tune, gives no consistent gain. On full ImageNet-1k with 1000-class fine-tuning, the sharp widening between 60% and 55% (5.8-17.5 points at 55%-40%), the model-dependent decomposition and the hybrid's advantage (significantly better than the IQP in 13 of 14 settings, no the other) are reproduced.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuefeng Xu",
+    "Jun Yu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.07487",
+  "likes_count": 0,
+  "publishedAt": "2026-11-05",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Blockwise distillation methods for architecture search, such as DNA, DONNA, LANA and Puzzle, score each candidate replacement block in isolation and assemble a child network by minimizing the sum of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "When Does Blockwise Additivity Break? Diagnosing and Repairing the Additive Assumption in Distillation-Based Architecture Search",
+  "url": "https://arxiv.org/abs/2611.07487",
+  "use_case": ""
+}

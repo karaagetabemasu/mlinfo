@@ -1,0 +1,26 @@
+{
+  "abstract": "Repeated directed reachability queries arise in online path planning, task-agent allocation, and swarm control on static grid maps, where reachability is asymmetric and full transitive closure is storage-prohibitive. We introduce H-BRICK, a Hierarchical Boundary Reachability Index with Compressed Kleene closure for exact cell-to-cell queries on directed grid graphs. H-BRICK partitions the graph into tiles, computes a local Boolean Kleene closure within each tile, and projects it onto the tile's boundary ports. The resulting directed port-to-port summaries are then composed recursively across shared interfaces up to a single root covering the graph. We prove algebraically that the construction is exact: in the Boolean Kleene algebra of binary relations, every composed summary equals the boundary projection of the regional reflexive transitive closure, and every cell-to-cell query agrees with reachability in the original graph. Experiments on directed grid graphs across diverse map topologies compare H-BRICK against directed search and component-based baselines, and compare its storage requirements against full transitive closure. A batched reachability evaluation further demonstrates that sharing endpoint lifts across many-source/many-target queries amortizes hierarchical traversal and, at k=64, yields a 5.0x-22.9x throughput improvement over the scalar query loop. The results show that hierarchical boundary compression is most advantageous in query-intensive spatial graphs where online search traverses large reachable regions and the hierarchy maintains compact boundary interfaces.",
+  "abstract_ja": "",
+  "authors": [
+    "Tolga Özaslan",
+    "Elif A. Özaslan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.08119",
+  "likes_count": 0,
+  "publishedAt": "2026-11-05",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Repeated directed reachability queries arise in online path planning, task-agent allocation, and swarm control on static grid maps, where reachability is asymmetric and full transitive closure is…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "H-BRICK: Hierarchical Boundary Reachability Index with Compressed Kleene Closure for Directed Grid Graphs",
+  "url": "https://arxiv.org/abs/2611.08119",
+  "use_case": ""
+}
