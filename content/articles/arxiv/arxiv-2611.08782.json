@@ -1,0 +1,32 @@
+{
+  "abstract": "Extrapolation beyond LiDAR coverage is an important yet under-evaluated challenge of depth completion. In real camera--LiDAR systems, partial sensor overlap, occlusions, and limited field coverage often leave large image regions weakly observed or completely unobserved by LiDAR. Thus, we investigate depth completion in this beyond-coverage regime using only sparse supervision from raw single-sweep LiDAR, without dense depth labels, LiDAR accumulation, or pseudo-LiDAR generation. Our approach leverages a frozen monocular depth foundation model, lightweight per-frame alignment to sparse LiDAR geometry, and a refinement module that fuses the aligned prior with sparse LiDAR anchors to predict dense metric depth. To regularize learning under raw sparse supervision, we introduce a high-frequency normal-consistency loss defined as the image-space gradient of the per-pixel normal cosine discrepancy. This term penalizes spatial variation in scalar angular error; it does not directly match changes in neighboring normal vectors. We further introduce an evaluation protocol that explicitly separates LiDAR-supported and beyond-coverage regions, revealing extrapolative behavior that conventional depth-completion metrics can obscure. Our method achieves strong depth accuracy beyond LiDAR coverage while remaining competitive in LiDAR-covered regions, providing a practical way to deploy monocular foundation priors in multi-sensor systems.",
+  "abstract_ja": "",
+  "authors": [
+    "Maximilian Jansen",
+    "Gasser Elazab",
+    "Praveen Kulkarni"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.08782",
+  "likes_count": 0,
+  "publishedAt": "2026-11-05",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Extrapolation beyond LiDAR coverage is an important yet under-evaluated challenge of depth completion. In real camera--LiDAR systems, partial sensor overlap, occlusions, and limited field coverage…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Extrapolation Matters: Sparse-Only Depth Completion Beyond LiDAR Coverage",
+  "url": "https://arxiv.org/abs/2611.08782",
+  "use_case": ""
+}

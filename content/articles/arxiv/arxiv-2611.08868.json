@@ -1,0 +1,27 @@
+{
+  "abstract": "Lodos-v2 is a GPU-based simulation framework for massively parallel rigid-body dynamics with contact. It is specifically designed to achieve high throughput in scenes involving collisions among large numbers of detailed meshes. Its predecessor, Lodos-v1, had two main limitations. First, it solved the standard convex relaxation of cone-complementarity-based contact dynamics, thereby inheriting well-known physical artifacts, including lift-off and artificial compliance in the normal direction, as well as creep in the tangential direction. Second, its contact-group reparameterization scheme, which rescales spring-damper forces using a single factor per collision pair, could not be integrated with other constraints required by a full-fledged simulator, such as joint limits and welds. Lodos-v2 addresses both limitations through two main contributions. First, it introduces an efficient algorithm for solving the exact frictional contact problem by sequentially solving a cascade of convex relaxations in primal form within an outer proximal minimization loop. Second, it extends the contact-group reparameterization scheme of Lodos-v1 to the primal formulation of cone-complementarity-based contact dynamics, enabling its integration with the other constraints of a full-fledged simulator. Experiments demonstrate that these contributions result in throughput improvements over established rigid-body simulation frameworks. The source code is available at https://github.com/martius-lab/lodos.",
+  "abstract_ja": "",
+  "authors": [
+    "Onur Beker",
+    "Andreas René Geist",
+    "Georg Martius"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/martius-lab/lodos",
+  "hasCode": true,
+  "id": "arxiv-2611.08868",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Lodos-v2 is a GPU-based simulation framework for massively parallel rigid-body dynamics with contact. It is specifically designed to achieve high throughput in scenes involving collisions among large…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Lodos-v2: An Efficient Primal Formulation of the Exact Frictional Contact Problem",
+  "url": "https://arxiv.org/abs/2611.08868",
+  "use_case": ""
+}

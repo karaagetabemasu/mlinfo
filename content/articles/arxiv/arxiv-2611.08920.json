@@ -1,0 +1,32 @@
+{
+  "abstract": "Human videos contain abundant object-manipulation demonstrations, but they do not directly provide motion cues that a robot can follow. We present HOC2R, a Hand-Object Contact trajectory extractor for Robot motion that combines frozen DINOv3 and SAM 2.1 features with learned heads for hand-object association and contact localization. HOC2R supports two modes: count-aware automation that detects, counts, and localizes visible contacts in untrimmed videos, and fixed-two localization for two-finger grippers when contact frames are known. On a 30-task point-annotated benchmark, count-aware automation improves contact-count accuracy from 58.1% to 71.4% and reduces mean localization distance from 19.81 to 10.46 pixels relative to an adapted VRB2 baseline. On seven unseen RGB-D rollouts, a five-task fixed-two checkpoint reduces mean localization distance from 67.67 to 27.02 pixels. Across six robot evaluation sequences, the 30-task fixed-two checkpoint produces four feasible trajectories and succeeds on three tasks, compared with two feasible trajectories and one successful task for each adapted baseline. HOC2R is competitive in the evaluated single-hand scenes, robust to the hand-color shift, and strongest in the evaluated multi-hand scenes. These results support HOC2R as a practical pseudo-labeling method for extracting robot-usable contact trajectories from human demonstrations.",
+  "abstract_ja": "",
+  "authors": [
+    "Hongkun Yu",
+    "Francisco M. López",
+    "Francisco Cruz"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.08920",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Human videos contain abundant object-manipulation demonstrations, but they do not directly provide motion cues that a robot can follow. We present HOC2R, a Hand-Object Contact trajectory extractor…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "HOC2R: Hand-Object Contact Trajectories for Human-to-Robot Motion Transfer",
+  "url": "https://arxiv.org/abs/2611.08920",
+  "use_case": ""
+}
