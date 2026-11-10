@@ -1,0 +1,25 @@
+{
+  "abstract": "Tendon-driven continuum robots can reach through constrained spaces, but contact along their bodies is invisible to the sensors at their motors. We show that this is a structural limitation rather than a tuning problem: the map from contact forces to tendon measurements has a null space of dimension at least seven, so no estimator that leaves the contact support free can locate contact. When the obstacle geometry is known, however, non-penetration and complementarity make the contact force locally identifiable, and we prove that the resulting system with unknown contact inputs is locally exponentially strongly detectable. We present a constrained moving horizon estimator (MHE) that encodes these conditions and runs in real time as one quadratic program per sample, and we give a local, mode-wise robust stability result for it. In a finite- element benchmark of a two-section robot pressing and sliding on a wall, the estimator located contact to 0.9 mm and estimated contact force to 0.22 N, compared with 65 mm and 0.72 N for a tuned extended Kalman filter (EKF) with state projection. The estimator tolerated millimeter- level errors in the obstacle position and unmodeled wall friction, under which the projected EKF failed. Under randomized model mismatch over 40 trials, including unmodeled tendon friction, it remained better in force and location in every trial. Without contact, the MHE offered no advantage over the EKF, which confirms that its benefit comes from the contact constraints. This report extends a letter submitted to IEEE Control Systems Letters with complete proofs and additional experiments.",
+  "abstract_ja": "",
+  "authors": [
+    "Haitham El-Hussieny"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.09877",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Tendon-driven continuum robots can reach through constrained spaces, but contact along their bodies is invisible to the sensors at their motors. We show that this is a structural limitation rather…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Locating Contact on Tendon-Driven Continuum Robots From Tendon Measurements Alone via Constrained Moving Horizon Estimation",
+  "url": "https://arxiv.org/abs/2611.09877",
+  "use_case": ""
+}

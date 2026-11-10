@@ -1,0 +1,34 @@
+{
+  "abstract": "Visual In-Context Learning (VICL) enables promptable segmentation by conditioning RGB predictions on visual demonstrations, making it attractive for auto-labeling, but its robustness under query-only access and unknown deployment prompts remains underexplored. We study query-only, prompt-agnostic targeted attacks where the attacker observes only returned RGB outputs, without access to model internals or deployment prompts. Treating prompt-conditioned RGB rendering as a distinct attack surface, we introduce two appearance-space attacks: Color Hijack (CH) drives foreground colors toward the background to suppress visibility, while Task Hijack (TH) collapses instance-distinguishing colors toward a shared color assignment. To transfer across unseen prompts, we propose a Self-Prompt Surrogate (SPS) constructed from the clean query and its output. In a paired, matched-budget SegGPT comparison, SPS outperforms the Random-Prompt Surrogate (RPS), reducing CH instance foreground retention from 0.918 to 0.155 and TH palette-aware tolerance distance from 0.345 to 0.225. Across four VICL models on COCO and HierText, CH suppresses foregrounds across semantic-, instance-, and text-style outputs, while TH collapses instance colors under held-out deployment prompts. After palette-based decoding, TH also reduces the decoded instance count and mask retention while increasing instance merges. Finally, at 30% corruption, CH-corrupted annotations from a publicly accessible VICL-based auto-labeling pipeline reduce downstream YOLO-seg mAP50 from 0.761 to 0.281.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiao Hu",
+    "Muhammad Ibrahim",
+    "Hao Wen",
+    "Pin-Yu Chen",
+    "Jianliang Wu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11116",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Visual In-Context Learning (VICL) enables promptable segmentation by conditioning RGB predictions on visual demonstrations, making it attractive for auto-labeling, but its robustness under query-only…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "Query-Only Prompt-Agnostic Attacks on Visual In-Context Learning",
+  "url": "https://arxiv.org/abs/2611.11116",
+  "use_case": ""
+}

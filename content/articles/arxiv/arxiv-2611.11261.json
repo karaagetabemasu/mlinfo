@@ -1,0 +1,32 @@
+{
+  "abstract": "LLMs are powerful but incur substantial inference cost, which can be exploited by malicious users to induce overly long outputs, increasing latency and operational expense. Prior resource consumption attacks either coerce repetition or suppress the end-of-sequence token by lowering its logit value. However, with autoregressive, sampling-based generation, the search space grows exponentially with length and small deviations or unstable trajectories can derail optimization, limiting attack effectiveness and stability. To address this issue, we introduce Chatter Attack, a novel class of resource consumption attacks that optimize adversarial prompts to induce predefined short target phrases, thereby avoiding search-space explosion while still eliciting long responses. Specifically, Chatter Attack triggers self-doubt using short doubt-inducing phrases as the target, and sustains this state throughout generation via inference attention loss and global entropy loss. To extend to black-box settings, we further propose a novel Bayesian Prompt Optimization (BPO) method, which models the objective function globally by constructing a discrete token kernel, efficiently exploring the entire search space using prior information. Extensive experiments across multiple models and datasets show that our method outperforms baselines, with maximum response length increases to 31.5$\\times$, and revealing practical resource-depletion risks for real-world LLM inference services.",
+  "abstract_ja": "",
+  "authors": [
+    "Yibo Miao",
+    "Yichuan Cao",
+    "Xiao-Shan Gao",
+    "Yinpeng Dong"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11261",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "LLMs are powerful but incur substantial inference cost, which can be exploited by malicious users to induce overly long outputs, increasing latency and operational expense. Prior resource consumption…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Chatter Attack: Resource Consumption Attack for Large Language Models",
+  "url": "https://arxiv.org/abs/2611.11261",
+  "use_case": ""
+}

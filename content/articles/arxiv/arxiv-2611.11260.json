@@ -1,0 +1,29 @@
+{
+  "abstract": "Does reinforcement learning teach language models new capabilities, or merely amplify ones acquired during pre-training? The literature offers evidence for both: pass@$k$ studies suggest RL reweights latent behaviours while some controlled composition studies demonstrate gains beyond simple amplification. We argue that this question has no answer independent of the capability state of the base model, and propose a two-dimensional state space for post-trainability. The first axis, \\emph{effective full-solution support}, measures whether successful trajectories can be sampled under a feasible exploration budget. The second axis, \\emph{atomic primitive coverage}, measures whether the constituent skills of a solution can be executed when the burden of composition is removed. Together, these dimensions motivate three regimes -- amplification, composition-limited, and acquisition-limited -- each predicting a distinct empirical signature and calling for a distinct intervention. We propose a prospective measurement protocol and investigate the framework using synthetic composition tasks across three small language models. We find that primitive mastery alone does not guarantee that RL can learn a composition. Checkpoints that execute every primitive reliably can fail to improve when complete solutions are never sampled during training, whereas modest composition supervision that establishes nonzero support enables substantial RL gains. The framework reframes mid-training as preparation for post-training: its role is to move models into states from which RL can operate effectively.",
+  "abstract_ja": "",
+  "authors": [
+    "Anqi Qu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11260",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Does reinforcement learning teach language models new capabilities, or merely amplify ones acquired during pre-training? The literature offers evidence for both: pass@$k$ studies suggest RL reweights…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Primitives and Paths: Predicting What Post-Training Can Do from What the Base Model Already Has",
+  "url": "https://arxiv.org/abs/2611.11260",
+  "use_case": ""
+}

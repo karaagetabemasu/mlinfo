@@ -1,0 +1,31 @@
+{
+  "abstract": "Zeroth-order (ZO) optimization estimates descent directions from function values alone, which removes the activation storage required by backpropagation and makes it attractive for memory-efficient fine-tuning of large language models (LLMs). Existing low-rank ZO methods either parameterize the additive update through Euclidean factors with a non-unique representation, or restrict each finite-difference direction to be low-rank. In this work, we propose to constrain each additive update block to a fixed-rank matrix manifold while keeping the pretrained weights frozen, so the learned update remains rank-constrained throughout fine-tuning. On this geometry, we build a Riemannian ZO gradient estimator that projects a random matrix onto the tangent space, normalizes it to correct the scale mismatch induced by projection, and further propose Zeroth-order Riemannian Gradient Descent (ZO-RGD) and its smoothed variant, ZO-RGD-S. We show that the ambient finite difference matches its retracted counterpart, the normalized estimator recovers the Riemannian gradient in expectation, and ZO-RGD converges under trajectory-regularity conditions. Experiments on LLM fine-tuning tasks show that the proposed algorithms are competitive with strong forward-only baselines across model families and tasks, with gains in several settings.",
+  "abstract_ja": "",
+  "authors": [
+    "Xinjue Wang",
+    "Xiuheng Wang",
+    "Yejun Zhang",
+    "Sergiy A. Vorobyov",
+    "Esa Ollila"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10792",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Zeroth-order (ZO) optimization estimates descent directions from function values alone, which removes the activation storage required by backpropagation and makes it attractive for memory-efficient…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Zeroth-Order Riemannian Optimization on Fixed-Rank Manifolds for LLM Fine-Tuning",
+  "url": "https://arxiv.org/abs/2611.10792",
+  "use_case": ""
+}

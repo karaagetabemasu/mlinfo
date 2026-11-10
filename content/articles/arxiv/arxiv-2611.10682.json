@@ -1,0 +1,28 @@
+{
+  "abstract": "Learning whole-body musculoskeletal control from human motion is important for developing human-like robots, assistive devices, and rehabilitation systems. This task presents two main challenges, namely reference trajectories that are kinematically plausible but difficult to reproduce through muscle-driven dynamics, and a highly redundant 700-dimensional action space in which unstructured exploration can easily disrupt the target motion. In this paper, we propose a motion-to-policy pipeline that exploits muscle redundancy in two complementary stages. First, muscle-aware retargeting (MAR) performs bounded adaptation of kinematic trajectories subject to hard semantic, anatomical, and contact constraints. We motivate the constraint bounds by analyzing how reference-trajectory artifacts affect muscle-driven tracking. Second, null-space exploration (NSE) estimates a one-control-frame mapping from muscle excitations to generalized forces and injects bounded, anatomically structured perturbations along its null space into the actions of a value-guided flow policy. On a 24-clip motion-capture benchmark, MAR and NSE together solve every reference, reach the full horizon with half the samples of the baseline pipeline, and lower joint-center error by 44% without late collapse. To the best of our knowledge, this is the first end-to-end pipeline that transforms monocular video into a trained whole-body imitation policy controlling 700 muscles.",
+  "abstract_ja": "",
+  "authors": [
+    "Ruiyang Kong",
+    "Takeshi Oishi"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10682",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Learning whole-body musculoskeletal control from human motion is important for developing human-like robots, assistive devices, and rehabilitation systems. This task presents two main challenges,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": []
+  },
+  "title": "Burden, Bounty, or Bliss? Muscle-Aware Retargeting and Null-Space Exploration for Whole-Body Musculoskeletal Control",
+  "url": "https://arxiv.org/abs/2611.10682",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Video understanding evaluations are intended to measure a model's proficiency in video perception and task solving. However, current VideoQA benchmarks struggle to isolate these capabilities due to their reliance on multiple-choice (MC) answer guidance, language priors, and fragile scoring pipelines. Disentangling these confounding factors reveals how much of a model's score is supplied by the evaluation context rather than earned through faithful perception. Across six VideoQA benchmarks of varying length, we find that accuracy is significantly above chance without any visual input. This is caused by shortcutting and option-prior reliance. We express these effects in the language of faithfulness: option-exploitation and answer-conditioned reasoning traces are unfaithful even when they are correct. Together, our results show that a VideoQA score is jointly determined by language priors, option timing, and how outputs and labels are converted into correctness. We produce a novel Option-Delayed Replay (ODR) mechanism that discloses options at controlled stages of an open-ended (OE) trajectory, to obtain objective MC scores from faithful option-free inference. Our work demonstrates that agentic methods with ODR and faithful inference can match option-exploiting performance. Finally, we formalize our diagnostic collection and ODR as a reproducible evaluation protocol, and we release a human-relabelled edition of LVBench (correcting $20.5\\%$ of keys) to remove annotation noise as a confounding variable.",
+  "abstract_ja": "",
+  "authors": [
+    "Elliott Piercy",
+    "Justin Chan",
+    "Sepand Dyanatkar"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11062",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Video understanding evaluations are intended to measure a model's proficiency in video perception and task solving. However, current VideoQA benchmarks struggle to isolate these capabilities due to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video"
+    ],
+    "task": []
+  },
+  "title": "What Does Multiple Choice Actually Measure? Disentangling Video Understanding from Option Exploitation",
+  "url": "https://arxiv.org/abs/2611.11062",
+  "use_case": ""
+}

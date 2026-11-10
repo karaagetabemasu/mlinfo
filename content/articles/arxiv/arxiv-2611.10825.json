@@ -1,0 +1,29 @@
+{
+  "abstract": "Selective data acquisition in Dataset Aggregation (DAgger) on robots requires deciding which learner rollouts to correct and when to intervene. In manipulation with ordered phases, router entropy from a phase-supervised soft mixture-of-experts (MoE) is insufficient: the same value can reflect either a normal adjacent-phase handoff or support for nonadjacent or earlier phases. We propose MoE-DAgger, which uses causal router history to distinguish these cases without providing the policy with a phase label, progress variable, or hard phase command during execution. The acquisition rule allows an adjacent transition to settle, but requests correction when high entropy persists outside such a transition, the transition times out, or routing persistently favors an earlier phase. Under matched active human-control budgets, MoE-DAgger achieves 84.0% task success on Green and 78.0% on Red, exceeding phase-unaware filtered entropy by 22 percentage points on Green and 26 points on Red, with no observed collisions in 50 rollouts per task. On 50 shared intervention-free traces per task, 83.3% and 80.0% of its first proposals fall on failed rollouts within predefined failure windows when 15 and 25 traces are selected, compared with 70.0% and 72.0% for temporal action-chunk disagreement and 63.3% and 60.0% for ensemble disagreement. Shadow replay and an active no-veto ablation indicate that suppressing queries at normal adjacent handoffs is a key contributor to the improved allocation.",
+  "abstract_ja": "",
+  "authors": [
+    "Sungjun Heo",
+    "Sungjun Yang",
+    "Heedon Jeong",
+    "Junhyoung Ha",
+    "Jeong hwan Jeon"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10825",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Selective data acquisition in Dataset Aggregation (DAgger) on robots requires deciding which learner rollouts to correct and when to intervene. In manipulation with ordered phases, router entropy…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "MoE-DAgger: Transition-Aware Router-Entropy Gating for Selective Human Correction in Phase-Structured Manipulation",
+  "url": "https://arxiv.org/abs/2611.10825",
+  "use_case": ""
+}

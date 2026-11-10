@@ -1,0 +1,32 @@
+{
+  "abstract": "Pre-training large parametric \"Vision-Language-Action\" (VLA) models on large demonstration datasets has recently yielded promising results for general-purpose manipulation. However, these models still struggle under even small domain shifts relative to the training data, such as changes in camera viewpoint, background, object identity, or robot morphology. Motivated by the success of Retrieval-Augmented Generation (RAG) in language models, we pursue retrieval to boost VLA performance. Specifically, we seek to leverage retrieval from domain-mismatched, \"in-the-wild\" demonstration datasets like DROID to guide a VLA's behavior in a new target domain. To achieve this, we introduce RAGu, which overcomes robotics-specific challenges for RAG: (1) It incorporates simple geometric calibration to transform source demonstrations into the target setup and reduce cross-domain differences. (2) It uses a coarse-to-fine retrieval strategy that selects, from a large pool of pre-warped candidates, the trajectory most compatible with the base VLA. (3) It guides the VLA's flow-matching inference procedure rather than seeking to retrain the base model or expand its limited context window. We evaluate RAGu across real-world, simulation, sim-to-real transfer, and cross-embodiment humanoid manipulation. We find it improves real-world VLA success rates from 20% to 80% and outperforms the closest-related baselines in sim. Project website: raguvla.github.io",
+  "abstract_ja": "",
+  "authors": [
+    "Subin Kim",
+    "Anh-Quan Pham",
+    "Dinesh Jayaraman"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10894",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Pre-training large parametric \"Vision-Language-Action\" (VLA) models on large demonstration datasets has recently yielded promising results for general-purpose manipulation. However, these models…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Zero-Shot VLA Adaptation with Retrieved Guidance",
+  "url": "https://arxiv.org/abs/2611.10894",
+  "use_case": ""
+}

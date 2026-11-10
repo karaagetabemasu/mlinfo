@@ -1,0 +1,33 @@
+{
+  "abstract": "Accurate indoor localization on resource-constrained edge devices remains challenging due to the tension between modeling fidelity and computational efficiency. Wi-Fi Channel State Information (CSI) enables low-cost deployment using existing Wi-Fi infrastructure but is heavily distorted by multipath propagation. Transformer-based solutions mitigate these effects but their quadratic complexity limits real-time edge deployment. Ultra-Wideband (UWB) provides geometrically precise ranging yet requires dedicated infrastructure. We present MambaLoc, a cross-modal distillation framework that improves the accuracy-efficiency balance in CSI-based localization. MambaLoc uses a linear-time Selective State Space Model (Mamba) as a lightweight CSI student, guided during training by a UWB-Transformer teacher. A Feature Alignment Module bridges the representational gap between heterogeneous RF modalities, allowing the CSI model to inherit UWB-derived geometric structure without UWB hardware at inference. A probabilistic Gaussian Mixture regression head models multi-modal spatial ambiguity from multipath effects, avoiding the physically implausible averaging of deterministic regression. Evaluations on a real-world dataset show MambaLoc achieves a median localization error of 0.230 m, reducing error by 22.2% over a standalone Mamba baseline, while requiring 65.1% fewer FLOPs and 58% lower inference latency than Transformer-based approaches.",
+  "abstract_ja": "",
+  "authors": [
+    "Mohab Bahnassy",
+    "Omar Saqr",
+    "Hamada Rizk",
+    "Moustafa Youssef"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10360",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Accurate indoor localization on resource-constrained edge devices remains challenging due to the tension between modeling fidelity and computational efficiency. Wi-Fi Channel State Information (CSI)…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": [
+      "detection",
+      "regression"
+    ]
+  },
+  "title": "MambaLoc: Lightweight Indoor Localization Using Cross-Modal Knowledge Distillation",
+  "url": "https://arxiv.org/abs/2611.10360",
+  "use_case": ""
+}

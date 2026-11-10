@@ -1,0 +1,26 @@
+{
+  "abstract": "Asynchronous pipeline parallelism can accelerate distributed model training, but suffers from instability caused by inconsistent gradient computations. We identify a fundamental source of this inconsistency: error signals are coupled to forward-time features, not just parameter states. This means that parameters may evolve as long as they preserve forward-equivalence. Leveraging this insight, we introduce FRESCO, which frames asynchronous updates as a constrained optimization problem: it finds the minimal update modification that acts trivially on the activation subspace. We demonstrate that FRESCO consistently outperforms representative asynchronous baselines in LLM pre-training, with the gains most pronounced under deep pipelines and high inconsistency levels: at pipeline depth 32, it reaches the same loss as the strongest baseline with 43% fewer iterations and 30% less wall-clock time, while requiring 8~921$\\times$ less memory overhead. Moving beyond the current limitations, FRESCO establishes a new foundation for high-utilization pipeline parallel training, providing a scalable path for large-model development on diverse, resource-constrained systems.",
+  "abstract_ja": "",
+  "authors": [
+    "Dongyeop Lee",
+    "Namhoon Lee"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11238",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Asynchronous pipeline parallelism can accelerate distributed model training, but suffers from instability caused by inconsistent gradient computations. We identify a fundamental source of this…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "FRESCO: A Novel Consistency Control for Asynchronous Pipeline Parallel Training",
+  "url": "https://arxiv.org/abs/2611.11238",
+  "use_case": ""
+}

@@ -1,0 +1,32 @@
+{
+  "abstract": "Recent large human reconstruction models create remarkable animatable 3D avatars from a single image, but their appearance remains entangled with the illumination and cannot be relighted. In contrast, existing 3D relightable-avatar reconstruction methods typically require person-specific optimization. We present ZARA, a zero-shot feed-forward framework that reconstructs an animatable 3D Gaussian avatar together with its intrinsic attributes from a single image. ZARA couples a pretrained large-scale human reconstruction model with a Material Transformer to inherit geometry priors while learning material-aware Gaussian representations. To preserve localized details, we introduce Gaussian-aligned material feature fusion strategy, which injects multi-scale material features onto individual Gaussians and combines them with geometry tokens. As most human-avatar datasets lack ground-truth material maps, we use pseudo-material labels as conditioning inputs and supervision targets during training. We further introduce MatFace regularization to preserve facial structure and color in albedo prediction under unreliable facial pseudo-material supervision. Extensive experiments demonstrate that ZARA reconstructs animatable and relightable humans within tens of seconds without person-specific optimization or post-processing, outperforming existing baselines in both relighting quality and materials generalization ability. As the ability of recovering the physically-based-rendering attributes of the human, ZARA also enables direct material editing of the avatar's appearance.",
+  "abstract_ja": "",
+  "authors": [
+    "Yixiao Chen",
+    "Dongdong Weng",
+    "Chengfeng Zhao",
+    "Tao Gong",
+    "Zhihe Zhao"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10562",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Recent large human reconstruction models create remarkable animatable 3D avatars from a single image, but their appearance remains entangled with the illumination and cannot be relighted. In…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "ZARA: Zero-shot Animatable and Relightable 3D Avatar reconstruction from a single image",
+  "url": "https://arxiv.org/abs/2611.10562",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Hierarchical Joint-Embedding Predictive Architectures (H-JEPA) enable long-horizon visual control but rely on costly test-time gradient descent for planning. Our analysis reveals that iterative optimization consumes up to 97.7% of episode runtime and that low predicted rollout costs do not necessarily translate into successful control. We further identify a planning-horizon asymmetry between long-horizon top-level composition and short two-step subordinate planning. To address these challenges, we propose WARP-JEPA, a hierarchical amortized planning framework that replaces online gradient optimization with learned multi-candidate trajectory proposers while keeping the world models frozen. WARP-JEPA combines a lightweight world-model-in-the-loop causal Transformer at the top level with parallel residual MLPs at subordinate levels. The proposers are trained using model-based rollout costs and best-of-K behavior cloning, enabling efficient candidate selection without test-time gradient optimization. Across 30 frozen H-JEPA models on four benchmarks, WARP-JEPA achieves 9.6-18.8x faster episode inference on long-horizon tasks (2.9-3.0x on Cube) and improves task success by up to 33.3 percentage points. These results demonstrate that amortized planning can substantially improve both inference efficiency and control performance without retraining the world models. Code is available at https://github.com/hideinsewer/WARP-JEPA.",
+  "abstract_ja": "",
+  "authors": [
+    "Junjie Li",
+    "Zhaojiacheng Zhou",
+    "Kaixiang Wang",
+    "Zihan Wang",
+    "QingSong Zhao"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/hideinsewer/WARP-JEPA",
+  "hasCode": true,
+  "id": "arxiv-2611.10806",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Hierarchical Joint-Embedding Predictive Architectures (H-JEPA) enable long-horizon visual control but rely on costly test-time gradient descent for planning. Our analysis reveals that iterative…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "WARP-JEPA: World-Model-in-the-Loop Amortized Rollout Planning for Frozen Hierarchical Joint-Embedding Predictive Architectures",
+  "url": "https://arxiv.org/abs/2611.10806",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Low-Rank Adaptation (LoRA) is a popular parameter-efficient fine-tuning (PEFT) method for fine-tuning of large language models (LLMs), especially in federated learning, due to its strong performance and communication efficiency. In practice, LoRA is applied to the query and value projections of transformer layers without considering the distinct roles of these components. In this work, we analyze the impact of these projections in federated fine-tuning of LLMs using LoRA and observe that the value projection converges significantly faster than the query projection. Motivated by this finding, we propose FedLoVA, a federated fine-tuning framework that trains LoRA adapters on both query and value projections locally while sharing only the value projection with the server. This approach reduces communication overhead while improving convergence efficiency. Experiments on natural language understanding, multilingual sentiment analysis, and generation tasks show that FedLoVA reduces the communication cost by up to $7.8\\times$ compared to existing federated LLM fine-tuning baselines while achieving comparable or better performance. The code is available at: https://github.com/EnsiehKhazaei/FedLoVA.",
+  "abstract_ja": "",
+  "authors": [
+    "Ensieh Khazaei",
+    "Baturalp Buyukates",
+    "Dimitrios Hatzinakos"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/EnsiehKhazaei/FedLoVA",
+  "hasCode": true,
+  "id": "arxiv-2611.10248",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Low-Rank Adaptation (LoRA) is a popular parameter-efficient fine-tuning (PEFT) method for fine-tuning of large language models (LLMs), especially in federated learning, due to its strong performance…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "FedLoVA: Value-Only Aggregation for Federated LoRA Fine-Tuning of Large Language Models",
+  "url": "https://arxiv.org/abs/2611.10248",
+  "use_case": ""
+}

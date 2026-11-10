@@ -1,0 +1,35 @@
+{
+  "abstract": "Recent progress in vision foundation models (VFMs) has made automated open-vocabulary 3D bounding box annotation increasingly feasible by jointly leveraging LiDAR point clouds and images. However, partial observations remain a major challenge in sparse driving scenes, where visible LiDAR points often cover only a small fraction of the object's surface and provide insufficient cues for estimating its full spatial extent. As a result, existing methods often produce mislocalized boxes or leave objects unlabeled. To address this limitation, we propose \\textbf{\\Ours{}}, an automated annotation framework that leverages image-generated 3D assets as amodal geometric priors for partially observed objects. By establishing correspondences between input images and rendered views of 3D assets, \\Ours{} robustly aligns canonical amodal geometry with partially observed world-space LiDAR point clouds. To improve temporal consistency and reduce computational cost, \\Ours{} generates a single asset per instance, estimates its metric scale once at a single frame and propagates it across frames for dynamic instances, and aggregates multi-frame observations for static instances. 3D object detectors trained on annotations from \\Ours{} improve performance over strong baselines by 14.1 mAP on the nuScenes dataset and by 12.45 AP at IoU 0.5 for the vehicle class on the Waymo Open Dataset (WOD). Our project page is available at: \\href{https://oliver0922.github.io/AmodalBox/}{https://oliver0922.github.io/AmodalBox/}",
+  "abstract_ja": "",
+  "authors": [
+    "In-Jae Lee",
+    "Namtae Kim",
+    "Robert Exley",
+    "Kwonyoung Ryu",
+    "Jaesik Park"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10821",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Recent progress in vision foundation models (VFMs) has made automated open-vocabulary 3D bounding box annotation increasingly feasible by jointly leveraging LiDAR point clouds and images. However,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "AmodalBox: Automated 3D Bounding Box Annotation under Partial Visibility",
+  "url": "https://arxiv.org/abs/2611.10821",
+  "use_case": ""
+}

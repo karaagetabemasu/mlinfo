@@ -1,0 +1,31 @@
+{
+  "abstract": "Reusable key-value (KV) memory avoids repeatedly prefilling retrieved text, but stored and injected memories do not necessarily become usable evidence. We present EASE-KV, a controlled framework for understanding this gap under fixed candidates and a frozen language model. EASE-KV separates three interfaces: whether required relations are preserved during encoding, whether preserved memories receive appropriate influence during allocation, and whether outcome supervision can identify useful allocations. Matched experiments show that causal encoding improves compositional accuracy by 25.0 percentage points over block-diagonal encoding, while the tested inference-time bridging methods fail to recover the lost contextual information. With unchanged stored states, diagnostic evidence-guided allocation improves LongMemEval accuracy from 31.2% to 38.4%, demonstrating that memory influence can be controlled without re-encoding. However, controllability does not guarantee learnability: binary correctness provides informative reward contrast for 53.0% of sampled query groups, compared with 73.6% under the evaluated shaped-reward setting. These findings show that effective KV memory requires more than retrieval and injection: the required relations must be encoded, preserved memories must receive appropriate influence, and supervision must distinguish better allocations from worse ones.",
+  "abstract_ja": "",
+  "authors": [
+    "Di Lu",
+    "Zechen Li",
+    "Xuanyu Yue",
+    "Jiabo Fan",
+    "Hao Xue"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11299",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Reusable key-value (KV) memory avoids repeatedly prefilling retrieved text, but stored and injected memories do not necessarily become usable evidence. We present EASE-KV, a controlled framework for…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "EASE-KV: Diagnosing the Gap Between Memory Availability and Effective Use",
+  "url": "https://arxiv.org/abs/2611.11299",
+  "use_case": ""
+}

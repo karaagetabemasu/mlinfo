@@ -1,0 +1,28 @@
+{
+  "abstract": "Few-shot depth completion aims to recover dense metric depth from sparse measurements using only a small number of target-domain annotations, offering a favorable balance between annotation cost and model adaptation. We propose LIFT, a framework that harnesses both depth and feature priors from a frozen pretrained monocular depth estimation (MDE) foundation model for few-shot depth completion. Specifically, LIFT first estimates local scale and shift parameters on a coarse grid and interpolates them into smooth, dense parameter fields, providing a spatially adaptive metric depth initialization. It then progressively refines this initialization through multi-scale depth propagation guided by foundation features. Finally, a lightweight residual decoder combines multi-level foundation features with propagation correction to refine the metric depth. Extensive experiments on NYUv2 and KITTI-DC demonstrate that our proposed method achieves state-of-the-art few-shot performance. The source code will soon be released.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiang Li",
+    "Xiaojin Gong"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10729",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Few-shot depth completion aims to recover dense metric depth from sparse measurements using only a small number of target-domain annotations, offering a favorable balance between annotation cost and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "LIFT: Local Metric Alignment and Foundation-guided Propagation for Few-shot Depth Completion",
+  "url": "https://arxiv.org/abs/2611.10729",
+  "use_case": ""
+}

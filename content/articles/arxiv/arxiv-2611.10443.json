@@ -1,0 +1,33 @@
+{
+  "abstract": "Understanding three-dimensional physical structure has become essential for vision-language-action models (VLAs). However, existing approaches either rely on explicit geometric inputs at inference time or adopt a single visual pathway, potentially compromising the visual-semantic knowledge inherited from pre-trained models. We present SPARK-VLA, Spatial Representation distillation and Knowledge routing for VLAs, a preserve-specialize-route framework for spatially adapting VLAs without requiring external 3D inputs or experts at inference. SPARK-VLA consists of two key components: (1) spatial representation distillation, which transfers 3D understanding from a frozen 3D expert to a LoRA-adapted visual branch by aligning attention responses while preserving the original visual pathway, and (2) a lightweight knowledge router, which selectively forwards action-relevant visual tokens to the language model using routing supervision derived from action-loss gradients. Across LIBERO, LIBERO-Plus, CALVIN, and real-world manipulation, SPARK-VLA achieves strong performance with only a 0.5B language backbone and approximately 53M trainable parameters, providing an effective and parameter-efficient approach to 3D-aware VLA learning. Code is available at https://github.com/park-jungin/spark-vla.",
+  "abstract_ja": "",
+  "authors": [
+    "Jungin Park",
+    "Chaoran Zhu",
+    "Changjae Oh",
+    "Kwanghoon Sohn"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/park-jungin/spark-vla",
+  "hasCode": true,
+  "id": "arxiv-2611.10443",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Understanding three-dimensional physical structure has become essential for vision-language-action models (VLAs). However, existing approaches either rely on explicit geometric inputs at inference…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Spatial Representation Distillation and Knowledge Routing for Vision-Language-Action Models",
+  "url": "https://arxiv.org/abs/2611.10443",
+  "use_case": ""
+}

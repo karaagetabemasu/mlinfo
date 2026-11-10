@@ -1,0 +1,31 @@
+{
+  "abstract": "Long-term conversational question answering can require several separated dialogue turns that support an answer only together. We introduce EviCover, a retrieval approach designed to retain this complementary evidence. It converts questions into observable evidence requirements, checks requirement coverage using retrieved source identifiers, and selects turns jointly. We track annotated support sets - the benchmark-labeled dialogue turns associated with each question - through retrieval, reranking, and final answer-generation context. We evaluate the baseline memory pipeline on generated, human-verified LoCoMo conversations and human-written REALTALK conversations, and examine EviCover on REALTALK's 108 multi-hop questions. Compared with the hybrid lexical/dense baseline, support-turn recall among 60 candidate turns rises from 0.526 to 0.575, and recall in the final ten-turn context rises from 0.349 to 0.379. The evidence funnel identifies separate discovery and selection failures, while paired answer evaluation shows that greater evidence recall does not yet establish a correctness gain. This analysis locates where complementary evidence is lost and distinguishes evidence retrieval from its use in answer generation.",
+  "abstract_ja": "",
+  "authors": [
+    "Bogdan Roshchupkin",
+    "Maria Khodorchenko"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10170",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Long-term conversational question answering can require several separated dialogue turns that support an answer only together. We introduce EviCover, a retrieval approach designed to retain this…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation",
+      "qa"
+    ]
+  },
+  "title": "Where Did the Evidence Go? Diagnosing Proof-Set Loss in Long-Term Conversational Memory",
+  "url": "https://arxiv.org/abs/2611.10170",
+  "use_case": ""
+}

@@ -1,0 +1,35 @@
+{
+  "abstract": "We present SoftPAT3D, a physics-augmented framework for text-to-3D scene generation in which deformable objects, such as cloth, stuffed toys and ropes, are generated as physically valid, simulation-ready bodies and placed in intersection-free contact with the furniture that supports them, with one another and with themselves. Existing physics-augmented pipelines simulate rigid bodies only and cannot accommodate a generated deformable object, which text-to-3D generation returns as a geometrically invalid mesh, sometimes self-intersecting, that has no rest shape, no material model and no admissible initial state. These are the inputs a deformable simulation requires, and we construct each from information already in the pipeline. The rest shape comes from how the object is manufactured rather than from the generated physically inconsistent deformed configuration, and a material library assigns each deformable object its initial elastic parameters, which can then be optimized. The occluded support is regenerated and converted into a watertight collision mesh, each object is released from an optimizable placement above the supporting part that the prompt specifies, and the complete scene is driven to static equilibrium under one unified contact model, with completion verified by geometric checks and a vision-language model. When a scene fails the prompt, a grid search over placements corrects it, and the adjoint of a differentiable simulation of the same contact energy reaches the targets the grid does not, places several bodies jointly and recovers and optimizes material parameters. Multi-body scenes equilibrate in a single simulation, and the pipeline also runs from the text prompt alone. On all sixty-five prompts, SoftPAT3D produces no undesired interpenetration of any kind, whereas every other system does, and its scenes directly support scene editing and robotic manipulation.",
+  "abstract_ja": "",
+  "authors": [
+    "Lei Shu",
+    "Alberta Longhini",
+    "Leonidas Guibas",
+    "Gordon Wetzstein",
+    "Jeannette Bohg"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11087",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "We present SoftPAT3D, a physics-augmented framework for text-to-3D scene generation in which deformable objects, such as cloth, stuffed toys and ropes, are generated as physically valid,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "3d",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "SoftPAT3D: Physics-Augmented Text-to-3D Scene Generation with Deformables",
+  "url": "https://arxiv.org/abs/2611.11087",
+  "use_case": ""
+}

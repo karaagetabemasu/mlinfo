@@ -1,0 +1,31 @@
+{
+  "abstract": "Grasp-feasibility predictors report near-perfect accuracy on Task and Motion Planning benchmarks, but high accuracy on these benchmarks does not verify that a predictor uses the collision geometry that the motion planner checks. We propose a planner-verified counterfactual (CF) test: holding the grasp pose fixed, we insert a solid obstacle into the approach corridor, add its points to the model input, and let a planner re-derive the label, which flips from feasible to infeasible. Across eight predictors spanning point clouds, voxels, depth, and object tokens, CF-pair AUROC falls from high natural AUROC (0.920-0.996) to chance (0.470-0.504), and the flip holds across four planners, two arms, and a real-object obstacle. Predictors fail at different resolutions, from a bounding box to a 12.5 cm voxel. In the point-cloud models we dissect, the obstacle either moves the representation in a direction unrelated to whether it blocks the grasp or is not registered at all. A clearance-aware read of the corridor points, trained on the unmodified benchmark with no counterfactual scenes, reaches 0.983 CF-pair AUROC, but it remains bound to its trained obstacle placements; a placement-invariant clearance representation is still open. We release the counterfactual labels, metrics, datasheet, and relabeling pipeline at https://github.com/codewithsajid/graspfc-cf.",
+  "abstract_ja": "",
+  "authors": [
+    "Sajid Ansari",
+    "Antony Thomas",
+    "Girish Varma"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/codewithsajid/graspfc-cf",
+  "hasCode": true,
+  "id": "arxiv-2611.09130",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "detection",
+  "summary": "Grasp-feasibility predictors report near-perfect accuracy on Task and Motion Planning benchmarks, but high accuracy on these benchmarks does not verify that a predictor uses the collision geometry…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Auditing Grasp Feasibility Predictors with Planner-Verified Counterfactuals",
+  "url": "https://arxiv.org/abs/2611.09130",
+  "use_case": ""
+}

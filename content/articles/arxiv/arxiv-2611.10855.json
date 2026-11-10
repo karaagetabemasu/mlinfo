@@ -1,0 +1,28 @@
+{
+  "abstract": "We propose a new mathematical formalism in which all kinds of tensors and of operations on those tensors are represented as simple function compositions. Tensors are functions from indices to values. An element-wise operation (e.g. an activation function) is a composition with a function applied to values; re-indexing (e.g. reshape, transposition) is a composition with a function applied to indices; and a reduction is a composition with both an index function, mapping each index to several indices, and a reduction operation (e.g. product, sum, max). Combined with tensor stacking, these compositions can represent most interesting kinds of tensors (e.g. dense, jagged, all kinds of sparsity patterns, matrix factorizations), as well as lazy versions of almost every operation available in modern tensor computation frameworks, including einsums between tensors of any kind. Identities between compositions can then be used to rewrite such expressions into equivalent ones, without evaluating them. For instance, the product of two sparse matrices can be rewritten so that only products between non-zero values are computed, turning a sparse problem into a dense one. Using this algebra as the intermediate representation of a tensor computation engine would shift the focus from defining operations on tensors (e.g. einsum between sparse tensors) to defining an algebra on index functions. This should reduce the codebase complexity from $\\mathcal{O}(mn^2)$, with $m$ the number of binary operations between tensors and $n$ the number of tensor types, to $\\mathcal{O}(m + k^2)$, with $k$ the number of types of index functions. A draft implementation of a tensor computation framework based on this algebra is publicly available.",
+  "abstract_ja": "",
+  "authors": [
+    "Valérian Rey",
+    "Praneth Paruchuri"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10855",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "We propose a new mathematical formalism in which all kinds of tensors and of operations on those tensors are represented as simple function compositions. Tensors are functions from indices to values.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "tabular"
+    ],
+    "task": []
+  },
+  "title": "Representing Tensors as Compositions for Efficient Computation on Sparse and Structured Data",
+  "url": "https://arxiv.org/abs/2611.10855",
+  "use_case": ""
+}

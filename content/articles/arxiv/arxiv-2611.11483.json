@@ -1,0 +1,26 @@
+{
+  "abstract": "Unmeasured confounders are a key obstacle to accurately estimating treatment effects in observational studies, and in multilevel data, they often arise at the cluster level. Flexible machine learning methods cannot directly resolve such unmeasured confounding. To address this, we propose the variational autoencoder-augmented R-learner (VAE-R), which leverages variational autoencoders (VAEs) to infer unmeasured cluster-level covariates from the within-cluster dependence of outcome and treatment residuals, and uses the resulting adjustments to estimate the conditional average treatment effect (CATE) and the average treatment effect (ATE). The VAE decoder is specified through an offset likelihood so that the latent variables capture only the cluster-level variation left unexplained by measured covariates. VAE-R accommodates unmeasured cluster-level confounders in observational studies and unmeasured cluster-level predictors of the outcome in multisite randomized trials. We also provide data-driven strategies for selecting the two hyperparameters of the VAE, the latent dimension size and the Kullback-Leibler weight. Our simulation study shows that VAE-R nearly eliminates the bias of the ordinary R-learner's CATE and ATE estimates in multilevel observational data and improves their precision in multisite randomized trials. Finally, we illustrate VAE-R with two datasets, one from a multilevel observational study and the other from a multisite randomized trial.",
+  "abstract_ja": "",
+  "authors": [
+    "Youmi Suk",
+    "Yuxuan Li"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11483",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Unmeasured confounders are a key obstacle to accurately estimating treatment effects in observational studies, and in multilevel data, they often arise at the cluster level. Flexible machine learning…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Causal Machine Learning for Multilevel Studies with Unmeasured Cluster-Level Covariates via Variational Autoencoders",
+  "url": "https://arxiv.org/abs/2611.11483",
+  "use_case": ""
+}

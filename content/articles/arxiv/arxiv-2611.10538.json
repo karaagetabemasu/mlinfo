@@ -1,0 +1,27 @@
+{
+  "abstract": "Pairwise probabilities arise in rank aggregation, recommendation, and human or LLM evaluation, yet converting them into a maximum-likelihood list is a weighted Kemeny problem and is NP-hard in general. Known exact algorithms for rank-two tournaments use only comparison signs and do not optimize this likelihood. We show that the weighted problem is exactly solvable when the skew-symmetric log-odds matrix $W_{ij}=\\log(p_{ij}/p_{ji})$ has rank two, including when the induced preferences contain cycles. Writing $W_{ij}=\\det(h_i,h_j)$ and adding the closing vector $h_0=-\\sum_i h_i$ turns the objective into twice the signed area of a closed polygon. This geometry yields CloseSort, which polar-sorts the $n+1$ edge vectors, cuts after $h_0$, and returns a global maximum-likelihood order in $O(n\\log n)$ time from the factors. The same geometry identifies the runner-up and gives a stability certificate beyond exact rank two. When the smallest determinant $δ$ of two consecutive edges in the closed angular cycle is positive, it is exactly the best-to-runner-up log-likelihood gap. For $W=W_0+E$, the CloseSort order of $W_0$ has regret at most $\\sum_{i<j}|E_{ij}|$ on $W$ and remains optimal whenever this sum is below $δ$, a worst-case tight threshold. In 5,120 determinant-logit simulations, increasing the observations per pair from 4 to 64 raises the fraction on which rank-two projection outperforms the empirical plug-in optimum from 68.6% to 85.7%. On 3,600 Arena-Hard LLM-judge profiles drawn from 63 systems and ten judges, the leading rank-two component captures 89.2% of the log-odds energy. On profiles containing a directed majority triangle, CloseSort reduces normalized regret by 44% relative to Borda and improves the mean normalized objective over each of eight baselines. With factors supplied, it is 8,407 times faster than exact dynamic programming on 18-item rankings.",
+  "abstract_ja": "",
+  "authors": [
+    "Kehan Liu",
+    "Zhaoyun Chen",
+    "Xianquan Yan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10538",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Pairwise probabilities arise in rank aggregation, recommendation, and human or LLM evaluation, yet converting them into a maximum-likelihood list is a weighted Kemeny problem and is NP-hard in…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Close and Sort: Exact Maximum-Likelihood Aggregation of Cyclic Rank-Two Preferences",
+  "url": "https://arxiv.org/abs/2611.10538",
+  "use_case": ""
+}

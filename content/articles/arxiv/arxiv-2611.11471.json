@@ -1,0 +1,31 @@
+{
+  "abstract": "The small open embedder EmbeddingGemma-300M, used as released, finds the right passage first for only 51.7% to 60.8% of Belebele questions in Tajik, Kazakh, Uzbek and Kyrgyz. We present Saidzoda-CA-EmbeddingGemma-300M, one model for all four languages. It is our Tajik fine-tune of EmbeddingGemma-300M, trained for one more epoch on 279,904 pairs: questions in Kazakh, Uzbek and Kyrgyz that our own language model wrote about source passages, a Tajik refresher, and English and Russian replay. On Belebele, recall@1 rises by 14.4 to 26.0 points in each language, to between 75.2% and 77.7%. Against single-language models trained with the same settings, the one model stays within 2.8 points at recall@1 in Kazakh, Uzbek and Tajik, with overlapping recall@10 intervals, though it also had more training. It keeps the Tajik law recall@10 of its starting point (92.2 against 92.4) but loses 4.4 points of law recall@1. A model trained on one of these languages also improves the others on Belebele, but less than training on them. The model still trails the 560M XLM-RoBERTa embedders on Kazakh, Uzbek and Kyrgyz Belebele: the better of multilingual-e5-large-instruct and BGE-M3, used as released, is 9.4 to 10.2 points ahead at recall@1. Our scores of those released models agree with the published MTEB results within 2.4 points. Russian and English recall@1 fall by 3.0 and 4.2 points.",
+  "abstract_ja": "",
+  "authors": [
+    "Tohir Saidzoda",
+    "Nekruz Maxudov",
+    "Bedil Karimov",
+    "Abubakr Abdullozoda",
+    "Amin Jalilov"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11471",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "The small open embedder EmbeddingGemma-300M, used as released, finds the right passage first for only 51.7% to 60.8% of Belebele questions in Tajik, Kazakh, Uzbek and Kyrgyz. We present…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Saidzoda-CA-EmbeddingGemma-300M: One Small Embedder for Tajik, Kazakh, Uzbek and Kyrgyz",
+  "url": "https://arxiv.org/abs/2611.11471",
+  "use_case": ""
+}

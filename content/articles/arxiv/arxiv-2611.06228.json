@@ -1,5 +1,5 @@
 {
-  "abstract": "Can independent components be recovered when all of them are Gaussian? Yes, if their variances change across environments; but how many environments, and how many samples as the number of components $d$ grows? We answer both for the joint diagonalization of $K$ covariances. Each component has a signature, its variances across the environments. Separating component $j$ costs the Riesz 2-energy $E_j$ of this signature, a sum, over the other components, of inverse pairwise Fisher informations. For Gaussian sources no estimator in $O(d)$ beats $cE_j/(n+E_j)$ at any $n$ and $d$, and above an explicit sample size a spectral estimator attains $E_j/n$ up to a constant, for every mixing and without the signatures (given a lower bound on the pairwise information). Since signatures live in $K-1$ dimensions, the rate obeys a dimension law: $d^2/n$, $d\\log d/n$ and $d/n$ for $K=2$, $3$ and $K\\ge4$ well-spread environments. What counts is the dimension the signatures span, not their number, and $\\log d$ well-designed environments make $d\\log d$ samples suffice. Projecting the covariances onto one linear combination pays $d^2/n$ at first order instead. In simulations up to $d=1000$ the predictions hold and joint diagonalization with $K\\ge4$ attains the rate once $n/d$ is in the hundreds; on task fMRI the energy says which components are hard to separate.",
+  "abstract": "How many environments and samples does it take to separate $d$ Gaussian sources whose variances change across environments? Each source has a signature, its vector of variances. The Riesz $2$-energy $E_j$ of source $j$ sums the inverse Fisher informations for rotating it towards other sources. With known whitening, we prove a worst-case squared-angle risk lower bound of order $E_j/(n+E_j)$ for orthogonal estimators at every $n$ and $d$. A quadratic pencil given the signatures attains $E_j/n$ up to a constant above a separation-dependent sample threshold, even with estimated whitening. For well-spread signatures at fixed $K$, the energy grows as $d^2$, $d\\log d$ and $d$ for $K=2$, $3$ and $K\\ge4$, respectively. A design with $K\\asymp\\log d$ and pairwise Fisher information bounded below by a constant makes $d\\log d$ samples sufficient. The eigenvectors of a single fixed linear combination have an average first-order error coefficient of at least order $d^2$. Simulations up to $d=1000$ support the first-order predictions, and on task fMRI the energy helps rank split-half instability.",
   "abstract_ja": "",
   "authors": [
     "Yuda Bi",
@@ -8,15 +8,15 @@
     "Xiaonai Li",
     "Zhuolin Li"
   ],
-  "category": "computer-vision",
+  "category": "deep-learning",
   "codeUrl": "",
   "hasCode": false,
   "id": "arxiv-2611.06228",
   "likes_count": 0,
   "publishedAt": "2026-11-04",
   "source": "arxiv",
-  "subcategory": "segmentation",
-  "summary": "Can independent components be recovered when all of them are Gaussian? Yes, if their variances change across environments; but how many environments, and how many samples as the number of components…",
+  "subcategory": "efficient",
+  "summary": "How many environments and samples does it take to separate $d$ Gaussian sources whose variances change across environments? Each source has a signature, its vector of variances.",
   "summary_ja": "",
   "tags": {
     "learning": [],

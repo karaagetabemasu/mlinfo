@@ -1,0 +1,28 @@
+{
+  "abstract": "Knowledge distillation (KD) between architectural families, e.g., from a Transformer teacher to a CNN student, is difficult because the two networks learn different representations. Logits share a label space, but heterogeneous teachers differ in logit offset, scale, and sharpness, and their non-target classes are less semantically organized. Conventional logit distillation matches these values sample by sample, asking the student to imitate how another architecture expresses its predictions. We argue that a heterogeneous teacher should pass on the relational structure of its predictions, i.e., how it arranges samples relative to one another, and propose Heterogeneous Asymmetric Contrastive Distillation (HACD) to transfer this structure. HACD maps teacher and student logits to centered, temperature-softened probability directions on a shared unit hypersphere, which removes architecture-dependent offsets and lets the temperature control how sharply peaked outputs enter the representation while keeping informative non-target classes. Each student output must then identify its own teacher target within the batch. Because every teacher target also acts as a negative for the others, HACD computes the targets on a moderately augmented view and contrasts both a moderate and a strong student view against them. HACD adds no learnable parameters and needs one teacher pass per sample. It achieves the best or second-best accuracy on 11 of 12 heterogeneous pairs on CIFAR-100, without ground-truth labels, and on 14 of 15 pairs on ImageNet-1K, improving over the reported vanilla KD results by 8.82 and 1.33 percentage points on average. Checkpoints are available at https://github.com/BTAEYANG/HACD-Heterogeneous-Asymmetric-Contrastive-Distillation; the code will be released upon publication.",
+  "abstract_ja": "",
+  "authors": [
+    "Qi Wang",
+    "Jinjia Zhou"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/BTAEYANG/HACD-Heterogeneous-Asymmetric-Contrastive-Distillation",
+  "hasCode": true,
+  "id": "arxiv-2611.10672",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Knowledge distillation (KD) between architectural families, e.g., from a Transformer teacher to a CNN student, is difficult because the two networks learn different representations. Logits share a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Heterogeneous Asymmetric Contrastive Distillation",
+  "url": "https://arxiv.org/abs/2611.10672",
+  "use_case": ""
+}

@@ -1,0 +1,35 @@
+{
+  "abstract": "Multimodal fusion requires not only exchanging information across modalities but also determining which representations should participate in the interaction and how complementary cross-modal views should be combined. We introduce Guided Co-Attention with Adaptive Gating, a fusion framework that integrates token-wise guidance, bidirectional cross-attention, and sample-specific fusion. The proposed method constructs two directional representations: an image-conditioned text representation, obtained by allowing textual tokens to query visual features, and a text-conditioned image representation formed in the reverse direction. Token-wise guidance modulates the representations before cross-attention, while an adaptive gate learns the relative contribution of the two resulting directional representations for each sample. We evaluate the approach using paired chest radiographs and radiology reports as an image-text test bed for binary (normal vs. abnormal) classification. The two cross-attention directions exhibit distinct performance characteristics, demonstrating that reversing the query and source modalities does not produce interchangeable representations. Ablation experiments further show that bidirectional interaction, adaptive gating, and token guidance provide complementary benefits. The proposed model achieves 96.05% accuracy, 96.10% F1-score, 98.37% AUC, 95.60% Sens@95Spec, and 96.51% Spec@95Sens, yielding the highest mean performance across all evaluated metrics. These findings support explicitly modeling interaction direction, token relevance, and sample-dependent integration when constructing multimodal representations.",
+  "abstract_ja": "",
+  "authors": [
+    "Muntaqim Ahmed Raju",
+    "Priyanka Siddappa",
+    "Md Shifat Haider Al Amin",
+    "Ruizhe Ma",
+    "Md Ripon Ahammed"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10348",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "attention",
+  "summary": "Multimodal fusion requires not only exchanging information across modalities but also determining which representations should participate in the interaction and how complementary cross-modal views…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Guided Co-Attention with Adaptive Gating for Multimodal Medical Data Fusion",
+  "url": "https://arxiv.org/abs/2611.10348",
+  "use_case": ""
+}

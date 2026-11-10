@@ -1,0 +1,29 @@
+{
+  "abstract": "Dense retrievers are meant to select passages that match a query's semantic specification. We show they suffer from search-by-answer bias: they favor passages that mention answer objects the model knows (scores as likely), over passages that support valid alternative answers. We test this with controlled factual contrasts from LAMA/TREx. For each retriever, we measure how strongly the model scores the canonical object over an alternative object using a token-prediction head, and ask whether this score predicts passage rankings. Across eight retrievers, including DPR, Spider variants, Contriever, E5, and Qwen3-Embedding, larger token-prediction scores consistently predict higher retrieval scores for passages containing the corresponding object. This holds when passages differ only in the answer object, and even when the passage that mentions the high-scoring object expresses a wrong relation. Dense retrieval thus exhibits search-by-answer bias during passage selection, shaping which evidence is retrieved.",
+  "abstract_ja": "",
+  "authors": [
+    "Adiel Avigad",
+    "Shauli Ravfogel",
+    "Yoav Goldberg"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11396",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Dense retrievers are meant to select passages that match a query's semantic specification. We show they suffer from search-by-answer bias: they favor passages that mention answer objects the model…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "retrieval"
+    ]
+  },
+  "title": "Search-by-Answer Bias in Retrieval Models",
+  "url": "https://arxiv.org/abs/2611.11396",
+  "use_case": ""
+}

@@ -1,0 +1,32 @@
+{
+  "abstract": "Automated brain tumor classification from magnetic resonance imaging (MRI) can support accessible medical image analysis, but conventional deep learning models often exceed the resource budgets of highly constrained edge-AI platforms. We present NanoNet, an ultra-lightweight convolutional neural network designed for resourceconstrained MRI classification and motivated by future edge-AI applications. Inspired by MobileNetV2, NanoNet substantially reduces network depth, channel capacity, expansion ratios, and final feature dimensionality, resulting in only five inverted residual blocks and 8,132 parameters. We further investigate dependency-aware structured pruning, knowledge distillation, and INT8 quantization-aware training for additional compression. Experiments on the BRISC 2025 benchmark show that NanoNet achieves 92.80% accuracy and 92.97% macro F1 with 8,132 parameters and 10.498 MFLOPs. Across three compression seeds, it exceeds the mean accuracy of 70%-pruned MobileNetV2 by 5.20 percentage points while using 60.2% fewer parameters and 9.8% less computation. Converted INT8 NanoNet achieves 89.70% accuracy and 90.22% macro F1 across three QAT seeds. Earlier TensorFlow Lite measurements indicate 27.7 KB of baseline model storage, motivating future edge-AI deployment.",
+  "abstract_ja": "",
+  "authors": [
+    "Tran Nguyen-Le",
+    "Huu-Thuan Huynh",
+    "Minh-Triet Tran",
+    "Trung-Nghia Le"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11071",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Automated brain tumor classification from magnetic resonance imaging (MRI) can support accessible medical image analysis, but conventional deep learning models often exceed the resource budgets of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "NanoNet: Ultra-Lightweight Network for MRI Brain Tumor Classification toward Edge AI",
+  "url": "https://arxiv.org/abs/2611.11071",
+  "use_case": ""
+}

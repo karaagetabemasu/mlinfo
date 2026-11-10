@@ -1,0 +1,29 @@
+{
+  "abstract": "Angle Power Spectrum (APS) and Power Delay Profile (PDP) are receiver-facing spectra that govern beam selection and wideband equalization. Most ray-tracing benchmarks provide supervision as variable-size multipath component lists. This format does not match practical receivers, whose angular and delay resolutions are limited by array aperture and system bandwidth. As a result, learning targets are ambiguous and evaluations can change with reconstruction conventions. We introduce UrbanADPSMap, a benchmark that converts ray-traced supervision into fixed-grid APS and PDP targets by explicitly modeling bandwidth-limited and aperture-limited response kernels. By fixing the receiver-domain kernels, discretization, and validity mask, UrbanADPSMap removes reconstruction-induced target ambiguity and stabilizes downstream evaluation across methods. Built on this benchmark, we propose SpecFlowAR, a coarse-to-fine generator based on multi-scale autoregressive flow matching. The model first captures coarse dispersion structure and then refines beam-relevant peaks and low-power tails. The number of function evaluations controls the sampling budget, enabling latency and quality to be adjusted for dense spectrum queries. Experiments on the test set show that SpecFlowAR reduces BPL@5 to 2.03 dB under a unified NFE=80 budget, while improving beam utility and reducing errors of 3GPP dispersion statistics.",
+  "abstract_ja": "",
+  "authors": [
+    "Peilin Zheng",
+    "Haozhe Jia",
+    "Xiucheng Wang",
+    "Wenshuo Chen",
+    "Nan Cheng"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10581",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Angle Power Spectrum (APS) and Power Delay Profile (PDP) are receiver-facing spectra that govern beam selection and wideband equalization. Most ray-tracing benchmarks provide supervision as…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Receiver-Resolution APS-PDP Maps for Wireless Channels: Benchmarking and Coarse-to-Fine Modeling",
+  "url": "https://arxiv.org/abs/2611.10581",
+  "use_case": ""
+}

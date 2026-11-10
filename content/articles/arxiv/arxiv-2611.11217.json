@@ -1,0 +1,33 @@
+{
+  "abstract": "Predicting single-cell transcriptional responses to genetic and chemical interventions supports gene-function discovery and regulatory analysis. Existing studies often focus only on highly variable genes, restricting the expression changes available for downstream analysis. Cells exposed to the same intervention can also show heterogeneous expression responses, with coordinated gene programs active to different degrees. We propose scBIG++, a full-gene perturbation prediction framework that models this heterogeneity by connecting expression-adaptive gene modules with population-conditioned generation. To preserve shared gene structure while accommodating cellular variation, Gene-Relation Clustering organizes genes into common windows, within which Dynamic SoftSub learns expression-dependent submodule memberships. This shared organization enables Set-GCAE to exchange information about corresponding gene groups across control cells, placing individual representations in their source-population context. The cell representations initialize a latent flow, while their pooled summary and the perturbation representation condition response generation. Generated states are decoded into expression profiles covering all assayed protein-coding genes retained after preprocessing, supporting comprehensive analysis of perturbation-induced expression changes. Experiments across six genetic and chemical settings spanning 6,539--19,451 genes demonstrate competitive perturbation-effect recovery and full-gene expression reconstruction under unseen targets and combinations, cross-cell-line transfer, and held-out compounds. Our implementation is available at https://github.com/ttruan2426-dot/scBIG.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiafa Ruan",
+    "Zican Qiao",
+    "Zongxin Yang",
+    "Ruijie Quan",
+    "Yi Yang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/ttruan2426-dot/scBIG",
+  "hasCode": true,
+  "id": "arxiv-2611.11217",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Predicting single-cell transcriptional responses to genetic and chemical interventions supports gene-function discovery and regulatory analysis. Existing studies often focus only on highly variable…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "scBIG++: Learning Across Genes and Cells to Predict Single-Cell Perturbation Responses",
+  "url": "https://arxiv.org/abs/2611.11217",
+  "use_case": ""
+}

@@ -1,0 +1,30 @@
+{
+  "abstract": "Reliable navigation with a single monocular limited field-of-view camera is challenging because the lack of depth measurements and limited spatial awareness complicate collision checking. Existing approaches to tackle these challenges fall into two categories. Model-based planners can incorporate explicit collision-avoidance guidance which leads to better generalization but are often computationally expensive and require manual tuning of the algorithmic parameters. In contrast, end-to-end approaches trained by imitation learning can be flexible but typically encode safety only implicitly and thus can suffer from high collision rates in novel scenarios. In this paper, we present a middle ground through model-based imitation learning. The model-based part is a learned collision model that can map a sequence of past images and a candidate control sequence to a distribution of worst-case obstacle clearance. This predictive distribution in turn is used to define a collision-risk cost in a trajectory optimization formulation. The imitation component uses human demonstrations to learn scene-dependent balancing of collision risk with other task costs such as goal progress. We also use it to learn the algorithmic parameters (e.g., a warm start) of our optimizer to accelerate the solution process. We show that our approach can demonstrate highly reliable navigation in cluttered environments on robots with different embodiments. We also demonstrate a substantial reduction in collision rate over recent end-to-end and model-based baselines.",
+  "abstract_ja": "",
+  "authors": [
+    "Basant Sharma",
+    "Prajyot Jadhav",
+    "Saqi Hussain Kalan",
+    "Arun Kumar Singh"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10635",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "model-based",
+  "summary": "Reliable navigation with a single monocular limited field-of-view camera is challenging because the lack of depth measurements and limited spatial awareness complicate collision checking. Existing…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Model-Based Imitation Learning For Monocular Vision-Based Navigation",
+  "url": "https://arxiv.org/abs/2611.10635",
+  "use_case": ""
+}

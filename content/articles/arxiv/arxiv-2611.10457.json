@@ -1,0 +1,32 @@
+{
+  "abstract": "Large language model (LLM) agents need to choose actions whose consequences unfold over multiple future steps, yet poor decisions do not reveal whether the model failed to represent those consequences or failed to use them. Mechanistic interpretability has studied internal representations of environment state and plans, but sequential decision making also requires evaluating how candidate actions change future outcomes. Reinforcement learning formalizes this as action value. We study this computation in Qwen2.5-7B-Instruct, Qwen2.5-32B-Instruct, and GPT-OSS-20B across a partially observed Grid environment and WebShop, a simulated web shopping environment. We find that the relative values of candidate actions are linearly decodable from intermediate hidden states, including at states where the policy prefers a worse action. We call this gap between value representation and policy choice value-policy dissociation. To investigate how represented value relates to action selection, we compare direct interventions along the value readout direction with Natural Value Transport (NVT), a transformation learned from hidden state changes that naturally result from differences in action value. While readout-direction interventions have limited and inconsistent effects, NVT more consistently influences action preferences, particularly at later layers. We also test a closed-loop controller that uses the value readout as a sensor and NVT as an actuator, observing improvements in task outcomes. These results suggest that LLM agents can represent useful prospective value without reliably translating it into policy choice.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuzhang Luo",
+    "Mohamed Aghzal",
+    "Liangming Pan",
+    "Ziyu Yao"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10457",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Large language model (LLM) agents need to choose actions whose consequences unfold over multiple future steps, yet poor decisions do not reveal whether the model failed to represent those…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Represented but Not Used: Value-Policy Dissociation in LLM Agents",
+  "url": "https://arxiv.org/abs/2611.10457",
+  "use_case": ""
+}

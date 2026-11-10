@@ -1,0 +1,33 @@
+{
+  "abstract": "Semantic response caching reuses a cached response for a semantically similar query to improve LLM inference efficiency. However, query similarity alone can lead to unsafe reuse when safety conditions change. Existing approaches improve cache safety through stricter similarity checks, context-aware validation, or response verification, yet they may still miss safety conflicts between the cached response and the new request or introduce unnecessary verification overhead. We argue that safe and efficient semantic caching requires a reuse policy that makes the cached response's safety conditions explicit and uses them to guide the reuse decision with a balance between safety and utility. In this paper, we propose SafeCache, a safety-aware framework that separates candidate retrieval from safety approval and formulates semantic response reuse as a safety-conditioned routing problem. SafeCache matches each cached-response condition against the new request and aggregates the per-condition mismatches into an overall risk score. A separate contradiction guard prevents explicit conflicts from being diluted by strong matches. It further estimates matching uncertainty and calibrates the routing policy under a required unsafe-reuse target and a verifier-call budget to choose among direct reuse, selective verification, or regeneration. Experiments show that SafeCache achieves the better safety-utility trade-off among the evaluated baselines, enabling safer response reuse at comparable cache utility.",
+  "abstract_ja": "",
+  "authors": [
+    "Shilong Pan",
+    "Zhiliang Tian",
+    "Weiguo Chen",
+    "Zihan Chen",
+    "DongSheng Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10418",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Semantic response caching reuses a cached response for a semantically similar query to improve LLM inference efficiency. However, query similarity alone can lead to unsafe reuse when safety…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Beyond Query Similarity: Safety-Conditioned Cache Routing for LLM Response Reuse",
+  "url": "https://arxiv.org/abs/2611.10418",
+  "use_case": ""
+}

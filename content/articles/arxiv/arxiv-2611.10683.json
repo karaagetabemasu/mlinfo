@@ -1,0 +1,31 @@
+{
+  "abstract": "Long-term personalized agents are increasingly expected to answer queries over user histories in which preferences, goals, and constraints evolve across interleaved conversations. Existing retrieval-based and structured-memory systems can surface relevant facts, but often return isolated memory units that do not explain which earlier preference was refined, contradicted, or superseded by later evidence. We introduce TransMem, a transition-aware memory retrieval framework that stores preference updates as explicit retrieval units alongside ordinary factual memories. During memory construction, TransMem routes user interaction history into topic-structured memory graphs, detects shift events, and grounds them as transition records. At inference time, TransMem first retrieves factual anchors and then adaptively expands over transition records, producing a compact context of factual anchors and accepted transition records. Experiments on PersonaMem and PersonaBench across two Qwen backbones show that TransMem outperforms representative retrieval-based and structured-memory baselines. Controlled analyses further show that transition records and adaptive expansion contribute beyond factual anchoring, chronological expansion, flat transition retrieval, and fixed-hop traversal. These results suggest that preference-update records are useful retrieval units for long-term personalization.",
+  "abstract_ja": "",
+  "authors": [
+    "Shigeng Chen",
+    "Linhao Luo",
+    "Changlong Shi",
+    "Zhangchi Qiu",
+    "Shirui Pan"
+  ],
+  "category": "mlops",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10683",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "deployment",
+  "summary": "Long-term personalized agents are increasingly expected to answer queries over user histories in which preferences, goals, and constraints evolve across interleaved conversations. Existing…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "TransMem: Transition-Aware Retrieval for Evolving Personal Memory",
+  "url": "https://arxiv.org/abs/2611.10683",
+  "use_case": ""
+}

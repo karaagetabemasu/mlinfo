@@ -1,0 +1,30 @@
+{
+  "abstract": "Multi-task scene understanding models typically rely on modified vision encoders or complex decoders for cross-task interaction, which limits their flexibility and compatibility with off-the-shelf vision foundation models (VFMs). We introduce Virtual Task Prompting (VTP), which frames multi-task prompting as retrieving task-adaptive compositions from a shared virtual state, where both the state and routing process are optimized in an end-to-end manner. Concretely, VTP maintains an expanded set of virtual tasks alongside the backbone. At each layer, learnable routing matrices read task-specific compositions as input to interact with image tokens and write the processed results back, forming explicit pathways that capture the intricacies among tasks outside the encoder. Since VTP keeps the backbone clean, it integrates seamlessly with pretrained VFMs, advancing the state of the art on Pascal-Context and NYUD-v2. Stress test on Taskonomy with 13 heterogeneous tasks further shows VTP's robustness in extreme settings. Ablations and analysis indicate that VTP's gains stem from adaptive routing rather than increased capacity. The project page is available at https://jacky1128.github.io/VTP/.",
+  "abstract_ja": "",
+  "authors": [
+    "Zedong Wang",
+    "Yucheng Wang",
+    "Dan Xu"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11041",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Multi-task scene understanding models typically rely on modified vision encoders or complex decoders for cross-task interaction, which limits their flexibility and compatibility with off-the-shelf…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Virtual Task Prompting for Multi-Task Scene Understanding",
+  "url": "https://arxiv.org/abs/2611.11041",
+  "use_case": ""
+}

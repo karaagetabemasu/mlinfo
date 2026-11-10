@@ -1,0 +1,33 @@
+{
+  "abstract": "Unified whole-body pose estimators jointly predict body, face, and hand landmarks, but often degrade on small, blurred, or occluded hands. Attaching a standalone hand specialist introduces extra detection overhead, coordinate alignment, and wrist-stitching artifacts. We introduce S2HAND, a hand-specialized Sapiens2-5B framework that preserves the native 308-keypoint output interface. Specifically, S2HAND-MT adapts a lightweight 0.87M-parameter pose branch to route 40 finger heatmaps while strictly preserving the shared Transformer, auxiliary task heads, and the other 268 body, foot, and face heatmaps. S2HAND-Pose further fine-tunes three Fisher-selected Transformer blocks (267.13M parameters), trading exact preservation for stronger hand recovery: it lifts macro AUC from 57.83% to 65.73% across HInt TEST, COCO WholeBody VAL, and FreiHAND EVAL, and surpasses HInt-adapted Hand5/HRNet and stitched Hand5 systems on all five Native Pipeline benchmarks. On COCO, S2HAND-Pose improves hand AP by 12.89 points and body-plus-foot AP by 0.19 points. Across a 512-image multi-task audit, it maintains 99.60% foreground segmentation agreement with the public checkpoint, with quantified normal and pointmap drift. Its 2D coordinates also lower 3D mesh error in frozen Pose2Mesh transfer, while our optional TailGuard re-cropping module cuts S2HAND-MT's severe failure rate on NewDays from 13.45% to 10.43%. S2HAND thus resolves the whole-body hand bottleneck with either exact non-hand preservation (MT) or empirically audited trade-offs (Pose).",
+  "abstract_ja": "",
+  "authors": [
+    "Singyu Muk",
+    "Xuanren Song",
+    "Kalin Stefanov"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10416",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Unified whole-body pose estimators jointly predict body, face, and hand landmarks, but often degrade on small, blurred, or occluded hands. Attaching a standalone hand specialist introduces extra…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": [
+      "detection",
+      "segmentation"
+    ]
+  },
+  "title": "S2HAND: Accuracy-Preservation Trade-Offs for Hand Specialization in Whole-Body Pose Models",
+  "url": "https://arxiv.org/abs/2611.10416",
+  "use_case": ""
+}

@@ -1,0 +1,32 @@
+{
+  "abstract": "State-of-the-art stereo matching models predominantly predict the disparity of only the left (reference) view. However, applications such as per-eye AR/VR rendering, novel view synthesis, or two-view depth fusion require disparity for both views, and need those two maps to agree. The usual workaround of running the network a second time on the horizontally flipped and swapped pair gives two independent predictions that can be inconsistent, especially on transparent surfaces, in textureless regions, and at occlusion boundaries. We introduce cross-injection (CI), a lightweight extension for iterative (refinement-based) models that can be added to any pretrained left-only iterative matcher. It couples the two passes by injecting the explicit, signed left-right inconsistency as an additional input cue at every step of the refinement stage. We empirically show that CI substantially reduces left-right disagreement on every benchmark (more than halving it on Booster for FoundationStereo), while largely preserving sharp object boundaries. Furthermore, using two state-of-the-art stereo matching models, we show that CI also reduces the single-view disparity error, making it a worthwhile extension even if only left disparity is needed.",
+  "abstract_ja": "",
+  "authors": [
+    "Manuel Knott",
+    "Diogo Luvizon",
+    "Daniel Scharstein",
+    "Elias Vansteenkiste"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.09458",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "State-of-the-art stereo matching models predominantly predict the disparity of only the left (reference) view. However, applications such as per-eye AR/VR rendering, novel view synthesis, or two-view…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Left-Right-Consistent Iterative Stereo Matching via Cross-Injection",
+  "url": "https://arxiv.org/abs/2611.09458",
+  "use_case": ""
+}

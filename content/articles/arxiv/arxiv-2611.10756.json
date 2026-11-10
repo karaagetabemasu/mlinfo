@@ -1,0 +1,28 @@
+{
+  "abstract": "Large Language Models (LLMs) are increasingly deployed as shared multi-tenant services, relying on advanced optimizations like KV cache and prefix sharing to improve throughput and reduce latency. However, these optimizations introduce a critical vulnerability: attackers can exploit time-to-first-token (TTFT) variations between KV cache hits and misses to infer sensitive prompt tokens via prefix-matching side-channel attacks. Existing defenses indiscriminately restrict cross-tenant cache sharing, which incurs prohibitive performance overhead and negates the fundamental efficiency benefits of the KV cache. We propose Mirage, a topology-aware emission obfuscation framework that provably bounds timing leakage without sacrificing the performance gains of cache sharing. Instead of stalling the GPU or forcing redundant recomputations, Mirage delays token emission at the gateway so the attacker observes a natural cache miss distribution, while the GPU seamlessly continues serving other requests at full speed. Mirage uses a Privacy Odometer that persistently tracks the topological novelty of prefix fan-out expansions to distinguish aggressive probing from benign traffic. Once a prefix exceeds a safety threshold, Mirage engages a two-phase policy that uses a dynamic estimator to pad the TTFT to a calibrated cache-miss baseline. On a 500-sample public corpus across three models, Mirage suppresses the timing side-channel to near the random-guessing floor, while maintaining a significantly lower TTFT than defense baselines. We further show that Mirage withstands a strong adaptive adversary and the same principle carries over to semantic caching layers.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiaobei Yan",
+    "Tianwei Zhang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10756",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Large Language Models (LLMs) are increasingly deployed as shared multi-tenant services, relying on advanced optimizations like KV cache and prefix sharing to improve throughput and reduce latency.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Mirage: Provable Defense Against LLM KV Cache Timing Side Channels with Topology-Aware Isolation",
+  "url": "https://arxiv.org/abs/2611.10756",
+  "use_case": ""
+}

@@ -1,0 +1,30 @@
+{
+  "abstract": "We study prompted chain-of-thought (CoT) with self-consistency (SC), i.e. sampling N traces and plurality-voting, on small language models, a regime where per-query compute budgets are tight yet SC is commonly applied with a fixed sample budget inherited from large-model practice, regardless of instance difficulty. Across two model families (Qwen-2.5-0.5B, Gemma-3-1B) at FP16 and MLX-Q4 (4-bit quantisation in Apple's MLX framework), on GSM8K and MATH-500, we run 8 per-task and 4 task-pooled experiments at n=200-400 with 1,000x paired-bootstrap confidence intervals (CIs). Our first result is an upper bound: an oracle gate deciding per prompt whether to invoke SC reaches 109-174% of always-SC's accuracy at 23-30% of its compute in all 12/12 cases, so at N=5 always-SC is dominated everywhere on our grid. That margin is exactly the rate at which SC flips correct greedy answers to wrong, here 3-10.5% of prompts, which on Qwen-Q4 x MATH-500 exceeds the wrong-to-right rate and leaves always-SC 3 pt worse than always-greedy. Our second result is a deployable approximation: a gate over greedy-pass signals skips 45-99% of SC calls, with bootstrap CI half-widths under 5 pt, removing 36-79% of always-SC compute. Accuracy retention at those operating points has point estimates of 98.1-98.8%, which we report as point estimates because their CIs are wide (lower bounds 76-86%) over an SC accuracy of only 15-36%. The evidence covers N=5 on two <=1B families and two math benchmarks, which is the scope we claim. Code is available at https://github.com/heywanrong/SiftSC.",
+  "abstract_ja": "",
+  "authors": [
+    "Wanrong Yang",
+    "Lingfang Li",
+    "Jun Zhang",
+    "Dominik Wojtczak"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/heywanrong/SiftSC",
+  "hasCode": true,
+  "id": "arxiv-2611.11201",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "We study prompted chain-of-thought (CoT) with self-consistency (SC), i.e. sampling N traces and plurality-voting, on small language models, a regime where per-query compute budgets are tight yet SC…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "When Self-Consistency Hurts: The Hidden Cost of Majority Voting in Small Language Models",
+  "url": "https://arxiv.org/abs/2611.11201",
+  "use_case": ""
+}

@@ -1,0 +1,27 @@
+{
+  "abstract": "Post-hoc merging of public LoRA adapters is an attractive gradient-free path to continual adaptation, but reliable measurement of catastrophic forgetting in this setting depends on infrastructure that prior work has not addressed. We treat each adapter merge as a sequential task in a continual-learning setting, with the instruction-tuned base model's capabilities as Task 0, and study forgetting on Llama-3.1-8B-Instruct. Public adapter hubs contain modules that fail basic provenance checks: silent base-version mismatches and near-zero delta norms whose inclusion inflates measured interference by ~10pp. We propose a two-check audit (base-model match, non-trivial delta norm) and a leakage-free probing protocol as preconditions for any forgetting study in this setting. On an audited 4-adapter set, naive merging causes -10.5pp on GSM8K and -18.3pp on HumanEval, while Task Arithmetic at lambda=0.5 sits within a standard error of the unmerged baseline. A coordinate search including negative coefficients identifies the math adapter as probe-optimal at lambda=-0.5, outside the reach of positive-only mergers, suggesting forgetting has structure that negation-aware merging may exploit. The same protocol replicates on Mistral-7B-Instruct-v0.3, where 2 of 4 candidate adapters fail the audit and the audited merge reproduces the same merge-method ranking on GSM8K, supporting that our findings are not Llama-specific.",
+  "abstract_ja": "",
+  "authors": [
+    "Lenny Aharon",
+    "Neta Glazer",
+    "Lior Aharon"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10684",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Post-hoc merging of public LoRA adapters is an attractive gradient-free path to continual adaptation, but reliable measurement of catastrophic forgetting in this setting depends on infrastructure…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Audit Before You Merge: Provenance, Probing, and Continual LoRA Composition",
+  "url": "https://arxiv.org/abs/2611.10684",
+  "use_case": ""
+}

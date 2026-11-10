@@ -1,0 +1,27 @@
+{
+  "abstract": "Bilevel optimization is a fundamental framework for machine learning problems, where an upper-level (UL) objective depends on the solution of a nested lower-level (LL) problem. Existing bilevel algorithms typically assume that the LL objective is available for evaluation, differentiation, or unrolling. However, this assumption can fail when the LL response is produced by a black-box solver, simulator, adversary, or learned predictor. In this paper, we study LL agnostic bilevel optimization, where the UL learner has access only to an approximate LL solution $\\bar{\\mathbf{y}}(\\mathbf{x})$ and cannot query the LL objective, its gradients, Hessian/Jacobian information, or the procedure that generates the LL response. We propose LeGo-BiO, a coordinate-wise pseudo-hypergradient method that estimates the missing Jacobian $\\nabla _{\\mathbf{x}}\\bar{\\mathbf{y}}(\\mathbf{x})$ using finite differences of $\\bar{\\mathbf{y}}(\\cdot)$. For each UL coordinate, LeGo-BiO constructs a decision vector subject to 1-sparse updates, thereby isolating the corresponding Jacobian column needed in the UL gradient computation. This avoids the directional-projection limitation of full-parameter response differences and, unlike derivative-free/zeroth-order approximations of the entire UL gradient, preserves the available first-order gradient information with respect to the UL variables for more accurate UL gradient evaluation. We establish convergence guarantees for LeGo-BiO in both deterministic and stochastic settings under an LL error-bound/Polyak-Lojasiewicz-type condition, without requiring LL strong convexity. Our bounds yield an $O(T^{-1})$ rate in the deterministic setting and an $O(T^{-1/2})$ rate in the stochastic setting when the LL approximation error decreases geometrically. Experiments demonstrate competitive performance of LeGo-BiO despite being agnostic to the LL objective.",
+  "abstract_ja": "",
+  "authors": [
+    "Peiwen Qiu",
+    "Prashant Khanduri",
+    "Jia Liu"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10223",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "multi-agent",
+  "summary": "Bilevel optimization is a fundamental framework for machine learning problems, where an upper-level (UL) objective depends on the solution of a nested lower-level (LL) problem. Existing bilevel…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Lower-Level Agnostic Bilevel Optimization",
+  "url": "https://arxiv.org/abs/2611.10223",
+  "use_case": ""
+}

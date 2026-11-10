@@ -1,0 +1,32 @@
+{
+  "abstract": "Training vision-language-action (VLA) policies typically depends on substantial robot demonstration data, making human teleoperation a costly and cumbersome bottleneck, particularly for whole-body humanoid interaction. Reinforcement learning in simulation offers an alternative for scaling this data, but designing task-specific rewards remains challenging. To address this, we propose DreamVLA, which uses generated motion trajectories to guide reinforcement learning (RL) in simulation, converting them into reliable task execution trajectories. These trajectories train VLA models in simulation without new task-specific teleoperation data. Our central contribution is a reference-conditioned DAgger distillation procedure: after a failed learner rollout, we restart the RL expert from a sampled learner state with the same reference suffix and aggregate successful corrective trajectories, addressing the distribution shift left by offline imitation. We evaluate picking from a platform, opening a drawer, pressing a button, and walking and picking from a platform, with ablations of DAgger iterations, residual RL, and generated dataset scale. Project website: ember-center-berkeley.github.io/DreamVLA.",
+  "abstract_ja": "",
+  "authors": [
+    "Kevin Park",
+    "Izat Rasyad",
+    "Dvij Kalaria",
+    "Shankar Sastry"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10872",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Training vision-language-action (VLA) policies typically depends on substantial robot demonstration data, making human teleoperation a costly and cumbersome bottleneck, particularly for whole-body…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "DreamVLA: From Generated Human Motions to Humanoid Vision-Language-Action Policies",
+  "url": "https://arxiv.org/abs/2611.10872",
+  "use_case": ""
+}

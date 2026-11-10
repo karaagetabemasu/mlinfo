@@ -1,0 +1,33 @@
+{
+  "abstract": "Visual chain-of-thought (visual-CoT), also known as \"thinking with images\", equips LVLMs with the ability to locate and use key visual evidence for reasoning. However, acquiring such visual-CoT capabilities requires costly post-training and tightly couples them to a specific backbone, making transfer to other LVLMs difficult. Existing cross-model transfer methods typically treat visual-CoT as a monolithic capability, using a unified representation that ignores the functional distinction between grounding and reasoning and introduces stage-irrelevant interventions. To address this problem, we propose Viscot-steer, a training-free activation steering framework for transferring visual-CoT capabilities across heterogeneous LVLMs. Specifically, Viscot-steer first disentangles visual-CoT into grounding and reasoning vectors and extracts them from the source-model layers associated with the corresponding capabilities. It then aligns the vectors with the activation space of the target model and steers the grounding and reasoning layers during bounding-box prediction and reasoning-trace generation, respectively. Across benchmarks covering high-resolution visual understanding, general visual perception and reasoning, and mathematical visual reasoning, Viscot-steer transfers capabilities from different visual-CoT models to architecturally diverse LVLMs and outperforms the strongest capability-transfer baseline by an average of 1.86 percentage points on the primary evaluation metrics.",
+  "abstract_ja": "",
+  "authors": [
+    "Ningning Wang",
+    "Beier Zhu",
+    "Xingyu Zhu",
+    "Kaiyun Yang",
+    "Xun Yang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11209",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Visual chain-of-thought (visual-CoT), also known as \"thinking with images\", equips LVLMs with the ability to locate and use key visual evidence for reasoning. However, acquiring such visual-CoT…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Viscot-steer: Disentangling and Transferring Visual Chain-of-Thought via Activation Steering",
+  "url": "https://arxiv.org/abs/2611.11209",
+  "use_case": ""
+}

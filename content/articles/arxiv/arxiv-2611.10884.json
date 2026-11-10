@@ -1,0 +1,31 @@
+{
+  "abstract": "Much of the automation handed to language-model agents is procedural: each step needs little intelligence, but a long unattended run must follow a skill or SOP stated once at the start. We show that agents drift from such procedures over long runs, and that restating the instructions or resuming a stopped agent only moves the drift to another shortcut. We study an executable finite-state machine (FSM) that keeps the workflow state outside the model's context and enforces it at three points: tool calls, state transitions and the end of the agent's turn. In a pre-registered experiment on 200-account SOP-Bench batches, Claude Haiku 4.5 with the FSM decided on average 139 accounts correctly and by the procedure, against 48 for the strongest baseline (95% CI of the difference [46, 130]), and kept this rate to the end; across three models, the gain tracked how much the plain agent drifted. Because the runtime, not the model, supplies this long-horizon reliability, the FSM can let small models carry procedural work: Haiku 4.5 with it averaged more such decisions than plain Claude Sonnet 4.6 at 38% of the cost. Analyses on SWE-bench Verified, $τ^2$-bench, and staged and cross-context workflows further suggest that reliable long-horizon automation can come from stronger execution control, not only stronger models.",
+  "abstract_ja": "",
+  "authors": [
+    "Yutao Sun",
+    "Haokun Li",
+    "Mingshuai Chen",
+    "Guanyan Li",
+    "Zhongyi Wang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10884",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Much of the automation handed to language-model agents is procedural: each step needs little intelligence, but a long unattended run must follow a skill or SOP stated once at the start. We show that…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Keeping LLM Agents on Procedure: Executable Finite-State Control for Long-Horizon Instruction Fidelity",
+  "url": "https://arxiv.org/abs/2611.10884",
+  "use_case": ""
+}

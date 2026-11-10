@@ -1,0 +1,31 @@
+{
+  "abstract": "Large Language Models (LLMs) are increasingly deployed through conversational interfaces, yet strong single-turn performance does not imply reliability in multi-turn settings. Multi-turn assistance requires a model to maintain an evolving representation of user requirements and to reason over it before complying with later requests. Failures can therefore be subtle: models may fail to recognize a changed constraint or hidden conflict, or recognize it without enforcing it in the final response. Existing benchmarks primarily test fully specified prompts, long-context recall, or controlled domain environments, leaving open-domain requirement reconciliation undermeasured. We introduce TurnFlow, an interactive benchmark for evaluating whether models preserve, revise, and act on user requirements across turns. TurnFlow combines adaptive user simulation with verifiable judging, allowing conversations to unfold naturally while keeping hidden requirements and pass/fail criteria controlled. In our evaluation, nine LLMs achieve overall pass rates from 42.86% to 59.59% on 490 scenarios. Performance varies substantially across challenge types: models perform well on Stateful Multi-Constraint Following but remain considerably less reliable on Scope Creep and Goal Shift. These results reveal persistent limitations in reasoning over evolving user requirements across turns.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhixun Chen",
+    "Ming Li",
+    "Anjie Liu",
+    "Xiaoyuan Zhang",
+    "Quanyu Dai"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10412",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Large Language Models (LLMs) are increasingly deployed through conversational interfaces, yet strong single-turn performance does not imply reliability in multi-turn settings. Multi-turn assistance…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "TurnFlow: Benchmarking User-State Reasoning in Multi-Turn LLM Agents via Scene-Guided User Simulation",
+  "url": "https://arxiv.org/abs/2611.10412",
+  "use_case": ""
+}

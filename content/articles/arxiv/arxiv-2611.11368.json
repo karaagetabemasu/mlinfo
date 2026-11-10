@@ -1,0 +1,30 @@
+{
+  "abstract": "Large language models (LLMs) have made substantial progress in mathematical reasoning but still produce incorrect solutions to complex problems, indicating the need for more reliable self-correction mechanisms. Mathematical self-correction typically identifies errors through verification, which can proceed backward or forward. The two directions provide complementary verification capabilities. Backward verification checks a candidate answer against the original constraints, bypassing complex intermediate reasoning, but cannot ensure correct reasoning or objective completeness. Forward verification follows the problem conditions and current solution, enabling it to locate reasoning errors and assess objective completeness, but may overlook key constraints in complex solution chains. We propose BiVerify, a dynamically scheduled framework for bidirectional mathematical verification. BiVerify begins with backward verification to screen the answer against the original constraints, followed by forward verification of the reasoning process; subsequent direction switching, state resetting, and re-verification are governed by verification outcomes. Upon failure, the system revises the candidate or verification flow until the same candidate passes both directions. We also introduce shared mathematical tools that separate logical reasoning from precise computation. We systematically evaluate BiVerify on five challenging mathematical reasoning benchmarks using multiple mainstream DeepSeek, GPT, and Gemini models. BiVerify exceeds the strongest representative public baseline evaluated in this work by 13.5 percentage points in average accuracy, with the margin reaching 31.2 percentage points on GPT. Further analysis shows that BiVerify's overall performance exceeds that of either verification direction alone.",
+  "abstract_ja": "",
+  "authors": [
+    "Rui Zou",
+    "Xin Zhao",
+    "Mengqi Wei",
+    "Ji-Rong Wen"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11368",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Large language models (LLMs) have made substantial progress in mathematical reasoning but still produce incorrect solutions to complex problems, indicating the need for more reliable self-correction…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "BiVerify: Closing the Loop Between Backward and Forward Verification for Mathematical Self-Correction",
+  "url": "https://arxiv.org/abs/2611.11368",
+  "use_case": ""
+}

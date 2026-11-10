@@ -1,0 +1,30 @@
+{
+  "abstract": "Existing methods enhancing an LLM's long-context reasoning capability often rely on data synthesis and follow-up LLM post-training. However, the data synthesis strategy and the post-training recipes are empirically driven and computationally intensive. In this work, we propose a new framework, dubbed LongCapHarness, to instead harness the underlying capabilities for long-context reasoning. The harnessing process recursively revises and updates capability primitive implementation, capability state and control logic through recursive self-improvement on the development set. With neither data synthesis nor LLM post-training, LongCapHarness is applied to Llama3-8B and transferred to Qwen2.5-3B. LongCapHarness substantially outperforms recent data-synthesis-based baselines on HELMET and RULER benchmarks; its estimated development cost is less than 50% of the estimated training costs of NExtLong and PolicyLong. We hope these results motivate further research into harnessing the latent capabilities of LLMs to solve tasks beyond their explicit training.",
+  "abstract_ja": "",
+  "authors": [
+    "Tao Zhang",
+    "Yuhang He"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10463",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Existing methods enhancing an LLM's long-context reasoning capability often rely on data synthesis and follow-up LLM post-training. However, the data synthesis strategy and the post-training recipes…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "LongCapHarness: Capability-Guided Auto-Harnessing for Long-Context Reasoning",
+  "url": "https://arxiv.org/abs/2611.10463",
+  "use_case": ""
+}

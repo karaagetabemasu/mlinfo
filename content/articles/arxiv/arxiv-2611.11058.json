@@ -1,0 +1,33 @@
+{
+  "abstract": "Adaptive tokenization aims to reduce the compute spent on uninformative image regions while preserving accuracy. Existing work relies on (i) fixed or frozen scoring rules, which cannot be trained toward the task loss, or (ii) discrete masks trained with straight-through estimators, which yield noisy gradients, while fully differentiable alternatives instead leave the pre-trained regular grid. We revisit adaptive tokenization from a regular-grid perspective and ask: can a two-scale quadtree be learned end-to-end without deleting a single token during training? We show that one coarse token and its four fine children can be made the two endpoints of a single continuous interpolation. We introduce Differentiable Virtual-Slot Partitioning (\\dvsp{}), which keeps four \\emph{virtual slots} per $2{\\times}2$ region and blends their token features and attention mass with a single weight $α$, exactly reproducing the discrete grid at $α\\in \\{0,1\\}$. On COCO detection with EVA-02-B, \\dvsp{} retains $97.9\\%$ of dense Box AP while removing $64.2\\%$ of visual tokens, giving a $1.61\\times$ end-to-end speedup, and it outperforms entropy-based APT, DART, and uniform lower-resolution dense adaptation at matched budgets; these gains depend on the conserved attention mass, whose removal costs $1.59$ Box AP. On a frozen Segmenter it also improves Cityscapes mIoU, and on frozen DeiT backbones it exceeds entropy selection at identical per-image token counts.",
+  "abstract_ja": "",
+  "authors": [
+    "Gaoxiang He",
+    "Bin Zhu",
+    "Bo Xie",
+    "Xiaotong Yu",
+    "Yi Chen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11058",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Adaptive tokenization aims to reduce the compute spent on uninformative image regions while preserving accuracy. Existing work relies on (i) fixed or frozen scoring rules, which cannot be trained…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Differentiable Virtual-Slot Partitioning for Adaptive Tokenization in Vision Transformers",
+  "url": "https://arxiv.org/abs/2611.11058",
+  "use_case": ""
+}

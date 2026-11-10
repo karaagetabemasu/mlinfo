@@ -1,0 +1,39 @@
+{
+  "abstract": "Surgical procedures are inherently partially observable, requiring surgeons to continuously infer evolving anatomical dynamics and future surgical states beyond the current observation. However, existing self-supervised learning methods primarily learn from observed surgical videos through masked reconstruction or predicting representations within the camera's current field of view, lacking the capability to explicitly model the out-of-sight surgical dynamics. Inspired by latent predictive world models, we introduce SurgWorld, a video-native, self-supervised framework for surgical representation learning, which treats a specified spatial or temporal shift as a pseudo-action and learns to predict the target latent representation from a partial observation. Specifically, we propose Out-of-Sight Dynamics Modeling (OSDM) as the pretraining objective for predicting representations conditioned on relative spatio-temporal shifts. We further regularize the learned latent dynamics from OSDM with a Geometric Visual Similarity (GVS) objective by aligning patch-level relational structures between predicted and target representations, preserving spatial geometry and local visual coherence for dense perception. These two objectives are integrated through an agglomerative training framework that consolidates complementary supervisory signals from multiple teachers to learn a unified latent representation of surgical dynamics and visual geometry. Extensive transfer learning experiments on 17 surgical benchmarks show that SurgWorld consistently outperforms existing vision foundation models across surgical workflow recognition, fine-grained action understanding, and dense visual perception. We further conduct tailored qualitative and quantitative analyses, demonstrating that SurgWorld effectively captures surgical dynamics beyond the directly observed context through latent prediction.",
+  "abstract_ja": "",
+  "authors": [
+    "Jingkun Yue",
+    "Pengxiang Wang",
+    "Siqi Zhang",
+    "Zinan Jia",
+    "Yiyao Zhang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11140",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Surgical procedures are inherently partially observable, requiring surgeons to continuously infer evolving anatomical dynamics and future surgical states beyond the current observation. However,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "supervised",
+      "self-supervised"
+    ],
+    "modality": [
+      "image",
+      "text",
+      "video"
+    ],
+    "task": [
+      "classification",
+      "embedding"
+    ]
+  },
+  "title": "SurgWorld: Learning Surgical Representations Beyond Observation via Latent Prediction",
+  "url": "https://arxiv.org/abs/2611.11140",
+  "use_case": ""
+}

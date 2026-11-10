@@ -1,0 +1,32 @@
+{
+  "abstract": "Large language models (LLMs) are increasingly deployed in user-facing systems, where jailbreak attacks can bypass safety controls and induce harmful and policy-violating outputs. Recent model-internal detectors use hidden representations, gradients, or internal signals to identify such prompts, but their practical security value depends critically on behavior at low false-positive operating points rather than on area under the receiver operating characteristic curve (AUROC) alone. We study two data dependencies that shape this behavior: calibration data, which determine the detection threshold, and reference data, which can influence detector scores. Across four model-internal detectors, four LLMs, and twelve jailbreak families, thresholds calibrated on curated benign prompts frequently fail to preserve their false-positive rate (FPR) budgets on real-user traffic. Recalibration improves false-positive control but reveals substantial family-level coverage gaps, including cases with high AUROC but low true-positive rate (TPR). Causal reference-set interventions show that changing reference composition can substantially alter family-level detection and that improving coverage of one attack family can reduce coverage of others. These findings show that calibration and reference data are part of a detector's security behavior. We therefore recommend evaluating model-internal jailbreak defenses using realized FPR on deployment-like traffic and per-family TPR at explicit low-FPR operating points, with AUROC used as a complementary ranking metric rather than the primary security measure.",
+  "abstract_ja": "",
+  "authors": [
+    "Mohammad Tehabsim",
+    "Basil Al-Housani",
+    "Nour Alhussien",
+    "Phung Lai"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11067",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Large language models (LLMs) are increasingly deployed in user-facing systems, where jailbreak attacks can bypass safety controls and induce harmful and policy-violating outputs. Recent…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Beyond AUROC: Deployment-Aware Evaluation of Model-Internal Jailbreak Detectors",
+  "url": "https://arxiv.org/abs/2611.11067",
+  "use_case": ""
+}

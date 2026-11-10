@@ -1,0 +1,28 @@
+{
+  "abstract": "Retrieval-augmented generation (RAG) can surface passages that support a claim, contradict it, or fail to address it, yet existing calibrated grounding methods are typically one-sided and model only supporting evidence. We introduce Conformal Evidence Sets (CES), a two-sided framework that returns separate support and refutation sets with finite-sample inclusion coverage of at least $1-α$ on each side under exchangeability; a Bonferroni union yields joint coverage of at least $1-2α$. On labeled candidate pools from the contrastive VitaminC benchmark, CES closely tracks nominal coverage across $α\\!\\in\\!\\{0.05,0.10,0.15,0.20,0.30\\}$, with maximum deviations of $3.0$ percentage points for support and $5.4$ for refutation, and reaches essentially the same empirical coverage--size frontier as a test-tuned fixed-threshold heuristic without any test exposure. Stress tests mark the boundary of that guarantee: under FEVER distribution shift both sides under-cover, by up to $12.7$ percentage points, and support-side group-stratified recalibration substantially reduces the support gap. Scorer swaps, hard-negative retrieval, cross-dataset transfer, and a live end-to-end pilot expose a clear separation: when exchangeability holds and relevant evidence is retrieved, evidence inclusion remains calibrated even with an imperfect scorer, whereas the support/refute verdict tracks scorer quality directly. Calibrated evidence coverage and reliable verdicts are therefore distinct properties and should be reported separately.",
+  "abstract_ja": "",
+  "authors": [
+    "Ben Jenkins",
+    "Mihaela Cardei"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10335",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Retrieval-augmented generation (RAG) can surface passages that support a claim, contradict it, or fail to address it, yet existing calibrated grounding methods are typically one-sided and model only…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Two-Sided Conformal Evidence Sets for Retrieval-Augmented Generation",
+  "url": "https://arxiv.org/abs/2611.10335",
+  "use_case": ""
+}

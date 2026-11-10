@@ -1,0 +1,30 @@
+{
+  "abstract": "Diffusion large language models (LLMs) have recently emerged as a promising alternative to autoregressive LLMs, enabling parallel generation through iterative denoising. Recent guidance methods improve diffusion LLMs by introducing a weak model to guide the prediction of the base model during denoising. However, the influence of the weak model during denoising remains less clear, and computing its prediction requires an additional forward pass at each denoising step. We present in this paper an in-depth analysis of how diffusion LLMs use contextual information during denoising. Our analysis reveals that diffusion LLMs rely more heavily on local context while often underutilizing global context. Based on this observation, we introduce Global Context Guidance (GCG), a feature-space guidance method that enhances global-context utilization without constructing an explicit weak model. Extensive experiments on LLaDA-8B, Dream-7B, and LLaDA-1.5 across diverse benchmarks demonstrate that GCG consistently outperforms existing guidance methods, while incurring much lower inference overhead.",
+  "abstract_ja": "",
+  "authors": [
+    "Jeimin Jeon",
+    "Bumsub Ham"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10577",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Diffusion large language models (LLMs) have recently emerged as a promising alternative to autoregressive LLMs, enabling parallel generation through iterative denoising. Recent guidance methods…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Global Context Guidance for Diffusion Large Language Models",
+  "url": "https://arxiv.org/abs/2611.10577",
+  "use_case": ""
+}

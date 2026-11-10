@@ -1,0 +1,30 @@
+{
+  "abstract": "Due to supply constraints, replacing damaged automotive components can be expensive and time-consuming, while replacing the entire component can be wasteful when much of it remains usable. This paper presents a pipeline to investigate whether missing geometry can be reconstructed as a repair patch using paired observations of the intact models and synthetically damaged components. Noise-free color, depth, and silhouette images were produced using the camera viewpoints. Depth differences were then used to identify the potential missing regions, while multi-view voxel reconstruction was used to estimate the missing portion. A pretrained DINOv2 model was also added to validate missing candidates and determine whether pretrained visual features could improve reconstruction. We tested the pipeline on 20 automotive CAD models, each with a synthetically removed portion. Each model was tested under four different conditions using two reconstruction methods for a total of 160 trials. The predictions were compared with the missing geometry of the unchanged ground-truth using predefined thresholds of the voxel intersection-over-union over 0.85 and the absolute relative volume error less than 15%. Of the 160 experimental trials, 109 of them satisfied both thresholds. Geometry-only reconstruction passed 16 of 20 components with eight views but only 10 of 20 with four adjacent views. Further analysis showed that 24 out of the 37 failed reconstructions could be categorized as unsuccessful because extra material was incorrectly added to areas that should have been empty. The implementation of DINOv2 into the pipeline did not improve the overall reconstruction accuracy and made prediction generation slower. For 13 verified tests, printing only the repaired sections instead of the entire parts reduced filament use by 93.08% and printing time by 89.39% based on the median results.",
+  "abstract_ja": "",
+  "authors": [
+    "Kazim Abbas",
+    "Zheng Liu"
+  ],
+  "category": "mlops",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10318",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "pipeline",
+  "summary": "Due to supply constraints, replacing damaged automotive components can be expensive and time-consuming, while replacing the entire component can be wasteful when much of it remains usable. This paper…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "AI-Driven Repair of Missing Automotive Components",
+  "url": "https://arxiv.org/abs/2611.10318",
+  "use_case": ""
+}

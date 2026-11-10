@@ -1,0 +1,33 @@
+{
+  "abstract": "While MLLMs can often identify what happens in a video, they still struggle with fine-grained spatio-temporal reasoning, which requires precise grounding when and where the supporting evidence appears and composing such evidence into a coherent reasoning chain. This challenge is exacerbated by the lack of scalable data construction and evaluation pipelines that provide granular, verifiable supervision linking reasoning steps to explicit spatio-temporal evidence.To address this gap, we present V-STORM, a structure-aware framework that transforms videos into Spatio-Temporal Scene Graphs (STSGs) and derives Grounded Chain of Thought (GCoT) from validated evidence paths, making each reasoning step traceable to structured and verifiable spatio-temporal evidence.Under this framework, we construct a 260K-sample training set and a 3K-sample human-verified benchmark, both featuring GCoT annotations that link reasoning to explicit spatio-temporal evidence.Experiments reveal a clear separation between evidence localization and evidence composition: current MLLMs can often identify relevant spatio-temporal cues, yet still fail to integrate them into correct multi-step reasoning, exposing a bottleneck that answer-only evaluation largely obscures. Moreover, fine-tuning with V-STORM substantially improves both answer accuracy and grounding faithfulness, validating its effectiveness as supervision for faithful and evidence-grounded video reasoning. Our dataset, benchmark, and source code will be publicly released.",
+  "abstract_ja": "",
+  "authors": [
+    "Dian Jiao",
+    "Yuqian Yuan",
+    "Jiaqi Zhu",
+    "Mingjian Gao",
+    "Siwen Tan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.09511",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "While MLLMs can often identify what happens in a video, they still struggle with fine-grained spatio-temporal reasoning, which requires precise grounding when and where the supporting evidence…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "V-STORM: A Structure-Aware Grounded Chain of Thought Dataset for Faithful and Fine-Grained Spatio-Temporal Video Reasoning",
+  "url": "https://arxiv.org/abs/2611.09511",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "LiDAR-based localization and mapping systems produce registered point clouds that serve as geometric measurements for downstream estimation and navigation. Registration errors introduce duplicated surfaces and structural deformation into these measurements. In the absence of an independent reference, online assessment relies on geometry accumulated from earlier measurements. Such assessment requires tolerance to sampling variation and an accumulation process in which observations enter the history only after evaluation. We therefore formulate a recursive Bayesian comparison that couples geometric assessment with history maintenance. A Normal-Inverse-Wishart model represents historical voxel geometry and its uncertainty, while a weak isotropic reference adapts to current sampling. Comparing the marginal predictive support of the same current points under both models yields Normalized Drift Evidence (NDE). Assessment precedes assimilation: positive NDE triggers an alarm and preserves the preceding historical state; otherwise, the current observations update the history. Across 14 real-world sequences totaling approximately 73 min from four platform types, alarms identified all nine corrupted sequences and were absent from all five consistent sequences. In four representative scenarios with event references, first alarms occurred within 0.9 s of the reference times, with no preceding alarms. Cross-backend evaluation demonstrates consistent responses to reconstructed geometry. Ablation and controlled perturbation results establish the roles of uncertainty modeling, recursive history, displacement, and geometric support. Mean processing time is 4.2--6.1 ms per update at 1 Hz. In ten UAV trials, alarms initiated odometry isolation, landing, relocalization, and mission continuation.",
+  "abstract_ja": "",
+  "authors": [
+    "Mingqiao Han",
+    "Qigeng Duan",
+    "Xuchen Liu",
+    "Jinqiang Cui",
+    "Xi Chen"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10566",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "LiDAR-based localization and mapping systems produce registered point clouds that serve as geometric measurements for downstream estimation and navigation. Registration errors introduce duplicated…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Online Geometric Consistency Assessment of LiDAR Measurements via Recursive Bayesian Comparison",
+  "url": "https://arxiv.org/abs/2611.10566",
+  "use_case": ""
+}

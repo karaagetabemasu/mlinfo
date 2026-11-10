@@ -1,0 +1,30 @@
+{
+  "abstract": "Random perturbations around a shared checkpoint can produce experts for distinct tasks, but shared origin does not ensure that their gains survive composition. We formulate expert-pair selection for joint base-relative retention, measured by strict joint success and worst-task gain with unconditional abstention accounting. An exact finite-difference decomposition and an arbitrarily small orthogonal counterexample show why proximity and orthogonality alone are insufficient. We instantiate this formulation with quality-constrained spectral selection, a fixed-budget framework combining cross-task screening, layerwise pair geometry, separate validation, and Base fallback. Across six checkpoints, 21 task pairs, and five independent perturbation pools, the procedure improves strict joint success over Top-1 averaging throughout and leads the four-method model-scale comparison on four of six checkpoints. For the five models with at least 1.5B parameters, matched quality-only, global-cosine, and spectral ranking attain 49.1%, 50.5%, and 53.1% joint success. Under this matched protocol, the spectral selector also yields the highest worst-task gain and Weak Pareto rate and the lowest regression rate. Mean worst-task gain reaches +0.61 percentage points, while 17.1% regression and 13.0% abstention show that composability remains conditional. Project page: https://anonymous.4open.science/r/Thickets-Merge/.",
+  "abstract_ja": "",
+  "authors": [
+    "Suxin Ji",
+    "Hungtao Wan",
+    "Mingjun Liu",
+    "An Zhang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11177",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Random perturbations around a shared checkpoint can produce experts for distinct tasks, but shared origin does not ensure that their gains survive composition. We formulate expert-pair selection for…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "When Are Nearby Experts Composable? Cross-Task Model Merging in Neural Thickets",
+  "url": "https://arxiv.org/abs/2611.11177",
+  "use_case": ""
+}

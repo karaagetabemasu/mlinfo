@@ -1,0 +1,29 @@
+{
+  "abstract": "Scenario-based simulation is central to evaluating autonomous-driving policies, but a scenario scripted before execution (i.e., with predetermined, fixed actor routes and speeds) may not preserve its intended interaction once the tested ego policy responds in closed loop. Scripted scenarios cannot adapt to unanticipated ego behavior, while learned traffic actors may remain reactive without reliably realizing a particular scenario intent. We introduce a scenario orchestrator that continuously monitors the joint traffic state and adapts non-ego actors through re-timing, re-routing, and role reassignment for creating a specific scenario intent. At each step, the orchestrator solves a constrained optimization problem that preserves the intended interaction while limiting interventions and maintaining traffic feasibility. We further distinguish scenario realization from policy failure, allowing a test to first be judged based on whether the intended interaction occurred and then by how the ego policy responded. Experiments in the CARLA simulator across multiple scenario families and driving policies show that orchestration realizes targeted interactions more reliably than scripted and learned actor-level baselines, particularly under variations in initial conditions and ego behavior. These results support closed-loop scenario orchestration as a tool for controlled and reproducible policy evaluation.",
+  "abstract_ja": "",
+  "authors": [
+    "Frieda Rong",
+    "Zhaoyue Wang",
+    "Veer Kapadia",
+    "Vishaka Rajani",
+    "Aren A. Babikian"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.09888",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "Scenario-based simulation is central to evaluating autonomous-driving policies, but a scenario scripted before execution (i.e., with predetermined, fixed actor routes and speeds) may not preserve its…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Scenario Orchestration for Closed-loop Policy Evaluation of Autonomous Driving",
+  "url": "https://arxiv.org/abs/2611.09888",
+  "use_case": ""
+}

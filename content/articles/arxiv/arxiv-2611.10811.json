@@ -1,0 +1,32 @@
+{
+  "abstract": "Video fusion aims to integrate complementary cues from heterogeneous sources, producing visually informative videos with coherent spatio-temporal structures. Jointly learning cross-modal complementarity and temporal dependencies typically relies on large-scale, high-quality video datasets, whose storage and repeated use during optimization incur substantial costs, making data-efficient learning highly desirable. To address this challenge, we rethink video fusion from the perspective of dataset condensation and propose STAR-VF, the first framework that condenses spatio-temporal representations for data-efficient video fusion. STAR-VF condenses the original training set into a compact set of learnable spatio-temporal representations, which are decoded into synthetic video clips and optimized using feature-level supervision provided by a frozen proxy model. The resulting condensed data preserves fusion-relevant spatial and temporal cues without requiring ground-truth fused videos as supervision. To adapt fusion learning to condensed representations, we equip the final fusion model with flow-free inter-frame temporal modeling and query-driven intra-frame aggregation, enabling direct temporal interaction and adaptive selection of fusion-relevant information in representation space. Extensive experiments on infrared-visible, multi-exposure, multi-focus, and medical video fusion benchmarks demonstrate that STAR-VF, trained with only approximately 1/16 of the original temporal training set, achieves fusion quality comparable to methods trained on the full data. Further analyses validate the contributions of learned condensation and flow-free temporal modeling, and demonstrate the robustness of the condensed supervision across different proxy encoders and downstream fusion models. Project page: https://zju-xyc.github.io/STAR-VF-Project-Page/.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuchen Xian",
+    "Yunqiu Xu",
+    "Guosheng Lin",
+    "Yang He"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10811",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Video fusion aims to integrate complementary cues from heterogeneous sources, producing visually informative videos with coherent spatio-temporal structures. Jointly learning cross-modal…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "STAR-VF: Spatio-Temporal Aware Representation Condensation for Data-Efficient Video Fusion",
+  "url": "https://arxiv.org/abs/2611.10811",
+  "use_case": ""
+}

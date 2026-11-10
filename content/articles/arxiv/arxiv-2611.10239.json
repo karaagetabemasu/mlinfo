@@ -1,0 +1,29 @@
+{
+  "abstract": "Geometric foundation models estimate dense geometry and camera parameters from monocular images, but reliable SLAM also requires consistent scale and accurate data association across successive reconstructions. We present DASH-SLAM, a monocular SLAM system that integrates metric depth predictions from pretrained Depth Anything 3 into a shared-keyframe pose graph without task-specific fine-tuning. DASH-SLAM derives scale corrections from depth ratios at shared anchor images and accumulates them across reconstructions, with a damping factor controlling their influence. These corrections rescale odometry translations, loop constraints, and map geometry. Experiments on TUM, Replica, and 7-Scenes show that DASH-SLAM outperforms state-of-the-art methods. We evaluate performance using both rigid and similarity alignment to distinguish metric-scale fidelity from accuracy up to scale. We further evaluate DASH-SLAM on four challenging sequences in perceptually-degraded environments from the Unified Autonomy Stack field dataset, covering tunnels, fog, and a frozen lake. On these sequences, DASH-SLAM outperforms the foundation-model SLAM state-of-the-art and maintains tracking where classical SLAM methods fail.",
+  "abstract_ja": "",
+  "authors": [
+    "Otavio Ribas",
+    "Jacopo Panerati",
+    "Pierre-Yves Lajoie"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10239",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Geometric foundation models estimate dense geometry and camera parameters from monocular images, but reliable SLAM also requires consistent scale and accurate data association across successive…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "DASH-SLAM: Calibration-Free Metric Monocular SLAM via Depth Scale Propagation",
+  "url": "https://arxiv.org/abs/2611.10239",
+  "use_case": ""
+}

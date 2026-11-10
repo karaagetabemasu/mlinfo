@@ -1,0 +1,30 @@
+{
+  "abstract": "Activation probes look like near-perfect monitors for secret collusion among large language model (LLM) agents. We show that they mostly detect that an agent was told to collude, not that it decided to. Our benchmark (2,500 committee and 1,476 code-review episodes) adds agents who receive the collusion instruction and refuse it, separating instruction from decision. Published detectors barely tell colluders from these refusers, and our best probe separates them mostly by reading the instruction: without it, agent AUROC falls from 1.00 to 0.61. Two further pitfalls inflate reported results: scored after the vote, a rule that only reads the votes reaches AUROC 0.990 but finds nothing before it; and in 57% of attempts no colluder argues for the target in public. The decision is still there: a probe trained on agents' own choices reads it (AUROC 0.73 without the instruction), and probes find colluders whose goal was fine-tuned into the weights (AUROC 0.995; pre-registered). We turn the controls into a protocol for testing any collusion monitor, and adapt scan statistics into an online monitor for groups of any size.",
+  "abstract_ja": "",
+  "authors": [
+    "Mainul Hasan Mohsin",
+    "Mohammad Shahidur Rahman"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10620",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Activation probes look like near-perfect monitors for secret collusion among large language model (LLM) agents. We show that they mostly detect that an agent was told to collude, not that it decided…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "What Do Collusion Probes Read? Three Pitfalls in Evaluating Multi-Agent Collusion Monitors",
+  "url": "https://arxiv.org/abs/2611.10620",
+  "use_case": ""
+}

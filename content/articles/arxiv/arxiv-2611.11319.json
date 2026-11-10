@@ -1,0 +1,31 @@
+{
+  "abstract": "Long-context applications, long-lived agents, and multi-agent systems require large language models (LLMs) to process and retain extensive information. In these settings, the KV cache can exceed GPU high-bandwidth memory (HBM) capacity, necessitating offloading to host memory, where CPU-to-GPU transfers can dominate inference latency. While KV cache compression can reduce data movement, query-agnostic compression that guarantees accurate attention for arbitrary queries is extremely challenging, if not impossible. We introduce VerKV, a hybrid approach that provides $(ε, δ)$ guarantees for approximating attention on any given query. VerKV maintains a compact set of query-agnostic pivotal tokens on the GPU, together with a token-level sketch of the full KV cache, while retaining the complete cache in CPU memory. We introduce a novel stochastic sampling procedure, PoissonComp, to select the pivotal tokens. At inference time, our proposed KVFetch algorithm uses the pivotal tokens and the sketch to estimate the relative error of the resulting attention computation. If the estimate satisfies a user-specified $(ε, δ)$ tolerance, inference proceeds without accessing host memory. Otherwise, VerKV performs query-aware retrieval to fetch additional tokens from the CPU, refining the attention computation to meet the required tolerance. Thus, VerKV enables attention with bounded approximation error while minimizing CPU-to-GPU transfers. We show that PoissonComp outperforms state-of-the-art approaches to KV cache compression. Combined with KVFetch, it achieves near-dense performance (90-100% of dense quality at 32K context length, averaged over RULER and LOFT), using Qwen3-4B, Qwen3.5-9B and Ministral-3-8B, while reducing the GPU memory footprint by 8-32x and keeping CPU-to-GPU memory fetches within 2-23% of the cache per generated token, depending on the model.",
+  "abstract_ja": "",
+  "authors": [
+    "Devanshu Jha",
+    "Gaurav Kumar",
+    "Agniva Chowdhury",
+    "Kumar Krishna Agrawal",
+    "Aditya Desai"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11319",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Long-context applications, long-lived agents, and multi-agent systems require large language models (LLMs) to process and retain extensive information. In these settings, the KV cache can exceed GPU…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Verify Before You Fetch: Reliable KV Cache Compression for LLM Inference",
+  "url": "https://arxiv.org/abs/2611.11319",
+  "use_case": ""
+}

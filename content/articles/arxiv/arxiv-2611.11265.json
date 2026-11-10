@@ -1,0 +1,34 @@
+{
+  "abstract": "Positron emission tomography (PET) is pivotal in medicine and healthcare, but requires high radiation doses for quality imaging. Although deep learning has shown promise for low-dose PET reconstruction/enhancement, existing methods primarily rely on fully supervised learning, which requires paired low- and full-dose scans that are clinically impractical to obtain. To overcome this fundamental limitation, we propose DuSS-PET, a novel self-supervised PET reconstruction framework that operates without any paired low- and full-dose data. Our method is built upon a computational Noisier2Noise (Nr2N) paradigm, featuring a Bernoulli corruption strategy that serves as an image-space approximation to emulate low-count noise patterns in image-derived pseudo-sinogram representations. The DuSS-PET framework integrates three core components: an adaptive Swin transformer for pseudo-sinogram restoration, a plug-and-play module for image enhancement, and a consistency-constrained SSL strategy that enforces agreement between the pseudo-sinogram and image representations. Extensive experiments on multi-center datasets demonstrate that DuSS-PET achieves superior reconstruction performance, outperforming state-of-the-art SSL methods and achieving comparable or even better results than fully supervised approaches across various dose levels. In particular, it exhibits exceptional generalization across different scanner vendors. This work is among the first self-supervised low-dose PET reconstruction framework that enforces consistency between reconstructed images and pseudo-sinograms, where the pseudo-sinogram generated in the image space serves as a solid computational consistency constraint for enhanced imaging without full-dose training scans. The source code will be publicly available at https://github.com/ladderlab-xjtu/DuSS-PET.",
+  "abstract_ja": "",
+  "authors": [
+    "Shuijin Lin",
+    "Yuzhu He",
+    "Yongbo Wang",
+    "Jianhua Ma",
+    "Fan Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/ladderlab-xjtu/DuSS-PET",
+  "hasCode": true,
+  "id": "arxiv-2611.11265",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Positron emission tomography (PET) is pivotal in medicine and healthcare, but requires high radiation doses for quality imaging. Although deep learning has shown promise for low-dose PET…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "supervised",
+      "self-supervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "DuSS-PET: Self-Supervised Low-Dose PET Reconstruction Using Pseudo-Dual-Domain Consistency Without Paired Data",
+  "url": "https://arxiv.org/abs/2611.11265",
+  "use_case": ""
+}

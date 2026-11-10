@@ -1,0 +1,31 @@
+{
+  "abstract": "Speculative decoding efficiency depends on the number of consecutively accepted draft tokens, yet token-level training objectives do not directly optimize this quantity. We introduce D-REAL (Drafter Reinforcement of Expected Acceptance Length), a post-training method that directly optimizes expected acceptance length for a fixed decoding context. D-REAL weights position-wise draft-target distributional overlap by prefix survival probabilities along a draft-sampled prefix, faithfully capturing the sequential dependence of verification on earlier proposals. By accounting for the parameter dependence of the proposal distribution, we derive an unbiased gradient estimator for this single-round objective under stochastic verification. We evaluate D-REAL on DSpark and DFlash2 with Qwen3-8B as the target model across ten benchmarks. Starting from baselines whose mean acceptance length has plateaued, one epoch of D-REAL post-training consistently improves the benchmark-averaged mean acceptance length by up to 0.23 tokens across both architectures under greedy (T = 0.0) and stochastic (T = 1.0) sampling, translating into up to a 9.4% end-to-end serving throughput improvement.",
+  "abstract_ja": "",
+  "authors": [
+    "Meng Wei",
+    "Yefei Chen",
+    "Antong Li",
+    "Yanan Gao",
+    "Xingliang Shi"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10432",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Speculative decoding efficiency depends on the number of consecutively accepted draft tokens, yet token-level training objectives do not directly optimize this quantity. We introduce D-REAL (Drafter…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "D-REAL: Acceptance-Length Optimization with Unbiased Gradients for Speculative Decoding",
+  "url": "https://arxiv.org/abs/2611.10432",
+  "use_case": ""
+}

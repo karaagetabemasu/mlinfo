@@ -1,0 +1,34 @@
+{
+  "abstract": "Dichotomous image segmentation requires pixel-accurate foreground-background separation while preserving fine structures such as thin filaments, sharp edges, and intricate textures. BiRefNet addressed this challenge through bilateral references, combining image patches and gradient information, but its inward reference loses local spatial structure and lacks semantic guidance, while its outward reference relies on single-channel gradient attention. We recast this paradigm as controlled information recovery - locality determines what spatial information survives, semantic selectivity what information enters, and focused boundary supervision where refinement occurs - and propose BiRefNet-V2 to implement it: (1) locality-preserving and semantically guided detail injection through space-to-depth transformation, overlapping patches, and a Semantically Guided Gate; (2) a learned boundary stream with focused supervision that generates full-channel residual attention without requiring boundary annotations; and (3) a dual-branch decoder integrating depth-wise boundary convolutions with large-kernel attention. A modernized framework - LayerNorm, GELU, the Lion optimizer, and a DINOv3 backbone - cuts training from 600 to 50 epochs. Extensive experiments demonstrate state-of-the-art performance on DIS5K, camouflaged object detection, and high-resolution salient object detection across all 13 evaluation sets. Code is available at https://github.com/ZhengPeng7/BiRefNet-V2.",
+  "abstract_ja": "",
+  "authors": [
+    "Peng Zheng",
+    "Deng-Ping Fan",
+    "Binglu Wang",
+    "Nicu Sebe"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/ZhengPeng7/BiRefNet-V2",
+  "hasCode": true,
+  "id": "arxiv-2611.11272",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Dichotomous image segmentation requires pixel-accurate foreground-background separation while preserving fine structures such as thin filaments, sharp edges, and intricate textures. BiRefNet…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection",
+      "segmentation"
+    ]
+  },
+  "title": "BiRefNet-V2: Rethinking Bilateral Reference for High-Resolution Dichotomous Image Segmentation",
+  "url": "https://arxiv.org/abs/2611.11272",
+  "use_case": ""
+}

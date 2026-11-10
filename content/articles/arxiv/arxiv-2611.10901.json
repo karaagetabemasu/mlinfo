@@ -1,0 +1,30 @@
+{
+  "abstract": "Detectors of AI-generated text are usually tuned and tested on passages of several hundred tokens, yet many real cases are short. We study score-based detection as a function of passage length. We give a closed form for how the false-positive rate of a threshold set on long text changes as length falls, and a formula for the number of tokens a detector needs to reach a target true-positive rate. We calibrate thresholds within length bins with conformal p-values, and we add a bin-level rule that abstains when the detector cannot be informative at that length. On synthetic scores the formulas agree with simulation, and binned calibration holds the false-positive rate at its nominal value at every length. On three zero-shot detectors (log-likelihood, log-rank, Binoculars), three corpora and two open-weight generators, binned calibration gives a mean false-positive rate of 5.0% in every detector-length cell from 10 to 200 tokens, averaged over 300 random document-level resplits. A single threshold set at 200 tokens gives 29% for Binoculars at 10 tokens and about 1% for log-likelihood, as the closed form predicts. No detector reaches an 80% true-positive rate, and the best, Binoculars at 200 tokens, reaches 59%, so the rule abstains in every cell at that floor and releases only the 200-token bins at floors of 0.3 and 0.5.",
+  "abstract_ja": "",
+  "authors": [
+    "Ritesh Janga",
+    "Justin Zhan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10901",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Detectors of AI-generated text are usually tuned and tested on passages of several hundred tokens, yet many real cases are short. We study score-based detection as a function of passage length.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "How Short Is Too Short? Length-Conditional Calibration and Abstention for Detecting AI-Generated Text",
+  "url": "https://arxiv.org/abs/2611.10901",
+  "use_case": ""
+}

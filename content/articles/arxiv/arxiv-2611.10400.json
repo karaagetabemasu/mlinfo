@@ -1,0 +1,30 @@
+{
+  "abstract": "Visuomotor policies can handle many robot manipulation tasks, but understanding their failures remains difficult. Unfamiliar conditions and small action errors can lead to failure, yet watching the robot alone tells us little about what went wrong inside the policy. We introduce MIND (Mechanistic Interpretability for Neural Diagnosis), a method that looks inside a trained policy to detect failures during execution and identify the internal concepts involved. MIND uses a sparse autoencoder to break down the policy's internal activations into features that can be studied individually. We give meaning to these features by linking their activity to the robot's position, movement, and surroundings, and by steering their activations to examine how they affect the robot's actions. From successful and failed executions, we learn how the features behave on the way to a failure. During execution, MIND flags deviations from these patterns and uses the meaningful features contributing most to the change to describe the problem. Experiments in simulation and on a physical robot show that changes in these internal features help detect and explain failures. By using the same features for detection and diagnosis, MIND connects failure signals to understandable changes inside the policy.",
+  "abstract_ja": "",
+  "authors": [
+    "Riad Ahmed",
+    "Sujosh Nag",
+    "Moniruzzaman Akash",
+    "Momotaz Begum"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10400",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Visuomotor policies can handle many robot manipulation tasks, but understanding their failures remains difficult. Unfamiliar conditions and small action errors can lead to failure, yet watching the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Detecting and Explaining Robot Policy Failures from Sparse Internal Features",
+  "url": "https://arxiv.org/abs/2611.10400",
+  "use_case": ""
+}

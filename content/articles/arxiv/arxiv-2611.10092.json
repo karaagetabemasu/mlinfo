@@ -1,0 +1,28 @@
+{
+  "abstract": "Promptable segmenters of the SAM family turn a click or a phrase into an instance mask, so the costly part of a label is now its class. However, each annotation project draws its own class boundary, often through objects these models already know: people from cars, sedans from trucks, one sedan model from another. A generic model's boundary is fixed by its training vocabulary. We present SNAP, an annotation pipeline that learns the project's boundary from the labels the annotator draws anyway. On one frozen SAM2.1 pass per image, we fit a per-project head, SnapHead, that classifies every proposal and refits in seconds after each labeled image. Where SAM 3 is available, the same labels decide class by class whether to keep its boundary or ours. Given the true masks of eight look-alike cell lines, SAM 3 assigns classes at Cohen's kappa = 0.038 and SnapHead at 0.754 (60 labeled images), and when only the class names change, SAM 3 falls to chance and SnapHead's score is unchanged. End to end, with 20 labeled images, SNAP beats a SAM 3 oracle tuned on the evaluation labels on five microscopy projects (0.484 against 0.441 F1), and run unchanged on five held-out datasets, it beats SAM 3 as shipped on four. Our results suggest that frozen foundation features already encode the class boundaries a generic vocabulary misses, and that a project's own labels are enough to read them out.",
+  "abstract_ja": "",
+  "authors": [
+    "Khayrul Islam",
+    "Christopher Frederic Miller"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10092",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "Promptable segmenters of the SAM family turn a click or a phrase into an instance mask, so the costly part of a label is now its class. However, each annotation project draws its own class boundary,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Adapting Frozen Promptable Segmenters to User-Defined Taxonomies via Few-Shot Proposal Learning",
+  "url": "https://arxiv.org/abs/2611.10092",
+  "use_case": ""
+}

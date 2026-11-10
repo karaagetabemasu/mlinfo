@@ -1,0 +1,36 @@
+{
+  "abstract": "Pretrained encoders from self-supervised representation learning are increasingly applied to sonar imagery of the seafloor, where they are evaluated with protocols that take one embedding per target. A target patch of seabed, by contrast, is re-imaged from an alternate look on overlapping survey passes, so each embedding is one measurement of that target. Standard protocols cannot say how consistent those measurements are, or how much of their spread belongs to the patch and how much to the acquisition geometry. We treat this as a measurement-reliability problem. Using a synthetic-aperture sonar (SAS) survey, we measure the repeat-look reliability of embeddings from a frozen natural-image encoder (DINOv3 ViT-S/16). Standard single-look metrics, effective rank, clustering and a linear probe for coral, are all stable to the look, and the probe performs well (AUC 0.93). Yet the repeat-look reliability of the same embeddings is poor, with a distance-based intraclass correlation (dbICC) of 0.20 and nearest neighbours and clusters that barely agree across looks. This contradiction resolves as we find the probe learns a stable direction, whose ICC of 0.60 is 3.0 times that of the full embedding. Variance components, calculated from generalizability theory, attribute under a tenth of the within-cell spread to look acquisition geometry. The rest is cell-specific and cannot be separated without repeat passes at matched geometry. A sonar-pretrained encoder (BenthicDINO) and a classical SAS texture descriptor show the same pattern. For this dataset and the tested representations, uses that depend on patch identity fail, such as cross-pass comparison and retrieval, while uses at the level of habitat type (e.g. coral classification) do not. Because the standard metrics did not detect this, we argue that repeat-look reliability should accompany any evaluation of representations of the seafloor.",
+  "abstract_ja": "",
+  "authors": [
+    "Harold Horsley",
+    "Oscar Pizarro",
+    "Hayat Rajani",
+    "Morten Omholt Alver"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10770",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Pretrained encoders from self-supervised representation learning are increasingly applied to sonar imagery of the seafloor, where they are evaluated with protocols that take one embedding per target.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification",
+      "embedding"
+    ]
+  },
+  "title": "How reliable is an embedding of the seabed? Repeat-look measurement of frozen encoders on synthetic aperture sonar",
+  "url": "https://arxiv.org/abs/2611.10770",
+  "use_case": ""
+}

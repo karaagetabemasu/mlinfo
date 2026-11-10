@@ -1,0 +1,33 @@
+{
+  "abstract": "Long video understanding requires models to identify and reason over sparse, temporally distributed evidence within limited frame budgets. Existing keyframe selection methods typically retrieve query-relevant frames from a densely sampled candidate set before inference. However, global image-text matching incurs unnecessary computation when a small set of uniformly sampled frames already provides sufficient evidence. Query relevance alone may also overlook evidence that distinguishes competing answers, while one-shot selection offers no opportunity to correct earlier selection errors. We propose HypoKFS, a training-free, plug-and-play framework that couples keyframe selection with iterative inference by multimodal large language models (MLLMs). HypoKFS first reasons over sparsely sampled frames to construct an initial hypothesis space. The resulting answer distribution determines whether additional frame selection is needed. When needed, the retained hypotheses guide the selection of discriminative frames, followed by renewed inference and hypothesis refinement. This iterative process directs additional visual computation toward unresolved hypotheses while avoiding unnecessary global frame matching. Experiments on Video-MME, LongVideoBench, and MLVU demonstrate consistent improvements across multiple MLLM backbones. HypoKFS improves accuracy by up to 6.7 percentage points and achieves 72.9% accuracy on Video-MME at only 1.3% of the reference frame-hypothesis matching cost.",
+  "abstract_ja": "",
+  "authors": [
+    "Yisong Hu",
+    "Junbo Wang",
+    "Yuke Li",
+    "Jiangbin Zheng"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10609",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Long video understanding requires models to identify and reason over sparse, temporally distributed evidence within limited frame budgets. Existing keyframe selection methods typically retrieve…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Reason First, Retrieve What Matters: Hypothesis-Guided Keyframe Selection for Long Video Understanding",
+  "url": "https://arxiv.org/abs/2611.10609",
+  "use_case": ""
+}

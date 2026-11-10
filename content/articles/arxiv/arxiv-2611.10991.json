@@ -1,0 +1,31 @@
+{
+  "abstract": "Small hand-tracking networks are deployed as 4- and 8-bit codes, and they should keep adapting to a user's camera after deployment, on the device and within roughly the memory of the model itself. Quantization-aware training cannot do this cheaply, because it keeps a 32-bit master copy of every weight together with its optimizer state, about 96 bits per weight. Training the codes directly with stochastic rounding needs no copy but injects rounding noise at every step, and the methods that remove this noise keep a residual buffer for every weight. We introduce sensitivity-gated accumulator caching (SGAC), which keeps residual state for only a small and changing set of weight groups. A set-associative cache of 8-bit accumulators collects the sub-step updates of the groups with the largest Fisher-weighted squared code step and writes them into the codes as whole steps; an evicted line is flushed by stochastic rounding, and a group without a line does not move until it is admitted. We prove that the write-back is unbiased and show, under a local quadratic model, that rounding a sub-step update costs loss of the same order as the update's own gain, so that rounding pays only where the expected gradient is large relative to the curvature. On a 383k-parameter hand-keypoint network, SGAC trains with 8.1 bits of state per weight. Scored on the 4/8-bit network that the device runs after adaptation, it has the highest mean accuracy of nine deployed low-bit networks on two simulated cameras. On twelve ImageNet-C corruptions it has the highest average of corrupted and clean accuracy of seven deployed methods, ahead of the PEQA-style, ECO-style and direct low-bit baselines with confidence intervals that exclude zero, and it matches an 8-bit accumulator kept for every weight with 56% of that state.",
+  "abstract_ja": "",
+  "authors": [
+    "Soroor Ghandali",
+    "Kanika Mamgain",
+    "Manjot Kaur",
+    "Akanksha Shukla",
+    "Shashira Guntuka"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10991",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Small hand-tracking networks are deployed as 4- and 8-bit codes, and they should keep adapting to a user's camera after deployment, on the device and within roughly the memory of the model itself.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Sensitivity-Gated Accumulator Caching for On-Device Learning of Low-Bit Hand Networks",
+  "url": "https://arxiv.org/abs/2611.10991",
+  "use_case": ""
+}

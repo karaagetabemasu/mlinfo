@@ -1,0 +1,32 @@
+{
+  "abstract": "Parcel-scale land-use data is missing for most rapidly urbanizing Global South cities, as current segmentation architectures rely on multispectral imagery and planned layouts. We introduce a hand-annotated six-class land-use corpus covering 202 km$^2$ of Kathmandu Valley across 408 fine-resolution RGB scenes. The dataset is uniquely challenging: RGB spectral similarity is high, class imbalance approaches 100:1, and key structural features like rivers measure just two to three pixels wide at a standard hierarchical decoder's prediction stride. Evaluating five architectures reveals that standard random data splitting conceals massive spatial leakage. Switching to a strict sequence-block split drops performance by up to 0.095 mIoU. This penalty exceeds the performance gap between the architectures themselves. We modified the SegFormer baseline by integrating a half-resolution residual detail path, boundary-reliability reweighting, a topology-aware loss, and a presence-balanced sampler. Adding only 1.9% more parameters, the enhanced architecture improves mean IoU across every test fold, with gains concentrated in rare, thin-structure classes. However, both models achieve identical results on the external LoveDA benchmark. Finally, augmenting with diffusion-generated pairs at matched compute degraded accuracy across all architectures, especially harming rare classes it aimed to improve. This demonstrates that blindly incorporating synthetic data can severely damage performance, highlighting a critical need to rigorously evaluate and filter generated samples before training.",
+  "abstract_ja": "",
+  "authors": [
+    "Pranil Parajuli",
+    "Sugam Dahal",
+    "Kiran Chandra Dahal"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10847",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Parcel-scale land-use data is missing for most rapidly urbanizing Global South cities, as current segmentation architectures rely on multispectral imagery and planned layouts. We introduce a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "Fine-resolution land-use segmentation and synthetic image-label augmentation in the Kathmandu Valley",
+  "url": "https://arxiv.org/abs/2611.10847",
+  "use_case": ""
+}

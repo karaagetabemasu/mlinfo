@@ -1,0 +1,30 @@
+{
+  "abstract": "In a multi-turn conversation, the choice of language model at one turn can affect which model should answer the next. The selected model's reply shapes the context for the next query, and its cached prompt prefix can reduce the cost of using that model again. We introduce MultiTurnRoute, a platform for building and evaluating multi-turn LLM routers. A shared interface gives built-in and user-defined routers the current query, dialogue history, and an estimate of each model's reusable prefix length. Our routing algorithm, Chain-of-Route (CoR), uses a learned gate over recent and recurrent dialogue history to predict response quality and estimates cost from each model's reusable prefix. MultiTurnRoute Arena ranks routers on recorded conversations and compares session quality and cost in interactive runs where a simulated user responds to each reply. On a benchmark drawn from WildChat and LMSYS-Chat-1M with per-turn quality annotations for five LLMs, CoR reduces the normalized cost required to match the strongest model's quality by up to 20.3% relative to the strongest routing baseline, while matching or improving peak response quality.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiaqi Xue",
+    "Mengxin Zheng",
+    "Heng Huang",
+    "Qian Lou"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10848",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "In a multi-turn conversation, the choice of language model at one turn can affect which model should answer the next. The selected model's reply shapes the context for the next query, and its cached…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "MultiTurnRoute: A Platform for Building and Evaluating Multi-Turn LLM Routers",
+  "url": "https://arxiv.org/abs/2611.10848",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Plant organ segmentation on compact computing platforms requires accurate predictions and affordable geometric preparation. We develop and evaluate a multiscale edge based graph attention model that combines local shape descriptors, two neighborhood scales and a residual stem and leaf correction in approximately 78 thousand parameters. The engineering application is plant point cloud segmentation for precision agriculture, assessed through grouped accuracy experiments and physical Raspberry Pi 5 inference. Broad comparisons with hierarchical, graph and transformer baselines establish PointNeXt as the strongest external accuracy reference among the tested local recipes. A nested four variant ablation on a local maize collection separates geometric information from the combined multiscale configuration across seven outer groups and three seeds. The complete model achieves the highest mean intersection over union, 86.36%, although uncertainty and boundary errors qualify the contribution of each component. We then optimize full cloud principal component analysis, sampling and neighbor queries without changing learned weights or descriptor definitions. All 1,180 paired desktop comparisons on PlantNet and TomatoWUR preserve exact logits and predictions. Multiscale pipeline latency falls from 330.33 to 96.82 milliseconds on PlantNet and from 1,054.52 to 463.10 milliseconds on TomatoWUR. PointNeXt also benefits from optimized sampling and remains faster over the complete pipeline. These results support compact graph learning with reduced geometric overhead, while physical board measurements establish inference feasibility rather than energy efficiency or readiness for autonomous flight.",
+  "abstract_ja": "",
+  "authors": [
+    "Jesus Ivan Ruiz-Martinez",
+    "Andres Mendez-Vazquez",
+    "Eduardo Rodriguez-Tello"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11007",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Plant organ segmentation on compact computing platforms requires accurate predictions and affordable geometric preparation. We develop and evaluate a multiscale edge based graph attention model that…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "Efficient 3D plant segmentation through multiscale graph learning and optimized geometric processing",
+  "url": "https://arxiv.org/abs/2611.11007",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Large language models (LLMs) perform well on general coding tasks, but their capabilities in application-layer embedded software development remain underexplored. Existing embedded benchmarks primarily focus on hardware-in-the-loop validation in simulated environments. We introduce RealEmbedBench, a benchmark of 5,142 samples covering three application-layer tasks: code generation and completion, state machine modeling and implementation, and cross-OS code translation. We evaluate six representative LLMs and find substantial performance differences across tasks and models. Project context, especially the local code window, significantly affects code generation and completion. Models perform reasonably well at state machine modeling but struggle to translate these models into executable code. Cross-OS translation performance varies substantially by direction. Translation from Harmony to RT-Thread is particularly challenging, with an average pass rate of 0.1667. These findings suggest that developers should consider local code context when using LLMs for code generation and completion and select models according to the translation direction. They also motivate the use of more real-world state machine implementation data in LLM training to narrow the gap between modeling and executable code.",
+  "abstract_ja": "",
+  "authors": [
+    "Yujun Huang",
+    "Yuwei Zhang",
+    "Yi Zhou",
+    "Shanshan Wu",
+    "Xiang Chen"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11469",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Large language models (LLMs) perform well on general coding tasks, but their capabilities in application-layer embedded software development remain underexplored. Existing embedded benchmarks…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "RealEmbedBench: Benchmarking LLMs on Real-World Application-Layer Embedded Software Tasks",
+  "url": "https://arxiv.org/abs/2611.11469",
+  "use_case": ""
+}

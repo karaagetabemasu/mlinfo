@@ -1,0 +1,34 @@
+{
+  "abstract": "Directing a robot to locate a target object in unseen environments remains a central challenge in embodied AI. Vision-Language Model (VLM)-based methods provide rich semantic reasoning but often produce uncalibrated and overconfident action decisions. We introduce CPNav, a navigation framework that combines collision-aware planning with statistically calibrated VLM action scoring for map-free object-goal navigation. From RGB-D input, CPNav constructs a navigability map, generates collision-free motion primitives, and queries two VLMs for goal detection and action scoring. The resulting scores are calibrated offline via conformal prediction (CP) using oracle actions obtained through a tree-structured exploration procedure with backtracking, providing finite-sample guarantees at a user-specified risk level. The CP layer is model-agnostic and can wrap any VLM policy. Online, calibrated VLM scores guide action selection, while a tree-structured exploration history records alternative actions and allows backtracking. We evaluate CPNav in both simulation and real-world hardware settings. In AI Habitat simulation, compared with the uncalibrated baseline method, CPNav achieves relative SR and SPL improvements of 6.2% and 11.4% on HM3D v0.2, and 12.4% and 8.8% on MP3D, respectively. In real-world deployment on a modified Hiwonder MentorPi robot, the corresponding improvements in SR and SPL are 24.9% and 15.2%, respectively. Code is available at https://github.com/practice-lab-ucla/CPnav.",
+  "abstract_ja": "",
+  "authors": [
+    "Qizhao Chen",
+    "Yuanhong Zeng",
+    "Shoh Nishino",
+    "Anushri Dixit"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/practice-lab-ucla/CPnav",
+  "hasCode": true,
+  "id": "arxiv-2611.10366",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Directing a robot to locate a target object in unseen environments remains a central challenge in embodied AI. Vision-Language Model (VLM)-based methods provide rich semantic reasoning but often…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "3d",
+      "multimodal"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "CPNav: Calibrated Vision-Language Navigation for Object-Goal Search in Unseen Environments",
+  "url": "https://arxiv.org/abs/2611.10366",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Query-Key Normalization (QK-Norm) is widely adopted in modern large language models to control the growth of attention logits and improve training stability. However, query and key norms are not merely sources of instability. The query norm controls the sharpness of the attention distribution, while the key norm determines how strongly a token attracts different queries. These norms therefore carry token-specific information about attention selectivity and token importance. By normalizing both, QK-Norm suppresses this information. This raises a natural question: can we control query-key representations without discarding their sensitivity to magnitude? To address this question, we propose QK-MAP, a Magnitude-Aware Projection for constructing queries and keys. Rather than removing magnitude through normalization, QK-MAP transforms the input representation using multiple learnable frequencies, so that changes in magnitude are encoded as bounded phase patterns. This allows magnitude to be represented through phase and direction rather than vector length alone. Its periodic features have a fixed norm while remaining sensitive to magnitude changes, separating magnitude encoding from norm growth. Multiple frequencies further help distinguish magnitudes and reduce periodic ambiguity. Experiments across model scales from 190M to 7B parameters show that QK-MAP achieves lower training and validation loss than both Standard attention and QK-Norm. Further analyses show that QK-MAP preserves sensitivity to input scale, assigns less attention to the first token, and produces stronger attention contrast for relevant evidence in synthetic long-context tests. These results demonstrate that query-key scale can be effectively controlled without sacrificing token-specific magnitude information.",
+  "abstract_ja": "",
+  "authors": [
+    "Yongding Tao",
+    "Yitong Qiao",
+    "Tianqi Shao",
+    "Tian Wang",
+    "Zhixuan Chu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10560",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Query-Key Normalization (QK-Norm) is widely adopted in modern large language models to control the growth of attention logits and improve training stability. However, query and key norms are not…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Large Language Models without QK-Normalization",
+  "url": "https://arxiv.org/abs/2611.10560",
+  "use_case": ""
+}

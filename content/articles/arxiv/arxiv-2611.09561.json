@@ -1,0 +1,31 @@
+{
+  "abstract": "Autonomous 3D exploration with UAVs requires efficient target selection under limited flight time and onboard computation. In conventional Euclidean-distance-based frontier pipelines, geometric distance may poorly represent the actual collision-free travel cost in cluttered environments, leading to inefficient frontier choices. This paper presents a lightweight path-aware frontier re-ranking method for LiDAR-based UAV exploration. The method first retains a small top-N set of promising frontier candidates using a lightweight utility function and then applies time-bounded RRT* planning to estimate their feasible path costs for re-ranking. The path generated for the selected frontier is further reused for navigation to reduce redundant global planning. Experiments in three warehouse-like environments show that the proposed method consistently produces shorter exploration trajectories than conventional frontier baselines, with traveled-distance reductions of up to 14.1%, while reducing exploration time by up to 9.5% in two environments and remaining competitive in the third. The method maintains map detail comparable to the conventional OctoMap-based baseline, demonstrating an effective trade-off between exploration efficiency and mapping quality.",
+  "abstract_ja": "",
+  "authors": [
+    "Duc Manh Do",
+    "Thanh Nguyen Canh",
+    "Ngoc Minh Do",
+    "Mai Thanh Thai",
+    "Xiem HoangVan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.09561",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Autonomous 3D exploration with UAVs requires efficient target selection under limited flight time and onboard computation. In conventional Euclidean-distance-based frontier pipelines, geometric…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Lightweight Path-Aware Frontier Re-ranking for LiDAR-Based UAV Exploration",
+  "url": "https://arxiv.org/abs/2611.09561",
+  "use_case": ""
+}

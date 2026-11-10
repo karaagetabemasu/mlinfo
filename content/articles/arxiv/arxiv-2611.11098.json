@@ -1,0 +1,33 @@
+{
+  "abstract": "Vision-language-action (VLA) models enable robots to understand and execute complex instructions, but their autoregressive (AR) action generation introduces significant latency on resource-constrained robotic platforms. Speculative decoding can accelerate AR-based inference by parallelizing action generation and verification; however, existing approaches rely on costly draft models, which are inefficient on edge platforms. In this paper, we propose Zora, a hardware-software co-design framework for accelerating AR-based VLA inference. Specifically, Zora introduces a lightweight retrieval-augmented generation (RAG)-based draft model that exploits robotic dynamics without additional neural draft models. We further reduce batch verification overhead through a kinematics-guided action-acceptance strategy and a KV-cache-sharing attention mechanism. To address the retrieval overhead introduced by RAG-based drafting, we co-design dedicated hardware support, Zora core, to address the memory irregularity in RAG-based drafting. We evaluate Zora on four VLA models with the LIBERO benchmark. Zora retains comparable accuracy while achieving up to 3.4$\\times$ speedup with software-only optimization and up to 7.6$\\times$ speedup with hardware support over GPUs.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhengyang Cheng",
+    "He Zhu",
+    "Zeyu Guo",
+    "Zihan Liu",
+    "Anbang Wu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11098",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Vision-language-action (VLA) models enable robots to understand and execute complex instructions, but their autoregressive (AR) action generation introduces significant latency on…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Efficient VLA Inference via Retrieval-Based Speculation and Hardware Acceleration",
+  "url": "https://arxiv.org/abs/2611.11098",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Rubric-based reinforcement learning (RL) extends RL with verifiable rewards to open-ended tasks by scoring each response against query-specific rubrics. Under group-relative optimization, however, a rubric that every sampled response fails (unreachable) or passes (saturated) gives all responses the same outcome and no learning signal; in Qwen3-4B medical training, 60.88% of query-rubric observations are inactive. We find that the two states lack different supervision: stating an unreachable rubric in the prompt raises its satisfaction from 1.13% to 91.25%, whereas responses that all pass a saturated rubric still differ in quality. We therefore propose RuACT (Rubrics as Adaptive Critics and Teachers), which assigns each inactive rubric the role that supplies what it lacks. Rubric as Teacher uses unreachable rubrics as privileged information for reward-gated on-policy self-distillation, and Rubric as Critic decomposes saturated rubrics into child rubrics that separate current responses while sharing the parent's weight. RuACT outperforms GRPO, rubric reweighting, and rubric-guided exploration on all four medical and scientific benchmarks with Qwen3-4B and achieves the best average with Qwen3-1.7B. On initially unreachable rubrics, unguided recovery rises from 35.02% to 42.86%, while child refinement improves reward-quality alignment on independent rollouts from 57.74% to 60.77%. Code is available at https://github.com/ZJU-REAL/RuACT.",
+  "abstract_ja": "",
+  "authors": [
+    "Yijun Li",
+    "Zhengxi Lu",
+    "Zhipiao Liu",
+    "Jinzheng Yu",
+    "Xutao Weng"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/ZJU-REAL/RuACT",
+  "hasCode": true,
+  "id": "arxiv-2611.09597",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Rubric-based reinforcement learning (RL) extends RL with verifiable rewards to open-ended tasks by scoring each response against query-specific rubrics. Under group-relative optimization, however, a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "RuACT: Recovering Inactive Rubrics as Adaptive Critics and Teachers",
+  "url": "https://arxiv.org/abs/2611.09597",
+  "use_case": ""
+}

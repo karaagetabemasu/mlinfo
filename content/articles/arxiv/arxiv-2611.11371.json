@@ -1,0 +1,32 @@
+{
+  "abstract": "Block-diffusion drafters propose a whole block of tokens in one forward pass, and draft trees built from their position-wise marginals increase the expected accepted length of speculative decoding. Every tree node occupies a query row in target verification, so under concurrent serving low-yield branches compete with other requests for verification capacity. Existing tree methods select verified nodes by draft probability under a fixed or cost-selected per-request budget, and thus always retain a prefix of the drafter's ranking. We present D3Tree, which learns which nodes of a block-diffusion draft tree are worth verifying. A tree-size head with 2H+2 parameters predicts each candidate's conditional survival from the draft state, the candidate embedding, and its draft log-probability. Thresholding the product of these scores along parent chains yields an ancestor-closed subtree whose size adapts to each request and decoding round. The head is trained on a frozen drafter with conditional labels on the full candidate tree; an optional joint mode also steers the drafter toward the retained reference path. At serving time, D3Tree verifies whole trees under light load and, under heavy load, allocates one batch-wide node budget by predicted survival, sized to the target's matrix-multiplication tiles. Retained trees share one ancestor-masked target pass, while construction, pruning, and scheduling run on the GPU and overlap with the host. Across six vision-language verifiers and 17 text and multimodal benchmarks, D3Tree is fastest in 70 of 72 load settings, with 3.2-4.0x speedup over autoregressive decoding for one request and 1.3-1.8x at 64 concurrent requests, where fixed-budget trees fall below autoregressive speed. Under a time-varying arrival trace, it has the lowest mean end-to-end latency in every arrival phase.",
+  "abstract_ja": "",
+  "authors": [
+    "Hong Nie",
+    "Zhangchi Gao",
+    "Jun Yu",
+    "Bo Wang",
+    "Jianqing Sun"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11371",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Block-diffusion drafters propose a whole block of tokens in one forward pass, and draft trees built from their position-wise marginals increase the expected accepted length of speculative decoding.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "D3Tree: Learning to Prune Block-Diffusion Draft Trees for Efficient Verification",
+  "url": "https://arxiv.org/abs/2611.11371",
+  "use_case": ""
+}

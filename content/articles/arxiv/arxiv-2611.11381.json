@@ -1,0 +1,34 @@
+{
+  "abstract": "Tabular foundation models based on prior-data fitted networks (PFNs) achieve strong predictive performance, but their value for causal inference is unclear. We evaluated whether PFNs, which predict through in-context learning, could match or outperform conventional nuisance learners in supporting accurate causal estimation and reliable uncertainty quantification (inference). Learners modeled propensity scores and outcome regressions within doubly robust estimators of average causal effects, with and without cross-fitting, across synthetic and semi-synthetic settings with varying confounding complexity and effect heterogeneity. Under simple parametric data-generating processes, the PFNs were competitive with correctly specified parametric regressions and ensembles containing them. In more complex settings, they outperformed all conventional learners evaluated, including richly specified Super Learner ensembles, for both accuracy and uncertainty quantification. As sample size increased, only the two PFN models (TabPFN and Mitra) consistently approached nominal confidence interval coverage, whereas under-coverage persisted for conventional learners. In some settings, PFNs achieved near-nominal coverage and well-calibrated standard errors even without cross-fitting. At the smallest sample size (n=200) and in the higher-dimensional semi-synthetic settings, PFNs and other flexible learners exhibited poor coverage without cross-fitting. For PFNs, this appeared to be driven by propensity score overfitting consistent with in-sample memorization of treatment labels. These findings highlight the promise of prior-data fitted networks as in-context nuisance learners for causal estimation, while underscoring the need for further evaluation in challenging settings.",
+  "abstract_ja": "",
+  "authors": [
+    "Andrew R Weckstein",
+    "Issa J Dahabreh",
+    "Marinka Zitnik",
+    "Sonia Hernández-Díaz",
+    "Sebastian Schneeweiss"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11381",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Tabular foundation models based on prior-data fitted networks (PFNs) achieve strong predictive performance, but their value for causal inference is unclear. We evaluated whether PFNs, which predict…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "tabular"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Does Predictive Performance Translate to Causal Performance? Evaluating tabular foundation models as nuisance learners for causal effect estimation",
+  "url": "https://arxiv.org/abs/2611.11381",
+  "use_case": ""
+}

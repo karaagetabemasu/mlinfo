@@ -1,0 +1,29 @@
+{
+  "abstract": "Global planners for ground vehicles usually approximate the vehicle by a disk, trading safety against conservativeness, while exact-footprint checking pays for every candidate motion, pose, and footprint edge. We present TPS-A*, a lattice planner whose edges are kinematically feasible trajectories from parameterized trajectory generators, built on certified collision checking in trajectory parameter space. A grid precomputed per footprint returns, in one pass over the local obstacles, a certified free distance along every candidate trajectory, so the per-node collision cost is independent of footprint complexity and trajectory count. We prove that this grid never overestimates the free distance of the continuously swept, possibly non-convex footprint, and state the planner's guarantees: collision-free paths and bounded suboptimality relative to its lattice abstraction. Goals with or without heading are reached exactly by Reeds-Shepp shots certified as trajectories of the same generators. An exact independent test finds no collision in its paths. On 300 cluttered worlds, with the true footprint and the same goal pose for all planners, it solves every query with a collision-free goal pose in a median of three milliseconds on an AMD Ryzen 7 2700X, on par with hybrid A*, 45\\% of whose paths overlap obstacles, and nearly sixty times faster than a state-lattice planner, the only other collision-free one; with position goals, eighty-nine times faster than hybrid A*. It matches hybrid A* in automated parking and on narrow doorways, docks a non-convex fork footprint that no convex model admits, and drove a real robot across a university campus among people.",
+  "abstract_ja": "",
+  "authors": [
+    "Jose Luis Blanco-Claraco",
+    "Shravan S. Rai",
+    "Fernando Cañadas-Aránega",
+    "José Luis Torres-Moreno",
+    "José Carlos Moreno-Úbeda"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.09210",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Global planners for ground vehicles usually approximate the vehicle by a disk, trading safety against conservativeness, while exact-footprint checking pays for every candidate motion, pose, and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "TPS-A*: Path Planning for Any-Shape Vehicles with Certified Collision Checking in Trajectory Parameter Space",
+  "url": "https://arxiv.org/abs/2611.09210",
+  "use_case": ""
+}

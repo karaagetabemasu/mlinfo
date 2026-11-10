@@ -1,0 +1,34 @@
+{
+  "abstract": "Visual data are often expressed through multiple complementary modalities (e.g., images and segmentation masks), each capturing different aspects of the same underlying structure. Most existing multimodal methods adopt a top-down paradigm, learning a shared latent variable through joint training from scratch, which limits scalability. We propose Split and Bridge (SnB), a bottom-up framework for multimodal generation that couples pretrained unimodal diffusion models at sampling time. Rather than learning a unified latent space, SnB generates coherent multimodal samples by following a shared diffusion trajectory up to a split point and then branching into modality-specific trajectories guided by a bridge module. This design enables plug-and-play reuse of powerful pretrained models without joint training, making it scalable and easily adaptable. Across standard benchmarks (PolyMNIST, CelebAMask-HQ) and more complex settings (PIE-Bench++, ROCO), SnB achieves a strong balance between sample quality and coherence. We show that SnB naturally extends to downstream zero-shot tasks such as interleaved co-generation, image editing, and style coupling/decoupling. Our results demonstrate that bottom-up generation provides a practical framework that complements existing top-down multimodal approaches. Code is available at https://github.com/AhmadArrabi/SnB",
+  "abstract_ja": "",
+  "authors": [
+    "Ahmad Arrabi",
+    "Xiaohan Zhang",
+    "Xingyu Li",
+    "Safwan Wshah"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/AhmadArrabi/SnB",
+  "hasCode": true,
+  "id": "arxiv-2611.10441",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "Visual data are often expressed through multiple complementary modalities (e.g., images and segmentation masks), each capturing different aspects of the same underlying structure. Most existing…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "multimodal"
+    ],
+    "task": [
+      "generation",
+      "segmentation"
+    ]
+  },
+  "title": "Split and Bridge: Multimodal Generation via Diffusion Bridging",
+  "url": "https://arxiv.org/abs/2611.10441",
+  "use_case": ""
+}

@@ -1,0 +1,26 @@
+{
+  "abstract": "Continuous DAG learning commonly enforces acyclicity through scalar functions of a weighted adjacency that aggregate evidence from weighted closed walks. We add a complementary layer: matrix-valued closure logits---explicit multi-hop structural relation scores for each ordered pair---supervised alongside data fit, sparsity, and a DAGMA-style barrier on the weighted adjacency. The distinction is not scalarization of the overall objective but how path evidence is represented and exposed before aggregation. SMNC (scale-normalized multi-scale closure) builds these scores on a structural gate by repeated squaring in log space and divides each scale by its path-length budget, counteracting product-style attenuation along long cycles; diagonal entries support node-wise cycle supervision and off-diagonals optional pairwise reachability cues. In the linear model, a bounded structure--magnitude factorization ties strong effective edges to strong gates; a nonlinear induced gate offers another construction with the same intent. For sufficiently strong cycles, normalized logits admit a length-independent lower bound; under a unique-active-cycle assumption, the hard final-scale readout yields a polynomial log-gate gradient factor rather than exponential product-style decay. On cue-free, unstandardized Gaussian linear and nonlinear ER benchmarks, these models improve over DAGMA, run with default hyperparameters at a reduced budget, on denser graphs and are close to it on sparse ones.",
+  "abstract_ja": "",
+  "authors": [
+    "Shuai Feng",
+    "Hao Yan"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10860",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Continuous DAG learning commonly enforces acyclicity through scalar functions of a weighted adjacency that aggregate evidence from weighted closed walks. We add a complementary layer: matrix-valued…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Structurally Separated DAG Learning with Multi-Scale Normalized Closure",
+  "url": "https://arxiv.org/abs/2611.10860",
+  "use_case": ""
+}

@@ -1,0 +1,26 @@
+{
+  "abstract": "Phasor measurement units (PMUs) take their time from GNSS, so a spoofer that slowly drags a receiver clock rotates the reported phase without touching the power waveform. The threat is acute in synchronous islanding, where a controller keeps an islanded generator in phase with the grid, using one PMU on each side of an open breaker, so that the two can be reconnected at any moment: a differential clock bias of about $0.56$\\,ms can make the controller hold the generator $10^\\circ$ out of phase while it reports perfect synchronism. We cast the defense as a zero-sum inspection game. The defender, as inspector, chooses its timing monitors and audits the clocks periodically; the attacker, as inspectee, drags the two clocks to an unsafe bias by the next audit; the payoff is the evidence, the Kullback--Leibler divergence between the probability laws of the defender's record under attack and under normal operation. Our central result is that the evidence equals the cost of the cheapest innocent explanation of the attacked record. This single identity predicts which monitors work, turns the attacker's best response into a strictly convex quadratic program, and turns the defender's design into a convex program with a saddle point. Pairing explanations, which bound the evidence from above, with test statistics, which bound it from below, certifies audit periods in which every successful attack leaves at least a threshold of evidence. On a 50\\,Hz island, these evidence-based periods, at the matched-test threshold, are up to 8.4 times as long as those of a rule that checks each monitor separately, and the case study favors placing the better oscillator on the utility side of the breaker.",
+  "abstract_ja": "",
+  "authors": [
+    "Gregory Provan",
+    "Quanyan Zhu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.09331",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Phasor measurement units (PMUs) take their time from GNSS, so a spoofer that slowly drags a receiver clock rotates the reported phase without touching the power waveform. The threat is acute in…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "An Inspection Game for Monitor Design Against GNSS Timing Attacks in Synchronous Islanding",
+  "url": "https://arxiv.org/abs/2611.09331",
+  "use_case": ""
+}

@@ -1,0 +1,27 @@
+{
+  "abstract": "We study the dynamic pricing problem, where a firm sells a product to $T$ myopic customers and their values are independent samples from an unknown value distribution $F$. With posted prices, the firm only sees whether each customer buys, and the minimax regret is $\\widetilde Θ(T^{2/3})$ [KL03]. A menu instead offers several options, each selling the product with some probability at some expected payment. Infinitely many menu options allow the seller to fully reveal customer values, reducing the regret to $Θ(\\sqrt T)$. How many options are needed? Perhaps surprisingly, a second menu option suffices, achieving the same regret as infinite menus (up to $\\log$ factors). This holds broadly: without knowing any property of $F$, our algorithm with two menu options attains $\\tilde O(\\sqrt T)$ regret in general, $\\tilde O(T^{1/3})$ regret for monotone-hazard-rate distributions, and $\\tilde O(T^{d/(d+1)})$ instance-dependent regret when $d\\in(0,1)$ is a suitable notion of \"dimension\". All are optimal even with infinite menus. Moreover, we argue, via a novel lower-bound construction, that our algorithm is near-optimal for each problem instance. Along the way, we study the query complexity of revenue maximization, where an algorithm issues a query to each customer to learn the property of interest (either the best price or the CDF) up to some precision. We show that interval queries suffice to achieve the same query complexity as value queries (up to $\\log$ factors) for both properties and across several classes of value distributions. We provide a new interval-query algorithm for each property. The best-price-estimation algorithm is the key ingredient in our main dynamic pricing algorithm, and the CDF-estimation algorithm underpins a simpler algorithm attaining $\\tilde O(\\sqrt T)$ regret with three menu options.",
+  "abstract_ja": "",
+  "authors": [
+    "Yan Dai",
+    "Tao Lin",
+    "Aleksandrs Slivkins"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10345",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "We study the dynamic pricing problem, where a firm sells a product to $T$ myopic customers and their values are independent samples from an unknown value distribution $F$. With posted prices, the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "The Power of Two Choices in Dynamic Pricing: As Good As Full Feedback, Instance-Wise",
+  "url": "https://arxiv.org/abs/2611.10345",
+  "use_case": ""
+}

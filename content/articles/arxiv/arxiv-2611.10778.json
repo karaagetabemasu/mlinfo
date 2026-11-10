@@ -1,0 +1,28 @@
+{
+  "abstract": "Variable impedance control enhances the interaction capability of robot manipulators by adapting impedance parameters online. However, time-varying impedance parameters may inject energy into the system and violate passivity, particularly when tasks demand rapid stiffness changes. Existing methods address this by increasing damping or limiting the stiffness profile, which often degrades the dynamic response. In this work, we propose a quadratic programming-based parameter optimization framework that guarantees passivity by modulating the desired inertia to compensate for energy injected by stiffness variations, while preserving a critically damped system. For the case of diagonal impedance matrices, we optimize the rates of change of inertia and stiffness subject to a passivity constraint formulated as a convex quadratic program. We extend the framework to compliance control, where the desired inertia is coupled to the robot's configuration-dependent inertia matrix. We use an eigendecomposition based on Cholesky factorization to optimize the spectral weights while maintaining passivity. Experiments on the Kinova Gen3 7-degree-of-freedom manipulator validate both methods with human interaction perturbations. Comparisons with an energy tank approach and a nonpassivity-based method demonstrate that the proposed framework achieves less conservative stiffness tracking without requiring an energy reservoir or damping overhead.",
+  "abstract_ja": "",
+  "authors": [
+    "Huseyin Tugcan Dinc",
+    "Ersin Daş",
+    "Nikolas Thelenberg",
+    "Christian Ott"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10778",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Variable impedance control enhances the interaction capability of robot manipulators by adapting impedance parameters online. However, time-varying impedance parameters may inject energy into the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Passivity-Guaranteed Variable Impedance and Compliance Control via Online Parameter Optimization",
+  "url": "https://arxiv.org/abs/2611.10778",
+  "use_case": ""
+}

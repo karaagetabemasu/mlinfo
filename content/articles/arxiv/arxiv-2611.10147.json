@@ -1,0 +1,28 @@
+{
+  "abstract": "We extract visibly pushdown grammars (VPGs) from neural language models in a fully black-box setting. Our work builds on the VPL* framework, which learns VPGs from recurrent networks by exploiting access to the target's internal state. First, we replace the white-box equivalence oracle with PAC sampling over trees. The resulting algorithm applies unchanged to transformer language models and, more generally, to any acceptor exposing only binary decisions. Second, we further observe that the original framework only ever queries the target on well-formed sequences that can be accepted by the most permissive VPG (called BParse) with the target's ranked alphabet. That is, VPL* is blind to the target's behavior outside BParse. Thus, we propose to sample trees directly instead of sequences and call the target with all the resulting sequences in order to provide an error estimate of how far the target deviates from being a VPG. Last but not least, we develop a learner that captures a tree automaton describing discovered behaviors of the target outside BParse, which results in a larger learnable space. We evaluate the approach on several cases, including transformers trained with Dyck grammars and synthetic targets designed to be outside BParse.",
+  "abstract_ja": "",
+  "authors": [
+    "Juan Pedro da Silva",
+    "Sergio Yovine"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10147",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "We extract visibly pushdown grammars (VPGs) from neural language models in a fully black-box setting. Our work builds on the VPL* framework, which learns VPGs from recurrent networks by exploiting…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Learning of Tree Automata applied to Neural Language Acceptors",
+  "url": "https://arxiv.org/abs/2611.10147",
+  "use_case": ""
+}

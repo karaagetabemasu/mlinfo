@@ -1,0 +1,31 @@
+{
+  "abstract": "LLM-based agents extend LLMs with tool calls, memory, planning, and retrieval to act in external environments, but they are vulnerable to attacks at different workflow steps. Existing defenses, including prompt engineering and post-training alignment, primarily improve LLM-only safety and often overlook risks that arise from multi-step execution. External verification adds guardrails to check each step separately, but it typically ignores how risks can propagate across steps. We argue that we should consider risk transitions across dependent steps through the agent workflow, rather than separate verification on a single step. In this paper, we propose \\textbf{T}ail-risk-aware \\textbf{A}gent \\textbf{S}afety (TAS), a tail-risk-aware safety framework that models agent workflow safety as a sequence of dependent safety states and constrains the rare but extreme risks (i.e., tail risk) with a shared budget. TAS first models safety-state transitions sequentially along the workflow as an MDP to trace risk propagation, then measures a tail-sensitive risk to target rare but high-cost risks (i.e., tail risk), and constrains the risk with a shared budget to derive a step-wise safety strategy. By constraining tail risk rather than the overall average, TAS suppresses rare high-cost failures while preserving utility in normal cases. Experiments show that TAS achieves better performance compared with eleven baselines across three benchmarks.",
+  "abstract_ja": "",
+  "authors": [
+    "Shilong Pan",
+    "Zhiliang Tian",
+    "Zihan Chen",
+    "Wentao Zou",
+    "Weiguo Chen"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10411",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "LLM-based agents extend LLMs with tool calls, memory, planning, and retrieval to act in external environments, but they are vulnerable to attacks at different workflow steps. Existing defenses,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Tail-risk-aware Agent Safety: Constraining Tail Risks Across Multi-step LLM Agent Workflows",
+  "url": "https://arxiv.org/abs/2611.10411",
+  "use_case": ""
+}

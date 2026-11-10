@@ -1,0 +1,30 @@
+{
+  "abstract": "Large language models (LLMs) are increasingly used for text annotation, but their outputs are often reduced to a single categorical label before downstream analysis. This hardening step discards the model's relative support across categories, which may contain useful information when category boundaries are ambiguous. We study whether retaining the full probability vector improves downstream regression when LLM annotations are combined with a limited amount of human annotation. Using matched soft and hard representations from three LLMs across three social-science text datasets, we compare direct regression and human-assisted correction. Soft inputs are not uniformly better when used directly as outcomes, but after human correction, using the probability vector consistently improves regression efficiency across models and datasets. Analyses of repeated human judgments and controlled simulations further show that these gains arise when probability variation beyond the hard category carries useful information about the human-coded outcome. Our results identify output representation as an important design choice in LLM-assisted measurement and support preserving probability outputs for downstream statistical analysis. Code and reproducibility materials are available at https://anonymous.4open.science/r/soft-label-LLM-D201/",
+  "abstract_ja": "",
+  "authors": [
+    "Xinyue Wang",
+    "Qunhua Li"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11111",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Large language models (LLMs) are increasingly used for text annotation, but their outputs are often reduced to a single categorical label before downstream analysis. This hardening step discards the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Beyond Hard Labels: LLM Probabilities Improve Human-Assisted Regression",
+  "url": "https://arxiv.org/abs/2611.11111",
+  "use_case": ""
+}

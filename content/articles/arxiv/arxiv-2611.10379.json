@@ -1,0 +1,35 @@
+{
+  "abstract": "Open-vocabulary 3D scene understanding aims to segment and retrieve arbitrary objects in 3D scenes using natural language queries. Most existing methods typically follow a splat-then-segment paradigm, where 3D Gaussian Splatting is first reconstructed and then augmented with labels or language features for subsequent segmentation. However, this pipeline often suffers from view inconsistency, ambiguous object boundaries, and weak object-level correspondence, especially in complex static and dynamic scenes. Building on our prior Segment-then-Splat framework, we present RefineSplat, a reconstruction-guided extension that retains its object-centric paradigm: it first tracks objects in 2D and then reconstructs each object with a dedicated set of 3D Gaussians, preserving explicit object-Gaussian correspondence for unified open-vocabulary segmentation and retrieval. To improve robustness, we further close the loop between 2D tracking and 3D reconstruction. Since off-the-shelf video trackers can produce unreliable masks that propagate errors into object reconstruction, we introduce a reconstruction-guided feedback mechanism that refines object tracking using rendered masks and multi-view consistency. Moreover, instead of assigning each object a single language embedding, we propose a viewpoint-aware embedding assignment strategy, where each object maintains multiple view-clustered embeddings to capture view-dependent semantic cues. We also introduce Blender-OVS, a synthetic benchmark of static and dynamic sequences with exact object meshes and point clouds, enabling direct evaluation of extracted geometry. Experiments on static and dynamic benchmarks show improved rendered-view segmentation and lower object-level Chamfer distances, with competitive scene reconstruction quality.",
+  "abstract_ja": "",
+  "authors": [
+    "Yiren Lu",
+    "Disheng Liu",
+    "Sreya Srinidhi",
+    "Yunlai Zhou",
+    "Yiran Qiao"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10379",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Open-vocabulary 3D scene understanding aims to segment and retrieve arbitrary objects in 3D scenes using natural language queries. Most existing methods typically follow a splat-then-segment…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "video",
+      "3d"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "RefineSplat: Reconstruction-Guided Object-Centric Gaussian Splatting for Open-Vocabulary Querying",
+  "url": "https://arxiv.org/abs/2611.10379",
+  "use_case": ""
+}

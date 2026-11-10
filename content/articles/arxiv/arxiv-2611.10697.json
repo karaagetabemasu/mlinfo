@@ -1,0 +1,30 @@
+{
+  "abstract": "Selective unlearning is increasingly important for the safety and compliance of large language models. Harmful or memorized content is often entangled with useful knowledge and difficult to enumerate. We use the model's own failures to identify candidates for unlearning. We propose Hallucination-Guided Unlearning (HGU), which uses hallucinations as diagnostic signals. HGU localizes unsupported spans via evidence and internal consensus, traces a sparse set of high-responsibility MLP neurons, and edits them with compact gates under a utility-preserving KL constraint. On TOFU, HGU achieves the best MU-FE trade-off, with Avg scores of 0.7221 (forget05) and 0.7699 (forget10), and the highest SepS H-Avg (0.4382/0.4715) under mixed forget/retain prompts. On the WMDP auxiliary task, HGU yields the strongest forgetting (e.g., 14.2 on Economics) while improving Retain (52.7) and MMLU (57.2). These results suggest that tracing hallucinations enables targeted, post-hoc unlearning that better balances forgetting efficacy and general utility without full retraining.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiayu Zhang",
+    "Ziqi Zhong",
+    "Yuliang Gai",
+    "Canran Xiao"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10697",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Selective unlearning is increasingly important for the safety and compliance of large language models. Harmful or memorized content is often entangled with useful knowledge and difficult to enumerate.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Hallucination-Guided Unlearning: Using Hallucination Traces to Reveal Overfitted Memories",
+  "url": "https://arxiv.org/abs/2611.10697",
+  "use_case": ""
+}

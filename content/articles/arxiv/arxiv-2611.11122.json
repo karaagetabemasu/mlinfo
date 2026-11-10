@@ -1,0 +1,31 @@
+{
+  "abstract": "Visual in-context segmentation uses visual demonstrations to guide predictions for a new image. In SegGPT, we identify background color mapping deviation, where non-target regions sharing a background label receive different output colors, and part-to-parent expansion, where predictions extend beyond the requested part into its parent object. These deviations can occur even when the relevant regions remain distinguishable in internal features. Controlled changes to demonstration colors and requested targets support an account in which demonstrations guide role and color assignments over familiar semantic regions, influenced by learned semantic and color preferences. Building on these findings, we introduce Semantic Contrast Prompt Selection (SCPS). Its semantic contrast encoding assigns separate colors to the requested part and the rest of its object while keeping the remaining scene black. SCPS combines existing retrieval scores with quality estimates from labeled development images to select demonstrations and their binary or semantic contrast encodings. Averaged across seven retrieval methods on three benchmarks, SCPS improves target IoU by 0.054 and reduces leakage into the rest of the object by 22.7% relative to the original binary selectors. Our findings offer a new perspective on understanding and improving demonstration following in visual in-context segmentation.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiao Hu",
+    "Ilia Sucholutsky"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11122",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Visual in-context segmentation uses visual demonstrations to guide predictions for a new image. In SegGPT, we identify background color mapping deviation, where non-target regions sharing a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "What You Show Is Not What You Get: Rethinking Demonstration Following in Visual In-Context Segmentation",
+  "url": "https://arxiv.org/abs/2611.11122",
+  "use_case": ""
+}

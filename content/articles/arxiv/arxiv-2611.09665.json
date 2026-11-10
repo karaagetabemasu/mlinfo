@@ -1,0 +1,28 @@
+{
+  "abstract": "Measurement exploration reveals how interacting local controllers behave but can alter the steady-state regime a network operator seeks to optimize. Exploratory rewards may therefore fail to identify a configuration's no-exploration value: under full exploration, identical logged distributions can conceal different target values. Identification requires accounting for both action-law mismatch and shifts in the steady-state context distribution. We introduce CAUSAL-UCB, which selects configurations using optimistic bounds on target causal values. Its interference-aware clipped doubly robust evaluator produces predecision certificates separating statistical variation from calibrated identification, transport, and temporal-dependence errors. For any finite horizon and predetermined schedule of measurement-exploration rates $\\{η_t\\}$, we prove lower bounds of $Ω((1+\\sum_tη_t)^{-1/2})$ on minimax inference error and $Ω(\\sum_tη_t)$ on measurement-induced deployment loss in a stationary, potentially slow-mixing family. We bound regret under valid certificates and selected-information growth, and establish an anytime finite-sample certificate with a shared radius for estimation, selection, and reporting in a restricted known-local-interference model. In a high-mismatch benchmark with 24 paired seeds and 200 rounds, CAUSAL-UCB attains target regret of $1.732$ versus $6.326$ for certified IPS-UCB, with deployment gaps of $30.607$ and $23.217$, respectively. Independent-audit coverage tests and trace-driven semi-synthetic studies further assess certificate coverage and deployment trade-offs.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuli Liu",
+    "Zhiheng Zhang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.09665",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Measurement exploration reveals how interacting local controllers behave but can alter the steady-state regime a network operator seeks to optimize. Exploratory rewards may therefore fail to identify…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Online Causal Configuration for Networked Systems via Doubly Robust Steady-State Learning",
+  "url": "https://arxiv.org/abs/2611.09665",
+  "use_case": ""
+}

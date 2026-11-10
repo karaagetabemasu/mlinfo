@@ -1,0 +1,30 @@
+{
+  "abstract": "Hundreds of millions of Indians communicate with digital systems in romanized Latin characters -- typing \"aap kaise hain\" rather than native script -- yet romanized Indic generation is absent from NLP benchmarks and evaluation frameworks. We demonstrate that automatic metrics (BGE-M3, BERTScore) systematically misrepresent the quality of romanized Hindi, Telugu, and Kannada generation. We evaluate four LLMs (Claude Opus 4.8, GPT-5.5, Gemini 2.5-flash, Qwen3.5-35B) on 142 OpenAssistant query-response pairs. On a 72-response diagnostic subset, native speakers rate GPT-5.5 1.43 points higher than Claude Opus 4.8 on a 12-point rubric, whereas their full-dataset BGE-M3 means differ by only 0.004. Two distinct model-specific failure modes emerge: Gemini produces script spillage (16.9% of Telugu responses leak native script), while Qwen collapses to English-only output (16.2% of Kannada responses). We introduce a failure-aware evaluation policy that assigns zero to empty outputs, script-corrupted responses, and instruction collapses -- revealing failures metrics alone cannot detect. Our results show that evaluating romanized Indic generation requires a coordinated bundle: semantic similarity, script compliance, failure coverage, and native-speaker acceptability.",
+  "abstract_ja": "",
+  "authors": [
+    "Madhu Sudhan Rao Beesetty",
+    "Surbhi Sharma",
+    "Devesh Maheshwari",
+    "Lokesh Meesala"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.09085",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Hundreds of millions of Indians communicate with digital systems in romanized Latin characters -- typing \"aap kaise hain\" rather than native script -- yet romanized Indic generation is absent from…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "The Invisible Gap: Romanized Indic Generation Fails Where Automatic Metrics Succeed",
+  "url": "https://arxiv.org/abs/2611.09085",
+  "use_case": ""
+}

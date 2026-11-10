@@ -1,0 +1,31 @@
+{
+  "abstract": "Microsoft Word is a central environment for office automation, and the faithful execution of its editing operations is an important capability for document agents. Unlike plain-text editing, editing in Word modifies a structured object model, where the requested effect is realized in object properties. Existing benchmarks, however, evaluate office workflows or desktop automation, treating word-processor documents as one task domain among many and verifying outcomes with keyword matching, per-task property checks, or screenshot comparison. We introduce WordEval, an operation-fidelity benchmark that instead centers evaluation on Word editing operations, testing whether each requested edit is realized as intended changes to Word objects and properties. It contains 642 cases across 15 Word feature areas, ranging from text and lists to charts, shape geometry, and SmartArt. 546 atomic cases cover 231 commands, 96 compositional cases combine multiple edits in a single document, and a Word-native oracle checks task-specific object properties and preservation conditions. Cases are constructed from editing-unit specifications, yielding controlled input documents, reference documents, and aligned oracle checks. Each compositional case is linked to corresponding atomic cases, supporting fine-grained diagnosis of editing failures. We evaluate eight agent systems and find that many struggle on the Atomic track, with performance varying across feature areas. Moreover, every system scores lower on Compositional than on Atomic, with gaps that vary substantially by system. Exact atomic-intent links and recorded failure diagnoses provide complementary views of this variation.",
+  "abstract_ja": "",
+  "authors": [
+    "Jinyoung Park",
+    "Yupan Huang",
+    "Shimin Zhang",
+    "Jiayu Ding",
+    "Yilin Jia"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10475",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "Microsoft Word is a central environment for office automation, and the faithful execution of its editing operations is an important capability for document agents. Unlike plain-text editing, editing…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "WordEval: Evaluating Word-Native Operation Fidelity in Document Editing",
+  "url": "https://arxiv.org/abs/2611.10475",
+  "use_case": ""
+}

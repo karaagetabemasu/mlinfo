@@ -1,0 +1,31 @@
+{
+  "abstract": "Abductive reasoning is the inference of plausible explanations for observed evidence. Evaluating this capability requires more than a single task: a system may need to generate an explanation, discriminate among competing hypotheses, revise its hypotheses as evidence arrives, or decide what evidence to seek next. Yet these capabilities are typically evaluated through isolated benchmarks with different task formulations and scoring procedures, so claims that a model is ``good at abduction'' may reflect only a narrow aspect of this capability. We introduce AbductionBench, a unified framework whose taxonomy characterizes abductive tasks. We instantiate this framework on 27 datasets spanning ten domains and evaluate eight LLMs from four model families evaluated on single-choice selection tasks. Beyond harmonizing heterogeneous tasks, AbductionBench separates final-answer evaluation from analysis of the observable reasoning traces and interaction histories produced alongside those answers. We analyze written traces as observable model outputs rather than faithful representations of internal computation, characterizing evidence use, hypothesis comparison, uncertainty, contradiction handling, and answer commitment. Jev matches or exceeds small LLMs when selecting among explanations over compact evidence but falls substantially behind on longer cases, suggesting that candidate discrimination and extended evidence integration place different demands on a system. In interactive tasks, the proportion of actions judged relevant declines at later steps, and a relevant first question is associated with a correct final answer; in the passive task, models rarely revise their initial hypothesis as new evidence arrives. Together, these findings highlight the value of evaluating abductive reasoning through both final answers and observable evidence use, hypothesis revision, and information gathering.",
+  "abstract_ja": "",
+  "authors": [
+    "Moein Salimi",
+    "Amir Qeysarbeigi",
+    "Babak Hosseini Mohtasham",
+    "Faraz Doagoye Tehrani",
+    "Mahdi Naieni"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10705",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Abductive reasoning is the inference of plausible explanations for observed evidence. Evaluating this capability requires more than a single task: a system may need to generate an explanation,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "AbductionBench: Benchmarking Abductive Reasoning in Large Language Models",
+  "url": "https://arxiv.org/abs/2611.10705",
+  "use_case": ""
+}

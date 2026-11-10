@@ -1,0 +1,31 @@
+{
+  "abstract": "Compressing continuous human motion into a finite vocabulary of discrete tokens is now the first stage of many motion understanding and generation pipelines. Vector quantization partitions a latent space into Voronoi cells around a finite codebook, but the geometry of that latent space is inherited from the input pose encoding, and it is unclear which encoding admits an efficient discretization. We study four encodings that place skeletal motion in different geometric spaces: Gaussian joint heatmaps on the pixel lattice, which we show to be a morphological dilation of the joint point set by a quadratic structuring function; root-relative joint positions in Euclidean space; local joint rotations on $\\SO$ through a continuous 6D embedding; and a redundant full kinematic encoding. For each, we train VQ-VAE tokenizers whose codebooks lie on the unit hypersphere, varying codebook size, temporal stride, and code dimension. Beyond reconstruction, we measure codebook utilization and the effective vocabulary size, i.e., the number of equiprobable spherical Voronoi cells with the same entropy as the observed token distribution. Rotation and position encodings keep converting additional codewords into effective vocabulary, whereas the full kinematic encoding saturates at a few hundred effective cells and heatmaps at fewer than sixty. The smallest code dimension gives the highest utilization for three of the four encodings, and the effect of temporal stride depends on the encoding. Encodings of the same pose family can thus yield effective vocabularies differing by an order of magnitude, a difference that reconstruction loss alone does not reveal, which points to input geometry as a first-order design choice in motion tokenization.",
+  "abstract_ja": "",
+  "authors": [
+    "Amir Kimiyaie",
+    "Nahal Mafi",
+    "Hamed Tabkhi"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11093",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Compressing continuous human motion into a finite vocabulary of discrete tokens is now the first stage of many motion understanding and generation pipelines. Vector quantization partitions a latent…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Does Pose Encoding Matter? Analyzing Geometric Representations for Discrete Motion Vocabulary Learning",
+  "url": "https://arxiv.org/abs/2611.11093",
+  "use_case": ""
+}

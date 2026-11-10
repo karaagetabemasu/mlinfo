@@ -1,0 +1,34 @@
+{
+  "abstract": "Domain generalization (DG) for object detection aims to improve model performance on unseen target domains. Existing detectors, however, suffer substantial degradation on visually distinct unseen domains, as models confined to limited training styles tend to overfit superficial statistical cues rather than object-level semantics. Motivated by human perception, which attends primarily to semantically relevant features while ignoring irrelevant style cues, we propose Origin-Anchored Multi-Style Consistency (OAMSC), a source-only framework that couples multi-style data synthesis with cross-style consistency learning to suppress style-sensitive shortcut learning. For data preparation, we leverage off-the-shelf diffusion models to expand the source datasets into 20 distinct styles, with all generated images manually verified to ensure that object instances and annotations remain consistent across style variants. During training, we impose Origin-anchored consistency constraints at scene and object levels to reinforce the learning of domain-stable features while suppressing the influence of style-sensitive cues. Extensive experiments and ablation studies on multiple challenging DG benchmarks demonstrate the consistent effectiveness and strong generalization performance of OAMSC across diverse domain shifts. Notably, our approach applies to both one-stage and two-stage detectors, while its data-centric design is complementary in principle to other DG methods. The training code and two style-transfer datasets constructed for the experiments, comprising approximately 180K images in total, are publicly available on GitHub.",
+  "abstract_ja": "",
+  "authors": [
+    "Chaoran Zhang",
+    "Shirshak Bhusal",
+    "Zhilin Gao",
+    "Qiang Xue",
+    "Haoting Shen"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10262",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Domain generalization (DG) for object detection aims to improve model performance on unseen target domains. Existing detectors, however, suffer substantial degradation on visually distinct unseen…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection",
+      "generation"
+    ]
+  },
+  "title": "Domain Generalization for Style-Debiased Object Detection via Label-Consistent Training across Multiple Styles",
+  "url": "https://arxiv.org/abs/2611.10262",
+  "use_case": ""
+}

@@ -1,0 +1,32 @@
+{
+  "abstract": "Image-based remote monitoring over wireless networks faces a trade-off between communication cost and classification reliability. Transmitting complete images is communication-intensive, whereas relying solely on lightweight edge classifiers may compromise accuracy. To address this challenge, we propose Confidence-Driven Adaptation (CDA) for image transmission and classification. An edge device (ED) captures images and applies a lightweight classifier before transmission to a remote server. Based on its classification confidence, the ED selects among three transmission modes with varying levels of information: a short text string reporting its predicted class when confidence is high, a compressed Region of Interest (ROI) at intermediate confidence levels, or an uncompressed ROI when confidence is low. The server accepts the predicted class directly in the first case and performs classification using a more powerful classifier in the other two cases. Numerical evaluations under bandwidth-limited, lossy links and latency-constrained settings demonstrate that CDA achieves high task accuracy at the receiver compared with non-adaptive baselines that transmit only the edge-classifier outcome or the uncompressed ROI.",
+  "abstract_ja": "",
+  "authors": [
+    "Suman Das",
+    "Prajnyajit Mohanty",
+    "Siddhartha S. Borkotoky"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11132",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Image-based remote monitoring over wireless networks faces a trade-off between communication cost and classification reliability. Transmitting complete images is communication-intensive, whereas…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Confidence-driven adaptive semantic transmission for task-oriented communication",
+  "url": "https://arxiv.org/abs/2611.11132",
+  "use_case": ""
+}

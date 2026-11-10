@@ -1,0 +1,36 @@
+{
+  "abstract": "The task of visual reasoning relative pose identification (VRRPI) has exposed critical weaknesses in the multi-view 3D spatial reasoning capabilities of modern vision-language models (VLMs). We present a systematic analysis of VLMs' behavior in VRRPI, uncovering stable output biases where VLMs disproportionately predict specific motion patterns regardless of visual evidence. To mitigate these inherent biases, we propose self knowledge re-expression with iterative debiasing (SKR-ID), an annotation-free pipeline that adapts VLMs for VRRPI using only randomly extracted unannotated image pairs. SKR-ID transitions VLMs' output mechanism from generic next-token prediction to task-optimized classification heads. The pipeline proceeds in two stages: (1) a cold-start initialization using debiasing object-centric prompts to anchor motion inference in 2D visual evidence; and (2) a recursive logit-ranking mechanism that enforces statistical parity by using the median logit value as a dynamic threshold. Experimental evaluation across frontier VLMs on standard benchmarks demonstrates that SKR-ID significantly mitigates systematic biases. Our method improves open-source VLMs' Macro-F1 scores from 35.0-45.4% to 53.7-58.0%, without using any annotated data. These results show that SKR-ID can effectively improve 3D reasoning performance from a severely collapsed baseline. The code is publicly available at https://github.com/astudentuser/Codes_of_SKR-ID.",
+  "abstract_ja": "",
+  "authors": [
+    "Mengyu Wang",
+    "Ken Deng",
+    "Yftah Ziser",
+    "Shay B. Cohen",
+    "Tiejun Ma"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/astudentuser/Codes_of_SKR-ID",
+  "hasCode": true,
+  "id": "arxiv-2611.10483",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "3d",
+  "summary": "The task of visual reasoning relative pose identification (VRRPI) has exposed critical weaknesses in the multi-view 3D spatial reasoning capabilities of modern vision-language models (VLMs). We…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d",
+      "multimodal"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "They Can See It but Not Say It: Iterative Self Knowledge Re-expression in Visual Reasoning Relative Pose Identification",
+  "url": "https://arxiv.org/abs/2611.10483",
+  "use_case": ""
+}

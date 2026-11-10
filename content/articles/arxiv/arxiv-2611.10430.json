@@ -1,0 +1,33 @@
+{
+  "abstract": "In this work, we train agents to act under uncertainty according to specified, belief-dependent rules. Deep reinforcement learning (RL) can in theory train agents to follow rules if encoded into well-designed rewards, but in practice, RL fails to perfectly optimize these rewards, leading to ineffective or noncompliant agent behavior. Belief-space planners by construction produce behavior in line with developer specification, but require hand-programming online planners and belief-state estimators, adding significant engineering complexity at scale. We combine the two: we plan offline to generate a dataset of sample trajectories and then distill the plans into a policy that acts on raw observations. We propose two changes to planner distillation that address problems specific to history-based policies: Dual Averaging, a loss that combines per-timestep predictive loss and average loss on task changes, and $ρ$-Optimal Reinforcement, a feedback mechanism that reinforces the policy's own successful rollouts when these are near-optimal. We provide a sufficient condition under which static search problems with noiseless observation models is complete, and show that maximum-likelihood-observation planning implies this condition in static search with continuous beliefs. We create a challenging new domain, Scavenger, where an agent needs to gain information in order to succeed. We evaluate our distilled policy in two versions of Scavenger, one where information is provided visually and one where it is provided as a command in natural language. In either case, the learned policy attains a success rate above 90% in Scavenger, compared with at most 5% for RL. We also find that distilled planners transfer with greater than 60% success to following unseen and intentionally vague commands and greater than 75% success to following floorplans larger than those seen in training.",
+  "abstract_ja": "",
+  "authors": [
+    "Phillip J. K. Christoffersen",
+    "Rachel Ma",
+    "Patrick Barragán",
+    "Dylan Hadfield-Menell"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10430",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "In this work, we train agents to act under uncertainty according to specified, belief-dependent rules. Deep reinforcement learning (RL) can in theory train agents to follow rules if encoded into…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Deploying Physically and Epistemically Compliant Agents by Distilling Belief-Space Task and Motion Planners",
+  "url": "https://arxiv.org/abs/2611.10430",
+  "use_case": ""
+}

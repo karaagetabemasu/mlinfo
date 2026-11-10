@@ -1,0 +1,30 @@
+{
+  "abstract": "The success of modern score-based generative models is largely driven by diffusion-based training, which learns a collection of time-indexed score fields corresponding to progressively noisier versions of the data distribution. While such models achieve impressive sample quality, leveraging them for sound probabilistic inference---particularly sampling from arbitrary conditionals of the model---remains challenging. This difficulty arises because conditioning information is only available for clean data and not for the higher noise levels required to generate exact conditional samples. In this paper, we introduce DIffusion-free SCOre matching (DISCO), a principled approach that sidesteps the need for time-dependent score fields altogether. Our method is based on an objective that, while reminiscent of diffusion-based training, estimates only a single score of the (slightly perturbed) data distribution, for which the exact conditional score is readily obtained. In experiments, DISCO is competitive with state-of-the-art diffusion models in terms of sample quality. More importantly, DISCO yields a more faithful representation of the underlying data distribution and---crucially---enables accurate sampling from arbitrary conditionals, outperforming standard heuristic samplers. This capability opens the door to principled and flexible probabilistic reasoning with score-based models.",
+  "abstract_ja": "",
+  "authors": [
+    "Thomas Wedenig",
+    "Robert Peharz"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.09758",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "The success of modern score-based generative models is largely driven by diffusion-based training, which learns a collection of time-indexed score fields corresponding to progressively noisier…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Diffusion-free Score Matching for Exact Conditional Sampling",
+  "url": "https://arxiv.org/abs/2611.09758",
+  "use_case": ""
+}

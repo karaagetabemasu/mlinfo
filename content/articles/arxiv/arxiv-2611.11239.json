@@ -1,0 +1,31 @@
+{
+  "abstract": "Large language models (LLMs) are increasingly asked to judge whether a news article is true, and their stated confidence is often taken at face value. We test what happens to that confidence when an article's writing style, but not its facts, is manipulated, as in recent \\emph{style attacks} on fake-news detectors. Tracing how the prediction and its confidence form layer by layer inside the network, we study three model families (LLaMA-3-8B, Qwen2.5-7B, Mistral-7B) on three fake-news benchmarks, and find the same three patterns in every model--dataset pairing. First, on the original articles the models are competent and largely honest judges: they settle on an answer, briefly become overconfident, and then correct their confidence in the final layers. Second, style-rewritten articles break this self-correction: the models become far less accurate, under the strongest attack, worse than random guessing, yet remain just as confident, so they are \\emph{confidently wrong} precisely when a warning is most needed. Third, nearly all of the damage comes from rewriting into sensational or emotionally charged styles, while sober, neutral rewrites leave the models' honesty largely intact. The practical implication is that an LLM's confidence about veracity cannot be trusted as a safety signal when an article's style may have been manipulated.",
+  "abstract_ja": "",
+  "authors": [
+    "Prabhjot Singh",
+    "Praney Goyal",
+    "Raksha Sharma"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11239",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Large language models (LLMs) are increasingly asked to judge whether a news article is true, and their stated confidence is often taken at face value. We test what happens to that confidence when an…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "A Layer-wise Study of How Style Rewriting Breaks the Calibration of Zero-Shot LLM Fake-News Detectors",
+  "url": "https://arxiv.org/abs/2611.11239",
+  "use_case": ""
+}

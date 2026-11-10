@@ -1,0 +1,33 @@
+{
+  "abstract": "Vision-language models (VLMs) in medical retrieval-augmented generation must be able to say when a retrieved report contradicts the X-ray, so understanding whether they can detect such conflicts is important for safe deployment. The sycophancy mask hypothesis holds that these models internally detect conflicts but refuse to report them, concealing a detected contradiction. We introduce a three-part diagnostic that separates concealment from uncertainty: representation probing, activation steering, and two-way forced choice. Across four instruction-tuned VLMs on chest X-rays, we confirm behavioral suppression of contradiction and find that a linear probe separates matched from mismatched inputs, beyond what a simple CLIP model achieves. Steering the learned conflict direction never elicits contradiction, and forcing a binary choice does not recover one; instead, cross-modal attention to the image drops on mismatched pairs. We conclude that these models fail to contradict because the mismatch registers as hedged, gated uncertainty rather than concealed knowledge, calling for re-grounding and uncertainty surfacing. Code is available at https://github.com/mohamed-eldagla/Uncertainty-Not-Concealment/.",
+  "abstract_ja": "",
+  "authors": [
+    "Mohamed I. Eldagla",
+    "Zeyad H. ElShafei",
+    "Ahmed M. Anter"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/mohamed-eldagla/Uncertainty-Not-Concealment",
+  "hasCode": true,
+  "id": "arxiv-2611.10297",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Vision-language models (VLMs) in medical retrieval-augmented generation must be able to say when a retrieved report contradicts the X-ray, so understanding whether they can detect such conflicts is…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Uncertainty, Not Concealment: A Mechanistic Reappraisal of Sycophancy in Vision-Language Models",
+  "url": "https://arxiv.org/abs/2611.10297",
+  "use_case": ""
+}

@@ -1,0 +1,27 @@
+{
+  "abstract": "External state should become more valuable as a reader becomes more capable, yet long-context evaluations measure memory utility at a single model scale. This paper formulates scale complementarity: the absolute gain from external state increases when reader capacity and a compact state budget are jointly scaled. ASCENT realizes this principle with a target-blind causal writer, nested typed state, and a bounded query-conditioned readout; every language model remains frozen. Under log loss, the value of a nested refinement equals its target-relevant conditional information; a full factorial makes the reader-by-state interaction identifiable. Official 16K BABILong experiments show Qwen2.5 accuracy gains of 10.50, 78.88, and 82.63 percentage points at 0.5B, 1.5B, and 3B parameters, with both adjacent directional contrasts significant after family-wise correction. At 7B, Foundation accuracy rises to 33.25% while four-slot ASCENT answers every question, which caps the gain at 66.75 points; the 3B-to-7B accuracy increment is -15.88 points [-20.55, -11.20]. The accuracy-side claim is therefore established from 0.5B to 3B; the 7B conclusion rests on the non-saturated negative-log-likelihood factorial. A three-model by three-state factorial yields co-scaled negative log-likelihood gains of 0.388, 2.099, and 7.406 nats at 1.5B, 3B, and 7B; all interaction and gain contrasts retain positive simultaneous lower bounds. Five public 7B-8B readers obtain 66.75-85.63 point gains, and ASCENT exceeds task-trained retrieval checkpoints at the two larger shared scales. Controls, baselines, systems accounting, matched-hardware reproduction, and a cross-architecture sensitivity analysis accompany the experiments. The results establish scale-complementary external state under the evaluated benchmarks, metrics, and state schema.",
+  "abstract_ja": "",
+  "authors": [
+    "Xingjian Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10175",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "External state should become more valuable as a reader becomes more capable, yet long-context evaluations measure memory utility at a single model scale. This paper formulates scale complementarity:…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "ASCENT: Scale-Complementary External State for Frozen Long-Context Language Models",
+  "url": "https://arxiv.org/abs/2611.10175",
+  "use_case": ""
+}

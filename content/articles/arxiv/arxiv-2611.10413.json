@@ -1,0 +1,32 @@
+{
+  "abstract": "Existing methods mainly rely on convolutional aggregation or attention-based spatial-spectral interaction. However, conventional feature-domain attention does not explicitly characterize variation patterns along spatial-token and learned latent-channel coordinates, while spatially shared local operators lack the flexibility to adapt neighborhood aggregation to heterogeneous structures. To address these limitations, we propose a Frequency-Structure Complementary Modeling Network (FSCM-Net), which couples frequency-aware dependency learning with structure-adaptive local refinement. Specifically, a Spatial-Spectral Frequency Calibration Attention (SSFCA) module constructs spatial-token affinities from Fourier-interacted query-key representations and builds latent-channel affinities after input-conditioned frequency filtering along learned channel coordinates. The latent-channel response is then calibrated by a learned shared gain and combined with the spatial-token response. Complementarily, a Structure-Coherent Dynamic Feature Fusion (SC-DFF) module combines regularized structure-tensor cues from MSI features with context-modulated HSI detail representations to generate channel- and position-dependent aggregation kernels. This design makes local HSI refinement responsive to smooth regions, edges, and textures while maintaining spectral fidelity. The two modules are progressively integrated within a multiscale encoder-decoder to coordinate representation-level interaction and structure-adaptive reconstruction. Experiments on two simulated benchmarks and one real remote-sensing dataset demonstrate favorable performance against representative fusion methods in spatial detail reconstruction and spectral preservation.",
+  "abstract_ja": "",
+  "authors": [
+    "Song Qiya",
+    "Tian Siyu",
+    "Li Shutao",
+    "Dian Renwei",
+    "Sun Long"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10413",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Existing methods mainly rely on convolutional aggregation or attention-based spatial-spectral interaction. However, conventional feature-domain attention does not explicitly characterize variation…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Frequency-Structure Complementary Modeling for Hyperspectral Image Fusion",
+  "url": "https://arxiv.org/abs/2611.10413",
+  "use_case": ""
+}
