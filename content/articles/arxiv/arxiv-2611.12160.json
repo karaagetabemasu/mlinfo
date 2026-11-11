@@ -1,0 +1,31 @@
+{
+  "abstract": "Autoregressive graph generators typically linearize graphs through flat node-edge walks, which can obscure higher-order structure in large and complex graphs. We introduce a hierarchical graph abstraction and coarse-to-fine generation pipeline that separates coarsening, tokenization, and decoding. This exposes three design axes: community coarsening, hierarchical tokenization, and order randomization. Across these axes, traversal-based hierarchy consistently improves distributional and structural fidelity, while its V.U.N.\\ cost depends strongly on the coarsening and randomization policy. In particular, the fidelity--V.U.N.\\ trade-off observed under within-community randomization is substantially reduced when traversal order is randomized across the full hierarchy. With a fixed backbone, training protocol, and matched training time across five molecular and five non-molecular benchmarks, hierarchical serialization yields consistent distributional and structural gains on all molecular datasets, while the non-molecular results further show that these gains depend on how well the supplied hierarchy aligns with structure in the target distribution. Together, these results characterize when and how hierarchical serialization benefits autoregressive graph generation.",
+  "abstract_ja": "",
+  "authors": [
+    "Kaiwen Bian",
+    "Andrew H. Yang",
+    "Yusu Wang",
+    "Ali Parviz",
+    "Gal Mishne"
+  ],
+  "category": "mlops",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.12160",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "pipeline",
+  "summary": "Autoregressive graph generators typically linearize graphs through flat node-edge walks, which can obscure higher-order structure in large and complex graphs. We introduce a hierarchical graph…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Beyond Flat Walks: Compositional Abstraction for Autoregressive Graph Generation",
+  "url": "https://arxiv.org/abs/2611.12160",
+  "use_case": ""
+}

@@ -1,0 +1,29 @@
+{
+  "abstract": "Attention heads in video Transformers vary greatly in functional importance. Understanding their contributions requires examining not only which heads are important, but also how they participate in collective computation within the network. We study this collective computation from two perspectives: the downstream use of head outputs and the composition of interactions across layers. Ablation analyses of four video Transformers show that high-importance heads identified on a single task also support other video understanding tasks and help preserve the representational structure that distinguishes different videos. Representational responses to head ablation correlate weakly with head importance after the attention module, but more strongly after the MLP in the same block. Adapting this downstream processing through MLP-only fine-tuning further improves the use of lower-importance head outputs. Meanwhile, through composition across layers, sets of heads with shorter spatiotemporal attention distances support stronger perturbation responses at distant tokens than sets with longer distances. Their joint ablation causes even greater performance loss than ablating equally sized sets of high-importance heads, revealing collective contributions not fully captured by individual importance rankings. These findings highlight collective computation as a key perspective for understanding attention head function: functional contributions depend on both how head outputs are used downstream and how local interactions compose across layers.",
+  "abstract_ja": "",
+  "authors": [
+    "Yi Yang",
+    "Siyuan Liu",
+    "Bingbing Nie"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11875",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Attention heads in video Transformers vary greatly in functional importance. Understanding their contributions requires examining not only which heads are important, but also how they participate in…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": []
+  },
+  "title": "Beyond Head Importance: Collective Computation in Video Transformers",
+  "url": "https://arxiv.org/abs/2611.11875",
+  "use_case": ""
+}

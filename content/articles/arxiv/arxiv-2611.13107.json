@@ -1,0 +1,29 @@
+{
+  "abstract": "Large language models (LLMs) are increasingly trusted with mathematical, scientific and engineering work, yet their mistakes are often confidently written and hard to spot. A single wrong step tends to propagate, making the model waste inference tokens following a false premise. Existing safeguards either check only the final answer and restart from scratch, or rely on a verifier LLM that competes for GPU capacity and slows down response time. We propose online, deterministic verification: many kinds of reasoning steps can be validated by code, so a step can be verified in real time, as it is written, without any model call or GPU use. Whenever a check fails, we point out the mistake and let the model continue from the same spot. We demonstrate this approach on symbolic mathematics, where derivations already contain explicit expressions that a computer algebra system can check in milliseconds. Tested on the ASyMoB benchmark with three open-weights models, our online validation improves accuracy by 1.4-5.6 percentage points, corresponding to a 1.8-14.9% net reduction in incorrect answers, while increasing token usage by only 6-7%. Because the verifier is independent of the model, the approach complements progress in LLMs rather than competing with it: every new model can benefit immediately, and the benefit grows as deterministic checkers extend to more kinds of reasoning steps.",
+  "abstract_ja": "",
+  "authors": [
+    "Rotem Elimelech",
+    "Michael Shalyt",
+    "Ido Kaminer"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13107",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Large language models (LLMs) are increasingly trusted with mathematical, scientific and engineering work, yet their mistakes are often confidently written and hard to spot. A single wrong step tends…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Catch It Where It Happens: Real Time Error Correction During LLM Reasoning",
+  "url": "https://arxiv.org/abs/2611.13107",
+  "use_case": ""
+}

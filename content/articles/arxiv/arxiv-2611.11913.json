@@ -1,0 +1,36 @@
+{
+  "abstract": "Wearables, mobile devices, and IoT platforms generate multimodal time-series data continuously and at scale, making efficient storage and transfer a primary concern. The same recordings are reused after collection by many downstream models, often at different temporal resolutions, so a compressed representation should be small, useful across resolutions, and produced at a bit rate known in advance. Prior work meets parts of this: symbolic and error-bounded compressors reconstruct accurately but fix resolution at compression time, learned codecs target one signal domain, and discrete tokenizers reconstruct without accounting for rate. We introduce CHORD, a coarse-to-fine compressor for heterogeneous multimodal time series. A residual cascade orders each payload from broad to fine temporal scales and synthesizes corrections through learned shapelet-inspired atoms. A shared pathway supplies a reusable synthesis basis across modalities, while private pathways retain capacity for sensor-specific morphology. Finite scalar quantization fixes the bit width of every modality and scale, so payload size is known before encoding, and scale dropout trains each coarse-to-fine prefix to be a valid reconstruction operating point. Across seven wearable-sensing and forecasting benchmarks, CHORD stays within 0.62 points of uncompressed classification accuracy on average at the 8x target, the smallest gap of any compressed method, with all resolutions decoded from one payload.",
+  "abstract_ja": "",
+  "authors": [
+    "Bibhus Luitel",
+    "Payal Mohapatra",
+    "Subrata Biswas",
+    "Ekata Poudel",
+    "Sunwoong Kim"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11913",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Wearables, mobile devices, and IoT platforms generate multimodal time-series data continuously and at scale, making efficient storage and transfer a primary concern. The same recordings are reused…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal",
+      "time-series"
+    ],
+    "task": [
+      "classification",
+      "generation",
+      "forecasting"
+    ]
+  },
+  "title": "CHORD: Multi-resolution Compression for Multimodal Time Series",
+  "url": "https://arxiv.org/abs/2611.11913",
+  "use_case": ""
+}

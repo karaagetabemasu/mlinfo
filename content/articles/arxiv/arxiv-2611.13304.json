@@ -1,0 +1,33 @@
+{
+  "abstract": "Diffusion models are powerful generative methods for learning and sampling from complex data distributions. Safely deploying these models requires detecting inputs that fall outside their training distribution. Because diffusion models recover clean samples from noisy inputs, reconstruction error is often used for out-of-distribution (OOD) detection. This approach assumes that in-distribution (ID) inputs are reconstructed more accurately than OOD inputs. However, OOD inputs may be reconstructed equally well or even better, making this score unreliable. We therefore propose the leading sensitivity spectrum of intermediate denoising features as a complementary OOD signal and demonstrate that it remains informative when reconstruction error is misleading. We introduce DUal-readout of diffusion models for OOD detection (DUO), a fully unsupervised, training-free OOD detector that combines reconstruction error and feature sensitivity. DUO improves average AUROC by approximately 6% points over the strongest baselines while substantially reducing inference cost, and achieves SOTA on near-OOD and high-resolution benchmarks.",
+  "abstract_ja": "",
+  "authors": [
+    "Alireza Javid",
+    "Shirin Shoushtari",
+    "Nuria González Prelcic"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13304",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Diffusion models are powerful generative methods for learning and sampling from complex data distributions. Safely deploying these models requires detecting inputs that fall outside their training…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised"
+    ],
+    "modality": [],
+    "task": [
+      "detection",
+      "generation",
+      "anomaly-detection"
+    ]
+  },
+  "title": "DUO: Dual Readouts of Diffusion Models for OOD Detection",
+  "url": "https://arxiv.org/abs/2611.13304",
+  "use_case": ""
+}

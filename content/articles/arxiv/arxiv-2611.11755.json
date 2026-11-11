@@ -1,0 +1,27 @@
+{
+  "abstract": "This paper presents a distributed model predictive control (MPC) architecture for collision-avoiding motion planning of planar robots with double-integrator dynamics. To reduce coordination demands, a time-varying predicted conflict graph selects relevant pairwise interactions. The associated collision-avoidance constraints are convexified once per MPC update using warm-start trajectories, yielding a fixed convex quadratic program (QP). The resulting QP is then decomposed using an edge-consensus formulation of the alternating direction method of multipliers (ADMM), enabling parallel robot-local optimization and independent closed-form projections onto separating half-spaces. Execution is selectively supervised by a centralized high-order control barrier function (HOCBF) QP when the distributed candidate does not satisfy the direct-execution conditions. Evaluated in C++ simulations involving 8, 16, and 32 robots, the proposed architecture achieves collision-free execution and substantially improves computational scalability while maintaining task-level performance comparable to a centralized complete-graph baseline.",
+  "abstract_ja": "",
+  "authors": [
+    "Josep Borras-Borras",
+    "Pablo Segovia",
+    "Carlos Ocampo-Martinez"
+  ],
+  "category": "math-theory",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11755",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "optimization",
+  "summary": "This paper presents a distributed model predictive control (MPC) architecture for collision-avoiding motion planning of planar robots with double-integrator dynamics. To reduce coordination demands,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Graph-Sparse Distributed Predictive Control for Multi-Robot Motion Planning vianEdge-Consensus ADMM",
+  "url": "https://arxiv.org/abs/2611.11755",
+  "use_case": ""
+}

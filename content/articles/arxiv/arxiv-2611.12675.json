@@ -1,0 +1,29 @@
+{
+  "abstract": "Interpretability tools are usually built for one model at a time: a refusal direction, a truthfulness probe, or a steering vector is found with labeled data inside the model it explains. We ask whether such tools can be carried to other models through a map between residual streams fit only on unlabeled prompts. We transfer a refusal direction, tested causally by addition and ablation, and two read-out tools, a correctness direction and a sentiment probe, across 110 pairs of models from five families and 1B to 72B parameters and between base and instruction-tuned models, with controls for specificity and five seeds. How much transfers depends on what the map was fit on. A map fit on ordinary questions recovers 54\\% of the target's own refusal steering and 16\\% to 77\\% of its correctness gain; adding unlabeled prompts from the region where the tool operates raises these to 102\\% and 88\\% to 98\\%, while control directions recover at most 1\\%. We prove that a linear map behaves this way whenever two models correspond linearly on the data it covers, and a label-free coverage score derived from this result tracks recovery across more than 16,000 runs and explains earlier reports that maps between models fail across domains. Carried read-out tools outperform anything the target's unlabeled representations yield. Interpretability results, once found, can be reused across models at the cost of a few unlabeled prompts.",
+  "abstract_ja": "",
+  "authors": [
+    "Marcus Armstrong",
+    "Navid Ayoobi",
+    "Pradham Mummaleti",
+    "Alexander Chulzhanov",
+    "Arjun Mukherjee"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.12675",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Interpretability tools are usually built for one model at a time: a refusal direction, a truthfulness probe, or a steering vector is found with labeled data inside the model it explains. We ask…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Interpretability Is Not Model-Specific",
+  "url": "https://arxiv.org/abs/2611.12675",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Traversability prediction is a core component of autonomous navigation, yet most vision-based methods operate frame-wise and produce temporally inconsistent predictions. We present SAM-VTP (Video Traversability Prediction), which fine-tunes SAM2's video memory pathway for dense, prompt-free traversability segmentation, conditioning each frame on a persistent memory of prior observations. Rather than inferring terrain geometry from appearance, we measure it: slope, roughness and height are computed from depth and fused into the image features. We also introduce an offline continuous supervision pipeline that generates dense per-pixel traversability targets in [0,1] from depth-derived geometry and semantic priors, requiring no robot deployment and no per-pixel annotation, capturing conditional feasibility that binary labels cannot represent. On TartanGround, a large-scale synthetic ground-robot dataset, SAM-VTP improves fuzzy Jaccard from 0.908 to 0.924 and binary IoU from 0.854 to 0.886 over SAM-TP, a frame-wise SAM2 baseline, against a seed-to-seed spread below 0.001, and cuts frame-to-frame flicker by 31%. In closed-loop trials at two field sites, driving the same planner and controller, the baseline's dropouts leave the planner without a feasible path 3.3x more often on a paved course and 6.9x on rough ground, while SAM-VTP runs at 21.4 FPS on the Orin Nano the robot carries.",
+  "abstract_ja": "",
+  "authors": [
+    "Lucas Hoefs",
+    "Hui Xie",
+    "Senjian An",
+    "Fangyi Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.12099",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Traversability prediction is a core component of autonomous navigation, yet most vision-based methods operate frame-wise and produce temporally inconsistent predictions. We present SAM-VTP (Video…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "SAM-VTP: Video Memory and Measured Geometry for Continuous Traversability Segmentation",
+  "url": "https://arxiv.org/abs/2611.12099",
+  "use_case": ""
+}

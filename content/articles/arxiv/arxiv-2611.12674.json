@@ -1,0 +1,33 @@
+{
+  "abstract": "Scribble-supervised segmentation is typically evaluated with a fixed annotation set, leaving robustness to distinct semantic and geometric imperfections poorly understood. Motivated by an audit of 12,031 manual PASCAL Visual Object Classes (VOC) 2012 scribbles and prior work, we introduce six controlled perturbation operators. Class corruption, spatial offset, and directional perturbation directly operationalize audit signals. Stroke-length reduction is motivated by prior scribble studies, while random dropout and fragmentation serve as diagnostic controls. Each operator reports requested and achieved changes. We evaluate manual and automatic scribbles across two image domains, two principal backbone settings, and multiple training pipelines, with an additional MiT-B1 PFA anchor evaluation. In the five-seed Tree Energy Loss (TEL)-ResNet101 VOC study, mean intersection over union (mIoU) drops from 70.08 to 1.46 under class corruption, compared with 35.57 for spatial offset, 52.20 for directional perturbation, and 63.24 for stroke-length reduction at their strongest settings. At the evaluated endpoints, semantic-anchor corruption produces the largest degradation, while geometric and support responses depend on the pipeline and dataset. Our benchmark provides a reproducible protocol for diagnosing annotation robustness beyond clean-set accuracy. The operator code is available at https://github.com/Wmhiram99/scribble-operator-benchmark.",
+  "abstract_ja": "",
+  "authors": [
+    "Minheng Wu",
+    "Di Wen",
+    "Ruiping Liu",
+    "Junwei Zheng",
+    "Yufan Chen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/Wmhiram99/scribble-operator-benchmark",
+  "hasCode": true,
+  "id": "arxiv-2611.12674",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Scribble-supervised segmentation is typically evaluated with a fixed annotation set, leaving robustness to distinct semantic and geometric imperfections poorly understood. Motivated by an audit of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "What Breaks Scribble-Supervised Segmentation? An Audit-Informed Benchmark for Scribble Annotation Robustness",
+  "url": "https://arxiv.org/abs/2611.12674",
+  "use_case": ""
+}

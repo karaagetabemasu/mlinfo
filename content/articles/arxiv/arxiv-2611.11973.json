@@ -1,0 +1,31 @@
+{
+  "abstract": "Predict-then-optimize systems convert contextual forecasts into decisions, yet conformal robust optimization typically calibrates prediction residuals rather than downstream loss. For linear optimization, this parameter-space geometry can be badly misaligned with decision risk: large objective perturbations may preserve the optimizer, while small boundary-crossing perturbations may cause substantial regret. We introduce Conformal Regret Sets, a post-hoc, model-agnostic framework that conformalizes an optimization-derived regret surrogate and uses its calibrated level set for minimax-regret refinement. We first show that directly conformalizing exact regret, although sufficient to certify the nominal predict-then-optimize decision, yields a degenerate robust problem: absent an exogenous bounded support, every alternative decision has unbounded worst-case regret. We therefore use SPO+, a pointwise upper bound on exact regret, as the conformal score, obtaining distribution-free finite-sample marginal regret guarantees under exchangeability. For contextual linear programs, the resulting set decomposes into polyhedral pieces aligned with the normal fan of the feasible polytope. A vertex is active if and only if its predicted suboptimality gap is at most half the calibrated threshold $η$, enabling local, output-sensitive generation of all relevant pieces. Moreover, if $Γ$ is the predicted gap to the closest competing vertex, the nominal and refined decisions admit the sharper worst-case-regret certificate $(η-2Γ)_+$, with an exact early exit when $η\\leq 2Γ$. Experiments on contextual fractional knapsack validate the geometry and certificates: continuous refinement reduces the $0.95$-quantile and $\\operatorname{CVaR}_{0.95}$ of regret by $9.1\\%$ and $13.1\\%$ relative to nominal PTO, while vertex-restricted refinement changes only $10.0\\%$ of nominal decisions.",
+  "abstract_ja": "",
+  "authors": [
+    "Lingjie Zhao",
+    "Hansheng Jiang",
+    "Wei Qi"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11973",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Predict-then-optimize systems convert contextual forecasts into decisions, yet conformal robust optimization typically calibrates prediction residuals rather than downstream loss. For linear…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Beyond Prediction Residuals: Conformal Regret Calibration for Robust Contextual Linear Optimization",
+  "url": "https://arxiv.org/abs/2611.11973",
+  "use_case": ""
+}

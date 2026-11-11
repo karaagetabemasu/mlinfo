@@ -1,0 +1,29 @@
+{
+  "abstract": "We study how to combine a human binary call (a referee's offside or onside decision) with an AI numerical measurement (VAR's estimate of an attacker's position relative to the offside line). We derive an explicit maximum-likelihood rule that determines when the referee's call should stand and when a conflicting VAR measurement should overturn it. Our model treats the true offside margin as fixed and unknown and assumes independent additive Gaussian errors in the human's perception and the AI measurement. When both errors have zero means and known standard deviations $σ_H$ and $σ_{AI}$, respectively, the reversal threshold is $\\sqrt{2/π}\\,σ^2_{AI}/σ_H$. An onside call is overturned precisely when VAR's measured offside margin exceeds this threshold---not merely because VAR places the attacker beyond the offside line. We also derive the rule when either source has a systematic bias. We prove that the maximum-likelihood estimate of the true margin exists and is unique, while the final binary decision requires only a threshold comparison, without computing that estimate numerically. We illustrate the rule through numerical examples and show how to estimate the error parameters from calibration data. The same analysis applies beyond soccer to binary classification problems in which a human call and an AI measurement satisfy the stated model. This paper is intended for educational purposes: we aim to illustrate how undergraduate students and advanced high school students familiar with basic probability and calculus can investigate research questions in AI and its applications.",
+  "abstract_ja": "",
+  "authors": [
+    "Amir Ali Ahmadi",
+    "Parsa Alavi",
+    "Radeen Alavi"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11819",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "We study how to combine a human binary call (a referee's offside or onside decision) with an AI numerical measurement (VAR's estimate of an attacker's position relative to the offside line). We…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "When Should AI Overturn a Human Decision? Controversy at the 2026 World Cup and a $\\sqrt{2/π}$ Solution",
+  "url": "https://arxiv.org/abs/2611.11819",
+  "use_case": ""
+}

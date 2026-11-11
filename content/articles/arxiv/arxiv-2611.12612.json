@@ -1,0 +1,28 @@
+{
+  "abstract": "Factor analysis has been central to the analysis of high-dimensional biomedical data. However, existing exploratory and confirmatory factor analysis methods face several limitations: less interpretable factor findings, difficulty in identifying which variables can and cannot be represented by low-dimensional factors, challenges in estimating the covariance among factors, and maximum-likelihood fits that break down when variables outnumber subjects. We propose graph-guided Bayesian factor analysis (gg-BFA) to address these gaps. We first use a Bayesian model to explore and learn the latent graph structure, identifying which variables can and cannot be represented by low-dimensional factors and how many factors are needed. A dense-subgraph search proposes partitions of the variables into communities, each defining one factor, and a forward stepwise search compares their fractional variational posteriors and stops when the evidence lower bound first decreases. We show that this search recovers the true communities even when the number of variables grows much faster than the sample size. We then develop a confirmatory Bayesian model whose variational posterior of the covariance contracts at the parametric rate up to a logarithmic factor, yielding posterior inference for the factors and their covariance, as well as predictions of missing values. Its four members range from a community mask to several cross-loadings per variable. In five biomedical panels, the complete analysis took under ten minutes each on one GPU, and cross-loadings improved held-out covariance and the prediction of masked measurements. In TCGA Kidney, six of the first eight factors were enriched for known pathways, and 190 of the 210 factor correlations had 95% credible intervals excluding zero. Overall, gg-BFA is computationally fast and provides interpretable factor analysis findings and reliable inference results.",
+  "abstract_ja": "",
+  "authors": [
+    "Shitao Fan",
+    "Lizhen Lin",
+    "Zhenyao Ye",
+    "Shuo Chen"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.12612",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Factor analysis has been central to the analysis of high-dimensional biomedical data. However, existing exploratory and confirmatory factor analysis methods face several limitations: less…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Graph-Guided Bayesian Factor Analysis: A Fast Integrated EFA-CFA Approach for High-Dimensional Data",
+  "url": "https://arxiv.org/abs/2611.12612",
+  "use_case": ""
+}

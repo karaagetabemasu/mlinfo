@@ -1,0 +1,37 @@
+{
+  "abstract": "Vision-language models such as CLIP achieve strong performance across computer vision tasks, yet their image-text alignment is less reliable for infrared (IR) imagery because large-scale pre-training is dominated by visible-spectrum data. Due to the high cost of the infrared-text labeling, we investigate adapting CLIP to IR through only paired infrared-visible images, which requires considering modality-specific knowledge while preserving scene content and CLIP's image-text alignment. To achieve this, we propose TMT (Text-Derived Modality Knowledge Transfer), which adapts CLIP's image encoder through a text-defined infrared-to-visible direction and supervision from paired IR-visible images. First, we found that modality discrepancy can be described by corresponding text embeddings, thus using the direction of text embedding differences to guide the knowledge transfer between visible and infrared modalities without erasing infrared-specific information. To enhance the representation of semantics and details of infrared images, we introduce Generative-Perceptual Co-Supervision that combines semantic alignment from CLIP visible image encoder with diffusion noise-prediction feedbacks. On four source-disjoint IR classification benchmarks, TMT achieves the highest mean zero-shot accuracy among the compared methods (48.92%). It also achieves the best IR-text retrieval results among the compared methods without infrared-text supervision during adaptation and the highest open-vocabulary segmentation mIoU on both CART and SemanticRT among the CLIP-like methods.",
+  "abstract_ja": "",
+  "authors": [
+    "Ruofan Wang",
+    "Puzuo Wang",
+    "Xin Chen",
+    "Zibo Yu",
+    "Jungang Yang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.12345",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "Vision-language models such as CLIP achieve strong performance across computer vision tasks, yet their image-text alignment is less reliable for infrared (IR) imagery because large-scale pre-training…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "classification",
+      "generation",
+      "segmentation"
+    ]
+  },
+  "title": "TMT: Adapting CLIP to Infrared Imagery via Text-Derived Modality Knowledge Transfer",
+  "url": "https://arxiv.org/abs/2611.12345",
+  "use_case": ""
+}

@@ -1,0 +1,28 @@
+{
+  "abstract": "Simulation optimization typically returns a single estimated optimal point. When decisions also depend on criteria evaluated independently of simulation, such as resource cost, the decision maker instead needs the set of designs whose expected performance lies within a tolerance of the optimum, often choosing the tolerance only after seeing the tradeoffs. We study how to identify these near-optimal regions on a continuous design space, simultaneously for all tolerances up to a prescribed maximum $T$, with region estimation error at most $η$. We show that region identification is not a by-product of optimization. Specifically, when $α>ν$, any procedure, even one given the optimal design in advance, needs at least $Ω\\bigl(η^{-(2+d/ν)}\\min\\{1,KT^{d/α}\\}\\bigr)$ simulation evaluations, where $d$ is the dimension, $ν$ the smoothness, and $(K,α)$ the covering parameters that describe the geometry of the near-optimal designs. We propose SASORI, which returns an estimated optimal point and the regions for all tolerances from the same evaluations, matching this lower bound up to logarithmic factors. SASORI also achieves the optimal tradeoff between region estimation error and cumulative regret, and reduces to a minimax-optimal simulation optimization procedure at zero tolerance. Numerical experiments illustrate the effectiveness of our proposed method.",
+  "abstract_ja": "",
+  "authors": [
+    "Yilin Zheng",
+    "Haowei Wang",
+    "Wenjia Wang",
+    "Szu Hui Ng"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13489",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Simulation optimization typically returns a single estimated optimal point. When decisions also depend on criteria evaluated independently of simulation, such as resource cost, the decision maker…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Simultaneous Near-Optimal Region Identification in Continuous Simulation Optimization: Minimax Complexity and Adaptive Sampling",
+  "url": "https://arxiv.org/abs/2611.13489",
+  "use_case": ""
+}

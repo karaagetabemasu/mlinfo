@@ -1,0 +1,27 @@
+{
+  "abstract": "Design-stage disassemblability assessment requires knowledge of product structure and the operations available in each assembly state, but CAD assemblies do not directly specify state-dependent disassembly operations. This paper proposes a fastener-centric virtual-disassembly framework that acquires such knowledge from CAD-derived virtual assemblies. Fasteners jointly releasing the same constraint are grouped into operation-level sets, avoiding enumeration of arbitrary individual-fastener orders. Their removability is evaluated through state-dependent visibility and tool-access checks and torque-driven virtual-removal trials. After fastener removal, graph-based reasoning identifies candidate moving units, whose separation is evaluated by initial-motion screening, path generation, and physics-based validation. The acquired operations, states, dependencies, validated paths, and simulation-derived attributes are organized into a Transformed AND/OR Graph for subsequent planning and design evaluation. Exhaustive verification with a controlled toy assembly found no branching violations for introduced tool-accessibility and precedence conditions. Evaluation with a 54-component OpenManipulator Chain gripper demonstrated state-dependent fastener-removal and part- or subassembly-separation operations. Visibility and tool-accessibility evaluations pruned 51.4% of fastener-set candidate evaluations, while removal of obstructing components enabled previously inaccessible fastener operations. Operation-level grouping and screening thereby limited detailed physical validation to mechanically plausible candidates. The results demonstrate the feasibility of acquiring product-specific disassembly knowledge from CAD-derived virtual assemblies before manufacture, supporting subsequent disassembly reasoning and design-for-disassembly evaluation.",
+  "abstract_ja": "",
+  "authors": [
+    "Shiki Iwase"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13379",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Design-stage disassemblability assessment requires knowledge of product structure and the operations available in each assembly state, but CAD assemblies do not directly specify state-dependent…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Fastener-centric acquisition and AND/OR graph representation of state-dependent disassembly knowledge from CAD-derived virtual assemblies",
+  "url": "https://arxiv.org/abs/2611.13379",
+  "use_case": ""
+}

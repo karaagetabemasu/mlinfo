@@ -1,0 +1,30 @@
+{
+  "abstract": "Mixed reality (MR) allows users to inspect planned robot motion within their physical surroundings, but displaying trajectories from robotics software requires converting their joint configurations and timing into a format the MR application can play back. This paper presents ROS2MR, an extension of the MR-Robotics LAB platform that converts YAML-serialized ROS 2 joint trajectories, including MoveIt motion plans, into the platform's existing JSON playback format. The converter validates the input, maps arm joints by name, and resamples the trajectory at a nominal rate of 30 Hz, using cubic Hermite interpolation when joint velocities are supplied and linear interpolation otherwise, while binary gripper commands are sampled separately using a zero-order hold. A Python export helper combines sequences of motion plans and gripper states into a single trajectory and checks positional agreement at segment boundaries. The MR application was also adapted for Apple Vision Pro in addition to Meta Quest 3. A technical evaluation showed that the converter preserved the normalized duration and endpoint configurations for dense, sparse, and irregularly timed inputs. With supplied velocities, the position RMSE was approximately 2.91x10^-5 degrees for all sampling patterns; without them, sparse input increased it to 0.85 degrees, and close positional agreement did not guarantee accurate velocity profiles. A pick-and-place sequence retained its open--closed--open gripper order, although off-grid transitions were shifted to the output sampling grid. The resulting file-based pathway enables inspection of ROS-generated trajectories in MR without a live ROS connection.",
+  "abstract_ja": "",
+  "authors": [
+    "Santiago Berrezueta-Guzman",
+    "Habiba-Loai Khalil",
+    "Andrei Koshelev",
+    "Stefan Wagner"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11830",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Mixed reality (MR) allows users to inspect planned robot motion within their physical surroundings, but displaying trajectories from robotics software requires converting their joint configurations…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "ROS2MR: Connecting ROS 2 Motion Planning to Mixed-Reality Trajectory Visualization",
+  "url": "https://arxiv.org/abs/2611.11830",
+  "use_case": ""
+}

@@ -1,0 +1,30 @@
+{
+  "abstract": "Ranking large language models (LLMs) through human evaluations is essential for downstream decision-making. Because human feedback is expensive, evaluation platforms often collect it adaptively, prioritizing informative model comparisons using previously observed feedback. To further improve precision with limited human feedback, evaluators can draw on abundant unrated responses and relatively inexpensive LLM judges; however, judge bias and adaptive dependence challenge standard i.i.d. inference frameworks. We propose Prediction-Powered Ranking (PP-Rank), a framework that combines LLM-judge predictions with human feedback to improve precision while providing valid inference under adaptive sampling. Data-driven prediction weights minimize the asymptotic covariance trace within the proposed class. In theory, we establish asymptotic normality for general evaluation targets and simultaneous ranking inference. A joint martingale analysis handles dependence between adaptive human feedback and auxiliary data. We further derive a rule for reducing exploration that prioritizes lower-cost comparisons while matching a conservative variance bound, and characterize allocation limits for regular $\\sqrt{T}$-rate estimation of pairwise means. Semi-synthetic experiments on UltraFeedback-Extended show improvements over human-only baselines in score estimation, confidence interval width, and ranking certification. Synthetic experiments demonstrate robustness to judge quality and adaptive allocation, while showing that PP-Rank can substantially reduce evaluation costs without sacrificing precision.",
+  "abstract_ja": "",
+  "authors": [
+    "Gabriel Sargent",
+    "Will Wei Sun",
+    "Zhengwu Zhang",
+    "Yufeng Liu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13186",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Ranking large language models (LLMs) through human evaluations is essential for downstream decision-making. Because human feedback is expensive, evaluation platforms often collect it adaptively,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Prediction-Powered LLM Ranking with Adaptively Collected Human Feedback",
+  "url": "https://arxiv.org/abs/2611.13186",
+  "use_case": ""
+}

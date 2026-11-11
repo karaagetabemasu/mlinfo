@@ -1,0 +1,28 @@
+{
+  "abstract": "Classical optimal control is used to design a separate controller for each plant. This paper asks a different question. Can one learned policy serve a whole family of partially observed, noisy linear systems? We show that one transformer can. The policy is trained to imitate optimal LQG control on a heterogeneous family of Linear Time-Invariant (LTI) systems with Multiple Inputs and Multiple Outputs (MIMO), whose dimensions, cost matrices, and noise levels all vary. A shared representation with system-wise standardization, zero-padding, masking, and an encoding of the cost and noise covariances lets one set of weights control every member of the family. At run time, a short window of noisy measurements is all the policy needs to produce a control action, with no plant matrices and no state estimator. We characterize the relation between the optimal LQG policy (represented as a dynamic state-space model) and a static transformer acting on a finite window of measurements. We then express the closed-loop excess cost of any causal policy as the energy of its deviation from the optimal action. Finally, we evaluate the approach on 28 simulated systems. The trained policy reaches the optimal cost to within a median gap of $0.4\\%$ for seen systems. For unseen systems, a light fine-tuning step brings the median gap to $1.0\\%$.",
+  "abstract_ja": "",
+  "authors": [
+    "Maitham F. AL-Sunni",
+    "Turki Bin Mohaya",
+    "John M. Dolan",
+    "Peter Seiler"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11815",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Classical optimal control is used to design a separate controller for each plant. This paper asks a different question.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Generalizable Output Feedback Optimal Control via Transformers Without Explicit State Estimation",
+  "url": "https://arxiv.org/abs/2611.11815",
+  "use_case": ""
+}

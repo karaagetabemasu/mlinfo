@@ -1,0 +1,31 @@
+{
+  "abstract": "Quantum kernel methods have been proposed for network intrusion detection, yet their performance limitations are often attributed to noise in current quantum hardware. This study evaluates that assumption through a controlled analysis of Pegasos-QSVC on the NSL-KDD and ToN-IoT datasets. We perform 56 quantum experiments using one exact noiseless statevector backend and three noise-simulated superconducting backends while keeping preprocessing, PCA features, data splits, and classical baselines identical. XGBoost achieves accuracies of 98.94% on NSL-KDD and 99.41% on ToN-IoT, compared with 91.80% and 82.98% for Pegasos-QSVC. The quantum model also exhibits substantially greater seed-dependent variability. Eight runs collapse into degenerate classifiers, including four recall-collapse cases and four trivial-positive classifiers. Notably, two failures occur on the noiseless backend, demonstrating that hardware noise is not a necessary condition for classi-fier collapse. Kernel Gram matrix analysis further reveals low effective rank and severe ill-conditioning even in the absence of noise, indicating intrinsic fragility in the learned quantum representation. These results show that average accuracy alone can conceal operationally unacceptable behavior and highlight the importance of reporting worst-case performance, seed-level variability, class-specific metrics, and explicit degeneracy tests in quantum intrusion detection studies.",
+  "abstract_ja": "",
+  "authors": [
+    "Sreejonty Chakraborty",
+    "Adrita Rahman Tory",
+    "Muhammad Aminur Rahaman",
+    "Khondokar Fida Hasan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.12219",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Quantum kernel methods have been proposed for network intrusion detection, yet their performance limitations are often attributed to noise in current quantum hardware. This study evaluates that…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "An Empirical Evaluation of Quantum Kernel Stability in Network Intrusion Detection",
+  "url": "https://arxiv.org/abs/2611.12219",
+  "use_case": ""
+}

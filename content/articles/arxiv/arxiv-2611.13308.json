@@ -1,0 +1,31 @@
+{
+  "abstract": "We studied domain shift in adult elbow fracture classification from radiographs when training on a large public dataset and deploying on a small, institution-specific dataset (UofL). We implemented a domain-adversarial neural network (DANN) to align feature distributions across source (MURA) and target (UofL) domains while optimizing fracture classification. A pretrained convolutional backbone was adapted to grayscale inputs; the task head predicts fracture presence, and a gradient-reversal-based domain head encourages domain-invariant features via adversarial learning. We compared four settings: (1) Source-only, (2) Target-only (limited labels), (3) Naive merge (pooled training), and (4) DANN (MURA to UofL). Evaluation on UofL test data uses AUC-ROC, and accuracy. DANN outperformed Source-only and Naive merge baselines by reducing domain bias without overfitting to the small target set. Ablations showed that progressive adversarial weight, dataset-size-aware domain loss, and domain-balanced sampling improved stability and target performance. Results demonstrated that domain alignment is a practical path to robust clinical generalization from public to local data.",
+  "abstract_ja": "",
+  "authors": [
+    "M. Bolhassani",
+    "W. Furtado",
+    "D. Duvall",
+    "MJ Negahdar",
+    "J. Joshi"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13308",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "We studied domain shift in adult elbow fracture classification from radiographs when training on a large public dataset and deploying on a small, institution-specific dataset (UofL). We implemented a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Domain-Adversarial Adaptation from MURA to In-House Radiographs for Improved Adult Elbow Fracture Classification",
+  "url": "https://arxiv.org/abs/2611.13308",
+  "use_case": ""
+}

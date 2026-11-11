@@ -1,0 +1,26 @@
+{
+  "abstract": "Symbolic knowledge (motif counts, ring counts, label constraints) is routinely added to graph neural networks (GNNs) and justified by their limited expressivity. We replace this yardstick with an exact one. The largest log-loss reduction a rule $S$ can give a model family is $I(Y;S\\midσ)$ given what the family computes; every realised gain splits exactly into this term plus repaid neural debt; and for a trained network with representation $T$ the value is $I(Y;S\\mid T)$, the label information training failed to extract. Rule design thus becomes rule discovery: we score candidates on the network's out-of-fold residual against calibrated permutation nulls with family-wise error control. On ZINC, discovery recovers the hidden ring term $\\max(0,\\ell_{\\max}-6)$ of the target in three independent runs ($p_{\\mathrm{adj}}=0.001$) and beats expert cycle counts; frozen and applied to five unseen datasets it is never significantly worse than the plain network or the expert rule, and on BBBP it significantly beats both.",
+  "abstract_ja": "",
+  "authors": [
+    "Satabarto Sarkar",
+    "Prithwineel Paul"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.12446",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Symbolic knowledge (motif counts, ring counts, label constraints) is routinely added to graph neural networks (GNNs) and justified by their limited expressivity. We replace this yardstick with an…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Pricing Symbolic Rules by What GNNs Leave Unlearned",
+  "url": "https://arxiv.org/abs/2611.12446",
+  "use_case": ""
+}

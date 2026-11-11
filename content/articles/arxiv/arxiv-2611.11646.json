@@ -1,0 +1,27 @@
+{
+  "abstract": "Safe navigation for mobile robots in dynamic and uncertain environments requires planning paths that avoid collisions with other moving targets. Typically this involves forward propagating the robot motion and checking for collisions at sampled points in space and time. Such methods can miss collisions between sampled points and are not robust to uncertainty in the state estimates. We propose ColNav, a robust collision check formulation with geometric volumes. The key aspect of our approach is encoding the uncertainty in the targets' and the ego robot's positions and velocities into spacetime tubes, in two variants that consume bounded-set and Gaussian uncertainty descriptions, respectively. The tubes are organised in bounding volume hierarchies, so that a single tree traversal covers the entire horizon, rather than testing sampled time instants, and returns a robust geometric certificate together with an estimate of the time to collision. Static and dynamic obstacles share the same representation. Our approach reaches the goal with a 100% success rate under prediction model mismatch, where the best baseline reaches 65%, and maintains up to three times the clearance in dense traffic. We also validate real-time operation on a physical robot.",
+  "abstract_ja": "",
+  "authors": [
+    "Sanjeev Ramkumar Sudha",
+    "Lars Ivar Hatledal",
+    "Erlend M. Coates"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11646",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Safe navigation for mobile robots in dynamic and uncertain environments requires planning paths that avoid collisions with other moving targets. Typically this involves forward propagating the robot…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "ColNav: Uncertainty-Aware Spacetime Collision Checking with Bounding Volume Hierarchies",
+  "url": "https://arxiv.org/abs/2611.11646",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Camera-LiDAR calibration is essential for reliable perception in robotic and autonomous systems. Most target-based calibration methods rely on checkerboard observations, but accurate checkerboard feature extraction from LiDAR point clouds remains challenging due to measurement sparsity. Existing approaches either require manual annotation of 3D corners or depend on geometric feature extraction methods, both of which can become unreliable when checkerboard features are insufficiently observed. In this paper, we formulate checkerboard localization as a 2D detection problem using cylindrical LiDAR reflectivity images. To overcome the limited availability of labeled training data, we propose ray-aware physics augmentation (RAPA), which generates diverse synthetic samples from a single checkerboard observation. The generated data are used to improve detector robustness and generalization under varying sensing conditions. Across four independently captured indoor and outdoor locations, the proposed synthetic augmentation exceeds the strongest evaluated image-space augmentation baseline by 16.1-43.1 percentage points in mAP@0.5. Compared with training-free target-based methods on 242 observations, RAPA yields the largest number of valid target localizations, with 96.4% of its returned detections yielding valid target poses. These reliable localizations support downstream camera-LiDAR calibration across all four evaluated locations. Overall, RAPA addresses a key bottleneck in target-based calibration by enabling automated LiDAR-side target localization with only a single annotated target observation.",
+  "abstract_ja": "",
+  "authors": [
+    "Kyung-Rin Oh",
+    "Ji-Hoon Kim",
+    "TaeJoon Ha",
+    "Jae-Sang Hyun"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.12129",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Camera-LiDAR calibration is essential for reliable perception in robotic and autonomous systems. Most target-based calibration methods rely on checkerboard observations, but accurate checkerboard…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "RAPA: Ray-Aware Physics Augmentation for Robust Camera-LiDAR Calibration",
+  "url": "https://arxiv.org/abs/2611.12129",
+  "use_case": ""
+}

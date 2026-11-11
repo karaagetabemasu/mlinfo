@@ -1,0 +1,31 @@
+{
+  "abstract": "Background: Diagnostic I-131 whole-body planar imaging in differentiated thyroid cancer (DTC) is count-limited by low administered activity, and quality worsens under rapid acquisition. Models trained on such data struggle because their targets lack photon statistics. Purpose: To test whether high-quality post-therapeutic (PT) I-131 scans can serve as superior training references for enhancing sparse diagnostic planar images, using transfer learning and input-image addition. Methods: In this single-center prospective study, 111 patients were enrolled in PT training (n = 19), diagnostic follow-up (FU) training (n = 58), and FU paired test (n = 34) cohorts. Five Restormer-based models were trained: FU_DLx2 on FU labels; PT_DLx2 transfer-learned on PT data; PT_DLx1+ and PT_DLx2+ with input-image addition; PT_DLx6 as a PT-only reference. Test-time processing used two-step denormalization and Poisson re-scaling to preserve noise statistics. Quality was assessed by PSNR, SSIM, and a blinded dual-reader evaluation of all 34 test-cohort patients. Results: PT_DLx2 achieved the highest PSNR (34.4 +/- 3.6 dB) and SSIM (0.81 +/- 0.07). PT_DLx1+ and PT_DLx2+ were comparable (33.8 and 33.3 dB; SSIM 0.80). FU_DLx2 ranked below the unprocessed fast scan (30.3 vs. 32.0 dB; 0.76 vs. 0.79). Subjectively, PT_DLx2+ scored highest in image quality (4.54 +/- 0.60) and diagnostic confidence (4.54 +/- 0.60), surpassing the reference standard (4.19 +/- 0.83 and 4.31 +/- 0.81; P = 0.005 and P = 0.008). FU_DLx2 and PT_DLx6 scored lowest. Conclusion: Count-rich PT scans provide effective training priors for reconstructing extremely sparse images. Input-image addition and cross-domain transfer learning from PT data outperformed direct training on count-limited diagnostic data, supporting 2x scan acceleration with quality matching or exceeding the unaccelerated standard scan for selected PT-derived configurations.",
+  "abstract_ja": "",
+  "authors": [
+    "Boyang Pan",
+    "Hang Yang",
+    "Jianchen Pan",
+    "Cui Gan",
+    "Lanxi Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.12044",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Background: Diagnostic I-131 whole-body planar imaging in differentiated thyroid cancer (DTC) is count-limited by low administered activity, and quality worsens under rapid acquisition. Models…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Leveraging High-Activity Post-Therapeutic I-131 Scans for Deep Learning Reconstruction of Extremely Sparse Planar Images in Differentiated Thyroid Cancer",
+  "url": "https://arxiv.org/abs/2611.12044",
+  "use_case": ""
+}

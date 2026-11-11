@@ -1,0 +1,29 @@
+{
+  "abstract": "In patrol missions involving multiple unmanned surface vehicles (USVs), a designated command USV can support fleet management by sequentially rendezvousing with each patrolling USV. These operations require motion-feasible route planning and priority-aware rendezvous sequencing, with the objective of minimizing mission completion time and total tardiness relative to priority-dependent due dates. We propose a framework combining grid-based path planning, surrogate travel-time prediction, and graph-based reinforcement learning. The path planner accounts for ocean currents and approximates turn-rate constraints through multi-stage maneuvers, with path feasibility empirically validated through trajectory-tracking simulations. For rendezvous sequencing, a Feasible Transition Graph (FTG) represents candidate rendezvous events and temporally feasible transitions, enabling a graph neural network to exploit spatiotemporal rendezvous relationships for policy learning. A surrogate predicts travel times from compact current and motion features to avoid repeated path searches during FTG construction and policy training. Evaluation using grid-based path planning shows statistically significant average objective reductions of 10.5%, 3.5%, and 1.5% compared with greedy, MLP-RL, and 2-step lookahead greedy, respectively. The policy achieves these improvements while requiring approximately 1/35 of the latter's computation time. It maintains its advantage over MLP-RL under unseen priority-tier settings, with larger gains as fleet size increases.",
+  "abstract_ja": "",
+  "authors": [
+    "Seung Woo Han",
+    "Hyeon Bin Yeo",
+    "Seung Heon Oh"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.12205",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "gnn",
+  "summary": "In patrol missions involving multiple unmanned surface vehicles (USVs), a designated command USV can support fleet management by sequentially rendezvousing with each patrolling USV. These operations…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "Graph-Based RL for Sequential Rendezvous Planning with Multiple Patrolling USVs",
+  "url": "https://arxiv.org/abs/2611.12205",
+  "use_case": ""
+}

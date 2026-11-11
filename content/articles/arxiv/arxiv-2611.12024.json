@@ -1,0 +1,32 @@
+{
+  "abstract": "Verifying the local robustness of neural networks under $\\ell_0$ perturbations is inherently combinatorial, as it must reason over all sparse subsets of $ε$ perturbed pixels. This paper presents FocusBranch, a combinatorial branch-and-bound framework for $\\ell_0$ robustness verification. The key insight is to make the $\\ell_0$-ball decomposable and branchable using a node abstraction, which consists of a focus pixel set $\\mathcal{S}$ and a level $l$, permitting at most $ε-l$ pixels outside $\\mathcal{S}$. This abstraction unifies two branching mechanisms: concrete nodes branch through upper shadows to fix additional perturbed locations, while super nodes branch through covering designs to cover many perturbation cases with fewer child nodes. FocusBranch proves node safety by concretizing linear relaxations over node-constrained $\\ell_0$-balls and recursively branches on unknown nodes. Rather than relying on a fixed verification plan, it samples nodes across levels to estimate safe rates and costs, then selects a starting level and branching strategy predicted to minimize verification time. Experiments on fully connected and convolutional classifiers for MNIST, Fashion-MNIST, and CIFAR-10 show that FocusBranch verifies $\\ell_0$ robustness effectively across architectures and outperforms state-of-the-art verifiers. The code is available at: https://github.com/simpl-group/FocusBranch.",
+  "abstract_ja": "",
+  "authors": [
+    "Renwei Deng",
+    "Yang He",
+    "Linyi Li",
+    "Yuepeng Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/simpl-group/FocusBranch",
+  "hasCode": true,
+  "id": "arxiv-2611.12024",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Verifying the local robustness of neural networks under $\\ell_0$ perturbations is inherently combinatorial, as it must reason over all sparse subsets of $ε$ perturbed pixels. This paper presents…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "FocusBranch: Combinatorial Branch-and-Bound for $\\ell_0$ Neural Network Robustness Verification",
+  "url": "https://arxiv.org/abs/2611.12024",
+  "use_case": ""
+}

@@ -1,0 +1,34 @@
+{
+  "abstract": "Diabetic retinopathy (DR) lesions vary widely in shape, and microaneurysms (MAs) span only a few pixels. We hypothesize that modeling the spatial organization of lesion regions, with global context and shape-adaptive scanning, improves the segmentation of such small and irregular lesions. To test this, we propose D$^2$Mamba, which couples non-causal state space duality with deformable Mamba scanning. We evaluate it with five-fold cross-validation on the DDR dataset, comparing against representative segmentation baselines under an identical training protocol, and conduct ablations on each component. D$^2$Mamba achieved the best overall performance, with 33.87% mIoU, 2.99 percentage points above the strongest baseline. The largest gain appeared on MAs, the smallest and most easily missed lesions, where Dice improved by 10.06 percentage points. These results confirm our hypothesis that spatially adaptive state space modeling benefits tiny-lesion segmentation. Code and pretrained weights are available at https://github.com/PUREPANEL1/D2Mamba.",
+  "abstract_ja": "",
+  "authors": [
+    "Chang Yu",
+    "Siqing Li",
+    "Yuanchen Liu",
+    "Zhenyu Bu",
+    "Luming Yang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/PUREPANEL1/D2Mamba",
+  "hasCode": true,
+  "id": "arxiv-2611.13514",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Diabetic retinopathy (DR) lesions vary widely in shape, and microaneurysms (MAs) span only a few pixels. We hypothesize that modeling the spatial organization of lesion regions, with global context…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "Seeing the Small: Deformable Duality Mamba for Retinal Lesion Segmentation",
+  "url": "https://arxiv.org/abs/2611.13514",
+  "use_case": ""
+}

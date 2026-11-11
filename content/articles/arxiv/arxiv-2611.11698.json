@@ -1,0 +1,31 @@
+{
+  "abstract": "Useful edge hardware can lose product support while retaining substantial computation. We treat this as systems design: compute regeneration here means re-productization, retaining the compute module while redesigning the surrounding product organization. Our case is GEdgeBot, a multilingual service robot built around a retired 32 GB Jetson AGX Xavier. A source-grounded inventory shows the box alone supplies inference, while the combined system exposes five on-device AI services, a seven-language speech chain, three sensing domains, and one deterministic seven-byte control boundary. AI and orchestration stay on the Xavier; finite motor-pulse generation on an STM32F407. Audits cover the six-mode control state machine, readiness barriers and sound orientation. Historical single-prototype measurements report 1,782 MB GPU memory with YOLO, Whisper-small, and NLLB-200 resident, a direct-control p99 deviation rising from 0.24 to 49.93 ms under concurrent AI load, and six of six trigger-to-follow demonstrations at 4.35 s mean latency, with conversational voice unavailable. A November campaign restores an isolated inference stack, re-measures AI workloads, and repeats control-frame runs. Driving two execution organisations with the same 6,000 measured 50 ms frame intervals shows the finite-pulse boundary removes host jitter from the pulse train but not the command start phase; its stopping bound is host-enforced, while the MCU 16-bit pulse field is unclamped. A six-check static audit exposes a host--MCU queue mismatch, and a 14-scenario replay executes the audited main() dispatcher across six modes with zero physical device opens and 54 contract-checked frames. Results support an existence claim and a reproducible architectural hypothesis, not fleet-level reliability. The 208 direct-control ratio remains unreplicated; MCU waveform capture and on-site fault injection remain open.",
+  "abstract_ja": "",
+  "authors": [
+    "Hongyu Luo",
+    "Sun Tie",
+    "John Wang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11698",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "detection",
+  "summary": "Useful edge hardware can lose product support while retaining substantial computation. We treat this as systems design: compute regeneration here means re-productization, retaining the compute module…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Compute Regeneration through Re-Productization: Reorganizing Retired Edge AI Silicon into a Delivered Multilingual Service Robot",
+  "url": "https://arxiv.org/abs/2611.11698",
+  "use_case": ""
+}
