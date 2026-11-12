@@ -1,0 +1,30 @@
+{
+  "abstract": "Transformer feed-forward blocks combine several design choices: squared activations, gating, and tied versus untied parameter sharing, whose separate contributions to expressivity remain poorly understood. We introduce CP-MLPs, a tensor framework in which each multiplicative unit contributes a rank-1 interaction with three roles: detecting an input feature, reading a value, and writing to the output. Tied gated blocks such as ReLU$^2$ force the detector and value roles to share the same direction; untied gated blocks such as ReGLU and SwiGLU let them differ. We show that this distinction yields exact, degree-wise tensor-rank separations: untied detector-value units are strictly more width-efficient for indefinite quadratic interactions and role-asymmetric monomials, while tied units are structurally matched to symmetric pure-power targets. The width advantage of untying therefore depends on the target structure. Experiments show loss plateaus below the exact-representation width, but these plateaus alone do not establish a positive approximation gap: arbitrarily accurate approximation is governed by border rank. In trained gated MLPs, untied blocks retain an advantage in selected comparisons at matched input-projection budget. Code is available at https://github.com/rarefin/CP-MLPs.",
+  "abstract_ja": "",
+  "authors": [
+    "Md Rifat Arefin",
+    "Farzaneh Heidari",
+    "Irina Rish",
+    "Guillaume Rabusseau"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/rarefin/CP-MLPs",
+  "hasCode": true,
+  "id": "arxiv-2611.13647",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Transformer feed-forward blocks combine several design choices: squared activations, gating, and tied versus untied parameter sharing, whose separate contributions to expressivity remain poorly…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "CP-MLPs: A Tensor-Rank Theory of Tied and Untied MLP Blocks",
+  "url": "https://arxiv.org/abs/2611.13647",
+  "use_case": ""
+}

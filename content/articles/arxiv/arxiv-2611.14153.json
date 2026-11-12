@@ -1,0 +1,25 @@
+{
+  "abstract": "Unipolar neurons are the predominant type of nerve cell in the octopus and in most other invertebrates. A single neurite (a fiber extending from the cell body) branches into a tree that carries both input and output synapses. The branches send graded local outputs to nearby cells, and one site on the main neurite sends a global output to distant targets. This paper proposes a network of such neurons and a learning rule for it. Each neuron is modeled as a tree of passive segments, whose activations are computed exactly as the steady state of a linear system. The network learns from reward alone, with a rule called recirculation. After each forward pass, a second pass sends requested changes of the outputs back through the same connections. Each synapse then adjusts its weight using only quantities available at its own location. Because the system of each neuron is symmetric, this update closely follows the gradient of the error in the predicted reward. Two mechanisms limit forgetting when tasks are learned in sequence: a task code inhibits a different subset of branches in each task, while consolidation lowers the learning rate of synapses that changed strongly in the recent past. The model is evaluated on a sequence of MNIST and Iris tasks. The network maintains high accuracy with low forgetting, whereas gradient-based training of the same network forgets earlier tasks almost completely.",
+  "abstract_ja": "",
+  "authors": [
+    "Florin Leon"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14153",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Unipolar neurons are the predominant type of nerve cell in the octopus and in most other invertebrates. A single neurite (a fiber extending from the cell body) branches into a tree that carries both…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Unipolar Neuron Networks Trained by Recirculation for Reward-Based Continual Learning",
+  "url": "https://arxiv.org/abs/2611.14153",
+  "use_case": ""
+}

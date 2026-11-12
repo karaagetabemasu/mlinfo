@@ -1,0 +1,29 @@
+{
+  "abstract": "Motion planning for stochastic systems aims to find a sequence of control inputs that drives a system to a goal set while avoiding unsafe states with high probability. Existing approaches, however, are either restricted to linear dynamics with perfect knowledge of the underlying distributions or lack formal correctness guarantees. To address these limitations, we propose \\emph{Learn-To-Propagate Distributionally-Robust Forest (L2P-DR-Forest)}, a distributionally-robust sampling-based planning algorithm for \\emph{nonlinear} stochastic systems with \\emph{unknown} initial state and process noise distributions. Our approach leverages recent advances in optimal transport to learn ambiguity sets that contain the true system distributions with high confidence. We develop an efficient method for propagating these sets through the system dynamics and for verifying their safety. We then integrate these techniques into a novel sampling-based planning algorithm to grow a forest of search trees in the system's state space while accounting for and mitigating the growth of ambiguity-sets radii. We prove that the algorithm is correct, i.e., every returned plan satisfies the specifications with the prescribed confidence, and, under some feasibility and distributional assumptions, is probabilistically complete. Evaluations on several robotic benchmarks demonstrate that our algorithm significantly outperforms existing methods while providing formal guarantees with high confidence.",
+  "abstract_ja": "",
+  "authors": [
+    "Eduardo Figueiredo",
+    "Adrien Banse",
+    "Qi Heng Ho",
+    "Raphael Jungers",
+    "Morteza Lahijanian"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13863",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Motion planning for stochastic systems aims to find a sequence of control inputs that drives a system to a goal set while avoiding unsafe states with high probability. Existing approaches, however,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Learn-To-Propagate: Distributionally Robust Motion Planning for Nonlinear Uncertain Systems",
+  "url": "https://arxiv.org/abs/2611.13863",
+  "use_case": ""
+}

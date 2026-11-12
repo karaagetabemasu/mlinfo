@@ -1,0 +1,35 @@
+{
+  "abstract": "Electrocardiogram (ECG) signals are critical for cardiovascular disease (CVD) detection. Most current deep learning models rely on supervised, task-specific training, which limits their ability to generalize across diseases, patient populations, and acquisition settings. This paper presents a self-supervised ECG feature extraction framework that learns from nearly one million unlabeled 12-lead ECG recordings. The framework includes two modules: Deviation Localization Embedding (DLE), which detects waveform-level deviations from normal patterns, and Association Reconstruction Embedding (ARE), which models cross-lead associations through deviation-guided reconstruction to capture abnormal patterns expressed across multiple leads. These modules enable the framework to capture subtle deviation-related patterns and their cross-lead context. The framework achieves up to 6.5% AUROC and 12.8% F1 improvements over prior methods on multiple public datasets, even without additional fine-tuning the pretrained feature extractor. Embedding visualizations show that the learned features support meaningful disease grouping and anomaly identification. The approach reduces the need for labeled data and can support clinicians in diverse healthcare settings. The framework has potential to improve early detection and monitoring of cardiovascular diseases, contributing to more accessible and equitable heart care.",
+  "abstract_ja": "",
+  "authors": [
+    "Siyuan Yan",
+    "Haibo Zheng",
+    "Feng Lu",
+    "Wei Li"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14141",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Electrocardiogram (ECG) signals are critical for cardiovascular disease (CVD) detection. Most current deep learning models rely on supervised, task-specific training, which limits their ability to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Deviation-Aware Pretraining for Cardiovascular Disease Detection from Electrocardiograms",
+  "url": "https://arxiv.org/abs/2611.14141",
+  "use_case": ""
+}

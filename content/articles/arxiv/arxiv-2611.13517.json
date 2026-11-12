@@ -1,0 +1,26 @@
+{
+  "abstract": "Accurate inertial odometry is critical for autonomous systems but suffers from unbounded drift caused by the integration of sensor noise and biases. In approaches such as TLIO, neural pseudo-measurements are trained independently of their downstream filter. This paper introduces Differentiable Filtering for Inertial Odometry (DFIO), a learning framework that embeds the update stages of an error-state Kalman filter directly into a computational graph. Following standalone pre-training, DFIO jointly optimizes the displacement and covariance output heads using posterior-position supervision through differentiable measurement updates. The proposed system is validated on public pedestrian motion datasets featuring both calibrated and uncalibrated inertial measurements. Experimental results on a pedestrian dataset demonstrate that DFIO reduces mean absolute and one-second relative translation errors by 13.2% and 39.6% relative to the TLIO baseline, and by 7.7% and 17.4% relative to its pre-trained counterpart. Furthermore, evaluations on uncalibrated smartphone inertial data indicate that the proposed method effectively mitigates translational drift and maintains trajectory alignment under highly noisy sensor conditions. Source code will be made publicly available.",
+  "abstract_ja": "",
+  "authors": [
+    "Yaru Gu",
+    "Ting Zou"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13517",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Accurate inertial odometry is critical for autonomous systems but suffers from unbounded drift caused by the integration of sensor noise and biases. In approaches such as TLIO, neural…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Differentiable Filtering for Inertial Odometry",
+  "url": "https://arxiv.org/abs/2611.13517",
+  "use_case": ""
+}

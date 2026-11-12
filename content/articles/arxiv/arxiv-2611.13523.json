@@ -1,0 +1,26 @@
+{
+  "abstract": "Nonlinear state space models are typically evaluated sequentially, limiting their ability to exploit modern parallel hardware. Recent work has shown that state space models can be evaluated in parallel by reformulating evaluation as a root-finding problem, which can be solved with a parallel form of Newton's method. However, exact Newton methods require expensive multiplication of dense Jacobian matrices, and quasi-Newton methods based on diagonal approximations, while more scalable, are often slow to converge because they neglect interactions across state dimensions. We introduce a novel quasi-Newton approach based on Broyden's method, which captures coupling terms with diagonal-plus-low-rank approximations to blocks of the Jacobian. We construct the approximations from trajectory secants, avoiding automatic differentiation while retaining the favorable scaling of diagonal approximations and remaining compatible with parallel scan through rank compression. We prove finite-step recovery of the exact trajectory under the compressed scan, and show that convergence is tracked by the compression error and by the block approximation error along the current trajectory error, rather than in spectral norm. Empirically, we show that our method is advantageous when interactions are approximately low rank or when Jacobian evaluation is expensive: on low-rank RNNs, parallel MCMC algorithms, and denoising diffusion models, it converges in fewer iterations than other quasi-Newton methods and is the fastest parallel method when Jacobian evaluation is expensive or state dimensions are large.",
+  "abstract_ja": "",
+  "authors": [
+    "Ian Christopher Tanoh",
+    "Scott W. Linderman"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13523",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "Nonlinear state space models are typically evaluated sequentially, limiting their ability to exploit modern parallel hardware. Recent work has shown that state space models can be evaluated in…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Parallel Broyden Methods for Efficiently Evaluating Nonlinear State Space Models",
+  "url": "https://arxiv.org/abs/2611.13523",
+  "use_case": ""
+}

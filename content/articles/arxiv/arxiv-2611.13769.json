@@ -1,0 +1,29 @@
+{
+  "abstract": "Monocular depth foundation models make it tempting to replace depth sensors on mobile robots with a single RGB camera. We show that, used off the shelf, this is unsafe: in a simulated indoor navigation benchmark, a standard Nav2 stack driven by Depth Anything V2 (metric) collides in 63\\% of 120 episodes, because the model systematically over-estimates the distance to nearby obstacles. We propose a lightweight plug-in module that turns predicted depth into \\emph{safe depth}. A 0.58\\,M-parameter head on top of the \\emph{frozen} depth model predicts, per pixel, a log-depth correction $μ$ and an uncertainty $σ$, trained with a $β$-weighted Gaussian negative log-likelihood. The navigation stack consumes the one-sided bound $\\hat d_{\\text{safe}}=d\\,e^{μ-kσ}$, where $k$ is set by conformal calibration on a held-out world, and uncertainty also decides which pixels may be treated as floor. The correction halves the depth error (AbsRel $0.262\\rightarrow0.134$) and reduces near-range over-estimation from 59.8\\% to 12.0\\%. In navigation, safe depth raises the success rate from 37\\% to 70\\% and lowers collisions from 63\\% to 3\\%, close to the 2\\% of ground-truth depth. A constant safety margin calibrated to the same pixel coverage reaches only 30\\% success because it freezes the robot; uncertainty-aware safety wins 52 of 56 discordant paired episodes against it. Gains hold on glass, texture-less walls and dark regions.",
+  "abstract_ja": "",
+  "authors": [
+    "Saeid Firouzi Daghigh",
+    "Saeed Ayat"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13769",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Monocular depth foundation models make it tempting to replace depth sensors on mobile robots with a single RGB camera. We show that, used off the shelf, this is unsafe: in a simulated indoor…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": []
+  },
+  "title": "From Depth to Safe Depth: Uncertainty-Aware Monocular Perception for Mobile Robot Navigation",
+  "url": "https://arxiv.org/abs/2611.13769",
+  "use_case": ""
+}

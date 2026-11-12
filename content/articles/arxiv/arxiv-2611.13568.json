@@ -1,0 +1,29 @@
+{
+  "abstract": "Tokenisers such as Byte-Pair Encoding (BPE) shorten text by repeatedly merging an adjacent pair of symbols into a new one; fewer tokens mean less computation. We ask whether an efficient algorithm can choose $k$ merges that leave a string of length $n$ almost as short as possible; doing nothing is already within a factor $n$. We prove that, unless P = NP, no polynomial-time algorithm comes within a factor $c\\,n/\\log n$, for some constant $c>0$, already for one binary string and for BPE-style merges that replace every occurrence. The key idea is that $k$ merges form a grammar with $k$ rules: a vertex-cover gap becomes a grammar-size gap, which we amplify with relabelled copies, encode in binary and realise with explicit merges. For merges that may skip occurrences, a simple algorithm achieves $O(n/\\log\\log n)$, and no Karp reduction can prove hardness beyond order $n/\\log n$ unless coNP $\\subseteq$ NP/poly. Over a one-letter alphabet, both tokenisation problems left open by Kastreva et al. are strongly NP-complete on datasets with repeated strings.",
+  "abstract_ja": "",
+  "authors": [
+    "Kundan Baliga",
+    "Aiden Xie",
+    "Aditya Byju"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13568",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Tokenisers such as Byte-Pair Encoding (BPE) shorten text by repeatedly merging an adjacent pair of symbols into a new one; fewer tokens mean less computation. We ask whether an efficient algorithm…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Pair-Merge Tokenisation Is Hard to Approximate on Binary Strings and Strongly NP-Hard on Unary Datasets",
+  "url": "https://arxiv.org/abs/2611.13568",
+  "use_case": ""
+}

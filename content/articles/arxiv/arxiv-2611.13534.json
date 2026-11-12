@@ -1,0 +1,26 @@
+{
+  "abstract": "Classical neural scaling laws model excess risk as a separable power law in model capacity $N$ and dataset size $D$. At finite budgets, however, empirical learning curves and compute-optimal allocations depart from this log-linear frontier. This paper analyzes how spectral and domain heterogeneity govern these finite-scale departures. Along the capacity axis, Mellin--Barnes analysis of covariance resolvents yields a three-term expansion where competing spectral and regularization modes produce finite-scale curvature and logarithmic transitions. Because fitting multiple power laws on narrow pilot grids is ill-conditioned, we eliminate the loss floor via first-order Aitken differencing to obtain a well-conditioned closed-form initializer. Along the data axis, KKT duality reduces $K$-domain mixing to scalar water-filling, yielding finite-budget bottleneck bounds, an online sampling curriculum, and a simplex Hessian metric for cross-domain transfer. Along the iso-compute frontier $C=6ND$, we prove that the optimal allocation exponent drifts in proportion to capacity and data exponent variances, while Schur-complement reduction separates intrinsic drift from frozen-hyperparameter bias. Across 45 operator spectra, Pythia (70M--12B), Chinchilla (245 runs), and RegMix (17 domains), our estimators achieve $5.89\\%$ holdout MAPE, cut high-compute allocation regret by up to $76.4\\%$, and reduce cross-scale mixture RMSE by $59.4\\%$ with zero selection regret.",
+  "abstract_ja": "",
+  "authors": [
+    "Tianyu Zhao",
+    "Zhixiang Ren"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13534",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Classical neural scaling laws model excess risk as a separable power law in model capacity $N$ and dataset size $D$. At finite budgets, however, empirical learning curves and compute-optimal…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Beyond the Log-Linear Frontier: Pre-Asymptotic Analysis of Finite-Budget Neural Scaling Laws",
+  "url": "https://arxiv.org/abs/2611.13534",
+  "use_case": ""
+}

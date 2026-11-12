@@ -1,0 +1,39 @@
+{
+  "abstract": "Remote sensing increasingly captures the Earth's surface through complementary sensors such as SAR and optical, yet ground-truth annotations remain scarce, limiting supervised approaches. Self-supervised learning (SSL) addresses the label scarcity, and cross-modal SSL further exploits the complementarity between co-located sensors, but existing cross-modal frameworks align modalities mostly through global image-level representations or treat them as largely redundant, leaving their fine-grained complementary structure underexploited. We propose CroCoMAE, a cross-modal SSL framework for SAR-optical remote sensing that unifies contrastive learning and masked image modeling within a ViT-based architecture, operating at two complementary levels. At the image level, an intra-modality contrastive loss on the class token yields globally discriminative, augmentation-invariant representations. At the patch level, masked image modeling drives fine-grained per-modality representations, while a cross-modal contrastive objective aligns a shared subspace across SAR and optical patch tokens, leaving the complementary subspace unconstrained to retain modality-specific information. On two SAR-optical benchmarks covering scene classification and semantic segmentation, CroCoMAE improves over uni-modal SSL baselines and outperforms state-of-the-art cross-modal frameworks in most configurations, with gains in both single-modality and multi-modal evaluation across varying label regimes and the largest improvements on semantic segmentation.",
+  "abstract_ja": "",
+  "authors": [
+    "Vito Recchia",
+    "Giuseppe Guarino",
+    "Cássio Fraga Dantas",
+    "Giuseppina Andresini",
+    "Annalisa Appice"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14124",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Remote sensing increasingly captures the Earth's surface through complementary sensors such as SAR and optical, yet ground-truth annotations remain scarce, limiting supervised approaches.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "supervised",
+      "self-supervised"
+    ],
+    "modality": [
+      "image",
+      "multimodal"
+    ],
+    "task": [
+      "classification",
+      "segmentation",
+      "embedding"
+    ]
+  },
+  "title": "CroCoMAE: Cross-modal self-supervised collaborative representation learning for SAR-optical remote sensing data",
+  "url": "https://arxiv.org/abs/2611.14124",
+  "use_case": ""
+}

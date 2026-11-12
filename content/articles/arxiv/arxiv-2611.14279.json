@@ -1,0 +1,33 @@
+{
+  "abstract": "A single validation-tuned threshold can become brittle when dense-score distributions shift. We introduce AutoThreshold, a post-hoc policy that predicts the joint mass of positive and negative pixels over score bins. This target directly parameterizes threshold-indexed confusion counts, avoiding products of independently estimated prevalence and class-conditional rates. Softmax normalization and cumulative decoding yield coherent, monotone confusion profiles; a plug-in decoder then selects a threshold for any $F_β$ objective without retraining the head. Across three independently trained Kvasir pipelines transferred to four polyp datasets, Joint exceeds continuous Otsu by $0.0080 \\pm 0.0046$ external macro Dice, with positive gains in 3/3 runs. On the reference pipeline, three head seeds achieve $0.6324 \\pm 0.0027$, 0.0085 above Otsu; direct-utility Ridge achieves 0.6342, with the paired difference interval spanning zero. The same Joint checkpoints outperform Otsu for $F_{0.5}$, Dice, and $F_2$. On developmental KITTI Road leave-one-corruption-family-out evaluation, Joint improves over scalar regression by 0.0082 [0.0064, 0.0101], while direct utility is 0.0022 higher. These results establish joint confusion prediction as a useful, metric-retargetable inductive bias, without claiming Bayes-optimal $F_β$ decisions.",
+  "abstract_ja": "",
+  "authors": [
+    "Shaokai Wu",
+    "Xunchu Zhou",
+    "Pinzhi Wang",
+    "Bo Dong",
+    "Xiao Cui"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14279",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "A single validation-tuned threshold can become brittle when dense-score distributions shift. We introduce AutoThreshold, a post-hoc policy that predicts the joint mass of positive and negative pixels…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "AutoThreshold: Joint Confusion-Profile Learning for Adaptive Mask Binarization",
+  "url": "https://arxiv.org/abs/2611.14279",
+  "use_case": ""
+}

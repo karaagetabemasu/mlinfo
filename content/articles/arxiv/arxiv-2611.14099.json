@@ -1,0 +1,29 @@
+{
+  "abstract": "Deliberation costs are commonly used in hierarchical reinforcement learning (HRL) to prevent options from collapsing to primitive actions. Existing approaches rely on fixed penalties or duration-based adaptations, both of which are indirect proxies for an option's utility. This paper argues that option persistence should instead depend on the opportunity cost of abandoning the current behavior. We propose the Opportunity-Cost Option-Critic ($OC^2$) framework, which defines a state-dependent deliberation cost using the positive value gap between the active option and its best alternative. This encourages persistence when the current option is clearly preferable and allows rapid switching when a better option emerges. We show that directly learning such costs leads to a degenerate zero-cost solution and introduces an auxiliary objective that aligns the learned cost with the value-gap target. The approach is evaluated in Four Rooms and Pinball domains under stationary, goal-shift, and geometry-shift conditions. In the Pinball goal-shift task, the $OC^2$ framework achieves a 52\\% first-ten-episode success rate compared with 18\\% for a fixed-cost baseline. The results suggest that opportunity-cost-based persistence improves adaptation in non-stationary environments.",
+  "abstract_ja": "",
+  "authors": [
+    "Khaled Ammoura",
+    "Aya Kayal",
+    "Naseem Daher"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14099",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Deliberation costs are commonly used in hierarchical reinforcement learning (HRL) to prevent options from collapsing to primitive actions. Existing approaches rely on fixed penalties or…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "Opportunity-Cost Option-Critic: Adaptive Switching Costs for Robust Hierarchical Reinforcement Learning",
+  "url": "https://arxiv.org/abs/2611.14099",
+  "use_case": ""
+}

@@ -1,0 +1,26 @@
+{
+  "abstract": "Federated learning enables multiple clients to collaboratively train a machine-learning model without directly sharing their local datasets. However, as prior works have shown, the gradients exchanged during training may reveal sensitive information about client data. Most existing attacks usually optimize dummy inputs to match the true client gradients (Gradient Inversion Attacks), while some attempt to reconstruct them based on the observation that aggregate gradients from a fully connected (FC) layer are a linear combination of its inputs. In this work, we extend this observation by showing that aggregate gradients from an FC layer with the correct scaling are actually an affine combination of its inputs. We evaluate a gradient inversion attack that leverages either known linear-subspace information or its affine-subspace counterpart at each FC layer to improve reconstruction accuracy. Our results show that subspace-based methods can substantially improve reconstruction quality over the chosen baselines in certain settings. We further demonstrate that moderate overestimation of the batch size can generally improve or preserve reconstruction quality, even when the true batch size is unknown. We additionally examine reconstruction under gradient perturbations introduced by a differential privacy (DP) mechanism, providing insight into the effectiveness of the considered formulations under noisy conditions.",
+  "abstract_ja": "",
+  "authors": [
+    "Konstantinos Bouros",
+    "Athanasios P. Liavas"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13976",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Federated learning enables multiple clients to collaboratively train a machine-learning model without directly sharing their local datasets. However, as prior works have shown, the gradients…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Gradient Inversion through Linear and Affine Subspace Constraints",
+  "url": "https://arxiv.org/abs/2611.13976",
+  "use_case": ""
+}

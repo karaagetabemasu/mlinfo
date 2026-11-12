@@ -1,0 +1,34 @@
+{
+  "abstract": "The escalating complexity of deep neural networks hinders the deployment of federated learning (FL) on resource-constrained devices, especially for multimedia applications such as on-device image classification and speech recognition. Parallel split learning (PSL) has emerged as a promising solution by offloading a substantial portion of the computational workload to the server through layer-wise model partitioning, making it particularly suitable for resource-limited visual and speech intelligence scenarios. However, the absence of client-side aggregation renders PSL sus ceptible to severe training divergence and potential convergence failure under heterogeneous data distributions. To address this challenge, we propose PSL-RGHA, a gradient-aligned PSL framework that employs reference gradient half-space alignment mechanism to mitigate training divergence among client devices. PSL-RGHA comprises two novel components: reference gradient progressive construction (RGPC) and gradient half-space alignment (GHA). Specifically, RGPC evaluates the directional consistency of client gradients and progressively synthesizes a robust reference gradient via Weiszfeld updates, effectively approximating the global descent direction. Then, GHA constrains client gradients within the reference half-space defined by RGPC to mitigate gradient conflicts and rectify local updates. Extensive experiments demonstrate that our PSL-RGHA framework outperforms existing baselines in various settings.",
+  "abstract_ja": "",
+  "authors": [
+    "Han Li",
+    "Zheng Lin",
+    "Miao Yang",
+    "Zehang Lin",
+    "Jing Yang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14312",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "classification",
+  "summary": "The escalating complexity of deep neural networks hinders the deployment of federated learning (FL) on resource-constrained devices, especially for multimedia applications such as on-device image…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "audio"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "PSL-RGHA: Parallel Split Learning with Reference Gradient Half-Space Alignment for Mitigating Gradient Divergence",
+  "url": "https://arxiv.org/abs/2611.14312",
+  "use_case": ""
+}

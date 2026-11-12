@@ -1,0 +1,33 @@
+{
+  "abstract": "Sepsis is a leading cause of ICU death with heterogeneous onset and course, yet most warning models predict only whether sepsis will occur, leaving clinicians uncertain of its onset context and early trajectory once an alarm sounds. To answer these questions on one hourly clock from ICU admission, we built SepsisFlow: before onset, it combines a Mamba model pretrained on 2.57 million EHRs with about 1,700 hourly features in gradient-boosted trees to predict 6/12/24-h risk; at onset, it fuses Mamba and tabular encoders via a gated network into continuous patient states defining onset contexts; after onset, it encodes 72-h organ-support and physiological trajectories via an attention bidirectional recurrent network into early courses. For pre-onset warning in MIMIC-IV, SepsisFlow detected more cases than NEWS2, qSOFA, and SIRS at equal alarms, gaining about 8 cases per 100 from hourly updating, while outperforming 16 retrained algorithms and maintaining risk ranking in eICU. At onset, its contexts separated 2% cardiovascular-ICU from 15%-17% other 28-day mortality, and within each context after onset, persistent support carried fivefold higher mortality than de-escalation. SepsisFlow establishes a foundation-model paradigm for continuous risk and trajectory stratification in critical care.",
+  "abstract_ja": "",
+  "authors": [
+    "Yawen Zhang",
+    "Wanzhe Xu",
+    "Zhenhua Zhang",
+    "Jinyu Wu",
+    "Yizhou Zhuang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13661",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "Sepsis is a leading cause of ICU death with heterogeneous onset and course, yet most warning models predict only whether sepsis will occur, leaving clinicians uncertain of its onset context and early…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "audio",
+      "tabular"
+    ],
+    "task": []
+  },
+  "title": "SepsisFlow: an event-stream foundation model for continuous risk warning and trajectory modelling in ICU sepsis",
+  "url": "https://arxiv.org/abs/2611.13661",
+  "use_case": ""
+}
