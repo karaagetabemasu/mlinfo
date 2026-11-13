@@ -1,0 +1,29 @@
+{
+  "abstract": "Genetic programming (GP) evolves populations of heterogeneous programs, whereas GPUs achieve their highest throughput when groups of threads execute the same instructions. To better align GP evaluation with GPU execution, we present Galop, a hybrid CPU-GPU linear GP system that assigns one individual to each CUDA warp, a group of 32 threads that execute the same instructions across different fitness cases. We compare Galop against EvoGP, a recent high-performance GPU-based tree GP system, on data-rich symbolic regression across two unique GPUs, varying population size and fitness-case count. Galop completes evolutionary runs faster than EvoGP in 27 of the 28 main comparisons, with speedups of up to 13.6 times. Solution quality comparisons favour EvoGP overall, although Galop remains competitive on several problems. Galop also completes a full generation with 2.15 billion individuals on a single H100 GPU, approximately 4.0 times the largest population achieved by any other tested GP system. All five runs at this population complete 100 generations, with a median wall-clock time of 2.23 hours. These results make it practical to study GP populations in the billions on a single GPU. Galop's source code, experimental data, and reproducibility scripts are publicly available at https://github.com/xavierhillroy/Galop.",
+  "abstract_ja": "",
+  "authors": [
+    "Xavier Hill Roy",
+    "Stephen Kelly"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/xavierhillroy/Galop",
+  "hasCode": true,
+  "id": "arxiv-2611.14665",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Genetic programming (GP) evolves populations of heterogeneous programs, whereas GPUs achieve their highest throughput when groups of threads execute the same instructions. To better align GP…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation",
+      "regression"
+    ]
+  },
+  "title": "Galop: Billion-Scale Genetic Programming on a Single GPU",
+  "url": "https://arxiv.org/abs/2611.14665",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Safe trajectory tracking (STT) aims to enable autonomous vehicles to follow a reference trajectory accurately while avoiding collisions. This problem is particularly challenging for Connected and Autonomous Vehicles (CAVs) in highly dynamic environments. Existing non-learning-based STT methods often use simplified vehicle and interaction models to meet real-time requirements, which may result in suboptimal tracking accuracy. Although Deep Reinforcement Learning (DRL) can help address this limitation, widely used Lagrangian DRL methods often suffer from unstable training because increasing Lagrange multipliers amplify policy-gradient magnitudes. To address these issues, we propose a novel reinforcement learning framework for STT, called STT Control Epigraph Form RL (STTC-EFRL). In this framework, the STT problem is formulated as an epigraph-form min-max optimization problem. Based on this formulation, we develop a learning mechanism that uses a decreasing scalar related to the epigraph to adjust the policy gradient descent direction without increasing the gradient magnitude, thereby improving training stability. We also develop a computationally efficient ray-casting method to compute a polyhedron scaling factor for safety quantification. Experimental results, including Vehicle-in-the-Loop tests, show that STTC-EFRL achieves higher tracking accuracy than the considered non-learning-based baseline and more stable training than widely used Lagrangian DRL methods, while satisfying safety requirements in connected environments.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiaoke Yang",
+    "Jin Chen",
+    "Yafei Wang",
+    "Qi Zhang",
+    "Ming Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14903",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Safe trajectory tracking (STT) aims to enable autonomous vehicles to follow a reference trajectory accurately while avoiding collisions. This problem is particularly challenging for Connected and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "Epigraph Form Reinforcement Learning-based Safe Trajectory Tracking Control for Connected and Autonomous Vehicles",
+  "url": "https://arxiv.org/abs/2611.14903",
+  "use_case": ""
+}

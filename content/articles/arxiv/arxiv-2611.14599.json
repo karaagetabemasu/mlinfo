@@ -1,0 +1,27 @@
+{
+  "abstract": "StructRL turns the experience collected during reinforcement learning into an explicit replay graph. Once the graph contains a path to the task goal, dynamic programming selects actions on the observed part of the state space; these actions form a graph policy that is defined only where the required transitions have been observed. StructRL transfers these actions to model-free learners: as action preferences for a DQN Q-model and as target directions along shortest observed paths for a SAC actor. For DQN on three sparse-reward MiniGrid tasks, final success rises from 0.10 to 0.90 (DoorKey), 0.10 to 0.80 (KeyCorridor) and 0 to 0.50 (ObstructedMaze); plain DQN does not catch up with three times the budget. For SAC on continuous PointMaze, graph-derived direction labels raise final success from 0.17 to 1.0 on seven matched runs that reached the goal. Distilling the graph policy into a fresh Q-model gives a DoorKey 6x6 controller that reaches the goal from 91% of reachable states, against 38% for plain DQN. Scaling experiments identify three bottlenecks: incomplete graph support, structural aliasing, and loss of graph information in high-dimensional inputs.",
+  "abstract_ja": "",
+  "authors": [
+    "Ivo Nowak"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14599",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "model-free",
+  "summary": "StructRL turns the experience collected during reinforcement learning into an explicit replay graph. Once the graph contains a path to the task goal, dynamic programming selects actions on the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "StructRL: Model-Free Reinforcement Learning with Replay Graphs",
+  "url": "https://arxiv.org/abs/2611.14599",
+  "use_case": ""
+}

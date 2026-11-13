@@ -1,0 +1,34 @@
+{
+  "abstract": "AI-manipulated video detectors are typically evaluated on clean, curated datasets. In deployment, however, videos have usually passed through repost compression on social-media platforms and sometimes were captured by imperfect hardware. To measure detection under these conditions, we introduce Reality Perception Gap (RPG), a benchmark of 10,000 videos from frontier generators and partially synthetic edits, processed with cross-platform repost compression and paired with real footage that carries camera-side optical artifacts. RPG also includes socially fragile content, such as crime and wartime footage, where fabricated videos can cause severe social harm. Across 18 detectors, none catches more than 15% of fakes at a 1% false-positive rate. A positive control and a re-encoding sweep separate two sources of failure: generator and content shift degrades detectors before any compression, and repost compression erases the low-level traces that the artifact-based detectors relies on. Existing detectors therefore struggle when deployment conditions strip away the generation artifacts they rely on. These complementary failures suggest that robust detection requires training under deployment conditions and combining low-level, temporal, and semantic evidence, where passive detection may have reached its limits.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiangrui Liu",
+    "Xinmiao Luan",
+    "Xinyuan Wang",
+    "Zhiyuan Fang",
+    "Chi-Yao Huang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14941",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "AI-manipulated video detectors are typically evaluated on clean, curated datasets. In deployment, however, videos have usually passed through repost compression on social-media platforms and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": [
+      "detection",
+      "generation"
+    ]
+  },
+  "title": "Reality Perception Gap: Are AI-Manipulated Video Detectors Ready for the Real World?",
+  "url": "https://arxiv.org/abs/2611.14941",
+  "use_case": ""
+}

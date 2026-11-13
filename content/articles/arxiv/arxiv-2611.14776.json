@@ -1,0 +1,30 @@
+{
+  "abstract": "Large language model (LLM) inference demands ever more memory capacity for larger models and batch sizes. High-Bandwidth Flash (HBF) replaces the DRAM dies of HBM with NAND flash and provides up to 16x the capacity at comparable read bandwidth. However, HBF can incur a read latency of nearly 20$μ$s, 20x that of HBM, so on-demand HBF accesses slow inference by up to 12.8x. Conventional cache-line prefetchers require 20x more in-flight tracking state to cover this latency. Tensor-streaming designs, such as H3, follow virtual-address order as opposed to kernel-demand order, and therefore need hundreds of megabytes of buffering. We propose SlipStream, a software-hardware co-designed prefetcher that turns prefetching into a demand-paced producer-consumer pipeline. In software, SlipStream profiles the repeatable weight-page demand order of data-independent LLM kernels and inserts a staging warp that replays this order with non-blocking STAGE instructions. In hardware, the staging warp acts as the producer and the work warps as consumers. Our key insight is to retire each STAGE tracking entry only when demand first accesses the page, as opposed to when the page returns from HBF. Demand thus paces staging and bounds how far staging leads consumption. SlipStream tracks 4 KB pages instead of cache lines and allocates buffer slots only when pages return, which decouples the buffer size from outstanding traffic. Across seven dense models spanning 16-800 GB, SlipStream with a 40 MB staging buffer achieves 92.4% of the performance of an ideal HBF with HBM-like latency. H3 achieves only 43.1%, even with a 320 MB buffer. The buffer sizing of SlipStream is independent of HBF latency and workload. SlipStream with 16 MB buffer, 20x smaller than that of H3, performs within 4% of SlipStream-40MB. SlipStream also supports Mixture-of-Experts models and reaches 91.2% of ideal performance (40 MB buffer).",
+  "abstract_ja": "",
+  "authors": [
+    "Anish Saxena",
+    "Hritvik Taneja",
+    "Christos Kozyrakis",
+    "Aamer Jaleel"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14776",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Large language model (LLM) inference demands ever more memory capacity for larger models and batch sizes. High-Bandwidth Flash (HBF) replaces the DRAM dies of HBM with NAND flash and provides up to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "SlipStream: Enabling HBF for GPU Systems by Mitigating the Latency and SRAM Overheads",
+  "url": "https://arxiv.org/abs/2611.14776",
+  "use_case": ""
+}

@@ -1,0 +1,32 @@
+{
+  "abstract": "Open-weight Vision-Language Models (VLMs) score 85-94% on spatial benchmarks (BLINK Spatial, What's Up CLEVR) yet collapse to chance on simple geometric questions when object, scene, and texture priors are stripped away. We introduce and open-source Sophon, a procedurally generated diagnostic of paired colored point-cloud stimuli across three coordinate systems (1D linear, 2D Cartesian, 2D polar) and four question types (binary, categorical, comparative, quantitative). Across four open architectures (LLaVA-NeXT, LLaVA-OneVision, Qwen2.5-VL, Idefics3), accuracy clusters at 47-52% while frontier models (Opus 4.6, Gemini 2.5 Pro, GPT-5.4) clear 77-83% and humans reach 84-94%. We use linear probes and low-rank adaptation (LoRA) to trace the open-weight failures. Probes of the vision encoder (ViT) and language decoder (LLM) recover Sophon spatial information at 83-85% and 80-86% accuracy, respectively, and the language tower's reasoning circuit answers text-only controls (point clouds as sets of coordinates) at +40 pp over visual stimuli. Language tower per-layer attention attribution localizes visual integration to mid-stack layers. At readout, models elevate the correct answer-set tokens but select among them randomly. We localize the mechanism by tuning individual and grouped components across every architecture's stack, including the vision tower (ViT workspace and reader), the projector, and the language tower (LLM workspace and reader). These experiments demonstrate that this mid-stack workspace holds circuitry capable of organizing the spatial signal so that the frozen reader can decode it. LoRA fine-tuning adjusts that circuitry such that 7B-class VLMs answer Sophon spatial reasoning questions at frontier aggregate accuracy. This work suggests that these models do not have a capability gap for spatial reasoning but suffer from a routing bottleneck that targeted fine-tuning repairs.",
+  "abstract_ja": "",
+  "authors": [
+    "J. Zach Gazak",
+    "Ryan Swindle",
+    "Justin Fletcher"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14838",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Open-weight Vision-Language Models (VLMs) score 85-94% on spatial benchmarks (BLINK Spatial, What's Up CLEVR) yet collapse to chance on simple geometric questions when object, scene, and texture…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Sophon: A Procedural Diagnostic for Spatial Reasoning in Vision-Language Models",
+  "url": "https://arxiv.org/abs/2611.14838",
+  "use_case": ""
+}

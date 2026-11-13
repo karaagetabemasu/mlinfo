@@ -1,0 +1,30 @@
+{
+  "abstract": "Medical vision-language models (VLMs) are compared mainly by accuracy averaged across findings, a summary that can hide complete failure on a single diagnosis. We audit five open medical VLMs (MedGemma-4B, Lingshu-7B, HuatuoGPT-Vision-7B, Qwen2.5-VL-7B, and MedVLM-R1) on 6,048 ChestX-ray14 questions balanced by sex, age, finding, and label. On the 432 pneumothorax-positive X-rays, HuatuoGPT-Vision and Qwen2.5-VL detect zero cases while MedGemma and Lingshu detect 38% and 67% of the same images. The two failing models answer \"no\" to all 864 pneumothorax cases (balanced accuracy 0.500, chance), yet produce fluent, anatomically specific explanations that name the signs of a collapsed lung and then deny them, with no hedge or abstention. This failure is not an artifact of prompting, image resolution, label ambiguity, or model scale. It persists across four prompt formats, at native resolution, and on single-label cases. A within-model control shows the same forced prompt gives HuatuoGPT 79% recall on nodule but only 6% on pneumothorax. It survives a tenfold scale increase (Qwen2.5-VL-72B detects 4%) and replicates on SIIM-ACR, an independent dataset with radiologist-drawn masks, where the failing models detect 0 of 432 confirmed pneumothoraces, including 0 of the 144 largest lesions. Reading the models' logits and internal states shows this is not blindness. The two failing models are highly confident yet no better than chance and a linear probe recovers pneumothorax from their hidden representations even where recall is zero, so the finding is represented internally but suppressed at the output. Aggregate accuracy therefore cannot establish that a medical VLM can see a given finding, because a model that misses one can still describe it convincingly. Reporting per-finding recall and specificity on balanced cases is needed to tell the difference.",
+  "abstract_ja": "",
+  "authors": [
+    "Shreya Ajay Kale",
+    "Angad Ripudaman Singh Bajwa"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14975",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Medical vision-language models (VLMs) are compared mainly by accuracy averaged across findings, a summary that can hide complete failure on a single diagnosis. We audit five open medical VLMs…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Aggregate Accuracy Hides Diagnosis-Specific Failure in Medical Vision-Language Models",
+  "url": "https://arxiv.org/abs/2611.14975",
+  "use_case": ""
+}

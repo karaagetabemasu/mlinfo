@@ -1,0 +1,28 @@
+{
+  "abstract": "In this work, we propose a decentralized terrain-aware multi-drone Thompson Sampling algorithm tailored for search and rescue (SAR) applications. A probability distribution of locating a lost person is informed by terrain data, using established SAR models (displacement ring, elevation, watershed, dispersion angle, and track offset) derived from historical SAR case data on lost person behavior. Exploration is conducted by a team of drones using Thompson Sampling, where candidate actions are selected by drawing samples from this probability distribution, represented by a per-cell Gaussian posterior whose mean and variance are updated through Bayesian inference. This approach balances exploration of uncertain regions with exploitation of high-probability areas to locate a lost person. Observation uncertainty is incorporated through fractional forest coverage, which measures the percentage of an observation occluded by tree coverage and accounts for reduced detection performance in densely vegetated areas. Simulations using real SAR case data (YOSAR) evaluate the proposed method against a coverage planner and a probabilistic active search method in search regions of 1.5 and 3.8 square kilometers, with 5, 10, 15, and 20 agents flying at 50 km/hr. We demonstrate that our method achieves a success rate of approximately 87% within 60 to 247 seconds in the 1.5 square kilometer region, and success rates of approximately 75% to 91% within 161 to 466 seconds in the 3.8 square kilometer region, across different agent configurations.",
+  "abstract_ja": "",
+  "authors": [
+    "Riana Gagnon Souleiman",
+    "Giovanni Beltrame"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14685",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "In this work, we propose a decentralized terrain-aware multi-drone Thompson Sampling algorithm tailored for search and rescue (SAR) applications. A probability distribution of locating a lost person…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Terrain-Aware Thompson Sampling for Multi-Drone Search and Rescue",
+  "url": "https://arxiv.org/abs/2611.14685",
+  "use_case": ""
+}

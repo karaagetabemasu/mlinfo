@@ -1,0 +1,30 @@
+{
+  "abstract": "Heart rate (HR) forecasting may provide advance information about near-future cardiovascular response, potentially supporting physiological monitoring and workload-management decisions during ruck marching. However, robust model development is constrained by the difficulty of collecting large-scale ruck-march datasets, creating a scarce-data problem in which models must generalize across participants while adapting to individuals from limited personal data. To address this problem, we benchmark population-only training (POT), personalized-from-scratch training (PFST), and population-pretrained fine-tuning (PPFT) for HR forecasting during loaded ruck marching using data from eight active-duty U.S. Army medics across thirteen sessions. LSTM, Attention-LSTM, and CNN-LSTM backbones were evaluated against a persistence baseline at 30 s and 60 s horizons. Across all neural architectures and horizons, PPFT yielded lower mean MAE, RMSE, and endpoint MAE than both POT and PFST. Participant-level paired analysis after averaging across three training seeds showed that, relative to PFST, PPFT reduced trajectory MAE by 2.22-4.30 bpm and endpoint MAE by 1.24-2.88 bpm. All six trajectory-MAE comparisons remained significant after Holm adjustment ($p_{adj}$ = 0.0469), while four of six endpoint-MAE comparisons remained significant after adjustment. At 30 s, persistence achieved the lowest MAE (3.555 $\\pm$ 1.274 bpm), while CNN-LSTM PPFT achieved the lowest RMSE (4.669 $\\pm$ 1.916 bpm); LSTM PPFT achieved the lowest endpoint MAE (5.093 $\\pm$ 2.365 bpm). At 60 s, Attention-LSTM PPFT achieved the lowest MAE (5.573 $\\pm$ 1.939 bpm) and RMSE (7.134 $\\pm$ 2.260 bpm), while CNN-LSTM PPFT achieved the lowest endpoint MAE (7.553 $\\pm$ 2.357 bpm). These results suggest that population pretraining followed by participant-specific fine-tuning may provide a practical strategy for scarce-data wearable HR forecasting.",
+  "abstract_ja": "",
+  "authors": [
+    "Muntaqim Ahmed Raju",
+    "Ruizhe Ma",
+    "John W. Ramsay",
+    "David J. Cornell"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14849",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Heart rate (HR) forecasting may provide advance information about near-future cardiovascular response, potentially supporting physiological monitoring and workload-management decisions during ruck…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "forecasting"
+    ]
+  },
+  "title": "Generalize Then Personalize: Wearable-Based Heart Rate Forecasting Under Scarce Ruck-March Data",
+  "url": "https://arxiv.org/abs/2611.14849",
+  "use_case": ""
+}

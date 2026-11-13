@@ -1,0 +1,30 @@
+{
+  "abstract": "Morphology-aware tokenizers are expected to help morphologically rich languages, and their reported gains over byte-pair encoding (BPE) are usually credited to their linguistic units. A comparison with BPE cannot support this attribution, since such a tokenizer also segments text more finely (granularity) and, on token-level tasks, changes how much the sub-token readout matters. We separate both factors from the effect of grouping words by their roots (root assignment) in Amharic, a Semitic language whose Ge'ez abugida hides consonantal roots inside syllabic glyphs, with Latin-script Hausa as an orthographic contrast. Our design combines a lossless root-and-pattern tokenizer with controls that change one factor at a time, in two independent implementations. In both, real root assignment improves Amharic named-entity recognition over scrambled roots (+4.9 and +4.7 F1), and root-frequency structure explains little of this gain. In small from-scratch models, the readout choice moves F1 by up to 13.4 points and reverses the sign of every comparison of the root-and-pattern arms with BPE, whereas in two pretrained encoders it moves F1 by less than one point. The granularity effect changes sign across languages and implementations. We recommend decomposing tokenizer effects, and reporting the readout, before a gain is attributed to linguistic structure.",
+  "abstract_ja": "",
+  "authors": [
+    "Abdul Rehman Antall",
+    "Baidya Nath Saha"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14818",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "Morphology-aware tokenizers are expected to help morphologically rich languages, and their reported gains over byte-pair encoding (BPE) are usually credited to their linguistic units. A comparison…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "What Do Tokenizer Comparisons Measure? Disentangling Granularity, Root Assignment, and Word-Level Readout across Amharic and Hausa",
+  "url": "https://arxiv.org/abs/2611.14818",
+  "use_case": ""
+}

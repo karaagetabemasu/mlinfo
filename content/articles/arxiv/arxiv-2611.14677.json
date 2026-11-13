@@ -1,0 +1,31 @@
+{
+  "abstract": "Respiratory and bulk motion displace the spinal cord between the volumes of a functional MRI time series. Current methods such as the Spinal Cord Toolbox (SCT) take several minutes per time series, and general-purpose brain tools register whole volumes, whereas the cord moves mainly slice by slice. We propose a lightweight convolutional neural network that regresses the in-plane translation aligning each axial slice to a reference. Two models, trained without motion labels, correct large and then residual motion. On a 3T (120 scans) and a 7T (59 scans) dataset, the proposed method improves on SCT on every metric (tSNR +10 to +25%, DVARS -20 to -38%), leaves almost no slice displaced by more than one voxel (<0.1%), performs on par with a slice-wise AFNI variant and better than slice-wise FSL FLIRT, and runs in about 10 s per scan, about 30 times faster than SCT. The code is available at https://github.com/ivadomed/moco-dl and the method is available in SCT v7.4.",
+  "abstract_ja": "",
+  "authors": [
+    "Thomas Dagonneau",
+    "Sandrine Bédard",
+    "Nontharat Tucksinapinunchai",
+    "Uten Yarach",
+    "Loïc Le Folgoc"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/ivadomed/moco-dl",
+  "hasCode": true,
+  "id": "arxiv-2611.14677",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Respiratory and bulk motion displace the spinal cord between the volumes of a functional MRI time series. Current methods such as the Spinal Cord Toolbox (SCT) take several minutes per time series,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "time-series"
+    ],
+    "task": []
+  },
+  "title": "Fast Slice-Wise Deep Learning Motion Correction for Spinal Cord Functional MRI",
+  "url": "https://arxiv.org/abs/2611.14677",
+  "use_case": ""
+}

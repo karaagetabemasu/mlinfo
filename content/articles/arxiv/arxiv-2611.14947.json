@@ -1,0 +1,31 @@
+{
+  "abstract": "Deep-learning unrolled networks are the leading approach to accelerated MRI reconstruction. State-of-the-art models such as PromptMR+ learn a distinct block for every cascade, so their size grows with the number of cascades. Sharing one block across iterations avoids adding parameters, but earlier shared-weight models typically used a tiny block and produced worse images than models with distinct weights. Therefore, it remained unclear whether weight sharing itself or the choice of block was the problem. Recent advances in looped transformers, which reuse the same block across layers, show that they can match or outperform their distinct-weight counterparts on several tasks. Motivated by this, we propose LoopMR, which reuses a single Restormer block at every iteration as its core. Besides the current image estimate, the block receives data-consistency inputs and latent images. On four datasets covering the brain (CC359), knee (fastMRI), heart (CMRxRecon2023) and carotid (in-house), LoopMR significantly outperforms E2E-VarNet, PromptMR and PromptMR+ in PSNR and SSIM at every acceleration factor (p < 0.01), with about 1/9 of PromptMR+'s parameters (10.3M versus 92.9M). It also keeps its lead at unseen acceleration factors and on an unseen dataset. With our transformer block, the shared model matches or outperforms its distinct-weight counterpart at 6, 12 and 24 iterations. At a fixed number of iterations, shared transformer blocks match or outperform their distinct-weight versions, while shared CNN blocks perform worse. These results suggest that looping one well-chosen block can outperform stacking distinct cascades in MRI reconstruction, with a fraction of the parameters.",
+  "abstract_ja": "",
+  "authors": [
+    "Yimeng He",
+    "Yibin Xie",
+    "Yi Zheng",
+    "Yifan Gao",
+    "Lixia Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14947",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Deep-learning unrolled networks are the leading approach to accelerated MRI reconstruction. State-of-the-art models such as PromptMR+ learn a distinct block for every cascade, so their size grows…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "One Block Is Enough: LoopMR for Accelerated MRI Reconstruction",
+  "url": "https://arxiv.org/abs/2611.14947",
+  "use_case": ""
+}

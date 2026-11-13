@@ -1,0 +1,29 @@
+{
+  "abstract": "We propose a nested ensemble learning framework that utilizes Topological Data Analysis (TDA) to extract and integrate topological features from graph data, with the goal of improving performance on classification and regression tasks. Our approach computes persistence diagrams (PDs) using lower-star filtrations induced by three filter functions: closeness, betweenness, and degree2 centrality. To overcome the limitation of relying on a single filter, these PDs are integrated through a data-driven, three-level architecture. At Level-0, diverse base models are independently trained on the topological features extracted for each filter function. At Level-1, a meta-learner combines the predictions of these base models for each filter to form filter-specific ensembles. Finally, at Level-2, a meta-learner integrates the outputs of these filter-specific ensembles to produce the final prediction. We evaluate our method on both simulated and real-world graph datasets. Experimental results demonstrate that our framework consistently outperforms base models and standard stacking methods, achieving higher classification accuracy and lower regression error. It also surpasses existing state-of-the-art approaches, ranking among the top three models across all benchmarks.",
+  "abstract_ja": "",
+  "authors": [
+    "Innocent Abaa",
+    "Umar Islambekov"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14900",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "We propose a nested ensemble learning framework that utilizes Topological Data Analysis (TDA) to extract and integrate topological features from graph data, with the goal of improving performance on…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "regression"
+    ]
+  },
+  "title": "Nested Ensemble Learning with Topological Data Analysis for Graph Classification and Regression",
+  "url": "https://arxiv.org/abs/2611.14900",
+  "use_case": ""
+}

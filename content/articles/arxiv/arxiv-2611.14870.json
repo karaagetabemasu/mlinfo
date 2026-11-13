@@ -1,0 +1,29 @@
+{
+  "abstract": "Data imbalance across sensitive groups and class labels is common in classification problems and can contribute to substantial fairness disparities. We study how such imbalance affects Equal Opportunity and how synthetic data augmentation can mitigate the resulting unfairness. We first identify two mechanisms, prevalence imbalance and group-size imbalance, through which changes in the training distribution shift the learned decision boundary and induce disparities in group true positive rates. Motivated by this analysis, we study exact full-balance augmentation, which equalizes all group-label cells. We establish conditions under which full balancing strictly improves Equal Opportunity together with a prediction-error comparison under the oracle balanced distribution, and show that the Equal Opportunity gap of the synthetic-data classifier converges to that of the oracle balanced classifier as the sample size grows and the generator error vanishes. The finite-sample convergence rate agrees, up to logarithmic factors and generator-approximation error, with the information-theoretic lower-bound rate under the corresponding regularity regimes. Since exact balancing need not provide the best fairness-accuracy trade-off in practice, we further propose Accuracy-Constrained Adaptive Synthetic Augmentation (ACASA), which learns both where and how much to augment by minimizing estimated fairness disparity subject to a constraint on predictive accuracy. We provide a finite-sample guarantee comparing the selected augmentation allocation with the population-optimal accuracy-feasible allocation. Simulation studies and real data application support the theoretical findings and demonstrate that synthetic augmentation can substantially reduce fairness disparities while achieving favorable empirical fairness-accuracy trade-offs.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhengchi Ma",
+    "Kaifeng Zhang",
+    "Anru R. Zhang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14870",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Data imbalance across sensitive groups and class labels is common in classification problems and can contribute to substantial fairness disparities. We study how such imbalance affects Equal…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Synthetic Data Augmentation for Fairness under Data Imbalance: Theory and Adaptive Allocation",
+  "url": "https://arxiv.org/abs/2611.14870",
+  "use_case": ""
+}
