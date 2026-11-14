@@ -1,0 +1,30 @@
+{
+  "abstract": "Training a neural network under homomorphic encryption requires transposes, batch reductions, optimizer updates, and repeated refreshes in addition to forward matrix products. We combine rectangular diagonal packing, feature-major SIMD mini-batch lanes, baby-step giant-step evaluation, and compact optimizer state in an MIT-licensed Rust CKKS implementation. Its CUDA path keeps training and bootstrap ciphertext arithmetic on the GPU, while retaining host key generation and client operations. In a matched 100-update experiment on the main non-interactive MNIST model, device-resident bootstrapping reduces training time from 14,268.295 to 293.075 seconds, a $48.68\\times$ ratio against our CPU implementation, with exactly equal decoded parameters and predictions. Including setup and final evaluation gives a $40.67\\times$ ratio. A separate GPU run completes ten passes over 4,800 images in 2,967.095 seconds and achieves 90.35% test accuracy versus 90.41% for its plaintext twin. These are single-initialization results; exact CPU/GPU parameter agreement is verified at 100 updates, not for the full 1,000-update run. Earlier completed CPU runs support a larger-batch key-switch advantage and baseline-batch accuracy within the registered tolerance, but the baseline-batch normalized key-switch target is missed. The released ReBoot baseline does not meet the common security-estimator threshold, and its full-setting CPU time is unmeasured. We therefore distinguish measured acceleration of our implementation from conditional layout comparisons and do not claim unconditional superiority over ReBoot.",
+  "abstract_ja": "",
+  "authors": [
+    "Kentaro Mihara"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.12161",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Training a neural network under homomorphic encryption requires transposes, batch reductions, optimizer updates, and repeated refreshes in addition to forward matrix products. We combine rectangular…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "GPU-Accelerated Non-Interactive Encrypted Neural Network Training with Batched Diagonal Packing",
+  "url": "https://arxiv.org/abs/2611.12161",
+  "use_case": ""
+}

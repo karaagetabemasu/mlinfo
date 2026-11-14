@@ -1,0 +1,35 @@
+{
+  "abstract": "Learned representations (or embeddings) are the foundation of modern machine learning systems, yet they are typically trained as fixed-size embeddings, without accounting for varying downstream resource or task constraints. Matryoshka Representation Learning (MRL) addresses this limitation by learning nested representations, but requires costly end-to-end retraining and does not support post hoc expansion, while Contrastive Sparse Representations (CSR) reduce training overhead via lightweight adaptors but operate at a 4x larger dimensionality. Additionally, all prior works restrict their framework towards compression only. In this work, we introduce Hyperbolic Elastic Representation Learning (HERL), a framework for learning dimension-adaptive embeddings (compression and expansion) through a lightweight adaptor without retraining the base encoder. Our key idea is to exploit the exponential capacity of hyperbolic geometry by learning a non-linear mapping from the encoder space to hyperbolic space. We train a simple MLP to downsample the representations before projecting them onto a Lorentzian and learn adaptive representations that respect the Lorentzian geometry. Our approach is model-agnostic and effective in both supervised and unsupervised settings. Through extensive experiments across image and text modalities, we show that HERL preserves downstream performance across a wide range of embedding sizes, exhibits smooth interpolation between dimensions, and achieves these benefits at a fraction of the computational cost. Code: https://github.com/arjunrkaushik/herl.",
+  "abstract_ja": "",
+  "authors": [
+    "Arjun Ramesh Kaushik",
+    "Rudrasis Chakraborty",
+    "Nalini Ratha",
+    "Venu Govindaraju"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/arjunrkaushik/herl",
+  "hasCode": true,
+  "id": "arxiv-2611.11001",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Learned representations (or embeddings) are the foundation of modern machine learning systems, yet they are typically trained as fixed-size embeddings, without accounting for varying downstream…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised"
+    ],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "embedding"
+    ]
+  },
+  "title": "Elastic Representations via Hyperbolic Geometry",
+  "url": "https://arxiv.org/abs/2611.11001",
+  "use_case": ""
+}

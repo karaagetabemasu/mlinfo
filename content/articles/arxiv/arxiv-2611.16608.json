@@ -1,0 +1,29 @@
+{
+  "abstract": "Medical image classification in resource-constrained settings must contend with limited annotations and computational capacity. We evaluate four ZACH-ViT variants with linear, Euclidean prototype, Poincare and spherical heads alongside two compact multiple-instance-learning baselines. All models are trained from scratch with fewer than 260,000 parameters across seven MedMNIST+ datasets and three external benchmarks (PCam, ISIC2017 and Shenzhen tuberculosis radiographs). The low-data protocol uses 50 training images per class and five seeds, with validation-selected checkpoints at 23 and 47 epochs; a full-data reference uses one seed. Compact-TransMIL achieves the highest ten-dataset mean test Macro-F1 at 23 epochs (53.34%) and with full data (73.93%). At 47 epochs, ZACH-Linear narrowly leads (57.76% versus 57.54% for Compact-TransMIL). Extending training improves Macro-F1 in 239 of 300 paired comparisons. On ISIC2017, hZACH-Spherical has the highest 47-epoch low-data Macro-F1 (44.09% with SD 4.09%), whereas ZACH-EuclideanProto leads with full data (51.27%). We additionally conduct 40 CPU-only training runs on ISIC2017 and Shenzhen using four CPU threads; model-only single-image inference requires approximately 4-9 ms, while image decoding and preprocessing substantially increase end-to-end latency. The results demonstrate the feasibility of CPU-only training on the tested platform and the task- and regime-dependence of compact medical imaging under strict resource constraints.",
+  "abstract_ja": "",
+  "authors": [
+    "Athanasios Angelakis"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16608",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Medical image classification in resource-constrained settings must contend with limited annotations and computational capacity. We evaluate four ZACH-ViT variants with linear, Euclidean prototype,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Towards Democratising Low-Data Medical Image Classification: CPU-Trainable ZACH-ViT and Its Geometric Variants",
+  "url": "https://arxiv.org/abs/2611.16608",
+  "use_case": ""
+}

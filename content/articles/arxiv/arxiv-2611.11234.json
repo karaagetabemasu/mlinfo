@@ -1,0 +1,26 @@
+{
+  "abstract": "Frontline sales staff spend much of their day re-coordinating quotes after customers change quantities, ask for discounts or new payment terms, or costs move. We present LoMASA (Local Multi-Agent Sales Assistant), a training-free multi-agent system that runs entirely on one desktop computer. A 35B mixture-of-experts model (System-1) makes each decision in a single forward pass and reads its confidence from the probabilities of the answer options. A 27B dense model (System-2) writes customer replies and escalation briefs and is consulted when System-1 is unsure. Code computes every price, margin and option, and hard pricing rules cannot be overridden. On a test split of 500 simulated episodes with 1512 decisions built from public supply-chain data, the salesperson has to decide only 19.5% of decisions: 38.0% are settled automatically, with a median latency of 2.67 seconds, and 42.5% are escalated to a manager by the hard rules. On the automatically settled decisions LoMASA is as accurate as a rule baseline (0.894 vs.\\ 0.894) and makes fewer commitments whose margin later falls below the floor (2.61% vs 4.53%); the price is additional escalations to the manager. Option probabilities are well calibrated without any training, unlike confidence stated in words by the same model. We also report where the design does not help: the 27B model rarely changes a decision.",
+  "abstract_ja": "",
+  "authors": [
+    "Yu Liu",
+    "Xingbang Du"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11234",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Frontline sales staff spend much of their day re-coordinating quotes after customers change quantities, ask for discounts or new payment terms, or costs move. We present LoMASA (Local Multi-Agent…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "LoMASA: A Local Multi-Agent Sales Assistant with Confidence-Gated Delegation for B2B Quoting",
+  "url": "https://arxiv.org/abs/2611.11234",
+  "use_case": ""
+}

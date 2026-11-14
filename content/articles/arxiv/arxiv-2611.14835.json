@@ -1,0 +1,30 @@
+{
+  "abstract": "RF fingerprinting benchmarks report how well a classifier separates transmitters, not whether that separability reflects the individual unit or its hardware family. We compare a benchmark's real hardware grouping with size-matched random groupings of the same devices, using calibrated, unclipped variational lower bounds under label-blind, device-level cross-fitting on devices never seen in training. On WiSig (OFDM Wi-Fi), the generation grouping exceeded all 999 matched random groupings (permutation p = 0.001, the resolution floor), although no grouping attained a positive certified bound, and the direction survives removing channel equalization. A preregistered replication on a LoRa corpus (chirp spread spectrum, three hardware models), with a front-end frozen on synthetic data, again exceeded all 999 (p = 0.001), and two sensitivity analyses judged by a reversal rule fixed in advance did not reverse the direction. This is a directional replication only: the excess magnitude reflects a miscalibrated null, the chain-rule decomposition leaves a residual of +0.296 bits, and capture order is undocumented. In a same-model corpus of 122 ESP32 radios, a temperature-calibrated held-out bound of +3.338 bits (label entropy 6.931 bits) indicates substantial device-specific identity, not separable from per-device capture-session effects; relying on the calibrated bound was decided after the uncalibrated bound changed sign. On synthetic transmitters a high-capacity convolutional decoder reaches 98.5% of a known 6-bit ceiling, and the audit protocol leaves chain-rule residuals of +0.072 bits (synthetic, fixed physical features) and +0.060 bits (WiSig, audit features). Two further corpora were excluded by preregistered ingest gates. Across WiSig and LoRa, hardware-family groupings consistently produced stronger identity-associated signal than size-matched random groupings.",
+  "abstract_ja": "",
+  "authors": [
+    "Hyojung Han"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14835",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "RF fingerprinting benchmarks report how well a classifier separates transmitters, not whether that separability reflects the individual unit or its hardware family. We compare a benchmark's real…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification",
+      "generation"
+    ]
+  },
+  "title": "What Does an RF Fingerprint Identify? A Cross-Corpus Evaluation of Hardware-Family-Associated and Unit-Level Signal",
+  "url": "https://arxiv.org/abs/2611.14835",
+  "use_case": ""
+}

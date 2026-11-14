@@ -1,0 +1,31 @@
+{
+  "abstract": "Training Gaussian processes (GPs) at large scale is computationally challenging because evaluating the log-marginal likelihood and its gradients involves large, dense kernel matrices. We develop a scalable low-rank GP training approach that combines AnchorNet landmark selection with a fully independent training conditional (FITC) correction. The resulting objective and its analytic gradients can be evaluated using low-rank factors, diagonal quantities, and small dense matrices, without forming the full kernel matrix or its derivatives. The complete training procedure is implemented in single precision and evaluated on nine large-scale regression datasets. Across these problems, the method reaches the reference predictive accuracy while substantially reducing training time, although the required approximation rank varies across datasets. We also study the numerical behavior of the full-kernel predictive solve and show that single precision can become limiting for ill-conditioned problems. Finally, we investigate further reducing selected matrix operations to fp16 or TF32. These lower-precision variants provide only modest additional speedups and can become unreliable when the reduced system is poorly conditioned.",
+  "abstract_ja": "",
+  "authors": [
+    "Moritz Poguntke",
+    "Eda Oktay",
+    "Yuanzhe Xi",
+    "Erin Carson",
+    "Martin Stoll"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.12054",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Training Gaussian processes (GPs) at large scale is computationally challenging because evaluating the log-marginal likelihood and its gradients involves large, dense kernel matrices. We develop a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Low-rank Low Precision Training of Gaussian Processes",
+  "url": "https://arxiv.org/abs/2611.12054",
+  "use_case": ""
+}

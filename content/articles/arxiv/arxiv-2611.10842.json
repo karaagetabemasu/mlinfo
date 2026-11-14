@@ -1,0 +1,26 @@
+{
+  "abstract": "Tree decision diagrams (TDDs), recently introduced by Capelli et al. (SAT 2026), are representations of Boolean functions. They generalize OBDDs by replacing variable orders with vtrees. The width of a TDD counts the distinct subfunctions across each vtree cut. Counting subfunctions is blind to linear structure. We introduce algebraic tree decision diagrams (ATDDs) by replacing this count with the rank of the cut matrix. The maximum of these ranks over all cuts, the factor rank, is exactly the width of the ATDD. Every TDD can be converted into an ATDD of no greater width. An ATDD is a tree tensor network in canonical form. ATDDs are exponentially more succinct than TDDs, and quasi-polynomially more succinct than structured deterministic DNNFs. Our main result is that this gain in succinctness does not cost canonicity. ATDDs are the first strict canonical form for a rank-based representation over arbitrary vtrees. For each function and vtree there is exactly one ATDD, over the rationals and without any genericity assumption. The canonicity admits a local characterization. Whether a tree tensor network is the ATDD of the Boolean function it computes can be checked in polynomial time from its tensors alone. Equivalence checking becomes a test of syntactic equality. The operation set includes polynomial-time model counting, weighted model counting, and a test whether a tree tensor network represents a Boolean function. Capelli et al. asked for the complexity of changing the vtree of a TDD and suggested local vtree changes. We answer the question. After a rotation of the vtree at one node, the new ATDD differs from the old one in two tensors only. Vtree change runs in output-polynomial time both for TDDs and for ATDDs. We formalize and verify our core results in Lean. We provide a prototype implementation of TDD and ATDD compilers as a first empirical validation.",
+  "abstract_ja": "",
+  "authors": [
+    "Alexis de Colnet",
+    "Stefan Szeider"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10842",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Tree decision diagrams (TDDs), recently introduced by Capelli et al. (SAT 2026), are representations of Boolean functions.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Factor Rank: A Canonical Algebraic Generalization of Tree Decision Diagrams",
+  "url": "https://arxiv.org/abs/2611.10842",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Accurate future channel state information (CSI) is essential for underwater acoustic (UWA) communication because delays associated with signal propagation, feedback, scheduling, and transceiver reconfiguration can render currently available CSI outdated. However, most existing predictors estimate only the next channel state and obtain multi-step forecasts through recursive rollout, which causes prediction errors to accumulate as the multipath structure evolves. The scarcity of sea-trial measurements further limits reliable model training. To address these challenges, we propose LLM4UACP, a dual-domain, structure-preserving framework that adapts a pretrained Transformer for few-shot multi-step UWA channel prediction. LLM4UACP extracts complementary features from the channel impulse response (CIR) and channel frequency response (CFR), aligns them through Fourier-consistent fusion, and encodes the fused representation as delay-time tokens. A pretrained Transformer with a frozen backbone is adapted through Butterfly Orthogonal Fine-tuning to jointly predict multiple future CIRs in a single forward pass, thereby avoiding the error accumulation associated with recursive prediction. Experiments on the measured SO-06 and SO-07 channels show that LLM4UACP achieves normalized mean squared error (NMSE) values of 0.0411 and 0.0399, corresponding to reductions of 88.53% and 85.15%, respectively, relative to the most recent baseline. With only 0.11M trainable parameters, LLM4UACP maintains robust performance across varying prediction horizons and observation-window lengths, limited-data settings, and cross-dataset transfer scenarios.",
+  "abstract_ja": "",
+  "authors": [
+    "Mingjie Cao",
+    "Gewei Zhang",
+    "Deqing Wang",
+    "Lizhao You",
+    "Fei-Yun Wu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14592",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Accurate future channel state information (CSI) is essential for underwater acoustic (UWA) communication because delays associated with signal propagation, feedback, scheduling, and transceiver…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": []
+  },
+  "title": "Multi-Step Underwater Acoustic Channel Prediction via Dual-Domain Structure Preservation and Pretrained Transformer",
+  "url": "https://arxiv.org/abs/2611.14592",
+  "use_case": ""
+}

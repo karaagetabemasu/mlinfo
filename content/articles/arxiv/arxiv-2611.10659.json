@@ -1,0 +1,33 @@
+{
+  "abstract": "Diarization-conditioned target-speaker ASR (TS-ASR), in particular Diarization-conditioned Whisper (DiCoW), is an accurate and data-efficient approach to multi-talker transcription. It has, however, three structural limitations: the model transcribes each speaker independently, operates on short (30 s) windows, and optimizes its diarization and TS-ASR components separately. We address the first two. We integrate the diarization conditioning into a longform Parakeet backbone (DiCoP) and add cross-speaker attention, which lets the model attend across the speaker dimension so that speakers are no longer decoded in isolation, and an STNO mask refiner that re-estimates the diarization-derived conditioning. As conversational data with genuine multi-speaker interaction is scarce, we scale training with a pseudo-labeling pipeline that mines 5.4k hours of in-the-wild multi-speaker audio from YODAS2. Combining these with synthetic and real data yields state-of-the-art results across several meeting benchmarks. We open-source the resulting models, DiCoP and Pandemonium, and the pseudo-labeled data.",
+  "abstract_ja": "",
+  "authors": [
+    "Alexander Polok",
+    "Dominik Klement",
+    "Ivan Medennikov",
+    "Antoine Laurent",
+    "Petr Pálka"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10659",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Diarization-conditioned target-speaker ASR (TS-ASR), in particular Diarization-conditioned Whisper (DiCoW), is an accurate and data-efficient approach to multi-talker transcription. It has, however,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Pandemonium: Longform Target-Speaker Speech Recognition with Cross-Speaker Interactions",
+  "url": "https://arxiv.org/abs/2611.10659",
+  "use_case": ""
+}

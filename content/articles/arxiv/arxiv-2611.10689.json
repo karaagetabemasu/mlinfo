@@ -1,0 +1,31 @@
+{
+  "abstract": "Retinal screening programmes need to know which automated decisions can be accepted without review. This paper presents RetinaGuard, an agentic triage framework in which quality, diagnostic, uncertainty, verification and explanation agents gather evidence for each fundus photograph, a learned failure predictor estimates the probability that the decision is unsafe, auxiliary tools are invoked only when their expected value of information exceeds their cost, and the acceptance threshold is certified by conformal risk control. On the RFMiD test split, RetinaGuard was compared with confidence and calibrated-uncertainty referral at matched referral budgets and equal certified safety, using two RETFound primary models of different strength. With the weaker model (macro-AUROC 0.896), verifier disagreement added significant information, RetinaGuard captured 119 of 280 unsafe decisions at a 20% budget against 88 for lowest-confidence referral, and at a nominal 5% unsafe level it accepted 37.0% of cases against 10.3%. With the stronger model (0.925) the verifier added nothing beyond uncertainty and the advantage shrank to a few percentage points. In both settings its coverage at the nominal 5% level stayed near 37.7%, gating cut computation by about 30%, and a quality agent reduced unsafe acceptances under most image corruptions. The benefit of agentic evidence gathering thus depends on how much the primary model's own uncertainty already reveals about its errors.",
+  "abstract_ja": "",
+  "authors": [
+    "Sohaib Sulman",
+    "Muhammad Atif Saeed",
+    "Akhtar Jamil",
+    "Alaa Ali Hameed",
+    "Roland Aydin"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10689",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Retinal screening programmes need to know which automated decisions can be accepted without review. This paper presents RetinaGuard, an agentic triage framework in which quality, diagnostic,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "RetinaGuard: Risk-Controlled Agentic Triage for Multi-Disease Retinal Screening",
+  "url": "https://arxiv.org/abs/2611.10689",
+  "use_case": ""
+}

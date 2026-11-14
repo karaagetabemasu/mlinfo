@@ -1,0 +1,31 @@
+{
+  "abstract": "This work addresses the problem of finding a concealed object in an environment by unifying formalisms for partially observable environments with multi-modal priors drawn from a mix of ontologies, semantic networks, LLMs, and VLMs. We propose a concealment-adaptive mixed-observability MDP (CA-MOMDP), a Bayes-adaptive setting where uncertainty is over both object locations and which nodes can conceal them, held as a hypothesis with a bounded ontology prior and resolved only by interaction. We define a hierarchical transition system (HTS) to abstract the environment into room and object nodes that can be planned over via our CA-MOMDP. We further propose a COMBS-score: a multi-modal fusion of a human informed semantic network, LLM, and VLM, to initialize the belief over object locations, which grounds our abstractions and reduces reliance on a single model. Belief is maintained via Bayes' rule, which never lets a look rule out a closed container. We prove a present target is found in a bounded number of searches under exact perception and that its location is never ruled out given missed detection under noisy perception. We ablate each component to demonstrate their significance. Across five simulator configurations, from a gridworld to Matterport3D with a real detector, COMBS finds 92-100% of in-distribution and 92-100% of out-of-distribution targets, matches or beats the baselines in processing speed, significantly outperforms a per-step LLM policy at lower cost on the larger scenes, recovers more out-of-distribution placements than a TidyBot ranking, and matches an LLM-only prior at a fraction of its per-decision latency. COMBS is the only standalone method that can declare a target absent at a stated error level, and the per-step LLM policy offered a termination action abandons 12-22% of targets that were present, against 1.6-3.2% for COMBS on the same episodes.",
+  "abstract_ja": "",
+  "authors": [
+    "Taylor Bergeron",
+    "Kevin Leahy"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15964",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "This work addresses the problem of finding a concealed object in an environment by unifying formalisms for partially observable environments with multi-modal priors drawn from a mix of ontologies,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "detection",
+      "anomaly-detection"
+    ]
+  },
+  "title": "COMBS: Concealed Object Multi-modal Bayesian Search",
+  "url": "https://arxiv.org/abs/2611.15964",
+  "use_case": ""
+}

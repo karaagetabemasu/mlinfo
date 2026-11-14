@@ -1,0 +1,32 @@
+{
+  "abstract": "Developers, auditors and researchers read evaluation scores as evidence of what a model can do. A model that sandbags, scoring low on purpose while keeping the capability, turns a low score into false reassurance. Sandbagging detectors are usually tested once against a fixed attack, but a real attacker sees what gets flagged and adapts. We build sandbagging models by fine-tuning small open-weight models to fail math word problems (GSM8K) they can otherwise solve, but only when an audit marker is in the prompt. On Qwen 2.5-3B, we adapt the attack over two retraining rounds against a text-based audit. Two rounds of retraining cut the text audit's AUC from 0.978 to 0.560 while the marker still removes 40-49 points of accuracy. The attack worked in 7 of 8 retrained seeds, and the audit missed every retraining (AUC 0.451-0.576), including one Llama run. Activation probes also flag 99% of benign fine-tunes' examples, and matched probes transfer to only 1 of 5 held-out training runs. Eight further trigger attacks are all active under their own prompt but not under the detectors' prompt. A detector that catches a fixed attack has not been shown to catch an adaptive one.",
+  "abstract_ja": "",
+  "authors": [
+    "Bhoj Rani Soopal",
+    "Aarohi Agrawal",
+    "Josh Karthikeyan",
+    "Edward Lue Chee Lip"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14950",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Developers, auditors and researchers read evaluation scores as evidence of what a model can do. A model that sandbags, scoring low on purpose while keeping the capability, turns a low score into…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Stress-Testing Sandbagging Detection Under Adaptive Attack",
+  "url": "https://arxiv.org/abs/2611.14950",
+  "use_case": ""
+}

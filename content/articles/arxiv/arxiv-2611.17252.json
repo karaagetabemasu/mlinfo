@@ -1,0 +1,26 @@
+{
+  "abstract": "Kalah is a classic two-player game in the mancala family of sowing games. Computers have solved several standard-size starting positions, but the complexity of the game on boards of growing size has remained open. We study the natural generalization in which the number of pits per side is part of the input and an arbitrary position is given, with the stone counts given in unary. We show that deciding whether a designated player can force a win from such a position is PSPACE-complete. The hard positions have Alice to move first and both stores initially empty. The same positions are hard under either common convention for capture opposite an empty pit, and with or without the bonus rule, which gives a player another turn when the last stone is sown into their own store. We introduce Line Kalah as an intermediate problem, a game on a line in which stones that leave the line effectively disappear and Alice must save each of her target pits before Bob captures it, and we reduce quantified Boolean formulas to it. The reduction uses a set of sequential timer piles whose last stones approach a group of targets, forcing Alice to choose between two captures in order to set the truth value of a variable, and a final capture gadget to test a clause chosen by Bob (only one is needed adversarially). Since either player may move any pile at any time, the stages are placed so that premature timer firings protect earlier potential targets. For a true formula, Alice's strategy against arbitrary opposing play either gains enough time to save the remaining targets (after Bob deviates from the intended play) or reaches the final test with a correctly encoded, protected input. Finally, the line positions are embedded in Kalah with both stores empty. A separate Bob pit holds the score adjustment, so the winner takes a strict majority of the stones.",
+  "abstract_ja": "",
+  "authors": [
+    "Ethan Dickey",
+    "Ethan Mader"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.17252",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Kalah is a classic two-player game in the mancala family of sowing games. Computers have solved several standard-size starting positions, but the complexity of the game on boards of growing size has…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Sowing the Seeds of Intractability: Kalah is PSPACE-complete",
+  "url": "https://arxiv.org/abs/2611.17252",
+  "use_case": ""
+}

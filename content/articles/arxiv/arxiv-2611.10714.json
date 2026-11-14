@@ -1,0 +1,35 @@
+{
+  "abstract": "Image-text alignment models such as CLIP are typically trained with contrastive learning, where unpaired examples are treated as strict negatives. While this assumption introduces noise by penalising semantically related pairs, existing solutions often rely on heuristic similarity thresholds that lack statistical grounding and sensitivity to dataset-specific noise distributions. In this paper, we propose Permute-then-Adapt (PTA), a framework that leverages efficient weak models to identify missed positives while controlling Type-I error relative to a conditional permutation reference, up to calibration approximation error. Unlike standard distillation or arbitrary thresholding, PTA estimates a random-pairing reference distribution from the weak teacher's similarity scores and uses its upper tail, determined by $α$, to select auxiliary positives. The calibrated positive set is then trained against by a single multi-positive contrastive objective: each anchor maximises the total probability mass it assigns to its positive set. Offline calibration with the weak model adds negligible training overhead. Experiments show gains over heuristic soft-label approaches in object recognition, cross-modal retrieval, and data efficiency. Project repository: https://github.com/JinhaoLee/Permute-then-Adapt.",
+  "abstract_ja": "",
+  "authors": [
+    "Jinhao Li",
+    "Sarah Erfani",
+    "Lei Feng",
+    "Guangrui Li",
+    "James Bailey"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/JinhaoLee/Permute-then-Adapt",
+  "hasCode": true,
+  "id": "arxiv-2611.10714",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Image-text alignment models such as CLIP are typically trained with contrastive learning, where unpaired examples are treated as strict negatives. While this assumption introduces noise by penalising…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Permute-then-Adapt: Weak-to-Strong Contrastive Image-Text Adaptation",
+  "url": "https://arxiv.org/abs/2611.10714",
+  "use_case": ""
+}

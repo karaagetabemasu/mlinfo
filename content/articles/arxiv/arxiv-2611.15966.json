@@ -1,0 +1,29 @@
+{
+  "abstract": "Deep networks that estimate ground reaction forces and centers of pressure from motion-capture markers are validated within one laboratory, in a seldom-stated coordinate frame, and sometimes with trial-level splits that put the same person in the training and the test set. We measured what each practice costs, and whether such models transfer between laboratories. Three sequence models (convolutional, convolutional-recurrent, and convolutional-transformer) were evaluated on two independent datasets, locomotion (6 subjects) and occupational patient handling (10 subjects), under one pipeline, one tuning procedure, three seeds, and four protocols: trial-level split, leave-one-subject-out, pooled two-laboratory training with matched held-out subjects, and cross-laboratory transfer. At a fixed configuration, trial-level splits overstated the subject-held-out coefficient of determination by +0.040 to +0.194; on occupational data the overstatement exceeded every difference between architectures. With subjects held out, the three models reached values between 0.583 and 0.804; the leader differed between datasets, and gaps lay within subject-to-subject variability. Pooling the laboratories changed neither dataset on matched subjects. Transfer between laboratories was below chance in both directions, including the vertical force, which no in-plane rotation can affect. Leaving force targets in the plate frame while inputs were heading-aligned cost 0.57 of locomotion anteroposterior-force explained variance, enough to make that force look hardest; a Newton's-law correlation detected the mismatch before training. Split protocol and target frame changed reported accuracy more than architecture did. Learned force estimators should be validated with subjects held out, checked for frame consistency before training, and tested across laboratories before deployment claims are made.",
+  "abstract_ja": "",
+  "authors": [
+    "Hernan David Santos",
+    "Yinong Chen",
+    "Yu Ding",
+    "Xudong Zhang",
+    "Jian Tao"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15966",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Deep networks that estimate ground reaction forces and centers of pressure from motion-capture markers are validated within one laboratory, in a seldom-stated coordinate frame, and sometimes with…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Subject-Held-Out Evaluation of Deep Ground Reaction Force Estimators Across Two Laboratories: Leakage and Cross-Laboratory Transfer",
+  "url": "https://arxiv.org/abs/2611.15966",
+  "use_case": ""
+}

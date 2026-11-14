@@ -1,0 +1,29 @@
+{
+  "abstract": "Neural networks trained by gradient-based methods learn the low-frequency content of a target function faster than its high-frequency content. This spectral bias is well documented, but it is much less clear which architectural choices mitigate it and which cannot. We study the question for shallow ReLU models linear in their trainable parameters, where each mode is learned at a rate given by a Gram-matrix eigenvalue, and for a general symmetric bilinear form $a(\\cdot,\\cdot)$, so that least-squares regression ($a=$ the $L^2$ inner product) and variational or physics-informed losses ($a=$ the $H^1$ energy form) are two instances of one analysis. Within this framework we propose gated local ReLU dictionaries, obtained by multiplying each ReLU feature by a hat partition-of-unity weight, in the spirit of partition-of-unity finite elements and overlapping Schwarz methods. The resulting Gram matrices are block-banded for any local bilinear form, with a block-Toeplitz interior whose matrix-valued symbol governs the spectrum. The two forms then behave very differently. For $L^2$ regression, the symbol is bounded away from zero, the ratio is uniform in the number of windows, and the measured spread of frequency-dependent learning rates falls from $1.9\\times10^{5}$ to $4.5$ at matched model size. For the $H^1$ stiffness matrix, the symbol vanishes at zero frequency: gating leaves the $Θ(N^2)$ conditioning intact and inverts the frequency ordering instead of removing the bias. A preconditioner built from the same interior stencil will fix the spectral bias, showing that architecture alone is not enough. Experiments on $1$D regression and Poisson problems confirm the dichotomy, and the regression effect persists when the hidden-layer parameters are trained as well.",
+  "abstract_ja": "",
+  "authors": [
+    "Victorita Dolean"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10700",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Neural networks trained by gradient-based methods learn the low-frequency content of a target function faster than its high-frequency content. This spectral bias is well documented, but it is much…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Spectral Bias Reduction in Local Gated ReLU Architectures",
+  "url": "https://arxiv.org/abs/2611.10700",
+  "use_case": ""
+}

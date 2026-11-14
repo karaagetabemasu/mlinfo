@@ -1,0 +1,26 @@
+{
+  "abstract": "A robot that keeps learning after deployment is corrected by several people in turn, and one of them may later ask to be removed. We show that whether the robot can forget that person depends on how people correct it. The goal of removal is the robot that would exist if the person had never been there, which we compute exactly in two simulated tasks with scripted users. When users correct the robot by taking over control, an ordered log of training updates is enough: retraining on the remaining sessions in their original order gives a robot as close to the goal as training noise allows. Deleting the person's data and retraining in one pass does not, even when the other users' corrections do not depend on the removed person, because it loses the order of training. When users only nudge the robot's action, the other users' corrections carry the removed person's influence, and no method we tested recovers the goal robot. Continuing to train without the person removes most of their habits, but not what their data in the training buffer keep alive. The log can identify one clearly harmful user, but not rank users by influence better than counting their corrections.",
+  "abstract_ja": "",
+  "authors": [
+    "Eshika Pathak",
+    "Leela Krishna"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10280",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "A robot that keeps learning after deployment is corrected by several people in turn, and one of them may later ask to be removed. We show that whether the robot can forget that person depends on how…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Who Taught the Robot That? Removing One User's Corrections from a Robot Policy That Learns Online",
+  "url": "https://arxiv.org/abs/2611.10280",
+  "use_case": ""
+}

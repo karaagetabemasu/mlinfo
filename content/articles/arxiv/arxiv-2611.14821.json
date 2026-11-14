@@ -1,0 +1,33 @@
+{
+  "abstract": "Cataloguing a Roman Imperial coin involves reading its legends and identifying its imagery in order to match it to an entry in the standard reference catalogue. Previous work has automated individual parts of this process, such as identifying the issuer or recognizing reverse motifs, by formulating each part as a classification task over a predefined set of labels. We instead formulate coin description as image-to-text generation and adapt an open-weight vision-language model (VLM), Qwen3-VL-8B-Instruct, to four tasks: transcribing the obverse and reverse legends, and describing the obverse and reverse imagery. To obtain training data, we convert approximately 30,000 auction records into structured image-text pairs. We separate the two sides of each coin, extract and normalize legends and descriptions, and standardize obverse descriptions against a bust-type taxonomy. We then train a separate low-rank adapter for each task on a single 20GB GPU, and evaluate each task with metrics that we define to capture the key components of numismatic descriptions. The adapted models outperform both the unadapted base model and GPT-4.1 on all four tasks, reducing the normalized edit distance of legend transcriptions by over 40% relative to GPT-4.1. The improvement is smaller, but still present, on legends absent from the training data.",
+  "abstract_ja": "",
+  "authors": [
+    "Pedro Lourenco",
+    "Ognjen Arandjelović"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14821",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Cataloguing a Roman Imperial coin involves reading its legends and identifying its imagery in order to match it to an entry in the standard reference catalogue. Previous work has automated individual…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "classification",
+      "generation"
+    ]
+  },
+  "title": "From Classification to Generation: Vision-Language Models for Roman Imperial Coin Description",
+  "url": "https://arxiv.org/abs/2611.14821",
+  "use_case": ""
+}

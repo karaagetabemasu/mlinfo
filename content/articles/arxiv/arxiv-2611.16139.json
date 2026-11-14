@@ -1,0 +1,32 @@
+{
+  "abstract": "Spam detection is usually treated as single-message classification, ignoring behavioral patterns that emerge across sequences of messages from the same sender. We study outbound SMS spam detection at the carrier level, where the goal is to predict at send time whether a carrier will flag a message as spam. Using a proprietary production database of 43,741 outbound SMS messages with UTC transmission timestamps and carrier delivery statuses, we report three sets of results. On an 8,749-message held-out test set, a TF-IDF + logistic regression baseline reaches AUC-ROC 0.8721, and a text-only DeBERTa-v3-base classifier reaches AUC-ROC 0.9011 and F1 0.8412. A deployed DistilBERT model augmented with inter-message temporal features reaches accuracy 0.8238, spam-class F1 0.8382, and recall 0.9128 at threshold 0.5 on a separate, class-balanced 20,000-message production evaluation set; these results are not directly comparable with the held-out test results. We also describe TemporalBertSpam, an architecture that encodes each sender's message history with a causal Transformer, and outline the same-split evaluation needed to measure its contribution.",
+  "abstract_ja": "",
+  "authors": [
+    "Fariz Zeynalov",
+    "Razim Mammadli"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16139",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Spam detection is usually treated as single-message classification, ignoring behavioral patterns that emerge across sequences of messages from the same sender. We study outbound SMS spam detection at…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification",
+      "detection",
+      "regression"
+    ]
+  },
+  "title": "Temporal Context-Aware Spam Detection Using Transformer-Based NLP Models",
+  "url": "https://arxiv.org/abs/2611.16139",
+  "use_case": ""
+}

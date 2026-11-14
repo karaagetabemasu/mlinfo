@@ -1,0 +1,28 @@
+{
+  "abstract": "Although hidden-state probes efficiently monitor model operation, it remains unclear whether probes trained on benign tool use remain useful for detecting incorrect actions under adversarial conditions. In this research, we assess this problem from the perspective of operational tool-action correct- ness. we use four AgentDojo suites, four conditions, and three models: Qwen2.5-7B-Instruct, Qwen2.5-14B-Instruct, and GLM- 4.6V-Flash (9B). We perform a five-fold, task-grouped out-of-fold (OOF) evaluation for each model. We train step-specific logistic- regression probes only on benign and non-defended trajectories and evaluate them on held-out trajectories for benign, prompt- injection, system-override, and tool-poisoning conditions. We compare our hidden-state probe to mean tool-call-token entropy, negative mean tool-call-token log-probability, and self-consistency uncertainty. The paired tests highlight six significant differences after Holm correction. All of the tests involve Qwen2.5-14B- Instruct under the system-override condition, with all three scalar uncertainty metrics obtaining higher area under the receiver operating characteristic curve (AUROC) and average precision (AP) than the hidden-state probe. These results suggest that benign-trained hidden-state probes should not be assumed to reliably detect operational tool-action errors under adversarial conditions.",
+  "abstract_ja": "",
+  "authors": [
+    "Bibek Bhandari",
+    "Kshitij Lingthep"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11172",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Although hidden-state probes efficiently monitor model operation, it remains unclear whether probes trained on benign tool use remain useful for detecting incorrect actions under adversarial…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Do Benign-Trained Hidden-State Probes Detect Tool Errors Under Adversarial Conditions?",
+  "url": "https://arxiv.org/abs/2611.11172",
+  "use_case": ""
+}

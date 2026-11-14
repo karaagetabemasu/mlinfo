@@ -1,0 +1,29 @@
+{
+  "abstract": "We study the excess risk of constant-stepsize online stochastic gradient descent (SGD) with tail-averaging for high-dimensional linear regression. Building on the instance-dependent spectral framework of Zou et al. (2021), we establish matching initialization-explicit upper and lower bounds on the total excess risk of tail-averaged SGD in terms of the population covariance spectrum $\\mathbf{H}$ and initialization $\\mathbf{w}_0-\\mathbf{w}^*$ whenever a trajectory spectral feedback condition holds. Existing analyses exhibit a fundamental gap in the effective variance: the upper bound of Zou et al. (2021) retains an undamped contribution from the initial error in the head eigenspace $\\mathbf{I}_{0:k^\\dagger}$, whereas their lower bound omits the variance induced by the head initialization altogether. We show that both the existing upper and lower bounds are loose: the single-hop fast-mode variance contribution from the head initialization is exponentially damped during the burn-in phase, whereas fourth-moment energy scattered from the head initialization into slow spectral modes during the early burn-in steps survives undamped into the averaging window. We prove that our spectral feedback condition is satisfied in two concrete constant-stepsize regimes: (i) for arbitrary covariance spectra $\\mathbf{H}$ and any finite horizon, under an explicit horizon-dependent stepsize chosen prior to execution; and (ii) for polynomially decaying spectra $λ_i\\asymp i^{-a}$ ($a>1$), under a single horizon-independent positive stepsize. Finally, we complement these positive results with explicit one- and two-dimensional separation constructions proving an exponential-versus-polynomial gap in the lower bound of Zou et al. (2021) and showing why fourth-moment assumptions alone cannot determine the asymptotic exponential decay rate without additional structural conditions.",
+  "abstract_ja": "",
+  "authors": [
+    "Qingyue Zhao",
+    "Xuheng Li",
+    "Quanquan Gu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13383",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "We study the excess risk of constant-stepsize online stochastic gradient descent (SGD) with tail-averaging for high-dimensional linear regression. Building on the instance-dependent spectral…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Settling the Burn-in Gap: Sharp Risk Bounds for Tail-Averaged SGD in Linear Regression",
+  "url": "https://arxiv.org/abs/2611.13383",
+  "use_case": ""
+}

@@ -1,0 +1,30 @@
+{
+  "abstract": "Event cameras offer high temporal resolution and dynamic range for uncooperative spacecraft pose estimation, but models trained on synthetic event streams must generalize to the noise, background activity, and contrast variation of physical sensors. We present a comparative systems study of two independently developed approaches to synthetic-to-real, event-based 6-DoF spacecraft pose estimation. The first is a modular pipeline that combines learned keypoint detection and unlabeled target-domain adaptation with geometry-based pose recovery and temporal smoothing. The second directly regresses translation and rotation from global and cropped event representations using an apparent-scale cue, physics-motivated synthetic corruptions, and feature-consistency regularization. We evaluate both systems under the same SPARK 2026 hidden-test protocol on the real-event split of SPADES, with predictions for all test frames. The results reveal a component-wise reversal concealed by the aggregate challenge score: direct regression reduces orientation error by 22.7% (1.1767 to 0.9101 rad) and obtains a 13.4% lower composite score, whereas the modular pipeline reduces relative translation error by 78.7% (0.1335 to 0.0285). Archived configurations and a qualitative failure case identify plausible explanations for these complementary error profiles, without isolating their causes. These findings motivate a testable hybrid design that combines direct orientation estimation with geometry-constrained translation recovery.",
+  "abstract_ja": "",
+  "authors": [
+    "Pruthvi Nandan Janga",
+    "Kashyap Hegde Kota",
+    "Bharatesh Chakravarthi"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.09717",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Event cameras offer high temporal resolution and dynamic range for uncooperative spacecraft pose estimation, but models trained on synthetic event streams must generalize to the noise, background…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection",
+      "regression"
+    ]
+  },
+  "title": "Direct Regression and Geometric Recovery for Event-based Spacecraft Pose Estimation",
+  "url": "https://arxiv.org/abs/2611.09717",
+  "use_case": ""
+}

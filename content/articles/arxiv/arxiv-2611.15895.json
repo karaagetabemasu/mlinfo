@@ -1,0 +1,33 @@
+{
+  "abstract": "Bilevel optimization is a core tool in practical machine learning workflows, including hyperparameter tuning, data reweighting, robust learning, reinforcement learning, and imbalanced classification. Hypergradient computation requires the inverse of the inner Hessian, typically estimated via a truncated Neumann series. While existing analyses focus on bias and variance, we show that the product structure of the Neumann series introduces a third source of error: skewness. We identify that, unlike ordinary gradients, whose asymmetry is suppressed by mini-batch averaging, the Neumann estimator amplifies skewness across factors, with the third-moment error growing, under weak contraction, with truncation depth, inner condition number, and per-factor noise asymmetry. This arises in many practical settings such as corrupted labels, outliers, heterogeneous or class-imbalanced datasets. To address this, we introduce the Antithetic Neumann Estimator (ANE), which pairs each Hessian sample with a mirrored counterpart around a reference Hessian and averages the resulting inverse-Hessian estimates. With an exact reference, the antithetic product retains only even-order noise, eliminating all odd-order perturbation terms; with an approximate reference, the residual odd-order contribution is bounded linearly in the reference error. ANE requires only a modification of the Hessian vector step and combines with existing stochastic or variance-reduced bilevel methods. We instantiate ANE-SGD and ANE-VR, the latter adding recursive variance reduction. Across robust regression, data cleaning, offline reinforcement learning, and imbalanced classification, ANE-based methods improve on stochastic and variance-reduced baselines on every task (20 seeds each), lowering loss by 4 to 25% relative to the best baseline; the largest gains, on robust regression, are a 25% lower test loss and a 54% higher test r-squared.",
+  "abstract_ja": "",
+  "authors": [
+    "Jason Bohne",
+    "Pawel Polak",
+    "Gary Kazantsev",
+    "David Rosenberg"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15895",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Bilevel optimization is a core tool in practical machine learning workflows, including hyperparameter tuning, data reweighting, robust learning, reinforcement learning, and imbalanced classification.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": [
+      "classification",
+      "regression"
+    ]
+  },
+  "title": "Your Hypergradient is Skewed: Antithetic Neumann Estimation for Bilevel Optimization",
+  "url": "https://arxiv.org/abs/2611.15895",
+  "use_case": ""
+}

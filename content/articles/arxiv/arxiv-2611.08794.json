@@ -1,0 +1,29 @@
+{
+  "abstract": "Reward models used for off-policy evaluation (OPE) are commonly selected using held-out data. When sample size and context dimension grow proportionally, the difference in test risk between models fitted on the full sample and on a fixed fraction of it need not vanish. Held-out evaluation can therefore consistently estimate the test risk of the model trained on the smaller sample, but because the relative ranking of candidate reward models can change after full-data refitting, held-out selection can be suboptimal. We develop an Onsager-corrected, target-policy-weighted criterion that estimates the full-data reward model's out-of-sample risk under the target policy using only its training observations. This enables early stopping along the full-data gradient-descent trajectory without sample splitting. For neural networks with fixed depth and hidden width under Gaussian contexts, single-index rewards, context-dependent multi-index target policies, and known context-independent logging, we prove uniform consistency of our criterion over a fixed finite set of gradient-descent iterates and a near-oracle guarantee for the selected reward model. The same correction yields a doubly robust estimator that consistently estimates the true policy value without sample splitting, even when reward-model prediction error does not vanish. Experiments show decreasing risk-estimation error as dimension grows at a fixed sample-to-dimension ratio, and improved reward-model selection relative to held-out baselines. Empirically, our correction also reduces the root mean squared error of doubly robust value estimates computed from the same data used to fit and select the reward models.",
+  "abstract_ja": "",
+  "authors": [
+    "Saksham Jain",
+    "Guillaume Braun",
+    "Masaaki Imaizumi"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.08794",
+  "likes_count": 0,
+  "publishedAt": "2026-11-05",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Reward models used for off-policy evaluation (OPE) are commonly selected using held-out data. When sample size and context dimension grow proportionally, the difference in test risk between models…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "High-Dimensional Off-Policy Evaluation without Sample Splitting using an Onsager Correction",
+  "url": "https://arxiv.org/abs/2611.08794",
+  "use_case": ""
+}

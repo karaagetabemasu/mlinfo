@@ -1,0 +1,32 @@
+{
+  "abstract": "LiDAR point clouds exhibit scan-induced spatial regularities that are informative for geometry compression. Existing scan-aware approaches often exploit these regularities by transforming coded geometry into spherical or beam-aligned coordinate systems. However, this couples acquisition priors with geometry representation, altering spatial partitioning and quantization, and potentially preventing exact recovery of the original Cartesian geometry. We argue that acquisition priors should guide probability modeling rather than dictate the coding representation. We propose SPEM, a Scan-Prior Entropy Modeling framework that exploits LiDAR scanning regularities within the entropy model without requiring coordinate transformation. We introduce a multi-frequency spherical rotary positional encoding that captures scan-aligned spatial relationships in both backbone self-attention and decoded-context retrieval. Building upon this encoding, we develop a decoded-memory autoregressive predictor that efficiently exploits previously decoded occupancy information through reusable key/value caches. Experiments demonstrate state-of-the-art performance in both lossy and lossless LiDAR geometry compression, highlighting the effectiveness of scan-prior modeling across different coordinate representations.",
+  "abstract_ja": "",
+  "authors": [
+    "Bojun Liu",
+    "Yangzhi Ma",
+    "Jie Li",
+    "Dong Liu",
+    "Li Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16212",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "LiDAR point clouds exhibit scan-induced spatial regularities that are informative for geometry compression. Existing scan-aware approaches often exploit these regularities by transforming coded…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "SPEM: Scan-Prior Entropy Modeling for LiDAR Point Cloud Compression",
+  "url": "https://arxiv.org/abs/2611.16212",
+  "use_case": ""
+}

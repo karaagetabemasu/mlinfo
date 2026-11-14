@@ -1,0 +1,31 @@
+{
+  "abstract": "Concept erasure, or concept unlearning, in text-to-image diffusion models is usually audited with prompt attacks. A prompt attack tests whether one conditioning string still retrieves the erased concept. It does not measure the probability that the frozen generator still assigns to that concept. We introduce least-action auditing of this residual probability, and evaluate it on Stable Diffusion concept-erasure checkpoints. The least-action barrier is the minimum control cost of driving the frozen reverse process into a detector-defined concept event. This cost equals the path-space KL divergence of conditioning the model on the event, and therefore the event's negative log-probability. The estimate $ΔS_{\\mathrm{rob}}$ uses a CLIP$\\wedge$DINOv2 consensus terminal, with no retraining and no adversarial prompt. Across $18$ erased concept-mechanism pairs spanning object classes and NSFW nudity, $ΔS_{\\mathrm{rob}}$ predicts deployment leakage counted on $1{,}500$ fresh samples per model by detectors excluded from the audit (pooled Spearman $ρ{=}{-}0.76$, $p{=}5{\\times}10^{-4}$). Within every audited concept, the eraser with the higher barrier leaks less ($18/18$). On NSFW nudity the barrier orders the standard erasers exactly: UCE $ΔS_{\\mathrm{rob}}{=}3.9$ (leak $16.4\\%$) $<$ ESD $75.5$ ($9.8\\%$) $<$ RECE $224.5$ ($1.4\\%$), while Safe Latent Diffusion (SLD) stays near zero and leaks $85.5\\%$ under explicit prompts. The same trajectories repair deployed checkpoints. An audit-guided closed-form patch reduces UCE nudity leakage from $16.2\\%$ to $0/1{,}500$ and RECE church leakage by $3.3\\times$, where direction-count-matched random edits fail.",
+  "abstract_ja": "",
+  "authors": [
+    "Yifei Zhu"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10106",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Concept erasure, or concept unlearning, in text-to-image diffusion models is usually audited with prompt attacks. A prompt attack tests whether one conditioning string still retrieves the erased…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection",
+      "generation"
+    ]
+  },
+  "title": "Beyond Prompt Attacks: Least-Action Auditing of Concept Erasure",
+  "url": "https://arxiv.org/abs/2611.10106",
+  "use_case": ""
+}

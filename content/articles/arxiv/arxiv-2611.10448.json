@@ -1,0 +1,32 @@
+{
+  "abstract": "Video diffusion transformers generate high-quality videos, but attention over long spatiotemporal sequences makes inference computationally expensive. Sparse attention reduces this cost by computing only a subset of query-key interactions exactly, and recent training-free methods further approximate the remaining interactions. These methods, however, degrade quickly at high sparsity, which limits the achievable speedup. We present ESTRA (Extreme Sparsity Through Refined Attention), a training-free acceleration method that preserves generation quality even at extreme sparsity. ESTRA concentrates exact attention computation on a small set of important key-value tokens and approximates the remaining contributions with cluster representatives. To identify these tokens efficiently, it groups similar queries and uses their representatives to score individual keys. A variance-based correction further refines the attention weights of the cluster representatives, improving the accuracy of the approximation. Experiments on Wan2.1-14B and HunyuanVideo-13B show that ESTRA establishes a new quality-efficiency frontier for training-free sparse attention, achieving $3.26\\times$ and $4.71\\times$ end-to-end speedups at 5% attention density while surpassing Sol-Attn and SVG-EAR in fidelity to dense generation and on most VBench dimensions. Even at 1% density, ESTRA remains more faithful to dense generation than Sol-Attn at 12.5%, while reaching up to $5.39\\times$ speedup.",
+  "abstract_ja": "",
+  "authors": [
+    "Enhuai Liu",
+    "Yunke Wang",
+    "Yutong Wang",
+    "Changming Sun"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10448",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Video diffusion transformers generate high-quality videos, but attention over long spatiotemporal sequences makes inference computationally expensive. Sparse attention reduces this cost by computing…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "ESTRA: Enabling Extreme Attention Sparsity for Training-Free Video Diffusion Acceleration",
+  "url": "https://arxiv.org/abs/2611.10448",
+  "use_case": ""
+}

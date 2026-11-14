@@ -1,0 +1,32 @@
+{
+  "abstract": "AI-generated content (AIGC) has substantially narrowed the visual gap between natural and synthetic images, while existing detectors often rely on generator-specific artifacts and exhibit limited generalization to unseen models. This motivates a fundamental question: which intrinsic physical image characteristics provide stable, discriminative cues for distinguishing natural from AI-generated images? We investigate this by systematically identifying robust physical features and incorporating them into a vision-language representation without external textual prompts at inference. We first analyze 15 handcrafted physical descriptors across images from over 20 generative models. Based on cross-generator stability and real-fake discriminability, we propose a Feature Stability-Discriminability Validation Assessment (FSDVA) to select a compact set of reliable features. Five core features, including Laplacian variance, Sobel statistics, and residual-noise variance, are then used to construct structured textual descriptions encoding physical evidence for CLIP-based learning. We integrate these physics-enriched descriptions with image representations via a native physics-guided multimodal framework, adapting CLIP ViT-L 14 with LoRA. At inference, the model requires only the input image, with no external captions or manual prompts. On GenImage, our method achieves 99.0 percent accuracy on SDv1.4 and 96.7 percent on Wukong, with a mean of 97.23 percent across eight generative models versus 95.8 percent for C2pCLIP under the same setting. On UniversalFakeDetect, it maintains strong, stable generalization across diverse and unseen generation settings. These results show that carefully selected physical image statistics provide complementary forensic evidence to pretrained vision-language representations, enabling interpretable, more generator-agnostic AIGC detection.",
+  "abstract_ja": "",
+  "authors": [
+    "Mei Qiu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14898",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "AI-generated content (AIGC) has substantially narrowed the visual gap between natural and synthetic images, while existing detectors often rely on generator-specific artifacts and exhibit limited…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "detection",
+      "generation"
+    ]
+  },
+  "title": "From Pixels to Prompts: Physics-Guided Language Enhancement for AI-Generated Image Detection",
+  "url": "https://arxiv.org/abs/2611.14898",
+  "use_case": ""
+}

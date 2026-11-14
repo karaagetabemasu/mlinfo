@@ -1,0 +1,28 @@
+{
+  "abstract": "We study contextual bandits with $K$ actions, a class of $N$ policies, and i.i.d.\\ contexts from a distribution that the learner can sample. For any sequence of loss functions fixed before play, we give an oracle-efficient algorithm with expected regret $O(\\sqrt{KT\\log(2N)}\\,\\log(2KT))$ against the best policy in hindsight on the realized contexts. This improves the $T^{2/3}$ dependence on the horizon in prior oracle-efficient bounds and achieves the optimal regret rate in this setting up to logarithmic factors. Our algorithm perturbs policy scores using a Poisson sample of auxiliary contexts. At each sampled context, the perturbation assigned to an action is a Laplace noise draw multiplied by a scale specific to that context and action. We show that choosing these scales to minimize a convex objective determined by past observations yields the stated regret bound. We further approximate the minimizing scales by projected stochastic gradient descent using only an exact offline cost-sensitive optimization oracle that returns the optimum value. Since the table of scales can be large, the algorithm represents the SGD iterates implicitly by storing the random draws that determine each update and evaluates the scales only at queried contexts. Both the oracle complexity and the remaining resource bounds are polynomial in $T$, $K$, and $\\log(2N)$.",
+  "abstract_ja": "",
+  "authors": [
+    "Kiarash Banihashem",
+    "MohammadTaghi Hajiaghayi"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.17109",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "We study contextual bandits with $K$ actions, a class of $N$ policies, and i.i.d.\\ contexts from a distribution that the learner can sample. For any sequence of loss functions fixed before play, we…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Near-Optimal Regret for Oracle-Efficient Adversarial Contextual Bandits",
+  "url": "https://arxiv.org/abs/2611.17109",
+  "use_case": ""
+}

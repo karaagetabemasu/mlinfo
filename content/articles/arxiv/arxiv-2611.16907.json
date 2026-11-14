@@ -1,0 +1,31 @@
+{
+  "abstract": "Programmed death-ligand 1 (PD-L1) tumor proportion score (TPS) informs immunotherapy selection in non-small cell lung cancer. Near the 1% and 50% cutoffs, the score should also indicate when closer review is warranted. We designed a three-stage framework to follow the sequence of TPS assessment. Stage 1 identifies tumor regions and excludes macrophage-rich patches. Stage 2, a dual-branch cell counting network (D2Count-Net), counts PD-L1-positive and PD-L1-negative tumor cells in these regions to calculate TPS. Stage 3, TPS-Guard, an uncertainty-guided triage mechanism, reports model uncertainty as the disagreement among independently trained models, refers the most uncertain slides, and flags scores near the 1% or 50% cutoff when model estimates disagree across that cutoff. Flags state the reason for referral or alert the pathologist to possible scoring errors on auto-reported slides. In a retrospective, single-center study, 154 whole-slide images were scored by three pathologists, and the model and each pathologist were compared in turn with the mean of the other two. On the 114 slides unseen in training, model mean absolute error (MAE) was 6.96 percentage points, within the range of the three pathologists (4.24 to 8.29), and model uncertainty correlated with absolute TPS error (Spearman rho = 0.77) and inter-pathologist disagreement (rho = 0.71). After referral of the 15% most uncertain slides, model and pathologist MAE both decreased. Applied without retraining to an external, publicly available dataset, TPS-Guard still directed review to higher-error cases, and referring more uncertain cases raised sensitivity at the 50% cutoff. TPS-Guard provides reasons for reviewing individual automated scores and identifies slides that also produce greater disagreement among pathologists. Prospective reader studies should assess TPS-Guard's effect on TPS reporting.",
+  "abstract_ja": "",
+  "authors": [
+    "Kesi Xu",
+    "Ayesha Azam",
+    "Tanvier Kaur",
+    "Monika Kondratowicz",
+    "Kinza Asim"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16907",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Programmed death-ligand 1 (PD-L1) tumor proportion score (TPS) informs immunotherapy selection in non-small cell lung cancer. Near the 1% and 50% cutoffs, the score should also indicate when closer…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Automated PD-L1 Tumor Proportion Scoring with Uncertainty-Guided Triage in Non-Small Cell Lung Cancer",
+  "url": "https://arxiv.org/abs/2611.16907",
+  "use_case": ""
+}

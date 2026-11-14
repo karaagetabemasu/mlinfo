@@ -1,0 +1,32 @@
+{
+  "abstract": "Enabling robots to infer interaction-relevant physical properties from vision before contact would improve planning and control in unstructured environments. Vision provides useful pre-contact information, but appearance alone is often ambiguous: visually similar regions can induce different friction, stiffness, or sinkage responses upon contact. Existing approaches often collapse this ambiguity to a point estimate or aggregate experience through fixed semantic classes, limiting their ability to preserve distinct physical regimes. Instead, we propose a real-time estimator that replaces semantic class indexing with an interaction-grounded Gaussian-mixture posterior over latent physical parameters, conditioned directly on continuous visual embeddings. Our approach maintains interaction-derived Gaussian parameter estimates, typically from inverse modeling, as mixture components while using embedding similarity to retrieve and weight relevant past interactions for each new query region. A support-aware fusion mechanism incorporates a conditional generative prior model when interaction history is sparse, while a learned embedding refinement improves retrieval relevance without discretizing the representation. Our experiments show that the estimator recovers multimodal physical beliefs, rejects unrelated interaction history, avoids spatial map discretization, and evaluates at controller rates. In a high-fidelity autonomous racing simulation with unknown low- and high-friction surface regions, the posterior enables the controller to adapt over repeated laps as interaction evidence accumulates, improving performance while maintaining friction-aware behavior.",
+  "abstract_ja": "",
+  "authors": [
+    "Alexander Borca-Tasciuc",
+    "Prayag Sharma",
+    "Franck Djeumou"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10107",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Enabling robots to infer interaction-relevant physical properties from vision before contact would improve planning and control in unstructured environments. Vision provides useful pre-contact…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Beyond Semantic Classes: Online Physical Parameter Estimation via Embedding-Conditioned Gaussian Mixtures",
+  "url": "https://arxiv.org/abs/2611.10107",
+  "use_case": ""
+}

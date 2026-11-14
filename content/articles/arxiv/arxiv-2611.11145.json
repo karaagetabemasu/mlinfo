@@ -1,0 +1,34 @@
+{
+  "abstract": "Recent advances in reinforcement learning have made verifiable rewards a central post-training paradigm for improving multimodal reasoning. However, methods such as GRPO remain data- and compute-inefficient, spending rollout and annotation budget on prompts that provide little learning signal. We propose DISCOVER, an online data-discovery framework for budgeted multimodal GRPO that enables vision-language models to dynamically identify prompts that are most useful for the current policy. DISCOVER first organizes the multimodal sample pool into semantic clusters and queries a small set of density-diverse representative samples to obtain initial reward observations. During training, it estimates the utility of unannotated samples by transferring sparse reward feedback from queried samples. Since sample utility changes as the policy evolves, DISCOVER dynamically updates these estimates with recency-weighted rollout observations. It then selects only high-utility prompts for annotation using a policy-conditioned score that accounts for reward variance and difficulty. Once the discovery budget is exhausted, DISCOVER continues with utility-based replay. Experiments on ViRL39K and VLAA-Thinking with Qwen3-VL-2B show that DISCOVER substantially improves multimodal mathematical reasoning under a strict 10% unique-sample budget, outperforming budget-matched random selection, hard-example sampling, full-pool GRPO under the same training-step budget, and online selection baselines. Ablations further validate the importance of semantic coverage, online reward transfer, and stable discovery cadence, establishing DISCOVER as a practical framework for data-efficient multimodal RL post-training.",
+  "abstract_ja": "",
+  "authors": [
+    "Peyman Gholami",
+    "Shivam Chandhok",
+    "Saber Malekmohammadi",
+    "Shayan Shams",
+    "Robert Xiao"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11145",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Recent advances in reinforcement learning have made verifiable rewards a central post-training paradigm for improving multimodal reasoning. However, methods such as GRPO remain data- and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "DISCOVER: Online Variance-Guided Data Discovery for Budgeted Multimodal GRPO",
+  "url": "https://arxiv.org/abs/2611.11145",
+  "use_case": ""
+}

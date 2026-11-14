@@ -1,0 +1,28 @@
+{
+  "abstract": "Discovering causal structures in multivariate time series (MTS) is critical in domains such as finance and neuroscience, yet remains challenging in practice due to three distinct obstacles. First, MTS are routinely corrupted by missing values, where naive impute-then-discover pipelines distort the underlying data distribution and yield spurious causal graphs. Second, identifying instantaneous effects is difficult even on complete data, and missingness further entangles imputation with graph recovery. Third, real-world data frequently exhibits heteroscedastic noise with variance driven by both instantaneous and lagged causes, violating the core assumptions of standard discovery methods. Existing approaches fail to address these challenges concurrently, typically presuming complete data, homoscedastic noise, or strictly time-lagged relationships. Crucially, we show through ablation studies that resolving these issues sequentially, rather than jointly, leads to a substantial degradation in performance. To overcome this, we introduce Cheesefill, an optimal transport framework for causal structure learning under missingness and heteroscedastic noise. Cheesefill parameterizes causal mechanisms using conditional normalizing flows and jointly learns a stochastic correction map that refines naive imputations into trajectories consistent with the inferred causal mechanisms. Theoretically, we prove that optimizing over stochastic correction maps is equivalent to a conditional kernel reformulation of the Kantorovich problem, from which our neural parameterization yields a tractable objective. Extensive experiments on synthetic and real-world benchmarks demonstrate that Cheesefill consistently outperforms existing baselines across diverse missingness regimes.",
+  "abstract_ja": "",
+  "authors": [
+    "Abdellah Rahmani",
+    "Pascal Frossard"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10668",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "video",
+  "summary": "Discovering causal structures in multivariate time series (MTS) is critical in domains such as finance and neuroscience, yet remains challenging in practice due to three distinct obstacles. First,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "time-series"
+    ],
+    "task": []
+  },
+  "title": "Causal Heteroscedastic Structure Learning From Incomplete Temporal data",
+  "url": "https://arxiv.org/abs/2611.10668",
+  "use_case": ""
+}

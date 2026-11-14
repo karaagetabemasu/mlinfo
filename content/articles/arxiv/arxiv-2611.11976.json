@@ -1,0 +1,27 @@
+{
+  "abstract": "Sequence-to-function models such as AlphaGenome and Borzoi read up to a megabase of DNA and score a genetic variant by comparing their predictions for the reference and alternate sequences. Insertions and deletions (indels) are costly to score, because an indel usually shifts the unchanged DNA after it onto a different pooling grid, which prevents direct reuse of the reference's encoder activations. The AlphaGenome Atlas scored more than 100 million indels with three full model passes each, although the DNA after an indel matches the reference shifted by the indel's length. We present ShiftCache, an exact reuse system that encodes each shifted reference once and shares it among all variants scored in the same window with the same shift. ShiftCache copies every encoder output a variant can reuse and recomputes the rest in batched tiles. On held-out AlphaGenome windows shared by many indels, in strict fp32 on one A6000, ShiftCache is 3.5 to 6.5$\\times$ faster than deduplicated dense execution and 1.6 to 2.7$\\times$ faster than our adaptation of layer-by-layer reuse to indels. It is 3.5 to 4.1$\\times$ faster than dense reimplementations of two published analyses with Borzoi and AlphaGenome, and 2.6$\\times$ faster than dense execution with Enformer. Scoring each variant in its own centered 131 kb window makes ShiftCache only 1.36$\\times$ faster than deduplicated dense execution, and highly diverse insertion lengths or many dispersed edits can make it slower than layer-by-layer reuse or dense execution. For encoders that meet our conditions, ShiftCache computes the same predictions as dense execution in exact arithmetic. On an A6000, every checked output of the default AlphaGenome and Borzoi runs matches dense execution within an absolute and relative tolerance of $10^{-5}$. With larger tile batches, with Enformer or on an H100, a small fraction of values exceeds this tolerance.",
+  "abstract_ja": "",
+  "authors": [
+    "Sina Barazandeh",
+    "Arth Banka",
+    "Jose Lugo-Martinez"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11976",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Sequence-to-function models such as AlphaGenome and Borzoi read up to a megabase of DNA and score a genetic variant by comparing their predictions for the reference and alternate sequences.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "ShiftCache: Fast and Exact Indel Effect Prediction by Reusing Shifted Reference Encodings",
+  "url": "https://arxiv.org/abs/2611.11976",
+  "use_case": ""
+}

@@ -1,0 +1,28 @@
+{
+  "abstract": "Wearable Inertial Measurement Units (IMUs) enable pervasive Human Activity Recognition (HAR), but traditional Deep Neural Networks (DNNs) suffer from an \"arithmetic-latency deadlock\" due to dense floating-point MAC operations. While Spiking Neural Networks (SNNs) offer ultra-low power, existing ones face spatial blind spots, rigid neurons, and gradient degradation. To address these, we propose TSFFormer, a purely spiking Fourier Transformer for Green HAR. It introduces two key innovations: (1) a MultiHeadFourier attention that performs frequency-domain global mixing, reducing complexity from \\(O(V^2)\\) to \\(O(V\\log V)\\), eliminating spatial blind spots, and saving \\(\\sim\\)50% GPU memory; and (2) a dual-compartment Temporal Spiking LIF (TSLIFNode) that utilizes dynamic thresholds to adapt to non-stationary rhythms and mitigate gradient degradation. Extensive experiments on 8 public IMU benchmarks demonstrate that TSFFormer surpasses state-of-the-art SNNs and even the classic DeepConvLSTM, achieving a \\(\\sim\\)3\\(\\times\\) faster training speed with an energy footprint of 0.1 pJ. Ablation studies confirm the synergistic effect of our modules, providing a highly accurate, ultra-low-power event-driven paradigm for wearable sensing.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiale Deng",
+    "Shuiying Xiang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.12090",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Wearable Inertial Measurement Units (IMUs) enable pervasive Human Activity Recognition (HAR), but traditional Deep Neural Networks (DNNs) suffer from an \"arithmetic-latency deadlock\" due to dense…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "TSFFormer: A Frequency-Domain Spike Transformer for Green Human Activity Recognition",
+  "url": "https://arxiv.org/abs/2611.12090",
+  "use_case": ""
+}

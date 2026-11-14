@@ -1,0 +1,33 @@
+{
+  "abstract": "Open-Vocabulary Multi-Label Recognition (OV-MLR) aims to identify all queried semantic concepts present in an image. Existing methods mainly improve global image-text matching or text-side representations, leaving local prediction largely under-explored. In this paper, we revisit local prediction and reveal that it can serve as a strong discriminative branch once two properties are properly handled: spatial consistency of local visual features and compatibility-aware local competition. This perspective is motivated by local semantic sparsity: each image region is related to only a small subset of queried concepts, while compatible concepts of different granularities or types may still coexist locally. We instantiate this perspective with LoCo, a selective Local Competition framework for OV-MLR. LoCo adopts a spatially consistent visual encoder to reduce local feature entanglement, and introduces Selective Softmax to impose competition only among locally incompatible categories while preserving compatible responses. Multi-scale inference further improves local prediction at different scales. LoCo can also be ensembled with an existing global predictor to provide complementary image-level context. Experiments on four multi-label benchmarks show that standalone LoCo improves average F1-score and mAP over TagCLIP by 3.4% and 3.8%, respectively. LoCo + DualPrompt achieves the highest averages among the compared methods, with gains of 4.8% and 5.2% over TagCLIP. Our results suggest that local semantic sparsity offers a useful basis for developing more discriminative open-vocabulary multi-label recognition methods. The code is available at https://github.com/lee-plus-plus/LoCo.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhuoming Li",
+    "Bo Han",
+    "Xiaoyu Wang",
+    "Yuheng Jia"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/lee-plus-plus/LoCo",
+  "hasCode": true,
+  "id": "arxiv-2611.10321",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Open-Vocabulary Multi-Label Recognition (OV-MLR) aims to identify all queried semantic concepts present in an image. Existing methods mainly improve global image-text matching or text-side…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "LoCo: Selective Local Competition for Discriminative Open-Vocabulary Multi-Label Recognition",
+  "url": "https://arxiv.org/abs/2611.10321",
+  "use_case": ""
+}

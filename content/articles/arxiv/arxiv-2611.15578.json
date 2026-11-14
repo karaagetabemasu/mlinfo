@@ -1,0 +1,30 @@
+{
+  "abstract": "Autoregressive electronic health record (EHR) foundation models may disclose training information at inference, yet clinical predictability makes patient-specific memorisation difficult to distinguish from generalisation. We evaluate fixed-window token reconstruction, sensitive-attribute disclosure, and random patient-level canaries in GPT-2-style models trained on MIMIC-IV, across early, best-validation, and final checkpoints. Reconstruction improves with additional context, but training--held-out differences remain small. Trajectory-unique prompts containing limited clinical information produce no excess sensitive disclosure for training patients. In a matched model with random binary patient-level canaries, training-patient label-recovery AUROC increases from 0.512 to 0.549 while held-out recovery remains at chance. An overfit 1,000-patient positive control achieves near-perfect recovery, confirming sensitivity to strong memorisation. These results reveal weak cohort-level memorisation but no reliable patient-level disclosure under the evaluated attacks. They motivate clinically grounded inference-time audits that can detect patient-specific memorisation in existing models without retraining with canaries.",
+  "abstract_ja": "",
+  "authors": [
+    "Inigo Stibbe",
+    "Joshua Placidi",
+    "Padmanabhan Ramnarayan",
+    "A. Aldo Faisal"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15578",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Autoregressive electronic health record (EHR) foundation models may disclose training information at inference, yet clinical predictability makes patient-specific memorisation difficult to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Constructing and Validating Memorisation Audits for EHR Foundation Models",
+  "url": "https://arxiv.org/abs/2611.15578",
+  "use_case": ""
+}

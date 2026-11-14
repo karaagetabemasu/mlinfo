@@ -1,0 +1,32 @@
+{
+  "abstract": "Radiotherapy contour ranking can support quality assurance, but vision-language model (VLM) gains may reflect supervision, score construction, available inputs, or representation access. We evaluated frozen MedGemma 1.5 in a single-institution study, a 12-patient held-out HaN-Seg test, five-fold cross-fitting on 30 non-test HaN-Seg patients, and transfer without refitting to 120 SegRap2023 patients. On held-out HaN-Seg, a supervised readout of the final prompt state exceeded a supervised readout of the model's yes/no output probabilities by +0.3047 pooled average precision (AP; 95% patient-bootstrap interval [+0.2822, +0.3269]); the advantage persisted against a parameter-count-matched nonlinear control. A readout of projected visual tokens exceeded the final-state readout in cross-fitting and transfer (+0.0706 AP averaged equally across patients on SegRap; 95% interval [+0.0607, +0.0804]), while a structured panel-feature readout remained competitive with visual tokens. The anatomy-conditioned readout did not demonstrate an advantage over the native-feature comparator. These results motivate visual-token and structured-feature controls in medical-imaging VLM evaluations; outcomes were computational or synthetic, not clinical acceptability.",
+  "abstract_ja": "",
+  "authors": [
+    "Jaden Moon",
+    "Caiwen Jiang",
+    "Songlin Zhao",
+    "Wei Liu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15370",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Radiotherapy contour ranking can support quality assurance, but vision-language model (VLM) gains may reflect supervision, score construction, available inputs, or representation access. We evaluated…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Supervision-Aware Evaluation of MedGemma for Reference-Assisted Radiotherapy Contour Ranking",
+  "url": "https://arxiv.org/abs/2611.15370",
+  "use_case": ""
+}

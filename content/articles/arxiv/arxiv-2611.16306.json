@@ -1,0 +1,29 @@
+{
+  "abstract": "While conditional diffusion models have achieved remarkable success in generation tasks, they memorize spurious correlations within training data. This causes them to deviate from ideal target distributions. Minimizing a covariate shift-adjusted target risk can address this issue. However, retraining models from scratch for different distributions is computationally prohibitive. To overcome this limitation, we propose DR-Diff, a framework that efficiently fine-tunes pre-trained conditional diffusion models. Specifically, DR-Diff leverages a functional gradient approach to derive a pseudo-target. This pseudo-target captures the residual between the base model's noise prediction and the ground-truth noise under the target distribution. Training the model to fit this pseudo-target enables efficient target adaptation. Theoretically, we prove that DR-Diff guarantees target risk reduction at the population level. It also achieves a pseudo-doubly robust property, providing resilience against density ratio estimation errors and base model misspecifications. Empirically, DR-Diff matches the noise prediction accuracy of models trained from scratch on synthetic datasets. Furthermore, it mitigates inter-group disparities in downstream classification tasks.",
+  "abstract_ja": "",
+  "authors": [
+    "Eiichi Sakurai",
+    "Kenji Yamanishi"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16306",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "While conditional diffusion models have achieved remarkable success in generation tasks, they memorize spurious correlations within training data. This causes them to deviate from ideal target…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "generation"
+    ]
+  },
+  "title": "Overcoming Spurious Correlations in Conditional Diffusion Models via Doubly Robust Target Correction",
+  "url": "https://arxiv.org/abs/2611.16306",
+  "use_case": ""
+}

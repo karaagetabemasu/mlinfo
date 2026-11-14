@@ -1,0 +1,32 @@
+{
+  "abstract": "We introduce Latent-WAM++, a representation-centered World Action Model (WAM) for end-to-end autonomous driving. Existing WAMs are primarily trained to predict future states or final actions, leaving the intermediate world and action representations that connect prediction to planning only indirectly constrained. Latent-WAM++ matches the supervision of each representation to its role in planning. World Representation Construction combines scene-ego future prediction, SIGReg-based distribution stabilization, and frozen geometric priors to learn a temporally predictive, non-degenerate, and geometry-aware world representation without an EMA target encoder. Trajectory MeanFlow Planner directly predicts multimodal trajectory proposals while being optimized with an Improved MeanFlow velocity-space objective, enabling one-step sampling. Visual-Action Representation Alignment further aligns the resulting pre-output action features with a stop-gradient target derived from current visual semantics. Latent-WAM++ achieves state-of-the-art performance on NAVSIM v2 and under zero-shot evaluation on HUGSIM, reaching 90.1 EPDMS on NAVSIM v2 and 47.0 average RC and 30.1 average HD-Score on HUGSIM. Training the planner end to end costs 190 GPU-hours for Latent-WAM++ versus 1,600 for Latent-WAM, a reduction of 88.1%.",
+  "abstract_ja": "",
+  "authors": [
+    "Yichen Zhang",
+    "Yupeng Zheng",
+    "Linbo Wang",
+    "Pengxuan Yang",
+    "Zebin Xing"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10632",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "We introduce Latent-WAM++, a representation-centered World Action Model (WAM) for end-to-end autonomous driving. Existing WAMs are primarily trained to predict future states or final actions, leaving…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Latent-WAM++: Shaping World and Action Representations for End-to-End Autonomous Driving",
+  "url": "https://arxiv.org/abs/2611.10632",
+  "use_case": ""
+}

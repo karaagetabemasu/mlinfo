@@ -1,0 +1,27 @@
+{
+  "abstract": "Reliable tip-over prevention is critical for planetary rovers operating in unstructured environments where communication delays prevent real-time human intervention. Existing learning-based approaches typically optimize a single prediction objective, limiting their ability to capture both gradual instability evolution and abrupt terrain disturbances. This work presents a hierarchical multi-channel tip-over prediction framework based on isolated temporal learning. A multi-horizon Temporal Convolutional Network (TCN) learns progressive instability patterns from inertial measurements, while a Gated Recurrent Unit (GRU)-based forward dynamics model predicts nominal rover motion and detects unexpected dynamic deviations through prediction residuals. These complementary signals are integrated through decision-level fusion and priority-based arbitration to generate graded safety actions, including early warning and emergency braking. The proposed system is deployed as an Orocos Real-Time Toolkit (RTT)-based safety component within the Rock robotics framework, operating at 100 Hz on a planetary rover software stack. Experiments on Inertial Measurement Unit (IMU) samples collected across heterogeneous terrains demonstrate 97.58% event prediction coverage with a 1.82s median lead time, outperforming individual prediction channels. The results validate that isolated temporal models combined through hierarchical decision fusion provide a robust solution for real-time rover safety in uncertain terrain.",
+  "abstract_ja": "",
+  "authors": [
+    "Siddhant Shete",
+    "Raul Dominguez",
+    "Frank Kirchner"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.12261",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Reliable tip-over prevention is critical for planetary rovers operating in unstructured environments where communication delays prevent real-time human intervention. Existing learning-based…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Hierarchical Multi-Channel Tip-Over Prediction via Isolated Temporal Models for Planetary Rover Safety",
+  "url": "https://arxiv.org/abs/2611.12261",
+  "use_case": ""
+}

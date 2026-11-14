@@ -1,0 +1,30 @@
+{
+  "abstract": "Post-hoc group averaging (or test-time augmentation) is a simple way to impose symmetry on a trained predictor without changing its architecture or retraining it. For finite and compact groups, averaging over a normalized Haar measure on the group gives the Reynolds operator: a canonical projection onto invariant or equivariant predictors with known non-increasing risk guarantees under certain assumptions. This paper provides numerical experiments on physics emulation models that demonstrate the effectiveness of the approach in this setting. We then extend this framework to non-compact group symmetries. For non-compact groups, the Haar measure cannot be normalized, so group averaging cannot be defined in the same way. We replace it with three alternatives: the Weyl unitary trick (which requires complexifying the space and extending the predictor), a data-dependent orthogonal projection (which involves a non-trivial optimization on the space of invariant or equivariant functions), and a frame averaging approach (which involves mapping each point to a set of orbit representatives). We illustrate the constructions theoretically and empirically on the unit-rescaling group and the Lorentz group. Our results show that in the non-compact case, the Weyl trick and frame averaging do not provide a consistent improvement over the baseline, except where the test data is out-of-distribution (an orders-of-magnitude improvement in this case) and, for the Weyl trick, in low-data regimes. The orthogonal projection can provide improvements in-distribution and out-of-distribution. We also observe that models trained directly on invariant features matched or beat the projection of an unconstrained one. We conclude that post-hoc symmetrization extends to non-compact groups, but it does not consistently outperform training a symmetric model.",
+  "abstract_ja": "",
+  "authors": [
+    "Wenjie Zhou",
+    "Valentino F. Foit",
+    "David W. Hogg",
+    "Soledad Villar"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.08992",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Post-hoc group averaging (or test-time augmentation) is a simple way to impose symmetry on a trained predictor without changing its architecture or retraining it. For finite and compact groups,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "anomaly-detection"
+    ]
+  },
+  "title": "Enforcing Symmetries on Pre-trained ML Models for Physics",
+  "url": "https://arxiv.org/abs/2611.08992",
+  "use_case": ""
+}

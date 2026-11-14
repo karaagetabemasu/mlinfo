@@ -1,0 +1,31 @@
+{
+  "abstract": "Extended reasoning can help language models solve complex problems, but long responses often contain both useful computations and redundant checks. Conventional length penalties encourage shorter responses without distinguishing the functions of intermediate steps. We propose Phase-Conditioned Reward Shaping (PCRS), a framework that combines phase identification with training-time reward allocation. We investigate two classification routes: PCRS-H with a hidden-state classifier and PCRS-T with a frozen text classifier. Our main text classifier implementation assigns overlapping reasoning, execution, and revision labels to native chunks, then uses these labels and exact repetition to adjust existing token penalties. We compare the completed configurations on six mathematical and scientific reasoning benchmarks and examine four reward-weight settings with the text classifier. Compared with a baseline using token-level length penalties, the default text classifier configuration reduces mean response length by 3.13%; sampled Pass@1 is approximately 62.07% for both methods, while oracle Pass@16 rises from 86.08% to 87.67%. These results show how phase-informed penalty allocation can reduce output volume and improve multi-attempt coverage without inference-time classification.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhe Chen",
+    "Xiaolin Zhou",
+    "Xiyang Hu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11024",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Extended reasoning can help language models solve complex problems, but long responses often contain both useful computations and redundant checks. Conventional length penalties encourage shorter…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Phase-Conditioned Reward Shaping for Token-Efficient LLM Reasoning",
+  "url": "https://arxiv.org/abs/2611.11024",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Stroke-based rendering is often optimized as a pixel-level reconstruction task. This over-reliance on global error reduction not only degrades strokes into fragmented curves due to a lack of structured planning, but also allows locally defective primitives to be concealed by overlapping layers. To address these issues, we introduce a model-guided framework for stroke-audited rendering. Our framework uses Quadratic Bezier Splatting to analytically model continuous curved strokes with efficient differentiable alpha compositing. Built on this renderer, a feedforward multi-scale stroke decoder provides a structural initialization with learned stroke-scale allocation, while test-time stroke optimization supplies the reconstruction capacity needed for high-fidelity refinement. We further propose a single-stroke audit mechanism that explicitly evaluates local stroke quality, preventing defective primitives from surviving optimization through layer-wise compensation. Compared with existing methods, our approach achieves coherent layouts, improves PSNR by up to 5.46 dB, yields a 16% more compact representation, and accelerates combined renderer forward and backward computation by a factor of 220.3.",
+  "abstract_ja": "",
+  "authors": [
+    "Jinfan Liu",
+    "Xuhan Zhan",
+    "Mengqin Zhao",
+    "Guangyi Deng",
+    "Wuze Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10713",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Stroke-based rendering is often optimized as a pixel-level reconstruction task. This over-reliance on global error reduction not only degrades strokes into fragmented curves due to a lack of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Quadratic Bezier Splatting with Structural Initialization for Efficient Painting Rendering",
+  "url": "https://arxiv.org/abs/2611.10713",
+  "use_case": ""
+}

@@ -1,0 +1,26 @@
+{
+  "abstract": "In sparse principal component analysis (SPCA) with several components, each must be sparse and all must be pairwise orthogonal. When the supports of the components overlap, these two requirements interact. For a covariance matrix of fixed rank, polynomial-time algorithms with optimality or approximation guarantees are known for one component, and for several components with disjoint supports or with a common support. We study the general model, with individual sparsity constants and arbitrary support overlaps. We are given a rational $n\\times r$ matrix $R$ and $d$ sparsity constants $s_i \\le n$, and the goal is to find an $n\\times d$ matrix $X$ with orthonormal columns that maximizes $\\|R^\\top X\\|_F^2$, such that column $i$ has at most $s_i$ non-zero entries. Here $RR^\\top$ plays the role of the covariance matrix and has rank at most $r$. We show that SPCA is NP-hard even when $r = d = 2$, but admits a fully polynomial-time approximation scheme (FPTAS) when $r$ and $d$ are fixed. The returned solution has exactly orthonormal columns, and its entries are real algebraic numbers in an exact representation. For fixed $ε$, the number of steps of the algorithm is linear in $n$ up to a polylogarithmic factor. Our approach reduces SPCA to a sparse version of the orthogonal Procrustes problem, that is, to maximizing a linear function over the feasible region of SPCA. We show that this problem is NP-hard even for $d = 2$, and we give an FPTAS for it when $d$ is fixed. This FPTAS combines approximate dynamic programming over the rows, two-column updates that restore exact orthogonality, and an exact computation of the few variables for which these updates are not available.",
+  "abstract_ja": "",
+  "authors": [
+    "Alberto Del Pia",
+    "Dekun Zhou"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15810",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "In sparse principal component analysis (SPCA) with several components, each must be sparse and all must be pairwise orthogonal. When the supports of the components overlap, these two requirements…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Sparse PCA with Overlapping Supports: NP-Hardness and an FPTAS",
+  "url": "https://arxiv.org/abs/2611.15810",
+  "use_case": ""
+}

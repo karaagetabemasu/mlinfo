@@ -1,0 +1,30 @@
+{
+  "abstract": "Long-horizon forecasting of neural population activity tests whether a model has captured dynamics that remain predictive well beyond the observed history. Prediction quality typically declines as the horizon grows, yet neither short-horizon accuracy nor teacher-forced evaluation, which supplies the true activity preceding each predicted step, reveals how well models sustain predictions from an initial history alone. We compare direct multi-step prediction and autoregressive rollout on spiking recordings across horizons and introduce NeuroHorizon, which pairs event-based spike encoding with a causal decoder for population firing rates. Its hierarchical prediction memory keeps recent predictions at full temporal resolution and compresses earlier ones into segment summaries, giving the decoder both local detail and longer-range context. Under teacher-forced training this memory holds ground-truth activity, whereas during rollout it holds the model's own predictions. To reduce this mismatch, we train with scheduled sampling, progressively exposing the decoder to its own predictions. From 500 ms of macaque motor-cortex activity, NeuroHorizon achieves the highest forward-prediction score among the evaluated autonomous models at all four horizons from 100 to 1000 ms, and its per-bin predictions remain above a mean-firing-rate baseline across nearly the full 1 s window. Complementary experiments on macaque sensorimotor and mouse multi-region recordings show that performance generally increases with model and data size, alongside improved prediction after cross-subject pretraining and fine-tuning. Together, these results clarify how forecasting performance changes across horizons and offer an effective approach to long-horizon forecasting of neural population activity.",
+  "abstract_ja": "",
+  "authors": [
+    "Peng Jiang",
+    "Xiaoxuan Jia"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10617",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Long-horizon forecasting of neural population activity tests whether a model has captured dynamics that remain predictive well beyond the observed history. Prediction quality typically declines as…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "forecasting"
+    ]
+  },
+  "title": "NeuroHorizon: Long-Horizon Forecasting of Neural Population Activity with Hierarchical Memory",
+  "url": "https://arxiv.org/abs/2611.10617",
+  "use_case": ""
+}

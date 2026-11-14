@@ -1,0 +1,30 @@
+{
+  "abstract": "We introduce a graph attention network for reconstructing near-surface air temperature fields from incomplete observations. The model represents each grid cell as a node connected to its $k$ nearest neighbors, with attention weights that depend on node features, distance, and land-ocean transitions. This graph representation avoids the polar distortions associated with treating the globe as a flat latitude-longitude image, as most deep learning reconstruction methods do. This is particularly relevant for historical temperature records, which extend back to the mid-nineteenth century but remain incomplete, with the largest gaps early in the record and at high latitudes. We train our model on CMIP6 CESM2 historical simulations masked with the time-varying HadCRUT5 observational coverage from 1850 to 2014. We then compare our approach with ordinary kriging, GraphEM, and the LaMa inpainting network on a held-out realization. The graph model achieves the lowest spatial RMSE (0.997 K), 10.1% lower than LaMa and approximately 31% lower than kriging and GraphEM. The largest gains occur in the Arctic and Antarctic, while LaMa remains slightly more accurate in the densely observed tropics. The graph model's error also falls faster as coverage increases, so its advantage over LaMa grows by more than a third from the 1850s to the 2000s. An ablation study shows that the model's skill comes mainly from the geometric graph construction rather than from auxiliary physical covariates.",
+  "abstract_ja": "",
+  "authors": [
+    "Emma C. Weber",
+    "Dominique Guillot",
+    "Daniyar Abykhanov",
+    "Julien Emile-Geay"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15598",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "We introduce a graph attention network for reconstructing near-surface air temperature fields from incomplete observations. The model represents each grid cell as a node connected to its $k$ nearest…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Imputing Missing Near-Surface Air Temperature using Graph Attention Networks with Distance-Aware Edge Features",
+  "url": "https://arxiv.org/abs/2611.15598",
+  "use_case": ""
+}

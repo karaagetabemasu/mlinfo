@@ -1,0 +1,33 @@
+{
+  "abstract": "Englacial layers in radio-echo-sounding radargrams (subsurface ice images) encode the climate and flow history of ice sheets and glaciers. However, large-scale extraction is hindered by time-consuming manual annotation and semi-automated detectors that produce fragmented rather than continuous horizons. We address two challenges: reconstructing complete layers from partial detections across radargram profiles and validating layer continuity across adjacent tile boundaries. We introduce a slope-aware greedy fragment-linking algorithm that reconstructs full-width layers using row-similarity gating and an exponentially weighted moving average (EWMA) slope predictor. Each reconstruction receives a content-based hash ID for stable cross-radargram identification. For quantitative evaluation, we generate SyntheIce, a synthetic dataset of 600 radargrams spanning multiple complexity levels and realistic noise conditions, including 150 wide radargrams divided into four adjacent tiles. All samples include exact ground-truth annotations. We evaluate the dataset using XCheck, a consistency-based validation framework, extending its original two-image setting to four consecutive tiles and enforcing continuity at every boundary. This demonstrates the dataset's utility for developing and evaluating real-world annotation algorithms. Our findings extend beyond ice science: when spatial features are fragmented but retain consistent local geometry, trajectory-based linking is more reliable than appearance-based matching. Evaluation against expert-labeled real radargrams demonstrates high precision, recall, F1-score, and mean IoU, supporting the method's transfer to real-world data.",
+  "abstract_ja": "",
+  "authors": [
+    "Muhammad Behroze Hassan",
+    "Bayu Adhi Tama",
+    "Sanjay Purushotham",
+    "Vandana P. Janeja"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14728",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Englacial layers in radio-echo-sounding radargrams (subsurface ice images) encode the climate and flow history of ice sheets and glaciers. However, large-scale extraction is hindered by…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "audio"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "SyntheIce: A Synthetic Radargram Annotation Benchmark for Englacial Layer Reconstruction",
+  "url": "https://arxiv.org/abs/2611.14728",
+  "use_case": ""
+}

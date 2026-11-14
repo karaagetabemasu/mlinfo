@@ -1,0 +1,27 @@
+{
+  "abstract": "Sampling-based model predictive control (MPC) is treated as a family of distinct algorithms: predictive sampling, MPPI, the cross-entropy method, and their biased, colored-noise, and annealed variants all sample control sequences and reweight them by cost. We show a single Sequential Monte Carlo (SMC) inference algorithm implements them all, specified by three independent axes: the proposal, the update rule that reduces cost-weighted particles to a nominal plan, and the effective-sample-size threshold for resampling. We evaluate SMC-based planning on MuJoCo non-linear control, open-loop navigation through obstacle fields, 7-DoF motion planning, and non-prehensile push-T, in simulation and on a Franka FR3. Resampling combats particle degeneracy at long horizons. At a 28-knot horizon in our navigation domain it cut the collision rate by 30% over non-resampling baselines. Programmable proposals improve push-T success over perturbative baselines, improving from 1% to 100% in simulation and 10% to 90% on hardware.",
+  "abstract_ja": "",
+  "authors": [
+    "Austin Garrett",
+    "Muyang Yan",
+    "Zachary Kingston"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10877",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Sampling-based model predictive control (MPC) is treated as a family of distinct algorithms: predictive sampling, MPPI, the cross-entropy method, and their biased, colored-noise, and annealed…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Sampling-based Model Predictive Control as Sequential Monte Carlo Inference",
+  "url": "https://arxiv.org/abs/2611.10877",
+  "use_case": ""
+}

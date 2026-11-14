@@ -1,0 +1,30 @@
+{
+  "abstract": "Large language models (LLMs) often do not produce calibrated uncertainty estimates for their answers. We propose CAELUM, a framework that builds semantic prediction sets while separating aleatoric from epistemic uncertainty. CAELUM samples answers using an ensemble of clarification prompts, clusters them by semantic equivalence, and estimates the aleatoric and epistemic components via kernel-based von Neumann entropy before calibrating nonconformity scores with split conformal prediction. We use a weight $w_λ(x)=1+U_{\\mathrm{ale}}(x)+λ\\,U_{\\mathrm{epi}}(x)$ to control for the contribution of the epistemic uncertainty of each instance and fit a coefficient $λ^\\star$ to minimize prediction set size. When the objective is nonflat and selection is stable across splits, $λ^\\star$ could be a diagnostic, where large values may indicate epistemic dominance (retrieve, abstain) and $λ^\\star\\to 0$ aleatoric dominance (clarify). For individual queries, a log ratio $R(x)$ compares the weighted epistemic component with the aleatoric component. Theoretically, we demonstrate that the coverage is capped by matchability, the fraction of items whose reference answer appears in any sampled cluster. Empirically, this matchability can be predicted from the original question features using a lightweight classifier. We use those predictions to define a stratum and derive a conformal coverage bound within it. Across 30 LLM and dataset combinations (4-32B), mean coverage is 0.74 in the learned stratum versus 0.65 overall, averaged over the 78 evaluations using the learned classifier. Project page: https://unco3892.github.io/caelum/",
+  "abstract_ja": "",
+  "authors": [
+    "Ilia Azizi"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10738",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Large language models (LLMs) often do not produce calibrated uncertainty estimates for their answers. We propose CAELUM, a framework that builds semantic prediction sets while separating aleatoric…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification",
+      "generation"
+    ]
+  },
+  "title": "Matchability-Aware Conformal Prediction for Open-Ended Language Model Generation",
+  "url": "https://arxiv.org/abs/2611.10738",
+  "use_case": ""
+}

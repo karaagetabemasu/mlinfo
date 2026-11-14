@@ -1,0 +1,34 @@
+{
+  "abstract": "More text-to-video models are available, but many remain limited to low resolutions. Training them for higher resolutions is costly, while existing training-free methods still struggle with fine detail, scene structure, and efficiency. We propose TRACE, a training-free method that synchronizes low- and high-resolution generation trajectories. During early denoising, TRACE aligns predicted scene content at corresponding noise levels. It computes high-resolution updates from low-resolution predictions and the current high-resolution state, without high-resolution model inference. The high-resolution trajectory retains fine-grained variation for generating new details. Local window attention then refines fine details in a shared high-resolution latent state. TRACE checks suspected duplicate subjects against the corresponding low-resolution layout and corrects selected regions and their solver history while preserving detail elsewhere. Experiments across all kinds of video generation backbones and resolutions show improved perceptual quality and text-video alignment over FreeSwim, a state-of-the-art training-free method, with 2.0-2.9x end-to-end speedups. Our code and models will be released at https://github.com/libozhu03/TRACE.",
+  "abstract_ja": "",
+  "authors": [
+    "Libo Zhu",
+    "Fan Li",
+    "Zhixin Wang",
+    "Binglu Wang",
+    "Weisheng Dong"
+  ],
+  "category": "generative-ai",
+  "codeUrl": "https://github.com/libozhu03/TRACE",
+  "hasCode": true,
+  "id": "arxiv-2611.15983",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "diffusion",
+  "summary": "More text-to-video models are available, but many remain limited to low resolutions. Training them for higher resolutions is costly, while existing training-free methods still struggle with fine…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "video"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "TRACE: Trajectory Synchronization for Training-Free Resolution Extension in Video Generation",
+  "url": "https://arxiv.org/abs/2611.15983",
+  "use_case": ""
+}

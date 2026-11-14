@@ -1,0 +1,30 @@
+{
+  "abstract": "Graph learning on neuromorphic substrates requires an explicit spiking realization of neighborhood aggregation, supporting control and classification. We propose DeNA-SGN, which combines fixed OR and tie-inclusive Majority aggregation of binary node features with a learned signed-weight threshold classifier. A degree-dependent inhibitory construction implements Majority through shared control neurons, enabling a complete circuit compilation into SuperNeuroMAT. Across seven datasets and 41 mapped classifiers, native simulation matches the exported ANN on every evaluated class decision and output-spike pattern. On the new confirmatory Amazon Photo dataset, DeNA-SGN achieves 83.93+-0.93% current-readout accuracy and 71.61+-2.22% strict output-spike accuracy; Wiki-CS reaches 75.99+-0.54% over 20 public masks. In the matched Cora study, we achieve 74.90+-2.67% on current-readout and 68.57+-2.94% strict spike accuracy. Complete circuit and activity accounting supports analytical energy comparisons and identifies the cost of clocking inactive neurons in large deployments. Current argmax is decoded on the host, and energy is modeled rather than measured on hardware. These findings establish a reproducible route to useful graph classification with decision-matched spiking execution and explicit implementation costs.",
+  "abstract_ja": "",
+  "authors": [
+    "Sanjay Das",
+    "Xi Zhang",
+    "Emily Herron",
+    "Prasanna Date"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14775",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Graph learning on neuromorphic substrates requires an explicit spiking realization of neighborhood aggregation, supporting control and classification. We propose DeNA-SGN, which combines fixed OR and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "DeNA-SGN: Deterministic Neighborhood Aggregation for Verified Spiking Graph Inference",
+  "url": "https://arxiv.org/abs/2611.14775",
+  "use_case": ""
+}

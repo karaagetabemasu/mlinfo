@@ -1,0 +1,29 @@
+{
+  "abstract": "Standard ensemble methods can improve robustness by mitigating individual model stochasticity, but they frequently fail to generalize beyond the training distribution, leaving systems vulnerable to out-of-distribution (OOD) data. We introduce the Robust Satisficing Ensemble (RSE), a scalable probabilistic aggregation framework designed to secure model combinations by minimizing their fragility against distributional changes. By bridging a robust satisficing objective with a quadratic risk surrogate, RSE derives an analytical inner adversary. This fundamental reformulation enables highly efficient weight updates without the computational bottleneck of standard minimax optimization, crucially decoupling optimization complexity from sample size to scale effectively to large datasets. In particular, we prove a geometrically decaying truncation error for the fragility approximation via Lagrange-Burmann expansion and establish stationarity guarantees for RSE. We evaluate RSE across a comprehensive spectrum of distribution shifts, including adversarial label shift (SST-5, TREC), natural subpopulation and temporal shifts (CivilComments, HuffPost). Our results demonstrate that RSE consistently outperforms strong robust baselines, including GroupDRO, IRM, and SRM. These findings establish RSE as a practical, theoretically grounded safeguard for reliable model aggregation in dynamic environments.",
+  "abstract_ja": "",
+  "authors": [
+    "Ahmet Faruk Cetinkaya",
+    "Enes Agirman",
+    "Cem Tekin"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10895",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Standard ensemble methods can improve robustness by mitigating individual model stochasticity, but they frequently fail to generalize beyond the training distribution, leaving systems vulnerable to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "anomaly-detection"
+    ]
+  },
+  "title": "Robust Satisficing Ensemble: Scalable Model Aggregation Under Distribution Shifts",
+  "url": "https://arxiv.org/abs/2611.10895",
+  "use_case": ""
+}

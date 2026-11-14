@@ -1,0 +1,32 @@
+{
+  "abstract": "Dense bird's-eye-view (BEV) construction accounts for 60% of the parameters in a strong recent driving planner. This paper presents LOWP, a planner that looks only where it plans: two sets of sixteen learnable queries read the cameras through the known calibration, one by sampling image features at projected 3D anchors and one by attending to features labeled with their viewing rays, so no dense BEV is built and no object or map is supervised. Evaluations on open-loop nuScenes, pseudo-simulated NAVSIM and closed-loop Bench2Drive show competitive planning with a compact representation. On nuScenes, average L2 changes from 0.302 to 0.296 m with 53% of the dense counterpart's parameters and 1.7 times its speed on the same GPU; the anchor-based reader performs better on turns than the global reader. On NAVSIM, scoring the planner's own trajectories alongside a vocabulary gives 85.9 PDMS without retraining. The closed-loop control configuration scores 65.5 on 218 routes, with a brake-induced standstill failure whose release rule has an inconclusive aggregate benefit. We distinguish measured latency from hardware-transferred estimates, which do not establish a common-hardware ranking.",
+  "abstract_ja": "",
+  "authors": [
+    "Haohua Que",
+    "Tianle Zhu",
+    "Qianyi Wu",
+    "Zhipeng Bao",
+    "Handong Yao"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10264",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Dense bird's-eye-view (BEV) construction accounts for 60% of the parameters in a strong recent driving planner. This paper presents LOWP, a planner that looks only where it plans: two sets of sixteen…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Look Only Where You Plan for Real-Time End-to-End Urban Driving",
+  "url": "https://arxiv.org/abs/2611.10264",
+  "use_case": ""
+}

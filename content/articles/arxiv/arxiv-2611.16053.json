@@ -1,0 +1,30 @@
+{
+  "abstract": "To act effectively, agents must gather contextual information across resources such as chats, issue trackers, email and knowledge bases, to answer questions like \"what was decided in the last project meeting?\" or \"where is the FAQ for our internal tooling?\" Where this information lives in a user's environment is unknown to the agent, so it re-explores the same resources across consecutive interactions. Common routing approaches represent each resource as a tool and rely on high-level descriptions to generalize to unseen environments. Such descriptions often fail to separate similar or overlapping resources and cannot improve from the agent's subsequent interactions. We introduce Wayfinder, an adaptive router that uses the documents cited by the downstream agent as feedback about where relevant information resides. These citations update Wayfinder's internal resource representations, which subsequent interactions use to prioritize the resources likely to contain relevant information. We also introduce resource augmentation during offline reinforcement learning, which anonymizes and permutes resource identities to discourage training-time overfitting of which resource holds which topic; our ablations suggest it helps most when few training environments are available. Because no openly available professional environments pair realistic queries with resource-access patterns, we construct and release three controlled testbeds derived from existing datasets: NFCorpus, FEVER and Tech Startup. Compared with supervised, tool-retrieval and contextual bandit baselines under a shared closed-loop protocol, Wayfinder gives the best routing when resources contain semantically overlapping content that static descriptions cannot distinguish, while description-based tool retrieval suffices when resources are drawn from distinct corpora.",
+  "abstract_ja": "",
+  "authors": [
+    "Miguel Romero",
+    "George Karypis"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16053",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "To act effectively, agents must gather contextual information across resources such as chats, issue trackers, email and knowledge bases, to answer questions like \"what was decided in the last project…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Wayfinder: Adaptive Resource Routing from Agent Citations",
+  "url": "https://arxiv.org/abs/2611.16053",
+  "use_case": ""
+}

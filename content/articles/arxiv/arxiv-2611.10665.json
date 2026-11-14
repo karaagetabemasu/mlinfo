@@ -1,0 +1,34 @@
+{
+  "abstract": "Low-light conditions reduce visible contrast and obscure details, while infrared images lack color and texture, motivating the fusion of infrared and visible information for visual tasks. Existing fusion methods primarily optimize image appearance or task-specific features without explicitly disentangling the coupled factors underlying thermal observations, limiting their physical interpretation under thermal degeneracy. Hyperspectral thermal measurements enable physical decomposition, but they require specialized imaging hardware, while pixel-level physical annotations for supervision or evaluation incur additional costs. We propose TeX-Gen, a physically guided framework for TeX generation from paired visible and infrared images in low-light visual tasks. TeX Generation constructs complementary multi-view features and employs independent branch-specific gates to route cues into the Temperature, Emissivity, and Texture maps. TeXMetric integrates radiometric reconstruction, channel structure, and material consistency to assess the generated maps without requiring pixel-level physical labels. TeX Tune improves performance through task-guided adjustments, jointly optimizing the adjustment modules and task network while keeping the generator frozen. Experiments show that TeX-Gen achieves competitive task performance in low-light environments on the FLIR, LLVIP, M3FD, and MSRS datasets. Experiments on HADAR also examine the association between TeXMetric scores and downstream detection performance.",
+  "abstract_ja": "",
+  "authors": [
+    "Daoheng Li",
+    "Jianjun Qian",
+    "Mengkai Yan",
+    "Jian Yang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10665",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Low-light conditions reduce visible contrast and obscure details, while infrared images lack color and texture, motivating the fusion of infrared and visible information for visual tasks. Existing…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection",
+      "generation"
+    ]
+  },
+  "title": "Physically Guided TeX Generation for Low-Light Visual Tasks",
+  "url": "https://arxiv.org/abs/2611.10665",
+  "use_case": ""
+}

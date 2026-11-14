@@ -1,0 +1,33 @@
+{
+  "abstract": "At disaster sites and on unstable slopes, robot contact can collapse uninspected terrain, requiring retreat upon support loss. Massively parallel reinforcement learning of collapse-reactive retreat requires independent state--action experiences. However, on shared rigid-body collapsible terrain, one robot's collapse alters others' contacts without direct interaction. We call this indirect interference. Duplicating terrain objects prevents this but is memory-intensive, limiting parallel sampling. Our key insight is that policy learning does not necessarily require rigid-body collapse modeling, which is feasible but computationally expensive; collapse-induced contact responses can suffice. We therefore propose a memory-efficient parallel policy-learning framework for collapse-reactive retreat via hybrid terrain modeling. Hybrid terrain modeling combines rigid-body simulation of non-collapsible terrain with virtual contact forces for collapsible regions. A State-Multiplexed Contact Model shares terrain geometry and a contact-response law while maintaining environment-specific collapse states, enabling independent experiences without terrain objects for collapsible regions. The framework trains a proprioceptive policy for both normal locomotion and collapse-reactive retreat. It supports over 100 times as many parallel environments as fine-resolution rigid-block terrain within the same GPU memory limit. This scalability and improved sample efficiency enable over 50 times faster policy convergence with comparable retreat performance. Sim-to-sim and real-robot experiments demonstrate retreat under multiple collapse conditions. A supplementary video is available at: https://youtu.be/_RrhwjzEPE0",
+  "abstract_ja": "",
+  "authors": [
+    "Yuki Kadokawa",
+    "Ritsuki Matsunaga",
+    "Yuqi Yang",
+    "Edgar Anarossi",
+    "Takamitsu Matsubara"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16337",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "At disaster sites and on unstable slopes, robot contact can collapse uninspected terrain, requiring retreat upon support loss. Massively parallel reinforcement learning of collapse-reactive retreat…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "video"
+    ],
+    "task": []
+  },
+  "title": "Memory-Efficient Parallel Policy Learning for Collapse-Reactive Retreat via Hybrid Terrain Modeling",
+  "url": "https://arxiv.org/abs/2611.16337",
+  "use_case": ""
+}

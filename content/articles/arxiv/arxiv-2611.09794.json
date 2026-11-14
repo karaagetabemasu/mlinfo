@@ -1,0 +1,32 @@
+{
+  "abstract": "When should a robot look at the cup, and when at the portafilter? A view that is informative for one task can be useless for another, even at the same workstation. We introduce Seeing What Execution Needs, a benchmark for task-conditioned actionable spatial belief in simulated tabletop manipulation. Its aligned three-domain track contains 1,080 frozen cases (360 each for coffee workstation, drawer/cabinet, and microwave/appliance). The primary coffee protocols -- closed-loop actionability and same-object functional out-of-distribution generalization -- produce over 115,000 evaluator episodes across evaluated methods, budgets, and inference repeats. Each case pairs candidate RGB views with a manipulation command, shared scripted skills, and hidden postconditions, directly measuring whether selected observations support execution. A metadata-assisted diagnostic reference pipeline maintains spatial-functional beliefs and ranks views by missing evidence. At primary budget settings, it reaches 98.8% closed-loop and 98.9% functional-OOD success; removing functional fields or command binding reduces functional-OOD success to 0.0% and 19.7%, respectively. Under a separate full-preview contract, seven vision-language models reach 26-43%. Replacing coverage metadata with frozen RGB-derived scores retains 98.5%/98.9% success; shuffling these scores reduces success to 15%/11%, supporting dependence on image content. Separately, the aligned three-domain evaluation at H=3 supports portability of the benchmark interface under frozen domain-specific schemas. These results suggest that spatial belief for manipulation should be evaluated by whether acquired evidence meets the current command's execution requirements.",
+  "abstract_ja": "",
+  "authors": [
+    "Yina Jian",
+    "Mingkun Xu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.09794",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "When should a robot look at the cup, and when at the portafilter? A view that is informative for one task can be useless for another, even at the same workstation.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "anomaly-detection"
+    ]
+  },
+  "title": "Seeing What Execution Needs: Benchmarking Task-Conditioned Actionable Spatial Belief for Manipulation",
+  "url": "https://arxiv.org/abs/2611.09794",
+  "use_case": ""
+}

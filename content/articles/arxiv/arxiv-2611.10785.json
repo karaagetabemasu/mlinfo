@@ -1,0 +1,28 @@
+{
+  "abstract": "We introduce a proximal preference optimization framework that unifies the implicit reward formulation of Direct Preference Optimization (DPO) with the trust-region stability of Proximal Policy Optimization (PPO). Our framework yields two complementary algorithms. P$^2$O (Proximal Preference Optimization) introduces a clipped importance ratio directly into the DPO preference margin, producing a reward-model-free algorithm that supports safe dataset reuse, bounded policy divergence, and monotonic preference improvement guarantees. PKTO (Proximal Kahneman-Tversky Optimization) extends P$^2$O by replacing the DPO margin with KTO's prospect-theoretic utility margins, adding a self-regulating adaptive baseline that tightens the effective trust region as the policy drifts, and an asymmetric weighting that handles imbalanced or asymmetric preference datasets. We provide a unified theoretical analysis, including Kullback Leibler (KL) trust-region bounds, a policy-improvement lower bound, and convergence guarantees under multi-epoch proximal updates. Empirically, P$^2$O and PKTO match or exceed DPO and KTO in alignment quality while maintaining better stability under repeated dataset reuse across multiple LLMs on three preference benchmarks. The code base is available here.",
+  "abstract_ja": "",
+  "authors": [
+    "Qisai Liu",
+    "Zhanhong Jiang",
+    "Zahid Hasan",
+    "Soumik Sarkar"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10785",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "We introduce a proximal preference optimization framework that unifies the implicit reward formulation of Direct Preference Optimization (DPO) with the trust-region stability of Proximal Policy…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Proximal Preference Optimization: A Unified Framework for Stable and Reward-Free Alignment",
+  "url": "https://arxiv.org/abs/2611.10785",
+  "use_case": ""
+}

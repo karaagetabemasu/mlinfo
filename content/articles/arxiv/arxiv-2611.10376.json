@@ -1,0 +1,35 @@
+{
+  "abstract": "Modern dehazing networks are often computationally expensive and overfit to synthetic haze, limiting real-time deployment. This underscores an urgent demand for efficient, high-fidelity restoration methods that can operate on resource-constrained edge devices in practical, dynamic environments. We introduce PhysDNet, a lightweight multimodal architecture that fuses NIR imagery with sparse LiDAR depth and is trained with a physics-constrained dual-head objective. Differentiating through a fixed Koschmieder inversion induces density-adaptive gradient amplification, acting as an implicit resource allocation mechanism that concentrates learning on heavily degraded regions without increasing inference cost. PhysDNet delivers superior restoration with minimal capacity and enhanced training efficiency, facilitating real-time deployment on edge devices without increasing inference overhead. On the Seeing Through Fog benchmark, PhysDNet outperforms competitors by 1.67 dB at 5.2 times lower compute while recovering 54.9% of fog-induced detection loss. Ablations and cross-domain evaluations show that physics-guided training improves generalization, including under non-homogeneous haze that violates the Koschmieder assumption. PhysDNet further demonstrates compatibility with fixed-function NPUs, running at 29/45/99 FPS at <4 W across L/M/S variants. Code, deployment scripts and pre-trained checkpoints are available at https://github.com/Heatdh/PhysDnet.",
+  "abstract_ja": "",
+  "authors": [
+    "Rayen Dhahri",
+    "Lei Sun",
+    "Victor Javier Kartsch Morinigo",
+    "Alice Pagnoux",
+    "Luca Benini"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/Heatdh/PhysDnet",
+  "hasCode": true,
+  "id": "arxiv-2611.10376",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Modern dehazing networks are often computationally expensive and overfit to synthetic haze, limiting real-time deployment. This underscores an urgent demand for efficient, high-fidelity restoration…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d",
+      "multimodal"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "PhysDNet: Physics-Driven Gradient Amplification for Real-Time Image Dehazing",
+  "url": "https://arxiv.org/abs/2611.10376",
+  "use_case": ""
+}

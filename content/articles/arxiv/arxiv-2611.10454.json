@@ -1,0 +1,27 @@
+{
+  "abstract": "We study decentralised drone formation, without a central planner, under the conditions that make it hard: nobody knows how many drones are alive, failures are silent, radio is short-ranged and lossy, and actuation is noisy. In our controller, ant colony optimisation (ACO) allocates drones to picture positions through claims that behave as reinforced, evaporating pheromone and are gossiped between neighbours, so evaporation doubles as failure detection. A particle swarm optimisation (PSO) law flies the drones, a noise-buffered Voronoi filter keeps them apart, and PSO also tunes the controller offline. We prove that claims of destroyed drones vanish within bounded time, that conflicts between drones that exchange tables are resolved consistently, that survivors cover the picture to within a factor of two, and that drones cannot collide while their safety cells are feasible. On held-out seeds and with two tuned configurations, the controller formed the picture in 95-99% of runs in the hardest regime, restored it after a silent loss of half the swarm in 96-100% of runs at normal difficulty, transferred unchanged to eight unseen shapes and to 300 drones, and overlapped in 5 of 21,088 runs. A CBBA-style baseline that shares the evaporating claims but uses argmax without swaps was at least as reliable as ours once tuned with the same budget, and repaired faster, whereas ours generalised better to unseen shapes. The benefit thus comes from the pheromone dynamics and from tuning, not from ACO's stochastic construction or PSO's social terms. A centralised oracle is faster.",
+  "abstract_ja": "",
+  "authors": [
+    "Md. Abu Horaira"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10454",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "We study decentralised drone formation, without a central planner, under the conditions that make it hard: nobody knows how many drones are alive, failures are silent, radio is short-ranged and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Decentralised Drone Swarm Formation under Silent Failures with ACO Pheromone Claims and PSO Tuning",
+  "url": "https://arxiv.org/abs/2611.10454",
+  "use_case": ""
+}

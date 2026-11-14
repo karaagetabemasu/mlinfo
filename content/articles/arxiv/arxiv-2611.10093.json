@@ -1,0 +1,34 @@
+{
+  "abstract": "Histopathology foundation models achieve strong performance across diverse downstream tasks, yet their representations have been shown to encode scanner- and site-specific biases, creating generalization gaps and potentially limiting real-world utility. We introduce SPECTRA (Scanner and Pathology Embedding Contrastive Tuning for Robust Alignment), a model-agnostic contrastive learning post-training framework which explicitly encourages scanner- and stain-robust representations, to optimize performance and generalization on downstream applications. Using parameter-efficient LoRA adapters trained on matched multi-scanner and multi-stain whole-slide images sourced from the PLISM dataset, our method aligns spatially corresponding regions across acquisition conditions (scanner, stain), using other locations within each candidate condition as negatives. SPECTRA improved PathoROB robustness index, gene-expression prediction on HEST, slide-level classification AUC on CPTAC, and held-out PLISM retrieval for every model. Overall tile-level classification on THUNDER also improved, with exceptions for segmentation and calibration tasks. We open-source our training and evaluation codebases and release adapters and model weights for selected backbones.",
+  "abstract_ja": "",
+  "authors": [
+    "Ryan Kim",
+    "Hassan Muhammad",
+    "Anish Dulal",
+    "Paul S. Scotti",
+    "Tanishq Mathew Abraham"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10093",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Histopathology foundation models achieve strong performance across diverse downstream tasks, yet their representations have been shown to encode scanner- and site-specific biases, creating…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "segmentation"
+    ]
+  },
+  "title": "Contrastive fine-tuning against stain and scanner bias improves robustness and downstream performance across pathology foundation models",
+  "url": "https://arxiv.org/abs/2611.10093",
+  "use_case": ""
+}

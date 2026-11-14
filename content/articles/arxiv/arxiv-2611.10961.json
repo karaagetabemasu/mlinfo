@@ -1,0 +1,29 @@
+{
+  "abstract": "AI agents are increasingly capable of discovering new mathematical results, yet their reasoning and generated proofs can be difficult to understand and verify. We introduce an interpretable framework for AI-guided mathematical discovery, focused on improving quantitative bounds on analytic constants. Our key insight is that existing proofs often contain slack in intermediate lemmas, which can be tightened without reconstructing the entire argument. To exploit this structure, we represent proofs as partially-formalized Lean blueprints: human-interpretable dependency graphs of definitions, lemmas, and theorems. An AI agent then iteratively refines the Lean code while preserving the blueprint's dependency structure, allowing local improvements to automatically propagate to a verified final bound. This interpretable structure allows humans to inspect the agent's refinements and understand how local improvements propagate to the final theorem. For Grothendieck's constant ($\\mathcal{K}_G$), we obtain $$ \\mathcal{K}_G \\leq \\fracπ{2\\log(1+\\sqrt{2})} - 10^{-17}, $$ an explicit numerical improvement over Krivine's 1977 bound. For Korenblum's constant ($\\mathcal{K}_K$), we obtain $$ \\mathcal{K}_K \\geq 0.356565, $$ improving Wang's 2025 bound of $0.3554$. Our experiments demonstrate the potential of both partial formalization and iterative agentic refinement for interpretable mathematical discovery.",
+  "abstract_ja": "",
+  "authors": [
+    "Rahul Saha",
+    "Alan Li",
+    "Anton Xue",
+    "Swarat Chaudhuri",
+    "Adam Klivans"
+  ],
+  "category": "mlops",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10961",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "deployment",
+  "summary": "AI agents are increasingly capable of discovering new mathematical results, yet their reasoning and generated proofs can be difficult to understand and verify. We introduce an interpretable framework…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Improving Analytic Constants via Interpretable AI-Guided Lean Proof Refinement",
+  "url": "https://arxiv.org/abs/2611.10961",
+  "use_case": ""
+}

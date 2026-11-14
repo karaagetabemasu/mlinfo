@@ -1,0 +1,31 @@
+{
+  "abstract": "Language-model systems can select prompts and parameter adapters repeatedly during deployment, using feedback to guide later choices. Earlier choices may change the context or environment inherited by later configurations. We study selection among preconstructed candidates and compare cumulative loss with the best fixed prompt--parameter pair used from the beginning. This excess loss separates into three terms: selection regret within the available family, the gap from restricting that family, and the benefit or harm of the actual deployment history. Selection is evaluated using the history each candidate would have produced if used throughout, which separates candidate quality from the effects of switching. When loss functions are fixed independently of selector randomness, past choices affect loss for only a bounded number of rounds, and every candidate's own-history loss is revealed, limiting switches yields sublinear expected regret within the selected family. We also quantify the costs and additional assumptions of independent probing and deployment-only feedback. Controlled experiments show that fewer switches can either lower or raise deployed loss, depending on whether inherited histories are harmful or helpful. With Qwen3.5-9B on Spider, text-only selection has lower within-family regret than joint selection, yet produces more failures because its candidate family excludes stronger configurations.",
+  "abstract_ja": "",
+  "authors": [
+    "Jungtaek Kim",
+    "Jaden Park",
+    "Jongwon Jeong",
+    "Emmanouil-Vasileios Vlatakis-Gkaragkounis",
+    "Kangwook Lee"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.09701",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Language-model systems can select prompts and parameter adapters repeatedly during deployment, using feedback to guide later choices. Earlier choices may change the context or environment inherited…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Where Should Learning Live? Regret Analysis for Text, Parameter, and Joint Adaptation",
+  "url": "https://arxiv.org/abs/2611.09701",
+  "use_case": ""
+}

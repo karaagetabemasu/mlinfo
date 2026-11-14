@@ -1,0 +1,36 @@
+{
+  "abstract": "Recognizing anatomical structures during minimally invasive surgery (MIS) could support intraoperative navigation and improve patient safety, but progress is limited by small, single-procedure datasets and by segmentation methods developed for natural scenes. This work addresses both limitations through a new dataset and model. First, we introduce ATLAS-120k, a clip-level semantic segmentation dataset of 121,018 annotated frames from 100 surgical videos, covering 14 laparoscopic and robot-assisted procedures and 41 classes. Annotations were created with a pipeline that combines manual labeling, tracker-based propagation, and review by surgeons. Second, we propose ATLAS (Anatomy Recognition with Context Learning using Foundation Representations), a video semantic segmentation model for surgical anatomy recognition. ATLAS builds on in-domain foundation-model embeddings and adds context queries for the procedure and surgical phase, together with query propagation between frames for short-term memory. ATLAS outperforms state-of-the-art natural-image and in-domain foundation models in both segmentation accuracy and temporal consistency, achieving a Dice score of 0.70 with ViT-L while running in real time at 76.2 FPS. Ablations show that the context queries improve accuracy and that query propagation improves temporal consistency. ATLAS also generalizes well, matching a dedicated model zero-shot on CholecSeg8k and improving phase recognition on AutoLaparo over SurgeNet initialization. The model weights, dataset annotations, and annotation tool are publicly available at https://github.com/TimJaspers0801/ATLAS.",
+  "abstract_ja": "",
+  "authors": [
+    "Ronald L. P. D. de Jong",
+    "Tim J. M. Jaspers",
+    "Raf A. H. Vervoort",
+    "Aron F. H. A. Bakker",
+    "Anna L. Dijk"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/TimJaspers0801/ATLAS",
+  "hasCode": true,
+  "id": "arxiv-2611.10182",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Recognizing anatomical structures during minimally invasive surgery (MIS) could support intraoperative navigation and improve patient safety, but progress is limited by small, single-procedure…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video"
+    ],
+    "task": [
+      "classification",
+      "segmentation"
+    ]
+  },
+  "title": "ATLAS: A Multi-Procedure Benchmark and Context-Aware Model for Surgical Anatomy Segmentation",
+  "url": "https://arxiv.org/abs/2611.10182",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "In Gaussian-based semantic occupancy prediction, overlapping primitives can provide ambiguous class predictions, making their joint interpretation important for voxel classification. However, current methods using spatially weighted mixtures neglect explicit modeling of cross-primitive dependencies, limiting the readout's ability to utilize category-specific relational evidence. Hence, we introduce CGOcc, a supervised multi-camera framework that explicitly models Cross-Gaussian dependencies for 3D semantic Occupancy prediction. CGOcc integrates appearance and geometric observations to refine Gaussian states and encodes cross-Gaussian dependencies in a diagonal-plus-low-rank representation. To incorporate these dependencies into voxel classification, CGOcc uses a class-conditional projection to extract diagonal and signed cross-Gaussian statistics without constructing a dense dependency matrix. The readout then refines occupied-class probabilities using these statistics while preserving a learned reference's occupied mass and free probability. Extensive experiments on nuScenes demonstrate CGOcc achieves state-of-the-art performance, with larger gains at high Gaussian overlap and improved predictions near boundaries. Ablation studies validate the effectiveness of covariance-aware prediction and support its synergy with geometric interaction.",
+  "abstract_ja": "",
+  "authors": [
+    "Zirui Huang",
+    "Jiongle He",
+    "Yunfan Zeng",
+    "Yuanzhi Lu",
+    "Guangye Li"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15692",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "3d",
+  "summary": "In Gaussian-based semantic occupancy prediction, overlapping primitives can provide ambiguous class predictions, making their joint interpretation important for voxel classification. However, current…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "CGOcc: Learning Cross-Gaussian Dependencies for 3D Semantic Occupancy Prediction",
+  "url": "https://arxiv.org/abs/2611.15692",
+  "use_case": ""
+}

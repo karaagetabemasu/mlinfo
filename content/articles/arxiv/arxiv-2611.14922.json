@@ -1,0 +1,30 @@
+{
+  "abstract": "Deep-learning-based seismic impedance inversion commonly requires retraining for each target survey, which may generalize poorly beyond the conditioning locations when well control is extremely sparse. We propose a transferable three-dimensional inversion framework that separates offline learning from target-survey deployment. A masked autoencoder first learns seismic structural representations from unlabeled multi-survey data, after which the frozen encoder is incorporated into an inversion network trained on synthetic geological models with sparse-well-derived low-frequency priors. During deployment, the complete inversion network remains fixed; the available conditioning well is used only to construct the low-frequency prior and align the global impedance range. Experiments on the Overthrust model show that the proposed method achieves the lowest full-volume NRMSE and reduces the P95 trace-wise NRMSE from 0.1310 to 0.1074 relative to the best target-trained baseline, indicating fewer localized large errors under different well locations. In a field survey with one conditioning well and three blind wells, it reduces the mean blind-well NRMSE by 20.95% relative to the target-trained U-Net while maintaining the highest correlation. These results demonstrate that the proposed framework transfers useful impedance information beyond the conditioning location with low deployment cost and without retraining the inversion network.",
+  "abstract_ja": "",
+  "authors": [
+    "Gen Li",
+    "Zhaoyun Zong",
+    "Diqiong Jiang",
+    "Man Tang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14922",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Deep-learning-based seismic impedance inversion commonly requires retraining for each target survey, which may generalize poorly beyond the conditioning locations when well control is extremely…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "A Transferable Pretrained 3D Model for Impedance Inversion with Sparse-Well Prior Conditioning",
+  "url": "https://arxiv.org/abs/2611.14922",
+  "use_case": ""
+}

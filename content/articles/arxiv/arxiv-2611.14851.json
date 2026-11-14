@@ -1,0 +1,30 @@
+{
+  "abstract": "We present OrthoPairGTL, a geometric training framework for cross-domain deepfake detection, built on a partially frozen DINOv3 backbone ($\\sim$300M parameters), and make three contributions: (1) We re-evaluate six recent transfer-learning detectors (Forensics Adapter, Effort, three GenD variants and FakeSTormer) using the authors' released checkpoints under a single preprocessing pipeline across 17 cross-domain datasets (2018-2025), so that the reported gaps reflect method rather than per-method pipeline tuning. (2) We model the transformation between paired real and fake samples, training Parameter-Efficient Fine-Tuning (PEFT) adapters with an orthogonal pair decomposition, hyperspherical regularisation, and (in the GSD-LoRA variant) a set-level coherence objective. (3) Under LoRA, this regularisation gives a more stable optimisation profile: GSD-LoRA's post-peak validation degradation is $4.2\\times$ shallower than plain LoRA at the same parameter footprint, and the time-averaged validation AUC across training is 1.82 pp higher. On the 17 datasets, GSD-LoRA matches or exceeds every re-evaluated baseline (92.82% vs. 91.58% for the strongest; paired Wilcoxon signed-rank $p=0.015$, 13/17 per-dataset wins), with the largest gains on modern reenactment-heavy benchmarks (DSv1.1, DSv2). Under strict parameter budgets, LayerNorm-only tuning ($\\approx$0.03% of the backbone) is the most stable configuration and matches the strongest baseline with a mean of 91.97%.",
+  "abstract_ja": "",
+  "authors": [
+    "Luke Collins",
+    "Chang-Tsun Li",
+    "Duc Thanh Nguyen",
+    "Victor Sanchez"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14851",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "We present OrthoPairGTL, a geometric training framework for cross-domain deepfake detection, built on a partially frozen DINOv3 backbone ($\\sim$300M parameters), and make three contributions: (1) We…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Paired Geometric Supervision for Generalizable Deepfake Detection",
+  "url": "https://arxiv.org/abs/2611.14851",
+  "use_case": ""
+}

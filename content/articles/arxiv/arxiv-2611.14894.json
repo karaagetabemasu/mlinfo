@@ -1,0 +1,27 @@
+{
+  "abstract": "The Boltzmann transport equation describes particle transport across collisional regimes, but resolving its velocity dependence is expensive. Moment methods reduce this cost by evolving finitely many velocity moments, requiring a closure for unresolved higher-order moments. Data-driven closures can represent these moments accurately, yet without structural constraints they may produce complex characteristic speeds and unstable simulations. Learned Boltzmann closures with guaranteed hyperbolicity have so far been formulated in one spatial dimension; in multiple dimensions, hyperbolicity must hold in every direction simultaneously. We develop, to the best of our knowledge, the first data-driven closure for multidimensional Hermite moment systems of the linear Boltzmann equation that is hyperbolic by construction. The network learns a symmetric positive-definite symmetrizer shared by all spatial directions and restricted to a subspace that preserves the known lower-order transport equations; the unresolved rows follow from a symmetric completion. Every directional Jacobian thus has real eigenvalues and a complete set of eigenvectors for every network output and at any truncation order. The closure is trained only on spatial derivatives of unresolved moments from kinetic reference solutions, with no solver in the training loop, and evolved by a partially conservative discontinuous Galerkin method. In two-dimensional experiments in the transition and scattering-dominated regimes, a single learned third-order system with ten moments remains stable in all cases. Averaged over time, it is more accurate than the classical P7 and P15 truncations with 36 and 136 moments in every experiment, and its density error is about two orders of magnitude smaller than that of the P3 truncation with the same moments.",
+  "abstract_ja": "",
+  "authors": [
+    "Bongseok Kim",
+    "Jiahao Zhang",
+    "Guang Lin"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14894",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "The Boltzmann transport equation describes particle transport across collisional regimes, but resolving its velocity dependence is expensive. Moment methods reduce this cost by evolving finitely many…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Machine Learning Moment Closure for the Boltzmann Transport Equation: Enforcing Hyperbolicity",
+  "url": "https://arxiv.org/abs/2611.14894",
+  "use_case": ""
+}

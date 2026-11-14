@@ -1,0 +1,31 @@
+{
+  "abstract": "Evaluating generative models requires measuring not only sample fidelity but also how well a generated set covers the real data distribution. Recent work has therefore introduced recall-oriented metrics for distribution-level evaluation. However, existing recall metrics often reduce distributional coverage to geometry-based coverage. This simplifying assumption weakens their diagnostic value and interpretability in two ways: these metrics provide only a single aggregate score that cannot distinguish essential diversity failures such as mode dropping and mode collapse, and geometry-based coverage can provide unreliable estimates by assigning high scores to poorly covered generative distributions. We therefore introduce CADMA, a capacity-aware framework for recall-oriented evaluation and diagnosis. CADMA evaluates distributional coverage through local capacity matching between real and generated samples, separating geometry-based coverage from effective coverage. This yields multi-dimensional coverage diagnostics that quantify mode dropping and mode collapse while reducing the overly optimistic estimates produced by geometry-based metrics. Through extensive experiments on toy data, real-world datasets, and generative models, we show that CADMA provides more reliable coverage estimates and more fine-grained, interpretable diagnostic signals of diversity failures than existing metrics. Our code is available at https://github.com/Open-Debin/CADMA_NeurIPS2026.",
+  "abstract_ja": "",
+  "authors": [
+    "Debin Meng",
+    "Zheng Gao",
+    "Ziquan Liu",
+    "Yanran Li",
+    "Ioannis Patras"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/Open-Debin/CADMA_NeurIPS2026",
+  "hasCode": true,
+  "id": "arxiv-2611.12243",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Evaluating generative models requires measuring not only sample fidelity but also how well a generated set covers the real data distribution. Recent work has therefore introduced recall-oriented…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "CADMA: Capacity-Aware Coverage Decomposition for Generative Model Assessment",
+  "url": "https://arxiv.org/abs/2611.12243",
+  "use_case": ""
+}

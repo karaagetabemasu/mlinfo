@@ -1,0 +1,29 @@
+{
+  "abstract": "Adaptive tutors use models learned from student data, and a common fairness remedy erases the group signal from these models. We turn the cost of this remedy into an audit tool. Building on mean-parity regression, we give the minimum extra error, relative to the best predictor, of removing the mean group contrast from a predictor that cannot use the group, $p_0p_1Δ^2/R^2$, and the exact cost of any correction built from an estimated group model, which, for the best predictor, is never below this minimum. A three-stage audit (fit on training units, announce the cost on validation units, test on independent units) estimates this cost before the correction is used. In a controlled study, the price can be large even when the state predicts the group poorly. On three real data sets, erasing the group from a learned model of learning dynamics predicts almost no gap where one is observed. In a selected knowledge-tracing network, erasing the hidden state leaves most of the gap; a correction of the prediction removes it at an extra Brier score of 0.021 on average. On Eedi, with the network selected on separate units, the audit accepted the announced cost in all five splits, the measured cost fell inside the announced interval in all five, and the gap reduction transferred to new classes in four; on new ASSISTments schools the audit abstains. In a tutoring simulator, the objective and the help budget matter more than the erasure, and floors on each group's knowledge separate narrowing a gap from levelling down. Hiding a gap in a model does not close it.",
+  "abstract_ja": "",
+  "authors": [
+    "Sosthène Bidojesussi Hounzinhin",
+    "Ahmed Ratnani",
+    "Abdeladim El Akri"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16100",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Adaptive tutors use models learned from student data, and a common fairness remedy erases the group signal from these models. We turn the cost of this remedy into an audit tool.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Hiding a Gap Does Not Close It: The Price of Removing the Mean Group Contrast from Learned Models of Learning Dynamics",
+  "url": "https://arxiv.org/abs/2611.16100",
+  "use_case": ""
+}

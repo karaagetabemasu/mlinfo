@@ -1,0 +1,29 @@
+{
+  "abstract": "Existing methods for predicting surrounding vehicles' forward occupancy may under-approximate the ground-truth occupancy, exposing the ego vehicle to collision risk, or produce overly conservative regions that unnecessarily restrict feasible space and cause planning failures. To address these issues, we propose FloCOS, a conditional flow-matching framework that predicts compact forward occupancy sets with high occupancy coverage. FloCOS represents the forward occupancy set as a time-varying union of half-space convex polygons parameterized by temporal basis coefficients. Conditional flow matching captures the conditional distribution of these coefficients to govern the temporal evolution of the convex components, trained under coverage and union-area losses that penalize missed occupancy and excess area. For downstream trajectory optimization, the predicted nonconvex union is directly incorporated into hyperplane-based collision-avoidance constraints. Evaluations on the Waymo Open Motion Dataset show that FloCOS generates compact forward occupancy sets with high coverage and achieves a higher interaction completion rate than evaluated baselines. Real-world vehicle experiments further confirm its ability to support collision-free planning in interactive scenarios.",
+  "abstract_ja": "",
+  "authors": [
+    "Chuansheng Dong",
+    "Yinxiao Zhan",
+    "Zongdian Li",
+    "Peng Hou",
+    "Jin Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15488",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Existing methods for predicting surrounding vehicles' forward occupancy may under-approximate the ground-truth occupancy, exposing the ego vehicle to collision risk, or produce overly conservative…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "FloCOS: Predicting Compact Forward Occupancy Sets of Surrounding Vehicles via Conditional Flow Matching",
+  "url": "https://arxiv.org/abs/2611.15488",
+  "use_case": ""
+}

@@ -1,0 +1,29 @@
+{
+  "abstract": "Robot demonstration datasets combine demonstrations from teleoperators of uneven experience, so collection teams need to know how many demonstrations from one group match those from another. We measure this with a data multiple: the ratio of the numbers of demonstrations two groups need for their policies to reach the same success rate. On robomimic's simulated Square and Can tasks, we train behavior-cloning policies on demonstrations from the two teleoperators robomimic labels Better and the two it labels Worse, varying dataset size and the share of Worse demonstrations. On Square, within robomimic's 25-second time limit, an all-Worse training set needs 1.55 times as many demonstrations as an all-Better set. Most of this difference is late completion: policies trained on Worse demonstrations finish later, as the Worse teleoperators do, and with a 100-second limit the multiple falls to 1.11. On Can, most of the difference remains at 100 seconds. If each Worse demonstration were worth 1/1.55 of a Better one, as in an all-Worse set, a half-Better, half-Worse set on Square would need 1.22 times as many demonstrations as an all-Better set. In fact, it needs 13% more than that, and this excess persists at every time limit from 20 to 200 seconds. The excess remains when training draws demonstrations uniformly instead of in proportion to their length. On Square, within the 25-second limit, switching to these Worse teleoperators is cheaper at equal success only if they earn less than a third of the Better teleoperators' hourly pay, because Worse demonstrations also take longer to record.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiaxuan Guo",
+    "Xingyu Ren",
+    "Youran Sun",
+    "Jingxin Yang",
+    "Kejia Zhang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11947",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Robot demonstration datasets combine demonstrations from teleoperators of uneven experience, so collection teams need to know how many demonstrations from one group match those from another. We…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "The Relative Value of Demonstration Data: Execution Time Limits and Operator Mixtures in Behavior Cloning",
+  "url": "https://arxiv.org/abs/2611.11947",
+  "use_case": ""
+}

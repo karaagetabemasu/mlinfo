@@ -1,0 +1,30 @@
+{
+  "abstract": "Expert-parallel Mixture-of-Experts decoding is latency bound: each layer serializes a token exchange, a grouped GEMM over routed experts, and a combine, while only a few tokens per rank are in flight. Prior GC-MoE fused these phases into one persistent, Green-Context-partitioned CUDA Graph on Hopper (SM90) and datacenter Blackwell (SM100). This paper rebuilds the operator for SM120 (compute capability 12.0, e.g. RTX PRO 5000) over PCIe. SM120 exposes block-scaled tensor cores only through warp-level mma.sync.aligned.kind::mxf8f6f4: no tensor memory, no two-CTA MMA, no cluster multicast. We rebuild the kernel around a swap-AB warp-level block-scaled MMA with FP4 weights in the register A operand and FP8 activations in B, plus SM120-specific mechanisms: scale-byte selection through MMA immediates, a compact-weights path, an adaptive token-tile geometry, an expert-granular streaming dispatch with a batched bulk-pull engine and a 64-bit deduplicating pull cache, full-width BF16 returns drained by resident relay copiers over a position-major arena, and shared experts folded into the compute role. On 8xRTX PRO 5000 over PCIe the operator is 1.522x and 1.387x faster than the FlashInfer CuTe DSL W4A8 MegaMoE and the Cake MegaMoE across 18 decode points (18/18 wins each), and 1.388x faster than Cake with shared experts fused; all 94 numerical cases and 752 per-rank checks pass, at cross-operator cosine similarity of at least 0.9999997.",
+  "abstract_ja": "",
+  "authors": [
+    "Yong Li",
+    "Haoyu Wang",
+    "Kan Liu",
+    "Tao Lan"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16219",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Expert-parallel Mixture-of-Experts decoding is latency bound: each layer serializes a token exchange, a grouped GEMM over routed experts, and a combine, while only a few tokens per rank are in…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "GC-MoE on SM120: Overlapping Expert-Parallel Token Dispatch with Warp-Level FP8xFP4 Block-Scaled MMA on Consumer Blackwell",
+  "url": "https://arxiv.org/abs/2611.16219",
+  "use_case": ""
+}

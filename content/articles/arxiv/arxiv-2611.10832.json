@@ -1,0 +1,31 @@
+{
+  "abstract": "AI agents and reinforcement-learning (RL) trainers run thousands of short, isolated GPU jobs: tool calls, verifiers, and rollouts. A job often finishes in seconds, but starting a GPU pod for it takes 20-35 s even when the container image is already on the node, and minutes when it is not. A warm pod removes the wait only if it can serve the next job, and keeping pods warm must neither waste GPUs nor leak state between callers. Firepool, the sandbox and execution broker behind agentic and RL workloads at LinkedIn, meets both requirements. It makes pods interchangeable by building them from a shared base image per hardware profile and binding each job's code, extra dependencies, and cluster topology when the job starts. It keeps them warm cheaply and safely by reusing a pod only for the caller that used it last, staging zero-VRAM standby pods in fractional GPU shares alongside active pods, and capping the GPUs that warm pools may hold via queue-driven budgets. Over a sampled peak period in production, Firepool serves 94.7% of 3,206 pod requests from warm or standby capacity. In paired benchmarks with fixed-duration jobs on production H200 nodes, agent and RL loops finish 13x and 10.8x faster than with a fresh pod per job; against a fresh reuse tag per job, warm reuse cuts p90 start latency from 59.1 s to 3.5 s. When a job cannot reuse the previous pod, standby promotion shortens the handover wait from 51 s to 0.94 s. In local and simulated runs, a keep-alive matched to the loop's pauses keeps the latency benefit while holding about half the capacity of an always-on pool.",
+  "abstract_ja": "",
+  "authors": [
+    "Ankit Goyal",
+    "Santosh Jha",
+    "Zhuo Zhi",
+    "Youmin Han",
+    "Cong Gu"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10832",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "AI agents and reinforcement-learning (RL) trainers run thousands of short, isolated GPU jobs: tool calls, verifiers, and rollouts. A job often finishes in seconds, but starting a GPU pod for it takes…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Firepool: Brokering Warm GPU Capacity for Agentic and RL Workloads at LinkedIn",
+  "url": "https://arxiv.org/abs/2611.10832",
+  "use_case": ""
+}

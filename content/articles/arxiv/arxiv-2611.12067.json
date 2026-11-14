@@ -1,0 +1,34 @@
+{
+  "abstract": "Machine learning (ML) services increasingly expose explainability outputs alongside model predictions. While such explanations are intended to improve transparency, they may also reveal information about the underlying training data. In this work, we show that the local surrogate geometry employed by Local Interpretable Model-agnostic Explanations (LIME) can be repurposed as a proxy for a sample's distance to the model's decision boundary. We extend this boundary-distance view to tabular counterfactual explanations and, for the first time, to visual counterfactual explanations for image classifiers. We present XposedMIA, a one-shot, explanation-based black-box membership inference attack (MIA) framework that converts the returned explanation into a proxy for the queried sample's distance to the model decision boundary. After a one-time calibration step on a small labeled calibration set of as few as 30 samples, our attack requires only a single query for each target sample. Unlike prior label-only attacks requiring iterative queries or shadow training, our method relies solely on the predicted label and its accompanying explanation. Our evaluation indicates that XposedMIA achieves high effectiveness, with success rates of up to 0.95 using only a single query per target, revealing that releasing explanations introduces an additional channel for membership leakage.",
+  "abstract_ja": "",
+  "authors": [
+    "Omar Hamdache",
+    "Serdar Kara",
+    "Kıvanç Kuzey Dikici",
+    "Abdullah Çağlar Öksüz",
+    "Anisa Halimi"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.12067",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Machine learning (ML) services increasingly expose explainability outputs alongside model predictions. While such explanations are intended to improve transparency, they may also reveal information…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "tabular"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "XposedMIA: Exploiting Explainable Artificial Intelligence (XAI) for One-Shot Membership Inference Attacks",
+  "url": "https://arxiv.org/abs/2611.12067",
+  "use_case": ""
+}

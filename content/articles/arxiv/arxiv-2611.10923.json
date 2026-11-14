@@ -1,0 +1,27 @@
+{
+  "abstract": "Binary decision-making under uncertainty arises across a wide range of applications, including energy systems scheduling, transportation, and workforce planning. While machine learning has been increasingly applied to accelerate or replace mixed-integer solvers in such settings, existing approaches rely on predictive learning, training models to reproduce optimal decisions from labeled data, which lacks knowledge of counterfactual outcomes and provides no guarantees that the resulting decisions will be feasible. This limitation is further compounded under distributional shift, where policies trained on historical data may produce systematically infeasible decisions. We propose a prescriptive learning framework for binary decision-making that addresses both limitations. Rather than predicting optimal labels, the framework jointly optimizes over linear decision policies and feasible assignments across all training scenarios, allowing feasible alternatives and their operational performance to be considered directly during training. We further extend the framework to a distributionally robust chance-constrained formulation using a Wasserstein ambiguity set, which enforces feasibility with a prescribed probability under the worst-case distribution in the ambiguity set and enables a tunable trade-off between robustness and solution quality. We demonstrate the framework on two case studies, namely a unit commitment problem and a staff allocation problem. Out-of-sample experiments under test distributions that either match or differ from the training distribution show that the robust model is more conservative when the two distributions coincide, while under distributional shift it substantially reduces unmet demand and lowers total cost by up to 76.5% relative to classical predictive learning.",
+  "abstract_ja": "",
+  "authors": [
+    "Farzaneh Pourahmadi",
+    "Trine Krogh Boomsma",
+    "Pierre Pinson"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10923",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Binary decision-making under uncertainty arises across a wide range of applications, including energy systems scheduling, transportation, and workforce planning. While machine learning has been…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Prescriptive Learning of Linear Policies with Feasibility Guarantees for Binary Decision-Making",
+  "url": "https://arxiv.org/abs/2611.10923",
+  "use_case": ""
+}

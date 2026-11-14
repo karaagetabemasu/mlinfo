@@ -1,0 +1,28 @@
+{
+  "abstract": "Alternating minimization is a standard tool for optimization problems with two coupled variable blocks. Its cost is dominated by the inner subproblem solvers, which rarely have a closed-form solution. In this paper, we propose to learn an inexact alternating scheme in which neural networks approximate the subproblem solution at each iteration. For convex problems with quadratic couplings between the variable blocks that satisfy a quadratic growth condition, we derive a worst-case bound on the optimality gap that exposes the per-iteration error that each network is trained to minimize in a greedy fashion. Combining the bound with a PAC-Bayes argument, we obtain a fixed-horizon, high-probability bound on the expected optimality gap over the distribution of problem instances. We apply the learned scheme to robust matrix completion and low-dose CT reconstruction with dictionary regularization where we achieve a 5x-13x speedup over the inexact first-order baseline at matched accuracy. A brief end-to-end fine-tuning stage extends this up to 30x and outperforms other learned schemes. The code is available at https://github.com/paulhausner/learned-alternating-minimization.",
+  "abstract_ja": "",
+  "authors": [
+    "Paul Häusner",
+    "Jevgenija Rudzusika",
+    "Jens Sjölund",
+    "Ozan Öktem"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/paulhausner/learned-alternating-minimization",
+  "hasCode": true,
+  "id": "arxiv-2611.12544",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Alternating minimization is a standard tool for optimization problems with two coupled variable blocks. Its cost is dominated by the inner subproblem solvers, which rarely have a closed-form solution.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Learning inexact alternating minimization for convex problems with quadratic coupling",
+  "url": "https://arxiv.org/abs/2611.12544",
+  "use_case": ""
+}

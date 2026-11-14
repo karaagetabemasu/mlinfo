@@ -1,0 +1,31 @@
+{
+  "abstract": "Research on surgical autonomy needs open platforms that any laboratory can build, yet the most widely shared platform depends on donated clinical hardware, and open alternatives on industrial arms each lack part of the surgical chain. We present the Autonomous Robotic Translational System (ARTS), an open-source three-arm platform for autonomy research in minimally invasive surgery, built entirely from purchasable parts for about USD 137,000. Two UR5e arms hold wristed da Vinci X/Xi instruments, a UR5 arm holds a stereo endoscope with two FLIR cameras, the surgeon console provides haptic handles, footswitches and a stereo viewer, and a hardware stop independent of the software lets a supervisor freeze all three arms in place. The ROS 2 software pins every dependency, installs from the same scripts on bare metal or in containers, and records stereo images with hardware-measured timing. On the real arms, ARTS commands each arm at its controller's full rate (e.g., 500 Hz on the UR5e), the two cameras expose within 12 microseconds of each other, hand motion reaches the arm in 58 ms, and the endoscope image reaches the monitor in 68 ms. The ISO 9283 pose repeatability is 0.14-0.25 mm, comparable to a da Vinci Research Kit (dVRK) Classic arm on the same protocol, and an optical tracker measured a mean remote-center-of-motion error of 0.34-0.37 mm. Three expert and three novice operators performed the Fundamentals of Laparoscopic Surgery (FLS) peg transfer through a laparoscopic trainer box, and one of the experts sutured on a suture pad. The hardware designs, firmware and software are available at https://github.com/MRE-Lab-UMD/arts.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiawei Ge",
+    "Chunwoo Kim",
+    "Antony Goldenberg",
+    "Douglas McDonough",
+    "Justin Liao"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/MRE-Lab-UMD/arts",
+  "hasCode": true,
+  "id": "arxiv-2611.15135",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Research on surgical autonomy needs open platforms that any laboratory can build, yet the most widely shared platform depends on donated clinical hardware, and open alternatives on industrial arms…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "ARTS: An Open-Source, Reproducible Three-Arm Platform for Autonomy Research in Minimally Invasive Surgery",
+  "url": "https://arxiv.org/abs/2611.15135",
+  "use_case": ""
+}

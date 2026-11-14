@@ -1,0 +1,33 @@
+{
+  "abstract": "Generative video compression offers a promising solution for compressing and reconstructing videos under extremely low bitrate constraints, among which the diffusion-based solutions still achieve the best performance by providing the powerful generative latent prior. However, their effectiveness critically depends on when the compressed latent is introduced into the diffusion process, which directly governs the trade-off between reconstruction fidelity and perceptual realism. To address this limitation, we identify denoising start-timestep selection as a key factor governing this trade-off and formulate it as a geometric optimization problem. Based on this formulation, we propose a novel adaptive diffusion entry method for generative video compression (ADE-GVC), the first timestep-aware generative video compression framework, featuring a lightweight predictor that estimates an adaptive denoising start point from the compressed latent. A temporal adapter further extracts compression-aware conditions and injects them into a pretrained video diffusion model, enabling the reconstruction of videos with both high fidelity and realism. More importantly, we observe a strong quantitative relationship between the predicted timesteps and the distortion between the original and compressed latents, providing empirical support for our optimization formulation. Extensive experiments demonstrate that ADE-GVC achieves the state-of-the-art performance on perceptual metrics and substantially improves reconstruction realism over existing generative video compression methods. Notably, our ADE-GVC achieves an average bitrate savings of 40.99\\% (on DISTS) and 95.24\\% (on PSNR) compared to the latest open-source baseline GLC-Video.",
+  "abstract_ja": "",
+  "authors": [
+    "Zifu Zhang",
+    "Yuqiao Li",
+    "Ding Ding",
+    "Shengxi Li",
+    "Mai Xu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13620",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Generative video compression offers a promising solution for compressing and reconstructing videos under extremely low bitrate constraints, among which the diffusion-based solutions still achieve the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "When to Start Denoising? Adaptive Denoising Entry for Generative Video Compression",
+  "url": "https://arxiv.org/abs/2611.13620",
+  "use_case": ""
+}

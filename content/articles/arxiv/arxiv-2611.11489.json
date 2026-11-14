@@ -1,0 +1,32 @@
+{
+  "abstract": "Autonomous UAV exploration is increasingly used for large-scale surveying and inspection in inaccessible or disaster-affected environments, where onboard memory and computational resources are often severely constrained. Most existing UAV exploration systems maintain globally queryable geometric map representations for motion planning and exploration decision-making, causing memory consumption and spatial-query costs to increase with the explored area. Robot-centric local mapping bounds dense-map memory and computation but discards global task context needed for long-horizon exploration.We present FLAVOR, a hierarchical spatio-temporal framework that confines dense metric geometry to a robot-centric local map while retaining compact global observation and task context. At the observation level, lightweight LiDAR-keyframe visibility records preserve ray-wise evidence for frontier reasoning. At the task level, unresolved frontiers beyond the local-map extent are retained as compact pending tasks associated with odometry anchors. A sparse topological graph connects these anchors through retained routes for future revisits.Upon returning to a task region, FLAVOR reconstructs the frontier and exploration viewpoint from observations, while the topological route is instantiated and validated against the current local map before execution. Dense-map capacity remains fixed as exploration expands, with exploration-dependent memory growth confined to compact observation and task context.FLAVOR achieves 31.98--41.88% shorter exploration time and a 94--99% smaller map memory footprint than the best baseline that completes all three simulated scenes. In real-world deployments, it reduces this footprint by 92.67% in the forest and 62.42% at the construction site relative to an explicit point-cloud ikd-tree while preserving long-term task continuity under constrained onboard resources.",
+  "abstract_ja": "",
+  "authors": [
+    "Yizhe Zhang",
+    "Jianping Li",
+    "Yilun Gao",
+    "Liangliang Yin",
+    "Pengfei Wan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11489",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Autonomous UAV exploration is increasingly used for large-scale surveying and inspection in inaccessible or disaster-affected environments, where onboard memory and computational resources are often…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Beyond Memory Limits: A Hierarchical Spatio-Temporal Map Representation for Large-Scale 3D Autonomous Exploration",
+  "url": "https://arxiv.org/abs/2611.11489",
+  "use_case": ""
+}

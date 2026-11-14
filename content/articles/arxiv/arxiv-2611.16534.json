@@ -1,0 +1,35 @@
+{
+  "abstract": "Face presentation attack detection requires representations that distinguish physical spoofing cues across changes in acquisition devices, subjects, and attack media. Large visual encoders offer transferable representations, but conventional binary fine-tuning supervises their final decisions without explicitly constraining how local facial evidence is represented under partial observation. We present CP-JEPA, a context-predictive adaptation framework that combines low-rank tuning of a pretrained CLIP image encoder with a joint-embedding predictive objective. A student predicts complete-image teacher features at masked spatial locations, while unmasked classification, masked classification, and prediction consistency retain the connection to the live/spoof task. An exponential-moving-average teacher supplies evolving latent targets. The auxiliary components are used only during training; inference requires only the LoRA-adapted CLIP visual encoder and binary classifier. {We evaluate CP-JEPA under single-source and multi-source OCIM transfer, additional CelebA-Spoof training, transfer to CelebA-Spoof, two-source training, and unseen-attack evaluation on SiW-Mv2.} On the standard OCIM benchmark, CP-JEPA achieves 3.74\\% mean HTER and 98.73\\% mean AUC. {Single-source evaluation achieves 11.36\\% mean HTER across twelve source--target combinations.} With CelebA-Spoof added to the three OCIM training sources, CP-JEPA reduces mean HTER from 3.45\\% to 2.35\\% and increases mean AUC from 98.68\\% to 99.32\\%. On SiW-Mv2, it achieves 3.36\\% mean HTER across the held-out attack categories. Controlled loss ablations examine the contributions of latent prediction, masked classification, and prediction consistency. The results show that context-predictive adaptation can improve cross-dataset PAD performance, although the gains vary with the training sources and evaluation setting.",
+  "abstract_ja": "",
+  "authors": [
+    "Aminu Yusuf",
+    "Shakeel Muhammad Ibrahim",
+    "Sulaimon Oyeniyi Adebayo",
+    "Muhammad Sohail Ibrahim",
+    "Muhammad Shahid Jabbar"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16534",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Face presentation attack detection requires representations that distinguish physical spoofing cues across changes in acquisition devices, subjects, and attack media. Large visual encoders offer…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "Context-Predictive Low-Rank Adaptation for Face Presentation Attack Detection",
+  "url": "https://arxiv.org/abs/2611.16534",
+  "use_case": ""
+}

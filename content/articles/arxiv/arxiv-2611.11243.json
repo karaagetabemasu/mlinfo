@@ -1,0 +1,31 @@
+{
+  "abstract": "EmbeddingGemma-300M is a small open embedder whose tokenizer represents every Tajik letter, and as released it is weak at Tajik retrieval: on our Tajik law test the right passage is in its top ten results for 49.3% of questions, on tax documents for 45.9%, and on the human-written Belebele Tajik set for 69.8%, against 98.6% on the Russian version of the same set. We present Saidzoda-Tajik-EmbeddingGemma-300M, the same model fully fine-tuned for one epoch on 235,140 question and passage pairs written by our own Tajik language model for laws, tax documents, Wikipedia and web text, with the same mined hard negatives, English and Russian replay, loss, global batch, learning rate and epoch as our earlier Saidzoda-Tajik-E5-Large (arXiv:2611.00592) and BGE-M3 models. After training, law reaches 92.4% and tax 91.7%; on Belebele, the one test written by people, recall@10 rises from 69.8% to 92.6% and the first result is right for 76.6% of questions instead of 51.7%. A checkpoint at step 100 of 466 already holds 88% of the law gain at recall@10. At recall@10 the result is no more than 2.8 points below the two 560M models trained on the same pairs on law, tax and Wikipedia, within the intervals, with 768-dimensional vectors and about half their parameters; at recall@1, for which we have no intervals, it stays 7.0 points behind the E5 model on Belebele. The cost is a drop of 3.0 and 2.8 points in Russian and English recall@1, larger than for the two earlier models. We also report that, according to our run notes, a bfloat16 test run produced a non-finite loss at step 3 which the training framework logged as zero, so training was done in fp32. Our generated test questions come from the same model as the training questions, so we treat those scores as an upper limit until questions written by Tajik speakers exist.",
+  "abstract_ja": "",
+  "authors": [
+    "Tohir Saidzoda",
+    "Nekruz Maxudov",
+    "Bedil Karimov",
+    "Abubakr Abdullozoda",
+    "Amin Jalilov"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11243",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "EmbeddingGemma-300M is a small open embedder whose tokenizer represents every Tajik letter, and as released it is weak at Tajik retrieval: on our Tajik law test the right passage is in its top ten…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Saidzoda-Tajik-EmbeddingGemma-300M: Knowing Every Letter Is Not Reading Tajik",
+  "url": "https://arxiv.org/abs/2611.11243",
+  "use_case": ""
+}

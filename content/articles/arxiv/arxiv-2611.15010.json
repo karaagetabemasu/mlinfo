@@ -1,0 +1,31 @@
+{
+  "abstract": "Machine learning models are often trained on labeled data produced by multiple human annotators. When those annotators disagree, their labels are commonly collapsed into a single majority vote, which discards information about the underlying disagreement. We examine the cost of this practice for cyberbullying severity, a subjective judgment on which annotators disagree heavily. In the corpus we study, all 5 annotators assigned the same severity label to only 4.1% of comments. Turning 5 judgments into one label hides this disagreement and obscures how much the annotators differed in their assessments. In this paper, we ask whether a model can preserve this information by predicting the distribution of annotator judgments instead of a single majority label. We find 3 main results. First, accuracy against the majority label cannot tell competent models apart: 2 models with similar accuracy can differ greatly in how well they match the distribution of annotator judgments. Second, predicting the full distribution requires little extra effort. Calibrating an existing model, which adjusts its output probabilities after training, captures most of the improvement without retraining, across 3 datasets covering severity, abuse, and irony, while training on label distributions adds a small further gain. Third, we examine a dataset that includes annotator demographics, where a single shared model has one advantage and one limit. The advantage is that a model predicting the distribution of judgments matches each demographic group's judgments significantly better than a model trained on majority labels, so both groups gain. The limit is that it does not narrow the gap in performance between the groups, because one shared model cannot encode which group is right on a given comment. Preserving annotator disagreement is therefore a low-cost step toward fairer moderation, though not a complete one.",
+  "abstract_ja": "",
+  "authors": [
+    "Arslan Bisharat",
+    "Katelyn Skees",
+    "Manuel Sandoval Madrigal",
+    "Mujtaba Nazari",
+    "Ayaan Khan"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15010",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Machine learning models are often trained on labeled data produced by multiple human annotators. When those annotators disagree, their labels are commonly collapsed into a single majority vote, which…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Calibrate, Don't Retrain: Decomposing the Value of Annotator Disagreement in Cyberbullying Severity",
+  "url": "https://arxiv.org/abs/2611.15010",
+  "use_case": ""
+}

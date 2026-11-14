@@ -1,0 +1,27 @@
+{
+  "abstract": "On the Web, user profiling builds compact user representations from interaction histories for efficient personalization, and dynamic user profiling updates them as users' behavior and preferences change. However, new user behavior can be ambiguous, and its interpretation differs across users. To address this, we introduce Uncertainty-aware Adaptive Profile Manager (UAPM), which separates the claims in a user profile from interpretations of new behavior that are not yet confirmed, through a Profile, a Buffer, and a Rulebook. UAPM records user-specific interpretation and update rules in the Rulebook, keeps ambiguous evidence in the Buffer outside the Profile as evidence for later decisions, and writes supported general and situational characteristics to the Profile. We train UAPM with Privileged On-Policy Distillation with Dual Specialization (POPD-DS), which learns from recorded future interactions during training without access to them at deployment. Its first stage, Dual Specialization, distills a stronger model into a current-only Student and a future-informed model that becomes the Teacher. In the second stage, privileged on-policy distillation (POPD), only the fixed Teacher receives future interactions and guides the Student's own management decisions alongside task rewards. Experiments on three Web personalization tasks show that UAPM outperforms multiple baselines under the same downstream input budget, improving on the best same-budget baseline by up to 5%.",
+  "abstract_ja": "",
+  "authors": [
+    "Jieyong Kim",
+    "Neil Shah",
+    "Dong Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11204",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "On the Web, user profiling builds compact user representations from interaction histories for efficient personalization, and dynamic user profiling updates them as users' behavior and preferences…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Not Yet in the Profile: Uncertainty-Aware Dynamic User Profiling by Learning from Future Interactions",
+  "url": "https://arxiv.org/abs/2611.11204",
+  "use_case": ""
+}

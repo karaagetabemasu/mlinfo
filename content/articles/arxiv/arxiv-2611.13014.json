@@ -1,0 +1,30 @@
+{
+  "abstract": "Ensembles of ImageNet-pretrained convolutional networks and Vision Transformers are a common way to improve multi-label chest X-ray classification. We ask whether such an ensemble is still worth its cost when a model pretrained on chest radiographs is available. On the official patient-disjoint split of NIH ChestX-ray14 (25,596 test images, 2,797 patients), we train five ImageNet-pretrained backbones and the EVA-X-S foundation model with validation-only model selection, compare five fusion rules, and estimate every difference with a patient-level paired bootstrap. EVA-X-S alone reached a test macro-AUROC of 0.828; the five-model ensemble reached 0.814 (difference -0.0136, 95% CI -0.0178 to -0.0098) at about 7.8 times the summed backbone latency and ten times the parameters. Averaging the five ImageNet models with EVA-X-S changed AUROC by -0.0056 (-0.0095 to -0.0021). With all five ImageNet backbones trained with the EVA-X-S recipe, their ensemble scored 0.817, still -0.0109 (-0.0142 to -0.0076) below EVA-X-S, and across three seeds EVA-X-S varied by at most 0.001 AUROC. Under the ImageNet models' recipe, however, EVA-X-S fell to 0.798. Our full-stacking configuration never outperformed calibrated averaging. In this setting, the tested ImageNet ensembles did not improve on a single chest X-ray foundation model fine-tuned with its own recipe.",
+  "abstract_ja": "",
+  "authors": [
+    "Aditya Seelaboyina",
+    "Irfan Khan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13014",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Ensembles of ImageNet-pretrained convolutional networks and Vision Transformers are a common way to improve multi-label chest X-ray classification. We ask whether such an ensemble is still worth its…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Is a CNN-Transformer Ensemble Worth It When a Chest X-Ray Foundation Model Is Available?",
+  "url": "https://arxiv.org/abs/2611.13014",
+  "use_case": ""
+}

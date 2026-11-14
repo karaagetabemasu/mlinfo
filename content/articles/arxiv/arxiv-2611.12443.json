@@ -1,0 +1,35 @@
+{
+  "abstract": "Generalizable deepfake video detection remains challenging because forgery artifacts vary substantially across manipulation types and often combine diverse spatial and temporal inconsistencies. Existing parameter-efficient adaptation methods typically rely on a single shared representation, rendering them prone to manipulation-specific bias and limiting transfer to unseen forgeries. To address this challenge, we propose Mixture Of Spatio-Temporal Experts (MoSTE), an adaptation framework that enables conditional specialization of forensic representations. Instead of forcing one adapter to model all forgery patterns, MoSTE decomposes adaptation into parallel spatial and temporal expert pools and dynamically routes tokens to the most relevant experts through an unsupervised token-level routing mechanism. This allows experts to naturally specialize in complementary forgery cues without requiring explicit manipulation labels or multi-stage training, while effectively transferring representations from CLIP to the video domain. Extensive experiments across cross-dataset and cross-manipulation benchmarks demonstrate that MoSTE sets a new state of the art in average generalization while preserving strong performance across diverse manipulation families. Additional analysis of expert routing and attention behavior reveals the emergence of expert diversity, suggesting that MoSTE learns complementary spatio-temporal forensic features. Code is available at https://github.com/charbelyah/MoSTE",
+  "abstract_ja": "",
+  "authors": [
+    "Charbel Yahchouchi",
+    "Nabyl Quignon",
+    "Noemi Roggero",
+    "Laurent Saroul",
+    "Antitza Dantcheva"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/charbelyah/MoSTE",
+  "hasCode": true,
+  "id": "arxiv-2611.12443",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Generalizable deepfake video detection remains challenging because forgery artifacts vary substantially across manipulation types and often combine diverse spatial and temporal inconsistencies.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised"
+    ],
+    "modality": [
+      "video"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "MoSTE: Mixture of Spatio-Temporal Experts for Deepfake Detection in Videos",
+  "url": "https://arxiv.org/abs/2611.12443",
+  "use_case": ""
+}

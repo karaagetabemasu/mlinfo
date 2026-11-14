@@ -1,0 +1,34 @@
+{
+  "abstract": "Cinematic composition questions depend on in-frame geometry that vision-language models (VLMs) use inconsistently. External perception tools can expose this geometry, but naive prompt injection can overwrite useful visual predictions. On ShotBench composition, pre-question geometry reduces Qwen2.5-VL-7B from 49.5% to 46.3%; corrupted measurements lower it to 33.6%. CompositionEvidence derives nine reproducible features from frozen detection, depth, and line experts and supplies their shared 24-dimensional representation through two interfaces. A training-free channel appends gated neutral evidence after the question, reaching 56.2% (+6.7, exact McNemar p=0.0018) and 48.4% under corrupted evidence. A minimal-training channel maps the same representation to four soft tokens with a 7.37M-parameter projector while leaving the VLM frozen; it reaches 61.0% (+11.5). Across nine VLMs, including five commercial models queried through official provider APIs, zero-shot accuracy ranges from 43.8% to 63.0%, and the text channel changes it by +6.7 to -6.9 points; the highest baseline is among the regressions. The effect of explicit geometry depends on measurement reliability and on how the receiving model integrates it.",
+  "abstract_ja": "",
+  "authors": [
+    "Yichen He",
+    "Xin Huang",
+    "Yuxi Liu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10559",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "Cinematic composition questions depend on in-frame geometry that vision-language models (VLMs) use inconsistently. External perception tools can expose this geometry, but naive prompt injection can…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "detection",
+      "regression"
+    ]
+  },
+  "title": "CompositionEvidence: Controlling Geometric Evidence for Cinematic Composition Reasoning with Frozen Vision-Language Models",
+  "url": "https://arxiv.org/abs/2611.10559",
+  "use_case": ""
+}

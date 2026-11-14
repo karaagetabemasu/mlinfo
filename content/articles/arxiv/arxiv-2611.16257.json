@@ -1,0 +1,30 @@
+{
+  "abstract": "In cross-subject neural--image retrieval, comparing the mean of a few stimulus-matched target observations with the global source mean conflates subject-specific representation shifts with stimulus-composition effects. To address this problem, we propose Stimulus-Anchored Latent Bias Calibration (SA-LBC), which estimates the first-order shift under fixed preprocessing and a frozen source-trained representation by averaging residuals between target responses and same-stimulus source-population anchors, then shrinks the correction using source-derived uncertainty. Under uniform sampling without replacement from a finite stimulus population, we derive exact finite-population MSE expressions for the unshrunk anchored and global-mean estimators, including residual--anchor cross-covariance, and establish a necessary and sufficient condition for anchoring to reduce MSE relative to global-mean estimation. In a 10-subject leave-one-subject-out evaluation on THINGS-EEG2, SA-LBC increases mean reciprocal rank (MRR) for the Attention--CLIP ViT-B/32 configuration from 0.1867 without calibration to 0.2013 and 0.2336 with M=2 and M=16 stimulus-level calibration samples, respectively. Across six neural--visual configurations and all calibration budgets, stimulus-matched anchors yield higher MRR than anchors with shuffled stimulus identities, but retrieval gains over no calibration remain representation-dependent. At (M=2), shrinkage improves MRR over the unshrunk anchored estimator in all six configurations, but its effects at larger budgets vary across representations; the relative ranking of translation and orientation corrections also depends on regularization strength. Thus, lower shift-estimation MSE does not guarantee higher retrieval performance. The source code is publicly available at: https://github.com/Xizhang-Yao/SA-LBC.",
+  "abstract_ja": "",
+  "authors": [
+    "Xizhang Yao",
+    "Li Zhang",
+    "Gan Huang",
+    "Zhen Liang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/Xizhang-Yao/SA-LBC",
+  "hasCode": true,
+  "id": "arxiv-2611.16257",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "In cross-subject neural--image retrieval, comparing the mean of a few stimulus-matched target observations with the global source mean conflates subject-specific representation shifts with…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Few-Shot Cross-Subject Neural--Image Retrieval via Stimulus-Anchored Latent Bias Calibration",
+  "url": "https://arxiv.org/abs/2611.16257",
+  "use_case": ""
+}

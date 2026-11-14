@@ -1,0 +1,30 @@
+{
+  "abstract": "A discrete PID controller is exactly a recurrent neural network, a classical state-space fact: a fixed linear memory of the running integral and the last error, read out by three trainable weights that map one-to-one to the PID gains. Networks with bounded hidden states, such as LSTMs of any width, only approximate it. Trained only on a one-step physical cost (the expected cost of one transition from a fixed state distribution), with no demonstrations, teacher controller, or known gains, the network solves a strongly convex least-squares problem, so gradient descent converges from any initialization to the unique one-step optimal PID gains; the limit network is that PID, with the same action on every error sequence. Partitioned regression then shows what extra capacity buys. Orthogonal residual features keep these gains and improve on the PID if and only if they correlate with the part of the optimal action outside the PID span. On a nonlinear second-order example the gap is 5.88% of the optimal PID cost, and 4.00% against PID with a bias; no controller can improve on PID by more on this objective. A residual started at a tuned PID begins exactly at that PID; at the one-step optimal PID, a fixed-feature residual's first gradient step lowers the cost if and only if its features can improve on the PID. Experiments confirm the realization, recovery, and gap results to numerical precision. On held-out plants of three families, under a protocol frozen before the test data existed, a residual warm-started at a heavily tuned PID and trained with it lowers the long-horizon cost by 3.5%, 3.5%, and 1.9%, with family-wise 95% bounds excluding zero, also under distribution shift; a post hoc comparison with the PID tuned alone suggests that most of it comes from the recurrent part in two families. The primary endpoint, a gain of at least 5% from a generic PID start, is not met in any family.",
+  "abstract_ja": "",
+  "authors": [
+    "Felipe de Jesús Félix-Arredondo",
+    "Nezih Nieto-Gutiérrez",
+    "Carlos Astengo-Noguez",
+    "Alejandro Ucan-Puc"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16050",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "A discrete PID controller is exactly a recurrent neural network, a classical state-space fact: a fixed linear memory of the running integral and the last error, read out by three trainable weights…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Your PID Is Already a Neural Network: Learning Its Gains with Only Three Weights and No Teacher",
+  "url": "https://arxiv.org/abs/2611.16050",
+  "use_case": ""
+}

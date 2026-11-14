@@ -1,0 +1,33 @@
+{
+  "abstract": "Long-context multimodal intelligence requires revisiting earlier images as conversations and documents accumulate, yet retaining an image does not guarantee reliable access to its details. By varying context length, redistributing a fixed text passage around the image, and changing positions without adding text, we identify the positional relation between images and questions as a direct influence on visual access. To address this gap, we propose Visual Position Re-Anchoring (VPR), a training-free method that shifts cached visual-key rotary phases toward a short-context reference before question processing. It operates directly on the existing KV cache, preserving standard attention computation without extracting attention maps or adding model forward passes. We develop static and continuous compensation schedules, using the static schedule by default. Across ten checkpoints and ten benchmarks, static VPR improves 97 of 100 model--task scores. Further analysis shows greater attention to regions containing answer evidence across six checkpoints, with minimal runtime overhead under fixed rotary frequencies. These findings demonstrate an efficient way to sustain visual access through positional adjustment within the cache.",
+  "abstract_ja": "",
+  "authors": [
+    "Juntao Xu",
+    "Qichai Zhao",
+    "Rui Sun",
+    "Zhouyang Jiang",
+    "Shiwei Wu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15100",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Long-context multimodal intelligence requires revisiting earlier images as conversations and documents accumulate, yet retaining an image does not guarantee reliable access to its details. By varying…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Keep Images in Sight: Visual Position Re-Anchoring for Long-Context MLLMs",
+  "url": "https://arxiv.org/abs/2611.15100",
+  "use_case": ""
+}

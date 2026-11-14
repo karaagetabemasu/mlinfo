@@ -1,0 +1,28 @@
+{
+  "abstract": "Deep neural networks achieve universal function approximation by stacking interconnected nonlinearities, but as a consequence they are sensitive to noise and resist mechanistic interpretation. In contrast, the local update rules of cellular automata, such as Conway's Game of Life, give rise to not merely interpretable but programmable dynamics. We explore a bridge between these worlds: a lateral inhibition in neural networks based on continuous Game-of-Life rules that derives inhibitory and excitatory responses from the layer input and blends them into the activation map in a state-conditioned way. The mechanism is differentiable and architecture-agnostic, and its regulation is imposed rather than learned: the rule's parameters are fixed and are not optimised, while the rule's values and derivatives shape training throughout the network. Wired into fully connected, convolutional, wide-residual and graph convolutional networks, it gives rise to several properties. Activation maps become coherent across space, depth and seeds, with coarse structure persisting through depth while fine detail is renewed at every layer. The co-activation graph of the hidden units departs from an Erdős--Rényi random graph: it is laid out on the image and its giant component grows in steps, as in a spatial graph. Networks started from nearly identical initialisations, under label noise, disagree on thirty times fewer test images. Saliency maps rest on the object rather than the background, and resilience to pixel noise not seen in training is substantially improved.",
+  "abstract_ja": "",
+  "authors": [
+    "Yair Cohen",
+    "Scott M. Gilmore"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10760",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Deep neural networks achieve universal function approximation by stacking interconnected nonlinearities, but as a consequence they are sensitive to noise and resist mechanistic interpretation. In…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "ConwayNet: Interpretability, Activation Coherence, and Noise Resilience via a Game-of-Life-Inspired Lateral Inhibition in Artificial Neural Networks",
+  "url": "https://arxiv.org/abs/2611.10760",
+  "use_case": ""
+}

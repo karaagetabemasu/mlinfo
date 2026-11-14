@@ -1,0 +1,31 @@
+{
+  "abstract": "Accelerated magnetic resonance imaging (MRI) forms images from incomplete Fourier measurements, shifting acquisition burden to computational reconstruction. Deep unrolled networks interleave learned regularization and data consistency, yet typically estimate the full unmeasured spectrum at every cascade. We propose STAIRS (Staging the Inverse Problem via Admissible-Support Scheduling), which projects intermediate reconstructions onto nested Fourier supports that expand to the full spectrum and conditions each update on its support transition. Conditional increments of a regularized log-determinant score of training covariance define a normalized spectral coordinate, accounting for dependencies between newly and previously admitted frequencies. Dyadic targets allocate larger coordinate increments to earlier cascades and are mapped to fixed supports before training, enabling coarse-to-fine reconstruction with unchanged sampling masks and data consistency. On fastMRI and Stanford2D, STAIRS improves matched Transformer (HUMUSNet) and convolutional (NAFNet) backbones in single- and multi-coil reconstruction, including radiologist-annotated pathology regions. It also outperforms predictor-based progression with lower parameter overhead and inference latency. Stage-wise analysis shows repeated error correction by projection and lower intermediate reconstruction errors than the backbones alone throughout support expansion. Ablations favor dyadic allocation over uniform expansion for square and line-band supports and over manual front-loading for square windows. Support projection alone improves reconstruction, and transition conditioning strengthens the gain. Cross-dataset evaluation shows improvements for both backbones in both directions. Support allocation thus complements regularizer design in unrolled MRI reconstruction.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiangjian Hou",
+    "Chang Ni",
+    "Chao Qin",
+    "Zhiwei Tan",
+    "Xin Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10260",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Accelerated magnetic resonance imaging (MRI) forms images from incomplete Fourier measurements, shifting acquisition burden to computational reconstruction. Deep unrolled networks interleave learned…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "STAIRS: Staging the Inverse Problem via Admissible-Support Scheduling for Unrolled MRI Reconstruction",
+  "url": "https://arxiv.org/abs/2611.10260",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Accurate plant disease recognition is essential for intelligent agriculture, but few-shot settings provide limited labeled samples that may not capture diagnostic symptoms and intra-class variations. Pretrained vision-language models (VLMs), such as CLIP, offer transferable visual-semantic knowledge. However, existing CLIP-based methods often rely on coarse class semantics and global visual representations, overlooking disease-specific diagnostic information and fine-grained local cues. Excessive few-shot adaptation may also cause over-specialization and weaken the generalization ability of large-scale pre-training. We propose a description-guided, two-stage CLIP adaptation method to address these issues. Symptom and comparative descriptions enrich class semantics with typical visual symptoms and discriminative cues between similar diseases. The enhanced semantics guide the aggregation of class-relevant patch evidence to calibrate global image-text matching with fine-grained cues. For adaptation, we first update the vision-language encoders with lightweight parameters, then freeze them and train a linear classifier. At inference, the classifier is used for in-domain prediction, while class prototypes from the adapted text encoder support cross-domain prediction and retain vision-language transferability. Experiments with two backbones show that our method achieves the highest mean accuracy in most few-shot settings on PlantVillage, Cassava, and Pear, reaching 93.16%, 79.30%, and 96.56%, respectively, with ViT-L/14 under 16-shot. On class-aligned cross-domain evaluation across 21 shared PlantDoc classes, it achieves 56.96% accuracy, outperforming all compared methods. These results demonstrate its effectiveness in fine-grained few-shot plant disease recognition and cross-domain generalization.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhenkun Ye",
+    "Qian Zhou",
+    "Hua Zou"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16373",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Accurate plant disease recognition is essential for intelligent agriculture, but few-shot settings provide limited labeled samples that may not capture diagnostic symptoms and intra-class variations.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Description-Guided CLIP Adaptation with Local Evidence Calibration for Few-Shot Plant Disease Recognition",
+  "url": "https://arxiv.org/abs/2611.16373",
+  "use_case": ""
+}

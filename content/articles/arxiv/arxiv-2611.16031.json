@@ -1,0 +1,29 @@
+{
+  "abstract": "Adversarial training protects predictive performance under attack but does not determine how decisions are distributed across protected groups. We formulate binary classification as projected gradient descent (PGD) adversarial-risk minimization under a squared soft demographic-parity (DP) budget, optimized with projected multiplier and one-sided penalty updates. On Adult Income, using the binary sex field supplied by the benchmark for group auditing but excluding it from prediction, we test logistic regression and a one-hidden-layer multilayer perceptron (MLP) across three paired seeds, four PGD strengths, and five budgets. At $\\varepsilon=0.3$, PGD training improves balanced accuracy over empirical-risk minimization (ERM) by $7.77$ and $11.45$ percentage points and removes $85.7\\%$ and $89.5\\%$ of attack-induced growth in hard demographic-parity difference (DPD). At the representative interior value $τ=0.015$, constrained training cuts DPD relative to PGD training by $52.2\\%$ and $49.2\\%$, while remaining $3.18$ and $8.34$ balanced-accuracy points above ERM. Across all eight seed-averaged model-attack paths, the sampled budget path strictly orders DPD and accuracy and reverses mean signed equal-opportunity difference (EOpp). A rate theorem gives the exact true-positive-rate shift required for reversal, and the measured group rates satisfy it. Within this controlled feature-space study, robustness and parity admit useful joint operating points, but one fairness metric cannot replace a full group-rate audit.",
+  "abstract_ja": "",
+  "authors": [
+    "Pablo Rivas",
+    "Jeremy Frank"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16031",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Adversarial training protects predictive performance under attack but does not determine how decisions are distributed across protected groups. We formulate binary classification as projected…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "regression"
+    ]
+  },
+  "title": "Robustness Within a Fairness Budget: Parity Frontiers and Equal-Opportunity Reversal",
+  "url": "https://arxiv.org/abs/2611.16031",
+  "use_case": ""
+}

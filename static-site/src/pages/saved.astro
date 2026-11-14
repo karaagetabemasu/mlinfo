@@ -1,0 +1,4 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="保存した記事" noindex><h1>保存した記事</h1><p class="lead">このブラウザに保存した記事です。公開期間が終了した記事は読めなくなる場合があります。</p><div class="actions"><button id="export-bookmarks">保存をバックアップ</button><label class="button">バックアップを読み込む<input id="import-bookmarks" type="file" accept=".json,application/json"/></label></div><p id="saved-status" role="status"></p><div id="saved-list" class="grid"></div><script src="../scripts/saved.ts"></script></Base>

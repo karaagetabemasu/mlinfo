@@ -1,0 +1,33 @@
+{
+  "abstract": "Reliable state feedback of excavator front-end mechanisms is essential for autonomous excavation, yet retrofitting existing machines with dedicated joint sensors, external cameras, or visual markers can increase deployment and maintenance burdens. This paper proposes a closed-loop autonomous excavation framework for continuous inference of excavator joint states using onboard visual observations and control-related temporal information. The framework encodes structural cues from the current cab-view image, models short-term motion trends from historical joystick commands, and introduces a rolling state buffer for the bucket joint to preserve temporal continuity under severe occlusion. Mechanical joint-range constraints are incorporated into the learning objective to suppress infeasible estimates. The current cab-view image and inferred states are supplied to an Action Chunking with Transformers (ACT)-based control policy for online action generation. Experiments in an AGX Dynamics for Unity simulation environment under diverse operating conditions evaluate joint-state inference and end-to-end task execution. Across 20 autonomous excavation trials, the framework achieved a 95% task-completion rate, with an average joint-state-inference-and-control latency of 10.11 ms per step. The bucket-joint inference achieved a mean absolute error (MAE) of 0.965 degrees. These results demonstrate a sensor-light and computationally efficient joint-state-inference approach that can support closed-loop autonomous excavation with reduced dependence on additional sensing infrastructure.",
+  "abstract_ja": "",
+  "authors": [
+    "Junwei Li",
+    "Jian Pan",
+    "Mengchi Cai",
+    "Shuai Zhao",
+    "Xizhuo Jiang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13690",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Reliable state feedback of excavator front-end mechanisms is essential for autonomous excavation, yet retrofitting existing machines with dedicated joint sensors, external cameras, or visual markers…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Joint-State Inference for Autonomous Excavators Using Cab-View Vision-Control Fusion",
+  "url": "https://arxiv.org/abs/2611.13690",
+  "use_case": ""
+}

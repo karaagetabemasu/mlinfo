@@ -1,0 +1,27 @@
+{
+  "abstract": "We present VWEN, a 0.8B-parameter model for Vietnamese paraphrasing at a requested level of change and for five related tasks: generating several paraphrases, simplification, gist, register transfer and paraphrase judgement. VWEN is Qwen3.5-0.8B fine-tuned on about 7k samples chosen by a four-stage pipeline: rules and deduplication, a bidirectional entailment filter, a divergence score that assigns low and high paraphrase levels, and selection for coverage and instruction-following difficulty. We compare it with paraphrase-only recipes from the same pipeline and with training on the ViSP corpus under matched and larger step budgets. On high-divergence paraphrasing, VWEN reaches a success rate (requested level reached and meaning preserved) of 0.61 against 0.46 for the ViSP model at matched compute, a difference that holds on inputs resembling ViSP. Given four times more training examples, the ViSP model closes the gap on such inputs but not on questions, which ViSP lacks and which it often turns into statements. Across all comparisons the entailment filter is the most effective stage. Training on paraphrases alone erases abilities of the base model that the multi-task data preserves.",
+  "abstract_ja": "",
+  "authors": [
+    "Sang Quang Nguyen"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15587",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "We present VWEN, a 0.8B-parameter model for Vietnamese paraphrasing at a requested level of change and for five related tasks: generating several paraphrases, simplification, gist, register transfer…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "VWEN: A Curated Small Language Model for Vietnamese Paraphrasing",
+  "url": "https://arxiv.org/abs/2611.15587",
+  "use_case": ""
+}

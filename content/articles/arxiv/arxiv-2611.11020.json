@@ -1,0 +1,30 @@
+{
+  "abstract": "This paper explores an unexpected connection between the quality of a neural network's (NN's) internal representation and its vulnerability to catastrophic forgetting. The representational forgetting hypothesis is that networks with unified, factored representation (UFR) can resist catastrophic forgetting without any modification to the underlying fine-tuning algorithm or network architecture. The key insight is that catastrophic forgetting may largely result from fractured entangled representation (FER): fine-tuning on only part of the input domain results in disruptive changes for other input patterns, because of how individual features are globally entangled. In contrast, if a gradient update is compatible with how a UFR network factors its representation, such an update may result in coordinated change across the input domain, alleviating catastrophic forgetting. Experiments in two domains provide evidence for this hypothesis: (1) an illustrative 1D regression task, in which UFR networks constructed by hand are compared against networks trained from scratch with SGD, and (2) an image-regression task with NNs previously shown to exhibit UFR. In both settings, UFR networks forget substantially less than their FER counterparts when repeatedly fine-tuned on UFR-compatible variations. Further experiments show that a training loss that distills UFR representations into fresh NNs reduces forgetting; along with several additional controls, these results help isolate representation as the critical factor. Together these results suggest that representational quality is an underappreciated contributor to catastrophic forgetting, and that the encouragement and maintenance of such quality may require attending to what patterns a particular NN is ready to learn.",
+  "abstract_ja": "",
+  "authors": [
+    "Joel Lehman",
+    "Kenneth O. Stanley"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11020",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "This paper explores an unexpected connection between the quality of a neural network's (NN's) internal representation and its vulnerability to catastrophic forgetting. The representational forgetting…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Unified Factored Representations Resist Catastrophic Forgetting",
+  "url": "https://arxiv.org/abs/2611.11020",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Vision Transformers (ViTs) have demonstrated remarkable performance, yet their computational and memory demands pose significant challenges for deployment on mobile devices. Data-free quantization (DFQ) enables the compression of ViTs without access to their original training data. Existing DFQ methods often synthesize calibration samples by maximizing the entropy of patch similarity. However, similarity entropy describes the dispersion of similarity values without ensuring that the generated samples cover diverse feature directions, potentially limiting their effectiveness for quantization calibration. To address this limitation, we propose RankQ-ViT, a rank-guided DFQ framework for ViTs. We first observe that patch similarity matrices derived from Gaussian noise tend to have lower ranks than those derived from real images. Motivated by this observation, we introduce a block-aware self-contrastive objective that promotes feature diversity during synthetic data generation without explicitly computing matrix rank at each optimization step. We then select calibration samples based on their rank and semantic consistency and use them for block-wise reconstruction of the quantized model. Experiments on ImageNet, COCO, ModelNet40, and ShapeNet demonstrate the effectiveness of RankQ-ViT across multiple architectures and tasks, particularly under low-bit quantization. The code is available at https://github.com/Runqing-forMost/rankq-vit.git",
+  "abstract_ja": "",
+  "authors": [
+    "Runqing Jiang",
+    "Ye Zhang",
+    "Pengpeng Yu",
+    "Zhuo Song",
+    "Changjun Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/Runqing-forMost/rankq-vit.git",
+  "hasCode": true,
+  "id": "arxiv-2611.11320",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Vision Transformers (ViTs) have demonstrated remarkable performance, yet their computational and memory demands pose significant challenges for deployment on mobile devices. Data-free quantization…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Beyond Similarity Entropy: A Rank-Guided Data-Free Quantization Framework for Vision Transformers",
+  "url": "https://arxiv.org/abs/2611.11320",
+  "use_case": ""
+}

@@ -1,0 +1,30 @@
+{
+  "abstract": "Many-query analyses, in which a computational model is repeatedly evaluated, play an important role in uncertainty quantification and optimization for engineering design. However, many-query analyses can be prohibitively expensive when considering high-fidelity numerical models, especially those governed by partial differential equations (PDEs). Surrogate modeling replaces costly simulations with cheap approximations, enabling practical uncertainty quantification and design workflows. Machine learning (ML) approaches to surrogate modeling have gained significant traction in the development of surrogate models due to their non-intrusive nature; they do not require access to the underlying simulation code. The Operator Inference (OpInf) approach, in particular, fits reduced operators to state and corresponding time derivative data. However, high-fidelity training data is scarce due to limited computational budgets, and OpInf models trained on such scarce data often exhibit high variance, a critical liability in high-risk engineering design. We propose Multifidelity Operator Inference (MF-OpInf), which reduces this variance by supplementing scarce high-fidelity snapshots with abundant low-fidelity data drawn from coarser discretizations of the same problem. MF-OpInf handles data across varying fidelity levels by utilizing a multifidelity linear regression framework to estimate the reduced operators. Numerical experiments on model PDE problems demonstrate that MF-OpInf predicts PDE solution fields with higher accuracy compared to the high-fidelity-only OpInf with the same computational budget.",
+  "abstract_ja": "",
+  "authors": [
+    "Vivian Zhang",
+    "Tomoki Koike",
+    "Atticus Rex",
+    "Elizabeth Qian"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13624",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Many-query analyses, in which a computational model is repeatedly evaluated, play an important role in uncertainty quantification and optimization for engineering design. However, many-query analyses…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Multifidelity Operator Inference for Non-intrusive Model Reduction under Data Scarcity",
+  "url": "https://arxiv.org/abs/2611.13624",
+  "use_case": ""
+}

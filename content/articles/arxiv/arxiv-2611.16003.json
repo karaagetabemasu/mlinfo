@@ -1,0 +1,31 @@
+{
+  "abstract": "State-of-the-art neural network verifiers evaluate linear relaxations over axis-aligned bounding boxes. However, verification domains in cyber-physical systems are rarely boxes. Reachability specifications, obstacle-avoidance constraints, and neural Lyapunov certificates typically yield oblique or non-convex polyhedral regions, over which box-based bounds become extremely loose. This paper proposes Fit-LRP (Fitting Linear Relaxations to Polytopes), a framework the implements exact optimization of affine bounds over non-convex domains (represented by unions of polytopes) by solving a sequence of small, low-dimensional linear programs. Our approach seamlessly enhances the final optimization step of LiRPA and $α,\\! β$-CROWN branch-and-bound (BaB) algorithms. In BaB verification, approximating oblique constraints with axis-aligned splits causes severe combinatorial blowup and risks non-termination. By optimizing the final affine bound of a nonlinear function over the exact polyhedral state-space constraints our method eliminates box-induced over-approximations, enabling earlier search-tree pruning. On ARCH-COMP and neural Lyapunov benchmarks, Fit-LRP reduces branching on the hardest region by $47\\times$, cuts worst-case verification time by $15\\times$, and with region-wise partitioning, verifies on a single CPU $6.1\\times$ faster than $α,\\! β$-CROWN on a GPU.",
+  "abstract_ja": "",
+  "authors": [
+    "Brian Yarbrough",
+    "Jesse Wayment",
+    "Jingbo Wang",
+    "Philip E. Paré",
+    "Shreyas Sundaram"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16003",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "State-of-the-art neural network verifiers evaluate linear relaxations over axis-aligned bounding boxes. However, verification domains in cyber-physical systems are rarely boxes.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Fit-LRP: Fitting Linear Relaxations to Polytopes for Neural Network Verification over Non-Convex Regions",
+  "url": "https://arxiv.org/abs/2611.16003",
+  "use_case": ""
+}

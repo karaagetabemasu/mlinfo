@@ -1,0 +1,31 @@
+{
+  "abstract": "Frozen vision-language models often match concepts mentioned in a caption without respecting their negation: a query \"a kitchen with no toaster\" favors an image containing a toaster. Yet these models are substantially stronger at matching affirmative descriptions. We exploit this asymmetry with Negation-Aware Evidence Scoring (NAES), which reformulates negated descriptions into affirmative queries and combines their evidence by caption structure. A lightweight text decomposer, NegSplit, identifies this structure by extracting negated spans and the remaining affirmative context. For captions with an affirmative remainder, NAES matches that content and applies a presence-based correction for the denial. When no affirmative content remains, it queries the denied object's presence and reflects the evidence around a reference to score the negated description. With LAION-2B CLIP, NAES achieves 82.4% accuracy on COCO-MCQ and 93.0% on VOC2007-MCQ, surpassing KTN by 2.9 and 0.9 percentage points; with OpenAI CLIP, it exceeds PeakPatch accuracy by 4.4 and 26.0 points, respectively. NAES also improves negated-description retrieval on COCO and MSR-VTT, with gains extending to SigLIP, SigLIP 2, and larger CLIP encoders. The strongest multiple-choice results use competing descriptions to center and align evidence; retrieval improvements persist without this conditioning. These findings show that explicitly separating affirmative matching from denied-object evidence can substantially improve negation-aware ranking.",
+  "abstract_ja": "",
+  "authors": [
+    "Aashish Pokhrel",
+    "Tejas Anvekar",
+    "Shivanand Venkanna Sheshappanavar"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15047",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Frozen vision-language models often match concepts mentioned in a caption without respecting their negation: a query \"a kitchen with no toaster\" favors an image containing a toaster. Yet these models…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Saying No by Asking Yes: Affirmative Decomposition and Evidence Reflection for Frozen CLIP",
+  "url": "https://arxiv.org/abs/2611.15047",
+  "use_case": ""
+}

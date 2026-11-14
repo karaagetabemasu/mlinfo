@@ -1,0 +1,32 @@
+{
+  "abstract": "Cross-domain few-shot segmentation (CD-FSS) aims to segment a target class in images from a previously unseen domain using only a few annotated support examples. Training-free CD-FSS methods, which typically leverage vision foundation models such as DINOv3, achieve competitive performance without parameter updates. However, the optimal DINOv3 layer for mask prediction varies across support--query episodes. Although several layer-selection criteria have been proposed, they do not explicitly evaluate whether the predicted query foreground and background labels agree with the corresponding support labels. To address this limitation, we propose a novel layer-selection criterion, Optimal-Transport-Based Backbone Layer Selection (OT-BLS). Our key insight is that an effective layer-selection criterion can be derived from the optimal-transport correspondence between query and support patch-token features. Based on this insight, we first estimate the transport plan using a well-established optimal transport algorithm and then compute a layer-selection score by aggregating the transported mass according to the foreground--background partition defined by each candidate query mask. The resulting score reflects how well the predicted foreground and background of the query correspond to those of the support. Experiments on eight benchmark datasets demonstrate the effectiveness of OT-BLS. It outperforms the conventional last-layer baseline in 12 of 16 dataset/shot settings. Furthermore, OT-BLS improves the average mIoU from 55.72 to 57.62 and achieves a 2.99-point improvement over the best-performing existing layer-selection criterion while running 3.7--14.6$\\times$ faster.",
+  "abstract_ja": "",
+  "authors": [
+    "Natsuo Okamoto",
+    "Kazuki Kobayashi",
+    "Yoshio Kato",
+    "Shuhei Tarashima"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15187",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Cross-domain few-shot segmentation (CD-FSS) aims to segment a target class in images from a previously unseen domain using only a few annotated support examples. Training-free CD-FSS methods, which…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "OT-BLS: Optimal-Transport-based Backbone Layer Selection for Frozen DINOv3 in Cross-Domain Few-Shot Segmentation",
+  "url": "https://arxiv.org/abs/2611.15187",
+  "use_case": ""
+}

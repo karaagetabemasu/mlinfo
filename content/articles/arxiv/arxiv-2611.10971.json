@@ -1,0 +1,30 @@
+{
+  "abstract": "Safety-aligned large language models often lose their safety behaviors after fine-tuning, even when safety data are included. While this fragility is well documented, its underlying cause remains unclear. In this paper, we propose that formulaic refusal strings can function as outlier modes: narrow, weakly grounded response patterns that are easy to fit but vulnerable to subsequent updates. Controlled experiments support this account: fixed refusals are acquired much like arbitrary constant strings, in contrast to prompt-grounded natural responses. Motivated by these findings, we introduce Naturalness-Enhanced Safety Targets (NEST), a safety alignment framework that improves safety retention by constructing natural, context-aware safety targets that keep safety responses within the model's existing output distribution and grounded in semantics. We instantiate NEST in both supervised and preference-based alignment settings, using perplexity under the original model as a proxy for distributional support. Across multiple models and alignment regimes, natural safety targets improve both immediate safety and its retention under continued fine-tuning without sacrificing helpfulness. These findings suggest a practical principle for more durable safety alignment: construct safety targets that draw on the model's existing language capabilities and remain grounded in the meaning of each request.",
+  "abstract_ja": "",
+  "authors": [
+    "Binchi Zhang",
+    "Hadi Abdullah",
+    "Yiwei Cai",
+    "Jundong Li"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.10971",
+  "likes_count": 0,
+  "publishedAt": "2026-11-07",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Safety-aligned large language models often lose their safety behaviors after fine-tuning, even when safety data are included. While this fragility is well documented, its underlying cause remains…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "When Safety Becomes An Outlier: Understanding the Retention of LLM Safety Behaviors",
+  "url": "https://arxiv.org/abs/2611.10971",
+  "use_case": ""
+}

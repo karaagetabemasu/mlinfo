@@ -1,0 +1,32 @@
+{
+  "abstract": "This paper presents a unified framework for license plate detection and character recognition on low-power edge hardware. The proposed network uses a shared CSP-Darknet and PANet feature encoder with an anchor-free localization head and a RoIAlign-based sequence-recognition branch. Character decoding is performed directly on aligned feature maps, avoiding image-space plate cropping and a second recognition backbone. The model is trained on an AI-assisted dataset of approximately 37,000 manually verified images covering license plate layouts from all 50 United States. The dataset includes variations in illumination, viewpoint, weather, blur, occlusion, and plate design. The framework is converted to an INT8 TensorRT engine and evaluated on an NVIDIA Jetson Orin Nano with 8 GB memory. The INT8 model shows an mAP50 of 97.8% and a full-sequence accuracy of 90.7%. It records 147 FPS at 6.8 ms end-to-end latency, with 315 MB inference memory and 9.4 W average power consumption. Relative to the YOLOv8s+CRNN baseline, the proposed deployment provides a 7.1x throughput increase and a 77.8% reduction in allocated inference memory",
+  "abstract_ja": "",
+  "authors": [
+    "Saurabh Kumar",
+    "Dewant Katare",
+    "Prakriti Jain"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.11289",
+  "likes_count": 0,
+  "publishedAt": "2026-11-08",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "This paper presents a unified framework for license plate detection and character recognition on low-power edge hardware. The proposed network uses a shared CSP-Darknet and PANet feature encoder with…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "A Unified Framework for License Plate Identification and Character-Recognition",
+  "url": "https://arxiv.org/abs/2611.11289",
+  "use_case": ""
+}

@@ -1,0 +1,28 @@
+{
+  "abstract": "Feedback controllers for flows are expensive to design, since each candidate must be evaluated with a high-fidelity solver. Differentiable surrogates reduce that cost, but they also introduce a failure mode that prediction error cannot detect. Policy optimization uses the derivative of the objective with respect to the action, which we call the action gradient and which can be computed either through the surrogate or through the high-fidelity solver. Optimization through the surrogate uses only its action gradient, and a surrogate can follow the flow trajectory closely while misestimating this derivative. The surrogate action gradient is compared against a central finite-difference estimate from the high-fidelity solver on held-out states, under acceptance criteria fixed before the comparison, and we call that comparison an audit. A low-dimensional feedback law is then fitted to the surrogate action gradient when the surrogate passes the audit, and to the solver estimate when it does not. This law initializes a neural policy, and a quadratic penalty holds the policy near it during optimization. The proposed approach is validated on four test cases. The resulting controllers outperform or match a model-free baseline, while using 3 to 156 times fewer high-fidelity solver interactions across the four test cases. One surrogate predicts the objective at correlation 0.9996 but its action gradient at only 0.459, so prediction accuracy does not identify a usable surrogate. Another surrogate, whose action gradient agrees with the solver estimate at correlation 0.996, makes the objective 0.52% worse when the policy is optimized through it without the anchor penalty, so an accurate gradient alone does not provide a working controller. Finally, a surrogate that passes the audit at one fixed action fails it around the actions the deployed controller applies, so a pass is local.",
+  "abstract_ja": "",
+  "authors": [
+    "Ruige Kong",
+    "Stefania Fresca"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.13203",
+  "likes_count": 0,
+  "publishedAt": "2026-11-09",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Feedback controllers for flows are expensive to design, since each candidate must be evaluated with a high-fidelity solver. Differentiable surrogates reduce that cost, but they also introduce a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "Audited Gradients, Anchored Policies: Model-Based Reinforcement Learning for Efficient Flow Control",
+  "url": "https://arxiv.org/abs/2611.13203",
+  "use_case": ""
+}

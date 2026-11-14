@@ -1,0 +1,31 @@
+{
+  "abstract": "Generalized Bayes product partition models provide a probabilistic counterpart to loss-based clustering. They update a prior over partitions through an exponentiated clustering loss rather than a likelihood, so allocation uncertainty can be quantified without a full generative model for the data. However, their performance depends on the space in which the loss is evaluated. For high-dimensional observations, a squared Euclidean loss on the raw features can be dominated by irrelevant coordinates or fail to reflect cluster structure lying near a nonlinear low-dimensional manifold. We propose an extension in which an autoencoder and the partition are learned together, so that the space in which the clustering loss is evaluated is shaped by the clustering itself. Our generalized posterior combines a reconstruction loss, which keeps the low-dimensional representation faithful to the observed data, with a within-cluster sum of squares in the latent representation, which encourages cluster separation. Posterior computation alternates between Gibbs sampling over partitions and gradient-based updates of the autoencoder network, with the learning rate estimated jointly. We illustrate the approach through simulation studies and applications to four benchmark datasets.",
+  "abstract_ja": "",
+  "authors": [
+    "Shen Jia",
+    "Weipeng Huang",
+    "Geng Yang",
+    "Eoin Gallagher",
+    "Tin Lok James Ng"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.09698",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Generalized Bayes product partition models provide a probabilistic counterpart to loss-based clustering. They update a prior over partitions through an exponentiated clustering loss rather than a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "A Generalized Bayesian Approach to Clustering with Dimension Reduction",
+  "url": "https://arxiv.org/abs/2611.09698",
+  "use_case": ""
+}

@@ -1,0 +1,30 @@
+{
+  "abstract": "Fairness interventions often targets disparities associated with a single sensitive attribute in binary classification tasks. However, when multiple sensitive attributes are associated with a data subject, improving fairness with respect to one attribute does not necessarily improve it across all attributes: it may exacerbate disparities associated with other sensitive attributes, including those that are unavailable to the practitioner. We refer to these unintended effects as cross-attribute externalities of fairness. We study how fairness with respect to one sensitive attribute varies when an initially unfair classification or regression model is corrected with respect to another attribute. We characterize these externalities using Wasserstein barycentric disparities and develop a distributional framework that captures changes in both marginal and joint fairness measures. This highlights a limitation of conventional fairness evaluation, in which the success of an intervention is assessed mainly for the attribute it targets. In a jointly Gaussian model, we derive explicit trajectories for marginal and joint disparities and identify conditions under which an intervention eliminates disparities with respect to its target attribute while increasing disparities associated with another attribute. We also derive sharp partial-identification bounds on the resulting externalities when a sensitive attribute is unavailable and extend our results to categorical sensitive attributes. We illustrate these externalities using classification and regression real-data: in the classification experiments, interventions increase unfairness with respect to the hidden attribute in the majority of scenarios across more than half of the datasets considered; in the regression experiments on the ACSIncome dataset, correcting for race reduces sex disparities, whereas subsequently correcting for age increases them.",
+  "abstract_ja": "",
+  "authors": [
+    "Fernandes Machado Agathe",
+    "Jamotton Charlotte",
+    "Charpentier Arthur"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.14717",
+  "likes_count": 0,
+  "publishedAt": "2026-11-10",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Fairness interventions often targets disparities associated with a single sensitive attribute in binary classification tasks. However, when multiple sensitive attributes are associated with a data…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "regression"
+    ]
+  },
+  "title": "Robbing Peter to Pay Paul: Cross-Attribute Externalities of Fairness Interventions",
+  "url": "https://arxiv.org/abs/2611.14717",
+  "use_case": ""
+}

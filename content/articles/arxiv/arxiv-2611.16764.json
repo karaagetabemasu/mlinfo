@@ -1,0 +1,31 @@
+{
+  "abstract": "Periocular recognition offers an efficient alternative to full-face verification when facial regions are occluded or image resolution is limited. We present AdaEye, a systematic study of input and backbone scaling for periocular verification in visible-spectrum (VIS) and cross-spectral (VIS/NIR) settings. Using an AdaFace-style framework, we compare full-face, masked-face, and dedicated 80x40 periocular inputs while varying backbone width and embedding dimensionality. Across four VIS/VIS and VIS/NIR protocols, we assess verification accuracy, computational cost, inference throughput, training memory, template size, and training stability. Direct periocular processing reduces recognition cost from 6.30 to 1.64 GMACs per image and increases measured throughput by approximately threefold. Its effectiveness depends on the evaluation protocol: periocular models perform better on native UFPR periocular images, whereas face-based protocols favor retaining more input information. Moderate backbone width reductions maintain comparable mean verification performance on CASIA and ND-NIVL while reducing computation. Embedding compression decreases template-storage requirements, primarily benefiting deployment. Multi-seed experiments reveal that some configurations require numerical stabilization, particularly when embedding and backbone reductions are combined. These findings support selecting compact periocular architectures according to the target protocol and deployment constraints, balancing accuracy, efficiency, storage, and robustness.",
+  "abstract_ja": "",
+  "authors": [
+    "Fabian Stockhard",
+    "Juan E. Tapia",
+    "Christoph Busch"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16764",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Periocular recognition offers an efficient alternative to full-face verification when facial regions are occluded or image resolution is limited. We present AdaEye, a systematic study of input and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Efficient Periocular Recognition through Model Scaling and Cross Spectral VIS NIR Verification",
+  "url": "https://arxiv.org/abs/2611.16764",
+  "use_case": ""
+}

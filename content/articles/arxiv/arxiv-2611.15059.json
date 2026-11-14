@@ -1,0 +1,34 @@
+{
+  "abstract": "Cross-modal unmanned aerial vehicle (UAV) object tracking faces modality-induced appearance discrepancies and abrupt target-position shifts that can arise from modality switching, UAV motion, and inter-sensor offsets. Although existing methods model modality and spatial variations, they primarily rely on offline representation learning and offer limited localization-oriented adaptation during testing. To address these challenges, we propose Test-Time Selective Adaptation with Token Shift (TSAT), which derives spatial and temporal adaptation signals from unlabeled test sequences for online optimization. Specifically, we design a controllable token shift auxiliary task, which imposes explicit spatial correspondence between predefined token translations and resultant localization offsets, generating stable annotation-free spatial adaptation signals. Furthermore, we introduce a temporal backward prediction auxiliary task to exploit frame-wise temporal dependencies, effectively mitigating cumulative localization errors in continuous tracking. To suppress interference from unreliable tracking samples, we develop a reliability-aware update gating strategy to screen valid adaptation signals and stabilize online parameter updates. Experiments on CM-UOT demonstrate that TSAT achieves state-of-the-art performance against existing test-time adaptation methods, exhibiting superior robustness under frequent modality switching and severe spatial displacement. Experiments across tracking frameworks and datasets further validate the effectiveness and generalization capability of TSAT.",
+  "abstract_ja": "",
+  "authors": [
+    "Yun Xiao",
+    "Hailong Ye",
+    "Zhicheng Zhao",
+    "Lei Liu",
+    "Amir Hussain"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15059",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Cross-modal unmanned aerial vehicle (UAV) object tracking faces modality-induced appearance discrepancies and abrupt target-position shifts that can arise from modality switching, UAV motion, and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": [
+      "detection",
+      "embedding"
+    ]
+  },
+  "title": "Test-Time Selective Adaptation for Cross-Modal UAV Object Tracking with Token Shift",
+  "url": "https://arxiv.org/abs/2611.15059",
+  "use_case": ""
+}

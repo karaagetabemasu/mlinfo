@@ -1,0 +1,33 @@
+{
+  "abstract": "Building information models (BIM) can provide a global geometric reference for robot localization with LiDAR-inertial odometry (LIO). However, as-built deviations from the as-designed model mean that a disagreement between a scan and the BIM may arise from a pose error, an offset wall surface (an as-built deviation or an unmodeled object in front of the wall), or a shifted room, and in some geometries these explanations produce identical observations. In this paper, we formalize this attribution problem as fault identification over three fault classes and derive a geometric criterion for when attribution is possible. Building on it, we propose an identifiability-aware method that reports an attribution only when the fault is attributable; otherwise, it retains the candidates, defers BIM updates and BIM-based pose corrections in the ambiguous directions, and recovers once new references arrive. In the pre-registered two-dimensional study, on cases whose fault is detectable but not attributable, the method's conditional error rate was 0.83%, against 31.67% for a baseline with uncertainty-based abstention at the same answer rate. On the 5,600 attributable cases, the method reported a unique attribution 5,574 times, with no incorrect attributions. In paired fault injections in a laboratory room with its IFC model and on three floors of the SLABIM dataset, it raised no off-target attribution (0 of 168 conditions in the laboratory; 0 of 1,302 on SLABIM) and attributed all eight laboratory faults predicted to be attributable, whereas both reproduced baselines raised off-target structural flags in every setting.",
+  "abstract_ja": "",
+  "authors": [
+    "Yujie Zhang",
+    "Yuxuan Guo",
+    "Xinbao Sun",
+    "Chunlei Zhao",
+    "Langqi Miao"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.09045",
+  "likes_count": 0,
+  "publishedAt": "2026-11-06",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Building information models (BIM) can provide a global geometric reference for robot localization with LiDAR-inertial odometry (LIO). However, as-built deviations from the as-designed model mean that…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "When to Trust the BIM: Identifiability-Aware LiDAR-Inertial--BIM Fusion under As-Built Deviations",
+  "url": "https://arxiv.org/abs/2611.09045",
+  "use_case": ""
+}
