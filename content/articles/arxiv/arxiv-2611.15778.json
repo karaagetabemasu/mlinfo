@@ -1,0 +1,30 @@
+{
+  "abstract": "Link prediction (LP) is a standard pretraining objective for graph neural networks (GNNs): hide edges, train an encoder-decoder to predict them, and reuse the node embeddings for downstream node tasks. Despite its empirical success, there is little quantitative theory explaining why an edge-level objective should produce embeddings that are linearly useful for node classification. We study this question in the finite-sample stochastic block model (SBM). For any bounded GNN encoder paired with a symmetric bilinear decoder, we prove a conditional reduction: small population held-out LP excess risk implies small community-classification error for a transductive linear classifier on the learned embeddings. The bound decomposes into an optimization residual, an architectural approximation residual, and explicit statistical terms of order $\\tilde{O}(\\sqrt{d/n})$ in bounded dense regimes. We further give a constructive few-label classifier: nearest-centroid classification under the positive semidefinite quadratic form $G = W Z^\\top Z W$, whose label error is coupled to LP quality. The framework is architecture-agnostic through the approximation residual, and we instantiate this residual as $O(\\log n / n)$ for a graph isomorphism network (GIN) with spectral positional encoding and a bilinear decoder. Synthetic SBM experiments validate the theorem chain from LP risk to score error to classification error, and show when the worst-case constants become conservative.",
+  "abstract_ja": "",
+  "authors": [
+    "Ying Chen",
+    "Zhangyang Wang",
+    "Yixuan He"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15778",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "gnn",
+  "summary": "Link prediction (LP) is a standard pretraining objective for graph neural networks (GNNs): hide edges, train an encoder-decoder to predict them, and reuse the node embeddings for downstream node…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "From Link Prediction to Linear Community Detection: A Finite-Sample Guarantee for Graph Pretraining",
+  "url": "https://arxiv.org/abs/2611.15778",
+  "use_case": ""
+}

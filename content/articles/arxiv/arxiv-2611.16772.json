@@ -1,0 +1,28 @@
+{
+  "abstract": "Federated learning over distributed intrusion-detection sensors naturally produces \\emph{class-concentrated} non-IID data, where an entire attack class is held by a single client and absent elsewhere. We show this collapses federated averaging in a specific, localized way: the output layer holds one decision boundary per class, and when a class's aggregation weight comes overwhelmingly from clients that have never seen it, its neuron receives an active anti-signal rather than mere dilution, collapsing to zero. On CIC-DDoS2019, standard FedAvg drives the concentrated LDAP class to $0.00 \\pm 0.00\\%$ F1 across every seed. We propose Class-Competence Aggregation (CCA), which aggregates the output layer per class using each client's own locally reported validation F1 as the weight, while hidden layers remain under standard size-weighted FedAvg. CCA requires no server-held auxiliary data and adds only one F1 scalar per class per round beyond the feature-scaling and class-count exchanges common to any federated pipeline. On our primary CNN-LSTM architecture, CCA alone raises LDAP F1 from $0\\%$ to $84.83 \\pm 1.65\\%$, and the full method reaches $91.64 \\pm 0.57\\%$ macro F1, closing the federated-to-centralized gap from $-42.53$ to $-4.05$ points. Benchmarked against four other federated methods under identical partitions and seeds, CCA is the only one that recovers the concentrated class substantially and reliably; a $178\\times$ smaller MLP shows the same qualitative recovery, though less completely, confirming the effect holds across architecture scale even as its magnitude varies. Results are validated across three seeds and replicated on a second dataset, CICIDS2017.",
+  "abstract_ja": "",
+  "authors": [
+    "Tapu Datta",
+    "Hafiz Imtiaz"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16772",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Federated learning over distributed intrusion-detection sensors naturally produces \\emph{class-concentrated} non-IID data, where an entire attack class is held by a single client and absent…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Class-Competence Aggregation: Output-Layer Routing for Federated Multiclass DDoS Detection under Class-Concentrated Non-IID Data",
+  "url": "https://arxiv.org/abs/2611.16772",
+  "use_case": ""
+}

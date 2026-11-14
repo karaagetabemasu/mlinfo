@@ -1,0 +1,31 @@
+{
+  "abstract": "State-of-the-art LiDAR-inertial odometry methods, including those on richer state manifolds, achieve strong global accuracy, yet their pose stream alternates between propagation and correction and can oscillate over short horizons even when globally accurate. Most existing methods follow these approaches: they either modify the filter to enable faster updates or estimate a continuous-time trajectory from raw LiDAR and inertial data. The latter involves extra optimization, delaying state updates and becoming less robust during rapid rotations or accelerations. We propose CT-SGAL-LIO, a continuous-time refinement module that smooths the posterior pose stream of a discrete SGal(3) estimator without modifying the estimator itself. The key novelty is to perform continuous-time trajectory refinement directly on the projected SGal(3) posterior: we fit a cubic trajectory over a bounded window of recent poses and evaluate it at a small fixed lag. This places the query time within the observed interval, so the refined pose is obtained by interpolation rather than extrapolation, while preserving causal operation. CT-SGAL-LIO improves relative trajectory accuracy on 17 sequences from three public benchmarks. Across 17 sequences from GRAND-TOUR, MCD, and GEODE, CT-SGAL-LIO improves short-term motion accuracy while largely preserving global accuracy. RTE improves by up to 70% on GRAND-TOUR and on all seven GEODE sequences, with 9.9-51.1% reductions. A 19.5-min R-Campus run also reduces posterior jumps by 85.4% with only a 4.7 mm change in the end-to-start gap. We plan to release our source code and results to support community validation and reproducibility.",
+  "abstract_ja": "",
+  "authors": [
+    "Nam Tran",
+    "Thu Tran",
+    "Toan Nguyen",
+    "William J Beksi",
+    "Tuan Dang"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16918",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "State-of-the-art LiDAR-inertial odometry methods, including those on richer state manifolds, achieve strong global accuracy, yet their pose stream alternates between propagation and correction and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "CT-SGAL-LIO: Causal Continuous Time Refinement of Discrete LiDAR Inertial Odometry",
+  "url": "https://arxiv.org/abs/2611.16918",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Expert review of surgical videos is essential for surgical training but labor-intensive, motivating AI-assisted skill assessment to provide feedback at scale. Although surgical assessment rubrics may use different language to describe similar skills, existing automated methods commonly predict predefined skill levels or numerical scores tied to fixed rubrics, limiting their ability to transfer across semantically equivalent assessment criteria. We propose Predictive Rubric Alignment (PRA), a joint embedding prediction approach that scores surgical videos using natural-language descriptions of skill levels. Rather than matching level probabilities, PRA predicts a rater-weighted combination of skill-level description embeddings. Adjacent description features define a score-parameterized path, and the predicted embedding is projected onto this path to read the score. We introduce two variants: \\textit{PRA-item}, which uses learned queries for predefined assessment items, and \\textit{PRA-cond}, which generates queries from textual item names to enable assessment of unseen items without retraining. On AIxSuture, a dataset of expert-rated suturing videos, PRA outperforms published baselines in skill classification. We further evaluate zero-shot transfer to the smaller surgical skill assessment benchmark JIGSAWS. Trained on only two AIxSuture rubric items, PRA-cond assesses unseen JIGSAWS items without further training, yielding positive score correlations and greater Grad-CAM overlap with instruments and suture than a description-matching baseline. These results support predictive rubric alignment as a promising direction for flexible and explainable automated surgical skill assessment.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiajun Cheng",
+    "Haidar M. Abdul-Muhsin",
+    "Juha Choi",
+    "Shan Lin"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15125",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "Expert review of surgical videos is essential for surgical training but labor-intensive, motivating AI-assisted skill assessment to provide feedback at scale. Although surgical assessment rubrics may…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "video"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Toward Cross-Rubric Surgical Skill Assessment via Joint Embedding Prediction",
+  "url": "https://arxiv.org/abs/2611.15125",
+  "use_case": ""
+}

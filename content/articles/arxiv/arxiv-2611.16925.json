@@ -1,0 +1,37 @@
+{
+  "abstract": "This report summarizes the Mobile Unified Multimodal Understanding (MUMU) track of the 8th Large-scale Video Object Segmentation (LSVOS) Challenge, held in conjunction with ECCV 2026. MUMU asks for a single unified model that jointly performs multi-concept image tagging over quality, scene, and event vocabularies, open-vocabulary object detection, and concise image captioning, within a budget of 0.5B parameters and 8 GB of peak inference memory. Submissions are ranked by a weighted task score scaled by an efficiency factor. We describe the tasks, rules, and evaluation protocol, report the final results, and review the methods of the top three teams. All three leading solutions build on the compact Florence-2-base model, but extend it in different ways: lightweight tagging heads with cross-task inference refinement, a shared low-rank adapter trained on coverage-aware multi-source data with task-dependent decoding, and a training-free pipeline that maps captions to tags and applies detection test-time augmentation. The results show that a compact prompt-based vision-language model can serve all three outputs when supervision, decoding, and cross-task cues are designed for each task, while open-vocabulary detection on novel categories remains the main bottleneck.",
+  "abstract_ja": "",
+  "authors": [
+    "Chang Liu",
+    "Henghui Ding",
+    "Tong Yang",
+    "Dayoung Kil",
+    "Seong-heum Kim"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16925",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "This report summarizes the Mobile Unified Multimodal Understanding (MUMU) track of the 8th Large-scale Video Object Segmentation (LSVOS) Challenge, held in conjunction with ECCV 2026. MUMU asks for a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": [
+      "detection",
+      "segmentation"
+    ]
+  },
+  "title": "Report of the 8th LSVOS Challenge: Mobile Unified Multimodal Understanding",
+  "url": "https://arxiv.org/abs/2611.16925",
+  "use_case": ""
+}

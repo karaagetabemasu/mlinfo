@@ -1,0 +1,32 @@
+{
+  "abstract": "Window-based next-act evaluation often aims to measure generalisation across dialogues, yet overlapping windows and similarity retrieval can expose labelled examples from the test dialogue. The nearest such example is the target's labelled predecessor, whose act is correct when the target continues it and wrong when the target changes act; a model that copies it can gain and lose in two subgroups that one aggregate averages. We induce this exposure under controlled designs on SGD, STAR and AMI, whose official splits are clean. Randomly including the predecessor's row in training raises a lexical classifier's continuation scores and lowers its transition scores in all three corpora, and purging the adjacent rows removes most of the gain. With TF-IDF-retrieved demonstrations, two 7B instruction-tuned models show the same opposite pattern in all eight model-corpus-sample arms (some single-cell intervals include zero; one replication is partial), while natural-weight accuracy changes by only -0.05 to +0.04. Exposure frequency depends on the retrieval pipeline. We evaluate two diagnostic comparisons without model retraining and find that excluding the test dialogue does not detectably reduce accuracy on SGD. All exposure is induced; no published system was re-evaluated.",
+  "abstract_ja": "",
+  "authors": [
+    "Ali Amini",
+    "Masoumeh Chapariniya",
+    "Rytis Maskeliunas",
+    "Robertas Damaševičius"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15194",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Window-based next-act evaluation often aims to measure generalisation across dialogues, yet overlapping windows and similarity retrieval can expose labelled examples from the test dialogue. The…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "The Neighbour's Label: Opposite Subgroup Effects of Same-Dialogue Exposure in Next-Act Evaluation",
+  "url": "https://arxiv.org/abs/2611.15194",
+  "use_case": ""
+}

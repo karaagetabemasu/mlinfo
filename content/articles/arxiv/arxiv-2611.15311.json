@@ -1,0 +1,31 @@
+{
+  "abstract": "Merging datasets labelled at different levels of a taxonomy leaves some images with only a coarse label, and some classes with no fine-grained label at all. Standard training scores a coarse label by the total probability of the classes under it. Coarse labels name superclasses, and the standard objective is exact only when every class within a superclass is equally likely to receive a coarse label. We call a class novel if it is never labelled finely, and known otherwise. A novel class violates the assumption, and the classifier assigns its images to a known sibling. We propose Arbor, which models how labels become coarse. In each superclass with a novel class, Arbor adds a virtual novel class, and a logistic gate divides the superclass's probability between it and the known classes. The gate is trained with the likelihood of the observed labels under this model, the coarsening likelihood. We prove that at its population optimum the gate equals the Elkan-Noto correction of positive-unlabelled learning, and show that training the correction into the classifier improves on applying it after training. Across Cars, CUB and Aircraft with 90% coarse labels, Arbor correctly assigns 76-85% of novel-class images to their superclass, more than hierarchical classifiers, hierarchical novelty detection and the Elkan-Noto correction. Its top-1 accuracy over the leaf classes on known-class images is within 1.6 points of the best baseline, although its final predictions return the superclass more often. On the more challenging iNaturalist-2019 benchmark, Arbor improves novel-class accuracy from 46% (uniform target, the strongest baseline) to 68%.",
+  "abstract_ja": "",
+  "authors": [
+    "Faisal Mohammad",
+    "Mohamed Younis"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15311",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Merging datasets labelled at different levels of a taxonomy leaves some images with only a coarse label, and some classes with no fine-grained label at all. Standard training scores a coarse label by…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "Arbor: When Labels Are Not Coarsened at Random",
+  "url": "https://arxiv.org/abs/2611.15311",
+  "use_case": ""
+}

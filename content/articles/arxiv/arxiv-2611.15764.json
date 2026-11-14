@@ -1,0 +1,34 @@
+{
+  "abstract": "Diffusion-based makeup and anime portraits are increasingly popular in online content creation (e.g., virtual makeup editing and anime avatar generation), but their altered appearances can hinder face recognition (FR) in identity-based content screening. Existing methods mainly adapt FR encoders or restore input images. The former require costly gallery re-encoding, while the latter may be incomplete or distort identity-related facial details. To address these limitations, we aim to correct identity features within a frozen FR model to recover its output embeddings in its original space. Appearance changes vary in strength and affect facial regions differently. To this end, we propose Adaptive Identity Feature Recovery (AIFR), a framework that inserts a lightweight recovery module at a single intermediate layer to predict sample-level correction strength and spatially adaptive residual updates. Module training uses fused identity targets to guide embedding recovery in the original FR space and an identity-shift score to regulate correction strength and limit unnecessary changes. At inference, AIFR processes a single portrait in one forward pass without reference images, producing recovered embeddings that can be directly matched with existing gallery templates without re-encoding. With only 1.22M trainable parameters, AIFR improves the average TAR at FAR=$10^{-4}$ from 66.1\\% to 90.2\\% over the original ArcFace, and further experiments show improvements across unseen makeup styles, stylization strengths, and generators. Beyond recognition, the recovered embeddings can directly condition a pretrained Arc2Face model to generate faces with improved identity preservation, showing compatibility with embedding-conditioned downstream generation.",
+  "abstract_ja": "",
+  "authors": [
+    "Linyan Dai",
+    "Xinwei Zhang",
+    "Yaxin Xiao",
+    "Mengyu Sun",
+    "Xinwei Liu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15764",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Diffusion-based makeup and anime portraits are increasingly popular in online content creation (e.g., virtual makeup editing and anime avatar generation), but their altered appearances can hinder…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "generation"
+    ]
+  },
+  "title": "AIFR: Adaptive Identity Feature Recovery for Diffusion-Based Makeup and Anime Portraits",
+  "url": "https://arxiv.org/abs/2611.15764",
+  "use_case": ""
+}

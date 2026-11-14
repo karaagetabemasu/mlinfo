@@ -1,0 +1,32 @@
+{
+  "abstract": "We study robot navigation in indoor environments from fixed exocentric cameras (infrastructure-mounted, external to the robot). We show that standard Proximal Policy Optimization (PPO), which succeeds with onboard cameras, fails to learn this navigation end-to-end in our setup. This failure results from the perspective mismatch between exocentric observations and egocentric action and goal formulations, which is too complex to resolve from the reward signal alone. To address this, we propose Viewpoint-Invariant Navigation from Exocentric Cameras (VINE). VINE uses an obstacle map estimation network, trained with supervised learning, that takes exocentric images, camera pose, robot pose, and room dimensions as input and produces a viewpoint-invariant obstacle map. This map can be used either by a PPO policy or by a planner such as A*. VINE's map estimation performs better than perspective mapping approaches, handles cameras placed across a wide range of positions and orientations without view-specific tuning, requires only approximate camera pose estimates (noise with a standard deviation of 30cm per axis in x, y, and z and about 20° of rotation error on average), is robust to intrinsic variation, and extends to two-camera setups with partial coverage. Despite operating from cameras randomized in position during evaluation, VINE surpasses the navigation success rate of PPO with an onboard camera in simulated environments.",
+  "abstract_ja": "",
+  "authors": [
+    "Raul Steinmetz",
+    "Jair Augusto Bottega",
+    "Ayanori Yorozu",
+    "Akihisa Ohya"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16282",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "We study robot navigation in indoor environments from fixed exocentric cameras (infrastructure-mounted, external to the robot). We show that standard Proximal Policy Optimization (PPO), which…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "supervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Robot Navigation and Obstacle Avoidance from Randomly Positioned External Cameras",
+  "url": "https://arxiv.org/abs/2611.16282",
+  "use_case": ""
+}

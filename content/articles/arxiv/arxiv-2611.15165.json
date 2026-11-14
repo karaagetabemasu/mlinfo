@@ -1,0 +1,29 @@
+{
+  "abstract": "Federated learning combines complementary knowledge across clients to alleviate local data limitations without sharing raw samples. However, data heterogeneity can cause conflicting updates and hinder generalization. Update coordination reduces interference among client updates, while flatness optimization reduces sensitivity to parameter perturbations to improve generalization. Existing joint designs largely target specific algorithms, limiting flexible combinations of these approaches. To address this problem, we propose a unified federated learning framework that bridges update coordination and flatness optimization. Clients separately accumulate descent signals and flatness corrections along the same local trajectory. The server coordinates both groups with independent states before fusing their outputs into a global update. Explicit conversion between trajectory signals and model updates enables different coordination strategies to work with compatible local or globally guided flatness mechanisms without changing the inference architecture. Experiments show that the evaluated combinations generally improve average and worst-client accuracy over update coordination alone, demonstrating the effectiveness of the proposed framework in combining these complementary optimization mechanisms.",
+  "abstract_ja": "",
+  "authors": [
+    "Chongwei He",
+    "Shichen Huang",
+    "Jiayun Li",
+    "Deyuan Lin",
+    "Wangze Jiang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15165",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Federated learning combines complementary knowledge across clients to alleviate local data limitations without sharing raw samples. However, data heterogeneity can cause conflicting updates and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Bridging Update Coordination and Flatness in Federated Learning",
+  "url": "https://arxiv.org/abs/2611.15165",
+  "use_case": ""
+}

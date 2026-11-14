@@ -1,0 +1,32 @@
+{
+  "abstract": "The spatial resolution of neutron images is of great importance for material defect diagnosis, structural characterization, and nondestructive testing. However, owing to limitations in neutron beam quality, scintillator conversion efficiency and light scattering, detector pixel size, and noise levels, conventional neutron images often suffer from speckle noise, blurred edges, and missing details, making them inadequate for high-precision analysis. To address these issues, an improved super-resolution model combining convolutional neural networks (CNNs) and Transformers is proposed. First, to overcome the difficulty of obtaining high-quality and clear training images for neutron imaging, a pretrained image restoration model is fine-tuned using real neutron images and then employed to enhance existing neutron images, thereby providing high-quality reference images for subsequent super-resolution model training. Second, an improved CRAFT-based super-resolution network is developed by incorporating a hybrid prior-guided channel fusion module (HPCF), a mean-standard deviation dual-statistics squeeze-and-excitation block (MS-SEBlock), and a partial convolution feed-forward network (PCFN), with the aim of improving the reconstruction of important information, such as textures and fine details, in neutron images. Simulation results demonstrate that, compared with bicubic interpolation, SRCNN, SRGAN-VGG, and other methods, the proposed network achieves superior performance in both full-reference metrics, including PSNR and SSIM, and no-reference metrics, including AGM and SMD. The visual quality and structural fidelity of the reconstructed images are also significantly improved. This study provides a new approach to improving neutron image quality.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuheng Chu",
+    "Hongli Li",
+    "Tian Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16620",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "The spatial resolution of neutron images is of great importance for material defect diagnosis, structural characterization, and nondestructive testing. However, owing to limitations in neutron beam…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Improved CNN-Transformer Network for Neutron Image Super-Resolution",
+  "url": "https://arxiv.org/abs/2611.16620",
+  "use_case": ""
+}

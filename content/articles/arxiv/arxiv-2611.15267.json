@@ -1,0 +1,34 @@
+{
+  "abstract": "One way to study language-model introspection is to test whether models can identify where their activations have been perturbed. We train a simple linear classifier to identify the perturbed sentence from the model's activations, then compare its predictions with the model's own answers across pretraining and injection strengths. This tests whether the model is being asked to report information that is already easy to recover. If so, successful localization may be less demanding than it first appears and may not extend to the broader uses that motivate introspection research, such as faithfully explaining a model's reasoning or helping researchers assess the reliability of its answers. With an injection four times the typical activation norm at layer 0 and probe readout at layer 24 in OLMo~3 32B, the supervised probe reaches 98.3\\% accuracy after 8.4 billion training tokens, while the model's zero-shot answer remains at chance (11.1\\%). At the released base checkpoint, these accuracies reach 99.1\\% and 89.6\\%, respectively. Across 7B and 32B, location is already decodable in randomly initialized networks, showing that the architecture can support these traces without pretraining. In these experiments, location information lies close enough to the surface for a simple linear probe to recover it, so successful reporting need not imply broader access to the model's internal computation.",
+  "abstract_ja": "",
+  "authors": [
+    "Dustin Rubin",
+    "Vincenzo Timmel",
+    "Xufeng He",
+    "Aritra Saha",
+    "JooMan Kim"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15267",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "One way to study language-model introspection is to test whether models can identify where their activations have been perturbed. We train a simple linear classifier to identify the perturbed…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "A Closer Look at Language Model Introspection: Probing Information and Reporting",
+  "url": "https://arxiv.org/abs/2611.15267",
+  "use_case": ""
+}

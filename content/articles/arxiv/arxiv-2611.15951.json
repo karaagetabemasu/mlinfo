@@ -1,0 +1,27 @@
+{
+  "abstract": "As GPU accelerators grow larger to meet rising compute demands, they exhibit increasingly pronounced non-uniform memory access (NUMA) characteristics that challenge existing LLM frameworks. Chiplet-based architectures provide a practical path to larger GPUs while mitigating manufacturing yield constraints. Modern GPUs such as AMD Instinct MI300X employs such a multi-die design, and further offer GPU partitioning capabilities, partitioning a single physical GPU into multiple logical devices with NUMA-aware memory domains, promising faster kernel launches, and reduced memory access latencies with improved locality. However, current parallelization strategies, designed for homogeneous GPU topologies, when applied under partitioning, extend its unidimensional sharding causing significant performance degradation. Three bottlenecks emerge: (1) memory redundancy; (2) arithmetic intensity collapse; (3) communication overhead from flat collectives. We present Starscream, a rethinking of LLM sharding for the chiplet era. Rather than stretching inter-GPU sharding thinner, Starscream adds intra-GPU sharding along an orthogonal dimension, grounded in three foundational principles: kernel shape preservation, memory redundancy elimination, and communication overhead minimization. These principles form the basis for extending any sharding strategy into the partitioning regime. We demonstrate their effectiveness using tensor parallelism as a case study. On AMD MI300X and MI355X, exploiting partitioning capabilities yields up to 4x speedup for attention and 1.43x for fused GEMMs compared to chiplet-oblivious baselines, demonstrating the effectiveness of chiplet-aware designs. Starscream's principles generalize across sharding strategies and future architectures.",
+  "abstract_ja": "",
+  "authors": [
+    "Sumanth Gudaparthi",
+    "Smeet Chheda",
+    "Ganesh Dasika"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15951",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "As GPU accelerators grow larger to meet rising compute demands, they exhibit increasingly pronounced non-uniform memory access (NUMA) characteristics that challenge existing LLM frameworks.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Starscream: Reimagining LLM Sharding on AMD Instinct GPUs with GPU Partitioning",
+  "url": "https://arxiv.org/abs/2611.15951",
+  "use_case": ""
+}

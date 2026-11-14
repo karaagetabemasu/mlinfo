@@ -1,0 +1,32 @@
+{
+  "abstract": "Dynamic reconstruction from casual video must preserve valid subject motion while suppressing transient occluders, shadows, and volumetric effects. Existing methods either suppress valid motion through static-scene assumptions or model all observations jointly, producing ghosting and unstable geometry. We introduce ReCan-GS, a 4D Gaussian Splatting framework that separates coherent scene content from inconsistent observations. It derives a Jacobian-based deformation-sensitivity score from the learned deformation field, using it as an empirical proxy for reconstruction ambiguity. The score guides separation into dynamic Core Gaussians and per-view Distractor Gaussians, or post-hoc pruning of sensitive Core Gaussians. The same criterion supports removal of spatial occluders, photometric artifacts, and evolving smoke or fog without masks, pretrained segmenters, or medium-specific supervision. Experiments on synthetic and real dynamic scenes and synthetic smoke/fog scenes demonstrate its usefulness across the evaluated distractor regimes.",
+  "abstract_ja": "",
+  "authors": [
+    "Joel Julin",
+    "Liuyue Xie",
+    "Ananya Bal",
+    "Mose Sakashita",
+    "Koichiro Niinuma"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16259",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Dynamic reconstruction from casual video must preserve valid subject motion while suppressing transient occluders, shadows, and volumetric effects. Existing methods either suppress valid motion…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Reconstruct What You Can: Distractor-free 4D Gaussian Splatting",
+  "url": "https://arxiv.org/abs/2611.16259",
+  "use_case": ""
+}

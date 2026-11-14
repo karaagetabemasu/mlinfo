@@ -1,0 +1,29 @@
+{
+  "abstract": "Agentic video-reasoning frameworks iteratively explore a video, choosing what to observe based on the query and evidence gathered so far. Existing methods are typically evaluated with different backbones, preprocessing pipelines, and computational budgets, making it difficult to determine which components actually drive performance, how much they cost, and whether agentic inference is preferable to native video reasoning in the first place. We conduct a controlled evaluation of a diverse set of recent agentic video-reasoning systems across two strong contemporary backbones, with explicit token and monetary-cost accounting. Across Gemini 3 Flash and Gemma 4, most existing agentic frameworks fail to consistently improve over native video inference and often increase computational cost. We investigate two primary questions: (1) How much agentic framework complexity is necessary for effective video reasoning? (2) When, if at all, is agentic video reasoning preferable to just using the backbone directly? To answer the first question, we introduce a deliberately minimal Active Exploration Baseline and show that it remains competitive with substantially more elaborate agents. We then propose targeted extensions to this baseline, yielding SAVE (Simple Agentic Video Explorer). SAVE outperforms all evaluated prior agentic methods in five of six backbone-benchmark settings. Turning to the second question, our results indicate that the advantage of agentic exploration grows when dense processing would otherwise represent answer-relevant events too sparsely, particularly for long videos and temporally concentrated evidence. Overall, our results suggest that agentic video reasoning should favor simple frameworks over increasingly elaborate pipelines and focus primarily on long-form video, where selective evidence acquisition offers the clearest advantage over native inference.",
+  "abstract_ja": "",
+  "authors": [
+    "Tymoteusz Wilk",
+    "Sergey Prokudin",
+    "Xi Wang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15079",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Agentic video-reasoning frameworks iteratively explore a video, choosing what to observe based on the query and evidence gathered so far. Existing methods are typically evaluated with different…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": []
+  },
+  "title": "SAVE: Less is More in Agentic Video Reasoning",
+  "url": "https://arxiv.org/abs/2611.15079",
+  "use_case": ""
+}

@@ -1,0 +1,27 @@
+{
+  "abstract": "Understanding how complex molecular systems transition between metastable states is a central challenge in computational chemistry and biophysics. A key tool for characterizing these transitions is the committor function: the probability that a trajectory initiated from a given configuration reaches one state before another. Because the committor encodes both the progress and the mechanism of a transition, it is an ideal collective variable (CV). Learning it, however, requires sampling the rare transitions it describes. We address this circular dependency with a ``WE-in-the-loop'' framework that couples committor learning with weighted ensemble (WE), an enhanced sampling method that uses a CV to drive transition dynamics. Our framework alternates between the two: WE simulation generates transition data for training a neural network committor with a self-consistent loss, and the learned committor then serves as an improved CV for subsequent WE simulation. Across a two-channel 2D system, alanine dipeptide, and chignolin, our framework consistently outperforms greedy baselines, highlighting the importance of principled exploration. We also curate a public benchmark of empirically determined committor values for alanine dipeptide. Together, the framework and benchmark provide a new method for studying rare transitions in high-dimensional molecular systems and a standard for evaluating committor learning methods.",
+  "abstract_ja": "",
+  "authors": [
+    "Jacky Chen",
+    "Rishal Aggarwal",
+    "David Ryan Koes"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15963",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Understanding how complex molecular systems transition between metastable states is a central challenge in computational chemistry and biophysics. A key tool for characterizing these transitions is…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "WELP : Weighted Ensemble in the LooP for committor learning",
+  "url": "https://arxiv.org/abs/2611.15963",
+  "use_case": ""
+}

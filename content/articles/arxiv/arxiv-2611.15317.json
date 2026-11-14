@@ -1,0 +1,31 @@
+{
+  "abstract": "Bimanual robotic manipulation is versatile, yet its central challenge lies not only in executing dexterous motion with each hand, but also in coordinating the two arms for long-horizon manipulation under coupled spatial and temporal constraints. Prior work has largely focused on endowing robots with human-level manipulation skills, paying less attention to the structure of bimanual behaviour itself: many practical tasks are a coordinated composition of reusable unimanual skills and a small set of synchronous bimanual skills. This makes high-level spatio-temporal coordination, rather than skill acquisition alone, a key bottleneck for efficient bimanual execution. We propose BiPOP, a framework that couples Large Language Models (LLMs) with Temporal Partial-Order Planning for long-horizon bimanual manipulation. At its core is an explicit spatio-temporal model that partitions the workspace by arm reachability and captures inter-arm dependencies, arm assignment, synchronization requirements, and opportunities for safe concurrent execution. Building on this model, an LLM translates natural-language instructions into a formal PDDL specification, while a temporal planner enforces the constraints and schedules actions, yielding plans that are logically consistent at the symbolic level and efficient through parallel execution. On simulated long-horizon tasks of varying complexity, BiPOP outperforms open-loop planning with strong reasoning models and closed-loop ReAct-style planning in success rate, planning time, and plan efficiency, and the full pipeline runs end to end on the real bimanual robot NICOL. A failure analysis further shows that LLM-only planners mainly violate spatial and temporal coordination constraints, which motivates delegating these constraints to a symbolic planner. Code: https://github.com/Kchu/BiPOP",
+  "abstract_ja": "",
+  "authors": [
+    "Kun Chu",
+    "Xufeng Zhao",
+    "Jan-Gerrit Habekost",
+    "Cornelius Weber",
+    "Stefan Wermter"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/Kchu/BiPOP",
+  "hasCode": true,
+  "id": "arxiv-2611.15317",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Bimanual robotic manipulation is versatile, yet its central challenge lies not only in executing dexterous motion with each hand, but also in coordinating the two arms for long-horizon manipulation…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "BiPOP: Partial-Order Planning for Long-Horizon Bimanual Robotic Manipulation",
+  "url": "https://arxiv.org/abs/2611.15317",
+  "use_case": ""
+}

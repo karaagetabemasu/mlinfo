@@ -1,0 +1,35 @@
+{
+  "abstract": "Cameras and LiDARs (Light Detection and Ranging) provide complementary observations of the same scene: cameras capture rich appearance cues while LiDAR sensors provide accurate geometric measurements. In this work, we address the problem of fine image-to-point cloud registration from a single image and a roughly estimated camera pose. On robotic platforms, residual reprojection errors of several pixels are commonly observed even after calibration due to temporal desynchronization, mechanical vibrations, or inaccuracies in point cloud reconstruction. Such errors can lead to decimeter-level geometric discrepancies at moderate distances and significantly affect multiple downstream tasks, such as dense cross-modal supervision, texture mapping, and semantic label transfer. To address this challenge, we introduce ReFineR: an offline framework to finely register individual images to pre-reconstructed point clouds. ReFineR builds upon differentiable point splatting rasterization and a smooth Gradient Orientation Measure (GOM) to iteratively refine the camera pose through analysis-by-synthesis optimization. We evaluated the method on a curated dataset of manually calibrated images collected from heterogeneous data sources. Furthermore, we show that an automatic point cloud rescale factor can be estimated prior to optimization, enabling robust refinement across a wide range of scenarios using a single scale-invariant formulation. The project page can be found at https://refiner-project.github.io/",
+  "abstract_ja": "",
+  "authors": [
+    "Ugo Insalaco",
+    "Jean-Emmanuel Deschaud",
+    "Pierre Dellenbach"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16583",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Cameras and LiDARs (Light Detection and Ranging) provide complementary observations of the same scene: cameras capture rich appearance cues while LiDAR sensors provide accurate geometric…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d",
+      "multimodal"
+    ],
+    "task": [
+      "detection",
+      "generation"
+    ]
+  },
+  "title": "ReFineR: Single image to dense point cloud registration at pixel level with point splatting",
+  "url": "https://arxiv.org/abs/2611.16583",
+  "use_case": ""
+}

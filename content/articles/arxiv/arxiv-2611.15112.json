@@ -1,0 +1,32 @@
+{
+  "abstract": "When robots interact with elastic surfaces such as mattresses and trampolines, changes in loading cause the surfaces to deform and rebound, altering subsequent contact locations and forces. We present Elastra, a simulation framework for modeling this interaction and supporting the training and evaluation of robot control policies. Elastra represents each surface using elements that move only vertically, with elastic connections and damping to model deformation and recovery. Contact forces drive surface motion, and the updated surface geometry is used to compute subsequent contact forces. We systematically validate our simulations against an independent implementation and a real mattress load curve. We further use Elastra to train the Unitree G1 humanoid to stand up on mattresses and trampolines. Using the pretrained HoST policy and ProtoMotions motion tracker as original controllers, we train residual policies through reinforcement learning to add corrections to their joint targets. Adding these residual policies increases the success rate with HoST from 44.1\\% to 72.5\\%, and from 55\\% to 89\\% on the trampoline. With ProtoMotions, the success rate increases from 19.0\\% to 45.0\\% for initial poses not encountered during training. The code and video are available on https://github.com/yichg/elastra.",
+  "abstract_ja": "",
+  "authors": [
+    "Youran Sun",
+    "Chugang Yi",
+    "Xingyu Ren",
+    "Haizhao Yang"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "https://github.com/yichg/elastra",
+  "hasCode": true,
+  "id": "arxiv-2611.15112",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "When robots interact with elastic surfaces such as mattresses and trampolines, changes in loading cause the surfaces to deform and rebound, altering subsequent contact locations and forces. We…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "video"
+    ],
+    "task": []
+  },
+  "title": "Elastra: A Simulation Framework for Elastic Bodies",
+  "url": "https://arxiv.org/abs/2611.15112",
+  "use_case": ""
+}

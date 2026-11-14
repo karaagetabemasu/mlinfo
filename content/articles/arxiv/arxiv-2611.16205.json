@@ -1,0 +1,32 @@
+{
+  "abstract": "Multi-camera observations in off-road environments vary significantly in reliability, posing challenges when complementing degraded geometric constraints. Motivated by this, we propose Quality-aware View Selection Lidar-Vision Odometry Risk Mapping (QVS-LIVO RiskMap), which decouples visual processing for state estimation from that for semantic mapping. The front end evaluates camera observations through read-only pretracking on a shared lidar-inertial posterior, combining observation health with geometric complementarity. Channel health memory and switching hysteresis govern selection of at most one eligible view for direct photometric correction. The posterior is retained when no view is eligible or the correction fails acceptance. The mapping back end integrates semantic observations from all available views in a shared world grid. Vehicle-scale geometry constrains semantic risk corrections, while spatial and temporal evidence supports risk confirmation. The system also produces a local bird's-eye-view (BEV) risk map and a global 2.5D semantic-terrain risk map with obstacle instance voxels. On two field sequences, QVS-LIVO achieved horizontal root mean square errors of 0.910 m and 1.664 m. It reduced error by 43.3% relative to FAST-LIO2 on the degraded long-route sequence. Across 12 controlled camera-fault configurations involving dropout, black frames and 60 ms timestamp shifts, it maintained complete trajectories with errors of 1.54-2.23 m. When deployed onboard an NVIDIA Jetson AGX Orin, the system generates local and global maps at 9.94 Hz and 2.00 Hz, respectively, with a median local mapping latency of 32.4 ms. These runtime results demonstrate the real-time feasibility of selective visual state updates alongside multi-view semantic mapping under challenging off-road conditions. The code and related resources are available at: https://github.com/zihanPan-HIT/QVS-LIVO.",
+  "abstract_ja": "",
+  "authors": [
+    "Zihan Pan",
+    "Jinghan Wang",
+    "Hang Li",
+    "Feng Cheng",
+    "Tianchen Liu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/zihanPan-HIT/QVS-LIVO",
+  "hasCode": true,
+  "id": "arxiv-2611.16205",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Multi-camera observations in off-road environments vary significantly in reliability, posing challenges when complementing degraded geometric constraints. Motivated by this, we propose Quality-aware…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "QVS-LIVO RiskMap: Health- and Information-Aware View Selection for Multi-Camera LIVO and Off-Road Risk Mapping",
+  "url": "https://arxiv.org/abs/2611.16205",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Sparse-view computed tomography (SVCT) reduces radiation dose by acquiring fewer projection views, but the resulting under-determined inverse problem requires careful regularization to prevent reconstruction algorithms from fitting streak artifacts and hallucinated structures. Existing implicit neural representation (INR) methods rely on implicit spectral bias or iterative external denoising, yet they provide limited control over when high-frequency capacity is exposed during optimization. To address this limitation, we propose FLIC (Frequency-Lipschitz INR Curriculum), a capacity-controlled self-prior INR framework that makes the network's representational capacity explicit and schedulable. The core of our method is a joint frequency-Lipschitz curriculum that couples random Fourier feature encoding with spectrally normalized MLP decoding under non-uniform Lipschitz budgets, guiding reconstruction along a coarse-to-fine trajectory from stable global anatomy to fine details. The terminal capacity is automatically calibrated from FBP gradient statistics, enabling scan-adaptive regularization without per-scan manual tuning of the terminal Lipschitz budget. We further introduce a prior-guided adaptive ray sampling strategy that concentrates integration samples near high-gradient anatomical boundaries, improving forward-model fidelity. The entire framework operates in a single training stage without iterative denoising, enabling efficient per-image reconstruction. Extensive experiments on four public CT datasets under noise-free and low-dose settings show that our method achieves state-of-the-art unsupervised reconstruction quality with consistent performance across diverse anatomical structures.",
+  "abstract_ja": "",
+  "authors": [
+    "Songtao Hu",
+    "Jingrui Wu",
+    "Hong Ding",
+    "Fanhao Zhu",
+    "Yunhao Liu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15652",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Sparse-view computed tomography (SVCT) reduces radiation dose by acquiring fewer projection views, but the resulting under-determined inverse problem requires careful regularization to prevent…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Taming Neural Fields with a Frequency-Lipschitz Curriculum for Sparse-View CT Reconstruction",
+  "url": "https://arxiv.org/abs/2611.15652",
+  "use_case": ""
+}

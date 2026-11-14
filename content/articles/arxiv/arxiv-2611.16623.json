@@ -1,0 +1,30 @@
+{
+  "abstract": "Root-cause analysis in automotive Hardware-in-the-Loop (HiL) systems is challenging because faults can propagate across multiple interacting signals, making the most abnormal sensor different from the actual fault origin. This work proposes DySR-GNN, a Dynamic Sensor-Relationship Graph Neural Network for supervised multi-label root-cause identification in multivariate HiL time series. The approach jointly extracts temporal patterns within individual sensor signals and structural relationships across sensors. Each sensor is processed by a shared temporal encoder and combined with a trainable sensor-identity representation, from which a sparse relationship graph is reconstructed independently for every input window. This window-specific structure provides an explicit representation of the sensor relationships used for graph message passing and direct root-location prediction. Under a recording-disjoint evaluation protocol, the proposed model outperforms CNN--LSTM, Static GCN, Static GAT, and context-based variants, achieving a recording-level Macro-F1 of 0.9524, MCC of 0.9302, and strict exact-match accuracy of 0.8519. Analysis of the learned graphs reveals both persistent and state-dependent relationships among sensor variables. The results demonstrate that extracting adaptive relational structure alongside temporal representations can improve multi-label root-cause identification in complex automotive cyber--physical systems.",
+  "abstract_ja": "",
+  "authors": [
+    "Hamza Ouarrad",
+    "Mohammad Abboush",
+    "Andreas Rausch"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16623",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Root-cause analysis in automotive Hardware-in-the-Loop (HiL) systems is challenging because faults can propagate across multiple interacting signals, making the most abnormal sensor different from…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "time-series"
+    ],
+    "task": []
+  },
+  "title": "DySR-GNN: Dynamic Sensor-Relationship Graph Neural Network for Root Cause Analysis in Automotive HiL Multivariate Time Series",
+  "url": "https://arxiv.org/abs/2611.16623",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Elastic Weight Consolidation (EWC) is a widely used regularization-based technique for continual learning, protecting performance on old tasks with a quadratic penalty whose empirical Fisher is usually justified through probabilistic curvature. We instead introduce Continual Learning as an Optimization Constraint (CLOC): new training must preserve chosen functionals of learned behavior. EWC's empirical Fisher is exactly the first-order form of this constraint when the preserved functional is each sample's loss. This derivation exposes a flaw: EWC implicitly weights each sample by the scale of its loss gradient, so well-fitted samples lose importance. EWC-DR observed this failure in classification; CLOC identifies its general cause. Improved Elastic Weight Consolidation (IEWC) penalizes output changes according to the first-order approximation of each old sample's loss level set, removing the weighting for any differentiable loss and output geometry, and prevents corrupt samples from dominating the importance matrix. Across classification, segmentation, language, forecasting, and diffusion, IEWC variants match or improve on EWC and outperform EWC-DR. In a held-out evaluation with validation-selected hyperparameters, uniform IEWC improves ImageNet-R accuracy over matched EWC by 2.00 percentage points (95% CI 0.93-3.07).",
+  "abstract_ja": "",
+  "authors": [
+    "Davide Wiest"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16039",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Elastic Weight Consolidation (EWC) is a widely used regularization-based technique for continual learning, protecting performance on old tasks with a quadratic penalty whose empirical Fisher is…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "segmentation",
+      "forecasting"
+    ]
+  },
+  "title": "Improved Elastic Weight Consolidation as an Optimization Constraint for Continual Learning",
+  "url": "https://arxiv.org/abs/2611.16039",
+  "use_case": ""
+}

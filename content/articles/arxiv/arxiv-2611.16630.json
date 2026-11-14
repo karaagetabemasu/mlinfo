@@ -1,0 +1,34 @@
+{
+  "abstract": "In text-to-image generation, a target that the prompt mentions often appears in the generated image in a way the prompt does not call for. We call this failure over-realization. Mental-spaces theory points to the situations where it can happen: under a negation, inside what a character believes or imagines, as the vehicle of a figurative comparison, or behind a viewpoint that hides the target. Prior work has studied only negation in depth, and the conventional alignment and preference metrics do not penalize the failure. We build OverReal to measure it: OverReal-Gen, 698 prompts covering the four situations, on which we measure each generator's over-realization rate; and OverReal-Det, 2,841 generated images human-labeled for whether and how the target is over-realized, on which we verify the automatic judge that produces this rate. Our evaluation of eight text-to-image systems reveals that all of them over-realize, and that conventional metrics such as CLIPScore reward the failure rather than penalize it. Prompt expansion only partly mitigates the failure. Inside the generator, the diffusion backbone attends to a mentioned target almost as much as to a requested one. The cue words that should hold the target back receive less attention than ordinary words.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiahao Huang",
+    "Kon Woo Kim",
+    "Song-Duo Ma",
+    "Yuka Kitamura",
+    "Felix Wagner"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16630",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "multimodal",
+  "summary": "In text-to-image generation, a target that the prompt mentions often appears in the generated image in a way the prompt does not call for. We call this failure over-realization.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "When Chekhov's Gun Fires Anyway: Over-Realization in Text-to-Image Models",
+  "url": "https://arxiv.org/abs/2611.16630",
+  "use_case": ""
+}

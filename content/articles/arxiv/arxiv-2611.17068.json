@@ -1,0 +1,29 @@
+{
+  "abstract": "Program evolution provides a promising approach to discover agent memory designs and study the choices underlying their effectiveness. We introduce MAPE, a framework that evolves whole memory programs from minimal seeds through a standardized lifecycle interface and an iterative diagnosis-proposal loop. Experiments on LoCoMo and LongMemEval yield an absolute accuracy gain of up to 12% over manually designed baselines at 35% of the serving cost, with further evaluations supporting transfer across serving backbones and benchmarks. Empirical analyses and ablations identify and validate two recurring design patterns: retaining raw conversations as retrievable evidence preserves details omitted from extracted memories, while composing retrieved evidence according to query intent helps the answering model use it effectively. Transplanting the composition module into five existing memory systems improves accuracy across all five. Beyond these patterns, the search objective shapes where computation goes: optimizing serving cost alongside accuracy shifts computation from LLM-based memory construction to selective processing at query time while retaining competitive accuracy. Together, these findings offer empirical lessons for agent memory design. Code is available at https://github.com/ash-ding/MAPE.",
+  "abstract_ja": "",
+  "authors": [
+    "Xinheng Ding",
+    "Seyyed Saeid Cheshmi",
+    "Ziyang Zhang",
+    "Tairan Chen",
+    "Wenya Xie"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/ash-ding/MAPE",
+  "hasCode": true,
+  "id": "arxiv-2611.17068",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Program evolution provides a promising approach to discover agent memory designs and study the choices underlying their effectiveness. We introduce MAPE, a framework that evolves whole memory…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Discovering Effective Agent Memory Designs through Program Evolution",
+  "url": "https://arxiv.org/abs/2611.17068",
+  "use_case": ""
+}

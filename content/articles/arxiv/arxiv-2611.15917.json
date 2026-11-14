@@ -1,0 +1,27 @@
+{
+  "abstract": "Organisations that apply the same published decision rule often hold private evidence that the rule is wrong for their own cases, and will not pool it. We describe a learning mechanism for that setting whose unit of change is an owned edit. The published rule is compiled exactly into a small ReLU network, a structured prior. Each party's learner searches a small typed space of declarations, a few named values such as subject, scope, form and size, and proposes one only when its own records pass a selection-aware evidence gate. The learning is that gated search around the prior. In two analyses registered before they ran, on synthetic data with 20 sampled hidden truths, the learner at 30 records per party was non-inferior, within 2 points, to all seven tuned baselines (a confined gradient learner, Ditto, FedRep, federated averaging, two pooled networks and pooled gradient-boosted trees), scoring 96.6% against 91.7% for the unchanged rule; the same search without the prior or the gate scored 84.0%. In a third registered test, typed edits over a network trained on shared records beat that network alone by 5.4 points and the same edits over the published rule by 3.1. An acceptance body recomputes each edit from its declaration and writes it into units reserved for that party, so by construction an edit changes no decision about any other subject, withdraws exactly, discloses at most log2 of the typed space's size in bits, and can hide nothing beyond its declared values. We report where it loses: truths shared by all parties, relaxations, ten records, a pre-stated gate criterion that failed in both runs, and a language model given the records that decided about as accurately on one draw. On a rule-only base, a table of owned exceptions makes the same decisions.",
+  "abstract_ja": "",
+  "authors": [
+    "John J. O'Hare"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15917",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Organisations that apply the same published decision rule often hold private evidence that the rule is wrong for their own cases, and will not pool it. We describe a learning mechanism for that…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Owned Edits to a Shared Decision Rule: Learning Private Exceptions as Typed, Gated, Withdrawable Weight Edits",
+  "url": "https://arxiv.org/abs/2611.15917",
+  "use_case": ""
+}

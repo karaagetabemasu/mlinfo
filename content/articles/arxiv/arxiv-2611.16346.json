@@ -1,0 +1,30 @@
+{
+  "abstract": "Reusing a demonstrated gait can reduce the work of specifying the same motion for each biped. A video captures the timing of a step, but each robot must execute it with its own limbs and actuators. MotionSkill recovers a timed reference once from monocular video and adapts it to each target in simulation. It aligns root motion and body landmarks in a common frame and records which landmarks are available at each instant. At each source timestamp, the mapper preserves limb directions, uses the target segment lengths, and solves inverse kinematics under joint limits and closure constraints. In MuJoCo, we train a separate residual policy for each of ten bipeds on its mapped reference from one four-second walking clip. Each policy uses the measured robot state to correct joint commands during contact. From initial states held out during training, MotionSkill completed 98% of trials on the original video and 26% with the upper body occluded for one second.",
+  "abstract_ja": "",
+  "authors": [
+    "Philip Niu",
+    "Xiaofeng Han",
+    "Sylvie Pan",
+    "Yang Wang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16346",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Reusing a demonstrated gait can reduce the work of specifying the same motion for each biped. A video captures the timing of a step, but each robot must execute it with its own limbs and actuators.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": []
+  },
+  "title": "MotionSkill: From Bipedal Motion Video to Control across Embodiments",
+  "url": "https://arxiv.org/abs/2611.16346",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Static word embeddings give a word one vector, ignoring its different functions as noun, verb or adjective. Training on part-of-speech-tagged text gives each function its own vector, at the cost of a larger table. Using nine controlled corpora, we ask which context words each part of speech needs, whether it needs its own subspace, and whether the number of dimensions a word keeps should follow its part of speech or its frequency. The tags raise verb similarity on SimVerb-3500 at every dimension from 50 to 300 but help nouns much less. Added to verb-only text, adverbs help verbs more than as many random words; adjectives help nouns only slightly. At a fixed dimension, per-part-of-speech PCA bases preserve verb and adjective similarity better than a global basis or frequency-band bases. Nouns need more dimensions than verbs only among frequent words. We therefore allocate dimensions by frequency with these bases: at a third of the original size, only rare words lose dimensions, SimVerb-3500 and SimLex-999 nouns match the uncompressed table, and verb-to-noun retrieval stays within 0.02. Part of speech decides what a word's vector should be; frequency decides how much of it to keep.",
+  "abstract_ja": "",
+  "authors": [
+    "Jintang Xue",
+    "Chengwei Wei",
+    "Yun-Cheng Wang",
+    "C. -C. Jay Kuo"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15114",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Static word embeddings give a word one vector, ignoring its different functions as noun, verb or adjective. Training on part-of-speech-tagged text gives each function its own vector, at the cost of a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "audio"
+    ],
+    "task": []
+  },
+  "title": "What Does Each Part of Speech Need? Contexts, Subspaces and Dimensions in Static Word Embeddings",
+  "url": "https://arxiv.org/abs/2611.15114",
+  "use_case": ""
+}

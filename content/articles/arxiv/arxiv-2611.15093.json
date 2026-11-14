@@ -1,0 +1,31 @@
+{
+  "abstract": "Open-world navigation requires a robot to locate a user-specified target in an indoor scene under open-vocabulary queries. Realistic indoor environments are semi-static: walls and furniture largely persist while smaller objects move, relocate, or vanish between visits. Prior-map systems answer queries from object poses recorded at reconstruction time, which expire as soon as objects move, whereas online methods re-derive where to look from current observations every few steps, often through expensive calls to a vision--language model. Assuming that walls and large furniture do not move, we keep their map to plan paths, but use a target--furniture co-occurrence prior to decide where to search. We present PreNav, an ObjectNav framework on semi-static environments. Rather than invoking a vision-language model at each step, PreNav generates a single global search reference before the robot moves: an LLM converts target--furniture co-occurrence into a spatial prior, a conditional diffusion model turns that prior and the persistent structure into an ordered centerline with a band around it, and the robot approaches the target once it is detected online. Experiments on a Gibson ObjectNav benchmark show that PreNav outperforms a strong online baseline under matched structural priors, using a generator trained only on room-level ScanNet++ scenes and applied to floor-level Gibson without fine-tuning. Real-world experiments under object relocation and open-vocabulary queries further validate the approach.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuxuan Feng",
+    "Fujing Xie",
+    "Sören Schwertfeger",
+    "Hermann Blum"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15093",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Open-world navigation requires a robot to locate a user-specified target in an indoor scene under open-vocabulary queries. Realistic indoor environments are semi-static: walls and furniture largely…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Decide Before You Move: Diffusion-Generated Search Reference for Zero-Shot Open-Vocabulary Object Navigation in Semi-Static Environments",
+  "url": "https://arxiv.org/abs/2611.15093",
+  "use_case": ""
+}

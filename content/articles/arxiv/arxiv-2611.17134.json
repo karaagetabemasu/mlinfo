@@ -1,0 +1,33 @@
+{
+  "abstract": "Managing children on ECMO (Extracorporeal Membrane Oxygenation) requires balancing short-term physiological stability with the long-term goal of preventing neurological injury. Standard reinforcement learning can propose risky, out-of-distribution actions, while imitation learning is limited to reproducing clinician behavior. We introduce Support-Constrained Fitted Q-Iteration (FQI-SC), an offline reinforcement learning framework that cautiously improves upon expert behavior by restricting optimization to empirically supported state-action pairs and defaulting to the clinician baseline in low-data regions. On 78 pediatric trajectories totaling over 6,000 hours of clinical data, we evaluate our framework using Fitted Q-Evaluation (FQE) and a behavioral disagreement. Additionally, we formalize the performance-safety trade-off by introducing a unified Balance Score ($S(π)$). Our empirical evaluation shows that support-constrained policy improves the Balance Score by 38\\% relative to FQI, improves estimated value by 1.28 FQE units over imitation learning, and reduces disagreement with clinician actions by 71\\% relative to FQI.",
+  "abstract_ja": "",
+  "authors": [
+    "Fateme Golivand Darvishvand",
+    "Saurabh Mathur",
+    "Nikhilesh Prabhakar",
+    "Michael A. Skinner",
+    "Ameet Soni"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.17134",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "Managing children on ECMO (Extracorporeal Membrane Oxygenation) requires balancing short-term physiological stability with the long-term goal of preventing neurological injury. Standard reinforcement…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": [
+      "anomaly-detection"
+    ]
+  },
+  "title": "Support-Constrained Offline Policy Improvement for Pediatric ECMO from Limited Clinical Data",
+  "url": "https://arxiv.org/abs/2611.17134",
+  "use_case": ""
+}

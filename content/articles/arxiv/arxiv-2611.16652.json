@@ -1,0 +1,29 @@
+{
+  "abstract": "We introduce CABOT, a computational model for autonomous mobile robots in which the discrete plane the robots operate on is not a passive stage but an active computing medium. In the classical Look-Compute-Move (LCM) model every increase in computational capability is obtained by strengthening the robots themselves, with lights, memory or wider visibility, at a cost paid once per robot. CABOT strengthens the environment instead: each cell of the grid holds a state from a finite set Q, the states evolve synchronously under a uniform local rule that also senses whether a robot stands on the cell, that is, the floor is a cellular automaton, and the Look operation returns the states of the visible cells in addition to the positions of the visible robots. The robots are as weak as we can make them: oblivious, silent, lightless, myopic with visibility range 1, without multiplicity detection and unable to write to the floor. The number of field states |Q|, rather than any robot capability, becomes the measure of the resources required. On an inert floor (|Q| = 1) such robots can neither form a line, nor gather from scattered positions, nor explore a grid. We show that a handful of states changes this. Line Formation from connected configurations is solvable with four states, and field-silently, so that the floor also reaches a fixed point, with five. Gathering from arbitrary, possibly disconnected, configurations is solvable with three states and Line Formation from arbitrary configurations with six; we prove that neither can be solved field-silently with any number of states. A single robot explores every finite grid forever with four states and every torus with two, which is optimal. Further rule sets, validated by simulation only, equalize the spacing of robots on a row, fill a pattern painted on the floor and guide robots through a maze, and indicate the range of the model.",
+  "abstract_ja": "",
+  "authors": [
+    "Yonghwan Kim",
+    "Gil-Tak Kong",
+    "Un-Sook Choi"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16652",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "We introduce CABOT, a computational model for autonomous mobile robots in which the discrete plane the robots operate on is not a passive stage but an active computing medium. In the classical…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Autonomous Mobile Robots on a Computing Field",
+  "url": "https://arxiv.org/abs/2611.16652",
+  "use_case": ""
+}

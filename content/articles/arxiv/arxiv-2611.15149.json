@@ -1,0 +1,35 @@
+{
+  "abstract": "Recent advances in flow-matching Transformers have greatly improved Text-to-Image (T2I) and Text-to-Video (T2V) generation, but unconstrained generation risks producing illegal or unethical content. Safety alignment must therefore suppress unsafe content while preserving legitimate generation. A concept's safety depends on context: a knife used for cooking is safe, whereas its use in violence is harmful. Yet most concept erasure methods indiscriminately suppress static, isolated representations, overlooking evolving semantic interactions. Consequently, safe scenes containing potentially sensitive terms may be unintentionally suppressed, compromising generation quality. To address this, we propose Dynamic Graph Semantic Recomposition (DGSR), which dynamically constructs and updates a semantic interaction graph from evolving text visual states during sampling. Context aware graph reasoning captures semantic dependencies, while paired safe/unsafe supervision distinguishes harmful from legitimate interactions, enabling precise identification of and selective intervention on high risk semantic relationships while preserving benign semantics. DGSR freezes the pretrained backbone and supports both image and video generation. Experiments show that DGSR achieves the lowest Attack Success Rate (ASR) in 10 of 12 T2I evaluations and reduces the average T2V unsafe frame rate by 41.2\\% relative to the strongest baseline, while maintaining high generation fidelity and temporal consistency.",
+  "abstract_ja": "",
+  "authors": [
+    "Qinghui Gong",
+    "Jinshan Lai",
+    "Xunlei Chen",
+    "Hua Meng",
+    "Zhengchun Zhou"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15149",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Recent advances in flow-matching Transformers have greatly improved Text-to-Image (T2I) and Text-to-Video (T2V) generation, but unconstrained generation risks producing illegal or unethical content.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "From Concepts to Interactions: Dynamic Graph Semantic Recomposition for Safe Visual Generation",
+  "url": "https://arxiv.org/abs/2611.15149",
+  "use_case": ""
+}

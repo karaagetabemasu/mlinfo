@@ -1,0 +1,35 @@
+{
+  "abstract": "Image-to-3D generative models now produce asset-quality textured meshes, but at minutes per asset they remain slow to iterate with and costly to deploy. Prior work has mostly accelerated the sampling of the networks, and where it also optimizes the mesh processing, it trains its own generators. We instead start from a publicly released pipeline and ask how much of its end-to-end time can be saved. Profiling the public Pixal3D pipeline shows that its latency is dominated by what happens after the networks: the four rectified flows take 14% of the wall-clock time and mesh post-processing takes 85%, most of it in CPU-based UV unwrapping. We therefore first rebuild the mesh post-processing on the GPU and take it off the critical path, then cut the per-evaluation overhead of the flows and distill them from 76 to 8 network evaluations. The resulting pipeline, Sprint3D, reduces the median time per asset from 133 s to 4.05 s on one H200 GPU at the same export settings (33$\\times$). At the same time, on 2,653 held-out Toys4K objects it improves every input-view normal metric of the Pixal3D protocol, with a slightly lower mean silhouette IoU, lower point-cloud alignment scores and less fine texture detail. The rebuilt post-processing alone also speeds up TRELLIS.2, which uses the same export code, by 6.7$\\times$ without a detectable change in the evaluated metrics.",
+  "abstract_ja": "",
+  "authors": [
+    "Sho Kuno",
+    "Ruihan Yu",
+    "Yonghao Yu",
+    "Guixu Lin",
+    "Lian Fu"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16701",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Image-to-3D generative models now produce asset-quality textured meshes, but at minutes per asset they remain slow to iterate with and costly to deploy. Prior work has mostly accelerated the sampling…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Sprint3D: Accelerating End-to-End 3D Asset Generation through Pipeline Optimization",
+  "url": "https://arxiv.org/abs/2611.16701",
+  "use_case": ""
+}

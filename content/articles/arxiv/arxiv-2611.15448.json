@@ -1,0 +1,32 @@
+{
+  "abstract": "In computer vision, vision-language and self-supervised encoders are two unique paradigms characterized by global language alignment and high-quality vision-only patch representations, respectively. Multimodal large language models (MLLMs) often use the former because of language alignment, despite the recent rise in vision-centric tasks resembling traditional dense vision tasks that would likely benefit from the high-quality patch representations, raising the question whether self-supervised models could aid MLLMs in vision-centric tasks. To investigate this, we define semantic (in)consistency of patch tokens from language-aligned encoders and identify two sets of tokens, semantically consistent (SCTs) and semantically inconsistent (SITs). Through systematic probing via the removal of SCTs or SITs from the input of modern MLLMs, we show higher reliance on SCTs than SITs, as removal of the former induces larger performance drops. This demonstrates that MLLMs benefit from semantic consistency of vision tokens. With this in mind, we devise a simple yet effective extension of the MLLM training objective that combines traditional language modeling with semantic guidance via minimization of semantic inconsistency. This strategy, named Semantically-Guided Training (SGT), combines the signals of both loss terms to push the vision encoder towards providing semantically consistent tokens, while preserving language alignment. Extensive evaluation shows that SGT outperforms all baselines and MLLMs with specialized vision encoders on vision-centric benchmarks while keeping strong scores on text-centric benchmarks, thus setting state of the art on average across all tasks. Our results highlight the importance of combining language alignment and semantic consistency through the lens of MLLMs rather than independently from them and pave the way towards the design of better MLLM vision encoders.",
+  "abstract_ja": "",
+  "authors": [
+    "Nikola Đukić",
+    "Tim Lebailly",
+    "Tinne Tuytelaars"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.15448",
+  "likes_count": 0,
+  "publishedAt": "2026-11-11",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "In computer vision, vision-language and self-supervised encoders are two unique paradigms characterized by global language alignment and high-quality vision-only patch representations, respectively.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Semantic Consistency of Vision Tokens: A Vision-Centric Perspective on Multimodal Large Language Models",
+  "url": "https://arxiv.org/abs/2611.15448",
+  "use_case": ""
+}

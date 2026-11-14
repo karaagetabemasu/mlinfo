@@ -1,0 +1,33 @@
+{
+  "abstract": "Video deraining is challenging due to rain streaks, occlusions, and atmospheric effects. Existing methods mainly follow a deterministic restoration paradigm, assuming that clean scenes can be uniquely recovered from rainy observations. However, rain degradation is spatially heterogeneous. Reliable regions require faithful reconstruction, whereas severely occluded regions contain ambiguous content that require stronger prior-driven inference. Therefore, conventional deterministic restoration often produces over-smoothed results, while global generative restoration may introduce unnecessary hallucinations. We introduce a Selective Generative Restoration paradigm for video deraining, where generative priors are adaptively activated according to restoration uncertainty. Based on this principle, we propose Selective Generative Video Deraining (SGVD), an uncertainty-aware diffusion framework that enables adaptive fidelity preservation and generative recovery. Specifically, SGVD exploits stochastic diversity between dual one-step diffusion predictions to estimate region-level restoration uncertainty, which determines where observation fidelity should be preserved and where generative inference should be activated. Furthermore, an anchor-guided trajectory consistency mechanism is proposed to regularize stochastic diffusion evolution across frames, reducing temporal generation drift and improving video coherence. To achieve practical efficiency, SGVD adopts one-step diffusion inference while maintaining uncertainty-aware generative capability. Extensive experiments demonstrate that SGVD achieves superior restoration performance, perceptual quality, and temporal consistency compared with state-of-the-art video deraining methods.",
+  "abstract_ja": "",
+  "authors": [
+    "Yi'ang Chen",
+    "Han Li",
+    "Laibin Chang",
+    "Hui Liu",
+    "Kui Jiang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16310",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "video",
+  "summary": "Video deraining is challenging due to rain streaks, occlusions, and atmospheric effects. Existing methods mainly follow a deterministic restoration paradigm, assuming that clean scenes can be…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Selective Generative Restoration for Video Deraining via Uncertainty-Aware Diffusion",
+  "url": "https://arxiv.org/abs/2611.16310",
+  "use_case": ""
+}

@@ -1,0 +1,27 @@
+{
+  "abstract": "We revisit the problem of estimating $k$ linear regressors with self-selection bias in $n$ dimensions up to error $\\varepsilon$ with the maximum self-selection criterion, as introduced by Cherapanamjeri, Daskalakis, Ilyas, and Zampetakis [CDIZ23, STOC]. Our main result is a $\\mathrm{poly}(n,k,1/\\varepsilon)$ time algorithm for the unknown-index variant of this problem, thereby improving upon the running times of the best known algorithms due to Gaitonde and Mossel [GM24] and Kalavasis, Mehrotra, and Zhou [KMZ26, COLT] with exponential dependence on $k$. Our algorithm succeeds in the presence of correlated noise between regressors, which captures the related setting of max-affine regression. Consequently, we also give the first polynomial-time algorithm for this problem, improving on the prior works of Ghosh, Pananjady, Guntuboyina, and Ramchandran [GPGR22, IEEE Transactions on Information Theory] and Gaitonde and Mossel [GM24] with exponential dependence on $k$. Prior works exhaustively search over a $k$-dimensional subspace spanned by the regressors, using conditional moments of the response to test candidates. In contrast, our algorithm is driven by an improved understanding of the moments of the covariates. We show that, restricting to observations with large response values, the degree-$(\\log n)$ Hermite moment of the covariates approximately decomposes as a sum of tensor powers of the regressors. The first step of our algorithm can be viewed as a tensor decomposition algorithm for these implicitly represented high-order tensors, which outputs unit vectors parallel to the regressors. A secondary step based on a simple variant of ordinary least squares extracts estimates for the regressors given these unit vectors. We believe our analytic insight and algorithmic components may have applications to designing efficient algorithms for other latent-variable problems.",
+  "abstract_ja": "",
+  "authors": [
+    "Felix Zhou"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.17228",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "We revisit the problem of estimating $k$ linear regressors with self-selection bias in $n$ dimensions up to error $\\varepsilon$ with the maximum self-selection criterion, as introduced by…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Linear Regression with Self-Selection Bias in Polynomial Time",
+  "url": "https://arxiv.org/abs/2611.17228",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Dataset distillation aims to compress large-scale datasets into compact synthetic subsets that enable efficient model training with comparable performance to the original data. Recent advances show that diffusion models are highly effective for this task due to their strong generative capability. Existing diffusion-based approaches typically perform class-wise clustering and use the obtained cluster prototypes as diffusion inputs to generate distilled samples. However, the uniformly distributed original samples in a category inevitably lead to entanglement near cluster boundaries, pulling the cluster prototypes closer and reducing the inter-cluster separation. Consequently, the diffusion model receives overly similar latent inputs, resulting in synthetic data with limited diversity. To address this issue, we propose Disentangled Embedding Optimization (DEO), a simple yet effective framework that replaces static clustering with trainable embeddings. These embeddings are optimized to match the Gaussian statistics (i.e., mean and covariance) of the original data distribution, while a diversity regularizer is designed to encourage separation among these embeddings to improve the intra-class variability. Extensive experiments demonstrate that our proposed DEO can generate more diversified and representative distilled data than existing cluster-based diffusion methods, achieving state-of-the-art performance and superior generalization across multiple datasets.",
+  "abstract_ja": "",
+  "authors": [
+    "Hongcheng Li",
+    "Yucan Zhou",
+    "Yibin Wang",
+    "Xiaoyan Gu",
+    "Bo Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.16224",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Dataset distillation aims to compress large-scale datasets into compact synthetic subsets that enable efficient model training with comparable performance to the original data. Recent advances show…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Disentangled Embedding Optimization for Diffusion-Based Dataset Distillation",
+  "url": "https://arxiv.org/abs/2611.16224",
+  "use_case": ""
+}
