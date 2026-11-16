@@ -1,0 +1,30 @@
+{
+  "abstract": "Running open-weight language models locally on a single consumer GPU requires replacing expanding multi-turn exploration histories with short, stateless code inspections. Stateless repository localization, however, hinges on a foundational question: when a frozen language model evaluates an unedited code entity from a compact view, which structural relationships make its relevance judgment informative about a nearby repair target? Studying Gemma 4 models across 211 real-world Python issues in 86 repositories, we uncover a systematic directional relevance asymmetry: zero-temperature relevance scores on enclosing scopes and upstream callers consistently separate true structural neighbors from hard lexical distractors, whereas scores on downstream callees, peer methods, historical co-change partners, and dense node embeddings remain near chance. Zero-leakage masked-scope probes and regressions controlling for lexical similarity and snippet length confirm that this asymmetry reflects functional role (callers expose symptom entrypoints delegating to defective routines, while downstream helpers appear benign alone) rather than target leakage or surface overlap. Guided by this finding, we introduce GraphScent, a training-free search controller that propagates out-of-repository, relation-conditioned log-likelihood ratios over runtime Typed-AST multigraphs before resolving ties via a single listwise comparison, alongside AST Ripple, a lightweight post-edit check for missed co-edits. Likelihood calibration prevents overconfident smaller models from chasing false-positive callers while lifting exact localization on lexically hard targets from 12.8 to 23.4 percent at 31B within a single-GPU budget.",
+  "abstract_ja": "",
+  "authors": [
+    "Ramesh Arvind Naagarajan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.17527",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Running open-weight language models locally on a single consumer GPU requires replacing expanding multi-turn exploration histories with short, stateless code inspections. Stateless repository…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "detection",
+      "regression"
+    ]
+  },
+  "title": "GraphScent: Calibrating Directional Relevance Signals for Bounded-Context Code Localization",
+  "url": "https://arxiv.org/abs/2611.17527",
+  "use_case": ""
+}

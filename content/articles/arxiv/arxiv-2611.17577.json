@@ -1,0 +1,29 @@
+{
+  "abstract": "Distributed coordination of electric vehicle (EV) charging with the alternating direction method of multipliers (ADMM) keeps EV constraints private but assumes that every participant follows the algorithm. This assumption fails in practice, where a biased operator or a man-in-the-middle (MITM) attacker can send inconsistent signals to different EVs, and compromised EVs can deviate from their prescribed updates. We first prove that attacks by such arbitrarily malicious, i.e., Byzantine, participants do not prevent convergence and therefore remain undetected, and derive the most damaging attack in closed form. We then propose a framework that combines a threshold-signed broadcast with upload recomputation, which detects every deviation without false alarms at linear instead of quadratic communication cost. To keep the optimization running, each affected EV recovers locally with a certified, fleet-aware machine learning price forecast, and we prove that the optimization remains convergent with a recovery cost bounded by the shape of the forecast error. Simulation results with real-world load, price, and charging data show that a biased operator raises the annual cost of disadvantaged EVs by 132.7% and lowers that of advantaged EVs by 49.3% without changing the aggregate load, whereas the defense limits all cost changes to 2.6%. An external MITM attacker raises the cost of its victims by 57.6%, the peak load by 5.8%, and the grid cost by 15.8%, whereas the defense keeps them within 1.1%, 0.2%, and 0.3% of benign operation. With up to 70% of the EVs attacked, the recovery converges in at least 97.8% of the runs.",
+  "abstract_ja": "",
+  "authors": [
+    "Md. Mainul Islam",
+    "Muhammad Ismail",
+    "Hasan Kurban",
+    "Abdulrahman Takiddin",
+    "Erchin Serpedin"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.17577",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Distributed coordination of electric vehicle (EV) charging with the alternating direction method of multipliers (ADMM) keeps EV constraints private but assumes that every participant follows the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Fair and Efficient Distributed EV Charging Coordination Using Threshold Cryptography and Machine Learning",
+  "url": "https://arxiv.org/abs/2611.17577",
+  "use_case": ""
+}

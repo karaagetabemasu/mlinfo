@@ -1,0 +1,31 @@
+{
+  "abstract": "Human demonstrations are becoming the main source of data for dexterous manipulation, and real-to-sim-to-real pipelines multiply each demonstration in simulation. These pipelines rebuild the interaction from vision, which recovers how the hand moves. Which fingers touch, when, and how hard remain unobserved, because a hand pose shows where each finger stops on the surface rather than how far it is driven to close. This gap is a force gap: on held-out recordings, a hand policy that imitates the observed pose grips with 0.31x the recorded force, and a policy trained on physics replays of vision-tracked poses grips with 1.55x. TouchTwin closes the gap with measured human touch. Each selected TouchScale recording, captured with head and wrist RGB-D cameras and an 880-taxel glove, is rebuilt in MuJoCo. Coding agents write the objects as physics-tested programs, and a per-subject tactile hand replays the interaction with the recorded touch setting the contact and the closing force of each finger. In simulation, a policy trained on touch-grounded replays grips at 0.99x the recorded force and succeeds in 20/20 trials on held-out recordings and 35/36 unseen perturbations; a contact predictor trained on them misses 13% of real contact frames, against 32% for vision-based replays. Each replay also seeds perturbed demonstrations with simulated contact and force labels, rendered as realistic video in new views and scenes.",
+  "abstract_ja": "",
+  "authors": [
+    "Huiwen Han",
+    "Nuo Chen",
+    "Ziyao Zeng",
+    "Dayou Li",
+    "Hao Wang"
+  ],
+  "category": "mlops",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.17619",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "pipeline",
+  "summary": "Human demonstrations are becoming the main source of data for dexterous manipulation, and real-to-sim-to-real pipelines multiply each demonstration in simulation. These pipelines rebuild the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": []
+  },
+  "title": "TouchTwin: Scaling Human Touch Data via Real-to-Sim-to-Real",
+  "url": "https://arxiv.org/abs/2611.17619",
+  "use_case": ""
+}

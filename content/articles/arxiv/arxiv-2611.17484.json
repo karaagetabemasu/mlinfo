@@ -1,0 +1,27 @@
+{
+  "abstract": "Constructing a finite Pareto representation requires allocating a limited number of solutions across the Pareto front (PF). A desired preference distribution specifies this allocation by assigning more solutions to some PF regions and fewer to others. Scalarization generates Pareto solutions by varying objective weights and solving single-objective problems. However, a distribution of scalarization weights generally does not translate into the same distribution of Pareto solutions along the PF, because the weight-to-solution map is nonlinear and unknown in advance.To account for this distortion, we introduce SURFACE (Scalarization Updates for Redistributing Finite Approximations with Chart Estimation}), which adaptively updates scalarization weights to match a desired PF distribution. SURFACE estimates how each region of the weight grid corresponds to an area of the PF from the current scalarized solutions, then redistributes the weights accordingly. The method supports parallel, warm-started, inexact optimization with standard single-objective solvers. Theoretically, we establish that, under the stated regularity conditions, SURFACE achieves linear convergence of the preference distribution mismatch to a finite-resolution error floor of $\\mathcal{O}(N^{-2/(M-1)})$, where $N$ is the number of adaptive weights and $M$ is the number of objectives. Empirically, experiments across multiple benchmarks demonstrate improved target-mass balance and PF coverage compared with established baselines.",
+  "abstract_ja": "",
+  "authors": [
+    "Liuyuan Jiang",
+    "Prasanna Sattigeri",
+    "Lisha Chen"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.17484",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Constructing a finite Pareto representation requires allocating a limited number of solutions across the Pareto front (PF). A desired preference distribution specifies this allocation by assigning…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "SURFACE: Preference Distribution Matching on Pareto Fronts via Scalarization Steering",
+  "url": "https://arxiv.org/abs/2611.17484",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "In retrieval-augmented generation (RAG), query rewriting serves as a core interface that aligns user intent with external knowledge bases, and its effectiveness directly determines overall system performance. However, generative retrieval faces three critical challenges in real-world deployment: noisy retrieval feedback, the difficulty of jointly optimizing discrete prompt templates and continuous decoding-control parameters, and the limited generalization of static rewriting strategies under semantically complex scenarios. To address these issues, we propose RAG-FGO, a dynamic optimization framework for generative retrieval strategies. RAG-FGO formulates query rewriting as a non-differentiable black-box optimization problem in a mixed discrete-continuous space, and represents prompt templates and decoding parameters as adaptively optimizable query-rewriting agents. The framework performs global search to enable semantic jumps and structural reorganization that escape local optima, while applying local perturbations for fine-grained alignment and precise refinement. In addition, RAG-FGO introduces an elite-preserving memory pool that accumulates high-quality strategies across iterations, thereby mitigating the impact of stochasticity and noisy feedback on optimization stability. Experimental results on a diverse suite of benchmarks demonstrate the effectiveness and robustness of the proposed method, supporting its applicability to complex semantic retrieval tasks.",
+  "abstract_ja": "",
+  "authors": [
+    "Qigan Sun",
+    "Xudong Wang",
+    "Chaoning Zhang",
+    "Chenghao Li",
+    "Jiaquan Zhang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.17788",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "In retrieval-augmented generation (RAG), query rewriting serves as a core interface that aligns user intent with external knowledge bases, and its effectiveness directly determines overall system…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "RAG-FGO: Dynamic Optimization of Query-Rewriting Agents for Generative RAG",
+  "url": "https://arxiv.org/abs/2611.17788",
+  "use_case": ""
+}

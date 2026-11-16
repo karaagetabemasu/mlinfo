@@ -1,0 +1,37 @@
+{
+  "abstract": "Self-supervised learning aims to learn meaningful representations from unlabeled data, potentially allowing models to capture subtle anatomical variations across patients and reduce the amount of labeled data needed. Image-based Joint-Embedding Predictive Architecture (I-JEPA) learns by predicting target-region representations from visible context rather than reconstructing pixels. However, its uniform target placement does not account for the anatomical structure of retinal OCT, where retinal tissue occupies only part of each B-scan. We investigate anatomy-guided target selection using image intensity and predicted retinal segmentation while retaining the I-JEPA architecture and latent prediction objective. We compare anatomy-guided rectangular targets, anatomy-shaped targets and coverage-constrained placement with uniform masking, and evaluate the learned representations using linear probing for glaucoma classification on FairVision. We found that rectangular targets guided by image intensity achieved the highest linear-probe AUC in our comparisons. We show that anatomically meaningful target selection is promising for retinal OCT representation learning, while greater anatomical specificity did not consistently improve performance.",
+  "abstract_ja": "",
+  "authors": [
+    "Yunchu Feng",
+    "Wai Tak Lau",
+    "Kaveri A. Thakoor"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.17586",
+  "likes_count": 0,
+  "publishedAt": "2026-11-12",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Self-supervised learning aims to learn meaningful representations from unlabeled data, potentially allowing models to capture subtle anatomical variations across patients and reduce the amount of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "supervised",
+      "self-supervised"
+    ],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification",
+      "segmentation",
+      "embedding"
+    ]
+  },
+  "title": "Where to Predict in Retinal OCT? Anatomy-Guided Target Selection for I-JEPA",
+  "url": "https://arxiv.org/abs/2611.17586",
+  "use_case": ""
+}

@@ -1,0 +1,32 @@
+{
+  "abstract": "Weightless Neural Networks (WNNs) are lightweight classifiers that binarize their inputs and learn by storing binary patterns in lookup memories, which makes them attractive for resource-constrained tasks such as intrusion detection. Because a small perturbation that crosses no binarization threshold leaves the binary input unchanged, WNNs may appear naturally robust to adversarial examples; a perturbation that does cross a threshold, however, can still change the prediction. We study this tension in WiSARD, the canonical RAM-based WNN, and in two variants that replace its memories with Bloom filters, Bloom WiSARD and BTHOWeN. A continuous perturbation reaches these classifiers only by crossing an encoding threshold, changing at least one binary tuple, and redirecting a memory query; we formalize this mechanism with a threshold-crossing bound and a response-margin certificate for standard Boolean WiSARD. Controlled MNIST experiments compare linear and data-driven thermometer encodings under model-agnostic sensitivity probes, a score-based Simulated Annealing attack, and surrogate-transfer attacks. Changing only the encoding while keeping each model otherwise fixed shows that encoding granularity can trade a small clean-accuracy loss for a large decrease in attack success. On the Bot-IoT, CICIDS, and UNSW-NB15 intrusion-detection datasets, adversarial perturbations lead WNN detectors to classify many attacks as normal traffic and to raise false alarms, even when their aggregate accuracy remains high.",
+  "abstract_ja": "",
+  "authors": [
+    "Lucas Senos Coutinho",
+    "Matheus Vargas",
+    "Pedro Teixeira",
+    "Heudson Tosta Mirandola",
+    "Ori Rottenstreich"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.17646",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Weightless Neural Networks (WNNs) are lightweight classifiers that binarize their inputs and learn by storing binary patterns in lookup memories, which makes them attractive for resource-constrained…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "Binarization as an Attack Surface in Weightless Neural Networks",
+  "url": "https://arxiv.org/abs/2611.17646",
+  "use_case": ""
+}

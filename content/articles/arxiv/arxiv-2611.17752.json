@@ -1,0 +1,32 @@
+{
+  "abstract": "Sparse-view 3D Gaussian Splatting (3DGS) is prone to overfitting because only a limited number of images are available to constrain scene geometry. Dropout is one regularization strategy for alleviating this problem. We introduce the concept of a lineage family to describe a set of Gaussian primitives derived from the same founder through cloning or splitting operations. The founder Gaussians refer to all Gaussian primitives generated during initialization. Descendants within the same family often jointly contribute to the refinement of adjacent local regions. However, dropping individual Gaussians can be less effective due to the compensation effect from neighboring Gaussians for the dropped ones. To address this issue, we propose Stage-wise Lineage-aware Dropout(SLD), which applies lineage-family dropout during the structural regularization stage and switches to individual dropout during the later refinement stage. We further propose Lineage-Balanced Densification(LBD), which operates during densification by constructing an expanded candidate pool and reallocating the densification budget according to the mean gradient scores and existing descendant sizes of different families. Experiments on the LLFF, MipNeRF360, and Blender datasets show that the proposed framework achieves competitive performance in sparse-view reconstruction",
+  "abstract_ja": "",
+  "authors": [
+    "Yan Xing",
+    "Zhi Chen",
+    "Fanglue Zhang",
+    "Junhong Zhao",
+    "Bing Xue"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.17752",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Sparse-view 3D Gaussian Splatting (3DGS) is prone to overfitting because only a limited number of images are available to constrain scene geometry. Dropout is one regularization strategy for…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Stage-wise Lineage-aware Dropout for Sparse-View 3D Gaussian Splatting",
+  "url": "https://arxiv.org/abs/2611.17752",
+  "use_case": ""
+}
