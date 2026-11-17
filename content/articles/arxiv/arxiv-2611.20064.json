@@ -1,0 +1,27 @@
+{
+  "abstract": "Voice agents need accurate transcripts soon after a user stops speaking. We propose Decode Early, Verify Late (DEVL), a training-free framework for streaming inference with offline ASR models. The server keeps partial transcripts as drafts and verifies the latest against the complete audio in one forward pass at turn end. Under stated input and decoding conditions, the final equals the model's greedy offline output in exact arithmetic. We adapt DEVL to four model families. In our five-recognizer comparison, 95-100% of final transcripts are byte-identical to the offline transcripts, WER stays within 0.13 points of offline, and single-stream time to final falls 1.5-7.3x. Serving Qwen3-ASR-1.7B on one A100, DEVL returns finals a median 22-26 ms after turn end at up to 64 streams, 2.7-3.9x sooner than the official streaming mode. It is the only system we tested that meets a 100 ms p99 target, up to 80 streams on Pipecat-STT and 64 on WildASR.",
+  "abstract_ja": "",
+  "authors": [
+    "Doyeob Kim"
+  ],
+  "category": "mlops",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.20064",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "deployment",
+  "summary": "Voice agents need accurate transcripts soon after a user stops speaking. We propose Decode Early, Verify Late (DEVL), a training-free framework for streaming inference with offline ASR models.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": []
+  },
+  "title": "Decode Early, Verify Late: Streaming Offline Speech Recognizers Without Accuracy Loss",
+  "url": "https://arxiv.org/abs/2611.20064",
+  "use_case": ""
+}

@@ -1,0 +1,28 @@
+{
+  "abstract": "When a robot practices without human resets, every attempt still costs wall-clock time, actuator wear, and sometimes a person's attention, yet the schedulers that decide what to practice next treat attempts as free. We present an open, low-cost testbed for measuring these costs: a self-built SO-101 arm runs two demonstration-trained ACT policies that reset each other, with a vision-based success detector and a ledger that records the time, joint travel, and human interventions of every attempt. We formulate cost-aware practice scheduling, in which task selection is rewarded by measured competence gain net of embodied cost, and specify in advance the comparison that will test it. Its first two conditions, run on hardware for 51 minutes of robot time, show that a fixed retry limit did not reduce the share of execution time lost to failures (36%, against 27% for a feasibility rule; not significant) and saved no robot time. The logs suggest why: failures showed no sign of clustering, so a retry right after a failure was as likely to succeed as any other attempt. The ledger also shows that most of the retry rule's extra human time came from cubes knocked out of reach rather than from the rule itself, and a cost-aware rule replayed on the logs recovers the sensible choice without a hand-set limit. We also report lessons from building the system, including a coverage effect in which concentrating demonstrations in a smaller workspace raised success there from 8/20 to 10/10.",
+  "abstract_ja": "",
+  "authors": [
+    "Vedant Telrandhe",
+    "Sushil Sharma"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19979",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "When a robot practices without human resets, every attempt still costs wall-clock time, actuator wear, and sometimes a person's attention, yet the schedulers that decide what to practice next treat…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Practice Is Not Free: Measuring the Embodied Cost of Reset-Free Robot Practice",
+  "url": "https://arxiv.org/abs/2611.19979",
+  "use_case": ""
+}

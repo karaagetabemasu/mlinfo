@@ -1,0 +1,31 @@
+{
+  "abstract": "Variational reconstruction provides a rigorous framework for cone-beam computed tomography (CBCT) by combining an explicit acquisition model with image priors. However, iterative optimization remains computationally demanding, particularly under severe noise and sparse-view conditions. Although learning-based methods achieve high reconstruction quality, they often replace the original variational formulation with learned optimization schemes or nonlinear equilibrium models. We propose a neural network-guided warm-start framework that accelerates variational reconstruction while preserving its original formulation. Projection data are first reconstructed using the Feldkamp-Davis-Kress (FDK) algorithm, and the resulting image is refined by an image-domain neural network. The network output is used solely to initialize the subsequent model-based optimization, leaving the forward model, data-fidelity term, regularization, and optimization scheme unchanged. A pre-regularization step further improves compatibility with the variational priors. Experiments on pelvic CT images from the SynthRAD2025 challenge show a more than threefold reduction in reconstruction time while maintaining comparable image quality.",
+  "abstract_ja": "",
+  "authors": [
+    "Héloïse Dudoignon",
+    "Clément Delmas",
+    "Laurent Facq",
+    "Clair Poignard",
+    "Baudouin Denis de Senneville"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.18801",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "model-based",
+  "summary": "Variational reconstruction provides a rigorous framework for cone-beam computed tomography (CBCT) by combining an explicit acquisition model with image priors. However, iterative optimization remains…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Accelerating Variational Cone-Beam CT Reconstruction with Learned Warm Starts",
+  "url": "https://arxiv.org/abs/2611.18801",
+  "use_case": ""
+}

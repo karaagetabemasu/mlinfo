@@ -1,0 +1,29 @@
+{
+  "abstract": "Reinforcement learning (RL) can teach robot teams to navigate shared spaces, but trial and error causes collisions that real robots cannot afford. Control barrier function (CBF) safety filters prevent these collisions by correcting unsafe actions, yet in a team the filter becomes a centralized optimization whose number of constraints grows quadratically with the team size. We propose an approach that builds the filter's safety into the RL policy and examine how such a system behaves during filter-free deployment. However, the filter that keeps training safe also hides what the policy must learn: it masks the cost of unsafe actions, which actor-critic methods then overvalue, and it keeps near-collision states out of the training data. Our approach therefore learns only from executed safe actions with implicit Q-learning and distills the filter into the policy at synthetic near-collision states. We prove that filter distillation loss bounds the policy's constraint violation and hence how far agents can cross their safety margin, so errors never accumulate. When distillation states cover deployed states, the loss also bounds the collision probability at every step. Without a filter and acting only on local observations, our policies have no collisions in 1,800 test episodes with multiple agents. A policy trained with three agents transfers zero-shot to teams of twenty at constant per-agent computation and stays collision-free with up to eight agents. We test our policies on Crazyflie quadrotors with up to five flying at the same time.",
+  "abstract_ja": "",
+  "authors": [
+    "Srikar Babu Gadipudi",
+    "Somayeh Sojoudi",
+    "Claire J. Tomlin"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19190",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Reinforcement learning (RL) can teach robot teams to navigate shared spaces, but trial and error causes collisions that real robots cannot afford. Control barrier function (CBF) safety filters…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "Distilling Safety Filters for Filter-free Multi-agent RL",
+  "url": "https://arxiv.org/abs/2611.19190",
+  "use_case": ""
+}

@@ -1,0 +1,27 @@
+{
+  "abstract": "When a coding agent runs out of room, its earlier findings are cut and it forgets them. We tested a simple fix: automatically putting the agent's last finding back in front of it. We fixed the rules in advance and ran 98 paired coding tasks with and without this reminder, using Gemma 4 31B (QAT, 4-bit) in the Gemma 4 Developer Agent harness. The reminder made no measurable difference: across all 98 tasks, 47 were solved with it and 48 without (-1.0 points, 95% interval [-8.3, +6.3], exact McNemar p=1.0). The primary outcome (a documented deviation from our preregistration), the first 48 pairs, was 29/48 with memory against 25/48 without (+8.3 points, [-2.1, +18.3], p=0.22); the extension of 50 tasks, decided after that result, pointed the other way (18/50 against 23/50, -10.0 points, p=0.125), so the sign did not replicate. With 19% of tasks flipping between two identical no-memory runs, the combined interval excludes harms larger than about 8 points and gains larger than about 6, and the design had 80% power only for effects of about +-12 points or more. The model almost never wrote notes (2 of 16 and 4 of 32 runs), and memory cost context: the first request is larger and something was injected at only 47% to 65% of compactions. The registered secondary, repeated actions per compaction, was also null. Two directional hypotheses found on Modal did not replicate on Kaggle. We also report an A/A calibration and a validity funnel (129 tasks, 105 valid). Together these results show that single-run memory claims on task sets of this size sit inside run-to-run noise. The treatment is a harness mechanism and does not test agent-written memory.",
+  "abstract_ja": "",
+  "authors": [
+    "Patrick Passos"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19359",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "When a coding agent runs out of room, its earlier findings are cut and it forgets them. We tested a simple fix: automatically putting the agent's last finding back in front of it.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "One Run Is Not Enough: Reminding a small Gemma 4 coding agent of its last finding made no measurable difference in a paired test",
+  "url": "https://arxiv.org/abs/2611.19359",
+  "use_case": ""
+}

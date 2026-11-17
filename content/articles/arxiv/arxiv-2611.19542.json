@@ -1,0 +1,29 @@
+{
+  "abstract": "Pretraining an encoder once and reusing it across tasks is a widespread approach in vision and language. However, neural symbolic mathematics still trains a dedicated sequence-to-sequence model for each task, so that no representation of a function is shared. In this work, we propose the Function Joint-Embedding Predictive Architecture (Func-JEPA, abbreviated f-JEPA): an encoder of mathematical functions, pretrained on their symbolic form, whose latent space imitates the Sobolev space H^1 and in which differentiation is a learned latent operator. The norm of a latent is computed exactly from the function, whereas its direction is learned to match Sobolev angles. The frozen encoder is then reused by lightweight modules for decoding, composition, integration, and regression from samples. The representation and four downstream tasks are evaluated within and outside the pretraining distribution. f-JEPA recovers exact formulas from noisy samples more often than the compared symbolic-regression methods, whereas computer algebra and task-specific models remain stronger on standard integration and differential-equation benchmarks.",
+  "abstract_ja": "",
+  "authors": [
+    "Alejandro Moreno Arcas"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19542",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Pretraining an encoder once and reusing it across tasks is a widespread approach in vision and language. However, neural symbolic mathematics still trains a dedicated sequence-to-sequence model for…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Func-JEPA: Learning a Sobolev Space of Functions as Latent Vectors",
+  "url": "https://arxiv.org/abs/2611.19542",
+  "use_case": ""
+}

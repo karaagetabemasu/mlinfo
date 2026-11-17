@@ -1,0 +1,31 @@
+{
+  "abstract": "Dense retrieval is increasingly used for biomedical literature search and retrieval-augmented generation (RAG). Most biomedical bi-encoders are built on BERTBase-sized encoders pretrained with masked language modeling (MLM). These encoders are costly for corpus-scale indexing and latency-sensitive query encoding, and MLM does not explicitly train the [CLS] vector that a bi-encoder uses to represent a whole text. We present Bioformer-RetroMAE, a compact (43M-parameter) retrieval-oriented biomedical encoder obtained by continually pretraining Bioformer8L} with RetroMAE on approximately 32 million PubMed titles and abstracts. After bi-encoder fine-tuning with BM25 hard negatives, we evaluated it on BioASQ Task 12B test questions by retrieving from all PubMed abstracts. Bioformer-RetroMAE outperformed BioBERT and PubMedBERT bi-encoders fine-tuned under identical settings on all metrics, despite having about 40% of their parameters and producing 512-dimensional rather than 768-dimensional vectors. Compared with PubMedBERT, it improved mean average precision (MAP) by 37.0% and Recall@100 by 29.1%. Compared with the original Bioformer8L}, RetroMAE pretraining improved MAP by 53.6% and Recall@100 by 32.8% without changing model size or inference cost. In hybrid retrieval, fusing Bioformer-RetroMAE with BM25 through weighted reciprocal rank fusion improved MAP and NDCG@10 over BM25 alone by 4.9% and 4.6%, respectively, larger gains than those obtained by fusing BM25 with PubMedBERT or BioBERT.",
+  "abstract_ja": "",
+  "authors": [
+    "Jialu Li",
+    "Li Fang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19862",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Dense retrieval is increasingly used for biomedical literature search and retrieval-augmented generation (RAG). Most biomedical bi-encoders are built on BERTBase-sized encoders pretrained with masked…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation",
+      "retrieval"
+    ]
+  },
+  "title": "Bioformer-RetroMAE: retrieval-oriented pretraining of a compact biomedical language model for literature search",
+  "url": "https://arxiv.org/abs/2611.19862",
+  "use_case": ""
+}

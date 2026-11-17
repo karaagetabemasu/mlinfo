@@ -1,0 +1,28 @@
+{
+  "abstract": "This paper shapes a swarm into a target pattern, such as a figure taken from an image, by controlling its spatial moments. The image is sampled into a reference configuration whose centroid and covariance set the position and principal spreads of the formation, while its higher-order moments, expressed in covariance-normalized (whitened) coordinates, encode the remaining shape. In contrast with geometric formation control, which prescribes distances, bearings, or relative positions between specific agents, this specification concerns the swarm as a whole and assigns no agent to a particular place. The key mechanism is orthogonalization in the swarm's own empirical inner product: projecting negative-gradient velocities onto the complement of low-degree polynomials sampled at the agents makes every higher-order correction preserve all lower-order moments exactly. The resulting hierarchical controller has lower triangular error dynamics and converges locally exponentially for any positive gains, so orders can be added without undoing those already achieved. A joint alternative regulates the higher moments together through a regularized Gauss--Newton step while preserving the centroid and covariance dynamics. We give bounds on the number of agents and sufficient conditions for regularity. Both controllers admit a distributed implementation that uses only relative positions and neighbor communication and retains local exponential convergence when estimation is sufficiently fast. In a distributed simulation on a sparse graph, 350 agents form an airplane from an unstructured swarm through moments up to order ten; the hierarchy reaches the full specification, while the joint law approaches it with smaller velocities.",
+  "abstract_ja": "",
+  "authors": [
+    "Jin Chen",
+    "Hector Garcia de Marina"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19272",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "This paper shapes a swarm into a target pattern, such as a figure taken from an image, by controlling its spatial moments. The image is sampled into a reference configuration whose centroid and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Distributed Shaping of Robot Swarms Through Spatial Moments of Arbitrary Order",
+  "url": "https://arxiv.org/abs/2611.19272",
+  "use_case": ""
+}

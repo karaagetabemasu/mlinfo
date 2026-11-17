@@ -1,0 +1,28 @@
+{
+  "abstract": "Task configurations in factories, warehouses, and everyday physical environments change over time. Physical AI systems therefore need to incorporate new facts into scene memory while preserving valid information about equipment, objects, and operating constraints. We study updates to this parametric semantic-memory layer and present a joint evaluation of correction and preservation under finite update budgets. At fixed current fact count and memory parameter count, the protocol combines independent single-fact updates, budget trajectories, old-to-new answer diagnostics, and first stable success. Using a frozen 4B language model with late-layer LoRA, we evaluate seven preparation conditions and six update budgets on four-field synthetic semantic configurations. In two exposure-matched history conditions, increasing the budget from eight to 32 updates raises joint success from 6.25% to 94.79% and 91.15%, respectively, while exact obsolete-value outputs fall from 174/192 and 166/192 to zero. Constant32, which matches preparation steps but repeatedly trains on unchanged content during the first 32 events, achieves higher early joint success at eight steps (53.65%); at 32 steps, it reaches 85.42%, below both changing-history conditions. These results distinguish rapid correction under a small budget from simultaneous correctness of the new fact and the other three facts after further training. For both changing histories, most cases remain jointly correct at all subsequent measured points from step 16 onward. Output analysis shows that short-budget failures primarily retain the old value; repeated training on the new fact together with the other current facts progressively replaces these obsolete answers.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhekai Ren",
+    "Jiaming Wu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19227",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Task configurations in factories, warehouses, and everyday physical environments change over time. Physical AI systems therefore need to incorporate new facts into scene memory while preserving valid…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Can an Agent Rethink What It Knows? Selective Scene Memory Updates in a Changing World",
+  "url": "https://arxiv.org/abs/2611.19227",
+  "use_case": ""
+}

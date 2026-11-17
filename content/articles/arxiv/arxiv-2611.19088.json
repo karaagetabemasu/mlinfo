@@ -1,0 +1,26 @@
+{
+  "abstract": "Hamilton-Jacobi (HJ) reachability computes the maximal safe set and a safety filter for a given obstacle configuration, but it must be re-solved whenever the obstacles change, which a deployed robot cannot afford. Learning a single value function conditioned on the obstacle set removes the re-solve, yet it sharpens the central weakness of learned reachability: one network must now cover a whole family of safety problems, and its approximation error carries no preferred sign, so rare obstacle configurations silently produce false-safe states. To address these challenges, we present a conditioned reachability model designed so that the remaining error falls on the conservative side. Specifically, our method caps the obstacle margin, which makes the value function provably local, in the sense that obstacles farther than a known threshold cannot affect it, so the model reads only a body-frame window, trains on small scenes, and transfers to scenes of any size with millisecond per-scene preparation. Moreover, the output structure builds the value bound into the model. By training with counterexample mining over the finite-dimensional window configuration space, we maximize the claimed safe volume subject to the HJ inequality, so the learned set grows toward the true safe set from the conservative side. Across all tested obstacle settings, ours is the only method that combines recovery comparable to per-scene DeepReach training with near-zero rollout collisions. We also extend the method to a 10D quadrotor, again with markedly lower collision rates than the baselines.",
+  "abstract_ja": "",
+  "authors": [
+    "Seunghwan Jang",
+    "Wei Xiao"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19088",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Hamilton-Jacobi (HJ) reachability computes the maximal safe set and a safety filter for a given obstacle configuration, but it must be re-solved whenever the obstacles change, which a deployed robot…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Reliable Conditioned Hamilton-Jacobi Reachability via Subsolution Learning on Exact Local Windows",
+  "url": "https://arxiv.org/abs/2611.19088",
+  "use_case": ""
+}

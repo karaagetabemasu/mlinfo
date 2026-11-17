@@ -1,0 +1,33 @@
+{
+  "abstract": "Improving a coding model is a sequence of decisions: find the limiting behavior, create useful practice, and determine which attempts deserve reinforcement. We investigate a practical way to make those decisions increasingly repeatable by grounding feedback in execution. Starting from GLM-4.7-Flash, the work combines whole-file supervised fine-tuning, targeted C++ repair curricula, group-relative reinforcement learning, and verifiers that turn program behavior into structured rewards. Compiler errors and failing tests provide specific contexts for repair practice, while executable checks score the resulting programs. We evaluate the trained models on 26 C++ coding tasks, measuring both initial success and completion after test feedback. The strongest reported post-training configuration achieves 45.2% success in the first test round and 61.5% within two rounds. These results come from an assisted development suite with evolving prompt contracts; the strongest configuration uses four selected evaluation trials and includes six tasks also used in training. The study describes an execution-guided workflow for improving coding models, including how repair tasks are constructed, how program behavior determines rewards, and how the resulting models are evaluated.",
+  "abstract_ja": "",
+  "authors": [
+    "Abhishek Mishra",
+    "Sandeep Srinivasa",
+    "Arko Chattopadhyay",
+    "Enrique Martinho Ferrao",
+    "Guda Pranav Reddy"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19875",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Improving a coding model is a sequence of decisions: find the limiting behavior, create useful practice, and determine which attempts deserve reinforcement. We investigate a practical way to make…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Let Execution Do the Teaching",
+  "url": "https://arxiv.org/abs/2611.19875",
+  "use_case": ""
+}

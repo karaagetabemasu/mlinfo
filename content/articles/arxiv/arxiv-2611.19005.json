@@ -1,0 +1,31 @@
+{
+  "abstract": "Decision models such as Jev return probabilities over caller-defined options and are increasingly used for classification. Large label spaces challenge both accuracy and scalability: larger menus can impair decisions, increase input costs, and exceed option limits. Hierarchical classification reduces menu size but introduces serial calls and error propagation. We propose AdaMenu, which builds a compact candidate menu from retrieved labeled examples and makes a single decision-model request. Its candidate labels adapt to the query, and its default setting also adjusts menu size using aggregated retrieval scores. We evaluate AdaMenu with open and closed decision models on four label sets containing up to 1,016 labels. It outperforms TypeSafe's beam-search baseline on all 16 model and label-set pairs where both methods run, improving accuracy by 16.6-34.3 percentage points. Relative to the full menu on the three smaller label sets, accuracy differences range from -0.5 to +7.2 percentage points, while input token usage falls by factors of 3.2-22.9. AdaMenu also runs when option limits exclude the full menu, including settings where the hierarchical baseline is unavailable.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiangze Yan",
+    "Yi Shen",
+    "Jieyun Huang",
+    "Wenjing Zhang",
+    "Zhaoxiang Liu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19005",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Decision models such as Jev return probabilities over caller-defined options and are increasingly used for classification. Large label spaces challenge both accuracy and scalability: larger menus can…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "AdaMenu: Query-Adaptive Menus for Decision Models over Large Label Spaces",
+  "url": "https://arxiv.org/abs/2611.19005",
+  "use_case": ""
+}

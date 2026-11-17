@@ -1,0 +1,36 @@
+{
+  "abstract": "LLM-based architectures offer strong generalization and instruction-following capabilities for streaming automatic speech recognition (ASR), but multi-talker use introduces coupled transcription, attribution, and latency challenges. Our wearable setting requires real-time transcription of a conversation between a near-field device wearer and a far-field partner. Because partial hypotheses are rendered on persistent sides of a dialogue UI, speaker roles cannot be permuted and each speaker tag must precede its turn. These sparse tags are weakly optimized by supervised fine-tuning (SFT), while committing to a leading tag can delay the text that follows. We therefore post-train a streaming LLM-based ASR model with reinforcement learning with verifiable rewards (RLVR), combining a fixed-role Speaker-Attributed WER (SA-WER) grader with a turn-level onset-delay reward. On an eight-direction multi-talker cohort, SA-WER RL reduces SA-WER from $20.51\\%$ for SFT to $13.14\\%$. Adding the delay objective reduces onset $p50$ by $65\\%$ (from $0.918\\,\\text{s}$ to $0.320\\,\\text{s}$) and $p90$ by $44\\%$ (from $1.389\\,\\text{s}$ to $0.780\\,\\text{s}$) relative to SA-WER-only RL, while achieving $12.70\\%$ SA-WER. These results demonstrate that fixed-role recognition quality and streaming responsiveness can be improved jointly.",
+  "abstract_ja": "",
+  "authors": [
+    "Jing Pan",
+    "Ruizhi Li",
+    "Ju Lin",
+    "Jing Zheng",
+    "Florian Metze"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19136",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "LLM-based architectures offer strong generalization and instruction-following capabilities for streaming automatic speech recognition (ASR), but multi-talker use introduces coupled transcription,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "text",
+      "audio"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Low-Latency LLM-Based Streaming Multi-Talker ASR with Verifiable Rewards",
+  "url": "https://arxiv.org/abs/2611.19136",
+  "use_case": ""
+}

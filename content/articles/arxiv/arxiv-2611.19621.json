@@ -1,0 +1,31 @@
+{
+  "abstract": "Effective planning requires representations that preserve task-relevant geometry and object identity while ignoring visual variation that does not alter the task. Existing evaluations of visual generalization often change several factors simultaneously, making the source of a failure difficult to identify. We introduce a controlled evaluation of object-goal navigation (ObjectNav), the task of reaching an instance of a named object category, in procedurally generated ProcTHOR houses. Training and evaluation houses share floor plans, object locations, goals, and start states, while visual factors are changed individually or in combination. Across model-free reinforcement learning (RL), model-based RL, and agents using frozen pretrained visual representations, our results show that appearance changes impair navigation, but their effects differ sharply by factor. Surface material changes account for most of the average change in success, whereas clutter and lighting have little effect. The magnitude of a global image statistics shift does not reliably predict performance: changing only the goal object's appearance can substantially impair an end-to-end agent despite a small image-level change. We found that a model based agent that plans over frozen features from the pretrained DINOv2 image encoder achieves the highest success (0.83) under the full shift, but remains sensitive to surface appearance. Our experiments reveal an important requirement for planning representations: they must separate invariant spatial task structure from appearance.",
+  "abstract_ja": "",
+  "authors": [
+    "Aarav Srivastava",
+    "Vishwas Sathish",
+    "Rajesh P. N. Rao"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19621",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Effective planning requires representations that preserve task-relevant geometry and object identity while ignoring visual variation that does not alter the task. Existing evaluations of visual…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Toward Planning Representations That Separate Task Structure from Visual Content",
+  "url": "https://arxiv.org/abs/2611.19621",
+  "use_case": ""
+}

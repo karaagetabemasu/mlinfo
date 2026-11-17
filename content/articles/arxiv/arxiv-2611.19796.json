@@ -1,0 +1,29 @@
+{
+  "abstract": "Latent world models predict the future in an embedding space rather than in pixels. An encoder trained only to predict collapses and maps every observation to the same point, so existing models add a mechanism against collapse, such as a target network, a variance penalty or a distribution penalty. These mechanisms keep the embedding from collapsing, but they leave its distances without meaning, and the model cannot tell a reversible transition from an irreversible one. We propose Sense, a single cross-entropy loss over the directed distance $d(x\\to y)=\\sum_i \\mathrm{ReLU}(y_i-x_i)$ that replaces these mechanisms. The loss avoids collapse on its own, and since the encoder no longer needs the predictor, the predictor is fitted afterwards to fixed embeddings by plain regression. On four pixel environments, the return distance learned by Sense detects irreversible transitions with an AUC between 0.95 and 1.00, where LeWorldModel stays between 0.39 and 0.59. On TwoRoom, the navigation benchmark of LeWorldModel, planning with Sense reaches the goal in 100% of episodes against 91% for LeWorldModel. As the goal moves farther away, the planning failure rate of every baseline grows, while that of Sense stays near zero in Cup, Cliff and Sokoban and is the lowest of all methods in Pendulum.",
+  "abstract_ja": "",
+  "authors": [
+    "Haidong Hu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19796",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Latent world models predict the future in an embedding space rather than in pixels. An encoder trained only to predict collapses and maps every observation to the same point, so existing models add a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "The Sense Paradigm for World Models",
+  "url": "https://arxiv.org/abs/2611.19796",
+  "use_case": ""
+}

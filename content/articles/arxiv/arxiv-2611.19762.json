@@ -1,0 +1,31 @@
+{
+  "abstract": "Does an AUROC comparison survive a change in the proportions of tasks, populations, or image corruptions? A pooled-AUROC ranking of failure detectors or uncertainty scores describes one particular mix of groups. We study two fixed scores for a common binary target under mixtures of fixed group-conditional laws. Using the cross-group AUC decomposition, we prove that every rational symmetric quadratic comparison geometry is realizable by finite scalar-score distributions. Universal dominance is thus coNP-hard, and even exhaustive checks of every mixture on fewer than $K$ groups can miss a $K$-group reversal. A grid bound gives a dimension-uniform approximation certificate with sharp $1/m$ order. Common score marginals across groups make the comparison numerator linear, with an error envelope for imperfect alignment. These results yield exact finite-bank audits, explicit reversal mixtures and distances, and simultaneous population statements. For failure detection with a frozen ResNet-50 on ImageNet-C, 15 of 18 confidence-score comparisons win in every corruption family on a discovery split, and all 15 are finite-bank certified over all family mixtures on a held-out split; over all 15 corruption types, of 14 discovery winners the corrected grid certifies 10, leaves 3 unresolved, and finds one confirmation reversal of at least 0.05 AUROC. An audit of all 11,019 released Stable LM 2 12B outputs and 35 uncertainty methods finds 66 confirmation-set comparisons that win within all four tasks yet reverse under mixing. Discovery-fitted marginal rank alignment removes all 66; an alignment-error envelope certifies 83 comparisons. Label checks also change several selected reversals. The findings distinguish robustness of frozen scores from robustness after calibration; they do not establish human-error detection, robustness to unseen corruptions, or generalization beyond the evaluated banks.",
+  "abstract_ja": "",
+  "authors": [
+    "Mahtab Movahhedrad",
+    "Hamidreza Hasani Balyani",
+    "Seyed Pouyan Mousavi Davoudi"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19762",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Does an AUROC comparison survive a change in the proportions of tasks, populations, or image corruptions? A pooled-AUROC ranking of failure detectors or uncertainty scores describes one particular…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "When Does an AUROC Comparison Survive a Change in Population Mix?",
+  "url": "https://arxiv.org/abs/2611.19762",
+  "use_case": ""
+}

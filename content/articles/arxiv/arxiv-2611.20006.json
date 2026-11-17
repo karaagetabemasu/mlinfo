@@ -1,0 +1,33 @@
+{
+  "abstract": "Multimodal large language models (MLLMs) encode a high-resolution image into thousands of visual tokens, which dominate the cost of the prefill stage. Visual token reduction removes most of these tokens, but two problems remain at extreme budgets. The vision encoder still processes every patch of the image, and the few surviving tokens often miss the small regions that hold the answer. In this paper, we propose Glance-ETD, a two-stage token reduction framework guided by a lightweight question-conditioned scorer. In the first stage, a glance encoder views the image at low resolution and re-encodes only the question-relevant regions at native resolution. In the second stage, Evidence-Tempered Diversity (ETD) selects the final tokens by combining diversity with the evidence predicted by the scorer, so that the kept tokens cover the scene and retain the answer. A single-rollout self-distillation recipe trains the MLLM with the glance encoder. With only 5% of the visual tokens, Glance-ETD retains 91.6% of the full-token performance of Qwen3.5-4B across fourteen benchmarks and outperforms the strongest prior method, LT-OPD, by 17.3 points and the same training recipe with DivPrune by 6.0. It also speeds up the time to first token on 4K images by 3.1x and generalizes to three other MLLMs and to high-resolution document benchmarks, with the largest gains on text-rich tasks.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuxuan Wang",
+    "Guangxiang Zhao",
+    "Yuxuan Tian",
+    "Yahui Han",
+    "Xinyu Tan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.20006",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Multimodal large language models (MLLMs) encode a high-resolution image into thousands of visual tokens, which dominate the cost of the prefill stage. Visual token reduction removes most of these…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Glance, then Select: Evidence-Tempered Visual Token Selection for Extremely Compressed Multimodal LLMs",
+  "url": "https://arxiv.org/abs/2611.20006",
+  "use_case": ""
+}

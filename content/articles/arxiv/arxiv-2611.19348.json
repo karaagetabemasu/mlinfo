@@ -1,0 +1,26 @@
+{
+  "abstract": "Convolutional networks are often used to learn the transition rules of land-use cellular automata (CA), yet their predictions are seldom compared with a null model that predicts no change. We built AttentionUNet-CA, which reads a 32 x 32 neighbourhood of land-cover states with four drivers (elevation, distance to major roads, distance to the central business district (CBD) and population density) and predicts the state of each cell ten years later. We tested it on Lucknow, India, with GLC_FCS30D land cover for 1990, 2000, 2010 and 2020, a 30 m series mapped consistently over time, and compared its built-up class with GHSL and ESA WorldCover. AttentionUNet-CA was trained on 1990-2010, selected on held-out spatial blocks and evaluated once on 2010-2020, with three seeds. Baselines were the null model, a random-forest CA (RF-CA) and a U-Net CA without attention; each network was trained with and without class weights. Only 8.1% of the study area changed in the test decade, so no model matched the overall agreement of the null model (91.9%). On change, measured by the figure of merit, the class-weighted networks scored highest (U-Net CA 22.0 +/- 1.2%, AttentionUNet-CA 21.0 +/- 1.4%), ahead of RF-CA (20.3%), but by margins comparable to seed-to-seed variation; the networks estimated the amount of change better than RF-CA. The attention gates did not improve accuracy. Population density and distance to the CBD were the most useful drivers. Projected to 2030, built-up land grows by 22-35%, mostly at the city edge.",
+  "abstract_ja": "",
+  "authors": [
+    "Shubham Phapale",
+    "Poonam Sharma"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19348",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Convolutional networks are often used to learn the transition rules of land-use cellular automata (CA), yet their predictions are seldom compared with a null model that predicts no change. We built…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Attention U-Net Cellular Automata for Multi-Class Land Use and Land Cover Change Simulation in Lucknow, India: Evaluation Against Null and Classical Baselines",
+  "url": "https://arxiv.org/abs/2611.19348",
+  "use_case": ""
+}

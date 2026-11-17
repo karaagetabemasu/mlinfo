@@ -1,0 +1,35 @@
+{
+  "abstract": "Logical anomalies arise when every component looks normal but their combination violates the scene rules. In practical inspection, these rules must hold under varying backgrounds, illumination, and imaging quality, with only a few dozen normal images per scene, whereas existing methods couple normality with appearance and merge different constraints into one reference. We model logical normality as decomposable constraints and propose EviRef, a training-free method that builds a separate reference memory for each family of evidence. Component prototypes built once per scene parse images under any capture condition into one label space, on which occupancy and relation constraints are verified. Semantic constraints are verified with whole-image embeddings independent of parsing, and additional evidence such as text is admitted through a task-level gate without modifying existing memories. On VID-AD, EviRef attains a mean image-level area under the receiver operating characteristic curve (AUROC) of 92.1% (88.9% with visual evidence alone), the highest among the compared methods under each of five capture conditions, with a standard deviation of 0.5. Even with memories built from only 20 normal images per task, it surpasses all compared methods that use 50 normal images per task.",
+  "abstract_ja": "",
+  "authors": [
+    "Yaoting Huang",
+    "Wenqi Cai",
+    "Yijin Wei",
+    "Jianjian Qin",
+    "Chunzhi Gu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19172",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Logical anomalies arise when every component looks normal but their combination violates the scene rules. In practical inspection, these rules must hold under varying backgrounds, illumination, and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection",
+      "anomaly-detection"
+    ]
+  },
+  "title": "EviRef: Evidence-Specific Memories for Logical Anomaly Detection across Capture Conditions",
+  "url": "https://arxiv.org/abs/2611.19172",
+  "use_case": ""
+}

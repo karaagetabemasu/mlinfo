@@ -1,0 +1,27 @@
+{
+  "abstract": "On small single-board computers (SBCs), GNSS signal acquisition is a major CPU load. This paper proposes using the neural processing unit (NPU) of an SBC not for machine learning but as an accelerator for the parallel code search in GNSS signal acquisition. The discrete Fourier transform (DFT) used in acquisition is decomposed by the four-step DFT into matrix products of small DFTs and expressed by $1\\times1$ convolutions, element-wise products, and transposes, which NPUs execute efficiently. Furthermore, we propose a method that divides the DFT, the non-coherent integration, and the peak detection between the CPU and the NPU according to the configuration of the NPU (an NPU with its own memory connected via PCIe, or an NPU sharing memory with the CPU). The proposed method is implemented in the open-source software GNSS receiver Pocket SDR and evaluated on a Raspberry Pi 5 combined with the external AX8850 NPU and on the NPU built into the SoC (RK3588) of the ROCK 5C, a small SBC of comparable size. Compared with acquisition by an optimized CPU implementation, the acquisition of short codes on the Raspberry Pi 5 with the AX8850 is 3.0-3.8 times faster. In the evaluation of the whole receiver, the number of tracking channels that reach their first lock within 30 s with the NPU is 1.5 times that with the CPU, and the time until 90% of the channels are locked is reduced from 66 s to 26 s. Furthermore, because the CPU load of acquisition is reduced, the number of tracking channels that can be processed in real time increases from about 175 to about 230. These results show that using the NPU on SBCs with limited CPU resources is effective for achieving both GNSS signal acquisition and tracking. The implementation is publicly available as open source under the name PocketSDR-NPU.",
+  "abstract_ja": "",
+  "authors": [
+    "Taro Suzuki"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.18186",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "On small single-board computers (SBCs), GNSS signal acquisition is a major CPU load. This paper proposes using the neural processing unit (NPU) of an SBC not for machine learning but as an…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "NPU-Accelerated GNSS Signal Acquisition",
+  "url": "https://arxiv.org/abs/2611.18186",
+  "use_case": ""
+}

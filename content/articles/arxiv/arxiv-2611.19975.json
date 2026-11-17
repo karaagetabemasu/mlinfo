@@ -1,0 +1,35 @@
+{
+  "abstract": "Federated Learning enables collaborative model training across decentralized clients without sharing raw data. While the field has seen rapid growth, the datasets underpinning FL evaluation have not kept pace: real federated datasets remain scarce, and most studies rely on small-scale centralized classification datasets partitioned via Dirichlet label skew, a one-dimensional proxy for the multi-dimensional heterogeneity present in real federations. Moreover, label-based partitioning is by construction inapplicable to non-classification tasks such as segmentation and detection, for which no principled simulation method exists. We cast the conversion of centralized datasets into federated benchmarks as the task of Federated Dataset Simulation (FDS), and decompose it into a representation function $Φ$ and an assignment mechanism $π$. We provide two label-free instantiations -- geometric partitioning via pretrained model embeddings and semantic partitioning via vision-language model-derived criteria -- applicable to classification and dense prediction tasks alike. We evaluate across four datasets spanning classification, segmentation, and detection, and show that both methods induce heterogeneity that matches or exceeds that of label-skew partitioning, with measurable impact on downstream FL performance. We release fds, a modular open-source package for end-to-end federated dataset simulation, heterogeneity measurement, and FL training, at https://github.com/siomvas/fds.",
+  "abstract_ja": "",
+  "authors": [
+    "Vasilis Siomos",
+    "Lam Ngo",
+    "Jonathan Passerat-Palmbach",
+    "Giacomo Tarroni"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/siomvas/fds",
+  "hasCode": true,
+  "id": "arxiv-2611.19975",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Federated Learning enables collaborative model training across decentralized clients without sharing raw data. While the field has seen rapid growth, the datasets underpinning FL evaluation have not…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "classification",
+      "detection",
+      "segmentation"
+    ]
+  },
+  "title": "Federated Dataset Simulation: Inducing Label-Free Heterogeneity Across Tasks",
+  "url": "https://arxiv.org/abs/2611.19975",
+  "use_case": ""
+}

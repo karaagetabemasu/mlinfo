@@ -1,0 +1,29 @@
+{
+  "abstract": "Causal validation of training data attribution (TDA) methods is costly, since evaluation involves retraining a model on many different subsets of the original training set. For example, the Linear Datamodeling Score (LDS), which has become a standard metric for evaluating TDA methods, measures the correlation between TDA predictions and expected retrained model outputs. In this paper, we reduce the amount of computation needed to estimate the LDS along three axes: the number of sampled training subsets, the number of retraining seeds per subset, and the number of models in the attribution ensemble. Each of these factors induces a form of bias in the LDS estimation, and removing these sources of bias significantly reduces the number of retrainings needed to match the same accuracy in LDS estimation. On ResNet-9/CIFAR-10, finite-subset debiasing achieves $3.2\\%$ relative RMSE with as few as $4$ subsets, and $32$ subsets match the accuracy of ordinary Spearman using $96$ subsets, measured against a 300-subset reference. On ResNet-9/CIFAR-10, BERT/QNLI and GPT-2/WikiText-2, estimating the training-noise variance allows us to reproduce the standard five-seed LDS at the same accuracy with $2$--$5\\times$ fewer retrainings.",
+  "abstract_ja": "",
+  "authors": [
+    "Simon Vary",
+    "Alireza Mousavi-Hosseini",
+    "Roger Grosse"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19451",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Causal validation of training data attribution (TDA) methods is costly, since evaluation involves retraining a model on many different subsets of the original training set. For example, the Linear…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Efficient and Accurate Causal Validation of Training Data Attribution",
+  "url": "https://arxiv.org/abs/2611.19451",
+  "use_case": ""
+}

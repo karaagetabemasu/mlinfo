@@ -1,0 +1,31 @@
+{
+  "abstract": "Runtime alignment monitors built on a verbalizable workspace have been proposed as a way to surface a model's silent cognition before it produces output. Their value rests on the workspace carrying enough structure to distinguish safety-relevant propositions, most of which are relational: \"the model plans to deceive the user\" and \"the user plans to deceive the model\" share a concept set and differ only in role assignment. We ask whether the workspace carries the role-filler bindings (which entity fills which role) such a monitor would need, on three frontier language models (Qwen3.6-27B, Gemma-3-12B, Gemma-3-27B-IT), under two lens families (J-lens and R-lens), and with two methods for fitting the role direction (difference-of-means and LRE-gradient). We find a clean dissociation: the workspace carries directions that steer what the model outputs about roles but not the representations the model uses to compute them. Linear probes recover role at near-ceiling from the residual stream but score below a rank-matched random control when reading the workspace, and steering the model along the fitted role direction changes which entity it binds to no more than strength-matched control edits do. Ablating the workspace (zeroing the residual stream's projection onto its ten most active lens directions) damages binding on one of the three models (Gemma-3-27B-IT, holding across three lens variants) and shows no binding-specific damage on the other two, with a rank-matched random subspace as the control; this confirms our design detects binding when present, though scale and instruction tuning are confounded there. A workspace-lens monitor built on these directions would therefore miss a role assignment the model itself represents.",
+  "abstract_ja": "",
+  "authors": [
+    "Reya Dawlah",
+    "Elizabeth McMillin",
+    "Michael Shihong Zhang",
+    "Badrish Ananth",
+    "Rishi Adi Ruia"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19176",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Runtime alignment monitors built on a verbalizable workspace have been proposed as a way to surface a model's silent cognition before it produces output. Their value rests on the workspace carrying…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "A Bag of Concepts? Testing Role-Filler Binding in the Verbalizable Workspace",
+  "url": "https://arxiv.org/abs/2611.19176",
+  "use_case": ""
+}

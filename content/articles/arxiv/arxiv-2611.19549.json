@@ -1,0 +1,29 @@
+{
+  "abstract": "Coding agents act on repositories through shell commands and file edits, and teams steer them with written engineering rules. Industrial settings expect such rules to be enforced and their application to be evidenced, and a rule given as prompt text provides neither. We test whether executable contracts enforced while the agent works reduce rule violations compared with the same rules in the prompt, retrieved as guidance, or checked only after generation. Violations are scored by an oracle whose methods differ from the in-loop checks, and the oracle is validated by two human reviewers and a model reviewer. Across three studies on two model families (240, 112 and 108 runs), enforcement during execution produced no oracle-detected violation in 104 paired runs, against 21 to 55% of runs without rules, and no loss of functional correctness in the two confirmatory studies. In the confirmatory study on tasks aimed at known failure situations (Study 3, protocol hashed before the first run), enforcement lowered the share of violating runs by 31 percentage points relative to no rules (Holm-adjusted p = 0.014); the 17-point difference from prompted rules was not significant (p = 0.12), and neither was any contrast in Study 2, where only 3 of 14 tasks produced a violation. Prompted rules removed some violation types but not recursive deletes of scratch directories, and checks after generation repaired file edits but not commands that had already run. That enforcement satisfies the rules it enforces is expected by construction; what the data add is where prompting falls short, the absence of a functional cost, and the limits of the rules and of the oracle themselves. The studies use low-cost models and one small fixture.",
+  "abstract_ja": "",
+  "authors": [
+    "Reda Heddad"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19549",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Coding agents act on repositories through shell commands and file edits, and teams steer them with written engineering rules. Industrial settings expect such rules to be enforced and their…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Beyond Prompts: Runtime Contracts for Coding Agents",
+  "url": "https://arxiv.org/abs/2611.19549",
+  "use_case": ""
+}

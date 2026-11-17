@@ -1,0 +1,31 @@
+{
+  "abstract": "Industrial recommendation faces a resolution--complexity dilemma: dense interactions make detailed modeling of long behavior histories expensive, while compact history summaries restrict the evidence available to prediction. A unified backbone must preserve rich behavioral details within strict serving budgets. We introduce \\textbf{TokenFormer V2}, a unified architecture that explicitly decouples \\emph{representation resolution} from \\emph{interaction density}. Its group-wise token layout jointly encodes behavior segments with non-sequential context, expands interaction ranges via hierarchical group merging, and coordinates distributed groups through \\emph{NS Fusion} and \\emph{Global Sync} modules. Through this \\emph{local--global decomposition} paradigm, computation is concentrated on structured interactions while preserving fine-grained evidence, ensuring that every encoded event remains directly accessible to the \\emph{Full-Resolution Readout} module. On the Tencent Advertising Algorithm Competition 2026 (TAAC 2026) benchmark, TokenFormer V2 achieves top-ranking accuracy among unified recommendation baselines while using \\textbf{5.1$\\times$ fewer FLOPs} than leading baselines, sustaining its advantage across long histories and imbalanced behavior domains. Furthermore, in billion-parameter evaluations on WeChat Channels advertising, it consistently outperforms state-of-the-art industrial baselines, yielding up to a \\textbf{+0.07 pp} overall AUC gain. In live online A/B testing against the production model, TokenFormer V2 delivers a statistically significant \\textbf{2.33\\% increase in GMV}. These results establish TokenFormer V2 as a battle-tested blueprint for scalable, full-resolution behavior modeling in industrial recommendation.",
+  "abstract_ja": "",
+  "authors": [
+    "Kaihui Wu",
+    "Guoming Li",
+    "Liang Guo",
+    "Yifeng Zhou",
+    "Yuehong Hu"
+  ],
+  "category": "mlops",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19074",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "deployment",
+  "summary": "Industrial recommendation faces a resolution--complexity dilemma: dense interactions make detailed modeling of long behavior histories expensive, while compact history summaries restrict the evidence…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "TokenFormer V2: Breaking the Resolution-Complexity Dilemma in Unified Recommendation",
+  "url": "https://arxiv.org/abs/2611.19074",
+  "use_case": ""
+}

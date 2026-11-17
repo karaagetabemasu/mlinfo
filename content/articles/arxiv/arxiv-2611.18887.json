@@ -1,0 +1,29 @@
+{
+  "abstract": "AI agent interoperability protocols enable orchestrators to discover and invoke external agents using machine-readable metadata. In the Agent2Agent (A2A) protocol, Agent Cards contain attacker-controllable natural-language fields that may influence agent selection before a provider is invoked, creating a pre-invocation trust problem. We characterize this discovery-time attack surface through a taxonomy of ten Agent Card manipulation attacks and present SECCARD, a layered validation framework combining protocol checks, deterministic analysis, and LLM-based semantic reasoning. We measure the emerging public A2A ecosystem by probing 36.1 million Internet domains and collecting 310 deployed Agent Cards. Two annotators independently label the corpus with 96.8% agreement. We then construct a 660-card real-card perturbation benchmark with matched benign controls and a 260-card synthetic adversarial benchmark spanning all ten attack categories. On controlled attacks injected into real Agent Cards, the strongest semantic judge achieves 97.0% security recall at a 1.7% false-positive rate. Across nine LLM judges on the synthetic benchmark, security recall ranges from 25.8% to 92.3%, demonstrating substantial model-dependent variation. These results show that SECCARD effectively identifies Agent Card manipulations spanning all ten discovery-time attack classes while preserving benign Agent Cards, but also reveal that its effectiveness depends critically on the choice of the underlying LLM judge.",
+  "abstract_ja": "",
+  "authors": [
+    "Miguel A. Guirao Aguilera",
+    "Satyajayant Misra",
+    "Efren Lopez-Morales"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.18887",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "AI agent interoperability protocols enable orchestrators to discover and invoke external agents using machine-readable metadata. In the Agent2Agent (A2A) protocol, Agent Cards contain…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "We Have All the Cards: Securing Agent Cards at the Operational Trust Boundary of the Agent2Agent Protocol",
+  "url": "https://arxiv.org/abs/2611.18887",
+  "use_case": ""
+}

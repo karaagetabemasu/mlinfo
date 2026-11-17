@@ -1,0 +1,28 @@
+{
+  "abstract": "Does input-conditioned parameter-efficient fine-tuning (PEFT) improve because it uses the current input, or because it adds a useful learned correction? We investigate this distinction with PREFACE, a bounded channel controller for PEFT-adapted projections that requires no test-time gradients. The controller reads observed context; in multiple-choice likelihood scoring, its state is independent of the candidate continuation. Our central study freezes IA3, tuned LoRA, and DoRA adapters and matches controller architecture, initialization, batches, and updates across current-prefix and learned-global controls. Across ARC-Challenge and SciQ, current-prefix control improves all six mean accuracies over frozen adapters, but none of its paired contrasts with learned-global control excludes zero. Replacing its corrections with their training-prefix mean changes accuracy by at most 0.34 percentage points; input-varying corrections contribute only 1.8-2.8% of correction RMS. On ARC test, frozen-adapter current/global controls score 25.68%/25.77%, distinct from the earlier jointly trained 23.1% to 26.4% gain over IA3. We derive and evaluate static compilation of fixed corrections, separating deployment simplification from statistical equivalence. Broader GPT-2, Pythia, and Qwen experiments show family-, task-, and scoring-dependent gains, with modest recent-model effects. The study provides an intervention-based evaluation of conditional PEFT: improvements over a static adapter do not by themselves demonstrate a benefit from input matching.",
+  "abstract_ja": "",
+  "authors": [
+    "Novanto Yudistira",
+    "One Octadion"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.18987",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Does input-conditioned parameter-efficient fine-tuning (PEFT) improve because it uses the current input, or because it adds a useful learned correction? We investigate this distinction with PREFACE,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "PREFACE: Separating Shared Corrections from Prefix Conditioning in PEFT",
+  "url": "https://arxiv.org/abs/2611.18987",
+  "use_case": ""
+}

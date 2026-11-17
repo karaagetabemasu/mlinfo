@@ -1,0 +1,29 @@
+{
+  "abstract": "We introduce a unified formulation of imitation learning from demonstrations as a conditional sampling problem solved by triangular transport: a policy is the second block of a triangular map that transports a reference distribution to the conditional distribution of the action chunk given the observation history. Unlike in Diffusion Policy, where it is a fixed Gaussian, the reference becomes a design variable; we take it to be the empirical distribution of the demonstrated action chunks and introduce three instances of the formulation: an optimal transport policy (OTP), a flow matching policy (FMP), and a stochastic interpolant policy (SIP). On the Push-T and robomimic Square tasks, the three policies are competitive in task performance with Diffusion Policy and Consistency Policy while using considerably smaller networks and shorter training, and the informative reference accounts for a substantial part of their performance when few network evaluations are used. The three instances offer different trade-offs rather than a single best method: OTP generates an action chunk with a single evaluation of the smallest network (0.23 million parameters on Push-T) and is suitable for settings in which inference time and model size matter, whereas SIP attains the highest scores among the proposed policies at a higher cost.",
+  "abstract_ja": "",
+  "authors": [
+    "Mohammad Al-Jarrah",
+    "Yuhang Mei",
+    "Karen Leung",
+    "Bamdad Hosseini",
+    "Amirhossein Taghvaei"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19815",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "We introduce a unified formulation of imitation learning from demonstrations as a conditional sampling problem solved by triangular transport: a policy is the second block of a triangular map that…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Conditional Optimal Transport and Triangular Maps for Imitation Learning",
+  "url": "https://arxiv.org/abs/2611.19815",
+  "use_case": ""
+}

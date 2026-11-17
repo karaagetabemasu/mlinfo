@@ -1,0 +1,32 @@
+{
+  "abstract": "Published implementations of the Poincaré convolution in Hyperbolic Neural Networks++ (HNN++) map every overlapping image patch to the Poincaré ball before evaluating its score. We show that the clipped score depends on each patch only through two statistics, its squared norm and its inner products with the filters, which a native convolution and a single-channel box filter compute directly. The factorized layer therefore evaluates the specified score exactly, without constructing ball-valued patches, and its single-precision outputs and gradients agree with double-precision evaluations at least as closely as those of the explicit reference. On an RTX A6000 under two versions of JAX, complete training updates of a Poincaré U-Net and a Poincaré ResNet-20 are 1.5 to 1.8 times faster than the faster of two explicit implementations that map patches to the ball (1.2 to 1.4 times against an explicit implementation that skips this mapping); on a V100, the gain over the gather-based one persists as the ResNet-20 is widened eightfold. In 15 paired training runs per task, updates are 2.0 and 1.8 times faster than a reference that follows the published execution order, with no consistent change in final segmentation or classification quality, and peak memory falls by 38 to 55% in a U-Net scaling study. Replacing the convolutions of the official PyTorch Hyperbolic U-Net makes its training step 1.4 times faster with half the memory. Evaluating an existing layer from its patch statistics thus makes Poincaré convolutional networks cheaper to train in the tested models and software stacks.",
+  "abstract_ja": "",
+  "authors": [
+    "Lukáš Jochymek",
+    "Markéta Vašinková",
+    "Petr Gajdoš"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.18125",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Published implementations of the Poincaré convolution in Hyperbolic Neural Networks++ (HNN++) map every overlapping image patch to the Poincaré ball before evaluating its score. We show that the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "segmentation"
+    ]
+  },
+  "title": "Efficient Poincaré Convolutions through Patch-Statistics Factorization",
+  "url": "https://arxiv.org/abs/2611.18125",
+  "use_case": ""
+}

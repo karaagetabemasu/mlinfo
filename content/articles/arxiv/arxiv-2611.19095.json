@@ -1,0 +1,29 @@
+{
+  "abstract": "Omnidirectional ($360^\\circ$) cameras capture the full surrounding scene in every frame, providing a strong advantage for visual odometry (VO) over pinhole sensors with a limited field of view. However, their equirectangular projection (ERP) introduces latitude-dependent distortion, an artificial seam at the image border, and a sampling bias toward the poles. Existing $360^\\circ$ VO methods address these challenges only partially. DEFDVO closes this gap with a patch-based deep VO method that operates directly on ERP imagery, combining spherically initialized deformable feature extraction, end-to-end seam-aware estimation, and spherical-gradient patch selection. The deformable feature extractor combines spherical geometric priors with learned sampling offsets, while seam-aware processing preserves ERP continuity, and spherical-gradient selection reduces polar sampling bias. Trained exclusively on synthetic TartanAirV2 ERP imagery, DEFDVO improves the best prior average absolute trajectory error (ATE) by $4.8\\times$ (0.201 m to 0.042 m) on the TartanAirV2 evaluation set defined by 360DVO and achieves the lowest average ATE on both splits of the real-world 360DVO benchmark. Code is available at https://github.com/BurakSevsay/DEFDVO",
+  "abstract_ja": "",
+  "authors": [
+    "Burak Sevsay",
+    "Egor Bondarev",
+    "Erkut Akdag"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/BurakSevsay/DEFDVO",
+  "hasCode": true,
+  "id": "arxiv-2611.19095",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Omnidirectional ($360^\\circ$) cameras capture the full surrounding scene in every frame, providing a strong advantage for visual odometry (VO) over pinhole sensors with a limited field of view.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "DEFDVO: Deformable Deep Visual Odometry for Equirectangular Images",
+  "url": "https://arxiv.org/abs/2611.19095",
+  "use_case": ""
+}

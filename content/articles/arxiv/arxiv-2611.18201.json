@@ -1,0 +1,26 @@
+{
+  "abstract": "The complexity of games is a central topic in combinatorics, algorithms, and computational complexity theory. It asks how difficult it is to determine the winner of a combinatorial game under optimal play. Many games, such as Hex or Othello, are PSPACE-complete: the game tree has polynomial depth, so the game can be decided in PSPACE. However, some games allow exponentially long plays, for instance Chess (without a generalized 50-move rule) or Go under Japanese rules; these are complete for exponential time. To prevent infinite games, some games employ a no-repetition rule (super-ko rule), for instance Go under Chinese rules. Robson (1984) proved that Chess and Checkers with a no-repetition rule are even harder: deciding whether the first player has a winning strategy is EXPSPACE-complete. Since then, it has been an open problem whether Go with a no-repetition rule is EXPSPACE-complete, too. The complexity of a game under a no-repetition rule is typically interpreted as follows: given a board position, decide whether the first player has a winning strategy such that no repetition occurs from that position on. We introduce the concept of a succinct game history: a Boolean circuit that, given a board position, outputs 1 if the position is in the game history and 0 otherwise. It serves as a \"judge\" that tells the players whether a move is illegal because it creates a repetition. We prove that deciding whether Black has a winning strategy in Go with a no-repetition rule is EXPSPACE-complete when the game history is given succinctly. Moreover, the starting position in our hardness proof is reachable by legal gameplay, which has not always been the case in prior proofs.",
+  "abstract_ja": "",
+  "authors": [
+    "Markus Bläser",
+    "Felix Czerner"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.18201",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "The complexity of games is a central topic in combinatorics, algorithms, and computational complexity theory. It asks how difficult it is to determine the winner of a combinatorial game under optimal…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Go under Chinese Rules with a Succinct Game History is Complete for Exponential Space",
+  "url": "https://arxiv.org/abs/2611.18201",
+  "use_case": ""
+}

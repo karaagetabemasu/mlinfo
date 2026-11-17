@@ -1,18 +1,18 @@
 {
-  "abstract": "Autonomous ML agents in large organizations exchange data and model outputs across organizational and legal boundaries. Which rules bind a given exchange is not fixed. It depends on where the data subjects live, where the agents run, who owns them, whom they target, and which version of each rule is in force. Tags that describe the data can be noisy, and a counterparty can overclaim its safeguards. We model one exchange as a \\emph{regime-uncertain transfer game} between two ML agents, with an enforcer as a third player. Rules enter as hard constraints with a strictest-wins structure. Agents hold a Bayesian belief over which rules apply, can pay to unlock safeguards or verify claims, and then bargain over the remaining legal bundles.Our method, Legally-Constrained Nash Bargaining (\\LCNB), implements this with a Monotonic Concession Protocol using Zeuthen's rule. We prove four properties of the model and test it in a synthetic simulator with GDPR, DPDP, CCPA/CPRA and a stylised stricter regime. In two of three stress cases where residence and citizenship differ, a citizenship-based rule violates in 21--37\\% of shared records, and \\LCNB{} in under 1\\%. The results also show limits. With our default economics, \\LCNB{} shares almost only aggregates, and its low violation rate follows partly from that. Violation tolerance, tag noise and enforcement strength matter more than the choice of bargaining solution.",
+  "abstract": "Large firms use autonomous machine learning agents that communicate with each other across legal and geographic boundaries. The rules governing a particular transfer are fluid. They depend on where the data subject lives, where the agents operate, who their owners and targets are, and how many different versions of the rules are in effect. Descriptions of the data using tags can be inaccurate, and the counterpart agent may exaggerate its security measures.We model such a transaction between two ML agents as a regime-uncertain transfer game, with a third player acting as the enforcer. The set of rules is represented as hard constraints with a strictest-wins logic. Both agents maintain Bayesian beliefs about which rules apply. They can spend money to gain access to security measures and verify the counterpart's claims, and then negotiate within the remaining legal space using Legally-Constrained Nash Bargaining (LCNB).Using the Monotonic Concession Protocol with Zeuthen's rule, we design LCNB. We prove four properties of the model and implement it in a simulated setting with GDPR, DPDP, CCPA/CPRA, and a fictional stricter regime.Across three stress tests where residence and citizenship are at odds, the citizenship-based rule is violated in 21 to 37 percent of shared data records, while LCNB results in a violation rate of less than 1 percent.There are limitations to our results. With our default economics, LCNB shares virtually all aggregates, while having a low rate of violations partly due to this.",
   "abstract_ja": "",
   "authors": [
     "Chethana Prasad Kabgere"
   ],
-  "category": "generative-ai",
+  "category": "reinforcement-learning",
   "codeUrl": "",
   "hasCode": false,
   "id": "arxiv-2611.16603",
   "likes_count": 0,
   "publishedAt": "2026-11-12",
   "source": "arxiv",
-  "subcategory": "gan",
-  "summary": "Autonomous ML agents in large organizations exchange data and model outputs across organizational and legal boundaries. Which rules bind a given exchange is not fixed.",
+  "subcategory": "model-free",
+  "summary": "Large firms use autonomous machine learning agents that communicate with each other across legal and geographic boundaries. The rules governing a particular transfer are fluid.",
   "summary_ja": "",
   "tags": {
     "learning": [],

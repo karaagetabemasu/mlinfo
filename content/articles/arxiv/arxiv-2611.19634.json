@@ -1,0 +1,29 @@
+{
+  "abstract": "Many decision-making problems involve multiple objectives, where actions affect several performance metrics, fairness criteria, or safety constraints. We study multi-objective causal bandits with multiple reward nodes, where actions correspond to interventions on subsets of variables in a causal graph and performance is evaluated through Pareto optimality. Existing approaches to multi-objective bandits often rely on pairwise Pareto dominance or optimize a fixed scalarization. However, pairwise comparisons alone can fail to identify actions dominated by randomized policies, whose expected reward vectors lie in the convex hull of action-level rewards. Thus, an intervention may be suboptimal even if no single intervention dominates it, because it can be dominated by a randomized policy over other interventions. We formalize this policy-level phenomenon and show that it has consequences for both causal action-space reduction and online learning. First, we provide a necessary-and-sufficient graphical characterization of possibly Pareto- optimal minimal intervention sets. Our characterization yields a minimal, sound, and complete candidate intervention family from the graph alone, correcting prior formulations that may include intervention sets that are never Pareto-optimal under any compatible structural causal model. Second, over this reduced intervention space, we design an online UCB-style algorithm that eliminates actions using dominance tests against convex combinations of other actions, and prove logarithmic gap-dependent Pareto regret. Finally, we study constrained multi-objective causal bandits, where feasibility and optimality may be realized only with randomized policies, and develop an online UCB-style constrained bandit algorithm with sublinear regret and constraint-violation guarantees.",
+  "abstract_ja": "",
+  "authors": [
+    "Muhammad Qasim Elahi",
+    "Mahsa Ghasemi",
+    "Murat Kocaoglu"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19634",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "timeseries",
+  "summary": "Many decision-making problems involve multiple objectives, where actions affect several performance metrics, fairness criteria, or safety constraints. We study multi-objective causal bandits with…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": []
+  },
+  "title": "Multi-Objective Causal Bandits: Minimal Intervention Space and Policy-Level Learning",
+  "url": "https://arxiv.org/abs/2611.19634",
+  "use_case": ""
+}

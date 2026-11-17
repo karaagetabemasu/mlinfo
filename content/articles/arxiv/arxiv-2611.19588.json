@@ -1,0 +1,25 @@
+{
+  "abstract": "We introduce PBit1, a finite-control representation of pretrained neural networks that assigns one programmable p-bit to each learned parameter. A 12-bit command sets its probability, a shared affine range maps that probability to the weight domain, and temporal observations reconstruct the weight for inference. Operator-aware range grouping and sensitivity-based sampling allocation adapt the representation to the network. Across five independent weight draws at 32,768 observations per scalar, selected configurations preserve task quality in GPT-2, DistilBERT, and LFM3-1.7B with every learned scalar converted and no fine-tuning. GPT-2 and LFM3 perplexity increase by approximately 0.66% and 0.26%, respectively, while DistilBERT accuracy changes from 87.51% to 87.49%. A sensitivity-based policy reduces GPT-2 reconstruction observations by 41.7% while retaining the quality criterion. Complete-model evaluations reuse reconstructed weights in BF16 inference, and THRML operator experiments examine native sampling and spatial-temporal tradeoffs. Together, these results establish PBit1 as a concrete construction for studying finite-control weight representation and temporal reconstruction in pretrained networks.",
+  "abstract_ja": "",
+  "authors": [
+    "Omar Ramadan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19588",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "We introduce PBit1, a finite-control representation of pretrained neural networks that assigns one programmable p-bit to each learned parameter. A 12-bit command sets its probability, a shared affine…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "PBit1: One Programmable P-Bit per Parameter - A Finite-Control Representation of Pretrained Networks",
+  "url": "https://arxiv.org/abs/2611.19588",
+  "use_case": ""
+}

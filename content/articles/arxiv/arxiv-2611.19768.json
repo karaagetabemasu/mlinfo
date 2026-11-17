@@ -1,0 +1,27 @@
+{
+  "abstract": "Diffusion-based solvers have become a prominent approach to neural combinatorial optimization. At inference time, they assign each decision variable a prediction score. A greedy decoder ranks candidates by these scores and checks hard constraints to ensure feasibility. Top-ranked candidates should be both promising and jointly feasible, making prediction-constraint alignment critical. When this alignment is weak, greedy decoding skips constraint-violating candidates and falls back to lower-ranked alternatives, degrading solution quality. Existing test-time methods improve search, sampling, or decoding, but do not directly strengthen this alignment before decoding. We observe that trained denoisers already carry constraint-aligned structural signals. Building on this observation, we propose Perturbed Instance-Structure Guidance (PISG), a training-free method that amplifies these signals at test time. At each denoising step, PISG constructs a structure-degraded prediction and extrapolates the unperturbed prediction away from it. The resulting guided prediction improves candidate rankings before constrained decoding. Signal analysis shows that this guidance concentrates on constraint-critical variables rather than uniformly rescaling scores. Under greedy decoding and without downstream refinement, PISG improves all 16 TSP solver-scale pairs across DIFUSCO, T2T, FastT2T, and StruDiCO, and all four MIS-ER solvers, with MIS-ER solved-cost gains up to +4.8%. The gains persist on most large-scale settings after 2-opt, and a preliminary study extends PISG to a Transformer-based solver. These results identify prediction-constraint alignment as an effective test-time enhancement direction for diffusion-based combinatorial optimization. Code is available at https://github.com/Ming-321/PISG.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuming Zhang",
+    "Xianchen Zhou",
+    "Hongxia Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/Ming-321/PISG",
+  "hasCode": true,
+  "id": "arxiv-2611.19768",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Diffusion-based solvers have become a prominent approach to neural combinatorial optimization. At inference time, they assign each decision variable a prediction score.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "PISG: Constraint-Aligned Signal Amplification for Diffusion-Based Combinatorial Optimization",
+  "url": "https://arxiv.org/abs/2611.19768",
+  "use_case": ""
+}

@@ -1,0 +1,25 @@
+{
+  "abstract": "Physics-based control is central to robot learning, but differentiating through implicit physics steps typically requires Hessian or Karush--Kuhn--Tucker (KKT) linear solves; we ask whether gradient steps suffice. Each simulation step minimizes an energy under many contact and collision constraints. Without constraints, we view control over $K$ steps as $K$-level optimization with strongly convex lower levels, recast as one min--max problem. Our Penalized Single-loop $K$-level method (PSK) uses only gradients and a projection, updates all levels in parallel, and reaches an $ε$-stationary control in $O(ε^{-3})$ iterations, with a $K$-independent exponent but a $K$-dependent constant. Contact-rich constraints, however, typically violate a constraint qualification (CQ). We replace each constraint by a smooth wall that acts on a band of constant width. Under mild assumptions that need no CQ, every exact solution of the banded lower levels is then feasible and banded Fritz--John, and PSK keeps the $O(ε^{-3})$ complexity. Without a CQ that is uniform in the band width, however, a shrinking band loses the $K$-independent exponent: with width $ε$ and fixed $K\\geq2$, deterministic zero-respecting methods need $Ω(ε^{-(K+3)/4})$ calls on a hard instance whose control dimension grows with $1/ε$. We prove our assumptions for smoothed kinematic and dynamic multi-robot navigation among segment obstacles. In navigation experiments, PSK, tuned per case, reaches every goal with sixteen levels and, at equal time, reaches a lower loss than tuned unrolling in 17 of 18 cases, while implicit differentiation is lower in 10.",
+  "abstract_ja": "",
+  "authors": [
+    "Zherong Pan"
+  ],
+  "category": "math-theory",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19660",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "optimization",
+  "summary": "Physics-based control is central to robot learning, but differentiating through implicit physics steps typically requires Hessian or Karush--Kuhn--Tucker (KKT) linear solves; we ask whether gradient…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "PSK: A Matrix-Free Single-Loop Method for K-Level Physics-Based Control",
+  "url": "https://arxiv.org/abs/2611.19660",
+  "use_case": ""
+}

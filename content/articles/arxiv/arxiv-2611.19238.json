@@ -1,0 +1,28 @@
+{
+  "abstract": "Intent-driven exoskeleton control needs a continuous, causal estimate of the wearer's joint kinematics and an answer to a second question: whose data should train the estimator for a new user? Borrowing the user's recordings of other activities, or other users' recordings of the same activity, is usually evaluated as \"more data\" versus \"less data,\" which confounds the information a source carries with the optimizer updates it adds and hides negative transfer behind averages. We separate these effects for hip, knee, and ankle angle estimation from high-density sEMG and an IMU across six locomotion activities on all ten participants of a public dataset. A compact residual causal TCN-GRU decoder is frozen, and an update-matched replay control prices every added source against the same number of updates on the user's own data. A user's own other activities raise $R^2$ from 0.722 to 0.788, of which +0.048 is information beyond replay; stair descent is a reliably harmful donor and sit-stand-walk a reliably beneficial one. Other users' same-activity data help while the user has only the target activity ($G_\\mathrm{T} = +0.053$) and half as much once own other-activity data exist ($G_\\mathrm{W} = +0.028$); at full calibration, donor value collapses after one to two target records. Per-target gains from the two sources correlate, and leave-one-participant-out gates recover most of the cross-subject value only at low calibration. Data value is hierarchical, state-dependent, and directional; the bottleneck is deciding, without test labels, when to transfer.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiaying Xu",
+    "Guangyuan Chen",
+    "Buyun Gao",
+    "Zhen Dong"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19238",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Intent-driven exoskeleton control needs a continuous, causal estimate of the wearer's joint kinematics and an answer to a second question: whose data should train the estimator for a new user?…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Continuous Lower-Limb Joint-Angle Estimation from sEMG and IMU: The Conditional Value of Cross-Activity and Cross-Subject Data under Update-Matched Controls",
+  "url": "https://arxiv.org/abs/2611.19238",
+  "use_case": ""
+}

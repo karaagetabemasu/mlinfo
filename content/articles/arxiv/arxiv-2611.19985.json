@@ -1,0 +1,25 @@
+{
+  "abstract": "We examine supervised classical prediction of all one-qubit Z and two-qubit ZZ expectation values on noiseless, layered 4-10-qubit RX/RY/RZ-CNOT circuits. In a 63-cell stratified workload with disjoint circuit-template tests, we evaluate one transformer encoder and gate-dependency graph neural networks against literal-zero and training-derived constant predictors. On the Arm K training labels, 44.89% of scalar targets have absolute magnitude below 0.05. The held-out-template zero predictor has equal-instance mean absolute error 0.193399, and none of the evaluated transformer checkpoints or final graph-network endpoints achieves a lower score. A separate product-state positive control achieves MAE 0.007755 versus 0.514811 for zero, but does not explain the failure on the entangled workload. The difference between zero and a training-fitted mean constant under training MSE is only 0.14%, a descriptive point estimate without uncertainty analysis. The transformer's 815,233-parameter source identity is locally verified; detailed packed-input semantics have not been independently audited. These results constitute a descriptive pilot, not a causal explanation, formal equivalence test, or impossibility claim. Comparable circuits can be regenerated from the workload specification, but exact frozen datasets and model-run evidence remain private.",
+  "abstract_ja": "",
+  "authors": [
+    "Mahesh Reddy Pagadala"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19985",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "We examine supervised classical prediction of all one-qubit Z and two-qubit ZZ expectation values on noiseless, layered 4-10-qubit RX/RY/RZ-CNOT circuits. In a 63-cell stratified workload with…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "When Zero Is Competitive: A Descriptive Pilot of Transformer and Gate-Graph Surrogates on Random-Angle Quantum Circuits",
+  "url": "https://arxiv.org/abs/2611.19985",
+  "use_case": ""
+}

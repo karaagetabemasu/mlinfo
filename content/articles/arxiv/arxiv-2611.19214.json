@@ -1,0 +1,28 @@
+{
+  "abstract": "Bayesian optimization (BO) enables sample-efficient search for expensive black-box problems, but its performance depends strongly on surrogate-acquisition configurations whose suitability varies across problems and optimization states. We take a significant step toward LLM-driven strategic management of BO with STaSBO, a task-agnostic meta-controller that plans search behavior and jointly selects surrogate-acquisition configurations, while numerical BO retains responsibility for probabilistic modeling and candidate generation. STaSBO comprises two coordinated stages: strategy planning and strategy-guided configuration selection. A structured memory system connects prior plans, configuration selections, and candidate behaviors to optimization states, allowing the controller to revise its trajectory summary and behavioral plans during planning. To navigate the large joint configuration space, the selection stage shortlists configurations using surrogate fit evidence. Prospective BO-action diagnostics then expose the candidate behaviors, supporting final joint selection against the behavioral plans. Across 12 synthetic mathematical and 10 scientific and engineering application tasks, STaSBO achieves the best average rank against 11 baselines: 2.17 and 2.60, compared with 4.08 and 4.10 for the strongest baseline in each suite, respectively.",
+  "abstract_ja": "",
+  "authors": [
+    "Youngseok Yoon",
+    "Peng Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19214",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Bayesian optimization (BO) enables sample-efficient search for expensive black-box problems, but its performance depends strongly on surrogate-acquisition configurations whose suitability varies…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "STaSBO: LLM-Guided Strategy Planning and Configuration Selection for Bayesian Optimization",
+  "url": "https://arxiv.org/abs/2611.19214",
+  "use_case": ""
+}

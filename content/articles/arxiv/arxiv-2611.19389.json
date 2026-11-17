@@ -1,0 +1,32 @@
+{
+  "abstract": "Open-vocabulary keyword spotting (KWS) allows users to enroll arbitrary keywords at inference time. However, character and phoneme-based text encoders rely on fixed symbol vocabularies learned during training, limiting their ability to handle unseen or visually similar symbols such as homoglyphs, l33tspeak substitutions, and accented characters. We propose PIXEL-KWS, an open-vocabulary KWS framework that represents characters through rendered glyphs rather than learned embedding lookups. We render each character as a grayscale image and encode it with a lightweight CNN, enabling the text encoder to generalize from visual form rather than a fixed vocabulary. On LibriPhrase, PIXEL-KWS and its matched character-based counterpart achieve 9.57% and 9.55% EER on LibriPhrase-hard, 0.43% and 0.41% EER on LibriPhrase-easy, outperforming all published baselines without pre-training or synthetic data. PIXEL-KWS provides substantially greater robustness to both homoglyph and l33tspeak symbol-level perturbations. These results highlight glyph-based representations as a simple and effective approach for robust open-vocabulary KWS in practical settings.",
+  "abstract_ja": "",
+  "authors": [
+    "Adarsh Arigala",
+    "Ramesh Gundluru",
+    "Srinivasan Umesh",
+    "Ludovick Lepauloux",
+    "Hakim Hacid"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19389",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Open-vocabulary keyword spotting (KWS) allows users to enroll arbitrary keywords at inference time. However, character and phoneme-based text encoders rely on fixed symbol vocabularies learned during…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Pixel-KWS: Rendered-Glyph Representations for Orthographically Robust Open-Vocabulary Keyword Spotting",
+  "url": "https://arxiv.org/abs/2611.19389",
+  "use_case": ""
+}

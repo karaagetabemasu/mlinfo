@@ -1,0 +1,31 @@
+{
+  "abstract": "We explore the adaptability of neural image watermarking models; the extent to which one watermarking method can be transformed into another through lightweight adaptation. We introduce a framework that enables encoder-decoder watermarking architectures to become modular and upgradable, supporting multiple watermarking styles without re-training full models. Adaptation is performed by attaching a compact parameter-efficient adapter and fine-tuning under a multi-domain residual alignment loss (spatial, gradient, and frequency) while preserving bit accuracy via a secret-loss term. We evaluate this approach across a suite of recent watermarking models, including TrustMark, InvisMark, RoSteALS, HiDDeN, and WAM, demonstrating that adapted encoders closely reproduce target residuals and that adapted decoders recover messages with near-optimal accuracy under standard augmentations and distortions. We show that cross-model adaptation, with applications in interoperable and upgradable watermarking, can be achieved with as few as 1-2M trainable parameters per component (e.g., the 2M decoder adapter used in our multi-decoder inference pipeline).",
+  "abstract_ja": "",
+  "authors": [
+    "Mehrdad Saberi",
+    "Vishal Asnani",
+    "Shruti Agarwal",
+    "Soheil Feizi",
+    "John Collomosse"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.18363",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "We explore the adaptability of neural image watermarking models; the extent to which one watermarking method can be transformed into another through lightweight adaptation. We introduce a framework…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Adaptable Watermarking: Transforming Image Watermarking Models via Lightweight Adapters",
+  "url": "https://arxiv.org/abs/2611.18363",
+  "use_case": ""
+}

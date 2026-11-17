@@ -1,0 +1,31 @@
+{
+  "abstract": "Conventional experience replay typically applies fixed preservation constraints to historical exemplars, overlooking variations in how learned representations, predictions, and anatomical structures change during sequential training. To address this limitation, we propose Drift-Conditioned Structural Replay Loss (DCSRL), an exemplar-adaptive supervision mechanism that regulates anatomical preservation according to source-referenced knowledge drift. DCSRL operates within a reliability-guided replay framework that selects informative historical exemplars using anatomical content and boundary characteristics while adaptively regulating replay during training. For each retained exemplar, DCSRL constructs a frozen source-task reference signature and subsequently measures changes in feature representations, class probabilities, boundary responses, and predicted anatomical structures. These complementary drift measurements are aggregated and normalized to generate bounded, exemplar-specific coefficients that dynamically adjust boundary and structural replay losses without modifying the underlying memory-selection policy. We evaluate DCSRL under sequential learning across CAMUS, CardiacNet, and EchoNet-Dynamic, comparing its performance with regularization-, distillation-, and replay-based continual-learning approaches. Experimental findings indicate that DCSRL improves overall final segmentation performance and anatomical boundary preservation, particularly under heterogeneous imaging conditions, although trade-offs remain in knowledge transfer across tasks. These findings suggest that source-referenced multidimensional drift conditioning offers a promising direction for adaptive anatomical knowledge preservation in continual cardiac ultrasound segmentation.",
+  "abstract_ja": "",
+  "authors": [
+    "Zahid Ullah",
+    "Jaeyoon Seo",
+    "Jihie Kim"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19756",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Conventional experience replay typically applies fixed preservation constraints to historical exemplars, overlooking variations in how learned representations, predictions, and anatomical structures…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "Drift-Conditioned Structural Replay for Continual Cardiac Ultrasound Segmentation",
+  "url": "https://arxiv.org/abs/2611.19756",
+  "use_case": ""
+}

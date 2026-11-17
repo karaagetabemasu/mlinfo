@@ -1,0 +1,35 @@
+{
+  "abstract": "Open-weight model hubs now ship not only chat checkpoints but a long tail of derivatives---fine-tunes, safety guards, vision--language models (VLMs), audio wrappers, and generative heads---yet residual-stream safety audits still often intervene at a single site, usually the text decoder $T$. We ask a localization question under one shared mean / rank-1 difference-in-means (DiM) extract$=$intervene protocol, with matched-norm random and empty-rate controls: does causal chat attack lift concentrate at $T$, or do perceptual encoders, projectors, and fusion paths ($E$/$P$/$F$) supply a comparable bypass? On the mixed-input settings we stress-test---HADES adversarial images paired with harmful text prompts, and spoken AdvBench via text-to-speech (TTS) or silence---text DiM at $T$ raises attack success rate (ASR) while the same mean DiM at $E$/$P$/$F$ does not; attacks track harmful text rather than image or audio content. Margin-rank and leverage probes on a Vision leaf show that this recipe is extremal at $T$ and near chance at $P$/$E$, which pressures a weak-extractor reading of those flat cells for the DiM family we study. Catalog breadth and mapper-free base$\\to$derivative transfer when residual widths match provide supporting coverage under the same gates; generative U-Nets are a separate band under generation judges. The primary claim is this recipe-scoped $T$ vs.\\ non-text intervenability asymmetry---intervention accessibility under mean / rank-1 DiM, not a claim that refusal is absent or fully represented outside $T$ (text vs.\\ perceptual contrasts and pooling differ by site). On VLGuard Unsafe prompts ($n{=}200$; Llama-Guard), the same $T$ vs.\\ $P$/$E$ directionality holds at modest absolute ASR ($0.030{\\to}0.150$ at $T$). An intervention-oriented Class$\\times$site ledger records where this protocol still hooks as supporting coverage, not as a universal multimodal bypass.",
+  "abstract_ja": "",
+  "authors": [
+    "Chansu Han",
+    "Seok-Hwan Choi",
+    "Takeshi Takahashi"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19826",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Open-weight model hubs now ship not only chat checkpoints but a long tail of derivatives---fine-tunes, safety guards, vision--language models (VLMs), audio wrappers, and generative heads---yet…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "audio",
+      "multimodal"
+    ],
+    "task": [
+      "detection",
+      "generation"
+    ]
+  },
+  "title": "Where Is Rank-1 DiM Refusal Intervenable in Multimodal LM Derivatives?",
+  "url": "https://arxiv.org/abs/2611.19826",
+  "use_case": ""
+}

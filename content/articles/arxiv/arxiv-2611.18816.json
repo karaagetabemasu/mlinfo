@@ -1,0 +1,31 @@
+{
+  "abstract": "In cardio-oncology, left ventricular ejection fraction (LVEF) is the standard biomarker for monitoring cardiac function during cancer therapy. However, its estimation from echocardiography is highly operator dependent, and clinically meaningful declines are often detected only after myocardial injury has progressed, motivating automated methods for standardized assessment and earlier detection of LV dysfunction. To address this need, we propose a multi-task framework integrating cardiac cycle-based temporal standardization, multi-view spatiotemporal feature extraction, and joint optimization for LVEF estimation and LV dysfunction classification. Apical four- and two-chamber echocardiographic sequences are temporally standardized by sampling a clip over an estimated cardiac cycle before being processed by the EchoPrime foundation model, which is fine-tuned end-to-end within the proposed architecture. View-specific features are fused through an attention-based aggregation module to generate a patient-level embedding, from which two task-specific prediction heads estimate continuous LVEF and binary LV dysfunction. To broaden the LVEF distribution encountered during training, samples from the MIMIC-IV-ECHO dataset are incorporated using a balanced sampling strategy. Evaluated on the EchoRisk-MICCAI Challenge, our method achieves an MAE of 4.003 for LVEF estimation (Task 1) and an AUC of 0.764 for LV dysfunction detection (Task 2) on the validation set, demonstrating the effectiveness of foundation model fine-tuning with attention-based multi-view fusion for automated cardiac function assessment in cardio-oncology.",
+  "abstract_ja": "",
+  "authors": [
+    "João Freitas",
+    "Warre Snaet",
+    "Jan D'hooge",
+    "Sandro Queirós"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.18816",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "In cardio-oncology, left ventricular ejection fraction (LVEF) is the standard biomarker for monitoring cardiac function during cancer therapy. However, its estimation from echocardiography is highly…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "Foundation Model Fine-Tuning with Attention-based Multi-View Fusion for Multi-Task Cardiac Function Assessment",
+  "url": "https://arxiv.org/abs/2611.18816",
+  "use_case": ""
+}
