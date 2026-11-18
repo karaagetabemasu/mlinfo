@@ -1,0 +1,31 @@
+{
+  "abstract": "Different paths need not imply different preferences, trajectories also differ in how randomly actions are chosen. Many multi-reward inverse reinforcement learning (IRL) methods assume common action randomness and can confound it with preference heterogeneity. We introduce TRAIL-IRL, which clusters unlabeled trajectories using rewards for preferences and temperatures for action randomness. Its crossed mixture pairs each reward with a shared set of temperature levels, allowing action regularity to vary within preference groups. With centered and normalized rewards in a known finite-state environment, we establish the identifiability conditions under which the distribution of sufficiently long trajectories determines rewards, temperatures, mixing weights, and class counts up to relabeling. Under the same conditions and reward constraints, common-temperature reward mixtures with the same component count cannot reproduce a crossed mixture with multiple temperatures. We develop a generalized expectation-maximization algorithm and select class counts using the Bayesian information criterion (BIC). Simulations show improved predictive fit, reward recovery, and trajectory classification over common-temperature mixtures with the same component count. For 140 bird-year trajectories from 79 white storks, BIC favors four reward classes and three temperature levels over common-temperature candidates. Younger birds have higher posterior membership probabilities for a southwestward migration class, whereas older birds have higher probabilities for a northern retention class. Within reward classes, higher temperatures are associated with more variable movement directions and positions farther ahead along the migration route, consistent with social information use and collective sensing.",
+  "abstract_ja": "",
+  "authors": [
+    "Yichen Zhu",
+    "Guanhua Fang",
+    "Ming Zheng"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.22715",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Different paths need not imply different preferences, trajectories also differ in how randomly actions are chosen. Many multi-reward inverse reinforcement learning (IRL) methods assume common action…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "TRAIL-IRL: Crossed Reward-Temperature Mixtures for Unlabeled Trajectory Clustering",
+  "url": "https://arxiv.org/abs/2611.22715",
+  "use_case": ""
+}

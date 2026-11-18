@@ -1,0 +1,31 @@
+{
+  "abstract": "Large language models often produce hallucinated answers, motivating selective prediction policies that abstain on uncertain queries. However, heuristic uncertainty thresholds alone do not provide statistical control of errors among accepted predictions. Linear Expectation Constraints (LEC) reduce selection-conditioned error rate (SCER) calibration to a nonpositive expected linear-loss constraint, but the associated loss is non-monotonic in the acceptance threshold. We construct an exact counterexample under i.i.d. sampling demonstrating that LEC's empirical threshold-selection rule can violate the population SCER target. To address this risk-transfer gap, we introduce Stability-Compensated Linear Expectation Control (SC-LEC), which uses the negative linear risk of a theoretical full-data reference to compensate for threshold-selection instability. For local expansion beyond a safe anchor, we derive two finite-sample certificates: a stability-based certificate exploiting rank crossings and a direct certificate using the structure of threshold expansion to reduce conservatism. With a valid population anchor margin, our certificate conditions ensure finite-sample marginal SCER control, and independent margin certification further provides a $1-δ$ high-probability guarantee for this calibration-averaged control. Experiments on CommonsenseQA, ARC-Challenge, and TriviaQA show useful retention gains beyond the same certified anchor, while revealing conservative behavior in small-margin regimes.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhiyuan Wang",
+    "Yuanchang Ye",
+    "Jiahao Yuan",
+    "Jinhao Duan",
+    "Xiaoshuang Shi"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.21384",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Large language models often produce hallucinated answers, motivating selective prediction policies that abstain on uncertain queries. However, heuristic uncertainty thresholds alone do not provide…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Stability-Compensated Threshold Calibration for Selection-Conditioned Risk Control in Large Language Models",
+  "url": "https://arxiv.org/abs/2611.21384",
+  "use_case": ""
+}

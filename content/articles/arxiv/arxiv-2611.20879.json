@@ -1,0 +1,29 @@
+{
+  "abstract": "Flow-matching point-cloud upsamplers refine sparse inputs into dense point clouds by integrating a learned velocity field with a fixed temporal discretization. However, local reconstruction requirements vary substantially across a shape, while a shared solver budget applies the same temporal resolution everywhere. We propose Multi-Rate Flow Matching (MRFM), a patch-adaptive framework that selects an integration budget for each local patch at inference time while keeping the learned velocity field frozen. MRFM relaxes the discrete budget into a continuous variable, optimizes it online through differentiable soft rollouts using an input-derived geometric fidelity objective, and projects the result back to a discrete budget for the final solver rollout. Experiments on PU1K and PUGAN show strong reconstruction quality, while matched-budget permutation and multi-factor analyses demonstrate that the benefit depends on patch-specific allocation rather than on the step distribution alone. MRFM is accuracy-oriented and intentionally uses additional test-time optimization to obtain more suitable local temporal resolutions.",
+  "abstract_ja": "",
+  "authors": [
+    "Jingkai Shang",
+    "Edgar Torres",
+    "Duy Nguyen"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.20879",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Flow-matching point-cloud upsamplers refine sparse inputs into dense point clouds by integrating a learned velocity field with a fixed temporal discretization. However, local reconstruction…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Multi-Rate Flow Matching for Point Cloud Upsampling",
+  "url": "https://arxiv.org/abs/2611.20879",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "LLM agents are increasingly deployed in long-horizon tasks where they must explore, gather experience, and adapt their decisions accordingly. We name this capability in-context adaptivity: improving decisions across episodes from experience accumulated in context. We propose to evaluate it in repeated imperfect-information games against unknown opponents. In these games, fixed game-theoretically optimal policies cannot achieve maximum reward, whereas adapting to the opponent increases returns across games. We design a paired protocol that evaluates each agent with and without memory under identical conditions to isolate experience gain from single-game skill. Evaluation shows that memory brings little performance gain for open-weight models and inconsistent gains for frontier models. Our analysis of the agents' summaries and actions identifies a memory-doing gap in which models accurately record opponent tendencies yet rarely depart from default play. To close this gap, we construct a pool of exploitable opponents and post-train Qwen3.5-9B with supervised fine-tuning followed by trajectory-level reinforcement learning. We optimize full-match return across context segments so summary generation and action selection are trained together. On unseen opponents, our 9B RL policy doubles experience gain over supervised fine-tuning in Leduc Hold'em and increases it fivefold in No-Limit Hold'em. Across 35 opponents, our policy matches or surpasses frontier models, generalizes beyond its training horizon, and retains most of its gain on summaries from frontier models.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiale Liu",
+    "Zun Li",
+    "John Schultz"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.21710",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "LLM agents are increasingly deployed in long-horizon tasks where they must explore, gather experience, and adapt their decisions accordingly. We name this capability in-context adaptivity: improving…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Learning In-Context Adaptivity for LLMs through Continual Gameplay",
+  "url": "https://arxiv.org/abs/2611.21710",
+  "use_case": ""
+}

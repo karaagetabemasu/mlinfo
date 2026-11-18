@@ -1,0 +1,27 @@
+{
+  "abstract": "Landscape features give learning models information about the objective function for algorithm selection, algorithm configuration, and performance prediction. Should these features capture more information? Not always, because a model may rely on information that the algorithms ignore. This phenomenon is called shortcut learning, and in-distribution accuracy can hide it. We propose the Rubber Ruler Test. It transforms the objective values of test instances with random strictly increasing transformations, reruns the algorithms, and measures prediction performance. Comparison-based algorithms such as CMA-ES perform identically after the transformation, so for them any drop reveals shortcut learning. On 10-dimensional BBOB, a model for two comparison-based algorithms learned shortcuts even from normalized objective values. The R^2 of a model using all ELA features dropped from 0.85 to 0.23, below 0.45 with invariant features only. Rank-based features reduced the drop when algorithms search using ranks. Data augmentation with transformed training instances improved prediction on transformed instances for every portfolio we studied, but lowered R^2 on original instances by up to 0.31. These results suggest that models should rely only on information that the algorithms use. We recommend reporting the Rubber Ruler Test alongside in-distribution accuracy and using it to choose feature extraction and data augmentation.",
+  "abstract_ja": "",
+  "authors": [
+    "Shuhei Tanaka",
+    "Shoichiro Tanaka",
+    "Toshiharu Hatanaka"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.20440",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Landscape features give learning models information about the objective function for algorithm selection, algorithm configuration, and performance prediction. Should these features capture more…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Shortcut Learning in Feature-Based Algorithm Selection",
+  "url": "https://arxiv.org/abs/2611.20440",
+  "use_case": ""
+}

@@ -1,0 +1,28 @@
+{
+  "abstract": "The electronic Schrödinger equation encodes a molecule's electronic structure and quantum properties, but solving it scales exponentially with the number of electrons. Solving this equation with neural-network variational Monte Carlo (VMC) has reached chemical accuracy on the ground state of small molecules; extending this success to excited states is constrained by two existing paradigms. Penalty-based methods need $K$ Laplacians per step but require tuning the overlap-penalty weights against the energy gaps they aim to compute. Natural excited states VMC (NES-VMC) is penalty-free, but it combines the $K$ ansatzes into one determinant, whose local energy requires $K^2$ Laplacians per step. We resolve this trade-off via low-rank approximation (LoRA) reparameterization of the rank-$K$ variational objective. The reparameterized objective admits a VMC-compatible stochastic gradient estimator via MCMC sampling from the per-state Born densities, and a sequential nesting scheme recovers the lowest $K$ eigenstates in eigenvalue order. The resulting algorithm, NestedLoRA-VMC, inherits a global optimality guarantee from the LoRA principle. On the first-row atoms Li through Ne at $K=10$, its accuracy is comparable to that of NES-VMC and of a state-of-the-art penalty-based method.",
+  "abstract_ja": "",
+  "authors": [
+    "Minchan Jeong",
+    "J. Jon Ryu",
+    "Se-Young Yun",
+    "Gregory W. Wornell"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.21434",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "The electronic Schrödinger equation encodes a molecule's electronic structure and quantum properties, but solving it scales exponentially with the number of electrons. Solving this equation with…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Variational Monte Carlo for Quantum Excited States via Nested Low-Rank Approximation",
+  "url": "https://arxiv.org/abs/2611.21434",
+  "use_case": ""
+}

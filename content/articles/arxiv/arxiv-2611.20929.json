@@ -1,0 +1,26 @@
+{
+  "abstract": "Classical control barrier functions (CBFs) provide safety constraints for controllers, but designing them by hand is difficult for underactuated vehicles and the resulting safe sets can be overly conservative. Neural CBFs can learn more informative barriers from data, yet a learned barrier is usually verified only for one fixed obstacle configuration. We study whether one neural barrier can be reused across environments by expressing the state relative to each obstacle. The key gap is that these relative coordinates may discard information needed to predict their own evolution. We give a generalized closure condition that represents this missing information as a residual and a lifting theorem that transfers a verified relative-coordinate barrier to every obstacle in a family. A rank test also identifies when symmetry alone cannot justify the transfer. We validate the conditions on a double integrator, a planar aircraft, and a 12-state quadrotor. Coordinates that fail the test lead to obstacle penetration or to a barrier condition that fails near hover, whereas body-frame coordinates close exactly for the quadrotor. The resulting barrier transfers to new maps without retraining and is effective in the reported deployment and fast-start experiments.",
+  "abstract_ja": "",
+  "authors": [
+    "Nishant Jayesh Bhave",
+    "Parthib Khound"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.20929",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Classical control barrier functions (CBFs) provide safety constraints for controllers, but designing them by hand is difficult for underactuated vehicles and the resulting safe sets can be overly…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Transferable Neural CBFs via Generalized Closure",
+  "url": "https://arxiv.org/abs/2611.20929",
+  "use_case": ""
+}

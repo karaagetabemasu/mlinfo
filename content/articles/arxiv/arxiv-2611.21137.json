@@ -1,0 +1,31 @@
+{
+  "abstract": "Temporal medical image segmentation relies on pixel-wise annotations, which are prohibitively expensive for long image sequences. Existing weakly-supervised methods reduce the annotation burden per frame but still require repeated annotations across the sequence. Furthermore, sparse supervision can result in temporally unstable representations. Addressing both challenges requires a model that can leverage strong spatial priors from large-scale pretraining while minimizing reliance on dense annotations. Frozen 2D vision foundation models provide a promising basis for this by offering transferable spatial representations with low trainable parameters. However, their lack of explicit temporal modeling limits their ability to propagate reliable information across anatomical sequences. To address this, we present a weakly-supervised framework for temporal segmentation from a single scribble-annotated frame, with all remaining frames left unlabeled. The framework combines parameter-efficient adaptation of DINOv3 encoders present in the mean-teacher architecture. Furthermore, a set of complementary losses, including a temporal loss helps generate reliable segmentation priors for the unlabeled frames. This formulation decouples annotation costs from sequence length while retaining the transferable spatial knowledge of the pretrained encoder. Extensive experiments on the publicly available CAMUS and CardiacNet datasets demonstrate that our approach outperforms other scribble-supervised methods. These results show that accurate and temporally consistent segmentation can be achieved from extremely sparse supervision, substantially reducing annotation requirements for temporal echocardiographic segmentation and providing a practical framework for scalable clinical deployment.",
+  "abstract_ja": "",
+  "authors": [
+    "Vincent Li Weixin",
+    "Chen Jingkun",
+    "Vicente Grau"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.21137",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Temporal medical image segmentation relies on pixel-wise annotations, which are prohibitively expensive for long image sequences. Existing weakly-supervised methods reduce the annotation burden per…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "Scribble Once, Segment the Sequence: Bidirectional Temporal Consistency for Weakly Supervised Segmentation in Echocardiography Sequences",
+  "url": "https://arxiv.org/abs/2611.21137",
+  "use_case": ""
+}

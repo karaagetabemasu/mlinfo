@@ -1,0 +1,33 @@
+{
+  "abstract": "CT-to-PET synthesis estimates functional PET images from anatomical CT scans for auxiliary analysis, representation pretraining, and missing-modality completion. Brownian Bridge diffusion models can produce multiple PET candidates of different quality under the same CT condition, exposing an intra-condition quality hierarchy. Candidate quality spans complementary spatial, structural, and intensity dimensions, while DPO-only fine-tuning may compromise absolute synthesis fidelity. We propose MedicalDPO which converts this hierarchy into preference supervision automatically constructed from paired CT-PET training data. Multiple candidates are ranked across the three fidelity dimensions, and strict cross-metric verification retains preferred-rejected pairs with consistent quality separation. Relative denoising-error preference optimization is jointly trained with the original Brownian Bridge objective to anchor the pretrained CT-to-PET mapping, while condition-balanced multi-pair rotation distributes preference supervision across CT conditions. Experiments on BBDM and CPDM show improvements across LPIPS, MAE, SSIM, and PSNR. Further analyses demonstrate metric complementarity and clear pair separation, while ablations show that the original training objective prevents the substantial degradation caused by DPO-only fine-tuning.",
+  "abstract_ja": "",
+  "authors": [
+    "Huiting Zhang",
+    "Yingxin Cai",
+    "Siyuan Wang",
+    "Xi Yang",
+    "Yuyao Yan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.21098",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "CT-to-PET synthesis estimates functional PET images from anatomical CT scans for auxiliary analysis, representation pretraining, and missing-modality completion. Brownian Bridge diffusion models can…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "MedicalDPO: Multi-Objective Direct Preference Optimization for CT to PET Translation",
+  "url": "https://arxiv.org/abs/2611.21098",
+  "use_case": ""
+}

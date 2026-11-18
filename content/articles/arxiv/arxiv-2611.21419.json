@@ -1,0 +1,31 @@
+{
+  "abstract": "Camera-based heart rate (HR) and respiratory rate (RR) estimates vary in reliability from window to window, and a common remedy is to fuse several extraction methods with weights from reference-free signal quality indicators. However, few studies test whether these indicators identify the most accurate method in each window or outperform simpler fusion. We evaluate 11 quality indicators and 8 inter-method similarity measures for fusing 7 HR and 10 RR extractors on four public datasets (75 test subjects). Filters, indicator directions, weighting parameters and a learned ridge baseline are selected on a separate five-subject set before testing. Fusion is compared with equal averaging, a constant typical-rate predictor, the best single method selected in advance and in hindsight, and a per-window oracle with a permutation-based null, using subject-level bootstrap confidence intervals. For HR, quality-weighted fusion reduced mean absolute error by 10.9% [5.2, 18.4] relative to averaging and by 15.6% [8.1, 23.1] relative to the method selected in advance, and was statistically indistinguishable from the best method selected in hindsight. Weighting methods by their agreement did not improve on averaging. For RR, the indicators could not identify the more accurate estimates: sharpened quality weighting increased error (-2.6% [-4.8, -0.8]), fused estimates were uncorrelated with the reference (r <= 0.22), and averaging was less accurate than the typical-rate predictor (-3.1% [-6.1, -0.4]). With a second respiratory reference, apparent RR gains reflected estimates moving toward its typical rate. Quality-guided fusion is worthwhile for video HR; for RR, 30-s windows improved estimates but not fusion.",
+  "abstract_ja": "",
+  "authors": [
+    "Nhi Nguyen",
+    "Le Nguyen",
+    "Manuel Lage Cañellas",
+    "Miguel Bordallo López",
+    "Constantino Álvarez Casado"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.21419",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Camera-based heart rate (HR) and respiratory rate (RR) estimates vary in reliability from window to window, and a common remedy is to fuse several extraction methods with weights from reference-free…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": []
+  },
+  "title": "Quality and Similarity Indicators for Video-Based Heart Rate and Respiratory Rate Fusion: A Controlled Evaluation",
+  "url": "https://arxiv.org/abs/2611.21419",
+  "use_case": ""
+}

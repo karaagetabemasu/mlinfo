@@ -1,0 +1,29 @@
+{
+  "abstract": "Autonomous monitoring and intervention in semi-structured agricultural environments, such as orchards and vineyards, require mobile robots to navigate to locations across diverse field configurations. This entails performing navigation behaviors including in-row driving, row turning and skipping, and inter-row traversal. Recent learning-based approaches have enabled robust in-row navigation from onboard perception, but navigation across rows typically requires a priori knowledge of field geometry to specify and tune row-transition maneuvers, preventing arbitrary transitions between rows. We address this challenge by framing navigation in these environments as a goal-directed navigation task, where a long-horizon goal is expressed relative to the robot and a planner generates local paths based on the goal and the robot's perceptual observations. We present FlowRow, a flow-matching-based local planner which models the distribution of diverse agricultural navigation behaviors as $\\mathrm{SE}(2)$ paths using the long-horizon goal and depth perception. To enable systematic evaluation, we introduce RowNavBench, a navigation benchmark for semi-structured agricultural environments developed in Isaac Sim, comprising 900 episodes across grape vineyards, lemon orchards, and apple orchards with varying row lengths, row and plant spacings, plant positions, and weed growth. FlowRow achieves 87% success, compared to 44% for the strongest generative behavior cloning baseline retrained on the same demonstrations. We will release our benchmark, data, and code upon acceptance.",
+  "abstract_ja": "",
+  "authors": [
+    "Utkarsh Bajpai",
+    "Cédric Pradalier",
+    "Stéphanie Aravecchia"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.21035",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Autonomous monitoring and intervention in semi-structured agricultural environments, such as orchards and vineyards, require mobile robots to navigate to locations across diverse field…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "FlowRow: Learning Navigation Behaviors in Agricultural Environments with Long-Horizon Goal-Conditioned Flow Matching Policies",
+  "url": "https://arxiv.org/abs/2611.21035",
+  "use_case": ""
+}

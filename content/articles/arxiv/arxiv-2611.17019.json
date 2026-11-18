@@ -1,18 +1,18 @@
 {
-  "abstract": "Layer-local self-supervised objectives remove the backward pass between layers, but almost all still compute their loss over a batch of samples and are therefore local in space but not in time. We introduce Temporal Regularized Learning (TeReL), a spatially and temporally local learning rule for self-supervised representation learning from sequential input streams. The key idea is to instantiate a VICReg-style objective with temporally adjacent positives and non-differentiated running population statistics, yielding a per-neuron online loss with bounded state. The objective is a soft form of Slow Feature Analysis, and its gradient is a Hebbian update of the feedforward weights and an anti-Hebbian update of one lateral matrix per layer. The aim of the experiments is to show that the rule works in a small network, not to compete with backpropagation. On a class-chunked MNIST stream, a two-layer fully connected network trained with batch size one outperforms random features (96.48% versus 95.09% linear-probe accuracy) and classical SFA, and a variant that relaxes both locality constraints is comparable to supervised backpropagation. Because training and inference use the same computation, the network can keep learning from unlabeled data during inference without loss of accuracy.",
+  "abstract": "Self-supervised objectives such as VICReg learn representations by making related inputs similar, while variance and covariance penalties prevent collapse. These penalties are statistics over a batch of samples, so layer-local variants, too, are typically local in space but not in time. We introduce Temporal Regularized Learning (TeReL), which optimizes a VICReg-style objective one sample at a time with purely local updates: each update uses only the current activity of its own and the preceding layer and a fixed-size running state. Temporally adjacent inputs serve as positive pairs, which makes the objective a soft form of Slow Feature Analysis (SFA). Running estimates of each neuron's mean and variance, together with one lateral matrix per layer, replace the batch statistics; held fixed during differentiation, they turn the gradient into a Hebbian feedforward update and an anti-Hebbian lateral update. We show that a two-layer network trained with batch size one on an MNIST stream of class-homogeneous chunks reaches 96.48% linear-probe accuracy, above random features (95.09%) and classical SFA, and that the temporal order and each loss term contribute to this result. With both locality constraints relaxed, the same objective matches supervised backpropagation. TeReL thus shows that the collapse-preventing statistics of modern self-supervised learning can be held as running state at each neuron, which brings these objectives closer to what brains and neuromorphic hardware can implement.",
   "abstract_ja": "",
   "authors": [
     "Davide Wiest"
   ],
-  "category": "computer-vision",
+  "category": "deep-learning",
   "codeUrl": "",
   "hasCode": false,
   "id": "arxiv-2611.17019",
   "likes_count": 0,
   "publishedAt": "2026-11-12",
   "source": "arxiv",
-  "subcategory": "segmentation",
-  "summary": "Layer-local self-supervised objectives remove the backward pass between layers, but almost all still compute their loss over a batch of samples and are therefore local in space but not in time. We…",
+  "subcategory": "transformer",
+  "summary": "Self-supervised objectives such as VICReg learn representations by making related inputs similar, while variance and covariance penalties prevent collapse. These penalties are statistics over a batch…",
   "summary_ja": "",
   "tags": {
     "learning": [
@@ -20,9 +20,7 @@
       "self-supervised"
     ],
     "modality": [],
-    "task": [
-      "embedding"
-    ]
+    "task": []
   },
   "title": "Temporal Regularized Learning: Self-Supervised Learning Local in Space and Time",
   "url": "https://arxiv.org/abs/2611.17019",
