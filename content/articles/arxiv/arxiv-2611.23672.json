@@ -1,0 +1,33 @@
+{
+  "abstract": "Positron emission tomography (PET) provides quantitative information on myocardial perfusion. In dynamic PET, tracer kinetics are tracked through a series of reconstructed time frames. Reliable attenuation correction is essential for accurate measurements. Clinical attenuation maps ($μ$-maps) are typically derived from computed tomography (CT), which adds radiation exposure and may introduce PET-CT misregistration due to respiratory and cardiac motion. Moreover, supervised CT-free methods rely on paired non-attenuation-corrected (NAC) PET and CT data, which are scarce, whereas large-scale unpaired CT data are more readily available. To address these challenges, we propose Large-scale Unpaired CT-Informed Diffusion (LUCID), a framework that transfers anatomical priors learned from 10,000 chest CT volumes in the public CT-RATE dataset to $μ$-map synthesis for dynamic cardiac $^{82}$Rb PET. First, a convolutional neural network (CNN) predicts an initial $μ$-map from each NAC PET frame. Second, the CT-pretrained diffusion backbone refines a low-noise perturbation of the CNN prediction through a single denoising step, conditioned on the corresponding NAC PET frame via ControlNet. Finally, frame-wise predictions are averaged voxel-wise to obtain the final $μ$-map. We further introduce the voxel-wise temporal standard deviation (TSD) to quantify inter-frame variability without requiring a reference $μ$-map. We evaluated LUCID on an in-house dataset of 102 patients and found that it achieved the best quantitative accuracy while maintaining competitive inter-frame consistency. Ablation studies showed that refinement with a diffusion backbone pretrained on in-house CT data from the training patients was less accurate than the CNN prediction alone, highlighting the importance of large-scale CT pretraining.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhejia Zhang",
+    "Scott M. Leonard",
+    "Jinkui Hao",
+    "Ryan J. Avery",
+    "Richard L. Weinberg"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23672",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Positron emission tomography (PET) provides quantitative information on myocardial perfusion. In dynamic PET, tracer kinetics are tracked through a series of reconstructed time frames.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Image-Condition-Controlled Diffusion Network with Large-Scale CT Pretraining for CT-Free Attenuation Correction in Dynamic Cardiac PET",
+  "url": "https://arxiv.org/abs/2611.23672",
+  "use_case": ""
+}

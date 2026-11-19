@@ -1,0 +1,32 @@
+{
+  "abstract": "Vision-language agents that browse websites, operate phones and act in homes reason before every action, so every step waits for a large model, a latency and cost that stand in the way of deployment. Step-level speculation lets a small model draft each step and calls the large model only on rejected drafts, but its outcome rests on the judge, and a judge that reads only a step's text cannot tell whether the step fits the screen it acts on. We find that a few samples of a small model can contain a correct step about as often as the large model gets the step right, and not always on the same steps: checked against the screen, small drafts can be not only cheaper but better. We present Vanguard, a training-free judge that leaves the draft and target models unchanged: a general decision model, with the screenshot in view, gives each candidate step a probability of being right in one forward pass; the best candidate is kept if it clears a threshold, and otherwise the large model writes the step. On web, mobile and embodied agents, a 2B draft judged by Vanguard is at least as accurate as its 8B target and significantly more accurate on Mind2Web and EB-ALFRED, while the target writes only a minority of the steps; it completes far more closed-loop episodes, and with a 27B target from another family it is both faster and more accurate. Vanguard is the most accurate judge we compare on the agent tasks; it relies on the screenshot on web and mobile tasks, its calibrated threshold transfers to unseen websites, and across model families its gain over the target grows with the draft's pass@4 relative to the target's accuracy. Vanguard composes with token-level speculative decoding and matches trained process reward models on mathematics, turning speculation from a way to save the large model's work into one that can improve on it.",
+  "abstract_ja": "",
+  "authors": [
+    "Hanqi Mao",
+    "Jiajun Fan",
+    "Ruihan Guo",
+    "Shuaike Shen",
+    "Ziwen Wang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23917",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Vision-language agents that browse websites, operate phones and act in homes reason before every action, so every step waits for a large model, a latency and cost that stand in the way of deployment.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Vanguard: Knowing When to Trust the Draft in Speculative Vision-Language Agents",
+  "url": "https://arxiv.org/abs/2611.23917",
+  "use_case": ""
+}

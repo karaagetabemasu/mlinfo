@@ -1,0 +1,28 @@
+{
+  "abstract": "Drifting, the deliberate control of a vehicle at large sideslip angles, is relevant to both motorsport and recovery from unexpected oversteer. Existing autonomous drifting methods typically determine drift intensity through predefined reference trajectories, optimization objectives, or learned policy rewards, rather than accepting a desired sideslip angle as an explicit input. We propose, to the best of our knowledge, the first generative drift trajectory planner explicitly conditioned on a requested peak sideslip angle. A conditional flow matching model is trained on demonstrated drift laps with hindsight-derived sideslip labels and refined through reinforcement fine-tuning. A control barrier function (CBF) correction is then applied to satisfy model-based road, tire friction, and actuator constraints at the planning waypoints. In closed-loop experiments in the racing simulator Assetto Corsa, a nonlinear model predictive controller tracks the generated plans for six requested sideslip angles from 20 deg to 45 deg, with 30 laps (approximately 75 km) per request. The median peak sideslip angle measured across drift-corner passes follows the requested angle, with a mean absolute error of 1.2 deg across the six conditions. Ablation experiments show that reinforcement fine-tuning improves conditioning accuracy, while CBF correction substantially reduces off-road and spin events.",
+  "abstract_ja": "",
+  "authors": [
+    "Seokjun Lee",
+    "Seung-Hyun Kong"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.22927",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Drifting, the deliberate control of a vehicle at large sideslip angles, is relevant to both motorsport and recovery from unexpected oversteer. Existing autonomous drifting methods typically determine…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Sideslip-Conditioned Drift Trajectory Planning with Flow Matching and Control Barrier Functions",
+  "url": "https://arxiv.org/abs/2611.22927",
+  "use_case": ""
+}

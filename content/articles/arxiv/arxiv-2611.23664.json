@@ -1,0 +1,25 @@
+{
+  "abstract": "We release CratesBump, the first public dataset for predicting version bumps in the Rust ecosystem, together with semver-extract, the tool that builds it. CratesBump is built from every crate on crates.io with at least two releases before 14 September 2026 (about 220,000 crates), giving over two million consecutive release pairs. Each pair has 41 features (code changes from AST diffs, dependency changes, complexity, release cadence, GitHub commit and issue activity), its source repository where listed, and two labels: the literal reading of MAJOR.MINOR.PATCH, and Cargo's rule, under which a 0.y bump is a breaking change. semver-extract regenerates the dataset from public crates.io data and the GitHub API. To illustrate its use we (i) benchmark bump predictors on held-out repositories, finding the task learnable but far from solved, with lower scores on later releases; (ii) measure which feature groups carry the signal; (iii) check, against declared dependency ranges, how often Cargo's rule shields dependents from pre-1.0 breaking releases; and (iv) audit a sample of releases with cargo-semver-checks, finding minor and patch releases that break the public API despite their version number. Dataset and tool are released under open licenses.",
+  "abstract_ja": "",
+  "authors": [
+    "Muhammad Hassnain"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23664",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "We release CratesBump, the first public dataset for predicting version bumps in the Rust ecosystem, together with semver-extract, the tool that builds it. CratesBump is built from every crate on…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "CratesBump: A Version-Bump Dataset for the Rust Ecosystem",
+  "url": "https://arxiv.org/abs/2611.23664",
+  "use_case": ""
+}

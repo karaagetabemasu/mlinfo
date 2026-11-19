@@ -1,0 +1,30 @@
+{
+  "abstract": "We introduce DORMS (Depth-Ordered Region Merging for Segmentation), a purely algorithmic approach to image segmentation from monocular depth maps, requiring no neural networks or learned parameters in the segmentation process. An off-the-shelf monocular depth estimator provides the input depth maps. Our method constructs depth-ordered merge trees through a deterministic union-find sweep, combining component area, depth persistence, and spatial contact constraints to guide region merging. A threshold search determines the segmentation granularity according to a specified target region count, while global depth detrending improves the separation of local geometric structures. Extensive experiments on COCO Panoptic, Cityscapes, and ADE20K demonstrate consistent improvements over classical segmentation baselines and competitive performance against zero-shot neural segmentation models. Notably, our method outperforms all evaluated zero-shot models on Cityscapes, while remaining competitive with several approaches on COCO and ADE20K. These results highlight the potential of purely algorithmic geometric reasoning for image segmentation without learned segmentation models.",
+  "abstract_ja": "",
+  "authors": [
+    "Furkan Mumcu",
+    "Yasin Yilmaz"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23958",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "We introduce DORMS (Depth-Ordered Region Merging for Segmentation), a purely algorithmic approach to image segmentation from monocular depth maps, requiring no neural networks or learned parameters…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "DORMS: Image Segmentation via Depth-Ordered Region Merge Trees",
+  "url": "https://arxiv.org/abs/2611.23958",
+  "use_case": ""
+}

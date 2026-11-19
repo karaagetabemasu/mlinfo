@@ -1,0 +1,31 @@
+{
+  "abstract": "Vision-Language-Action (VLA) models have become a powerful paradigm for robotic manipulation and show strong promise for real-world deployment, making adversarial robustness critical for reliable robot operation. Existing adversarial attacks on VLA-controlled robots mainly optimize prediction-level discrepancies or rollout-level deviations to disrupt manipulation. However, they rarely account for the fact that VLA-predicted commands are not executed directly, but must be realized through downstream control and robot embodiment. In this paper, we propose ExecGap, an adversarial patch attack framework that exploits this command-execution gap to expose embodiment-specific execution vulnerabilities. Specifically, ExecGap biases VLA-predicted task-space commands toward low-executability directions, which are estimated from kinematic inefficiency and dynamic weak actuation. This induces execution degradation, where the predicted command becomes difficult to realize effectively, thereby impairing task completion. Extensive simulation experiments across multiple VLA policies show that ExecGap induces larger command-execution mismatch and weaker realized execution than existing patch attacks. Real-robot experiments further validate that the deployed patch can induce execution degradation on physical platforms.",
+  "abstract_ja": "",
+  "authors": [
+    "Keke Tang",
+    "Guolin Qiu",
+    "Tianyu Hao",
+    "Daizong Liu",
+    "Yikai Zhang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23714",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "multimodal",
+  "summary": "Vision-Language-Action (VLA) models have become a powerful paradigm for robotic manipulation and show strong promise for real-world deployment, making adversarial robustness critical for reliable…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "ExecGap: Exploiting Command-Execution Gap for Patch Attacks on Vision-Language-Action Models",
+  "url": "https://arxiv.org/abs/2611.23714",
+  "use_case": ""
+}

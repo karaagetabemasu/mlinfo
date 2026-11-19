@@ -1,0 +1,29 @@
+{
+  "abstract": "Plasticity and stability in continual learning are typically studied at the entire-model level and in a task-agnostic manner, yet prior work has reported divergent conclusions across settings. Inspired by cognitive distinctions between declarative and procedural memory, we instead study how plasticity and stability vary across transformer modules and task types. In a controlled synthetic environment with clean measurement, we show a double dissociation: query-key (QK) and value-output (VO) projections are the most plastic on procedural tasks, whereas MLPs are the most plastic on declarative memorization. Stability, however, does not simply mirror plasticity: when learning a new procedure, updating QK retains over half of the stored declarative memory, while updating MLPs retains far less and updating VO loses roughly four-fifths. Targeted module reset-and-recovery experiments explain this asymmetry: plasticity tracks which module is best suited to a task's primary computation or storage, whereas stability depends on all ways the existing capability relies on that module, including access to information stored in other modules. Experiments on a realistic model and tasks broadly echo these asymmetric dynamics. Overall, our work shows that plasticity and stability depend on different aspects of a module's functional role, offering a task-dependent, module-level perspective on continual learning.",
+  "abstract_ja": "",
+  "authors": [
+    "Jinjun Peng",
+    "Wailiang Zhao",
+    "Baishakhi Ray",
+    "Zhou Yu",
+    "Jufeng Yang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23427",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Plasticity and stability in continual learning are typically studied at the entire-model level and in a task-agnostic manner, yet prior work has reported divergent conclusions across settings.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Stability Does Not Mirror Plasticity: A Module-Level View of Declarative and Procedural Learning in Transformers",
+  "url": "https://arxiv.org/abs/2611.23427",
+  "use_case": ""
+}

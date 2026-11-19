@@ -1,0 +1,31 @@
+{
+  "abstract": "Autoregressive neural networks exhibit spectral bias in long-horizon spatiotemporal prediction. As rollouts progress, high-frequency details decay, blurring the predicted fields and destabilizing long-range forecasts. Ocean dynamics offer a particularly stringent test because kinetic energy is concentrated in mesoscale eddies and fronts spanning tens of kilometers. This degradation stems from coupling large-scale phase evolution and small-scale energy retention in a shared feature space. Evolution on a coarse grid smooths out high-wavenumber eddies, whereas evolution on a fine grid amplifies small-scale phase errors and triggers rollout instability. We introduce QuantAtlas-OM (QuantAtlas Ocean Model), a scale-spectral decoupling framework that confines deep temporal evolution to a low-wavenumber latent manifold for long-term stability while routing full-resolution eddy and front residuals through an outer bypass to the decoder. Across physical regimes, the evolution core pairs non-local attention with resolution-invariant dilated spatial gating. Across three western boundary currents, QuantAtlas-OM retains $43.7\\%$ to $86.5\\%$ of mesoscale spectral energy along the $k^{-3}$ cascade at Day $120$, sustains anomaly correlation coefficients of $0.81$ to $0.88$ at Day $60$, and reaches $0.66$ at Day $120$ in the Kuroshio ($2.5\\times$ to $7.7\\times$ the best baselines). Trained at $0.25^\\circ$, QuantAtlas-OM transfers zero-shot to a global $0.125^\\circ$ grid ($0.81$ Day-$10$ spatial correlation) and leads global $0.25^\\circ$, $23$-level 3D ocean simulations ($120$ days) and coupled ocean-atmosphere forecasts ($60$ days), ranking first on $15$ of $16$ metrics and cutting $60$- to $120$-day salinity RMSE by $13\\%$ to $27\\%$ across global ocean basins.",
+  "abstract_ja": "",
+  "authors": [
+    "Hao Wu",
+    "Yuan Gao",
+    "Tong Wu",
+    "Fan Xu",
+    "Fan Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.24124",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Autoregressive neural networks exhibit spectral bias in long-horizon spatiotemporal prediction. As rollouts progress, high-frequency details decay, blurring the predicted fields and destabilizing…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "QuantAtlas-OM: Taming Neural Spectral Bias in Long-Horizon Spatiotemporal Ocean Dynamics",
+  "url": "https://arxiv.org/abs/2611.24124",
+  "use_case": ""
+}

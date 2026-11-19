@@ -1,0 +1,33 @@
+{
+  "abstract": "Vision-language models (VLMs) grasp the overall content of an image but often miss the fine details a question hinges on, such as a small object in a large photo or a number in a dense infographic. Yet even when their answer is wrong, the region they point to often contains the evidence. We introduce Self-Elicited Evidence (SEE), a training-free method that lets a frozen VLM look again where it points. When the initial answer has low confidence, SEE prompts the model to propose regions where the details may appear, answers the question on these enlarged crops, and aggregates the answers with the original prediction through confidence-weighted voting. The model also answers with its own transcript, which helps on text-rich images. SEE needs no detector or OCR engine. Across five backbones, SEE improves every small-object benchmark by 2.3-13.1 points and outperforms five training-free baselines on small objects. With SEE, Qwen3.5-4B surpasses the direct answer of Qwen3.5-9B and matches the 6 times larger Qwen3.5-27B.",
+  "abstract_ja": "",
+  "authors": [
+    "Alin-Ionut Popa",
+    "Tuo Zhang",
+    "Dimitrios Dimitriadis"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23962",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "multimodal",
+  "summary": "Vision-language models (VLMs) grasp the overall content of an image but often miss the fine details a question hinges on, such as a small object in a large photo or a number in a dense infographic.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "SEE: Unlocking the Hidden Perception of Frozen VLMs",
+  "url": "https://arxiv.org/abs/2611.23962",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Exocentric cameras, mounted on walls or ceilings in indoor environments, offer wider vantage points and are less easily occluded than robot-mounted cameras, making them an appealing alternative for perception in robot navigation algorithms. Previous methods that use such cameras, however, require their pose and intrinsics to be known before deployment, demanding calibration that is time-consuming, requires specialized personnel, and must be repeated whenever a camera moves or a new room is navigated. We propose Robot-centric Obstacle Maps from Unknown and uncalibrated eXocentric cameras (ROMUX), an agent that navigates a robot toward point goals while avoiding obstacles using exocentric cameras that are both uncalibrated, meaning the system does not require their pose or intrinsic information as input, and unknown, meaning it is not fit to a specific camera during training and does not require pre-deployment fine-tuning. We train a cross-view transformer on large-scale simulation data to predict metric robot-centric obstacle maps from exocentric images, without conditioning image tokens on camera information. A small policy trained with Proximal Policy Optimization (PPO) then navigates on the predicted maps toward a goal coordinate relative to the robot. We benchmark our agent in simulation with cameras randomized per episode, and it matches the success rates of a PPO policy that navigates from a robot-mounted camera. Further, ROMUX works with one camera or multiple cameras with partial views and has been transferred zero-shot to a real robot using a camera at varying positions and orientations across various room layouts.",
+  "abstract_ja": "",
+  "authors": [
+    "Raul Steinmetz",
+    "Raphael Druon",
+    "Yusuke Yoshiyasu",
+    "Akihisa Ohya",
+    "Ayanori Yorozu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23894",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Exocentric cameras, mounted on walls or ceilings in indoor environments, offer wider vantage points and are less easily occluded than robot-mounted cameras, making them an appealing alternative for…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Navigating Robots from Unknown and Uncalibrated Exocentric Cameras via Map Estimation",
+  "url": "https://arxiv.org/abs/2611.23894",
+  "use_case": ""
+}

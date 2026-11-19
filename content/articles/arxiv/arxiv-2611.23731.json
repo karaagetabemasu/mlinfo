@@ -1,0 +1,34 @@
+{
+  "abstract": "Diffusion and flow-matching policies have become a standard choice for visuomotor imitation learning, owing to their ability to model multimodal action distributions. In memory-dependent manipulation, the robot must act on information that is no longer visible. Existing methods feed the observation history to the policy as an additional condition, while action generation still starts from Gaussian noise. However, the policy must then pick out the relevant target from a long and redundant history, leading to spurious correlations and unreliable decisions as the memory load grows. Additionally, the initial noise carries no information about what the robot has seen, leaving generation without guidance toward the remembered target. To address these issues, we propose RecallFlow, a flow-policy framework that builds the source distribution from episodic memory. Recall-Relocalization relates the memory to the current view through a few recall slots, so that the source reflects where the remembered targets are now. Recall Anchors then turns each slot into a Gaussian component of the source, enabling generation to start close to the intended action instead of from noise. The transport network then completes the action from the current observation alone, keeping inference nearly as cheap as a memoryless policy. We further build a suite of memory-dependent tasks grouped by memory load and compare all policies under a matched protocol. Extensive experiments show that RecallFlow achieves a state-of-the-art average success rate of 80.4% on the public MIKASA-Robo memory benchmark, and outperforms the strongest baseline by 20.3 points on our suite and by 18.8 points on four real-robot tasks.",
+  "abstract_ja": "",
+  "authors": [
+    "Xuji Zhang",
+    "Qilin Zhong",
+    "Zichen Zhang",
+    "Wei Zhai",
+    "Jian Di"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23731",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Diffusion and flow-matching policies have become a standard choice for visuomotor imitation learning, owing to their ability to model multimodal action distributions. In memory-dependent…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": [
+      "detection",
+      "generation"
+    ]
+  },
+  "title": "RecallFlow: Episodic Memory as the Source Distribution of Generative Robot Policies",
+  "url": "https://arxiv.org/abs/2611.23731",
+  "use_case": ""
+}

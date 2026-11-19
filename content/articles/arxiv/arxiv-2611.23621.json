@@ -1,0 +1,30 @@
+{
+  "abstract": "Agents can expand the covariate space of randomized experiments by retrieving fast-moving local context missed by slow-changing survey baseline covariates, helping characterize who benefits most from an intervention. Verifying such covariates is difficult: individual treatment effects are unobserved, retrieval leakage can pull post-treatment information into nominally pretreatment summaries, and encoder leakage can inject post-treatment pretraining knowledge into representations even after temporal filtering of inputs. Guided by a two-channel information bound separating summary provenance from encoder weights, we propose a three-layer benchmark protocol: (i) retrieval admissibility via pre-treatment date filtering; (ii) heterogeneity validation scored rank-weighted average treatment effects (RATEs); and (iii) encoder admissibility checked with chronologically vintaged encoders, future-fact probes, and weight perturbations. Across 11 datasets anchored by Uganda's Youth Opportunities Program, we compare session-isolated retrieval (sandboxed, bounded-budget agent runs per study) against a persistent workspace teammate (xAI's GrokBot) that builds one date-verified corpus per study while blinded to outcomes. The workspace teammate yields higher mean RATE ratios in 6/11 datasets for text alone and 7 for combined features, though paired tests show neither workflow universally dominates. Even on fixed retrieved text, encoder choice significantly shifts heterogeneity signal. Chronologically vintaged probes show no clear evidence of weight leakage, but single-record adapter perturbation analyses show that memorized future facts, once present, persist until injected noise degrades model output. Temporal filtering of retrieval is necessary but insufficient: verifying agent-generated covariates requires jointly examining source provenance, out-of-sample treatment-effect signal, and encoder weights.",
+  "abstract_ja": "",
+  "authors": [
+    "Satiyabooshan Murugaboopathy",
+    "Entejar Alam",
+    "Adel Daoud",
+    "Connor T. Jerzak"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23621",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Agents can expand the covariate space of randomized experiments by retrieving fast-moving local context missed by slow-changing survey baseline covariates, helping characterize who benefits most from…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Agent Verifiers in Counterfactual Analysis: A Pilot Study Benchmarking Agentic Heterogeneous Treatment Effects",
+  "url": "https://arxiv.org/abs/2611.23621",
+  "use_case": ""
+}

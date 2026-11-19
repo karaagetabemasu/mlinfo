@@ -1,0 +1,25 @@
+{
+  "abstract": "Cross-validation weights all folds equally, so under drift the oldest folds count as much as the newest. We model drift by a Hölder condition in total variation distance and give finite-sample bounds on the excess deployment risk of the configuration that sliding-window cross-validation selects. Each bound splits into drift, estimation, and validation-noise terms. With equal weights the drift terms saturate as the record grows. With fold weights fixed in advance, the drift terms become weighted averages, which shrink as weight moves toward deployment. The noise term grows as the weights concentrate and shrinks with the batch size. The drift terms are linear in the weights and the noise term is convex, so minimizing the bound over the weights is a convex problem. Applications to U.S. earnings and flight delays show both sides of this trade-off. Weight on recent folds pays off when a change in the best predictor persists and each period has many observations, and equal weights do best when changes are short-lived.",
+  "abstract_ja": "",
+  "authors": [
+    "Yegor Baranovski"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23184",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Cross-validation weights all folds equally, so under drift the oldest folds count as much as the newest. We model drift by a Hölder condition in total variation distance and give finite-sample bounds…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Fold Weighting for Cross-Validation Under Continuous Distributional Drift",
+  "url": "https://arxiv.org/abs/2611.23184",
+  "use_case": ""
+}

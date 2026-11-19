@@ -1,0 +1,31 @@
+{
+  "abstract": "We study variance-dependent reinforcement learning in episodic time-inhomogeneous linear Markov decision processes (MDPs) with feature dimension $d$, horizon $H$, and $K$ episodes. While recent works have established variance-dependent regret with $\\tilde{O}(1)$ deterministic-regime overhead for linear mixture MDPs (Zhao et al., 2023) and worst-case nearly minimax optimal regret $\\tilde{O}(d\\sqrt{H^3 K} + d^7 H^8)$ for linear MDPs (He et al., 2023),, existing variance-aware analyses for linear MDPs (Li and Sun, 2023; Huang et al., 2023) rely on a coarse concentration step whose resulting regret guarantees retain a polynomial $\\tilde{O}(K^{1/4})$ additive term even in deterministic environments. We propose VA-LSVI-UCB++, a computationally efficient algorithm that achieves the variance-dependent regret bound $\\tilde{O}(d\\sqrt{H\\min\\{\\mathrm{Var}_K^*,\\mathrm{Var}_K^π\\}}+d^5H^4)$, where $\\mathrm{Var}_K^*$ and $\\mathrm{Var}_K^π$ denote the cumulative conditional variances of the optimal value function and the played policies' value functions along the realized trajectory. Our result adapts to the minimum of the two realized trajectory variances, recovers the worst-case minimax optimal leading term $\\tilde{O}(d\\sqrt{H^3 K})$, and collapses to $\\tilde{O}(d^5 H^4)$ in deterministic environments, free of polynomial-in-$K$ dependency. At the core of our analysis is a simultaneous three-way reference-advantage decomposition for the optimistic, pessimistic, and squared value function estimators coupled with variance self-bounding and Freedman-type value-difference arguments, which tightens the pessimistic and second-moment confidence radii by a factor of $\\tilde{O}(d H)$ and removes the inverse-variance-floor blowup.",
+  "abstract_ja": "",
+  "authors": [
+    "Qingyue Zhao",
+    "Qiwei Di",
+    "Jiafan He",
+    "Heyang Zhao",
+    "Kaixuan Ji"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23596",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "We study variance-dependent reinforcement learning in episodic time-inhomogeneous linear Markov decision processes (MDPs) with feature dimension $d$, horizon $H$, and $K$ episodes. While recent works…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "Efficient Variance-Aware Reinforcement Learning in Time-Inhomogeneous Linear MDPs",
+  "url": "https://arxiv.org/abs/2611.23596",
+  "use_case": ""
+}

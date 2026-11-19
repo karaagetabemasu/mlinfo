@@ -1,0 +1,32 @@
+{
+  "abstract": "Safe reinforcement learning (RL) aims to prevent agents from taking actions that are dangerous or destructive to their environment. This is especially important for safety-critical domains, such as robotics or autonomous driving. Formal verification can be used to prove agent safety through safety constraints. However, in practice, many policies do violate safety constraints, and thus are verified to be unsafe. Since the goal is to obtain a safe policy, we would need to retrain a new policy from scratch and then verify it again until a candidate happens to pass. Both training and verification are usually not cheap, which makes this process inefficient. We introduce VESPA ($\\textbf{VE}$rifiable $\\textbf{S}$ymbolic $\\textbf{P}$olicy $\\textbf{A}$daptation), a framework for targeted fine-tuning of decision tree policies. We show that using counterexamples for policy adaptation can make existing unsafe policies safe, or at least make considerable progress towards safety. Targeted fine-tuning of the existing policy on those counterexamples enables it to learn how to avoid violating safety constraints. We thus use the result of a formal verification as a training signal for fine-tuning. On CartPole, VESPA raises the mean number of verified safe steps from 63.8 to at least 92.7, reaching after two iterations what the same loop without counterexamples reaches after ten. On MountainCarContinuous, VESPA turns an unsafe policy into a safe policy in 53 of 60 runs. We conclude that counterexamples from a verifier are an effective training signal, which can be utilized to systematically improve the safety of policies. Our implementation is available at: https://anonymous.4open.science/r/VESPA-Submission/",
+  "abstract_ja": "",
+  "authors": [
+    "Paul König",
+    "Sascha Marton",
+    "Stefan Lüdtke",
+    "Christian Bartelt"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.24083",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Safe reinforcement learning (RL) aims to prevent agents from taking actions that are dangerous or destructive to their environment. This is especially important for safety-critical domains, such as…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "VESPA: Verifiable Symbolic Policy Adaptation for Safe Reinforcement Learning",
+  "url": "https://arxiv.org/abs/2611.24083",
+  "use_case": ""
+}

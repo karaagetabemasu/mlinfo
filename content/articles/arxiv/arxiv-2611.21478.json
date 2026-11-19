@@ -1,5 +1,5 @@
 {
-  "abstract": "A useful memory need not resemble the question it helps answer. Jetriever ranks each stored memory by Jev's decision score for its usefulness to the current question, replacing similarity search with full-pool utility scoring. On InMind's 125 indirect-query tasks, it places the gold exchange first in 84.8% of cases; matched BM25 and MiniLM controls reach 1.6% and 0.0% when indexing user turns. A 20-question comparison separates finding evidence from ranking it: Jev and Qwen3.5 9B each find 90% of gold exchanges by rank 50, while Laya finds 30%; at rank one, Jev reaches 85% and Qwen3.5 9B 40%. On a dimension-proportional random sample of 60 MemoryAgentBench questions, Jetriever's four-dimension score is 55.4%, against 44.3% for ReFind on the same questions. Jev retrieval costs USD 0.00834 per InMind question and USD 0.03103 per MAB question on average. These results show the value of world knowledge, scores that rank decisive memories first, and affordable full-pool scoring.",
+  "abstract": "Whether a stored memory helps answer a user's question often depends on world knowledge rather than surface similarity. Jetriever replaces similarity search with full-pool utility scoring: given a query, it uses Jev, an LLM-derived System One decision model, to score every stored memory for the probability that it is useful to the answer, ranking the memory pool directly by those probabilities. On InMind's 125 indirect-query tasks, Jetriever places the gold exchange first in 84.8% of cases (versus 1.6% for BM25 and 0.0% for MiniLM with user-turn indexing) and reaches 76.0% end-to-end Application, compared with at most 16.0% across published retrieval and memory systems. A controlled 20-question comparison disentangles recognizing implicit evidence from ranking it properly: Jev and Qwen3.5-9B both recover 90% of gold exchanges within the top 50 (versus 30% for the BERT-based decision model Laya), yet at rank 1 Jev reaches 85% while Qwen3.5-9B drops to 40%. On a dimension-proportional random sample of 60 MemoryAgentBench questions, Jetriever raises the four-dimension average from 44.3% (ReFind) to 55.4%, at a mean retrieval cost of USD 0.00834 per InMind query and USD 0.03103 per MAB query. Together, these results show that effective utility retrieval hinges on combining broad world knowledge, calibrated ranking probabilities, and affordable full-pool evaluation.",
   "abstract_ja": "",
   "authors": [
     "Ruizhe Li",
@@ -7,15 +7,15 @@
     "Mingxuan Du",
     "Zhendong Mao"
   ],
-  "category": "nlp",
+  "category": "deep-learning",
   "codeUrl": "",
   "hasCode": false,
   "id": "arxiv-2611.21478",
   "likes_count": 0,
   "publishedAt": "2026-11-16",
   "source": "arxiv",
-  "subcategory": "rag",
-  "summary": "A useful memory need not resemble the question it helps answer. Jetriever ranks each stored memory by Jev's decision score for its usefulness to the current question, replacing similarity search with…",
+  "subcategory": "transformer",
+  "summary": "Whether a stored memory helps answer a user's question often depends on world knowledge rather than surface similarity. Jetriever replaces similarity search with full-pool utility scoring: given a…",
   "summary_ja": "",
   "tags": {
     "learning": [],

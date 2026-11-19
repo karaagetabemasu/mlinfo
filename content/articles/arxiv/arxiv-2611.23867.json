@@ -1,0 +1,26 @@
+{
+  "abstract": "Separating hyperplanes are widely used in Control Barrier Function (CBF)-based collision avoidance, yet their orientations strongly govern control intervention-the deviation of the applied control from the robot's nominal command. Existing methods typically select hyperplane orientations from geometry alone. Jointly optimizing orientations and control yields a continuous, non-convex problem in which local nonlinear solvers suffer from initialization sensitivity, local minima, and unpredictable latency, while discretized orientation grids scale exponentially with obstacle count. For planar navigation of a polygonal robot among polygonal obstacles, we present a solver-free, control-aware separating hyperplane selection method that directly computes a global optimum of this joint problem at each step whenever it is feasible. Exploiting the geometry of Minkowski difference polygons, we reduce this continuous non-convex optimization to evaluating a polynomial-size set of candidate control interventions via closed-form algebraic checks, selecting the feasible candidate of minimum norm. Across 250 simulated navigation scenarios, our method reduces cumulative intervention cost by 3.6% at the median and 27.3% at the 90th percentile compared to a local nonlinear solver, and completion time by 0.6% and 5.6%, respectively. In scalability benchmarks, it achieves a 6.1x per-step speedup at 16 simultaneous obstacles.",
+  "abstract_ja": "",
+  "authors": [
+    "Aadarsh Ramachandiran",
+    "Rachel Kalpana Kalaimani"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23867",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Separating hyperplanes are widely used in Control Barrier Function (CBF)-based collision avoidance, yet their orientations strongly govern control intervention-the deviation of the applied control…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Control-Aware Separating Hyperplanes for Control Barrier Functions in Planar Navigation",
+  "url": "https://arxiv.org/abs/2611.23867",
+  "use_case": ""
+}

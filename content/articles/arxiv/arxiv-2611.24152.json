@@ -1,0 +1,32 @@
+{
+  "abstract": "Training-free open-vocabulary semantic segmentation (OVSS) has made strong progress by adapting CLIP-like representations to dense prediction, but its remaining errors are often local, structured, and tied to the active label space. A successful correction must be visually plausible, legal under the target vocabulary, and executable in the segmentation score field. We propose SEER, a training-free test-time repair layer for Semantic Evidence and Executable Region propagation. SEER casts post-prediction OVSS repair as evidence-conditioned label propagation. The OVSS score space proposes compact candidate labels, a frozen VLM verifies closed-set regional evidence, and an execution gate certifies whether the evidence is legally and semantically actionable. The accepted label is then propagated by an OVSS-side policy: coherent high-confidence regions allow broad propagation, while object- or boundary-risk cases use conservative score-grounded propagation. Across eight standard OVSS benchmarks, SEER reaches 58.0 average mIoU without updating OVSS weights. Matched-input controls isolate the repair mechanism, while resource measurements report the cost of the complete frozen system.",
+  "abstract_ja": "",
+  "authors": [
+    "Junyang Chen",
+    "Xiao Li",
+    "Yiguo Qiao",
+    "Wenbin Li"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.24152",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Training-free open-vocabulary semantic segmentation (OVSS) has made strong progress by adapting CLIP-like representations to dense prediction, but its remaining errors are often local, structured,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "SEER: Semantic Evidence for Executable Region Propagation in Open-Vocabulary Semantic Segmentation",
+  "url": "https://arxiv.org/abs/2611.24152",
+  "use_case": ""
+}

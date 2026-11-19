@@ -1,0 +1,34 @@
+{
+  "abstract": "GRPO has become the dominant reinforcement learning method for eliciting reasoning capability in LLMs using verifiable rewards. However, it suffers from a fundamental failure mode: when a training question exceeds the base model's current capability, all generated responses fail and receive zero reward, yielding no gradient signal and stalling further capability expansion. An emerging class of GRPO extensions, termed Hint-Augmented GRPO (HA-GRPO), adds a \"hint\" to the context to reduce the difficulty of the question, thereby producing a usable gradient signal. Nevertheless, existing HA-GRPO methods share a key issue: no hint is available at inference time to append to the question, creating a training-inference context mismatch that leads to inconsistent performance gains. In this work, we reinterpret the function of hinting -- not as reducing question difficulty, but as steering model behavior -- and propose ASH (Activation Steering for Hinting), a novel HA-GRPO method built on this view. During training, the model is presented with both hinted and plain questions, while a trainable steering vector is optimized to widen the margins between the model's generation probabilities for responses to the hinted version relative to the plain version, thereby capturing the question-agnostic component of the behavioral shift induced by the hint. During inference, the trained steering vector is directly injected into the model's activation, reproducing the hint-conditioned behavior without requiring any hint in the context. Experiments with four LLMs (Qwen3-1.7B/4B-Base, Llama-3.2-1B/3B-Instruct) show that ASH consistently improves pass@$k$ on competition-level mathematics benchmarks (AMC, OlympiadBench, AIME24, AIME25) and out-of-distribution benchmarks (Minerva, GPQA-Diamond). Notably, it improves average pass@8 of Qwen3-1.7B-Base and Qwen3-4B-Base by \\textbf{2.60}\\% and \\textbf{2.21}\\%.",
+  "abstract_ja": "",
+  "authors": [
+    "Khiem Le",
+    "Ting Hua",
+    "Nitesh V. Chawla"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23124",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "GRPO has become the dominant reinforcement learning method for eliciting reasoning capability in LLMs using verifiable rewards. However, it suffers from a fundamental failure mode: when a training…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation",
+      "anomaly-detection"
+    ]
+  },
+  "title": "Get Hint-Augmented GRPO Done Right Through Activation Steering",
+  "url": "https://arxiv.org/abs/2611.23124",
+  "use_case": ""
+}

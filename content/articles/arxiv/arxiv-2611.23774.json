@@ -1,0 +1,29 @@
+{
+  "abstract": "To advance the development of embodied general navigation, zero-shot open-vocabulary multi-object navigation has attracted increasing attention, aiming to enable robots to efficiently search multiple objects in unseen environments without training. For this task, the key lies in improving navigation policies from earlier searches to locate subsequent goals more efficiently. Recent methods automate this process through trajectory reflection and rule revision, enabling policy self-improvement. However, the mechanisms for diagnosing problems and generating revisions are typically designed by humans and remain fixed across iterations. Consequently, the system's capacity for continued self-improvement remains constrained, even as its navigation policy evolves. To this end, we propose RPSI-Nav, a Recursive Policy Self-Improvement framework for zero-shot multi-object navigation that revises both the navigation program and its revision mechanism. RPSI-Nav diagnoses search behavior, requests diagnostic views when existing observations cannot distinguish competing causes, and generates targeted navigation revisions. Feedback from subsequent goal searches is linked to the rules that produced these revisions, guiding changes to diagnosis, observation acquisition, and revision planning. The updated improver governs subsequent navigation improvements, forming a recursive loop in which RPSI-Nav revises its own improvement process. Across goals, the robot conditionally inherits accepted program updates and spatial memory, enabling search experience to improve both future navigation and adaptation. Benchmark experiments and qualitative real-robot evaluations validate RPSI-Nav's effectiveness.",
+  "abstract_ja": "",
+  "authors": [
+    "Yang Li",
+    "Ziju Han",
+    "Aming WU",
+    "Zihao Zhang",
+    "Sijia Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23774",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "To advance the development of embodied general navigation, zero-shot open-vocabulary multi-object navigation has attracted increasing attention, aiming to enable robots to efficiently search multiple…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Improve How You Improve: Recursive Policy Self-Improvement for Zero-Shot Open-Vocabulary Multi-Object Navigation",
+  "url": "https://arxiv.org/abs/2611.23774",
+  "use_case": ""
+}

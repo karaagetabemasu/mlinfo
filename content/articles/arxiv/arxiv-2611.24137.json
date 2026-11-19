@@ -1,0 +1,35 @@
+{
+  "abstract": "Biological learning systems acquire knowledge incrementally through broad, reusable representations established early and kept largely stable, while integrating new experience with minimal interference with previously learned knowledge. Replay-based methods approximate this by storing samples or features from previous tasks and mixing them into the current task. However, memory buffers grow with the number of tasks and may retain task-specific noise that reduces generalization. To address these limitations, we propose PatchAdaNet (Patch Adapter Network), an unsupervised class-incremental learning method for image classification that continually updates feature representations using autoencoders. Since images share structural features such as edges, corners, and shapes, we first divide each image into patches and train independent autoencoders on external data to reconstruct each patch. The layers of all patch encoders are aggregated into global frozen layers that generalize across tasks and remain fixed throughout learning. Learnable adapters then build global image representations from these features to reconstruct the entire image. To prevent feature drift without storing data, we introduce the Global Feature Centroid (GFC), a fixed-size running average of adapter outputs updated after each task to penalizes representation drift. Elastic Weight Consolidation (EWC) is applied to the learnable layers to preserve previously learned features by constraining important weights. Finally, a linear classifier is trained on the frozen latent representation and GFC for class-incremental evaluation. We evaluate PatchAdaNet in both CNN and Vision Transformer settings on CIFAR-10, CIFAR-100, miniImageNet and 5-Datasets, providing a comparative study of the two architectures under identical class-incremental settings. Code is available.",
+  "abstract_ja": "",
+  "authors": [
+    "Kamel Aouaidjia",
+    "Yanchao Duan",
+    "Zihui Zhen",
+    "Xin Li",
+    "Yongfei Lv"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.24137",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Biological learning systems acquire knowledge incrementally through broad, reusable representations established early and kept largely stable, while integrating new experience with minimal…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "PatchAdaNet: Unsupervised class incremental learning using local patches and global adapters",
+  "url": "https://arxiv.org/abs/2611.24137",
+  "use_case": ""
+}

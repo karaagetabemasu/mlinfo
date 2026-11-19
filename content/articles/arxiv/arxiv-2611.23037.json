@@ -1,0 +1,32 @@
+{
+  "abstract": "Underwater object detection is often limited by scarce and imbalanced training data and by strong appearance variations caused by turbidity, lighting, and differences between sensors. Existing data augmentation strategies, such as geometric or color augmentation or fully synthetic image generation with Generative Adversarial Networks (GANs), either lack semantic realism, fail to respect scene physics, or require additional annotations. In low-data domains like underwater environmental monitoring, the need for additional annotations is often the core bottleneck. Collecting new footage is hard, but labeling this dataset is even more time-consuming and costly, which limits how quickly a usable dataset can be constructed. We propose a unified fully automated zero-annotation pipeline that inserts class-conditioned trash objects into real underwater frames while preserving the original background context. Starting from sampled bounding boxes, each box is converted into an insertion mask and the object is pasted or generated within it, while the same box coordinates are automatically written as the corresponding annotation. Because labels are derived directly from the sampled boxes, the pipeline generates fully labeled training data for low-data settings without any manual annotation. Within this single pipeline we compare three strategies: copy-paste, Stable Diffusion inpainting, and DALL-E image-conditioned generation. We evaluate bounding-box faithfulness, visual realism, and the impact of the generated samples on downstream detector performance on the SeaClear underwater debris dataset. Results show that DALL-E improves detection performance in four of five domains, with relative gains of up to 96 percent over the real-only baseline.",
+  "abstract_ja": "",
+  "authors": [
+    "Amala Mary Vincent",
+    "Bart De Schutter"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23037",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "detection",
+  "summary": "Underwater object detection is often limited by scarce and imbalanced training data and by strong appearance variations caused by turbidity, lighting, and differences between sensors. Existing data…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection",
+      "generation"
+    ]
+  },
+  "title": "Automated Annotation-Free Synthetic Data Generation for Underwater Litter Detection: A Comparison of Generative Approaches",
+  "url": "https://arxiv.org/abs/2611.23037",
+  "use_case": ""
+}
