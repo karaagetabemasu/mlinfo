@@ -1,0 +1,31 @@
+{
+  "abstract": "Nowadays, most AUVs utilize Doppler velocity logs (DVLs) and inertial measurement units (IMUs) to achieve satisfactory dead-reckoning results. However, the DVL bottom lock may not be available in some scenarios, such as moving over a soft bottom or traveling further away from the seafloor beyond the DVL's range. As a result, the localization system solely reliant on the IMU data will experience significant drift. The relatively high cost of DVLs also inhibits multirobot or swarm operations. In this article, we present the results of using fully connected feedforward neural networks to predict vehicle velocity (surge, sway, and heave) for AUV localization. Approximation functions for the vehicle velocities are derived based on the generalized six degree-of-freedom dynamic equation and kinematics, proving that they are suitable for feedforward neural networks with measurable inputs. The neural networks are trained using field data collected using an AUV. An ablation study was conducted to investigate the impacts of hyperparameters, and the most effective models were selected using the Akaike information criterion. The selected neural network models are tested on three new sets of mission data collected on two different days. The quantitative results show that localization using vehicle velocities predicted by neural networks yields lower averaged root-mean-square distance errors and standard deviation compared to the DVL-aided dead-reckoning method. However, the extent of this improvement was found to depend on ocean current conditions. The promising results show that lightweight fully connected feedforward neural networks offer an attractive approach for inertial-based underwater localization when DVLs or their measurements are not available.",
+  "abstract_ja": "",
+  "authors": [
+    "Mingxi Zhou",
+    "Emir Cem Gezer",
+    "Lin Zhao",
+    "William McConnell",
+    "Chengzhi Yuan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25854",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Nowadays, most AUVs utilize Doppler velocity logs (DVLs) and inertial measurement units (IMUs) to achieve satisfactory dead-reckoning results. However, the DVL bottom lock may not be available in…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Learning-Based System Identification for DVL-Constrained AUV Localization",
+  "url": "https://arxiv.org/abs/2611.25854",
+  "use_case": ""
+}

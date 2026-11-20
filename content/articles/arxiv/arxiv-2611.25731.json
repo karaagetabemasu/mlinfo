@@ -1,0 +1,30 @@
+{
+  "abstract": "Professional video workflows operate at qualities that learned video codecs do not reach. We measure how much of a professional quality range a codec covers, from the lowest quality of the standard test conditions, VVC at QP 37, to the highest 4:2:2 grade of the production codec ProRes. To compare inter-frame coding alone, every codec receives original frames as references at the intra positions. On 10-bit YCbCr 4:2:2 test sequences, four recent learned codecs cover 24 to 38% of this range. Their encoders are feed-forward networks with a fixed latent capacity, the number of latent values per sample, of at most 0.25, and removing their quantization raises the quality by at most 1 dB. We propose a learned inter-frame codec whose encoder searches, as the encoders of conventional codecs do. It searches block motion, which a learned network refines, and it searches among learned block transforms whose latent capacity ranges up to 1, selecting the partition, the skip decisions, and the quantized coefficients by a rate-distortion cost. Our codec reaches the upper end of the range on all six sequences. With all residual blocks fixed to 16x16, whose latent capacity is 0.25, the same codec covers 55% of the range, with or without quantization.",
+  "abstract_ja": "",
+  "authors": [
+    "Bumyoon Kim",
+    "Yongseong Kim",
+    "Inhyuk Jeong",
+    "Byeungwoo Jeon"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25731",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Professional video workflows operate at qualities that learned video codecs do not reach. We measure how much of a professional quality range a codec covers, from the lowest quality of the standard…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": []
+  },
+  "title": "Towards High-Fidelity Learned Video Compression",
+  "url": "https://arxiv.org/abs/2611.25731",
+  "use_case": ""
+}

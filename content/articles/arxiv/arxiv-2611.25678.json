@@ -1,0 +1,29 @@
+{
+  "abstract": "Non-Intrusive Load Monitoring (NILM) is a critical enabler for demand-side management which allows for smart grid optimization. A deployment-ready NILM solution necessitates three key features: accurate disaggregation, low-frequency sampling, and low computational cost. This paper proposes a lightweight, edge-oriented NILM framework that combines activity-boundary-aware synthetic data augmentation with Karhunen-Loève Transform (KLT) feature extraction and a Temporal Convolutional Network (TCN). The augmentation stage extracts and recombines complete or near-complete appliance activation segments so that the model can be trained without new fully labeled household aggregates. The KLT filter bank extracts decorrelated, appliance-informed temporal features which are then fed into a compact TCN along with the original aggregate for energy disaggregation. Evaluations on two standard NILM datasets, UK-DALE and REDD, at 10-s sampling and with leave-one-house-out testing, demonstrate that the proposed architecture achieves comparable or superior disaggregation accuracy relative to NILMFormer, BERT4NILM, BiLSTM, and BiGRU. The computational footprint of the framework is 31,009 parameters, the fewest of the five models compared, and on a single CPU thread it needs 2.78 ms per 1000 samples, 84-95% less than the baselines. These results demonstrate a favorable accuracy-efficiency tradeoff for low-frequency smart-meter NILM.",
+  "abstract_ja": "",
+  "authors": [
+    "Sanka Peeris",
+    "Pandula Thennakoon",
+    "Praveen Sumanasekara",
+    "Roshan Godaliyadda",
+    "Parakrama Ekanayake"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25678",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Non-Intrusive Load Monitoring (NILM) is a critical enabler for demand-side management which allows for smart grid optimization. A deployment-ready NILM solution necessitates three key features:…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Lightweight Low-Frequency Non-Intrusive Load Monitoring via Karhunen-Loève Feature Distillation and Temporal Convolutional Networks",
+  "url": "https://arxiv.org/abs/2611.25678",
+  "use_case": ""
+}

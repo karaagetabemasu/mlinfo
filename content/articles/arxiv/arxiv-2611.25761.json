@@ -1,0 +1,27 @@
+{
+  "abstract": "Longitudinal PSMA-PET/CT registration is a key step in assessing treatment response in prostate cancer, and it requires more than generic alignment accuracy: the deformation must preserve lesion volume, so that measured changes in metabolic tumor volume (MTV) and total lesion glycolysis (TLG) reflect treatment response rather than registration artifacts. We propose AdaptReg, which adapts a frozen registration foundation model to such task-specific requirements through a lightweight trainable adapter branch with identity-preserving initialization. Keeping uniGradICON fully frozen, we apply FiLM-style per-voxel affine modulation ($γ$, $β$) to its decoder skip connections; the modulation is generated from anatomical semantic features of a frozen TotalSegmentator encoder and supervised by a lesion volume-preservation loss. On the official Codabench validation set (20 pairs), AdaptReg achieves DSC 0.7585, HD95 6.33 mm, MTV/TLG errors of 1.68%/2.11%, and 0.0022% non-diffeomorphic voxels, improving on the uniGradICON + instance optimization baseline by $+0.05$ DSC and reducing the MTV/TLG errors by 70.9%/67.7%. On the hidden official test set (160 pairs), AdaptReg achieves CT DSC 0.816, PET DSC 0.598, and MTV/TLG errors of 4.02%/3.46%, ranking fourth among 16 teams in the final PSMAReg evaluation. Code: https://github.com/shishuyue/AdaptReg",
+  "abstract_ja": "",
+  "authors": [
+    "Shuyue Shi",
+    "Rong Yuan",
+    "Lin Tian"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/shishuyue/AdaptReg",
+  "hasCode": true,
+  "id": "arxiv-2611.25761",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Longitudinal PSMA-PET/CT registration is a key step in assessing treatment response in prostate cancer, and it requires more than generic alignment accuracy: the deformation must preserve lesion…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "AdaptReg: Skip-level FiLM Adapter for Task-Specific Adaptation of a Frozen Registration Foundation Model",
+  "url": "https://arxiv.org/abs/2611.25761",
+  "use_case": ""
+}

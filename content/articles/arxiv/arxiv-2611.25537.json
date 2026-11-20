@@ -1,0 +1,32 @@
+{
+  "abstract": "Video Large Language Models process large numbers of visual tokens, making token pruning important for efficient inference. Training-free pruning methods differ in whether and how they use the user query, and the value of query conditioning remains unclear. We present a controlled study of training-free, pre-LLM video token selection. Using a shared Qwen-3-VL backbone, token budgets, and decoding settings, we compare 21 pruning principles spanning query-agnostic, shallow query-conditioned, structured query-conditioned, and holistic strategies. To instantiate the last two categories, we introduce Structured Query Pruning, which decomposes the question into semantic anchors, and a Pareto variant, which combines anchor relevance with query-agnostic visual diversity. Across Video-MME, MVBench, and LongVideoBench, relevance computed from the raw question embedding is unreliable (8--16 points below the best methods), whereas anchors derived from query decomposition avoid this failure. However, query access is not inherently advantageous: strong query-agnostic coverage methods remain competitive or superior in the full-field comparison. Relative to a redundancy-only baseline, structured selection helps most on evidence-specific and long-context tasks at tight budgets; on broad tasks, the holistic selector improves over either relevance or redundancy alone. Further, pruning reduces cost and memory. These results support a practical design rule: preserve visual coverage by default, and add structured relevance when the task and token budget demand selective evidence retrieval.",
+  "abstract_ja": "",
+  "authors": [
+    "Divya Kothandaraman",
+    "Timo Kumkel",
+    "Jaclyn Pytlarz"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25537",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Video Large Language Models process large numbers of visual tokens, making token pruning important for efficient inference. Training-free pruning methods differ in whether and how they use the user…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Query-Aware vs. Query-Agnostic Training-Free Video Token Pruning in Multimodal LLMs",
+  "url": "https://arxiv.org/abs/2611.25537",
+  "use_case": ""
+}

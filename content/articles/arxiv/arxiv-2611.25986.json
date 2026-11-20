@@ -1,0 +1,33 @@
+{
+  "abstract": "Salient Single-Positive Multi-Label Learning (SalSPML) assigns each image its most salient positive label, leaving other classes unlabeled. Existing methods construct class-level Salient Prototypes from observed positives to guide the recognition of unobserved classes. However, since salient annotations favor visually prominent instances, these prototypes may not fully capture the visual diversity of hidden positives, resulting in insufficient positive supervision. To address this limitation, we propose CoST, a Coverage-guided Complementary Soft-Target Refinement framework that supplements Salient Prototypes with complementary class-semantic information. Specifically, CoST identifies semantically relevant candidates from unknown classes by leveraging task-learned category information and image-text semantic correspondence. The selected candidates are then aggregated into class-wise Coverage Prototypes to complement the semantic representations provided by Salient Prototypes. Furthermore, we introduce a ranking-based selective refinement strategy that identifies classes receiving stronger semantic support from Coverage Prototypes and selectively enhances their soft targets while preserving the base soft targets for the rest. Experiments on multiple benchmarks demonstrate the effectiveness of CoST, with strong performance gains over existing baselines.",
+  "abstract_ja": "",
+  "authors": [
+    "Tong Jin",
+    "Meng-Long Wang",
+    "Xingyu Zhao",
+    "Sheng-Jun Huang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25986",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Salient Single-Positive Multi-Label Learning (SalSPML) assigns each image its most salient positive label, leaving other classes unlabeled. Existing methods construct class-level Salient Prototypes…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Seeing Beyond the Obvious: Complementary Semantic Guidance for Salient Single-Positive Multi-Label Learning",
+  "url": "https://arxiv.org/abs/2611.25986",
+  "use_case": ""
+}

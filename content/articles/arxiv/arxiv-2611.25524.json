@@ -1,0 +1,36 @@
+{
+  "abstract": "Despite strong multimodal capabilities, large vision-language models (LVLMs) often hallucinate when linguistic priors outweigh visual evidence or when predictions are grounded in irrelevant or misleading image regions. Training-free contrastive decoding mitigates hallucinations by contrasting the original prediction with an auxiliary one that exposes linguistic priors. Yet existing methods focus on altering the auxiliary input or computation and do not ensure that either branch uses query-relevant visual evidence during decoding. We propose Visual Evidence-Guided Decoding (VEGD), a training-free framework that identifies query-relevant visual evidence and guides its use throughout contrastive decoding. VEGD locates this evidence by aggregating localization heads with strong visual responses and coherent spatial structure, then selectively weakens it in the auxiliary image. During generation, VEGD directs visual-carrier heads in both branches toward the same evidence location, strengthening access to intact evidence in the main branch while anchoring the auxiliary branch to its weakened counterpart. An adaptive distribution fusion strategy then combines or contrasts their predictions according to distribution divergence. Experiments across diverse LVLMs and benchmarks demonstrate that VEGD consistently reduces hallucinations.",
+  "abstract_ja": "",
+  "authors": [
+    "Yiheng Li",
+    "Wenhao Wang",
+    "Xingyi Li",
+    "Mingda Jia",
+    "Zichang Tan"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25524",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Despite strong multimodal capabilities, large vision-language models (LVLMs) often hallucinate when linguistic priors outweigh visual evidence or when predictions are grounded in irrelevant or…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "detection",
+      "generation"
+    ]
+  },
+  "title": "Contrast Where It Matters: Visual Evidence-Guided Decoding for Mitigating Hallucinations in LVLMs",
+  "url": "https://arxiv.org/abs/2611.25524",
+  "use_case": ""
+}

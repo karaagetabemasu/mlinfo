@@ -1,0 +1,33 @@
+{
+  "abstract": "Blind image quality assessment (BIQA) is essential for evaluating and optimizing visual experience. Existing BIQA methods typically aggregate features from multiple backbone stages without accounting for their unequal contributions to quality prediction. Furthermore, uniformly supervising all experts may constrain their flexibility and limit the diversity of the learned quality representations. To address these issues, we present Life-IQA+, a quality representation decoding framework that combines graph convolutional network (GCN) enhanced layer interaction and flexible hierarchical expert specialization. Specifically, the layer interaction module constructs quality queries from GCN-refined deepest-stage features and uses penultimate-stage features as keys and values, thereby enabling cross-layer representation interaction via the cross-attention mechanism. Building on these representations, we further introduce a flexible hierarchical mixture-of-experts (MoE) architecture comprising a densely activated shared expert layer and a sparsely activated routed expert layer. To enhance the representation diversity and ability of experts, we apply auxiliary classification supervision to a subset of shared experts using distortion-type labels for synthetic datasets and discretized quality-level labels for authentic datasets. Experiments on synthetic and authentic distortion benchmarks, together with controlled ablations of expert configurations and supervision strategies, show that Life-IQA+ achieves competitive prediction accuracy with a favorable balance between accuracy and computational cost. The code is available at: https://github.com/TANGLONG2/Life-IQA-PlusPlus.",
+  "abstract_ja": "",
+  "authors": [
+    "Long Tang",
+    "Guoquan Zheng",
+    "Huiyu Duan",
+    "Jie Hao",
+    "Yucheng Zhu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/TANGLONG2/Life-IQA-PlusPlus",
+  "hasCode": true,
+  "id": "arxiv-2611.25510",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Blind image quality assessment (BIQA) is essential for evaluating and optimizing visual experience. Existing BIQA methods typically aggregate features from multiple backbone stages without accounting…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Life-IQA+: Boosting Blind Image Quality Assessment via GCN-enhanced Layer Interaction and Flexible Hierarchical Expert Specialization",
+  "url": "https://arxiv.org/abs/2611.25510",
+  "use_case": ""
+}

@@ -1,0 +1,35 @@
+{
+  "abstract": "Despite learning transferable features, fake image detectors may struggle on unseen domains due to mismatched decision boundaries. Our analysis shows that features extracted by the frozen forensic encoder remain discriminative, but the source-trained decision boundary does not fully exploit this information. However, correcting this boundary without source data or target labels remains challenging, as unreliable source predictions may lead to incorrect adaptation. To address this issue, we propose Graph-Regularized Residual Adaptation (GraRA), which refines the source decision boundary using only unlabeled target data. To determine which classifier directions to update, GraRA constructs a compact residual subspace from uncertainty-weighted target features and keeps it orthogonal to the source classification direction. To guide these updates, it uses source-score anchors to generate soft labels through target-graph diffusion, while neighborhood consistency regularizes residual learning within the constrained subspace. The learned correction is merged into the source classifier, requiring only 32 optimized coefficients and no additional inference branches. On diverse unseen OpenMMSec domains, GraRA achieves 84.36\\% accuracy and 91.34\\% AUC, improving over the source detector by 4.33 and 3.50 percentage points, respectively. Further analysis shows that reliable source predictions and locally consistent neighborhoods help guide residual learning, allowing GraRA to correct ranking errors that a simple threshold shift cannot address. \\textcolor{cvprblue}{Code will be made publicly available.",
+  "abstract_ja": "",
+  "authors": [
+    "Shichuang Xie",
+    "Qishuai Ding",
+    "Tong Qiao",
+    "Liquan Shen",
+    "Guorui Feng"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25406",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Despite learning transferable features, fake image detectors may struggle on unseen domains due to mismatched decision boundaries. Our analysis shows that features extracted by the frozen forensic…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "Decision Boundaries Matter: Graph-Regularized Residual Adaptation for Cross-Domain Fake Image Detection",
+  "url": "https://arxiv.org/abs/2611.25406",
+  "use_case": ""
+}

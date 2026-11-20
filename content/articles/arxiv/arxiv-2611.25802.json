@@ -1,0 +1,33 @@
+{
+  "abstract": "Existing 3D generation methods synthesize visually compelling scenes from fixed inputs, yet struggle to continually expand and revise a 3D world as new observations arrive. Iterative approaches often fuse real observations and generated content into a single representation, treating generated content as established structure rather than revisable predictions. Consequently, early generation errors can persist and accumulate despite new evidence. We propose World-delta, an incremental 3D scene generation framework combining uncertainty-aware persistent world modeling with delta-guided diffusion for continual scene expansion and correction. Our framework comprises three components: 1) Visual Evidence Encoding integrates geometric and semantic cues from incoming images into unified world tokens. 2) Observation-Calibrated World Modeling maintains a persistent latent world state that distinguishes observation-supported content from provisional completion hypotheses. New evidence drives selective world deltas to revise conflicting hypotheses while preserving well-supported content. 3) Incremental World Diffusion Generation uses delta-derived masks to restrict diffusion to regions requiring updates, freezing unchanged regions. Only affected 3D chunks are decoded and integrated into the existing scene. Together, these components enable continual world expansion and revision while reducing redundant generation and preserving scene consistency. Experiments demonstrate the effectiveness of World-delta in incremental 3D scene generation, observation-driven correction, scene consistency, and update efficiency over successive scene updates.",
+  "abstract_ja": "",
+  "authors": [
+    "Haonan Wang",
+    "Hanyu Zhou",
+    "Xiaobin Hu",
+    "Luxin Yan"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25802",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Existing 3D generation methods synthesize visually compelling scenes from fixed inputs, yet struggle to continually expand and revise a 3D world as new observations arrive. Iterative approaches often…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "World-delta: Continually Integrating Observations for Incremental 3D Scene Generation",
+  "url": "https://arxiv.org/abs/2611.25802",
+  "use_case": ""
+}

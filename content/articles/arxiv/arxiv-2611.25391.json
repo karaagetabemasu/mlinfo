@@ -1,0 +1,35 @@
+{
+  "abstract": "Continual SAR interpretation requires multimodal large language models to learn incoming sources while retaining earlier task abilities. This is difficult when acquisition and geographic shifts alter visual evidence, regionally concentrated categories bias answers, and historical images are scarce. We address this problem with Historical On-Policy Distillation (HOPD), which reuses source-acquisition LoRA states as persistent teachers for one evolving student. Archiving each state before consolidation preserves a stable source reference. The teachers supervise student-generated prefixes, transferring historical behavior to the student's changing generation contexts. To enrich sparse replay, original-view teachers guide augmented historical student views while preserving spatial coordinates. This knowledge is consolidated into a single deployed adapter that requires no source identity. On SARVQA-CL, our source-incremental evaluation protocol, HOPD achieves the highest final mean score of 54.51 among the compared methods, exceeding the strongest baseline by 2.96 points. It also improves the final source-macro score in every evaluated task over shared-memory Replay-SFT, with gains across source orders. These results support source-acquisition history as supervision for retaining earlier task performance during continual SAR adaptation. Code and data: https://github.com/zcablii/HOPD.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuxuan Li",
+    "Derrick Goh Xin Deik",
+    "Zheng-Peng Duan",
+    "Qianru Sun",
+    "Weijie Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/zcablii/HOPD",
+  "hasCode": true,
+  "id": "arxiv-2611.25391",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Continual SAR interpretation requires multimodal large language models to learn incoming sources while retaining earlier task abilities. This is difficult when acquisition and geographic shifts alter…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "HOPD: Historical On-Policy Distillation for SAR MLLM Continual Learning",
+  "url": "https://arxiv.org/abs/2611.25391",
+  "use_case": ""
+}

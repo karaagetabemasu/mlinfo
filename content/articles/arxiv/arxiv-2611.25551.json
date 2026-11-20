@@ -1,0 +1,32 @@
+{
+  "abstract": "Training-free diffusion priors are powerful for inverse problems, but measurement guidance during reverse sampling is local: aggressive updates can improve immediate data fit while disrupting later denoising. We introduce an anchored inertial correction rule that separates proposal generation from acceptance. At each corrected step, the denoiser prediction anchors a frozen clean-space objective combining measurement fit with a noise-level-dependent proximal term. Heavy-ball dynamics with step size and momentum computed from the measured curvature generate a clean-state candidate; a separate verifier evaluates it with the same objective, with the denoiser prediction retained as fallback; both stages are derived from one objective for the whole trajectory, considered one step at a time. The accepted clean state is re-noised to continue sampling. The rule applies to pixel and latent diffusion with differentiable measurement operators, requires no retraining, and adds no denoiser calls inside the correction loop. We analyze how objective verification yields local nonincrease and displacement control. Across natural-image benchmarks, the method achieves competitive reconstruction quality. Code is available at https://github.com/Seunghyeok0715/PIVOT2026.",
+  "abstract_ja": "",
+  "authors": [
+    "Minwoo Kim",
+    "Seunghyeok Shin",
+    "Dabin Kim",
+    "Hongki Lim"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/Seunghyeok0715/PIVOT2026",
+  "hasCode": true,
+  "id": "arxiv-2611.25551",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Training-free diffusion priors are powerful for inverse problems, but measurement guidance during reverse sampling is local: aggressive updates can improve immediate data fit while disrupting later…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Anchored Inertial Proposals with Objective Verification for Diffusion-Prior Inverse Problems",
+  "url": "https://arxiv.org/abs/2611.25551",
+  "use_case": ""
+}

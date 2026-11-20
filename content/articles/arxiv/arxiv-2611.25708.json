@@ -1,0 +1,35 @@
+{
+  "abstract": "Image-to-slide reconstruction must recover both visual appearance and native object structure for subsequent editing. Yet visually faithful charts and tables may lack editable series and cells, and direct code generation couples content prediction to rendering implementation. We present Slide2PPT, a model-agnostic, training-free framework that equips both open- and closed-source vision-language models with native PowerPoint reconstruction capabilities. Through a unified typed interface, the model predicts object records while a fixed renderer materializes their native properties, enabling integration with different backbones without task-specific training or architectural changes. Localization-guided refinement then connects visual discrepancies to object records for correction. Regional updates preserve unselected records, while whole-slide updates address cross-region relationships. Record refinement and targeted object editing support structural and attribute-level changes, with rendered feedback governing iterative acceptance. To evaluate this framework across diverse reconstruction demands, we introduce Slide2PPT-Bench, covering controlled elements, real slides, and scientific figures. Evaluation separately measures file production, rendered agreement, and native-object availability. Experiments across open- and closed-source backbones demonstrate substantially more reliable PPTX generation than direct code generation, improved layout and text recovery on scientific figures, and native chart and table interfaces beyond geometric primitives.",
+  "abstract_ja": "",
+  "authors": [
+    "Baoliang Chen",
+    "Xinlong Bu",
+    "Lingyu Zhu",
+    "Xiangjie Sui"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25708",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "multimodal",
+  "summary": "Image-to-slide reconstruction must recover both visual appearance and native object structure for subsequent editing. Yet visually faithful charts and tables may lack editable series and cells, and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "detection",
+      "generation"
+    ]
+  },
+  "title": "Slide2PPT: Native PowerPoint Reconstruction with Localization-Guided Refinement",
+  "url": "https://arxiv.org/abs/2611.25708",
+  "use_case": ""
+}

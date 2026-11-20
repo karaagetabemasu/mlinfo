@@ -1,0 +1,30 @@
+{
+  "abstract": "An image signal processor does more than reconstruct an image. It also has to decide how strongly to denoise, how to balance color, and which tone curve maps the scene onto the display, and these settings depend on the scene itself, the curve that suits a backlit sky is not the one that suits an indoor portrait. Most neural ISPs learn a single fixed transformation and apply it to every scene. We instead make the adaptation an explicit part of the network. Our model, LG FiLM, keeps one shared encoder decoder and places a small mixture of affine experts at its bottleneck; the experts scales, shifts, and mixing weights are predicted from local neighborhood evidence together with a global scene descriptor. Reconstruction stays in a single shared pathway and only the processing mode is switched. We evaluate LG FiLM on three datasets, Fujifilm UltraISP, Zurich RAW to RGB, and a COCO derived benchmark built with an inverse ISP. The model reaches the best reconstruction fidelity of the compared entries on the primary benchmark and transfers to the other two.",
+  "abstract_ja": "",
+  "authors": [
+    "Fei Li",
+    "Xilei Cao",
+    "Shichang Zhai",
+    "Kun Zhan"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25639",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "An image signal processor does more than reconstruct an image. It also has to decide how strongly to denoise, how to balance color, and which tone curve maps the scene onto the display, and these…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "LG-FiLM: Local-Global Mixture-of-Experts Modulation for RAW-to-RGB Reconstruction",
+  "url": "https://arxiv.org/abs/2611.25639",
+  "use_case": ""
+}
