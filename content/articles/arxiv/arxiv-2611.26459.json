@@ -1,0 +1,29 @@
+{
+  "abstract": "In real-world black-box optimization problems, a mechanistic simulator is often available that approximately predicts the behavior of the system as a function of the parameters being optimized. Here, we show how an amortized inverse map of such a simulator can be used in Bayesian optimization to restrict the search space while using a Gaussian process kernel that is aware of the original problem geometry. This allows for efficiently leveraging the low intrinsic dimensionality of the optimization problem. We characterize its approximation bias and information gain, and derive an intrinsic-dimension-dependent regret rate under additional geometric and Gaussian Process assumptions. We illustrate the method with an application to drug dosing personalization in Parkinson's disease. We use, as a simulator, a pharmacokinetic/pharmacodynamic (PK/PD) model of a drug, a mechanistic model calibrated on population data with quantified parameter uncertainty. A dosing neural network is trained offline against the model, amortizing the map from patient PK/PD parameters to the regimen predicted to be optimal, and online Bayesian optimization then searches over this learned, low-dimensional representation rather than over raw dosages. Numerical simulations demonstrate the improved performance of our method in this application, as well as under simulator misspecification.",
+  "abstract_ja": "",
+  "authors": [
+    "Tristan Fauvel",
+    "Federico Pavone",
+    "Titouan Guillou",
+    "Pau Redon Muñoz",
+    "Chloé Geoffroy"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26459",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "In real-world black-box optimization problems, a mechanistic simulator is often available that approximately predicts the behavior of the system as a function of the parameters being optimized. Here,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Bayesian optimization on amortized search space",
+  "url": "https://arxiv.org/abs/2611.26459",
+  "use_case": ""
+}

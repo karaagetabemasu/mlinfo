@@ -1,0 +1,27 @@
+{
+  "abstract": "Multi-Robot Motion Planning (MRMP) requires trajectories that avoid environmental obstacles and collisions between robots in a shared workspace. Diffusion-based planners often address obstacle avoidance through sampling-time guidance, while some conditioned approaches aggregate map geometry into a global representation. We present Spatially Conditioned Trajectory Diffusion (SCTD), a map-conditioned trajectory generator for multi-robot planning. SCTD retains multiple position-aware occupancy tokens accessed through cross-attention throughout a temporal U-Net, with hard endpoint inpainting enforcing start and goal states. One model trained on single-robot demonstrations across procedural environments generates obstacle-aware trajectories without sampling-time obstacle-cost guidance. High-level Conflict-Based Search (CBS) coordinates these trajectories through constrained replanning, retaining inter-agent guidance during sampling and reusing the model across workspace layouts and team sizes. Experiments assess single-robot success and trajectory quality, generalization to unfamiliar layouts with added obstacles, and coordinated multi-robot planning. On 15,000 held-out tasks, SCTD achieves higher success than the evaluated guided diffusion baseline, with the largest gains on hard-detour tasks, while trajectory-quality comparisons show smoother trajectories. Conditioning ablations show higher success with spatial tokens than with a global map embedding, and map-replacement tests demonstrate dependence on the supplied geometry. The resulting multi-robot system achieves higher team success than the compared diffusion baselines, with experiments covering teams of up to 15 robots.",
+  "abstract_ja": "",
+  "authors": [
+    "Yefim Nudelman",
+    "Dor Atzmon",
+    "Tom Tirer"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26127",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "attention",
+  "summary": "Multi-Robot Motion Planning (MRMP) requires trajectories that avoid environmental obstacles and collisions between robots in a shared workspace. Diffusion-based planners often address obstacle…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Spatially Conditioned Trajectory Diffusion",
+  "url": "https://arxiv.org/abs/2611.26127",
+  "use_case": ""
+}

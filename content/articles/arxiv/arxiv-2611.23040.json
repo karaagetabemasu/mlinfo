@@ -1,0 +1,32 @@
+{
+  "abstract": "Analytic continual learning replaces iterative gradient updates with closed-form ridge regression over frozen pre-trained representations, summarizing all past sessions in two running sufficient statistics: the feature autocorrelation matrix $Σ_t$ and the class cross-correlation matrix $Γ_t$. Lifting backbone features into a wide random code of dimension $M \\gg D$ substantially improves linear separability across tasks, but forces $Σ_t$ to grow quadratically as $\\mathcal{O}(M^2)$. Under a fixed persistent memory envelope $\\Bcal$, a learner faces a fundamental structural trade-off: store exact pairwise co-activations inside a narrower feature code, or expand to a wide code while compressing cross-coordinate interactions. We observe that the coordinate self-variances $v_t = \\diag(Σ_t)$ and class statistics $Γ_t$ grow only linearly with $M$, whereas off-diagonal interactions dominate memory. We introduce \\method (\\textbf{Co}ordinate-\\textbf{Re}stored \\textbf{A}nalytic \\textbf{C}ontinual \\textbf{L}earning), which retains $(v_t, Γ_t)$ exactly, maintains off-diagonal co-activations through a streaming rank-$q$ factor $F_t$, restores exact diagonal variances via $\\Sighat_t = F_t^\\top F_t + \\Diag(v_t - \\diag(F_t^\\top F_t))$, and solves the full $M\\times C$ normal equations via the Woodbury identity. Across five class-incremental benchmarks on frozen ViT-B/16, \\method matches dense full-covariance readouts within $0.09$ points while cutting persistent state by $90.7\\%$ ($35.9$ vs.\\ $385.3$ MiB). Under equal memory envelopes of $16$--$80$ MiB, prioritizing expansion width $M$ over covariance rank $q$ outperforms exact narrow readouts in $17$ of $18$ configurations by up to $+2.19$ points.",
+  "abstract_ja": "",
+  "authors": [
+    "Elena Voss",
+    "Pixel Nomand",
+    "Marcus Hale",
+    "Sofia Reyes"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23040",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Analytic continual learning replaces iterative gradient updates with closed-form ridge regression over frozen pre-trained representations, summarizing all past sessions in two running sufficient…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Variance Restoration over Covariance Rank: Memory-Budgeted Analytic Continual Learning",
+  "url": "https://arxiv.org/abs/2611.23040",
+  "use_case": ""
+}

@@ -1,0 +1,34 @@
+{
+  "abstract": "Tool-handover interaction calls for preparation before a response is warranted. The model waits until interaction cues appear, then prepares while assessing whether the accumulating evidence supports a response or calls for cancellation. We introduce EviBridge, a framework that integrates predictive visual representations into a vision-language interaction model for joint state and tool prediction. A trainable evidence interface maps features from a frozen V-JEPA 2 encoder into the language decoder alongside native visual inputs, preserving their temporal context and using only observations available at each decision time. The framework has two instantiations. EviBridge-E distinguishes recent from historical evidence and encodes the timing and spatial location of each observation. EviBridge-I preserves the temporal order of pooled V-JEPA 2 features and interaction turns and generates dedicated interaction tokens. We evaluate on FuGIBench, a streaming-video benchmark for preparation, response, and cancellation in tool-handover assistance. The best-performing variants of EviBridge-E and EviBridge-I achieve Overall scores of 0.6448 and 0.5892, compared with 0.2178 and 0.5327 for their respective task-adapted native baselines. These gains span target handovers, long waits, and cancelled requests, demonstrating the value of predictive visual evidence for interaction decisions.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhichao Huang",
+    "Changheng Cai",
+    "Song Ren",
+    "Zhichen Zhao",
+    "Hongsen Liu"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.20916",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "video",
+  "summary": "Tool-handover interaction calls for preparation before a response is warranted. The model waits until interaction cues appear, then prepares while assessing whether the accumulating evidence supports…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "EviBridge: Encoding Predictive Visual Evidence for Proactive Interaction",
+  "url": "https://arxiv.org/abs/2611.20916",
+  "use_case": ""
+}

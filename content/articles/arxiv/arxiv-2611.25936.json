@@ -1,0 +1,28 @@
+{
+  "abstract": "Density ratios play a central role in two-sample comparison, distribution-shift adaptation, and generative-model evaluation. However, estimating a density ratio through separate estimation of the underlying densities can be unnecessarily challenging. In this paper, we develop a direct approach to the log density ratio estimation by minimizing a balanced Hellinger risk over additive ensembles of axis-aligned decision trees, trained using Newton boosting. We establish finite-sample guarantees for the estimator produced by the algorithm and derive an explicit convergence rate. Under suitable tail and Hölder smoothness conditions, together with an additional assumption on the progress made at each boosting iteration, our rate matches, up to logarithmic factors, the classical minimax-optimal $ \\mathscr{L}^{2} $ rate for function estimation. A key technical contribution is an optimization analysis that exploits the special exponential structure of the Hellinger risk. In particular, we show that the decrease in the second-order Taylor approximation (which is computable) of the empirical risk controls the actual decrease in that risk, yielding a direct optimization guarantee for the boosting algorithm. This allows us to establish statistical convergence guarantees for the algorithm's output without relying on an idealized empirical-risk minimizer. Experiments on synthetic data corroborate the predicted convergence behavior, while experiments on public datasets demonstrate the practical effectiveness of the proposed estimator.",
+  "abstract_ja": "",
+  "authors": [
+    "Ren-Rui Liu",
+    "Zheng-Chu Guo"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25936",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Density ratios play a central role in two-sample comparison, distribution-shift adaptation, and generative-model evaluation. However, estimating a density ratio through separate estimation of the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Hellinger Decision Trees for Density Ratio Estimation: Finite-Sample Guarantees",
+  "url": "https://arxiv.org/abs/2611.25936",
+  "use_case": ""
+}

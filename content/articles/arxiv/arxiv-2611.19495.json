@@ -1,0 +1,30 @@
+{
+  "abstract": "Unmanned aerial vehicles (UAVs) equipped with cameras are popular, viable tools for vegetation and environmental health monitoring. However, existing image classification methods are incompatible with UAV implementation for independent practitioners in remote, resource-constrained environments due to large dataset requirements, GPU hardware, inflexible retraining, and low interpretability. This paper presents a lightweight, interpretable vegetation classification algorithm operating with as few as five reference images per class, without GPUs or heavy machine learning frameworks. It uses a 2D hue-saturation histogram feature representation and Earth Mover's Distance or Quadratic Form Distance, paired with a log-likelihood probability score, to classify images into three vegetation health categories. We evaluated six systems: three custom pipelines and three established models across low-data scenarios ($n = 5, 10, 25$) and a full-data regime of 2,172 drone images from 28 South American locations. Our custom pipelines achieve competitive Top-1 accuracy (81--85\\%) under low-data constraints, maintaining sub-1ms inference times that enable real-time classification and subsequently tasks such as seeding and watering. The algorithms also support incremental retraining without full model reconstruction. We validate edge feasibility by deploying the QFD variant on an ESP32 microcontroller, achieving 82.8\\% accuracy with 1.01\\% heap memory utilization (45kb), demonstrating that effective vegetation classification is achievable on low-cost, low-power embedded hardware without cellular connectivity.",
+  "abstract_ja": "",
+  "authors": [
+    "Yifei Cheng",
+    "Haoyu Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19495",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Unmanned aerial vehicles (UAVs) equipped with cameras are popular, viable tools for vegetation and environmental health monitoring. However, existing image classification methods are incompatible…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Vegetation Health Classification for Low-Data and Edge Hardware Deployment",
+  "url": "https://arxiv.org/abs/2611.19495",
+  "use_case": ""
+}

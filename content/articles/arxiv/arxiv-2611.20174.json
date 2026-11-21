@@ -1,0 +1,34 @@
+{
+  "abstract": "Neural networks are typically programmed through optimization, rather than by explicitly specifying their computations. Recent work on weight-space programming suggests that large language models (LLMs) can instead reason about and manipulate neural-network weights directly. In this work, we show that LLMs can directly program statistical computations in tabular foundation models (TFMs), whose parameters enable inference across different datasets. We investigate three complementary settings using GPT-6 Astra, without gradient-based optimization. First, Astra directly programs nanoTabPFN from zero-initialized weights, achieving a mean ROC AUC of 0.849 across 20 TabArena datasets, compared to 0.876 for a pretrained baseline. Second, Astra diagnoses and repairs a signed-product regression failure in pretrained TabPFN-3.5, restoring near-perfect predictions on held-out synthetic datasets while preserving performance on TabArena-Lite, with only a 0.08% average relative increase in error. Third, it writes KV-cache-editing programs that steer TabPFN-3.5's predictions on unseen synthetic datasets, demonstrating transformations such as reversing linear trends and converting sine waves into approximate square waves, without modifying model weights. Together, our findings suggest that LLM-driven programming could complement gradient-based optimization across TFMs' development and usage, while offering a new way to investigate and intervene in their internal computations.",
+  "abstract_ja": "",
+  "authors": [
+    "Shi Bin Hoo",
+    "Magnus Buehler",
+    "Omar Swelam",
+    "Frank Hutter",
+    "Lennart Purucker"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.20174",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Neural networks are typically programmed through optimization, rather than by explicitly specifying their computations. Recent work on weight-space programming suggests that large language models…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "tabular"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Weights & Caches: LLMs Can Program Tabular Foundation Models",
+  "url": "https://arxiv.org/abs/2611.20174",
+  "use_case": ""
+}

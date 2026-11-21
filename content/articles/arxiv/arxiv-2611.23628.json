@@ -1,0 +1,35 @@
+{
+  "abstract": "Noise steering improves pretrained generative robot policies by learning to select their initial noise without updating model weights. We find that actions in the evaluated world-action models are more sensitive to video noise than action noise, making video noise an expressive input for steering. However, the noise-steering methods we evaluate, in their published forms, struggle to scale to the high-dimensional noise inputs of large policy classes such as world-action models. We introduce Low-Rank Noise Steering (LoRN), a reinforcement learning method that scales noise steering to world-action models. A small steering actor selects a direction through a fixed low-rank random projection, while our norm-controlled construction keeps the resulting noise near the typical scale of a Gaussian sample. This separates the actor's control dimension from the full noise dimension, enabling steering of both video and action inputs. Across three world-action models and ten model-task pairs, video steering improves average success by 26.2 percentage points over the base policy, compared with 7.1 points for DSRL action steering. For smaller action policies, the same construction achieves comparable final success while generally improving early-training success. Steering actors trained in simulation also transfer to three physical bimanual manipulation tasks across two base policies, without additional real-world training.",
+  "abstract_ja": "",
+  "authors": [
+    "Wei Liu",
+    "Abrar Anwar",
+    "Huihua Zhao",
+    "Soha Pouya",
+    "Yan Chang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23628",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Noise steering improves pretrained generative robot policies by learning to select their initial noise without updating model weights. We find that actions in the evaluated world-action models are…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "video"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "LoRN: Low-Rank Noise Steering for Generative Robot Policies",
+  "url": "https://arxiv.org/abs/2611.23628",
+  "use_case": ""
+}

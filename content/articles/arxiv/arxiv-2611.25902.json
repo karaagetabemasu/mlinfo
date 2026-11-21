@@ -1,0 +1,32 @@
+{
+  "abstract": "Self-supervised foundation models are often said to need fewer labels than supervised training. We test this on a forestry task: classifying 20 tree species classes in 0.2 m aerial images from the TreeSatAI dataset. We compare a frozen DINOv3 model pretrained on 493 million satellite images, with only a linear classifier trained on top, against an ImageNet ResNet-50 that is fine-tuned end to end. On the official split, fine-tuning wins clearly (macro F1 0.764 vs. 0.685). However, 28.8% of the official test patches overlap a training or validation patch, and copying the label of the nearest such patch is correct for 83.6% of them. We therefore build a spatial split that holds out whole 2 km squares with a 200 m buffer. On this split the comparison becomes inconclusive (0.648 vs. 0.640, paired 95% CI of the difference [-0.054, 0.016]), and the learning curves of the two models overlap at every label budget from 343 to 33,126 training patches. On the five rarest classes, the frozen model achieves a higher mean F1 (0.566 vs. 0.445), although the confidence interval for this difference includes zero ([-0.05, 0.23]). Diagnostics show that the frozen features mainly miss differences between closely related species, such as the two native oaks. Choosing the input size and layer on validation data (224 px, block 16) raises the frozen model to 0.662 on the spatial split. A comparison that looks decisive on the official split is thus inconclusive under geographically separated evaluation. We release the spatial split and our code.",
+  "abstract_ja": "",
+  "authors": [
+    "Dharani Deivasihamani",
+    "Nandakishore Puttashamachar"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25902",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Self-supervised foundation models are often said to need fewer labels than supervised training. We test this on a forestry task: classifying 20 tree species classes in 0.2 m aerial images from the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Does It Depend on the Split? Frozen Satellite Features vs. Fine-Tuned CNNs for Tree Species Mapping",
+  "url": "https://arxiv.org/abs/2611.25902",
+  "use_case": ""
+}

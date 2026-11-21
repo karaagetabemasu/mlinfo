@@ -1,0 +1,33 @@
+{
+  "abstract": "Agentic visual reasoning improves vision-language models by selectively enlarging evidence without adding new scene content, but the benefit depends on whether fine structure remains accessible and whether local observations stay grounded in the full scene. We identify three recurring bottlenecks: high-frequency detail can be attenuated during visual-token formation; spatially distributed evidence can remain encoded yet difficult for the language model to retrieve; and isolated crops can weaken whole-detail correspondence through scale and positional mismatch. ResVision addresses these limitations with two complementary components. Spectrum-Matched Resizing (SMR) estimates image complexity and selects an adaptive global sampling scale, avoiding unnecessary enlargement on simple inputs while allocating more visual tokens to detail-rich images. Context-Preserving Inspection (CPI) returns each inspected crop together with the complete working view, preserving local detail and global context across tool turns. We evaluate Direct and Agentic variants on four frontier VLMs and 29 benchmarks spanning six visual-reasoning families. Complete ResVision (Agentic Base plus SMR plus CPI) is best for every model, improving by 3.36 to 4.94 points over Direct Base and 1.87 to 2.94 points over Agentic Base. These results show that adaptive visual sampling and context-preserving inspection address distinct, complementary constraints in multimodal reasoning.",
+  "abstract_ja": "",
+  "authors": [
+    "Guojian Zhan",
+    "Jiahao Xu",
+    "Yahui Liu",
+    "Yao Hu",
+    "Chuan Mu"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26318",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Agentic visual reasoning improves vision-language models by selectively enlarging evidence without adding new scene content, but the benefit depends on whether fine structure remains accessible and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "ResVision: Spectrum-Matched Resizing and Context-Preserving Inspection for Visual Reasoning",
+  "url": "https://arxiv.org/abs/2611.26318",
+  "use_case": ""
+}

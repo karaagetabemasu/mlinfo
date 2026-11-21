@@ -1,0 +1,33 @@
+{
+  "abstract": "Staged LLM agents make market and social simulators realistic, but one 102-day run of a 200-agent, ten-index market simulator issues 203,100 language-model calls and returns one realization. Conventional low-compute distillation drops their free-form intermediate state. We present staged semantic distillation, a low-compute method that preserves non-structured semantics in a non-LLM student trained from one recorded trace. A frozen encoder maps each teacher output to a 1024-d vector; the student sees typed stage-tagged vectors with stage-specific visibility, is jointly supervised, and trains with scheduled self-history. One TwinMarket trace yields a 13.2M-parameter deterministic student that trains in 1,658 seconds on one 8-GB GPU and runs with zero teacher or decoder calls and no text generation (0.14 ms per decision). Its analysis stays close to the teacher (cosine 0.943), and swapping semantic inputs between agents moves 64.7% of decisions against 12.8% for a matched donor, so the channel is preserved and live. We use the surrogate to study what the transfer carries. It reaches 0.8347 balanced accuracy on the teacher-forced replay and 0.7783 [0.766,0.791] on the deployment decoder; the five-seed gain over a no-semantic retrain is +2.2 [1.21,3.14]. Against the teacher's own re-sampling level, round-one R is 97.1% [95.8,98.4] and 92.3% [89.0,95.4]; R is a diagnostic, not an accuracy. A five-seed content-by-schedule study isolates the gain: scheduled self-history carries it (+2.2 [1.21,3.14]); shuffled and constant content controls reproduce it, while content matters teacher-forced. The design rule: invest in the deployment schedule, let content earn its place at the teacher-forced operating point. A 20-seed, 200,000-decision sweep takes 12 minutes with zero LLM calls, versus three hours for the teacher. The paper is a method-and-case-study contribution on one simulator and trace.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhiyang Niu",
+    "Huayuan Shen",
+    "Chuanjie Li",
+    "Mengmeng Zhao",
+    "Jiajia Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19299",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Staged LLM agents make market and social simulators realistic, but one 102-day run of a 200-agent, ten-index market simulator issues 203,100 language-model calls and returns one realization.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Staged Semantic Distillation: Preserving Free-Form Semantics in a Low-Compute Non-LLM Surrogate of a Staged LLM Agent",
+  "url": "https://arxiv.org/abs/2611.19299",
+  "use_case": ""
+}

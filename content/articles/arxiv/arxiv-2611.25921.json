@@ -1,0 +1,28 @@
+{
+  "abstract": "Data-driven monitoring based on milling force can enable advanced manufacturing services including process optimization and condition monitoring. However, industrial implementation is often hindered by costly and intrusive hardware and large training data requirements. This paper therefore presents a hybrid approach using machine-internal signals and machining metadata to enable force-based monitoring on brownfield machines without additional sensors. Commonly available machine signals have relatively low sampling rates and cannot directly represent high-frequency milling-force variations, especially at higher spindle speeds. Instead of learning the complete force signal, which would increase model complexity, data requirements, and overfitting risk, a supervised machine-learning model predicts only the average milling force from selected machine-signal features and machining parameters. This low-frequency estimation parameterizes a static milling force model that reconstructs the force behavior over one spindle revolution. Although the static model does not reproduce all dynamic effects, it captures the force distribution, load levels, and angular regions of highest tool engagement. The approach is evaluated on one milling machine across varying process parameters, engagement conditions, cutting tools, and two workpiece materials. Dynamometer measurements are required only for development and validation. Ridge regression achieves an $R^2$ of $0.984$ and $0.991$ for average-force prediction on the test data ($\\bar{F}_x$ and $\\bar{F}_y$). The reconstructed force behavior over one spindle revolution achieves an $R^2$ of $0.962$ and $0.982$ ($F_x$ and $F_y$) compared with the reconstruction based on measured force features. The method provides a cost and computationally efficient basis for process monitoring, tool condition assessment, and process optimization on existing machines.",
+  "abstract_ja": "",
+  "authors": [
+    "Eric Hirsch",
+    "Christian Friedrich"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25921",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Data-driven monitoring based on milling force can enable advanced manufacturing services including process optimization and condition monitoring. However, industrial implementation is often hindered…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "A Lightweight Hybrid Approach for Milling Force Reconstruction from Internal Machine Signals",
+  "url": "https://arxiv.org/abs/2611.25921",
+  "use_case": ""
+}

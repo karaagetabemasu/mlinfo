@@ -1,0 +1,30 @@
+{
+  "abstract": "Natural photographs contain dense, overlapping structures that can be weakly expressed in feature maps from whole-image vision encoders. We introduce forced focused attention (FFA) and its Python implementation, vividRGB. FFA is an encoder-agnostic inference-time procedure that applies a frozen encoder to enlarged, overlapping local crops, averages inverse-aligned reflections, and reconstructs a feature field in source coordinates. We evaluate 50 high-resolution photographs from grassland vegetation, fungal networks, airborne forests, coral reefs, and phytoplankton microscopy, using DINOv3 ViT-B/16. Across the five domains, FFA at 5% or 10% focus produces higher mean RGB-edge boundary F1 than direct DINOv3 encoding and automatic SAM3 masks. Domain means range from 0.244 to 0.596 for FFA, versus 0.028-0.076 for direct DINOv3 and 0.020-0.090 for SAM3. Qualitative feature maps also show finer appearance structure. These results concern RGB-edge preservation rather than verified species, traits, or biological segmentation. Narrower focus generally improves boundary preservation, while extraction time and GPU energy use increase sharply and gains diminish at finer settings. FFA may be useful for relatively small, high-resolution ecological image collections where dense visual cues matter. The alpha release vividRGB 0.1.0 and versioned research resources support reproducible cue inspection.",
+  "abstract_ja": "",
+  "authors": [
+    "Masahiro Ryo"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.20942",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Natural photographs contain dense, overlapping structures that can be weakly expressed in feature maps from whole-image vision encoders. We introduce forced focused attention (FFA) and its Python…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection",
+      "segmentation"
+    ]
+  },
+  "title": "vividRGB: Various visual cue detection in RGB photographs with forced focused attention",
+  "url": "https://arxiv.org/abs/2611.20942",
+  "use_case": ""
+}

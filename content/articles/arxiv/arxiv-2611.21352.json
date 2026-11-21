@@ -1,0 +1,31 @@
+{
+  "abstract": "Generative model pre-training typically optimizes a model as a whole without explicitly organizing its parameters for selective reuse. Decomposable pre-training instead learns reusable components for downstream adaptation while retaining strong generative performance. However, existing knowledge diversion methods incur substantial parameter overhead through weight factorization and rely on fixed component assignments to induce specialization, potentially compromising in-distribution generation quality. We therefore propose Specificity-Guided Knowledge Diversion (SGKDiv), which learns how generative knowledge is shared and specialized for effective generation and selective downstream reuse. SGKDiv constructs Knowledge Units from paired feed-forward channels, preserving native computational structure without SVD-based reparameterization. Calibrated condition-wise routing combines a shared usage prior with conditional adjustments, while complementary regularization shapes their allocation, diversity, and magnitude. Together, these designs replace predefined component assignments with adaptively learned and explicitly regulated knowledge specialization. Experiments across diverse model and training settings demonstrate better in-distribution generation than dense and MoE baselines, alongside stronger downstream adaptation than representative PEFT methods across eight datasets.",
+  "abstract_ja": "",
+  "authors": [
+    "Yucheng Xie",
+    "Fu Feng",
+    "Jing Wang",
+    "Xin Geng",
+    "Yong Rui"
+  ],
+  "category": "generative-ai",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.21352",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "gan",
+  "summary": "Generative model pre-training typically optimizes a model as a whole without explicitly organizing its parameters for selective reuse. Decomposable pre-training instead learns reusable components for…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Specificity-Guided Knowledge Diversion for Decomposable Generative Models",
+  "url": "https://arxiv.org/abs/2611.21352",
+  "use_case": ""
+}

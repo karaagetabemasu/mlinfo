@@ -1,0 +1,32 @@
+{
+  "abstract": "Classifying the material facts, submissions, judicial reasoning, and the court's decision (rhetorical roles) in case law is a prerequisite for high-quality performance across virtually all NLP-in-law tasks, including legal information retrieval, summarisation, and LLM-based analysis. These rhetorical roles often intertwine and shift sentence by sentence, making reliable classification difficult. This paper introduces the first sentence-level annotated dataset of Dutch judicial decisions, labelled across four legally meaningful categories: material facts, submissions, judicial reasoning, and the court's decision, alongside non-annotated (None) content, and compares several classification strategies, including a staged pipeline that separates None detection from the rhetorical roles, and a Bayesian update that leverages information about the section-header a sentence belongs to. Our results show that no single strategy dominates on both precision and recall: header priors help most when the None sentences are excluded and offer little benefit for None detection itself. These trade-offs matter in practice. For instance, extractive summarisation depends more on recall so it does not miss relevant facts, whereas outcome prediction depends more on precision regarding decision and facts sentences so that the predicted ruling is not contaminated by noise. We use these trade-offs and map the approaches tested in this study onto a set of representative legal NLP use cases.",
+  "abstract_ja": "",
+  "authors": [
+    "Samyak Sheth",
+    "Gerasimos Spanakis",
+    "Gijs van Dijck"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.20868",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Classifying the material facts, submissions, judicial reasoning, and the court's decision (rhetorical roles) in case law is a prerequisite for high-quality performance across virtually all NLP-in-law…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "detection",
+      "segmentation",
+      "retrieval"
+    ]
+  },
+  "title": "It Depends on the Task: Rethinking Rhetorical Segmentation of Dutch Judicial Decisions",
+  "url": "https://arxiv.org/abs/2611.20868",
+  "use_case": ""
+}

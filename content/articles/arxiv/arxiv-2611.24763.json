@@ -1,0 +1,30 @@
+{
+  "abstract": "Reconstructing cellular dynamics from snapshots is challenging because the destructive nature of single-cell measurements makes tracking the same cells over time impossible. Cellular dynamics are inherently stochastic and involve changes in population size through proliferation and apoptosis. Growth-based methods represent population change as a rate on the density, which does not assign exits and entries to individual cells. Unbalanced Schrödinger bridges model individual events, but neural solvers for killed diffusion bridges simulate trajectories during training. We introduce Elysium, a simulation-free solver that jointly learns state transition and mass change. Using a killed Brownian reference and its time reversal, Elysium constructs direct regression objectives from an optimal endpoint coupling and conditional bridge distributions, without simulating trajectories during training. We show that the minimizers of the expected training objectives recover the optimal unbalanced Schrödinger bridge. Empirically, Elysium reconstructs state transitions, population size, and event distributions on simulated benchmarks with known killed-diffusion ground truth, outperforming existing deterministic and bridge-based solvers. On single-cell time courses, it interpolates cell state distributions at unobserved time points, tracks population expansion and contraction, and captures biphasic drug-response dynamics.",
+  "abstract_ja": "",
+  "authors": [
+    "Zihan Wang",
+    "Jianzhe Li",
+    "Zhenyi Zhang",
+    "Peijie Zhou"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.24763",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Reconstructing cellular dynamics from snapshots is challenging because the destructive nature of single-cell measurements makes tracking the same cells over time impossible. Cellular dynamics are…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Elysium: Simulation-Free Unbalanced Schrödinger Bridges",
+  "url": "https://arxiv.org/abs/2611.24763",
+  "use_case": ""
+}

@@ -1,0 +1,29 @@
+{
+  "abstract": "Vision Language Models (VLMs) have shown remarkable capabilities in qualitative spatial reasoning, but remain limited in quantitative spatial reasoning. Current work leverages the VLM agent to invoke external vision tools to perform computation. However, these methods usually bind each functional requirement to a single predefined vision specialist, implicitly resulting in fixed and rigid tool pipelines. In practice, addressing diverse spatial scenarios and tasks demands a broader diversity in pipeline orchestration and vision specialist selection to achieve robust spatial reasoning. However, such diversity leads to a combinatorial execution space, making it challenging for the agent to orchestrate the optimal pipelines and specialists for different scenarios. In this work, we propose SpatialMem, a memory framework that enables a VLM agent to accumulate tool-use experience and leverage that memory to orchestrate vision specialists to solve the spatial reasoning problem. SpatialMem builds a two-level memory structure, with task memory capturing tool orchestration and scene memory capturing tool selection. It further introduces a dual-state trajectory optimization process to preserve successful tool experiences and refine suboptimal ones. Moreover, existing spatial reasoning benchmarks suffer from quality issues and limited coverage of scene types and tasks. To address these gap, we propose MetricBench, a benchmark covering both indoor and outdoor scenes and three quantitative spatial reasoning tasks. Our method achieves state-of-the-art results on MetricBench, Q-Spatial, and SpatilRGPT-Bench, outperforming best VLM baselines by 32% on MetricBench. Additionally, the memory design yields a 9.1% absolute gain over a memory-free agent on MetricBench.",
+  "abstract_ja": "",
+  "authors": [
+    "Zinan Zheng",
+    "Nuo Chen",
+    "Jia Li"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25925",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Vision Language Models (VLMs) have shown remarkable capabilities in qualitative spatial reasoning, but remain limited in quantitative spatial reasoning. Current work leverages the VLM agent to invoke…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "SpatialMem: Building Quantitative Spatial Reasoning Agents with Hierarchical Memory",
+  "url": "https://arxiv.org/abs/2611.25925",
+  "use_case": ""
+}

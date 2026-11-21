@@ -1,0 +1,28 @@
+{
+  "abstract": "Multiscale convection-diffusion-reaction (CDR) systems couple spatial transport with local stiff reaction kinetics, making their numerical simulation computationally demanding. Conventional neural surrogates require costly coupled CDR training data, and their parameter counts scale with the number of transported variables, limiting scalability to high-dimensional CDR systems. Here we propose a PDE-Structured Transport Operator (PSTO) that learns convection--diffusion dynamics solely from reaction-free data. By embedding the PDE structure into the neural architecture, PSTO generalizes to full CDR systems at inference without retraining. A single transport operator block is shared across all transported variables and refined through relaxed fixed-point iterations, performing an implicit-like correction in latent space. This improves stability during recursive multi-step prediction without adding trainable parameters. We evaluate PSTO on three benchmarks: a canonical 2D CDR system, a multiscale Robertson counterflow flame, and a multiscale hydrogen planar jet flame. In every case, PSTO reduces the mean relative $L_2$ error after 100 coupled steps by at least 50% compared to the strongest neural baseline. Ablation studies on the fixed-point iterations and detailed error decomposition further confirm that PSTO achieves both high one-step accuracy and long-term stability in coupled rollouts. Time-step sensitivity analysis shows that PSTO maintains accuracy even with a tenfold larger time step, whereas baseline accuracies decay rapidly as the time step increases. This framework enables efficient, modular modeling of multiscale CDR dynamics by separating transport learning from the treatment of local kinetics.",
+  "abstract_ja": "",
+  "authors": [
+    "Kaiwen Li",
+    "Dezhi Zhou",
+    "Kun Wu",
+    "Xingcai Lu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25607",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Multiscale convection-diffusion-reaction (CDR) systems couple spatial transport with local stiff reaction kinetics, making their numerical simulation computationally demanding. Conventional neural…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "PSTO: A PDE-structured transport operator with shared implicit updates for multiscale CDR systems",
+  "url": "https://arxiv.org/abs/2611.25607",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Conventional linear routers in sparse mixture-of-experts models select experts directly from token-expert matching scores, coupling input matching with expert allocation. We propose Prototype-Mediated Routing (PMR), a two-stage router with shared prototypes. PMR first computes each token's distribution over prototypes, then uses it to mix prototype-conditioned expert distributions according to the law of total probability. This formulation models input matching and expert allocation separately, explicitly represents many-to-many associations between prototypes and experts, and provides separate interfaces for context adaptation and load regulation. Within this framework, short-term states summarize preceding tokens to adapt the prototypes, while congestion prices updated from dispatch feedback achieve loss-free load balancing by adjusting the conditional expert distributions. We use a two-pass blockwise approximation to accelerate short-term state processing, achieving over 20 times the training throughput of the eager tokenwise PMR implementation while maintaining high agreement in routing decisions. Across three pretraining configurations with 0.43B, 1.18B, and 0.48B total parameters, PMR improves mean zero-shot accuracy on seven benchmarks over linear routing baselines with matched expert architectures by 1.54, 2.65, and 1.45 percentage points (pp), respectively. The corresponding gains on ARC-Easy are 6.71, 5.80, and 3.92 pp. In parameter-efficient fine-tuning of 7B-8B backbones, PMR's improvements over MixLoRA vary across backbones, with gains of up to 1.76 pp in mean accuracy across four tasks.",
+  "abstract_ja": "",
+  "authors": [
+    "Wending Wang",
+    "Binqi Huang",
+    "Ju'an Li",
+    "Yu Guo",
+    "Lei Duan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19413",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Conventional linear routers in sparse mixture-of-experts models select experts directly from token-expert matching scores, coupling input matching with expert allocation. We propose…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "PMR: MoE Routing with Shared Prototypes and Congestion Pricing",
+  "url": "https://arxiv.org/abs/2611.19413",
+  "use_case": ""
+}

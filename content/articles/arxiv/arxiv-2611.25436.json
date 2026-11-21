@@ -1,0 +1,33 @@
+{
+  "abstract": "Tree-structured speculative decoding accelerates vision-language models (VLMs) by verifying multiple candidate continuations in parallel. However, long visual contexts increase the cost of speculative computation, making candidate coverage and redundant expansion important considerations beyond tree topology adaptation. We propose Raptor, a training-free framework that uses rejection feedback to jointly regulate candidate coverage and drafting effort. Our key insight is that acceptance length alone cannot distinguish insufficient candidate coverage from excessive deep expansion, and these conditions require different allocation decisions. Raptor therefore extracts complementary rejection-aware signals to characterize speculative progress, frontier coverage, and redundant expansion. These signals jointly guide bounded, momentum-smoothed updates of tree depth, branching width, and drafting budget, together with execution control that limits unnecessary drafting and progressively restores expansion when appropriate. Extensive experiments with two VLMs across seven multimodal benchmarks demonstrate the effectiveness of Raptor, achieving up to 2.39x average speedup over autoregressive decoding.",
+  "abstract_ja": "",
+  "authors": [
+    "Qishu Hu",
+    "Haozhao Wang",
+    "Zicong Hong",
+    "Yufeng Zhan",
+    "Yuanqing Xia"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25436",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Tree-structured speculative decoding accelerates vision-language models (VLMs) by verifying multiple candidate continuations in parallel. However, long visual contexts increase the cost of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Raptor: Rejection-aware Adaptive Tree based on Speculative Decoding",
+  "url": "https://arxiv.org/abs/2611.25436",
+  "use_case": ""
+}

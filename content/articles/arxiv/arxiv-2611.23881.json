@@ -1,0 +1,35 @@
+{
+  "abstract": "Long video understanding remains a daunting challenge for existing multimodal large language models (MLLMs), mainly due to the large number of visual tokens accumulated in long videos. Currently, frame selection and token selection are two main paradigms for addressing this issue, both aiming to select relevant visual information to form a compact input for MLLMs. A natural approach combines these two paradigms by selecting frames before pruning tokens, but noisy frame-level relevance estimates can cause irreversible evidence loss. In this paper, we study this problem from the perspective of assessing the spatiotemporal distribution of query-specific evidence and propose a novel and training-free approach termed NULLTOK. For every patch across all frames, we construct an empirical-null distribution from 64 group-matched irrelevant control queries, capturing the scores expected in the absence of target-specific evidence. Target affinities are calibrated against these same-position references into right-tail Monte Carlo p-values, which are discrete super-uniform under a conditional exchangeability assumption. Calibrated screening and a high-recall semantic guard produce candidate tokens for deterministic visual deduplication and joint spatiotemporal budget allocation. To validate NullTok, we apply it to two representative MLLMs and conduct extensive experiments on a set of video benchmarks. The experimental results demonstrate its effectiveness under a bounded visual token budget. For example, it achieves 65.81% and 68.85% on Video-MME using frozen LLaVA-Video-7B and Qwen3-VL-8B backbones, respectively, at a cap of 64 full-frame equivalents (FFE), without subtitles or audio. These results outperform all evaluated baselines on Video-MME under the same budget for both backbones. Code is available at https://github.com/potato-kitty/NullTok.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhang Ziyue",
+    "Juwei Jian",
+    "Baiyang Song",
+    "Yunshan Zhong",
+    "Jun Peng"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/potato-kitty/NullTok",
+  "hasCode": true,
+  "id": "arxiv-2611.23881",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Long video understanding remains a daunting challenge for existing multimodal large language models (MLLMs), mainly due to the large number of visual tokens accumulated in long videos. Currently,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "audio",
+      "video",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "NullTok: empirical-null token selection for training-free long video understanding",
+  "url": "https://arxiv.org/abs/2611.23881",
+  "use_case": ""
+}

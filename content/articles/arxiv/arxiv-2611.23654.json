@@ -1,0 +1,29 @@
+{
+  "abstract": "Safe control around dynamic obstacles requires information about both distance and relative motion. Range-based filters commonly reconstruct the required range rate from successive range measurements or from obstacle-state estimators, which can introduce estimator delay or sensitivity to range noise when obstacle motion changes. A frequency-modulated continuous-wave (FMCW) radar measures radial relative velocity directly through Doppler. We use this measurement as the derivative of an ego-centered range control barrier function (CBF) and obtain a closed-form filter on the robot's forward velocity. A measurement margin constructed from sensor error bounds accounts for errors in range, Doppler, ego velocity, and bearing. In 508 paired encounters within the platform's retreat capability, direct Doppler produces two buffer incursions, compared with 15 for a constant-acceleration and 25 for a constant-velocity Kalman filter. On a Unitree Go1, the controller stops at $0.777 \\pm 0.015$ m against the predicted $0.758$ m and reacts to a farther approaching object while a nearer static return remains. The guarantee covers the longitudinal range channel under bounded measurement errors and continuously available detections. Direct Doppler removes the need to reconstruct range rate in the safety loop, reducing the delay between a change in obstacle motion and its effect on the safety command.",
+  "abstract_ja": "",
+  "authors": [
+    "Johannes Mootz",
+    "Hesam Mojtahedi",
+    "Reza Akhavian"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23654",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Safe control around dynamic obstacles requires information about both distance and relative motion. Range-based filters commonly reconstruct the required range rate from successive range measurements…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Radar-Native Control Barrier Functions: Doppler Range Rate as a Measured Barrier Derivative",
+  "url": "https://arxiv.org/abs/2611.23654",
+  "use_case": ""
+}

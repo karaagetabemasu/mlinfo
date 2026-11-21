@@ -1,0 +1,30 @@
+{
+  "abstract": "Vision-based monitoring on construction sites fails at night, at dawn and dusk, in tunnels and under floodlights, when conventional RGB cameras under- or over-expose. Event cameras record per-pixel brightness changes with microsecond latency and over 120 dB of dynamic range, but their benefit for site-relevant object detection has not been quantified on real data. We compare three recent event-based detectors (SMamba, SATE and EvRT-DETR) with an RGB detector trained on the same data, using the pixel-aligned PEOD dataset. On low-light frames (70% of the test set) the best event detector reaches 27.2 AP against 21.3 AP for RGB, and a training-free late fusion of both sensors is the best option in every lighting condition (33.3 AP). An object-level analysis of 53,091 objects shows that brightness has little effect on event detectors, whereas fast motion matters: above 20 pixels per frame RGB finds 11-19% of medium-size objects and EvRT-DETR 39-60%. Activation patching locates the damage caused by losing events at the 1/16-resolution features, with small objects depending on the finest scale, and shows that event detectors fail when few signal events meet added noise. A model-agnostic pruning study keeps about 95% of accuracy with 60% of the input but halves small-object recall. On rendered construction sites, used zero-shot, dimming the floodlights drops RGB to near zero while the event detector keeps most of its AP50. We close with camera-placement guidance for construction sites.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhuoran Feng",
+    "Xiaoshan Zhou"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19746",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Vision-based monitoring on construction sites fails at night, at dawn and dusk, in tunnels and under floodlights, when conventional RGB cameras under- or over-expose. Event cameras record per-pixel…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Event-based object detection under adverse lighting and motion: lessons for construction sites",
+  "url": "https://arxiv.org/abs/2611.19746",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Contrastive representation learning methods operate by pulling different views of the same data sample together while pushing them away from views of different samples. A fundamental challenge is the estimation of the repulsive force, which typically requires large batch sizes, can exhibit high variance, and is susceptible to the curse of dimensionality. We introduce ScoreCLR, a contrastive representation learning method that offers a novel way to estimate this repulsion term. We consider the framework of representation learning by maximizing the mutual information between two latent views of a sample. By deriving the gradient of the Shannon entropy with respect to the encoder parameters, we obtain an equivalent objective that involves the score of the latent representation. We then use denoising score matching techniques to estimate this score with a lightweight network that is trained jointly with the encoder. We further propose regularization techniques using different noise levels and a Gaussian prior on the latent representation. ScoreCLR replaces the batch of explicit negative samples in contrastive methods with a learned repulsion whose cost is linear in the batch size rather than quadratic. On CIFAR-10 and ImageNet-100 it does so with minimal loss of linear-probe accuracy compared to SimCLR under a shared recipe, while producing projector outputs of higher effective rank, closer to the Gaussian prior.",
+  "abstract_ja": "",
+  "authors": [
+    "Christopher Marouani",
+    "Grigory Bartosh",
+    "Christian A. Naesseth"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.18469",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Contrastive representation learning methods operate by pulling different views of the same data sample together while pushing them away from views of different samples. A fundamental challenge is the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "embedding"
+    ]
+  },
+  "title": "Contrastive latent representation learning with denoising score matching",
+  "url": "https://arxiv.org/abs/2611.18469",
+  "use_case": ""
+}

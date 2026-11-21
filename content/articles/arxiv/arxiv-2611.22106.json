@@ -1,0 +1,28 @@
+{
+  "abstract": "Color casts are expected to come from the scene or camera, and a retouching model removes them. We report a case where the model leaves one: an ultra-lightweight retouching network renders human skin greener than the original because it under-restores the skin chroma that a degradation removes and, even on clean inputs, adds a small hue shift of its own. A common paired-data-free recipe, synthetic self-supervision (degrade high-quality images, learn to restore them), silently produces this cast while whole-frame PSNR/SSIM stay essentially unchanged. In a representative 6,825-parameter histogram-conditioned network, the cast appears in 52 of 70 portraits under a ground-truth-anchored, white-balance-free protocol. Both a histogram-conditioned and a CNN-conditioned network develop the cast under synthetic self-supervision, yet both are near-neutral in-domain when trained on MIT-Adobe FiveK expert pairs. Image-level objectives miss it: a global-mean green loss worsens the cast (52/70 to 57/70). With zero added parameters, our per-pixel, skin-masked, asymmetric green-excess loss reduces the cast to 1/70 across stratified skin tones (68.1% to 2.2% over the 70,000-image FFHQ corpus; 64.4% to 0.8% on held-out CelebA-HQ photos). In-domain FiveK PSNR/SSIM are unchanged (+0.13 dB, +0.004), at the cost of a small whole-frame CIEDE2000 increase (8.77 to 9.69) and a magenta over-correction where skin is nearly neutral (skin Delta a* -1.5 to +4.4 and CIEDE2000 5.6 to 6.4 on clean inputs): the loss targets the signed green-magenta axis, not total skin-color fidelity. The same loss suppresses the cast across three ultra-light architectures. A whole-frame green metric correlates with skin-region CIEDE2000 at the method level (Spearman rho = 0.89). The final network exports to a 35 KB TFLite model.",
+  "abstract_ja": "",
+  "authors": [
+    "Choulhyouc Lee"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.22106",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Color casts are expected to come from the scene or camera, and a retouching model removes them. We report a case where the model leaves one: an ultra-lightweight retouching network renders human skin…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Diagnosing and Correcting Skin-Tone Color Casts in Ultra-Lightweight Photo Retouching Networks",
+  "url": "https://arxiv.org/abs/2611.22106",
+  "use_case": ""
+}

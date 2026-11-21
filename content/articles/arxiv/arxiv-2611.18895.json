@@ -1,0 +1,36 @@
+{
+  "abstract": "Synthetic text, images, and video are rising. Software-only detectors are power-hungry, too slow, and costly, and do not scale with demand. When software cannot scale, historically hardware often comes to the rescue. We perform the first reverse engineering of a compression accelerator--Intel QuickAssist Technology (QAT) microarchitecture and--find different amount of time on each, a novel data structure-dependent property. Using this information, we then build Lasso, a low-cost, high-performance detector for AI-generated content that turns the accelerator into a measuring instrument. For text detection, Lasso achieves 100% accuracy on original DetectRL text and retains 92% average accuracy after paraphrasing, compared with 78% for Binoculars and 55% for DetectGPT. Across original, paraphrased, and perturbed text, it achieves 82% average accuracy, outperforming all five baselines. With topic, length, and formatting matched, accuracy reaches 95% for instruction-tuned generators, including when the tested generator is unseen. On RAID, accuracy averages 82% when trained on one generator and tested on another, and 74% across eight held-out domains. Detection takes 0.74 microseconds, a speedup of at least 83,784x across five baselines. At the same time, Lasso consumes over 99% less energy per document than both Binoculars and DetectGPT. At the same time, Lasso detects AI-generated videos, software code, and images with 67.5%, 70% and 78% accuracy, respectively, with low latency and power opening avenues for practical real time and edge device detection of multimodality AI artifacts for the first time. No other compared technique supports detection across all four modalities: text, video, images, and code.",
+  "abstract_ja": "",
+  "authors": [
+    "Darsh Asher",
+    "Joshua Kalyanapu",
+    "Kaushal Mhapsekar",
+    "Bita Aslrousta",
+    "Amna Hassan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.18895",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Synthetic text, images, and video are rising. Software-only detectors are power-hungry, too slow, and costly, and do not scale with demand.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Lasso: Towards Sustainable AI-Generated Media Detection with Intel QAT On-Chip Compression",
+  "url": "https://arxiv.org/abs/2611.18895",
+  "use_case": ""
+}

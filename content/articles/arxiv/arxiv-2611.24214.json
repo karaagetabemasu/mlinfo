@@ -1,0 +1,31 @@
+{
+  "abstract": "Scaling laws are widely used to predict foundation model performance and guide compute allocation. However, tabular foundation models (TFMs) differ from conventional foundation models in that they are pretrained on virtually unlimited synthetic data from configurable distributions, while ultimately being evaluated on real-world datasets. We investigate whether scaling laws for TabPFNv2-style models reliably extrapolate to larger compute budgets and generalize across evaluation settings. Our analysis reveals differences between synthetic and real-world scaling behavior and shows that accurately fitting a scaling law does not necessarily yield reliable prescriptions on unseen datasets. In particular, selecting configurations using too few evaluation datasets leads to systematically over-optimistic performance estimates. We further demonstrate that compute-optimal scaling requires expanding the range of synthetic pretraining dataset sizes alongside model size and training compute. Increasing the maximum numbers of rows and features sampled during pretraining improves performance and produces more predictable scaling trends. These insights guide the training of more efficient TabPFNv2-like models, using the open-source training pipeline of nanoTabPFN.",
+  "abstract_ja": "",
+  "authors": [
+    "Johannes Hog",
+    "Neeratyoy Mallik",
+    "Steven Adriaensen",
+    "Jan Hendrik Metzen",
+    "Tom Viering"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.24214",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Scaling laws are widely used to predict foundation model performance and guide compute allocation. However, tabular foundation models (TFMs) differ from conventional foundation models in that they…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "tabular"
+    ],
+    "task": []
+  },
+  "title": "Towards Reliable Scaling Laws for Tabular Foundation Models",
+  "url": "https://arxiv.org/abs/2611.24214",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Token transmission over conventional digital modulation is vulnerable to channel impairments, leading to bit errors that cause received tokens to become contextually inconsistent. This paper proposes a receiver-side dual-stage channel-posterior integration framework for masked language model (MLM)-aided token reconstruction. In the proposed framework, the receiver detects unreliable token positions from channel reliability and constructs a vocabulary-level channel-posterior. In particular, within the receiver, Posterior-Weighted Input Embedding (PWE) injects this posterior into the MLM input, while Adaptive Output Logit Fusion (AOF) reuses it at the output with a channel-adaptive weight. Consequently, multiple unreliable tokens can be reconstructed in a single bidirectional MLM inference without retransmission, transmitter-side encoding, or additional MLM training. Experiments over noisy channels show up to a $67.2$\\% improvement in cosine similarity over context-only MLM reconstruction, with consistent gains across different MLM architectures and existing language-model-aided methods.",
+  "abstract_ja": "",
+  "authors": [
+    "Hyelin Nam",
+    "Jihoon Lee",
+    "Seung-Woo Ko",
+    "Jinho Choi",
+    "Seong-Lyun Kim"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.18958",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Token transmission over conventional digital modulation is vulnerable to channel impairments, leading to bit errors that cause received tokens to become contextually inconsistent. This paper proposes…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Dual-Stage Channel-Posterior Integration for MLM-Aided Token Communications",
+  "url": "https://arxiv.org/abs/2611.18958",
+  "use_case": ""
+}

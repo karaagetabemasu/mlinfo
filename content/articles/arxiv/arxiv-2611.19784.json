@@ -1,0 +1,25 @@
+{
+  "abstract": "Parallel Langevin sampling usually draws an array of independent Gaussian vectors, one row per chain. The average row drives the ensemble mean, with variance $1/K$ per coordinate for $K$ chains. Yet the unadjusted Langevin algorithm (ULA) specifies only each row's distribution. Subtracting the column means and rescaling, as in classical antithetic sampling, makes that variance zero. Each chain keeps its ordinary ULA path law for any finite run. For quadratic targets we derive the joint covariance of linear estimates computed from the ensemble mean, including coefficient estimates, time averages and predictions. The identity separates contributions from initial states and Gaussian draws. The coupling changes the second through one scalar, which is zero whenever the draws sum to zero across chains. For nonquadratic targets we bound the remaining variance. Centering has a price: for a quadratic form in the mean-subtracted Gaussian state, the ensemble average has variance $1/(K-1)$ relative to one chain, compared with $1/K$ under independent draws. On three tempered logistic posteriors, eight centered chains reduced the variance of the posterior-mean estimate, summed over coordinates, by two to three orders of magnitude compared with eight independent chains. They also beat 128 independent chains on variance and on variance times sampling time. Under Metropolis correction the reduction shrank to about three- to eightfold: rejected draws no longer balance accepted ones. The measured variance ratios were consistent with a leading-order prediction from rejection frequency and noise energy.",
+  "abstract_ja": "",
+  "authors": [
+    "Ryan Farell"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19784",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Parallel Langevin sampling usually draws an array of independent Gaussian vectors, one row per chain. The average row drives the ensemble mean, with variance $1/K$ per coordinate for $K$ chains.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "How Should Parallel Langevin Chains Share Noise?",
+  "url": "https://arxiv.org/abs/2611.19784",
+  "use_case": ""
+}

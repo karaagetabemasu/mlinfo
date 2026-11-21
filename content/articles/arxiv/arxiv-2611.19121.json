@@ -1,0 +1,36 @@
+{
+  "abstract": "While recent advances in multimodal image editing have achieved impressive results, current frameworks remain largely confined to ``flat\" 2D controls (e.g., text prompts, bounding boxes, or masks). Precise 3D-aware geometric manipulation -- such as coordinating an object's location, physical scale, and 3D orientation while strictly preserving its fine-grained identity -- remains an elusive challenge, typically suffering from severe detail degradation or requiring expensive per-instance fine-tuning. In this paper, we present DecoEdit, an all-in-one image editing framework that goes beyond flat control by seamlessly integrating 1D textual, 2D spatial, and 3D volumetric inputs under a unified architecture. First, to power this unified model, we establish a data curation pipeline and curate a large-scale dataset, namely DecoDataset, containing 1.6 million samples, encompassing diverse multi-dimensional (1D/2D/3D) tasks and their complex compositions. Furthermore, we establish a comprehensive image editing benchmark named DecoBench to systematically evaluate multi-task editing performance. Finally, to address the fundamental trade-off between complex spatial transformations and identity preservation, we propose a novel decoupled pipeline: DecoEdit factorizes the editing process by utilizing structural guidance from SAM-3D to anchor the target geometry, scale, and spatial orientation, while concurrently leveraging a detail-preservation path to lock in high-fidelity textures. Extensive experiments demonstrate that DecoEdit achieves state-of-the-art results. Notably, on the challenging 3D spatial pose and orientation control tasks, DecoEdit significantly outperforms leading closed-source models such as Seedream 5.0 in both geometric accuracy and identity consistency.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiaotang Gai",
+    "Jinbo Xing",
+    "Zijie Meng",
+    "Jiayi Yi",
+    "Jimin Xiao"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19121",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "While recent advances in multimodal image editing have achieved impressive results, current frameworks remain largely confined to ``flat\" 2D controls (e.g., text prompts, bounding boxes, or masks).…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d",
+      "multimodal"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "DecoEdit: Beyond Flat Control for 3D-Aware Unified Image Editing",
+  "url": "https://arxiv.org/abs/2611.19121",
+  "use_case": ""
+}

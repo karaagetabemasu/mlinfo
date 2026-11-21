@@ -1,0 +1,33 @@
+{
+  "abstract": "JEPA-based world models predict action consequences in latent space, but representative planning approaches rely on candidate-action search, requiring repeated evaluation of action sequences and incurring substantial online computational cost. Direct action generation avoids this search, yet how to leverage latent predictions to guide action generation given task goals remains a key challenge in translating learned physical dynamics into effective decisions. We introduce WA-JEPA, a world-action model that couples action generation, action-conditioned latent prediction, and goal-aware feedback. The model first generates an action proposal and predicts the resulting future scenes and proprioceptive states, then refines the proposal through two complementary feedback paths, using the task goal as a reference. Goal-discrepancy residual feedback (GDRF) uses differences between the latent representations of predicted scenes and the task goal to guide chunk-wise action refinement. Future-scene context feedback (FSCF) preserves fine-grained predicted scene representations to guide subsequent action refinement. Jointly learned from offline demonstrations, this process iteratively updates the same plan before execution, making future predictions directly participate in action generation without candidate-action search. We evaluate short-horizon goal reaching, long-horizon tasks, and full-task execution. The results show that goal-aware predictive feedback supports competitive task performance while maintaining a compact model and low online computational cost. Code is available at https://github.com/Dovisya/WA-JEPA.",
+  "abstract_ja": "",
+  "authors": [
+    "Tao An",
+    "Weihang Liang",
+    "Tianqi Wang",
+    "Chuqing Cao",
+    "Wenming Tan"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/Dovisya/WA-JEPA",
+  "hasCode": true,
+  "id": "arxiv-2611.19183",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "JEPA-based world models predict action consequences in latent space, but representative planning approaches rely on candidate-action search, requiring repeated evaluation of action sequences and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "WA-JEPA: Goal-Aware Predictive Feedback Action Refinement for a World-Action Model",
+  "url": "https://arxiv.org/abs/2611.19183",
+  "use_case": ""
+}

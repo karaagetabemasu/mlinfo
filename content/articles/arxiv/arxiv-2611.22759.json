@@ -1,0 +1,30 @@
+{
+  "abstract": "Learning reliable control policies requires accounting for uncertainty in transition dynamics and errors introduced by function estimation and action generation. We develop an actor--critic method for discounted robust Markov decision processes with continuous states and actions and an unknown nominal transition law. We consider transition uncertainty sets defined by Wasserstein distance, total variation, Kullback--Leibler divergence, or Pearson chi-square divergence. A conditional diffusion model is fitted once to offline transitions. At each subsequent iteration, we estimate the robust action-value function from current-policy observations using a shared-target minimax criterion, then update a generative actor through exponentially weighted score matching. Regularization preserves exploration and provides the density regularity needed for conditional distribution estimation. Under coverage and regularity conditions, we establish finite-sample bounds for critic estimation, the learned conditional action law, and the robust return of the implemented policy. The bounds distinguish critic estimation error, uncertainty in the nominal transition model, and policy regularization, and characterize how the four robustness radii affect the resulting guarantees.",
+  "abstract_ja": "",
+  "authors": [
+    "Kunqi Huang",
+    "Lican Kang",
+    "Hongrui Shu",
+    "Jincheng Ying"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.22759",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Learning reliable control policies requires accounting for uncertainty in transition dynamics and errors introduced by function estimation and action generation. We develop an actor--critic method…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Robust Actor-Critic Learning under Transport and Divergence Uncertainty",
+  "url": "https://arxiv.org/abs/2611.22759",
+  "use_case": ""
+}

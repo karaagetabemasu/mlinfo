@@ -1,0 +1,31 @@
+{
+  "abstract": "Anomalies are local events, yet weakly supervised video anomaly detection scores them globally. Most methods pool an entire frame into a single vector, rank frames by that vector, and derive a location afterwards as a saliency map of the score. Full-frame pooling mixes the anomaly with its background, so a detector can reach competitive benchmark scores from scene context without being able to show where in the scene the anomaly occurs. We introduce Region-VAD, which first selects a region and then detects the anomaly from that region alone. Region-VAD selects an explicit rectangle over the tokens of a frozen foundation model and scores anomalousness only from the tokens inside the box, through attention pooling followed by a standard temporal head. The rectangle is not learned, it is the box in which the frozen tokens change most between consecutive segments, in all four feature projections of the encoder, and it is found by exhaustive search over the rectangles of the token grid. Only the pooling and the temporal head are trained, from video-level labels without boxes, masks or frame-level annotations, and no trained component reads a token outside the selected region. Experiments on five datasets, with one localizer configuration shared by all datasets and backbones, show that Region-VAD achieves state-of-the-art anomaly localization on UCF-Crime and MSAD at competitive detection performance.",
+  "abstract_ja": "",
+  "authors": [
+    "Giacomo D'Amicantonio"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.21132",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Anomalies are local events, yet weakly supervised video anomaly detection scores them globally. Most methods pool an entire frame into a single vector, rank frames by that vector, and derive a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "video"
+    ],
+    "task": [
+      "detection",
+      "anomaly-detection"
+    ]
+  },
+  "title": "Region-VAD: Video Anomaly Localization and Detection via Region Selection",
+  "url": "https://arxiv.org/abs/2611.21132",
+  "use_case": ""
+}

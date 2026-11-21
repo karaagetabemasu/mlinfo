@@ -1,0 +1,29 @@
+{
+  "abstract": "Deep learning models that combine genotypes with neuroimaging predict neurological diseases more accurately than either modality alone. Their clinical use, however, requires identifying which genetic variants a prediction is based on. Path-based attribution methods like Integrated Gradients address this by integrating the model's gradient from a baseline to the input. These methods assume the model accepts any point along that path as a valid input. Genotype models violate this assumption. They map the three discrete allele dosages \\{0,1,2\\} to vectors through a learned embedding defined only at those values, so a straight line passes through fractional genotypes at which no embedding, and therefore no gradient, exists. Attribution must therefore proceed in embedding space where the choice of path can affect the resulting attribution. We show that the commonly used per-variant estimator does not generally satisfy completeness. Additive separability guarantees completeness for this estimator, but interactions between variants generally break that property. Instead, we integrate along piecewise-linear embedding-space paths connecting genotype waypoints observed in the training cohort. Each path satisfies completeness in the continuum although the interiors of its segments are not necessarily observed. Our method improves faithfulness over Integrated Gradients and discretized Integrated Gradients under both perturbation protocols, achieves the strongest results for Parkinson's disease classification under support-preserving perturbations, and is competitive with a support-background Shapley baseline under per-variant perturbations. It also shows higher seed stability and better recovery of planted non-additive effects in a synthetic benchmark.",
+  "abstract_ja": "",
+  "authors": [
+    "Amashi Niwarthana",
+    "Aloysius Tan",
+    "Jagath C. Rajapakse"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25681",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Deep learning models that combine genotypes with neuroimaging predict neurological diseases more accurately than either modality alone. Their clinical use, however, requires identifying which genetic…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Explainability of genotype embedding models through observed cohort paths",
+  "url": "https://arxiv.org/abs/2611.25681",
+  "use_case": ""
+}

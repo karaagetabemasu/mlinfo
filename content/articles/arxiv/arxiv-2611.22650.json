@@ -1,0 +1,35 @@
+{
+  "abstract": "Must a detector see generated images in order to catch them? Detection of AI-generated images has long faced two problems. The cues a detector learns from the few generators in its training set carry traces specific to those generators and transfer poorly to new ones, which limits generalization. The real and generated training images also differ in format and content, so the detector takes these differences as evidence of authenticity, and its decisions change with factors that have nothing to do with authenticity, which harms robustness as well as generalization. Both problems stem from training on generated images. A detector never trained on them can largely avoid both at the source. Vision foundation models have already learned the concept of \"AI-generated\" during pretraining, and text can point to it directly. Building on this, we propose SaySee, a training-free detector: Say builds a generation direction from sets of paired descriptions that differ only in authenticity and scores an image by the projection of its embedding onto it, and See uses real images to correct the score offsets caused by format, image type and content. On 24 evaluation sets that span standard benchmarks, in-the-wild data and the latest generators, SaySee reaches a mean AUC of 98.2% with MoE-ViE, 4.2 points above the best existing detector. When format is decoupled from authenticity, it remains the best of all methods. Code will be released.",
+  "abstract_ja": "",
+  "authors": [
+    "Tianchi Xu",
+    "Yuxuan Zhou",
+    "Yuheng Zhang",
+    "Yanan Guan",
+    "Tao Dai"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.22650",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Must a detector see generated images in order to catch them? Detection of AI-generated images has long faced two problems.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection",
+      "generation"
+    ]
+  },
+  "title": "Must You See Fakes to Catch Fakes? Language Says What to Look For, Real Images What to Ignore",
+  "url": "https://arxiv.org/abs/2611.22650",
+  "use_case": ""
+}

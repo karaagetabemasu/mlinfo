@@ -1,0 +1,29 @@
+{
+  "abstract": "Finding effective prompts and seeds for one-step image editors requires balancing edit fidelity, source preservation, and computational cost. To address this challenge, we explore a large collection of candidate edits, where each candidate is defined by a unique prompt-seed pair, and generate corresponding images on demand. We present SearchChord, a training-free framework that leverages a large pool of such candidates, combining text-based preselection, image verification, and latent-field recomposition. Our ablation studies across pool sizes up to 200 candidates show that a pool of 100 offers a cost-effective operating point. Compared with feeding all 100 candidates into recomposition, TextSim preselects a subset of 10 candidates. Rather than uniform averaging, we incorporate image-verifier scores to weight each candidate during recomposition. Experiments on PIE-Bench and the proposed CropWeed-EditBench reveal a trade-off: candidate selection improves target-text alignment, while recomposition better preserves unmodified source content. The oracle verifier achieves the best performance in both preservation and target-text alignment. Practical verification partially recovers semantic alignment, but recomposition still compromises edit fidelity, including in agricultural image edits. These results motivate text-first preselection and stronger verification to balance preservation, fidelity, and cost. Code and data will be made publicly available.",
+  "abstract_ja": "",
+  "authors": [
+    "Boyang Deng",
+    "Yuzhen Lu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19076",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Finding effective prompts and seeds for one-step image editors requires balancing edit fidelity, source preservation, and computational cost. To address this challenge, we explore a large collection…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": []
+  },
+  "title": "SearchChord: Prompt Preselection and Field Recomposition for One-Step Image Editing",
+  "url": "https://arxiv.org/abs/2611.19076",
+  "use_case": ""
+}

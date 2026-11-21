@@ -1,0 +1,29 @@
+{
+  "abstract": "Semantic segmentation gives an autonomous vehicle a dense, pixel-level description of its surroundings and is a core part of scene understanding. Most segmentation networks consist of an encoder (the backbone) and a decoder, yet the backbone is often chosen without a systematic comparison. This work studies this choice on the BDD100K driving dataset. Four widely used decoders (U-Net, FPN, LinkNet and PSPNet) are combined with 13 backbones from six families (ResNet, VGG, DenseNet, Inception, MobileNet and EfficientNet), and all 52 models are trained with one common protocol. The best model, an FPN decoder with an EfficientNet-B4 backbone, reaches 62.6% mean intersection over union (mIoU), 89.8% accuracy and a loss of 0.092. Only two of the 52 models, both FPN with EfficientNet, exceed the 56.9% mIoU reported with the BDD100K benchmark. The effect of the backbone depends strongly on the decoder: the same EfficientNet-B4 gives 42.6% mIoU with PSPNet but 62.6% with FPN, and the gap between the best and the worst backbone ranges from 12.0 points (U-Net) to 42.5 points (FPN). The results and the scope of this study are discussed.",
+  "abstract_ja": "",
+  "authors": [
+    "Ehsan Rassekh"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26191",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Semantic segmentation gives an autonomous vehicle a dense, pixel-level description of its surroundings and is a core part of scene understanding. Most segmentation networks consist of an encoder (the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "Backbone Matters: Benchmarking Encoder-Decoder Networks for Semantic Segmentation of Driving Scenes on BDD100K",
+  "url": "https://arxiv.org/abs/2611.26191",
+  "use_case": ""
+}

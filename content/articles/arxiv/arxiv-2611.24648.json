@@ -1,0 +1,29 @@
+{
+  "abstract": "Quantized neural networks achieve computational efficiency by reducing precision, but bounding their quantization error remains a challenge due to discrete rounding and clamping operations. We present a zonotope-based abstract interpretation framework for quantized ReLU feed-forward network verification, introducing a unified round-clamp abstract transformer that jointly handles both operations. We extend this framework to constrained zonotopes, which add linear constraints to tighten bounds, and derive sound quantization error representations. We establish soundness and affine-strip optimality of the round-clamp abstract transformer, as well as convex-hull optimality of its complete constrained formulation. On the ACAS Xu benchmarks, our constrained zonotope method reduces average error-bound widths by approximately 70-85% and runtimes by 65-80% compared to QEBVerif's symbolic DRA propagation at the two smallest tested perturbation radii (r=3 and r=6). These improvements are not uniform across bitwidths, and symbolic DRA achieves tighter bounds at larger radii. Our plain zonotope method delivers competitive sound bounds nearly 300 times faster on average.",
+  "abstract_ja": "",
+  "authors": [
+    "Robert Debbas",
+    "Éric Goubault",
+    "Sylvie Putot"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.24648",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Quantized neural networks achieve computational efficiency by reducing precision, but bounding their quantization error remains a challenge due to discrete rounding and clamping operations. We…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": []
+  },
+  "title": "Zonotopic Analysis of Quantization Error in Neural Networks",
+  "url": "https://arxiv.org/abs/2611.24648",
+  "use_case": ""
+}

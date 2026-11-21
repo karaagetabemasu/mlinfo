@@ -1,0 +1,32 @@
+{
+  "abstract": "Embedding-based one-to-one association is common in vision and data integration: detections are associated with tracks and records are linked across databases. Such pipelines often solve a sparse optional assignment whose edge scores add a cheap term to an inner product of neural embeddings. When target embeddings are costly, one can acquire them selectively and stop once a certificate proves that the current assignment is optimal. We give such a certificate for unit-norm embeddings. It bounds the unknown part of every reassignment by a support function and maximizes the resulting robust gains with a second sparse assignment; a shared owner-centred bound dominates any fixed-centre triangle bound. We make precise what is certified when network features are not batch-invariant: the realized values of the acquired rows and every unit-ball completion of the rest, not a second forward pass in a different batch. Auditing against a separately batched cache tests a different property; on our first pilot it produced a spurious $2.49\\times10^{-6}$ objective failure. We audit the corrected protocol on four public text entity-matching benchmarks with two frozen encoders; no image data is used. All 96 certificate simulations and 120 online selective timings were exact on their own realization (largest objective gap $6.82\\times10^{-13}$). At group size 8 the shared certificate acquires on average 60% of candidate-active targets, against 74% (mean centre), 69% (MEB) and 60% (zero centre): it beats the mean and MEB centres but not the zero centre, and savings concentrate in one benchmark (7% acquired). The prespecified runtime claim is contradicted: selective execution is +0.510 s slower per run (dataset-cluster 95% interval [+0.248, +0.772]). Uniform-microbatch re-encodings preserved the optimum in only 5 of 8 encoder-dataset cells, and 45 of 120 online runs disagreed with an eager cache at near-ties.",
+  "abstract_ja": "",
+  "authors": [
+    "Hamidreza Hasani Balyani",
+    "Mahtab Movahhedrad",
+    "Seyed Pouyan Mousavi Davoudi"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19770",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Embedding-based one-to-one association is common in vision and data integration: detections are associated with tracks and records are linked across databases. Such pipelines often solve a sparse…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Exact Sparse Assignment with Costly Target Embeddings: Fixed-Realization Certificates and an Empirical Audit",
+  "url": "https://arxiv.org/abs/2611.19770",
+  "use_case": ""
+}

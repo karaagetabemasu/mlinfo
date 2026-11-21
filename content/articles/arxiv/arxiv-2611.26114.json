@@ -1,0 +1,33 @@
+{
+  "abstract": "The Tsetlin Machine (TM) has no explicit notion of a loss function. Its learning signal is fixed to an implicit, margin-based update rule (MBUR), with no way to choose an objective function suited to a specific task. This paper introduces Loss-Guided TM, which replaces MBUR with an explicit and swappable loss function. In our proposed method, clause feedback and weight updates are driven by the loss, while keeping the Tsetlin Automaton and clause logic unchanged. The approach incorporates cross entropy (CE), symmetric cross entropy (SCE), and asymmetric loss (ASL). We evaluate Loss-Guided TM across six datasets that span multiclass, multilabel, and binary classification tasks. With a suitable loss, Loss-Guided TM matches or improves accuracy and F1 over MBUR on five of the six datasets. The gains are greatest for the imbalanced multilabel datasets, where ASL improves macro F1 by up to 9 percentage points. With CE, Loss-Guided TM is also significantly better calibrated than MBUR on all six datasets, reducing calibration error by a factor of 3 to 11. A qualitative inspection shows that the clause-based global interpretability, examined at the per-class level on image and text data, is preserved when using the Loss-Guided mechanism. These results show that our explicit TM learning objective allows direct targeting of uncertainty calibration, data imbalance, and task structure, opening the TM to the broader literature on loss functions.",
+  "abstract_ja": "",
+  "authors": [
+    "Mayur Shende",
+    "Runar Helin",
+    "Ole-Christoffer Granmo",
+    "Vladimir I. Zadorozhny"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26114",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "The Tsetlin Machine (TM) has no explicit notion of a loss function. Its learning signal is fixed to an implicit, margin-based update rule (MBUR), with no way to choose an objective function suited to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Loss-Guided Tsetlin Machines: Making the Learning Objective Explicit",
+  "url": "https://arxiv.org/abs/2611.26114",
+  "use_case": ""
+}

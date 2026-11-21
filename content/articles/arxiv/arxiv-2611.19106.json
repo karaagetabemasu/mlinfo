@@ -1,0 +1,28 @@
+{
+  "abstract": "Detecting suspicious deviations in longitudinal medication trajectories requires distinguishing knowledge-consistent treatment variations from anomalous changes and linking local deviations to account-level decisions. We propose a knowledge-guided local-to-global (L2G) anomaly learning framework that addresses both challenges. It constructs proxy supervision at three granularities: medication occurrences, treatment episodes, and contiguous visit segments. Knowledge-consistent medication and episode replacements provide plausible negatives, while cross-category and cross-account perturbations provide suspicious proxies. A medication-multiset encoder and causal visit-sequence encoder feed a shared scoring head that produces visit-level anomaly logits. Top-\\(α\\) aggregation derives account-level scores from these logits, while account-level classification and class-balanced visit-localization objectives jointly optimize the same visit-level evidence. Experiments on two city cohorts compare L2G with native and proxy-adapted anomaly methods. On City-A, L2G outperforms the strongest comparators. Cross-city results show more consistent gains in localization than in account-level detection.",
+  "abstract_ja": "",
+  "authors": [
+    "Wendi Ji"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19106",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Detecting suspicious deviations in longitudinal medication trajectories requires distinguishing knowledge-consistent treatment variations from anomalous changes and linking local deviations to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "Knowledge-Guided Local-to-Global Anomaly Learning for Longitudinal Medication Trajectories",
+  "url": "https://arxiv.org/abs/2611.19106",
+  "use_case": ""
+}

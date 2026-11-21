@@ -1,0 +1,33 @@
+{
+  "abstract": "Active geo-localization (AGL) asks an agent to navigate a small aerial search grid and reach a target specified by an aerial image, a ground-level photograph, or text. Existing methods align the goal modalities well, but they keep the navigation state inside a large sequential Transformer and train with a dense distance reward that uses the hidden goal location. This paper proposes EAGLE, an Explicit spatial-belief Agent for Geo-Localization and Exploration. Offline training jointly optimizes a teacher-conditioned Swin branch and a context-free Swin student from the same randomly masked partial mosaics. The teacher branch attends to frozen full-scene context extracted by Qwen2.5-VL-7B, both branches receive masked-cell aerial-feature reconstruction and uncertainty supervision, while the student additionally distills stop-gradient feature predictions from the teacher. After distillation, Qwen, its cached context, and the teacher-attention branch are discarded. The retained student predicts cell-level aerial-feature embeddings and predictive uncertainty from partial observations alone. These predictions are combined with the modality-aligned goal embedding and a trajectory-derived visitation mask to construct the spatial belief tensor. The student is then frozen while a compact CNN actor-critic is optimized with PPO. EAGLE achieves state-of-the-art average success rates of 78.1%, 76.4%, and 76.8% on MASA, xBD zero-shot transfer, and the MM-GAG zero-shot aerial-goal split, respectively, without using a VLM or cached visual tokens at inference. Code will be made publicly available.",
+  "abstract_ja": "",
+  "authors": [
+    "Ziyang Xu",
+    "Peng Han",
+    "Hai Zhou"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25866",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Active geo-localization (AGL) asks an agent to navigate a small aerial search grid and reach a target specified by an aerial image, a ground-level photograph, or text. Existing methods align the goal…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "From Sequence to Space: Explicit Spatial Belief with Vision-Language Distillation for Active Geo-Localization",
+  "url": "https://arxiv.org/abs/2611.25866",
+  "use_case": ""
+}

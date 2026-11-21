@@ -1,0 +1,33 @@
+{
+  "abstract": "Self-supervised learning for wearable sensing is usually confined to a single dataset or device family, leaving open whether representations transfer across heterogeneous sensor configurations and whether gains come from pretraining rather than architecture or richer sensor input. We present HeteroWear, a sensor-aware self-supervised framework pretrained on an eight-dataset wearable corpus (173 subjects, 358,261 windows) spanning inertial and physiological signals across body locations, devices, and sampling rates. HeteroWear separates within-sensor temporal modeling from cross-sensor relational modeling using sensor-context embeddings, temporal and cross-sensor Transformers, and latent cross-attention fusion. Training combines structured sensor dropout, cross-configuration consistency, and per-axis masked sensor modeling; missing sensors are omitted rather than reconstructed. Under leave-one-dataset-out pretraining and subject-disjoint evaluation on PAMAP2, WISDM, HHAR, HARTH, and UCI-HAR, HeteroWear improves mean macro-F1 from 0.688 to 0.724 over the identical architecture trained from scratch, with the largest gain on HHAR (0.823 versus 0.741), and achieves the highest macro-F1 on four of five benchmarks relative to single-accelerometer supervised baselines. Held-out-device evaluation yields a mean +0.066 macro-F1 improvement. Under 50% test-time channel removal, HeteroWear retains 73.8% of full-channel performance versus 64.1% for the same architecture trained from scratch without sensor dropout. Ablations show that structured sensor dropout primarily drives robustness, while cross-configuration consistency and sensor-context encoding contribute to transfer.",
+  "abstract_ja": "",
+  "authors": [
+    "Yasaman Mohammadpour",
+    "Pouya Shaeri"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19027",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Self-supervised learning for wearable sensing is usually confined to a single dataset or device family, leaving open whether representations transfer across heterogeneous sensor configurations and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "supervised",
+      "self-supervised"
+    ],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "HeteroWear: Sensor-Aware Self-Supervised Learning for Heterogeneous Wearable Activity Recognition",
+  "url": "https://arxiv.org/abs/2611.19027",
+  "use_case": ""
+}

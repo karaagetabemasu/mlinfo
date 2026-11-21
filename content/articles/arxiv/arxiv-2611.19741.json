@@ -1,0 +1,31 @@
+{
+  "abstract": "Can a pressure surrogate score much better globally without better resolving the pressure around immersed bodies? We test this in a three-dimensional lid-driven cavity with an unregularized lid and centered pressure at native $128^3$ resolution. On 60 cases from 12 unseen geometries, with predictions sealed before the CFD truth existed, adding a body-free, Reynolds-conditioned reference correction to the same frozen $64^3$ surrogate lifted to $128^3$ lowers the mean full-volume relative $L_2$ error from 20.6% to 7.5%. In the post hoc regional analysis, the lid-edge junction occupies 1.5% of the fluid but holds 69% of the truth pressure energy and 95% of the uncorrected surrogate's squared error. Interior error changes by just +0.16% relative, and object-local peak error and recall change little on average. Retrospective ablations locate the learned term's contribution in the interior and near the bodies; rebasing on the reference lowers global error further with little change in cohort-mean near-body metrics. Reference-relative body-response error remains about 25% in the interior near-body band. Grid-refinement, lid-regularization and convergence checks delimit the numerical scope. In this benchmark, a large global gain chiefly reflects correction of a shared boundary field, not better resolution of the body response. We recommend reporting regional truth-energy and model-error shares alongside near-body and reference-relative body-response errors.",
+  "abstract_ja": "",
+  "authors": [
+    "Zirun Zhou",
+    "Zhi-Qian Zhang",
+    "Yixuan Hong",
+    "Guang Liu",
+    "Zhigang Liu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19741",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Can a pressure surrogate score much better globally without better resolving the pressure around immersed bodies? We test this in a three-dimensional lid-driven cavity with an unregularized lid and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Where the Error Lives: Separating Lid-Edge and Body-Induced Error in Neural Pressure Prediction for 3D Cavity Flow",
+  "url": "https://arxiv.org/abs/2611.19741",
+  "use_case": ""
+}

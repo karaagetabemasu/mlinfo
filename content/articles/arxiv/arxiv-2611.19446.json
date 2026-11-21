@@ -1,0 +1,31 @@
+{
+  "abstract": "Depth recurrence increases effective model depth by repeatedly applying a fixed computation block. However, sharing attention parameters does not share the key-value (KV) states generated at different recurrence iterations, which causes memory growth with recurrence depth during autoregressive decoding. We study how to reduce this memory cost through architectural and cache-sharing approaches within a common depth-recurrent framework. We first study a looped hybrid that repeats a stack of Transformer layers, with recurrent mLSTM or Gated DeltaNet blocks replacing most attention layers and periodic Transformer attention anchors retained. We then restrict recurrence to a dedicated recurrent workspace in a Parcae-style architecture and test its stabilising adapter as a wrapper for the looped hybrid. Finally, we train a looped Transformer with recurrent KV replay, where only selected recurrence iterations write KV states that later iterations reuse. This trains the model to operate with the same shared KV topology used during inference. We find that looped hybrids require sufficiently frequent attention anchors, with performance depending strongly on the recurrent mixer. For cross-iteration KV sharing, recurrent KV replay allows multiple recurrence iterations to reuse the same KV states while retaining performance close to the full looped Transformer with separate KV caches for each iteration.",
+  "abstract_ja": "",
+  "authors": [
+    "Lucia Licakova",
+    "Niklas Schmidinger",
+    "Lukas Hauzenberger",
+    "Sebastian Böck",
+    "Sepp Hochreiter"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19446",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Depth recurrence increases effective model depth by repeatedly applying a fixed computation block. However, sharing attention parameters does not share the key-value (KV) states generated at…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Architectures and KV Replay for Depth-Recurrent Language Models",
+  "url": "https://arxiv.org/abs/2611.19446",
+  "use_case": ""
+}

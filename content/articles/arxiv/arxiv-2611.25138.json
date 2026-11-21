@@ -1,0 +1,27 @@
+{
+  "abstract": "End-to-end driving models learn to plan from data, and hand-written planners are widely treated as a thing of the past. We test whether this is justified: we implement sixteen textbook planners, each combining a path source (reference line, A*, hybrid A*, RRT*) with a trajectory method (Frenet lattice, nonlinear optimization, $s$--$t$ search, dynamic window), and evaluate them on three benchmarks: open loop on nuScenes, closed loop on nuPlan with ground-truth perception, and photorealistic closed loop on HUGSIM. On HUGSIM, they replace only the planner of the end-to-end model UniAD and read its frozen perception, without an HD map or other privileged information. On nuScenes and nuPlan, the best textbook planners are competitive (L2 error of 0.735\\,m against 0.947\\,m for UniAD's planner; a nuPlan score of 79.3 against 76.1 for the rule-based PDM-Closed on Test14-hard with reactive agents). On HUGSIM, nine of the sixteen score above UniAD's learned planner on the same perception,. The best, a hybrid A* path followed by nonlinear trajectory optimization, raises HUGSIM's driving score (HD-Score) from 32.0 to 41.8. The gain is largest with standing and oncoming cars; against cars that steer at the ego, there is none. In 31 of the 182 runs in which UniAD's planner hits a car, the best textbook planner completes the route on the same perception: these crashes are due to the planner, not the perception.",
+  "abstract_ja": "",
+  "authors": [
+    "Andreas Look"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25138",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "End-to-end driving models learn to plan from data, and hand-written planners are widely treated as a thing of the past. We test whether this is justified: we implement sixteen textbook planners, each…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Old-School Planners Drive (Sometimes) Better Than Learned Ones",
+  "url": "https://arxiv.org/abs/2611.25138",
+  "use_case": ""
+}

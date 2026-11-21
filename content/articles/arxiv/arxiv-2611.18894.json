@@ -1,0 +1,32 @@
+{
+  "abstract": "3D human mesh recovery (HMR) in close-interaction scenarios is hindered by the lack of large-scale, accurately annotated training data: real capture is expensive, and existing synthetic datasets rarely include physical contact. We introduce CISyn, a large-scale synthetic dataset purpose-built for close human-human interactions, generated via physics simulation and Blender-based rendering. By simulating collision dynamics between SMPL-X-rigged humanoids, CISyn naturally produces the contact, mutual occlusion, and pose entanglement that characterize close-interaction scenes, with no manual annotation effort. The released set provides 25,000 sequences with accurate 3D annotations. We further propose an uncertainty-aware loss that allows models to learn more effectively from the heavily occluded examples in our data. Augmenting state-of-the-art HMR training with CISyn and replacing the regression loss with our uncertainty-aware variant yields consistent improvements on close-interaction benchmarks, validating CISyn as a scalable complement to real-world data. The dataset, generation pipeline, and code are available at https://github.com/yfde/CISyn.",
+  "abstract_ja": "",
+  "authors": [
+    "Yufan Deng",
+    "Lorenza Prospero",
+    "Christian Rupprecht"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/yfde/CISyn",
+  "hasCode": true,
+  "id": "arxiv-2611.18894",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "3d",
+  "summary": "3D human mesh recovery (HMR) in close-interaction scenarios is hindered by the lack of large-scale, accurately annotated training data: real capture is expensive, and existing synthetic datasets…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "generation",
+      "regression"
+    ]
+  },
+  "title": "CISyn: Human Mesh Recovery in Close Interactions with Physics-Simulated Synthetic Data",
+  "url": "https://arxiv.org/abs/2611.18894",
+  "use_case": ""
+}

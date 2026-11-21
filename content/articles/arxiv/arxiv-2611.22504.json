@@ -1,0 +1,38 @@
+{
+  "abstract": "Medical vision-language models (VLMs) capture cross-modal relationships between image and text, yet their adaptation to institution-specific clinical tasks remains underexplored. In this study, we fine-tuned a pretrained 3D medical VLM for hepatocellular carcinoma (HCC) classification using paired abdominal CT scans and radiology reports from a different institution with acquisition characteristics that differ from the model's original pretraining corpus. We compared two adaptation strategies: full fine-tuning and parameter-efficient fine-tuning (PEFT), motivated by the common use of PEFT to reduce computational cost and enable adaptation under limited-data constraints. Both approaches achieve strong downstream HCC classification performance despite the cross-institutional domain shift, with PEFT reaching an AUC of 0.79 and F1 of 0.70, and full fine-tuning achieving an AUC of 0.82 and F1 of 0.71. Although these results remain below the performance reported by supervised HCC classification approaches, our method achieves improvements over the pretrained model through CT-report contrastive learning without requiring lesion-level annotations or HCC classification labels as training targets. Full fine-tuning converges rapidly but overfits within a few epochs, whereas PEFT (ConvLoRA for the image encoder and LoRA for the text encoder) attains comparable performance while updating approximately 1% of the model parameters, although requiring more training steps. We also examine the role of contrastive temperature, observing that temperature initialization significantly affects classification performance. This study demonstrates that a 3D medical VLM can be efficiently adapted to institution-specific HCC classification using self-supervised CT-report contrastive learning, while highlighting the practical trade-offs between full fine-tuning and parameter-efficient fine-tuning.",
+  "abstract_ja": "",
+  "authors": [
+    "Febryan Putra Kartika",
+    "Cheng-Yu Ma",
+    "Ying-Jia Lin",
+    "Chi-Tung Cheng",
+    "Kuan-Fu Chen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.22504",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Medical vision-language models (VLMs) capture cross-modal relationships between image and text, yet their adaptation to institution-specific clinical tasks remains underexplored. In this study, we…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [
+      "image",
+      "text",
+      "3d",
+      "multimodal"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Efficient Self-Supervised Adaptation of 3D Abdominal Vision-Language Model for Institution-Specific HCC Classification via Full Fine-Tuning and PEFT",
+  "url": "https://arxiv.org/abs/2611.22504",
+  "use_case": ""
+}

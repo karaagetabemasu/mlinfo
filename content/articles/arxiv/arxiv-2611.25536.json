@@ -1,0 +1,30 @@
+{
+  "abstract": "Estimating the score function of a distribution plays a central role in statistics and machine learning, with applications in distribution estimation, sampling, and score-based generative modeling. However, learning scores from sensitive data raises privacy concerns. These concerns are particularly pronounced in score-based generative modeling, where trained models may memorize individual training examples and expose sensitive information through membership inference and data extraction attacks. Although non-private score estimation has been extensively studied, the statistical limits of its private counterpart remain less understood. In this work, we study score estimation under $(α,β)$-differential privacy for $d$-dimensional sub-Gaussian distributions with locally $γ$-Hölder-continuous scores. We develop a sampling-based private score estimator using quadratic B-splines and the exponential mechanism, and we implement our proposal through projected Langevin Monte Carlo with runtime polynomial in the sample size $n$. The proposed estimator satisfies $(α,β)$-differential privacy, and achieves expected density-weighted squared error $\\mbox{polylog}(n) \\max(n^{-2γ/(d+2γ+2)},\\,(nα)^{-2γ/(d+γ+1)})$. We also establish a nearly matching private minimax lower bound, thereby characterizing the privacy-accuracy trade-off for score estimation. As an application, we construct a differentially private diffusion model whose privacy guarantee is independent of the number of denoising steps. We show that, with an appropriate discretization scheme, the resulting diffusion model attains nearly minimax optimal expected total variation error among all private distribution estimators. We validate our theoretical findings through experiments on both synthetic and real-world datasets.",
+  "abstract_ja": "",
+  "authors": [
+    "Mengxiao Gao",
+    "Elly K. H. Hung",
+    "Yuchen Wu",
+    "Yi Yu"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25536",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Estimating the score function of a distribution plays a central role in statistics and machine learning, with applications in distribution estimation, sampling, and score-based generative modeling.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Differentially Private Score Estimation with Applications to Score-Based Generative Models",
+  "url": "https://arxiv.org/abs/2611.25536",
+  "use_case": ""
+}

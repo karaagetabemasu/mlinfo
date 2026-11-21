@@ -1,0 +1,34 @@
+{
+  "abstract": "Generalised referring expression comprehension (GREC) aims to identify and localise the zero, one or multiple objects referred to by a language expression. In robotic manipulation, grounding also needs to remain accurate when requests for the same objects are paraphrased or embedded in additional context in robotics. However, grounding expert models are sensitive to instruction variation, while generative vision--language models (VLMs) struggle with complete target recovery and rejection of absent targets. These complementary limitations motivate combining the contextual representations of VLMs with the direct spatial prediction capabilities of grounding experts. We therefore introduce VLM-guided Grounding Expert (VGE), which combines a frozen VLM with a trainable grounding expert through layerwise joint attention and text-conditioned instance scoring. These interfaces leverage multimodal understanding of the VLM to guide object-query refinement and candidate selection while retaining direct bounding-box prediction. Across three datasets, VGE achieves the highest averaged F1 score among the evaluated methods on all five test splits, with differences of at most 1.2 percentage points across instruction conditions within each split. On the dataset with robotic scenes, VGE also achieves the highest F1 across instruction variants and no-target, single-target and multiple-target cases. VGE provides a $5.3$--$13.0\\times$ inference speedup over the baseline with the same VLM base model. These results support combining VLM context with specialised spatial prediction to address both grounding challenges, with particularly strong performance in robotic scenes. Code will be released upon publication.",
+  "abstract_ja": "",
+  "authors": [
+    "Mingcheng Zhu",
+    "Wentian Xu",
+    "Tao Lin",
+    "Shiying Duan",
+    "Ziyun Liang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.22625",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Generalised referring expression comprehension (GREC) aims to identify and localise the zero, one or multiple objects referred to by a language expression. In robotic manipulation, grounding also…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "VLM-guided Grounding Expert for Generalised Referring Expression Comprehension",
+  "url": "https://arxiv.org/abs/2611.22625",
+  "use_case": ""
+}

@@ -1,0 +1,32 @@
+{
+  "abstract": "Self-driving laboratories must learn to control a process from tens to hundreds of expensive experiments, too few for deep reinforcement learning (RL). We learn the Q-function directly with a Gaussian process (GP), which avoids learning the dynamics, and show that the GP posterior supplies the learning rate of Q-learning. If each Bellman target is treated as a noisy measurement of the Q-function, the learning rate that minimises the mean squared error is the Kalman gain, and applying it to every observed transition is equivalent to GP regression. Heteroscedastic Gaussian Process Q-learning (HGPQ) sets the noise variance of each target with a heteroscedastic GP, which learns how unreliable the targets are across the states and inputs. Targets from noisy operating conditions, or from regions where the value function has large gradients, then move the estimate less than targets from low-noise regions, so HGPQ learns quickly where the data are reliable without being misled where they are not. For kernel value iteration with per-target variances that are assigned when a target is collected, we prove a high-probability bound on the error of the value estimate, uniform over the explored region. Pooled over five simulated benchmarks, which include a chemical reactor and a bioprocess, HGPQ approaches the best return found by any method in fewer episodes than GP, kernel and deep RL baselines.",
+  "abstract_ja": "",
+  "authors": [
+    "Maximilian Bloor",
+    "Max Mowbray",
+    "Calvin Tsay",
+    "Ehecatl Antonio del Rio Chanona"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.21249",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Self-driving laboratories must learn to control a process from tens to hundreds of expensive experiments, too few for deep reinforcement learning (RL). We learn the Q-function directly with a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Heteroscedastic Gaussian Process Q-learning for Sample Efficient Experimentation",
+  "url": "https://arxiv.org/abs/2611.21249",
+  "use_case": ""
+}

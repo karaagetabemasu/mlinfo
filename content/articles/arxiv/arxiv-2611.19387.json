@@ -1,0 +1,33 @@
+{
+  "abstract": "In indoor 3D localization inside multistory buildings, an elevator or an escalator accelerates for a few seconds and then cruises at constant velocity for tens of seconds. Gait excitation disappears, the specific force degenerates into a constant gravity reaction, and instantaneous velocity becomes unobservable within a 1-2 s window. The output of short-window learned inertial odometry consequently degrades toward the conditional mean of the training set, and vertical displacement is systematically underestimated. We propose Local-Token Causal Attention (LTCA), a long-horizon architecture that compresses each 1 s inertial window into a 1 Hz motion token and sustains, over a bounded 60 s causal cache, the motion state established at the onset event. We further introduce a pluggable barometer branch that, when online, supplies a direct elevation constraint to the vertical channel through local differential height observations, and we train it with paired online/fallback conditional training so that the barometer also regularizes the representation shared by the two modes during training. On MSIO, our benchmark of nine buildings, the RoNIN and TLIO instances reach 3D trajectory errors (ATE-3D) of 2.83/4.18 m and 2.44/5.12 m on the Seen and Unseen splits, respectively, with the barometer online. With the barometer disabled at inference, the same weights fall back to pure inertial inference and reach 3.24/4.28 m and 2.64/5.23 m, still below every native short-window baseline. We further validate the framework on the public RoNIN and TLIO benchmarks.",
+  "abstract_ja": "",
+  "authors": [
+    "Tianzi Zhang",
+    "Yan Wang",
+    "Hao Qiao",
+    "Jian Kuang",
+    "Xiaoji Niu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19387",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "In indoor 3D localization inside multistory buildings, an elevator or an escalator accelerates for a few seconds and then cruises at constant velocity for tens of seconds. Gait excitation disappears,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Long-Horizon Causal Inertial Odometry in Multistory Buildings",
+  "url": "https://arxiv.org/abs/2611.19387",
+  "use_case": ""
+}

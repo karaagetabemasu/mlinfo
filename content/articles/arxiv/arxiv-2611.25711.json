@@ -1,0 +1,34 @@
+{
+  "abstract": "We enable accurate low-bit recovery from small synthetic pools by improving both image synthesis and student preparation. A grid with lower local response error can incur greater error in the student's block context. Functional Grid Calibration (FGC) selects activation scales and integer offsets against full-precision responses constructed from the student's current block input. With weights fixed during calibration, FGC evaluates candidates only at their consuming operators, bringing block context to calibration at nearly local-scoring cost. For DeiT and ViT, progressive inversion updates the same images through increasingly deep teacher prefixes. With 1,000 images, the complete pipeline exceeds MimiQ's reported accuracy in all 18 W4A4/W5A5 settings across nine backbones. With 256 images, DeiT-S and ViT-S reach 68.20% and 66.90% ImageNet top-1 accuracy at W4A4 in 26-27 minutes on one RTX 5090. The pipeline outperforms strengthened 1K-image MimiQ by 13.03 and 24.36 percentage points at lower preparation cost and the same recovery-update count. The same low-budget checkpoints retain their advantage on ImageNetV2.",
+  "abstract_ja": "",
+  "authors": [
+    "Haowen Hua",
+    "Sen Lin",
+    "Yaokun Huang",
+    "Zeyi Shao",
+    "Hao Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25711",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "We enable accurate low-bit recovery from small synthetic pools by improving both image synthesis and student preparation. A grid with lower local response error can incur greater error in the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Calibrate in Context: Efficient Data-Free Quantization from Small Synthetic Pools",
+  "url": "https://arxiv.org/abs/2611.25711",
+  "use_case": ""
+}

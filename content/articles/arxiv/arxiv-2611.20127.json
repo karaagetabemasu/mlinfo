@@ -1,0 +1,30 @@
+{
+  "abstract": "A search drone sees a missing person as a few pixels, carries a small computer, and shares a narrow radio link. We study person detection under those limits; the primary evaluations were declared before they ran, and later analyses are marked exploratory. In an exploratory comparison, holding out recording blocks inferred from thermal frame identifiers cut recall at a fixed false-alarm target from 32.7% to 12.3%. With nothing tuned on test blocks, a 46,000-parameter detector gated by a contrast cue finds 10.4% of people against 5.7% for the same network applied everywhere. A standard detector, YOLO11n, trained under the same folds finds 54.5% at a similar false-alarm rate for about eleven times the arithmetic, and on our 4K field footage at 117 m has a walking person among its top 16 detections in up to 92% of frames against 74% for our board. Run alone, YOLO11n's thresholds set at one location overshot their false-alarm target 1.7 to 3.4 times at new locations, and its best configuration at altitude cost 4 to 24 standard passes per frame. Re-scoring its 16 best crops (154 KB per frame) with an 842,000-parameter ground model, thresholds frozen on a validation location, raised recall from 44.9% to 53.7% against the same 16 crops with YOLO's own scores; in a post hoc paired analysis over 15 test locations the gain was +8.8 points [+2.4, +12.5]. Pooled false detections fell from 0.86 to 0.64 per frame, but that paired change was not distinguishable from zero. Coverage of a still person in earth tones was very low for both detectors in the clips we flew.",
+  "abstract_ja": "",
+  "authors": [
+    "Raghu Venkat",
+    "Tricha Anjali"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.20127",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "A search drone sees a missing person as a few pixels, carries a small computer, and shares a narrow radio link. We study person detection under those limits; the primary evaluations were declared…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Aerial Person Detection under Edge Constraints: Held-Out Evaluation and Edge-Ground Verification",
+  "url": "https://arxiv.org/abs/2611.20127",
+  "use_case": ""
+}

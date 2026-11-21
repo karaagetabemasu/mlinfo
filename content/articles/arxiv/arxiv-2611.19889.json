@@ -1,0 +1,34 @@
+{
+  "abstract": "Attribution methods are commonly validated through convergence across methods and consistency with domain knowledge, yet neither criterion establishes whether identified features are necessary for a task. This limitation is particularly relevant in multispectral remote sensing, where overlapping spectral information makes individual bands potentially substitutable. We investigate this gap in crop-type classification using GradientSHAP, Shapley sampling, and Occlusion on a U-TAE segmentation model trained on Sentinel-2 time series from the PASTIS benchmark. All three methods identify vegetation-sensitive spectral regions consistent with domain knowledge, while Shapley and Occlusion exhibit strong ordering sensitivity in deletion and insertion tests. However, these properties do not reliably predict retraining performance. Aggregate attribution consensus masks substantial per-class disagreement, with pairwise mean Spearman correlations ranging from 0.09 to 0.79. Models retrained from scratch using the five lowest-ranked bands perform comparably to or better than those using the five highest-ranked bands. Furthermore, attribution rankings from an independently trained model with identical configuration and seed identify a different top-five subset that yields better retraining performance. Analysis of all 252 five-band subsets reveals consistently low effective dimensionality (1.35 to 2.62), suggesting substantial spectral redundancy. These findings demonstrate that plausible and apparently faithful attribution rankings do not necessarily identify task-relevant bands for improved retrained performance, highlighting the limitations of band-level feature attribution in spectrally redundant input spaces.",
+  "abstract_ja": "",
+  "authors": [
+    "Sumit Tahiliani",
+    "Avi Mathur",
+    "Sandarbh Agarwal",
+    "Rakshith Sathish",
+    "Ashwathi Nambiar"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19889",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Attribution methods are commonly validated through convergence across methods and consistency with domain knowledge, yet neither criterion establishes whether identified features are necessary for a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "time-series"
+    ],
+    "task": [
+      "classification",
+      "segmentation"
+    ]
+  },
+  "title": "Illusion of Explainability: A Sanity Check for Spectral Band Attribution in Satellite Time-Series Crop Classification",
+  "url": "https://arxiv.org/abs/2611.19889",
+  "use_case": ""
+}

@@ -1,0 +1,30 @@
+{
+  "abstract": "We present FAB (Fast and Accurate Body estimation), a human body estimator that jointly improves inference efficiency and body-recovery fidelity. Rather than predicting only parametric mesh-model parameters, FAB directly predicts human skeleton joints and dense surface points. In images, it predicts dense 2D and 3D body points alongside a parametric Momentum Human Rig (MHR) head, then fits SMPL in one learned pass followed by two Gauss-Newton steps. Its ViT-L student, FAB-L, distilled from a fine-tuned SAM 3D Body, runs in real time for one person on an RTX 4070 Ti SUPER, from detection to a fitted body, at 4.6x the speed of SAM 3D Body's eager-PyTorch body-only path, while improving accuracy on most camera-space benchmarks. The same network predicts heel, toe, hand, and knee contacts, which connect the body to the scene. FAB also estimates world-space motion, fuses static-scene depth around the visible person, and aligns body and scene using predicted contacts. For human-to-humanoid real-to-sim transfer, an in-model G1 head and FAB-Retarget, a motion-level retargeter that reads dense points or the fitted mesh, map motion to a Unitree G1. FAB-Retarget produces references that follow the person more closely than specialized retargeters including SOMA, GMR, UMR, and OmniRetarget, and substantially more closely than Fast SAM 3D Body retargeted with our sequence IK. Project page: https://www.jinkuncao.com/FAB.",
+  "abstract_ja": "",
+  "authors": [
+    "Jinkun Cao"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25801",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "We present FAB (Fast and Accurate Body estimation), a human body estimator that jointly improves inference efficiency and body-recovery fidelity. Rather than predicting only parametric mesh-model…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Fast and Accurate Body Estimation in Pixels, World Space and Scenes",
+  "url": "https://arxiv.org/abs/2611.25801",
+  "use_case": ""
+}

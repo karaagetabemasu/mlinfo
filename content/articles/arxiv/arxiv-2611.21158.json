@@ -1,0 +1,27 @@
+{
+  "abstract": "Simulation-based inference (SBI) enables posterior estimation when the likelihood is intractable but data can be simulated from the model. For high-dimensional or variable-length data, SBI methods typically rely on low-dimensional summary statistics as conditioning inputs for posterior estimation, making their sufficiency crucial for accurate inference. Mutual information (MI) provides a natural information-theoretic characterization of sufficiency, quantifying how much parameter information a summary retains. However, these MI quantities are generally intractable in likelihood-free settings. Sui et al. (2026) estimate MI from a trained neural posterior using the Barber--Agakov (BA) lower bound, while discussing, but not computing, a Fisher-information upper bound. This makes the estimate ambiguous: a small lower bound may indicate either an insufficient summary or an inaccurate density estimator. We address this limitation with a tractable diagnostic that estimates the BA gap and reveals what the difference between bounds has actually measured. We extend the resulting sufficiency metric to observation-centered restricted data spaces, allowing simulations to focus on a neighborhood of the data while preserving the target posterior and enabling valid sufficiency comparisons between summaries. We illustrate the use of this diagnostic tool on a temporal epidemic-type aftershock sequence model by comparing learned and hand-crafted summary statistics for variable-length earthquake catalogs.",
+  "abstract_ja": "",
+  "authors": [
+    "Renjie Peng",
+    "Christian Genest",
+    "David A. Stephens"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.21158",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "video",
+  "summary": "Simulation-based inference (SBI) enables posterior estimation when the likelihood is intractable but data can be simulated from the model. For high-dimensional or variable-length data, SBI methods…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Summary Sufficiency in Simulation-Based Inference via Mutual Information",
+  "url": "https://arxiv.org/abs/2611.21158",
+  "use_case": ""
+}

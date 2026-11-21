@@ -1,0 +1,33 @@
+{
+  "abstract": "Brain tumors are among the most lethal neurological disorders, with over 308,000 new diagnoses annually worldwide. Accurate classification of tumor type from Magnetic Resonance Imaging (MRI) scans is critical for treatment planning; however, manual radiological interpretation is time-consuming and prone to inter-observer variability. This paper proposes an automated deep learning pipeline for four-class brain MRI classification (glioma, meningioma, no tumor, and pituitary tumor) using EfficientNetB3 transfer learning with a custom classification head. A two-phase training strategy is adopted: Phase 1 trains the head with a frozen backbone (best validation accuracy: 92.77%), and Phase 2 selectively fine-tunes the top 37 layers at a 100x reduced learning rate (best validation accuracy: 94.91%). On an independent balanced test set of 1,600 MRI images, the system achieves 90.62% overall accuracy and a macro-average AUC of 0.9854. Gradient-weighted Class Activation Mapping (Grad-CAM) is integrated for class-discriminative visual explainability. The proposed system simultaneously addresses three dimensions absent in prior work: high accuracy, CPU-only computational efficiency, and clinical interpretability.",
+  "abstract_ja": "",
+  "authors": [
+    "Deepro Das",
+    "Saad Kabir Uddin",
+    "Mohammad Alauddin",
+    "Bornali Sarker",
+    "Thasnim Akhter"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.24440",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Brain tumors are among the most lethal neurological disorders, with over 308,000 new diagnoses annually worldwide. Accurate classification of tumor type from Magnetic Resonance Imaging (MRI) scans is…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Explainable and CPU-Efficient Brain Tumor Classification from MRI Using Two-Phase EfficientNetB3 Fine-Tuning",
+  "url": "https://arxiv.org/abs/2611.24440",
+  "use_case": ""
+}

@@ -1,0 +1,34 @@
+{
+  "abstract": "Large Language Models (LLMs) have shown strong potential in parameterized layout generation via tool-augmented code synthesis. However, LLMs lack spatial awareness, making one-shot generation unreliable. While layout quality can be evaluated with established techniques, a critical gap remains: geometric-domain evaluation outcomes cannot be directly translated into actionable code-level fixes, trapping iterative refinement in blind refactoring. We propose SGLayout, a self-refining framework that closes this gap via a schema-guided mechanism. Upon code execution, a structured schema captures the correspondence between each code-level instance and its geometric attributes, establishing a bidirectional link between code space and geometry space. Emulating engineer review practices, SGLayout evaluates layouts along two complementary dimensions: intent compliance through quantitative structural checking and qualitative vision-language assessment, and rule compliance through DRC. All identified violations are then back-projected through the schema onto precise code targets, enabling surgical repair. This closed-loop process iterates until layout convergence. On a curated benchmark of 112 parameterized layout generation tasks using GDSFactory, SGLayout achieves a 76.79% pass rate, compared with 50.89% for the strongest baseline.",
+  "abstract_ja": "",
+  "authors": [
+    "Siyang Chen",
+    "Yuan Pu",
+    "Yuhan Qin",
+    "Zhaotan Lin",
+    "Siyuan Liang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25410",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Large Language Models (LLMs) have shown strong potential in parameterized layout generation via tool-augmented code synthesis. However, LLMs lack spatial awareness, making one-shot generation…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "SGLayout: Schema-Guided Closed-Loop Refinement for LLM-Driven Parameterized Layout Generation",
+  "url": "https://arxiv.org/abs/2611.25410",
+  "use_case": ""
+}

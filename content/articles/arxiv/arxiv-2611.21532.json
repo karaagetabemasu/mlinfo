@@ -1,0 +1,31 @@
+{
+  "abstract": "Saliency-guided coding allocates bits to the regions viewers are most likely to attend, but accurate 360-degree saliency prediction is computationally expensive, an obstacle for low-latency immersive streaming applications such as robot teleoperation. We quantify how much saliency-prediction accuracy actually translates into compression gain. Building on a saliency-guided rate-distortion-optimized (RDO) learned codec, modified so that the training-time latent mask is driven by ground-truth saliency, which yields a single, predictor-agnostic codec, we evaluate saliency predictors spanning two orders of magnitude in compute on both the learned codec and H.265/HEVC. The results show that higher saliency-prediction accuracy yields diminishing compression gains: a lightweight predictor fast enough for live use (52 frames per second) captures 65% of the ground-truth oracle's bit-rate saving, a 3.3x heavier one reaches 74%, and a further 38x increase in compute adds no measurable benefit, on either codec. Therefore, lightweight predictors might also be a practical choice for latency-constrained 360-degree streaming.",
+  "abstract_ja": "",
+  "authors": [
+    "Sakib Ahmed",
+    "Sidi-Mohammed Senouci",
+    "Philippe Brunet",
+    "Guillaume Caron",
+    "Nevrez Imamoglu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.21532",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Saliency-guided coding allocates bits to the regions viewers are most likely to attend, but accurate 360-degree saliency prediction is computationally expensive, an obstacle for low-latency immersive…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "How Much Does Saliency Accuracy Matter for Saliency-Guided 360-degree Image Compression?",
+  "url": "https://arxiv.org/abs/2611.21532",
+  "use_case": ""
+}

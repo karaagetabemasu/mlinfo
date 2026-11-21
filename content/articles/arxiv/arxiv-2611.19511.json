@@ -1,0 +1,34 @@
+{
+  "abstract": "Automated Magnetic Resonance Imaging (MRI) image classification provides a crucial non-invasive approach for neurological diagnosis, yet it is fundamentally challenged by inherent acquisition noise and high inter-subject structural similarity, which obscure subtle pathological variations, thereby limiting the performance of deep neural networks. While contrastive learning (CL) offers a promising mitigation strategy, existing paradigms rely on rigid binary partitions that ignore negative sample heterogeneity, and they fail to capture the cross-view structural consistency vital for fine-grained anatomical alignment. To address these barriers, we propose Dual-Branch Hierarchical Contrastive Learning (DBHiCo), a novel framework explicitly designed to collaboratively enforce structural consistency and semantic discrimination. Specifically, DBHiCo leverages a natural anatomical multi-view pair (original and skull-stripped MRI scans), processing them through a dual-branch architecture to seamlessly integrate holistic structural robustness with localized intracranial details. Crucially, we introduce a hierarchical contrastive loss that discards conventional binary constraints in favor of a margin-ranked similarity hierarchy. This mechanism explicitly orders positive and negative pairs based on their structural and semantic difficulty, thereby amplifying the fine-grained semantic discriminability of the learned representations. Extensive experiments across three diverse neurological datasets demonstrate that DBHiCo achieves state-of-the-art performance, consistently outperforming existing MRI multi-view representation learning and advanced contrastive fine-tuning methods.",
+  "abstract_ja": "",
+  "authors": [
+    "Chengsheng Zhanga",
+    "Wei Li",
+    "Chenghao Sun",
+    "Jian Gong",
+    "Xinmei Tian"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19511",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Automated Magnetic Resonance Imaging (MRI) image classification provides a crucial non-invasive approach for neurological diagnosis, yet it is fundamentally challenged by inherent acquisition noise…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "embedding"
+    ]
+  },
+  "title": "DBHiCo: Dual-Branch Hierarchical Contrastive Learning for MRI Image Classification",
+  "url": "https://arxiv.org/abs/2611.19511",
+  "use_case": ""
+}

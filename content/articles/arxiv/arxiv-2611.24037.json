@@ -1,0 +1,28 @@
+{
+  "abstract": "Functional errors in hardware designs can compromise correctness and security, and must be fixed before tape-out. Formal property verification (FPV) provides strong guarantees by proving or refuting assertions, but a failed assertion is not always evidence of an RTL defect: the failure may also come from a buggy assertion or from a specification that is semantically correct but too ambiguous or incomplete for direct formalization. This creates a practical repair problem that existing RTL-centric methods do not directly address: the repair loop must align specification intent, verification intent, and RTL behavior before deciding which artifact to change. \\textsc{FormalFixer} addresses this problem with a multi-stage, intent-aligned repair workflow for Verilog designs with assertions. It preserves the original specification as authoritative ground truth and appends confidence-filtered refinements to clarify implicit constraints. \\textsc{FormalFixer} uses both intent mismatch and verifier-generated counterexample cone graphs to guide iterative RTL patching. This workflow explicitly checks specification--assertion--RTL correspondence. Results support intent alignment for FPV-based hardware repair.",
+  "abstract_ja": "",
+  "authors": [
+    "Changyuan Yu",
+    "Hongce Zhang"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.24037",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "Functional errors in hardware designs can compromise correctness and security, and must be fixed before tape-out. Formal property verification (FPV) provides strong guarantees by proving or refuting…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "FormalFixer: Intent-Aligned Automated Hardware Repair via Joint Refinement of Specifications, Assertions, and RTL Implementations",
+  "url": "https://arxiv.org/abs/2611.24037",
+  "use_case": ""
+}

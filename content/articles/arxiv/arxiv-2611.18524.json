@@ -1,0 +1,28 @@
+{
+  "abstract": "Event-camera segmentation requires persistent neural state despite sparse input events, making memory organization a central constraint on embedded implementation. We present EventSpikeSeg, a mixed-signal architecture combining resident capacitor memory with shared analog processing in GF180MCU 180-nm CMOS. Its 25-population spiking encoder-decoder has 143,824 synaptic weights but requires 30,976,000 membrane states at 440 x 640 resolution. The mapping specifies chronological 5-ms model updates, digital event/address services and 64-state capacitor banks. Characterization covers 22 module families and 74 operating points, distinguishing transistor simulations from digital-library estimates. Nominal results include 41.711 microwatts biased neuron-core power, 3.338-pJ positive terminal energy for a 1.4-microsecond cell read, and 0.531-mV selected-state drift over a 5-ms extracted-tile hold. Commit and coupling errors are reported separately. The software checkpoint records 27.976% mean intersection-over-union on a held-out six-class DSEC split; this is not hardware accuracy. Component layouts and simulation evidence quantify local implementation costs and expose storage replication and service scheduling as scaling constraints. A detailed SPICE-calibrated behavioral forward simulation of one full-resolution DSEC frame achieves 24.26% mean intersection-over-union, versus 26.22% for the matched PyTorch reference, using a compact 5-fF bank variant and external count/voltage calibration. Physical full-network operation, system energy and mismatch robustness remain unverified.",
+  "abstract_ja": "",
+  "authors": [
+    "Amir Mohammad Khadem Hosseini",
+    "Sattar Mirzakuchaki"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.18524",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Event-camera segmentation requires persistent neural state despite sparse input events, making memory organization a central constraint on embedded implementation. We present EventSpikeSeg, a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "EventSpikeSeg: Memory-Aware Mixed-Signal Architecture for Event-Camera Spiking Segmentation",
+  "url": "https://arxiv.org/abs/2611.18524",
+  "use_case": ""
+}

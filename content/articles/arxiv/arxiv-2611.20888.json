@@ -1,0 +1,30 @@
+{
+  "abstract": "Achieving human-like behavior on humanoid robots has advanced rapidly by leveraging motion-capture demonstrations rather than hand-crafted cost functions. Adversarial imitation supplies a style signal that lets a policy fulfill a task while adhering to a desired style, but is difficult to transfer to hardware. Whole-body tracking through reinforcement learning instead deploys reliably and imitates demonstrations faithfully, but the resulting policies are conditioned on the future reference, so they require a reference trajectory at runtime and can fail when the motion differs from the training data. We train a humanoid policy directly with whole-body tracking rewards while restricting its actor to compact locomotion commands and robot observations. Reference motion supervises the reward and privileged critic, without supplying reference joint trajectories to the actor or requiring teacher distillation. The demonstrated style is thereby encoded in the policy through the tracking reward, so the robot reproduces the whole-body style under commanded velocities. Trained on a single random-walk motion and commanded with velocity profiles from held-out motions, our policy reaches at least 98\\% success in simulation and completes every trial on the Unitree G1. On held-out slow walking, whole-body tracking drops to 2\\% success and command-conditioned distillation to 56\\%, and both fail on the real robot. On the trained motions, the joint position error of our policy stays within 8\\% of whole-body tracking, and it has a higher style coverage than adversarial motion priors (AMP), which fell on the real robot without a safety crane.",
+  "abstract_ja": "",
+  "authors": [
+    "Murad Dawood",
+    "Oezge Drama Berkenkamp",
+    "Antonio Gonzales Marin",
+    "Nutan Chen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.20888",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Achieving human-like behavior on humanoid robots has advanced rapidly by leveraging motion-capture demonstrations rather than hand-crafted cost functions. Adversarial imitation supplies a style…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "Driving the Style: Velocity-Conditioned Whole-Body Control from Motion Demonstrations",
+  "url": "https://arxiv.org/abs/2611.20888",
+  "use_case": ""
+}

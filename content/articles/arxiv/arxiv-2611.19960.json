@@ -1,0 +1,27 @@
+{
+  "abstract": "An agent harness is the program around a language model that turns its replies into actions: it builds each request, runs the tools the model asks for, decides what the model may do without asking, stores the conversation, recovers from failures, and shows a person what happened. Most of these decisions are made in code and rarely written down, so each harness meets the same corner cases again. This paper writes them down as invariants to test. It gives a system model with trust boundaries; 30 decision cards in six groups, each with options and costs, an invariant, the corner cases that break it, a test and an evidence tag; six cause classes for failures; a test method built on scripted providers, recorded behaviour and planted changes; and a checklist. The cards come from building one desktop harness, Crewroom, the author's own, and from manually testing ten other harnesses and studying open-source harnesses as reference; some patterns in the cards were adopted from those, so the catalogue is not independent of them. Of the 83 invariant clauses, 56 are tagged Tested, 12 Believed and 15 Open. The checklist is applied to the author's harness as one worked example, by its builder with no second rater: of its 30 items, 11 hold, 14 do not and 5 were not tested. It is not a ranking. The paper makes no claims about answer quality or cost or other platforms, and does not evaluate or rank other harnesses.",
+  "abstract_ja": "",
+  "authors": [
+    "Resham Joshi"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19960",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "An agent harness is the program around a language model that turns its replies into actions: it builds each request, runs the tools the model asks for, decides what the model may do without asking,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Anatomy of an Agent Harness: Decisions, Invariants and Corner Cases",
+  "url": "https://arxiv.org/abs/2611.19960",
+  "use_case": ""
+}

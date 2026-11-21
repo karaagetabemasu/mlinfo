@@ -1,0 +1,33 @@
+{
+  "abstract": "Large vision-language models (LVLMs) achieve strong multimodal performance, yet they remain prone to object hallucination---generating answers that are linguistically fluent but visually ungrounded. This issue is especially severe in low-resource languages, where weaker cross-modal alignment causes models to rely more on language priors than on image evidence. Existing remedies either require costly multilingual annotations or external translation/reward models, or intervene at inference time in ways that can distort the output language. We propose VEPO(Visual Evidence-guided Preference Optimization), a training-time method that transfers reliable visual grounding from English to other languages without external models. VEPO first localizes key visual evidence using English queries via mid-layer cross-modal attention, then constructs preference pairs that share the same correct answer but differ in evidence sufficiency (full image vs.\\ key-region masked image). Direct preference optimization on these pairs encourages low-resource inputs to prefer answers supported by complete visual evidence. Experiments on multilingual POPE and MME with Chinese, French, and Hindi show consistent hallucination reduction and perception gains, with the largest improvements on the lowest-resource language. Analyses further confirm that VEPO sharpens question-relevant attention and that evidence-guided masking outperforms random masking.",
+  "abstract_ja": "",
+  "authors": [
+    "Chengpeng Fu",
+    "Xiaocheng Feng",
+    "Wenshuai Huo",
+    "Yichong Huang",
+    "Baohang Li"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.18096",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Large vision-language models (LVLMs) achieve strong multimodal performance, yet they remain prone to object hallucination---generating answers that are linguistically fluent but visually ungrounded.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "VEPO: Mitigating Multilingual Hallucinations in LVLMs via Visual Evidence-guided Preference Optimization",
+  "url": "https://arxiv.org/abs/2611.18096",
+  "use_case": ""
+}

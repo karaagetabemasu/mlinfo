@@ -1,0 +1,1 @@
+{"name":"mlinfo-static","version":"1.0.0","private":true,"type":"module","engines":{"node":">=22.12.0"},"scripts":{"dev":"astro dev","build":"python3 ../scripts/content_store.py prepare && astro build && pagefind --site dist --output-subdir search-assets && python3 ../scripts/check_static.py dist","check":"astro check"},"dependencies":{"astro":"6.0.0","pagefind":"1.5.2"}}

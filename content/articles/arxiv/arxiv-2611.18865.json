@@ -1,0 +1,34 @@
+{
+  "abstract": "Vision-Language Models (VLMs) have demonstrated strong performance in structured document extraction, yet their deployment in high-stakes applications requires reliable confidence estimates for individual fields. Existing uncertainty estimators often aggregate signals across an entire generation, obscuring field-specific reasoning uncertainty while overlooking visual degradations that may lead to confident extraction errors. To address these limitations, we introduce FiReIQ, a field-level confidence estimation framework that combines field-aligned reasoning signals from a single VLM generation with local and global image-quality features through quality-conditioned visual fusion. To facilitate systematic evaluation, we further introduce FiReIQ-Bench, a benchmark spanning financial receipts and legal contracts. Experiments with two reasoning VLMs show that FiReIQ consistently improves confidence discrimination, selective prediction, and probabilistic accuracy over existing estimators. These gains extend to private financial service data, where FiReIQ improves AUROC by 6.8% and coverage at 95% precision by 10.6% over an existing baseline. Together, these results highlight the potential of FiReIQ to reduce manual review while enabling more reliable document automation.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiao Liu",
+    "Yage Wang",
+    "Qi Yu",
+    "Giri Iyengar"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.18865",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Vision-Language Models (VLMs) have demonstrated strong performance in structured document extraction, yet their deployment in high-stakes applications requires reliable confidence estimates for…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "FiReIQ: Field-Level Confidence Estimation with Reasoning and Image Quality in Document Extraction",
+  "url": "https://arxiv.org/abs/2611.18865",
+  "use_case": ""
+}

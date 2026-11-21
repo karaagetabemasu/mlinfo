@@ -1,0 +1,32 @@
+{
+  "abstract": "3D visual grounding (3D-VG) is a task that bridges the natural language and 3D space, serving as a foundational capability for embodied intelligence and human-computer interaction. Although recent 3D-VG agents overcome the reliance on pre-processed 3D point clouds, they essentially employ a unidirectional, pipeline-style tool-calling architecture. This architecture separates semantic understanding from geometric reconstruction, leading to error accumulation and an inability to autonomously recover from failures. To address this flaw, this paper proposes the Dual-Anchor Collaborative Agent (DACA), which reinterprets 3D-VG as a semantic-geometric dual-anchor collaborative reasoning paradigm. DACA comprises two complementary specialized tools: the semantic anchor tool holds the visual semantic features of the target and achieves efficient target tracking via optical flow and VLM local verification; the geometric anchor tool holds the 3D spatial geometric features of the target and performs global spatial reasoning via voxelization and multi-keypoint projection. The two components exchange information bidirectionally via a standardized tool call protocol, autonomously deciding on the next perception-action step to form a closed-loop optimization. Experiments on the ScanRefer and Nr3D benchmarks demonstrate that zero-shot DACA achieves an overall Acc@0.25 of 73.6\\% on ScanRefer and 70.4\\% overall accuracy on Nr3D, far surpassing the latest zero-shot 3D-VG methods. The code and models are available at https://github.com/liujia99/DACA",
+  "abstract_ja": "",
+  "authors": [
+    "Jiaming Liu",
+    "Linghe Kong",
+    "Guixu Zhang",
+    "Huaxi Huang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/liujia99/DACA",
+  "hasCode": true,
+  "id": "arxiv-2611.25722",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "3D visual grounding (3D-VG) is a task that bridges the natural language and 3D space, serving as a foundational capability for embodied intelligence and human-computer interaction. Although recent…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "DACA: Dual-Anchor Collaborative Agent for Zero-Shot 3D Visual Grounding",
+  "url": "https://arxiv.org/abs/2611.25722",
+  "use_case": ""
+}

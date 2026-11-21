@@ -1,0 +1,29 @@
+{
+  "abstract": "Robots without assigned tasks may obstruct active robots, while routing them to designated parking locations can cause unnecessary travel. This article proposes flow-oracle conflict-based search (FOCBS) for Multi-Agent Path Finding with unassigned agents (MAPF-UA). FOCBS searches over assigned-agent paths using conflict-based search (CBS) and routes targetless unassigned agents through a min-cost flow oracle. When the selected assigned-agent paths leave unassigned agents no collision-free paths, flow-conflict branching converts min-cut blockers into assigned-agent constraints, which guide the search without excluding optimal solutions. A batched zero-cost warm start accelerates the oracle, and start-avoiding tie-breaking reduces unassigned-agent movement. For feasible instances on finite graphs, we prove termination and global minimization of assigned-agent sum of service time, measured by last-arrival times. Unassigned-agent movement is minimized conditional on the selected assigned-agent paths, without a global lexicographic optimality guarantee. Benchmark experiments show that FOCBS scales well with the number of unassigned agents, and ablation studies show that, compared with discarding non-completable assigned-agent paths, flow-conflict branching solves substantially more instances while retaining optimality. Simulation and physical-robot experiments demonstrate plan executability, with laboratory tests reducing fleet travel by 40.8% relative to the parking-based coordination baseline. The source code and related resources are available at https://github.com/Chin-hsi/focbs",
+  "abstract_ja": "",
+  "authors": [
+    "Xi Jin",
+    "Chen Qian",
+    "Renjun Zhang",
+    "Guowei Wu",
+    "Xiaobo Li"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "https://github.com/Chin-hsi/focbs",
+  "hasCode": true,
+  "id": "arxiv-2611.24108",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "multi-agent",
+  "summary": "Robots without assigned tasks may obstruct active robots, while routing them to designated parking locations can cause unnecessary travel. This article proposes flow-oracle conflict-based search…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Asymmetric Decomposition for Multi-Agent Path Finding with Unassigned Agents",
+  "url": "https://arxiv.org/abs/2611.24108",
+  "use_case": ""
+}

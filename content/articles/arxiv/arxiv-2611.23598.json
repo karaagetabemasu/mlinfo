@@ -1,0 +1,30 @@
+{
+  "abstract": "Online continual learning (OCL) requires learning from a data stream whose arrival rate is independent of model training speed. When training cannot keep pace, computationally expensive gradient-based methods update less frequently, limiting adaptation. Analytic methods reduce this overhead, but their frozen backbones cannot adapt representations to changing distributions. We propose DuoCL, a dual-path OCL framework whose fast analytic path accumulates feature statistics from every incoming minibatch while its slow path periodically adapts the backbone. The slow path adjusts its sample count to the available compute budget without interrupting fast-path learning. Feature alignment compensates for drift in the accumulated classifier statistics. Across four datasets and three computational budgets, DuoCL improves online accuracy by an average of 9.67 percentage points over the strongest gradient-based baseline in each setting. DuoCL consistently outperforms analytic learning under distribution shifts, with gains of up to 4.00 percentage points on CIFAR-C, and achieves higher accuracy than prior methods across disjoint class-incremental, domain-incremental, and Si-Blurry settings.",
+  "abstract_ja": "",
+  "authors": [
+    "Jebacyril Arockiaraj",
+    "Dhruv Parikh",
+    "Rajgopal Kannan",
+    "Viktor Prasanna"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23598",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Online continual learning (OCL) requires learning from a data stream whose arrival rate is independent of model training speed. When training cannot keep pace, computationally expensive…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "DuoCL: Dual-Path Online Continual Learning",
+  "url": "https://arxiv.org/abs/2611.23598",
+  "use_case": ""
+}

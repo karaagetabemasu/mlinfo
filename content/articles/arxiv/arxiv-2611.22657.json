@@ -1,0 +1,33 @@
+{
+  "abstract": "As multimodal large language models (MLLMs) advance toward understanding and interacting with the physical world, spatial reasoning becomes essential for understanding scene structure and anticipating the effects of physical changes. Existing spatial benchmarks have made substantial progress in evaluating spatial relations, memory, and viewpoint reasoning, but less systematically assess how models connect physical scene conditions with visual observations. We introduce SpatialCast, a benchmark that uses cast shadows to evaluate this ability. Cast shadows provide observable evidence of a 3D scene. Their image appearance depends on object geometry and pose, illumination, and viewpoint. We examine this relationship through three complementary tasks that assess scene-projection consistency, predict intervention-induced changes, and infer the physical changes behind visual transitions. The benchmark contains 21,000 synthetic questions with separate scene and geometry test partitions, complemented by 200 SpatialCast-Real questions from 20 photographed scenes. Evaluations show that closed-source MLLMs outperform general-purpose open-weight MLLMs and MLLMs designed for spatial reasoning, which remain near chance on the synthetic benchmark, while even strong closed-source models struggle with shadow-length and light-height judgments. We also use SpatialCast training data for GRPO post-training, improving open-weight MLLM performance on the benchmark. Further evaluations show improvements on several external spatial benchmarks, suggesting transfer of the learned capabilities. These experiments support SpatialCast as a controlled resource for diagnosing spatial reasoning capabilities and studying their learning and generalization.",
+  "abstract_ja": "",
+  "authors": [
+    "Enhan Li",
+    "Jinghao Zhou",
+    "Jiaze Zhang",
+    "Hongyang Du"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.22657",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "As multimodal large language models (MLLMs) advance toward understanding and interacting with the physical world, spatial reasoning becomes essential for understanding scene structure and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "SpatialCast: Reading the 3D World via Cast Shadows",
+  "url": "https://arxiv.org/abs/2611.22657",
+  "use_case": ""
+}

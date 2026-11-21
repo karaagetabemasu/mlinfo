@@ -1,0 +1,29 @@
+{
+  "abstract": "Backdoor attacks pose a persistent security threat to machine learning systems, yet their behavior under graph continual learning (GCL) remains underexplored. Conventional graph backdoor attacks often lose effectiveness as models are updated across successive tasks, creating the impression that continual updates naturally weaken malicious associations. This work reveals a contrasting vulnerability: knowledge-preservation mechanisms in GCL can also preserve early injected backdoors when the poisoned update is compatible with the clean-task signal being retained. For graph data, this risk is amplified by structural triggers, which are embedded into the message-passing paths of graph neural networks (GNNs) and can induce stable representation shifts across tasks. To expose this risk, we propose BadGCL, a model-agnostic framework for persistent backdoor attacks under a strict early-stage intervention setting. BadGCL learns topology-aware structural triggers using a gradient mutual-information objective that couples poisoned gradients with clean-task optimization signals, together with a propagation consistency objective that stabilizes trigger-induced effects through graph message passing. We provide theoretical analysis showing that gradient compatibility and propagation stability jointly support long-term backdoor persistence under benign continual updates. Extensive experiments across task-IL and class-IL protocols, four GCL benchmarks, and diverse victim systems show that BadGCL achieves persistent attack effectiveness with limited clean-utility degradation, substantially outperforming graph and continual-learning backdoor baselines and remaining robust against representative defenses.",
+  "abstract_ja": "",
+  "authors": [
+    "Dong Li",
+    "Yufei Han",
+    "Xintao Wu",
+    "Xujiang Zhao",
+    "Wei Cheng"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19656",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "gnn",
+  "summary": "Backdoor attacks pose a persistent security threat to machine learning systems, yet their behavior under graph continual learning (GCL) remains underexplored. Conventional graph backdoor attacks…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "BadGCL: Towards Persistent Backdoor Attack on Graph Continual Learning Systems",
+  "url": "https://arxiv.org/abs/2611.19656",
+  "use_case": ""
+}

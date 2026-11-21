@@ -1,0 +1,29 @@
+{
+  "abstract": "Simultaneous Mandarin speech-to-American Sign Language (ASL) gloss translation requires deciding when an evolving utterance supports committing each gloss. Fixed Wait-k cannot adapt to source-gloss reordering, while training only on reference histories causes exposure bias. We present CausalGloss, an English-prefix-to-ASL-gloss action policy for a Mandarin-speech cascade. It combines lexical and semantic evidence, bounded delay, negation constraints, burst WRITE actions, and incomplete-history recovery. On a frozen 500-example How2Sign-derived benchmark with weak LLM-generated references, CausalGloss improves the fixed Wait-k frontier and nearly matches a three-seed TransLLaMA-style learned adaptive baseline at k = 5 in Token F1 (0.7047 versus 0.7067), with 54.4% lower LAAL. Against CLERC Epee human-gloss references, it achieves 0.649 Token F1 and Pareto-dominates three-seed TransLLaMA-style k = 5 and fixed k = 5, 7, reducing LAAL by 58.2-69.9%. Ablations separate timing from retention. A synthetic Mandarin-speech cascade preserves a smaller computation-aware latency gain, although outputs remain over-long. We also construct ChineseSpeech-ASLGloss-v1, a 19,924-utterance, 36.54-h controlled evaluation corpus.",
+  "abstract_ja": "",
+  "authors": [
+    "Mingze Li",
+    "Satoshi Nakamura"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19375",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Simultaneous Mandarin speech-to-American Sign Language (ASL) gloss translation requires deciding when an evolving utterance supports committing each gloss. Fixed Wait-k cannot adapt to source-gloss…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "audio"
+    ],
+    "task": []
+  },
+  "title": "CausalGloss: Multi-Evidence Action Control for a Simultaneous Mandarin Speech-to-ASL Gloss Cascade",
+  "url": "https://arxiv.org/abs/2611.19375",
+  "use_case": ""
+}

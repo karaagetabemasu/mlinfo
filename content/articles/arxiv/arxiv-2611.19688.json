@@ -1,0 +1,29 @@
+{
+  "abstract": "Robotic manipulation missions must satisfy timed and conditional requirements that can be expressed in signal temporal logic (STL). While a practical means of monitoring these requirements is from camera images, this is challenging because STL robustness depends on physical margins, such as distances and clearances, that are not directly observed. Rather than learning a separate visual monitor for each formula, we learn a shared latent representation from multi-view images and decode physically meaningful margins for individual predicates. Co-training the encoder with predicate decoders increases the certification rate from 58.7% to 96.3% compared with a frozen encoder, despite nearly unchanged predicate sign accuracy. STL semantics then compose these margins into robustness estimates for any bounded formula over the trained predicates, without retraining. We further calibrate the decoding errors of selected STL clauses using conformal prediction, yielding two-sided intervals that certify both satisfaction and violation and propagate through interval STL to any formula composed from the clauses. In simulated kitchen missions (LIBERO), our monitor correctly predicts satisfaction or violation in 98.9% of 4662 evaluations across 18 unseen formulas. For missions lasting up to 17 min, calibrated bounds establish satisfaction or violation for 96.9% of missions without incorrect conclusions. A single calibration also provides simultaneous 91.0% coverage across all 255 conjunctions of eight clauses, allowing new formulas without recalibration.",
+  "abstract_ja": "",
+  "authors": [
+    "Xinpei Ni",
+    "Glen Chou",
+    "Samuel Coogan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19688",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Robotic manipulation missions must satisfy timed and conditional requirements that can be expressed in signal temporal logic (STL). While a practical means of monitoring these requirements is from…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Physics-Grounded STL Monitoring from Image Observations",
+  "url": "https://arxiv.org/abs/2611.19688",
+  "use_case": ""
+}

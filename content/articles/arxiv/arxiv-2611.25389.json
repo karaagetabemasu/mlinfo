@@ -1,0 +1,35 @@
+{
+  "abstract": "Panoramas can serve as shared scene backgrounds for multi-shot video generation, but most existing panorama generators take text alone or a single input image. We present a single model that generates a full equirectangular panorama from a text caption and K in {0,...,4} perspective conditioning views taken by a four-camera rig at one viewpoint. We fine-tune a pretrained text-to-image rectified-flow transformer in two stages. In the first stage, each conditioning view is appended to the token sequence together with the ID of its camera slot, and the number of views varies during training, so one set of weights serves every input setting. In the second stage, we improve the region not covered by any conditioning view. Supervised training computes its loss on noisy latents of the ground truth and never scores a panorama the model has generated and decoded, so we propose Uncovered-Region GRPO (UR-GRPO), a reinforcement-learning recipe that rewards the candidates a vision-language model prefers in pairwise comparisons on crops around this region. Because the slot ID alone does not tell the model which way the rig points, we also offer an optional variant that writes each view's camera direction into its position encoding, which lets the user decide where each view appears in the output. With one conditioning view, our model outperforms the previous state of the art, 360Anything, trained on the same data and evaluated with the same code, on Laval Indoor and gives mixed results on an indoor subset of SUN360; the second stage improves the results for every number of conditioning views.",
+  "abstract_ja": "",
+  "authors": [
+    "Rui Hong",
+    "Xugang Ye",
+    "Jana Košecká",
+    "Kai Fan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25389",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Panoramas can serve as shared scene backgrounds for multi-shot video generation, but most existing panorama generators take text alone or a single input image. We present a single model that…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Zero to Four Views: Unified Panorama Generation and Preference RL for Unobserved Regions",
+  "url": "https://arxiv.org/abs/2611.25389",
+  "use_case": ""
+}

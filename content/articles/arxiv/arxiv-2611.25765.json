@@ -1,0 +1,27 @@
+{
+  "abstract": "Commercial intraoperative electroencephalography (EEG) and blood pressure monitors introduce cyclic impedance pulses, smoothing delays, direct-current (DC) drift, and cuff holds that confound risk forecasting and uncertainty calibration. We developed a causal signal-conditioning and shift-robust conformal calibration framework across 5,439 public anesthesia procedures. Streaming filters blank 10.13-min 64-Hz impedance checks, apply unclipped post-notch conditioning, separate 63-s suppression-ratio lag, and distinguish three-channel cuff inflations from dropouts across propofol-remifentanil total intravenous anesthesia (TIVA; N = 3,214), volatile anesthesia (N = 2,046), European endoscopy sedation (N = 171), and DC-coupled surgery (N = 8). De-impedanced cortical tree ensembles were compared against deep sequence models, paired with patient-cluster Subgroup-Covariate-Weighted Conformal Risk Control (CRC) and lag-buffered online Conformal Proportional-Integral-Derivative (PID) tracking. Pre-filter blanking removed 97.90% and 97.60% of false flatline conflicts while preserving 99.23% and 98.96% of deep suppression. On unseen TIVA surgeries (N = 525), cortical features achieved area under the precision-recall curve (AUPRC) 0.3135 (1.94% prevalence) and 0.1627 (0.82% lag-free prevalence), with no detectable difference from deep encoders (p >= 0.36) and no cortical gain for hypotension (0.3432 vs. 0.3437, p = 0.784). Zero-retraining volatile transfer (N = 1,048) showed no detectable difference from an end-tidal gas oracle on lag-free suppression (0.0820 vs. 0.0736, p = 0.472). Subgroup-Covariate-Weighted CRC bounded all 70 TIVA shift cells at <= 4.38% (alpha = 5.0%) in 66.32 ms per 30-s epoch. Causal artifact disentangling and shift-aware conformal calibration support reliable real-time intraoperative risk bounds within explicit physiological observability limits.",
+  "abstract_ja": "",
+  "authors": [
+    "Zeyu Jia"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25765",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Commercial intraoperative electroencephalography (EEG) and blood pressure monitors introduce cyclic impedance pulses, smoothing delays, direct-current (DC) drift, and cuff holds that confound risk…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "forecasting"
+    ]
+  },
+  "title": "Disentangling Monitor Hardware Artifacts and Smoothing Lag for Shift-Robust Intraoperative EEG and Hemodynamic Risk Calibration",
+  "url": "https://arxiv.org/abs/2611.25765",
+  "use_case": ""
+}

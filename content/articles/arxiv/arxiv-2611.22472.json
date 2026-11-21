@@ -1,0 +1,33 @@
+{
+  "abstract": "Visual token pruning speeds up large vision-language models (VLMs) by keeping only a part of their visual tokens. Most existing methods improve the ranking of the tokens and then answer every question once with the same budget. With strong rankings, pruning hurts only a few questions, and signals computed on the kept tokens see little of what it removed. We find that, on most of these questions, a small VLM given the full image disagrees with the pruned answer, since it still sees the missing evidence. We propose PRUDENT, which first answers with about half the budget and spends the saved tokens on re-answering the disagreeing questions at twice the budget. We show when such re-answering pays and why the small VLM should read the full image. On 18 benchmarks, PRUDENT outperforms eight existing pruning methods at the same average budget of visual tokens. Its lead widens as the budget tightens, and holds across five InternVL sizes. PRUDENT also has the highest average in two more model families. The disagreement of the small VLM flags most pruning failures of all eight methods, and re-answering on it also improves the two strongest with their own rankings. Other checkers give similar gains, and the extra tokens go where the first pass hurts the answer. These results suggest that identifying which pruned answers are trustworthy provides an additional lever for visual token pruning beyond the ranking of tokens. Code and data are available at https://github.com/LiZaiyuan0619/PRUDENT.",
+  "abstract_ja": "",
+  "authors": [
+    "Yanchao Li",
+    "Jiaqing Xie",
+    "Ben Gao",
+    "Yusu Zhang",
+    "Beilun Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/LiZaiyuan0619/PRUDENT",
+  "hasCode": true,
+  "id": "arxiv-2611.22472",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Visual token pruning speeds up large vision-language models (VLMs) by keeping only a part of their visual tokens. Most existing methods improve the ranking of the tokens and then answer every…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Disagree to Prune: Reallocating Visual Tokens Where a Small VLM Dissents",
+  "url": "https://arxiv.org/abs/2611.22472",
+  "use_case": ""
+}

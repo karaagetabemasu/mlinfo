@@ -1,0 +1,29 @@
+{
+  "abstract": "Evaluation is becoming the bottleneck of automated algorithm design, especially for iterative algorithms such as ant colony optimisation (ACO), which must run to completion on multiple instances. A transition rule designed by genetic programming reads the construction state of each ant and must be evaluated at every step. However, existing GPU methods for ACO precompute a fixed rule and parallelise the ants of one run. To address this issue, we propose BlockEval, a batch evaluation framework with GPU and CPU backends. The GPU backend executes many runs simultaneously, each as a whole in one thread block, and compiles one module per generation. When an ant has visited all its candidate cities, a warp-cooperative fallback stalls only its warp where possible. On travelling salesman problems with 50--1000 cities, the GPU backend is 4.1--16.5 times faster than the CPU backend on 32 cores and 11.2--17.8 times faster than EvoGP+TensorACO-CL.",
+  "abstract_ja": "",
+  "authors": [
+    "Bo-Cheng Lin",
+    "Yi Mei",
+    "Mengjie Zhang"
+  ],
+  "category": "generative-ai",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19751",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "video-gen",
+  "summary": "Evaluation is becoming the bottleneck of automated algorithm design, especially for iterative algorithms such as ant colony optimisation (ACO), which must run to completion on multiple instances. A…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Speeding up Automated Algorithm Design by Batch Evaluation: A Case Study of Genetic Programming for Ant Colony Optimisation",
+  "url": "https://arxiv.org/abs/2611.19751",
+  "use_case": ""
+}

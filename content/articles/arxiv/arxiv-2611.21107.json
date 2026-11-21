@@ -1,0 +1,32 @@
+{
+  "abstract": "Source-free domain adaptation (SFDA) adapts a model trained on a labelled source domain to an unlabelled target domain without access to the source data. Almost the entire SFDA literature assumes mutually exclusive classes, yet many deployed settings are multi-label. This paper formulates SFDA for multi-label classification and establishes the first benchmark for it: five adaptation tasks over six datasets spanning remote sensing, natural, clipart-style and driving imagery, with four single-label SFDA methods extended to provide the first baselines and a published multi-label method run alongside them, over three seeds. The benchmark shows that extending a single-label method is unreliable rather than merely suboptimal: half of the extended baselines fail to improve on the unadapted source model at all, and on two of the five tasks none of them does. The failures are not incidental. Nearest-centroid pseudo-labelling, softmax-based confidence, the diversity term of information maximization and confidence-weighted prototype construction each rely on mutual exclusivity, and each fails differently without it, so replacing the softmax with per-class sigmoids is a valid but insufficient extension. Multi-label Prototype Alignment with Contrastive Teaching (MPACT) is proposed in response, a mean-teacher framework whose objective, prototype construction and alignment term are each reconsidered for overlapping label sets. It attains the best average on every reported metric and is the only method that improves on the unadapted source model on all five tasks. The analysis further introduces a prototype-agreement diagnostic separating feature-space alignment from self-reinforcing agreement with the classifier, and reports a negative result for confidence-based pseudo-label filtering.",
+  "abstract_ja": "",
+  "authors": [
+    "Salih Numan Büyükbaş",
+    "Erchan Aptoula",
+    "Mamatha Thota",
+    "Petra Bosilj"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.21107",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Source-free domain adaptation (SFDA) adapts a model trained on a labelled source domain to an unlabelled target domain without access to the source data. Almost the entire SFDA literature assumes…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Source-Free Domain Adaptation for Multi-Label Image Classification: A Framework, Baselines, and Benchmark",
+  "url": "https://arxiv.org/abs/2611.21107",
+  "use_case": ""
+}

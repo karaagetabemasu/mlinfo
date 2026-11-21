@@ -1,0 +1,25 @@
+{
+  "abstract": "AI agents often discover mid-execution that their plan is broken, for example when an action fails or a tool is withdrawn. Deployed systems use conventions such as retry loops or \"always replan,\" and a recent benchmark finds no fixed strategy dominates. This paper derives the optimal policy. In the model, a disruption destroys the causal support of part of a plan; repair is a partial reset that preserves the plan's structure, replanning is a full reset, and changing a plan is costly because others have conditioned on it. The optimal policy is a threshold in effective disruption depth: repair shallow damage, replan after deep damage, and abandon the goal when even a fresh plan is not worth its cost. Depth depends on plan structure. In expectation, a single broken action forces 1+R(G)/n actions to be revalidated, where R(G) counts the pairs of actions joined by a dependency path; to first order, a fully serial plan switches to replanning at raw damage about w times smaller than a plan of w parallel chains. A closed-form stability-price threshold determines when a worse repaired plan should be kept over a better fresh one. As language-model planners push replanning costs toward zero, the stability price becomes the only force sustaining plan commitment. Under repeated disruptions, revision frictions make commitment hysteresis optimal: the agent keeps executing a plan it would never choose fresh, and each repair adds patch debt until the debt outweighs repair's cost advantage and the agent rebuilds. A value-of-diagnosis result states when measuring damage is worth its compute and shows that \"always replan\" is optimal when damage is predictably deep and replanning is the better fallback. A separately implemented numerical checker tests each proposition (zero violations; 1.6 million static-model evaluations), and the model's regime map reproduces that benchmark's regime flips qualitatively.",
+  "abstract_ja": "",
+  "authors": [
+    "Gaurav Tewari"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19663",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "AI agents often discover mid-execution that their plan is broken, for example when an action fails or a tool is withdrawn. Deployed systems use conventions such as retry loops or \"always replan,\" and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "When AI Agents Should Repair, Replan, or Abandon: A Threshold Theory of Plan Commitment",
+  "url": "https://arxiv.org/abs/2611.19663",
+  "use_case": ""
+}

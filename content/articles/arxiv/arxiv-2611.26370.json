@@ -1,0 +1,34 @@
+{
+  "abstract": "Low-dose and thin-slice computed tomography (CT) images suffer from elevated noise that obscures anatomical detail, while clean references for supervised denoising are often unavailable. Although Noise2Noise permits self-supervised training from noisy pairs, direct regression tends to oversmooth fine structure. Averaging multiple independently generated samples mitigates this blur, though repeating multi-step diffusion sampling is costly. We introduce Noise2Noise with Improved Mean Flow (N2N-iMF) to accelerate this process via few-step sampling. N2N-iMF learns to generate one noisy image conditioned on its paired counterpart; at inference, independent outputs are sampled and averaged to suppress noise. We evaluated image quality and sampling efficiency on simulated thin-slice brain and low-dose abdominal CT across four sampling methods and averaging counts from 1 to 20, and validated the approach on real-world photon-counting CT (PCCT) brain scans. With ten samples per conditioning input and three network evaluations per sample, N2N-iMF achieved a mean absolute error of 2.60 HU on brain CT and 14.02 HU on abdominal CT, outperforming 50-evaluation denoising diffusion implicit model (DDIM) sampling (2.91 and 14.53 HU). On the same GPU, per-output generation time dropped from 7.29 to 0.43 s. Across eight PCCT cases, N2N-iMF reached a mean gray-white matter contrast-to-noise ratio of 1.341, versus 0.916 for Noise2Noise and 1.176 for DDIM. N2N-iMF accelerates self-supervised generative CT denoising without distillation while keeping the number of averaged outputs adjustable at inference.",
+  "abstract_ja": "",
+  "authors": [
+    "Xingyi Yao",
+    "Zhengtao Ma",
+    "Zhennong Chen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26370",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Low-dose and thin-slice computed tomography (CT) images suffer from elevated noise that obscures anatomical detail, while clean references for supervised denoising are often unavailable. Although…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation",
+      "regression"
+    ]
+  },
+  "title": "Fast Self-Supervised Generative CT Denoising via Few-Step Sampling",
+  "url": "https://arxiv.org/abs/2611.26370",
+  "use_case": ""
+}

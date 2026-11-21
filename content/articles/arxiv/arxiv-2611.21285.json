@@ -1,0 +1,27 @@
+{
+  "abstract": "Masked diffusion models sample the tokens of one round independently. Planned decoders first generate a coarse plan, then fill in the tokens in parallel. We ask when a plan saves rounds, how many it saves, and how fine it must be. We study this on broadcast trees: the leaves are the tokens, the internal nodes are the plan, and the edge correlation $θ$ sets how strongly tokens depend on the plan. Errors are measured by the forward Kullback-Leibler divergence $\\varepsilon$, and the lower bounds hold for every deterministic value-adaptive rule, also with learned conditionals. We show that a decoder without the plan needs of order $\\min\\{n,(n/\\varepsilon)^α\\}$ rounds below the reconstruction threshold, where $α=\\log b/(4\\log(1/θ))$ rises to $1/2$ at the threshold, and that the exponent stays below $1/2$ above it (binary channel: $0.02\\leθ\\le0.98$). With the plan, $\\log_b n+1$ rounds suffice. In the binary model below the threshold, a plan with units of $m$ tokens needs of order $\\log_b(n/m)+\\min\\{m,(n/\\varepsilon)^α\\}$ rounds, so it gives logarithmic depth exactly when $m$ is logarithmic. A plan therefore helps most near the threshold, and only if its units are small. Exact divergence computations in the Gaussian model with up to $2^{20}$ leaves confirm these exponents below the threshold.",
+  "abstract_ja": "",
+  "authors": [
+    "Chuling Wen",
+    "Weijie Liang",
+    "Jian Lu"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.21285",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Masked diffusion models sample the tokens of one round independently. Planned decoders first generate a coarse plan, then fill in the tokens in parallel.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "The Price of Not Planning: Parallel Sampling Depth Peaks at the Reconstruction Threshold",
+  "url": "https://arxiv.org/abs/2611.21285",
+  "use_case": ""
+}

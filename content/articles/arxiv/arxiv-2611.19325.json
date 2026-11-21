@@ -1,0 +1,31 @@
+{
+  "abstract": "Fine-grained cell representations are essential for characterizing cellular heterogeneity and tissue organization in computational pathology. Pathology foundation models (PFMs) provide powerful pretrained features for transferable tissue analysis. HoVer-Net uses task-trained segmentation and typing, whereas CellViT++ averages native-grid tokens assigned to detected nuclei. However, the former requires cell-specific training; the latter ignores fractional nuclear coverage and can mix nuclear content with neighbouring tissue. Therefore, we propose SRDP, short for Soft-interior Rim Dense-grid Pooling, a training-free geometry-aware readout. We apply the frozen patch projection at half stride, interleave four offset lattices, map the cell mask to fractional coverage weights, and concatenate whole-cell pooling with two inner boundary pools. Across four datasets and six frozen encoders, SRDP improves mean balanced accuracy by 5.68 percentage points over native token averaging across 24 settings, including 11.22 points on average for CoNIC and Lizard. SRDP converts a coarse frozen PFM lattice into a mask-aligned, fine-grained cell representation without updating the encoder.",
+  "abstract_ja": "",
+  "authors": [
+    "Wenwen Lou",
+    "Mingyi He",
+    "Xinyi Guo",
+    "Yining Li",
+    "Weiming Chen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19325",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Fine-grained cell representations are essential for characterizing cellular heterogeneity and tissue organization in computational pathology. Pathology foundation models (PFMs) provide powerful…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "Unlocking Fine-Grained Cell Representations via Soft-Interior Rim Dense-Grid Pooling in Pathology Foundation Models",
+  "url": "https://arxiv.org/abs/2611.19325",
+  "use_case": ""
+}

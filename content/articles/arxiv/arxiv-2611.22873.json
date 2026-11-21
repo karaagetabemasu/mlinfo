@@ -1,0 +1,29 @@
+{
+  "abstract": "Learned super-resolution of physical fields must satisfy structural constraints---such as divergence-free flow ($\\nabla\\cdot u=0$), curl-free fields ($\\nabla\\times u=0$), and pointwise sum-to-one normalization ($1^\\top p=1$)---that standard training objectives do not enforce. Soft penalties trade fidelity against satisfaction via a scalar hyperparameter $λ$ but cannot drive the residual to zero; hard-constrained regression eliminates the residual by construction yet converges to the conditional mean, losing small-scale spectral structure. We observe that in Conditional Flow Matching with linear paths, a linear constraint $Ax=c$ is preserved along the entire transport trajectory whenever the velocity field is compatible ($Av_θ=0$) and the initial noise is consistent ($Ax_0=c$); along the trajectory, the latter two conditions are also necessary. We term this the path-equivariance principle and instantiate it in PACE (Path-Aligned Constraint Equivariance), a framework that enforces these conditions through a null-space parameterization of the velocity field and a constraint-respecting noise sampler, with no modification to the loss function or the ODE integrator. Across three constraint families, PACE reduces the mean constraint residual by one to five orders of magnitude relative to unconstrained baselines, matching the residual level of the data-generation pipeline itself. The proposed framework requires only a closed-form parameterization onto the null space of $A$; within this scope, it offers exact constraint enforcement while recovering the spectral content and predictive diversity that conditional-mean regression systematically loses, all under a single unified recipe.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuhao Wang",
+    "Yuanxi Peng"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.22873",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Learned super-resolution of physical fields must satisfy structural constraints---such as divergence-free flow ($\\nabla\\cdot u=0$), curl-free fields ($\\nabla\\times u=0$), and pointwise sum-to-one…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation",
+      "regression"
+    ]
+  },
+  "title": "Path-Aligned Constraint Equivariance",
+  "url": "https://arxiv.org/abs/2611.22873",
+  "use_case": ""
+}

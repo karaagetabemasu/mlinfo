@@ -1,0 +1,27 @@
+{
+  "abstract": "The success of manipulation policies is closely tied to the spatial relationship between the robot and the target object, as well as the task being performed, making the ability to adjust the robot's pose critical for successful execution. When the robot starts away from the task, such adjustments require coordinating navigation with local manipulation. Jointly training these capabilities incurs substantial computational and data costs, while navigating toward a predefined goal pose limits the flexibility needed to adapt to task-specific manipulation requirements. To address these challenges, we propose Learning to Move from and for Manipulation Policies (M4M), a framework that learns manipulation-aware mobility directly from pretrained manipulation policies. By leveraging the hidden representations of the policy's action-generating network as dense supervision, together with a limited number of manipulation execution outcomes, we learn a spatially conditioned embedding that captures task-dependent manipulation success across candidate robot poses. From the robot's current stereo observations, this representation estimates manipulation success at unvisited poses without rolling out the manipulation policy at each location. It is further integrated into navigation policy training, while a learned handoff policy decides when to transition from navigation to manipulation, enabling the robot to move and manipulate in a unified, task-aware manner. Across eight articulated-object tasks in unseen RoboCasa kitchens, M4M achieves 47.0% mean task success, compared with 26.5% for the strongest baseline and 19.2% for direct manipulation execution, and refrigerator-closing experiments show consistent improvements across four frozen manipulation policies.",
+  "abstract_ja": "",
+  "authors": [
+    "Siyuan Zheng",
+    "Zhong Cao",
+    "Henry X. Liu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25366",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "The success of manipulation policies is closely tied to the spatial relationship between the robot and the target object, as well as the task being performed, making the ability to adjust the robot's…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Learning to Move from and for Manipulation Policies: Spatializing Latent Action Representations for Goal-Pose-Free Mobile Manipulation",
+  "url": "https://arxiv.org/abs/2611.25366",
+  "use_case": ""
+}

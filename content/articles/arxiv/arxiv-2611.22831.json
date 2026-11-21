@@ -1,0 +1,30 @@
+{
+  "abstract": "Conventional balance formulations often assume a rigid, stationary support, decoupling body stabilization from support motion. This assumption becomes inadequate on mechanically responsive supports, creating a coupled control challenge: corrective body motions intended to restore equilibrium can also excite support motion. We formulate sustained balance as a coupled regulation problem that coordinates equilibrium restoration with suppression of motion induced by the robot's own corrections. We introduce LISST (Lyapunov-Inspired Sustained Stabilization), a learning framework that accounts for how earlier actions shape the conditions for subsequent corrections. It uses recent observations to support immediate adjustments and longer histories to characterize persistent motion, with physical supervision relating the learned representation to robot-support behavior. To evaluate corrective actions, LISST uses coupled dynamics to assess both imbalance and the direction of motion. A Lyapunov-inspired criterion measures progress over finite windows, accommodating the transients required to restore balance. This physical evaluation guides joint-level policy learning through backpropagation through differentiable model rollouts. Privileged guidance focuses training on difficult states reached by the deployment policy and is transferred through distillation. The resulting policy operates using only onboard proprioception. Real-world experiments demonstrate that LISST maintains balance while limiting residual oscillations during continuous interaction with a dynamically responsive support. Video: youtu.be/iGHU7S4wPyw.",
+  "abstract_ja": "",
+  "authors": [
+    "Changyan Li",
+    "Guiyin Tian",
+    "Jing Xia",
+    "Shiyan Hu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.22831",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Conventional balance formulations often assume a rigid, stationary support, decoupling body stabilization from support motion. This assumption becomes inadequate on mechanically responsive supports,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": []
+  },
+  "title": "Lyapunov-Inspired Sustained Balance on Dynamically Responsive Supports",
+  "url": "https://arxiv.org/abs/2611.22831",
+  "use_case": ""
+}

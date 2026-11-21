@@ -1,0 +1,32 @@
+{
+  "abstract": "Pre-trained models provide transferable representations for class-incremental learning (CIL). However, sequentially adapting these representations introduces optimization costs and may disrupt old-class feature structure. This motivates us to explore whether the discriminative potential of these representations can be further exploited by continually accumulating class information while keeping the encoders frozen. To this end, we propose TAP, a new and novel framework for tapping the discriminative potential of frozen representations in class-incremental learning. It accumulates visual and semantic class information in the frozen CLIP embedding space with only lightweight optimization. TAP comprises three modules: class-conditional visual distribution modeling, class-adaptive semantic calibration, and visual-semantic posterior fusion. The first module retains class means and within-class scatters, combining class-specific and shared covariances to stabilize distribution estimation. The second module learns class-specific weights over text templates from current-task images, adapting text representations to downstream classes. The third module combines the visual and semantic posteriors through a weighted product of experts for prediction over all seen classes without retaining images from previous tasks. Across nine datasets under two incremental protocols, TAP achieves state-of-the-art performance, attaining the highest average incremental and final-stage accuracies among the compared methods. The code is provided as an ancillary file.",
+  "abstract_ja": "",
+  "authors": [
+    "Zihao Wang",
+    "Yu-Wei Zhan",
+    "Xiao-Qian Liu",
+    "Zhen-Duo Chen",
+    "Weitong Liu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25478",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Pre-trained models provide transferable representations for class-incremental learning (CIL). However, sequentially adapting these representations introduces optimization costs and may disrupt…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": []
+  },
+  "title": "TAP: Tapping the Discriminative Potential of Frozen Representations for Class-Incremental Learning",
+  "url": "https://arxiv.org/abs/2611.25478",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Mixture-of-Experts Multimodal Large Language Models (MoE-MLLMs) offer scalable inference through sparse expert activation, yet substantial computational redundancy remains among the activated experts. Existing expert skipping methods typically calibrate thresholds based on target skipping ratios or final-output divergence, overlooking the accumulation of skipping-induced error across layers and the varying semantic importance of individual tokens. To address that, we propose ProSE, a training-free, semantic-guided expert skipping framework that probes layer-wise reconstruction error to promote representation consistency compared with default activation. Specifically, we construct query-aware semantic masks to identify salient visual tokens and progressively calibrate modality-specific skipping thresholds for each MoE layer. By minimizing masked reconstruction error under a given budget, ProSE maintains semantic consistency after skipping and allows adaptive expert allocation under limited activation budgets. Extensive experiments on 9 benchmarks demonstrate consistent improvements on average over existing expert skipping methods, particularly under aggressive skipping settings. ProSE maintains over 96\\% performance on KimiVL-A3B-Inst with 83\\% expert skipping and accelerates prefilling by $1.7\\times$.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiameng Li",
+    "Minye Wu",
+    "Matthew B. Blaschko"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.20885",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Mixture-of-Experts Multimodal Large Language Models (MoE-MLLMs) offer scalable inference through sparse expert activation, yet substantial computational redundancy remains among the activated…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "ProSE: Probing Reconstruction Error for Semantic-guided Expert Skipping in MoE-MLLMs",
+  "url": "https://arxiv.org/abs/2611.20885",
+  "use_case": ""
+}

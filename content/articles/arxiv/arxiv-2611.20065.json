@@ -1,0 +1,33 @@
+{
+  "abstract": "Despite recent progress in SAR maritime monitoring, ship classification remains challenging due to limited labeled data, class imbalance, large intra-class variability, fine-grained inter-class similarity, and variations in target scale, orientation, and backscattering structure. To address these challenges, this paper proposes MARLIN, a class-frequency-aware framework with directional sparse and hierarchical multi-scale feature extraction for ship type classification in SAR images. The proposed architecture first constructs two complementary representations of each input image, where each views are processed by parallel encoder branches. Each branch begins with a directional sparse convolutional stem designed to capture elongated and orientation-dependent ship scattering patterns, followed by customized hierarchical multiscale feature extraction blocks. To improve learning under imbalanced class distributions, we introduce a class-frequency aware objective. The proposed objective combines margin-based classification with class-frequency-weighted prototype compactness and class-pair frequency weighted margin separation. This formulation shapes the embedding space by encouraging samples from the same class to form compact clusters while enforcing stronger separation for class pairs involving underrepresented ship categories. Extensive experiments on three complementary datasets demonstrate that in addition to being lightweight and parameter efficient, MARLIN improves both overall accuracy and class-balanced metrics, confirming its effectiveness for robust SAR ship-type classification under limited and imbalanced training conditions. The codes are available at github.com/benyaminhosseiny/marlin.",
+  "abstract_ja": "",
+  "authors": [
+    "Benyamin Hosseiny",
+    "Kamirul Kamirul",
+    "Odysseas Pappas",
+    "Alin Achim"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.20065",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Despite recent progress in SAR maritime monitoring, ship classification remains challenging due to limited labeled data, class imbalance, large intra-class variability, fine-grained inter-class…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "embedding"
+    ]
+  },
+  "title": "MARLIN: Multiscale And Directional Sparse Representation Learning for Imbalanced SAR Ship Classification",
+  "url": "https://arxiv.org/abs/2611.20065",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "A deployed multimodal predictor may face missing modalities after its weights can no longer be changed. This raises a question that training-time repair does not answer: what part of the resulting error is still correctable from the information that remains? We show that this part is characterized by the Bayes gap, the difference between the model's prediction and the Bayes prediction given the observed modalities. For cross-entropy and squared error, excess risk measures this gap in the geometry of the loss; ambiguity in the observed modalities cannot be removed. Thus, a badly degraded prediction is not necessarily a correctable one. Estimating the Bayes prediction normally requires labels. However, when a model observing more modalities is conditionally correct, averaging its outputs conditional on the remaining modalities recovers this target without retrieval labels; with the same fixed blend and neighbors, it is no worse in expected cross-entropy or Brier risk than averaging hard labels. Some such assumption is unavoidable: otherwise the target is not identifiable from unlabeled data alone. GUARD (Gated Utility-Aware Recalibration for Deployment) leaves the deployed predictor unchanged. It estimates a candidate correction by retrieval, learns from deployment-matched labeled data when correction is likely to help, and calibrates a threshold on a held-out split by conformal risk control. Under exchangeability, the marginal probability that GUARD applies a correction whose loss increase exceeds a prescribed tolerance is bounded by a preset level, regardless of the learned score. In controlled experiments, correction gain follows headroom rather than raw error; across nine frozen model-dataset pairs spanning six domains, GUARD retains most of blanket correction's gain within harm budgets that blanket correction often exceeds.",
+  "abstract_ja": "",
+  "authors": [
+    "Hoang Pham Cong",
+    "Long D. Nguyen",
+    "Ho Viet Duc Luong",
+    "Nguyen Tran Minh Nhat",
+    "Binh P. Nguyen"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23886",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "A deployed multimodal predictor may face missing modalities after its weights can no longer be changed. This raises a question that training-time repair does not answer: what part of the resulting…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Risk-Controlled Correction for Frozen Multimodal Models under Missing Modalities",
+  "url": "https://arxiv.org/abs/2611.23886",
+  "use_case": ""
+}

@@ -1,0 +1,30 @@
+{
+  "abstract": "Many everyday objects, such as storage boxes, baskets, and chairs, are too large or heavy for a gripper to grasp, yet a single arm can still pick them up by wrapping around and supporting them. Such grasps are hard to learn: wrapping motions are difficult to teleoperate, and existing datasets contain little whole-arm pickup data. We introduce WAG (Whole-Arm Grasp Dataset), the first large-scale dataset for single-arm pickup of large objects, with 1.7~million joint configurations across 793 objects. We sample configurations directly in joint space, execute each through squeeze and lift primitives in simulation, and stress-test survivors under active shaking and external forces. To demonstrate the utility of WAG and accomplish the whole-arm pickup task, we develop ARMFUL, a whole-arm pickup pipeline that pairs a diffusion model trained on WAG, generating whole-arm grasps from the object's point cloud, with a motion planner that reaches them collision-free before the same squeeze-and-lift execution. In simulation, ARMFUL reaches 85.4\\% lift success on training and 69.9\\% on held-out objects, and it lifts the object in 70 of 100 trials on a physical Franka arm across 10 IKEA objects.",
+  "abstract_ja": "",
+  "authors": [
+    "Xinyi Yu",
+    "Yunshuang Li",
+    "Daniel Seita",
+    "Gaurav S. Sukhatme"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.20692",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Many everyday objects, such as storage boxes, baskets, and chairs, are too large or heavy for a gripper to grasp, yet a single arm can still pick them up by wrapping around and supporting them. Such…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "ARMFUL: Learning Whole-Arm Grasp Configurations for Single-Arm Pickup of Large Objects",
+  "url": "https://arxiv.org/abs/2611.20692",
+  "use_case": ""
+}

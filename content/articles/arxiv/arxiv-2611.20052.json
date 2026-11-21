@@ -1,0 +1,25 @@
+{
+  "abstract": "Weighted split conformal prediction handles covariate shift by reweighting calibration scores with the likelihood ratio $v=dQ_X/dP_X$; its training-conditional coverage is a functional of the self-normalized weighted empirical distribution function $\\hat F_m$, and we study the process $\\sqrt m(\\hat F_m-F_Q)$. It converges in $\\ell^\\infty$ to the Gaussian process $W(G(t))-F_Q(t)W(K^2)$, with $G(t)=\\mathbb{E}_Q[v\\mathbf{1}\\{S\\le t\\}]$ and $K^2=1+χ^2(Q\\|P)$, if and only if $χ^2(Q\\|P)<\\infty$ (for non-degenerate scores); $\\sup v$ plays no role. The limit gives the joint law of the coverage across levels, consistent bootstraps, inflations asymptotically exact uniformly in the level, and Berry-Esseen-type rates. With estimated ratios, a uniform expansion remains valid when the estimate uses the calibration covariates; the estimation error enters through a covariance term that can reduce the variance below the oracle's, and a pairs bootstrap reproduces it. When the ratio is known, the weighted conformal threshold is semiparametrically efficient if and only if the ratio and the coverage indicator are uncorrelated under the test distribution, with an explicit efficient correction otherwise. When $χ^2(Q\\|P)=\\infty$, the ratio has a regularly varying tail of index $p\\in(1,2)$ and the score decouples from it in the far tail, the finite-dimensional limits are $p$-stable at the rate $m^{1-1/p}$ up to a slowly varying factor.",
+  "abstract_ja": "",
+  "authors": [
+    "Mehrdad Pournaderi"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.20052",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Weighted split conformal prediction handles covariate shift by reweighting calibration scores with the likelihood ratio $v=dQ_X/dP_X$; its training-conditional coverage is a functional of the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Weighted conformal prediction under covariate shift: process limits, estimated weights and efficiency",
+  "url": "https://arxiv.org/abs/2611.20052",
+  "use_case": ""
+}

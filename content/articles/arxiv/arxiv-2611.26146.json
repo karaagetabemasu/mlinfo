@@ -1,0 +1,30 @@
+{
+  "abstract": "The Unitree Go1 is a widely used platform for legged robotics research, yet collecting proprioceptive data from it is unnecessarily difficult: the Unitree SDK is sparsely documented, and ROS1 (Robot Operating System), the Go1's native middleware, is fully deprecated. We present an open-source graphical utility that enables researchers to reliably record proprioceptive data from the Go1, including joint states, IMU (Inertial Measurement Unit) readings, foot force sensor data, and gyroscope measurements, without requiring ROS expertise. The tool provides a simple GUI (Graphical User Interface) for starting, stopping, and labeling recordings in real time. The contribution of this paper is the collection utility. We characterize the acquisition quality of 51 recordings collected with it, including the achieved sampling rate and repeated samples. As a secondary, deliberately modest check that the data is useful, we train a terrain classifier on it. The results are weak: a Temporal Convolutional Network reaches about 38% accuracy on held-out recordings across ten terrain classes (10% would be chance), and a window-level split that ignores recording boundaries inflates the same measurement to about 99%. We report this as a demonstration that the logged signals carry terrain information, not as a competitive classifier. The utility is designed to lower the barrier to collecting Go1 proprioceptive data without ROS.",
+  "abstract_ja": "",
+  "authors": [
+    "Jack Anders Smitterberg",
+    "Tan Chen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26146",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "The Unitree Go1 is a widely used platform for legged robotics research, yet collecting proprioceptive data from it is unnecessarily difficult: the Unitree SDK is sparsely documented, and ROS1 (Robot…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "A Practical Proprioceptive Data Collection Utility for the Unitree GO1",
+  "url": "https://arxiv.org/abs/2611.26146",
+  "use_case": ""
+}

@@ -1,0 +1,29 @@
+{
+  "abstract": "Understanding how objects move in dynamic scenes requires recovering their 3D motion from visual observations and predicting their positions at unobserved times. Existing methods either optimize scene-specific velocity fields or impose predefined physical and kinematic assumptions. We instead study learning a continuous-time dynamics operator across scenes, mapping multi-view visual observations to 3D object kinematics. We introduce Adaptive Pixel Flows (\\ours{}), which learns this operator from multi-view RGB-D observations without per-scene optimization or predefined motion models. The method fuses observations from all cameras into a shared voxel grid in world coordinates, from which the network predicts a continuous-time velocity field. Because the operator is trained across scenes, it learns motion priors that carry over to unseen scenes. The field can then be integrated from observed states to predict object positions between observations and beyond the observed sequence. On held-out PhysInOne scenes, \\ours{} improves F1 over the strongest competing method by 2.5\\% for in-between prediction and 15\\% for future prediction. Compared with per-scene velocity-field methods, the improvements are 30\\% and 85\\%, respectively. Applied zero-shot to Spring-Gaus, it improves future-prediction F1 by 12\\%.",
+  "abstract_ja": "",
+  "authors": [
+    "Hrishikesh Viswanath",
+    "Aniket Bera"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26433",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "Understanding how objects move in dynamic scenes requires recovering their 3D motion from visual observations and predicting their positions at unobserved times. Existing methods either optimize…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "AdaPixFlow: Learning Continuous-Time 3D Dynamics Across Scenes from Sparse Multi-view Observations",
+  "url": "https://arxiv.org/abs/2611.26433",
+  "use_case": ""
+}

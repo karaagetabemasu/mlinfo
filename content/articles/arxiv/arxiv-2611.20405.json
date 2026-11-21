@@ -1,0 +1,30 @@
+{
+  "abstract": "Prior work shows that refusal in instruction-tuned language models can be ablated by intervening on a single residual-stream direction (Arditi et al., 2024), and more recent work finds multiple refusal-mediating directions and concept cones (Wollschläger et al., 2025). We ask a different question: do refusal-related directions carry information about the register of refusal language - how the model refuses - and not only whether it refuses? In Gemma-2-9B-IT we identify two SVM-derived linear directions (B1 for harmful-content vs. neutral, B2 for self-reference vs. neutral) at layer 20 with cos(B1, B2) = 0.252 (about 75 degrees, substantially non-parallel). Adding the harmful-vs-neutral difference-of-means direction (cosine 0.68 with B1) to the residual stream of self-reference prompts at alpha = 2.0 shifts content-safety vocabulary from 2.55 to 10.37 hits per 100 tokens, while a magnitude-matched random direction produces 1.13-2.16; the model continues to refuse but switches register from meta-style (\"as a language model...\") to content-style (\"this would be harmful\"). The same register-injection effect reproduces qualitatively in Gemma-2-2B-IT at layer 12 (content vocabulary 1.72 -> 6.37 at alpha = 1.0, vs. random control 1.35), with a narrower coherent-injection window than in 9B. The two directions are not symmetric: the B2 -> harmful intervention produces a much smaller register effect, and across ablation, sufficiency, and injection B1's causal effects are consistently larger than B2's. We frame this asymmetry as part of the finding: B1 appears to encode both category detection and refusal-vocabulary information, while B2 encodes primarily category detection. We frame the contribution as identifying category-aligned components related to the Arditi-style difference-of-means direction that play distinct functional roles in refusal register.",
+  "abstract_ja": "",
+  "authors": [
+    "Janhavi Khindkar",
+    "Nataliia Povarova"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.20405",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Prior work shows that refusal in instruction-tuned language models can be ablated by intervening on a single residual-stream direction (Arditi et al., 2024), and more recent work finds multiple…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Refusal Register is Causally Steerable: Decomposing the Refusal Direction into Category-Aligned Components in Gemma-2-9B-IT",
+  "url": "https://arxiv.org/abs/2611.20405",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Generative data augmentation adds samples from generative models to a classifier's training set. Many influential studies use generators pre-trained on large external datasets, and so mix the value of synthetic data with knowledge transferred through pretraining. We study the case without external data, where each generator learns only from the classifier's own training set, and ask when and why adding generated samples to that training set raises or lowers the classifier's test accuracy. We train classifiers with four backbones on six datasets, two of them medical, adding samples from four generators. We bound the excess risk of a classifier trained with synthetic data, that is, how far its population risk can lie above the minimum risk within its hypothesis class. The bound charges synthetic data for the total variation distance between the real and generated distributions and credits synthetic data for a larger training set. The gain from adding synthetic data, the fall in population risk, is at most the excess risk of the real-only classifier, which trains on the real images alone. Read through the bound, the experiments suggest that synthetic data help most when our classifiers detect only a small discrepancy between the generated and real data and the real-only classifier has room to improve, and that synthetic data help little or hurt when the detected discrepancy is large. Generators with a larger lower bound on the total variation distance, a bound that we estimate from our own classifiers, tend to help less on five of the six datasets, and on the CIFAR datasets the most accurate backbone gains the least. The bound gives these directions but not the size of the largest gains, most of which traditional augmentation also reaches at the same number of optimizer steps.",
+  "abstract_ja": "",
+  "authors": [
+    "Daniel Kua",
+    "Yan Song"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.21467",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Generative data augmentation adds samples from generative models to a classifier's training set. Many influential studies use generators pre-trained on large external datasets, and so mix the value…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "generation"
+    ]
+  },
+  "title": "Generative Data Augmentation Without External Data: An Empirical and Theoretical Study on Deep Networks",
+  "url": "https://arxiv.org/abs/2611.21467",
+  "use_case": ""
+}

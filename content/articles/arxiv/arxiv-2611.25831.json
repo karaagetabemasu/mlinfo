@@ -1,0 +1,30 @@
+{
+  "abstract": "Cross-environment deployment is the central obstacle to practical WiFi sensing: a pipeline reaching 0.89+ top-1 in its training environments collapses to 0.408 under Leave-One-Domain-Out (LODO) evaluation with only K-shot labels. A ceiling analysis shows the collapse is not an alignment problem: the action signal is strong across seen environments (about 0.89 K10), environment identity is decodable from the encoder (0.965), and the failure concentrates in the encoder's extrapolation to the novel environment. A pre-registered falsification chain confirms that \"align the domains\" methods--training-time alignment, readout-level prototype alignment, adversarial confusion, and covariance/subspace alignment (CORAL -3.8pp, subspace -8.3pp)--degrade performance, and that source-domain statistics anti-correlate with cross-environment contribution. The effective levers lie elsewhere; we combine them into Dec-H: (i) closed-form source within-class whitening, provably re-geometrizing the readout's L2 regularization (+8.6pp, zero cost); (ii) profile-mixing augmentation (+1.0pp); (iii) few-shot adaptation with alternating whitening refit (+1.5pp; fixed preconditioners are 20/20 negative); (iv) heterogeneous decision ensembles (+1.7pp); homogeneous scaling and source-weighted stacking are saturated or harmful. Dec-H reaches 0.560 K10 (0.812 K40), +15.2pp over the baseline, consistent across all four environments and seeds; all thirteen configurations were pre-registered with frozen criteria.",
+  "abstract_ja": "",
+  "authors": [
+    "Lei Wang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25831",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "Cross-environment deployment is the central obstacle to practical WiFi sensing: a pipeline reaching 0.89+ top-1 in its training environments collapses to 0.408 under Leave-One-Domain-Out (LODO)…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": [
+      "classification",
+      "generation"
+    ]
+  },
+  "title": "Beyond Alignment: Whitening Geometry, Profile Synthesis, and Heterogeneous Ensembles for Cross-Environment WiFi Action Recognition",
+  "url": "https://arxiv.org/abs/2611.25831",
+  "use_case": ""
+}

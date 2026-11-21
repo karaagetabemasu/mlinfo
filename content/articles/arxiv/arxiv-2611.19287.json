@@ -1,0 +1,31 @@
+{
+  "abstract": "When a vision-and-language navigation policy generates an action sequence autoregressively, the robot waits for a chain of dependent predictions. A small discrete action vocabulary makes it possible to score all short-horizon plans in parallel. We introduce VLN-Flash, a training-free decoder that evaluates the complete action-prefix tree in a single forward pass. Branch-specific attention and matched token positions preserve the original policy's conditional action distribution for each prefix in exact arithmetic. We use the score margin between the stepwise-greedy prefix and its strongest alternative at each depth to decide how many actions to execute. The robot then executes the plan with the highest joint score at the chosen depth before observing again. On matched inputs, VLN-Flash achieves a nearly $3\\times$ speedup in action decoding over native autoregression on Uni-NaVid and StreamVLN. Compared with the native autoregressive decoders, it improves success rate and success weighted by path length (SPL) on R2R-CE and RxR-CE, with success gains up to 2.7 percentage points. On a Unitree GO2, VLN-Flash improves navigation success and cuts the mean wait between actions by about 160 ms after subtracting network transmission time.",
+  "abstract_ja": "",
+  "authors": [
+    "Ruizhe Xie",
+    "Honghua Chen",
+    "Binglin Wang",
+    "Tong Guo",
+    "Xu Tang"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19287",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "When a vision-and-language navigation policy generates an action sequence autoregressively, the robot waits for a chain of dependent predictions. A small discrete action vocabulary makes it possible…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "VLN-Flash: Parallel Action Decoding with Adaptive Execution for Vision-and-Language Navigation",
+  "url": "https://arxiv.org/abs/2611.19287",
+  "use_case": ""
+}

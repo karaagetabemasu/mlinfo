@@ -1,0 +1,33 @@
+{
+  "abstract": "Language-conditioned traffic simulation enables scalable test scenarios steered by natural language. The goal is to control selected agents while surrounding traffic reacts to their observed behaviour. For example, a vehicle instructed to cut in late should cause the following vehicle to brake only when the manoeuvre becomes observable. Yet simulators can leak private instructions across agents, causing surrounding vehicles to react before the instructed behaviour becomes observable. Such premature reactions defuse desired events and alter the ensuing closed-loop scenario. Existing benchmarks measure what agents do, not what they could have known, leaving this failure unmeasured. We formalise it as intent leakage and address it through evaluation, data and modelling. Our paired intervention test holds an instructed agent's executed trajectory fixed while varying its private instruction, isolating leakage-induced changes in surrounding agents. We also construct WOMD-PACT, an automatically generated, verifiable dataset of 531,099 WOMD scenes with timed behaviour tags with reaction episodes identified through a counterfactual ghost test and grounded private instructions. Finally, we introduce CaFe, a dual-stream diffusion-forcing simulator fine-tuned in closed loop that restricts inter-agent interactions to public beliefs, preserving legitimate anticipation without leaking private intent. Our evaluation reveals that existing conditioning designs displace 23-83% of nearby uninstructed agents through private-intent leakage, even when the instructed agent's executed motion is held fixed. CaFe eliminates measurable leakage while maintaining comparable WOSAC realism (0.763), demonstrating that causal faithfulness can be enforced without sacrificing measured simulation realism.",
+  "abstract_ja": "",
+  "authors": [
+    "Steven Yu Tung",
+    "Shubham Vaijanath Phoolari",
+    "Christoph Lauer",
+    "Abhinav Valada",
+    "Steven Peters"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.22855",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Language-conditioned traffic simulation enables scalable test scenarios steered by natural language. The goal is to control selected agents while surrounding traffic reacts to their observed…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "CaFe: Causally Faithful Conditional Traffic Scenario Generation",
+  "url": "https://arxiv.org/abs/2611.22855",
+  "use_case": ""
+}

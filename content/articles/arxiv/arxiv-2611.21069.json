@@ -1,0 +1,31 @@
+{
+  "abstract": "Cooperative driving extends autonomous driving from individual vehicle decisions to joint maneuvers that improve traffic safety and efficiency. Optimization-based methods impose safety constraints but often fix paths to simplify multi-vehicle planning, limiting spatial flexibility. Multi-agent reinforcement learning (MARL) explores alternatives through interaction, but coordinated learning and safe execution remain challenging. Their integration nevertheless faces challenges in exploration efficiency, experience allocation, and execution reliability. To address these challenges, this paper proposes CoopDistill, an equilibrium-guided multi-agent policy distillation framework. A potential-game (PG) formulation provides a fixed-path longitudinal reference, around which a residual MARL policy learns longitudinal acceleration, conflict-approach timing, and lateral path corrections. A hard-case curriculum concentrates experience on interactions that PG leaves unresolved or substantially delayed. A comparative rollout selector evaluates the joint consequences of learned corrections against PG before choosing the executed action. Experiments in merging, roundabout, and intersection scenarios compare CoopDistill with six baselines at four connected automated vehicle penetration levels. Relative to PG, success improves by 2.1--27.1 percentage points and delay decreases by 7.3--27.3\\%, with no observed collisions. Code is available at https://github.com/FanGShiYuu/CoopDistill",
+  "abstract_ja": "",
+  "authors": [
+    "Shiyu Fang",
+    "Sheng Zhao",
+    "Jiarui Zhang",
+    "Chengkai Xu",
+    "Xiaocong Zhao"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/FanGShiYuu/CoopDistill",
+  "hasCode": true,
+  "id": "arxiv-2611.21069",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Cooperative driving extends autonomous driving from individual vehicle decisions to joint maneuvers that improve traffic safety and efficiency. Optimization-based methods impose safety constraints…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "CoopDistill: Equilibrium-Guided Multi-Agent Policy Distillation for Cooperative Driving",
+  "url": "https://arxiv.org/abs/2611.21069",
+  "use_case": ""
+}

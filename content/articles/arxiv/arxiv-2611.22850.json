@@ -1,0 +1,28 @@
+{
+  "abstract": "Lidar-inertial odometry (LIO) has an efficiency problem. High-resolution lidars produce millions of points per second that must be processed online on the resource-constrained hardware of robots, cars, or drones, yet most LIO methods neither bound their memory nor report their compute footprint. We introduce Pelorus, a resource-aware LIO with a fixed-capacity multiresolution map of voxelized normal distributions and an iterated equivariant state estimator. A relevance-based eviction keeps the map memory bounded, and a maturity-weighted map update suppresses inconsistent observations. The pipeline runs in parallel on CPUs and GPUs. On five sequences from three public datasets, Pelorus achieves the lowest relative pose error in seven of ten metrics with a small, bounded memory footprint and, with GPU offloading, the lowest CPU load of all compared methods. On an NVIDIA Jetson Orin NX, it processes a 128-beam lidar at 10 Hz. Pelorus is open source with CUDA, Vulkan, and Metal backends.",
+  "abstract_ja": "",
+  "authors": [
+    "Charlotte Sieh",
+    "Mario Porrmann"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.22850",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "timeseries",
+  "summary": "Lidar-inertial odometry (LIO) has an efficiency problem. High-resolution lidars produce millions of points per second that must be processed online on the resource-constrained hardware of robots,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Pelorus: Resource-Aware Lidar-Inertial Odometry",
+  "url": "https://arxiv.org/abs/2611.22850",
+  "use_case": ""
+}

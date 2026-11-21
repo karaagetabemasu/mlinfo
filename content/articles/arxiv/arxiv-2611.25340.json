@@ -1,0 +1,37 @@
+{
+  "abstract": "Reconstructing an editable 3D scene from video requires matching visible structure while plausibly completing unseen surfaces. Agents can write scene-construction programs, but direct reconstruction attempts often produce errors in layout, scale, and lighting. We introduce SceneAnything, an automated system for reconstructing mesh scenes from real and generated videos, enabling text-to-scene construction when paired with video generation. A software harness coordinates agents, pretrained vision models, and graphics tools through an explicit reconstruction protocol. Shared camera, depth, and segmentation estimates ground component construction: a scene-owner agent plans the environment and briefs authors, who write parameterized Blender programs. A visibility- and fit-based level-of-detail rule selects the construction level, while unseen regions are completed and marked as inferred. Assembled scenes use fitted lighting and supported motion, and revisions undergo programmatic checks and independent visual comparisons. Accepted programs and lessons are reused across scenes. We evaluate on 100 scenes; subset comparisons show improved original-view fidelity over direct-agent reconstruction and higher novel-view content similarity than the compared video-to-3D methods. We will release the harness, agent instructions, reusable libraries, and scenes.",
+  "abstract_ja": "",
+  "authors": [
+    "Bowen Xue",
+    "Saeed Hadadan",
+    "Fabrice Rousselle",
+    "Zahra Montazeri",
+    "Ravi Ramamoorthi"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25340",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Reconstructing an editable 3D scene from video requires matching visible structure while plausibly completing unseen surfaces. Agents can write scene-construction programs, but direct reconstruction…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "3d"
+    ],
+    "task": [
+      "generation",
+      "segmentation"
+    ]
+  },
+  "title": "SceneAnything: Agentic Reconstruction of Large-Scale Mesh Scenes from a Single Video",
+  "url": "https://arxiv.org/abs/2611.25340",
+  "use_case": ""
+}

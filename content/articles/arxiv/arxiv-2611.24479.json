@@ -1,0 +1,35 @@
+{
+  "abstract": "Self-attention over long token sequences dominates the inference cost of video diffusion transformers. Clustering-based sparse attention clusters both queries and keys and lets all queries in a cluster share one selection of key clusters. We show that this sharing limits accuracy: with key clusters and density fixed, attention grows more accurate as the query clusters are refined, and is most accurate when each query selects on its own, which needs no query clustering at all. We therefore propose Per-Query Routed Sparse Attention (PQRS), a training-free method that clusters only keys, lets each query select its own key clusters, and compensates for the unselected ones with their centroids. Per-query selections leave no query tile with a shared key list, so PQRS traverses key clusters instead of queries, buckets queries with identical selections into dense tasks, and merges their partial results in one pass under a fixed softmax offset carried from the previous denoising step. On four text-to-video and image-to-video models from the Wan and HunyuanVideo families, PQRS is the fastest of all the sparse attention methods we evaluate and the closest to the dense output, reaching $28.9$ dB PSNR on Wan2.1-T2V and $35.4$ dB on HunyuanVideo at $1.66$--$2.10\\times$ end-to-end speedup.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhen Huang",
+    "Shuwei Li",
+    "Ruizhe Yao",
+    "Xinrui Chen",
+    "Danyi Liu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.24479",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Self-attention over long token sequences dominates the inference cost of video diffusion transformers. Clustering-based sparse attention clusters both queries and keys and lets all queries in a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Every Query Routes Itself: Accelerating Video Diffusion Transformers with Per-Query Routed Sparse Attention",
+  "url": "https://arxiv.org/abs/2611.24479",
+  "use_case": ""
+}

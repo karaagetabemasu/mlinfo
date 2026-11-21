@@ -1,0 +1,28 @@
+{
+  "abstract": "Bayesian neural networks provide principled uncertainty estimates, but training them with Monte Carlo sampling can be expensive. Sampling-free variational inference algorithms make training Bayesian neural networks feasible, but existing approaches assume a Gaussian output distribution, which can be inaccurate in applied problems. Here, we introduce CF-Prop, an uncertainty propagation method that uses characteristic functions to compute the exact output distribution of a Bayesian ReLU layer, without any sampling, even in non-Gaussian settings. Because CF-Prop propagates characteristic functions, the evidence lower bound---the objective of variational training---can be computed in closed form for a broad class of likelihoods, including the Gaussian, Poisson, and Gamma. This allows to implement an efficient resulting variational inference algorithm, CF-VI. On CIFAR-100, CF-VI achieves the lowest calibration error of any tested method, improving on the next best method by about 35%. On a heavy-tailed insurance claim dataset, CF-VI accurately captures tail uncertainty that is severely underestimated by both other sampling-free methods and Monte Carlo methods.",
+  "abstract_ja": "",
+  "authors": [
+    "William H. W. Thompson",
+    "Guillaume St-Onge",
+    "Laurent Hébert-Dufresne",
+    "Jean-Gabriel Young"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26426",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Bayesian neural networks provide principled uncertainty estimates, but training them with Monte Carlo sampling can be expensive. Sampling-free variational inference algorithms make training Bayesian…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Exact Bayesian layers via characteristic functions",
+  "url": "https://arxiv.org/abs/2611.26426",
+  "use_case": ""
+}

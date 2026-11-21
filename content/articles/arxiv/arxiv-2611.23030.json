@@ -1,0 +1,33 @@
+{
+  "abstract": "Not every perception error changes the planner's action. Yet adaptive-resolution perception chooses where to spend high-resolution computation from image cues, which can neither reliably point to an object that low resolution missed nor tell which objects matter to the planner. We observe that the planner can say where an object would matter before anything is seen: inserting a hypothetical object at a location tests whether its action would change. Decision-Guided Speculative Perception (DGSP) treats the low-resolution scene and its action as a draft and probes the planner in this way to obtain a decision-sensitivity field, the locations where an unseen object would change the action. Only this field and the support, the detections on which the current action rests, are verified at high resolution, repeatedly until the action is stable. For two planner classes, we prove that DGSP returns exactly the action of whole-frame high-resolution perception if crop detections match whole-frame ones and the crops cover the field, conditions that real images meet approximately. On three driving datasets, it reproduces this action on about 98% of frames with about a quarter of the pixels. At the pixel cost of uniform downscaling, it repairs more of the draft's disagreements with this action, brakes falsely less often, and recovers many more of the decision-relevant objects that the draft misses.",
+  "abstract_ja": "",
+  "authors": [
+    "Hoang Pham Cong",
+    "Long D. Nguyen",
+    "Ho Viet Duc Luong",
+    "Nguyen Tran Minh Nhat",
+    "Binh P. Nguyen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23030",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Not every perception error changes the planner's action. Yet adaptive-resolution perception chooses where to spend high-resolution computation from image cues, which can neither reliably point to an…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Check Your Blind Spots: Decision-Guided Perception by Probing the Planner with Hypothetical Objects",
+  "url": "https://arxiv.org/abs/2611.23030",
+  "use_case": ""
+}

@@ -1,0 +1,35 @@
+{
+  "abstract": "Driving scenes keep changing during model computation, making both observation freshness and action-delivery time central to world-action planning. To retain rich generative world priors in autonomous driving without stalling real-time control, we present SWIFT (Slow World, Instant Freshness, and Timely action), a deployment-oriented asynchronous world-action system that moves world updates off the observation-to-action critical path. On a background GPU, a slow Video DiT streams surround-view history into read-only predictive world context, trained with a predictive span that covers both the update interval and background world computation. On a foreground GPU, a lightweight freshness carrier encodes current surround-view images into a gated key/value bank at every step, letting a fast Action DiT combine live visual feedback with the latest completed world context without waiting. On open-loop NAVSIM, SWIFT reaches 94.2 PDMS at 198.4 ms per decision with a trajectory scorer; on closed-loop Bench2Drive, it achieves an 80.30 Driving Score at 109.9 ms foreground latency. SWIFT further transfers to the Waymo E2E hidden test (8.0050 Rater Feedback Score) and nuScenes (0.54 m mean endpoint error, 0.03% mean collision rate). Across all four benchmarks, SWIFT achieves the best results among compared world-action methods, establishing a favorable accuracy-latency trade-off.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiazhe Wang",
+    "Tianyi Yang",
+    "Ruihang Li",
+    "Fan Lu",
+    "Xianming Zeng"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23813",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Driving scenes keep changing during model computation, making both observation freshness and action-delivery time central to world-action planning. To retain rich generative world priors in…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "SWIFT: Slow World, Instant Freshness, and Timely Action for Asynchronous Autonomous Driving",
+  "url": "https://arxiv.org/abs/2611.23813",
+  "use_case": ""
+}

@@ -1,0 +1,26 @@
+{
+  "abstract": "Graph coloring, which entails assigning colors to nodes such that no adjacent nodes have the same color, is a fundamental combinatorial optimization problem. In general, however, finding a node coloring with no monochromatic edges given a fixed palette is NP-hard. This motivates learning-based methods that can learn to exploit recurring structure across instances to efficiently produce high-quality colorings. Crucially, the validity of a coloring is invariant to permutations of the colors, and we show that exploiting this symmetry reduces the size of the effective state space over which the model has to learn its policy. At the same time, the coloring algorithm must be able to break some symmetries, for example to assign different colors to two adjacent nodes belonging to the same automorphism orbit. In this paper, we introduce Scone, a model that uses a color-equivariant graph neural network to construct colorings sequentially, allowing information from previous assignments to propagate and break node symmetries. Scone achieves perfect solution quality with low inference times across several graph coloring tasks, including on sudoku_extreme and register allocations, and showcases generalization to graph families not encountered during training.",
+  "abstract_ja": "",
+  "authors": [
+    "Paolo Pellizzoni",
+    "Melanie Weber"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.25273",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "gnn",
+  "summary": "Graph coloring, which entails assigning colors to nodes such that no adjacent nodes have the same color, is a fundamental combinatorial optimization problem. In general, however, finding a node…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Scone: Symmetry-aware Neural Combinatorial Optimization for Graph Coloring",
+  "url": "https://arxiv.org/abs/2611.25273",
+  "use_case": ""
+}

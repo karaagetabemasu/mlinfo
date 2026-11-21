@@ -1,0 +1,37 @@
+{
+  "abstract": "Vision language models (VLMs) have achieved strong performance in 3D computed tomography (CT) classification, but high accuracy does not reflect whether their predictions rely on the correct anatomical evidence. We introduce ORGANIC3D, a framework for evaluating and improving organ level image text alignment through controlled anatomical interventions. Our benchmark assesses 12 vision encoder checkpoints and 7 generative VLMs using matched patient comparisons, organ erasure, lesion replacement, and laterality perturbations, revealing substantial alignment failures even among top performing models. To learn organ level image text correspondence, ORGANIC3D aligns each finding sentence with the anatomy aware image features and trains on edited scans to anchor this alignment in the organ's image evidence. We further extend this framework to generative VLMs, promoting evidence dependent question answering and report generation. Trained exclusively on public data, ORGANIC3D achieves SOTA classification AUROC on CTRATE, Merlin, and the heldout RADChestCT dataset and reaches 77% laterality accuracy, compared with at most 66% for prior models. Its generative VLM matches or exceeds all evaluated publicly released VLMs on visual question answering, achieves the highest report accuracy, and retracts 96 to 99% of target organ findings after organ removal, versus a maximum of 69% for other models. Together, these results establish ORGANIC3D as a framework for testing whether 3D CT vision language models ground their predictions in anatomical evidence and for improving organ level alignment alongside predictive accuracy.",
+  "abstract_ja": "",
+  "authors": [
+    "Zelong Liu",
+    "Hamza Ahmed",
+    "Wynn Wingyi Lee",
+    "Mickael Torjman",
+    "Alexander Dimitrakakis"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.23529",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "3d",
+  "summary": "Vision language models (VLMs) have achieved strong performance in 3D computed tomography (CT) classification, but high accuracy does not reflect whether their predictions rely on the correct…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d"
+    ],
+    "task": [
+      "classification",
+      "generation",
+      "qa"
+    ]
+  },
+  "title": "ORGANIC3D: Grounding 3D CT Vision Language Models in Organ Level Image Text Coupling",
+  "url": "https://arxiv.org/abs/2611.23529",
+  "use_case": ""
+}

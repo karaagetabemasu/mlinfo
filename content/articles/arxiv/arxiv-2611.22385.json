@@ -1,0 +1,32 @@
+{
+  "abstract": "Reliable localization in long underground infrastructures remains a major challenge for autonomous inspection robots. In hydropower spillway tunnels and drainage galleries, repetitive geometric structures provide insufficient constraints along the tunnel axis, while weak texture and illumination variations further degrade visual estimation. Under this coupled degradation, existing LiDAR-inertial and visual-inertial odometry systems may lose the ability to recover continuous longitudinal motion. This paper presents DGV-DLIVO, a degeneracy-guided visual fusion for direct LiDAR-inertial-visual odometry for extreme tunnel environments. Instead of treating vision as a general complementary sensor, the proposed method exploits the LiDAR-degenerate direction as an active guidance signal to determine informative visual regions, establish LiDAR-anchored visual associations, and perform subspace-selective fusion. The visual constraints are introduced only into the deficient motion subspace, while unreliable LiDAR information in the same direction is adaptively suppressed and reliable geometric constraints are preserved. Real-world experiments in hydropower tunnels demonstrate that representative state-of-the-art LIO, LIVO, and VIO methods suffer from stagnation, oscillation, severe under-travel, curved drift, or divergence, whereas DGV-DLIVO maintains continuous and directionally consistent tunnel-axis motion estimation under both cart-mounted and handheld acquisition. It achieves a 91.4% progress ratio over the 40m tunnel sequence and significantly improves longitudinal recovery and trajectory stability. These results demonstrate the effectiveness of degeneracy-guided adaptive fusion for robotic inspection in severely degraded underground environments. The source code and a supplementary video are publicly available at https://github.com/0RayZhang0/DGV-DLIVO.",
+  "abstract_ja": "",
+  "authors": [
+    "Junrui Zhang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/0RayZhang0/DGV-DLIVO",
+  "hasCode": true,
+  "id": "arxiv-2611.22385",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Reliable localization in long underground infrastructures remains a major challenge for autonomous inspection robots. In hydropower spillway tunnels and drainage galleries, repetitive geometric…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "3d"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "DGV-DLIVO: Degeneracy-Guided Visual Fusion for Direct LiDAR-Inertial-Visual Odometry in Degenerate Tunnel Environments",
+  "url": "https://arxiv.org/abs/2611.22385",
+  "use_case": ""
+}

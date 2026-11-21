@@ -1,0 +1,33 @@
+{
+  "abstract": "Bird's-Eye-View (BEV)-conditioned large language models (LLMs) enable language-interactive driving, but onboard deployment requires efficient perception and continuous planning alongside autoregressive language generation. We present GridDriver, an efficient BEV-conditioned LLM framework combining trajectory prediction, structured driving indicators, natural-language navigation, driving explanations, and scene question answering. Lightweight spatio-temporal BEV perception and spatially structured tokens provide scene context to a shared LLM, while frame-wise scheduling interleaves trajectory prediction with asynchronous language generation. GridDriver achieves competitive performance on public benchmarks, reaching 87.9% PDMS on NAVSIM and 57.6% accuracy on nuScenes-QA with a shared planning and QA checkpoint. Spatial representation analyses demonstrate improved geometric information retention and trajectory prediction compared with Q-Former compression. The system achieves 32.7 ms standalone planning latency and 9.4 plans/s in an onboard ROS 2 pipeline. We further evaluate planning on our own data recordings and demonstrate open-loop onboard operation on a research vehicle. Across public benchmarks and real-world evaluations, we identify strengths and limitations of the BEV-based approach.",
+  "abstract_ja": "",
+  "authors": [
+    "Katharina Winter",
+    "William Engel",
+    "Zain A. Alishammat",
+    "Fabian B. Flohr"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.21924",
+  "likes_count": 0,
+  "publishedAt": "2026-11-16",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Bird's-Eye-View (BEV)-conditioned large language models (LLMs) enable language-interactive driving, but onboard deployment requires efficient perception and continuous planning alongside…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation",
+      "qa"
+    ]
+  },
+  "title": "GridDriver: On-Board BEV-Based Language Planning and Reasoning",
+  "url": "https://arxiv.org/abs/2611.21924",
+  "use_case": ""
+}

@@ -1,0 +1,29 @@
+{
+  "abstract": "Vision-language models (VLMs) increasingly read a scene and report it to someone who acts on the report, sometimes under objectives that differ from that person's. We ask whether a stated incentive moves what a VLM reports, and whether this changes when the value must be read from pixels rather than given as text. In seeded synthetic scenes, a model reads the position of a target on a labelled axis and reports one integer to a fixed receiver; it is paid, in simulation, for accuracy or for a report a few units to one side, and every scene is also presented with the true value as text. Across a pilot and three follow-up studies with hash-frozen protocols, four small open VLMs from three families, and 15,170 held-out trials, a stated payoff moved reports in both modalities, and exact compliance at three units was significantly lower with the image than with text for three of four models; Qwen2.5-VL 7B showed no reliable difference. Adding the true value as text to the image prompt removed the gap in every model. For InternVL3 the gap vanished on scenes it read correctly when it wrote its reading first; for Gemma 3 it persisted. For Qwen2.5-VL 3B, which read every scene correctly, the gap held in four of five payoff paraphrases, nearly vanished when the model wrote its reading before its report or when the prompt stated that the client wants the truth, vanished with an unpaid goal, and persisted when the model reported before stating its reading; how often it shaded at all, even with text, depended strongly on the wording. When told that the client wants the true value, three of four models still shaded every text report. Visual input did not make these advisors reliably more truthful; it made compliance with a stated incentive depend on whether the read value is made explicit and on output order, a dependence that text-only evaluations and mean-shift metrics do not reveal.",
+  "abstract_ja": "",
+  "authors": [
+    "Hamidreza Hasani Balyani"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19561",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "multimodal",
+  "summary": "Vision-language models (VLMs) increasingly read a scene and report it to someone who acts on the report, sometimes under objectives that differ from that person's. We ask whether a stated incentive…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Read, Then Shade? How Visual Evidence Changes Incentive-Driven Misreporting in Vision-Language Advisors",
+  "url": "https://arxiv.org/abs/2611.19561",
+  "use_case": ""
+}

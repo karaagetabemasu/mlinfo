@@ -1,0 +1,33 @@
+{
+  "abstract": "Precipitation nowcasting models suffer from errors in intensity, location, and spatial structure. Addressing these errors by retraining nowcaster backbones can be computationally expensive and requires architecture-specific modifications. To overcome these limitations, we propose CorrectCast, a decoupled residual correction framework that refines completed nowcasts while keeping the base nowcaster frozen. By operating on predicted precipitation fields, CorrectCast requires training only a lightweight corrector, reducing computational overhead while providing a unified correction interface across different nowcasting models. Conditioned on the base nowcast and historical quantitative precipitation estimation (QPE) and precipitable water vapor (PWV) observations, the corrector selects multimodal context and employs scale-aware modulation to estimate residual corrections. On the Mississippi River Basin (MRB) and contiguous United States (CONUS) datasets, CorrectCast improves six base nowcasters spanning extrapolation-based, deterministic, and generative approaches, with absolute gains in mean CSI averaging 0.0233 and 0.0290 across the six models, respectively.",
+  "abstract_ja": "",
+  "authors": [
+    "Henan Wang",
+    "Shengwu Xiong",
+    "Yifang Zhang",
+    "Pengfei Duan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.22178",
+  "likes_count": 0,
+  "publishedAt": "2026-11-17",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Precipitation nowcasting models suffer from errors in intensity, location, and spatial structure. Addressing these errors by retraining nowcaster backbones can be computationally expensive and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "CorrectCast: Selective Multimodal Context for Scale-Aware Residual Correction in Precipitation Nowcasting",
+  "url": "https://arxiv.org/abs/2611.22178",
+  "use_case": ""
+}

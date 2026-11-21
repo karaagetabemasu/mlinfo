@@ -1,0 +1,30 @@
+{
+  "abstract": "We study when compositional structure yields dimension reduction in supervised learning. We frame learning as empirical risk minimization with a function-space prior: a regularization functional selects a subset of functions with favorable approximation and metric entropy. The models are compositions $f(x)=g(Ax+Δh(x))$, where $A\\in\\mathbb{R}^{k\\times d}$ is a linear base map, $Δh$ is a nonlinear correction, and $g$ is an outer function; that is, $f$ is an arbitrary smooth function of a $k$-dimensional representation of the input that is linear up to a correction. We prove covering-number bounds showing that the statistical complexity of this class interpolates between an intrinsic regime, parametric in the $kd$ entries of the linear map and nonparametric only in the representation dimension $k$, and an ambient $d$-dimensional nonparametric rate; the interpolation is controlled by the correction size $\\varepsilon=\\|Δh\\|$. We then connect $\\varepsilon$ to data geometry. If the data lie in a small tube around a $k$-dimensional manifold and the regression target depends on the input only through its nearest point on that manifold, then locally the target factorizes exactly as $g(Ax+Δh(x))$ with $A$ a tangent chart and a correction whose Sobolev norm scales linearly with curvature at the localization scale. Patching such local models over an atlas gives a finite-sample excess-risk bound for a least-squares estimator over a finite net of local models, whose ambient term vanishes with curvature. For a one-dimensional model problem we also prove a converse: on curved data, every affine compositional predictor faces an error floor unless its correction budget scales with curvature, while the matching curved model class attains the intrinsic rate. The correction size $\\varepsilon$ is thus the effective-dimension parameter linking curvature to statistical complexity.",
+  "abstract_ja": "",
+  "authors": [
+    "Christopher L. Hammond"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19523",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "We study when compositional structure yields dimension reduction in supervised learning. We frame learning as empirical risk minimization with a function-space prior: a regularization functional…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "supervised"
+    ],
+    "modality": [],
+    "task": [
+      "detection",
+      "regression"
+    ]
+  },
+  "title": "Geometric Stability and Sample Complexity for Compositional Function Priors",
+  "url": "https://arxiv.org/abs/2611.19523",
+  "use_case": ""
+}

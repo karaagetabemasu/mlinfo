@@ -1,0 +1,33 @@
+{
+  "abstract": "Visual neural decoding aims to infer perceived visual stimuli from brain activity, offering important insights into human visual cognition while enabling transformative applications in brain computer interfaces and artificial intelligence. Recent advances in pretrained vision-language models have provided a semantically rich representation space for this task. However, reliable alignment between EEG/MEG signals and visual embeddings remains challenging because neural responses are noisy, highly variable across trials, and subject dependent. To address this issue, we propose a unified neural-to-image retrieval framework that improves retrieval performance by aligning neural and image representations in a shared semantic space. The framework integrates dual-stream adaptation, frequency-domain calibration, and phase-guided temperature modulation to promote more robust cross-modal semantic alignment. Specifically, dual-stream adaptation models a low-dimensional shared subspace with correlation regularization to suppress redundant noise and enhance cross-modal consistency. Frequency-domain calibration conditionally modulates neural representations using amplitude and phase statistics. Phase-guided temperature modulation further adjusts the supervision strength in contrastive learning according to the stability of neural responses. Experiments on THINGS-EEG and THINGS-MEG under both intra-subject and inter-subject settings demonstrate that the proposed framework consistently outperforms strong baselines. These results suggest that robust neural-to-image retrieval under heterogeneous neural conditions benefits from a stable shared semantic space, frequency-informed representation calibration, and adaptive supervision. Code will be released at github.com/wanfkuabc/Geometry-Regularized-Brain-Embeddings.",
+  "abstract_ja": "",
+  "authors": [
+    "YaoYang Liu",
+    "ZhuoShi Tang",
+    "Haopeng Lai",
+    "Weijun Sun",
+    "Xiaozhao Fang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.24163",
+  "likes_count": 0,
+  "publishedAt": "2026-11-18",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Visual neural decoding aims to infer perceived visual stimuli from brain activity, offering important insights into human visual cognition while enabling transformative applications in brain computer…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Stabilizing Neural-to-Image Retrieval with Frequency-Domain Priors and Adaptive Supervision",
+  "url": "https://arxiv.org/abs/2611.24163",
+  "use_case": ""
+}

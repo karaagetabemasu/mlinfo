@@ -1,0 +1,31 @@
+{
+  "abstract": "Random forests (RFs) often achieve high prediction performance, but their ensemble structure can be difficult to interpret. Surrogate models and rule extraction methods offer interpretable approximations, yet guidance on selecting an appropriate method for a specific research question remains limited. We compared 12 methods for interpreting RFs, with a decision tree as a prediction-oriented reference, across 11 simulation settings and 67 benchmark datasets for regression and classification. Evaluation addressed prediction and structural similarity to the RF, model complexity, prediction performance, and runtime. Simulations additionally assessed explainability using known effect and noise variables. No method performed best across all objectives. For regression, SLIM provided the strongest general performance for prediction similarity or performance on test data, while a linear model offered a simpler global interpretation of linear effects when performance was comparable. For classification, inTrees achieved the strongest overall benchmark performance, with CTree and OC-CART providing useful alternatives. ART consistently produced the most compact representations. NH and SIRUS offered strong structural similarity for regression, while MRT most closely reproduced RF variable usage in the classification simulations, illustrating that prediction-oriented rankings do not necessarily identify the best structural explanation. Outcome-type restrictions, runtime limits, and method-specific failures reduced result availability for several approaches and should be considered alongside performance when selecting a method. Method selection should therefore be guided by the outcome type, anticipated data structure, and intended interpretability objective. Prediction similarity alone is insufficient for explaining an RF and should be considered jointly with structural similarity and model complexity.",
+  "abstract_ja": "",
+  "authors": [
+    "Lea L. Mairhöfer",
+    "Jonathan B. Krause",
+    "Björn-Hergen Laabs",
+    "Silke Szymczak"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19471",
+  "likes_count": 0,
+  "publishedAt": "2026-11-14",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Random forests (RFs) often achieve high prediction performance, but their ensemble structure can be difficult to interpret. Surrogate models and rule extraction methods offer interpretable…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "regression"
+    ]
+  },
+  "title": "Interpreting Random Forests: Comparing Surrogate Models and Rule Extraction Methods",
+  "url": "https://arxiv.org/abs/2611.19471",
+  "use_case": ""
+}

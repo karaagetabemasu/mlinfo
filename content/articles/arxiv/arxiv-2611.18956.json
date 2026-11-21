@@ -1,0 +1,29 @@
+{
+  "abstract": "Mixture-of-Experts (MoE) models add parameters without proportionally increasing per-token compute. However, training cost also depends on bytes moved, memory held, and kernels launched, and many of those costs follow total parameter size rather than active compute. On infrastructure built for dense models, this mismatch is costly: in early baselines, throughput fell as stored expert parameter size grew, even though the useful work per token stayed nearly fixed. To close this gap, we present a redesigned training stack in Olmo-core, built for efficient, scalable MoE training. We replace the Fully Sharded Data Parallel (FSDP) of earlier Olmo-core versions with an architecture built on Distributed Data Parallel (DDP), and add Expert Parallelism (EP), Pipeline Parallelism (PP), a distributed optimizer, and activation recompute. We propose NVSHMEM-based rowwise EP, which writes each token directly into its expert's buffer, avoiding dispatch and combine permutation overhead. We make EP fully synchronization-free by keeping routing metadata on the GPU and using device-scheduled grouped GEMMs. Closely integrated MXFP8 cuts compute, activation-memory, and transport costs, and topology-agnostic checkpoints let the parallel layout change between runs. On NVL8 B300 nodes, the stack supports training configurations from 12.9 billion to 1.2 trillion total parameters on up to 512 GPUs, reaching 858 useful-model TFLOP/s/GPU at 1.2 trillion with MXFP8 and per-layer recompute; an experimental capacity test with the optional DeepEP v2 backend reaches 2.38 trillion. We also explain each design choice and share findings for other training systems; for example, we identify a failure pattern we call Token Gerrymandering, in which the MoE router can learn to hack the load-balancing loss, and find that overlapping communication with computation can slow the overlapped kernels by more than it hides.",
+  "abstract_ja": "",
+  "authors": [
+    "Tianhua Tao",
+    "Akshita Bhagia",
+    "Dirk Groeneveld",
+    "Pete Walsh",
+    "Tyler Romero"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.18956",
+  "likes_count": 0,
+  "publishedAt": "2026-11-13",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Mixture-of-Experts (MoE) models add parameters without proportionally increasing per-token compute. However, training cost also depends on bytes moved, memory held, and kernels launched, and many of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Supercharging Olmo-core for Efficient and Scalable MoE Training",
+  "url": "https://arxiv.org/abs/2611.18956",
+  "use_case": ""
+}

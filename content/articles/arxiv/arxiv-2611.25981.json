@@ -1,0 +1,26 @@
+{
+  "abstract": "Poker and other games with hidden information are too large to solve in one pass. Strong systems compute a complete blueprint strategy offline and refine it in real time inside the reached subgame. In 2p0s games, a safety theorem guarantees that subgame resolving never increases how much an adversary can gain by exploiting the resolved strategy relative to the blueprint strategy. With three or more players acting independently, no such guarantee exists yet, and heuristic resolving can increase the profile's best-response gap. We prove the first conditional safety theorem for uncorrelated multiplayer subgame resolving, a post-hoc certificate for any delivered update. The best-response gap of the resolved profile exceeds that of the blueprint by at most four terms. Two concern the resolver: the subgame value the blueprint promised without realizing ($A_i^{S}$) and the resolver's subgame solve error ($\\varepsilon_i$). The other two are the opponents' best-response gains inside the subgame over their promised values ($\\sum_q M_{q}$) and a structural tax ($Θ$), which measures how much the players' total utility can change. The tax is zero in constant-sum games, including every rake-free poker variant. Constructions attain each term with equality. On three-player Leduc poker and on Kuhn poker with up to six players, resolving without a certificate raises the gap beyond a small tolerance in 12% to 100% of the updates. The certificate flags every such update and accepts 41% (Kuhn) and 86% (Leduc) of the standard resolving updates. A resolver that keeps the blueprint whenever the certificate exceeds the tolerance delivers no harmful update. The certificate needs only one best-response pass per opponent inside the subgame, so real-time multiplayer solvers that refine a blueprint can attach it as a safety check. Code is available at https://github.com/lbn187/MultiPlayerSolver",
+  "abstract_ja": "",
+  "authors": [
+    "Boning Li",
+    "Longbo Huang"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "https://github.com/lbn187/MultiPlayerSolver",
+  "hasCode": true,
+  "id": "arxiv-2611.25981",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "Poker and other games with hidden information are too large to solve in one pass. Strong systems compute a complete blueprint strategy offline and refine it in real time inside the reached subgame.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Safe Subgame Resolving in Multiplayer Games",
+  "url": "https://arxiv.org/abs/2611.25981",
+  "use_case": ""
+}

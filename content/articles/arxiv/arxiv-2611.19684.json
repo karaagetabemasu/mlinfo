@@ -1,0 +1,29 @@
+{
+  "abstract": "Diffusion-based driving planners can generate multiple trajectories for the same scene, but these candidates vary in quality. Can their internal states reveal which candidate will be better before denoising is complete? We systematically study this question in three pretrained planners: Alpamayo, ReCogDrive-IL, and HDP, using linear probes to predict final trajectory quality from intermediate states and evaluating candidate ranking and selection on held-out scenes. Across all three planners, we observe that states from the first denoiser evaluation already support informative selection, while further denoising does not consistently improve selection quality. Further analyses show that readout depends on the representation and reader, and that selection can coexist with limited overall ranking accuracy. These findings motivate an early-selection method that selects after the first denoiser evaluation and completes only the chosen candidate. This reduces computation relative to fully denoising every candidate and improves open-loop trajectory quality over random selection across all three planners. In particular, it reduces Alpamayo's average displacement error by 17.8% and 13.4% in one- and four-camera configurations, respectively. Closed-loop evaluations also show higher mean driving scores and progress.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiang Zhang",
+    "Ziyang Leng",
+    "Yuxin Bao",
+    "Zhihao Zhao",
+    "Bolei Zhou"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.19684",
+  "likes_count": 0,
+  "publishedAt": "2026-11-15",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Diffusion-based driving planners can generate multiple trajectories for the same scene, but these candidates vary in quality. Can their internal states reveal which candidate will be better before…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Early Readability of Trajectory Quality in Diffusion Driving Planners",
+  "url": "https://arxiv.org/abs/2611.19684",
+  "use_case": ""
+}
