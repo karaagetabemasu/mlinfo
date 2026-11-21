@@ -1,0 +1,27 @@
+{
+  "abstract": "Comparing internal representations across trained models is important for identifying corresponding layers and selecting components for model reuse. Yet, direct comparisons at inference require evaluating candidate models on known reference inputs and collecting their internal activations. In this paper, we study whether internal representation similarity measured across independently trained models can instead be learned to predict in unseen models from their parameterized computations. We introduce a framework that applies a graph metanetwork for mapping each internal site to an embedding derived from its upstream computations while accounting for hidden-coordinate permutation and internal attention-basis transformations. We analyze the structural properties of our estimators and derive conditional guarantees for layer retrieval and stitching candidate selection. Empirically, we find that the learned predictors support relation estimation and low-regret layer retrieval. They also select useful stitching connections while not being trained on stitching outcomes. This opens up a new way to study representation similarity directly from trained neural networks: representational relations learned across a collection of trained models can generalize to new computations, and that the predicted relations can guide candidate selection before direct measurement or adapter fitting for functional evaluations.",
+  "abstract_ja": "",
+  "authors": [
+    "Ya-Wei Eileen Lin",
+    "Daniel Herbst",
+    "Stefanie Jegelka"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26081",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Comparing internal representations across trained models is important for identifying corresponding layers and selecting components for model reuse. Yet, direct comparisons at inference require…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Learning to Compare Neural Representations from Parameterized Computation Graphs",
+  "url": "https://arxiv.org/abs/2611.26081",
+  "use_case": ""
+}

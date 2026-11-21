@@ -1,0 +1,28 @@
+{
+  "abstract": "Differentiable programming enables online calibration of numerical models by minimizing errors accumulated along simulated trajectories. This includes estimating physical parameters and training neural sub-models in hybrid configurations. Gradients are typically computed using adjoint methods, or backpropagation through time (BPTT), whose computational and memory costs grow with the length of the training window. This limits the duration and resolution of hybrid-model training, a major bottleneck for realistic geophysical applications. Approaches like truncated BPTT reduces memory use by discarding sensitivities across truncation boundaries, introducing gradient bias and neglecting long-range dependencies. We propose a class of gradient approximation methods that preserve the adjoint recurrence over the full trajectory while approximating only the pullback operators within it. Exact pullbacks are computed by automatic differentiation at sparse anchor states only. Between anchors, sensitivities propagate either through the identity (Zero-order) or through a reused, frozen pullback (Pullback Reuse). This approximation makes the parameter pullback constant within each chunk, allowing the gradient sum to factorize so that a single evaluation per chunk replaces one per time step. We evaluate both on three systems of increasing complexity, an incomplete Lorenz-63 model, a large-eddy closure for two-dimensional quasi-geostrophic turbulence, and bias correction in a multilayer quasi-geostrophic ocean model. Peak memory falls by up to an order of magnitude and runtime up to fourfold, with Pullback Reuse staying closest to the exact gradient direction. In all three cases, approximate gradients support hybrid-model training at comparable accuracy, showing that effective online learning does not require exact gradients.",
+  "abstract_ja": "",
+  "authors": [
+    "Emilio González-Zamora",
+    "Pierre Tandeo",
+    "Laurent Debreu",
+    "Said Ouala"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26095",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Differentiable programming enables online calibration of numerical models by minimizing errors accumulated along simulated trajectories. This includes estimating physical parameters and training…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Approximate Adjoint Models for Memory and Compute-Efficient Online Learning of Hybrid Models",
+  "url": "https://arxiv.org/abs/2611.26095",
+  "use_case": ""
+}

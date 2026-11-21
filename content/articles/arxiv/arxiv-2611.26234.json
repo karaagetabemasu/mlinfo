@@ -1,0 +1,30 @@
+{
+  "abstract": "Source-free domain adaptation (SFDA) adapts a pretrained source model to unlabeled target domains without source data access, yet two critical failure modes remain unaddressed. First, attention drift: source-learned attention maps shift toward spurious or background features under distribution shift, destabilizing feature representations. Second, domain-gap-agnostic initialization: applying a single fixed source model uniformly across all target domains ignores domain gap severity, causing premature overfitting to noisy pseudo-labels under large shifts. We propose DGA-CAFC to address both failures. The Counterfactual Attention-based Feature Consistency (CAFC) module enforces feature stability by minimizing the discrepancy between representations computed under learned attention and those under counterfactual-inspired normalized perturbations, thereby promoting domain-robust features independent of spurious attention shifts. The Domain-Gap Aware Source Model Selection (DGASS) module estimates domain gap severity via target prediction entropy and selects the source model variant whose confidence level best matches the estimated gap, reducing negative transfer and stabilizing pseudo-label quality. Crucially, CAFC transfers beyond SFDA: applied as a lightweight regularizer to standard domain generalization objectives without target data. Extensive experiments across SFDA and DG benchmarks demonstrate that our method consistently improves over recent baselines, demonstrating the effectiveness and generality of the proposed framework. Project page is available at https://visdomlab.github.io/DGA_CAFC",
+  "abstract_ja": "",
+  "authors": [
+    "Shivangi Rai",
+    "Vinod K Kurmi"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26234",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Source-free domain adaptation (SFDA) adapts a pretrained source model to unlabeled target domains without source data access, yet two critical failure modes remain unaddressed. First, attention…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Attention Drift Regularization with Adaptive Initialization for Domain-Robust Visual Recognition",
+  "url": "https://arxiv.org/abs/2611.26234",
+  "use_case": ""
+}

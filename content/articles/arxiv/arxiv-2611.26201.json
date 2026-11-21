@@ -1,0 +1,29 @@
+{
+  "abstract": "Transfer learning typically reuses knowledge acquired by a source network through its learned weights. We investigate whether a learned activation function can also be transferred and remain useful in networks trained from scratch. We study this complementary form of transfer through a learn-freeze-transfer protocol, in which the activation is optimized jointly with a source network in a single training run, and is then frozen and reused in target networks trained from scratch. A pointwise activation with globally shared parameters is independent of layer dimensions and can therefore be incorporated into networks of different architectures trained from scratch. We instantiate this protocol with FAct, a five-parameter activation represented by a two-harmonic truncated Fourier series, initialized from a Fourier approximation of GELU and learned in a Vision Transformer (ViT) on ImageNet-1K. When reused in a ViT of the same architecture trained from scratch on ImageNet-1K, the frozen activation (Frozen FAct) improves top-1 accuracy by 1.46 percentage points over GELU. Across four smaller target architectures (standard ViT, Swin Transformer, linear-attention ViT, and MLP-Mixer) and four image-classification datasets, it achieves the highest mean accuracy among eleven activation functions in 15 of 16 settings under a common training configuration, with improvements of up to 1.71 percentage points over the best conventional activation. When the learning rate and weight decay are tuned separately for each activation under the same search budget, Frozen FAct still ranks first in 11 of the 16 settings, second in four, and fourth in one. These results provide empirical evidence that a learned activation function can retain its usefulness when transferred across vision architectures, independently of the weights with which it was learned.",
+  "abstract_ja": "",
+  "authors": [
+    "Arun Prakash A"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26201",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Transfer learning typically reuses knowledge acquired by a source network through its learned weights. We investigate whether a learned activation function can also be transferred and remain useful…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Learn, Freeze, and Transfer an Activation Function Across Architectures",
+  "url": "https://arxiv.org/abs/2611.26201",
+  "use_case": ""
+}

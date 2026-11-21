@@ -1,0 +1,35 @@
+{
+  "abstract": "Hierarchical text detection aims to localize words, text lines, and paragraphs while parsing their structural relationships. It provides essential structural cues for visual text understanding. To maximize accuracy, existing methods typically rely on complex multi-scale feature fusion necks and heavy-weight heads, resulting in bloated architectures and low inference efficiency. In this paper, we argue that a sufficiently pre-trained backbone can effectively replace these sophisticated external modules, while simple geometric inclusion suffices for hierarchical text structural parsing. Thus, we propose Prism, a minimalist framework for hierarchical text detection. Prism performs multi-granularity detection by attaching parallel lightweight heads to a single-scale backbone feature map, covering words, text lines, and paragraphs, and reconstructs the structural hierarchy via an efficient geometric inclusion algorithm. In addition, we systematically compare representative lightweight head archetypes and show that pixel-level regression offers the best accuracy-efficiency trade-off in this setting. Experiments on multiple public benchmarks show that our significantly simplified architecture achieves state-of-the-art (SOTA) performance with remarkable efficiency. Specifically, it runs $1.7\\times$ faster than LRANet on CTW1500 while achieving higher accuracy, and surpasses the current SOTA method, OmniParser V2, by over 6 PQ points on the hierarchical HierText dataset. Code will be released soon.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuchen Su",
+    "Xuesheng Wang",
+    "Zhilong Ji",
+    "Jinfeng Bai",
+    "Shijian Lu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26254",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Hierarchical text detection aims to localize words, text lines, and paragraphs while parsing their structural relationships. It provides essential structural cues for visual text understanding.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection",
+      "regression"
+    ]
+  },
+  "title": "Prism: Hierarchical Text Detection with Minimalist Design",
+  "url": "https://arxiv.org/abs/2611.26254",
+  "use_case": ""
+}

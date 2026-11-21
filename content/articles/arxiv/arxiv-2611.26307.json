@@ -1,0 +1,30 @@
+{
+  "abstract": "Resistive random-access memory (ReRAM)-based processing-in-memory (PIM) accelerators offer a highly efficient platform for parallel matrix-vector multiplications (VMM) in neural networks, leveraging analog computation, high density, low leakage, and non-volatility. However, their susceptibility to permanent faults, such as stuck-at-high (\\textit{SaH}) and stuck-at-low (\\textit{SaL}) resistance states, permanently corrupts the convolutional neural networks (CNNs) weights mapped onto ReRAM cell conductance values, thereby degrading inference accuracy and leading to system unreliability in safety-critical applications. Fault injection is a commonly used technique to assess the vulnerability of neural networks by systematically injecting faults into individual parameters and measuring the resulting accuracy degradation. Although this method is accurate, it is prohibitively time-consuming and computationally expensive, especially for large-scale CNNs. In this paper, we propose a fast, scalable, and analytical framework to quantify the fault vulnerability of convolutional neural networks deployed on ReRAM-based PIM accelerators. This method quantifies vulnerability at different granularities, including weights, kernels, and layers, without the need for exhaustive simulation, enabling the design of fault-tolerant accelerators for edge and safety-critical applications. The comparison between the results of the proposed vulnerability score (VS) metrics with performance metric of CNNs captured with fault injection simulations confirms the effectiveness of our proposed method. Unlike exhaustive fault injection, which requires days or weeks, whereas the proposed approach achieves a speedup of about $10^4\\times-10^5\\times$, enabling fast and accurate vulnerability analysis for large-scale CNNs within only a few minutes or hours.",
+  "abstract_ja": "",
+  "authors": [
+    "Aniseh Dorostkar",
+    "Hamed Farbeh",
+    "Hamid R. Zarandi",
+    "Meysam Sharifzadeh"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26307",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Resistive random-access memory (ReRAM)-based processing-in-memory (PIM) accelerators offer a highly efficient platform for parallel matrix-vector multiplications (VMM) in neural networks, leveraging…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Scalable fault vulnerability analysis for ReRAM-based process-in-memory CNN accelerators",
+  "url": "https://arxiv.org/abs/2611.26307",
+  "use_case": ""
+}
