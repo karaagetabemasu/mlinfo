@@ -1,0 +1,36 @@
+{
+  "abstract": "We introduce IPQSSL, a quantum-informed regularized Poisson framework for graph-based semi-supervised classification under scarce labels. Local graph feature contexts are QR factorized, lifted to unitary encodings, and processed by a shared variational circuit whose measurements yield node wise diagonal weights that stabilize a symmetrized Poisson system. We establish positive definiteness of the symmetrized, regularized operator under explicit spectral conditions and derive a Hermitian, block encoding compatible formulation that separates the classical NISQ oriented implementation from a future fault-tolerant pathway. Across seven benchmarks spanning tabular data and a citation network, the effect of regularization is dataset- and budget-dependent: IPQSSL improves over the Poisson baselines on Iris and Wine at all but the single-label budget, reaching 0.946 accuracy on Iris at ten labels per class and at every budget on German Credit, where, however, all methods remain below the majority class rate. Original Poisson remains preferable on Breast Cancer, Heart Disease, Optdigits, and Cora, with the deficit narrowing as the label budget grows on the two largest graphs. Ablations attribute the gains to diagonal stabilization rather than variational training. The result is a resource transparent bridge between Poisson graph learning and quantum linear algebra, with an explicit empirical delineation of when diagonal regularization helps.",
+  "abstract_ja": "",
+  "authors": [
+    "Hamed Gholipour",
+    "Farid Bozorgnia",
+    "Hamzeh Mohammadigheymasi",
+    "Joao Neves",
+    "Moharram Challenger"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27609",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "We introduce IPQSSL, a quantum-informed regularized Poisson framework for graph-based semi-supervised classification under scarce labels. Local graph feature contexts are QR factorized, lifted to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "semi-supervised"
+    ],
+    "modality": [
+      "text",
+      "tabular"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Quantum-Informed Regularized Poisson Learning for Graph-Based Semi-Supervised Classification",
+  "url": "https://arxiv.org/abs/2611.27609",
+  "use_case": ""
+}

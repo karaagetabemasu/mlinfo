@@ -1,0 +1,33 @@
+{
+  "abstract": "Aerial visible-to-infrared (V2IR) image translation provides scalable thermal data across the full diurnal cycle. However, existing methods predominantly learn a static mapping within narrow acquisition windows. As the thermal state evolves throughout the day, a single visible image may correspond to multiple plausible IR appearances, making V2IR translation an inherently multitemporal task. This letter proposes solar-conditioned latent flow matching (Solar-Flow), which upgrades aerial V2IR translation from static mapping to multitemporal generation. First, we design three computable physical factors, namely the solar elevation, the thermal phase clock (TPC), and the flight altitude. The TPC counts the elapsed heating and cooling hours on a continuous 24-hour axis anchored at sunrise, so the thermal state stays well defined even at hours without training samples. Second, we inject the condition into every Transformer block of a pretrained flow matching generator through adaptive layer normalization. This design preserves translation fidelity and enables multitemporal generation. Finally, we construct a paired aerial V2IR dataset covering 14 hour groups. Solar-Flow achieves multitemporal generation on this dataset, where a single visible image is translated into plausible IR images at multiple times of day, even at hours that were never seen in training.",
+  "abstract_ja": "",
+  "authors": [
+    "Wenwen Fang",
+    "Bingwei Hui",
+    "Xin Chen",
+    "Zhongzhen Sun",
+    "Zhenfeng Shao"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27501",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Aerial visible-to-infrared (V2IR) image translation provides scalable thermal data across the full diurnal cycle. However, existing methods predominantly learn a static mapping within narrow…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Solar-Conditioned Flow Matching for Multitemporal Aerial Visible-to-Infrared Image Translation",
+  "url": "https://arxiv.org/abs/2611.27501",
+  "use_case": ""
+}

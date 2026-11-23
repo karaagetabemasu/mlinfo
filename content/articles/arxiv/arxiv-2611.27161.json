@@ -1,0 +1,35 @@
+{
+  "abstract": "Evolving generative models challenge detector generalization, as methods trained on generated examples may rely on generator-specific cues. By contrast, authentic photographs share regularities rooted in physical image formation and acquisition, providing a common reference beyond individual generators. Building on these regularities, we propose Real-Anchored Complementary Evidence (RACE), which learns complementary global and local detection evidence using only authentic training images. First, the global pathway combines frozen and learned representations to assess proximity to authentic references. Next, it incorporates responses to controlled perturbations, complementing static compatibility with representation sensitivity. The local pathway then reconstructs complete trace descriptors, using intermediate features and signed perturbation responses as context while restricting detection evidence to static terminal-residual reconstruction errors. Finally, authentic-image statistics align the global and local scores for fusion, and an independent authentic set calibrates a decision threshold held fixed across test generators. Across six benchmarks, RACE achieves the highest average AUROC of 96.59% among the compared methods, reaching 97.18% on five out-of-domain benchmarks. Together with robustness to image perturbations and variation in authentic-image sources, these results support authentic-image regularities as a transferable basis for detection across diverse generators and image conditions.",
+  "abstract_ja": "",
+  "authors": [
+    "Wenpeng Mu",
+    "Tanfeng Sun",
+    "Zhenyu Shao",
+    "Qiang Xu",
+    "Xinghao Jiang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27161",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Evolving generative models challenge detector generalization, as methods trained on generated examples may rely on generator-specific cues. By contrast, authentic photographs share regularities…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection",
+      "generation"
+    ]
+  },
+  "title": "Real-Anchored Complementary Evidence for Generalizable AI-Generated Image Detection",
+  "url": "https://arxiv.org/abs/2611.27161",
+  "use_case": ""
+}

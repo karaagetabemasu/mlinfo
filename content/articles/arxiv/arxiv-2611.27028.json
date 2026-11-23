@@ -1,0 +1,32 @@
+{
+  "abstract": "A digital twin of a patient in intensive care would forecast the patient's course and what a treatment would change. Generative event models, trained to continue a patient's electronic health record (EHR), have been proposed as a path toward such twins. We trained TWICE, a 79M-parameter decoder-only transformer, on the ICU records of one academic health system (127,332 training patients and 1.57 billion tokens). We evaluated it on clinical prediction tasks, generation fidelity, individual trajectories and counterfactual validation. Reading 19 clinical outcomes off 50 simulated futures, with no task-specific training, TWICE matched the best of 144 supervised configurations on held-out patients (mean AUROC 0.836 vs. 0.834). It led on events that change care within a day and trailed on death. With the training data fixed, more and longer simulated futures were worth more than a 6.8-fold larger model. Its generated records matched real ones closely and were as specific to each patient as its own variability allowed. Its predicted risk rose as events approached. Pre-specified controls showed that it reproduced the side effects of drugs and was barely moved by an inert drug. On the values that treatments are given to correct, however, an opposite treatment moved its forecasts like the right one. TWICE forecasts ICU events about as well as task-specific models, and we see it as a step toward a digital twin of the ICU patient.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhuoyang Lyu",
+    "Yiming Li",
+    "Peter C. Hou",
+    "Pengyu Hong",
+    "Li Zhou"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27028",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "A digital twin of a patient in intensive care would forecast the patient's course and what a treatment would change. Generative event models, trained to continue a patient's electronic health record…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation",
+      "forecasting"
+    ]
+  },
+  "title": "Toward a digital twin of the ICU patient: Forecasting and treatment response in a generative event model",
+  "url": "https://arxiv.org/abs/2611.27028",
+  "use_case": ""
+}

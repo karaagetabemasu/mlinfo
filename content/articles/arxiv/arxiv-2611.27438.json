@@ -1,0 +1,28 @@
+{
+  "abstract": "Data exchange is a fundamental challenge for Web applications such as recommender systems, personalized search, and fraud detection, where combining data across participants can improve predictions. Sustaining such collaboration requires fair returns for contributions and protection against groups leaving for a more beneficial exchange. These requirements are captured by reciprocity, which equates each participant's received utility with its credited contribution to others, and core stability, which rules out any coalition exchanging its own data to make every member strictly better off. Akrami et al. prove that such exchanges exist under broad assumptions, but leave efficient computation open. Two fundamental cases are submodular utilities, capturing diminishing returns from overlapping datasets, and supermodular utilities, capturing complementarities. We settle the approximate computation of reciprocal and core-stable exchanges in both cases, establishing a computational separation under Shapley sharing. For cross-monotone shares, which include Shapley shares under monotone submodular utilities, we give a circulation algorithm that computes an exactly core-stable, $ε$-reciprocal exchange in time poly$(n,1/ε,L)$ given efficient access to approximate shares, where $n$ is the number of participants and $L$ bounds how fast each donor's credit changes with its own contribution. This yields an FPTAS when $L$ is polynomially bounded. In contrast, finding an $ε$-reciprocal, $ε$-core-stable exchange is PPAD-hard for monotone lattice-supermodular utilities, even at inverse-polynomial accuracy, with constant $L$ and exact polynomial-time evaluation of Shapley shares. Thus overlapping information permits efficient fair and stable exchange, while complementarities create a computational barrier even when contribution credits are easy to evaluate.",
+  "abstract_ja": "",
+  "authors": [
+    "Hannaneh Akrami",
+    "Bhaskar Ray Chaudhury"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27438",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Data exchange is a fundamental challenge for Web applications such as recommender systems, personalized search, and fraud detection, where combining data across participants can improve predictions.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "The Complexity of Fair and Stable Data Exchange",
+  "url": "https://arxiv.org/abs/2611.27438",
+  "use_case": ""
+}

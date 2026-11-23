@@ -1,0 +1,30 @@
+{
+  "abstract": "Point cloud denoising and upsampling require samples that accurately recover the underlying surface from noisy or sparse observations. A central challenge in both tasks is preserving surface coverage while refining point locations. We introduce GAAFormer (Geometry-Anchored Attention Transformer), a unified generative octree transformer that performs both tasks with a shared network. Its decoder anchors attention neighborhoods to geometry, providing spatial context for occupancy prediction and point generation. Fixed voxel windows and alternating shifts preserve the grouping of surviving nodes as the output tree changes. The design retains the encoder, positional encoding, prediction heads, and parameter count of a serialized-attention backbone. We establish a deletion-consistency property of the neighborhood rule and evaluate both tasks using the same model. On PUNet, GAAFormer achieves a mean Chamfer distance (CD) of $6.0643\\times10^{-5}$, reducing CD and Hausdorff distance by 3.35% and 19.34%, respectively, relative to the serialized backbone. For upsampling, it achieves CD values of $0.8475$, $1.7057$, and $1.0147$ ($\\times10^{-5}$) on PU-GAN, PU1K, and Sketchfab, respectively, with improvements in CD, Hausdorff distance, and point-to-surface distance over the same backbone on PU-GAN and Sketchfab. These results establish a single architecture for point cloud denoising and upsampling. Within the shared encoder-decoder, the same geometry-anchored attention module improves both noise removal and dense point generation without task-specific redesign or additional parameters.",
+  "abstract_ja": "",
+  "authors": [
+    "Haoxi Tian"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27281",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Point cloud denoising and upsampling require samples that accurately recover the underlying surface from noisy or sparse observations. A central challenge in both tasks is preserving surface coverage…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "3d"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "GAAFormer: Geometry-Anchored Attention Transformer for Joint Point Cloud Denoising and Upsampling",
+  "url": "https://arxiv.org/abs/2611.27281",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Vision-language agents can reconstruct rooms from video as editable 3D scenes, but convincing renders do not establish geometric accuracy. We introduce a scan-referenced evaluation and use controlled experiments to study reconstruction accuracy, the role of geometric inputs, and agents' ability to verify and correct their scenes. Our geometric score measures surface, depth, and furniture placement agreement with laser scans of 30 real rooms on a 0-100 scale. The strongest tested agent, GPT-6 Astra, scores 51.4 from video alone, while a dense reconstruction from the same video scores 75.9. Given the point cloud used for that reconstruction, Astra produces an editable scene that scores within three points of it. Agents also inherit input errors: rescaling the supplied geometry changes scene scale almost proportionally. During revision, viewing renders improves appearance more consistently than geometry. Logs of their tool calls show that agents repeatedly measure their inputs but rarely compare them with the scenes they build. To provide this missing check, we introduce a geometric error report that compares each saved scene with the agent's input points and lists the largest discrepancies. Without new geometric evidence, the report raises the revision gains of GPT-6.1 Terra and Sol by 3.9 and 5.5 points over concurrent controls.",
+  "abstract_ja": "",
+  "authors": [
+    "Ziyang Long",
+    "Yen-Liang Lin",
+    "Shifan Zhu",
+    "Allen Tu",
+    "Meher Gitika Karumuri"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26937",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Vision-language agents can reconstruct rooms from video as editable 3D scenes, but convincing renders do not establish geometric accuracy. We introduce a scan-referenced evaluation and use controlled…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video",
+      "3d",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Looking Right Is Not Being Right: Evaluating the Geometry of Agent-Built 3D Scenes",
+  "url": "https://arxiv.org/abs/2611.26937",
+  "use_case": ""
+}

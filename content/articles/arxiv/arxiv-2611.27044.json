@@ -1,0 +1,31 @@
+{
+  "abstract": "We study spatio-temporal forecasting in networked systems under specified actions. The challenge is to capture the action's effects without predicting spurious changes in unaffected regions. However, direct supervision and evaluation of these effects require paired futures with and without the action, whereas observational trajectories reveal only the realized future. We introduce PairST, a benchmark comprising six datasets across traffic, power transmission and water distribution, with paired reference and intervened futures simulated from the same system state. These pairs enable separate evaluation of affected-region forecast accuracy and quiet-region response error. We further propose ActionST, which forecasts the intervened future by writing an explicit response onto an intervention-independent reference forecast. Specifically, node-time addressing constructs a query for each response position, a state-conditioned response writer computes candidate responses, and a graph-aware locality gate controls their strength. Experiments on six datasets demonstrate the effectiveness of ActionST at new action targets, with the lowest mean absolute error on five datasets and the best average rank. Our source code and the PairST benchmark are available at https://github.com/yutong-xia/ActionST.",
+  "abstract_ja": "",
+  "authors": [
+    "Yutong Xia",
+    "Yangyou Liu",
+    "Yuxuan Liang",
+    "Yuankai Wu",
+    "See-Kiong Ng"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/yutong-xia/ActionST",
+  "hasCode": true,
+  "id": "arxiv-2611.27044",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "We study spatio-temporal forecasting in networked systems under specified actions. The challenge is to capture the action's effects without predicting spurious changes in unaffected regions.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "forecasting"
+    ]
+  },
+  "title": "Action-Conditioned Spatio-Temporal Forecasting",
+  "url": "https://arxiv.org/abs/2611.27044",
+  "use_case": ""
+}

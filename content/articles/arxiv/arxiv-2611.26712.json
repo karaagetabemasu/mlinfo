@@ -1,0 +1,32 @@
+{
+  "abstract": "Forehead region-of-interest (ROI) localization is important for forehead-creases biometrics, particularly when the lower face is occluded. However, localization remains challenging under varying image quality, pose, and illumination. We propose Confidence and Consistency Guided Pseudo-Labeling (CCGP), which adapts Grounding DINO using unlabeled facial images filtered by detection confidence and geometric consistency between original and horizontally flipped views, without modifying the detector architecture or loss. We evaluate CCGP on five external datasets and 350 images spanning seven imaging conditions. CCGP achieves the highest mean intersection over union (mIoU) on four of five external datasets, improving from 0.415 to 0.580 on RMFRD compared with supervised Grounding DINO. On the quality-stratified subset, the largest gains occur under blur (0.487 to 0.719) and low contrast (0.615 to 0.710). CCGP also outperforms conventional self-training on RMFRD (0.580 versus 0.551 mIoU). Despite a slight in-domain performance gap (0.861 vs. 0.866 mIoU) and challenges with off-angle poses, CCGP improves cross-dataset localization under challenging imaging conditions.",
+  "abstract_ja": "",
+  "authors": [
+    "Geetanjali Sharma",
+    "Gaurav Jaswal",
+    "Aditya Nigam",
+    "Raghavendra Ramachandra"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26712",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Forehead region-of-interest (ROI) localization is important for forehead-creases biometrics, particularly when the lower face is occluded. However, localization remains challenging under varying…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Forehead ROI Localization under Real-World Imaging Degradations via Cross-View Pseudo-Labeling",
+  "url": "https://arxiv.org/abs/2611.26712",
+  "use_case": ""
+}

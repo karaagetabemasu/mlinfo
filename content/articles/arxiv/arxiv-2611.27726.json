@@ -1,0 +1,31 @@
+{
+  "abstract": "Personalized amplification gains for hearing aids have been shown to be preferred over prescriptive gains. Since the preferred settings can vary depending on the background audio environment, this paper presents a switching mechanism or system that automatically selects personalized gains for a current background audio environment. To prevent foreground speech from interfering with background environment analysis, a one-class voice activity detector is designed to identify speech activity from speech mixed with noise. A consistency check is conducted to enable distinguishing foreground speech from background speech, preserving babble as a background environment of interest because hearing aid users often struggle to understand speech in background babble. Sound segments without foreground speech are then analyzed by an online discovery method combining Bayesian change-point detection with a memory of previously encountered environments. This discovery method detects changes, recognizes returning environments, and discovers new ones without a predefined number of environments. Experimental results show that three-seed mean macro-averaged F1 scores of 85.53%-91.98% across eight speech/background-corpus pairs covering 36 background noise types were achieved. Furthermore, the discovery method achieved adjusted Rand indices of 0.91 and 0.96 on two families of test streams. In the same-recording-return condition of audio streams combining speech with four background audio environments often encountered by hearing aid users, the switching mechanism selected the correct personalized gain profile after 105 environment changes, recalled the stored gain profile at every return, and made no switches to an incorrect gain profile.",
+  "abstract_ja": "",
+  "authors": [
+    "Nafisa Zarrin Tasnim",
+    "Nasser Kehtarnavaz"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27726",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Personalized amplification gains for hearing aids have been shown to be preferred over prescriptive gains. Since the preferred settings can vary depending on the background audio environment, this…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "audio"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "A Switching Mechanism for Selecting Environment-Adaptive Personalized Gains in Hearing Aids",
+  "url": "https://arxiv.org/abs/2611.27726",
+  "use_case": ""
+}

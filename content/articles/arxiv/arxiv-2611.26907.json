@@ -1,0 +1,36 @@
+{
+  "abstract": "Many medical image processing tasks, such as completing missing regions or correcting acquisition artifacts, can be cast as volumetric generation conditioned on observations of the same patient. Diffusion Transformers offer scalable capacity and flexible conditioning for this setting, but they operate on a learned image representation that must preserve fine anatomical and pathological detail while keeping complete three-dimensional volumes tractable. We bring Transformer variational autoencoding and multimodal diffusion together to address this challenge. Trained on BrainTumor-256K, a 249M Transformer VAE encodes and decodes $256^3$ volumes 7.6x faster than a comparably sized CNN trained on the same collection. Their PSNR difference is near zero with training-sized crop inputs, but the Transformer leads by 0.749 dB with full-volume inputs and an unchanged scoring region. Increasing Transformer capacity to 499M improves PSNR across all four brain MRI evaluation sets while retaining 3.8x lower encoding-decoding latency than the CNN. Fast encoding also allows conditions to be constructed dynamically in image space during latent diffusion training. Within the compressed representation, a shared Diffusion Transformer integrates text and spatial references for volumetric synthesis, completion and restoration. The brain-trained autoencoder further transfers to non-brain MRI and CT without target-domain fine-tuning, extending its use beyond the anatomy and modality on which it was learned. The framework provides a reusable representation and conditioning interface for efficient, controllable medical image generation. Code is available at https://github.com/OncoMMAI/brainmri-vit-vae3d.",
+  "abstract_ja": "",
+  "authors": [
+    "Bo Liu",
+    "Bingliang Zhang",
+    "Yubo Wang",
+    "Yunxiang Li",
+    "Yang Yang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/OncoMMAI/brainmri-vit-vae3d",
+  "hasCode": true,
+  "id": "arxiv-2611.26907",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Many medical image processing tasks, such as completing missing regions or correcting acquisition artifacts, can be cast as volumetric generation conditioned on observations of the same patient.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "A High-Compression Transformer VAE for Efficient and Controllable 3D Medical Image Generation with Diffusion Transformers",
+  "url": "https://arxiv.org/abs/2611.26907",
+  "use_case": ""
+}

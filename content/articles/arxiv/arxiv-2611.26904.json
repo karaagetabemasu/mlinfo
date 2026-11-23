@@ -1,0 +1,32 @@
+{
+  "abstract": "Zooming into a region often turns a wrong answer from a vision-language model (VLM) into a right one, and a growing literature takes this as evidence that the model lacked the pixels. But a zoom changes several things at once. It removes the surrounding context, re-tokenizes, at a higher density, pixels the model has already seen, and, if the first pass was downsampled, exposes detail the model never received. We separate these factors for each failure. Holding the first pass fixed, we vary only the second look and assign every failure to the cheapest one that fixes it: reusing cached tokens, isolating the region, re-tokenizing the seen pixels, or acquiring new ones. The study covers 2,753 zoom-rescued failures of Qwen2.5-VL, Qwen3-VL and InternVL3 on V*, ZoomBench and TextVQA, at first-pass budgets from 17x fewer pixels than the source to native resolution. First, most rescued failures did not lack the pixels: upsampling the pixels the model had already seen fixes 47-73% of them even at 17x downsampling, against 1-3% for a random region. Second, the first-pass budget decides how often new pixels are needed: depending on the benchmark, new pixels are required for 23-50% of the rescues at 17x and for 12-23% at 4x. The missing-pixel reading and the accounts that dispute it thus hold at different budgets. Third, the useful magnification is large and differs between objects and text: seen pixels fix more failures up to 6-12x their first-pass size per side on objects and saturate by 4x on text, and even native pixels gain from being rendered beyond native resolution. Allowing any magnification, 68-94% of the failures at 17x need no new pixels. These models more often need a better rendering of evidence they already have than new pixels, which motivates re-tokenizing a region before acquiring it.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhixuan Ge",
+    "Anqi Li",
+    "Kexin Geng",
+    "Wei Qiu"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26904",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Zooming into a region often turns a wrong answer from a vision-language model (VLM) into a right one, and a growing literature takes this as evidence that the model lacked the pixels. But a zoom…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "What Does a Zoom Actually Add? Decomposing Fine-Grained Perception Failures in Vision-Language Models",
+  "url": "https://arxiv.org/abs/2611.26904",
+  "use_case": ""
+}

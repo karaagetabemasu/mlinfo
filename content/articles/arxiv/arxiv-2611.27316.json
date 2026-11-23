@@ -1,0 +1,29 @@
+{
+  "abstract": "Growers and traders rely on root morphology to assess wild ginseng, yet breakage can obscure important structural traits. We study point cloud completion to provide geometric references for morphological analysis. Does providing more observed points always improve 3D completion? We test whether selected subsets improve recovery of the original missing region while keeping the pretrained completer fixed. We introduce BioCL-POS, an external selector that predicts how the completer responds to candidate inputs. For each candidate, we predict the displacement and distance from shared spatial locations to the nearest points in its completion. We use these spatial responses to estimate recovery quality and supervise them with measurements from actual completions. At inference, we select an input from the observed geometry and run the completer once. We evaluate four frozen completers on controlled gaps in ginseng and tree data at 5%,10%, and 20% omission, and examine 30% omission on ginseng. At 5--20% omission, we outperform full-input completion and all five alternative selectors on both datasets with all four completers. We achieve lower mean reconstruction error and higher mean F-score and coverage. We thus show that selecting observations can improve geometric recovery without retraining the completer, providing more accurate geometric references for subsequent morphological analysis.",
+  "abstract_ja": "",
+  "authors": [
+    "Yulu Wang",
+    "Tingting Yao",
+    "Taolue Liu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27316",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Growers and traders rely on root morphology to assess wild ginseng, yet breakage can obscure important structural traits. We study point cloud completion to provide geometric references for…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "BioCL-POS: Biological Completer-aware Learning with Predictive Observation Selection - A Wild Ginseng Study",
+  "url": "https://arxiv.org/abs/2611.27316",
+  "use_case": ""
+}

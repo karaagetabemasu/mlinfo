@@ -1,0 +1,33 @@
+{
+  "abstract": "In transformer segmentation models, attention is usually visualized after training rather than supervised. Although attention supervision has been explored for natural images and driving scenes, aerial forest segmentation typically uses attention only as an architectural component and evaluates interpretability qualitatively. We present CanopyFormer, an attention-guided SegFormer-B0 that uses an Attention Consistency Loss to align attention with the ground-truth forest mask, encouraging attention to focus on canopy regions. Since SegFormer uses spatial-reduction attention, we adapt Gradient-weighted Attention Rollout by restricting it to the final encoder stage, where the attention matrix is square. We introduce Average Attention-Mask Overlap (AAMO) to measure attention alignment and incorporate a deletion test to evaluate faithfulness. On 5108 images, our method increases AAMO from 0.0334 to 0.7476, approximately 22 times the vanilla SegFormer-B0 result, with a modest decrease in Dice score from 0.8743 to 0.8577. The deletion test reveals that improved alignment does not necessarily translate into improved faithfulness: removing the most-attended 25% of patches reduces the forest score by 12.1%, compared with 33.0% when removing random patches. Attention supervision introduces no additional inference cost, although double backpropagation makes each training step 2.6 to 2.8 times slower. The attention alignment improvement also generalizes to a second dataset, LoveDA. Additionally, a Boundary Refinement Module provides no consistent Dice improvement and reduces AAMO, while mean squared error substantially outperforms Kullback-Leibler divergence as the attention loss.",
+  "abstract_ja": "",
+  "authors": [
+    "Dhinanjaya Fernando",
+    "Dinura Ginige",
+    "Kalana Lakshan",
+    "Chanupa Gurusinghe",
+    "Lasana Pahanga"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27674",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "In transformer segmentation models, attention is usually visualized after training rather than supervised. Although attention supervision has been explored for natural images and driving scenes,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "CanopyFormer: Attention-Guided SegFormer for Explainable Forest Cover Segmentation",
+  "url": "https://arxiv.org/abs/2611.27674",
+  "use_case": ""
+}

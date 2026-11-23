@@ -1,0 +1,27 @@
+{
+  "abstract": "We study online learning for minimizing maximum tardiness (\\OMMT) in single-machine scheduling. In each round, the learner selects a permutation of \\(n\\) fixed jobs, representing a schedule. The environment then reveals a processing time and a due date for each job, and the learner incurs a vector-valued loss whose components correspond to the tardiness of the individual jobs. The goal of the learner is to minimize \\(α\\)-regret, the difference between the learner's maximum cumulative tardiness and \\(α\\) times that of the best fixed permutation in hindsight, for as small \\(α\\) as possible. We investigate OMMT under both stochastic and adversarial environments. In the stochastic setting, we prove that the expected \\(1\\)-regret of the Follow-the-Leader (FTL) algorithm is \\( O\\!\\left(\\frac{n\\log n}{Δ^2}\\right) \\), together with a corresponding high-probability bound, where \\(Δ\\) is a distribution-dependent gap parameter. At round \\(t \\in \\{1,\\dots,T\\}\\), FTL runs in \\(O(tn^2)\\) time and \\(O(tn)\\) space. In the adversarial setting, we prove that, for any \\(0<c<\\log_2 n/16\\), the \\(α\\)-regret is \\(Ω(T)\\) whenever \\(α<\\log_2 n/16-c\\). We then reduce OMMT to a surrogate online learning problem and apply Follow-the-Perturbed-Leader (FTPL), obtaining an expected \\(α\\)-regret bound of \\(O(n^2\\sqrt{T})\\) for \\(α=O(\\log n)\\). Thus, the logarithmic dependence of \\(α\\) on \\(n\\) is tight up to constant factors. Each FTPL update admits a mixed-integer programming formulation whose size is polynomial in \\(n\\) and \\(t\\).",
+  "abstract_ja": "",
+  "authors": [
+    "Yiyang Chen",
+    "Kohei Hatano",
+    "Eiji Takimoto"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27067",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "We study online learning for minimizing maximum tardiness (\\OMMT) in single-machine scheduling. In each round, the learner selects a permutation of \\(n\\) fixed jobs, representing a schedule.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Online Learning for Minimizing Maximum Tardiness in Single-Machine Scheduling",
+  "url": "https://arxiv.org/abs/2611.27067",
+  "use_case": ""
+}

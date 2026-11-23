@@ -1,0 +1,33 @@
+{
+  "abstract": "The floating roof of an oil storage tank rests on the stored liquid, so its depth below the rim measures how full the tank is. In optical overhead imagery, this depth appears only as the crescent shadow the rim casts on the roof, often a few pixels wide. Thin shadows are difficult to measure at overhead-image resolution, and nadir-based height conversions introduce errors in oblique views. Under a local affine camera, roof depth determines the rim-to-shadow displacement through the sun and camera geometry. We regress the boundaries as sub-pixel keypoints and invert this relation with a closed-form estimator that models oblique views. Available public tank datasets do not label roof position, so we introduce SynTank-25k, 24,987 physically based renders with exact roof, shadow and camera geometry. Using the oblique estimator, the keypoint pipeline reduces fill error by $22\\%$ relative to the segmentation baseline on SynTank-25k. On shadows narrower than $6\\text{ px}$, its error is also lower than that obtained by converting true binary masks. Our oblique estimator reduces the error of the nadir formula elevenfold at the steepest views. On 6,558 real NAIP tank crops defined by bounding boxes, about half of the fill estimates pass internal consistency checks; NAIP has no fill labels. Data and code will be released.",
+  "abstract_ja": "",
+  "authors": [
+    "Mohd Shahid Kaleem",
+    "Mohd Hozaifa Khan",
+    "Maaz Khan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27624",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "The floating roof of an oil storage tank rests on the stored liquid, so its depth below the rim measures how full the tank is. In optical overhead imagery, this depth appears only as the crescent…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection",
+      "segmentation"
+    ]
+  },
+  "title": "Points, Not Pixels: Keypoints, Masks and Oblique Geometry for Floating-Roof Tank Fill Estimation from Overhead Imagery",
+  "url": "https://arxiv.org/abs/2611.27624",
+  "use_case": ""
+}

@@ -1,0 +1,28 @@
+{
+  "abstract": "Learning for optimal power flow (OPF) has recently been advocated to accelerate OPF solutions by using a pre-trained neural network (NN) to predict directly from given inputs such as the load demand. However, existing learning-for-OPF methods largely fall short of ensuring the optimality and feasibility of their predictions. They also struggle to adapt at inference time to unseen topology scenarios, such as those caused by line or generator outages. This work puts forth Loop-OPF, a solver-informed NN that builds its layers from the iterations of the primal-dual hybrid gradient (PDHG) method. Under standard convexity and regularity conditions on DC-OPF, the resultant fixed-point output of Loop-OPF is thus optimal and feasible. To speed up PDHG across diverse OPF scenarios, Loop-OPF learns certain PDHG parameters in a self-supervised manner, without any OPF solution labels. We adopt the deep equilibrium (DEQ) framework for training so that the memory cost does not grow with the number of layers. As the grid topology enters every layer as an input, the same trained Loop-OPF directly adapts to unseen contingencies without retraining. Numerical tests on the IEEE 300-bus and PEGASE 1354-, 2869-, and 9241-bus networks have demonstrated the accuracy and topology adaptivity of the proposed Loop-OPF over competing learning-for-OPF methods.",
+  "abstract_ja": "",
+  "authors": [
+    "Mohamad Chehade",
+    "Hao Zhu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27013",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Learning for optimal power flow (OPF) has recently been advocated to accelerate OPF solutions by using a pre-trained neural network (NN) to predict directly from given inputs such as the load demand.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "Loop-OPF: Solver-Informed Learning for Optimal Power Flow with Inference-Time Topology Adaptivity",
+  "url": "https://arxiv.org/abs/2611.27013",
+  "use_case": ""
+}

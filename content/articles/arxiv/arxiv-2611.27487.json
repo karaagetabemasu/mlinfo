@@ -1,0 +1,25 @@
+{
+  "abstract": "Writing Neural tangent kernel (NTK) theory explains why very wide neural networks trained by gradient methods converge in the lazy-training regime. Its standard proof combines matrix concentration, random Gram matrices, continuous-time dynamics, spectral perturbation, and a bootstrap argument, but has lacked machine-checked verification. We present a Lean\\~4 formalisation for two-layer networks, proving an end-to-end theorem: for a smooth bounded activation (instantiated with $σ=\\tanh$), frozen biases, paired $\\pm 1$ initialisation, and explicit width conditions, gradient flow exists uniquely with probability at least $1-δ$, and $$ \\|r(t)\\|^2 \\leq \\|y\\|^2 e^{-λ_0 t/2}. $$ The sole data assumption is population NTK non-degeneracy, $λ_0>0$. Initial coercivity, kernel drift, the movement bootstrap, the residual ODE, and flow existence and uniqueness are formally proved. The formalisation also sharpens the standard analysis in two ways. First, replacing the conventional matrix-Bernstein variance proxy with the classical row-covariance proxy yields estimated concentration-width certificates for $\\tanh$ that are $36$--$53\\times$ smaller at $(m,d)=(16,8)$ and $94$--$121\\times$ smaller at $(32,16)$. Lean certifies the inequality; the ratios are numerical. Second, the network Hessian has operator norm $Θ(\\sqrt{p})$ on the sup-norm parameter ball (a paper calculation), preventing the expected $O(1/\\sqrt{p})$ linearisation bound via sup-norm Taylor estimates. An $L^2$ parameter geometry resolves this issue. Required widths remain polynomial but far beyond practical scales, limiting applicability.",
+  "abstract_ja": "",
+  "authors": [
+    "Hao Zhu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27487",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Writing Neural tangent kernel (NTK) theory explains why very wide neural networks trained by gradient methods converge in the lazy-training regime. Its standard proof combines matrix concentration,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Verifying and Strengthening Neural Tangent Kernel Theory",
+  "url": "https://arxiv.org/abs/2611.27487",
+  "use_case": ""
+}

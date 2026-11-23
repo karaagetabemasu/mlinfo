@@ -1,0 +1,27 @@
+{
+  "abstract": "Parametric body models expose incompatible pose and shape controls, tying humanoid policies to particular input formats. AnyBodyCodec learns a shared representation through native conversion, then reuses it for new body models and control with its core frozen. Encoders map MHR, SMPL-X, and SOMA to aligned slots; native decoders recover target controls. The 1.090M-parameter converter covers nine routes and reaches 16.801 mm input-reference MPJPE across six cross routes: the 2.887M Transformer bank reaches 16.390 mm and its parameter-matched version 18.866 mm. Three measured routes take 7.43-7.67 ms on an RTX 4090. Adding ANNY shows that comparable conversion accuracy can accompany different action consistency under one frozen controller. Under a matched PPO budget, aligned slots support 60.78% full-action success across three formats. Separate 160-hour training reaches 66.10% source-weighted validation success, and the controller is deployed qualitatively on a physical G1 through three visual front ends. Together, these results establish reuse through both native geometric fidelity and downstream policy compatibility.",
+  "abstract_ja": "",
+  "authors": [
+    "Qianxing Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27397",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Parametric body models expose incompatible pose and shape controls, tying humanoid policies to particular input formats. AnyBodyCodec learns a shared representation through native conversion, then…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "AnyBodyCodec: A Shared Native Interface for Body-Model Conversion, Extension, and Humanoid Control",
+  "url": "https://arxiv.org/abs/2611.27397",
+  "use_case": ""
+}

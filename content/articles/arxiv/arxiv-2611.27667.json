@@ -1,0 +1,34 @@
+{
+  "abstract": "Most collaborative 3D detectors fuse bird's-eye-view (BEV) features from connected vehicles and roadside infrastructure to aggregate complementary observations. Although modern communication, alignment, and fusion pipelines encode rich latent geometry in the fused BEV features, the standard readout pipeline inherited from single-agent detectors, i.e., anchor scoring, box decoding, and non-maximum suppression (NMS), does not fully exploit these geometric cues. We empirically identify and quantify this gap on UrbanIng-V2X. Collaboration improves localization at about two-thirds of positive anchors, yet when NMS resolves two overlapping collaborative boxes of one object, it keeps the better-localized box less than half of the time. A key cause is a supervision mismatch: classification scores are trained only for foreground-background discrimination, so nothing in training requires them to rank boxes by localization quality. To address this limitation, we introduce GeoScaffold, a lightweight training-only auxiliary objective. It predicts a foreground mask at each positive anchor, i.e., the cells of a grid over the anchor that lie inside the ground-truth box, to supply the dense spatial supervision that the seven-dimensional box code leaves implicit. Its loss, added to the detection loss, updates the encoder and fusion modules through the fused BEV and trains the detector toward a better-localized box at every positive anchor, including the top-scored one. The auxiliary head is removed at inference, preserving the original detector architecture, communication logic, and inference cost. GeoScaffold raises AP@0.5 and AP@0.7 by 0.98 and 0.55 points on average across all 11 fusion methods on the UrbanIng-V2X validation split, with gains extending to most methods on an unseen intersection and to all ten methods that produce detections on V2V4Real.",
+  "abstract_ja": "",
+  "authors": [
+    "Kang Yang",
+    "Yance Fang",
+    "Gaochen Cui",
+    "Xiaoqiang Jin",
+    "Deying Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27667",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Most collaborative 3D detectors fuse bird's-eye-view (BEV) features from connected vehicles and roadside infrastructure to aggregate complementary observations. Although modern communication,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "GeoScaffold: From Latent to Realized Geometry in Collaborative Detection",
+  "url": "https://arxiv.org/abs/2611.27667",
+  "use_case": ""
+}

@@ -1,0 +1,29 @@
+{
+  "abstract": "Production face pipelines need parametric head models that are expressive, FACS-controllable, and buildable on a small, fixed pool of identities. More training identities would always help, but high-quality registered head scans are expensive to capture; when scaling the data is not an option, the remaining lever is architecture. We present FACET, a parametric head model that makes the most of a fixed identity pool through architectural locality rather than more scans, and makes three contributions, each isolated against a matched global-PCA ablation on our own topology, training set, and normalization. (1) A regional identity decomposition into 16 anatomical regions bypasses the N-1 rank ceiling of a global PCA, driving held-out neutral-fit error from a 1.95 mm floor down to 0.23 mm on the same training identities. (2) A learned FACS action-unit expression model with per-identity neural personalization not only stays FACS-controllable but beats a properly-regularized global expression PCA at every component count -- refuting the argument that FACS is too overcomplete to fit. (3) A dedicated neck/shoulder region reduces pose leakage into the pose-invariant upper face during unposing. Together, these show that architectural locality is the effective lever for a production head model under a fixed identity budget.",
+  "abstract_ja": "",
+  "authors": [
+    "Mathieu Lamarre",
+    "Elly Akhoundi",
+    "Thibault Goyallon",
+    "Patrick Anderson",
+    "Étienne Danvoye"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26773",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Production face pipelines need parametric head models that are expressive, FACS-controllable, and buildable on a small, fixed pool of identities. More training identities would always help, but…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "FACET: A Data-Efficient Regional Parametric Head Model",
+  "url": "https://arxiv.org/abs/2611.26773",
+  "use_case": ""
+}

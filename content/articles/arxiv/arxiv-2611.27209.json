@@ -1,0 +1,35 @@
+{
+  "abstract": "Task-oriented image signal processors (ISPs) adapt RAW-to-RGB processing for downstream perception. However, explicit demosaicing is often simplified, kept fixed, or optimized primarily for reconstruction quality, leaving this stage insufficiently integrated into task adaptation. We propose \\textbf{Dem2TA}, a framework that incorporates fidelity-supervised demosaicing into the adaptation of the perception pipeline. Starting from a pretrained demosaicing model, we jointly adapt the reconstruction frontend and downstream network using reconstruction and task supervision, together with complementary semantic and task representation alignment. We then freeze the adapted frontend and jointly optimize a lightweight local ISP with the downstream model to refine task-specific rendering without changing the reconstructed linear RGB. Experiments on synthetic RAW detection and box-prompted segmentation demonstrate the effectiveness of representation-guided joint adaptation and subsequent local rendering. Evaluation on a manually verified real-capture dataset further supports transfer beyond synthetic inputs. Compared with TA-ISP on the same adapted foundation, Dem2TA improves detection AP by 0.46 points and segmentation IoU by 1.06 points on synthetic COCO RAW, and segmentation IoU by 0.63 points on real captures.",
+  "abstract_ja": "",
+  "authors": [
+    "Ping Chen",
+    "Zhongwei Lin",
+    "Xiang He",
+    "Xiangming Wang",
+    "Kai Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27209",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Task-oriented image signal processors (ISPs) adapt RAW-to-RGB processing for downstream perception. However, explicit demosaicing is often simplified, kept fixed, or optimized primarily for…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection",
+      "segmentation"
+    ]
+  },
+  "title": "Dem2TA: Beyond Pixels, Towards Perception",
+  "url": "https://arxiv.org/abs/2611.27209",
+  "use_case": ""
+}

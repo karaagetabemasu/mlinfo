@@ -1,0 +1,35 @@
+{
+  "abstract": "Color walking video records body boundary motion alongside clothing folds, surface appearance, and recording-environment cues. To examine what an explicit binary silhouette contributes to participant-level classification of scoliosis-related gait when a classifier already observes the paired color sequence, we construct Scoliosis5K, a multi-site collection of 4,998 corridor-walking sequences across 3,010 participant identifiers in which RGB person crops, binary silhouettes, and two-dimensional poses share each recording identifier and frame index. Our architecture uses each patch's pixel deviation from its clip mean to weight two low-rank query and value updates inside a pretrained RGB encoder, fusing the resulting video representation with a silhouette transformer sequence and regional kernel ridge scores extracted from one native-resolution RGB frame per window. Across 988 participants in five participant-disjoint cross-validation folds and three training seeds, the complete system reaches 83.77% accuracy and 79.91% macro-averaged F1, compared with 83.27% accuracy and 79.56% macro-F1 when the video RGB encoder remains frozen under identical inputs. Zeroing the silhouette vector at fixed weights shifts overall accuracy by only 0.10 percentage points while raising positive-category recall from 68.52% to 77.78% and lowering recall for both remaining categories. Macro-averaged AUROC is 0.950 across the cohort and 0.879 among participant pairs matched on acquisition site and recording-count group.",
+  "abstract_ja": "",
+  "authors": [
+    "Zizhao Peng",
+    "Zihan Wang",
+    "Zheng Lv",
+    "Yan Wang",
+    "Ping Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26849",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Color walking video records body boundary motion alongside clothing folds, surface appearance, and recording-environment cues. To examine what an explicit binary silhouette contributes to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video",
+      "multimodal"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Scoliosis5K: Multimodal Gait Analysis via Clip-Conditioned RGB-Silhouette Fusion",
+  "url": "https://arxiv.org/abs/2611.26849",
+  "use_case": ""
+}

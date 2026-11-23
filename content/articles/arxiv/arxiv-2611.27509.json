@@ -1,0 +1,34 @@
+{
+  "abstract": "Event cameras register brightness changes pixel by pixel with microsecond precision, whereas the dense depth that could supervise them is costly to acquire and exists only at isolated instants. Condensing the stream into frames eases learning, but at the expense of the very timing that sets event sensing apart. We propose a self-supervised approach in which each event is assigned its own depth in continuous time, and the camera motion is recovered from the same observations. Supervision arises from geometry: lifted into 3D by its predicted depth and displaced by the camera motion at the instant it fired, an event should coincide with others produced by the same edge, so any misalignment exposes an error in depth or motion. Differentiable rendering then turns these per-event estimates into dense depth maps at target times within each window, faithful to the events behind them. On MVSEC, the approach outperforms prior event-only self-supervised methods in most sequences and depth ranges, with the widest margins at night, and recovers camera rotation more accurately than an earlier unsupervised event-based method. Ablations isolate the roles of local spatiotemporal context, the temporal backbone, and the alignment objective. These results position motion-compensated event alignment as a principled source of supervision for continuous-time depth and ego-motion estimation.",
+  "abstract_ja": "",
+  "authors": [
+    "Sadiq O. Macaulay",
+    "Dipon Kumar Ghosh",
+    "Hadfield Simon"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27509",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Event cameras register brightness changes pixel by pixel with microsecond precision, whereas the dense depth that could supervise them is costly to acquire and exists only at isolated instants.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised",
+      "self-supervised"
+    ],
+    "modality": [
+      "image",
+      "text",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Self-Supervised Continuous-Time Depth Learning and Ego-Motion Estimation from Asynchronous Events",
+  "url": "https://arxiv.org/abs/2611.27509",
+  "use_case": ""
+}

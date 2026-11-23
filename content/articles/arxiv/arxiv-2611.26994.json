@@ -1,0 +1,33 @@
+{
+  "abstract": "Many questions about videos ask for a number, such as how tall a person is, how far a cart travels, or how fast a ball leaves a ramp. We study this task, quantitative physical reasoning from video, where the inputs are a video, a question, and a prior of known facts such as object sizes, speeds, and distances from the camera to named objects. End-to-end video-language models lack an explicit metric scale and physical consistency, and their errors cannot be inspected. We present SceneRuler, which instead recovers a measurable physical scene and answers with that scene as evidence. Its central principle, Minimal Sufficient Reconstruction, builds, for each question, only the smallest scene that suffices to measure the asked quantity, and tests sufficiency on measurements rather than assuming it. The scene is written as a program whose structure a vision-language model writes and whose magnitudes are left to measurement. Physics-guided Fitting measures them through physical motion laws, so that gravity itself can anchor the metric scale, and marks every parameter, and the read-out of the asked quantity, as determined or undetermined. Each question receives a read-out and an answer. The read-out is the asked quantity evaluated on the scene, and it is empty when the scene does not fix that quantity. The answer is always given by a model that takes the scene as evidence. We evaluate on QuantiPhy and also apply the method to 27 in-the-wild videos that we collected, which have no ground-truth answers. On its validation split, the final answer reaches a mean relative accuracy of 0.709 against 0.624 for the strongest baseline, and the reconstruction determines the asked quantity on 47 of 158 questions, where the final answer reaches 0.781. Because every intermediate quantity is explicit, each answer can be traced to the objects, scale, and motion behind it.",
+  "abstract_ja": "",
+  "authors": [
+    "Yumeng He",
+    "Gezheng Kang",
+    "Fanlian Zeng",
+    "Yin Yang",
+    "Chenfanfu Jiang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26994",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Many questions about videos ask for a number, such as how tall a person is, how far a cart travels, or how fast a ball leaves a ramp. We study this task, quantitative physical reasoning from video,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "SceneRuler: Measuring Physical Quantities in Video via Minimal Sufficient Reconstruction",
+  "url": "https://arxiv.org/abs/2611.26994",
+  "use_case": ""
+}
