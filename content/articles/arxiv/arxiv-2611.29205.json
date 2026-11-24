@@ -1,0 +1,29 @@
+{
+  "abstract": "In difficult driving scenes, a learned scorer can select a poor trajectory from a fixed pool even when a better candidate is available. Nearby vehicles and road boundaries can also leave only a narrow range of high-scoring maneuvers. These constraints vary with the scene and are difficult to cover exhaustively during training. We introduce DriveTTO, a training-free method that searches around native proposals and checks each proposed refinement against a retained trajectory. A frozen scorer evaluates completed paths at the endpoints they actually reach, guiding resampling in progressively smaller neighborhoods. From a shared reference, one branch draws on planner proposals and another perturbs vehicle controls. DriveTTO blends their poses at matching times and accepts a branch or fusion update only when both frozen scorers predict a gain. On Navtest, DriveTTO recovers nonzero predictive driver model scores (PDMS) in 51.35% of native zero-score cases on average. Accounting for new failures, the zero-score rate falls from 1.63% to 1.13%. Benchmark-specific configurations achieve 95.54 PDMS and 92.30 extended PDMS (EPDMS) on Navtest, 57.10 EPDMS on Navhard, and 40.1 HD-Score on HUGSIM under observed commands. With a single frozen scorer, DriveTTO-S improves all six evaluated planners on both Navtest and Navhard.",
+  "abstract_ja": "",
+  "authors": [
+    "Xinyao Rao",
+    "Zecheng Tang",
+    "Zheyuan Lai",
+    "Liuxuan Sun",
+    "Minjun Yu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29205",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "In difficult driving scenes, a learned scorer can select a poor trajectory from a fixed pool even when a better candidate is available. Nearby vehicles and road boundaries can also leave only a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "DriveTTO: Understanding Search and Selection in Test-Time Trajectory Optimization for End-to-End Driving",
+  "url": "https://arxiv.org/abs/2611.29205",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Tactile feedback benefits contact-rich manipulation, yet deploying tactile sensors introduces additional hardware and maintenance requirements. Tactile experience can still provide effective supervision for policies that operate without tactile sensors at deployment. Tactile imagination methods such as TacImag remove this hardware dependency by predicting tactile observations, but retain a reconstruction stage whose errors can propagate into action generation. We present TacitTouch, a distillation framework that transfers tactile-guided behavior directly into a vision-only policy. The core shift is from \"learn to imagine what touch would feel like\" to \"learn to behave as if you could feel touch\": the student directly learns tactile-guided action patterns without reconstructing tactile observations. A frozen visuotactile teacher supervises the student's denoising predictions and intermediate action representations at the same noisy action and flow time. Training also uses demonstrated-action supervision. Deployment retains only the visual policy, with no tactile encoder, expert, or generator. Across four simulated UniVTAC tasks and four real-world tasks, TacitTouch achieves absolute improvements of 16.0% and 22.5% in mean success rate over vision-only control, respectively. The absolute gaps to the teacher using measured tactile input are only 2.0% and 3.75%, respectively. In robustness tests, it also outperforms TacImag, with absolute gains of up to 20.0% in mean success rate. Project page: https://pier-lab.github.io/tacittouch/",
+  "abstract_ja": "",
+  "authors": [
+    "Chen Yang",
+    "Linhao Wang",
+    "Linzhe Shi",
+    "Guohui Zhang",
+    "Changjie Wu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28697",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Tactile feedback benefits contact-rich manipulation, yet deploying tactile sensors introduces additional hardware and maintenance requirements. Tactile experience can still provide effective…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Distilling Touch into Vision-Only Policies for Contact-Rich Manipulation",
+  "url": "https://arxiv.org/abs/2611.28697",
+  "use_case": ""
+}

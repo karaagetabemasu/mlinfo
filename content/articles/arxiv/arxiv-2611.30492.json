@@ -1,0 +1,26 @@
+{
+  "abstract": "Potential-based reward shaping (PBRS) does not change the optimal policy, but how much it speeds up learning depends on the potential and on effects outside this guarantee. We analyse how PBRS changes the one-step reward while it preserves the discounted return: a per-step $(γ-1)Φ$ term, the terminal-state rule, a constant shift of the potential, and positive cycles in a bonus that is not potential-based. We then measure these consequences in pre-registered experiments with a PPO agent. The agent has a limited egocentric view and is tested on two MiniGrid navigation tasks (160 runs, 10 seeds per condition). On LavaCrossing, a geodesic (BFS) potential learned faster than both the sparse baseline and a Euclidean potential with a 7x7 and a 5x5 view (AUC difference +0.27 to +0.39, Holm p between 0.007 and 0.0499). The Euclidean potential did not differ from the baseline. In 20 runs with a non-potential bonus, none of the agents learned the task. The Euclidean potential caused more than twice as many deaths in lava during early training. View size did not detectably change the benefit of shaping. With a 5x5 view on SimpleCrossing, some BFS runs got stuck in loops and never learned; shifting the potential did not remove this, so the per-step term alone does not explain it.",
+  "abstract_ja": "",
+  "authors": [
+    "Nodirjon Khabibullaev",
+    "Rajat Dandekar"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30492",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "Potential-based reward shaping (PBRS) does not change the optimal policy, but how much it speeds up learning depends on the potential and on effects outside this guarantee. We analyse how PBRS…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Policy Invariance Is Not Learning Invariance: Potential-Based Reward Shaping for Navigation with a Limited View",
+  "url": "https://arxiv.org/abs/2611.30492",
+  "use_case": ""
+}

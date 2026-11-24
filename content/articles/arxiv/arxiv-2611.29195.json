@@ -1,0 +1,31 @@
+{
+  "abstract": "Dexterous functional grasping is critical for robotic tool use, yet current dexterous hands exhibit substantial morphological diversity. This hardware heterogeneity makes cross-embodiment functional grasping a fundamental but largely unexplored problem. Existing functional grasping methods use retargeted hand poses as guidance, tying task representation to a specific embodiment and failing to explicitly capture object-centric functional contact intent, limiting generalization across hands. To address this, we propose FunGrasp-Zero, a reinforcement learning framework for zero-shot cross-embodiment functional grasping. Instead of relying on embodiment-specific joint configuration, FunGrasp-Zero captures functional intent via an object-centric, cross-embodiment-consistent contact map, adapted to heterogeneous hands through morphological mapping. We construct a hand-object potential field from mapped contact regions, yielding attractive and repulsive guidance vectors. A Field-Conditioned Graph Attention Network (FC-GAT) leverages these vectors to coordinate multi-finger motion across hands, while a potential field reward guides fingers toward target regions and penalizes non-target collisions to enforce functional alignment and stability. We further establish X-FunBench for cross-embodiment functional grasping, evaluating both physical grasp success and functional intent preservation across hands. Evaluated on X-FunBench, our unified policy, co-trained on four embodiments, achieves 86% average grasp success rate across five unseen hands on novel objects. Deployed on four unseen physical hands (Leap, Inspire, Sharpa, Wuji) for novel object grasping, the policy achieves 80% average success rate without fine-tuning. To our knowledge, FunGrasp-Zero is the first RL-based framework to achieve zero-shot cross-embodiment functional grasping across unseen hands in both simulation and the real world.",
+  "abstract_ja": "",
+  "authors": [
+    "Yanhan Lin",
+    "Yuliang Wu",
+    "Yihao Guo",
+    "Wei-Jin Huang",
+    "Jianwen Li"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29195",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Dexterous functional grasping is critical for robotic tool use, yet current dexterous hands exhibit substantial morphological diversity. This hardware heterogeneity makes cross-embodiment functional…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "FunGrasp-Zero: Field-Conditioned Graph Attention Policy for Zero-Shot Cross-Embodiment Dexterous Functional Grasping",
+  "url": "https://arxiv.org/abs/2611.29195",
+  "use_case": ""
+}

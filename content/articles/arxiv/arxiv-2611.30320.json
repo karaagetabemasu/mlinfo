@@ -1,0 +1,33 @@
+{
+  "abstract": "In video temporal grounding, a correct interval can come from finding the event, answering blind or fitting one annotation style, and Recall at IoU scores them alike. We measure evidence dependence, how much the answer rests on the event's frames. Our fixed-answer audit edits either the frames inside the annotated interval or, as a placebo, as many frames elsewhere in the same video, and compares the two drops in the annotated answer's likelihood. Supervised fine-tuning and three public checkpoints trained with IoU-reward reinforcement learning raise the accuracy of Qwen2.5-VL-7B by 9 to 20 points, partly by answering blind and by fitting one annotation. Yet their answers rest on the event no more than the base model's, and the same holds for IoU-reward training on our data at the audit's frame rate. This comparison is a difference of the model's own likelihoods, so we can train on it. A placebo contrast and a bound on the placebo drop rule out learning to react to any edit. With them, evidence dependence rises in all five base models we train, and the weight on clean supervision controls how much. Added to IoU-reward training, the objective raises evidence dependence while keeping the accuracy gain. Masking the event's frames makes the trained models decline or miss the event more often than their base; masking as many other frames does not. The dependence moves to another event when the query names it, and holds on a second dataset and under patch scrambling, an edit never used in training.",
+  "abstract_ja": "",
+  "authors": [
+    "Zijie Jin",
+    "Shuai Zhao",
+    "Haoran Tao",
+    "Chaomin Huang",
+    "Liwen Luo"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30320",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "In video temporal grounding, a correct interval can come from finding the event, answering blind or fitting one annotation style, and Recall at IoU scores them alike. We measure evidence dependence,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "video"
+    ],
+    "task": []
+  },
+  "title": "Accuracy Is Not Evidence: Measuring and Training Evidence Dependence in Video Temporal Grounding",
+  "url": "https://arxiv.org/abs/2611.30320",
+  "use_case": ""
+}

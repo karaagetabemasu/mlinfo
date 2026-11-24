@@ -1,0 +1,27 @@
+{
+  "abstract": "During iterative code modification, coding agents may continue to rely in subsequent reasoning on outdated dependency judgments whose text remains fixed in the context, leading to errors in subsequent reasoning and leaving consumer defects undetected by the original task evaluations, thereby exposing blind spots in the tested benchmarks. We study actual agent execution trajectories collected on benchmark tasks: deepseek-v4-flash runs on DeepSWE and SWE-bench Verified, supplemented by Qwen3.8-Flash cases on FeatureBench. Focusing on edit-induced consumer obligations, a full-corpus blinded human audit of the DeepSWE runs identifies terminal mismatches, including diagnoses whose task scope remains disputed. Following supplementary execution checks, all retained DeepSWE terminal events have execution support. The audit also shows that recovery within a trajectory can coexist with terminal omissions in the same run. The process analysis links the presentation of relevant consumer code to explicit dependency judgments and subsequent synchronization actions recorded in the trajectories. An explicit dependency-review prompt reduces terminal omissions under the tested conditions, supporting re-derivation of consumer obligations after edits. Local replays of selected DeepSWE cases show that synchronizing the diagnosed consumers restores the target behavior while the listed controls continue to pass. Cross-benchmark execution counterexamples show that the original task evaluations do not fully detect edit-induced dependency mismatches: patches pass those evaluations, yet additional execution checks confirm unintended defects along existing consumer paths. These findings support measuring task scores, terminal propagation states, and recovery separately.",
+  "abstract_ja": "",
+  "authors": [
+    "Fei Ding"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29242",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "During iterative code modification, coding agents may continue to rely in subsequent reasoning on outdated dependency judgments whose text remains fixed in the context, leading to errors in…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Edit-Induced Dependency Mismatch: Propagation Omissions, Recovery, and Evaluation Blind Spots in Coding Agents",
+  "url": "https://arxiv.org/abs/2611.29242",
+  "use_case": ""
+}

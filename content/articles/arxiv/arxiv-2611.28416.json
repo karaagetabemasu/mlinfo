@@ -1,0 +1,26 @@
+{
+  "abstract": "Autonomous vehicles increasingly need to navigate without satellite positioning. Magnetic anomaly navigation (Mag-Nav) with quantum magnetometers offers a passive, unjammable fix, but the low size-weight-and-power (SWaP) sensors that small drones can carry are weak, and they are operated open loop at a fixed setting. Interferometric (Ramsey) magnetometers face a trade-off: long interrogation times are more sensitive but become ambiguous when the expected field is uncertain. The navigator's own position belief, pushed through the anomaly map, predicts that field. We close this loop. The filter's predictive field distribution sets the Ramsey phase and interrogation time at every epoch, through a closed-form rule that moves between an ambiguity limit and a decoherence limit. We evaluate it on real U.S. Air Force flight data (real tracks, inertial drift, measured fields, and a survey map tested 18 months after it was flown), with only the Ramsey sensor modelled. Against fixed-setting baselines, 63 of 72 independent flight windows favour belief driven sensing ($p = 2 \\times 10^{-11}$). Error falls by 20-27% for low-SNR sensors and 30-44% for mid-contrast sensors. An ablation separates the two ingredients. Phase alignment drives the gain in steady flight, and the rule matches the best fixed setting without the hindsight tuning that setting requires. After a lost start, interrogation time adaptation is essential, cutting median error by 37-42% even against hindsight-tuned phase-aligned settings. Gains are small for high-quality sensors with accurate maps. On an IBM superconducting qubit, the rule's interrogation time stays within $1.3\\times$ of the empirical optimum. Coupled with information-aware routing, belief-driven sensing lowers mission error by 15-40%.",
+  "abstract_ja": "",
+  "authors": [
+    "Murtuza Lemonwala",
+    "Laxima Niure Kandel"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28416",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Autonomous vehicles increasingly need to navigate without satellite positioning. Magnetic anomaly navigation (Mag-Nav) with quantum magnetometers offers a passive, unjammable fix, but the low…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Belief-Driven Quantum Magnetometer Control for GPS-Denied Navigation",
+  "url": "https://arxiv.org/abs/2611.28416",
+  "use_case": ""
+}

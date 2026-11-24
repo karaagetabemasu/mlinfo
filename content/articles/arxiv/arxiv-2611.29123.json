@@ -1,0 +1,33 @@
+{
+  "abstract": "Diffusion-based planners capture the multimodality of human driving behavior well, yet covariate shift in closed-loop driving can lead them to generate trajectories that result in collisions or road departures. Reinforcement learning (RL) finetuning offers a promising way to tackle this issue, but applying it to diffusion-based planners is complicated by their iterative denoising process and receding-horizon execution. We find that small adjustments to the planned trajectories can prevent many of these unsafe outcomes. Motivated by this observation, we propose PlanNudge, which preserves the learned planning capabilities of a pretrained diffusion-based planner by freezing it and trains a lightweight policy that we call the nudge policy. At each planning step, the nudge policy outputs a nudge, a two-dimensional adjustment of the speed and curvature of the plan from the frozen planner. The nudge policy is a multilayer perceptron that predicts the nudge in a single forward pass, and both dimensions directly change the motion of the vehicle, so standard off-policy RL can train it in closed-loop simulation. We evaluate PlanNudge on nuPlan, a large-scale autonomous driving benchmark based on real-world driving data. In all six settings, PlanNudge matches or exceeds the final scores of the previous state-of-the-art RL finetuning method while using about one sixth as many environment steps and less than one fifth as much model compute. We also provide guidelines for reward shaping, value learning, and exploration when using off-policy RL to post-train autonomous driving planners. Our results are reported with means and standard deviations over six training runs. Project page: https://zerlinwang.github.io/plannudge/",
+  "abstract_ja": "",
+  "authors": [
+    "Zilin Wang",
+    "Guozheng Ma",
+    "Saeed Rahmani",
+    "Jiong Yang",
+    "Antyanta Bangunharcana"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29123",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Diffusion-based planners capture the multimodality of human driving behavior well, yet covariate shift in closed-loop driving can lead them to generate trajectories that result in collisions or road…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Your Diffusion-Based Driving Planner Only Needs a Nudge",
+  "url": "https://arxiv.org/abs/2611.29123",
+  "use_case": ""
+}

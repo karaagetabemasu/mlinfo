@@ -1,0 +1,31 @@
+{
+  "abstract": "Today's MLLMs can count objects in natural images. However, when asking them how many bolt holes appear in a mechanical drawing or how many nitrogen atoms are in a chemical structure, they often struggle. Counting in technical drawings remains challenging, as objects can be small, densely packed, or even implied by drawing conventions. To study this problem, we introduce CountDrawBench, a benchmark including floor plans, electrical schematics, mechanical drawings, and molecular structures, with 1,574 counting questions and instance-level annotations where available. Besides evaluation, we introduce Code-Verified RL, a reinforcement learning framework that teaches MLLMs to count with executable feedback. Our method combines three complementary rewards: a count reward that checks the final answer, an instance-matching reward that verifies object locations, and a zoom-based reward that checks counting consistency across local image regions. All three are integrated into a unified GRPO objective. Extensive experiments reveal that even leading MLLMs struggle on CountDrawBench, with the best evaluated model achieving only 59.3% accuracy. Our method improves Qwen3.5-9B from 49.3% to 54.3% accuracy, outperforming all evaluated open-source baselines. These results establish CountDrawBench as a challenging testbed for technical drawing understanding and demonstrate the value of code-verified rewards in these tasks. Code and data will be released upon acceptance.",
+  "abstract_ja": "",
+  "authors": [
+    "Junxian Li",
+    "Ruixuan Yang",
+    "Zhenhua Xu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29309",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Today's MLLMs can count objects in natural images. However, when asking them how many bolt holes appear in a mechanical drawing or how many nitrogen atoms are in a chemical structure, they often…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Counting Symbols on Technical Drawings: A Benchmark and Verified Rewards for MLLMs",
+  "url": "https://arxiv.org/abs/2611.29309",
+  "use_case": ""
+}

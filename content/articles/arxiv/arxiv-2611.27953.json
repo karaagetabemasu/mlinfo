@@ -1,0 +1,35 @@
+{
+  "abstract": "Neuromorphic sensing and computing offer a promising alternative to conventional deep learning pipelines for mobile robots, where perception must run continuously under tight latency and energy constraints. However, most neuromorphic solutions are still evaluated offline or on isolated benchmarks, and their integration into complete robotic systems remains largely unexplored. In this technical report, a four-wheel rover platform is presented that combines three real-time perception pipelines: a classical audio tagging pipeline based on Pretrained Audio Neural Networks (PANNs) running on an NVIDIA Jetson GPU, a neuromorphic audio pipeline in which a spiking neural network (SNN) is deployed on the SynSense Xylo Audio~2 chip, and a neuromorphic vision pipeline in which events from an event-based camera are processed by the SpikeYOLO spiking detector for traffic cone detection. On the Xylo chip, the whole processing chain---from the microphone signal to the classification of low- and high-pitched sounds---is performed on-chip, while the host only configures the device and reads the output neurons. All models are deployed as containerised services and integrated through ROS~2, and a configurable action dispatcher maps the detected classes to robot behaviours, closing the loop between perception and actuation. The platform is demonstrated in a proof-of-concept scenario in which the robot reacts to sound classes detected by both audio pipelines and detects traffic cones with the event camera, showing the feasibility of integrating neuromorphic hardware into a multimodal robotic platform operating in real time.",
+  "abstract_ja": "",
+  "authors": [
+    "Guillem Fustier-Castillo",
+    "Ruben Ribes-Serrano",
+    "Javier Naranjo-Alcazar",
+    "Vicent Ortiz-Castello",
+    "Pedro Zuccarello"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27953",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "detection",
+  "summary": "Neuromorphic sensing and computing offer a promising alternative to conventional deep learning pipelines for mobile robots, where perception must run continuously under tight latency and energy…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio",
+      "multimodal"
+    ],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "Real-time neuromorphic audio and vision perception for autonomous robotic applications: Integration and experimental evaluation on a rover platform",
+  "url": "https://arxiv.org/abs/2611.27953",
+  "use_case": ""
+}

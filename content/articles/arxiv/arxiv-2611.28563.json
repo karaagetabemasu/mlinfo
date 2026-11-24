@@ -1,0 +1,33 @@
+{
+  "abstract": "Edge robots increasingly use large language models (LLMs) for complex tasks, demanding efficient inference alongside timely control. Limited memory capacity constrains model deployment, while repeated weight transfers during decoding compete with activations and KV cache for external bandwidth. Sequential generation of robot actions further delays decisions and periodic control on shared hardware. We present a hybrid memory architecture with heterogeneous scheduling to address these bottlenecks jointly. Banked ROM stores selected fixed weights and supplies a standard compute array through a dedicated datapath. LPDDR retains the remaining weights and mutable state, preserving model flexibility. Coordinated operand delivery and preemption at output slice boundaries accelerate inference while limiting interference with periodic control. A structured decision interface scores candidate phases in a single forward pass, avoiding sequential token generation for routine choices. Together, these mechanisms improve memory service, compute access, and decision execution for edge robotic workloads. Experiments with Qwen3-8B achieve a peak decode speedup of 1.56$\\times$ and reduce P99 task response time by a factor of approximately 227.27$\\times$, while completing 100.00\\% of the tested grasping and transport tasks.",
+  "abstract_ja": "",
+  "authors": [
+    "Boxiang Song",
+    "Zhihong Chen",
+    "Xiaoyu Hao",
+    "Jinhong Huang",
+    "Chengkai Zhu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28563",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Edge robots increasingly use large language models (LLMs) for complex tasks, demanding efficient inference alongside timely control. Limited memory capacity constrains model deployment, while…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Selective ROM Weight Storage for Responsive LLM Control on Edge Robots",
+  "url": "https://arxiv.org/abs/2611.28563",
+  "use_case": ""
+}

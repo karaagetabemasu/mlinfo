@@ -1,0 +1,32 @@
+{
+  "abstract": "Slender surgical instruments need small, narrow markers for camera-based pose estimation. A colour-stripe marker fits this requirement, but its colours in the image drift from the design values with lighting, printing and camera settings. Because the colours can only be corrected after the marker has been found, methods that rely on the design colours face a circular problem. We propose vision-language-model (VLM)-based adaptive colour calibration and compare it with two rule-based methods, which re-measure the colours from detections made with the design colours: Initial colour update does so once after tracking starts, and Colour adaptation continuously during tracking. VLM guidance uses a fine-tuned VLM to find the markers without relying on the design colours and builds the colour profile from their pixels. Recall/F1 (%) for Initial colour update, Colour adaptation and VLM guidance were 92.0/95.7, 87.8/93.3 and 98.2/99.1 on 672 synthetic image pairs; 51.3/67.2, 48.8/65.0 and 83.8/87.0 on eight degraded laboratory videos; and 38.9/55.2, 19.7/29.7 and 100/100 on a surgical-robot (da Vinci) video with strongly shifted colours. In that video the rule-based methods never found the purple/cyan marker, whereas VLM guidance found all 234 markers with no false positives. In a simulation, the hue boundary between the two stripes moved by less than 0.1 pixel for exposure gains of 0.5-2.0, compared with 2.9-4.0 pixels for a boundary found with a fixed brightness threshold. When the degradation is mild, the rule-based methods, which need no training and no GPU, are sufficient. When the colours change greatly, the gain comes from a VLM-guided candidate search that does not rely on the design colours. Combining colour-stripe markers with adaptive colour calibration enables tracking of slender surgical instruments with small markers.",
+  "abstract_ja": "",
+  "authors": [
+    "Jaesung Hong",
+    "Dong Won Lee"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29421",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Slender surgical instruments need small, narrow markers for camera-based pose estimation. A colour-stripe marker fits this requirement, but its colours in the image drift from the design values with…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video",
+      "multimodal"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "A colour-marker tracker for pose estimation of slender surgical instruments: vision-language-model-guided adaptive colour calibration",
+  "url": "https://arxiv.org/abs/2611.29421",
+  "use_case": ""
+}

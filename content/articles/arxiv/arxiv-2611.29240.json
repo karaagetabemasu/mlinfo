@@ -1,0 +1,33 @@
+{
+  "abstract": "Force-aware manipulation requires robots to infer appropriate interaction forces from task context and tactile feedback. We present Tacinf, a low-cost, modular infrastructure that enables policies to predict robot actions and fingertip forces from task language, vision, and touch. Task instructions can optionally specify the desired force level. Tacinf integrates simulation data synthesis and tactile benchmarking (Tabero), vision-tactile-language-action (VTLA) policy learning, handheld data collection using the same gripper as robot deployment (Tacumi), and task-aligned sim-to-real evaluation (Taco). Together, these components form an integrated workflow connecting data collection from multiple sources, foundation-model training, and hardware deployment. We validate each component, including the simulation data, benchmark, controller, and Tacumi, and are releasing the full stack as open source. A foundation model fine-tuned solely on tactile simulation data transfers zero-shot to different real-robot tasks. Across eight policy variants, mean task success rates are strongly correlated between simulation and the real robot (Pearson r=0.998, mean maximum rank violation MMRV=0.010). For the four policies with reported force measurements, mean grip force is higher under firm instructions than under gentle instructions on all three tasks in both domains. When both object positions and instances are randomized, a mixture of teleoperation, simulation, and Tacumi data raises mean real-robot task success from 20% with teleoperation alone to 60%.",
+  "abstract_ja": "",
+  "authors": [
+    "Qiwei Wu",
+    "Xiangyu Chen",
+    "Xin Xiang",
+    "Rui Zhang",
+    "Yihang Kang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29240",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Force-aware manipulation requires robots to infer appropriate interaction forces from task context and tactile feedback. We present Tacinf, a low-cost, modular infrastructure that enables policies to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Tacinf: A Unified Tactile Infrastructure for Robot Manipulation",
+  "url": "https://arxiv.org/abs/2611.29240",
+  "use_case": ""
+}

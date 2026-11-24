@@ -1,0 +1,35 @@
+{
+  "abstract": "3D indoor scene synthesis requires generating objects to form a complete and coherent scene. Existing approaches rely heavily on manually annotated datasets, leading to high costs and limited generalization. We present SceneCast, an annotation-free framework that trains on large-scale, unlabeled videos, addressing two key challenges: (1) Videos provide only partial views of a scene, requiring the model to extrapolate unseen 3D regions, which is inherently error-prone; (2) Raw videos available online are uncurated, suffering from uncontrolled conditions and variable data quality. First, we design a Transformer-based model that predicts objects sequentially and is fine-tuned with reinforcement learning (RL), where an LLM acts as a spatial common-sense evaluator. The LLM provides reward signals through chain-of-thought reasoning and code-executable geometric checks to refine object configurations. Second, we introduce \\trim, a data curation approach that generates training videos with controllable video generation models. Crucially, it retains only high-quality prefix clips via multi-criteria quality assessment with an entropy-based weighting strategy. Evaluated on curated synthetic video sets, our annotation-free approach outperforms state-of-the-art supervised methods in scene quality.",
+  "abstract_ja": "",
+  "authors": [
+    "Ziyang Zong",
+    "Canming Xia",
+    "Haoran Xu",
+    "Guang Tan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30345",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "3D indoor scene synthesis requires generating objects to form a complete and coherent scene. Existing approaches rely heavily on manually annotated datasets, leading to high costs and limited…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "video",
+      "3d"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "SceneCast: Learning Indoor Scene Synthesis from Curated Synthetic Videos with LLM Reward",
+  "url": "https://arxiv.org/abs/2611.30345",
+  "use_case": ""
+}

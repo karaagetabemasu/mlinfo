@@ -1,0 +1,30 @@
+{
+  "abstract": "Service robots that share corridors and lobbies with people must keep moving without endangering them. Reactive planners can stop indefinitely in dense crowds (the freezing robot problem), whereas the attention-based learned navigators that dominate the standard crowd benchmark assume holonomic motion or emit discrete actions unsuited to a differential-drive base. This paper presents TASC, a navigation system for a non-holonomic service robot that integrates an attention-based crowd encoder, an anticipatory collision feature, and a continuous-control policy. We adapt the dual-selection attention module, originally developed for discrete-action value learning, to proximal policy optimization for continuous velocity control, and add a closing-speed time-to-collision feature, a conservative estimate of the time to contact that serves as both an observation and a reward term. The policy is trained on a high-fidelity 3D robot model in NVIDIA Isaac Lab with 10,000 parallel environments, social-force-model pedestrians, and randomized crowd sizes. In 30,000 evaluation episodes, each run to its end, the policy timed out in fewer than 0.5% at every tested crowd density. This liveness comes at a cost: pedestrian collisions rise from 4.5% with five pedestrians to 17.4% with ten. In an ablation with four seeds per variant, policies retrained without the time-to-collision feature succeed 4 to 7 percentage points less often. The policy runs in Gazebo without retraining and on a commercial differential-drive service robot through a ROS 2 package with an inference latency below 10 ms, verified in a hardware-in-the-loop test with virtual pedestrians.",
+  "abstract_ja": "",
+  "authors": [
+    "Mohammadhossein Malmir",
+    "Mohammadali Rahmati",
+    "Mohammad Reza Kolani",
+    "Alois Knoll"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29637",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "3d",
+  "summary": "Service robots that share corridors and lobbies with people must keep moving without endangering them. Reactive planners can stop indefinitely in dense crowds (the freezing robot problem), whereas…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "TASC: Time-to-Collision Anticipation and Selective Crowd Attention for Non-Holonomic Service Robots",
+  "url": "https://arxiv.org/abs/2611.29637",
+  "use_case": ""
+}

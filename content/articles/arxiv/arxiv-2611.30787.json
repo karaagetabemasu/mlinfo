@@ -1,0 +1,31 @@
+{
+  "abstract": "Multi-View Stereo (MVS) and Monocular Depth Estimation (MDE) provide complementary cues for dense 3D reconstruction. While MVS leverages explicit geometry for metric depth, it struggles in challenging regions where feature matching is unreliable. Conversely, MDE provides robust structural priors but typically yields scale-ambiguous results. Existing hybrid methods mainly exploit monocular cues in a unidirectional manner, leaving the mutual enhancement between MDE and MVS insufficiently explored. To address this limitation, we propose BridgeMVS, a unified cascaded multi-stage MVS framework that bridges monocular depth features and multi-view cost volume representations through Bidirectional Dynamic Fusion (BDF). At each stage, BDF performs dynamic mono-to-cost and cost-to-mono updates, where monocular structural features guide cost volume refinement for more robust MVS depth estimation, while multi-view geometric evidence recalibrates monocular representations to improve their metric-scale consistency. Furthermore, the fused monocular and multi-view representations are progressively propagated from coarse to fine stages and constrained by stage-wise relative-scale MDE supervision and metric-scale MVS supervision, enabling cross-branch interactions to benefit subsequent high-resolution depth estimation. In addition, BDF is designed as a plug-and-play module that can be conveniently integrated into existing cascaded MVS frameworks. Extensive experiments demonstrate that BridgeMVS achieves state-of-the-art performance on the DTU, Tanks-and-Temples, and ETH3D benchmarks, while simultaneously boosting the accuracy of monocular depth estimation. Notably, BridgeMVS ranks first on both the Tanks-and-Temples Intermediate and Advanced benchmarks. The source code is available at \\href{https://github.com/JianfeiJ/BridgeMVS}{https://github.com/JianfeiJ/BridgeMVS}.",
+  "abstract_ja": "",
+  "authors": [
+    "Jianfei Jiang",
+    "Haochen Yu",
+    "Qiankun Liu",
+    "Rui Yang",
+    "Hongyuan Liu"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/JianfeiJ/BridgeMVS",
+  "hasCode": true,
+  "id": "arxiv-2611.30787",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Multi-View Stereo (MVS) and Monocular Depth Estimation (MDE) provide complementary cues for dense 3D reconstruction. While MVS leverages explicit geometry for metric depth, it struggles in…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "BridgeMVS: Bridging Multi-View Stereo and Monodepth via Bidirectional Dynamic Fusion",
+  "url": "https://arxiv.org/abs/2611.30787",
+  "use_case": ""
+}

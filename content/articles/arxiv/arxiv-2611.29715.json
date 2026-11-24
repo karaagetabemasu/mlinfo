@@ -1,0 +1,31 @@
+{
+  "abstract": "Sequence models trained on game moves have been shown to encode world models, with structured linear probes revealing the underlying game states. World models, however, are inherently dynamic: in deterministic board games, a set of rules constrain how states evolve over time. We therefore ask if and how OthelloGPT, a transformer trained only on Othello move sequences, manifests the rules of the game in its activation space. We divide the rules of Othello, and symmetrically their violations, into three classes: placing a disc on an empty square (R1), flanking an opponent's disc (R2), and moving in turn (R3). We find that linear probes accurately separate legal from illegal moves, and also distinguish between the three kinds of rule violations. We introduce an unsupervised rule-violation detector based on the step length of activations between consecutive moves, which identifies illegal moves above chance. We further improve our detection metric by computing step length in the latent space of select sparse autoencoders. Together, we find that OthelloGPT follows game rules of Othello to a large extent, and that we can detect rule violations using structured detectors on model activations.",
+  "abstract_ja": "",
+  "authors": [
+    "David L. Cao",
+    "Sai Sumedh R. Hindupur",
+    "Demba Ba"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29715",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Sequence models trained on game moves have been shown to encode world models, with structured linear probes revealing the underlying game states. World models, however, are inherently dynamic: in…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised"
+    ],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "From States to Dynamics: Detecting Rule Violations in OthelloGPT",
+  "url": "https://arxiv.org/abs/2611.29715",
+  "use_case": ""
+}

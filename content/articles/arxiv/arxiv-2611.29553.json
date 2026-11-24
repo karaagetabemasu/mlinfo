@@ -1,0 +1,31 @@
+{
+  "abstract": "Vision-language-action (VLA) policies complete most benchmark tasks but often violate safety constraints. Since they are stochastic, one remedy is to sample several candidate action chunks and execute one that a world model predicts is safe. We ask what such a model must do. In simulation, a lookahead safety filter with the simulator as an exact world model raises the safety rate of three VLA policies on LIBERO and of pi0.5 on LIBERO-Plus by 11.5 to 25.7 points. It also helps pi0.5 on three RoboCasa tasks. Learned critics trained on one policy's data detect dangerous states (pooled AUROC up to 0.864) but rank candidates at one state close to chance (within-decision AUROC 0.551-0.560), and the learned dynamics and video models we test do no better. When the simulator's state is perturbed, selection degrades long before detection. In the loop, a median position error of 3.18 mm removes 70% of the gain on LIBERO-Spatial, partly because the error also corrupts the displacement check. On LIBERO-10 the loss is smaller, and the intervals overlap. The median does not predict the cost: a pixel reader with a 0.56 mm median error keeps 6.5 points less of the gain than Gaussian error of a similar median. A world model for safety should thus be judged by within-state ranking, and its state must be accurate in the tail and on handled objects, not only in the median.",
+  "abstract_ja": "",
+  "authors": [
+    "Thanish Bolla"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29553",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Vision-language-action (VLA) policies complete most benchmark tasks but often violate safety constraints. Since they are stochastic, one remedy is to sample several candidate action chunks and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video",
+      "multimodal"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Detecting Is Not Choosing: What a World Model Needs to Keep a VLA Policy Safe",
+  "url": "https://arxiv.org/abs/2611.29553",
+  "use_case": ""
+}

@@ -1,0 +1,34 @@
+{
+  "abstract": "Vision-language-action foundation models learn general manipulation priors, but object mass and local slip are difficult to infer from vision alone. Changing loads require contact-driven grasp adjustments that demonstrations collected under fixed conditions may not adequately cover. We present VTLA-RL to study visuotactile grasping policies and their reinforcement learning (RL) post-training under varying loads. Our main approach shares a visual encoder between tactile-image histories and RGB inputs to jointly generate and execute motion and bilateral force targets in a unified action space. Mixed real and simulated demonstrations first establish motion and contact priors. Two-stage multi-task RL then uses only simulated interaction to optimize the policy through task-success returns without continued real-demonstration supervision, and the trained policy deploys directly to real robots. We compare tactile representations and RL post-training routes in simulation and separately evaluate load variation and placement perturbations on hardware. The full method achieves higher grasping success than the supervised initialization, while RL post-training gains differ across approaches, providing empirical evidence for choosing representations and training approaches for this task.",
+  "abstract_ja": "",
+  "authors": [
+    "Qiwei Wu",
+    "Qixuan Li",
+    "Xin Xiang",
+    "Xiangyu Chen",
+    "Xiang Xiao"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28752",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "multimodal",
+  "summary": "Vision-language-action foundation models learn general manipulation priors, but object mass and local slip are difficult to infer from vision alone. Changing loads require contact-driven grasp…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "image",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "VTLA-RL: Learning Visuotactile Policies for Load-Adaptive Grasping",
+  "url": "https://arxiv.org/abs/2611.28752",
+  "use_case": ""
+}

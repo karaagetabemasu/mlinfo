@@ -1,0 +1,29 @@
+{
+  "abstract": "Robot foundation policies provide learned execution capabilities, while programming agents can reason about failures and construct recovery behaviors. Combining them effectively requires learning when intervention helps and when the policy can reliably resume. This challenge is inherently temporal: the physical world continues to evolve during reasoning, and a useful recovery may become infeasible before a decision takes effect. We introduce Agent on Guard (AoG), a hierarchical framework that improves collaboration between a frozen base policy and a programming agent through physical experience. An evolving outer planner allocates control as the physical state evolves, aligning decisions with the physical clock with attention to observation freshness, remaining recovery windows, and the time required for reasoning, recovery, and subsequent execution. Coupled inner loops jointly refine intervention timing, recovery skills, and handoff conditions. Rather than judging recovery by local correction alone, AoG uses downstream task progress, failure recurrence, final outcomes, and resource consumption to improve both recovery behaviors and scheduling. This turns temporary agent solutions into reusable collaboration capabilities that complement the frozen policy. On RoboDojo-Sim, AoG achieves a success rate of 50.57% and a task score of 57.26, exceeding the strongest evaluated baseline by 11.22 percentage points and 10.68 points, respectively. It also reduces end-to-end episode latency by 80.4% and online token consumption by 85.1% relative to the GPT-6 Astra agent.",
+  "abstract_ja": "",
+  "authors": [
+    "Gengming Cui",
+    "Mingfei Han",
+    "Jiawei Zhang",
+    "Mozheng Liao",
+    "Yunkai Guo"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30101",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Robot foundation policies provide learned execution capabilities, while programming agents can reason about failures and construct recovery behaviors. Combining them effectively requires learning…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Agent on Guard: Self-Improving Runtime Intervention for Robust Robotic Manipulation",
+  "url": "https://arxiv.org/abs/2611.30101",
+  "use_case": ""
+}

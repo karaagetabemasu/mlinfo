@@ -1,0 +1,29 @@
+{
+  "abstract": "EEG-to-motion decoding remains challenging because noisy scalp EEG is difficult to map directly to continuous kinematics. We present NeuroMotion, a framework that aligns EEG representations to discrete motion primitives for continuous motion decoding across heterogeneous paradigms, including full-body free movement, lower-limb treadmill locomotion, and upper-limb freewill reaching and grasping. A VQ-based motion prior discretizes continuous motion into reusable primitives that serve as both alignment prototypes and intermediate prediction targets. Prototypical and supervised contrastive objectives align EEG embeddings to motion-derived prototypes and organize them according to primitive assignments. An E2M Transformer predicts motion-code sequences from the learned EEG representations, while a final geometric refinement stage improves continuous trajectory reconstruction through motion-level training. Under a last-session test protocol, NeuroMotion achieves the best mean reconstruction performance among the compared EEG decoding baselines across all three datasets, with the clearest gains on full-body motion in both reconstruction accuracy and distribution-level quality. Multi-subject ablations further support the contributions of EEG-to-primitive alignment, token prediction, and refinement. Code is available at https://github.com/Liuyi2351433/NeuroAction.",
+  "abstract_ja": "",
+  "authors": [
+    "Yi Liu",
+    "Qi Zhang",
+    "HaoLin Li",
+    "Lai Zhong Yuan",
+    "Lei Zhu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/Liuyi2351433/NeuroAction",
+  "hasCode": true,
+  "id": "arxiv-2611.30817",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "EEG-to-motion decoding remains challenging because noisy scalp EEG is difficult to map directly to continuous kinematics. We present NeuroMotion, a framework that aligns EEG representations to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "NeuroMotion: Aligning EEG to Discrete Motion Primitives for Continuous Motion Decoding",
+  "url": "https://arxiv.org/abs/2611.30817",
+  "use_case": ""
+}

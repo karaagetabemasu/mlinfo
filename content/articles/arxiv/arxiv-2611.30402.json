@@ -1,0 +1,31 @@
+{
+  "abstract": "LiDAR registration and loop closure often rely on sparse keypoints, which must remain repeatable across sessions, viewpoints, and sensors. To handle differing scan patterns, detectors typically operate on accumulated submaps, which introduces latency and processes each submap independently, so repeated observations are never fused. Height-based detectors also reference structure to an estimated ground, so its inconsistency across sessions propagates into the keypoints. Moreover, dynamic objects leave ghost trails that can be mistaken for static structure. We present GeLiFiSH (Geometric LiDAR Filtering with Sequential Hypothesis testing), a learning-free filter that recursively estimates persistent keypoints at scan rate. A height-structure detector runs on a rolling voxel map, and detections initialize tracks with a position, covariance, and existence probability, accepted or rejected by a sequential probability ratio test. Ground segmentation provides a sensor-agnostic height reference, and moving object segmentation removes dynamic points before map insertion. On SemanticKITTI, HeLiMOS, and HeLiPR, spanning five LiDARs and multiple sessions, GeLiFiSH attains the highest average keypoint repeatability among the compared detectors and the second-highest cross-session registration recall from keypoints alone, behind ISS which extracts four times as many keypoints. With one parameter set and no sensor-height prior, both ground and moving object segmentation modules outperform their baselines on average.",
+  "abstract_ja": "",
+  "authors": [
+    "Nikolaos Stathoulopoulos",
+    "George Nikolakopoulos"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30402",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "LiDAR registration and loop closure often rely on sparse keypoints, which must remain repeatable across sessions, viewpoints, and sensors. To handle differing scan patterns, detectors typically…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "detection",
+      "segmentation"
+    ]
+  },
+  "title": "GeLiFiSH: Recursive LiDAR Keypoint Estimation with Ground and Moving Object Segmentation",
+  "url": "https://arxiv.org/abs/2611.30402",
+  "use_case": ""
+}

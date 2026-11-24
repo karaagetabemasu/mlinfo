@@ -1,0 +1,35 @@
+{
+  "abstract": "Vision-language-action (VLA) models benefit from strong semantic representations that support object recognition and instruction understanding. However, precise manipulation also depends on resolving object locations and workspace relations, and on selecting actions with an estimate of how the scene will evolve. Existing geometry-aware methods make the current scene more explicit, while predictive methods model future observations or representations. Yet future information is often neither grounded in a control-relevant spatial state nor directly used to guide action generation. We introduce Spatially Grounded Latent Lookahead (SG-LL), which uses the grounded present as the reference for predicting an actionable near-future representation. A frozen spatial teacher first distills geometric priors into policy-connected spatial tokens. A current-conditioned bottleneck then learns a compact latent that captures future information relative to the present scene. This latent is predicted from the current policy context and initial Action Expert features, without access to future observations or the spatial teacher. Finally, zero-initialized residual fusion incorporates the predicted latent into the Action Expert to refine action generation. Experiments on LIBERO-Plus, CALVIN, and three real-world manipulation tasks demonstrate improvements over in both simulation and real-robot settings.",
+  "abstract_ja": "",
+  "authors": [
+    "Qihang Chen",
+    "Tengjie Li",
+    "Hongwei Lu",
+    "Jason Wu",
+    "Chyna Qu"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28839",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "multimodal",
+  "summary": "Vision-language-action (VLA) models benefit from strong semantic representations that support object recognition and instruction understanding. However, precise manipulation also depends on resolving…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "classification",
+      "generation"
+    ]
+  },
+  "title": "Spatially Grounded Latent Lookahead for Vision-Language-Action Models",
+  "url": "https://arxiv.org/abs/2611.28839",
+  "use_case": ""
+}

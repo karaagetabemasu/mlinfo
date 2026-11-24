@@ -1,0 +1,26 @@
+{
+  "abstract": "Conversational product search lets users find products through a multi-turn dialogue instead of a single keyword query, but Persian lacks the large conversational datasets needed to train and evaluate such systems; existing Persian e-commerce dialogue resources cover few categories and small catalogs. We present a framework that builds such a dataset automatically from a real e-commerce catalog and release the resulting dataset. The framework crawls 12,926 products in seven categories of the Digikala marketplace, groups them into 170 semantically coherent clusters, and selects the question the assistant asks at every turn with the Regularized Partition Balance (RPB) score. The RPB score accounts for feature coverage, the probability that the user can answer and the number of values, and generalizes entropy-based question selection. An LLM then verbalizes each question plan into a natural Persian dialogue. In a simulation on the full catalog, the RPB score needs 0.11 fewer turns than the strongest entropy baseline when the difficulty of answering differs between features, and is practically equivalent to it when it does not. Using only a free LLM API, we generated 1,000 requirement-driven dialogues covering all 170 clusters, with turn-level feature annotations; automatic checks and an LLM judge confirm their consistency with the catalog, while their realism is lower than that of the first, GPT-4o-generated version. Code and data are publicly available.",
+  "abstract_ja": "",
+  "authors": [
+    "Fariba Nafar",
+    "Hassan Naderi"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29356",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Conversational product search lets users find products through a multi-turn dialogue instead of a single keyword query, but Persian lacks the large conversational datasets needed to train and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Automatic Construction of Persian E-Commerce Dialogue Datasets for Conversational Product Search",
+  "url": "https://arxiv.org/abs/2611.29356",
+  "use_case": ""
+}

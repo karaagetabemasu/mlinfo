@@ -1,0 +1,34 @@
+{
+  "abstract": "Diffusion models have shown strong potential in medical image segmentation due to their generative capabilities and robustness. However, existing methods often struggle to preserve fine anatomical boundaries and to retain multi-scale structural information due to the loss of spatial and frequency details during feature encoding, particularly in complex clinical imaging conditions. This work presents WaDiS, a wavelet-powered conditional latent diffusion framework for medical image segmentation that addresses these limitations through multi-scale wavelet conditioning and frequency-aware information filtering for boundary preservation. The model adopts a multi-scale wavelet conditioning encoder to retain rich structural features, leveraging its lossless nature to better preserve semantic priors critical to the diffusion process. In addition, a Frequency-Aware Gating Block (FAGB) is introduced into the skip connections of the diffusion U-Net, enabling adaptive spectral filtering and residual fusion to better emphasize boundary structures while reducing irrelevant content. To improve generalization across clinical domains, we adopt a structure-preserving color augmentation strategy during training. Specifically, global color statistics are transferred between samples in the LAB color space, allowing the model to decouple appearance from structure and focus more on anatomical shape rather than color bias. Experiments on five benchmark datasets demonstrate that WaDiS consistently outperforms existing diffusion-based and conventional segmentation methods, with notable improvements in boundary accuracy, robustness to noise, and generalization under color variation. The code for this work will be made publicly available upon acceptance.",
+  "abstract_ja": "",
+  "authors": [
+    "Qiang Gao",
+    "Yi Wang",
+    "Yong Zhang",
+    "Bin Fang",
+    "Yong Li"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30164",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Diffusion models have shown strong potential in medical image segmentation due to their generative capabilities and robustness. However, existing methods often struggle to preserve fine anatomical…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation",
+      "segmentation"
+    ]
+  },
+  "title": "WaDiS: Boundary-Preserving Diffusion Segmentation via Multi-Scale Wavelet Conditioning and Frequency-Aware Gating",
+  "url": "https://arxiv.org/abs/2611.30164",
+  "use_case": ""
+}

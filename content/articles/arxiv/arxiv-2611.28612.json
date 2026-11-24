@@ -1,0 +1,32 @@
+{
+  "abstract": "In this paper, we conduct a systematic study on improving permutation robustness while preserving accuracy. First, we categorize permutation bias phenomena into four representative scenarios. Then, we take the multiple-choice question answering (MCQA) dataset as an example under text-option reordering scenario to analyze the root cause of permutation bias. Based on this root cause analysis and set encoding strategy, we investigate shared positions with blocked cross-unit attention (SP-B) and extend this design to bidirectional cross-unit attention (SP-V) for modality exchange. However, these structural changes may reduce predictive accuracy. To recover model capability across different scenarios under the SP structure, an attention-only distillation from frozen native models is proposed. Shared positions reduce permutation sensitivity, and attention-only distillation improves accuracy under the shared-position structure. Across all three models, our method is comparable to or better than majority voting in macro-average all-permutation accuracy, and outperforms supervised fine-tuning by 1.95-4.20 percentage points. This work provides valuable insight into permutation bias mitigation and model capability recovery.",
+  "abstract_ja": "",
+  "authors": [
+    "Yifei Cheng",
+    "Xiaolin Zhang",
+    "Yu-Xuan Qiu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28612",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "In this paper, we conduct a systematic study on improving permutation robustness while preserving accuracy. First, we categorize permutation bias phenomena into four representative scenarios.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "qa"
+    ]
+  },
+  "title": "Reducing Permutation Sensitivity in Multimodal Large Language Models via Shared Positions and Attention-Only Distillation",
+  "url": "https://arxiv.org/abs/2611.28612",
+  "use_case": ""
+}

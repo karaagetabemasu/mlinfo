@@ -1,0 +1,31 @@
+{
+  "abstract": "Driving models need to choose which capabilities to use and when to reconsider their decisions. We introduce AgentMoT, a Mixture-of-Transformers with built-in agent reasoning and system scheduling. Combinations of agent, world, and action experts form three jointly trained pathways for direct-action, vision-language-action, and world-action computation. The Router selects a native pathway, while the agent expert supplies reasoning and selects skills. Execution feedback raises wake-up requests, and the agent self-scheduler learns whether to reconsider the task decision or keep it. Mandatory requests invoke the agent directly. The relative-capability principle guides these choices by relating the benefit of additional computation or intervention to its cost. After open-loop initialization, dual-loop evolution trains the Router, agent, and self-scheduler from closed-loop experience while failure-driven updates refine skills and execution feedback. AgentMoT achieves state-of-the-art results on Bench2Drive v0.0.3 and v0.0.4, with 94.48/92.33 driving score and 85.45/82.73% success rate, respectively. With skills disabled, learned routing improves over the strongest fixed pathway by 1.79 driving-score points and 4.09 percentage points of success rate on v0.0.3. Ablation studies further show gains from closed-loop agent learning, two-view queries, and event-triggered wake-up.",
+  "abstract_ja": "",
+  "authors": [
+    "Qihang Huang",
+    "Collister Chua",
+    "YuJie Yan",
+    "Shiyu Fang",
+    "Zhan Chen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30389",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Driving models need to choose which capabilities to use and when to reconsider their decisions. We introduce AgentMoT, a Mixture-of-Transformers with built-in agent reasoning and system scheduling.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "AgentMoT: An Agentic Mixture-of-Transformers for End-to-End Autonomous Driving",
+  "url": "https://arxiv.org/abs/2611.30389",
+  "use_case": ""
+}

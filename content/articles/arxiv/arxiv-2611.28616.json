@@ -1,0 +1,33 @@
+{
+  "abstract": "Model Predictive Path Integral (MPPI) control is central to online planning for model-based reinforcement learning (MBRL), but its iterative refinement incurs planning latency. Reducing refinement iterations often degrades performance, motivating stronger policy guidance learned from the planner. However, existing methods typically learn from the planner through action-level alignment, which does not directly capture the complete $H$-step planner proposal. Moreover, planner imitation leaves further target improvement to online refinement. To address these limitations, we propose FaSt World PlANner (SWAN), an advantage-aware MPPI-based MBRL framework that explicitly represents and improves the complete $H$-step planner proposal to improve policy guidance for efficient online planning. For proposal representation, SWAN combines k-MPPI, a multimodal MPPI extension, with a mixture of factor analyzers (MFA) action-chunk policy to capture multiple modes and correlations across time and action dimensions. For proposal optimization, we introduce Advantage-Guided Proposal Optimization (APO), which reuses MPPI evaluations to construct an improved target using advantage estimates and trains the policy toward this target while preserving planner alignment. Experiments across 31 high-dimensional continuous-control tasks from DMControl, HumanoidBench, and MyoSuite show that SWAN substantially improves control performance and sample efficiency while using 50% fewer MPPI refinement iterations than state-of-the-art planning-based MBRL methods. Finally, SWAN demonstrates zero-shot sim-to-real transfer on a physical Unitree Go2, achieving stable velocity-tracking locomotion with high-frequency control. (see our demo at https://swanfastworldplanner.github.io/)",
+  "abstract_ja": "",
+  "authors": [
+    "Jiangtao Kong",
+    "Yuchen Wang",
+    "Yandong Luo",
+    "Rongchao Xu",
+    "Guang Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28616",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Model Predictive Path Integral (MPPI) control is central to online planning for model-based reinforcement learning (MBRL), but its iterative refinement incurs planning latency. Reducing refinement…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Fast World Planner: Advantage-Aware Action-Chunk Policy for Online Planning",
+  "url": "https://arxiv.org/abs/2611.28616",
+  "use_case": ""
+}

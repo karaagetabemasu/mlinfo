@@ -1,0 +1,36 @@
+{
+  "abstract": "Automated 3D CT report generation could support radiology workflows, yet medical vision-language models (MedVLMs) often omit diagnostic findings from generated reports. We ask whether the diagnostic ability of these models carries over to free-form reporting. Across five MedVLMs, diagnostic VQA achieves higher macro-F1 than reports generated from the same CT studies and evaluated on the same disease categories. We call this task-dependent discrepancy the diagnosis-to-report gap. Conventional Report Adaptation improves reporting for most models but does not close the gap. To investigate and narrow it, we introduce DeCAD (Decompose CT Analysis and Describe), which progressively decomposes CT report generation at diagnostic, regional textual, and regional visual levels. The model identifies positive findings before writing a report, organizes diagnosis and description into regional tasks, and restricts each task to visual tokens from the corresponding region. Diagnostic and regional textual decomposition improve report-level diagnostic performance across the five MedVLMs, whereas regional visual decomposition provides limited additional gains. In a standard VLM without medical VQA pretraining, the first two levels remain effective; regional visual decomposition also provides further gains with a region-level contrastively pretrained encoder. Full DeCAD achieves state-of-the-art performance on CT-RATE and Merlin. Analyses show greater CT-token attention during diagnosis and higher recall of reference-positive findings in both the diagnostic output and final report than with Report Adaptation. These results show that explicitly organizing diagnosis improves diagnostic reporting and helps narrow the diagnosis-to-report gap.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhisong Wang",
+    "Wanxing Chang",
+    "Weiwei Cao",
+    "Fenghe Tang",
+    "Bowen Shi"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30458",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Automated 3D CT report generation could support radiology workflows, yet medical vision-language models (MedVLMs) often omit diagnostic findings from generated reports. We ask whether the diagnostic…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Decompose and Describe: Narrowing the Diagnosis-to-Report Gap in 3D CT Report Generation",
+  "url": "https://arxiv.org/abs/2611.30458",
+  "use_case": ""
+}

@@ -1,0 +1,29 @@
+{
+  "abstract": "Diffusion-based graph generation models progressively transform Gaussian noise into structured graphs through stochastic dynamics. We observe that the effectiveness of this transformation is fundamentally determined by the evolution of the diffusion trajectory. Existing graph diffusion models often suffer from excessive uncertainty during diffusion and delayed growth of the signal-to-noise ratio, causing useful structural information to emerge only in the later stages of generation. To address this issue, we propose the Vasicek Graph Diffusion (VGD), a graph diffusion process derived from the Vasicek dynamics. The key insight of VGD is data-anchored mean dynamics with a closed-form solution, which analytically establishes a continuous transition from Gaussian noise to the target graph distribution. Unlike conventional graph diffusion processes that rely predominantly on stochastic evolution, VGD introduces a data-anchored drift that continuously steers the latent state toward the target distribution throughout diffusion. As a consequence, VGD maintains a smoothly evolving uncertainty while rapidly increasing the signal-to-noise ratio throughout diffusion, allowing informative graph structures to emerge much earlier during generation. Extensive experiments on multiple graph generation benchmarks demonstrate that VGD outperforms existing diffusion-based graph generative models in terms of generation quality and structural fidelity.",
+  "abstract_ja": "",
+  "authors": [
+    "Junyi Tang",
+    "Chang Liu",
+    "Kun Zhan"
+  ],
+  "category": "generative-ai",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30605",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "diffusion",
+  "summary": "Diffusion-based graph generation models progressively transform Gaussian noise into structured graphs through stochastic dynamics. We observe that the effectiveness of this transformation is…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Vasicek Diffusion Bridge for Graph Generation",
+  "url": "https://arxiv.org/abs/2611.30605",
+  "use_case": ""
+}

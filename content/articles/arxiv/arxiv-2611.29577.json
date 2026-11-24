@@ -1,0 +1,28 @@
+{
+  "abstract": "Deploying a conversational model and a specialist together could avoid maintaining a separate specialist service. We present LM2, which embeds a trained story generator into a larger conversational model. The larger model handles the conversation and invokes the generator for story requests. We constrain the generator arithmetic during training so its calculations can be compiled directly into added model layers. We compare this approach with QwenPU, which executes the stories260K language model on an embedded processor. LM2 requires one host token per generated character, compared with approximately 25,000 for QwenPU. However, its story generator predicts held out text less well, i.e. 1.145 bits per character versus 0.894 for stories260K, where lower is better. The Qwen3.5, 0.8B implementation occupies 18.1 GB and generates the same characters as a standalone integer implementation of the inner model in the tested runs. These results illustrate a tradeoff between host-token cost and text-prediction performance.",
+  "abstract_ja": "",
+  "authors": [
+    "Naman Chawla",
+    "Chhavi Dhiman"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29577",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Deploying a conversational model and a specialist together could avoid maintaining a separate specialist service. We present LM2, which embeds a trained story generator into a larger conversational…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "LM2 Compiling a Language Model into Another Model Weights",
+  "url": "https://arxiv.org/abs/2611.29577",
+  "use_case": ""
+}

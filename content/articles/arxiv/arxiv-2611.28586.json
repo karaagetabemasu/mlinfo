@@ -1,0 +1,31 @@
+{
+  "abstract": "Biomedical question answering often requires multi-step reasoning under limited inference budgets. While test-time search methods such as Tree-of-Thought can improve reasoning performance, directly searching over free-form language is computationally expensive and highly redundant, as many reasoning trajectories contain semantically equivalent intermediate steps expressed in different surface forms. We introduce MedCoast, an offline-to-online reasoning framework that converts sampled chain-of-thought trajectories into a compact space for structured process supervision. Offline, we recursively cluster semantically similar reasoning steps under shared prefixes to construct an abstract reasoning tree that captures recurring clinical reasoning patterns. We then derive node-level supervision from progress toward correct solutions, and train a lightweight process reward model (PRM) to evaluate partial reasoning states. At inference time, the learned critic guides test-time exploration by prioritizing promising reasoning prefixes. Across seven biomedical QA benchmarks, MedCoast often improves over self-consistency under fixed inference budgets, with gains of up to 15 points. Despite using a reward model more than 50 times smaller, MedCoast achieves performance comparable to state-of-the-art reward models in several settings, highlighting its potential for resource-constrained biomedical reasoning.",
+  "abstract_ja": "",
+  "authors": [
+    "Yishan Zhong",
+    "Jieru Li",
+    "Xuanzhe Ding",
+    "Shaunna Wang",
+    "Yanxin Yang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28586",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Biomedical question answering often requires multi-step reasoning under limited inference budgets. While test-time search methods such as Tree-of-Thought can improve reasoning performance, directly…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "qa"
+    ]
+  },
+  "title": "MedCoast: Semantic Abstraction of Reasoning Trajectories for Test-Time Biomedical Question Answering",
+  "url": "https://arxiv.org/abs/2611.28586",
+  "use_case": ""
+}

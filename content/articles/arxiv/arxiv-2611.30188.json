@@ -1,0 +1,32 @@
+{
+  "abstract": "World action models (WAMs) deliver fast visuomotor control, yet degrade sharply in challenging scenes and act blindly when about to fail; conversely, foundation-model-based agents generalize and recover reliably, but incur prohibitive latency and cost when queried at every step. To achieve both WAM (System 1)-level speed and agent (System 2)-level reliability--- we propose \\textbf{\\oursfull (\\ours)}, a framework that calibrates WAMs' confidence--- adaptively triggering System~2 only when necessary, and distilling System~2's knowledge to form an evolving System~1. First, \\ours equips a frozen WAM with \\textbf{calibrated self-assessment}: a single lightweight judgment token reading internal video--action features is trained via our proposed \\textbf{cross-fitted temporal-difference (TD) learning} using only binary rollout success/failure signals. It can predict a \\textbf{calibrated success probability} at negligible overhead without affecting action predictions. Second, this calibrated success probability schedules control chunk by chunk---invoking System~2 to resolve bottlenecks when confidence drops, and handing control back to the WAM once confidence recovers, preserving WAM-like speed while approaching System~2 reliability. Third, as System~2 intervenes only when the WAM lacks confidence, its takeover trajectories directly capture the WAM's capability gaps. JiL distills these takeovers into the WAM to repair those gaps so System~1 can operate standalone without System~2 at test time, while our mastered-skill anchoring and dynamic confidence gating prevent degrading existing capabilities.",
+  "abstract_ja": "",
+  "authors": [
+    "Wenhao Li",
+    "Yu Han",
+    "Xiu Su",
+    "Dehao Wu",
+    "Keke Huang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30188",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "World action models (WAMs) deliver fast visuomotor control, yet degrade sharply in challenging scenes and act blindly when about to fail; conversely, foundation-model-based agents generalize and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "video"
+    ],
+    "task": []
+  },
+  "title": "Calibrating World Action Models: From Adaptive System 2 Takeover to Self-Evolution",
+  "url": "https://arxiv.org/abs/2611.30188",
+  "use_case": ""
+}

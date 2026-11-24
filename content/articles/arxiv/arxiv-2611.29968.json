@@ -1,0 +1,33 @@
+{
+  "abstract": "Runtime model selection trades detection quality against energy and latency. However, comparing a selector only with a more costly static detector conflates detector choice with the benefit of adaptation. We present a framework for analysis and physical measurement that combines a pairwise reward criterion, matched static controls, paired blocks, a fixed load-prevalence factorial design, and reporting of actions outside training support. On one Raspberry Pi 4B with four frozen TON-IoT detectors, tabular Q-learning and a deep Q-network (DQN) both select LightLR throughout. A retrospective audit using validation data only rules out preference reversals for MedRF versus LightLR and HeavyMLP versus LightLR. However, TinyDT has a higher reward than LightLR in seven of the 2,500 windows, so the audit does not establish global LightLR optimality. We also evaluate a causal DeadlineGuard rule under a fixed factorial design with three arrival rates (50, 100, and 4,000 rows/s) and three attack prevalences (0.10, 0.50, and 0.90). Compared with Static-MedRF, DeadlineGuard saves 43.7 J per 500-s run (2.98%; 95% paired CI 41.4--46.0 J) and eliminates all 512 deadline misses among 5,000 windows, at a cost of 1.373 percentage points in F1. Outside training support, Tabular-Q's deterministic tie-breaking rule selects TinyDT, resulting in a false-positive rate of 67.76%. These single-board results motivate joint audits of reward attainability, realized actions, attribution against matched static controls, service feasibility, and default actions outside training support.",
+  "abstract_ja": "",
+  "authors": [
+    "Nuonan Ouyang",
+    "Bonan Zhang",
+    "Adrian Shatte",
+    "Zhigang Lu",
+    "Chao Chen"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29968",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "model-free",
+  "summary": "Runtime model selection trades detection quality against energy and latency. However, comparing a selector only with a more costly static detector conflates detector choice with the benefit of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "tabular"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "When Learned IDS Model Selection Collapses to a Static Choice: A Measurement Study at the Edge",
+  "url": "https://arxiv.org/abs/2611.29968",
+  "use_case": ""
+}

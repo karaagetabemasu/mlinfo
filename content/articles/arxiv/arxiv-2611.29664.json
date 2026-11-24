@@ -1,0 +1,29 @@
+{
+  "abstract": "Top-k sparse attention relies on an indexer, a lightweight per-layer module that ranks cached tokens so attention covers only the k highest-scoring ones. Indexers are usually distilled from dense attention at the full serving length, so every training step pays for long-context dense attention. We show that when an indexer is distilled on short sequences, its failure to generalise to longer contexts is driven mainly by rotary positional encoding (RoPE), not by degraded content matching. We propose position-skipped distillation: the indexer and the frozen teacher see short sequences whose position IDs contain a randomly placed gap, so neither ever processes more than the short training length. On DeepSeek-V2-Lite and Qwen3-30B-A3B, an indexer distilled on 8K tokens this way matches a 32K-distilled indexer to within about 0.5 perplexity up to 32K, and on DeepSeek-V2-Lite matches a 64K-distilled indexer at 64K with roughly 6x less training compute per token. On Llama-3.1-8B it trails the stronger 32K run by 0.6 perplexity, and at 64K simple position compression is often as good, so the main gain is training cost rather than quality. We also quantise indexer keys to 3-4 bits without retraining and score them with a fused integer kernel: at 4 bits, perplexity changes by at most 0.05 and the scan is 1.6-2.2x faster than half precision. In a current serving engine, the indexer speeds up decoding only for long contexts with multiple concurrent streams.",
+  "abstract_ja": "",
+  "authors": [
+    "Fu Dai",
+    "Haodi Quan",
+    "Kamal Taha"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29664",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Top-k sparse attention relies on an indexer, a lightweight per-layer module that ranks cached tokens so attention covers only the k highest-scoring ones. Indexers are usually distilled from dense…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Position-Skipped Distillation of Sparse-Attention Indexers: Train Short, Serve Long",
+  "url": "https://arxiv.org/abs/2611.29664",
+  "use_case": ""
+}

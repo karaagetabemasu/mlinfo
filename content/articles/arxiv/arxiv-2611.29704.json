@@ -1,0 +1,25 @@
+{
+  "abstract": "Looped transformers apply one block of layers several times with shared weights, trading parameters for repeated computation. We study how the schedule of the loop iteration count R during training determines whether each extra pass acts as a full layer or as a small correction, using a controlled ladder of 46M-110M-parameter models trained on 2B tokens with learned residual gates on every loop pass and three schedules: R fixed to 2, R sampled uniformly from {1,...,6}, and R sampled from {2,3,4}. We find that the lower bound of the sampling range is the decisive choice. If the sampled range includes R=1, so that some training steps run the block only once and compute the loss on that single pass, the gates collapse to 0.1-0.5 and each additional pass becomes a small correction to the first; if the range starts at R=2, so that every training step runs the block at least twice, the gates stay at 0.6-0.9 and each pass keeps the strength of a full layer, while the model can still be run at any R from 2 up to twice the largest trained value with validation loss within a few hundredths of a nat of its best. The {2, 3, 4} schedule gives the best looped model, 2.909 nats against 2.951 for the parameter-matched plain model, and degrades by only 0.038 nats when run at twice its trained depth. We further show that under a fixed R the direction of the residual stream converges geometrically beyond the trained depth while the loss diverges, which refines a recent finding that static-depth training does not converge, and that reusing the first pass's keys and values on later passes costs 0.01-0.03 nats in every regime while making the per-token iteration uniformly contractive and halving the inference cache. The loop recovers about a third of what real depth provides at equal parameters. The code, trained weights, and per-token traces are released.",
+  "abstract_ja": "",
+  "authors": [
+    "Konstantin Kolokolov"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29704",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Looped transformers apply one block of layers several times with shared weights, trading parameters for repeated computation. We study how the schedule of the loop iteration count R during training…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Loop-Count Schedules in Looped Transformers: An Empirical Study",
+  "url": "https://arxiv.org/abs/2611.29704",
+  "use_case": ""
+}

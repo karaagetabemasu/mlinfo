@@ -1,0 +1,32 @@
+{
+  "abstract": "End-to-end driving models have made substantial progress, yet reliable closed-loop driving in complex traffic remains challenging. Beyond improving individual models, system-level orchestration offers a complementary approach by coordinating driving capabilities and computation. We introduce ROSE-Drive (Runtime Orchestration and System Evolution), a model-agnostic framework that jointly orchestrates driving execution and computation. It coordinates frozen driving models with driving skills, perception tools, and feedback controllers. A distilled vision-language model (VLM) proposes driving tasks and scene relations. Shared physical state and persistent tasks support capability composition, task continuity, and adaptive scheduling. The orchestrator combines model and skill outputs across control channels, maintains task responsibility through handover, and uses execution feedback to select controllers, reuse valid motion references, and schedule model inference. Offline revisions use execution records to refine skills and their coordination through a stable task interface. Successive system stages inherit these revisions while model, perception, and VLM weights remain fixed. Evaluations with four driving models on Bench2Drive v0.0.3, Bench2Drive v0.0.4, and Fail2Drive show accumulated capability and transfer before target-benchmark revision. On held-out Longest6, driving score (DS) rises from 25 to 52 for AutoMoT and from 22 to 47 for SimLingo across system stages, while both systems skip new model inference on over 71% of control steps.",
+  "abstract_ja": "",
+  "authors": [
+    "Qihang Huang",
+    "Zhidong Wang",
+    "Zirui Li",
+    "YuJie Yan",
+    "Jingsong Liang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30438",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "multimodal",
+  "summary": "End-to-end driving models have made substantial progress, yet reliable closed-loop driving in complex traffic remains challenging. Beyond improving individual models, system-level orchestration…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "ROSE-Drive: Runtime Orchestration and System Evolution for Autonomous Driving",
+  "url": "https://arxiv.org/abs/2611.30438",
+  "use_case": ""
+}

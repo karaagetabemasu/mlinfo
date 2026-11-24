@@ -1,0 +1,29 @@
+{
+  "abstract": "Robot co-design benchmarks rank bodies after training their controllers under a fixed episode protocol, but that protocol can change the ranking itself. Consequently, two studies can select different bodies from the same corpus even when they use the same task and evaluator. We study one part of that protocol, the reset rule, which ends a training episode when the robot's torso falls below a height threshold. We train proximal policy optimization (PPO) controllers for 100 DERL-evolved UNIMAL bodies with this threshold at 20% of each body's starting torso height (Standard), at 50% (Strict), or with no threshold (Reset-free), and score every controller with the same evaluator. The threshold changes which bodies look best: the rankings after Strict and Reset-free training correlate at only 0.21, against about 0.89 if seed noise were the only difference. Removing fall resets costs some bodies far more than others. Bodies evolved on flat ground lose 45% of their per-step reward relative to Standard training, and those evolved on variable terrain only 16%. Permutation tests over bodies support this difference, and on 24 bodies, flat-ground bodies gain the most from Strict over Reset-free training under both PPO and soft actor-critic (SAC). Choosing bodies by their worst reward across the three protocols costs little: in sample, they keep at least 91% of the reward of each protocol's best bodies, and over 80% averaged across held-out seeds. Co-design benchmarks should state their reset rule, test whether their rankings depend on it, and report bodies that stay strong across protocols. Project page: https://reset-dependence.github.io.",
+  "abstract_ja": "",
+  "authors": [
+    "Kevin Qiu",
+    "Zhao Yang",
+    "Marek Cygan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29518",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Robot co-design benchmarks rank bodies after training their controllers under a fixed episode protocol, but that protocol can change the ranking itself. Consequently, two studies can select different…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Reset Dependence Is Embodied: Training Protocol Changes Which Morphologies Appear Optimal",
+  "url": "https://arxiv.org/abs/2611.29518",
+  "use_case": ""
+}

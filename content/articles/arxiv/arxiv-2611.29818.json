@@ -1,0 +1,28 @@
+{
+  "abstract": "A home robot that helps with chores needs to know where objects are, but people move objects according to routines that change and later change back. The robot's memory must adapt to the new routine without erasing experience that may become useful again. One approach is to have a language model maintain written summaries of the home from the robot's own observations, but existing evaluations of such memories use static worlds. We explore simulated households where a resident gets sick, recovers, and later gets sick again. We compare a rule that keeps every room an object has been seen in, language-model memories that store only written summaries, and language-model memories that can also read the raw history of sightings. The rule outperforms every summary-only memory, and giving language models the sighting history closes the gap. Surprisingly, writing summaries on top of the history adds nothing we can measure. When the illness returns, methods that keep the history search better than they did the first time, while summary-only methods show no consistent improvement. Deleting the first illness from memory removes all of the rule's gain and part of theirs. The summaries recorded where objects went during the illness but rarely distinguished sick-day patterns from normal routines. Our findings suggest that common approaches to summarizing robot memories struggle to remember facts about a routine that might return, highlighting the need for future benchmarks to evaluate this aspect of long-term robot deployment.",
+  "abstract_ja": "",
+  "authors": [
+    "Oliver Wang",
+    "Mani Srivastava"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29818",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "A home robot that helps with chores needs to know where objects are, but people move objects according to routines that change and later change back. The robot's memory must adapt to the new routine…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "How Should a Home Robot Update Its Memories When Human Routines Change?",
+  "url": "https://arxiv.org/abs/2611.29818",
+  "use_case": ""
+}

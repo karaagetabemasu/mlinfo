@@ -1,0 +1,32 @@
+{
+  "abstract": "Mixture-of-Experts (MoE) architectures have emerged as a promising approach for scaling deep learning models while maintaining computational efficiency. However, existing MoE adaptations for Contrastive Language-Image Pre-training (CLIP) models suffer from significant computational overhead during sequential training and degradation of zero-shot capabilities. To address these limitations, we propose CLIP-FMoE, a novel approach that integrates MoE architecture into CLIP fine-tuning. Our method uses Isolated Constrained Contrastive Learning, a pipeline that trains specialized experts on cluster-based data partitions to accelerate expert specialization. Additionally, we introduce a Fusion Gate mechanism to mitigate catastrophic forgetting of pre-trained knowledge. Extensive experiments across multiple benchmarks demonstrate that our approach achieves consistent improvements on downstream tasks while preserving zero-shot capabilities. Furthermore, our method demonstrates robust performance across varying context lengths, making it particularly suitable for diverse real-world applications.",
+  "abstract_ja": "",
+  "authors": [
+    "Luong Tran",
+    "Lan-Cuong Nguyen",
+    "Huynh Dang Nguyen",
+    "Dat Nguyen Cong",
+    "Dung D. Le"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30233",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Mixture-of-Experts (MoE) architectures have emerged as a promising approach for scaling deep learning models while maintaining computational efficiency. However, existing MoE adaptations for…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": []
+  },
+  "title": "CLIP-FMoE: Scalable CLIP via Fused Mixture-of-Experts with Enforced Specialization",
+  "url": "https://arxiv.org/abs/2611.30233",
+  "use_case": ""
+}

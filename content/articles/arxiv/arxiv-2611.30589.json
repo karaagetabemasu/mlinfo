@@ -1,0 +1,33 @@
+{
+  "abstract": "Pathological whole slide images (WSIs) exhibit substantial domain shifts across hospitals due to variations in scanning devices, staining protocols, and tissue preparation procedures, leading to significant performance degradation when models are applied to data from different sources. Although unsupervised domain adaptation (UDA) has shown strong performance in transferring models from a labeled source domain to an unlabeled target domain in natural images, it remains relatively underexplored in computational pathology. The ultra-high resolution of WSIs and their pronounced inter-slide and intra-slide heterogeneity pose unique challenges for domain adaptation, often rendering existing UDA methods unstable and susceptible to negative transfer. To address these challenges, we propose Dual-level Adversarial learning with domain-aware REgularization (DARE), a plug-and-play UDA framework for WSI classification. DARE incorporates adaptive pseudo-labeling within a teacher-student architecture to provide stable supervision for the target domain, alongside adversarial alignment of both patch-level and slide-level embeddings. Together, these components enable the joint optimization of semantic representations at both levels for cross-domain alignment. We further introduce domain-aware attention masking to regularize attention and improve cross-domain generalization. Extensive experiments on four public WSI datasets demonstrate that DARE consistently outperforms state-of-the-art approaches across various domain shifts.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuxuan Jiang",
+    "Haichuan Dong",
+    "Manning Wang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30589",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Pathological whole slide images (WSIs) exhibit substantial domain shifts across hospitals due to variations in scanning devices, staining protocols, and tissue preparation procedures, leading to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "DARE: Dual-Level Adversarial Learning with Domain-Aware Regularization for Whole Slide Image Classification",
+  "url": "https://arxiv.org/abs/2611.30589",
+  "use_case": ""
+}

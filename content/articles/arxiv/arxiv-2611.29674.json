@@ -1,0 +1,33 @@
+{
+  "abstract": "Vision Transformers achieve remarkable recognition performance but incur substantial computational cost during inference, limiting their use in latency- and compute-constrained deployment scenarios. Early-exit inference offers a promising solution by allowing easy samples to terminate at intermediate layers. However, existing approaches typically couple early classification with the shared backbone, requiring intermediate representations to support both early classification and subsequent feature refinement. Under joint training, the corresponding optimization objectives jointly update shared backbone parameters, which can lead to conflicting gradient directions. Motivated by this observation, we introduce DeclareViT, a framework that decouples early classification from feature refinement. Each exit uses a dedicated query to read intermediate features through one-way cross-attention without modifying the backbone token stream. The query branches are optimized for early classification while the backbone and final classifier remain frozen. Across ViT, DeiT, and Swin on CIFAR-100, ImageNet-1K, and Food-101, DeclareViT consistently establishes a state-of-the-art accuracy-efficiency trade-off: It achieves 1.58 times to 2.57 times multiply-accumulate (MAC)-based speed-up with only a 0.39-1.91 percentage-point accuracy drop. Wall-clock measurements on CPU and GPU further demonstrate practical inference acceleration. Code is available at https://github.com/TUDa-HWAI/DeclareViT.",
+  "abstract_ja": "",
+  "authors": [
+    "Xinrui Gong",
+    "Yao Rong",
+    "Chuangtao Chen",
+    "Daniel Ochs",
+    "Ulf Schlichtmann"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/TUDa-HWAI/DeclareViT",
+  "hasCode": true,
+  "id": "arxiv-2611.29674",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Vision Transformers achieve remarkable recognition performance but incur substantial computational cost during inference, limiting their use in latency- and compute-constrained deployment scenarios.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "DeclareViT: Decoupling Early Classification from Feature Refinement with Exit Query for Efficient ViTs",
+  "url": "https://arxiv.org/abs/2611.29674",
+  "use_case": ""
+}

@@ -1,0 +1,34 @@
+{
+  "abstract": "Diffusion virtual try-on (VTO) models produce convincing garment transfers from a single product photograph, but at hundreds of milliseconds to seconds per image every deployment today is offline or falls back to AR mirrors that need a rigged 3D asset per product. We present LiveMirror, a live-camera try-on mirror that renders a flat garment photograph onto a moving person with a diffusion model on one 16 GB consumer GPU. Its core is asynchronous keyframe try-on: generation never blocks the display, every displayed frame is an optical-flow warp of the latest generated keyframe, and keyframes are replaced only through a cross-fade. The display runs at camera rate (25 FPS at 720p) while a new try-on arrives every 370-490 ms; we measure the residual flicker, give a stage-by-stage latency budget, and report which accelerations (step count, consistency LoRA, tiny decoder, compilation) keep garment prints intact. We then show that the same GPU fixes the model's biggest cultural blind spot: try-on models trained on VITON-HD and DressCode render a knee-length kurta or sherwani as a torso-length top or a dress over bare legs. A thigh-covering mask, self-supervised pairs built automatically from 24.9k on-model e-commerce photographs, and 3.2 GPU-hours of attention-only fine-tuning of CatVTON halve the perceptual error on ethnic wear (LPIPS 0.137 to 0.077 on IndoFashion, 0.135 to 0.073 on Atlas; 200 held-out pairs per source) with no regression on Western tops. A two-pass hem-aware mask then removes the remaining failure, recoloured trousers below the hem, on all but 3-4% of pairs at no training cost; in the mirror the hem comes from the previous keyframe for free. The adapted model beats FASHN VTON 1.5 on every aggregate ethnic-wear metric at about $20\\times$ lower inference cost, and its weights drop straight into the mirror.",
+  "abstract_ja": "",
+  "authors": [
+    "Jigyansha Jeevan Rout",
+    "Sukanta Kumar Sabut"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30461",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Diffusion virtual try-on (VTO) models produce convincing garment transfers from a single product photograph, but at hundreds of milliseconds to seconds per image every deployment today is offline or…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": [
+      "generation",
+      "regression"
+    ]
+  },
+  "title": "LiveMirror: Real-Time Diffusion Virtual Try-On on a Consumer GPU and Its Self-Supervised Adaptation to Indian Ethnic Wear",
+  "url": "https://arxiv.org/abs/2611.30461",
+  "use_case": ""
+}

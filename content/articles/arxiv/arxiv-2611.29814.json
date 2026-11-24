@@ -1,0 +1,33 @@
+{
+  "abstract": "Modern microscopes can acquire, analyze and act on data far faster than human operators can decide what to measure next. Exploiting this speed in automated experiments requires the instrument to follow the scientific logic of the operator, and one way to encode that logic is through reward functions that become part of the operation process. Here we explore whether such reward functions can be learned from the decision histories of microscope operators. We propose multiple frameworks in which recorded choices among alternative measurement locations serve as comparative evidence about the operator's preferences, and we compare several algorithms for reconstructing the reward including interpretable linear models built on physically meaningful image descriptors, nonlinear functions of the same descriptors, an unsupervised image representation followed by preference modeling, and a preference trained deep kernel inspired model. The result of this analysis is a spatial field of reward functions over the sample that can be used to run the instrument. We also propose a way to benchmark these approaches, based on withheld decisions and on decision histories generated with known objectives. We then examine the possibility that a decision history contains changing priorities throughout the experiment. A hidden Markov model assigns distinct rewards to recurring selection strategies, whereas a continuous-state model tracks smoothly varying preference weights. Controlled sequences generated over real microscopy candidate sets show that both concealed switches and gradual drift can be recovered. These reward functions, learned directly from recorded decisions, provide candidate objectives for future automated microscopy experiments.",
+  "abstract_ja": "",
+  "authors": [
+    "Kamyar Barakati",
+    "Boris N. Slautin",
+    "Aditya Raghavan",
+    "Babita Babita",
+    "Surya Prakash Reddy"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29814",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Modern microscopes can acquire, analyze and act on data far faster than human operators can decide what to measure next. Exploiting this speed in automated experiments requires the instrument to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Inferring Experimental Objectives in Microscopy Experiments from Decision Traces",
+  "url": "https://arxiv.org/abs/2611.29814",
+  "use_case": ""
+}

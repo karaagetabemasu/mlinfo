@@ -1,0 +1,33 @@
+{
+  "abstract": "Re-running a frozen detector on enlarged image crops recovers small and crowded objects without retraining, yet every crop costs an extra detector call. Existing slicing and adaptive-cropping pipelines plan crops per image in isolation, even though inspection demand varies widely across an image collection. We present GRAIN, which unifies cross-image call allocation and bounded-output admission around cross-image comparable resolution-closure gains over boundary-safe crop interiors. Coarse hypotheses carry resolution deficits, crops close a geometric share of those deficits for hypotheses enclosed in their interior positive region, and multiplicative residuals discount covered evidence within a monotone submodular surrogate. Prefix sums and a global max-heap execute this collection-wide plan on CPU before crop inference, and Positive-Region Fusion aligns post-inference spatial admission with the planned interior support before class-balanced top- selection. Across 17 frozen detectors from five families on COCO, CrowdHuman, and VisDrone-DET, GRAIN beats call-matched tiling in 100 of 102 AP@100 settings and transfers to AI-TOD-v2. With RF-DETR-S on CrowdHuman, it nearly matches two-crop tiling using one eighth of the crop calls. At fixed budgets, the surrogate orders candidate plans with Spearman correlations of 0.95 to 0.99 while the sweep attains at least 98% of the exact surrogate optimum. Code will be publicly released.",
+  "abstract_ja": "",
+  "authors": [
+    "Chengxuan Zhou",
+    "Shaoyang Zhang",
+    "Rui Qian",
+    "Juntao Cheng",
+    "Feng Liu"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30770",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "detection",
+  "summary": "Re-running a frozen detector on enlarged image crops recovers small and crowded objects without retraining, yet every crop costs an extra detector call. Existing slicing and adaptive-cropping…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "GRAIN: Shared-Budget Complementary Re-observation for Object Detection",
+  "url": "https://arxiv.org/abs/2611.30770",
+  "use_case": ""
+}

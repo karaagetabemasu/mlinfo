@@ -1,0 +1,32 @@
+{
+  "abstract": "Training embodied-intelligence models requires large-scale, high-quality demonstration data. Robot teleoperation provides an important means of collecting these data. Low-latency teleoperation also helps human operators take control promptly and provide corrective demonstrations in DAgger-based interactive learning. This paper presents TeleMultiStream, a robot teleoperation system that combines multi-stream WebRTC video feedback with UDP pose downlink. The system supports heterogeneous video sources and uses buffer reuse, bounded queues, and native XR rendering to reduce processing and waiting. In wired-LAN ZED Mini tests, TeleMultiStream's software and high-performance hardware encoding modes achieved dominant-interval Glass-to-Glass latency medians of 60 and 66~ms, respectively. These medians were 26.8\\% and 19.5\\% lower than the 82-ms RobotVision-PC reference, respectively. At the lower tested resolutions, the two TeleMultiStream encoding modes provided comparable visual latency. Their respective medians in three-stream Configuration~1 were 72 and 66~ms. In the higher-resolution Configuration~2, high-performance hardware encoding outperformed software encoding in latency and CPU utilization. It reduced mean encoding time from 11.85 to 8.80~ms and the dominant-interval Glass-to-Glass median from 94 to 88~ms. Its CPU utilization was approximately 67\\%, compared with 265\\% for software encoding. During three-stream reception with high-performance hardware encoding, the mean corrected one-way UDP latencies at 100~Hz were 1.576 and 1.800~ms in Configurations~1 and~2, respectively. Mean estimated packet loss was 0.0033\\% in both configurations. These results support responsive teleoperation for robot demonstration collection.",
+  "abstract_ja": "",
+  "authors": [
+    "Chenchen Lv",
+    "Lingchen Hu",
+    "Yaosai Zhang",
+    "Chunlan Li",
+    "Gengkui Wei"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29980",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "Training embodied-intelligence models requires large-scale, high-quality demonstration data. Robot teleoperation provides an important means of collecting these data.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video"
+    ],
+    "task": []
+  },
+  "title": "TeleMultiStream: An Integrated Robot Teleoperation System with Low-Latency Multi-Stream Video Feedback",
+  "url": "https://arxiv.org/abs/2611.29980",
+  "use_case": ""
+}

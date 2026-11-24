@@ -1,0 +1,29 @@
+{
+  "abstract": "Effective task execution requires embodied agents to select observation positions that provide sufficient task-relevant information. Existing approaches typically predict viewpoints with learned models or score discrete candidates, but they either struggle to incorporate new constraints such as reachability or require extensive candidate evaluation to search. We introduce InfoField3D, which lifts geometry-bound information into a differentiable analytic field, whose value at each 3D observation position represents the task-required information accessible there. It uses low-order spherical harmonics to encode directional information responses and analytic line integrals of Gaussian occupancy functions to model occlusion along lines of sight. This formulation casts task-driven camera placement as a well-studied constrained continuous optimization problem, enabling both flexible incorporation of constraints through the feasible domain and efficient viewpoint search even in the presence of occlusion. Experiments show that InfoField3D compactly preserves the pointwise information landscape with high fidelity and generally recommends higher-quality, more robust viewpoints at lower search cost than the evaluated baselines. Controlled evaluations with a frozen vision-language-action (VLA) policy further suggest that the recommended views can improve downstream task performance under information-limited initial viewpoints.",
+  "abstract_ja": "",
+  "authors": [
+    "Huan Lyu",
+    "Yawei Luo"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29230",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Effective task execution requires embodied agents to select observation positions that provide sufficient task-relevant information. Existing approaches typically predict viewpoints with learned…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "InfoField3D: Differentiable Information Field for Embodied Task-Oriented View Planning",
+  "url": "https://arxiv.org/abs/2611.29230",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Decision models unify candidate selection, Boolean judgment, and numerical scoring within a single model. Their answer spaces nevertheless carry different structures: classification candidates form an unordered set, while numerical scores have an intrinsic order and distance. We introduce Deciform, which incorporates these distinctions into computation and supervision. Candidate-free queries and isolated candidate branches support consistent classification under reordering. A log--spherical objective trains candidate probabilities, while a decimal-prefix readout combines individual-value and interval-weighted cumulative supervision for numerical scoring. Shared adapters, task-private residuals, and output-channel gains support joint adaptation. On a shared 15,000-request test set, Deciform improves all three decision metrics on Qwen and ModernBERT; source-normalized errors support the Score gains across the data mixture. Canonicalized joint encoding also eliminates tested order flips, while isolation further improves prediction metrics. Separate objective studies and main-configuration ablations examine the classification and numerical components. After one epoch of MIND-small adaptation, Deciform improves multi-positive news ranking on both backbones. These results support matching encoding and supervision to answer-space structure within a unified decision interface.",
+  "abstract_ja": "",
+  "authors": [
+    "Qiuyu Tian",
+    "Haojie Yin",
+    "Yingce Xia",
+    "Youyong Kong",
+    "Zequn Liu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29340",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Decision models unify candidate selection, Boolean judgment, and numerical scoring within a single model. Their answer spaces nevertheless carry different structures: classification candidates form…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "DeciForm: Incorporating Task Structure into Decision Models",
+  "url": "https://arxiv.org/abs/2611.29340",
+  "use_case": ""
+}

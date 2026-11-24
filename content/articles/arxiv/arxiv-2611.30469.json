@@ -1,0 +1,35 @@
+{
+  "abstract": "Few-shot detectors struggle to distinguish categories that look alike but differ in local components, because a few examples rarely reveal which differences determine category identity. Category descriptions specify components and relations but do not establish their presence in an image. We propose Struct2Det, which uses category structure to guide detection and verify candidates in three stages. Relational Structure Encoding maps category graphs to component embeddings and a global condition. Component-Grounded Detection uses component queries to retrieve multi-scale image evidence that, with the global condition, modulates category text embeddings for initial detection. Verification-Guided Refinement matches candidate regions with components expected by their top-scoring categories; when class scores are close and matches are reliable, matched pairs correct region features before the shared detector predicts again. Category structure informs both classification inputs: text embeddings integrate image-wide component evidence, while region features incorporate candidate-specific matches. We also construct InduSym, with 88,912 symbol instances across 275 categories from 674 engineering drawings and a structural graph per category. Struct2Det improves few-shot-category AP over the strongest baseline by 6.02 points on InduSym and 9.68 on Digitize-PID, with the highest base-category AP on both. InduSym ablations show few-shot gains from correct category structure, image-level retrieval, and candidate verification. Further tests show gains in few-shot natural-object detection and zero-shot Chinese character recognition.",
+  "abstract_ja": "",
+  "authors": [
+    "Kaixuan Chang",
+    "Huabing Zhou",
+    "Yanduo Zhang",
+    "Tao Lu",
+    "Liwei Wang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30469",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "Few-shot detectors struggle to distinguish categories that look alike but differ in local components, because a few examples rarely reveal which differences determine category identity. Category…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "Struct2Det: Grounding Category Structure in Visual Evidence for Few-Shot Object Detection",
+  "url": "https://arxiv.org/abs/2611.30469",
+  "use_case": ""
+}

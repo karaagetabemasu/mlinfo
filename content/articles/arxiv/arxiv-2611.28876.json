@@ -1,0 +1,31 @@
+{
+  "abstract": "Trade-credit invoices encode directed obligations whose temporal synchronization and counterparty concentration are obscured by annual volume totals. We audit 749,952 atomic B2B invoices from 2012-2023 (EUR 99.705B; 75,343 firms) from the pseudonymized Mendeley Data corpus (Esteva de la Rosa, 2026), separating 1,240 terminal 2024 bridge records (EUR 630.12M; 9 bridge-only firms) and 13 extreme-duration contracts (>3,650 days; EUR 297.75k). Using directed weighted graphs, HHI, Shannon entropy, CR1 shares, spectral centralities, and multi-cadence temporal operators, we formulate and benchmark a Maturity-Aware Network Exposure (MANE) indicator. Invoice values are heavily skewed: the top 1% hold 81.41% of value (Gini = 0.9742). Two-way fixed-effects panels with circular block bootstrapping ($B=999$, 12-month blocks) and Holm-Bonferroni control show higher lagged debtor counterparty concentration is associated with lower MANE ($\\hatβ=-0.494$, 95% CI $[-0.752,-0.248]$, $p_{\\mathrm{Holm}}=0.004$). Robustness audits (R1-R4) confirm stability under 2021 exclusion ($-0.402$, $p=0.004$), Shannon entropy ($+0.257$), CR1 ($-0.515$), 1%-99% Winsorization ($-0.462$, all $p=0.001$), and multi-invoice debtors (count $\\ge 2$, $-0.334$, $p=0.031$). Conversely, within-FE diagnostics expose severe joint-concentration multicollinearity (VIF = 22.22) that vanishes for multi-invoice debtors ($p=0.719$), while regime splits reveal a macro reciprocity sign reversal between 2012-2019 ($-0.706$) and 2020-2023 ($+0.232$, both $p=0.001$). In 12-month purged forecasting, MANE does not reliably improve over maturity seeds ($Δ\\mathrm{MSE}=2.668$, 95% CI $[-0.027,7.954]$; trimmed $0.067$, $[-0.035,0.194]$), positioning MANE as a reproducible screening and auditing diagnostic, rather than a default proxy, for supply-chain finance, multilateral clearing, and RWA tokenization.",
+  "abstract_ja": "",
+  "authors": [
+    "Sai Srikanth Madugula",
+    "Peplluis Esteva de la Rosa",
+    "Daya Shankar"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28876",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "video",
+  "summary": "Trade-credit invoices encode directed obligations whose temporal synchronization and counterparty concentration are obscured by annual volume totals. We audit 749,952 atomic B2B invoices from…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "forecasting"
+    ]
+  },
+  "title": "Beyond Invoice Volumes: Temporal Network Structure, Maturity Concentration, and Systemic Liquidity Exposure in SME Trade-Credit Networks",
+  "url": "https://arxiv.org/abs/2611.28876",
+  "use_case": ""
+}

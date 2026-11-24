@@ -1,0 +1,31 @@
+{
+  "abstract": "Decoding biological information from long, repetitive DNA remains challenging. Genomic language models (gLMs) often follow the conventional language-model pretrain-and-adapt paradigm. However, the lack of inherent semantic segmentation and prior rules makes hand-crafted tokenizers like k-mer and BPE suboptimal. We introduce context-aware \\textbf{BQVAE} for scalar quantization of DNA and \\textbf{BQDNA}, an autoregressive gLM supporting multi-head codebooks. Comprehensive experiments reveal that: (1) unique training dynamics of vector quantization in DNA space, including the importance of alignment between training corpus and downstream data. (2) superior performance of BQVAE over hand-crafted tokenizers and vanilla VQVAE. (3) remarkable cross-species generalization capability of BQDNA, which achieves state-of-the-art performance with merely 0.1B multi-species training for BQVAE and 1 epoch training on hg38 for BQDNA, outperforming gLMs pretrained with 10$\\sim$100x more tokens. Our findings underscore the potential of learned vector quantization for genomic sequence representation. Code is available at https://github.com/Sophie10001b/BQDNA",
+  "abstract_ja": "",
+  "authors": [
+    "Xudong Wang",
+    "Siwei Cheng",
+    "Haozhe Hu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/Sophie10001b/BQDNA",
+  "hasCode": true,
+  "id": "arxiv-2611.29395",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Decoding biological information from long, repetitive DNA remains challenging. Genomic language models (gLMs) often follow the conventional language-model pretrain-and-adapt paradigm.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "BQDNA: Multi-Head Binary Spherical Quantization for Genomic Sequence Modeling",
+  "url": "https://arxiv.org/abs/2611.29395",
+  "use_case": ""
+}

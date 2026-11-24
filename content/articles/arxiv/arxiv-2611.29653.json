@@ -1,0 +1,27 @@
+{
+  "abstract": "When a forecasting model is said to beat a simple baseline, the size of that win depends on which baseline was used. We measure how much this matters for two zero-shot foundation models, Chronos-Bolt and Chronos-2, on hourly electricity load. The study uses 60 fixed cases drawn from eight series in four public collections, with forecasts 24 and 168 hours ahead and up to 2,048 hours of history. Each model is compared with daily persistence, weekly persistence, a weekday hybrid, a daily-weekly blend, and a reference chosen from these on a validation period. We keep every origin-level forecast and estimate uncertainty with paired circular block bootstrap intervals using 168- and 336-hour blocks. A week ahead, Bolt clearly beats weekly persistence in 21 of 30 cases but the validation-selected reference in only 14, and its median gain falls from 17.3% to 11.9%. For Chronos-2 the clear-win counts are 18 and 15. Chronos-2 has lower week-ahead MAE than Bolt in 24 cases, yet only 12 of those differences are clear. The selected reference is not always the harder baseline, since on some test windows it does worse than weekly persistence. The choice of baseline therefore changes both how large the reported gain is and how sure we can be of it. The results are exploratory: the series and windows are related, an earlier pilot was inspected, pretraining overlap cannot be ruled out, and the case-level intervals are not corrected for multiple comparisons.",
+  "abstract_ja": "",
+  "authors": [
+    "ChandraMohan K"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29653",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "When a forecasting model is said to beat a simple baseline, the size of that win depends on which baseline was used. We measure how much this matters for two zero-shot foundation models, Chronos-Bolt…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "forecasting"
+    ]
+  },
+  "title": "How Seasonal Reference Choice Changes the Apparent Gains of Chronos Models in Electricity Load Forecasting",
+  "url": "https://arxiv.org/abs/2611.29653",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Robots operating in the real world must often adapt when user instructions change mid-execution, yet current instruction-conditioned robot policies, including Vision-Language-Action (VLA) models and World-Action Models (WAMs), are largely evaluated under fixed-instruction episodes. We study mid-execution instruction switching and identify trajectory hijacking as a key failure mode, where the policy fails to redirect sufficiently toward the switched target, with its post-switch behavior remaining fully or partially drawn toward trajectories associated with non-target tasks. We propose Counterfactual Action Steering (CAS), a training-free, model-agnostic inference-time method that identifies interfering non-target tasks, queries the same policy with corresponding counterfactual instructions, and uses target--counterfactual action differences to steer execution away from interfering trajectory priors. Experiments on LIBERO-Goal-Switch and CALVIN-Custom-Switch across five VLA and WAM policies, together with real-robot evaluation, show that CAS consistently improves switching success; for example, on CALVIN-Custom-Switch in the $[15,21]$ switching range, CAS improves $π_{0.5}$ from 5.8\\% to 54.6\\%. Successful CAS-guided rollouts further provide higher-quality self-training supervision than vanilla successful rollouts with the same number of trajectories, yielding stronger policies that generalize to unseen later instruction switches. Code will be made publicly available.",
+  "abstract_ja": "",
+  "authors": [
+    "Yitong Hong",
+    "Xiangdong Feng",
+    "Xiaoxi Sun",
+    "Senqiao Yang",
+    "Boyao Han"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28803",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Robots operating in the real world must often adapt when user instructions change mid-execution, yet current instruction-conditioned robot policies, including Vision-Language-Action (VLA) models and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "DeRail: Escaping Trajectory Priors via Counterfactual Action Steering for Mid-Execution Instruction Switching",
+  "url": "https://arxiv.org/abs/2611.28803",
+  "use_case": ""
+}

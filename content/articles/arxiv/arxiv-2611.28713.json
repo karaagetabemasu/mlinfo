@@ -1,0 +1,27 @@
+{
+  "abstract": "Measure Before You Train argued that an agent's decisions should be measured against ground truth, under a protocol fixed in advance, before anyone trains or replaces the model behind them. We carry the method to a second, very different domain, a turn-based strategy game, and ask a deliberately modest question: how well do low-cost agents play under a pre-registered protocol? hexfolk is a minimal two-player 4X game written for this purpose, so no model has seen its rules or positions. A deterministic engine, one agent interface, a referee that never corrects an illegal or late move, and per-decision logs make every game replayable; questions and expected answers were committed before the games, on held-out seeds with mirrored seats and 95% Wilson intervals. Two small open language models (8B and 3B) lose every game to a few-line rule player. Answering in free text they are invalid on 98% of their decisions; constrained to legal moves they never play an invalid one, yet they lose to the uniformly random player (the 8B model wins 10.0 [4.3, 21.4]% of games), refuting our expectation that they would beat it; the result survives a control that shuffles the order of the options. Two native decision models never play an invalid move and both beat random; one loses all 50 games to the rule player, the other is not distinguishable from it in 50 games and beats a one-step search. The paid agents make tens to over a hundred model calls per game; against the same opponents a free 60 ms-per-move search, which makes none, outplays every paid model by the full range of the scale. Two 7-8B models served locally behave the same way. No frontier model is included.",
+  "abstract_ja": "",
+  "authors": [
+    "Federico Lucca"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28713",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Measure Before You Train argued that an agent's decisions should be measured against ground truth, under a protocol fixed in advance, before anyone trains or replaces the model behind them. We carry…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Legal Is Not Good: A Pre-Registered Benchmark of Low-Cost Language and Decision Models on a New Strategy Game",
+  "url": "https://arxiv.org/abs/2611.28713",
+  "use_case": ""
+}

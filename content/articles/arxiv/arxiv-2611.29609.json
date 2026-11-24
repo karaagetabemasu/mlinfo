@@ -1,0 +1,31 @@
+{
+  "abstract": "Latent world models enable planning from images, but their predictions do not directly establish whether a robot will satisfy physical constraints. We present JEPA-Shield, which connects a frozen action-conditioned Joint-Embedding Predictive Architecture (JEPA) world model to task-space safety enforcement. Two downstream models predict relative motion from imagined latent rollouts and decode unsafe geometry from the current image. Split conformal prediction turns end-to-end motion-prediction errors into multi-horizon uncertainty tubes. A backup-based shield checks these tubes against physical constraints and screens both candidate trajectories and final proposals in diffusion-inspired sampling-based model predictive control. Under the stated exchangeability and initial-backup assumptions, we establish probabilistic constraint satisfaction at action-block boundaries for a returned plan executed without replanning. We also introduce VParkBench, with geometric car and tractor-trailer parking tasks and a editable photorealistic Gaussian-splatting environment. In closed-loop evaluation, JEPA-Shield achieves success rates of 84.4%, 82.3%, and 99.0%, respectively, with no observed constraint violations. Ablations show complementary benefits from shielding and uncertainty calibration. The results demonstrate the importance of grounding latent world-model predictions in task-space quantities and explicitly accounting for prediction uncertainty in safety-critical planning.",
+  "abstract_ja": "",
+  "authors": [
+    "Taekyung Kim",
+    "Ege Yuceel",
+    "Steven Hong",
+    "Georgios Fainekos",
+    "Dimitra Panagou"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29609",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Latent world models enable planning from images, but their predictions do not directly establish whether a robot will satisfy physical constraints. We present JEPA-Shield, which connects a frozen…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "JEPA-Shield: Safe Diffusion Planning with Latent World Models via Conformal Shielding",
+  "url": "https://arxiv.org/abs/2611.29609",
+  "use_case": ""
+}

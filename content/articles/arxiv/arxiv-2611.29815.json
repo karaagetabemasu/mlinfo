@@ -1,0 +1,34 @@
+{
+  "abstract": "Efficient fine-tuning techniques have substantially reduced the cost of adapting open-weight models, enabling malicious actors to readily fine-tune them toward harmful capabilities. In response, model immunization modifies a pretrained checkpoint to resist subsequent adaptation toward designated harmful capabilities while preserving its utility and adaptability for benign tasks. Furthermore, a few immunization methods have sought to keep their protection robust to some changes in the attacker's adaptation. However, fine-tuning offers attackers many more low-cost options, and we observe that existing methods still substantially overfit to the attacker configuration they are optimized against. Such overfitting stays hidden when immunization is evaluated under, or near, this configuration, so the reported protection may give a false sense of security. To rigorously evaluate model immunization, we conduct experiments, varying one component of this configuration at a time: the harmful data, the adaptation strategy, or the model initialization. Across four immunization methods on text-to-image generation and image classification, with additional results on language models, these variations substantially degrade the protection, and in many cases the immunized model relearns the harmful capability nearly as well as the un-immunized model. Existing immunization therefore cannot reliably protect models, leaving them vulnerable to harmful adaptation.",
+  "abstract_ja": "",
+  "authors": [
+    "Tong Li",
+    "Chenru Wang",
+    "Chris Thomas",
+    "Shengwei An"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29815",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Efficient fine-tuning techniques have substantially reduced the cost of adapting open-weight models, enabling malicious actors to readily fine-tune them toward harmful capabilities. In response,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification",
+      "generation"
+    ]
+  },
+  "title": "Model Immunization Cannot Reliably Protect Models from Harmful Adaptation",
+  "url": "https://arxiv.org/abs/2611.29815",
+  "use_case": ""
+}

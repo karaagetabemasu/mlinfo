@@ -1,0 +1,29 @@
+{
+  "abstract": "Reinforcement-learning agents can learn Atari games through a convolutional encoder whose random weights are never trained. They reach expert play in Pong and, without random action repeats, in Breakout, but training takes far longer and few ReLU units in the layer after the encoder stay alive. A dead unit outputs zero for every input and cannot learn. In earlier work we took the number of live units to measure the game's complexity. Here we ask why units die and correct that conclusion. We find that more units die as the layer's inputs lie farther from zero relative to how much they vary. We call this ratio the offset. Earlier work showed this in sparse autoencoders at the start of training. We saw it after training in agents, image classifiers, a reservoir computer and sparse autoencoders on GPT-2. A random encoder leaves the offset of its input roughly unchanged, and a formula predicted its median offset within 25 percent in all 44 cases. So a game with a bright, mostly unchanging screen gives the next layer a large offset. In Pong, subtracting the average screen raised the number of live units from between 3 and 6 of 64 to between 59 and 63, so the number alone cannot show a game's complexity. On unaltered screens none of the agents reached a training score of 18 in 50 million steps. With the subtraction all did within 5 million, about as fast as a trained encoder on unaltered screens. In Breakout the subtraction left more units alive, but average training scores did not clearly improve, and a large gap to a trained encoder remained. So we do not treat their number as something to raise for its own sake. The evidence is from small networks and three games, and in agents and image classifiers changing the offset also changed the size of the inputs. We suggest measuring the offset before training a layer on a fixed front end and, if it is large, trying to subtract the mean input.",
+  "abstract_ja": "",
+  "authors": [
+    "Scott M. Norton"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29752",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Reinforcement-learning agents can learn Atari games through a convolutional encoder whose random weights are never trained. They reach expert play in Pong and, without random action repeats, in…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Why Units Die in the Layer After a Frozen Random Encoder, and What the Number of Live Units Measures",
+  "url": "https://arxiv.org/abs/2611.29752",
+  "use_case": ""
+}

@@ -1,0 +1,32 @@
+{
+  "abstract": "Speech brain-computer interfaces aim to restore communication by translating neural activity into text, yet end-to-end decoders have historically trailed cascaded systems in accuracy. We introduce a Multi-Agent System for BraIn-to-Text (MAS-BIT), the first multi-agent framework for end-to-end brain-to-text decoding from intracortical recordings. MAS-BIT coordinates three specialized agents: a neural agent that interprets continuous neural representations, a phonetic agent that decodes soft phoneme posteriors, and an arbitration agent that integrates their complementary evidence with direct access to neural representations to generate the final transcription. The expert agents communicate with the arbiter through token-embedding-based latent communication, constructing continuous messages as probability-weighted combinations of token embeddings. These messages retain alternative token hypotheses and provide a differentiable interface through which sentence-level supervision jointly trains the neural encoders and specialized agents across participants. MAS-BIT achieves state-of-the-art end-to-end decoding performance on the Brain-to-Text '24 and '25 benchmarks, with word error rates of 6.929% on '24 and 3.606% on the '25 public test set (3.892% on the private test set). These results surpass the published BIT cascade on the '25 public set and narrow the gap on '24, without ensembling independently trained models or using external language-model rescoring.",
+  "abstract_ja": "",
+  "authors": [
+    "Xinjie Zhang",
+    "Linyang He",
+    "Yizi Zhang",
+    "Yuesheng Ma",
+    "Nima Mesgarani"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29457",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Speech brain-computer interfaces aim to restore communication by translating neural activity into text, yet end-to-end decoders have historically trailed cascaded systems in accuracy. We introduce a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "audio"
+    ],
+    "task": []
+  },
+  "title": "MAS-BIT: A Multi-Agent System for End-to-End BraIn-to-Text Decoding",
+  "url": "https://arxiv.org/abs/2611.29457",
+  "use_case": ""
+}

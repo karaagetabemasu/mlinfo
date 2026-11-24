@@ -1,0 +1,30 @@
+{
+  "abstract": "Video world models predict how a scene will evolve, and their sampled futures are increasingly used in place of the real one, from planning to simulation. These uses assume that the samples are aligned with real-world odds, with each future appearing among them as often as it would follow the same history in reality, yet current evaluations only score how real each sample looks. Testing this assumption on real driving data is hard for three reasons. Each recorded history has only one real future, so the true probabilities are unknown. Physical quantities must be read from video, where reading errors can look like model errors. Finally, the many possible analyses invite selective reporting. We introduce DriveOddsBench, a pre-registered benchmark that addresses all three. First, if the samples follow the real distribution, the rank of the real outcome among them is uniform in every history, so pooled ranks test them without probability labels. Second, one validated instrument reads the same quantities, such as the lead-vehicle gap and the ego motion, from the generated futures and from the real future, which first passes through the world model's autoencoder so that both are read alike. Third, all confirmatory analyses were frozen before any test clip was measured. We test eleven general and driving world models on 200 held-out Argoverse 2 histories in five scenario families, with 35,200 generated futures. None is aligned, and every model underestimates its uncertainty. The real outcome falls outside the range of all 16 samples in 28-61% of cases instead of the 11.8% expected under the real distribution. Five models are significantly skewed, in opposite directions, and the largest errors are in the ego motion. Nine models beat climatology without being aligned, and among these models neither type nor scale predicts which comes closest.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiaxi Liu",
+    "Keshu Wu",
+    "Bin Ran",
+    "Xiaopeng Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29275",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Video world models predict how a scene will evolve, and their sampled futures are increasingly used in place of the real one, from planning to simulation. These uses assume that the samples are…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": []
+  },
+  "title": "DriveOddsBench: Are Driving Video World Models Aligned with Real-World Odds?",
+  "url": "https://arxiv.org/abs/2611.29275",
+  "use_case": ""
+}

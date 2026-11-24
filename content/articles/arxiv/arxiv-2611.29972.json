@@ -1,0 +1,31 @@
+{
+  "abstract": "Calendar arithmetic is non-linear. When 1:59 AM + 1 minute occurs during daylight saving spring-forward, the result is 3:00 AM, not 2:00 AM, as the hour is skipped. We introduce CivilTime-Bench, a benchmark for civil-time reasoning covering daylight saving transitions, non-hour offsets, date-line crossings, and ISO week boundaries. With 60,011 training and 10,500 evaluation examples under strict output-contract evaluation, we benchmark seven LLMs (six instruction-tuned models and Llama-3.1-8B base) and find: zero-shot exact match varies substantially across models, contract-aware prompting often improves format compliance but yields inconsistent accuracy gains, few-shot in-context learning provides model-dependent improvements, and fine-tuning achieves 74.6--86.6% EM on synthetic evaluation but only 36.6--45.2% on HumanTime-500 for models with valid results on both splits, highlighting substantial limitations in generalization. We release the benchmark and code.",
+  "abstract_ja": "",
+  "authors": [
+    "Melika Shirian",
+    "Kianoosh Vadaei",
+    "Arshia Hemmat",
+    "Mohammad Hossein Shaker Ardakani",
+    "Ali Mamanpoosh"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29972",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Calendar arithmetic is non-linear. When 1:59 AM + 1 minute occurs during daylight saving spring-forward, the result is 3:00 AM, not 2:00 AM, as the hour is skipped.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "When 1+1 $\\neq$ 2: Benchmarking Civil-Time Reasoning in Large Language Models",
+  "url": "https://arxiv.org/abs/2611.29972",
+  "use_case": ""
+}

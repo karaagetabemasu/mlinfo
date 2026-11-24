@@ -1,0 +1,36 @@
+{
+  "abstract": "Moment Retrieval (MR) aims to localize the temporal segment in a video that corresponds to a given textual description. However, a textual query often provides only a sparse semantic description of the target event, whereas the video contains rich and fine-grained visual variations. This mismatch creates an inherent gap between textual semantics and visual content, making a single textual input insufficient for precise cross-modal alignment. As a result, when multiple temporally adjacent or semantically similar segments exist, the model may struggle to distinguish the target moment from confusing candidates. To address this challenge, we propose a Multi-Perspective Auxiliary Representation (MPAR) framework, which aims to bridge this alignment gap by enriching a single textual input with complementary visual cues from multiple perspectives. Specifically, MPAR consists of three key components: (1) Auxiliary Representation Initialization (ARI) constructs multiple learnable representation slots from the original query, preserving the query intent while preparing flexible carriers for subsequent visual cue injection; (2) Visual-Induced Semantic Structuring (VISS) injects target-specific visual attributes into each representation while preserving semantic coherence with the original query; and (3) Multi-Perspective Semantic Aligner (MPSA) aligns each auxiliary representation with corresponding video regions to enhance discriminative localization. By constructing multi-perspective auxiliary representations and guiding the model to attend to relevant visual regions across these representations, our model achieves more accurate moment localization. Extensive experiments on MR benchmarks demonstrate that our MPAR outperforms state-of-the-art methods, validating the effectiveness of MPAR.",
+  "abstract_ja": "",
+  "authors": [
+    "Mengnan Liu",
+    "Sanping Zhou",
+    "Kun Xia",
+    "Jiaxuan Lin",
+    "Gang Hua"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30040",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Moment Retrieval (MR) aims to localize the temporal segment in a video that corresponds to a given textual description. However, a textual query often provides only a sparse semantic description of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Teaching How to Reason, Beyond What to Answer: Evidence-Faithful On-Policy Distillation for streaming video understanding",
+  "url": "https://arxiv.org/abs/2611.30040",
+  "use_case": ""
+}

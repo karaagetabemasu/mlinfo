@@ -1,0 +1,32 @@
+{
+  "abstract": "Food assembly robots pick ingredients from a pan, and every pick must deliver a target weight. We learn a world model of food picking from 61,773 production picks, labeled automatically by a camera and a scale (self-supervised learning). From the pre-pick heightmap of the pan on a 2.5 mm grid, the commanded pick action, the food and the utensil, the model predicts the post-pick heightmap and the picked mass with uncertainty. We evaluate the mass prediction on 12,294 held-out picks of nine foods. The production controller keeps each pick near its commanded target. The model's root-mean-square error (RMSE) of 10.93 g is 9% lower than that of the commanded target or of a per-food mean. This RMSE is 24% lower than that of the controller's internal mass estimate. Gradient-boosted trees on 20 hand-crafted features have a 0.2 g lower RMSE, but they predict only the mass, not the next state that planning and policy learning need. Using the predicted uncertainty, we decline the most uncertain picks and answer 89.4% of picks with an RMSE of 10.28 g. The prediction barely responds to the commanded volume and depth, because they vary little in closed-loop production. The model also fails without warning at target weights not seen in training. Future directions include action-primitive conditioning and a more general model across foods and utensils. We give recommendations for learning world models from production data.",
+  "abstract_ja": "",
+  "authors": [
+    "Inkyu Sa",
+    "Gaurav Kuppa",
+    "Steve Van der Hoeven",
+    "Konstantin Stulov",
+    "Rajat Bhageria"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28319",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "model-based",
+  "summary": "Food assembly robots pick ingredients from a pan, and every pick must deliver a target weight. We learn a world model of food picking from 61,773 production picks, labeled automatically by a camera…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "supervised",
+      "self-supervised"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "Learning a Food World Model That Predicts the Next State from Production Data",
+  "url": "https://arxiv.org/abs/2611.28319",
+  "use_case": ""
+}

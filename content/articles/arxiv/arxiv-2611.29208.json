@@ -1,0 +1,27 @@
+{
+  "abstract": "Contact-rich manipulation requires a robot to regulate the force it applies, not only where it moves. Existing force-aware policies learn this force from demonstrations and therefore reproduce the force levels they were trained on, which fails once the interaction demands more force than any demonstration. We present Force2Act, a hybrid force-position policy built on two complementary mechanisms. A global force policy plans the motion and the interaction force once per action chunk, with force represented relative to the measured interaction, so that the planned force scales with the load. Between planning steps, a reactive compliance policy, termed Mixture of Force Experts, identifies at every control step the force expert that governs the interaction and regulates the force through it, so that the contact holds when it changes within a chunk. We further introduce Force2Act-Bench, a simulation benchmark of five contact-rich tasks that gives the community a common and repeatable way to test force-aware policies and measure how well they regulate the interaction force. Force2Act achieves an overall success rate of 93.8%, compared with 77.0% for the strongest baseline, and its reactive regulation reduces the failures on block pivoting from 30 to 10 of 150 trials. On a real robot, Force2Act reaches an average success rate of 94.2% over four tasks, against at most 27.5% for the baselines.",
+  "abstract_ja": "",
+  "authors": [
+    "Keerthi Vasan Murugan",
+    "Fangguo Zhao",
+    "Jiafei Duan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29208",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Contact-rich manipulation requires a robot to regulate the force it applies, not only where it moves. Existing force-aware policies learn this force from demonstrations and therefore reproduce the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Force2Act: A Force-Aware Visuomotor Policy for Generalizable Compliant Robot Manipulation",
+  "url": "https://arxiv.org/abs/2611.29208",
+  "use_case": ""
+}

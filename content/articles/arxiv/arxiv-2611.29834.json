@@ -1,0 +1,32 @@
+{
+  "abstract": "Background: Deep learning fundus classifiers often perform well internally, but duplicated images, inconsistent labels, acquisition differences and poor threshold transfer can undermine their reliability. We assess nine-class classifiers beyond internal accuracy, using a data audit, frozen-model external evaluation and an anatomy-guided specialist. Methods: Nine-class experts (ConvNeXt-Small, EfficientNetV2-Small, DenseNet169) were trained with three seeds. Auditing 5,318 images for exact duplicates and cross-label conflicts removed 464 conflict groups (942 images) and six same-label copies, leaving 4,370 images. An anatomy-guided glaucoma specialist read disc-centred crops with vessel and disc/cup segmentation maps, plus cup-to-disc features. Frozen models were evaluated on RFMiD and JSIEC, and a prespecified comparison on REFUGE was replicated on ORIGA, G1020 and PAPILA. Results: ConvNeXt-Small reached an internal accuracy of 0.910, macro-F1 of 0.917 and AUC of 0.982; disc and cup Dice scores were 0.966 and 0.915. Across seeds, the fixed anatomy-guided mix left internal accuracy unchanged relative to equal soft voting (-0.001) but raised mean external closed-set accuracy by 4.9 percentage points on RFMiD (positive in two of three seeds) and 2.3 on JSIEC. On REFUGE (800 photographs) it improved balanced accuracy by 7.4 percentage points (95% CI 5.1 to 9.5), and by 2.1 on ORIGA, with positive gains on G1020 and PAPILA. Thresholds transferred poorly (REFUGE sensitivity 0.950, specificity 0.411). Conclusions: Retinal classifiers should be judged by data-quality auditing, anatomy-informed modelling and multi-cohort evaluation. Anatomy-guided fusion improved transfer at no internal cost, but gains varied by cohort and thresholds did not transfer, so internal metrics alone do not establish reliable performance.",
+  "abstract_ja": "",
+  "authors": [
+    "Imdadul Haque Sourav",
+    "Marjana Jannat Miti",
+    "Md. Jehadul Islam Mony"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29834",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Background: Deep learning fundus classifiers often perform well internally, but duplicated images, inconsistent labels, acquisition differences and poor threshold transfer can undermine their…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "segmentation"
+    ]
+  },
+  "title": "Data-Quality-Aware Fundus Classification with Anatomy-Guided Glaucoma Assessment and Cross-Dataset Evaluation",
+  "url": "https://arxiv.org/abs/2611.29834",
+  "use_case": ""
+}

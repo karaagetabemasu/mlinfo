@@ -1,0 +1,32 @@
+{
+  "abstract": "Confidence estimation for large language models (LLMs) and vision-language models (VLMs) aims to assess how likely a particular generated response is to be correct. We investigate how learning this assessment can benefit from the model's predictive reliability on the underlying query. Binary correctness supervision, however, assigns identical labels to occasional errors and frequent failures, as well as isolated successes and consistent success. These outcomes can arise from substantially different predictive behavior under stochastic decoding. We propose a confidence-learning framework that supplements realized response correctness with query-level predictive reliability. We estimate reliability through repeated generations under a fixed model and decoding configuration, then combine the empirical success rate with individual correctness to construct a graded confidence surrogate. The surrogate differentiates responses sharing the same correctness label while preserving the average predictive reliability of the sampled response pool. To learn this target, we condition an independent confidence estimator on the query and its full generated response, and optimize backbone LoRA adapters together with a projection and scalar confidence head using mean squared error. Repeated sampling is required only for supervision construction; inference scores an individual response without additional generations. We establish ordering and mean preservation properties of the surrogate and derive a selective-risk bound connecting population surrogate prediction error to the error rate among accepted responses. We evaluate the framework across language and vision-language models, examining confidence calibration and selective prediction.",
+  "abstract_ja": "",
+  "authors": [
+    "Chen Li",
+    "Xiaoling Hu",
+    "Chao Chen"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30059",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Confidence estimation for large language models (LLMs) and vision-language models (VLMs) aims to assess how likely a particular generated response is to be correct. We investigate how learning this…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Beyond Binary Correctness: A Surrogate for Confidence Learning in Large Language and Vision-Language Models",
+  "url": "https://arxiv.org/abs/2611.30059",
+  "use_case": ""
+}

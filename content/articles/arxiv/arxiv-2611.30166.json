@@ -1,0 +1,27 @@
+{
+  "abstract": "Room scanning with consumer LiDAR today depends on ARKit, whose tracking and map update are a black box: an application receives depth and poses but cannot inspect how they were produced, so an error in a scan cannot be traced to its cause. This paper examines whether an open alternative, one whose every stage can be inspected, is feasible on the device. Mobile-LIO is a depth-inertial odometry pipeline that uses the phone's depth and inertial data and no ARKit poses. On seven ScanNet++ iPhone recordings it completed every scene with 0.2-2.0 m deviation from the ARKit-derived reference, where six open-source LiDAR-inertial estimators run as configured for dedicated scanners had at least 4.46 m in 41 of 42 runs (two of the six also failed a noise-free adapter check, and Mobile-LIO has a speed cap they lack; the comparison is not controlled and does not rone 15 Pro Max, a buildwith corrected phone code kept up with the sensor in 14 of 15 replay runs of three 7-13 s recordings; e estimator before thosecorrections. Laser-scanned meshes give the accuracy. Within 3 m, recorded depth differed from the m on three held-out scenes,maps fused with ARKit poses that the dataset scales and aligns to the mesh la a median 1.8-2.3 cm from 17 cm. Because thepipeline is open, the gap could be examined: in the scene with the largest error, noise-free renderefrom 1.97 m to 0.04 m, sorecorded depth, whose error reached 20-54 cm at 5-7 m, contributed alongside the estimator. An open de tracked on phone depth and kept up with the sensor in short phone replays, but it is not yet as accurate as ARKit-pose maps, whicheach only the coarsestUSIBD accuracy level (LOA10); its accuracy on the device was not measured.",
+  "abstract_ja": "",
+  "authors": [
+    "Minsuk Jang"
+  ],
+  "category": "mlops",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30166",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "pipeline",
+  "summary": "Room scanning with consumer LiDAR today depends on ARKit, whose tracking and map update are a black box: an application receives depth and poses but cannot inspect how they were produced, so an error…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Toward Open Room-Scale Scanning with Consumer LiDAR via Depth-Inertial Odometry",
+  "url": "https://arxiv.org/abs/2611.30166",
+  "use_case": ""
+}

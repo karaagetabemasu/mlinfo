@@ -1,0 +1,30 @@
+{
+  "abstract": "Person re-identification (ReID) aims to retrieve images of the same pedestrian across different cameras. However, the non-overlapping identities between training and testing sets, together with large intra-class variation, make it challenging to learn generalizable pedestrian representations. Most existing ReID loss functions mainly focus on intra-class compactness and inter-class separation, which may overlook useful intra-class differences. To address these issues, we propose a novel Intra-Class Diversity (ICD) loss that aims to maximize intra-class differences in classification-irrelevant directions. To the best of our knowledge, we are the first to introduce this class-weight-orthogonal diversity learning objective for person ReID. Specifically, based on the geometric relationship between the learned representation and its corresponding class-weight vector, we decompose each representation into the component along the class-weight direction and its orthogonal component. This decomposition provides a clear and interpretable geometric basis for modeling intra-class diversity. ICD then encour- ages larger differences among the orthogonal components of samples belonging to the same identity, while the classification loss maintains identity discrimination. The proposed ICD loss can be incorporated into existing ReID frameworks as an additional regularization term without modifying the feature extraction network. Extensive experiments on three widely used ReID datasets demonstrate the effectiveness of ICD and its complementarity with existing metric learning losses.",
+  "abstract_ja": "",
+  "authors": [
+    "Wei Zhou",
+    "BaXian Chen"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30707",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Person re-identification (ReID) aims to retrieve images of the same pedestrian across different cameras. However, the non-overlapping identities between training and testing sets, together with large…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Intra-Class Diversity Loss for Person Re-Identification",
+  "url": "https://arxiv.org/abs/2611.30707",
+  "use_case": ""
+}

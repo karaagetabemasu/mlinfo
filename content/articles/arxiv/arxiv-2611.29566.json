@@ -1,0 +1,36 @@
+{
+  "abstract": "Test-time compute has become an important paradigm in computer vision and language modeling, where additional computation at inference time enables models to explore multiple candidate solutions and select or refine the most reliable one. However, time series forecasting models typically produce predictions through a single forward pass, leaving them vulnerable to distribution shifts and non-stationarity that frequently arise in real-world temporal data. We propose Time Test Compute for Time Series (TTC4TS), an architecture-agnostic framework that improves the predictive performance of frozen forecasting models at inference time. Given a pretrained backbone, the generator produces multiple candidate forecast trajectories using augmentation, retrieval, adapter. The synthesizer then selects or combines these candidates using aggregation, classification, or candidate-scoring and ranking methods to produce the final forecast. By increasing the number of candidates, TTC4TS scales test-time compute without retraining the forecasting backbone. Beyond improving point-forecast accuracy, TTC4TS can exploit candidate forecasts for uncertainty quantification, which supports improved interval forecasts. We also theoretically analyze when additional test-time computation improves forecasting. Experiments across diverse datasets and backbones demonstrate consistent gains in accuracy and calibration. Code is provided in https://github.com/Anoise/TTC4TS.",
+  "abstract_ja": "",
+  "authors": [
+    "Daojun Liang",
+    "Xiao Hong",
+    "Pei Zhang",
+    "Yinglong Wang",
+    "Shuo Li"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/Anoise/TTC4TS",
+  "hasCode": true,
+  "id": "arxiv-2611.29566",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "video",
+  "summary": "Test-time compute has become an important paradigm in computer vision and language modeling, where additional computation at inference time enables models to explore multiple candidate solutions and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal",
+      "time-series"
+    ],
+    "task": [
+      "classification",
+      "forecasting"
+    ]
+  },
+  "title": "Think Before You Forecast: Scaling Test-Time Compute for Time Series Forecasting",
+  "url": "https://arxiv.org/abs/2611.29566",
+  "use_case": ""
+}

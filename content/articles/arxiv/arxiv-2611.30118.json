@@ -1,0 +1,33 @@
+{
+  "abstract": "Small tabular datasets leave few observations for choosing a model and assessing its predictions. We examine these competing demands in controlled simulations and on six public datasets, using SmallGBM and SmallMLP as fixed-configuration case studies. Three results illustrate why the choice of evaluation matters. First, at n = 100, five-fold cross-validation overstated the gain from tuning XGBoost by 0.063 ROC-AUC on random labels, while tuning improved independent-test ROC-AUC by 0.0078 on a Gaussian mixture. Second, when 20% of binary training labels were flipped, the median within-trial ROC-AUC loss was 0.0210 for SmallGBM and 0.0778 for a fixed 200-tree XGBoost configuration. A separate regression experiment showed the sensitivity of squared-error training to heavy-tailed responses. Third, in a heteroscedastic regression experiment, locally weighted SmallMLP intervals covered about one percentage point more test responses than ordinary split conformal intervals at both tested dimensions. Their mean widths also increased. On a Gaussian classification task with linear log odds, logistic regression achieved the highest mean ROC-AUC at all seven training sizes. These experiments identify settings in which a small-data model helps and quantify the cost of its assumptions.",
+  "abstract_ja": "",
+  "authors": [
+    "Ilya Emelyanov",
+    "Dmitrii Dobrydin",
+    "Muhammad Hamza",
+    "Malak Abid Ali Khan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30118",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Small tabular datasets leave few observations for choosing a model and assessing its predictions. We examine these competing demands in controlled simulations and on six public datasets, using…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "tabular"
+    ],
+    "task": [
+      "classification",
+      "regression"
+    ]
+  },
+  "title": "Small data machine learning: the trilemma of low-sample tabular regimes",
+  "url": "https://arxiv.org/abs/2611.30118",
+  "use_case": ""
+}

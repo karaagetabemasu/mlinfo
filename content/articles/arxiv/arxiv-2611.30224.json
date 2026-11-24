@@ -1,0 +1,34 @@
+{
+  "abstract": "Text-guided image editing faces a persistent trade-off between preserving source content and realizing coherent target semantics. We explore this challenge through training- and inversion-free image editing based on discrete generative models. Existing inversion-free discrete editors primarily rely on post-hoc probability correction, creating a disconnect between local token-level adjustments and globally coherent semantic generation. To bridge this gap, we introduce EditGRN, a training- and inversion-free framework with trajectory-wide source-target generative synchronization in discrete space. EditGRN adopts a dual-branch design---the source branch constructs source references and the target branch generates the target image-enabling trajectory-wide synchronization between the two. Exploiting GRN's ability to recover clean tokens from arbitrary binary corruptions, the source branch directly constructs corrupted source states at each refinement step to extract useful editing features, without recovering a specific source-generation trajectory. The target branch synchronizes with the source branch through the same corruption schedule, fusing the corresponding source context with editable representations intra-model. By synchronizing source context with target generation along the entire trajectory, our approach faithfully preserves the background while producing high-quality edits that blend seamlessly with the surrounding scene through intra-model fusion. PIE-Bench show state-of-the-art performance on background preservation and text alignment across diverse editing tasks against continuous and discrete baselines.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiahuan Wang",
+    "Jianan Chen",
+    "Jian Han",
+    "Rui Li",
+    "Guangming Lu"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30224",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Text-guided image editing faces a persistent trade-off between preserving source content and realizing coherent target semantics. We explore this challenge through training- and inversion-free image…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "EditGRN: Inversion-Free Image Editing by Source-Target Generative Synchronization",
+  "url": "https://arxiv.org/abs/2611.30224",
+  "use_case": ""
+}

@@ -1,0 +1,32 @@
+{
+  "abstract": "Conversation history is infrastructure: deployed language models rely on application layers to store and reinject prior turns, and that stored state is writable. We formalize session-level contamination by attack layer, state a coverage theorem, and measure its scope: each deployment-layer verification tier covers exactly its layer and is sound with respect to the others; instruction overrides are not detectable without false positives; and composite vectors evade per-fragment verification. A standardized harness applied to eight mechanism families across 3,249 sessions and three model families makes these claims checkable. First, pattern-based detection pays a measured false-positive price: the classic defenses flag 35 to 50 percent of benign sessions, and the naive refusal floor reaches only 2.4 percent attack-cell adoption while destroying 33 to 100 percent of benign turns, whereas provenance-gated channel separation achieves adoption at or below 1.2 percent with zero false positives and zero utility loss. Second, in the exploratory instruction-override extension, the gates' boundary is a cliff: directives rephrased without shape markers bypass them at control-equivalent rates, 47.7 to 49.5 percent against 0.0 percent for the shaped class, placing that class in the model-internal lane. Third, the deterministic core is storage-layer detection at 126 of 126 per model with zero false positives. External anchors reproduce published attack pressure, with PoisonedRAG falling from 70 to 0 percent under the full stack. For practitioners: authenticate stored history and content provenance with deterministic tiers, scope instruction-layer mitigation to provenance-gated designs whose measured benign cost is zero, and monitor composition at the trajectory level rather than per fragment. All protocols and acceptance criteria are pre-registered; the stack and harness are released.",
+  "abstract_ja": "",
+  "authors": [
+    "Fahrell Giovanny",
+    "Geby Bayuningtyas",
+    "Sahrul Mukharom"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29449",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Conversation history is infrastructure: deployed language models rely on application layers to store and reinject prior turns, and that stored state is writable. We formalize session-level…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "audio"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Detectable Epistemic Attack Layers: A Coverage Theorem and Standardized Harness for Conversation-History Integrity",
+  "url": "https://arxiv.org/abs/2611.29449",
+  "use_case": ""
+}

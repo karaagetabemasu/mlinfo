@@ -1,0 +1,31 @@
+{
+  "abstract": "Personalized LLM agents rely on an agent harness, the surrounding memory and control code, to connect user history with downstream decisions. Existing methods typically employ either a single shared memory workflow across all users, which is efficient to deploy but cannot adapt how evidence is retrieved and interpreted across diverse histories, or per-user harness optimization, which customizes behavior for each user but requires costly repeated candidate evaluation at deployment and suffers from sparse, noisy supervision in raw logs. To address this trade-off, we present HyperHarness, a framework that learns a shared history-to-harness generator to synthesize executable, user-specific retrieval and answer-guidance code directly from user histories. Given a user's permitted history, HyperHarness prompts a construction LLM to write personalized retrieval and guidance functions, while downstream task scores across training users supervise iterative refinements to the shared generator without reference harnesses or answering-model updates. At deployment, the frozen generator constructs a harness for each unseen user in a single pass from history alone, eliminating per-user task-scored search. Across three benchmarks (PersonaMemv3, Mem-PAL, and MemoryCD) and three answering models (Qwen3.5-9B, Qwen3.8-27B, and GPT-5.6-Luna), HyperHarness achieves the highest aggregate score in seven of nine settings and ranks second in the remaining two, improving over the strongest baselines by up to 5.95 points while cutting matched answer-time tokens by 90.32% over long-context prompting. Analyses show that optimization tailors context allocation to each executor, transfers to unseen user clusters, and amortizes adaptation costs.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhaoxuan Tan",
+    "Jiachen Zhao",
+    "Jingbo Yang",
+    "Zheyuan Liu",
+    "Chuhan Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29062",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Personalized LLM agents rely on an agent harness, the surrounding memory and control code, to connect user history with downstream decisions. Existing methods typically employ either a single shared…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "HyperHarness: Learning to Generate Personalized Agent Harnesses from User Histories",
+  "url": "https://arxiv.org/abs/2611.29062",
+  "use_case": ""
+}

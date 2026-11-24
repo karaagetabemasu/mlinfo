@@ -1,0 +1,33 @@
+{
+  "abstract": "The integration of segmented energy markets into Independent System Operators (ISOs) like CAISO and MISO has increased settlement complexity. Automated transaction processing creates challenges for evaluating accuracy, compliance, and financial integrity. Traditional rule-based manual auditing is inefficient, error-prone, and cannot handle the data volume from automated markets.This research proposes Automated Neural Network Auditing (ANNA), a machine and reinforcement learning framework for settlement auditing via anomaly prioritization. ANNA integrates statistical anomaly detection, K-Nearest Neighbors (KNN), clustering, and Deep Q-Network (DQN) reinforcement learning to flag potentially anomalous transactions from historical market data. The approach is evaluated as an analyst-support tool for prioritizing transactions needing further audit review.ANNA was tested against traditional statistical methods, clustering-based techniques, and supervised/reinforcement learning models. The study used three years of CAISO settlement data over 63 million source records across 32 charge codes and multiple counterparties. After preprocessing, approximately 2.9 million labeled transactions formed the working dataset, with model-specific subsets used for training and evaluation. Performance was assessed using precision, recall, computational efficiency, and false-negative detection.ANNA outperforms traditional methods by identifying hidden relationships in settlement data, while standard deviation thresholds, K-Means, KNN, and Q-Learning performed poorly across key metrics. The result is a scalable solution integrating machine and reinforcement learning for automated auditing of energy market settlements, contributing computationally efficient anomaly prioritization to settlement-auditing workflows.",
+  "abstract_ja": "",
+  "authors": [
+    "J. R. Rivadeneyra",
+    "I. Lee",
+    "F. Nugen",
+    "S. M. Srinivasan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30020",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "The integration of segmented energy markets into Independent System Operators (ISOs) like CAISO and MISO has increased settlement complexity. Automated transaction processing creates challenges for…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": [
+      "detection",
+      "anomaly-detection"
+    ]
+  },
+  "title": "Automated Neural Network Auditing (ANNA) for Energy Market Settlements: A Machine and Reinforcement Learning-Based Approach",
+  "url": "https://arxiv.org/abs/2611.30020",
+  "use_case": ""
+}

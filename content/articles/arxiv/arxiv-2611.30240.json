@@ -1,0 +1,36 @@
+{
+  "abstract": "Interactive segmentation models turn a few clicks into a segmentation prediction across domains, so annotators only decide where the prediction still needs correction. Annotation thus becomes a loop of inspecting the prediction and clicking again. Each step of this loop is a visual judgment, which suits general-purpose multimodal large language model (MLLM) agents. In this work, we focus on letting these agents run this loop on 3D volumes. However, the MLLM in such an agent takes only 2D images as input, so the agent must observe the 3D volume in 2D. Since the loop calls the MLLM many times, this observation must be token-compact enough to keep every call cheap, yet informative enough to show error regions in the 3D prediction. We meet both needs with tri-planes, the three orthogonal planes that cross at one point in the volume. We show, both theoretically and empirically, that tri-planes are context-efficient yet keep sufficient detail to show error regions in the 3D prediction. Building on tri-planes, we introduce TriSegAgent, an MLLM agent that refines the 3D prediction iteratively. Within the agent, the MLLM only judges the prediction on tri-planes, while a visual harness turns each judgment into a 3D action in code. To make the loop reliable, the harness places each click at an exact voxel in the volume and checks whether to accept the 3D prediction. To evaluate the agent, we build a diverse benchmark of 690 regions of interest (ROIs) from 35 public medical datasets across three imaging modalities. With frontier MLLMs, TriSegAgent reaches an overall Dice about 10 points above the strongest baseline, and its lead is even larger on targets below 3 cm. With flash-level MLLMs, it outperforms a recent 3D segmentation agent built on a frontier MLLM.",
+  "abstract_ja": "",
+  "authors": [
+    "Qingqiao Hu",
+    "Jialin Li",
+    "Meilong Xu",
+    "Kehan Qi",
+    "Yipeng Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30240",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Interactive segmentation models turn a few clicks into a segmentation prediction across domains, so annotators only decide where the prediction still needs correction. Annotation thus becomes a loop…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d",
+      "multimodal"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "TriSegAgent: Context-Efficient 3D Annotation with MLLMs via Tri-Planes",
+  "url": "https://arxiv.org/abs/2611.30240",
+  "use_case": ""
+}

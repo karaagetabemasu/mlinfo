@@ -1,0 +1,29 @@
+{
+  "abstract": "RadioGalaxyNET is the public benchmark for finding extended radio galaxies in EMU pilot-survey images, classifying them and locating their infrared hosts. Its best published results date from 2023: 54.5 box AP (Gal-YOLOv8) and 48.1 host keypoint AP (Gal-DINO). We train three current detectors, D-FINE-seg, YOLO26-pose and RF-DETR, on the same data and score them with the benchmark's own evaluation code, which reproduces the published Gal-DINO numbers exactly. All exceed the published results. D-FINE-seg M reaches 67.1 box AP and 72.4 host AP, 12.6 and 24.3 points above the best published results, and the highest host AP of the detectors we tested; on boxes it is level with YOLO26. Its host lead over YOLO26 comes from host-centered images, which make up most of the benchmark. End to end, D-FINE-seg S is the fastest model at 1.9 ms per image; engine against engine, YOLO26 is faster at the same size. We also report what matters for anyone using the benchmark: its scoring protocol adds 5 to 10 AP, its host labels sit at the image center, its box labels are offset from the image by 1.5 pixels, and its images can be rebuilt from the public survey data, which recovers sky positions and doubles as extra training data. We suggest that future work report host identification F1, as a measure closer to catalog use: D-FINE-seg M 71.8, YOLO26-pose M 70.5, RF-DETR 63.8, Gal-DINO 59.2.",
+  "abstract_ja": "",
+  "authors": [
+    "Argo Saakyan"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29798",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "detection",
+  "summary": "RadioGalaxyNET is the public benchmark for finding extended radio galaxies in EMU pilot-survey images, classifying them and locating their infrared hosts. Its best published results date from 2023:…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Revisiting RadioGalaxyNET: modern detectors for radio galaxy detection and host identification",
+  "url": "https://arxiv.org/abs/2611.29798",
+  "use_case": ""
+}

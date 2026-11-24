@@ -1,0 +1,26 @@
+{
+  "abstract": "An artificial neuron computes and learns, but it does not live: the units of a network are fixed when it is designed, and every one of them is kept and paid for whether it is used or not. We give each neuron a second pathway. Beside its Task Path, the usual computation and gradient learning, a dual-pathway neuron has a Growth Path: a nutrient flows from the outputs back through the network, every layer receives the same fixed budget, and each unit is fed in proportion to how much the units above it use it. A well-fed unit divides and a starving unit dies. This allocation is not a separate analysis or pruning step: it runs throughout training and reads only activations and weights. The task is still learned from labels with the ordinary loss, and the training procedure gains no phase, no schedule and no target size. Because the budget is conserved, the competition is zero-sum and a single number sets the size of the network. Switched on in a pretrained network that is deployed on a narrower domain, the Growth Path shrinks the network while it keeps learning. With Adam the network ends 1.0 to 1.2 points more accurate on the domain than the same network trained ordinarily, at 24% to 60% of its compute, and at 12% of the compute it is still ahead; a random choice of the same number of units gives no gain. Letting starving pretrained units sleep instead of die keeps 1.2 to 4.6 points more of the rarely used content. Over 800 changing tasks a network with the Growth Path holds its accuracy while ordinary networks decline. With plain SGD the gains are smaller: at deployment the method trades compute against rarely used content, and on one of the two continual-learning streams it only ties networks of equal size. The experiments are small (three-layer perceptrons on MNIST-like data); what they show is that a conserved, loss-free second pathway can decide by itself which units a network needs.",
+  "abstract_ja": "",
+  "authors": [
+    "Tingan Jin",
+    "Haosong Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30081",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "An artificial neuron computes and learns, but it does not live: the units of a network are fixed when it is designed, and every one of them is kept and paid for whether it is used or not. We give…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "The Growth Path Is the Missing Half of Neural Networks",
+  "url": "https://arxiv.org/abs/2611.30081",
+  "use_case": ""
+}

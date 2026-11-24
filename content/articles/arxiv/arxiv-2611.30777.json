@@ -1,0 +1,30 @@
+{
+  "abstract": "We introduce AvatarAnyone, a method for reconstructing avatars from casual YouTube videos as layered meshes, with each garment and footwear as a separate mesh layered on top of the body mesh. In such videos, people differ in garment classes, clothing types, and layers, and each combination needs a different reconstruction. A single fixed layered reconstruction pipeline therefore fails. AvatarAnyone solves this problem with AI agents that plan a custom optimization for each person's reconstruction. The agents predict the garment classes, the clothing type, and the layering. They use these predictions to choose an initialization and stage the optimization. Because the avatars are layered meshes, they support applications such as virtual try-on and cloth simulation. We change the clothing layers of an avatar and render it in different garments and poses. We can also simulate a clothing layer as cloth over the animated body with a standard cloth simulator. Most existing avatars are one fused surface or a set of Gaussians and cannot do this. We load the avatars directly into Blender, Unreal Engine, and robotics simulators such as MuJoCo. As the avatars are meshes, they support contact modeling with other objects. We show results from around 150 YouTube videos. On four datasets, AvatarAnyone outperforms existing mesh-based methods for animatable monocular reconstruction. Our project page is available at https://miraymen.github.io/avataranyone.",
+  "abstract_ja": "",
+  "authors": [
+    "Aymen Mir",
+    "Peter Wonka",
+    "Stefanos Zafeiriou",
+    "Rıza Alp Güler"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30777",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "We introduce AvatarAnyone, a method for reconstructing avatars from casual YouTube videos as layered meshes, with each garment and footwear as a separate mesh layered on top of the body mesh. In such…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": []
+  },
+  "title": "AvatarAnyone: Agentic Reconstruction of Mesh-Based Layered Avatars from YouTube Video",
+  "url": "https://arxiv.org/abs/2611.30777",
+  "use_case": ""
+}

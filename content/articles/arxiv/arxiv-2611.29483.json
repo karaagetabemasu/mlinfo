@@ -1,0 +1,35 @@
+{
+  "abstract": "Recent works align the intermediate features of vision-language-action (VLA) models with frozen vision encoders during fine-tuning, hoping to inject additional priors such as 3D awareness or affordances. Unlike in image generation, where teachers for representation alignment (REPA) are assessed with encoder-intrinsic metrics, teachers for VLAs are still chosen largely by heuristics. We show that this practice is unreliable: across 14 teachers and 16 manipulation tasks, under matched training budgets, no off-the-shelf vision encoder improves the clean success rate of $π_{0.5}$ by more than 1 point, and all of them reduce its success rate under perturbations by 10 to 39 points. Neither global semantics nor spatial structure, the criteria used in image generation, predicts which teachers help. We therefore propose the behavioral structure metric (BSM), which measures whether states that are close in a teacher's feature space are followed by similar expert actions within the same task. BSM correlates strongly with success rate under perturbations ($r=0.87$), and every off-the-shelf vision encoder scores below $π_{0.5}$ itself. Based on it, we introduce Behavior-Aware VLA Alignment (BAVA), a general VLA alignment protocol that favors vision encoders whose BSM exceeds the student's and stops alignment early according to the student's BSM during training. On SmolVLA, BAVA matches continuous alignment with one third of the alignment budget, and improves the average success rate by 4.6 points over unaligned fine-tuning. Our results suggest that representation alignment benefits VLAs only when the teacher encodes rich behaviorally relevant structure.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhengfeiyang Zhang",
+    "Haoyuan Chen",
+    "Hexin Wang",
+    "Hanyu Zhou",
+    "Zhenglin Wan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29483",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Recent works align the intermediate features of vision-language-action (VLA) models with frozen vision encoders during fine-tuning, hoping to inject additional priors such as 3D awareness or…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Representation Alignment Is Only as Good as the Teacher's Behavioral Structure",
+  "url": "https://arxiv.org/abs/2611.29483",
+  "use_case": ""
+}

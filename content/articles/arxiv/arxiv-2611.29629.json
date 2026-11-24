@@ -1,0 +1,33 @@
+{
+  "abstract": "Face verification systems are deployed by selecting a decision threshold that achieves a target false match rate (FMR); performance is then reported as the corresponding false non-match rate (FNMR). In practice, deployed systems operate at FMR $\\le 10^{-6}$, but widely used benchmarks can share identities with the models' training corpora. Prior work (Wu et al., 2024) measures the resulting optimistic bias as a small additive change in 10-fold accuracy (up to 1.01 percentage points). We show that the bias is neither small nor constant: it is a multiplicative error that grows as FMR falls. First, we audit train-test overlap with a detector calibrated against a null distribution (rather than a hand-tuned threshold). Relative to WebFace42M, we flag 88.6% of MS1MV3 identities and 14.3% of IJB-C subjects as present, despite WebFace260M's published de-overlap explicitly naming IJB-C. Manual review of 100 flagged IJB-C subjects confirms 69.2%, implying a residual overlap of roughly 9.9%. Second, holding the model fixed, removing only the contaminated identities from the test set increases FNMR by 3.6$\\times$ at FMR=$10^{-4}$, 6.3$\\times$ at FMR=$10^{-5}$, and 13.9$\\times$ at FMR=$10^{-6}$, while a same-size random removal does not. The effect is traced to a shorter impostor tail that lowers the threshold. The magnitude of the shift depends on the training corpus and does not cancel betweent margin between our model and a publicbaseline by half. Third, we give the first direct measurement of the effective number of independent impostor comparisons in IJB-C: only 2.7 million effectively independent comparisons at FMR=$10^{-6}$, which is below all commonly accepted reporting rules. Finallyth a known training corpus, we build areal-face protocol with audited zero overlap that resolves FMR=$10^{-8}$.",
+  "abstract_ja": "",
+  "authors": [
+    "Fu Dai",
+    "Kamal Taha",
+    "Naoufel Werghi",
+    "Maregu Assefa"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29629",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Face verification systems are deployed by selecting a decision threshold that achieves a target false match rate (FMR); performance is then reported as the corresponding false non-match rate (FNMR).…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "Contamination at the Operating Point: Train-Test Identity Overlap Inflates Low-FMR Face Recognition Accuracy by an Order of Magnitude",
+  "url": "https://arxiv.org/abs/2611.29629",
+  "use_case": ""
+}

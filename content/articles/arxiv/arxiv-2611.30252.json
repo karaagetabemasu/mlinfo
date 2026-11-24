@@ -1,0 +1,31 @@
+{
+  "abstract": "Computational research on disability-related ableist harm remains limited, and condition specific resources for stuttering-related stigma are particularly scarce. This study introduces StutterStigma-TR, a Turkish dataset of 6,019 public X/Twitter posts annotated as Stigmatizing, Non-stigmatizing/contextual, or Supportive using a speech and language therapy-informed protocol with independent lived-experience evaluation. We also propose StutterStigma-BERT, a BERTurk-based target-aware framework that combines explicit target marking, target-span representation, target-conditioned context, character-level and handcrafted orthographic information, and gated discourse cues. The framework is evaluated in complementary three-class and binary settings using controlled three-seed ablation analyses and final 20-seed robustness evaluations. Under the common training protocol, Gated Discourse-OrthoTarget trained with cross-entropy is selected as the final configuration for both tasks based on internal-validation Macro-F1. Across 20 random seeds, the final three-class model achieves a mean Macro-F1 of 73.54%, while the final binary model achieves 85.17% using validation-selected decision thresholds. Task adapted harmful-language comparators are additionally evaluated under the common training protocol, and the proposed model obtains the highest mean Macro-F1 among them. For the primary three-class task, matched backbone analyses show higher internal validation Macro-F1 with BERTurk than with TurkishBERTweet or Turkish Mamba, while substantial train-validation separation persists across all three backbones. Separate direct-transfer and zero-shot experiments examine performance without StutterStigma-TR supervision. Across the task-adapted, direct-transfer, and zero-shot comparisons, the condition-specific supervised systems retain the strongest aggregate performance.",
+  "abstract_ja": "",
+  "authors": [
+    "Muhsin Dölek",
+    "Arezoo Sadeghzadeh"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30252",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Computational research on disability-related ableist harm remains limited, and condition specific resources for stuttering-related stigma are particularly scarce. This study introduces…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "audio"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "StutterStigma-TR: A Novel Turkish Dataset and Target-Aware BERT Framework for Stuttering-Related Stigma Detection",
+  "url": "https://arxiv.org/abs/2611.30252",
+  "use_case": ""
+}

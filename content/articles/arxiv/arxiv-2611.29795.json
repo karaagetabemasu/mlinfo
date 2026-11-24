@@ -1,0 +1,28 @@
+{
+  "abstract": "Policy gradient (PG) methods such as GRPO dominate LLM fine-tuning, yet recent work showed that Evolution Strategies (ES) also scale to fine-tuning models with billions of parameters. Which method needs fewer samples, and on which tasks, remains unclear. We view the two methods as estimators of the same gradient that differ in where they explore. Because ES perturbs parameters, its noise grows with the number of parameters, and because PG samples actions, its noise grows with the number of generated tokens. Only noise along the directions that change the reward slows learning. The cost of ES then depends on the effective dimension, the number of independent skills a task requires rather than its parameter count, while the cost of PG depends on the effective horizon, which counts only the tokens that share both credit and weights with the reward-carrying ones. We train both methods on a synthetic task where the number of skills and the effective horizon can be varied separately. PG is cheaper when the horizon is short, ES becomes cheaper once it is long enough, and this crossover moves to longer horizons as the number of skills grows. We then measure the effective horizons of 20 NLP, math reasoning, and agentic tasks and compare the two methods with Qwen2.5-7B. PG leads on short-horizon tasks, the two tie on the moderate-horizon math ones, and no task has a horizon in the regime where the theory predicts an ES advantage. Terminal-Bench has a far longer horizon. There, in a preliminary comparison with Qwen3.5-4B, ES without any credit assignment reaches a higher success rate than the PG checkpoint released with Tmax, as the theory predicts. ES should thus have the advantage on long-horizon tasks with few independent skills and a nonvanishing reward signal. Current benchmarks are only at the onset of this regime, so ES should become more competitive as agentic tasks grow longer.",
+  "abstract_ja": "",
+  "authors": [
+    "Qiyao Liang",
+    "Kajetan Schweighofer",
+    "Xin Qiu",
+    "Risto Miikkulainen"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29795",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Policy gradient (PG) methods such as GRPO dominate LLM fine-tuning, yet recent work showed that Evolution Strategies (ES) also scale to fine-tuning models with billions of parameters. Which method…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Dimension Is Free, Horizon Is Not: When Evolution Strategies Rival Policy Gradients for LLM Fine-Tuning",
+  "url": "https://arxiv.org/abs/2611.29795",
+  "use_case": ""
+}

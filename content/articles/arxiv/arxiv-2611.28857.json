@@ -1,0 +1,31 @@
+{
+  "abstract": "We report first-place systems for all four evaluated AlexandriaX-2026 settings: both English-to-dialect translation tracks, cross-dialect translation, and translation-error detection. In unconstrained translation, our minimum Bayes risk (MBR) selection restricts output authority: four local systems can supply the translation, while seven additional systems contribute only reference evidence. Candidate-constrained MBR beats the strongest complete candidate in all 13 dialects and gains 1.2554 macro spBLEU overall, reaching 33.4891. It also surpasses a retrospective oracle selecting the best whole candidate system per dialect. In the constrained track, country-routed LoRA adapters over a shared NileChat-3B-Base backbone incorporate the released Libyan and Sudanese supervision absent from the training and development splits, raising macro spBLEU from 29.5969 to 30.4233. Post-evaluation, a single adapter trained on all released Alexandria data reaches 30.4733 macro spBLEU; averaging model weights across three training seeds raises this to 30.9726 while retaining one model for inference. For cross-dialect translation, nonparallel target-dialect retrieval guides deliberation, raising Gemma-4-31B-IT without fine-tuning from 24.6898 to 28.4011 spBLEU. For translation-error detection, GPT-5.5 proposes semantic error regions, while MARBERTv2 controls their character boundaries and corroborates additional spans, raising Overall from 0.4691 to 0.4982.",
+  "abstract_ja": "",
+  "authors": [
+    "Meshal Alamr",
+    "Maryam Altuwaijri",
+    "Hassan Alqaeri",
+    "Abdullah Aldahlawi"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28857",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "We report first-place systems for all four evaluated AlexandriaX-2026 settings: both English-to-dialect translation tracks, cross-dialect translation, and translation-error detection. In…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection",
+      "translation"
+    ]
+  },
+  "title": "Thakaa at AlexandriaX-2026: Who Gets the Final Say? Assigning Output Authority in Dialectal Arabic Machine Translation and Error Detection",
+  "url": "https://arxiv.org/abs/2611.28857",
+  "use_case": ""
+}

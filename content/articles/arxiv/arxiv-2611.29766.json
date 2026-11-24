@@ -1,0 +1,33 @@
+{
+  "abstract": "AI-generated video of politicians can pass for real footage, and once such fakes are common, real footage can be dismissed as fake. Platforms address both problems with detectors, but whoever uploads a clip controls its pixels. Existing datasets of political video are small, show real politicians, and test no attacks. We introduce CivicBench, with 10,800 generated clips of invented politicians from eight open generators and 2,632 public-domain or openly licensed real clips. Each clip can be attacked, to hide a fake or to frame real footage. Published detectors trained on a general benchmark reach at most .781 AUC on CivicBench. Adversarial changes of 1 gray level per pixel hide nearly every generated clip from the detectors not built to resist attacks. An attack's reach is how far it can move a clip's score. A clip keeps its label when its margin from the threshold exceeds this reach, and we find that the reach grows almost linearly with the budget. On this basis, we propose Tau-Anchor, which fine-tunes an encoder pretrained on attacked images. It attacks real and generated clips during training and adds a margin term at its deployed threshold. It reaches .941 AUC on CivicBench. It also keeps .668 of generated clips flagged at 2 gray levels, against at most .289 for published detectors. When real clips are framed at the same 2 gray levels, Tau-Anchor's false alarms rise only from 8% to 14%, whereas four published detectors flag nearly every framed real clip at just 1 gray level. External political footage and two general benchmarks show the same pattern under attack. Code and data are available at https://github.com/KurbanIntelligenceLab/CivicBench.",
+  "abstract_ja": "",
+  "authors": [
+    "Mert Onur Cakiroglu",
+    "Elham Buxton",
+    "Mehmet Dalkilic",
+    "Hasan Kurban"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/KurbanIntelligenceLab/CivicBench",
+  "hasCode": true,
+  "id": "arxiv-2611.29766",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "AI-generated video of politicians can pass for real footage, and once such fakes are common, real footage can be dismissed as fake. Platforms address both problems with detectors, but whoever uploads…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "CivicBench: Robust Detection of AI-Generated Political Video",
+  "url": "https://arxiv.org/abs/2611.29766",
+  "use_case": ""
+}

@@ -1,0 +1,29 @@
+{
+  "abstract": "Harnesses secure Computer-Using Agents by enforcing security constraints and defending against prompt injection attacks. However, we find that two core security mechanisms of agent harnesses remain vulnerable. First, consistency checking prevents agents from deviating from legitimate user objectives, while attackers can bypass it by embedding malicious actions that appear logically consistent with legitimate task execution. Second, risk auditing proactively examines high-risk operations. Yet, the auditing process itself would introduce additional exploitable actions that violate security boundaries. To evaluate above defects we found, we propose Conartist, a cascaded adaptive prompt injection framework comprising two progressive stages. First, Conartist employs a goal-pollution strategy to establish deceptive causal dependencies between legitimate user objectives and malicious operations, progressively embedding attack steps into legitimate task workflows. However, these task-coupled attacks remain susceptible to risk auditing. To address this limitation, Conartist further analyzes security-auditing feedback from controlled attack exploration to identify exploitable auditing patterns. Conartist then adaptively refines its deception strategies to either avoid triggering risk auditing or induce additional high-risk operations. Extensive experiments across five backbone models demonstrate the effectiveness of Conartist, achieving attack success rates of 32.12% on 576-instance tool use benchmark and 66.67% in the Reddit GUI benchmark, outperforming the SOTA attack by 14.41 and 29.17, respectively. By analyzing one of the most popular Agent, Openclaw, we furthermore concluded seven realistic exploitable attack patterns, which reveals that security mechanisms designed to prevent malicious actions can themselves be manipulated to facilitate attacks.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiaqi Rong",
+    "Yunchen Lu",
+    "Lihai Nie",
+    "Yan Jia",
+    "Tong Li"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29977",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Harnesses secure Computer-Using Agents by enforcing security constraints and defending against prompt injection attacks. However, we find that two core security mechanisms of agent harnesses remain…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Conartist: Adaptive Agentic Red-Teaming of Computer-Using Agents against Multi-Step Prompt Injection",
+  "url": "https://arxiv.org/abs/2611.29977",
+  "use_case": ""
+}

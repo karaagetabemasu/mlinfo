@@ -1,0 +1,31 @@
+{
+  "abstract": "Trajectory metrics promise information beyond final-answer accuracy, but no one has measured what a process score adds once an evaluation knows the outcome and the cost. We build that comparison: a sealed consequence needing an artifact neither agent nor judge ever sees, an operational baseline of terminal status and cost, and judge scale and evidence access as experimental factors. On 1,255 trajectories over 158 test-generation tasks in 7 Python repositories, the answer is gated on the judge. Four judges from 4B to 14B, one reasoning before scoring, add nothing an interval separates from zero; a Qwen3 32B judge on identical trajectories adds +0.050 AUC (95% CI [+0.020, +0.081]) and survives a refitting bootstrap ([+0.013, +0.095]). Most of what it adds is recoverable from eight behavioural counters, so a harness should log them (the judge adds +0.020 beyond them). What the judge is shown moves it further: disclosing the terminal verdict inflates its standalone discrimination by +0.103, while reference disclosure and tool-output redaction move it by nothing an interval separates from zero. A process metric reported without the judge's scale and evidence access does not identify a quantity. We release the protocol, the sealed-endpoint harness, and all trajectories.",
+  "abstract_ja": "",
+  "authors": [
+    "Chris D Yan",
+    "Ken Wang",
+    "MarkX Qian",
+    "Jin Jiang",
+    "Albus Wu"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29354",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "timeseries",
+  "summary": "Trajectory metrics promise information beyond final-answer accuracy, but no one has measured what a process score adds once an evaluation knows the outcome and the cost. We build that comparison: a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Endpoint-Conditioned Process Value: What an Endpoint-Blind Process Score Adds Once Terminal Status and Cost Are Known",
+  "url": "https://arxiv.org/abs/2611.29354",
+  "use_case": ""
+}

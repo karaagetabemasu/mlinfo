@@ -1,0 +1,30 @@
+{
+  "abstract": "Rotating, translating, or rescaling an object in a photograph requires revealing unseen surfaces, preserving visible appearance, and updating shadows and reflections. Reconstructed 3D assets, rendered at the target pose as a 3D state, provide explicit geometric guidance, but their imperfect textures may conflict with the photograph, while standard paired training does not explicitly teach the editor which source to trust. To address this, we propose counterfactual state supervision, which constructs controlled photo--state conflicts through hidden-surface repainting, hidden geometry with re-rendered shadows and reflections, and visible-surface texture replacement. This teaches the editor to follow the 3D state for unseen content while preserving photograph-visible appearance. However, learning this distinction does not ensure that it is maintained during sampling. We therefore introduce symmetric counterfactual correction, which uses state-side and photo-side twins, which share the photograph and the state respectively, to construct directed latent perturbations toward condition-inconsistent targets and train recovery toward the target specified by the current condition. Both strategies operate only during training, requiring no architectural changes or additional inference steps. Experiments on OBJect and SpatialEdit-Bench demonstrate strong spatial editing performance and content preservation, while controlled ablations show improved source selection and sustained responsiveness to conditioning during sampling.",
+  "abstract_ja": "",
+  "authors": [
+    "Jian Zahng",
+    "Zhijun Zhang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29542",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Rotating, translating, or rescaling an object in a photograph requires revealing unseen surfaces, preserving visible appearance, and updating shadows and reflections. Reconstructed 3D assets,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Seeing vs. Knowing: Counterfactual Supervision and Correction for 3D-Aware Object Editing",
+  "url": "https://arxiv.org/abs/2611.29542",
+  "use_case": ""
+}

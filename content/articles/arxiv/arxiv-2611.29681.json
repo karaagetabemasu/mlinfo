@@ -1,0 +1,29 @@
+{
+  "abstract": "Graph Counterfactual Explanations (GCEs) have emerged as an effective approach for interpreting Graph Neural Network (GNN) predictions by identifying minimal graph modifications needed to change predictions. However, existing methods suffer from two fundamental limitations: (1) They rely on a post-hoc explanation paradigm, where a separate explainer is trained after the GNN. This sequential optimization prevents the explainer from leveraging how the GNN learned its representations, often resulting in lower-quality explanations. (2) They are largely local, generating counterfactual explanations only for individual samples. Consequently, they fail to capture generalizable patterns across the data distribution, a crucial gap for applications like drug discovery, where global principles enable systematic decision-making across thousands of cases. To address these limitations, we propose GCSGNN (Global Counterfactual-based Self-explainable GNN), a unified framework that integrates counterfactual generation into the GNN architecture, encouraging explanations that faithfully reflect the model's decision-making process. Beyond local explanations, GCSGNN discovers shared latent patterns influencing predictions across graphs, yielding global (i.e., model-level) counterfactual explanations. We further introduce an efficient latent-space counterfactual mechanism that avoids the combinatorial complexity of discrete graph manipulation, enabling scalable discovery of generalizable modification patterns. Extensive experiments on real-world datasets demonstrate that GCSGNN outperforms existing methods in generating effective counterfactual explanations. Our code is available at https://github.com/wendyzheng22/gcsgnn.",
+  "abstract_ja": "",
+  "authors": [
+    "Wendy Zheng",
+    "Yinhan He",
+    "Jundong Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/wendyzheng22/gcsgnn",
+  "hasCode": true,
+  "id": "arxiv-2611.29681",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "gnn",
+  "summary": "Graph Counterfactual Explanations (GCEs) have emerged as an effective approach for interpreting Graph Neural Network (GNN) predictions by identifying minimal graph modifications needed to change…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Towards Global Counterfactual-Based Self-Explainable Graph Neural Networks",
+  "url": "https://arxiv.org/abs/2611.29681",
+  "use_case": ""
+}

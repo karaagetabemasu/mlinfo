@@ -1,0 +1,31 @@
+{
+  "abstract": "Fetal brain diffusion magnetic resonance imaging (dMRI) is a pivotal non-invasive tool for assessing the development of brain connectivity and microstructure. However, the prolonged acquisition times and complex sampling requirements render dMRI highly susceptible to unpredictable fetal motion. Existing motion correction methods typically process each dMRI volume independently and focus on inter-slice motion. Such strategies fail to utilize the coherent information between dMRI volumes along different diffusion directions and lack the ability to restore the intra-slice corruption. To address these limitations, we proposed iFeST, an iterative framework that combines frequency (k-space), spatial, and temporal (inter-slice) modeling for fetal brain dMRI motion correction. At each iteration, iFeST integrates information across diffusion directions into fiber orientation distributions (FODs). These distributions encode local fiber orientations within each voxel and serve as microstructural priors for intra-slice restoration and inter-slice alignment in the next iteration. To train the framework, we developed a fetal brain dMRI motion simulator that synthesizes compound motion artifacts from FODs. Evaluation on simulated datasets demonstrated that iFeST outperformed four inter-slice networks in motion estimation and three intra-slice networks in image restoration. Further validation on a real-world dataset confirmed significantly better volume reconstruction and FOD estimation than conventional pipelines. Overall, iFeST provides a learning-based framework for fetal dMRI motion correction, restoring motion-corrupted data and improving microstructural reconstruction for downstream diagnostic applications.",
+  "abstract_ja": "",
+  "authors": [
+    "Haoan Xu",
+    "Ruike Chen",
+    "Jing Xia",
+    "Haotian Li",
+    "Huanyun Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30131",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Fetal brain diffusion magnetic resonance imaging (dMRI) is a pivotal non-invasive tool for assessing the development of brain connectivity and microstructure. However, the prolonged acquisition times…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "iFeST: An Iterative Motion Correction Framework for Fetal Brain Diffusion MRI via Frequency-Spatial-Temporal Modeling",
+  "url": "https://arxiv.org/abs/2611.30131",
+  "use_case": ""
+}

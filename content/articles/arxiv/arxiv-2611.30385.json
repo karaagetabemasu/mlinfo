@@ -1,0 +1,35 @@
+{
+  "abstract": "Time Series Anomaly Detection (TSAD) is a fundamental task for time series analytics. Unlike other domains, where anomaly detection mainly focuses on point-based anomalies, TSAD must also handle range-based anomalies. Nevertheless, TSAD methods are commonly evaluated with measures inherited from classification, such as Precision and Recall, which require a threshold, or with threshold-independent ones, such as AUC, which ignore the temporal aspect of anomalies. To address these issues, the Volume Under the Surface (VUS) measure scores detectors across all thresholds and a range of buffer lengths and has been widely adopted. However, VUS has two limitations. First, VUS is computationally expensive, requiring 7 hours and 38 minutes to evaluate 32 detectors on the 870 TSB-AD time series. Second, VUS applies the same buffer lengths to every anomaly and detector, which can yield over-optimistic scores that hinder discrimination between accurate and mediocre detectors. We first introduce FastVUS, which computes VUS exactly and on average 76x faster by (i) computing all buffers in parallel, (ii) pruning irrelevant buffers for the existence reward, (iii) casting the confusion matrix as a single reduced matrix multiplication, (iv) computing VUS for every buffer length in one pass, and (v) discarding non-anomalous regions with a global mask. We also develop FastVUS-GPU, which recasts every step as batched tensor operations and reaches an average 304x speedup with a maximum error of $5\\times10^{-3}$. Building on FastVUS, we introduce AutoVUS, an adaptive extension that compares each detection against a random baseline and selects the buffer length that maximizes the gain over it. Our case studies show that AutoVUS reduces over-optimistic scores and better separates accurate from mediocre detectors. We release FastVUS and AutoVUS as open source to promote time-aware evaluation at scale.",
+  "abstract_ja": "",
+  "authors": [
+    "Emmanouil Sylligardos",
+    "Mingyi Huang",
+    "John Paparrizos",
+    "Pierre Senellart",
+    "Paul Boniol"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30385",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Time Series Anomaly Detection (TSAD) is a fundamental task for time series analytics. Unlike other domains, where anomaly detection mainly focuses on point-based anomalies, TSAD must also handle…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "time-series"
+    ],
+    "task": [
+      "classification",
+      "detection",
+      "anomaly-detection"
+    ]
+  },
+  "title": "Toward a Scalable and Adaptive Evaluation Measure for Time Series Anomaly Detection",
+  "url": "https://arxiv.org/abs/2611.30385",
+  "use_case": ""
+}

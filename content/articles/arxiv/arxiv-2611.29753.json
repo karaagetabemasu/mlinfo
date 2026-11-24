@@ -1,0 +1,31 @@
+{
+  "abstract": "Autonomous driving systems must not only interpret the current scene but also anticipate perceptual challenges such as occlusions, sparse observations, and recurring failure patterns. However, most existing LiDAR semantic segmentation methods operate in a frame-centric manner, processing each scan independently and discarding past contextual experience, which limits robustness under dynamic scene changes. We propose DREAM, a Dual-memory REAsoning framework for continual LiDAR seMantic segmentation that reframes perception as an experience-driven and anticipatory process. DREAM maintains two complementary memory banks in a strictly online setting: a latent memory that stores compact semantic abstractions of previously observed scenes, and an error memory that records representations associated with uncertain predictions. At each timestep, relevant memory entries are retrieved via cosine similarity and integrated into the feature space through a lightweight modulation mechanism, enabling the model to reinforce consistent semantic patterns while suppressing recurring failure modes. The backbone remains frozen and no past scans are replayed, ensuring computational efficiency and bounded memory growth. Extensive experiments on multiple large-scale LiDAR benchmarks demonstrate that DREAM achieves state-of-the-art performance, with consistent improvements on dynamic and small-scale objects, highlighting the effectiveness of persistent and error-aware memory for robust long-horizon perception.",
+  "abstract_ja": "",
+  "authors": [
+    "Sriram Mandalika",
+    "Athira Nambiar"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29753",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Autonomous driving systems must not only interpret the current scene but also anticipate perceptual challenges such as occlusions, sparse observations, and recurring failure patterns. However, most…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "3d"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "DREAM: Dual-Memory Reasoning for Anticipatory 3D Perception in Autonomous Driving",
+  "url": "https://arxiv.org/abs/2611.29753",
+  "use_case": ""
+}

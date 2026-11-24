@@ -1,0 +1,29 @@
+{
+  "abstract": "World models support planning by predicting how the environment evolves under candidate actions. However, one-step predictive accuracy alone does not characterize multi-step planning utility, which depends on distinguishing candidate futures. This raises a natural question: How does latent transition geometry shape planning? We investigate this through an action-conditioned transition-field view, using curvature regularization as a controlled intervention. Across four continuous-control tasks, appropriately tuned regularization improves planning, while excessive regularization can be detrimental. By decomposing the transition field into affine and non-affine components, we find that regularization reduces action sensitivity mainly through the non-affine component. To assess its role in planning, we directly manipulate the non-affine action response in frozen models and show that it affects candidate selection and closed-loop success. Further analysis shows that curvature generally brings predicted futures closer together, while preserving more of the differences along the goal direction. This helps explain why the planning effects vary across tasks. We observe broadly consistent planning trends across five sampling- and gradient-based solvers on LeWM and similar rollout-geometry trends on DINO-WM. Qualitative attention visualizations reveal accompanying shifts toward task-relevant visual structure. Together, these findings clarify how latent transition geometry influences multi-step planning.",
+  "abstract_ja": "",
+  "authors": [
+    "Xuanya Zhu",
+    "Da Li",
+    "Xiatian Zhu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30064",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "World models support planning by predicting how the environment evolves under candidate actions. However, one-step predictive accuracy alone does not characterize multi-step planning utility, which…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "How Latent Transition Geometry Matters for Planning in World Models",
+  "url": "https://arxiv.org/abs/2611.30064",
+  "use_case": ""
+}

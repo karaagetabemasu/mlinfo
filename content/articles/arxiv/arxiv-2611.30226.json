@@ -1,0 +1,34 @@
+{
+  "abstract": "Vision-language models (VLMs) are increasingly used for spatial tasks such as navigation and manipulation, where they must infer geometry and object relationships from visual input in order to act correctly. Existing benchmarks usually test perception and reasoning in isolation, making it hard to tell whether failures come from visual understanding, downstream reasoning, or the bridge between them. We introduce VeriWorld, a benchmark for spatial reasoning in interactive 3D environments with executable actions and deterministic verification. For task families where all three channels are well-defined, we evaluate matched visual, structured, and combined input conditions on the same instance, environment, and verifier; families without a clean visual/structured/combined split are reported separately. This design supports controlled comparisons of perception, reasoning, and their interaction. Using this setup, we uncover two diagnostic findings. First, models often perform much better when task-relevant information, such as object identity, current state, or target location, is given explicitly than when it must be read from the rendered scene, revealing a recurring visual-to-structure gap. Second, action-space and harness design can change outcomes even under the same task and information condition, showing that interaction protocol is itself a confounding variable. VeriWorld is open-sourced to support reproducible and fine-grained evaluation of spatial reasoning in VLMs.",
+  "abstract_ja": "",
+  "authors": [
+    "Yan Zheng",
+    "ShengYun Peng",
+    "Xuyao Liang",
+    "Xiaoyan Cong",
+    "Nuo Chen"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30226",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Vision-language models (VLMs) are increasingly used for spatial tasks such as navigation and manipulation, where they must infer geometry and object relationships from visual input in order to act…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "VeriWorld: A Verifiable Visual SWE-Bench for Spatial Reasoning in 3D Environments",
+  "url": "https://arxiv.org/abs/2611.30226",
+  "use_case": ""
+}

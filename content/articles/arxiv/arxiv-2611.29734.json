@@ -1,0 +1,29 @@
+{
+  "abstract": "Backdoor attacks pose a significant security threat to deep neural networks (DNNs) deployed on AI inference engines and hardware accelerators. By embedding hidden triggers during training, these attacks induce malicious behavior while maintaining high accuracy on benign inputs. Multi-trigger backdoor attacks are particularly challenging to detect and mitigate because of the distributed and stealthy nature of their effects. To address this challenge, this paper proposes a training-free Spectral Subspace Filtering framework that detects and suppresses backdoor-induced activations by analyzing latent feature representations. Exploiting the geometric separation between benign and malicious feature distributions, the framework employs Singular Value Decomposition (SVD) to identify the dominant malicious subspace and performs inference-time spectral scrubbing through activation projection. This approach suppresses backdoor effects without model retraining, requiring only a small set of triggered samples collected offline. Experimental evaluation across CNN and transformer architectures, including AlexNet, ResNet18, VGG16, MobileNetV2, and Vision Transformer (ViT), demonstrates that the proposed method reduces the attack success rate (ASR) from 94.2-99.8% to an average of 2.07%, while preserving clean accuracy of up to 98.54% with low inference overhead. The framework also demonstrates robustness across varying poisoning rates and multiple concurrent triggers, highlighting its potential as a lightweight runtime defense for enhancing the security and reliability of AI inference engines against backdoor attacks.",
+  "abstract_ja": "",
+  "authors": [
+    "Soumita Chatterjee",
+    "Sudip Ghosh",
+    "Tamal Ghosh",
+    "Bhargab B. Bhattacharya",
+    "Hafizur Rahaman"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29734",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Backdoor attacks pose a significant security threat to deep neural networks (DNNs) deployed on AI inference engines and hardware accelerators. By embedding hidden triggers during training, these…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Lightweight Spectral Subspace Filtering for Trojan-Resilient AI Inference Engines",
+  "url": "https://arxiv.org/abs/2611.29734",
+  "use_case": ""
+}

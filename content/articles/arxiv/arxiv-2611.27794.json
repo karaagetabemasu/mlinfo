@@ -1,0 +1,26 @@
+{
+  "abstract": "Bayesian operator inference learns reduced-order models (ROMs) with polynomial structure from state data and returns a closed-form Gaussian posterior over the reduced operators. That posterior is unconstrained, so it gives positive probability to operators with unbounded dynamics, and current practice controls this only through finite-horizon simulation tests on a few samples. We show that energy preservation of the quadratic operator is a set of linear equality constraints, which can be imposed exactly inside the Bayesian formulation without losing the closed form. In particular, the constrained posterior follows from one Kalman-type update of the unconstrained one, and its samples are obtained exactly, by the same correction applied to unconstrained draws. Under this structure, global boundedness for all initial conditions and bounded inputs reduces to a linear matrix condition on the symmetric part of the linear operator. The simulation test is then replaced by a probabilistic stability certificate: the posterior probability that the ROM is globally bounded, estimated with exact confidence bounds; the posterior restricted to certified models is then sampled exactly by rejection. For energy-conserving systems, the linear part can be constrained to be skew-symmetric as well: every draw then grows at most linearly in time, and conserves energy exactly when unforced. On a forced viscous Burgers' equation, the Korteweg-de Vries equation and a two-dimensional viscous Burgers' equation, every sample of the constrained posterior integrates to a bounded trajectory, where up to all unconstrained draws diverge, and beyond the observation window the former is also the more accurate of the two.",
+  "abstract_ja": "",
+  "authors": [
+    "João Victor Galvão da Mata",
+    "Mengwu Guo"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27794",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Bayesian operator inference learns reduced-order models (ROMs) with polynomial structure from state data and returns a closed-form Gaussian posterior over the reduced operators. That posterior is…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Energy-preserving Bayesian model reduction: closed-form structured posteriors and probabilistic stability certificates for quadratic operator inference",
+  "url": "https://arxiv.org/abs/2611.27794",
+  "use_case": ""
+}

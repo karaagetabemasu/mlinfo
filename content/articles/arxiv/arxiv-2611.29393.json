@@ -1,0 +1,34 @@
+{
+  "abstract": "Speech large language models are usually evaluated on questions that have answers. We ask what they do when a recording establishes none, and whether the standard way of finding out is sound. Diagnosed on synthesized speech the answer looks clear: Qwen2-Audio fabricates an answer to 92.5% of unanswerable questions, while an ASR cascade reading the same recordings reaches 2.5% hallucination at 6.7% over-refusal, placing the failure in reasoning rather than in perception. The identical protocol on 376 native SQuAD 2.0 questions over human-read recordings removes that conclusion: the cascade hallucinates on 67.7% against the end-to-end model's 69.8%, at a higher over-refusal cost. A paired subset asking the same questions of a synthesized and a human recording of each passage localises the effect in the ASR stage -- the end-to-end model's abstention behaviour does not move with the speaker, the cascade's goes from 11.1% to 65.9%. Reliance on synthesized speech has been named as a limitation of audio benchmarks but not quantified; we quantify it, and show it large enough to reverse a finding. Since no prompt we tested repairs the residual failure, we transfer pre-generation attention probing to the multimodal setting. A probe over frozen prompt representations reaches 0.773 AUROC at predicting which unanswerable questions the model will answer anyway, where semantic entropy over ten sampled generations is at chance: the model fabricates the same answer every time, so sample disagreement cannot see a failure it is confident about.",
+  "abstract_ja": "",
+  "authors": [
+    "Vladislav Nesterenko",
+    "Polina Doronicheva",
+    "Olga Golubeva",
+    "Polina Sheviakova"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29393",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Speech large language models are usually evaluated on questions that have answers. We ask what they do when a recording establishes none, and whether the standard way of finding out is sound.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "audio",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Can Speech LLMs Recognize When Audio Evidence Is Insufficient? A Diagnostic Study and a Pre-Generation Probing Mitigation",
+  "url": "https://arxiv.org/abs/2611.29393",
+  "use_case": ""
+}

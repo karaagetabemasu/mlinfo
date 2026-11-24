@@ -1,0 +1,35 @@
+{
+  "abstract": "Perception systems often make discrete decisions: flag a hateful meme, predict whether a pedestrian will cross, detect a spoofed voice, or select the next move in a game. System-1 models, such as OneJev and Jev-Omni, read the media and return probabilities over the options in a single forward pass, while multimodal large language models (MLLMs) generate text. Which multimodal decisions can System-1 models handle, and where do MLLMs perform better? We introduce S1Arena-MM, a benchmark that gives every model the same decision requests and scores the probabilities it returns. It contains 51,060 questions across 94 tasks with image, video, and audio input, drawn from 94 public datasets and three program-generated ones. It also includes 102 closed-loop game environments that a model plays from screenshots; in real-time mode, the game continues while the model decides. We evaluate 33 open models: 12 System-1 models and 21 MLLMs read at the answer token. On static decisions, the best System-1 model leads the best MLLM by 4.9 percentage points on images and is within one point of it on video and audio. Post-training for decisions mainly improves the probabilities: on video, a System-1 model has a lower Brier score than the MLLM that it is post-trained from in 10 of 12 pairs. With up to 2,048 thought tokens per question, the most accurate MLLMs pass the best System-1 models only slightly, and thinking raises the Brier score of most MLLMs. Closed loops separate the models: three System-1 models built on a 27B MLLM reach 22.0-33.3% progression in BALROG, and no other model exceeds 9.7% with thinking off. In real-time GameWorld, latencies of up to 1.1 s per decision cause no measurable loss of progress for System-1 models. Code and data: https://github.com/zhaoyang02/S1Arena-MM.",
+  "abstract_ja": "",
+  "authors": [
+    "Lang Lin",
+    "Tianyu Chen",
+    "Yi Gu",
+    "Yang Zhao",
+    "Xinran Song"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/zhaoyang02/S1Arena-MM",
+  "hasCode": true,
+  "id": "arxiv-2611.29773",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Perception systems often make discrete decisions: flag a hateful meme, predict whether a pedestrian will cross, detect a spoofed voice, or select the next move in a game. System-1 models, such as…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "audio",
+      "video",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "S1Arena-MM: Which Multimodal Decisions Can Be Left to System 1?",
+  "url": "https://arxiv.org/abs/2611.29773",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Flow-based robot policies generate actions by repeatedly evaluating a conditional velocity field, so test-time bias correction seems simple: query the action expert under a task-agnostic condition and subtract that velocity from the task-conditioned prediction. We show this is often wrong. On Fast-WAM across 50 RoboTwin 2.0 tasks, mean-instruction predictions align strongly with task-conditioned velocities (cosine approximately 0.94-0.95). Averaging eight completed-state references barely cancels this direction: their mean norm is 98.3% of the mean individual norm. References thus contain a large shared transport component, not only harmful bias, and aggressive subtraction damages generation. We propose a same-state diagnostic and shrinkage analysis showing that the optimal correction scale depends on reference signal-to-noise. This motivates geometry-calibrated action debiasing, which removes only the component orthogonal to the task velocity and predicts a small task-dependent scale from instruction geometry. In controlled RoboTwin experiments, corrupting instructions still permits 25.1% success (50 tasks, 20 episodes), whereas dynamic visual corruption nearly eliminates success. A fixed centered orthogonal correction reaches 92.7% versus a 92.1% baseline in one randomized 1000-trial sweep, but gains are non-monotonic and within run-to-run variation. An angular scale pilot has an offline oracle-gated bound of 94.5%; its best learned online realization reaches 92.5%. These results identify shared flow and train-serve mismatch as central obstacles and provide a reproducible foundation for conditional correction.",
+  "abstract_ja": "",
+  "authors": [
+    "Xufeng Zhan",
+    "Yuanzhi Liang",
+    "Ye Lu",
+    "Haibin Huang",
+    "Chi Zhang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30204",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Flow-based robot policies generate actions by repeatedly evaluating a conditional velocity field, so test-time bias correction seems simple: query the action expert under a task-agnostic condition…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Counterfactual Velocity Steering for World Action Models",
+  "url": "https://arxiv.org/abs/2611.30204",
+  "use_case": ""
+}

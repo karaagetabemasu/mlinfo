@@ -1,0 +1,29 @@
+{
+  "abstract": "As robotic arms undertake diverse manipulation tasks, a deployment may need to serve many task-specific vision-language-action (VLA) policies concurrently. Dedicating a GPU to each robot is costly, motivating shared-GPU inference. Low-rank adaptation (LoRA) allows compatible policies to share a frozen backbone with lightweight policy-specific adapters, reducing model-weight memory and enabling cross-policy batching. However, robot inference must keep pace with physical execution. With action chunking, robots continue executing buffered actions while awaiting new predictions, and the remaining buffered time provides each robot's execution slack for serving its next request. Once this slack is exhausted, the robot stalls until new actions arrive, interrupting task progress. Observing earlier preserves more slack but can lead to disruptive replanning and lower task success, whereas delaying dispatch to form larger batches can improve GPU efficiency but consumes slack and risks stalls. To balance these competing demands, we present MotionServe, a shared-GPU serving system that coordinates robot observation timing with server-side batch formation. MotionExec selects observation triggers based on motion structure in predicted action chunks, allowing inference to overlap with remaining buffered execution. SlackBatch combines the resulting per-robot execution budgets with estimated outstanding GPU work to determine when to wait, which requests to batch, and when to dispatch them. We evaluate X-VLA on LIBERO and SimplerEnv's WidowX tasks and OpenVLA-OFT on LIBERO, with up to 96 simulated robots sharing one NVIDIA H200 GPU. At 96 robots, MotionServe reduces mean stall per episode by 43.4% and 32.6% and improves task success by 8.98 and 2.30 percentage points, respectively, over each model's lowest-stall baseline. Backbone sharing also reduces weight memory for 96 policies by 97.6% and 91.1%.",
+  "abstract_ja": "",
+  "authors": [
+    "Zikang Wen",
+    "Yuning Zhang",
+    "Dong Yuan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30083",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "As robotic arms undertake diverse manipulation tasks, a deployment may need to serve many task-specific vision-language-action (VLA) policies concurrently. Dedicating a GPU to each robot is costly,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "MotionServe: Efficient Multi-Robot Serving by Exploiting Robot Execution Slack",
+  "url": "https://arxiv.org/abs/2611.30083",
+  "use_case": ""
+}

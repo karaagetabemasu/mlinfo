@@ -1,0 +1,34 @@
+{
+  "abstract": "Video polyp segmentation (VPS) is essential for computer-aided colonoscopy, as it localizes and tracks polyps frame by frame. However, VPS remains challenging because polyps resemble the mucosa and change quickly in scale, which calls for history beyond a short clip, and because blur, specular highlights, and occlusion often degrade only part of a frame. Existing methods keep history as whole frames, so their cost grows with the history length, and a partly degraded frame carries its degraded content to later predictions. To address these issues, we propose STREAM, a streaming framework for VPS that extends the causal multi-scale aggregation (CMA) of our conference work from a fixed clip to an online stream. STREAM introduces a Recursive Slot Memory (RSM) that summarizes multi-scale features and soft foreground and background cues into a constant number of slots, which the current features read and pass to CMA, supplying long-range history at a constant cost. Furthermore, we design Reliability-Aware Slot Writing (RASW), which estimates a pixel-level quality map from the current frame, supervised by its local error, and uses it to control which locations are written into RSM and how much each slot is updated. Experiments on SUN-SEG and CVC-ClinicDB demonstrate that STREAM achieves state-of-the-art performance, improving the Dice of the conference model from 81.3% to 85.7% on the hardest subset while running at 48 FPS with a constant state of 0.32 MB. Code will be released at https://github.com/wangtong627/STREAM.",
+  "abstract_ja": "",
+  "authors": [
+    "Tong Wang",
+    "Wenbo Peng",
+    "Yaolei Qi",
+    "Yuting He",
+    "Yutong Xie"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/wangtong627/STREAM",
+  "hasCode": true,
+  "id": "arxiv-2611.30568",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Video polyp segmentation (VPS) is essential for computer-aided colonoscopy, as it localizes and tracks polyps frame by frame. However, VPS remains challenging because polyps resemble the mucosa and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "Reliable Recursive Memory for Causal Multi-scale Video Polyp Segmentation",
+  "url": "https://arxiv.org/abs/2611.30568",
+  "use_case": ""
+}

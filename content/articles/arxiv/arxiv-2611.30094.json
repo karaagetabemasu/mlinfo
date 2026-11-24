@@ -1,0 +1,31 @@
+{
+  "abstract": "Linear probes recover character properties of a word from a language model's hidden states, but a probe at the answer position cannot say whether the property was stored with the word or produced because the prompt asked for it. We separate the two with a word-position baseline: the same held-out-word probe applied to the query word's own tokens in a sentence that asks nothing. Across 16 open-weight models from seven families (0.6B--14B) and eleven character tasks, the word tokens encode \\texttt{first\\_letter}, \\texttt{last\\_letter} and \\texttt{most\\_frequent\\_letter} above a word-only nuisance floor in all 16 models, and about 70\\% of that signal is already present in the token embedding. Asking the question adds a second signal at the answer position. Its size grows with model scale for all four prompt-sensitive tasks (Holm-corrected permutation $p \\leq 0.018$, also within model families), and the growth is confined to the late layers: restricted to the first quarter of the network, the slope is indistinguishable from zero. Small models' answer positions hold less linearly decodable signal than their word-level store; large models' hold more. Four controls bound these claims. Measured against the nuisance floor, the question-free signal that a majority-baseline analysis counts as retained largely disappears (\\texttt{last\\_letter}: $-0.01$). Count tasks become measurable only after length, repetition and query-letter shortcuts are removed by design. A pre-registered test finds that a question placed before the word does not change the word's own encoding beyond what an arbitrary prefix change does. Representation--readout gaps show no robust scaling once probe saturation is accounted for. Pre-registered criteria, a fixed estimator (held-out layer selection, cold-start folds) and all analysis code accompany the paper.",
+  "abstract_ja": "",
+  "authors": [
+    "Pratyush Acharya",
+    "Nuraj Rimal",
+    "Apar Baral",
+    "Habish Dhakal",
+    "Piyush Mohan Bhattarai"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30094",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Linear probes recover character properties of a word from a language model's hidden states, but a probe at the answer position cannot say whether the property was stored with the word or produced…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Character Information in Language Models: A Prompt-Independent Word Store and a Late, Question-Driven Signal That Grows With Scale",
+  "url": "https://arxiv.org/abs/2611.30094",
+  "use_case": ""
+}

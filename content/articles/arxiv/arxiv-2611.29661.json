@@ -1,0 +1,30 @@
+{
+  "abstract": "A model converted for on device or accelerated inference ships once its top 1 accuracy matches the source model. Accuracy can match while individual decisions change, and the converter, its INT8 recipe and its calibration draw each move them. We convert 5 public checkpoints (four ImageNet classifiers and a sentiment model) with the documented FP32 and INT8 recipes of ExecuTorch, LiteRT, ONNX Runtime and TensorRT and compare every top 1 decision with the PyTorch source on 7,854 images and 1,938 sentences. All 34 strict FP32 conversions reproduce every decision, yet each of the 4 vision INT8 recipes that keeps accuracy equivalent flips more than 1% of decisions: ONNX Runtime static INT8 flips 4.07% (95% CI [3.65, 4.53]) of ResNet 50 decisions while accuracy moves by -0.15 points, and two builds of that recipe from different calibration draws disagree on 3.44% [3.06, 3.88]. Where accuracy is kept, the flipped inputs are the ones the source model barely decides (AUROC of the source margin 0.90 to 0.97 on ResNet 50, every 95% CI inside [0.89, 0.98]), but our preregistered claim that this holds for every recipe fails on the two mobile networks, where INT8 breaks accuracy outright. A probe set of the 200 training inputs with the smallest source margin, chosen before any conversion, flags all 40 vision stacks (recall 95% CI [0.91, 1.00]) and all 6 text stacks that flip at least 0.5% of decisions and none of the exact FP32 conversions, so conversion checks should compare decisions on such a probe set, not accuracy.",
+  "abstract_ja": "",
+  "authors": [
+    "Sharven Rane"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29661",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "A model converted for on device or accelerated inference ships once its top 1 accuracy matches the source model. Accuracy can match while individual decisions change, and the converter, its INT8…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "One Checkpoint, Four Converters: Per Input Disagreement After On Device Conversion and a Probe Set That Catches It",
+  "url": "https://arxiv.org/abs/2611.29661",
+  "use_case": ""
+}

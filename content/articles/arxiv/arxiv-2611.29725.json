@@ -1,0 +1,26 @@
+{
+  "abstract": "We study discounted continuous-time linear--quadratic regulation (LQR) with unknown drift parameters and additive noise, using a single batch of discrete-time off-policy transitions. Discrete-time methods target a policy tied to the training interval, while shortening this interval can make learning from finite data more sensitive to noise. Learning an accurate continuous-time controller therefore requires balancing discretization and finite-sample errors while preserving stability throughout policy improvement. We develop a drift-only policy iteration algorithm, termed PhiBE-PI, using one quadratic state--action critic for policy evaluation and explicit greedy improvement. Reusing the batch makes later policies depend on the data. Exploiting the quadratic structure of LQR, we show that the data enter every policy evaluation only through one policy-independent empirical matrix, so a single high-probability bound controls all iterates. For sufficiently large discount~$β$, small observation intervals, and a sufficiently large batch, we prove that all iterates are stabilizing for the discounted problem and converge quadratically to a data-dependent fixed point. The gain bound separates iteration, finite-sample, and discretization errors. In this regime, the finite-sample and discretization terms scale as $1/(β\\sqrt{nΔt})$ and $Δt/β$, respectively. The bounds thus reveal a tradeoff: at a fixed batch size, finer observations reduce discretization error but increase finite-sample error. Because PhiBE-PI approximates the continuous-time optimal gain rather than a discrete-time one, its policy can remain near-optimal when deployed at faster control rates. Experiments confirm this advantage over discrete-time Bellman-equation baselines when the observation interval is small relative to the system's time scale.",
+  "abstract_ja": "",
+  "authors": [
+    "Chaorui Yao",
+    "Yuhua Zhu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29725",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "We study discounted continuous-time linear--quadratic regulation (LQR) with unknown drift parameters and additive noise, using a single batch of discrete-time off-policy transitions. Discrete-time…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Continuous-Time LQR from a Single Discrete-Time Off-Policy Batch",
+  "url": "https://arxiv.org/abs/2611.29725",
+  "use_case": ""
+}

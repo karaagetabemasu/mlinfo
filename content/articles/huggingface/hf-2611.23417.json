@@ -1,0 +1,30 @@
+{
+  "abstract": "We present the Autoregressive View Model (AVM), which generates a scene as a stream of views without constructing an explicit 3D representation. Through a unified in-context interface, AVM conditions on images or videos to generate short clips along a requested camera path. Visual context grounds reconstruction and interpolation, while a learned prior enables extrapolation into unseen regions. AVM retrieves relevant views from inputs and generated history to form a bounded active context. We fine-tune a pretrained bidirectional video diffusion transformer with flow matching in an N-in-1-out formulation. We then tune a causal model on its own rollouts to improve photorealism, reduce denoising steps, and limit long-horizon drift. We scale training to approximately 8M scenes and video clips. We evaluate generation capacity and scene persistence across benchmarks for camera control, text control, visual quality, dynamics, sparse and 4D reconstruction, and long-horizon consistency. The results demonstrate that AVM adapts to diverse input and output settings through one in-context interface.",
+  "abstract_ja": "",
+  "authors": [],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "hf-2611.23417",
+  "likes_count": 1,
+  "publishedAt": "2026-11-17",
+  "source": "huggingface",
+  "subcategory": "transformer",
+  "summary": "We present the Autoregressive View Model (AVM), which generates a scene as a stream of views without constructing an explicit 3D representation. Through a unified in-context interface, AVM conditions…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "3d"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Autoregressive View Model",
+  "url": "https://arxiv.org/abs/2611.23417",
+  "use_case": ""
+}

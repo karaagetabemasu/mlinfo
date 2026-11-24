@@ -1,0 +1,32 @@
+{
+  "abstract": "Language often refers to an object by its parts, as in asking to point to a part or to turn an arbitrarily posed object so that two named parts lie in given directions. Both tasks need the direction from the object's center to the part's center, not the part's own orientation. A natural approach segments the part and takes the centroid of its mask. However, high mask overlap predicts the pointing direction poorly when a part is spread out relative to its distance from the object center. Language-guided part segmentation is trained and evaluated by mask overlap, which leaves a gap between the masks it produces and the part geometry that these tasks use. We close this gap by learning point evidence, weights over the observed points whose weighted centroid gives the part's location. Geometric Readout Supervision (GRS) trains these weights through the centroid's position and adds direction supervision on the parts used in reorientation commands. GRS improves both tasks even with a single frozen encoder and a single input pose. We implement this supervision in GeoRead3D, a system for pointing and reorientation from part descriptions. A language model maps each description to a known part name. Dual-Route Part Evidence combines refined segmentation evidence with directly predicted point evidence to locate each part. On PartNeXt and Artiverse, GeoRead3D points within $22.5^\\circ$ for 74.1% and 60.0% of queries, 5.8 and 7.3 percentage points above the strongest baselines. Its reorientation success exceeds the strongest baselines by 10.4 and 7.8 points.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhangcheng Hou",
+    "Kevin Tonkich",
+    "Tomoaki Ohtsuki"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30519",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Language often refers to an object by its parts, as in asking to point to a part or to turn an arbitrarily posed object so that two named parts lie in given directions. Both tasks need the direction…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "3d"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "GeoRead3D: Grounding Part Descriptions for 3D Pointing and Reorientation",
+  "url": "https://arxiv.org/abs/2611.30519",
+  "use_case": ""
+}

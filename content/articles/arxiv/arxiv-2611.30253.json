@@ -1,0 +1,30 @@
+{
+  "abstract": "An in-vehicle voice assistant must decide not only which intents an utterance contains but also how co-active intents may be executed: concurrently, in a fixed order, or not at all without arbitration. We present Voyag, a single-forward decision model that jointly predicts ten controlled vehicle-intent slots and a three-way execution relation (parallel, sequential, mutually exclusive) over each co-active intent pair. Voyag combines a multilingual ModernBERT-style encoder (mmBERT-base, 306.9M parameters), a typed per-slot choice head, and a lightweight GroupCalibration relation head (1.61M parameters) that consumes marker hidden states, pooled context, explicit resource-requirement profiles, and symmetrized outer-product conflict features. All objectives are optimized in one joint loss: soft cross-entropy over slot choices, focal cross-entropy over relations, and a mutex-consistency penalty. On a synthetic Chinese vehicle-life benchmark with semantic scene-level splits and a leakage audit (30,017 / 3,473 / 5,000 groups), validation-only selection yields 0.9893 slot accuracy and 0.0526 expected calibration error over 50,000 slot decisions. Conditioned on gold intents, the relation head reaches 0.8548 accuracy, 0.8473 macro-F1, and 0.6062 mutually-exclusive recall over 4,000 pairs; end to end with one encoder forward it reaches 0.8530 accuracy and 0.8464 macro-F1. Against a two-stage rule pipeline, the aggregate end-to-end gain is small and borderline, so we claim no aggregate advantage; the learned head's advantage lies in sequential and parallel recall where surface rules are blind. We report rule baselines with a tautology disclosure and a held-out thermal conflict failure.",
+  "abstract_ja": "",
+  "authors": [
+    "Sen Luo"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30253",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "An in-vehicle voice assistant must decide not only which intents an utterance contains but also how co-active intents may be executed: concurrently, in a fixed order, or not at all without…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "Voyag: Joint Multi-Intent Detection and Execution-Relation Classification for In-Vehicle Voice Assistants",
+  "url": "https://arxiv.org/abs/2611.30253",
+  "use_case": ""
+}

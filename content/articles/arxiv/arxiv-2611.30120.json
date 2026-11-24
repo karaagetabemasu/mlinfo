@@ -1,0 +1,35 @@
+{
+  "abstract": "Edge cases are not the long tail; they are the norm. An embodied system deployed across changing environments, bodies, objects, and tasks will routinely encounter combinations that were absent from its training data. General-purpose physical intelligence therefore requires world models that reuse prior knowledge, predict consequences, and adapt with little or no additional training. Yet current evaluations of conditional video generation emphasize visual quality, prompt alignment, or isolated physical plausibility, leaving systematic generalization difficult to measure. We introduce AxE Bench, a benchmark that organizes condition changes along eight factors of the acting agent and of its environment, and pairs every original condition with controlled variants that change one side or both. WBench-plus applies the same structure to an existing multi-turn benchmark, pairing each WBench scenario with variants on the environment side, through its world setting or camera behavior, or on the agent side, through its interaction instructions. Additionally, to score generated futures, we develop an evaluation harness that combines vision-language reasoning with targeted computer-vision evidence, converting each video into temporally localized events and comparing generated events with reference events in both time and semantics. We summarize each model with the AxE Score, event Fidelity weighted by its Stability across original-variant pairs. Across twenty models, generated events match reference events far more often in timing than in content: no model exceeds a Fidelity of 13.01, the highest Stability is 0.55, and the highest AxE Score is 7.10. Together, these components turn world-model generalization from an informal aspiration into a falsifiable evaluation program for real and simulated interactions. Our project website can be found at: AxEBench.github.io",
+  "abstract_ja": "",
+  "authors": [
+    "Haiyu Xu",
+    "Yiyang Chen",
+    "Jiayi Zhou",
+    "Jiaming Ji",
+    "Juntao Dai"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30120",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Edge cases are not the long tail; they are the norm. An embodied system deployed across changing environments, bodies, objects, and tasks will routinely encounter combinations that were absent from…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "AxE: Benchmarking Agent-Environment Generalization of Video World Models via Grounded Events",
+  "url": "https://arxiv.org/abs/2611.30120",
+  "use_case": ""
+}

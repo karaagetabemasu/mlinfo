@@ -1,0 +1,29 @@
+{
+  "abstract": "Real-world evaluation of generalist robot policies is bottlenecked by manual resets, human grading, and small fixed task suites with limited diagnostic coverage. We present ScaleEvals, a scalable reset-free protocol that evaluates policies through continuous physical play across a robot fleet. A VLM AutoPrompter generates scene-grounded tasks with difficulty estimates, language prompts, and skill tags, enabling performance analysis across diverse rollouts. A VLM AutoGrader assesses task progress, achieving 90.7% agreement with human graders. Scores are aggregated via a soft-win Bradley-Terry model, while tag-stratified ANOVA provides interpretable capability diagnostics. Across 3,000+ physical autonomous rollouts on DROID and YAM, ScaleEvals achieves 23.0 net rollouts/hr per station while reducing active human labor by 98%. By ranking five SOTA generalist policies, ScaleEvals correlates with held-out manual evaluation ranking on DROID (r=0.94, rho=0.90, p=0.018), and remains internally consistent on a second embodiment, YAM (r=0.839, rho=0.80). Beyond aggregate rankings, we observe behavioral compositionality: recombining verb-, skill-, and object-conditioned evidence predicts policy order on unseen prompts. Across 10 tasks and 240 prospective physical rollouts, we recover three-policy orderings of 96% pairwise concordance, demonstrating ScaleEvals can predict not just which policy leads, but where rankings reverse.",
+  "abstract_ja": "",
+  "authors": [
+    "Amitoj Sandhu",
+    "Ethan Sick",
+    "Omkaar Buddhikot",
+    "Nadia Laswi",
+    "Wesley Durbano"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28411",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Real-world evaluation of generalist robot policies is bottlenecked by manual resets, human grading, and small fixed task suites with limited diagnostic coverage. We present ScaleEvals, a scalable…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "ScaleEvals: Scaling Generalist Policy Evaluation through Reset-Free Autonomous Play",
+  "url": "https://arxiv.org/abs/2611.28411",
+  "use_case": ""
+}

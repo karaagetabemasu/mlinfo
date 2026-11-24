@@ -1,0 +1,36 @@
+{
+  "abstract": "Vision-language-action (VLA) models have advanced robotic manipulation, yet complex tasks requiring both precise 3D contact and long-horizon coordination remain challenging. Most existing studies enhance spatial perception or temporal reasoning in VLAs separately. Spatial methods primarily inject geometric or affordance priors into current-frame perception without tracking multi-step transitions, while history-aware and world-model VLAs typically capture past context or future dynamics in 2D feature or pixel spaces, either lacking explicit 3D contact cues or incurring high generation overhead. To address this, we propose PhysPPF, a VLA framework that performs unified spatiotemporal modeling in a compact physical token space. Spatially, WWH (What-Where-How) distills pretrained perception teachers exclusively during training into compact token groups capturing what 3D structures occupy the scene, where to interact, and how the gripper should approach, without test-time 3D encoders. Temporally, operating directly in this WWH space without pixel reconstruction, PPF (Past-Present-Future) consolidates executed states into a bounded past physical memory and jointly infers present and future physical tokens via an asymmetric world model. Parallel gated branches then inject these past, present, and future representations into a flow-matching action expert to guide manipulation without cross-temporal interference. Extensive experiments on SimplerEnv, CALVIN, and LIBERO show that PhysPPF consistently outperforms existing spatial, history-aware, and world-model VLAs with modest latency and parameter overhead, improving over the StarVLA baseline by +17.2 points on SimplerEnv, +29.3 points on CALVIN, and +3.5 points on LIBERO.",
+  "abstract_ja": "",
+  "authors": [
+    "Junjie Li",
+    "Dawei Yan",
+    "Guoting Wei",
+    "Ruike Song",
+    "Lu Wang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28551",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "3d",
+  "summary": "Vision-language-action (VLA) models have advanced robotic manipulation, yet complex tasks requiring both precise 3D contact and long-horizon coordination remain challenging. Most existing studies…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "PhysPPF: Learning Robotic Manipulation with Past, Present, and Future Physical Representations",
+  "url": "https://arxiv.org/abs/2611.28551",
+  "use_case": ""
+}

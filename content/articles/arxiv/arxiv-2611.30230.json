@@ -1,0 +1,29 @@
+{
+  "abstract": "Long-lived Web assistants require effective memory and retrieval mechanisms to access information from past user interactions. While these capabilities can be learned through specialized policies, it remains unclear whether specialists trained independently in different environments can be effectively composed without joint optimization. This paper investigates compositional transfer through policy distillation. Memory-writing and sequential retrieval policies are independently distilled from frontier-model action trajectories into 3B models and combined with a fixed answer generator without downstream training. On a LongMemEval-based benchmark, the distilled composition achieves 73.1% accuracy, compared with 36.2% for a composition of existing RL-trained specialists, and also outperforms the evaluated RL-trained compositions on PersonaMem-v2. Component ablations reveal that improvements in individual policies depend on their composition, highlighting the importance of cross-specialist compatibility. Further task-specific adaptation improves accuracy to 75.2% on LongMemEval through RL and 48.9% on PersonaMem-v2 through supervised distillation. These findings demonstrate the effectiveness of independent specialist distillation for modular multi-agent systems. Source code and datasets of teacher-generated memory-editing and retrieval trajectories are released to facilitate reproducibility and further research.",
+  "abstract_ja": "",
+  "authors": [
+    "Grigorii Davydenko",
+    "Artem Sakhno",
+    "Igor Pavlov",
+    "Julia Belikova",
+    "Andrey Savchenko"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30230",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Long-lived Web assistants require effective memory and retrieval mechanisms to access information from past user interactions. While these capabilities can be learned through specialized policies, it…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Composing Independently Distilled Memory and Retrieval Policies for Long-Term Agents",
+  "url": "https://arxiv.org/abs/2611.30230",
+  "use_case": ""
+}

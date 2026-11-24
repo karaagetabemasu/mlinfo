@@ -1,0 +1,35 @@
+{
+  "abstract": "Latent reasoning lets Vision-Language-Action (VLA) models deliberate at a fraction of the cost of explicit chain-of-thought, increasingly through visual foresight, which we show to be indispensable for predicting actions. Yet this paradigm is inherited from Vision-Language Models, where it serves understanding rather than action: each latent is aligned with an isolated future frame, often enriched with further modalities of that frame. We find that this binds the policy to the appearance of its training scenes, so that it degrades sharply once the scene changes. We argue that visual latents for action should capture not what a future frame looks like, but how the scene evolves toward the goal. We therefore propose Motion-Oriented Latent Reasoning, which redirects visual latents from the whole frame to the interaction that the action must bring about. Semantic latents, following the stages of embodied chain-of-thought, first establish what to accomplish and how. Conditioned on them, motion-oriented latents anticipate each future step from coarse to fine: from the global scene, to the interaction region spanned by the manipulated object and its destination, to the robot state. Relative to the state-of-the-art latent VLA LaST$_0$, our method raises the mean success rate on SimplerEnv-WidowX from 37.5% to 55.2% in distribution and from 22.4% to 30.2% under out-of-distribution shifts, and on an AgileX Piper dual-arm platform from 60.8% to 90.8% in training scenes and from 6.7% to 37.5% under environmental changes.",
+  "abstract_ja": "",
+  "authors": [
+    "Xin Zhang",
+    "Yushuo Hou",
+    "Anqi Zhao",
+    "Moyun Liu",
+    "Xingwei Zhao"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29339",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "Latent reasoning lets Vision-Language-Action (VLA) models deliberate at a fraction of the cost of explicit chain-of-thought, increasingly through visual foresight, which we show to be indispensable…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "anomaly-detection"
+    ]
+  },
+  "title": "More Than Picturing the Future: Motion-Oriented Latent Reasoning for Generalizable Robot Manipulation",
+  "url": "https://arxiv.org/abs/2611.29339",
+  "use_case": ""
+}

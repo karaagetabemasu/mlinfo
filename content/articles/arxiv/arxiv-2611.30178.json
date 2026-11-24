@@ -1,0 +1,33 @@
+{
+  "abstract": "Deploying large vision-language-action (VLA) models on resource-constrained robots demands extreme compression, yet existing post-training quantization (PTQ) methods frequently collapse at ultra-low bit-widths ($\\le$ 2 bits). We trace this failure to two mismatches in standard pipelines. First, calibrating on static offline demonstrations induces distribution shift: minor quantization perturbations drive the policy into unseen states where uncalibrated errors compound. Second, minimizing the layer-wise weight reconstruction error is a flawed proxy, as action generation depends only on the representations consumed by the action head. We present LoopQ, an on-policy ultra-low-bit quantization framework. LoopQ closes the loop by calibrating on states from the quantized policy's own rollouts. It then adds readout-aligned fine-tuning, which freezes the trellis codes and optimizes only lightweight lookup tables and scaling factors to align the backbone readout with the full-precision teacher. With all linear layers at 2 bits, LoopQ achieves a 60.4% success rate on LIBERO-Plus with GR00T N1.7, close to the 61.8% of full precision. Even at 1 bit per weight, $π_{0.5}$ still completes 80.0% of LIBERO tasks. With 8-bit activations, the 2-bit $π_{0.5}$ runs on integer kernels on an embedded NVIDIA Jetson AGX Thor, with 4.1$\\times$ smaller weights and 44% less memory. On a real AgileX Piper arm, it stays within one success of full precision on each of three tasks. Code and checkpoints are available at https://github.com/ForeverBlue816/LoopQ",
+  "abstract_ja": "",
+  "authors": [
+    "Yanlong Chen",
+    "Thongthornpatch Chamadol",
+    "Yichen Guo",
+    "Yunfei Gao",
+    "Mohan Liu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/ForeverBlue816/LoopQ",
+  "hasCode": true,
+  "id": "arxiv-2611.30178",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Deploying large vision-language-action (VLA) models on resource-constrained robots demands extreme compression, yet existing post-training quantization (PTQ) methods frequently collapse at ultra-low…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Quantizing in the Loop: Drift-Aware Ultra-Low-Bit Vision-Language-Action Models",
+  "url": "https://arxiv.org/abs/2611.30178",
+  "use_case": ""
+}

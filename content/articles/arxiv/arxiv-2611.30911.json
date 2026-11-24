@@ -1,0 +1,33 @@
+{
+  "abstract": "Automatic waste classification supports source separation, which enables recycling and keeps hazardous medical items out of household waste. Waste classification studies often report near-perfect accuracy on random image splits, which put photographs of one item in both training and test sets. To measure how well classifiers recognise items they have never seen, we built BanglaWaste-23, with 4,160 images of 172 objects in 23 household and medical waste classes from Bangladesh. Every image also records which physical item it shows. We evaluated 11 ImageNet-pretrained models and two models trained from scratch (a compact custom network and MobileNetV3-L) using object-disjoint five-fold cross-validation and a random split. On unseen objects, the best pretrained model reached a macro-averaged F1 score of 98.8%, and six models were statistically tied. The random split overstated from-scratch accuracy by 15 to 19 percentage points. The from-scratch models also missed 11 to 13% of medical items, against under 1% for pretrained models. On a second dataset from Dhaka, pretrained accuracy fell by 15 to 22 points. Classifiers should therefore be evaluated on unseen objects, with random-split results read as an upper bound. The data are on Zenodo and the code at https://github.com/saadbaust/BanglaWaste-23.",
+  "abstract_ja": "",
+  "authors": [
+    "Nusrat Jahan",
+    "Mst. Eshrat Jahan Esha",
+    "Masuma Sadia",
+    "Saad Ahmed",
+    "Md Zahim Hassan"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/saadbaust/BanglaWaste-23",
+  "hasCode": true,
+  "id": "arxiv-2611.30911",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Automatic waste classification supports source separation, which enables recycling and keeps hazardous medical items out of household waste. Waste classification studies often report near-perfect…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Do Waste Classifiers Recognise Items They Have Never Seen? Object-Disjoint Evaluation on Household and Medical Waste",
+  "url": "https://arxiv.org/abs/2611.30911",
+  "use_case": ""
+}

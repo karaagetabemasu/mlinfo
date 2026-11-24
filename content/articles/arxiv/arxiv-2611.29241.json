@@ -1,0 +1,26 @@
+{
+  "abstract": "Fuzzy c-means (FCM) gives every point a degree of membership in every cluster. Its standard solver, alternating optimization (AO), needs a full pass over the data per iteration and often many iterations, while methods built for large data stop at a worse objective or still need tens of passes. We run FCM with the optimizer of e-means, a recent mini-batch k-means that keeps moving averages of the number and the sum of the points in each cluster and sets its batch size and step size by scaling laws. The optimizer carries over because an FCM centroid is also a weighted sum divided by a total weight, but this direct transfer fails in two ways: the e-means rule that relocates nearly empty clusters also removes the centroids of small, distant groups, and FCM started from random points can settle in poor local minima. Fuzzy e-means (e-FCM) therefore starts with one pass of e-means with hard assignments and then runs fuzzy moving-average passes without relocation. On 28 configurations with up to 109.5 million points and 16,384 clusters, e-FCM reaches the objective of 25 AO iterations in two to four passes when clusters hold several hundred points or more, 11 to 20 times faster than AO on one-million-point embedding sets with 1,024 clusters. It ends within 0.16% of converged AO on these sets and below converged AO where AO from random points lands in poor minima, but it is slower than AO on small low-dimensional problems, where an AO pass takes milliseconds. Finally, the common fuzzifier m=2 makes the centroids collapse or merge on most high-dimensional sets, and e-FCM can choose the fuzzifier by matching a known overlap at about two passes per candidate value.",
+  "abstract_ja": "",
+  "authors": [
+    "Paritosh Tiwari",
+    "Punit Rathore"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29241",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Fuzzy c-means (FCM) gives every point a degree of membership in every cluster. Its standard solver, alternating optimization (AO), needs a full pass over the data per iteration and often many…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Fuzzy e-Means: Fuzzy c-Means on Large Data with Moving-Average Mini-Batch Updates",
+  "url": "https://arxiv.org/abs/2611.29241",
+  "use_case": ""
+}

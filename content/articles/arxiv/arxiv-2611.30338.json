@@ -1,0 +1,31 @@
+{
+  "abstract": "Many large language models (LLMs) use chain-of-thought (CoT) to solve complex problems, but hide their CoT traces to prevent reasoning capabilities from being distilled. While recent studies have shown that hidden CoTs can be reconstructed, existing methods typically require training a separate attacker for each target LLM. This paper studies model-agnostic CoT reconstruction, aiming to reconstruct hidden CoT traces from arbitrary target LLMs using only input prompts and visible final responses. We propose Final-Output Preference Learning (FOPL), which trains a single reconstruction model that generalizes to unseen LLMs without target-specific adaptation. To achieve this, the reconstruction model must learn which reasoning patterns match a given final response without knowing the target LLM's identity. We address this using preference optimization, training the reconstruction model to prefer native CoTs over synthetic alternatives for the same question and final response. By learning these preferences from LLMs with accessible CoTs, the reconstruction model learns to distinguish reasoning patterns based on visible responses. Experiments show that reconstructed CoTs capture distinct reasoning patterns across LLM families, including a family unseen during training. Moreover, students trained on reconstructed CoTs match or outperform those trained on native CoTs across several reasoning benchmarks.",
+  "abstract_ja": "",
+  "authors": [
+    "Hongli Shen",
+    "Shaopeng Fu",
+    "Qinbo Zhang",
+    "Jian Li",
+    "Di Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30338",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Many large language models (LLMs) use chain-of-thought (CoT) to solve complex problems, but hide their CoT traces to prevent reasoning capabilities from being distilled. While recent studies have…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Learning Teacher Output Preferences from Final Responses for Reasoning Distillation",
+  "url": "https://arxiv.org/abs/2611.30338",
+  "use_case": ""
+}

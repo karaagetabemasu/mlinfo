@@ -1,0 +1,33 @@
+{
+  "abstract": "Regional-scale crop mapping is critical for food production monitoring, yet remains challenging in tropical regions, where persistent cloud cover limits optical imagery. Synthetic aperture radar (SAR) enables continuous observation throughout the agricultural cycle, but a second obstacle is label quality: national-scale land cover products exhibit systematic biases that underestimate less prevalent crops, and training directly on them inherits and amplifies their errors. This work proposes a methodology to build large-scale crop classification models from imperfect public land cover products, requiring no new field campaign, ground survey, or manual label correction. The approach combines two mechanisms. The first reduces the semantic inconsistency of the labels by shifting supervision from the sample level to the group level: a similarity-based clustering model organizes SAR time series into coherent groups, and noisy labels are used only to assign each group its most representative class. The resulting clusters are highly pure with respect to the reference classes (89.0% and 91.2% in the two study regions). The second reduces the spatial inconsistency of the predictions: a segmentation model delineates crop field boundaries from optical imagery, and patch-level predictions are consolidated by majority voting within each field, yielding spatially coherent maps. Evaluated in two Brazilian municipalities, Campo Verde (Mato Grosso) and Luís Eduardo Magalhães (Bahia), the approach consistently outperforms the noisy baseline in mean class accuracy, with gains of up to 10.14 percentage points, especially for minority crops. A state-scale analysis across Mato Grosso and Bahia shows stable behavior without further model adjustment, and the derived municipal crop areas are consistent with official IBGE/PAM statistics, an independent estimate the model never observes.",
+  "abstract_ja": "",
+  "authors": [
+    "Raul Lomonte Figueiredo",
+    "João Rebouças Dorea",
+    "Dário Augusto Borges Oliveira"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30515",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Regional-scale crop mapping is critical for food production monitoring, yet remains challenging in tropical regions, where persistent cloud cover limits optical imagery. Synthetic aperture radar…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "time-series"
+    ],
+    "task": [
+      "classification",
+      "segmentation"
+    ]
+  },
+  "title": "Field-Level Crop Classification via Similarity-Induced Supervision from Imperfect Labels",
+  "url": "https://arxiv.org/abs/2611.30515",
+  "use_case": ""
+}

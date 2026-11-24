@@ -1,0 +1,29 @@
+{
+  "abstract": "Overparameterized neural networks can represent the same function through many different hidden configurations, raising the question of which representation is favored by a given training algorithm. We study how stochastic gradient descent (SGD), jointly training both layers, resolves this ambiguity in finite-width, bias-free, two-layer ReLU networks trained to learn a linear teacher under Gaussian inputs. At width two, exact fitting leaves no choice: the neurons must align with the teacher directions. At every width $m \\ge 4$, however, infinitely many non-aligned exact fits are possible. Despite this ambiguity, we prove that joint batch-size-one SGD from sufficiently small initialization drives every neuron arbitrarily close to one of the two teacher directions while reaching arbitrarily small population error in finite time. This occurs without explicit regularization, layerwise training, gradient clipping, or a learning-rate schedule. The dynamics additionally select an initialization-dependent allocation of the fitted function across neurons, providing a finer characterization of the representation selected by SGD. Numerical experiments reproduce the predicted alignment, fitting, and initialization-dependent allocation. Our results identify sufficient conditions under which standard SGD exhibits a strong implicit bias toward a highly structured internal representation, even when overparameterization creates infinitely many qualitatively different exact representations.",
+  "abstract_ja": "",
+  "authors": [
+    "Nikos Tsikouras",
+    "Yorgos Pantis",
+    "Ahmed Mehdi Inane",
+    "Mehrab Hamidi",
+    "Ioannis Mitliagkas"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30467",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Overparameterized neural networks can represent the same function through many different hidden configurations, raising the question of which representation is favored by a given training algorithm.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "SGD Selects Initialization-Dependent Representation in Overparameterized ReLU Networks",
+  "url": "https://arxiv.org/abs/2611.30467",
+  "use_case": ""
+}

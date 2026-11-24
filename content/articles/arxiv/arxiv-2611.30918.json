@@ -1,0 +1,31 @@
+{
+  "abstract": "Cooperative driving can extend a vehicle's awareness beyond its own sensors, but existing cooperative end-to-end methods inject shared information into the planner and rely on cooperative driving demonstrations to learn how to use it. The moments in which shared information should change a driving decision are rare in such data, providing limited supervision for learning this behavior. We argue that cooperation need not be learned by the planner. Instead, reacting to shared information requires predicting how surrounding agents will move and selecting a response from the candidate trajectories of an ego planner. We introduce CoSel, a cooperation-as-selection framework that leaves the planner and its ego-only input unchanged. A separately trained cooperative predictor uses observations from the ego vehicle, roadside units, and connected automated vehicles to predict surrounding agents and their future motion. CoSel evaluates the planner's candidate trajectories against these predictions, preserves the planner's choice when it remains safe, and selects the closest safe alternative when shared information reveals additional risk. Each safety intervention is traceable to the shared evidence that triggers it. In closed-loop evaluation, CoSel achieves a driving score of 70.7 on V2Xverse, outperforming the best compared cooperative method by 7.5 points, and the highest average driving score of 85.8 on MDrive. Under missing ego detections, the collision count of CoSel increases only from 17 to 19 in 72 scenarios, compared with 19 to 32 for an existing cooperative end-to-end model.",
+  "abstract_ja": "",
+  "authors": [
+    "Yiping Li",
+    "Haohua Que",
+    "Zhipeng Bao",
+    "Wenjie Zhao",
+    "Qianwen Li"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30918",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Cooperative driving can extend a vehicle's awareness beyond its own sensors, but existing cooperative end-to-end methods inject shared information into the planner and rely on cooperative driving…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "CoSel: Cooperation as Selection for End-to-End Driving",
+  "url": "https://arxiv.org/abs/2611.30918",
+  "use_case": ""
+}
