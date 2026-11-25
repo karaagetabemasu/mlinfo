@@ -1,0 +1,36 @@
+{
+  "abstract": "Accurate and efficient monocular 3D hand pose estimation is an important perception capability for embodied human interaction and dexterous manipulation. Recent diffusion-based methods model pose uncertainty by iteratively denoising 3D joint coordinates. However, directly diffusing the final joints requires the generative process to simultaneously explore plausible poses and recover precise coordinates, often relying on additional denoising steps or multiple hypotheses and consequently increasing inference cost. In this work, we propose DiffAnchor, a few-step anchor-space diffusion framework that diffuses anchors rather than joints. Our key insight is that stochastic exploration does not need to operate directly on the final output. Instead, diffusion searches for informative intermediate anchors that serve as local 3D regressors, while anchor-to-joint offset prediction and weighted aggregation complete precise joint localization. Specifically, fixed context anchors provide stable global references, whereas noisy dynamic anchors are iteratively refined toward informative joint regions. An importance-guided anchor selection and replenishment mechanism further retains useful anchors, removes ineffective ones, and explores insufficiently covered regions. This design reduces the precision burden of the diffusion process and enables accurate prediction using only a few denoising steps and a single hypothesis. Extensive experiments on HO-3D V2, NYU, ICVL, and InterHand2.6M demonstrate state-of-the-art performance on the first three benchmarks and competitive performance on challenging interacting-hand estimation, while maintaining inference efficiency comparable to deterministic regression baselines.",
+  "abstract_ja": "",
+  "authors": [
+    "Changlong Jiang",
+    "Youci Tang",
+    "Haohong Kuang",
+    "Hang Xu",
+    "Jinghong Zheng"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32513",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Accurate and efficient monocular 3D hand pose estimation is an important perception capability for embodied human interaction and dexterous manipulation. Recent diffusion-based methods model pose…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "3d"
+    ],
+    "task": [
+      "detection",
+      "generation",
+      "regression"
+    ]
+  },
+  "title": "DiffAnchor: Anchor-Space Diffusion for Monocular 3D Hand Pose Estimation",
+  "url": "https://arxiv.org/abs/2611.32513",
+  "use_case": ""
+}

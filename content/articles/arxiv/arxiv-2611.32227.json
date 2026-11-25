@@ -1,0 +1,31 @@
+{
+  "abstract": "Achieving both interpretable and high-performance inference is a key challenge in deep learning. While Concept Bottleneck Models (CBMs) provide inherent interpretability, they are constrained by task-specific training and rely on isolated visual concepts that fail to capture higher-order visual semantic relationships. Conversely, Large Vision Language Models (LVLMs) demonstrate zero-shot capabilities through Chain-of-Thought (CoT) reasoning. However, standard CoT lacks a strict causal dependency between the generated rationale and the final output, compromising faithfulness. To bridge this gap, we propose Relational Bottleneck Models (RBMs), a novel training-free framework that transforms any off-the-shelf LVLMs into inherently interpretable models in a plug-and-play manner. RBMs consist of two stages: (i) Structured Rationale Generation (SRG), which explicitly models semantic interactions between visual concepts as subject-predicate-object triplets, and (ii) Rationale-Grounded Decoding (RGD), which enforces a strict causal dependency between the rationales and the final output. RGD aggregates rationale-conditional next-token distributions via an importance-weighted product-of-experts strategy, strictly excluding the image inputs from the decoding context. Extensive zero-shot evaluations across diverse benchmarks and LVLM backbones demonstrate that RBMs achieve superior interpretability while improving task performance over CBM baselines, entirely without task-specific fine-tuning.",
+  "abstract_ja": "",
+  "authors": [
+    "Shin'ya Yamaguchi",
+    "Kosuke Nishida"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32227",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Achieving both interpretable and high-performance inference is a key challenge in deep learning. While Concept Bottleneck Models (CBMs) provide inherent interpretability, they are constrained by…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Relational Bottleneck Models",
+  "url": "https://arxiv.org/abs/2611.32227",
+  "use_case": ""
+}

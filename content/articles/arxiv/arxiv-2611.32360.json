@@ -1,0 +1,33 @@
+{
+  "abstract": "Deep learning models for pneumonia detection from chest radiographs exhibit degraded accuracy when applied across institutions, which motivates Unsupervised Domain Adaptation (UDA). We observe that UDA performance depends on the properties of both the source and target datasets, and that performance gains are asymmetric with respect to dataset pairs. We investigate which structural properties of chest X-ray datasets are the most important predictors of UDA performance, and whether they can be measured before adaptation is attempted. Five chest radiograph datasets were characterized by the class separability of their features, obtained from one forward pass of a frozen DenseNet-121 and summarized by the Silhouette Score, with the Fisher Ratio as a supporting measure. All twenty directed source-target pairs were adapted with a Domain-Adversarial Neural Network (DANN), while direct transfer without adaptation was also evaluated. Seven published transferability estimators were computed on the same representation for comparison. We found that adaptation performance depended on both endpoints in opposite directions. More separable target datasets attained higher AUC scores ($r=0.934$, $p=0.042$), whereas more separable sources produced lower AUC scores ($r=-0.922$, $p=0.017$). The signed difference in separability tracked the signed difference in AUC between the two directions of a pair ($r=-0.932$, $p=0.017$) and identified the better direction in 10 of 10 pairs ($p=0.001$). The proposed descriptor was comparable to the best published estimators on target evaluation. Source and target datasets play opposite structural roles in adaptation: higher class separability makes a dataset easier as a test set but not as a training source. This framework can guide dataset selection for adaptation in low-resource settings without running full experiments.",
+  "abstract_ja": "",
+  "authors": [
+    "Iftakhar Hossain",
+    "Md. Imran Hasan",
+    "Salahuddin Ahmed",
+    "Eric D. McCollum",
+    "Abdullah H. Baqui"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32360",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Deep learning models for pneumonia detection from chest radiographs exhibit degraded accuracy when applied across institutions, which motivates Unsupervised Domain Adaptation (UDA). We observe that…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised"
+    ],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Characterizing Datasets to Anticipate Unsupervised Domain Adaptation Performance for Radiographic Pneumonia Detection",
+  "url": "https://arxiv.org/abs/2611.32360",
+  "use_case": ""
+}

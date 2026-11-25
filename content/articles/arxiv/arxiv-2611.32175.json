@@ -1,0 +1,31 @@
+{
+  "abstract": "Scaling inference computation offers a way to improve diffusion transformers (DiTs), but taking more sampling steps leaves the depth of each denoising prediction unchanged. Recurrently reusing Transformer blocks increases computation within each step, allowing further refinement of hidden representations. Retrofitting pretrained models enables this capability without repeating pretraining, but requires blocks learned for fixed-depth computation to refine states produced by their own repeated application. The challenge is to use each additional pass to correct local errors without disrupting the structure established by earlier passes. We introduce LoopFit, which uses feedback from earlier passes to guide refinement at each image patch. Residual Attention Modulation (RAM) uses each patch's feature change in one pass to scale and shift its input to attention in the next. During training, Residual Relay Loss (RRL) gives greater weight to patches whose prediction errors persist across passes. A noise-dependent depth schedule speeds up sampling by using four passes at high noise and one at lower noise levels. At comparable cost, backbones trained with four passes solve more problems using recurrent depth than extra sampling steps. Across 12 visual puzzle settings, LoopFit solves 89.8% of boards, compared with 87.8% for the strongest baseline evaluated on all 12. Most of the gain comes from tracing long paths on mazes and frozen lakes.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiaocheng Lu",
+    "Haoxi Li",
+    "Dazhao Du",
+    "Tao Han",
+    "Jian Liu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32175",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Scaling inference computation offers a way to improve diffusion transformers (DiTs), but taking more sampling steps leaves the depth of each denoising prediction unchanged. Recurrently reusing…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "LoopFit: Retrofitting Pretrained Diffusion Transformers with Recurrent Refinement",
+  "url": "https://arxiv.org/abs/2611.32175",
+  "use_case": ""
+}

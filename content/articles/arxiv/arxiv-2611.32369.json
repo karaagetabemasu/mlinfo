@@ -1,0 +1,33 @@
+{
+  "abstract": "In streaming video understanding, the evidence needed to answer a question may have already left the recent-frame window. Keeping all frames does not scale with video length, while dropping older frames limits the model's ability to reason about the past. We propose Visual-State Graph (VSG), a training-free memory that stores the state of a stream rather than the raw sequence of frames. VSG represents the stream as a graph of objects and their relations, together with a log of events; similar to a dynamically evolving scene graph. An object observed repeatedly is represented by one persistent node, with a timestamped history of how its state changes. To determine whether a newly mentioned object already exists in the graph, we compare the relations it takes part in with those of stored objects. We build this memory as the video arrives, before the questions are known. When a question arrives, we retrieve relevant objects and events alongside recent frames under a fixed input budget. Our evaluation spans four streaming-video benchmarks and seven open-source vision-language models ranging from 7B to 32B parameters. Under matched input budgets, VSG improves reasoning about the past while preserving real-time understanding.",
+  "abstract_ja": "",
+  "authors": [
+    "Ailar Mahdizadeh",
+    "Pritam Sarkar",
+    "Xiangteng He",
+    "Leonid Sigal"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32369",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "video",
+  "summary": "In streaming video understanding, the evidence needed to answer a question may have already left the recent-frame window. Keeping all frames does not scale with video length, while dropping older…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Visual-State Graph Memory for Streaming Video Understanding",
+  "url": "https://arxiv.org/abs/2611.32369",
+  "use_case": ""
+}

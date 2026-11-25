@@ -1,0 +1,33 @@
+{
+  "abstract": "Geospatial reasoning segmentation aims to localize geographic targets from language requiring semantic inference beyond direct visual perception. However, existing benchmarks often operationalize reasoning as category omission while overlooking attribute mixing, which neglects explicit-category reasoning, introduces perceptual shortcuts, and fails to precisely evaluate reasoning capability. To diagnose and address these limitations, we first reformulate geospatial reasoning segmentation along category expression (explicit vs. implicit) and attribute nature (perceptual vs. inferential), and audit 90,708 queries across existing benchmarks to reveal that pure explicit-inferential queries account for only 0.61% whereas 31.98% mix both attribute types. We then develop a three-stage pipeline that harnesses OpenStreetMap attributes while mitigating geometric and semantic noise to construct RSReasoner, a large-scale dataset of 106,610 images with 213,220 reasoning queries, and RSReasoner-Bench, a diagnostic benchmark of 75,400 queries across four canonical types and controlled variants. Extensive experiments demonstrate that RSReasoner-Bench precisely evaluates model capability across multiple dimensions while exposing shortcut behaviors, and fine-tuning on RSReasoner boosts both reasoning and cross-type generalization. Our findings offer key insights for future geospatial reasoning research and benchmark design. Datasets and code will be released at https://github.com/Ricardo-XZ/RSReasoner.",
+  "abstract_ja": "",
+  "authors": [
+    "Xu Zhang",
+    "Xinpeng Zhang",
+    "Yunrui Zou",
+    "Hongliang Chen",
+    "Xiaotian Jiang"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/Ricardo-XZ/RSReasoner",
+  "hasCode": true,
+  "id": "arxiv-2611.32536",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Geospatial reasoning segmentation aims to localize geographic targets from language requiring semantic inference beyond direct visual perception. However, existing benchmarks often operationalize…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "RSReasoner: Reformulating and Auditing Geospatial Reasoning Segmentation",
+  "url": "https://arxiv.org/abs/2611.32536",
+  "use_case": ""
+}

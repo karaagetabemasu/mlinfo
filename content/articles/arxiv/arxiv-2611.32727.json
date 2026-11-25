@@ -1,0 +1,33 @@
+{
+  "abstract": "Reconstructing a scene for physics simulation requires recovering its spatial layout and the support relationships that govern its behavior. We present Support2Sim, a Real2Sim system that reconstructs simulation-ready scenes from a single RGB image. Our design objective is to maximize source fidelity, support realization, and stability within a practical time budget for scene generation. Support2Sim infers a support graph, which a contact-guided pose initializer uses to propose poses for objects with multiple supports. The initializer generates and ranks candidates by geometric fit and source-image agreement. A coarse-to-fine refiner allocates a fixed search budget across supported objects and evaluates pose updates with physics rollouts. After an accepted update, it searches from the new pose at a finer translation and rotation scale. We benchmark our method on 50 scenes spanning four datasets. Compared with the strongest baseline, Support2Sim improves source-mask IoU after 10 seconds by 21.4 pp, realizes 87.1% versus 73.2% of intended supports, and reduces mean object drift from 79.6 to 45.3 mm. See our project page at https://support2sim.github.io for more details.",
+  "abstract_ja": "",
+  "authors": [
+    "Samarth Chopra",
+    "Ankit Prabhu",
+    "Akshayan Nagarajah",
+    "Sumer Murthy",
+    "Pratik Chaudhari"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32727",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Reconstructing a scene for physics simulation requires recovering its spatial layout and the support relationships that govern its behavior. We present Support2Sim, a Real2Sim system that…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Support2Sim: Visually Faithful Real2Sim with Stable Object Supports",
+  "url": "https://arxiv.org/abs/2611.32727",
+  "use_case": ""
+}

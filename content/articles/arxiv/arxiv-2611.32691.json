@@ -1,0 +1,31 @@
+{
+  "abstract": "Neural networks in continual learning often lose plasticity: some neurons become inactive, while others fire almost constantly. This limits adaptation to shifting data and wastes capacity. Prior work mitigates this by periodically reinitializing low-utility units, but such resets can destroy previously learned features and do not proactively prevent low utility. We study a simple diagnostic measure: the firing rate of ReLU units, defined as the fraction of positive pre-activations. Low rates identify dead units, while very high rates indicate linearized, always-on units. Based on this view, we introduce a lightweight load-balancing mechanism that adjusts per-neuron thresholds to keep firing rates within a target range. Across continual ImageNet and class-incremental CIFAR-100, firing-rate distributions explain differences in plasticity across a range of approaches, including well-known techniques such as L2 regularization and non-affine normalization, and load balancing matches or exceeds reset-based methods on both benchmarks. The same mechanism carries over to reinforcement learning, improving Rainbow DQN on Atari over a LayerNorm baseline.",
+  "abstract_ja": "",
+  "authors": [
+    "Jan Robine",
+    "Marc Höftmann",
+    "Stefan Harmeling"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32691",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Neural networks in continual learning often lose plasticity: some neurons become inactive, while others fire almost constantly. This limits adaptation to shifting data and wastes capacity.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Load Balancing Neurons: Firing-Rate Control Sustains Plasticity in Continual Learning",
+  "url": "https://arxiv.org/abs/2611.32691",
+  "use_case": ""
+}

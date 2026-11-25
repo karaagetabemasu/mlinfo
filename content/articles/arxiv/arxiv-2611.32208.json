@@ -1,0 +1,31 @@
+{
+  "abstract": "Purpose: To develop, evaluate, and publicly release FlashSegmentator, an open-source inference pipeline that increases the throughput of TotalSegmentator without retraining or loss of segmentation accuracy. Materials and Methods: This retrospective study used public datasets: 73 CT examinations from the TotalSegmentator test split (median age, 65 years; 37 male, 35 female, one unknown), 30 abdominal CT examinations from the Beyond the Cranial Vault (BTCV) dataset, 512 training-split CT examinations for concurrent-process analysis, and 55 MRI examinations. FlashSegmentator adds static-shape compilation, pipelining, batched sliding-window inference, and GPU postprocessing. Throughput was compared with the reference implementation (including its lower-resolution modes) and FastSegmentator on GH200, A100, and T4 GPUs. Dice agreement was tested with two one-sided tests (margin, +/-0.01). Results: FlashSegmentator processed 3782, 1810, and 270 examinations per hour on the GH200, A100, and T4 (57.7, 33.9, and 6.4 times the reference implementation and 3.20, 2.50, and 1.22 times compiled FastSegmentator). Dice scores were equivalent for all 117 structures on every GPU (mean difference <= 1.2 x 10^-5; P < .001) and at the examination level on BTCV. In contrast, the lower-resolution modes of the reference implementation processed 181 and 213 examinations per hour on the A100 but reduced mean Dice by 0.116 and 0.241. On MRI, throughput increased 94-fold with all 50 structures equivalent. Estimated A100 cloud cost per 10,000 examinations decreased from 997 to 29 US dollars. Conclusion: FlashSegmentator increased the throughput of TotalSegmentator on data center and entry-level GPUs without loss of segmentation accuracy compared with the reference implementation.",
+  "abstract_ja": "",
+  "authors": [
+    "Yosuke Yamagishi",
+    "Tomohiro Kikuchi",
+    "Shouhei Hanaoka",
+    "Takeharu Yoshikawa",
+    "Osamu Abe"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32208",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Purpose: To develop, evaluate, and publicly release FlashSegmentator, an open-source inference pipeline that increases the throughput of TotalSegmentator without retraining or loss of segmentation…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "FlashSegmentator: High-Throughput TotalSegmentator Inference without Loss of Accuracy",
+  "url": "https://arxiv.org/abs/2611.32208",
+  "use_case": ""
+}

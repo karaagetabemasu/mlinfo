@@ -1,0 +1,30 @@
+{
+  "abstract": "Electroencephalography (EEG) decoding is a central route toward brain-computer interfaces for communication, rehabilitation, cognitive assessment, and neurological monitoring. Recent EEG foundation models have substantially advanced reusable signal representations, but their downstream use still typically requires a task-specific decoder, gradient-based adaptation, and validation-driven model selection. We investigate a complementary foundation-model paradigm based on in-context learning: labeled EEG recordings define the decoding task as context, and new recordings are predicted without updating model parameters. We first pair raw EEG features with a pretrained general-purpose in-context predictor. This direct formulation provides a promising starting point, but its performance remains limited and unstable and does not generalize reliably across EEG paradigms. We find that suitable context construction can address these limitations by improving the effective signal-to-noise ratio and exposing temporal and spatial structure. Building on this insight, we introduce a general framework that combines EEG-specific context construction with a frozen in-context predictor and a metric-based context adaptation mechanism, which matches each downstream task to an appropriate context representation without relying on validation data. Across ten datasets spanning seven EEG decoding paradigms, our method achieves the highest mean BAcc among eleven specialized and fine-tuned EEG baselines, without task-specific parameter updates or validation-based model selection. This framework provides a practical path toward tuning-free EEG foundation models in which adaptation is expressed through context rather than parameter updates.",
+  "abstract_ja": "",
+  "authors": [
+    "Hao-Run Cai",
+    "Si-Yang Liu",
+    "Han-Jia Ye",
+    "Hairong Zheng"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31171",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Electroencephalography (EEG) decoding is a central route toward brain-computer interfaces for communication, rehabilitation, cognitive assessment, and neurological monitoring. Recent EEG foundation…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "EEG Decoding in Context: A Framework for Tuning-Free EEG Foundation Models",
+  "url": "https://arxiv.org/abs/2611.31171",
+  "use_case": ""
+}

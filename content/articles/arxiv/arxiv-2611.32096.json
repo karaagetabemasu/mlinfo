@@ -1,0 +1,32 @@
+{
+  "abstract": "Post-training quantization (PTQ) compresses large vision-language models (LVLMs) by calibrating quantization parameters on a small dataset without retraining. However, despite increasingly sophisticated calibration strategies, prior methods suffer substantial performance degradation under low-bit weight--activation quantization. To understand this degradation, we locate where quantization error is concentrated and examine the corresponding weight and activation distributions. We observe that a few outliers dominate the ranges shared by per-channel (PC) weights and per-token (PT) activations, leaving insufficient resolution for most values and mapping many of them to zero. These findings motivate a shift in focus from calibration refinement to the underlying quantization representation. We therefore present Rotate-and-Refine Quantization (RRQ) as a simple, effective baseline for LVLM PTQ, combining local Hadamard transforms with group quantization and efficient group-aware execution. Across 8 multimodal tasks and diverse quantization settings, RRQ substantially outperforms baselines while reducing inference time and memory usage. At W4A4, it retains over 96\\% of full-precision performance on 8B models and over 99\\% on a 32B model, compared with less than 8\\% for these baselines. The source code is publicly available at https://github.com/kmc3661/RRQ",
+  "abstract_ja": "",
+  "authors": [
+    "Minchan Kang",
+    "Kyeonghye Park",
+    "Seoyoung Cho",
+    "Junhee Lee",
+    "Daeshik Kim"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/kmc3661/RRQ",
+  "hasCode": true,
+  "id": "arxiv-2611.32096",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Post-training quantization (PTQ) compresses large vision-language models (LVLMs) by calibrating quantization parameters on a small dataset without retraining. However, despite increasingly…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Rethinking Post-Training Quantization for Large Vision-Language Models",
+  "url": "https://arxiv.org/abs/2611.32096",
+  "use_case": ""
+}

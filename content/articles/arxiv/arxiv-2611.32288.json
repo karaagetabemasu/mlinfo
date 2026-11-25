@@ -1,0 +1,26 @@
+{
+  "abstract": "Spiking Neural Networks (SNNs) offer an attractive paradigm for energy-efficient AI inference, while their deployment on reconfigurable hardware enables application-specific acceleration without sacrificing model reprogrammability. However, realizing this potential on FPGAs is often severely constrained by the immense on-chip memory needed to store synaptic weights. Existing compression techniques reduce this storage requirement at the cost of weight precision or accuracy. This work presents a hybrid bit-level weight-storage scheme that trades BRAM capacity for FPGA logic resources while preserving the original weights unmodified. Selected weight bits are implemented using Look-Up Tables (LUTs), while the remaining bits are stored in BRAM and jointly reconstructed during inference. We integrate this approach into a spatial dataflow SNN architecture and introduce a practical bit-mapping heuristic that efficiently partitions weight bits between BRAM and LUT-based logic without modifying the weights. Experimental evaluation demonstrates more than 26% reduction in BRAM utilization with a modest increase in LUT and register usage, resulting in significant overall power savings.",
+  "abstract_ja": "",
+  "authors": [
+    "Dimitrios Sekertzis",
+    "Giorgos Dimitrakopoulos"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32288",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Spiking Neural Networks (SNNs) offer an attractive paradigm for energy-efficient AI inference, while their deployment on reconfigurable hardware enables application-specific acceleration without…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Trading BRAM for LUTs: Hybrid Bit-Level Weight Storage for FPGA-Based Spiking Neural Networks",
+  "url": "https://arxiv.org/abs/2611.32288",
+  "use_case": ""
+}

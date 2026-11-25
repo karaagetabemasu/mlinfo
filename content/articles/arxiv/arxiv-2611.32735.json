@@ -1,0 +1,32 @@
+{
+  "abstract": "Feedforward 3D Gaussian Splatting (3DGS) pipelines reconstruct a scene from images in a single forward pass, representing it as real-time-renderable 3D Gaussians. However, the resulting representations contain far more Gaussians than are needed to render the scene faithfully, especially when there are many input views. This drastically increases memory and storage requirements. Existing pruning methods either require costly re-optimization, which defeats the purpose of a single forward pass, or rely on simple strategies that do not exploit all the available information. We present AnyPrune, a transformer-based, optimization-free pruning module designed to work on top of any feedforward 3DGS pipeline. To remove unnecessary Gaussians, AnyPrune learns and exploits pipeline-specific redundancy patterns through a short single-GPU training on the frozen target feedforward pipeline. AnyPrune achieves better rendering quality than existing optimization-free pruning methods in most settings and generalizes to unseen datasets, as shown through extensive experiments across multiple feedforward pipelines, datasets, and input view counts. It prunes a 1.6M-Gaussian field in about $5\\,\\mathrm{s}$ on a consumer GPU, faster than every method that merges Gaussians or re-optimizes the field. It can also be combined with the pruning built into feedforward pipelines, pruning further at moderate ratios while preserving or improving rendering quality. Finally, it can even suggest a scene-specific pruning ratio that retains most of the quality.",
+  "abstract_ja": "",
+  "authors": [
+    "Nicola Leonetti",
+    "Federico Stella",
+    "Aoxiang Fan",
+    "Saqib Javed",
+    "Pascal Fua"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32735",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Feedforward 3D Gaussian Splatting (3DGS) pipelines reconstruct a scene from images in a single forward pass, representing it as real-time-renderable 3D Gaussians. However, the resulting…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "AnyPrune: Optimization-Free Pruning for Any Feedforward 3D Gaussian Splatting Pipeline",
+  "url": "https://arxiv.org/abs/2611.32735",
+  "use_case": ""
+}

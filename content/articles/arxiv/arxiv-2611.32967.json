@@ -1,0 +1,33 @@
+{
+  "abstract": "People can anticipate how an object moves and the effort an interaction may require by watching others. How can embodied agents acquire this understanding from video? Force measurements provide direct sensory supervision, but require specialized equipment and remain limited in quantity. We introduce VidForce, which estimates an interaction trajectory together with a force profile from a third-person RGB video; 2D contact clicks and textual object-action prompts are optional. Our approach makes limited instrumented measurements useful for interpreting human interactions through learned physical prototypes as a prior. The prototypes share learned force levels and temporal profiles across interactions of comparable effort, with visual and semantic cues determining their contribution to each observation. Geometric and vision-language features adapt this prior to the observed interaction, while a joint conditional flow refines an initial tracked trajectory together with the force profile. Paired human and instrumented-gripper recordings provide measured force references for supervising human video, and a separately trained torque model demonstrates that the formulation extends to other sensory quantities. We evaluate trajectory recovery and force estimation through baseline comparisons and controlled ablations on held-out interactions from the Hoi! dataset. On this evaluation subset, VidForce achieves 6.6 cm ATE, peak-force MAE and RMSE of 4.81 N and 5.92 N, respectively, and force-profile RMSE of 5.52 N. On real-world videos, VidForce infers motion and force reliably and consistently despite the variability in human execution. We further deploy VidForce on a Spot robot, where trajectories and force profiles estimated from human demonstrations drive real-world articulated-object manipulation, and report success rates across repeated trials. Project page: https://rafaymhddn.github.io/vidforce",
+  "abstract_ja": "",
+  "authors": [
+    "Rafay Mohiuddin",
+    "Jiaqi Chen",
+    "Marc Pollefeys",
+    "Hermann Blum"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32967",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "video",
+  "summary": "People can anticipate how an object moves and the effort an interaction may require by watching others. How can embodied agents acquire this understanding from video?",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "VidForce: Predicting Force-Aware Articulation by Observing Humans",
+  "url": "https://arxiv.org/abs/2611.32967",
+  "use_case": ""
+}

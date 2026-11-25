@@ -1,0 +1,36 @@
+{
+  "abstract": "Long-horizon panoramic video wandering aims to continuously synthesize scene-consistent $360^\\circ$ observations along user-specified camera trajectories from an initial equirectangular projection (ERP) panorama. Existing panoramic video models have achieved promising results in camera-controlled generation, while recent 3D-guided approaches further provide geometric guidance for improving scene consistency. However, stable long-horizon wandering remains challenging due to diverse motion--orientation relationships and imperfect memory guidance induced by accumulated generation artifacts and depth inaccuracies. To address these challenges, we propose \\textbf{PVWander}, a 3D-memory-guided framework that accumulates generated observations into an online point-cloud memory and reprojects it to guide subsequent generation, with two complementary designs: \\textit{Path-Facing canonicalization} for motion--orientation alignment and \\textit{Timestep-aware gating modulation} for adaptive memory guidance. \\textit{Path-Facing canonicalization} exploits the horizontal cyclic symmetry of ERP panoramas to uniformly align each clip's ERP orientation with its principal translation direction, yielding more consistent, forward-like relative motions while preserving the prescribed camera path. \\textit{Timestep-aware gating modulation} exploits the coarse-to-fine nature of diffusion denoising to adaptively regulate reprojected memory guidance through timestep-dependent channel-wise gates, preserving its structural benefits while mitigating visual artifacts from imperfect projections. Extensive experiments demonstrate that PVWander achieves improved long-horizon generation quality, while ablations validate the effectiveness of both designs.",
+  "abstract_ja": "",
+  "authors": [
+    "Chuanxin Song",
+    "Xiaodong Wang",
+    "Shijie Chen",
+    "Junliang Xie",
+    "Zhanmi Zhong"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32443",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "3d",
+  "summary": "Long-horizon panoramic video wandering aims to continuously synthesize scene-consistent $360^\\circ$ observations along user-specified camera trajectories from an initial equirectangular projection…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "3d"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "PVWander: 3D Memory-guided Panoramic Video Wandering with Path-Facing Canonicalization",
+  "url": "https://arxiv.org/abs/2611.32443",
+  "use_case": ""
+}

@@ -1,0 +1,30 @@
+{
+  "abstract": "We show that quantization asymmetry concentrates bit-flip vulnerability in small tensors retained at high precision. CoarseHammer targets these tensors and accepts flips at any bit, without parameter values, gradients, or data. It remains effective under continued fine-tuning. Under ideal placement, CoarseHammer reaches chance accuracy in at least 81.5% of runs on each of ten evaluated models, including four large language models, with median successful runs requiring at most 24 flips. On simulated DRAM with 0.01 flippable bits per million, it outperforms three prior attacks on every evaluated convolutional network, succeeding in up to 83.6% of runs while they never succeed. On a real system, CoarseHammer steers heap-allocated tensors onto vulnerable frames despite address space layout randomization, without accessing the model file. With 16 templated frames, median accuracy reaches chance for all four language models and approximately chance for four convolutional networks.",
+  "abstract_ja": "",
+  "authors": [
+    "Mahmoud Abumandour",
+    "Srinija Ramichetty",
+    "Guru Venkataramani",
+    "Alaa R. Alameldeen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32128",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "We show that quantization asymmetry concentrates bit-flip vulnerability in small tensors retained at high precision. CoarseHammer targets these tensors and accepts flips at any bit, without parameter…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Bit-Flip Attacks on Quantized Neural Networks without Knowledge of Model Parameters",
+  "url": "https://arxiv.org/abs/2611.32128",
+  "use_case": ""
+}

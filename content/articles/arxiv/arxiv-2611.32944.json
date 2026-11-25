@@ -1,0 +1,31 @@
+{
+  "abstract": "Whole-body motion tracking enables humanoid robots to reproduce diverse skills from human demonstrations. Existing model-free reinforcement learning methods either distill motion specialists into a single policy at the cost of performance or train a generalist policy directly using cluster-scale computation. SuperMimic reduces this computational cost through a differentiable world model that implicitly learns the physics shared across motions by predicting the next state from the current state and action. However, this implicit formulation may not fully capture the underlying physical processes. Errors around changes of support can accumulate over imagined rollouts used to train the tracking policy. To address this challenge, we introduce DynaMimic, a differentiable world model that explicitly incorporates shared physics into state prediction. Specifically, its network predicts a contact wrench at each candidate support link and a residual generalized force. DynaMimic then uses these predictions to compute the next state through closed-form Lagrangian forward dynamics. Across 60 full LAFAN1 motions, DynaMimic reduces mean per-joint position error (MPJPE) by 18.6% relative to SuperMimic. For terrain tracking, we give both methods the same local height maps. Relative to terrain-conditioned SuperMimic, DynaMimic reduces MPJPE by 14.9% on A3 Parkour (66.15 to 56.28~mm) and by 10.8% on GRAIL terrain clips (141.88 to 126.57~mm). On a real A3 humanoid, the learned policies can perform diverse skills, such as floor recovery, cartwheel and a box vault.",
+  "abstract_ja": "",
+  "authors": [
+    "Chaoyue Xing",
+    "Linyi Huang",
+    "Yiting He",
+    "Yixuan Yin",
+    "Siqi Hou"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32944",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Whole-body motion tracking enables humanoid robots to reproduce diverse skills from human demonstrations. Existing model-free reinforcement learning methods either distill motion specialists into a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "DynaMimic: A Physics-Informed World Model for Humanoid Motion Tracking",
+  "url": "https://arxiv.org/abs/2611.32944",
+  "use_case": ""
+}

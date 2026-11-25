@@ -1,0 +1,33 @@
+{
+  "abstract": "Aligning inertial measurement unit (IMU) signals with text enables zero-shot activity recognition across wearable devices. A worn device's signal depends on its setup, the combination of body site and mounting. Leading IMU-language models make their encoders invariant to the mounting, which also discards the device's orientation relative to the body, such as the direction of gravity that separates sitting, standing and lying. We introduce SetCon, which replaces full invariance with selective invariance. It estimates each device's mounting on its known body site from a few unlabeled windows and conditions its encoder on this estimate. Because the mounting stays nearly fixed while the device is worn, the moving body serves as a calibration target. Both calibration and representation learning are supervised by 3D human motion, since one movement can be simulated under many known sensor setups. At test time, a class is represented by its name or by an anchor, which averages the text embeddings of the name and of activity descriptions and needs no labeled window. A language model built on the frozen encoder also answers how and in what order a movement is performed. Trained only on IMU simulated from the same Nymeria motion capture as AnyMo, SetCon reaches 56.6% mean zero-shot accuracy on 13 real datasets with class names and 65.3% with anchors, against 41.8% and 46.7% for AnyMo.",
+  "abstract_ja": "",
+  "authors": [
+    "Lennart Schiweck",
+    "Alaa Saleh",
+    "Cristóbal Curio"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32548",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Aligning inertial measurement unit (IMU) signals with text enables zero-shot activity recognition across wearable devices. A worn device's signal depends on its setup, the combination of body site…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "3d"
+    ],
+    "task": [
+      "classification",
+      "embedding"
+    ]
+  },
+  "title": "SetCon: Setup-Conditioned IMU-Language Learning from 3D Human Motion",
+  "url": "https://arxiv.org/abs/2611.32548",
+  "use_case": ""
+}

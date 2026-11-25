@@ -1,0 +1,31 @@
+{
+  "abstract": "Multi-agent trajectory optimization poses two coupled challenges: effectively exploring non-convex landscapes and scaling favorably to large teams of agents. Sampling-based methods are natural candidates for the exploration challenge but scale poorly with problem dimension. Moreover, their off-the-shelf integration into distributed optimization introduces a fundamental trade-off: sampling either fails to address the constraint-induced non-convexity or its search space grows with neighborhood size. We address this gap by introducing a $\\underline{D}\\text{istributed}$ $\\underline{S}\\text{ampling-based}$ $\\underline{T}\\text{rajectory}$ $\\underline{O}\\text{ptimization} \\ \\text{(DS-TO)}$ architecture built on a splitting mechanism tailored to sampling. Under this splitting, each agent samples only in its own control space, independent of neighborhood size, while still remaining exposed to both the constraint-induced non-convexity and the decisions of other agents. The resulting algorithm is fully decentralized, requiring only neighborhood communication, with all local updates executed in parallel across agents. Efficient variations, including parallel Jacobi updates within each agent's subproblem and single-step constraint linearization, further reduce computation. Experiments on 2D and 3D tasks with up to 1024 agents demonstrate improved exploration and constraint satisfaction over state-of-the-art derivative-based distributed optimization, and superior scalability to existing distributed sampling methods.",
+  "abstract_ja": "",
+  "authors": [
+    "Minchan Jung",
+    "Dimitrios S. Georgiou",
+    "Augustinos D. Saravanos",
+    "Evangelos A. Theodorou"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31561",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Multi-agent trajectory optimization poses two coupled challenges: effectively exploring non-convex landscapes and scaling favorably to large teams of agents. Sampling-based methods are natural…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Sampling at Scale: Distributed Multi-Agent Trajectory Optimization",
+  "url": "https://arxiv.org/abs/2611.31561",
+  "use_case": ""
+}

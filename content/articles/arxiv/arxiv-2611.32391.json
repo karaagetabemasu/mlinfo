@@ -1,0 +1,32 @@
+{
+  "abstract": "Clustering longitudinal health trajectories requires handling high-dimensional measurements, irregular visit times, and subject-level heterogeneity while retaining clinically interpretable structure. Existing methods address this only partially: latent-class mixed models yield an interpretable, covariate-driven partition but do not scale past a handful of markers, while deep time-series clustering scales at the cost of that structure and generally requires a common time grid. We introduce the Latent Class Mixed Model Variational Autoencoder (LCMM-VAE), a deep generative model whose latent prior is a mixture of class-specific linear mixed models, so that each subject's latent trajectory decomposes into its class mean trajectory and a subject-specific deviation. We derive a variational EM algorithm whose class responsibilities, random effects and mixed-model parameters are updated in closed form, and provide identifiability guarantees under stated conditions. Experiments on simulated and real longitudinal cohorts show that LCMM-VAE returns a partition, a reconstruction of incomplete trajectories and interpretable class-level dynamics at once, while remaining competitive with classical and deep baselines.",
+  "abstract_ja": "",
+  "authors": [
+    "Philomène Letzelter",
+    "Violaine Courrier",
+    "Sandrine Katsahian",
+    "Agathe Guilloux"
+  ],
+  "category": "generative-ai",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32391",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "vae",
+  "summary": "Clustering longitudinal health trajectories requires handling high-dimensional measurements, irregular visit times, and subject-level heterogeneity while retaining clinically interpretable structure.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "time-series"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Latent Class Mixed Model Variational Autoencoders for Scalable Phenotyping of Health Trajectories",
+  "url": "https://arxiv.org/abs/2611.32391",
+  "use_case": ""
+}

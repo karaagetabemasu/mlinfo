@@ -1,0 +1,35 @@
+{
+  "abstract": "Instruction-driven image editing can alter a photograph while keeping the result coherent with the scene. Existing benchmarks lack matched plausible and anomalous edits of the same target, making it difficult to measure how localization performance changes with semantic plausibility. We construct a paired benchmark by generating semantically plausible and anomalous replacements of the same target in each source photograph. Both edits use the same editor, language, and generation settings. We estimate a separate mask for each output and retain pairs with sufficient mask overlap, enabling direct comparison of localization performance under the two semantic conditions. The release contains 47,747 bilingual triplets from 6,500 photographs, spanning four editors, three source domains, and six intended violation types. Across nine public localizers, editor-averaged IoU is lower on plausible edits in 26 of 27 model-dataset comparisons. This gap persists under pixel-change controls and region-size analyses. These findings reveal a semantic-plausibility shortcut: localization often weakens when an edited result looks ordinary. The benchmark provides a controlled setting for measuring this gap and developing localizers that remain effective on plausible edits.",
+  "abstract_ja": "",
+  "authors": [
+    "Peiyu Zhuang",
+    "Jianquan Yang",
+    "Zhuoying Cai",
+    "Yi Jiang",
+    "Yingquan Chen"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32242",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Instruction-driven image editing can alter a photograph while keeping the result coherent with the scene. Existing benchmarks lack matched plausible and anomalous edits of the same target, making it…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection",
+      "generation"
+    ]
+  },
+  "title": "Can You Find the Edit When Nothing Looks Wrong? A Paired Benchmark for Text-Driven Image Manipulation Localization Beyond Semantic Abnormality",
+  "url": "https://arxiv.org/abs/2611.32242",
+  "use_case": ""
+}

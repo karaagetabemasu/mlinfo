@@ -1,0 +1,32 @@
+{
+  "abstract": "Existing depth-from-focus methods can struggle with weak focus cues, new cameras, or fewer focal slices. We present FocusAnchor, a recurrent model that uses focus-volume lookups to refine metric depth and repeatedly aligns a relative depth prior from a frozen foundation model to the current depth estimate. The aligned prior guides subsequent refinement in a feedback loop, carrying metric scale recovered from textured regions into regions where focus cues are weak while preserving scene structure. To support transfer across cameras, we synthesize training stacks with randomized camera parameters and focus distances. However, stack synthesis blurs existing image noise differently across slices, creating artificial depth cues even on textureless surfaces. We add independent per-slice noise to suppress these cues. We also introduce variable-stack training to improve robustness with fewer focal slices and support more practical mobile capture. Compared with FOSSA ViT-B, FocusAnchor reduces AbsRel by 36% on NYU Depth V2 and by 9% on DDFF-12 after fine-tuning. In zero-shot evaluation, FocusAnchor and its variable-stack variant, FocusAnchor-flex, achieve the two lowest AbsRel values on all five benchmarks. On ZEDD test, FocusAnchor achieves 9% lower AbsRel than the best competing method, FOSSA ViT-B, while FocusAnchor-flex achieves lower AbsRel with 40% fewer focal slices on ZEDD validation.",
+  "abstract_ja": "",
+  "authors": [
+    "Ashkan Ganj",
+    "Hang Su",
+    "Tian Guo"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32970",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Existing depth-from-focus methods can struggle with weak focus cues, new cameras, or fewer focal slices. We present FocusAnchor, a recurrent model that uses focus-volume lookups to refine metric…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "FocusAnchor: Zero-Shot Metric Depth by Anchoring a Depth Foundation Prior to Focus Cues",
+  "url": "https://arxiv.org/abs/2611.32970",
+  "use_case": ""
+}

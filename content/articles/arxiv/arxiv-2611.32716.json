@@ -1,0 +1,35 @@
+{
+  "abstract": "Open-vocabulary 3D segmentation methods rely on 2D foundation models applied to registered images captured alongside the 3D point clouds. However, such images may not be available in many cases, while direct 3D point cloud segmentation methods require semantic class supervision and are challenging to deploy in a zero-shot manner. To address these issues, we present SplatSeg3D, which segments a bare colored point cloud in an open-vocabulary manner without requiring the accompanying images, camera poses, class supervision, or instance mask proposals. To achieve this, we first surfelize the input point cloud and obtain oriented 2D Gaussians. We then render views of the scene by splatting, with a view selection strategy that maximizes scene coverage with as few views as possible. Next, we apply text-prompted segmentation on the rendered views, giving each 3D point a set of multi-view semantic cues, fused to produce a 3D segmentation of the scene. We evaluate SplatSeg3D on semantic segmentation and novel-class instance segmentation on 4 standard benchmarks: Scannet, Scannet++, Replica, and S3DIS. Our pipeline not only performs better or on-par with the state-of-the-art, but we also achieve these results efficiently across runtime and compute requirements. Code will be published.",
+  "abstract_ja": "",
+  "authors": [
+    "Sandeep Inuganti",
+    "Mahdi Chamseddine",
+    "Marcel Rogge",
+    "Martin R. Oswald",
+    "Didier Stricker"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32716",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Open-vocabulary 3D segmentation methods rely on 2D foundation models applied to registered images captured alongside the 3D point clouds. However, such images may not be available in many cases,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "SplatSeg3D: Efficient Zero-Shot 3D Segmentation via Point Cloud Surfelization and Splatting",
+  "url": "https://arxiv.org/abs/2611.32716",
+  "use_case": ""
+}

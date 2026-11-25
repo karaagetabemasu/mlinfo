@@ -1,0 +1,36 @@
+{
+  "abstract": "In-context segmentation (ICS) uses one or a few annotated reference images to specify what to segment in a target image. Existing training-free ICS approaches typically rely on manually designed inference procedures, which may limit how flexibly reference information is combined. Learned in-context inference offers an adaptive alternative, but acquiring this capability through segmentation-specific training can compromise generalization to unseen domains. We therefore ask: can a pretrained in-context learner infer what to segment from annotated references without segmentation-specific training? We introduce SegPFN, a training-free framework that reformulates ICS as tabular classification over frozen visual features. A frozen tabular prior-data fitted network (PFN) uses labeled reference patches as context to classify patches in the target image. We comprehensively benchmark SegPFN against major existing ICS methods across 11 datasets spanning semantic, part, and personalized segmentation. SegPFN improves overall mean intersection-over-union (mIoU) by 4.7 points over the strongest overall baseline and achieves the highest average mIoU in four of five task-shot settings. Further analyses show that hard-negative reference patches improve fine-grained target discrimination, while joint conditioning enables SegPFN to use multiple references effectively. These results show that SegPFN offers a simple and effective paradigm for training-free in-context segmentation.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiajian Ma",
+    "Yihao Qiao",
+    "Ke Chen",
+    "Kaiyue Feng",
+    "Wushuang Rui"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32045",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "In-context segmentation (ICS) uses one or a few annotated reference images to specify what to segment in a target image. Existing training-free ICS approaches typically rely on manually designed…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "tabular"
+    ],
+    "task": [
+      "classification",
+      "segmentation"
+    ]
+  },
+  "title": "SegPFN: Training-Free In-Context Segmentation with Tabular Prior-Data Fitted Networks",
+  "url": "https://arxiv.org/abs/2611.32045",
+  "use_case": ""
+}

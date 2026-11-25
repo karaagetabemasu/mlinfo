@@ -1,0 +1,33 @@
+{
+  "abstract": "Multi-frame video frame interpolation (VFI) aims to reconstruct dense video from sparse keyframes, requiring accurate intermediate motion and faithful appearance. As temporal gaps grow, flow-based methods can retain observed textures but misplace them under ambiguous motion, whereas iterative latent-diffusion models can synthesize plausible content but incur substantial sampling costs and may alter details during reconstruction with a variational autoencoder (VAE). We present RePix-VFI, named for Re-rendering observed Pixels, a multi-frame VFI framework that couples draft-conditioned one-step video diffusion with reconstruction from observed keyframes. A pretrained video diffusion model refines a flow-rendered draft of the whole window in a single forward pass. For each target frame, our generative readback matches its two bounding keyframes to the generated prediction using an optical-flow estimator. The resulting correspondences guide re-rendering of original keyframe RGB pixels outside the VAE. A lightweight appearance fusion head combines these renderings with generated appearance. Experiments on benchmark datasets demonstrate significant improvements in reconstruction and perceptual quality. On SNU-FILM at $\\times$8 and $\\times$16, RePix-VFI achieves the highest PSNR and the lowest LPIPS, FloLPIPS, and tOF among the compared methods, exceeding the best evaluated diffusion-based baseline by 1.71 and 1.48dB in PSNR, respectively. It also runs 32--42$\\times$ faster than the state-of-the-art multi-frame VFI diffusion model.",
+  "abstract_ja": "",
+  "authors": [
+    "Dayeon Kim",
+    "Jeonghyeok Do",
+    "Munchurl Kim"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33016",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Multi-frame video frame interpolation (VFI) aims to reconstruct dense video from sparse keyframes, requiring accurate intermediate motion and faithful appearance. As temporal gaps grow, flow-based…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "RePix-VFI: Re-rendering Observed Pixels for Video Frame Interpolation with Generative Priors from One-Step Diffusion",
+  "url": "https://arxiv.org/abs/2611.33016",
+  "use_case": ""
+}

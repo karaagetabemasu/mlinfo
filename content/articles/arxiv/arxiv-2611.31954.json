@@ -1,0 +1,31 @@
+{
+  "abstract": "Vision-language-action (VLA) models must process continuous streams of visual observations, and the resulting computational cost limits real-time robotic control. Token pruning reduces this cost, but a fixed semantic scale of perceptual representation can overlook information needed at different stages of manipulation. We show that perceptual semantics can guide effective token selection without relying on internal attention when the selection scale adapts to the scene's evolving semantic structure. Based on this observation, we introduce TauPrune-VLA, a training-free method that controls the scale of the retained perceptual representation through a single perception temperature $τ$. To adapt this scale as manipulation proceeds, TauPrune-VLA updates $τ$ online using trends in perceptual semantics, with robot-state changes and action magnitude regulating the adjustment strength. While these semantics evolve over the course of manipulation, they remain relatively stable between consecutive frames. This continuity allows retention indices computed from the current observation to be applied at the next policy invocation, enabling token selection to run asynchronously with inference and reducing pruning overhead. Evaluated across diverse VLA models and simulation benchmarks, TauPrune-VLA achieves up to a $1.86\\times$ inference speedup while maintaining near-baseline task success rates. We further validate its effectiveness on two real-world robotic platforms.",
+  "abstract_ja": "",
+  "authors": [
+    "Yifeng Lin",
+    "Liuxiang Qiu",
+    "Yunfeng Chen",
+    "Tiesong Zhao"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31954",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Vision-language-action (VLA) models must process continuous streams of visual observations, and the resulting computational cost limits real-time robotic control. Token pruning reduces this cost, but…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Perception Is Enough, at the Right Scale: Scale-Adaptive Token Pruning for Vision-Language-Action Models",
+  "url": "https://arxiv.org/abs/2611.31954",
+  "use_case": ""
+}

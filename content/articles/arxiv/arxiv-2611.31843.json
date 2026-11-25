@@ -1,0 +1,25 @@
+{
+  "abstract": "Reactive robotic manipulation is acutely sensitive to simultaneous sensing noise, measurement dropouts, joint execution errors, and contact parameter variations. While single-frame frameworks like Domain-Randomized Instance Set (DRIS) achieve strong robustness under isolated uncertainties (86.4%), they degrade severely when perception and actuation uncertainties co-occur (27.6% across 10 coupled stress scenarios) due to memoryless encoding and fixed high-stiffness PD control. We propose Co-DRIS + SuperMimic, a perception-action co-design framework coupling: (i) an inertial world-frame physics-informed world model combining exact ballistic kinematics with a zero-initialized contact residual to roll forward missing observations and accelerate training via zero-cost counterfactual dropout consistency; (ii) an action-conditioned dual-stream causal GRU belief encoder resolving the denoising-vs-lag deadlock; and (iii) phase-aware variable-impedance soft-catching that transitions the 7-DoF Franka Research 3 arm into an overdamped regime (zeta/zeta0 ~ 2.26x) at the torque layer. Under unbiased 3-seed tail evaluation on unseen throws (15,360 throws/scenario), our method achieves 89.6 +/- 0.4% on standard benchmarks (+10.5% on 4-sigma noise to 70.5%) and 66.6 +/- 0.5% across 10 coupled/dropout stress scenarios (+39.0% over DRIS; +30.4% on 50% dropout). We further validate impedance decoupling, causal contact triggering under +0.65 s flight-time shifts, and cross-task transfer to steel-plate ping-pong bouncing (87.5% to 100.0%) and FR3+Hand catching (+8.4% under 4x noise with 6-13% lower peak impact force).",
+  "abstract_ja": "",
+  "authors": [
+    "Yonglong Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31843",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "Reactive robotic manipulation is acutely sensitive to simultaneous sensing noise, measurement dropouts, joint execution errors, and contact parameter variations. While single-frame frameworks like…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Co-DRIS: Physics-Informed Predictive Belief and Variable-Impedance Learning for Reactive Catching under Coupled Uncertainty",
+  "url": "https://arxiv.org/abs/2611.31843",
+  "use_case": ""
+}

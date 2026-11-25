@@ -1,0 +1,32 @@
+{
+  "abstract": "Representation-space generative models, such as Representation Autoencoders (RAEs), leverage pretrained vision foundation models (VFMs) primarily to accelerate training and improve sample fidelity. Yet VFMs are more than reconstruction tokenizers, as they feature rich representation spaces that are highly organized and linearly readable. We observe that this removes a key obstacle of post-hoc guidance: by linearity of expectation, a clean probe applied to an ideal denoiser's prediction yields the exact posterior mean of the probe scores at any noise level. This regime, which we call Semantic Mean-Space, turns semantic guidance into a Bayesian linear inverse problem, bypassing the need for training-time conditioning. With this foundation, we propose LiSM, a unified framework for Linear Guidance in Semantic Mean-Space. To validate the framework, we developed and adapted different solvers, and characterized them based on how they estimate probe-space uncertainty and propagate the correction through the representation. In addition, we propose Fit-Path, a solver designed to achieve strong global and local control. Our results in four control setups (class, attributes, foreground, and keypoints) show that LiSM methods, and Fit-Path in particular, provide effective, lightweight control across global and local tasks, outperforming noise-aware and pixel-space guidance.",
+  "abstract_ja": "",
+  "authors": [
+    "Pengwei Wang",
+    "José Morano",
+    "Botond Fazekas",
+    "Hrvoje Bogunović"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33037",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Representation-space generative models, such as Representation Autoencoders (RAEs), leverage pretrained vision foundation models (VFMs) primarily to accelerate training and improve sample fidelity.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Linear Probes Can Guide: Training-Free Control of Representation Generators",
+  "url": "https://arxiv.org/abs/2611.33037",
+  "use_case": ""
+}

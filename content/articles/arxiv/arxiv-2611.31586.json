@@ -1,0 +1,27 @@
+{
+  "abstract": "AI agents make errors while they act, and their reliability depends on what they do afterwards. Existing recovery benchmarks mostly inject faults, involve no user and score whether the task is eventually completed, so they cannot show whether an agent undid its own silent error, told the user, or faced an error that could not be fixed. We introduce SecondChance, an error checkpoint dataset and evaluation harness that profiles and measures error-recovery behaviour of AI agents. The errors are natural: they come from agents' own task attempts in $τ^2$-bench, BFCL and AppWorld. Different agents then resume from the same checkpoints under one of four conditions: no assistance, an error notice, the error location, or repair guidance. We measure error correction, task success, policy compliance, preservation of environment state, repair durability and cost. We evaluate 12 models under all four conditions in 5,760 continuations. Recovery is rare: across its environments, the best model completes only 16% of recoveries unaided and 27% with repair guidance. Correcting is not recovering: with repair guidance, Llama-3.3-70B corrects 26% of $τ^2$ errors but completes none, and 40 of 84 successful AppWorld continuations leave the error in place. SecondChance exposes these differences that task success alone cannot capture.",
+  "abstract_ja": "",
+  "authors": [
+    "Atahan Dokme",
+    "Adar Avsian",
+    "Larry Heck"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31586",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "AI agents make errors while they act, and their reliability depends on what they do afterwards. Existing recovery benchmarks mostly inject faults, involve no user and score whether the task is…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "SecondChance: Benchmarking Reliable Error Recovery in AI Agents",
+  "url": "https://arxiv.org/abs/2611.31586",
+  "use_case": ""
+}

@@ -1,0 +1,27 @@
+{
+  "abstract": "Open-weight large language models (LLMs) are increasingly deployed for applications with sensitive information. We investigate whether confidentiality instructions in system prompt can protect such information. We red-team Apertus v1.5, an open sovereign LLM, and five other model families across six languages and reasoning modes. We use synthetic personal records to evaluate direct disclosure, correction baits, yes/no verification, derived-value queries, reasoning leakage and authorisation checks. We also explore copyright attribution, historical misrepresentation and stereotyping. Despite confidentiality instructions, Apertus 8B and 70B leak information in 96% and 95% of requests, respectively, in correction-bait attacks. Verification and derived-value queries also expose protected information without necessarily revealing identifiers. Moreover, reasoning traces can leak confidential records even when final answers withhold them. Our experiments also show that post-training does not consistently improve safety. Our findings demonstrate that system prompts alone cannot ensure confidentiality and highlight the need for multilingual reasoning-aware safety evaluations.",
+  "abstract_ja": "",
+  "authors": [
+    "Hatef Otroshi Shahreza"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32710",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Open-weight large language models (LLMs) are increasingly deployed for applications with sensitive information. We investigate whether confidentiality instructions in system prompt can protect such…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Red-Teaming a Sovereign LLM, Its Reasoning and Its Training Stages",
+  "url": "https://arxiv.org/abs/2611.32710",
+  "use_case": ""
+}

@@ -1,0 +1,25 @@
+{
+  "abstract": "Initial attitude alignment between local navigation frames and the Earth-centered Earth-fixed (ECEF) frame is a critical prerequisite for multi-sensor integrated navigation, such as Global Navigation Satellite System (GNSS)/inertial/odometry fusion, before global and local measurements can be jointly processed. While GNSS Doppler-based alignment eliminates the need for carrier-phase ambiguity resolution or multi-antenna hardware, solving this non-convex problem via local nonlinear least squares (NLS) suffers from local minima, whereas direct semidefinite programming (SDP) relaxation incurs high latency and omits local covariance outputs. This study systematically compares NLS and SDP on a unified maximum-likelihood Doppler objective across Monte Carlo simulations and three real-world driving datasets. We demonstrate that attaching a modular dual SDP certifier to a standard manifold NLS solver recovers the global accuracy of direct SDP within 0.001 degrees, reduces real-world 95th-percentile yaw errors from over 86 degrees down to 2.88 degrees to 4.70 degrees, and cuts median solve times by up to an order of magnitude while preserving native Jacobian covariances. We conclude that candidate-driven certification bridges local estimation and global optimization due to two structural advantages: (1) our theoretical comparison reveals that SDP relaxation enlarges the feasible region while preserving the lifted cost, allowing Lagrangian duality to verify whether a fixed NLS candidate attains the global lower bound without invoking a full SDP solver, and (2) the candidate-driven architecture acts as a non-intrusive module that plugs directly into existing navigation pipelines without replacing the local estimator, preserving native tangent-space covariance outputs and low typical latency.",
+  "abstract_ja": "",
+  "authors": [
+    "Baoshan Song"
+  ],
+  "category": "mlops",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32715",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "deployment",
+  "summary": "Initial attitude alignment between local navigation frames and the Earth-centered Earth-fixed (ECEF) frame is a critical prerequisite for multi-sensor integrated navigation, such as Global Navigation…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Semidefinite Programming for Cold-Start GNSS Doppler-Based Alignment: A Comparison with Nonlinear Least Squares",
+  "url": "https://arxiv.org/abs/2611.32715",
+  "use_case": ""
+}

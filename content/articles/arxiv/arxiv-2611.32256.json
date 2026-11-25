@@ -1,0 +1,32 @@
+{
+  "abstract": "Long-horizon robot manipulation requires more than predicting the next action from the current observation. The policy must maintain a global procedural prior that specifies the expected progress of each subtask stage, while also tracking the realized progress produced by its interactions. To this end, we propose RoboDemo, a demonstration-augmented manipulation framework built on Dual-Cascaded Test-Time-Training. RoboDemo accepts either a task-relevant human demonstration video or a semantically compatible robot video retrieved from simulation corpus as reference, allowing us to evaluate its applicability with and without paired human demonstrations. Task semantics and physical motion information from the reference video are then transferred into persistent demonstration-intent memory. During deployment, we causally compress online observations, robot states, and executed actions into interaction-progress memory. To keep reference intent stable while interaction progress continually evolves, reference and execution video tokens independently update their respective fast-weight states. The action expert performs cascaded memory reads, first obtaining reference guidance and then refining it using realized progress, allowing the policy to adapt to execution deviations without overwriting the stored intent. RoboDemo achieves 90.7% success on Imitator Game and 73.3% success across three real-world household tasks. Real-world videos, code and hf-weights are available in our project website.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiangkai Ma",
+    "Zhihao Yuan",
+    "Linbo Zhai",
+    "Xinyi Wang",
+    "Junjie Wang"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32256",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Long-horizon robot manipulation requires more than predicting the next action from the current observation. The policy must maintain a global procedural prior that specifies the expected progress of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "video"
+    ],
+    "task": []
+  },
+  "title": "RoboDemo: Reconciling Demonstration Intent and Execution Progress for Long-Horizon Manipulation",
+  "url": "https://arxiv.org/abs/2611.32256",
+  "use_case": ""
+}

@@ -1,0 +1,29 @@
+{
+  "abstract": "Accelerating instruction-based image editing when one instruction requests several edits is challenging. Many training-free accelerators for flow-matching image editors skip tokens whose prediction has stopped changing, but decide this with a single threshold for the whole image. With several edits, such a threshold, tuned for speed, freezes small and slowly settling edits first, and requested edits disappear. We propose TIDE (Training-free Instruction-aware Drift-based Editing), which gives every instruction part its own compute budget. First, TIDE finds the region of each part in the editor's own attention by unbalanced optimal transport, without masks or external models. Second, it freezes a token once its drift is small relative to its own part and moves it along the straight path to its endpoint estimate. Third, a sparse engine computes only the remaining tokens. We prove that part-agnostic rules cannot guarantee per-part error budgets, characterize the optimal per-part threshold policy up to one tie class per part, and derive when our rule attains it. On FLUX.2 Klein, one global threshold breaks at least one edit's budget in 89% of MICE-Bench images, and TIDE drops up to 77% fewer edits at matched or higher speed (48% on MICE-Bench), a gap human raters confirm. On the many-step Klein Base, TIDE is the fastest compared method on six benchmarks (4.81-4.89x) and needs 5.3x fewer TFLOPs than vanilla, the largest saving we measure. With the same settings, it is also the fastest compared method on Qwen-Image-Edit-2511, a second model family (3.46-3.52x), and drops the fewest edits on all six benchmarks. Code will be made publicly available.",
+  "abstract_ja": "",
+  "authors": [
+    "Jyotirmoy Nath",
+    "Neeraj Kumar",
+    "Brejesh Lall"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32407",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Accelerating instruction-based image editing when one instruction requests several edits is challenging. Many training-free accelerators for flow-matching image editors skip tokens whose prediction…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Every Edit Its Own Budget: Per-Instruction Token Freezing for Training-Free Acceleration of Multi-Edit Image Editing",
+  "url": "https://arxiv.org/abs/2611.32407",
+  "use_case": ""
+}

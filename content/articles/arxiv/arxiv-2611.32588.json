@@ -1,0 +1,35 @@
+{
+  "abstract": "Multi-vehicle collaborative perception can use observations from different perspectives to alleviate the problems of occlusion and limited sensing range. However, missing echoes and false echoes caused by bad weather will reduce the quality of single-vehicle features and affect collaborative detection. LiDAR provides richer geometric information, and 4D Radar has strong weather adaptability. The complementarity of the two provides the possibility to improve perception under degraded observations. However, how to adjust cross-modal repair according to the current observation conditions and how to reasonably integrate multi-vehicle features whose reliability still differs after repair are still problems that need to be solved. To this end, we propose CoReQ, a condition-aware repair and quality-guided collaborative perception framework. For the former, the condition-guided bidirectional cross-modal repair module (CBCR) extracts vehicle-level observation conditions from point cloud occupancy, density and feature statistics, and adjusts the bidirectional correction of LiDAR and Radar features accordingly. For the latter, we combine local reliability assessment with collaborative weighting: first, the task-aware quality estimation module (TaQE) uses the classification and positioning information of the EMA teacher to construct a supervision target and predict the spatial quality of the repaired features; then, the condition and quality guided fusion module (CoQF) matches the quality information with the content, and the observation conditions of both parties are jointly used for multi-vehicle feature weighted fusion. Experiments on V2X-R and V2X-Radar-C show that the framework is competitive under a variety of observation conditions, achieving significant gains in AP@0.7 on V2X-R under snowy conditions, and achieving the highest AP among the compared V2X-Radar-C methods.",
+  "abstract_ja": "",
+  "authors": [
+    "Ziwei Guo",
+    "Lingzhi Li",
+    "Jin Wang",
+    "Yunjiang Xu",
+    "Yupeng Ouyang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32588",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "3d",
+  "summary": "Multi-vehicle collaborative perception can use observations from different perspectives to alleviate the problems of occlusion and limited sensing range. However, missing echoes and false echoes…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d",
+      "multimodal"
+    ],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "CoReQ: Condition-Aware Cross-Modal Repair and Quality-Guided Robust Collaborative Perception",
+  "url": "https://arxiv.org/abs/2611.32588",
+  "use_case": ""
+}

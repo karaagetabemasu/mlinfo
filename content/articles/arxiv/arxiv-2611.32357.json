@@ -1,0 +1,31 @@
+{
+  "abstract": "Visual world models enable goal-directed planning by predicting action outcomes. Gradient-based planners optimize actions to lower predicted goal cost, but continued optimization can exploit prediction errors after execution stops improving. Comparing plans requires informative relative scores; improving them also requires reliable update directions. Exact-state execution reveals that a frozen hierarchical world model ranks goal-conditioned proposals even when its rankings among outputs of prolonged gradient search are uninformative. Effective planning pairs goal-directed candidates with predictions that distinguish their outcomes. We introduce CriticJEPA, which learns goal-conditioned flow proposals from reward-free trajectories and uses frozen rollouts to select among them at every hierarchy level. Forward selection forms a complete planner; short anchored updates refine candidates before selection. Across visual navigation and manipulation, CriticJEPA increases success at a fraction of the planning compute, transferring shared settings across independently trained models, hierarchy depths, and unseen tasks while keeping every world-model weight fixed.",
+  "abstract_ja": "",
+  "authors": [
+    "Xvyuan Liu",
+    "Jianjie Fang",
+    "Honglin Zhang",
+    "Zhaolu Wang",
+    "Xin Zhang"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32357",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "model-based",
+  "summary": "Visual world models enable goal-directed planning by predicting action outcomes. Gradient-based planners optimize actions to lower predicted goal cost, but continued optimization can exploit…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "CriticJEPA: World Models Are Better Critics Than Optimizers",
+  "url": "https://arxiv.org/abs/2611.32357",
+  "use_case": ""
+}

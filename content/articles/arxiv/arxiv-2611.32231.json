@@ -1,0 +1,30 @@
+{
+  "abstract": "Dynamic Gaussian splatting is usually initialised either with random points or with a structure-from-motion (SfM) cloud of the first frame. Neither says anything about what moves, where and when. We introduce ST-SfM, a sparse spatio-temporal SfM for synchronised, calibrated multi-camera video that splits the scene into two branches. Static structure is detected once per camera on a temporal-median image, gated for temporal stability and matched along epi-polar lines. Motion is detected as space-time interest points (STIPs) in the video volume, described with HOG3D and matched only between candidates that agree both epipolarly and in time. Union-find tracks that refuse inconsistent merges are triangulated with RANSAC over all view pairs, giving static 3D points and dynamic 4D points (x, y, z, t) with sub-frame times. We use ST-SfM derived sparse 4D cloud to initialise 4D Gaussian splatting. In comparison with random initialisation on N3DV scenes we get improvements in PSNR, SSIM and LPIPS.",
+  "abstract_ja": "",
+  "authors": [
+    "Harshit",
+    "Sami Brandt"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32231",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "3d",
+  "summary": "Dynamic Gaussian splatting is usually initialised either with random points or with a structure-from-motion (SfM) cloud of the first frame. Neither says anything about what moves, where and when.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "ST-SfM: Spatio-Temporal Structure-from-Motion for Initialising 4D Gaussian Splatting",
+  "url": "https://arxiv.org/abs/2611.32231",
+  "use_case": ""
+}

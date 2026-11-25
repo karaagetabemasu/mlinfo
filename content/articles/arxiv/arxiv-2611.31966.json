@@ -1,0 +1,31 @@
+{
+  "abstract": "Multi-token prediction (MTP) accelerates autoregressive decoding through block-wise prediction, but remains vulnerable to error accumulation across sequentially generated blocks. To investigate this limitation, we analyze the distinction between block-wise and sequence-level cumulative information loss (CIL). Specifically, when the model generates using its own previous outputs without access to reference answers, the input-conditional gap equals the cross-block dependence of the reference targets. To improve prediction when these generated prefixes are imperfect, we propose Dual-MTP, which supervises shared prediction heads under full and randomly masked contexts. Together, complete-prefix supervision and context perturbations provide complementary training signals while retaining the MTP architecture. To characterize this training objective, we use the normalized dual loss to bound the divergence between the model's predictive distributions under full and masked contexts. Experiments across five backbones and six tasks spanning mathematical reasoning and GLUE understanding show that Dual-MTP achieves the highest average task score on four of five backbones, with gains of up to 2.46 points over MTP. On mathematical reasoning tasks, Dual-MTP also achieves 1.4 to 1.9 times the decoding throughput of the NTP reference. Together, these results show that dual-context supervision can improve prediction accuracy while retaining efficient multi-token decoding.",
+  "abstract_ja": "",
+  "authors": [
+    "Tangyu Jiang",
+    "Zhanke Zhou",
+    "Haodi Wang",
+    "Yiu-ming Cheung",
+    "Xiaohua Jia"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31966",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Multi-token prediction (MTP) accelerates autoregressive decoding through block-wise prediction, but remains vulnerable to error accumulation across sequentially generated blocks. To investigate this…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "On the Information Loss of Multi-Token Prediction: Origin and Solution",
+  "url": "https://arxiv.org/abs/2611.31966",
+  "use_case": ""
+}

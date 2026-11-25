@@ -1,0 +1,33 @@
+{
+  "abstract": "In visual effects, identity transfer replaces the identity in a driving image with that of a target person, while preserving the expression, lighting, pose and scene of that image. Paired ground truth is rarely available, so many methods are trained by self-reconstruction, where the model can learn a shortcut by copying identity cues from the driving image. This shortcut causes identity leakage at inference, where the driving image shows a different person. Our key observation is that leakage can enter through any input that reads the driving image. We therefore present MYSTIQUE, a diffusion-based identity transfer method that takes identity from a set of the target's photos and reads expression, lighting and scene through separate streams. It learns to disentangle identity from the other streams through multi-stage training, with disentanglement strategies at their inputs: a random block mask whose boundaries do not follow the face outline, self-augmentation, which randomly changes the face shape in the expression input and keeps its expression, and face randomization, which replaces the person in the expression and lighting inputs while the ground truth stays the driving image. At inference, we also warp the lighting input onto the face shape of a first pass, which reduces face-shape leakage through the lighting stream. Since face-recognition scores and human judgments each have limits, we evaluate identity with both, together with face-shape metrics on rendered faces of known shape. In a user study, raters judge MYSTIQUE's results more like the target than those of each compared method. Among these methods, MYSTIQUE also recovers the target's face shape most accurately, and its recognition score gains the most as more photos of the target are given.",
+  "abstract_ja": "",
+  "authors": [
+    "Shihan Cheng",
+    "David Hyde",
+    "Junting Deng",
+    "Michael Bao",
+    "Paul Debevec"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32232",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "In visual effects, identity transfer replaces the identity in a driving image with that of a target person, while preserving the expression, lighting, pose and scene of that image. Paired ground…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "MYSTIQUE: Few-Shot Facial Identity Transfer with Performance Preservation",
+  "url": "https://arxiv.org/abs/2611.32232",
+  "use_case": ""
+}

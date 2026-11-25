@@ -1,0 +1,35 @@
+{
+  "abstract": "Bimanual dexterous manipulation relies on multimodal inputs that capture visual context and non-visual physical interaction cues for precise and coordinated control. To address the challenge of effectively integrating these modalities for policy learning, we propose HiMoDex, a two-stage framework centered on hierarchical multimodal world-state representations. In Stage 1, we pretrain a hierarchical representation network on the collected dataset of 1.19 million synchronized multimodal time steps. The network integrates visual context with tactile, force-torque, and audio cues into unified world-state embeddings. In Stage 2, we freeze the pretrained network and use its embeddings to condition a shared world-action transformer. The transformer jointly learns action generation and action-conditioned future-state prediction. Experiments across five real-world tasks show that HiMoDex achieves an average success rate of 78.7\\%, representing an absolute improvement of 32.0\\% over the strongest evaluated baseline. Extensive ablations validate the benefits of hierarchical representation learning and two-stage training. Failure analysis helps explain performance differences across variants. Code, data, and demos will be released at https://anonymous.4open.science/w/research-website-BAB4/.",
+  "abstract_ja": "",
+  "authors": [
+    "Jin Yang",
+    "Youlin Wang",
+    "Ping Wei"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31782",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Bimanual dexterous manipulation relies on multimodal inputs that capture visual context and non-visual physical interaction cues for precise and coordinated control. To address the challenge of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "audio",
+      "multimodal"
+    ],
+    "task": [
+      "generation",
+      "embedding"
+    ]
+  },
+  "title": "Many Senses, One World: Learning Hierarchical Multimodal World Representations for Bimanual Dexterous Manipulation",
+  "url": "https://arxiv.org/abs/2611.31782",
+  "use_case": ""
+}

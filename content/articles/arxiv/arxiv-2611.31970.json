@@ -1,0 +1,32 @@
+{
+  "abstract": "Modern long-term forecasters are typically optimized for point-wise accuracy, which rewards dominant low-frequency backbones but often suppresses high-utility local dynamics such as abrupt variations, transient surges, and turning points. We propose Predict Backbone, Graft Dynamics, a decoupled forecasting paradigm that separates stable structural prediction from grounded dynamic restoration. We instantiate it as GRAFT, where a base forecaster predicts the reliable trajectory backbone, and a dedicated grafting path restores historically recurrent dynamics through retrieval-based evidence, phase-aware release, channel-wise control, and restoration-cooperative optimization. Unlike generic post-hoc revision methods that correct residual errors, GRAFT formulates the second stage as grounded dynamic grafting, where historical response evidence is calibrated into transferable dynamics and selectively grafted onto the backbone under phase-, channel-, and confidence-aware constraints. Across the full evaluation grid of seven benchmarks, two metrics, four horizons, and six backbones, GRAFT improves over the corresponding backbone in 87% of all comparisons, with average MSE/MAE reductions of 4.6%/3.9%. Dynamic-window analyses show that GRAFT restores local dynamics while preserving the stable backbone structure. These results suggest a new principle for high-utility forecasting: predict the backbone, then graft the dynamics.",
+  "abstract_ja": "",
+  "authors": [
+    "Lin Zhang",
+    "Zilin Li",
+    "Jingmei Zhao",
+    "Jiayang Wu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31970",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "Modern long-term forecasters are typically optimized for point-wise accuracy, which rewards dominant low-frequency backbones but often suppresses high-utility local dynamics such as abrupt…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "time-series"
+    ],
+    "task": [
+      "forecasting"
+    ]
+  },
+  "title": "Predict Backbone, Graft Dynamics: A Decoupled Paradigm for Time Series Forecasting",
+  "url": "https://arxiv.org/abs/2611.31970",
+  "use_case": ""
+}

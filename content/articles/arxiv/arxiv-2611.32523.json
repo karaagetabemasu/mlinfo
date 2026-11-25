@@ -1,0 +1,35 @@
+{
+  "abstract": "Visual-inertial-leg (VIL) state estimation offers cost-effective localization for legged robots, adding only a camera to the onboard IMU and joint encoders. However, learning-based leg odometry is limited by its supervision: networks trained in simulation suffer from the sim-to-real gap, while real-world labels require costly sensors or inherit the errors of visual estimates. To address this, we present AirLeg, a self-supervised VIL SLAM system in which vision and leg proprioception improve each other from training to deployment. We pre-train the leg odometry network in simulation and adapt it to the robot without ground truth through imperative learning, where multi-sensor bundle adjustment uses the leg odometry to refine the visual map, which in turn supervises the network. During deployment, the fused estimates adapt the network online. To improve both localization and this supervision, a dual-window estimator fuses vision, IMU, and leg odometry, relates loaded feet to the visually reconstructed terrain through a deformation-aware constraint, and weights the constraints by variance component estimation. AirLeg completes all 17 GrandTour sequences with the lowest average error (0.19 m) among 19 methods. On a low-cost quadruped, it achieves the lowest drift (0.6%) with only 0.5 h of unlabeled data, in real time on an embedded computer.",
+  "abstract_ja": "",
+  "authors": [
+    "Kuan Xu",
+    "Tianxin Hu",
+    "Ruofei Bai",
+    "Ruimeng Liu",
+    "Yuefan Hao"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32523",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Visual-inertial-leg (VIL) state estimation offers cost-effective localization for legged robots, adding only a camera to the onboard IMU and joint encoders. However, learning-based leg odometry is…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "AirLeg: A Robust and Accurate Self-Supervised Visual-Inertial-Leg SLAM System",
+  "url": "https://arxiv.org/abs/2611.32523",
+  "use_case": ""
+}

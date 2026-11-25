@@ -1,0 +1,28 @@
+{
+  "abstract": "Bayesian optimization (BO) is widely used to maximize expensive black-box functions when direct evaluation is costly. In many real-world applications, the high-fidelity objective can be approximated by a series of lower-fidelity models that provide partial but informative signals at substantially reduced cost. Multi-fidelity BO (MFBO) algorithms aim to strategically combine these information sources to achieve an optimal trade-off between accuracy and evaluation cost. However, existing MFBO methods often oversimplify the complex dependencies between fidelity levels or rely on heuristic acquisition functions that lack theoretical performance guarantees. To address these limitations, we introduce a new formulation of the MFBO problem as a fused Gaussian Process bandit and develop a corresponding Fused Gaussian Process Upper Confidence Bound (FGP-UCB) algorithm. Our approach accurately predicts the high-fidelity function by fusing multi-fidelity observations through an autoregressive Gaussian Process model and explicitly quantifies the uncertainty arising from parameter estimation across fidelity levels. The proposed method also provides theoretical simple-regret guarantees, overcoming a key limitation of existing MFBO algorithms that lack provable performance bounds. Effectiveness of the proposed method is demonstrated via both theoretical analysis and empirical studies.",
+  "abstract_ja": "",
+  "authors": [
+    "Muyun Lu",
+    "Jose E Aguilar Escamilla",
+    "Huazheng Wang",
+    "Ying Lin"
+  ],
+  "category": "math-theory",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32092",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "optimization",
+  "summary": "Bayesian optimization (BO) is widely used to maximize expensive black-box functions when direct evaluation is costly. In many real-world applications, the high-fidelity objective can be approximated…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "A Fused Gaussian Process Bandit Framework for Multi-Fidelity Bayesian Optimization",
+  "url": "https://arxiv.org/abs/2611.32092",
+  "use_case": ""
+}

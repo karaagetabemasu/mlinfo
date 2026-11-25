@@ -1,0 +1,30 @@
+{
+  "abstract": "With the growing scale of scientific simulation and infrastructure, part of the burden has shifted from producing scientific data to analyzing and storing it. Compression is a key step to expanding storage capacity, but requires dedicated techniques to enforce user-specified pointwise error bounds that ensure the validity of downstream scientific workflows. To further push the limits of compression, novel learned codecs have been developed, in particular for images and videos, but these methods often optimize for aggregated distortion and fail to meet error bound standards. Moreover, these methods often target fixed field dimensionality, failing to account for many scientific data use cases, or at the expense of large adaptation or retraining costs. In this work, we introduce the Learned Axial TEnsor Compression (LATEC) method, an error-bounded codec with a dimension-agnostic learned predictor based on a GNN architecture. LATEC is pretrained on synthetic 2-D and 4-D fields, and evaluated with and without domain fine-tuning on 13 scientific fields in 3-D to 5-D. Results show that LATEC is consistently competitive with SZ3, achieving an 18.1% average improvement and greater consistency across all domains than other compressors. These results demonstrate that a shared learned predictor can serve as a single error-bounded codec across tensor dimensionalities, competitive with specialized compressors, while retaining pointwise error guarantees.",
+  "abstract_ja": "",
+  "authors": [
+    "Hippolyte Verninas",
+    "Hadrien Hendrikx",
+    "Thomas Moreau"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32651",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "gnn",
+  "summary": "With the growing scale of scientific simulation and infrastructure, part of the burden has shifted from producing scientific data to analyzing and storing it. Compression is a key step to expanding…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video"
+    ],
+    "task": []
+  },
+  "title": "LATEC: Learned Axial TEnsor Compression for High-Dimensional Scientific Data",
+  "url": "https://arxiv.org/abs/2611.32651",
+  "use_case": ""
+}

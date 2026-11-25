@@ -1,0 +1,28 @@
+{
+  "abstract": "LLM agents increasingly collaborate in group chats while holding tool access to confidential records, which makes the shared chat an attack surface. It remains unclear whether several colluding attackers extract such information more effectively than one. We introduce SwarmLeak, a red-teaming dataset of 24 synthetic group-chat scenarios across healthcare, law, finance, and software engineering, where attackers pose as colleagues to make a victim agent post protected fields despite an explicit confidentiality policy. With GLM 5.2 attacking five victim models through seven conversational strategies, we compare one attacker with a swarm of four sharing a private channel, matching scenarios, strategies, and a 200,000-token budget that also covers swarm coordination. Swarms show no advantage: a single attacker matches or exceeds them on every victim, and the share of runs leaking any field differs between conditions by at most 14.3 percentage points, whereas changing the victim shifts it from 0% to 99.4%. On the two most vulnerable models, nearly every run leaks under both conditions, but single attackers expose more of the record at first disclosure (85.4% vs. 68.1% of protected fields on Nemotron 3.5 Lightning). Four of the five victims leaked despite the policy. GLM 5.2 retrieved protected data in 64.3% of individual-attack runs and leaked in 0.6%: retrieval does not imply disclosure, but in high-stakes settings even one leaked field can identify a patient or client. At equal budgets, a larger red team is not automatically a stronger one; the victim model matters far more.",
+  "abstract_ja": "",
+  "authors": [
+    "Asma Farajidizaji",
+    "Vyas Raina",
+    "Vatsal Raina",
+    "Ivaxi Sheth"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31791",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "LLM agents increasingly collaborate in group chats while holding tool access to confidential records, which makes the shared chat an attack surface. It remains unclear whether several colluding…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "SwarmLeak: Does Coordination Improve Privacy Attacks on LLM Agents?",
+  "url": "https://arxiv.org/abs/2611.31791",
+  "use_case": ""
+}

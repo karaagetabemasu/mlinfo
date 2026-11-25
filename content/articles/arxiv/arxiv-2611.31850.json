@@ -1,0 +1,33 @@
+{
+  "abstract": "Large-scale pretraining provides embodied models with general capabilities, but reliable task execution still requires post training. In multitask settings, supervised fine-tuning (SFT) faces distribution mismatch between training and deployment, whereas reinforcement learning (RL) is limited by sparse rewards and uneven learning progress across tasks. Multi-teacher on policy distillation (MOPD) consolidates expert capabilities through dense supervision on the model's own trajectories, but achieving performance beyond the teachers remains challenging. We propose a two-stage post training framework for flow-based embodied models, constructing distillation objectives from the velocity regression formulation of conditional flow matching. Stage 1 efficiently consolidates expert capabilities through MOPD. Stage 2 combines RL with teacher distillation that weights velocity errors according to the sampling noise, where distillation is restricted to failed trajectories to supplement sparse rewards with dense guidance without directly constraining successful behaviors. Experiments across multiple models and benchmarks show that the framework outperforms joint SFT and exceeds the corresponding teachers' aggregate success rates. Sample efficiency comparisons show higher success rates than direct RL with fewer environment interactions.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiaming Zhang",
+    "Yao Lyu",
+    "Haoning Wang",
+    "Yongjun Chen",
+    "Liping Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31850",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Large-scale pretraining provides embodied models with general capabilities, but reliable task execution still requires post training. In multitask settings, supervised fine-tuning (SFT) faces…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Two-Stage Post-Training for Flow-Based Embodied Foundation Models",
+  "url": "https://arxiv.org/abs/2611.31850",
+  "use_case": ""
+}

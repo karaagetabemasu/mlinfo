@@ -1,5 +1,5 @@
 {
-  "abstract": "Persistent object maps must incorporate new surfaces while retaining valid identities and correcting earlier associations. We present a map-revision module that separates historical identity changes from new-surface admission. Proposed merges are tested against shared and separate mask explanations across views; a merge is allowed only if its evidence margin remains positive after removing any one observed frame. New measured points are assigned through local identity competition, with a mask witness and a seed-frame stability check. On two preselected KITTI-360 windows, the fixed method increases mean building/car instance AP50:90 from 17.259 to 18.762 under a local evaluation protocol. Controlled output interventions attribute the gains to fragment consolidation, protection against harmful overwrites, and local assignment of new points. Four additional spatial holdouts increase mean AP from 20.263 to 23.171, although unconditional revision is slightly higher at 23.251. The extra seed-frame check yields no AP gain over nearest-seed assignment in either set. A 330-frame garage recording demonstrates offline integration with LiDAR--inertial--visual odometry. These results identify where observation-supported revision improves object maps and where conservative decisions still limit recovery.",
+  "abstract": "A new surface observation can extend an object map while contradicting an earlier object assignment. Treating both updates as a single merge can join unrelated objects; keeping all earlier assignments leaves fragmented objects unresolved. We present a revision module that makes these decisions separately. Historical merges require shared-mask evidence to outweigh separate-object explanations across views, including after removal of any one observation. New measured points are assigned through local competition among object seeds supported by image masks. On two preselected KITTI-360 windows, the method improves mean building/car instance AP50:90 from 17.259 to 18.762. On four further spatial holdouts, AP rises from 20.263 to 23.171, although unconditional revision reaches 23.251. Controlled comparisons attribute the gains to protecting existing identities, consolidating selected fragments, and assigning new points locally. The results also show where conservative merge decisions suppress useful updates. A garage recording demonstrates the same revision module on LiDAR--inertial--visual mapping outputs.",
   "abstract_ja": "",
   "authors": [
     "Haoxiang Jie",
@@ -16,7 +16,7 @@
   "publishedAt": "2026-11-23",
   "source": "arxiv",
   "subcategory": "rag",
-  "summary": "Persistent object maps must incorporate new surfaces while retaining valid identities and correcting earlier associations. We present a map-revision module that separates historical identity changes…",
+  "summary": "A new surface observation can extend an object map while contradicting an earlier object assignment. Treating both updates as a single merge can join unrelated objects; keeping all earlier…",
   "summary_ja": "",
   "tags": {
     "learning": [],

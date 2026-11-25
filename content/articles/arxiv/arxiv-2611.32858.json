@@ -1,0 +1,31 @@
+{
+  "abstract": "Discrete skill policies execute motions drawn from a finite vocabulary. In most current methods, this vocabulary is a latent codebook learned jointly with a selector and a decoder. When such a policy fails in closed loop, the failure cannot be traced to the vocabulary, to the choice of skill or to its execution. We present Movement Prototype Quantization (MPQ), which places a library of demonstrated motions after a trained policy instead of inside it. MPQ replaces each predicted action chunk with its nearest library element, corrects that element toward the prediction within a bound, and trains no parameters. Across six architectures, including a 7B vision-language-action model, the wrapped policy is statistically equivalent to the original. A reference policy executed through the library is therefore a baseline for any selector over the same library. Substituting a selector's components one at a time attributes its shortfall to them. On LIBERO-90, with selectors on three backbones, quantization costs nothing and the choice of skill costs at most 2 points under the reference's placement and correction. The selectors' own placement and correction account for nearly all of the remaining gap, up to 12 points. Offline reconstruction predicts none of these differences and misjudges library size, design and transfer across benchmark suites. Project page: https://intuitive-robots.github.io/mpq.",
+  "abstract_ja": "",
+  "authors": [
+    "Maximilian Xiling Li",
+    "Nils Blank",
+    "Paul Mattes",
+    "Pankhuri Vanjani",
+    "Rudolf Lioutikov"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32858",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Discrete skill policies execute motions drawn from a finite vocabulary. In most current methods, this vocabulary is a latent codebook learned jointly with a selector and a decoder.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "What Does a Skill Vocabulary Cost? A Closed-Loop Decomposition over Demonstrated Motions",
+  "url": "https://arxiv.org/abs/2611.32858",
+  "use_case": ""
+}

@@ -1,0 +1,32 @@
+{
+  "abstract": "Human-facing text understanding systems are used to infer affect, moderate harmful content, and support socially sensitive decisions. However, Transformer predictions are difficult to audit because they are produced from high-dimensional hidden states that do not provide a compact, inspectable interface for human analysis or intervention. We introduce Gated Concept Adapters (GCA), a layer-wise concept bottleneck framework that attaches gated, low-dimensional concept-producing readout adapters to selected outputs of pretrained Transformers. Token representations are mapped into concept activations, filtered by learned gates, pooled into layer-level summaries, and exposed to the prediction head as a concept-mediated interface. The dimensions can be inspected through usage statistics, signature n-grams, post-hoc concept names, and targeted concept interventions. We evaluate GCA on fine-grained emotion classification, toxicity detection, topic classification, and a controlled verb-cloze stress test. In the affective and safety-relevant classification settings, GCA learns comparatively low-redundancy and intervention-sensitive concept representations while retaining useful predictive performance. On toxicity detection, it remains close to an unconstrained ModernBERT baseline while enabling concept-level inspection, targeted intervention, and lightweight post-hoc control. On GoEmotions, the end-to-end concept model incurs a macro-F1 cost relative to unconstrained RoBERTa, while a task-initialized frozen variant substantially reduces this gap. On AG News, GCA remains competitive with recent concept-based baselines, and the Qwen verb-cloze experiment clarifies the limits of concept-mediated full-vocabulary prediction. Overall, GCA provides a neural concept interface for auditable text understanding, prioritizing transparency, diagnosis, and intervention over unconstrained accuracy maximization.",
+  "abstract_ja": "",
+  "authors": [
+    "Niloofar Ranjbar",
+    "Saeedeh Momtazi",
+    "Mohammad Mehdi Homayounpoor"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32600",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Human-facing text understanding systems are used to infer affect, moderate harmful content, and support socially sensitive decisions. However, Transformer predictions are difficult to audit because…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "Gated Concept Adapters: Layer-Wise Concept Bottlenecks for Auditable Text Understanding",
+  "url": "https://arxiv.org/abs/2611.32600",
+  "use_case": ""
+}

@@ -1,0 +1,30 @@
+{
+  "abstract": "Retrieving images of patients clinically similar to a given patient can support diagnosis, teaching and research. Training and evaluating retrieval systems requires knowing which images of different patients show the same finding, and existing datasets are small or narrow in scope. We construct PMC-PaIR, a dataset of 86,144 pairs of clinically similar images from 56,013 open-access PubMed Central case reports, which often document rare or challenging presentations. We develop an approach that follows citations, which often link case reports of similar patients. To determine what two linked cases share clinically, it prompts large language models to generate and answer hierarchical questions, from modality to diagnosis and findings, and to match images by caption using the answers. Experts find the pairs highly accurate, and this question-guided approach finds twice as many correct pairs as direct matching. Fine-tuning BiomedCLIP on PMC-PaIR improves retrieval in all modality, anatomy and diagnosis categories tested, for image-only queries and image queries with a short text naming the finding. We release the dataset and the automated pipeline, which can extend PMC-PaIR as new case reports are published.",
+  "abstract_ja": "",
+  "authors": [
+    "Guy Shmueli",
+    "Keno K. Bressem",
+    "Tom Hope"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31465",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Retrieving images of patients clinically similar to a given patient can support diagnosis, teaching and research. Training and evaluating retrieval systems requires knowing which images of different…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": []
+  },
+  "title": "A dataset of clinically similar image pairs from citation-linked case reports for medical image retrieval",
+  "url": "https://arxiv.org/abs/2611.31465",
+  "use_case": ""
+}

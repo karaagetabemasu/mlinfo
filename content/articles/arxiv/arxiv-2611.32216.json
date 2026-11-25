@@ -1,0 +1,35 @@
+{
+  "abstract": "Autonomous driving requires semantic understanding and fine-grained scene perception for precise action prediction. Vision-language-action models (VLAs) inherit semantic priors, but low-dimensional action labels provide limited structural supervision. Some studies extend VLAs with visual generation tasks or adopt video-based world-action models (WAMs), but both approaches introduce appearance-reconstruction overhead, which is less relevant to planning. Native multimodal models offer an alternative to unify understanding and generation within one backbone. On this basis, we propose NativeDrive, a native encoder-free multimodal driving framework adapting the unified backbone for policy learning and introduce a dense supervision task tailored to driving. The Native Action Interface reuses the understanding expert's token-prediction interface for the discrete policy and adapts the generation expert for continuous policy. Driving Semantic Editing reuses the generation expert's editing capability for dense scene-structure supervision during training, while inference runs only the selected planning policy. NativeDrive achieves competitive planning performance among unified understanding-and-generation models on NAVSIM v1 and v2, with ablations validating its components' effectiveness. Code will be released.",
+  "abstract_ja": "",
+  "authors": [
+    "Zehua Fan",
+    "Qi Jiang",
+    "Wei Li",
+    "Kai Tang",
+    "Yue Jiang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32216",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "multimodal",
+  "summary": "Autonomous driving requires semantic understanding and fine-grained scene perception for precise action prediction. Vision-language-action models (VLAs) inherit semantic priors, but low-dimensional…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "NativeDrive: Native Multimodal Foundations for Autonomous Driving",
+  "url": "https://arxiv.org/abs/2611.32216",
+  "use_case": ""
+}

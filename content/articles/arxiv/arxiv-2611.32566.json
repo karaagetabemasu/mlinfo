@@ -1,0 +1,33 @@
+{
+  "abstract": "Changes in image viewpoint and question formulation can alter latent knowledge representations in multimodal large language models (MLLMs). However, output correctness and overall representational drift provide limited insight into how these changes affect model decisions. We therefore evaluate latent knowledge stability across visual and linguistic elicitation conditions from two complementary perspectives: answer preference and internal support. Specifically, we devise the margin retention score (MRS), which measures the first-order projected degradation of the initial answer's logit margin over competing options across conditions and assesses how changes in latent knowledge representations affect this margin. We also present latent knowledge support-structure stability (KSS), which evaluates reference-correct items by comparing internal support profiles constructed using the margin gradient under the reference condition, which jointly reflects changes in how internal support is distributed and changes in total support magnitude. We further construct MMStableBench, comprising 19,452 knowledge items (facts), each probing the same latent knowledge across varied image viewpoints, semantically equivalent question formulations, and answer-option permutations. Experiments across 15 MLLMs show that MRS and KSS reveal latent knowledge instability not captured by accuracy, while an MRS-inspired regularizer further improves the generalization of edited latent knowledge.",
+  "abstract_ja": "",
+  "authors": [
+    "Chuancheng Shi",
+    "Shangze Li",
+    "Wenhua Wu",
+    "Zifeng Cheng",
+    "Pengyang Shao"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32566",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Changes in image viewpoint and question formulation can alter latent knowledge representations in multimodal large language models (MLLMs). However, output correctness and overall representational…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Evaluating Latent Knowledge Stability in Multimodal Large Language Models",
+  "url": "https://arxiv.org/abs/2611.32566",
+  "use_case": ""
+}

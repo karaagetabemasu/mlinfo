@@ -1,0 +1,27 @@
+{
+  "abstract": "Knowledge-tracing benchmarks often compare models that have different access to a learner's previous responses. We examine how data provenance, history length, and representation affect those comparisons. First, we compare a pinned ASSISTments 2009 sequence mirror against the corrected official release. Of 4,148 learners represented in both, 817 have different ordered skill-response sequences; the mirror also contains fewer labeled events. Second, we retain earlier learner-disjoint model evaluations on the 2009 and 2015 datasets, distinguishing exploratory results from a corrective 2015 replication. Finally, we evaluate a new, nonoverlapping sample of 4,000 ASSISTments 2015 learners using three models constrained to the same one-event or 20-event prior-response window. On 20,592 test responses from 582 learners, the 20-event Brier scores were 0.17667 for count-based logistic regression, 0.17389 for an order-aware logistic model, and 0.17514 for a GRU. The GRU-minus-order-aware difference was 0.00125 (95% learner-cluster bootstrap interval [0.00008, 0.00243]); at one prior event, the corresponding difference was 0.00212 [0.00120, 0.00301]. Earlier comparisons had favored the GRU against simpler history summaries. The newer analysis instead favors a logistic comparator that represents order using the same permitted event stream. These results concern predictive performance on particular historical cohorts and model settings. They neither isolate an architectural effect nor establish generalization to contemporary classrooms.",
+  "abstract_ja": "",
+  "authors": [
+    "Devis Wawan Saputra"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32489",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "Knowledge-tracing benchmarks often compare models that have different access to a learner's previous responses. We examine how data provenance, history length, and representation affect those…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "When Knowledge-Tracing Rankings Depend on Available History: A Source-Correction and Matched-Information Audit on ASSISTments 2009 and 2015",
+  "url": "https://arxiv.org/abs/2611.32489",
+  "use_case": ""
+}

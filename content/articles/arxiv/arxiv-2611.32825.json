@@ -1,0 +1,36 @@
+{
+  "abstract": "Brain encoding models predict neural responses from audiovisual input, but typically overlook how ongoing brain activity shapes an individual's response. We introduce EEG-World, a recurrent world model that forecasts 10 seconds of EEG band-power dynamics from 6 seconds of preceding EEG and the subsequent audiovisual stimulus. Pretrained on continuous EEG, EEG-World learns shared neural dynamics and adapts to unseen individuals through lightweight subject-specific readouts. Using 2,584 hours of EEG from 78 participants, we show that nonlinear recurrent forecasting surpasses strong history-aware linear baselines at scale. EEG-World achieves a forecasting correlation of 0.261 versus 0.233 for the strongest history-and-video linear model, with a 3.3-second forecasting-horizon advantage. Its learned dynamics transfer to unseen participants, outperforming the linear baseline in 23 of 24 individuals after calibration. While ongoing EEG history accounts for most predictive performance, controlled stimulus analyses reveal an additional video-dependent component. This component also enables evaluation of visual representations, with V-JEPA 2 improving clip-locked prediction by 35% over combined CLIP and DINOv2 features. Our results demonstrate the value of transferable neural dynamics for individual EEG forecasting and highlight the importance of separating state-driven from stimulus-driven predictability.",
+  "abstract_ja": "",
+  "authors": [
+    "Junxiang Zhang",
+    "Jiayu Zuo",
+    "Wenhao Ye",
+    "Junfeng Xia",
+    "Xiang Chen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32825",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Brain encoding models predict neural responses from audiovisual input, but typically overlook how ongoing brain activity shapes an individual's response. We introduce EEG-World, a recurrent world…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "audio",
+      "video"
+    ],
+    "task": [
+      "forecasting"
+    ]
+  },
+  "title": "EEG-World: Context-Conditioned Dynamics of the Watching Brain",
+  "url": "https://arxiv.org/abs/2611.32825",
+  "use_case": ""
+}

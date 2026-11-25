@@ -1,0 +1,29 @@
+{
+  "abstract": "Canonical reward models specify the optimization target for AI policies, so understanding the values they encode is important for ensuring AI alignment. Existing interpretability techniques interpret reward models with a single reward head, which cannot distinguish between the values that a population shares and those that vary among individuals. We introduce Reward Basis Decomposition (RBD), which splits per-user weights into a population term and a per-user term. This yields a shared population direction and individual user directions that are analyzed separately via concept alignment and sparse autoencoder decomposition. We verify that RBD can recover artificially planted per-user directions on a synthetic control, then apply it to two real-world multi-preference datasets, PRISM and Community Alignment. In both, we find no individual-user structure, suggesting that a single direction in the reward embedding space accounts for most preferences. We verify that RBD can recover artificially planted per-user directions on a synthetic control, then apply it to two real-world multi-preference datasets, PRISM and Community Alignment. In both, we find no reliable predictive benefit from the fitted per-user terms beyond the shared population direction under our setup. Code and the synthetic dataset are available at https://github.com/RachelFreedman/RBD.",
+  "abstract_ja": "",
+  "authors": [
+    "Mohamed I. Eldagla",
+    "Ifesi Onubogu",
+    "Prerana Rane",
+    "Harsh Sharma",
+    "Rachel Freedman"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/RachelFreedman/RBD",
+  "hasCode": true,
+  "id": "arxiv-2611.31640",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Canonical reward models specify the optimization target for AI policies, so understanding the values they encode is important for ensuring AI alignment. Existing interpretability techniques interpret…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Reward Basis Decomposition for Interpreting Preference Heterogeneity",
+  "url": "https://arxiv.org/abs/2611.31640",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Comparing language-model checkpoints requires estimating performance differences, yet evaluation pipelines can pay to score responses whose contributions cancel from those differences. We introduce Contrast-Aware Feedback Acquisition (CAFA), a sampler-agnostic method that identifies which scores a requested linear report needs before acquiring feedback. CAFA groups identical scoring inputs and aggregates their report coefficients, removing queries beyond ordinary caching while preserving the fully scored result. For a fixed response bank and an otherwise unrestricted scalar scorer, we characterize necessary and sufficient query sets for exact recovery of sample means, either alone or jointly with ordinary sample covariances. On controlled updates, CAFA removes 55.8% and 90.1% of the scoring inputs remaining after caching for Qwen2.5-1.5B-Instruct and SmolLM2-1.7B-Instruct, respectively, averaged over four generation repetitions. Across three online group relative policy optimization (GRPO) trajectories, Independent Star sampling with CAFA achieves 46.1-51.3% lower recorded generation-plus-feedback cost than independent autoregressive sampling with caching at a common empirical precision threshold (RMS MCSE $\\leq 0.04$). This is a post hoc comparison of completed runs on a fixed budget grid. All 504 evaluated report cells reproduce the fully scored means and covariances to numerical precision. We provide a modular implementation supporting existing response banks, versioned caches and external scorers.",
+  "abstract_ja": "",
+  "authors": [
+    "Hui Zhang",
+    "Haoda Yue",
+    "Bicheng Deng",
+    "Yuanchao Zhu",
+    "Jun He"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31931",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Comparing language-model checkpoints requires estimating performance differences, yet evaluation pipelines can pay to score responses whose contributions cancel from those differences. We introduce…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Scoring What Matters: Exact Feedback Reduction for Language Model Comparison",
+  "url": "https://arxiv.org/abs/2611.31931",
+  "use_case": ""
+}

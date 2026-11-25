@@ -1,0 +1,32 @@
+{
+  "abstract": "Underwater degradation changes image appearance and can compromise the semantic cues used to guide enhancement. Identifying scene content alone does not explicitly specify the appearance to recover or the input-dependent changes associated with that target. We propose target-discrepancy knowledge distillation (TDD) for underwater image enhancement, which organizes guidance around these two aspects of the same restoration problem. For each degraded-reference training pair, reference features from an underwater vision-language teacher provide target-appearance supervision, while paired feature residuals describe the observation's discrepancy relative to the same target. Both representations are jointly distilled into a lightweight guidance network that predicts them from the degraded image alone; neither the teacher nor reference images are required at inference. To align their use with their supervisory roles, we introduce progressive knowledge fusion within a multi-scale enhancement network. The estimated discrepancy first conditions spatial feature updates, after which target-appearance guidance refines the updated features and channel interactions consolidate their responses. This correction-before-refinement design lets target-guided refinement build on discrepancy-conditioned features. Experiments on six underwater benchmarks demonstrate competitive performance across full-reference and no-reference metrics. Ablations and feature visualizations analyze the contributions of the knowledge source, joint distillation, and progressive fusion.",
+  "abstract_ja": "",
+  "authors": [
+    "Zefan Feng",
+    "Zhaocheng Yu",
+    "Laibin Chang",
+    "Kui Jiang",
+    "Junjun Jiang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32467",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Underwater degradation changes image appearance and can compromise the semantic cues used to guide enhancement. Identifying scene content alone does not explicitly specify the appearance to recover…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "TDD: Target-Discrepancy Distillation for Underwater Image Enhancement",
+  "url": "https://arxiv.org/abs/2611.32467",
+  "use_case": ""
+}

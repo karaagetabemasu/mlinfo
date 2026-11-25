@@ -1,0 +1,33 @@
+{
+  "abstract": "Self-evolving language models can continuously acquire useful experience through test-time interaction, reflection, and prompt optimization, yet turning such experience into model itself to ensure self improvement remains challenging. On-policy self-distillation (OPSD) provides a natural mechanism for internalizing test-time information into model parameters, yet it largely assumes that the gener- ated experience is worth learning. We show that this assumption does not always hold: experiences that improve test-time performance may provide limited or even harmful training signals. To better characterize which experience should be inter- nalized, we systematically analyze diverse mutated experiences across multiple tasks and reflection models, and find that gradient-based alignment is a more reli- able indicator of downstream distillation gains than immediate test-time improve- ment. Based on this finding, we propose E2L, a self-evolution framework that iteratively generates, evaluates, and distills experiences according to their esti- mated training utility. E2L closes the loop between experience generation and parameter learning, enabling agents to autonomously produce experience suitable for self-improvement.",
+  "abstract_ja": "",
+  "authors": [
+    "Haoyuan Li",
+    "Gangyi Zhang",
+    "Dong Wang",
+    "Yang Liu",
+    "Daoxuan Liu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32390",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Self-evolving language models can continuously acquire useful experience through test-time interaction, reflection, and prompt optimization, yet turning such experience into model itself to ensure…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Evolve to Learn: Gradient-aligned experience evolution for model self-improvement",
+  "url": "https://arxiv.org/abs/2611.32390",
+  "use_case": ""
+}

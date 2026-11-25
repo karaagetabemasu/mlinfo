@@ -1,0 +1,28 @@
+{
+  "abstract": "Model-generated labels offer a scalable route to training lightweight vision models, but what makes a model a good teacher, and can we tell before training a student? We study this in gaze target estimation, where interactive robots need models that are both accurate and efficient. In a controlled comparison of eleven supervision conditions, we vary only the source of gaze-point labels, keeping the student, training protocol and 361k training samples fixed, across three video datasets, two student sizes and three seeds; every student is evaluated against human annotation. Three findings emerge. First, imperfect model-generated labels can replace human annotation: Gaze-LLE, never trained on the target datasets' gaze annotation, trains students that match annotation-trained ones on ViT-Tiny and are significantly more accurate on ViT-Small (average distance error 0.187 vs 0.196), and the ViT-Tiny student runs 32$\\times$ faster than its teacher on a laptop CPU. Second, apparent competence can conceal unreliable supervision: given another person's face centre in the prompt, InternVL3 and Qwen3-VL return it on 93.4% and 81.1% of test samples, and a copy-the-coordinate baseline matches InternVL3's labels and students. Without that coordinate, both models fall far behind the specialist. Third, good teachers can be identified before training: validation label error ranks student test error (Spearman's $ρ= 0.91$), and ten annotated clips single out the two specialist teachers in 95% of draws. These findings give practical principles for assessing supervision, exposing shortcuts and selecting teachers for lightweight models.",
+  "abstract_ja": "",
+  "authors": [
+    "Scott J. Lewis",
+    "Di Fu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33014",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Model-generated labels offer a scalable route to training lightweight vision models, but what makes a model a good teacher, and can we tell before training a student? We study this in gaze target…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": []
+  },
+  "title": "Training Lightweight Gaze Models without Target Gaze Annotation: What Makes a Good Teacher?",
+  "url": "https://arxiv.org/abs/2611.33014",
+  "use_case": ""
+}

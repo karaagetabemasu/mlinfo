@@ -1,0 +1,37 @@
+{
+  "abstract": "The field of semi-supervised learning (SSL) has seen substantial progress, driven by ongoing refinements within the pseudo-label SSL paradigm. The main difficulty lies in reducing the adverse impact of confirmation bias. The predominant approach is to apply a confidence threshold during training to discard low-confidence samples. Nevertheless, while this mitigates the bias, the discarded samples are mostly situated near class boundaries, and consequently, this strategy also loses valuable boundary information. To address this problem, we propose Boundary Refinement and Correction (BRC), an add-on for confidence-thresholded SSL that rescues useful discarded samples without changing how the base SSL method selects pseudo-labels. BRC keeps the original confidence-based selection rule and operates only on the rejected set. It first identifies discarded samples that may still be useful for training, then replaces their original pseudo-labels with corrected soft pseudo-labels and returns them to the unsupervised loss. Extensive experiments on CIFAR-100, STL-10, and TissueMNIST demonstrate the flexibility and broad applicability of BRC across diverse datasets and base SSL methods, reducing error rates by up to 4.97 percentage points. On boundary-near samples, BRC further improves Top-1 accuracy by 12.80 percentage points, directly supporting its ability to refine the model's decision boundary. An exploratory extension to semantic segmentation also yields consistent gains of 1.03-2.39 mIoU, indicating that BRC generalizes beyond image classification.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuzhao Jiang",
+    "Meng Zhang",
+    "Jie Ma",
+    "Xiaohong Guan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32532",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "The field of semi-supervised learning (SSL) has seen substantial progress, driven by ongoing refinements within the pseudo-label SSL paradigm. The main difficulty lies in reducing the adverse impact…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "supervised",
+      "unsupervised",
+      "semi-supervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "segmentation"
+    ]
+  },
+  "title": "Rescuing Discarded Boundary Samples in Semi-Supervised Learning",
+  "url": "https://arxiv.org/abs/2611.32532",
+  "use_case": ""
+}

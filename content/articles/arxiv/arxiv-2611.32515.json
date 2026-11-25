@@ -1,0 +1,31 @@
+{
+  "abstract": "Specialists post-trained from a shared checkpoint acquire complementary capabilities, and multi-teacher on-policy distillation (MOPD) can consolidate them into a single model. However, we find that existing consolidation methods, from weight merging to MOPD, fall short when specialists diverge substantially from the shared checkpoint, whereas prior studies mostly examine specialists that remain close to it. We present a unified recipe for multimodal MOPD that consolidates such specialists back into the single student they branched from. The recipe specifies initialization, data selection, balanced supervision across teachers, and preservation of existing capabilities for consolidation, together with a targeted refinement stage for capabilities that still lag behind their specialists. In an industrial setting with six specialists, the student closely approaches each specialist in its own domain and surpasses the perception specialist. It recovers 97.0% of their average gain, compared with 79.8% for IM-MOPD. In the fully open five-domain setting with Qwen3-4B, our method recovers 95.7% of the specialists' average gain after consolidation and 97.5% after refinement, compared with 94.1% for IM-MOPD. We further analyze the full pipeline through mechanism ablations and training dynamics, providing practical guidance for diagnosing incomplete consolidation. Code will be released.",
+  "abstract_ja": "",
+  "authors": [
+    "Zihan Liang",
+    "Zikun Qu",
+    "Ben Chen",
+    "Fan Yang",
+    "Wenwu Ou"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32515",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Specialists post-trained from a shared checkpoint acquire complementary capabilities, and multi-teacher on-policy distillation (MOPD) can consolidate them into a single model. However, we find that…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Branch and Consolidate: A Unified Recipe for Multi-Teacher On-Policy Distillation",
+  "url": "https://arxiv.org/abs/2611.32515",
+  "use_case": ""
+}

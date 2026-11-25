@@ -1,0 +1,33 @@
+{
+  "abstract": "AI-generated music has become common on music streaming platforms, and listeners often cannot distinguish it from music made by humans. AI-music detection is therefore needed, but detectors trained on a fixed set of generators often fail on unseen generators. As new generators emerge frequently, updating a universal detector, a single model for all generators, typically requires substantial training data and computation, while risking performance degradation on previously learned generators. We therefore introduce IncrementDET, a detector that learns each new generator by a process called enrollment. For each generator, IncrementDET trains one linear classifier, which we call a needle, to separate samples of that generator from a fixed set of human reference tracks. Enrolling a new generator adds one needle while the previously constructed needles remain unchanged. A Sidak correction keeps the overall false-positive rate at its target as needles are added. To compare detectors under these conditions, we define the task of continual AI-generated music detection and introduce a benchmark in which generators arrive one at a time. The benchmark measures the accuracy of a detector before and after each update and the cost of each update. For this benchmark, we also construct EvoMusicFake-17K, a dataset of instrumental music from six recent generators and four human music platforms. Compared with SpecTTTra, a state-of-the-art universal detector, IncrementDET learns a new generator more accurately from only a few samples, generalizes better to unseen generators and better preserves detection performance on previously learned generators, at a substantially lower update cost. The structure of IncrementDET can also be applied to the detection of generated images and video, where new generators are released just as frequently.",
+  "abstract_ja": "",
+  "authors": [
+    "Runbao Du",
+    "Wei Li",
+    "Qile He"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32023",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "AI-generated music has become common on music streaming platforms, and listeners often cannot distinguish it from music made by humans. AI-music detection is therefore needed, but detectors trained…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video"
+    ],
+    "task": [
+      "classification",
+      "detection"
+    ]
+  },
+  "title": "IncrementDET: Continual AI-Generated Music Detection via Enrollment",
+  "url": "https://arxiv.org/abs/2611.32023",
+  "use_case": ""
+}

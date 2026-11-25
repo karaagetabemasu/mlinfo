@@ -1,0 +1,29 @@
+{
+  "abstract": "We were surprised to find that leading end-to-end driving models across major paradigms, despite scoring close to human drivers on NAVSIM, cannot reliably make a simple 90-degree turn in photorealistic closed-loop simulators. To investigate why, we build LaWanle, a benchmark of turns drawn from three such simulators. Driving each turn from several starts, we find that the same model passes it from one start and fails it from another, and that the two drives look alike until they enter the junction. Rotating the car by a few degrees at the junction entry can fail a turn it otherwise passes. Conversely, a slight heading correction to the plans can rescue about half of the failed turns we tested. Such errors arise when a model drives by itself, so we post-train an open-source lane-keeping model with closed-loop DAgger on its lateral path. Training 5% of its parameters is enough to raise its turn pass rate from 19% to 76%. The gain transfers to the two other benchmarks, where the policy also scores among the leading models. Further fine-tuning on recovery data repairs the deviations it is trained on but, against a control trained equally long, improves turns on none of the three benchmarks, and every variant stays far below a human driver.",
+  "abstract_ja": "",
+  "authors": [
+    "Chengzhi Gao",
+    "Junzhe Gao",
+    "Yongzhi Liu",
+    "Weichao Zhuang",
+    "Weilong Hu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32650",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "We were surprised to find that leading end-to-end driving models across major paradigms, despite scoring close to human drivers on NAVSIM, cannot reliably make a simple 90-degree turn in…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "LaWanle: Why Can't Leading Driving Models Make a Simple Turn?",
+  "url": "https://arxiv.org/abs/2611.32650",
+  "use_case": ""
+}

@@ -1,0 +1,34 @@
+{
+  "abstract": "A generalist manipulation policy should perform new tasks, operate in unfamiliar scenes, and transfer skills across robot embodiments. We present Wrist Video Policy (WVP), a closed-loop manipulation framework that learns how manipulation unfolds through video prediction and recovers executable motion through geometric estimation. Our key idea is to represent robot motion through wrist-camera trajectories, which determine the corresponding end-effector poses through a fixed hand-eye transformation. We pair a video generator that predicts future wrist views with a pose estimator adapted from a pretrained 3D model to recover the corresponding camera trajectories. Model stitching maps the generator's predicted latents directly into the estimator's intermediate feature space, bypassing RGB decoding. This decomposition allows task knowledge to expand through broad human and robot video data while reusing geometric motion estimation across tasks and embodiments. The resulting pose estimator transfers across Franka Panda, PiPER-X, and Galaxea R1 Pro without further fine-tuning. Across tabletop and laundry-room settings, WVP generalizes to tasks ranging from precise grasping and inserting to handling deformable objects, achieving a success rate of over 50% in zero-shot out-of-distribution evaluations. Our project page is at https://wrist-video-policy.github.io.",
+  "abstract_ja": "",
+  "authors": [
+    "Jingyuan Liu",
+    "Yongwei Chen",
+    "Yishan Yang",
+    "Zexin He",
+    "Xingang Pan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31079",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "A generalist manipulation policy should perform new tasks, operate in unfamiliar scenes, and transfer skills across robot embodiments. We present Wrist Video Policy (WVP), a closed-loop manipulation…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video",
+      "3d"
+    ],
+    "task": [
+      "anomaly-detection"
+    ]
+  },
+  "title": "Wrist-Camera Video Diffusion as Generalizable Robot Policies",
+  "url": "https://arxiv.org/abs/2611.31079",
+  "use_case": ""
+}

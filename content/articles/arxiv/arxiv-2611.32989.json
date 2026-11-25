@@ -1,0 +1,29 @@
+{
+  "abstract": "Attention costs $\\mathcal{O}(N^2)$ in the number of tokens. Vector-quantized attention reduces this to $\\mathcal{O}(NM)$ by clustering the $N$ keys, attending to the $M$ codewords instead, and its adaptive form, AVQ-attention, concentrates codebook resolution where a query's attention mass actually falls. We present AVQ-Attention-2, a better design that merges it with exact local attention and attends to the mean of each cluster's keys rather than to a codeword. We show three improvements: consistently better quality at comparable cost; training that now also costs $\\mathcal{O}(NM)$ rather than $\\mathcal{O}(N^2)$; and an approximation accurate enough that the layer can be dropped into a pretrained transformer without fine-tuning. Across a variety of sequence lengths the result is competitive not merely with other approximate attention but with exact dense attention, running faster than FlashAttention at little to no loss in quality.",
+  "abstract_ja": "",
+  "authors": [
+    "Winfried van den Dool",
+    "Patrick Forré",
+    "Amir Habibian",
+    "Yuki M. Asano",
+    "Max Welling"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32989",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Attention costs $\\mathcal{O}(N^2)$ in the number of tokens. Vector-quantized attention reduces this to $\\mathcal{O}(NM)$ by clustering the $N$ keys, attending to the $M$ codewords instead, and its…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "AVQ-Attention-2: Adaptive Vector-Quantized Attention with Exact Local Blocks and Linear-Cost Training",
+  "url": "https://arxiv.org/abs/2611.32989",
+  "use_case": ""
+}

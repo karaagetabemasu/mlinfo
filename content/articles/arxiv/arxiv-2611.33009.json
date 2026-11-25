@@ -1,0 +1,32 @@
+{
+  "abstract": "Visual token compaction reduces inference cost by passing only selected image patches or video tokens to later layers. In sequence models with local convolutions, each removal changes which tokens are neighbors. Learning which tokens to keep therefore requires a training signal that accounts for the new neighborhoods. We introduce ProbConv, which computes the exact expected convolution before activation at a kept position under independent keep decisions. The operator is differentiable in the keep probabilities. With binary decisions, ProbConv and step gating reproduce the compacted Mamba block. Across image, vision--language and video backbones, ProbConv is strongest under strong compaction: its advantage over matched training controls grows as more tokens are removed. In Cobra, it also outperforms adaptations of published vision--language pruning methods at matched inference budgets. ProbConv also improves over matched zero-mask training in video frame selection and speech frame dropping. Our code is available at: https://github.com/gmum/probconv",
+  "abstract_ja": "",
+  "authors": [
+    "Piotr Kubaty",
+    "Mikhail Saladkou",
+    "Jacek Tabor",
+    "Łukasz Struski"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/gmum/probconv",
+  "hasCode": true,
+  "id": "arxiv-2611.33009",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Visual token compaction reduces inference cost by passing only selected image patches or video tokens to later layers. In sequence models with local convolutions, each removal changes which tokens…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "audio",
+      "video"
+    ],
+    "task": []
+  },
+  "title": "Train What You Run: Probabilistic Convolutions for Learning Token Compaction in State Space Models",
+  "url": "https://arxiv.org/abs/2611.33009",
+  "use_case": ""
+}

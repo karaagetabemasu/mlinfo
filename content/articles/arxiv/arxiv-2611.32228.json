@@ -1,0 +1,32 @@
+{
+  "abstract": "Visual world models enable planning through predictive latent states. However, entangled agent and exogenous dynamics can obscure task progress. Disentangling visual dynamics for planning requires addressing two challenges: 1) suppressing cross-factor interference while retaining useful information; and 2) linking factors to task-relevant signals, since stability alone does not ensure meaningful planning distances. Therefore, we introduce FactorWorld, a disentangled visual dynamics framework for world model planning. To separate agent and exogenous dynamics, we propose a Counterfactual Consensus Residual Factorizer (CCRF) guided by bidirectional counterfactual pairs. CCRF separates shared context from dynamic residuals, combining average and worst-partner constraints to suppress interference with state and motion supervision to retain useful information. To translate these factors into planning decisions, we introduce semantic routing to refine full-representation task predictions for state estimation, trajectory scoring, and task-adapted planning. Experiments on MiniGrid, MetaDrive, and CARLA show improved bidirectional factor stability across two backbones. On MiniGrid, factor routing raises mean SR from 78.80% to 82.40%. Across four continuous control tasks, including Push-T, FactorWorld achieves mean success rates ranging from 91.67% to 100% across tasks. These results demonstrate that combining decoupled visual dynamics with explicit tasks can significantly improve the planning capabilities of world models.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuhong Shi",
+    "Yihan Guo",
+    "Jie Wei",
+    "Jianyi Liu",
+    "Jingwen Fu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32228",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Visual world models enable planning through predictive latent states. However, entangled agent and exogenous dynamics can obscure task progress.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Disentangling Visual Dynamics for World Model Planning",
+  "url": "https://arxiv.org/abs/2611.32228",
+  "use_case": ""
+}

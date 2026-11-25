@@ -1,0 +1,27 @@
+{
+  "abstract": "In cooperative multi-agent reinforcement learning, learned critics are usually evaluated by how well they predict the team's return. Yet predicting a team's return and assigning credit to individual actions are distinct tasks. To test credit directly, we introduce FLARE (Fireline Learning Agents in a Replayable Environment), a stochastic wildfire suppression benchmark in which any moment of a fire can be replayed with different actions under the same random events. Replaying one step measures the immediate effect of each agent's suppression, which we call simulator credit and use for training. Replaying to the end of the episode measures the effect of each action, which we use for grading critics. In a comparison over eight seeds with multi-agent proximal policy optimization (MAPPO), simulator credit reduces the interquartile mean burn score (each cell's burning time, capped and averaged over the map; lower is better) from 26.6% with shared reward to 20.9%. Learned credit from a centralized COMA-style critic does no better than the shared reward. Four trained critics predict the team's return well, yet the credit they assign is 9 to 42 times larger than the credit measured by replay. The critics also give heterogeneous agents nearly identical action rankings. These results show that a good fit to the team's return is a weak test of a critic's credit.",
+  "abstract_ja": "",
+  "authors": [
+    "Alireza Moghaddasi"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31499",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "In cooperative multi-agent reinforcement learning, learned critics are usually evaluated by how well they predict the team's return. Yet predicting a team's return and assigning credit to individual…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "Measuring Counterfactual Credit in a Replayable Wildfire-Suppression Benchmark",
+  "url": "https://arxiv.org/abs/2611.31499",
+  "use_case": ""
+}

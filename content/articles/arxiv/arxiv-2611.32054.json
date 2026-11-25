@@ -1,0 +1,37 @@
+{
+  "abstract": "Surgical scene understanding is constrained by data scarcity and long-tail class imbalance, as annotating surgical videos demands scarce clinical expertise while rare procedural events remain underrepresented. We tackle this through data generation and propose SurgGenesis, a generative surgical world model that learns future surgical state transitions in a latent space from visual observations and textual procedural descriptions, serving as a scalable surgical data engine. To adapt a large-scale video diffusion model to the data-scarce surgical domain without catastrophic forgetting, we introduce a three-stage progressive LoRA strategy that incrementally injects endoscopic visual priors, procedural semantics, and spatial motion cues. Rather than judging generation by visual fidelity alone, we validate SurgGenesis along two axes that separate a world model from a generic generator: (i) future-awareness, by comparing predicted futures against the real future through a GT-latent prediction gap and temporal-horizon analysis, and (ii) action-faithful usefulness, by checking that generated clips contain the commanded surgical triplet and that using them to rebalance long-tail events and drive downstream understanding (segmentation, triplet recognition, 3D reconstruction) yields action-specific gains. Conditioned futures therefore complement conventional long-tail sampling. Code: https://zh-qr.github.io/SurgGenesis",
+  "abstract_ja": "",
+  "authors": [
+    "Qirui Zhong",
+    "Quande Liu",
+    "Yang Chen",
+    "Cheng Xue"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32054",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Surgical scene understanding is constrained by data scarcity and long-tail class imbalance, as annotating surgical videos demands scarce clinical expertise while rare procedural events remain…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "3d"
+    ],
+    "task": [
+      "classification",
+      "generation",
+      "segmentation"
+    ]
+  },
+  "title": "SurgGenesis: A Generative Surgical World Model for Future-Aware Surgical Understanding",
+  "url": "https://arxiv.org/abs/2611.32054",
+  "use_case": ""
+}

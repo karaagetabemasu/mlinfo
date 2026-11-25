@@ -1,0 +1,29 @@
+{
+  "abstract": "Looped language models apply one shared transformer stack several times per token, and every loop can be read out through the shared language-model head. Post-training them with verifiable rewards is hard: the outcome reward carries one bit per response, spreading it over loops trains intermediate loops on tokens sampled from the last loop, and distillation needs either a teacher that ignores the reward or an external, larger model. We observe that a looped model already contains a teacher stronger than its last loop: the next-token distribution extrapolated from the first loop through the last. ELGO (Extrapolated-Loop Group-relative Optimization) adds to GRPO a dense per-token distillation term towards this distribution. The teacher is computed from an anchor copy of the model, which stays frozen and is replaced by the current model once the student's KL to the teacher falls below a threshold, so the teacher improves with the student without chasing its own extrapolation. The outcome reward splits probability between correct and incorrect responses, and the teacher decides which tokens are preferred inside a response. Between refreshes the objective is KL-regularised RL anchored at the teacher, whose optimum tilts the teacher by the reward. On Ouro-1.4B-Thinking, ELGO raises the average avg@8 over five math benchmarks from 62.32 with GRPO to 64.20 and is the best compared method on every benchmark, while spreading the reward over loops falls below the base model.",
+  "abstract_ja": "",
+  "authors": [
+    "Linghua Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31939",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Looped language models apply one shared transformer stack several times per token, and every loop can be read out through the shared language-model head. Post-training them with verifiable rewards is…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Beyond the Last Loop: Reinforcement Learning with a Teacher Extrapolated from the Model Itself",
+  "url": "https://arxiv.org/abs/2611.31939",
+  "use_case": ""
+}

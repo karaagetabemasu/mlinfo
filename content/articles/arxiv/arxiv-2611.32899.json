@@ -1,0 +1,30 @@
+{
+  "abstract": "A dataset whose diagnostic label can be recovered from non-diagnostic information yields high, reproducible and uninformative model performance. We applied pre-training controls that see only image geometry, global texture, a sub-collection identifier or one covariate to six public mammography datasets, against a stop threshold of AUC 0.60. In KAU-BCMD, geometry alone predicted the BI-RADS class at AUC 1.0000 in a local copy and at a mean of 0.979 in a public Kaggle archive; after resizing, texture alone gave 0.847. In CMMD, the sub-collection prefix predicted malignancy at 0.7753; the restricted sub-collection passed geometry (0.5000) and texture (0.5810) but failed an identifier-order control added post hoc (test AUC 0.9926). CBIS-DDSM exceeded the stop on geometry (pooled mean 0.654 over 20 splits), a verdict statistic chosen post hoc; its official mass and calcification splits did not. M-SYNTH, INbreast and a partial VinDr-Mammo copy passed the few controls run. We release the code and derived tables. There is no quantum component in the inference path.",
+  "abstract_ja": "",
+  "authors": [
+    "Achraf Toufah",
+    "Rana Saad",
+    "Moulay Youssef El Hafidi"
+  ],
+  "category": "mlops",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32899",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "deployment",
+  "summary": "A dataset whose diagnostic label can be recovered from non-diagnostic information yields high, reproducible and uninformative model performance. We applied pre-training controls that see only image…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Label leakage through file headers: geometry and batch confounds in public mammography datasets, and a pre-training acceptance gate",
+  "url": "https://arxiv.org/abs/2611.32899",
+  "use_case": ""
+}

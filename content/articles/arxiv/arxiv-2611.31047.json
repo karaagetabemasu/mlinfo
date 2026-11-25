@@ -1,0 +1,26 @@
+{
+  "abstract": "Modern massive datasets often contain useful low-dimensional nonlinear structures that are hidden by noise. Spectral embedding algorithms rely on meaningful local relationships between observations, but noise accumulated across many coordinates can make the observed distances unreliable. This also complicates clustering when groups have curved or concentric shapes and cannot be distinguished by their centers. In this paper, we develop a new method that denoises pairwise distances before using them to construct spectral embeddings and identify communities. Our approach uses cross-fitted projections to estimate distances between the underlying signals, selects a neighborhood radius from the observed sample, and builds a random geometric graph whose spectral coordinates represent the latent geometric structure. By connecting nearby points, such a geometric graph can distinguish different groups even when their centers coincide. A novel recursive procedure is then proposed to extract clusters from the graph using its spectral embeddings when such clusters exist. On the theoretical side, under a manifold model, we provide guarantees for our spectral embedding algorithm, which can be understood through the eigendecomposition of an integral operator associated with the underlying geometry. We show that the algorithm is robust to noise when the total noise energy is comparable to the total signal energy or, under additional conditions, exceeds it. To our knowledge, this is among the first spectral embedding algorithms that can handle such strong noise in datasets with nonlinear structures. In addition, our proposed clustering algorithm can recover the underlying clusters even when their centers coincide. Numerical studies demonstrate the superior performance of the proposed method in mitigating noise and revealing geometric structures for both spectral embedding and clustering.",
+  "abstract_ja": "",
+  "authors": [
+    "Hai-Xiao Wang",
+    "Xiucai Ding"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31047",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Modern massive datasets often contain useful low-dimensional nonlinear structures that are hidden by noise. Spectral embedding algorithms rely on meaningful local relationships between observations,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Revealing Geometry under Strong Noise: Spectral Embeddings and Clustering via Random Geometric Graphs",
+  "url": "https://arxiv.org/abs/2611.31047",
+  "use_case": ""
+}

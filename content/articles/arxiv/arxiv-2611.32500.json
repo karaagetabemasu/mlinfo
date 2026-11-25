@@ -1,0 +1,29 @@
+{
+  "abstract": "Analytical multi-view multi-object tracking (MV-MOT) systems rely on measurement covariance estimates to guide association, fusion, and state estimation. These covariance estimates are typically heuristic, requiring hand-tuning to the specific deployment scenario. We investigate how learned heteroscedastic measurement covariance affects calibration and robustness in analytical multi-camera tracking. To support this analysis, we introduce CalibTrack, a detector-side predictor that replaces uniform measurement covariance with per-detection covariance. We evaluate CalibTrack on the WildTrack and MultiviewX pedestrian tracking datasets with multiple analytical tracker cores, including an identity-informed GM-PHD, JIPDA, and pruned delta-GLMB filter. We additionally evaluate robustness by simulating adverse weather conditions with stable diffusion, Gaussian noise, camera browning, and camera dropout. CalibTrack improves average adverse tracking performance over confidence-scaled covariance, while producing better calibrated predictions, indicating the value of heteroscedastic covariance within analytical tracking. Comparisons with stronger heuristic covariance methods show that the benefits of learned covariance remain bounded by the quality of available observations and the downstream tracker choice. Together, these findings provide a principled exploration of learned covariance estimation and its potential for uncertainty-aware analytical tracking.",
+  "abstract_ja": "",
+  "authors": [
+    "Jack Roberts",
+    "Aditya Iyer",
+    "Nora Ayanian"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32500",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Analytical multi-view multi-object tracking (MV-MOT) systems rely on measurement covariance estimates to guide association, fusion, and state estimation. These covariance estimates are typically…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "CalibTrack: Exploring Learned Heteroscedastic Covariance for Robust Multi-Camera Pedestrian Tracking",
+  "url": "https://arxiv.org/abs/2611.32500",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "In law and medicine, a misstated rule can shape a decision before anyone has time to check it. Checking such claims in real time helps only if the checker keeps pace with conversation, keeps sensitive audio on the device, and stays silent rather than mislead. We present CLAIMGATE, an on- device assistant that listens to a conversation, detects checkable claims, retrieves the relevant official rule, and labels each claim as supported, contradicted or not covered, with a citation. CLAIMGATE is designed to fail towards silence: its 4-bit 7B- parameter language model may cite only retrieved rules, and the verdict is derived in code from the claim and rule the model quotes. We evaluate it on traffic stops and medical visits using real official rule text (5,742 Florida and Texas statute subsections; CDC, FDA and MedlinePlus guidance), real transcripts, live speech and author-written gold-labelled claims. On 141 held-out traffic-stop claims, CLAIMGATE reaches 80.1% accuracy and cuts serious errors (a true claim called false, or the reverse) from 20 to 5 compared with the same model without retrieval; deriving the verdict in code alone reduces them from 13 to 5 at no cost to accuracy. The claim gate passes 95.7% of held-out claims and rejects all 30 everyday sentences, and feedback arrives a median 1.86 s after a speech window closes on an 8 GB consumer GPU. On 148 allergy claims, with only the claim gate to rebuild, CLAIMGATE reaches 87.8% accuracy with 5 serious errors, against 20 without retrieval.",
+  "abstract_ja": "",
+  "authors": [
+    "Peter Forcha",
+    "Harshitha Kaje Kusumadhara",
+    "Audrey Moguem Souop",
+    "Shalom Iboh"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31569",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "In law and medicine, a misstated rule can shape a decision before anyone has time to check it. Checking such claims in real time helps only if the checker keeps pace with conversation, keeps…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "audio"
+    ],
+    "task": []
+  },
+  "title": "CLAIMGATE: Cautious On-Device Checking of Spoken Legal and Clinical Claims",
+  "url": "https://arxiv.org/abs/2611.31569",
+  "use_case": ""
+}

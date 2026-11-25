@@ -1,0 +1,31 @@
+{
+  "abstract": "Automatic visual story generation using diffusion-based models has become an increasingly important research direction in generative artificial intelligence. However, maintaining character identity consistency across consecutive frames remains an open challenge, as existing models often produce significant variations in facial traits, clothing, visual style, or anatomical proportions. This paper proposes a modular pipeline to improve character identity consistency in multi-frame visual story generation using Stable Diffusion XL alongside additional conditioning and automatic selection mechanisms. The proposed system integrates LoRA fine-tuning for character personalization, ControlNet for pose-based structural control, and IP-Adapter for visual identity transfer. Furthermore, a reranking mechanism based on Best-of-K candidate selection and persistent identity memory is introduced to automatically select the most visually consistent generated images. The work also includes integrating and extending the StoryDiffusion framework into a reproducible local workflow, along with improvements for generated frame selection. Performance evaluation uses automatic metrics such as CLIP image similarity, DINO similarity, and CLIP text-image alignment. Experimental evaluation was conducted on a custom benchmark of multiple characters and visual stories organized into difficulty levels (easy, medium, and difficult). Both progressive variants of the proposed pipeline and extended versions of StoryDiffusion were evaluated, including SDXL baseline, Best-of-K, Identity Memory, and the Full Pipeline. Results show that reranking, identity memory, and visual conditioning reduce identity drift across frames and improve the overall coherence and stability of generated visual stories.",
+  "abstract_ja": "",
+  "authors": [
+    "Maria-Emilia Grigore",
+    "Stelian Spînu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32383",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Automatic visual story generation using diffusion-based models has become an increasingly important research direction in generative artificial intelligence. However, maintaining character identity…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Improving Character Identity Consistency in Diffusion-Based Visual Story Generation through Identity Memory and Automatic Reranking",
+  "url": "https://arxiv.org/abs/2611.32383",
+  "use_case": ""
+}

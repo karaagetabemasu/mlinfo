@@ -1,0 +1,34 @@
+{
+  "abstract": "Both single-modal and multi-modal anomaly detection aim to identify deviations from normal patterns, providing a common foundation for unified detection. However, existing methods rely on modality-specific modeling and scoring, making it difficult to obtain comparable anomaly evidence with limited normal references. To that end, we propose UnifiedAD, which unifies single-modal and multi-modal anomaly detection through anomaly evidence calibration, requiring only one normal reference per target category and no gradient updates. Specifically, we first derive neuron-level discriminative priors from normal and anomalous samples in an independent auxiliary dataset and combine them with neuron response consistency under normality-preserving transformations of the target reference to select reliable neurons, termed anomaly neurons, and identify anomaly directions. Next, we construct a low-rank normal subspace for each layer and modality from the selected neurons' spatial responses to the reference and quantify query feature deviations from normal structure using projection residuals. Finally, we separately calibrate projection residuals and anomaly-direction responses using the response distributions obtained from the normal reference and its transformations, converting them into comparable anomaly evidence for aggregation across layers and modalities. Experiments on multiple anomaly detection benchmarks demonstrate that UnifiedAD achieves strong performance in both image-level anomaly detection and pixel-level anomaly localization.",
+  "abstract_ja": "",
+  "authors": [
+    "Shangze Li",
+    "Chuancheng Shi",
+    "Simiao Xie",
+    "Wenhua Wu",
+    "Xingyu Zhu"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32551",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Both single-modal and multi-modal anomaly detection aim to identify deviations from normal patterns, providing a common foundation for unified detection. However, existing methods rely on…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection",
+      "anomaly-detection"
+    ]
+  },
+  "title": "UnifiedAD: One-Shot Anomaly Detection across Modalities via Evidence Calibration",
+  "url": "https://arxiv.org/abs/2611.32551",
+  "use_case": ""
+}

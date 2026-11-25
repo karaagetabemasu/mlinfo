@@ -1,0 +1,34 @@
+{
+  "abstract": "Pedestrian forecasting from ego-view observations is challenging because occlusion, limited visibility, and tracking errors corrupt observed motion histories. Such errors are particularly consequential for autonomous robot navigation. Existing paradigms typically either impute noisy history positions before forecasting or jointly train an auxiliary history reconstruction branch. However, predictors trained on clean histories may be sensitive to residual errors in recovered histories at deployment. Meanwhile, auxiliary reconstruction still computes inter-agent interactions over raw, corrupted coordinates. We investigate conditioning future prediction on both recovered historical states and raw observation evidence, with progressive training to accommodate imperfect recovery. Building on this insight, we propose ObsBridge, a flow-based trajectory forecasting framework with observation-grounded historical bridging. Specifically, ObsBridge first employs a frozen estimator to recover historical motion from agent-relative and ego-relative positions, image-plane locations, and visibility states. During training, we introduce an agent-wise curriculum that gradually replaces clean teacher histories with complete estimated histories before context encoding. This progressively exposes the predictor to estimated histories during training. Furthermore, we design a residual geometry adapter to fuse the encoded motion with original observation evidence. We aggregate the resulting representations through social attention to condition the flow-based trajectory generator. Extensive experiments across multiple benchmarks demonstrate that ObsBridge outperforms state-of-the-art methods. On EgoTraj-TBD, it reduces minADE@20 by 6.5\\% and minFDE@20 by 8.7\\%. The code will be provided at https://github.com/shawnliang420/ObsBridge.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhenhao Wang",
+    "Shaofeng Liang",
+    "Jiemin Wu",
+    "Sijia Chen",
+    "Keni Shi"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "https://github.com/shawnliang420/ObsBridge",
+  "hasCode": true,
+  "id": "arxiv-2611.32447",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "timeseries",
+  "summary": "Pedestrian forecasting from ego-view observations is challenging because occlusion, limited visibility, and tracking errors corrupt observed motion histories. Such errors are particularly…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "forecasting"
+    ]
+  },
+  "title": "ObsBridge: Observation-Grounded Conditioning for Ego Trajectory Prediction",
+  "url": "https://arxiv.org/abs/2611.32447",
+  "use_case": ""
+}

@@ -1,0 +1,30 @@
+{
+  "abstract": "We put a Thor robot on a browser voice call, with speech sent from Safari, answers played through the robot's loudspeaker and transcripts returned to the phone. We separate HTTPS signaling, relayed WebRTC media and speech generation into independently observable routes. The browser prefetches relay credentials and allows a 500 ms window after its first relay candidate. The backend starts speech and WebRTC-answer preparation concurrently within a 55 s deadline. A session slot and a non-blocking speaker lock coordinate calls with local voice access. A 2 s gate gives the controller an opportunity to suppress chat before playback. Fifteen of sixteen first dials reached ready-to-speak, comprising seven of eight Wi-Fi calls with a median of 5.57 s and eight of eight cellular calls with a median of 6.76 s. All twenty scored occupancy and recovery scenarios admitted a later call. During five 60 s outages, the backend released the line while the phone remained offline. Across 40 controlled replays, enabling the gate suppressed chat when the controller decided at 1 s. At 3 s, chat and controller feedback both played in sequence, with no overlapping output in any trace. Two additional boundary traces exposed a receipt naming a later feedback item and a new call's query returning its predecessor's feedback. These measurements cover application events on one platform and simulated controller decisions, with acoustic output and task correctness outside their scope.",
+  "abstract_ja": "",
+  "authors": [
+    "Zheyuan Zhang",
+    "Zaide Zhang"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32308",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "We put a Thor robot on a browser voice call, with speech sent from Safari, answers played through the robot's loudspeaker and transcripts returned to the phone. We separate HTTPS signaling, relayed…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Putting a Robot on a Phone Call: Layered Signaling, Bounded Occupancy and Turn Arbitration over WebRTC",
+  "url": "https://arxiv.org/abs/2611.32308",
+  "use_case": ""
+}

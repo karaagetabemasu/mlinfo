@@ -1,0 +1,31 @@
+{
+  "abstract": "Real-world single-image dehazing suffers from severe domain shifts, as paired real data is scarce and models trained on synthetic haze generalize poorly to real-world haze. While pre-trained generative editing models offer powerful image priors to bridge this generalization gap, applying them to image dehazing poses two major challenges: standard generative models prioritize distribution alignment over strict pixel-level fidelity, and operating in compressed latent spaces inherently discards fine-grained structural details. In this paper, we propose a novel two-stage framework that adapts the generative prior of a few-step flow-matching backbone to real-world dehazing. In the first stage, we fine-tune the latent backbone using Low-Rank Adaptation (LoRA), supervised not only on a flow-matching objective, but also on pixel-level supervision, thus enabling direct hazy-to-clear translation. In the second stage, we introduce structure-preserving skip connections directly to the VAE decoder, bypassing latent compression artifacts to recover precise spatial edges. Experiments on four realworld benchmarks demonstrate that our approach significantly outperforms existing dehazing methods in real conditions.",
+  "abstract_ja": "",
+  "authors": [
+    "Yunong Liu",
+    "Danna Xue",
+    "Javier Vazquez-Corral"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32632",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Real-world single-image dehazing suffers from severe domain shifts, as paired real data is scarce and models trained on synthetic haze generalize poorly to real-world haze. While pre-trained…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "HazeFlux: Few-Step Generative Priors for Real-World Image Dehazing",
+  "url": "https://arxiv.org/abs/2611.32632",
+  "use_case": ""
+}

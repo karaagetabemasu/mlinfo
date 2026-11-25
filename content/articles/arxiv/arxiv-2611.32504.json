@@ -1,0 +1,31 @@
+{
+  "abstract": "Tabular foundation models (TFMs) have emerged as a serious competitor to gradient-boosted trees, predicting on a new table in a single forward pass by in-context learning. However, their attention is quadratic in the number of samples and features, which caps pretraining at small synthetic tables and forces inference on large ones to rely on chunking or subsampling. Row-compression models reduce the feature-wise cost, but only by discarding the cell-level representation, and remain quadratic in the number of samples. We introduce InducedTFM, which replaces both attention stages of a bidimensional TFM with the induced attention of the Set Transformer, preserving cell-level representations while making its cost linear in both samples and features. Under a training budget matched to a full-attention TabICLv2 reimplementation, InducedTFM matches its accuracy on TabArena and on a benchmark of larger datasets, and clearly outperforms a kernel linear-attention baseline of the same asymptotic cost. It overtakes TabICLv2 in inference time on narrow tables, reaching a 30x speed-up at 640K rows, although row compression remains preferable on wide tables.",
+  "abstract_ja": "",
+  "authors": [
+    "Salome Gobbi",
+    "Nicolas Atienza",
+    "Nicola Cancedda",
+    "Michael Arbel"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32504",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Tabular foundation models (TFMs) have emerged as a serious competitor to gradient-boosted trees, predicting on a new table in a single forward pass by in-context learning. However, their attention is…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "tabular"
+    ],
+    "task": []
+  },
+  "title": "InducedTFMs: A Family of Sub-Quadratic Tabular Foundation Models Using Induced Attention",
+  "url": "https://arxiv.org/abs/2611.32504",
+  "use_case": ""
+}

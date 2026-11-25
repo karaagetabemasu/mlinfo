@@ -1,0 +1,31 @@
+{
+  "abstract": "Recovering articulated robot state from video supports metric spatial sensing for manipulation, scene reconstruction, and action planning. Yet the problem is ill-posed: different intrinsics, camera-to-robot poses, and joint angles can explain similar observations. Prior task-specific regressors typically assume known intrinsics, fit one robot through laborious data collection and robot-specific training, and still transfer poorly across scenes. Foundation models apply to any robot zero-shot, but their estimates have large errors. We present OVOK (One Video to Kinetics), a recursive self-improving agentic framework for this task. Under a human-authored protocol, an agentic initializer constructs robot-specific OVOK-4k; a proposer--executor--verifier loop then jointly evolves tools and executable workflows from feedback. Updated tools and workflows are accepted only when the verifier judges a positive improvement. The retained workflow is frozen for accurate inference. Experiments demonstrate that the evolved workflow achieves state-of-the-art results on DREAM-V and RoboKeyGen-V, delivering robust and accurate estimates.",
+  "abstract_ja": "",
+  "authors": [
+    "Cheng Dai",
+    "Renkai Luo",
+    "Guanfeng Tang",
+    "Siming Li",
+    "Hao Zhao"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32185",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "Recovering articulated robot state from video supports metric spatial sensing for manipulation, scene reconstruction, and action planning. Yet the problem is ill-posed: different intrinsics,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": []
+  },
+  "title": "OVOK: A Recursive Self-Improving Agentic Framework for Video-Based Articulated Robot State Estimation",
+  "url": "https://arxiv.org/abs/2611.32185",
+  "use_case": ""
+}

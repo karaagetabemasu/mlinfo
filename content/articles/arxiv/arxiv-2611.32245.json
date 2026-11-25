@@ -1,0 +1,32 @@
+{
+  "abstract": "Composing frozen Vision-Language-Action (VLA) skills under an agentic planner promises scalable long-horizon manipulation without long-horizon demonstrations, yet strong atomic skills routinely fail at seams even under a correct plan. Standard remedies reset the robot's pose or draft entry conditions in language, missing the physical cause we uncover via causal interventions: even after re-homing, a frozen VLA rigidly retraces its habitual trajectory and collides with displaced scene residue, whether or not it can see it. We propose the Skill Envelope, a policy-measured 3D geometric precondition capturing the volume a frozen skill sweeps during successful executions. Exploiting the insight that the rigidity making a frozen skill fragile at seams also makes its trajectory predictable in advance, we expose each envelope as two classical 3D tools (CHECK to detect blocking residue and FREE to locate safe placement regions), establishing a division of labor where VLAs execute in-distribution manipulation and code repairs out-of-distribution states. On LIBERO-Goal with frozen $π_{0.5}$, our zero-failure envelope predicts collisions at 0.946 AUROC (0.944 from one RGB-D view) and beats frontier VLMs on seam readiness (0.902 vs. 0.793); using it for skill ordering and code repair lifts success from 82.8% to 92.3% on two-step seams and from 29.7% to 93.8% on drawer-bearing 3-4 step chains, matching privileged world reset. Together, these results show that reliable VLA composition hinges on measuring a policy's physical workspace rather than guessing preconditions in language. Ongoing work closes the loop with autonomous LLM orchestration, synthesized free-object recovery, and cross-policy evaluation on cluttered benchmarks and real hardware.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiajie Zhang",
+    "Yankai Xiang",
+    "Changhao Chen"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32245",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Composing frozen Vision-Language-Action (VLA) skills under an agentic planner promises scalable long-horizon manipulation without long-horizon demonstrations, yet strong atomic skills routinely fail…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d",
+      "multimodal"
+    ],
+    "task": [
+      "anomaly-detection"
+    ]
+  },
+  "title": "VLAs Execute, Code Recovers: 3D Skill Envelopes Bridge the Compositional Gap in Agentic Manipulation",
+  "url": "https://arxiv.org/abs/2611.32245",
+  "use_case": ""
+}

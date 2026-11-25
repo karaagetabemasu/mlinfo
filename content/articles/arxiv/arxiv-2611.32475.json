@@ -1,0 +1,31 @@
+{
+  "abstract": "Image noise can confound rotation and translation estimates in monocular visual navigation for unmanned aerial vehicles (UAVs) at low and moderate altitudes, where even small perturbations may cause large errors in translation direction. Inspired by angular cues in long-range visual perception, we propose rotation-only visual odometry (ROVO) for monocular aerial imagery. ROVO estimates pairwise rotations from matched images, robustly averages them over overlapping windows, and aligns consecutive windows through shared frames. By retaining only orientation in the trajectory state, it prevents uncertain landmark depth from propagating to later estimates. In trajectory simulation, sliding-window ROVO achieved a mean orientation error just 10.7% as large as that of the conventional SLAM baseline. On real flight data, ROVO achieved rotation accuracy comparable to ORB-SLAM3 and DPVO under the original Bell412 settings. With a narrower FoV or at higher flight altitude, ROVO reduced relative rotation RMSE by 19.7--69.4% compared with the next-best method in each comparison. Code and simulation tools are available at https://github.com/sssxxxkkkk/ROVO.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiaokai Song",
+    "Li Zhang",
+    "Xichao Teng",
+    "Erting Pan",
+    "Yibin Ye"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/sssxxxkkkk/ROVO",
+  "hasCode": true,
+  "id": "arxiv-2611.32475",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Image noise can confound rotation and translation estimates in monocular visual navigation for unmanned aerial vehicles (UAVs) at low and moderate altitudes, where even small perturbations may cause…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "ROVO: Robust Rotation-Only Visual Odometry for UAVs at Low and Moderate Altitudes",
+  "url": "https://arxiv.org/abs/2611.32475",
+  "use_case": ""
+}

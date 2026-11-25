@@ -1,0 +1,33 @@
+{
+  "abstract": "RGB-based video object segmentation (VOS) remains brittle under fast motion and adverse illumination. Event cameras preserve signal under blur and challenging exposure, but provide little evidence when motion slows. Interaction can restore object state for subsequent propagation, yet promptable event methods merely address single windows. We formalize event-based Promptable Video Segmentation (ePVS), where prompts at arbitrary windows initialize, correct, or introduce objects and predictions. We present Event Memory-As-Prompt Segmentation (E-MAPS), which transfers a pretrained promptable segmenter to event streams and learns propagation and correction. Event-to-Token (E2T) aligns recurrent event features with pretrained representations while preserving prompt-conditioning priors. Memory-Aware Prompting (MAP) converts object-conditioned history into sparse prompts, allowing memory and user inputs to share one decoder pathway efficiently. We construct Event-View Masklets (EViM) from 206K aligned RGB-event pairs and 620K masks for two-stage representation transfer and native event-video learning, and establish three training-disjoint benchmarks. E-MAPS leads prompt-once and interactive ePVS across all three benchmarks while being more efficient. It further demonstrates strong performance on zero-shot object tracking benchmarks. Project page: https://github.com/adonaydem/emaps-wacv",
+  "abstract_ja": "",
+  "authors": [
+    "Adonay Demewez Gebremedhin",
+    "Mohamad Alansari",
+    "Wessam Shehieb",
+    "Muzammal Naseer",
+    "Hasan AlMarzouqi"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/adonaydem/emaps-wacv",
+  "hasCode": true,
+  "id": "arxiv-2611.33017",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "RGB-based video object segmentation (VOS) remains brittle under fast motion and adverse illumination. Event cameras preserve signal under blur and challenging exposure, but provide little evidence…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "E-MAPS: Event-Based Promptable Video Segmentation with Memory-as-Prompt",
+  "url": "https://arxiv.org/abs/2611.33017",
+  "use_case": ""
+}

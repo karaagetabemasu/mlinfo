@@ -1,0 +1,34 @@
+{
+  "abstract": "Autonomous vehicles rely on cameras, LiDAR, and radar to perceive their surroundings, yet these exteroceptive sensors can be degraded by hardware aging, environmental interference, miscalibration, embedded software errors, and combinations of these causes, with direct consequences for perception quality and safety. Existing surveys and benchmarks mostly address individual sensors, isolated conditions, or vehicle-level consequences, and no common vocabulary relates fault origins across the three modalities. This paper reviews the literature on exteroceptive sensor faults and proposes a cross-modal, origin-driven taxonomy that organizes them into five categories, namely hardware, environmental, calibration, software, and synergistic faults, mapping each entry to its physical or logical mechanism, observable manifestation, and affected subsystem, and relating the categories to the safety analyses of ISO 26262 and ISO 21448. To make the taxonomy operational, we release an open-source fault injection toolkit with 94 symptom-level routines (41 camera, 27 LiDAR, and 26 radar), four graded severity levels, reproducible burst scheduling, and per-frame labels recording the fault category, affected subsystem, and severity. Examples on the Boreas dataset illustrate how each category alters camera images, LiDAR point clouds, and radar scans. Together, the taxonomy and the toolkit provide a shared reference and a controlled testbed for studying sensor reliability, developing and benchmarking fault detection and diagnosis methods, and building fault-annotated datasets for the safety validation of perception systems. The toolkit is publicly available at https://github.com/davidepossenti/AV-SensorFault-Toolkit.",
+  "abstract_ja": "",
+  "authors": [
+    "Davide Possenti",
+    "Daniele Cianca",
+    "Stefano Arrigoni",
+    "Francesco Braghini"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/davidepossenti/AV-SensorFault-Toolkit",
+  "hasCode": true,
+  "id": "arxiv-2611.31667",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "3d",
+  "summary": "Autonomous vehicles rely on cameras, LiDAR, and radar to perceive their surroundings, yet these exteroceptive sensors can be degraded by hardware aging, environmental interference, miscalibration,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d",
+      "multimodal"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Exteroceptive Sensor Faults in Autonomous Vehicles: A Cross-Modal Taxonomy and Fault Injection Toolkit",
+  "url": "https://arxiv.org/abs/2611.31667",
+  "use_case": ""
+}

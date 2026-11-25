@@ -1,0 +1,33 @@
+{
+  "abstract": "Programmatic verifiers provide scalable reward signals for training coding agents with reinforcement learning, yet subtle harness defects and incomplete unit tests allow policies to earn full credit without solving the intended task. Existing training-time defenses intervene either by penalizing suspicious outputs or by filtering flagged tasks and rollouts. However, output penalties leave the underlying verifier exploitable, driving policies to disguise shortcuts under reasoning monitors or zeroing out valid solutions under detector false positives, whereas task and rollout filtering discards or mutes the hardest problems where shortcuts emerge earliest. Pre-training verifier hardening repairs the environment directly, but misses vulnerability classes that surface only as the policy improves during reinforcement learning. In this paper, we propose online environment repair, which leaves triggering rollout rewards unchanged to remove hiding incentives and asynchronously patches exploited environments during training. Candidate repairs triggered by execution invariants or differential fuzzing are deployed only after passing three automated validation gates that block the exploit while preserving valid solutions, canceling detector false positives and enabling structural propagation across repositories without scaffold labels or reference solutions. Across 20 controlled GRPO experiments on heterogeneous software-engineering repositories, online environment repair reduces cumulative reward hacking from 36.9% to 0.06% and improves held-out Pass@8 from 21.7% to 46.7%, consistently outperforming reward-penalty, rollout-filtering, and static-hardening baselines while eliminating zero-shot exploitation on unseen loophole classes.",
+  "abstract_ja": "",
+  "authors": [
+    "Sheng Lu",
+    "Rui Mao",
+    "Zewei Chen",
+    "Chihua Ying",
+    "Beiduo Chen"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32037",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "Programmatic verifiers provide scalable reward signals for training coding agents with reinforcement learning, yet subtle harness defects and incomplete unit tests allow policies to earn full credit…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Online Environment Repair for Coding Agents",
+  "url": "https://arxiv.org/abs/2611.32037",
+  "use_case": ""
+}

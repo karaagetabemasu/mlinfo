@@ -1,0 +1,33 @@
+{
+  "abstract": "Graph node quantification is the supervised learning task of estimating the prevalence of different classes within an arbitrary sample of unlabelled nodes from a graph, subject to some form of dataset shift. Existing approaches to graph node quantification typically follow the standard aggregative paradigm, i.e., they use labelled nodes from the graph to train an intermediate node classifier, and obtain an estimated class distribution for the sample by aggregating the classifier's predictions for the individual nodes and then correcting the result via some adjustment strategy that accounts for dataset shift. In this work we propose a framework for graph node quantification that does away with both node-level supervision, since its training phase only requires node samples labelled by their class distribution, and node-level predictions, since it estimates class prevalence values directly, without the need of any intermediate node classifier. The framework thus allows symmetric quantification, since (unlike in standard ``asymmetric'' quantification methods) the labelled items used for training and the unlabelled items on which predictions must be issued are of the same type (i.e., node samples). This framework (that we dub GSQ, for Graph Node Symmetric Quantification) allows building pipelines consisting of a node encoder, an embedding pooler, a prevalence predictor, and an optional post-hoc scaling step. These components can be instantiated by choosing from different trainable and reservoir-based encoders, different pooling operators, and different prediction objectives. We evaluate the GSQ framework on binary and multi-class datasets with different levels of homophily, under prior probability shift and under structural covariate shift.",
+  "abstract_ja": "",
+  "authors": [
+    "Alessio Micheli",
+    "Alejandro Moreo",
+    "Marco Podda",
+    "Fabrizio Sebastiani",
+    "Domenico Tortorella"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32403",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Graph node quantification is the supervised learning task of estimating the prevalence of different classes within an arbitrary sample of unlabelled nodes from a graph, subject to some form of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "supervised"
+    ],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "A Framework for Graph Node Symmetric Quantification under Dataset Shift",
+  "url": "https://arxiv.org/abs/2611.32403",
+  "use_case": ""
+}

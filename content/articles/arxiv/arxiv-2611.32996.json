@@ -1,0 +1,37 @@
+{
+  "abstract": "Egocentric video question answering enables blind and low-vision (BLV) users to query their immediate surroundings through natural language. However, existing benchmarks and models primarily optimize for semantic agreement with reference answers, reducing visual assistance to a purely factual matching task. In real-world scenarios, a factually correct response remains practically unhelpful if it lacks the spatial orientation, actionable detail, or conciseness required by the immediate task of the user. Drawing upon real BLV egocentric videos and authentic user queries from EgoBlind, we construct the PA-EgoQA, a preference-aligned dataset that reconstructs reference answers according to empirical BLV communication criteria. Based on this dataset, we introduce Preference-Aligned Visual Egocentric Learning (PAVE), a unified learning and inference framework that couples structured answer-policy fine-tuning with deterministic question-conditioned routing to adapt response formulation directly to the surface form of the query at inference time. We further align the model via Filter-GRPO, which pairs a hierarchical correctness-quality reward with contrast-based candidate-group filtering to extract learning signals from both factual accuracy contrasts and fine-grained quality variations among correct answers. Extensive experiments across three vision-language backbones demonstrate consistent improvements in factual accuracy alongside substantial gains in assistive response quality. These results establish a concrete paradigm for translating human-centered response requirements into egocentric supervision, generation policies, and post-training objectives. Code will be provided at https://github.com/shawnliang420/PAVE.",
+  "abstract_ja": "",
+  "authors": [
+    "Nan Li",
+    "Shaofeng Liang",
+    "Shiyun Zhao",
+    "Keni Shi",
+    "Zhencheng Huang"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/shawnliang420/PAVE",
+  "hasCode": true,
+  "id": "arxiv-2611.32996",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Egocentric video question answering enables blind and low-vision (BLV) users to query their immediate surroundings through natural language. However, existing benchmarks and models primarily optimize…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": [
+      "generation",
+      "qa"
+    ]
+  },
+  "title": "PAVE: Preference-Aligned Visual Egocentric Learning for the Blind and Low-Vision Users",
+  "url": "https://arxiv.org/abs/2611.32996",
+  "use_case": ""
+}

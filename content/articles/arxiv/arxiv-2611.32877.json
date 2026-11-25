@@ -1,0 +1,31 @@
+{
+  "abstract": "Self-attention's quadratic complexity constitutes a core bottleneck for Vision Transformers (ViTs). Existing efficiency-oriented optimizations, including softmax-based and linear attention (LA) variants, generally compromise model representational capacity, leading to inevitable performance degradation. We propose a novel linear attention which alleviates this efficiency-capability dilemma. For the first time, we embed an Adaptive Channel Compression and Activation Purification (ACCAP) mechanism into the QKV projection of linear attention, which enables the model to retain high-dimensional feature information while performing computations with reduced channels. We further fuse a focused kernel function and a self-gating module into ACCAP to construct a lightweight linear attention module (ACCAP-LA). Our theoretical analysis shows that, compared to standard linear attention, ACCAP-LA reduces the attention module's parameter count by 79.17% and FLOPs by 77.5%. Extensive experiments demonstrate ACCAP-LA's effectiveness: when applied to ViT, it achieves 79.4% Top-1 accuracy on ImageNet-1K with only 5.8M parameters, and more notably, it boasts strong cross-architecture compatibility, boosting EfficientViT-b1 and PVT-T by 3.3% and 3.4% respectively.",
+  "abstract_ja": "",
+  "authors": [
+    "Senqi Guan",
+    "Xianchao Zhang",
+    "Moyan Tian",
+    "Linlin Zong",
+    "Wenxin Liang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32877",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Self-attention's quadratic complexity constitutes a core bottleneck for Vision Transformers (ViTs). Existing efficiency-oriented optimizations, including softmax-based and linear attention (LA)…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Simultaneously Boosting Efficiency and Capability for Linear Attention via Adaptive Channel Compression and Activation Purification",
+  "url": "https://arxiv.org/abs/2611.32877",
+  "use_case": ""
+}

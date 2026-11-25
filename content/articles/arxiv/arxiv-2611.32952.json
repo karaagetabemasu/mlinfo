@@ -1,0 +1,30 @@
+{
+  "abstract": "Joint brain tumor segmentation and classification models are computationally intensive, limiting their training on resource-constrained edge platforms and restricting privacy-preserving Federated Learning FL in the Internet of Medical Things IoMT. Existing approaches either perform both tasks on GPU-equipped workstations or support only classification on edge devices. To address this gap, this work proposes a lightweight multitask FL framework for joint segmentation and classification through local edge training. A shared pretrained LiteMedSAM encoder with TinyViT extracts features for a coordinate-attention-based segmentation decoder and a segmentation-guided classification head, eliminating a separate feature extractor. Selective encoder freezing retains 95\\% trainable parameters while reducing on-device training costs. The proposed framework is experimentally validated on a laboratory testbed of five resource-constrained edge clients using 1,200 T1-weighted MRI samples. It achieves 94.20\\% classification accuracy, 88.53\\% DSC, 83.68\\% IoU, and 99.87\\% ROC-AUC. Its classification accuracy remains within 0.6\\% of the GPU-trained baseline of 95.21\\% across five FL rounds. The attention and feature refinement modules improve DSC and IoU by 3.82\\% and 4.60\\%, respectively, with 0.74 GFLOPs of additional computation. On edge hardware, the framework achieves 46.54 s inference latency, 52.8\\% CPU utilization, and a peak temperature of 65$^\\circ$C without thermal throttling. Its inference latency is observed to be 6.4--10.5 times lower than that of existing frameworks. These results demonstrate the feasibility of privacy-preserving joint brain tumor segmentation and classification on resource-constrained edge platforms.",
+  "abstract_ja": "",
+  "authors": [
+    "Pranshu Jena",
+    "Prajnyajit Mohanty",
+    "Umesh C. Pati"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32952",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Joint brain tumor segmentation and classification models are computationally intensive, limiting their training on resource-constrained edge platforms and restricting privacy-preserving Federated…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "segmentation"
+    ]
+  },
+  "title": "FedTumor-IoMT: Federated Learning-Aided Brain Tumor Diagnosis on Resource-Constrained Edge IoMT Devices",
+  "url": "https://arxiv.org/abs/2611.32952",
+  "use_case": ""
+}
