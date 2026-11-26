@@ -1,0 +1,34 @@
+{
+  "abstract": "Two-frame video frame interpolation commonly resamples endpoint optical flow by the query time, which selects a constant-velocity straight-line path even though the same endpoint displacement is compatible with many intermediate trajectories. We present HermiteVFI, which replaces independent query-time motion prediction with one explicit continuous trajectory per pixel. The measured endpoint displacement fixes the two trajectory positions, while two latent endpoint derivatives learned from the frame pair control the interior path. A cubic Hermite curve is the minimum-degree polynomial that can independently satisfy these two position and two derivative boundary quantities. Its residual form contains linear motion exactly, structurally preserves the measured displacement endpoints for any network output, and has coefficients that are predicted once per frame pair and evaluated in closed form at arbitrary t. We further show that one interior query time gives a rank-deficient constraint on the two free trajectory coefficients, whereas any two distinct interior times are full rank at the representation level, motivating multi-time supervision. Appearance-derived directional cues help infer the latent derivatives that endpoint displacement alone cannot identify. On X4K1000FPS, SNU-FILM, and Vimeo90K-Septuplet, the largest gains occur for difficult non-uniform motion and high interpolation ratios. The amortization applies to trajectory-coefficient prediction; downstream reversal, refinement, and synthesis remain query dependent.",
+  "abstract_ja": "",
+  "authors": [
+    "Md Rifat Ur Rahman",
+    "Md Abtahi Majeed Chowdhury",
+    "Md Sakib Hossain Shovon",
+    "Jaesik Choi",
+    "Mohammad Ali Moni"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34143",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Two-frame video frame interpolation commonly resamples endpoint optical flow by the query time, which selects a constant-velocity straight-line path even though the same endpoint displacement is…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Non-Linear Motion from Two Frames: Cubic Hermite Trajectories for Video Frame Interpolation",
+  "url": "https://arxiv.org/abs/2611.34143",
+  "use_case": ""
+}

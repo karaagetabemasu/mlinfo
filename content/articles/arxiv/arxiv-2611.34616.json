@@ -1,0 +1,27 @@
+{
+  "abstract": "We consider the problem of inferring the conditional independence graph (CIG) of a high-dimensional stationary multivariate Gaussian time series which could be short-range dependent (SRD) or long-range dependent (LRD). In a time series graph, each component of the vector series is represented by a distinct node, and associations between components are represented by edges between the corresponding nodes. We consider a time-domain approach based on time-delay embedding, casting the problem as one of multi-attribute graph estimation for random vectors where a vector is associated with each node of the graph. For an embedding dimension $d$, at each node the associated $(d+1)$-dimensional random vector consists of a time series component and its $d$ delayed copies, with integer delays up to $d \\ge 1$. Graph estimation from dependent data has been investigated in the past using frequency-domain methods whose analysis is restricted to SRD data. We consider a penalized negative pseudo log-likelihood function with convex lasso or non-convex regularizations to estimate the CIG. Non-convex regularization functions are log-sum, smoothly clipped absolute deviation (SCAD) and minimax concave penalty (MCP). We exploit an existing alternating direction method of multipliers (ADMM) approach to optimize the objective function. We establish sufficient conditions in a high-dimensional setting for consistency, local convexity when using non-convex penalties, and graph recovery, for both SRD and LRD series. We illustrate our approach with both synthetic and real-data examples. For a $p$-dimensional time series, the computational complexity of the ADMM algorithm is ${\\cal O}((d+1)^3 p^3)$. Based on the numerical examples, a heuristic is suggested and illustrated for selection of $d$ which, in theory, should tend to infinity to infer the time series graph.",
+  "abstract_ja": "",
+  "authors": [
+    "Jitendra K. Tugnait"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34616",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "We consider the problem of inferring the conditional independence graph (CIG) of a high-dimensional stationary multivariate Gaussian time series which could be short-range dependent (SRD) or…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "time-series"
+    ],
+    "task": []
+  },
+  "title": "Conditional Independence Graph Learning from Dependent Data Via Time-Delay Embedding",
+  "url": "https://arxiv.org/abs/2611.34616",
+  "use_case": ""
+}

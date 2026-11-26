@@ -1,0 +1,34 @@
+{
+  "abstract": "Recent feed-forward approaches mark a paradigm shift in novel view synthesis by eliminating the reliance on per-scene optimization, directly inferring 3D representations from input views. However, their reliance on global scene-token context incurs substantial memory and latency overhead, constraining their ability to handle increasingly dense source-view contexts. Compressing source representations offers an intuitive way to limit this token budget. Prior general-purpose compression methods are not tailored for novel view synthesis, as their fixed, target-agnostic nature fails to adapt evidence allocation to individual target views. To overcome this, we introduce TACC, a target-aware compression module tailored for feed-forward latent NVS. Specifically, TACC organizes each source view into a progressive carrier hierarchy. Driven by source-target geometric relevance, it adaptively retrieves tokens to dynamically allocate exact computational quotas. This selective retrieval directly yields a compact, target-conditioned representation. Extensive experiments on the RE10K demonstrate that under dense input settings, TACC achieves $9.23\\times$ and $64\\times$ higher Effective FPS than Full Context on LagerNVS and LVSM, respectively. Effective FPS excludes one-time source encoding and Carrier construction.",
+  "abstract_ja": "",
+  "authors": [
+    "Yiming Fan",
+    "Yijia Guo",
+    "Zewen Guo",
+    "Liwen Hu",
+    "Yuheng Yuan"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34476",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "3d",
+  "summary": "Recent feed-forward approaches mark a paradigm shift in novel view synthesis by eliminating the reliance on per-scene optimization, directly inferring 3D representations from input views. However,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "3d"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "TACC: Target-Aware Carrier Compression for Dense-Context Novel View Synthesis",
+  "url": "https://arxiv.org/abs/2611.34476",
+  "use_case": ""
+}

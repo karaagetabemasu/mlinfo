@@ -1,0 +1,27 @@
+{
+  "abstract": "A vision encoder turns an image into one vector per patch, refined layer by layer. A sparse autoencoder (SAE) writes each vector of one layer as a sum of learned directions, most with a coefficient of zero. Researchers call each direction a feature and edit the encoder by removing one feature. An SAE trained from another random seed learns different features. Earlier work matches the two SAEs' features one to one by how closely their directions agree. Matched features can point alike yet respond to different image parts, so removing them may change the encoder differently. We remove a feature and, separately, its match, then compare the changes in the encoder's output on the same held out images. When the second change nearly reproduces the first, we say the removal carries across seeds. A setting fixes a DINOv2 or SigLIP layer and its SAE feature count. At our tolerance, the removal carries for 12% to 70% of matched pairs across three settings. The share is 0% in two controls: an SAE whose directions stay random and, post hoc, matches shuffled among trained features. Post hoc, predicting which removals carry is more accurate with layer contributions than with directions. Some incorrect predictions remain. One persists on independent images. So pairs can be screened at the layer. Measuring the output detects errors this screen misses.",
+  "abstract_ja": "",
+  "authors": [
+    "Karl Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34637",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "A vision encoder turns an image into one vector per patch, refined layer by layer. A sparse autoencoder (SAE) writes each vector of one layer as a sum of learned directions, most with a coefficient…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Carrying Feature Ablations Across Sparse Autoencoder Seeds",
+  "url": "https://arxiv.org/abs/2611.34637",
+  "use_case": ""
+}

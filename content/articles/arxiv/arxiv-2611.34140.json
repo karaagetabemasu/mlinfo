@@ -1,0 +1,32 @@
+{
+  "abstract": "Equivariant neural networks promise improved representation learning through structural guarantees. However, mainstream vision encoders rarely incorporate equivariance for most geometric symmetries. Images are a particularly interesting modality with many such symmetries and extensive datasets from which to learn this structure. In this work, we investigate when vision encoders benefit from geometric inductive biases. We study the discrete rotation group of quarter-turns (C4) which acts losslessly without interpolation or boundary artifacts. Combined with image classification as a controlled invariant objective, this allows for a principled empirical investigation into the role of structural guarantees. We introduce ConvNeXt-C4 as a rotation equivariant ConvNeXt with dimension-equivalent yet orientation-structured representations. Training from scratch, our experiments show, that the C4 variant outperforms its base model across all tasks while operating with 6x fewer parameters and 1.6x fewer FLOPs. Its performance advantage increases log-linearly with decreasing training set size, with pre-training providing a similar improvement across both model variants. Analyzing the classifier head reveals that orientation information from the representations' structure is actively used, improving performance by 4.90% across all datasets. Our results highlight the sample-efficiency benefits of equivariance and the value of retained orientation information, motivating further investigation beyond image classification. Code is available at https://github.com/hlzl/equivariant-convnext.",
+  "abstract_ja": "",
+  "authors": [
+    "Florian A. Hölzl",
+    "Daniel Rueckert",
+    "Georgios Kaissis"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/hlzl/equivariant-convnext",
+  "hasCode": true,
+  "id": "arxiv-2611.34140",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Equivariant neural networks promise improved representation learning through structural guarantees. However, mainstream vision encoders rarely incorporate equivariance for most geometric symmetries.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "embedding"
+    ]
+  },
+  "title": "Benefit of Structured Representations: When Equivariance Helps in Image Classification",
+  "url": "https://arxiv.org/abs/2611.34140",
+  "use_case": ""
+}

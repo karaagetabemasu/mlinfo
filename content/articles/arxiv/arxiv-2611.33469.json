@@ -1,0 +1,29 @@
+{
+  "abstract": "Reinforcement learning (RL) in personalized services often relies on sensitive interaction data. Motivated by the need to protect these data, we study differentially private (DP) policy optimization in episodic linear Markov decision processes (MDPs) with unknown transitions and adaptive adversarial linear rewards under full-information feedback. This setting poses two key challenges: past trajectories are repeatedly reused for policy evaluation, and reward choices may depend on previously released private statistics. The proposed algorithm combines batched proximal policy optimization (PPO) updates with optimistic policy evaluation, using private regression statistics and reward estimates to protect both trajectories and reward functions under joint differential privacy (JDP). With all other parameters fixed, our high-probability regret bound retains the same leading $\\widetilde{O}\\left(K^{3/4}\\right)$ dependence on the number of episodes $K$ as the corresponding non-private bound for batched optimistic PPO. The additional privacy terms scale as $\\widetilde{O} \\left(K^{5/8}\\right)$ and $\\widetilde{O} \\left(K^{1/2}\\right)$. Thus, privacy incurs only lower-order additive costs in $K$, even under adaptive adversarial rewards.",
+  "abstract_ja": "",
+  "authors": [
+    "Yi He"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33469",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Reinforcement learning (RL) in personalized services often relies on sensitive interaction data. Motivated by the need to protect these data, we study differentially private (DP) policy optimization…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Differentially Private Policy Optimization in Linear MDPs with Adversarial Rewards",
+  "url": "https://arxiv.org/abs/2611.33469",
+  "use_case": ""
+}

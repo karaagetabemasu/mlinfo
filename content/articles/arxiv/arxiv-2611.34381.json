@@ -1,0 +1,30 @@
+{
+  "abstract": "Biological intelligence thrives on minimal power despite its noisy, imperfect components, with neurons that communicate through voltage spikes. Brain-inspired computing seeks to bring such efficiency to real devices, which requires training methods tailored to them. The standard way to train spiking neural networks, backpropagation through time, computes weight updates through every step of a simulated device, so faithful or long simulations can make training costly and unstable. Here we show that spiking networks can learn reliably and efficiently by decoupling the clock of learning from that of computing. Our method, ChronoProp, calculates weight updates from each neuron's spike counts in fixed time bins using its measured input-output function. Compared with backpropagation through time, ChronoProp reaches similar accuracy in image classification, with about 3 times less training time and 20 times less memory at the finest timestep tested, and up to 10 times fewer spikes. On spoken-word benchmarks, ChronoProp is far more accurate in recurrent networks at fine timesteps, and with simple, hardware-compatible techniques it approaches the best published models. These networks also tolerate simulated hardware defects and limitations better than those trained with backpropagation through time. Therefore, ChronoProp enables stable and efficient training in simulations close to the continuous time of analog hardware.",
+  "abstract_ja": "",
+  "authors": [
+    "Michalis Pagkalos",
+    "Panayiota Poirazi"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34381",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "Biological intelligence thrives on minimal power despite its noisy, imperfect components, with neurons that communicate through voltage spikes. Brain-inspired computing seeks to bring such efficiency…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Decoupling the clocks of learning and computing in spiking neural networks",
+  "url": "https://arxiv.org/abs/2611.34381",
+  "use_case": ""
+}

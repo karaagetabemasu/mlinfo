@@ -1,0 +1,31 @@
+{
+  "abstract": "Visual process reward models (PRMs) can detect calculation errors yet assign high scores to steps that misread visual relations. Supervision based on subsequent answer success does not directly establish whether a step's relational claim holds. To strengthen visual-relation verification, we first build an automated pipeline that programmatically verifies each claim and identifies the required objects, relations, and image regions. It produces RelProcessTrain and RelProcessBench (RPB), which tests whether scores respond appropriately to relational evidence through controlled image edits and step rephrasings. Building on this pipeline, we further introduce RelPRM, a visual-relation-oriented method for process reward modeling with two training mechanisms. Relation-evidence self-distillation constructs views preserving necessary objects, relations, and dependencies, reducing the burden of finding decisive evidence in complex scenes and transferring reliable evidence-assisted judgments to full images. Relation-evidence-driven consistency training encourages appropriate score changes when relation edits reverse a step's truth, stability under irrelevant edits, and similar score changes across paraphrases. At inference, RelPRM directly scores the current step using only the original image and reasoning context. RelPRM achieves 66.2% on VisualProcessBench (VPB) and 68.4% on RPB, gains of 4.2 and 9.9 percentage points over VisualPRM-8B. These results show that training for visual relations improves both relational verification and step assessment across broader multimodal reasoning tasks.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhaoxing Zhang",
+    "Ziqiu Gui",
+    "Cheng Chen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33903",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Visual process reward models (PRMs) can detect calculation errors yet assign high scores to steps that misread visual relations. Supervision based on subsequent answer success does not directly…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "RelPRM: Grounding Visual Process Reward Models in Relational Evidence",
+  "url": "https://arxiv.org/abs/2611.33903",
+  "use_case": ""
+}

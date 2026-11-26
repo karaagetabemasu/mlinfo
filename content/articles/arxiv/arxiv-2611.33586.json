@@ -1,0 +1,29 @@
+{
+  "abstract": "Long-horizon diffusion-based planning for kinodynamically constrained systems requires both scalability and feasibility, yet existing diffusion planners typically sacrifice one for the other. We present DFLAT, a diffusion-based planning algorithm that operates directly on a differentially flat trajectory representation. Instead of diffusing over time-discretized controls, DFLAT denoises a compact set of Hermite curve parameters in the flat-output space, consisting of intermediate waypoints together with the endpoint tangents of each segment. Every denoised sample maps to a dynamically consistent trajectory, so feasibility holds by construction rather than being restored afterward. Experiments on challenging tractor-trailer planning benchmarks show that DFLAT matches or exceeds the success rates of existing baselines at consistently lower planning times, particularly on long-horizon problems requiring multiple forward-reverse maneuvers. In cases where kinodynamic RRT requires over 100 seconds, DFLAT plans in subsecond time, enabling practical deployment.",
+  "abstract_ja": "",
+  "authors": [
+    "Ege Yuceel",
+    "Taekyung Kim",
+    "Keyvan Majd",
+    "Hideki Okamoto",
+    "Bardh Hoxha"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33586",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Long-horizon diffusion-based planning for kinodynamically constrained systems requires both scalability and feasibility, yet existing diffusion planners typically sacrifice one for the other. We…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "DFLAT: Model-based Diffusion on Differentially Flat Spaces for Long-Horizon Trajectory Optimization",
+  "url": "https://arxiv.org/abs/2611.33586",
+  "use_case": ""
+}

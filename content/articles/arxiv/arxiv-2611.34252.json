@@ -1,0 +1,31 @@
+{
+  "abstract": "A detector scores candidate detections, but the recall and false alarms at a given confidence threshold depend on the input distribution. We introduce Detector Operating Behavior Inference (DOBI), a second-level inference task: estimating a fixed detector's threshold-dependent, distribution-level operating response from the internal evidence of a single unlabeled image. DOBI treats the detector's threshold response, i.e. recall, false positives, and precision across thresholds, as a latent behavioral state under the current data condition. Controlled data-space sampling probes this state space offline, and a lightweight monitor learns the inverse map from one image to this state, whose single functional output supports multiple operating policies. In a controlled proof of concept with a fixed YOLOv10-Nano person detector and COCO-derived degradations, predicted PR behavior reduces mean absolute deviation from 0.128 for an image-independent mean-behavior prior to 0.054, and predicted functional distances track empirical regime distances (Spearman 0.96). From one unlabeled image, the inferred behavior selects operating points as well as a non-deployable lookup that knows the true regime (macro-regime $F_1$ 0.6604 for both, versus 0.6407 under pristine calibration; oracle 0.6620). On this discrete benchmark, regime-supervised curve lookups are strong controls. Pre-specified continuous and compositional probing shows where functional inference matters: on unseen combinations, the functional decoder has a lower mean curve error than a template lookup, increasingly with distance from the training conditions, whereas the lookup is more accurate for interpolation. These results establish the feasibility of single-image inference of distribution-level detector behavior over the probed conditions. Source code is available at https://github.com/beckerio/dobi",
+  "abstract_ja": "",
+  "authors": [
+    "Stefan Becker",
+    "Simon Weiss",
+    "Wolfgang Hübner"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/beckerio/dobi",
+  "hasCode": true,
+  "id": "arxiv-2611.34252",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "A detector scores candidate detections, but the recall and false alarms at a given confidence threshold depend on the input distribution. We introduce Detector Operating Behavior Inference (DOBI), a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Detector Operating Behavior Inference via Data-Space Sampling",
+  "url": "https://arxiv.org/abs/2611.34252",
+  "use_case": ""
+}

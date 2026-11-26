@@ -1,0 +1,29 @@
+{
+  "abstract": "QK normalization divides each query and key by its own RMS norm before the attention scores are computed. Treating this denominator as a constant during backpropagation leaves the forward pass unchanged but alters the parameter gradients. We derive a closed form for the difference between the gradient under this detached rule and the gradient under the standard rule. For a single token, this difference is parallel to the token's own query; it changes only the query norm and has no first-order effect after normalization. The queries, however, are computed by a projection matrix $W_Q$ shared across all tokens. The gradient difference on $W_Q$ therefore equals $W_Q$ right-multiplied by a weighted second moment of the inputs, and it decomposes exactly into three components: a radial component that changes only the norm of $W_Q$, a tangential component that changes the query directions of other tokens, and an upstream component that changes the gradient passed to earlier layers. Under AdamW, the radial component drives $W_Q$ to a larger equilibrium norm and reduces its angular update per step. Paired experiments on a small Transformer language model are consistent with this analysis. Detaching the query denominator consistently raises the test loss, and the gap persists across hardware, evaluation datasets and learning rates. All three components remain non-negligible throughout training, with the tangential component the largest. Norm growth and the smaller angular update appear only on the detached projection matrix, while the other projection matrix is essentially unchanged. With a learnable scale, however, we observe no resolvable loss gap.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuanqi Zhang",
+    "Haocheng Wang",
+    "Congping Lin"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33887",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "QK normalization divides each query and key by its own RMS norm before the attention scores are computed. Treating this denominator as a constant during backpropagation leaves the forward pass…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "The Gradient Difference Induced by Detaching the Denominator in QK Normalization",
+  "url": "https://arxiv.org/abs/2611.33887",
+  "use_case": ""
+}

@@ -1,0 +1,32 @@
+{
+  "abstract": "In 2D-3D localization, a camera estimates its pose by matching an image to a 3D map. A camera held in a hand or mounted on a robot can often choose its viewpoint before it takes the image. In this work, we ask whether an image detectability field is a useful viewpoint utility when the planner reads only the geometry of the map. The field can be queried at any 3D point near a surface. From the local geometry around the point, it predicts how likely a 2D image detector is to fire at the projection of the point. We use the trained field as it is, without fine-tuning it for view selection. A fixed SuperPoint and EPnP-RANSAC localizer then estimates the pose from the chosen view. We answer in two settings, each with a test registered before the runs. On synthetic ShapeNet objects with sparse point maps, summing the field over the visible landmarks beats counting them by +2.0 points of localization success rate (object-clustered 95% interval [+0.7, +3.2]). It also beats summing Harris-3D ranks by +2.2 [+0.8, +3.5]. On real indoor scenes from SceneFun3D, our adaptation of the learned view scorer LWL falls below counting on the test rooms. We therefore add the field to a learned per-landmark planner. On the test rooms with sparse maps whose landmarks the field also selects, the planner with the field beats the same planner without it by +1.8 points. It beats the planner with Harris-3D or curvature in its place by +1.0 and +0.8 points. All three room-clustered intervals lie above zero. In both settings, the field helps in sparse maps and is on par with Harris-3D in dense maps.",
+  "abstract_ja": "",
+  "authors": [
+    "Han Sun",
+    "Jun Li",
+    "Christy Jie Liang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34139",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "In 2D-3D localization, a camera estimates its pose by matching an image to a 3D map. A camera held in a hand or mounted on a robot can often choose its viewpoint before it takes the image.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "An Image Detectability Field as a Viewpoint Utility for 2D-3D Localization in Sparse Maps",
+  "url": "https://arxiv.org/abs/2611.34139",
+  "use_case": ""
+}

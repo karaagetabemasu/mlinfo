@@ -1,0 +1,32 @@
+{
+  "abstract": "The 3D points kept in a map decide whether a camera can be localized against it, and this choice matters more as the map becomes sparser. Existing 3D keypoint detectors usually define saliency by semantics, repeatability, reconstruction or descriptor matchability. None of these definitions asks whether a point will actually be detected in an image, and as a result most of the points they select are not detected again in images. In this paper, we define 3D saliency as image detectability: the response of a 2D interest-point detector at a surface point, aggregated over all views in which the point is visible. We propose DetField, a continuous field over 3D space that takes a point cloud as input and predicts detectability at any location around it. The supervision is the response of a 2D detector, back-projected from images onto the point cloud. Multi-scale curvature invariants are passed to the decoder at every query point, bypassing the voxel pooling of the encoder. In a localization benchmark that isolates the choice of 3D points, DetField outperforms Harris-3D and five learned 3D keypoint methods on objects and on real indoor scenes. On unseen rooms, it improves localization success by 7.4 points over Harris-3D, the strongest baseline. On objects, it also leads under a 2D detector not used in training. On sparse maps, it stays ahead of Harris-3D on both objects and real scenes.",
+  "abstract_ja": "",
+  "authors": [
+    "Han Sun",
+    "Jun Li",
+    "Christy Jie Liang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34108",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "3d",
+  "summary": "The 3D points kept in a map decide whether a camera can be localized against it, and this choice matters more as the map becomes sparser. Existing 3D keypoint detectors usually define saliency by…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Detectable by Design: Learning a Continuous 3D Saliency Field from 2D Detector Responses",
+  "url": "https://arxiv.org/abs/2611.34108",
+  "use_case": ""
+}

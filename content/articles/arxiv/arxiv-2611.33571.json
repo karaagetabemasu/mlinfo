@@ -1,0 +1,31 @@
+{
+  "abstract": "Backdoor attacks pose a severe threat to modern NLP models by embedding hidden triggers that induce malicious behavior at inference time. Recent unlearning methods such as gradient ascent (GA) attempt to remove backdoors by maximizing the loss on poisoned samples; however, these methods can suffer from a critical limitation: they may shift the trigger's influence to other classes rather than eliminating it. In this work, we propose Trigger-Invariant Contrastive Unlearning (TICU), a framework for mitigating textual backdoor behavior by enforcing prediction and representation invariance to trigger insertion. TICU constructs clean and trigger-inserted counterfactual pairs, then fine-tunes the model so that both inputs produce consistent output distributions and aligned hidden representations. To preserve clean-task performance, TICU also retains the supervised classification loss on clean data and constrains parameter drift from the original model. Extensive experiments across multiple datasets, model architectures, and attack settings show that TICU improves triggered accuracy and reduces trigger-induced prediction shifts compared with existing baselines, while maintaining competitive label-flipping performance and limiting clean-task degradation.",
+  "abstract_ja": "",
+  "authors": [
+    "Santosh Chapagain",
+    "Shah Muhammad Hamdi",
+    "Soukaina Filali Boubrahimi"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33571",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Backdoor attacks pose a severe threat to modern NLP models by embedding hidden triggers that induce malicious behavior at inference time. Recent unlearning methods such as gradient ascent (GA)…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Trigger-Invariant Contrastive Unlearning for Backdoor Removal",
+  "url": "https://arxiv.org/abs/2611.33571",
+  "use_case": ""
+}

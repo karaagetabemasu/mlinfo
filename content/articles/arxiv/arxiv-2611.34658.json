@@ -1,0 +1,34 @@
+{
+  "abstract": "Generative driving planners may produce trajectories that appear feasible at their reference points but violate environmental constraints over the full vehicle body. We propose FeaXDrive2, an end-to-end generative planning framework that enhances vehicle-embodied spatial feasibility (VESF) through body-scene spatial grounding. The proposed method constructs spatial queries from actual vehicle-body corners and dynamically updates visual sampling locations using evolving trajectory estimates across Flow steps. Retrieved local visual features condition subsequent Action Flow-DiT velocity predictions, allowing trajectory generation to guide spatial information retrieval. Rollout-Consistent Safety Fine-Tuning (RC-F) combines high-risk trajectory supervision with reference behavior preservation, followed by planning-supervised VLM-Action Alignment. Vehicle-geometry counterfactual analysis reveals safety differences under identical trajectories but varying vehicle geometry. On NAVSIM, FeaXDrive2 reduces at-fault collisions by 36.5% relative to the base planner and improves PDMS from 87.0 to 88.8. Under NAVSIM v2 evaluation, EPDMS increases from 86.5 to 88.3. Ablation and body-clearance analyses further demonstrate the safety benefits of body-scene spatial grounding.",
+  "abstract_ja": "",
+  "authors": [
+    "Bo Leng",
+    "Baoyun Wang",
+    "Wenxin Wen",
+    "Ming Liu",
+    "Weiqi Zhang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34658",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Generative driving planners may produce trajectories that appear feasible at their reference points but violate environmental constraints over the full vehicle body. We propose FeaXDrive2, an…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation",
+      "retrieval"
+    ]
+  },
+  "title": "FeaXDrive2: Body-Scene Spatial Grounding for Feasibility-Aware Generative Driving",
+  "url": "https://arxiv.org/abs/2611.34658",
+  "use_case": ""
+}

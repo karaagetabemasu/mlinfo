@@ -1,0 +1,29 @@
+{
+  "abstract": "In one-step super-resolution (SR), vision-only models extract semantic cues directly from the low-resolution (LR) image, keeping those cues spatially aligned with the structures they help restore. Recent models achieve high restoration quality with generators of up to 1.4 billion parameters. Given how much structure the LR image already provides, could a much smaller generator achieve comparable quality? We introduce SPGSR, a vision-only framework that adds a learned RGB correction to the LR image. A frozen DINOv2 guides prediction, and a lightweight block refines the correction locally. SPGSR achieves higher PSNR/SSIM and lower LPIPS/DISTS than VOSR, a leading vision-only SR method, across three benchmarks. Its $31.8\\mathrm{M}$-parameter generator is just $6.5\\%$ the size of VOSR-0.5B's. SPGSR also achieves competitive quality against T2I-based SR methods. SPGSR's generator uses only $0.60\\%$ of the HR pixels used to train and distill VOSR's generator. For $512\\times512$ outputs, SPGSR achieves $2.80\\times$ and $3.35\\times$ GPU-pipeline speedups over VOSR-0.5B and VOSR-1.4B, respectively.",
+  "abstract_ja": "",
+  "authors": [
+    "Yun Yue",
+    "Luming Liang",
+    "Yiqi Zhong"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34418",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "In one-step super-resolution (SR), vision-only models extract semantic cues directly from the low-resolution (LR) image, keeping those cues spatially aligned with the structures they help restore.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "SPGSR: A Small Pixel-Space Generator for One-Step Super-Resolution",
+  "url": "https://arxiv.org/abs/2611.34418",
+  "use_case": ""
+}

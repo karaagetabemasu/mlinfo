@@ -1,0 +1,32 @@
+{
+  "abstract": "Audio-visual large language models (AV-LLMs) are designed to represent the temporal structure of audio and video, yet it remains unclear how effectively they use this temporal information to relate sounds to visual events. To examine this, we probe an AV-LLM on an audio-visual synchronization task by shifting the audio so that the queried sound overlaps a different visual event. We observe that the model still favors the originally aligned event over the newly aligned one, indicating limited sensitivity to changes in audio-visual temporal alignment. To address this, we propose Modality-Shift Contrastive Decoding (MSCD), a training-free decoding method that emphasizes audio-visual temporal alignment in model predictions. MSCD contrasts logits under preserved and disrupted temporal alignment to favor predictions supported by aligned audio and video. We disrupt this alignment by temporally shifting either the audio or the video, while keeping the other modality fixed. Extensive evaluations with two AV-LLMs across three benchmarks demonstrate the effectiveness of MSCD for temporally grounded audio-visual understanding. In particular, MSCD improves accuracy over the base models on Daily-Omni by 2.2 and 2.8 percentage points for OmniVinci and video-SALMONN 2+, respectively, suggesting that emphasizing temporal alignment can also benefit broader audio-visual understanding.",
+  "abstract_ja": "",
+  "authors": [
+    "Minyeong Jeong",
+    "Yeonju Kim",
+    "Yong Man Ro"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34162",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Audio-visual large language models (AV-LLMs) are designed to represent the temporal structure of audio and video, yet it remains unclear how effectively they use this temporal information to relate…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "audio",
+      "video"
+    ],
+    "task": []
+  },
+  "title": "Modality-Shift Contrastive Decoding for Temporally Grounded Audio-Visual Understanding",
+  "url": "https://arxiv.org/abs/2611.34162",
+  "use_case": ""
+}

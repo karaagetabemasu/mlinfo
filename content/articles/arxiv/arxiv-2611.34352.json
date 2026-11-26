@@ -1,0 +1,34 @@
+{
+  "abstract": "Robotic tasks combine object relations, logical dependencies, and temporal requirements, which robot planning and industrial control commonly specify in temporal logic (TL). We introduce TL-VLA, a vision--language--action framework that replaces natural-language task instructions with temporal logic, making this spatiotemporal structure explicit. A typed graph encoder and visual--logical fusion condition continuous actions on the task specification and the current observations. To prepare a general vision--language backbone for this interface, we develop TL-aware robot pretraining with separate semantic and structural readouts: a frozen language teacher aligns task semantics, the structural readout encodes TL syntax to support complex, long-horizon tasks, and autoregressive action prediction connects the graph representation to robot behavior. Downstream policies inherit the pretrained backbone and TL encoder and learn new fusion and action modules. On CALVIN ABC$\\rightarrow$D, our TL-aware initializer reaches \\textbf{3.800} average chain length and \\textbf{62.3\\%} five-task success, compared with 3.578 and 54.5\\% for a FAST initializer pretrained on the same data and 3.485 average chain length for a Qwen+NL baseline. On LIBERO-10, TL-aware initialization improves success from \\textbf{91.2\\% to 95.8\\%}. On LIBERO-Mem, our policy reaches \\textbf{65.0\\%} success without observation history, compared with 45.0\\% for a Qwen+NL reference. On held-out Panda planning specifications, it reaches \\textbf{59.6\\%} at Success@256 over three generation seeds, versus 48.4\\% for Qwen+TL and 37.0\\% for Qwen+NL. These results support explicit logical task conditioning and transferable TL-aware representations for robot action learning.",
+  "abstract_ja": "",
+  "authors": [
+    "Zezhi Liu",
+    "Jingwen Sun",
+    "Hongjin Chen",
+    "Shaojie Ren",
+    "Peiyan Tu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34352",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Robotic tasks combine object relations, logical dependencies, and temporal requirements, which robot planning and industrial control commonly specify in temporal logic (TL). We introduce TL-VLA, a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Beyond Natural-Language Instructions: Temporal Logic as a Task Language for VLA Models with Visual-Logical Fusion",
+  "url": "https://arxiv.org/abs/2611.34352",
+  "use_case": ""
+}

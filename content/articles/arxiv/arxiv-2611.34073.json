@@ -1,0 +1,25 @@
+{
+  "abstract": "Many sampling and inference tasks require a single distribution that balances several targets. We formulate this task as multiobjective optimization of Kullback--Leibler (KL) divergences over probability measures, in the Pareto sense. The particle method MWGraD (Nguyen et al., 2025) uses explicit Wasserstein gradient steps, and its accelerated version A-MWGraD (Nguyen et al., 2026) lacks discrete-time guarantees. We propose the multiobjective Wasserstein proximal gradient (MWPG), which uses implicit Wasserstein gradient steps, and its accelerated version, multiobjective Wasserstein accelerated proximal gradient (MWAPG), with rigorous discrete-time guarantees. Our key idea is a Hilbert-space lifting: each measure is represented as the pushforward of a fixed base measure by a map in a Hilbert space. The problem then becomes a constrained multiobjective composite problem over transport maps, to which accelerated proximal gradient methods apply. For convex and smooth potentials, we show that MWAPG decreases a Pareto merit function at the rate $\\mathcal{O}(1/k^2)$; for $m$-strongly convex and $L$-smooth potentials, the rate is $\\mathcal{O}\\big((1-\\sqrt{m/L})^k\\big)$. We also give closed-form Gaussian updates and particle implementations based on input-convex neural networks, which require no score estimation. Experiments on synthetic and real-world dataset show that MWAPG needs far fewer iterations than MWPG and matches or outperforms A-MWGraD in Bayesian multi-task learning.",
+  "abstract_ja": "",
+  "authors": [
+    "Dai Hai Nguyen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34073",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Many sampling and inference tasks require a single distribution that balances several targets. We formulate this task as multiobjective optimization of Kullback--Leibler (KL) divergences over…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Accelerated Proximal Gradient Methods for Multiobjective Optimization over Probability Measures via Hilbert-Space Lifting",
+  "url": "https://arxiv.org/abs/2611.34073",
+  "use_case": ""
+}

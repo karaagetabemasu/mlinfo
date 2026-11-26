@@ -1,0 +1,33 @@
+{
+  "abstract": "The severe susceptibility of multimodal large language models (MLLMs) to hallucinations poses a critical threat to their reliability, making a rigorous evaluation framework indispensable. However, existing evaluation pipelines largely rely on predefined test items, suffering from high construction costs, rapid obsolescence as MLLMs evolve, and ineffectiveness in probing model-specific weaknesses. To address these limitations, we propose SEAM, a self-evolving and adaptive probing framework for automatic MLLM hallucination evaluation. Specifically, SEAM introduces a composable Hallucination Probe Construction Library comprising ten hallucination-probing skills, three elicitation wrappers, and five question formats. Building on this library, SEAM establishes a dual-loop framework. In the inner loop (adaptive probing), skill-guided visual analysis, question composition, and hierarchical quality verification are coordinated with verifier and target-response feedback to refine test items and uncover model-specific hallucinations. In the outer loop (skill evolution), a skill updater distills historical probing trajectories into localized, reusable rule updates, which undergo held-out validation and are frozen before testing. Driven by these innovative structural designs, SEAM establishes an automated and self-evolving evaluation paradigm. Experiments across four target MLLMs and ten hallucination types demonstrate that SEAM substantially outperforms representative static benchmarks, achieving an 89.2\\% relative improvement in mean valid hallucination discovery rate across 12 matched comparisons.",
+  "abstract_ja": "",
+  "authors": [
+    "Shiyu Zhang",
+    "Zengyi Wo",
+    "Yuming Liao",
+    "Ran He",
+    "Caifeng Shan"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34598",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "The severe susceptibility of multimodal large language models (MLLMs) to hallucinations poses a critical threat to their reliability, making a rigorous evaluation framework indispensable. However,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "SEAM: A Self-Evolving and Adaptive Probing Framework for Automatic MLLM Hallucination Evaluation",
+  "url": "https://arxiv.org/abs/2611.34598",
+  "use_case": ""
+}

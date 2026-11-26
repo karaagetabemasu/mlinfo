@@ -1,0 +1,27 @@
+{
+  "abstract": "Multi-Agent Path Finding (MAPF) seeks collision-free paths for multiple agents from their start locations to their goal locations while minimizing path costs. Most MAPF algorithms assume that each agent occupies a single vertex and that the actions of all agents are synchronized. These assumptions may limit the use of MAPF planners in practice. Existing planners that get rid of both assumptions either handle only a few agents or cannot improve their solutions. Recently, a planner called LSRP* was proposed, which is scalable and anytime with asynchronous actions, but still limited by that each agent occupies a single vertex. This paper develops a new planner called LSRP*-LA for MAPF for large agents with asynchronous actions (LA-MAPF-AA), where an agent can occupy several cells. LSRP*-LA is scalable and complete, and it keeps improving solution quality after the initial solution is obtained until the runtime budget depletes. We analyze the properties of LSRP*-LA and test it against several baselines with up to 800 agents on various maps. LSRP*-LA can handle twice as many agents as baseline methods and its solution cost is about half that of recent synchronous planners for large agents.",
+  "abstract_ja": "",
+  "authors": [
+    "Dachuan Liu",
+    "Shizhe Zhao",
+    "Zhongqiang Ren"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33793",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "multi-agent",
+  "summary": "Multi-Agent Path Finding (MAPF) seeks collision-free paths for multiple agents from their start locations to their goal locations while minimizing path costs. Most MAPF algorithms assume that each…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "LSRP*-LA: Scalable and Anytime Multi-Agent Path Finding for Large Agents with Asynchronous Actions",
+  "url": "https://arxiv.org/abs/2611.33793",
+  "use_case": ""
+}

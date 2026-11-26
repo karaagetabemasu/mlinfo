@@ -1,0 +1,30 @@
+{
+  "abstract": "We study meta learning for statistical inference, in which neural networks learn inference rules from simulated tasks and apply them to new datasets without parameter updates, providing a form of in-context learning. We draw on statistical decision theory to design training objectives whose population minimizers are Bayes rules and exploit their connections to classical inference procedures to establish frequentist guarantees for the learned rules. The structure of classical inference procedures also motivates the design of our neural network architecture, called Residual Recurrent Deep Sets (RRDS), which repeatedly aggregates information across observations in a permutation-invariant manner and refines its internal state through residual updates. Under suitable regularity and training conditions, we establish asymptotic efficiency in parameter estimation, consistency in model selection, and variable selection guarantees in high-dimensional regression models. The RRDS architecture allows us to avoid the curse of sample size that arises in generic neural network approximation when the network takes the entire dataset as input. For fixed-dimensional models, the network size and the number of meta training tasks need only grow polynomially in the sample size; under additional analyticity conditions, these requirements improve to polylogarithmic growth in network size and nearly linear growth in the number of training tasks. Numerical experiments illustrate the finite-sample advantages of the learned inference rules over classical methods.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiaolu Li",
+    "Yun Yang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33742",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "We study meta learning for statistical inference, in which neural networks learn inference rules from simulated tasks and apply them to new datasets without parameter updates, providing a form of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Learning to Infer: Statistical Inference through Meta Learning",
+  "url": "https://arxiv.org/abs/2611.33742",
+  "use_case": ""
+}

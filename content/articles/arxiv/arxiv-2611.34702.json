@@ -1,0 +1,30 @@
+{
+  "abstract": "Changing the class mix can alter mean loss without changing the classifier. To distinguish this reweighting from changes in the model itself, we studied ten-class CIFAR-10 classification in separate branches for two target classes, measuring the trace of the loss Hessian with respect to the output-layer parameters on fixed images of each target class. Across ten new initialisations, after 60 updates to the output layer with frozen features, the trace changed by -0.152% on average in branches where the target class share rose from 10% to 19%, and by +0.071% in branches where it fell to 1%, relative to each branch's initial trace. These changes do not isolate the effect of class share from that of the assigned training images. We developed a forecast based on initial class gradients after examining the first experiment's results and then tested it prospectively without modification. For direct increases from 10% to 19%, rather than increases after a deficit, its mean absolute error was 0.022 percentage points on the initial-trace scale, compared with 0.152 for a zero-change forecast and 0.104 for equally weighted gradients. Using the assigned class proportions improved the forecast of how much the trace would change.",
+  "abstract_ja": "",
+  "authors": [
+    "Maxim Bolshim",
+    "Alexander Kugaevskikh"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34702",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Changing the class mix can alter mean loss without changing the classifier. To distinguish this reweighting from changes in the model itself, we studied ten-class CIFAR-10 classification in separate…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Effect of class proportion shifts on classifier curvature",
+  "url": "https://arxiv.org/abs/2611.34702",
+  "use_case": ""
+}

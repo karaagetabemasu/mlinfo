@@ -1,0 +1,29 @@
+{
+  "abstract": "Random Network Distillation (RND) is a scalable novelty signal for RL based on a fixed random target network and a trained predictor. However, it can overgeneralize: the predictor extrapolates the random target off the data manifold, causing novelty scores to collapse on unfamiliar inputs. This paper analyzes this failure through a kernel-theoretic lens. Under a GP target model and an NTK-regime predictor, we show that the RND novelty score is a cross-kernel residual variance: it is governed jointly by the target covariance kernel and the predictor NTK, rather than by either one alone. This identifies overgeneralization as spectral under-excitation. Motivated by this view, we formulate spectral target design as a principle for shaping RND novelty geometry. As a concrete instance, we replace the implicit random-network target with a bandwidth-controlled Random Fourier Feature (RFF) target, redistributing residual signal toward modes less attenuated by the predictor. Experiments on offline D4RL, online Atari, and Fetch manipulation benchmarks show improved novelty discrimination and downstream RL performance. The code for the RL implementation is available at https://github.com/tuuktuc86/RFF-RND.",
+  "abstract_ja": "",
+  "authors": [
+    "Minseok Jeong",
+    "Yechan Lee",
+    "Hyewon Choi",
+    "Jeongyong Yang",
+    "SooJean Han"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/tuuktuc86/RFF-RND",
+  "hasCode": true,
+  "id": "arxiv-2611.33850",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Random Network Distillation (RND) is a scalable novelty signal for RL based on a fixed random target network and a trained predictor. However, it can overgeneralize: the predictor extrapolates the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Mitigating Overgeneralization in RND via Spectral Target Design",
+  "url": "https://arxiv.org/abs/2611.33850",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Infrared and visible images offer complementary cues for all-weather object detection, yet real-world sensor dropouts can leave one stream unavailable and degrade paired-input detectors. Meanwhile, existing modality-adaptive methods apply heavy cross-modal attention uniformly across scales, incurring prohibitive token overhead on high-resolution maps. We propose Admoab-DETR, a unified real-time detector supporting infrared-only, visible-only, and paired inputs with a single set of weights. Specifically, \\emph{Resolution-Tiered Fusion} (RTF) allocates fusion capacity by spatial token density and feature granularity: a lightweight Spatial Modality Gate governs fine local fusion at the highest-resolution scale with zero-cost single-view pass-through, while channel-compressed deformable Admoab necks capture cross-modal correspondence at coarser semantic scales. Furthermore, \\emph{Mode-Matched Feature Distillation} (MMFD) aligns multi-scale encoder features with an availability-synchronized full-fusion teacher, avoiding ill-posed cross-modal hallucination while cutting parameters by 18.1\\% and paired latency by 39.6\\% at zero inference overhead. We also construct Admoab, a strictly registered 20,000-pair infrared--visible benchmark across diverse scenes. Experiments show Admoab-DETR achieves state-of-the-art accuracy--efficiency trade-offs across missing-modality and paired benchmarks. Our code will be available at https://github.com/liwenchao0615/Admoab-DETR.",
+  "abstract_ja": "",
+  "authors": [
+    "Wenchao Li",
+    "Haoran Jia",
+    "Shuyuan Wen",
+    "Keyan Chen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/liwenchao0615/Admoab-DETR",
+  "hasCode": true,
+  "id": "arxiv-2611.34163",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Infrared and visible images offer complementary cues for all-weather object detection, yet real-world sensor dropouts can leave one stream unavailable and degrade paired-input detectors. Meanwhile,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "multimodal"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Admoab-DETR: Resolution-Tiered Fusion for Infrared-Visible Object Detection with Missing Modalities",
+  "url": "https://arxiv.org/abs/2611.34163",
+  "use_case": ""
+}

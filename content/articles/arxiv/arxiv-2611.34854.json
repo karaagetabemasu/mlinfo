@@ -1,0 +1,29 @@
+{
+  "abstract": "Spike cameras capture high-speed motion through an integrate-and-fire mechanism, providing fine-grained temporal observations without exposure blur. However, their binary streams encode accumulated illumination rather than instantaneous intensity, making reliable motion estimation challenging. Existing spike-based methods exploit temporal aggregation to construct motion representations, but this process may weaken fine-grained firing patterns. Meanwhile, correlation-based estimators often rely on learned matching features without explicitly characterizing the spatial distribution and ambiguity of candidate displacements. To address these challenges, we propose TIDE-Flow, a spike-based optical flow estimation framework that jointly exploits Temporal Integration Evidence (TIE) and Displacement Evidence Encoding (DEE). TIE combines raw spike patterns, multi-scale firing statistics, temporal moments, and boundary-aware interval cues, preserving complementary temporal information before spatial feature compression. DEE further integrates structured candidate-grid features with explicit displacement statistics to characterize matching geometry and competing correspondences. Both components are incorporated into a difference-correlation recurrent refinement framework, enabling effective temporal motion modeling and correspondence estimation. Extensive experiments demonstrate the effectiveness of TIDE-Flow, with controlled ablations validating the contributions of temporal and displacement evidence modeling.",
+  "abstract_ja": "",
+  "authors": [
+    "Hanwen Liang",
+    "Wenxuan Liu",
+    "Wenxin Huang",
+    "Jingling Yuan",
+    "Zhaofei Yu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34854",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "Spike cameras capture high-speed motion through an integrate-and-fire mechanism, providing fine-grained temporal observations without exposure blur. However, their binary streams encode accumulated…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "TIDE-Flow: Fine-Grained Temporal Evidence and Structured Displacement Matching for Spike Optical Flow",
+  "url": "https://arxiv.org/abs/2611.34854",
+  "use_case": ""
+}

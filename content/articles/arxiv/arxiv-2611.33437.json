@@ -1,0 +1,31 @@
+{
+  "abstract": "Visual reasoning requires models to identify relevant visual evidence and use it to derive correct answers. Outcomebased reinforcement learning (RL) faces two key challenges in this regime: it yields no learning signal when perceptual errors cause all sampled responses to fail, and it broadcasts a uniform advantage across every token within a response. Conversely, while visual self-distillation offers dense guidance from evidence-centered image crops, student learning from token distributions alone often fails to elicit correct final answers. Motivated by an audit of training rollouts that exposes these complementary failure modes, we introduce ViCARD (Visual Credit Assignment with RewardGated Distillation), which integrates per-token visual supervision with verified correctness rewards. For each rollout group, we leverage a teacher with its input image cropped to the relevant visual area, and use this to provide per-token supervision to the student while also valuing correctness. If all sampled rollouts fail, ViCARD samples an additional crop-teacher answer and activates on-policy distillation only if that answer is correct. Together, these mechanisms provide fine-grained visual credit within informative reward groups and a learning signal for otherwise uninformative all-fail groups. Extensive comparisons across model scales demonstrate that ViCARD improves fine-grained visual reasoning performance over RL and distillation baselines, while retaining broad visual reasoning capabilities.",
+  "abstract_ja": "",
+  "authors": [
+    "Zijian Huang",
+    "Jiasi Chen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33437",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Visual reasoning requires models to identify relevant visual evidence and use it to derive correct answers. Outcomebased reinforcement learning (RL) faces two key challenges in this regime: it yields…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "image",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "ViCARD: Visual Credit Assignment with Reward-Gated Distillation for Multimodal Reasoning",
+  "url": "https://arxiv.org/abs/2611.33437",
+  "use_case": ""
+}

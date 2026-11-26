@@ -1,0 +1,31 @@
+{
+  "abstract": "End-to-end driving policies increasingly operate without explicit HD maps at inference, raising the question of what road knowledge they actually internalize. To probe this knowledge through model outputs, we introduce Road-KSU, a framework that automatically converts HD maps and actor annotations into a road-centric scene graph. From this, we derive road-focused question answering and reasoning targets, complemented by map-based trajectory compliance metrics. Pairing Road-KSU with geographically disjoint splits yields a $2 \\times 2$ evaluation crossing output modality (language vs. action) with place familiarity (seen vs. unseen roads). On NAVSIM, 95% of test samples lie within 10m of a training sample, and scores of 13 published planners on turns rise steeply with the number of training drives through the test location, pointing to memorized road geometry. Retraining on geographically disjoint splits and probing with Road-KSU confirm that action-space performance degrades most on unfamiliar turns, with failures dominated by geometric compliance. Language accuracy, however, drops on road-centric VQA on straight and curved roads alike, and remains stable on dynamic scene content. Scaling the training data further reveals a double dissociation: more drives through the same places improve driving on unseen roads but leave road question answering unchanged, whereas spreading a fixed data budget over more places increases road question answering with little change in driving performance. These findings show that improved driving scores need not imply broader road understanding on unseen roads, and identify geographic diversity as key to transferable road knowledge.",
+  "abstract_ja": "",
+  "authors": [
+    "Lena Wild",
+    "Christian Helten",
+    "Katie Z Luo",
+    "Jakob Thumm",
+    "Rafael Valencia"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33878",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "End-to-end driving policies increasingly operate without explicit HD maps at inference, raising the question of what road knowledge they actually internalize. To probe this knowledge through model…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "qa"
+    ]
+  },
+  "title": "Off the Driven Path: Transferable Road Understanding in Driving VLAs",
+  "url": "https://arxiv.org/abs/2611.33878",
+  "use_case": ""
+}

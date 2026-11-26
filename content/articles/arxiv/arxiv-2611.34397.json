@@ -1,0 +1,31 @@
+{
+  "abstract": "Multi-teacher on-policy distillation (MOPD) integrates separately trained domain specialists into a single unified model. Existing methods focus on refining the distillation procedure while initializing the student from a base model or a multi-domain SFT checkpoint, which leaves capability integration largely to distillation itself. Instead, we treat the starting point as a design variable and propose Unified MOPD (Uni-MOPD), which pairs a strong start with a simple recipe: a training-free uniform merge of specialists from the same base model initializes the student, and short MOPD with uniform domain sampling and full-vocabulary reverse KL refines it. Across five multimodal domains and 19 benchmarks, our study establishes three findings. (1) The starting point matters more than subsequent training choices: before any training, the uniform merge already matches the score that the base model reaches after 200 MOPD updates, and after short distillation it matches higher-scoring, search-based starts. (2) Short MOPD recovers most of the capabilities the merge leaves unintegrated; it improves every domain, with the largest gains where the domain teacher still leads. (3) From a strong start, uniform domain sampling and full-vocabulary reverse KL match or exceed every evaluated sampling strategy and divergence, without schedules, per-token weighting, or truncation hyperparameters. Uni-MOPD outperforms Open-MOPD at the same training budget while training 3.3 times faster than its released code. We will release the training framework, specialist checkpoints, and unified student.",
+  "abstract_ja": "",
+  "authors": [
+    "Wenzheng Chang",
+    "Taiqiang Wu",
+    "Yuqi Xu",
+    "Yongfu Zhu",
+    "Zelin Peng"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34397",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Multi-teacher on-policy distillation (MOPD) integrates separately trained domain specialists into a single unified model. Existing methods focus on refining the distillation procedure while…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Strong Starts, Simple Recipes: Unified Multi-Teacher On-Policy Distillation from Multimodal Specialists",
+  "url": "https://arxiv.org/abs/2611.34397",
+  "use_case": ""
+}

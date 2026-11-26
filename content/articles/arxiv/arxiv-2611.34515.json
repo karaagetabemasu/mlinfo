@@ -1,0 +1,34 @@
+{
+  "abstract": "It is commonly accepted that high-level concepts are represented linearly in the representation space of large neural networks. For Large Vision Language Models (LVLMs), finding those interpretable directions in visual representations is important for interpretability. To find them, the classical approach is to train a linear classifier on the representations, but it needs a large amount of labels and only recovers what can be read from the representations, not what the model actually uses. In this paper we start from the following insight: The LLM Decoder of an LVLM is also a classifier whose classes are the possible next tokens. So we use its first-order Taylor expansion as a linear classifier. Hence, we introduce Decoder-as-a-Probe (DaP), which significantly outperforms classical probing and steering baselines especially when training data is sparse. (1) It verbalizes what an LVLM perceives in a given image. (2) It can surgically change the perception of the LVLM about specific attributes (e.g. change only the color, the clothes worn or the action done). Due to its simplicity and data efficiency, we believe DaP can serve as a plug-and-play tool for LVLM research, such as interpretability, hallucination mitigation or instruction tuning.",
+  "abstract_ja": "",
+  "authors": [
+    "Adhemar de Senneville",
+    "Xavier Bou",
+    "Jérémy Anger",
+    "Rafael Grompone",
+    "Gabriele Facciolo"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34515",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "It is commonly accepted that high-level concepts are represented linearly in the representation space of large neural networks. For Large Vision Language Models (LVLMs), finding those interpretable…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Decoder-as-a-Probe: Verbalizing and Steering Visual Representations in LVLMs",
+  "url": "https://arxiv.org/abs/2611.34515",
+  "use_case": ""
+}

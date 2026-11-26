@@ -1,0 +1,28 @@
+{
+  "abstract": "We study the problem of guaranteeing non-manipulability and low regret for $n-1$ independent learners in an $n$-player repeated general game with one optimizer. Non-manipulability is a property which guarantees that learning agents can prevent a strategic opponent from exploiting their learning dynamics for its own benefit, while no-regret provides guarantees to a learner with respect to a fixed static benchmark. This problem is well understood in games with a single learner and a single optimizer, where the intersection of non-manipulable and no-regret algorithms is exactly the class of all no-swap regret algorithms. But having multiple independent learners introduces a fundamental constraint: without shared randomness, the learners' joint mixed actions must remain product distributions and individual no-swap regret guarantees need not provide a guarantee of non-manipulability. Our core contributions are as follows. We introduce a set of $n-1$ algorithms that $n-1$ learners can play which individually guarantee sublinear swap regret and, when played in conjunction with each other, jointly guarantee non-manipulability against an optimizer. These algorithms require the computation of a Nash equilibrium at every timestep, and we show that this computational cost is inherent in general games. We construct a reduction from computing Nash in $(n-1)$-player games to finding $n-1$ jointly non-manipulable no-external regret algorithms. Therefore, polynomial time algorithms which guarantee multi-learner non-manipulability in conjunction with no-external regret do not exist unless PPAD $\\subseteq$ FBPP. In order to construct these algorithms, we develop new techniques for Blackwell approachability beyond $2$-player games. We provide a general characterization for sets which are approachable by $n-1$ players without correlated randomness.",
+  "abstract_ja": "",
+  "authors": [
+    "Natalie Collina",
+    "Elijah Journey Fullerton",
+    "Jingyi Liu",
+    "S. Matthew Weinberg"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33562",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "We study the problem of guaranteeing non-manipulability and low regret for $n-1$ independent learners in an $n$-player repeated general game with one optimizer. Non-manipulability is a property which…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Non-manipulability and Approachability Beyond Two-Player Games",
+  "url": "https://arxiv.org/abs/2611.33562",
+  "use_case": ""
+}

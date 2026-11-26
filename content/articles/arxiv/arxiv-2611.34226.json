@@ -1,0 +1,31 @@
+{
+  "abstract": "Relighting reconstructed 3D scenes remains challenging due to the complex nature of light transport: slow or approximate visual feedback restricts the editor's ability to fine-tune the results to satisfaction. We present a hybrid relighting approach that enables interactive, high-fidelity updates of direct and indirect indoor illumination without per-edit optimization. Our approach permits the editor to make a wide range of relighting edits at room-scale, with near-instant feedback. Our key insight is to precompute geometric light exchange rather than illumination responses, retaining an inexpensive transport solve that accommodates changes in emission and surface reflectance. We evaluate direct illumination on reconstructed 2D Gaussians using visibility-aware sampling of one-sided emitters, while propagating diffuse interreflection through sparse radiosity on a triangle proxy. A sparse projection fitted through Gaussian alpha compositing transfers the proxy solution to the reconstruction. Our formulation further supports fast fixture transformations and emitter insertion by recomputing light source injection. Across eight relighting conditions of our synthetic test suite, our sub-second edits improve relighting fidelity over prior path-traced editing by an average of 5\\,dB PSNR, while reducing editing latency by up to three orders of magnitude. Qualitative results further demonstrate realistic, interactive relighting of real-world captures.",
+  "abstract_ja": "",
+  "authors": [
+    "Noah Rothenberger",
+    "Dor Verbin",
+    "Serge Belongie",
+    "Bernhard Kerbl"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34226",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Relighting reconstructed 3D scenes remains challenging due to the complex nature of light transport: slow or approximate visual feedback restricts the editor's ability to fine-tune the results to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "LiveRelight: Sub-Second Global Illumination Editing for Gaussian Interiors",
+  "url": "https://arxiv.org/abs/2611.34226",
+  "use_case": ""
+}
