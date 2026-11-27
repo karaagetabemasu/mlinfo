@@ -1,0 +1,29 @@
+{
+  "abstract": "LLM routing aims to choose, for each prompt, which model in a portfolio is most likely to answer correctly. This only makes sense when the benchmark contains enough prompt-specific variation for different models to be best on different inputs. On coarse-scored LLM benchmarks, however, many models often tie for the best score, and the single best model may already leave little room for improvement. We therefore propose a routeability-first audit, instantiated as RAP and RouteabilityBench, a runnable claim-verification package. The audit is retrospective: it runs once the benchmark-portfolio score matrix exists and before router comparisons are interpreted as general evidence, rather than certifying a portfolio that has not yet been evaluated. Across four benchmarks and 66 LLMs, generic routing enhancements such as larger embedding sets, dimensionality reduction, selective abstention, clustering, and stronger regressors do not consistently outperform the single best model. The clearest positive evidence is concentrated in portfolio-dependent Omni-MATH settings, while GPQA, MMLU-Pro, and IFEval show different ways in which routing can remain hard or predictor-sensitive. Our practical recommendation is that routing gains should be reported together with routeability diagnostics, tied-best analysis, portfolio construction details, and family-corrected statistical tests.",
+  "abstract_ja": "",
+  "authors": [
+    "Yihang Lu",
+    "Denica Kjorvezir",
+    "Ana Gjorgjevikj",
+    "Carola Doerr",
+    "Tome Eftimov"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34825",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "LLM routing aims to choose, for each prompt, which model in a portfolio is most likely to answer correctly. This only makes sense when the benchmark contains enough prompt-specific variation for…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Routeability Before Routing: Routeability Audit Protocol (RAP) and RouteabilityBench for Audited LLM Model Selection",
+  "url": "https://arxiv.org/abs/2611.34825",
+  "use_case": ""
+}

@@ -1,0 +1,30 @@
+{
+  "abstract": "Reinforcement learning with verifiable rewards (RLVR) has rapidly advanced long-chain reasoning, yet standard policy optimizers distribute rollout compute and gradient credit blindly across a trajectory. On hard problems, an early misstep derails the remaining trace, whereas on solvable problems, the policy keeps generating redundant verification long after the answer is already determined. We trace both pathologies to a single structural fact: under an on-policy verifier, the true prefix pass probability $V^π(u)$ along a reasoning trace forms a $[0,1]$-bounded Doob martingale whose learnable credit variance is strictly conserved and bounded above by $V^π(u)(1-V^π(u))$, vanishing at both the derailed ($V^π\\to 0$) and absorbed ($V^π\\to 1$) boundaries. We introduce BRIAR (Bifurcation-guided Rollout and Inference on Adaptive Reasoning trees), a tree-structured RLVR framework built directly around this martingale geometry. First, BRIAR expands discourse-aligned reasoning trees along an upper-confidence outcome-bifurcation frontier, steering rollouts away from absorbed rumination and toward unresolved decision points. Second, it models latent node values with boundary-scaled heteroscedastic edge variances and computes exact global posteriors in linear $\\mathcal{O}(|V|)$ time via two-pass Rauch--Tung--Striebel (RTS) tree belief smoothing, eliminating $\\mathcal{O}(m^3)$ matrix inversions while gating out spurious boundary noise. Third, BRIAR detects minimal absorbed frontier nodes and applies zero-sum log-length centered suffix advantages strictly post-absorption, leaving pre-absorption derivations provably invariant.",
+  "abstract_ja": "",
+  "authors": [
+    "Tianyi Yang",
+    "Haoran Zhang",
+    "Yifan Chen",
+    "Zixuan Li"
+  ],
+  "category": "mlops",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34746",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "deployment",
+  "summary": "Reinforcement learning with verifiable rewards (RLVR) has rapidly advanced long-chain reasoning, yet standard policy optimizers distribute rollout compute and gradient credit blindly across a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "BRIAR: Martingale Belief Smoothing on Bifurcation-Guided Reasoning Trees",
+  "url": "https://arxiv.org/abs/2611.34746",
+  "use_case": ""
+}

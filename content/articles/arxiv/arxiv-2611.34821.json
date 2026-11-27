@@ -1,0 +1,29 @@
+{
+  "abstract": "Looped Mixture-of-Experts (MoE) architectures revisit layer parameters across depths. This design increases effective depth without adding parameters. Recent looped MoE studies report substantial gains over the standard MoE at matched budgets (parameters, FLOPs and KV cache). However, the reported gains still confound parameter revisit with other design choices, e.g., network shape and residual scale. We ask, what does parameter revisit itself buy? Using matched non-revisit controls, we find that parameter revisit itself buys almost nothing. We argue that revisit only offers a freedom an MoE already has, i.e., trading experts for depth (more layers, fewer experts each) at fixed parameters. First, at matched budgets, we decompose the state-of-the-art looped recipe, with revisit last. A non-revisit control retains all the gain. Most comes from network shape, and the rest from residual scale. We prove this scale acts as a lower learning rate on revisited layers. This helps under AdamW's uneven layer step sizes, but disappears under Muon, which keeps them nearly equal. Second, beyond matched budgets, we evaluate revisit by adding compute at fixed parameters. One extra visit gains more than doubling the experts. Yet without revisit, a deeper standard MoE at equal parameters and compute obtains 90.2% of that gain under Muon. Overall, gains come from network shape, the optimizer and added compute, which a standard MoE can adopt. Accordingly, we propose LoopTitan-Base as a stronger MoE baseline. Under Muon, it matches the strongest looped recipe without revisit or residual scale. We open-source LoopTitan and release 17 pretrained models (including LoopTitan-Base and the control). Our experiment record is public as GitHub issues, with predictions pre-registered and the full exploration history kept. This is our Phase 1 technical report, laying the foundation for follow-up studies.",
+  "abstract_ja": "",
+  "authors": [
+    "Zichen Tian",
+    "Yudong Lu",
+    "Xuansheng Wu",
+    "Na Zou",
+    "Xia Hu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34821",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Looped Mixture-of-Experts (MoE) architectures revisit layer parameters across depths. This design increases effective depth without adding parameters.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "LoopTitan: What Does Parameter Revisit Buy a Mixture-of-Experts?",
+  "url": "https://arxiv.org/abs/2611.34821",
+  "use_case": ""
+}

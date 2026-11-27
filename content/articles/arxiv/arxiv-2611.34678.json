@@ -1,0 +1,33 @@
+{
+  "abstract": "Concave utility reinforcement learning (CURL) unifies a diverse range of problems, including standard reinforcement learning (RL), imitation learning, and maximum entropy exploration. Unlike standard RL, CURL generally requires estimating high-dimensional state-action occupancy measures. Consequently, existing methods for CURL either sidestep the exploration problem, are restricted to the tabular setting, or lack computationally efficient policy optimization. To address this, we study CURL in finite-horizon episodic bilinear MDPs, where the transition model admits a low-dimensional representation in known feature spaces. We use the bilinear structure to efficiently estimate occupancy measures via low-dimensional feature expectations, and propose a model-based optimistic concave utility policy optimization (OCUPO) framework. We first instantiate OCUPO in the on-policy setting, where each iteration uses independent trajectories to estimate the concave utility policy gradient, and prove an $\\widetilde{O}(ε^{-4})$ sample complexity. To improve sample efficiency, we then instantiate OCUPO in the off-policy setting. We propose a novel backward feature regression subroutine that reuses trajectories collected by past policies to estimate the occupancy measure of the current policy. Under suitable technical assumptions on the policy class (satisfied, e.g., by log-linear policies with sufficiently expressive features), we prove that the resulting algorithm achieves an $\\widetilde{O}(ε^{-2})$ sample complexity, up to a controllable projection error. We further extend our framework to linear MDPs and show that the resulting off-policy algorithm retains the same sample complexity. In these settings, the dependence on $ε$ matches that for standard RL with linear function approximation. Moreover, our algorithms do not rely on the integral oracle required by prior work.",
+  "abstract_ja": "",
+  "authors": [
+    "Max Qiushi Lin",
+    "Ahmed Magd",
+    "Sharan Vaswani"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34678",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Concave utility reinforcement learning (CURL) unifies a diverse range of problems, including standard reinforcement learning (RL), imitation learning, and maximum entropy exploration. Unlike standard…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "tabular"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Provably Efficient Concave Utility Reinforcement Learning with Linear Function Approximation",
+  "url": "https://arxiv.org/abs/2611.34678",
+  "use_case": ""
+}
