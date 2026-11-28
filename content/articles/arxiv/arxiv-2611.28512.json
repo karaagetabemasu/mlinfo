@@ -1,0 +1,28 @@
+{
+  "abstract": "Planning through contact requires accounting for the coupled dynamics of a robot and its environment, including inertial effects, contact forces, and friction. However, the non-smoothness and multimodality of contact dynamics and contact geometry makes gradient-based optimization challenging. In this work, we propose lifted multiple shooting, a trajectory optimization transcription that can be solved directly using nonlinear program solvers. By introducing contact impulses as optimization variables, our formulation allows the optimizer to satisfy the state-transition constraints using friction-cone-feasible impulses while separately enforcing their consistency with the contact model. Our formulation supports a broad class of contact constitutive relations, with sensitivities computed through implicit differentiation. To enable efficient planning over long horizons and for high-dimensional systems, we further introduce IP-PAS, a parallel-in-time primal-dual interior-point solver that achieves O(log T) parallel computational depth. We evaluate the proposed methods on six fully dynamic contact-rich planning tasks, including nonprehensile pushing and in-hand manipulation, without contact-guiding costs. Lifted multiple shooting improves success rates by up to 81.5 percentage points over standard multiple shooting, while IP-PAS achieves solution quality comparable to serial methods with up to a 3.1x speedup and scales to horizons of 40,000 timesteps.",
+  "abstract_ja": "",
+  "authors": [
+    "Wei-Chen Li",
+    "Glen Chou"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28512",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Planning through contact requires accounting for the coupled dynamics of a robot and its environment, including inertial effects, contact forces, and friction. However, the non-smoothness and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Lifted Multiple Shooting for Parallel-in-Time Contact-Rich Trajectory Optimization",
+  "url": "https://arxiv.org/abs/2611.28512",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Most gaze estimation models are trained on data collected using specialized equipment. The limited diversity of subjects, scenes, and head poses in these datasets hinders generalization to new conditions. We present FlexGaze, a family of 3D gaze estimators pretrained with weak supervision from gaze labels (pseudo-labels) automatically generated from in-the-wild images. We use off-the-shelf models to predict 2D gaze targets and scene depth, then combine these predictions to generate 3D gaze labels for approximately 3.24 million head instances. At inference, FlexGaze predicts gaze from a head crop alone and can handle profile and rear views without requiring face detection or head pose estimation. We use data augmentation during training to improve robustness to variations in crop position and scale. Pretrained using only these generated gaze labels, FlexGaze generalizes to unseen benchmarks. After supervised fine-tuning on public gaze datasets, we evaluate FlexGaze on eight benchmarks under a unified evaluation protocol. Our models match or outperform publicly available gaze estimators with several times as many parameters on most benchmarks. We release our dataset of generated gaze labels, all trained models, and code via https://github.com/ihp-lab/FlexGaze.",
+  "abstract_ja": "",
+  "authors": [
+    "Zongjian Li",
+    "Mohammad Soleymani"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/ihp-lab/FlexGaze",
+  "hasCode": true,
+  "id": "arxiv-2611.30012",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Most gaze estimation models are trained on data collected using specialized equipment. The limited diversity of subjects, scenes, and head poses in these datasets hinders generalization to new…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "FlexGaze: Weakly Supervised Gaze Estimation at Scale",
+  "url": "https://arxiv.org/abs/2611.30012",
+  "use_case": ""
+}

@@ -1,0 +1,25 @@
+{
+  "abstract": "Automated guided vehicles (AGVs) that transport a load together must keep a formation while each vehicle tracks its own reference, and they coordinate over wireless links with link-dependent, time-varying and jumping delays. We propose a cascade design for differential-drive AGVs modelled as kinematic unicycles: delayed data from the neighbours drive only a second-order filter that shifts each vehicle's own reference, and an unmodified gain-scheduled tracking law follows the shifted reference. A saturation keeps the shifted reference feasible, and the feed-forward is exact, so the tracking loop never sees the network. We prove that tracking and formation errors remain bounded for arbitrary delays and converge for every bounded delay and every directed, possibly switching, graph. We also construct a strict Lyapunov function with explicit constants and prove exponential convergence and a local input-to-state estimate with delay-independent gains. On undirected graphs, the coupling attenuates the formation error caused by persistent local errors by at least the factor lambda/(lambda+Lambda*lambda_2(L)) (leak lambda, coupling gain Lambda, algebraic connectivity lambda_2(L)), for any delay. Every inequality is verified with an event-driven, error-controlled simulation. A robustness study on a high-fidelity AGV model (drive dynamics, slip, localisation errors, clock offsets, lossy Wi-Fi) comprises 4,894 runs, including paired comparisons against tuned baselines. The cascade never failed, with latencies up to 4 s, 90% packet loss and up to 12 vehicles, whereas a direct delayed coupling failed when its gain saturated the drives. Coupling reduced the formation error after traction losses by 21-32% and after safety stops by up to 47%, at the price of tracking accuracy. Localisation bias and clock offsets, which no coupling law can observe, limit the achievable accuracy.",
+  "abstract_ja": "",
+  "authors": [
+    "Yunfei Bi"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32409",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Automated guided vehicles (AGVs) that transport a load together must keep a formation while each vehicle tracks its own reference, and they coordinate over wireless links with link-dependent,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Delay-Tolerant Formation Tracking for Multi-AGV Systems via Reference-Shift Coupling",
+  "url": "https://arxiv.org/abs/2611.32409",
+  "use_case": ""
+}

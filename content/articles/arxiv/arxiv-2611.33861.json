@@ -1,0 +1,34 @@
+{
+  "abstract": "Audio-visual understanding requires perceptual grounding, temporal understanding, and semantic inference. Multi-teacher distillation can consolidate these capabilities, but direct probability matching does not explicitly capture teacher prediction changes across audio-visual conditions. We introduce OmniMeld, a multi-teacher on-policy distillation method that integrates domain expertise through modality-response-guided distribution matching. We train four teachers covering grounding and correspondence, temporal dynamics and event structure, causal and inferential reasoning, and contextual and holistic understanding. Each sample is routed to its corresponding teacher for supervision conditioned on student-generated answer prefixes. We derive transport costs from teacher prediction changes over shared candidate tokens across audio-visual conditions, using optimal transport to match student predictions to those of the teacher under complete audio-visual input. We also construct OmniMeld-20K for domain-specialized teacher training. The dataset spans four capability domains, with responses structured into evidence, reasoning, and answer sections and verified through consistency checks and media-based review. Experiments on audio-visual and general video understanding benchmarks demonstrate competitive teacher performance among similarly sized open-source models. The student improves over its base model across all evaluated benchmarks and surpasses the teachers' base model on several benchmarks.",
+  "abstract_ja": "",
+  "authors": [
+    "Daili Hua",
+    "Yifan Dai",
+    "Bohan Zeng",
+    "Yuran Wang",
+    "Zihao Wu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33861",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Audio-visual understanding requires perceptual grounding, temporal understanding, and semantic inference. Multi-teacher distillation can consolidate these capabilities, but direct probability…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "audio",
+      "video"
+    ],
+    "task": []
+  },
+  "title": "OmniMeld: Enhancing Audio-Visual Understanding via Multi-Teacher On-Policy Distillation",
+  "url": "https://arxiv.org/abs/2611.33861",
+  "use_case": ""
+}

@@ -1,0 +1,29 @@
+{
+  "abstract": "Estimating covariate-dependent treatment effects is a central challenge in personalized medicine. Existing approaches often emphasize either fully parametric models, risking misspecification, or flexible machine learning methods, which may require large samples to detect the small treatment effect heterogeneity common in medical settings. We propose B-SLIM (BART Sparse Linear Interaction Model), a semi-parametric model for causal inference that combines a flexible Bayesian Additive Regression Trees (BART) prognostic component with a sparse linear treatment effect component. This hybrid structure combines flexible prognosis modelling with interpretable treatment effects. The treatment effect component includes main effects and pairwise interactions, regularized through a global-local shrinkage prior. The model allows covariates to contribute to both components and provides direct inference on treatment effect modifiers, conditional mean potential outcomes, and conditional average treatment effects (CATEs). In simulations, B-SLIM outperforms a fully non-parametric alternative when main effects and pairwise interactions adequately represent the treatment effect function, whereas the non-parametric model performs better under strong non-linearity. On the nonlinear Infant Health and Development Program (IHDP) benchmark, the two Bayesian methods are competitive in predictive accuracy and ranking, and both achieve lower mean CATE error than the DR-learner, S-learner, and R-learner implementations considered. In the CANVAS trials, both methods yield similar rankings, while B-SLIM identifies several important drivers of treatment effect heterogeneity. B-SLIM enables interpretable inference on treatment effect parameters and patient-specific prediction of conditional mean potential outcomes, while remaining competitive at sample sizes relevant to medical studies.",
+  "abstract_ja": "",
+  "authors": [
+    "Yusufhan Balci",
+    "Mark A. van de Wiel",
+    "Jeroen Hoogland"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33246",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Estimating covariate-dependent treatment effects is a central challenge in personalized medicine. Existing approaches often emphasize either fully parametric models, risking misspecification, or…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "B-SLIM: BART Sparse Linear Interactions Model for Heterogeneous Treatment Effects",
+  "url": "https://arxiv.org/abs/2611.33246",
+  "use_case": ""
+}

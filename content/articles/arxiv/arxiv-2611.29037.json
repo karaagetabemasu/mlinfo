@@ -1,0 +1,26 @@
+{
+  "abstract": "Multi-agent systems increasingly rely on learning-enabled components and distributed algorithms for perception, estimation, and control, introducing uncertainty that makes it challenging to satisfy mission requirements. Conformal prediction quantifies uncertainty with distribution-free guarantees, but existing methods do not address the challenging combination of dependence among robots, distributed calibration, and the distribution shift induced when calibrated uncertainty bounds modify the closed-loop system. We introduce Multi-Agent Interactive Conformal Prediction (MA-ICP), a distributed framework for computing robustness margins in heterogeneous systems to satisfy mission requirements with high probability. MA-ICP aggregates robot-level nonconformity scores, which measure errors in modeled or estimated quantities, into one mission-level score per robot class, allowing dependence among robots within each mission. Mission-level scores and quantiles are computed using neighbor-to-neighbor communication in a finite number of communication rounds. Updating the robustness margins changes robot trajectories and distributed algorithm outputs, so we use class-dependent score sensitivities to upper bound the shift in mission-level scores. We then establish calibration-conditional coverage guarantees per robot class for the updated margins. We demonstrate MA-ICP on cooperative payload control, formation control with obstacle avoidance, and distributed target tracking missions.",
+  "abstract_ja": "",
+  "authors": [
+    "Daniel M. Cherenson",
+    "Dimitra Panagou"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29037",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Multi-agent systems increasingly rely on learning-enabled components and distributed algorithms for perception, estimation, and control, introducing uncertainty that makes it challenging to satisfy…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Distributed Interactive Conformal Prediction for Multi-Agent Systems",
+  "url": "https://arxiv.org/abs/2611.29037",
+  "use_case": ""
+}

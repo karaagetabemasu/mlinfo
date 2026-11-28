@@ -1,0 +1,29 @@
+{
+  "abstract": "Subset selection is a fundamental task in machine learning, statistics and combinatorial optimisation, with applications in active learning, band selection, input selection and experimental design. The utility of a subset depends on information revealed only after the selection, such as labels or responses, and on interactions among selected candidates. Existing approaches combine value estimation and redundancy control in application-specific ways, which limits their use in other domains. This paper introduces Subset Acquisition with Learned Value Estimates and Search (SALVES), a framework that decomposes subset selection into two components. First, a value model is trained by supervised learning on tasks where the hidden information is known. On a new task, it predicts the utility each candidate would add to the current selection. Second, a selection step chooses the subset from these predictions, typically by simulated annealing with a diversity term penalising redundancy. The value model transfers to new classes, pretrained networks, datasets and sensors, and from synthetic to real data. On the four applications, SALVES matches or outperforms application-specific baselines on average. It requires substantially fewer bands for equal accuracy and remains reliable in input selection where individual baselines fail.",
+  "abstract_ja": "",
+  "authors": [
+    "Jade Lejeune Herman",
+    "Johan A. K. Suykens",
+    "Peter Goos"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27751",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Subset selection is a fundamental task in machine learning, statistics and combinatorial optimisation, with applications in active learning, band selection, input selection and experimental design.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "supervised"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "Budgeted Subset Selection with a Transferable Learned Value Model",
+  "url": "https://arxiv.org/abs/2611.27751",
+  "use_case": ""
+}

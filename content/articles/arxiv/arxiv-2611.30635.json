@@ -1,0 +1,28 @@
+{
+  "abstract": "Finite mixture regression is sensitive to gross residual outliers when component errors are modeled by Gaussian likelihoods. We propose a log-truncated likelihood for mixture regression. The likelihood is obtained by integrating a logarithmically growing Catoni-type score and exponentiating the negative integrated score, producing a proper location-scale density with a reusable normalizing constant and EM-compatible responsibilities. Although the induced density itself is lighter than exponential and has all moments, its likelihood score grows only logarithmically; this distinction yields a smooth residual-robust estimator that can be stably fitted when the data are generated from Laplace, Pareto, or even infinite-variance heavy-tailed error mechanisms. We derive deterministic tail envelopes, the location-scale decomposition of the normalizing constant, a rejection sampler, a lower-bounded mixing-weight update, a unique componentwise scale update, and a constrained generalized EM algorithm. The theory gives monotonicity of the observed likelihood and a local population-to-sample perturbation guarantee under standard compactness, contraction, and numerical-accuracy conditions. Simulations and applications to insurance claim severity and crypto return innovations show that the method is a competitive smooth likelihood-based alternative to Gaussian and pseudo-robust EM procedures, especially in residual-outlier regimes, while also clarifying its limitations under high leverage and extremely adversarial contamination.",
+  "abstract_ja": "",
+  "authors": [
+    "Huiming Zhang",
+    "Longkun Hao"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30635",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Finite mixture regression is sensitive to gross residual outliers when component errors are modeled by Gaussian likelihoods. We propose a log-truncated likelihood for mixture regression.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Robust Mixture Regressions and EM Algorithms via the Log-Truncated Likelihood",
+  "url": "https://arxiv.org/abs/2611.30635",
+  "use_case": ""
+}

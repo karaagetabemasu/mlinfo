@@ -1,0 +1,32 @@
+{
+  "abstract": "Color Vision Deficiency (CVD) affects a large population worldwide, yet practical recoloring must run continuously on-device. Frame-wise video recoloring produces color flickering, while existing methods rely on costly cross-frame alignment in pixel or feature space. We observe that color flickering correlates with variations in channel-wise responses, with color-sensitive variations concentrated in a low-rank subspace. Based on this observation, we propose Lightweight Spatio-Temporal Adaptive Recoloring (LiteSTAR), built around LiCaD, a plug-and-play Lightweight Channel-Adaptive Decoder. LiCaD performs temporal filtering in a low-rank state space with learned process and observation uncertainties. It then modulates feature channels to achieve temporal consistency without explicit spatial alignment. LiteSTAR further employs adaptive patch routing to improve color discrimination for CVD users while avoiding unnecessary over-enhancement. We also introduce EgoCVDSet, the first egocentric video benchmark for CVD recoloring. Extensive quantitative and qualitative experiments demonstrate that LiteSTAR achieves superior performance with only 0.05M parameters. LiCaD further demonstrates strong generalization across different tasks and network architectures. The code, models, and dataset will be released after review.",
+  "abstract_ja": "",
+  "authors": [
+    "Peiyang Lin",
+    "Sichen Lin",
+    "Yipeng Liao",
+    "Liqun Lin",
+    "Xu Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32140",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Color Vision Deficiency (CVD) affects a large population worldwide, yet practical recoloring must run continuously on-device. Frame-wise video recoloring produces color flickering, while existing…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video"
+    ],
+    "task": []
+  },
+  "title": "LiteSTAR: Low-Rank Channel Modulation for Temporally Consistent CVD Video Compensation",
+  "url": "https://arxiv.org/abs/2611.32140",
+  "use_case": ""
+}

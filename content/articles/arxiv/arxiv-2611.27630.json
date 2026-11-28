@@ -1,0 +1,34 @@
+{
+  "abstract": "Whole-body segmentation tools such as TotalSegmentator and MOOSE split more than 100 classes across five or six networks. The reason is memory. Standard 3D inference, as implemented in nnU-Net and MONAI, holds a logit for every class and voxel, on the working grid and again on the scanner's grid. For a median whole-body CT at 125 classes, that is 76 GB. We show that this memory wall lies in what inference materializes, not in the task, and remove it without approximation. Every step after the network is local along one axis, so its outputs can be streamed through a ring one patch thick. The classification head commutes with blending and resampling, so the ring carries the network's features instead of the class logits. Memory thus no longer grows with classes times volume, and the label map on the scanner's grid stays exact. This holds for any model with a pointwise affine head, without retraining. Many-class models, previously impractical, become deployable. One model trained on all classes matches or slightly exceeds the toolkits' five or six specialists in segmentation quality and runs 5.8-15x faster end to end, with 3.2-7.6x less RAM and under 8 GB of VRAM. We provide the method as a drop-in for nnU-Net, TotalSegmentator and MOOSE. The code is part of nnU-Net (https://github.com/MIC-DKFZ/nnUNet), and unified models for both toolkits will be released.",
+  "abstract_ja": "",
+  "authors": [
+    "Fabian Isensee",
+    "Jakob Wasserthal",
+    "Lalith Kumar Shiyam Sundar",
+    "Maximilian Rokuss",
+    "Moritz Langenberg"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/MIC-DKFZ/nnUNet",
+  "hasCode": true,
+  "id": "arxiv-2611.27630",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Whole-body segmentation tools such as TotalSegmentator and MOOSE split more than 100 classes across five or six networks. The reason is memory.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "classification",
+      "segmentation"
+    ]
+  },
+  "title": "Segment Everything, Materialize Nothing: Exact Streaming Inference for Many-Class 3D Segmentation",
+  "url": "https://arxiv.org/abs/2611.27630",
+  "use_case": ""
+}

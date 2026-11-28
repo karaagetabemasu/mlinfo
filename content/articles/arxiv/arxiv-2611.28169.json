@@ -1,0 +1,25 @@
+{
+  "abstract": "Suppose a selector sees a finite labelled dataset and chooses $n$ of its rows, with repetition. Ordinary least squares is then fitted to the rows that were chosen, without weights, and the excess loss of the fit on the full dataset is measured in units of the optimal loss. Without further assumptions this ratio does not decay with $n$. We examine the problem for $d$ features and rows of normalized leverage at most $κ$, and determine or bound the leading constants. A selector that must establish its rule before seeing the labels has an optimal worst-case ratio of $dκ/n$ to leading order, whatever use it makes of the features. With scalar labels, a selector that sees the labels achieves a value between $dκ/(2n)$ and $dκΛ_d/n$, where $Λ_d<1$ is the rounding constant of mean selection. For $d\\le4$, the constant is then $dκ/2$, so that labels are worth exactly a factor of two there, and for one feature and $m$ outputs it is $κΛ_m$. With two or more features the selector can change the proportions of the frequent rows and therefore reshape its own design matrix. We design a simplified optimization problem, which we call a game, that bounds the constant for datasets with exactly fitted frequent rows, then show that its value is at most one half of the gradient energy in several regimes, and that one half is exact along directions in which the frequent rows are rigid, such as an intercept. For grouped designs, in which reshaping amounts to the allocation of a common budget, the constant is $27d/128$ up to an additive constant, compared with $d$ without labels. Nevertheless, one half is not the constant in every dimension: we construct datasets of extremely high dimension and large leverage on which every selection has an excess ratio of at least $(e^{-1/2}-o(1))\\,dκ/n$, so that labels are worth at most a factor close to $\\sqrt e$ there.",
+  "abstract_ja": "",
+  "authors": [
+    "Evan Borodow"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28169",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Suppose a selector sees a finite labelled dataset and chooses $n$ of its rows, with repetition. Ordinary least squares is then fitted to the rows that were chosen, without weights, and the excess…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "The Value of Labels in Data Selection for Least Squares",
+  "url": "https://arxiv.org/abs/2611.28169",
+  "use_case": ""
+}

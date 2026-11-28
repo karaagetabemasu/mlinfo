@@ -1,0 +1,29 @@
+{
+  "abstract": "Moving the camera changes where objects appear in an image, challenging RGB-based imitation learning. A common strategy pairs synthesized views with the same demonstrated action, but ignores supporting physical correspondence across views. By predicting depth with camera calibrations, 3D policies may handle it yet suffer the issue of varied observed point sets. To address these limitations, we propose ReGeoAnch, a geometry-anchored imitation learning framework for viewpoint generalization. Specifically, we build global anchors in the robot base frame and local anchors in the gripper frame, providing shared physical references across viewpoints. Furthermore, Decoupled Appearance-Guided Geometric Readout uses Point-to-Anchor Aggregation (PAA) to obtain comparable and stable geometry around anchors beyond pointwise correspondence. A controllable and decoupled information flow, Anchor-to-Policy Readout (APR), leverages complementary visual and geometric information and supports viewpoint generalization: view-dependent appearances are queried by view-invariant robot state to select task-relevant anchors, with geometric values alone to form the final readout. We further introduce Cross-View Readout Consistency to align the directions of policy readouts from paired source and synthesized target views. Experiments on 12 manipulation tasks across MetaWorld and ManiSkill3 demonstrate improved viewpoint generalization over baseline policies.",
+  "abstract_ja": "",
+  "authors": [
+    "Chengyu Tao",
+    "Chunxi Huang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32162",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Moving the camera changes where objects appear in an image, challenging RGB-based imitation learning. A common strategy pairs synthesized views with the same demonstrated action, but ignores…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Reading Geometric Anchors: Viewpoint Generalization in Imitation Learning for Robotic Manipulation with RGB-Only Deployment",
+  "url": "https://arxiv.org/abs/2611.32162",
+  "use_case": ""
+}

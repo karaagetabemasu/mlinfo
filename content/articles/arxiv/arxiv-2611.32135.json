@@ -1,0 +1,32 @@
+{
+  "abstract": "Diffusion models are increasingly used for medical image reconstruction and super-resolution, but their samples may contain plausible fine-scale hallucinations that are difficult to identify from the reconstructed image alone. We propose Med-PODiff, a patch-wise proper orthogonal decomposition (POD) diffusion framework for brain MRI super-resolution that performs generative reconstruction in compact and interpretable local coefficient spaces. Unlike pixel-space or learned-latent diffusion models, Med-PODiff uses the POD structure to separate low-rank anatomical variation from fine-detail residual variation, enabling predictive uncertainty to be decomposed into total, coarse, and fine components. Building on this decomposition, we define a pixel-wise hallucination-risk score, $H_p$, that emphasizes regions where fine-detail uncertainty dominates coarse structural uncertainty. On brain MRI, Med-PODiff outperforms representative diffusion baselines in reconstruction quality while producing well-calibrated predictive intervals, with total uncertainty detecting high-error regions at AUROC 0.954. More importantly, the decomposed uncertainty is scale-selective: coarse and fine uncertainty preferentially predict errors at the corresponding scales, with $H_p$ localizing fine error at AUROC $0.906$. Controlled injections and retrospective Cartesian $k$-space undersampling further support fine-detail localization and degradation robustness. The discarded POD tail is only $3.8\\%$ of the retained fine-error magnitude, and Med-PODiff improves downstream segmentation consistency while requiring substantially less inference time than pixel-space diffusion.",
+  "abstract_ja": "",
+  "authors": [
+    "Onkar Jadhav",
+    "Tim French"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32135",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Diffusion models are increasingly used for medical image reconstruction and super-resolution, but their samples may contain plausible fine-scale hallucinations that are difficult to identify from the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection",
+      "generation",
+      "segmentation"
+    ]
+  },
+  "title": "Interpretable Orthogonal Latent Diffusion with Scale-Selective Uncertainty for Medical Image Super-Resolution",
+  "url": "https://arxiv.org/abs/2611.32135",
+  "use_case": ""
+}

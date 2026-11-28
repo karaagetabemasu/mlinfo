@@ -1,0 +1,31 @@
+{
+  "abstract": "EEG-to-image decoding recovers visual information from non-invasive brain recordings, providing a window into human perception. However, comparisons across systems are confounded by a variable that is rarely reported as such: which participants' data the system was allowed to use. The same Top-1 score on a 200-way gallery may come from a per-participant system, a pooled model over all participants, or a model that never saw the test participant---cases that differ by more than most architectural changes between the methods being compared. We present \\bench, a benchmark on THINGS-EEG2 that standardizes the gallery and EEG input, matches training budgets across systems within each regime, and compares three participant-access regimes: within-subject, joint-subject, and strict leave-one-subject-out, with unlabeled target calibration reported separately. All three settings evaluate concept-level zero-shot retrieval: the 200 test concepts are disjoint from the 1,654 concepts used for EEG--image fitting and validation. We compare retrieval across access regimes and use zero-EEG and matched-wrong EEG controls to assess dependence on correct EEG--stimulus pairing. We vary trial averaging, gallery size and difficulty, and training data coverage, and compare target adaptation and visual feature targets. We also assess sensitivity to EEG window length and channel count, robustness to input perturbations, and confidence calibration. These results establish participant-access regime as a necessary reporting dimension alongside gallery, repetition, and visual target.",
+  "abstract_ja": "",
+  "authors": [
+    "Kieren Yu",
+    "Qian Zhang",
+    "Ziyang Liu",
+    "Chang Huang",
+    "Jintai Chen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30061",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "EEG-to-image decoding recovers visual information from non-invasive brain recordings, providing a window into human perception. However, comparisons across systems are confounded by a variable that…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "EVD-Bench: A Comprehensive Benchmark for EEG-to-Image Decoding",
+  "url": "https://arxiv.org/abs/2611.30061",
+  "use_case": ""
+}

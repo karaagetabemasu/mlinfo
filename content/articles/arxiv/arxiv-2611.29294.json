@@ -1,0 +1,35 @@
+{
+  "abstract": "Cooperative perception with roadside LiDARs (RSLs) extends the sensing range of autonomous vehicles and resolves onboard-sensor occlusions, particularly at curves and intersections. Because infrastructure deployment is costly, existing work optimizes RSL configurations once, against road geometry and aggregated traffic statistics, and treats them as fixed thereafter. Traffic flow, however, is inherently dynamic, and a placement optimal on average can be far from optimal at any given moment. We introduce RSLaA (Roadside LiDARs as Agents), a framework in which each RSL adaptively adjusts its pose to the evolving traffic scene over decision-time windows. Since ground truth is unavailable at decision time, the framework centers on surrogate metrics computed solely from a probabilistic occupancy grid of historical observations, which predicts the next-window perception performance of candidate poses. We construct a co-simulation benchmark pairing five candidate surrogates with detector-agnostic ground-truth perception labels at every decision window, identifying the multi-view coverage metric J_mv as the most reliable predictor. Upon this validated surrogate we build two adaptive configuration methods, a receding-horizon (MPC) optimizer and a lightweight MAPPO-based multi-agent reinforcement learning scheme with centralized training and decentralized execution. Across 10 sites and 89 six-hour traffic scenarios (890 evaluation runs), adaptive configuration consistently improves the composite perception score over static deployment. Our results indicate that RSLs could be benefitted from being treated as agents.",
+  "abstract_ja": "",
+  "authors": [
+    "Yang Ma",
+    "Yichen Sun",
+    "Yubing Zheng",
+    "Zhongxiang Feng",
+    "Zeyang Cheng"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29294",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Cooperative perception with roadside LiDARs (RSLs) extends the sensing range of autonomous vehicles and resolves onboard-sensor occlusions, particularly at curves and intersections. Because…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "RSLaA: Self-Reconfiguring Roadside LiDARs as Agents for 3D Traffic Perception",
+  "url": "https://arxiv.org/abs/2611.29294",
+  "use_case": ""
+}

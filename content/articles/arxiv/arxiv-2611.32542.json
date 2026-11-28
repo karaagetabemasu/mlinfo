@@ -1,0 +1,35 @@
+{
+  "abstract": "Vision foundation backbones are often treated as drop-in upgrades for improving region proposals in open-vocabulary panoptic segmentation (OVPS). Yet, improvements in backbones often fail to translate well into downstream cross-domain performance. Using ODISE, a diffusion-based OVPS model with a CLIP-based recognition branch, as a testbed, we replace its diffusion visual extractor with DINOv2, ConvNeXt, or DINOv3, and find that backbone upgrades can introduce a grouping-recognition mismatch: an alignment gap between dense-region features and CLIP text embeddings. Across source and near-domain, the newer DINOv3 variant improves source-domain performance but collapses on several cross-domain targets, whereas other baselines, interestingly, show the opposite. Stage-wise diagnostics, linear probes, and region-text alignment analyses indicate that DINOv3 embeddings retain semantic information but are geometrically incompatible with CLIP. We test adaptations, including text-side adapters, conformal mask retention (CMR), and a lean 2.7M-parameter visual-side LoRA, and find that text-side adaptation is more sensitive to vocabulary overlap. CMR provides only limited and target-specific gains, indicating that retention alone cannot resolve the full cross-domain failure. To understand why ADE20K resists improvement across all interventions, we evaluate OVSeg, CAT-Seg, and MaskCLIP. This separates two failure axes: a recoverable visual-to-CLIP interface gap that visual-side LoRA largely repairs, and a vocabulary-boundary limitation shared by the evaluated CLIP-based recognition systems that requires different remedies.",
+  "abstract_ja": "",
+  "authors": [
+    "Huy Hoang Nguyen",
+    "Oliver Zendel",
+    "Tobias Glueck",
+    "Minh Nhat Vu",
+    "Andreas Kugi"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32542",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Vision foundation backbones are often treated as drop-in upgrades for improving region proposals in open-vocabulary panoptic segmentation (OVPS). Yet, improvements in backbones often fail to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification",
+      "segmentation"
+    ]
+  },
+  "title": "Align or Fail: The Hidden Gap in Cross-Domain Panoptic Segmentation",
+  "url": "https://arxiv.org/abs/2611.32542",
+  "use_case": ""
+}

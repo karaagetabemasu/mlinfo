@@ -1,0 +1,32 @@
+{
+  "abstract": "Gradient-based optimal control under a Signal Temporal Logic (STL) specification involves solving a nonlinear program whose constraints are smoothed robustness functions of the trajectory, and automatic differentiation without knowledge of sparsity computes the Jacobian and the Hessian that its solver needs in full. This often renders the problem computationally intractable. The dynamics and the specification prescribe a sparsity pattern through the STL syntax, the windows of the temporal operators and the variables that the predicates read. Standard tools such as CasADi recover this pattern by structural detection. In this work, we propose a method to prescribe such a pattern directly from the task specification. We show that our method allows us to exploit SparseMax, a recently proposed smooth robustness operator that is certifiably sparse and sound. Its derivative is exactly zero at every operand at or below a data-dependent threshold, which structural detection cannot see. We derive the patterns that expose this trajectory-dependent sparsity to sparse automatic differentiation, with a margin test for their reuse and Hessians confined to the variables of each constraint's support. We demonstrate the method on a dual-arm coordination task in which two arms share a hand-off zone divided into cells and one until constraint per scheduled visit keeps the other arm out of a cell until the visitor has left it. The two scenes are a zone of five cells and a circle of 64 cells, with single solves and closed-loop re-planning on a rigid-body simulation. Our exact-Hessian interior-point solves are up to 27 times faster than those with the sound log-sum-exp robustness in CasADi and IPOPT.",
+  "abstract_ja": "",
+  "authors": [
+    "Sai Sandeep Damera",
+    "Ryan Matheu",
+    "John S. Baras",
+    "Calin Belta"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29346",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "video",
+  "summary": "Gradient-based optimal control under a Signal Temporal Logic (STL) specification involves solving a nonlinear program whose constraints are smoothed robustness functions of the trajectory, and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Specification-Aware Sparse Differentiation: Planning under Signal Temporal Logic with Sparsemax Robustness",
+  "url": "https://arxiv.org/abs/2611.29346",
+  "use_case": ""
+}

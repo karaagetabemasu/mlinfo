@@ -1,0 +1,34 @@
+{
+  "abstract": "Sol-Attn (Sparsifying online attention) combines sparse exact computation with low-cost representative approximation to accelerate training-free inference in diffusion video models. However, intra-block attention can focus on only a few tokens. While preserving these key interactions exactly, the block-level decision incurs the cost of evaluating many low-response members. We propose Sol$^{3}$, a training-free hierarchical sparse attention method that further refines how exact computations are allocated. First, we introduce Gaussian-guided hierarchical routing, which determines the scope of exact computation step by step, from blocks to tokens, using statistical thresholds at each level. Only a subset of members within Mixed blocks that require refinement is selected for exact computation, while representative terms approximate the remaining members. We further design heterogeneous routing statistics that combine block-center correlations with variations in Key and Value within blocks to identify blocks that are difficult to approximate. Among these Mixed blocks, we uniformly compare raw token relevance to select members requiring exact computation. Experiments on video generation, audio-video co-generation, and world simulation tasks demonstrate that Sol$^{3}$ achieves 86% attention sparsity and delivers a $3.07\\times$ attention speedup while preserving quality. Our code is available at https://github.com/FofGofx/sol3.",
+  "abstract_ja": "",
+  "authors": [
+    "Guoxin Fan",
+    "Weilun Feng",
+    "Chuanguang Yang",
+    "Mingqiang Wu",
+    "Xiaokun Liu"
+  ],
+  "category": "generative-ai",
+  "codeUrl": "https://github.com/FofGofx/sol3",
+  "hasCode": true,
+  "id": "arxiv-2611.32562",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "diffusion",
+  "summary": "Sol-Attn (Sparsifying online attention) combines sparse exact computation with low-cost representative approximation to accelerate training-free inference in diffusion video models. However,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio",
+      "video"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Sol$^{3}$: Accelerating Video Diffusion for Free via Hierarchical Sparse Attention Routing",
+  "url": "https://arxiv.org/abs/2611.32562",
+  "use_case": ""
+}

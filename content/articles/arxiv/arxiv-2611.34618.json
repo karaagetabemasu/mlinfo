@@ -1,0 +1,31 @@
+{
+  "abstract": "ComBat harmonizes multicentre radiomic features, but batch variables are usually chosen manually, without a standardized criterion across image acquisition parameters. We propose ParsiComBat, which selects acquisition parameters for ComBat, balancing batch-effect removal against feature-structure preservation and abstaining when technical variation is negligible. ParsiComBat ranks candidate acquisition parameters by batch effect, filters redundancy, and scores sequential ComBat corrections. We evaluated it in three experiments: in simulations, testing whether it recovered a known batch variable and abstained without one; in CT (NSCLC-Radiomics) and MRI (MAMA-MIA) cohorts, comparing batch-effect removal against manufacturer (manual), every feasible parameter (greedy) and AutoCombat; and in clinical prediction, internally and externally. In simulations, ParsiComBat identified the true batch variable in 92.9% of positive trials and abstained in 99.2% of null controls. In CT, correcting for reconstruction kernel reduced mean k-nearest neighbour batch-effect test from 0.276 to 0.032, almost matching greedy correction of six variables. In MRI, correcting for slice thickness and manufacturer reduced it from 0.680 to 0.325, slightly more than manual selection but less than greedy correction of seven variables. Removing technical variation did not improve clinical discrimination: no strategy, including raw features, differed significantly from ParsiComBat in area under the curve. ParsiComBat provides a data-driven framework that removes technical batch effects using minimal acquisition parameters, preserving feature structure and clinical discrimination. It selects variables verifiable against the acquisition protocol and abstains when no correction is needed, supporting transparent, reproducible multicentre radiomics.",
+  "abstract_ja": "",
+  "authors": [
+    "Jose Lozano-Montoya",
+    "Gemma Urbanos",
+    "Carmen Prieto-de-la-Lastra",
+    "Emilio Soria-Olivas",
+    "Ana Jimenez-Pastor"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34618",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "ComBat harmonizes multicentre radiomic features, but batch variables are usually chosen manually, without a standardized criterion across image acquisition parameters. We propose ParsiComBat, which…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Automated Batch-Variable Selection for ComBat-Based Radiomic Harmonization",
+  "url": "https://arxiv.org/abs/2611.34618",
+  "use_case": ""
+}

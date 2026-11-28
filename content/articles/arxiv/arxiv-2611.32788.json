@@ -1,0 +1,29 @@
+{
+  "abstract": "Most imitation policies that predict chunks of future actions use the dense action representation, in which the chunk holds one control target per step. In stage-structured manipulation, where a task can be divided into stages with definable endpoints, the keypose action representation instead sets each step of the chunk to the endpoint of the stage that step belongs to, and a speed-capped servo supplies the motion. We compare the two in several simulated manipulation tasks and on a real robot, with the same chunk length and matched demonstrations, observations, policy architectures and update budgets; in simulation, each one's execution rule is selected on tuning scenes. When the simulated demonstrations are slowed, paused and rerouted, dense success falls sharply while keypose stays roughly level, across three policy architectures and with endpoints extracted from the recorded demonstrations; keypose also leads under object-size and position shift. With clean demonstrations, keypose leads only when they are scarce and is otherwise close to or behind dense across the simulated tasks, provided that the demonstrations and execution rule suit its executor; when they do not, it falls far below dense. The same dependence on the executor appeared on a real robot learning to open a drawer from human demonstrations: dense succeeded more often, and keypose improved substantially only after its executor's rotation and forward speed were adjusted to the demonstrations. These results suggest that keypose trades sensitivity to such variation in the demonstrations for sensitivity to execution that departs from them.",
+  "abstract_ja": "",
+  "authors": [
+    "Haizhou Ge",
+    "Mengshuo Wang",
+    "Zhixing Chen",
+    "Lei Han",
+    "Chen Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32788",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Most imitation policies that predict chunks of future actions use the dense action representation, in which the chunk holds one control target per step. In stage-structured manipulation, where a task…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Keypose or Dense? A Controlled Comparison of Action Representations for Stage-Structured Manipulation",
+  "url": "https://arxiv.org/abs/2611.32788",
+  "use_case": ""
+}

@@ -1,0 +1,34 @@
+{
+  "abstract": "Few-shot medical anomaly detection (MAD) has largely followed a dataset-specific \"one-for-one\" paradigm, leaving unified \"one-for-many\" modeling underexplored. Naively extending existing methods to this setting causes substantial performance degradation, especially at the pixel level. We attribute this to their detection mechanisms: a shared decision boundary becomes unreliable across heterogeneous lesion definitions, whereas a normal-only memory bank cannot adequately cover diverse normal distributions with few references. We propose ProX-MAD, a proxy-based framework that aggregates spatial context into compact, learnable, state-specific proxies for unified few-shot MAD. Its Masked Proxy Infusion Attention (MPIA) module cross-attends proxy tokens to reference patch features and applies proxy-wise masking to retain high-confidence correspondences, mitigating proxy collapse and encouraging diverse proxies that summarize both normal and abnormal references. Across six medical datasets, ProX-MAD exhibits only a marginal performance drop from one-for-one to one-for-many training. Despite being trained only once as a unified model, it also outperforms prior state-of-the-art methods on average even when they use their more favorable one-for-one protocol, demonstrating the practicality of unified multi-dataset MAD.",
+  "abstract_ja": "",
+  "authors": [
+    "Seunghyun Oh",
+    "Seongsu Lee",
+    "Seunghye Chae",
+    "Youngmin Ro"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32941",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Few-shot medical anomaly detection (MAD) has largely followed a dataset-specific \"one-for-one\" paradigm, leaving unified \"one-for-many\" modeling underexplored. Naively extending existing methods to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection",
+      "anomaly-detection"
+    ]
+  },
+  "title": "ProX-MAD: Aggregating Spatial Context into Representative Proxies for Few-shot Medical Anomaly Detection",
+  "url": "https://arxiv.org/abs/2611.32941",
+  "use_case": ""
+}

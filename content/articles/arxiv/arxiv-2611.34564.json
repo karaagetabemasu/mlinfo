@@ -1,0 +1,34 @@
+{
+  "abstract": "Generative models enable unrestricted adversarial attacks that aim to fool classifiers while preserving the natural appearance and semantics of the original image. However, existing diffusion-based black-box attacks largely rely on transferability from surrogates, making their effectiveness sensitive to differences between surrogate and victim. Improving transferability can also distort semantic content and degrade image quality. Moreover, retaining the original prompt to preserve fidelity leaves the diffusion model's conditional prior underused for adversarial guidance. We address these limitations by adapting score-based black-box attacks to reverse diffusion, using the victim's output probabilities to guide latent updates without accessing its gradients. We further introduce adaptive-target guidance, which uses the victim's current runner-up class as an adversarial condition to steer denoising towards the decision boundary. Because such guidance can introduce unwanted semantic changes, we also propose target-search guidance, which searches for a small perturbation of the original condition embedding using a score-based attack. This achieves comparable attack effectiveness with better image quality than runner-up guidance. Experiments on the ImageNet-Compatible dataset show that our framework outperforms transfer-based baselines in both attack effectiveness and image quality.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuhang Chen",
+    "Chih-Hong Cheng",
+    "Kurt Debattista",
+    "Siddartha Khastgir",
+    "Xingyu Zhao"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34564",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Generative models enable unrestricted adversarial attacks that aim to fool classifiers while preserving the natural appearance and semantics of the original image. However, existing diffusion-based…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "generation"
+    ]
+  },
+  "title": "Score-based Black-box Attack via Adversarial Condition Guided Diffusion Model",
+  "url": "https://arxiv.org/abs/2611.34564",
+  "use_case": ""
+}

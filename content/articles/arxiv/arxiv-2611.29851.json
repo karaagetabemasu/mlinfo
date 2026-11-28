@@ -1,0 +1,31 @@
+{
+  "abstract": "Open-vocabulary object detectors localize objects from free-form text prompts, but their reliability depends on how users describe the target. Standard evaluations usually test a fixed class name, leaving prompt-induced failure modes underexplored. We introduce LexiDet-OVD, a benchmark and metric suite for studying lexical sensitivity in open-vocabulary object detection. We organize prompt sets into equivalent, conditional, and broad semantic scopes, and evaluate four detector families on fixed COCO and LVIS samples, each covering 30 classes (800 held-out COCO images and 1,000 LVIS images). Beyond mean and worst-prompt AP50, we report P10, CVaR at 20%, leave-one-prompt-out influence, detection agreement, box consistency, and confidence variance using one-to-one multi-instance matching. Equivalent-prompt best-to-worst gaps range from 5.3 to 23.4 points on COCO1000 and from 5.1 to 29.9 points on LVIS1000-30c, showing that strong average accuracy and lexical stability are distinct properties. We compare maximum-score selection, weighted-box fusion, Prompt Consensus, and an exploratory fusion rule. Aggregation recovers performance in several settings, but no method dominates all model-dataset pairs. A controlled Detic/SHiNe comparison further shows that semantic hierarchy enrichment does not by itself eliminate lexical sensitivity. These results support reporting prompt-distribution robustness alongside conventional open-vocabulary detection accuracy.",
+  "abstract_ja": "",
+  "authors": [
+    "Amit Thakur",
+    "Mukesh Singhal"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29851",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Open-vocabulary object detectors localize objects from free-form text prompts, but their reliability depends on how users describe the target. Standard evaluations usually test a fixed class name,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "LexiDet-OVD: Benchmarking Lexical Sensitivity in Open-Vocabulary Object Detection",
+  "url": "https://arxiv.org/abs/2611.29851",
+  "use_case": ""
+}

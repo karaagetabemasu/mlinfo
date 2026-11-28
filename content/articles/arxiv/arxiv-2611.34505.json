@@ -1,0 +1,33 @@
+{
+  "abstract": "A watermark lets the provider of a language model recognise the text its model wrote, which matters more as generated text becomes hard to tell from human writing: provenance underpins academic integrity, the fight against misinformation and new regulation. Providers have started to watermark the text of their models, and to explain how their watermarks work. Explaining a watermark, however, also tells an attacker how to break it, and there are two ways to do so: reword the text to erase the mark, or learn the mark and copy it onto text the model never wrote. Each attack has been studied on its own. We study an attacker that reads the published design to choose between them: it erases the watermarks that are hard to learn and forges the ones that survive rewording. Against it, every existing watermark we compare fails. We propose KeyedLex, which reads its secret key from the grammar of the previous sentence, which rewording changes little, and whose detector does not need to recover the key exactly. It outperforms every watermark we compare on both models we test, losing about half of its signal where the best alternative loses two thirds, at no extra cost in text quality over the best-known watermarks.",
+  "abstract_ja": "",
+  "authors": [
+    "Jon Carmona",
+    "Jon Irureta",
+    "Jon Imaz",
+    "Aizea Lojo",
+    "Juan Martínez-Romo"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34505",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "A watermark lets the provider of a language model recognise the text its model wrote, which matters more as generated text becomes hard to tell from human writing: provenance underpins academic…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Know the Design, Pick the Attack: Sentence-Keyed Watermarks for LLMs",
+  "url": "https://arxiv.org/abs/2611.34505",
+  "use_case": ""
+}

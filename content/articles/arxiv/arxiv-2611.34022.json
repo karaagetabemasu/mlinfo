@@ -1,0 +1,35 @@
+{
+  "abstract": "Foundation models (FMs) have advanced visual understanding and generation by providing semantically rich representations. However, this role of FMs remains underexplored in human motion. Large motion datasets offer diverse movements at scale, but often lack action labels for systematically evaluating learned representations on understanding tasks. Skeleton datasets enable such evaluation through established recognition protocols, yet are typically smaller and focus on predefined actions captured in controlled environments. To combine these strengths, we present MoSk, to the best of our knowledge, the first Motion-Skeleton foundation model to integrate motion and skeleton datasets. MoSk learns shared representations through self-supervised masked motion modeling. We incorporate joint-name embeddings to provide a common anatomical reference across various skeleton formats. A cross-attention decoder reconstructs masked motion from the encoder's features, with joint-name embeddings specifying the target joints. Experiments demonstrate strong action-recognition performance across diverse settings, including linear evaluation and fine-tuning. MoSk also substantially improves motion generation across multiple backbones through representation alignment, reducing FID on MotionMillion by up to 9.75 for unconditional generation and 3.83 for text-to-motion generation.",
+  "abstract_ja": "",
+  "authors": [
+    "Yun Chen",
+    "Munchurl Kim",
+    "Jeonghyeok Do"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34022",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "attention",
+  "summary": "Foundation models (FMs) have advanced visual understanding and generation by providing semantically rich representations. However, this role of FMs remains underexplored in human motion.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification",
+      "generation"
+    ]
+  },
+  "title": "MoSk: A Unified Motion-Skeleton Foundation Model for Human Motion Understanding and Generation",
+  "url": "https://arxiv.org/abs/2611.34022",
+  "use_case": ""
+}

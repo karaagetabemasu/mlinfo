@@ -1,0 +1,36 @@
+{
+  "abstract": "Camera-controlled video generation anticipates how a scene appears from new viewpoints by relying on a prior learned implicitly from large-scale data. Ultrasound poses the same problem, with the probe pose as the viewpoint, but under opposite conditions: anatomy offers an explicit prior that every sonographer relies on, whereas tracked scans are too scarce to learn it implicitly. As a result, pose control alone is not enough, and pose-conditioned ultrasound generators produce implausible anatomy in unscanned regions and inconsistent anatomy on revisits. We go beyond pose control and give the generator the two kinds of knowledge that make up a sonographer's mental model. An anatomical prior, built from a population of subjects, guides generation where nothing has been scanned, and is refined online by every generated chunk towards the scanned subject. A 3D latent memory, designed around the cross-sectional physics of ultrasound, compounds the generated slices into a volume of the patient and reslices it at new poses, keeping revisited anatomy consistent. The fine-grained memory enters the generator at the input, while the coarse anatomy prior guides the layout across transformer blocks. Experiments on thyroid, kidney, and lumbar spine show improved visual fidelity, pose following, and anatomical consistency over pose-conditioned and memory-augmented baselines.",
+  "abstract_ja": "",
+  "authors": [
+    "Yue Zhou",
+    "Fangxu Han",
+    "Tony Danjun Wang",
+    "Nassir Navab",
+    "Yuan Bi"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34622",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Camera-controlled video generation anticipates how a scene appears from new viewpoints by relying on a prior learned implicitly from large-scale data. Ultrasound poses the same problem, with the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "audio",
+      "video",
+      "3d"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Beyond Pose Control: Anatomically Consistent Ultrasound Video Generation",
+  "url": "https://arxiv.org/abs/2611.34622",
+  "use_case": ""
+}

@@ -1,0 +1,31 @@
+{
+  "abstract": "Latent world models plan by rolling out hundreds of candidate action sequences through a transformer predictor, so a single decision can take tens of seconds. Existing accelerations prune spatial tokens as in vision-language models, yet a sampling-based planner uses predicted costs only to rank candidates, so a rollout can be compressed freely as long as the ranking survives. We propose SOAR, a training-free method that adapts rollout compression to each planning decision. At every decision, SOAR probes a few candidates under several token budgets and keeps the smallest budget that preserves their ranking, so it compresses as far as the current decision allows, without task labels. A closed-loop study of more than 80,000 episodes fixes the rest of the rollout: the first step, which alone reads a real observation, stays exact, and the context frame is cached rather than recomputed. On seven navigation and manipulation tasks with frozen checkpoints, SOAR matches dense-level planning success at 2.3x speedup and retains 98% at 2.5x. Our code is available at https://github.com/starrywiki/SOAR.",
+  "abstract_ja": "",
+  "authors": [
+    "Anqi Li",
+    "Kai Liu",
+    "Linghe Kong",
+    "Yulun Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/starrywiki/SOAR",
+  "hasCode": true,
+  "id": "arxiv-2611.27639",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Latent world models plan by rolling out hundreds of candidate action sequences through a transformer predictor, so a single decision can take tens of seconds. Existing accelerations prune spatial…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "SOAR: Training-Free Rank-Consistent Rollout Compression for Latent World Model Planning",
+  "url": "https://arxiv.org/abs/2611.27639",
+  "use_case": ""
+}

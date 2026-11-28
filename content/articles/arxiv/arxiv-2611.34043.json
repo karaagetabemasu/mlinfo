@@ -1,0 +1,33 @@
+{
+  "abstract": "A robot learning from one human demonstration may rarely succeed on its own, leaving reinforcement learning (RL) with little reward feedback. We introduce WISER-RL ({W}ake--sleep policy improvement loop, {I}mitation, and {S}elective {E}xperience {R}eplay), a composite reinforcement learning framework that turns assisted practice into autonomous control. During wake, GPTDAgger monitors disagreement among actions sampled by a diffusion policy. When disagreement crosses a threshold, a frozen GPT controller uses retrieved experience to continue the episode. During sleep, Conflict-Aware Experience Reweighting (CAER) compares visually matched successful trajectories and downweights conflicting action windows with more steps remaining to success. The policy imitates the reweighted successes and learns from both successes and failures through offline advantage-guided RL before collecting the next round. After final online PPO refinement, the autonomous policy succeeded in 100% evaluations on each of six LIBERO tasks and 100% trials on each of two real-robot tasks.",
+  "abstract_ja": "",
+  "authors": [
+    "Kwunhang Wong",
+    "Yang Bai",
+    "Qingyang Bao",
+    "Liudi Yang",
+    "Chenzhi Liu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34043",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "A robot learning from one human demonstration may rarely succeed on its own, leaving reinforcement learning (RL) with little reward feedback. We introduce WISER-RL ({W}ake--sleep policy improvement…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "WISER-RL: A Wake-Sleep Learning Mechanism for Robot Reinforcement Learning from One Demonstration",
+  "url": "https://arxiv.org/abs/2611.34043",
+  "use_case": ""
+}

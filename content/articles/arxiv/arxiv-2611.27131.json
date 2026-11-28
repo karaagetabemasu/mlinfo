@@ -1,0 +1,26 @@
+{
+  "abstract": "Knowledge distillation (KD) trains a student to match a teacher's output distribution. However, full-vocabulary KD requires costly output-head backpropagation. To reduce this cost, we introduce Distillation with Errors (DWE). Our key insight is that minibatch training already approximates the training gradient, so per-position backpropagation does not need to be exact. DWE therefore exploits the zero-sum structure of logit gradients to construct sparse paired gradient estimates whose expectation matches the full-vocabulary gradient. It then uses geometry-aware pairing and stratified sampling to further reduce estimation variance. We prove that the estimator is unbiased and evaluate DWE's gradient estimation accuracy and training efficiency. At the same sampling budget, DWE reduces hidden-state and output-weight gradient MSE by 63.5% and 57.9%, respectively, compared with importance sampling. In off-policy KD, it achieves up to a $1.95\\times$ output-head speedup and reduces training time by 10.4-15.7% relative to full-vocabulary KD. In on-policy distillation (OPD), it achieves up to a $2.20\\times$ output-head speedup. DWE maintains competitive downstream performance in both settings. Our code is available at https://github.com/dwe-lab/DWE.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuyang Zhang",
+    "Yuxin Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/dwe-lab/DWE",
+  "hasCode": true,
+  "id": "arxiv-2611.27131",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Knowledge distillation (KD) trains a student to match a teacher's output distribution. However, full-vocabulary KD requires costly output-head backpropagation.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Distillation with Errors: Sparse Unbiased Backpropagation for Knowledge Distillation",
+  "url": "https://arxiv.org/abs/2611.27131",
+  "use_case": ""
+}

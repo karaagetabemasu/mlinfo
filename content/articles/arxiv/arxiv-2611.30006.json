@@ -1,0 +1,28 @@
+{
+  "abstract": "Selecting a strategy by testing it against an opponent is common in game-playing AI, red-teaming of language models, and safety evaluations of AI agents. In many of these settings, the opponent adapts to what it observes, so a strategy that keeps winning in practice may already have stopped working by the time it is used. Motivated by these settings, we study a player who tries strategies in practice games against an adaptive opponent, decides when to stop, and then either selects one strategy for the next game or abstains. The goal is to select a strategy that meets a target win probability while rarely selecting one that has already fallen below it. For a single strategy, we propose the Sequential Private Accumulated-excess Rule (SPAR), which accumulates evidence through a capped likelihood ratio and selects the strategy once this evidence reaches a privately drawn uniform threshold. We show that the stopping time must involve such private randomness. The number of games SPAR needs is inversely proportional to the error tolerance, and this rate is optimal even when the opponent happens not to adapt. To select among multiple strategies, we introduce Screen-then-SPAR, which screens candidates in stages before applying SPAR. The procedure adapts to the best strategy's unknown initial margin above the target and achieves the minimax rate up to logarithmic factors. The performance of Screen-then-SPAR is demonstrated through simulations and two real-data studies, one using recorded coding-agent attacks from MonitoringBench and the other using rock-paper-scissors matches between human players and an adaptive bot.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhongyuan Lyu",
+    "Xiaocong Xu"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30006",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "Selecting a strategy by testing it against an opponent is common in game-playing AI, red-teaming of language models, and safety evaluations of AI agents. In many of these settings, the opponent…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Sequential Selection against an Adaptive Opponent",
+  "url": "https://arxiv.org/abs/2611.30006",
+  "use_case": ""
+}

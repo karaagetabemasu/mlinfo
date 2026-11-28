@@ -1,0 +1,29 @@
+{
+  "abstract": "An assistant that summarizes old conversations may later need a detail from the original exchange. It can score archived passages against the question, but only passages that fit in the prompt reach the answering model. We tested whether a BM25 filter saves input tokens once that limit is taken into account. We calibrated the filter on passages that individually corrected an answer the model got wrong from the summaries alone. Across 75 LongMemEval questions, filtering changed one prompt and saved 0.096% of input tokens. With and without the filter, the model answered the same questions correctly under a second automated grading. On a random sample, two human graders' settled judgments agreed with the automated grades in 92.9% of definite comparisons (Cohen's kappa = 0.805). Building on earlier work that distinguishes retrieved evidence from delivered evidence, we give an exact test for packers that try whole passages in a fixed order and skip any that do not fit. Run the packer without the filter. The prompt changes exactly when an admitted passage scores below the cutoff. Code and data: https://github.com/KurbanIntelligenceLab/Certfold",
+  "abstract_ja": "",
+  "authors": [
+    "John Knight",
+    "Erchin Serpedin",
+    "Hasan Kurban"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/KurbanIntelligenceLab/Certfold",
+  "hasCode": true,
+  "id": "arxiv-2611.30500",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "An assistant that summarizes old conversations may later need a detail from the original exchange. It can score archived passages against the question, but only passages that fit in the prompt reach…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Why Calibrated BM25 Filtering Barely Reduced Context on LongMemEval",
+  "url": "https://arxiv.org/abs/2611.30500",
+  "use_case": ""
+}

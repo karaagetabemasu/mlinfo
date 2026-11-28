@@ -1,0 +1,36 @@
+{
+  "abstract": "Self-supervised learning (SSL) speech backbones are the standard frontend for synthetic-speech detection, and layer-wise probing has established which layers carry the most signal. But analysis stops there: which of a layer's twelve attention heads compute the spoof decision is unknown. We present the first head-level study of two frozen backbones, WavLM-base and Wav2Vec2-base, on ASVspoof 5. Per-head ablation shows that only a few heads carry the decision while others actively oppose it; removing those heads lowers equal error rate (EER) with no retraining, by 13% relative in WavLM and 22% in Wav2Vec2. We also find a probe-free signature: spoofed speech draws more focused attention than genuine speech, and this gap alone separates the two almost as well as the full representation, peaking at each backbone's most discriminative layer. Finally, attack identity is decodable from every head, yet heads differ in what they do, not in what they know.",
+  "abstract_ja": "",
+  "authors": [
+    "Mohamed Mallat",
+    "Michele Panariello",
+    "Massimiliano Todisco",
+    "Anthony Larcher",
+    "Nicholas Evans"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34426",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "multimodal",
+  "summary": "Self-supervised learning (SSL) speech backbones are the standard frontend for synthetic-speech detection, and layer-wise probing has established which layers carry the most signal. But analysis stops…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "supervised",
+      "self-supervised"
+    ],
+    "modality": [
+      "audio"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "A Head-Level Investigative Study of Self-Supervised Backbones for Synthetic Speech Detection",
+  "url": "https://arxiv.org/abs/2611.34426",
+  "use_case": ""
+}

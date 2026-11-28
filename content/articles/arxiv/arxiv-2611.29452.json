@@ -1,0 +1,31 @@
+{
+  "abstract": "Density-based Adaptive Mode Decomposition (DAMD) shows that the Variational Mode Decomposition (VMD) objective, restricted to hard binary partitions, is equivalent to weighted K-means clustering, enabling automatic mode detection. The equivalence concerns detection only; extraction with hard Voronoi masks introduces boundary artefacts. This paper develops a soft extraction theory independent of the detector. First, the hard-partition equivalence is shown to be an algebraic identity that holds if and only if the weights are binary; hard and soft extraction are optima of two different functionals (linear K-means and regularised quadratic VMD) over the same simplex. Second, the regularised soft VMD problem is proved to have a closed-form global optimum, unique on the support of the spectrum: the Lorentzian-weighted partition $s_k^*(ω)\\propto[1+2α(ω-ω_k)^2]^{-1}$. Every fixed point of the VMD ADMM mode update is proportional to $|ω-ω_k|^{-2}$; when the dual ascent enforces reconstruction, it is the $α\\to\\infty$ endpoint of this family. The Lorentzian shape at finite $α$ is therefore a consequence of the regulariser, and $α$ controls how closely the allocation approaches that fixed point. Third, under a Lorentzian spectral prior the partition equals the minimum mean-square error (MMSE) estimator of each mode in the low-noise limit, tying $α$ to the inverse squared mode bandwidth. Since the partition needs only detected centre frequencies, the extraction rule can be switched without recomputing detection. Synthetic experiments with known ground truth test the predictions; four categories of real signals show how much the two allocations differ.",
+  "abstract_ja": "",
+  "authors": [
+    "Hao Jia",
+    "Chunyu Yang",
+    "Fan Feng",
+    "Cesar F. Caiafa",
+    "Feng Duan"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29452",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Density-based Adaptive Mode Decomposition (DAMD) shows that the Variational Mode Decomposition (VMD) objective, restricted to hard binary partitions, is equivalent to weighted K-means clustering,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "A Closed-Form Soft Spectral Partition for Adaptive Mode Decomposition",
+  "url": "https://arxiv.org/abs/2611.29452",
+  "use_case": ""
+}

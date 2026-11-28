@@ -1,0 +1,32 @@
+{
+  "abstract": "Spiking Neural Networks (SNNs) offer promising energy efficiency, making them well suited for energy-constrained applications. Much of their energy savings stems from the sparse encoding of spike trains. We show that spike trains can be represented more efficiently using Differential Time Representation (DTR), which requires fewer bits than Address-Event Representation (AER) or equidistantly sampled 1-bit spike trains. To support multiple input spike trains, we provide a rigorous proof that DTR sequences can be merged with low complexity. We also provide a set of modular hardware streaming components using this representation that can be flexibly connected to construct custom accelerator architectures for specific SNNs. Tailoring the hardware architecture to the selected SNN is streamlined by a Python framework combining the modular hardware components into a full SNN implementation. We use the framework to generate three accelerators for the Spiking Heidelberg Digits (SHD), Spiking Speech Commands (SSC), and PSMNIST benchmarks, each in a throughput-optimized parallel variant and a resource-reduced time-multiplexed variant. We report results for FPGA and ASIC implementations, the latter synthesized with a fully open-source flow targeting the predictive ASAP7 PDK. On the SHD dataset, the ASIC implementation reaches 92.46% classification accuracy, while sustaining $\\approx{}$12,027 inferences per second at 20.37$μ$J per inference, exceeding the neuromorphic Loihi processor by 109$\\times$ in throughput and 1.8$\\times$ in energy efficiency. The corresponding FPGA implementation achieves $\\approx{}$6,023 inferences per second without using DSP blocks. Across all three datasets, the synthesized ASICs reduce energy per inference by 27-37$\\times$ relative to their FPGA counterparts, demonstrating that competitive SNN accelerators can be realized entirely within an open-source design flow.",
+  "abstract_ja": "",
+  "authors": [
+    "Daniel Windhager",
+    "Lothar Ratschbacher",
+    "Bernhard A. Moser",
+    "Michael Lunglmayr"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32758",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Spiking Neural Networks (SNNs) offer promising energy efficiency, making them well suited for energy-constrained applications. Much of their energy savings stems from the sparse encoding of spike…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Low-Power Spiking Neural Network Acceleration with Differential Time Representation: A Modular Hardware Framework",
+  "url": "https://arxiv.org/abs/2611.32758",
+  "use_case": ""
+}

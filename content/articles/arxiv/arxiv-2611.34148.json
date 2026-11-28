@@ -1,0 +1,29 @@
+{
+  "abstract": "Flow matching robot policies generate action chunks by integrating a learned velocity field at inference. However, under a fixed budget of neural function evaluations (NFEs), the integration result depends on the sampling schedule. This motivates optimizing the schedule to bring the generated action distribution closer to the demonstrations and improve task success. We propose Ground Your Steps (GYS), a training-free method that optimizes the sampling schedule by matching the generated and demonstrated chunk distributions at each observation. GYS applies truncated fractional differencing along each arm joint's action sequence and compares two types of pairwise differences between action chunks at each observation: differences of a generated chunk against a demonstration, and differences of two independent generated chunks against each other. After fractional differencing, these two pairwise-difference distributions coincide exactly when the distributions of generated and demonstrated action chunks match. GYS minimizes the energy distance between these distributions to obtain an improved schedule for each task and NFE budget. Compared with the uniform grid, GYS brings the generated chunk distribution closer to the demonstrated distribution and raises the success rate through the sampling schedule alone. On RoboTwin 2.0 benchmarks, GYS improves success rates at nearly every budget, with gains of 2.8 percentage points for both $π_{0.5}$ and GR00T N1.7. The gains also transfer to three real-world manipulation tasks, reaching up to 3.3 percentage points. Code is available at https://github.com/D-Robotics-AI-Lab/GroundYourSteps.",
+  "abstract_ja": "",
+  "authors": [
+    "Licheng Yang",
+    "Yonghao He",
+    "Lingfeng Qian",
+    "Xin Shi",
+    "Wei Sui"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/D-Robotics-AI-Lab/GroundYourSteps",
+  "hasCode": true,
+  "id": "arxiv-2611.34148",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Flow matching robot policies generate action chunks by integrating a learned velocity field at inference. However, under a fixed budget of neural function evaluations (NFEs), the integration result…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Ground Your Steps: Optimizing Sampling Schedules in Flow Matching Robot Policies",
+  "url": "https://arxiv.org/abs/2611.34148",
+  "use_case": ""
+}

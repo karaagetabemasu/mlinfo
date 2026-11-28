@@ -1,0 +1,27 @@
+{
+  "abstract": "In simulated multifingered grasps, pose error can change contacts formed during hand closure, while friction uncertainty changes the loads supported by those contacts. Existing C++ APIs and ROS 1 services provide programmatic GraspIt! access but require native bindings or a service transport layer for Python use and application-specific integration of contact geometry with uncertainty sampling. A Python workflow for these studies must connect native closure and contacts to caller-defined wrench scores, uncertainty samples, and command reconstruction. We present graspit-py, a Python interface to native GraspIt! operations that supplies this workflow. The interface provides native scene access, contact-wrench analysis, and configurable approach planning under pose and friction uncertainty. A grasp record associates the object-relative palm pose and closed independent coordinates with nominal contacts and quality scores evaluated under sampled pose and friction conditions. Our MuJoCo exporter derives serial hinge chains and affine joint couplings, including nonzero reference angles, and preserves individual collision components. Across 75 configurations of five hand models, maximum discrepancy between source and exported palm-frame vertex sets was approximately 1.3 micrometers against a 100-micrometer geometry tolerance. We isolated reference-angle and collision-component effects through controlled ablations and validated 1,920 directional task-wrench capacity calculations against independent Cartesian-force linear programs. In a common GraspIt! workload, median reset-close-score-state cycle latency through direct Python was 10.7% lower than through persistent ROS 1 services. An executable export-plan-reconstruct workflow and grasp examples on six hand models demonstrate how the contact, score, and joint representations support numerical analysis and command reconstruction.",
+  "abstract_ja": "",
+  "authors": [
+    "Clinton Enwerem",
+    "John S. Baras",
+    "Calin Belta"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29011",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "In simulated multifingered grasps, pose error can change contacts formed during hand closure, while friction uncertainty changes the loads supported by those contacts. Existing C++ APIs and ROS 1…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "graspit-py: A Python Interface to GraspIt! for Grasp Planning Under Pose and Friction Uncertainty",
+  "url": "https://arxiv.org/abs/2611.29011",
+  "use_case": ""
+}

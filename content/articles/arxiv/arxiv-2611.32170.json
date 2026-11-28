@@ -1,0 +1,29 @@
+{
+  "abstract": "Trusted multi-view learning aims to integrate heterogeneous views for accurate and reliable predictions. However, multi-view data often exhibit the view degradation phenomenon: individual views contain only partial discriminative information and cannot independently determine the instance-level label. Requiring such views to produce unambiguous class evidence can distort evidence learning and mislead subsequent fusion. Existing methods addressing this problem have at least one of the following drawbacks: (1) assigning evidence to individual classes without explicitly representing unresolved class groups; (2) projecting composite beliefs onto individual classes before fusion, preventing direct refinement of candidate groups through cross-view set intersections. To address these limitations, we propose a new Multi-view Random-Set Learning (MRSL) paradigm, which preserves view-specific support for candidate class sets and refines candidate classes through cross-view fusion. Specifically, we quantify class overlap to select a compact collection of sets for each view, avoiding the exponential cost of modeling all class subsets. We then perform set-level fusion by assigning joint support to set intersections, allowing complementary views to narrow the candidate classes before probability conversion. Experiments on synthetic and eight real-world datasets validate the proposed overlap measure and demonstrate that MRSL achieves the highest accuracy on all eight datasets. Compared with the strongest baselines, MRSL improves average accuracy by 4.71% and reduces average expected calibration error by 6.33%. All datasets and code will be made publicly available upon acceptance.",
+  "abstract_ja": "",
+  "authors": [
+    "Mengchi Zuo",
+    "Tianyang Wang",
+    "Cai Xu",
+    "Ziyu Guan",
+    "Wei Zhao"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32170",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Trusted multi-view learning aims to integrate heterogeneous views for accurate and reliable predictions. However, multi-view data often exhibit the view degradation phenomenon: individual views…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Multi-view Random-set Learning",
+  "url": "https://arxiv.org/abs/2611.32170",
+  "use_case": ""
+}

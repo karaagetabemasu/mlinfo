@@ -1,0 +1,31 @@
+{
+  "abstract": "One-shot federated learning must combine heterogeneous client models after a single upload. Different local class distributions make it difficult to decide which client updates to retain. We propose FedQCal, which uses a reference model trained on a small labeled server set to define alignment requirements for aggregation. The key idea is to retain sufficient reference alignment while avoiding unnecessarily large aggregation coefficients. A minimum-norm quadratic program (QP) enforces these requirements. Classification loss on the same server examples selects a merge through two dual variables, so the alignment thresholds need not be prescribed in advance. We prove that the selected coefficients remain exact QP solutions at their induced thresholds. A perturbation bound explains how coefficient norm limits the amplification of projection errors. Experiments on CIFAR-10, CIFAR-100, and SVHN show gains over one-round FedAvg in most settings. Ablations support reference-guided weighting and coefficient calibration, even with one labeled server image per class.",
+  "abstract_ja": "",
+  "authors": [
+    "Shunsei Koshibuchi",
+    "Hiroshi Kera",
+    "Kazuhiko Kawamoto"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27170",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "One-shot federated learning must combine heterogeneous client models after a single upload. Different local class distributions make it difficult to decide which client updates to retain.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "FedQCal: Quadratic Programming with Dual-Space Calibration for One-Shot Federated Learning",
+  "url": "https://arxiv.org/abs/2611.27170",
+  "use_case": ""
+}

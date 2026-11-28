@@ -1,0 +1,34 @@
+{
+  "abstract": "Automated electrocardiogram (ECG) interpretation has advanced substantially with deep learning, yet many methods remain task-specific and label-dependent. Large language models (LLMs) and time-series foundation models (TSFMs) offer complementary pretrained representations, but integrating them is challenging because of mismatched feature spaces and the lead- and scale-dependent structure of ECG signals. We propose LAF-ECG (Lead-Aware Foundation Fusion for ECG), a dual-foundation framework that extends MedTsLLM with a lead-aware interface to a frozen TSFM backbone while retaining its reprogramming pathway. The proposed framework captures multi-resolution temporal context, fuses temporal and language-aligned ECG representations through adaptive residual integration, and employs branch-specific supervision with cross-branch alignment. LAF-ECG achieves 71.10% accuracy and 62.43% macro-F1 on PTB-XL, and 89.73% accuracy and 65.94% macro-F1 on Chapman-Shaoxing, outperforming MedTsLLM on both datasets. These results highlight the value of preserving lead-specific temporal structure when combining temporal and language foundation representations for ECG classification. The code is publicly available at https://github.com/kkianamm/LAF-ECG.",
+  "abstract_ja": "",
+  "authors": [
+    "Kiana Taktehrani",
+    "Maryam Hosseini",
+    "Amir Keynia",
+    "Aram Montazami",
+    "Arash Mohammadi"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/kkianamm/LAF-ECG",
+  "hasCode": true,
+  "id": "arxiv-2611.29721",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Automated electrocardiogram (ECG) interpretation has advanced substantially with deep learning, yet many methods remain task-specific and label-dependent. Large language models (LLMs) and time-series…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "time-series"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "LAF-ECG: Multi-Resolution Lead-Aware Fusion of Time-Series and Language Foundation Models for ECG Classification",
+  "url": "https://arxiv.org/abs/2611.29721",
+  "use_case": ""
+}

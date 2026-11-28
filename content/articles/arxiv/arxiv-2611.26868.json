@@ -1,0 +1,38 @@
+{
+  "abstract": "Recent industrial anomaly detection methods use procedural noise to generate synthetic training defects. Their effectiveness in real-world settings and the impact of different noise generation methods have not been sufficiently investigated. We evaluate the effectiveness of training using synthetic defects for both supervised and unsupervised methods, the impact of different noise generation methods, and the differences in detection performance between benchmark datasets and a real-world small load carrier (SLC) dataset. Trained on synthetic defects only, a supervised classifier reaches 0.65 AUROC on real SLC defects, while three unsupervised methods using the same kind of noise (Perlin) reach 0.87--0.90. Except for SuperSimpleNet, which fails with the foreground-confined fractal Brownian motion (fBm) recipe, models trained with the custom recipe or with nine other noise types do not differ reliably from those trained with Perlin noise. Finally, results with synthetic defects on benchmark datasets do not carry over to the SLC dataset, possibly because the synthetic defects differ too much from the real ones (a larger angle in feature space). These results call for caution when training models on synthetic defect images.",
+  "abstract_ja": "",
+  "authors": [
+    "Vincent Wahyudi",
+    "Kuniko Paxton",
+    "Amila Akagić",
+    "Martin Storath",
+    "Dhavalkumar Thakker"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26868",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Recent industrial anomaly detection methods use procedural noise to generate synthetic training defects. Their effectiveness in real-world settings and the impact of different noise generation…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "detection",
+      "generation",
+      "anomaly-detection"
+    ]
+  },
+  "title": "Effectiveness of Synthetic Defects for Anomaly Detection in Industrial Small Load Carriers",
+  "url": "https://arxiv.org/abs/2611.26868",
+  "use_case": ""
+}

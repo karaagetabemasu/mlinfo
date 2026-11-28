@@ -1,0 +1,33 @@
+{
+  "abstract": "Many generation tasks draw the next image from a visual history, such as storyboards, illustrated stories and multi-turn editing. A new request often states what happens next without restating how earlier objects look. Instead of recovering an object's current look from the history, generators often redraw it from the request alone or bring back an outdated look, and the error can carry into later steps. We call this failure prop drift. Existing evaluations rarely isolate it, because similarity to the history rewards copying and a judge that sees a single history cannot tell a look recovered from that history from one the generator happens to prefer. We introduce PROPS, a benchmark of 2,257 pairs of twin histories that end on the same request but show one prop in two different looks. A pair passes only if the generator draws the matching look on each side and carries out the request, so a look preferred by the generator or the judge passes at most one side. All 34 open and closed systems we test show prop drift, and even systems that carry out the requested action on most sides often lose the current look of the prop. Swapping the planners and editors of agents further shows that both history understanding and image generation limit agent performance. We also build PROPS-Train, 80,250 training chains in four tracks whose targets recover an earlier state or carry scripted changes forward, and fine-tuning on it clearly improves all four tested models. Both datasets will be publicly released.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiangzhao Hao",
+    "Dianyi Wang",
+    "Keyan Zhou",
+    "Yiqian Zhang",
+    "Zefeng Zhang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29665",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Many generation tasks draw the next image from a visual history, such as storyboards, illustrated stories and multi-turn editing. A new request often states what happens next without restating how…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "PROPS: Can Visual Generators Keep the Current Look of a Prop?",
+  "url": "https://arxiv.org/abs/2611.29665",
+  "use_case": ""
+}

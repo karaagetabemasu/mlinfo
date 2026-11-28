@@ -1,0 +1,30 @@
+{
+  "abstract": "We present FASCIA (*Functional Anatomical Structures and Composition via Implicit Atlas*), a Momentum Human Rig (MHR)-anchored framework that predicts and poses a person's internal anatomy from their external body shape and skeletal proportions. FASCIA maps a single 290-structure population template onto each individual through a smooth, invertible warp. As people with the same shape can differ internally, a body-dependent Gaussian prior predicts both average warp coordinates and their inter-subject variability. The warp deforms a learned base template into bones, muscles, organs, and fat depots. Extending MHR skinning into the interior enables direct supervision of this model across four automatically labeled CT cohorts and one whole-body MRI cohort. On 82 held-out CT scans, FASCIA reaches a mean volumetric Dice (volume agreement) of 0.48 on named bones and 0.63 on muscles, keeps the majority of bones and muscles in one piece, and yields calibrated voxel probabilities. On 33 held-out whole-body MRI subjects, FASCIA's pointwise field improves tissue overlap over HIT across all compartments, predicts between-person differences in whole-body adipose percentage ($R^2 = 0.88$ vs. $0.38$ in women and $0.54$ vs. $-0.01$ in men), and recovers segment centers of mass within 1.1 mm. Because it needs only an MHR fit, FASCIA can be driven from images, video, or any system that outputs MHR. This opens the door to fitting individualized calibrated musculoskeletal digital twins to video motion data.",
+  "abstract_ja": "",
+  "authors": [
+    "R. James Cotton",
+    "Tim Unger",
+    "Lucinda Williamson"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29970",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "We present FASCIA (*Functional Anatomical Structures and Composition via Implicit Atlas*), a Momentum Human Rig (MHR)-anchored framework that predicts and poses a person's internal anatomy from their…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video"
+    ],
+    "task": []
+  },
+  "title": "FASCIA: Seeing Beneath the Surface with Queryable, Personalized Anatomy in Any Pose",
+  "url": "https://arxiv.org/abs/2611.29970",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "The widespread deployment of latent generative models (LGMs) makes generated image source attribution essential for copyright auditing and data governance, yet practical attribution should remain reliable under common post-processing and platform-induced processing. Existing reconstruction-based attribution methods summarize an image's reconstruction response to a single global scalar, such as the reconstruction error or the ratio of two consecutive errors. These summaries discard channel-frequency structure, allowing image content and post-processing variation to obscure source evidence and making attribution after spreading difficult. We instead uncover a more stable source-discriminative cue under post-processing: the frequency-resolved evolution of residual energy across repeated applications of the same reconstruction operator. Motivated by this insight, we characterize a phenomenon we term Spectral Contraction and use it to build SpCon, a source-attribution framework that accesses only the target model's VAE. SpCon obtains adjacent residuals through two deterministic reconstructions, builds a spectral-contraction representation from their frequency-resolved relative energy change, and aggregates Student-t response densities for each source-condition pair over a finite set of fitted reference components. The same representation supports three settings according to non-belonging reference availability: none (Target-Only, TO; belonging references only), external out-of-domain sources (External-Reference, ER), or known in-domain competitors (Known-Reference, KR). Across seven LGMs, TO, ER, and KR attain average AUROC/AP of 0.8786/0.6344, 0.9404/0.7886, and 0.9652/0.8626 over the 35 conditions, all outperforming the strongest baseline (0.8154/0.5277), and achieve 0.8581/0.5507, 0.9369/0.7549, and 0.9734/0.8773 on the three social platforms.",
+  "abstract_ja": "",
+  "authors": [
+    "Chao Wang",
+    "Zijin Yang",
+    "Yaofei Wang",
+    "Yuang Qi",
+    "Weiming Zhang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32074",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "The widespread deployment of latent generative models (LGMs) makes generated image source attribution essential for copyright auditing and data governance, yet practical attribution should remain…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Not the Scalar, but Its Evolution: Robust Source Attribution for Generated Images",
+  "url": "https://arxiv.org/abs/2611.32074",
+  "use_case": ""
+}

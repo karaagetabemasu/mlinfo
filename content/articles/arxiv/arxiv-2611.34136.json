@@ -1,0 +1,28 @@
+{
+  "abstract": "In many applications, neural networks must learn input-output maps that respect prior knowledge such as physical laws, safety requirements, and operating limits. These requirements constrain which outputs are admissible for a given input and often admit second-order cone (SOC) representations, including norm bounds and robust linear inequalities. Examples in control include friction cones, thrust bounds, and input-robust control barrier function (CBF) conditions. However, existing approaches to enforcing general input-dependent SOC constraints require a conic solver, an iterative scheme whose feasibility depends on convergence, or an interior feasible point for each input. We propose SOC-Net, a neural network architecture that enforces input-dependent SOC constraints by construction for every input, even outside the training distribution. SOC-Net projects an affine lifting of the backbone output onto the reachable slice of a fixed product of Lorentz cones and maps the correction back to the output space. For separable constraints, this projection splits into one projection per cone, and each is available in closed form or reduces to a single scalar equation, regardless of the cone dimension. We prove that SOC-Net retains the expressive power of the backbone network under regularity conditions and accommodates end-to-end training by standard backpropagation with an explicit Jacobian. Experiments on contact force allocation with friction constraints and 3-D obstacle avoidance with an input-robust CBF demonstrate that SOC-Net satisfies the constraints at every evaluated input, with lower evaluation latency than the tested solver-based and iterative baselines.",
+  "abstract_ja": "",
+  "authors": [
+    "Seungseok Oh",
+    "Youngjae Min",
+    "Navid Azizan",
+    "Namhoon Cho"
+  ],
+  "category": "math-theory",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34136",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "optimization",
+  "summary": "In many applications, neural networks must learn input-output maps that respect prior knowledge such as physical laws, safety requirements, and operating limits. These requirements constrain which…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "SOC-Net: Second-Order-Cone-Constrained Neural Networks",
+  "url": "https://arxiv.org/abs/2611.34136",
+  "use_case": ""
+}

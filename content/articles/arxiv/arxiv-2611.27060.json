@@ -1,0 +1,33 @@
+{
+  "abstract": "Segmentation models for bridge point clouds lose accuracy when trained on terrestrial laser scanning (TLS) data and applied to mobile laser scanning (MLS) data. This study re-examines the SemanticBridge TLS-to-MLS protocol to determine how sampling density, surface roughness, color, and acquisition viewpoint are expressed in the 8-cm sparse-voxel representation, and how adaptation gains depend on source-model convergence. Using one sparse-convolution U-Net, we combine raw-point statistics with controlled input perturbations and compare adaptive batch normalization, entropy minimization, Mean Teacher, and confidence-filtered self-training under 100- and 300-epoch schedules. TLS and MLS have similar nearest-neighbor spacing after preprocessing (12.08 and 12.02 mm), and a 4-mm perturbation of TLS points changes voxel occupancy by only 4.4%. Color distributions differ systematically, but zeroing color on identical voxels changes target mean intersection over union (mIoU) by only +0.02, and by +0.06 after the color augmentation is scale-corrected. The sensors also observe different portions of the bridge, yielding different class proportions. A 300-epoch source-only model obtains 57.80 mIoU on the paired-bridge protocol. Confidence-filtered self-training improves the 100-epoch baseline, but from a converged model it changes target mIoU by -0.97 (source-selected checkpoints) and -2.44 (final-50-epoch means). Repeated evaluation (standard deviation 0.27-0.64) and seed variation (1.88 across three seeds) are comparable to several method differences. Adaptation results on this benchmark therefore depend on representation scale, source-model convergence, and evaluation variability.",
+  "abstract_ja": "",
+  "authors": [
+    "Linghui Huang",
+    "Zipeng Wang",
+    "Shunjie Chen",
+    "Peng Guan",
+    "Jiandong Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27060",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Segmentation models for bridge point clouds lose accuracy when trained on terrestrial laser scanning (TLS) data and applied to mobile laser scanning (MLS) data. This study re-examines the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "Rethinking Cross-Sensor Domain Adaptation for Bridge Point Cloud Semantic Segmentation",
+  "url": "https://arxiv.org/abs/2611.27060",
+  "use_case": ""
+}

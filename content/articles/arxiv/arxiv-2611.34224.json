@@ -1,0 +1,35 @@
+{
+  "abstract": "Physical hand interaction depends on configuration, contact, and force, yet nearly identical appearances can conceal different contact states and exerted forces. We therefore formulate physical hand state estimation from egocentric video and wrist surface electromyography (sEMG), combining visual geometry with neuromuscular evidence to jointly recover these coupled components. To support this task, we introduce EgoMyo, a benchmark spanning 5.75M video frames, 50 participants, 34 contact configurations, and repeated donnings, synchronizing these inputs with 3D hand pose and with contact and normal force registered onto the hand surface from bare-hand pressure. Controlled analysis reveals that vision resolves spatial structure while sEMG better estimates force magnitude, that sEMG's gains concentrate in regions where vision is least reliable, and that contact localization limits force accuracy. Guided by these findings, we propose MyoBridge, which makes the hand region the unit of vision-sEMG fusion, lets each region gate its own share of sEMG, and distributes regional force magnitudes only over predicted contact vertices at inference. On held-out trials, MyoBridge reduces pose and force error by 39.8% and 18.5% over the strongest baseline and achieves the lowest pose error on unseen sessions and subjects.",
+  "abstract_ja": "",
+  "authors": [
+    "Guanglong Sun",
+    "Kanglei Zhou",
+    "Ziteng Wang",
+    "Nana Wang",
+    "Hengkai Tan"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34224",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "3d",
+  "summary": "Physical hand interaction depends on configuration, contact, and force, yet nearly identical appearances can conceal different contact states and exerted forces. We therefore formulate physical hand…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video",
+      "3d"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "EgoMyo: Physical Hand State Estimation from Egocentric Video and Wrist Electromyography",
+  "url": "https://arxiv.org/abs/2611.34224",
+  "use_case": ""
+}

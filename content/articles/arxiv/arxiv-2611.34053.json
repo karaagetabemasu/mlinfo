@@ -1,0 +1,31 @@
+{
+  "abstract": "Light Detection and Ranging (LiDAR) sensors are increasingly popular for state estimation because of their precision, long range, and high measurement rate. Unfortunately, LiDAR Odometry (LO) systems incur substantial computational cost when processing large point clouds, particularly those that jointly refine a window of scan poses. While our prior LO work FORM is real-time, the costs of feature extraction, correspondence search, and the evaluation and linearization of residuals during pose optimization can introduce significant latency. This latency makes downstream tasks such as control and path planning difficult. To overcome this, we present xFORM, which accelerates the three stages of FORM. xFORM uses factor compression to reduce an optimization problem involving hundreds of thousands of feature matches to 34 scalar residuals per scan pair, while preserving the original objective and Gauss-Newton system in exact arithmetic. We integrate this optimizer into two variants: xFORM-CPU, which additionally parallelizes feature extraction on the CPU, and xFORM-GPU, which accelerates feature processing, correspondence search, and factor compression on the GPU. Across fifteen complete sequences from three datasets, xFORM-CPU and xFORM-GPU achieve overall speedups of 1.1-1.4$\\times$ and 2.0-4.0$\\times$ over FORM, respectively, with no numerically significant differences to the original implementation.",
+  "abstract_ja": "",
+  "authors": [
+    "Ruogu Li",
+    "Easton R. Potokar",
+    "Michael Kaess"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34053",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "3d",
+  "summary": "Light Detection and Ranging (LiDAR) sensors are increasingly popular for state estimation because of their precision, long range, and high measurement rate. Unfortunately, LiDAR Odometry (LO) systems…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "xFORM: Accelerating Fixed-Lag LiDAR Odometry with Exact Factor Compression",
+  "url": "https://arxiv.org/abs/2611.34053",
+  "use_case": ""
+}

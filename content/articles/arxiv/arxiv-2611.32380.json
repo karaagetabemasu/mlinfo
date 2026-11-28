@@ -1,0 +1,29 @@
+{
+  "abstract": "Iterative refinement is a key capability of diffusion-based generation and has motivated growing efforts to bring similar behavior to discrete diffusion and flow models. A growing line of work enables such refinement by allowing previously generated tokens to be revised during sampling, thereby shaping the coupling between successive sampling states. Despite its growing role in sampler design, this coupling freedom remains insufficiently characterized. We introduce Activity Geometry to study these finite-step couplings through expected transition cost, which we call activity. We show that activity decomposes into the minimum required by the induced marginal transport and an excess term arising from the coupling. Using this minimum as a reference, we propose Minimal-Activity Finite-Time Coupling (MAFTC) to realize prescribed marginals with minimum activity without retraining or additional model evaluations. In the continuous-time limit, the minimum activity per unit time converges to the minimum expected jump rate compatible with the prescribed path. For metric-induced Gibbs paths, we further show that the activity of the kinetic-optimal flux admits a geometric decomposition. We find that total activity alone can obscure coupling excess: a sampler may approach the minimum activity required by the prescribed marginal transport while still retaining substantial coupling excess. In language generation, as the number of model evaluations increases, refinement-based samplers accumulate additional trajectory activity with limited diversity gains, whereas MAFTC reduces trajectory activity while maintaining comparable generation quality and higher lexical diversity.",
+  "abstract_ja": "",
+  "authors": [
+    "Xinlong Guo",
+    "Jie Zhang",
+    "Lingyou Zhou"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32380",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Iterative refinement is a key capability of diffusion-based generation and has motivated growing efforts to bring similar behavior to discrete diffusion and flow models. A growing line of work…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "The Activity Geometry of Discrete Generative Sampling",
+  "url": "https://arxiv.org/abs/2611.32380",
+  "use_case": ""
+}

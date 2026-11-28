@@ -1,0 +1,35 @@
+{
+  "abstract": "Moment Retrieval (MR) aims to identify the temporal segment in an untrimmed video that corresponds to a natural language query. Existing approaches commonly refine temporal predictions within the localization pathway, without explicitly verifying candidate-level semantic consistency. Moreover, directly reusing semantic scores as feedback can cause over-correction when the verification signal is unreliable. To address these issues, we propose Bi-Refine, a semantic verification-guided progressive refinement framework that formulates MR as a closed-loop verification-and-refinement process. A Heuristic Localization Branch first generates candidate moments, while a Semantic Verification Branch evaluates their query consistency in a semantically enriched latent space. Query supervision further trains the verifier with the same candidate moment but different queries, encouraging it to distinguish the matched query from semantically similar mismatched queries. The resulting verification features are incorporated into a Progressive Refinement Loop that updates both query representations and multimodal features. To suppress potentially harmful updates, a lightweight reliability estimator gates query updates and reweights candidate contributions in feature feedback. A convergence-based adaptive stopping strategy additionally terminates unnecessary refinement during inference. Experiments on three standard MR benchmarks demonstrate the effectiveness and state-of-the-art performance of our method.",
+  "abstract_ja": "",
+  "authors": [
+    "Mengnan Liu",
+    "Sanping Zhou",
+    "Kun Xia",
+    "Jiaxuan Lin",
+    "Yuxuan Wu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30055",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Moment Retrieval (MR) aims to identify the temporal segment in an untrimmed video that corresponds to a natural language query. Existing approaches commonly refine temporal predictions within the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Bi-Refine: Semantic Verification-Guided Progressive Refinement for Moment Retrieval",
+  "url": "https://arxiv.org/abs/2611.30055",
+  "use_case": ""
+}

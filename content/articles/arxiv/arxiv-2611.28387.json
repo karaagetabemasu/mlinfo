@@ -1,0 +1,29 @@
+{
+  "abstract": "Payload-carrying robots, such as delivery robots and autonomous trucks, must choose motions that keep them and their payload safe, so their planners predict the outcome of each candidate motion. Modern planners compare thousands of candidates per step on a GPU, using world models such as batched simulators or learned predictors. Most of them assume a rigid payload, but a liquid payload keeps moving after a maneuver, and its state is rarely measured. Near a safety limit, small prediction errors can make an unsafe plan look safe. Coupled fluid simulations are accurate but too costly for every candidate, while low-order slosh models are cheap but accurate only away from resonance. We study this trade-off on a ground vehicle with a partly filled tank near its rollover limit. First, we build PLiMB (Parallel Liquid-MultiBody), a GPU-parallel slosh simulator that, to our knowledge, couples FLIP liquid two-way with many multibody vehicles for the first time. It provides training data and a high-fidelity reference. Second, we propose a scalable physics-anchored world model that combines a modal-slosh and roll prior, an estimate of the hidden liquid state from the vehicle's own motion history (no sensor in the tank), and a learned correction. Without simulating the fluid, it scores thousands of candidate plans in one batched pass within a 20 Hz control tick on one GPU. We judge each world model by the plans it leads a planner to choose. Near the rollover limit, planners that treat the liquid as a rigid payload or use published low-order slosh models repeatedly pick unsafe plans when a safe one exists. Ours never does in our standard tank and makes about half as many in a wide tank whose sloshing mode lies in the maneuver band. There, the liquid state left by earlier driving can change the best plan, and reading it from the vehicle's history halves our model's near-limit prediction error.",
+  "abstract_ja": "",
+  "authors": [
+    "Yicheng Zhu",
+    "Linfeng Tian",
+    "Yang Chen",
+    "Tao Li",
+    "Zilin Bian"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28387",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "model-based",
+  "summary": "Payload-carrying robots, such as delivery robots and autonomous trucks, must choose motions that keep them and their payload safe, so their planners predict the outcome of each candidate motion.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Knowing What You Carry: Scalable Physics-Anchored World Models for Robotic Planning with Liquid Payloads",
+  "url": "https://arxiv.org/abs/2611.28387",
+  "use_case": ""
+}

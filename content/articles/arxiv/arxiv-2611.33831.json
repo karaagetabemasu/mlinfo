@@ -1,0 +1,33 @@
+{
+  "abstract": "Massively multilingual translation models usually have one tag per language and no control over regional varieties, and they cover a region's smaller languages poorly or not at all. We report three fine-tunes of MADLAD-400-3B-MT, each adding target tags with low-rank adaptation (LoRA), back-translation of monolingual text and replay of the base model's own translations: <2es_ES> for Spanish as written in Spain, <2es_419> for Latin American Spanish, and one model for three Romance languages of the Iberian Peninsula, Asturian (<2ast>), Aragonese (<2an>) and Aranese (<2oc_aranes>). For the Spanish varieties we annotate the 250.9M documents of MADLAD-400's Spanish split with a domain-supervised Spain vs. Latin America classifier and select variety text with a rule that admitted no Latin American document in a 340-document reference set. The Castilian model chooses Spain's everyday vocabulary in 97% of a targeted test (base model 62%) and vosotros for informal plural address in 70% (10%), while improving chrF++ on human references. A first finding is tag collapse: with a new tag initialised from <2es>, the parent tag drifts to the new variety (84-87% identical outputs). In the Iberian model, contrastive pairs and a separate learning rate for the tag embeddings keep each tag in its own language. Trained only on publicly available data, mostly the TAN-IBE Wikipedia corpora, the Iberian model matches or beats the TAN-IBE Marian systems in four of six Spanish directions on FLORES+, is 1.9 BLEU behind in Spanish->Aranese, and is second only to SalamandraTA-7B in most directions. The exception, Spanish->Aragonese, reflects a difference of written variety between Aragonese Wikipedia and the FLORES+ reference, not model quality. All three fine-tunes lose 0.6-0.7 chrF++ on average in thirteen other FLORES-200 directions. We release the models, data and variety classifier under open licences",
+  "abstract_ja": "",
+  "authors": [
+    "Nerea de la Torre Veguillas",
+    "Pol Gerdt",
+    "Raul Quijada",
+    "Ivory Dipasupil",
+    "Lucía Rado"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33831",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Massively multilingual translation models usually have one tag per language and no control over regional varieties, and they cover a region's smaller languages poorly or not at all. We report three…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Teaching a Multilingual Translation Model Regional Varieties: Castilian and Latin American Spanish, Asturian, Aragonese and Aranese with MADLAD-400-3B-MT",
+  "url": "https://arxiv.org/abs/2611.33831",
+  "use_case": ""
+}

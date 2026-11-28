@@ -1,0 +1,32 @@
+{
+  "abstract": "Counting how many times something happens is among the simplest questions about a video and among the hardest for video-language models, autoregressive and diffusion alike. The difficulty lies between the frames: a model samples only a few of them, while each repetition unfolds as movement in between. Video codecs already record this movement densely as block displacements, and codec-based video models use it to shape their visual input. We are the first to show that this motion provides direct evidence for the count: a candidate count is a testable motion hypothesis, and unwinding the cycles it implies measures how strongly the observed directions support it. We present CoDiCount, a unified training-free framework that turns this test into a count potential and applies it while a frozen diffusion vision-language model (dVLM) denoises its answer. At every denoising step, structured count messages map each option letter, or each grammar-valid edit of an open integer, to the count it expresses and reweight the model's own probabilities within that set. Consistent gains over the official decoders on MotionBench, TOMATO, and SVCBench demonstrate the broad generalization of CoDiCount across diffusion models, datasets, and diverse counting tasks. With CoDiCount, a 7B dVLM outperforms GPT-5.1 and Gemini-2.5-Pro on MotionBench, surpasses GPT-4o and much larger open models on TOMATO, and matches GPT-5.4 on SVCBench.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhuoqin Li",
+    "Jiayu Ding",
+    "Ge Li"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34657",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Counting how many times something happens is among the simplest questions about a video and among the hardest for video-language models, autoregressive and diffusion alike. The difficulty lies…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Counting Beyond Frames: Codec Motion Tells Frozen Diffusion VLMs How Many",
+  "url": "https://arxiv.org/abs/2611.34657",
+  "use_case": ""
+}

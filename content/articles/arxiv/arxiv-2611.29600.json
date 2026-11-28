@@ -1,0 +1,28 @@
+{
+  "abstract": "Message-passing neural networks (MPNNs) learn node representations by iteratively aggregating information from neighbors, but stacking too many layers causes all representations to converge, an effect known as oversmoothing. We propose a geometric perspective on this phenomenon. At each depth $k$, the propagation operator assigns to every node $v$ a walk distribution $p_v^{(k)}$, a probability distribution over source nodes. These walk distributions form a point cloud on the probability simplex, whose contraction to a single point characterizes complete mixing of the propagation operator, and thus oversmoothing. To measure this contraction, we use the Fisher-Rao metric, the unique Riemannian metric on the simplex invariant up to scale under sufficient statistics, whose scaled chordal distance under the square-root embedding $p \\mapsto \\sqrt{p}$ is the Hellinger distance. The resulting diagnostic, the aggregation dispersion $D_k$, is the variance of the embedded point cloud on the unit sphere. We prove that: (i) $D_k = 0$ if and only if the $k$-th step propagation matrix has rank one, a necessary and sufficient condition for complete operator mixing; (ii) $D_k$ is non-increasing with depth; (iii) the spectral gap of the propagation matrix controls the rate of this decay; and (iv) for contractive MPNNs, the aggregation dispersion upper-bounds the representation dispersion up to graph- and initialization-dependent constants. Across 14 model configurations and 11 datasets, $D_k$ attains the highest mean absolute Pearson correlation with test accuracy across depths among eight diagnostics ($|r| = 0.721$, using log-transformed diagnostic values), numerically comparable to the post-training effective rank ($|r| = 0.688$), while requiring no training.",
+  "abstract_ja": "",
+  "authors": [
+    "Abdessalam Ed-dib",
+    "Amine Mohamed Aboussalah"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29600",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "gnn",
+  "summary": "Message-passing neural networks (MPNNs) learn node representations by iteratively aggregating information from neighbors, but stacking too many layers causes all representations to converge, an…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Aggregation Dispersion: An Information-Geometric Diagnostic of Oversmoothing in Graph Neural Networks",
+  "url": "https://arxiv.org/abs/2611.29600",
+  "use_case": ""
+}

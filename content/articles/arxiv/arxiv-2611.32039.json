@@ -1,0 +1,31 @@
+{
+  "abstract": "Gated DeltaNet (GDN) achieves linear computational complexity through recurrent state updates, but sequential dependencies between chunks limit parallelism, particularly for long-context workloads with small batch sizes or limited head-level parallelism per GPU. We present FlashQLA, a context-parallel execution framework for GDN that exposes additional sequence-level parallelism while reducing boundary-state preprocessing overhead. FlashQLA reduces boundary-state preprocessing overhead through decay-aware preparation and extends sequence parallelism across GPUs with Dual CP, which shares summary computation across parallelism levels. Workload-adaptive Auto CP and CP-aware kernel co-design further improve execution efficiency. FlashQLA achieves $1.7\\times$-$3.1\\times$ forward speedup and up to $4.4\\times$ backward speedup over Flash Linear Attention (FLA) on a single GPU. On eight GPUs with context lengths up to 1M tokens, Dual CP achieves up to $4.8\\times$ forward speedup and $4.4\\times$ speedup for combined forward and backward execution over FLA KCP.",
+  "abstract_ja": "",
+  "authors": [
+    "Xi Lin",
+    "Chengruidong Zhang",
+    "Huiqiang Jiang",
+    "Xiao Li",
+    "Zekun Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32039",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "rnn",
+  "summary": "Gated DeltaNet (GDN) achieves linear computational complexity through recurrent state updates, but sequential dependencies between chunks limit parallelism, particularly for long-context workloads…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "FlashQLA: Efficient Context Parallelism for Gated DeltaNet",
+  "url": "https://arxiv.org/abs/2611.32039",
+  "use_case": ""
+}

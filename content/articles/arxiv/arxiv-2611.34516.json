@@ -1,0 +1,31 @@
+{
+  "abstract": "This paper studies the mapping of the virtual network function components (VNFCs) of the O-RAN central unit (O-CU) and O-RAN distributed unit (O-DU) onto virtual machines (VMs) in sixth-generation (6G) open radio access networks (O-RAN). The problem is formulated as a feasibility-aware sequential decision process that maximizes the number of placed VNFCs and, secondarily, favors fewer active VMs and lower residual resource wastage. Although conventional optimization techniques can solve this problem, their computational cost becomes prohibitive for larger instances or when optimization must be repeated. To address this limitation, we explore two neural reinforcement learning (RL)-based methods: a deep $Q$-network (DQN) and a double deep $Q$-network (Double DQN). Whereas DQN uses the same target network to both select and evaluate the bootstrap action, Double DQN decouples these two operations to mitigate maximization-induced overestimation. We compare both methods against six baselines: random feasible placement, first-fit, first-fit decreasing, best-fit, a resource-wastage-aware heuristic, and a time-bounded mixed-integer linear programming (MILP) solver. We conduct a controlled experimental evaluation across four problem sizes with $30$ independent instances each, together with capacity-stress, distribution-shift, and reward-ablation experiments. For the $16 \\times 8$ VNFC-to-VM scenario, DQN and Double DQN achieve mean placed-VNFC fractions of $0.990$ and $0.996$, respectively. However, first-fit decreasing and the resource-wastage-aware heuristic match this placement quality with lower efficiency cost and lower decision time, whereas the MILP attains the lowest efficiency cost at a much higher runtime. The results clarify the strengths and limitations of neural placement for this static problem, without establishing superiority over conventional methods.",
+  "abstract_ja": "",
+  "authors": [
+    "Mohammad Asif Habibi",
+    "Xavier Costa-Perez",
+    "Hans D. Schotten"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34516",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "This paper studies the mapping of the virtual network function components (VNFCs) of the O-RAN central unit (O-CU) and O-RAN distributed unit (O-DU) onto virtual machines (VMs) in sixth-generation…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Feasibility-Aware Deep Reinforcement Learning for O-CU and O-DU Mapping in 6G O-RAN",
+  "url": "https://arxiv.org/abs/2611.34516",
+  "use_case": ""
+}

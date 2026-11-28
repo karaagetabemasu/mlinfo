@@ -1,0 +1,27 @@
+{
+  "abstract": "In hypothesis selection we are given $n$ distributions $q_1,\\dots,q_n$ on a countable domain $\\mathcal{X}$ and samples from an unknown distribution $p$. The goal is a distribution $q$ with $\\mathrm{TV}(p,q)\\leα\\min_i\\mathrm{TV}(p,q_i)+ε$. The factor $α=2$ is optimal for algorithms using a number of samples from $p$ that is independent of $|\\mathcal{X}|$, and in general only improper learners achieve it. We give a learner that achieves $α=2$ with $O(\\log(n/δ)/ε^2)$ samples of $p$, with probability at least $1-δ$. This matches the sample complexity of Yatracos's factor-$3$ estimator, and it removes the logarithmic factors in the factor-$2$ bound of Bousquet et al. (FOCS 2021). The learner accesses the $q_i$ only through sampling and pointwise comparisons. We measure its running time by its oracle complexity, the number of oracle calls. In expectation it makes $O((nε^{-2}+ε^{-4}\\log(1/ε))\\log(n/δ))$ oracle calls, independent of $\\mathcal{X}$. It runs multiplicative weights over the constraints $\\mathrm{TV}(q,q_i)\\le\\mathrm{TV}(p,q_i)$ and uses at most one sample of $p$ per round.",
+  "abstract_ja": "",
+  "authors": [
+    "Satyen Kale",
+    "Amirreza Shaeiri",
+    "Kunal Talwar"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30003",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "In hypothesis selection we are given $n$ distributions $q_1,\\dots,q_n$ on a countable domain $\\mathcal{X}$ and samples from an unknown distribution $p$. The goal is a distribution $q$ with…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Statistically Optimal and Near Linear Time Hypothesis Selection",
+  "url": "https://arxiv.org/abs/2611.30003",
+  "use_case": ""
+}

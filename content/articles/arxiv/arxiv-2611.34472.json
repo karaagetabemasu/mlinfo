@@ -1,0 +1,31 @@
+{
+  "abstract": "Macro placement is a critical early-stage decision in physical design because macro locations strongly constrain subsequent implementation stages. The task is difficult because these high-impact discrete decisions must be made before downstream quality can be measured accurately, forcing training to rely on fast but imperfect training-time oracles such as half-perimeter wirelength (HPWL). Existing RL-based placers therefore mostly optimize single HPWL-driven solutions, and their long sequential horizons often require heavy search assistance or offline expert data while leaving little room to preserve multiple competitive layouts. We address this gap by making quality-controlled diversity an explicit objective for macro placement. Instead of relying on a single proxy-optimal solution, we maintain a compact archive of HPWL-competitive yet meaningfully different placements for downstream selection. We realize this idea in DiversePlace, a curriculum proximal policy optimization (PPO) framework that combines a quality-gated diversity reward with an expanding placement horizon, enabling from-scratch RL optimization while keeping exploration inside competitive HPWL regions. On the ISPD2005 benchmarks, DiversePlace consistently improves top-5, top-10, and top-20 archive diversity and achieves lower or virtually identical HPWL on all eight designs with better efficiency. Code: https://github.com/William030422/NIPS2026-DiversePlace.",
+  "abstract_ja": "",
+  "authors": [
+    "Wenrui Zhou",
+    "Jiashun Liu",
+    "Wenji Fang",
+    "Zhiyao Xie",
+    "Ling Pan"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/William030422/NIPS2026-DiversePlace",
+  "hasCode": true,
+  "id": "arxiv-2611.34472",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Macro placement is a critical early-stage decision in physical design because macro locations strongly constrain subsequent implementation stages. The task is difficult because these high-impact…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "DiversePlace: Diversity-Seeking Curriculum Reinforcement Learning for Macro Placement",
+  "url": "https://arxiv.org/abs/2611.34472",
+  "use_case": ""
+}

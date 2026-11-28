@@ -1,0 +1,30 @@
+{
+  "abstract": "This paper introduces LoKiTO, a 3D local kinodynamic trajectory optimizer that combines a Chebyshev polynomial parameterization with an online neural Euclidean Signed Distance Field (ESDF) representation for aerial robotics. While current gradient-based planners often struggle with the high memory requirements of explicit volumetric maps or fail to strictly enforce dynamic limits, LoKiTO embeds kinodynamic constraints directly into a modular cost function and exploits the numerical conditioning properties of the Chebyshev basis. Collision awareness is provided by a continuous, memory-efficient neural ESDF updated online from LiDAR measurements, which drastically reduces map memory consumption to approximately 1.0 MB. Benchmarking in highly cluttered simulated environments against state-of-the-art baselines (Fast-Planner and EGO-Planner) demonstrates the superiority of our approach. Experimental results show that LoKiTO achieves over 99.4% dynamic feasibility compliance, significantly outperforming the baselines, and maintaining higher median clearance from obstacles. By coupling a well-conditioned continuous parameterization with explicit kinodynamic reasoning, LoKiTO provides a practical and extensible basis for local replanning in aerial robotics.",
+  "abstract_ja": "",
+  "authors": [
+    "Guillermo Gil-Garcia",
+    "J. A. Cobano",
+    "L. Merino",
+    "F. Caballero"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28438",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "This paper introduces LoKiTO, a 3D local kinodynamic trajectory optimizer that combines a Chebyshev polynomial parameterization with an online neural Euclidean Signed Distance Field (ESDF)…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "LoKiTO: Local Kinodynamic Trajectory Optimization for UAVs based on Memory-Efficient Neural Distance Fields",
+  "url": "https://arxiv.org/abs/2611.28438",
+  "use_case": ""
+}

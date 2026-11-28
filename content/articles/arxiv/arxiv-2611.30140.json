@@ -1,0 +1,29 @@
+{
+  "abstract": "Changing a graph embedding parameter can change what the layout represents. In SG-t-SNE-$Π$, the rescaling parameter $λ$ changes the probability assigned to each neighbor before optimization begins. We introduce LambdaLens to trace that change from individual edges to the resulting layout. For nodes with at least two neighbors, we derive a normalized power path. When the original weights are unequal, the number of neighbors determines where the weights become uniform and where their ordering reverses. Near $λ=1$, the rate of change in each edge probability depends on its surprisal relative to the neighborhood entropy. To measure the geometric effect, we vary $λ$ while holding the input graph, initialization, random seed, and optimizer settings fixed. Across six graphs, some layouts continue to move as $λ$ increases, others stabilize early, and others barely move. PubMed has the widest relative spread in node degree, yet its layout changes little. On four datasets with class labels, four probes recover 98.48-100% of the best label-fidelity score on a 16-value grid, using 75% fewer evaluations. In a six-dataset comparison, SG-t-SNE-$Π$ attains the highest observed primary score on four datasets and ranks among the top three on all six. On Citeseer, four probes come close to the dense-grid optimum, yet PHATE better preserves class structure, making a change of embedding pipeline worth considering on that graph. ```",
+  "abstract_ja": "",
+  "authors": [
+    "Juntang Wang",
+    "Yihan Wang",
+    "Sheng'en Li",
+    "Siyuan Cao",
+    "Liming Zhu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30140",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Changing a graph embedding parameter can change what the layout represents. In SG-t-SNE-$Π$, the rescaling parameter $λ$ changes the probability assigned to each neighbor before optimization begins.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "LambdaLens: Auditing a Representation-Changing Hyperparameter in Graph Neighbor Embedding",
+  "url": "https://arxiv.org/abs/2611.30140",
+  "use_case": ""
+}

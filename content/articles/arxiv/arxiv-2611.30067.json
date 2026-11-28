@@ -1,0 +1,33 @@
+{
+  "abstract": "Layered image generation separates images into compositable layers, allowing users to manipulate individual elements independently. However, such asset-level editability does not enable the generation system to interpret successive feedback, perform targeted edits, and preserve unaffected content. We introduce FolioWeaver, a LayerGraph-grounded agent that unifies layered-image generation and iterative editing through a persistent Executable Scene State. FolioWeaver constructs a LayerGraph and generates independent visual assets conditioned on a shared scene reference. An Editing Agent performs feedback-driven modifications and self-repair through scoped actions, selective layer execution, and visual verification, enabling targeted updates while reusing unchanged assets. We also publicly release LayerFolio, a dataset of 100,377 human-reviewed layered scenes spanning six visual domains, together with two evaluation protocols: AtomicQA for measuring requirement satisfaction and CBLP for assessing layer organization. Experiments demonstrate that FolioWeaver achieves superior layer organization and composite fidelity compared with direct layered-generation methods. Analyses validate the contributions of component adaptation, execution-grounded repair, and cross-domain training. FolioWeaver advances layered-image generation toward persistent, controllable, and iterative visual creation. The dataset is available at https://huggingface.co/datasets/FolioWeaver/LayerFolio.",
+  "abstract_ja": "",
+  "authors": [
+    "Wentao Lu",
+    "Shengzhe Cui",
+    "Xihao Wu",
+    "Dingxin Yan",
+    "Yixuan Qin"
+  ],
+  "category": "generative-ai",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30067",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "gan",
+  "summary": "Layered image generation separates images into compositable layers, allowing users to manipulate individual elements independently. However, such asset-level editability does not enable the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "FolioWeaver: A LayerGraph-Grounded Agent for Layered Image Generation and Editing",
+  "url": "https://arxiv.org/abs/2611.30067",
+  "use_case": ""
+}

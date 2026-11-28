@@ -1,0 +1,27 @@
+{
+  "abstract": "Quantile stochastic gradient descent (SGD) tracks a quantile by comparing each observation with an adaptive threshold, and closely related updates calibrate online conformal sets and drive quantile temporal-difference learning. Their inputs are serially dependent, yet existing guarantees largely assume independence. We show that dependence creates a directional bias that score autocovariances cannot detect: reversing a stationary stream leaves every score autocovariance unchanged but can change the leading bias threefold. For finite memory and decreasing stepsizes, the bias splits into lag-specific interactions between the threshold and the current observation and a curvature term; delaying the threshold removes the interactions one lag at a time while keeping every observation and the leading variance. At stepsizes near $t^{-1/2}$, as used for online inference, the bias is comparable to the standard error and makes an SGD-based interval miss mostly on one side. Testing fixed candidates instead keeps the score centered, so calibration depends only on score autocovariances. Extending local-dependence self-normalized approximations to the implemented acceptance hull, we show that inverting these tests gives a density-free, moment-free interval for the population quantile with $O(n^{-1/2})$ coverage error for a fixed sufficient lag window, a rate that is sharp for this interval, and a guarantee for data-selected windows; an exact scan takes $O(n\\log n)$ time. Experiments confirm the lag-by-lag predictions and show calibration competitive with block bootstrap at lower cost.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiaoli Li",
+    "Qianqian Lei",
+    "Wei Biao Wu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28367",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Quantile stochastic gradient descent (SGD) tracks a quantile by comparing each observation with an adaptive threshold, and closely related updates calibrate online conformal sets and drive quantile…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Directional Bias in Quantile SGD and Score-Inversion Inference under Dependence",
+  "url": "https://arxiv.org/abs/2611.28367",
+  "use_case": ""
+}

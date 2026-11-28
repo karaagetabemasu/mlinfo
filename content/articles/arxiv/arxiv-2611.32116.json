@@ -1,0 +1,35 @@
+{
+  "abstract": "Switching scenes while preserving the original subject in streaming video generation exposes a conflict: cached history helps maintain the subject but also sustains old-scene objects that should disappear. Through controlled interventions on text conditioning, denoising steps, the local window, and the attention sink, we identify how cached visual history keeps this obsolete content. When the original frames remain in the cache, KV flush and sink recomputation still leave old-scene objects in the generated videos. Replacing this history with target-scene history largely removes those objects, but also changes the subject, reducing face similarity to the pre-switch subject. We then propose Molt Forcing, a training-free method that rebuilds scene history from a cold-start target scene while selectively retaining subject tokens from the original cache. Across 16 scene families, Molt Forcing removes old-scene objects at least as reliably as an Echo-Forcing hard cut while keeping the subject much closer to its pre-switch appearance.",
+  "abstract_ja": "",
+  "authors": [
+    "Hao Zhou",
+    "Ziyang Xu",
+    "Chenhan Jin",
+    "Hao Qin",
+    "Shengze Xu"
+  ],
+  "category": "generative-ai",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32116",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "diffusion",
+  "summary": "Switching scenes while preserving the original subject in streaming video generation exposes a conflict: cached history helps maintain the subject but also sustains old-scene objects that should…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "The Old Scene Lives in the Cache: Diagnosing and Shedding Stale History in Streaming Video Generation",
+  "url": "https://arxiv.org/abs/2611.32116",
+  "use_case": ""
+}

@@ -1,0 +1,32 @@
+{
+  "abstract": "Purpose: Accurate 2D/3D registration is crucial for image-guided orthopedic interventions, enabling the alignment of preoperative 3D anatomy with intraoperative X-ray observations for surgical navigation. Public benchmarks have facilitated the development and evaluation of increasingly accurate registration methods. However, as registration errors approach the uncertainty of benchmark reference poses, measured performance may be limited by reference inaccuracies rather than algorithmic errors alone. Methods: We propose Consensus Reference (ConRef), a multi-view framework for auditing reference poses in existing X-ray/computed tomography (CT) registration benchmarks. By jointly exploiting multiple X-ray observations, ConRef estimates an additional reference pose, quantifies its uncertainty, and identifies potential X-ray outliers. We validate the framework using independent anatomical evidence and a newly acquired X-ray/cone-beam CT (CBCT) phantom dataset with bead-based reference poses. Results: On our BeadPhant dataset, ConRef differed from independent bead-based references by 0.08-0.12 mm, while discrepancies with original references reached 2.06 mm on the Femur dataset. It also flagged 22 DeepFluoro X-rays as potential outliers. On Femur F5, reference choice changed the submillimeter success conclusions of the same registrations. Conclusion: Our findings demonstrate that reference discrepancies can influence the evaluation of high-accuracy 2D/3D registration methods. By providing an additional, independently validated reference and identifying potential inconsistencies, ConRef enables systematic auditing of existing benchmarks and supports more reliable evaluation of registration error.",
+  "abstract_ja": "",
+  "authors": [
+    "Jianfeng Yue",
+    "Feng Li",
+    "Tianyu Song",
+    "Julius Watrinet",
+    "Ulrich Eck"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26758",
+  "likes_count": 0,
+  "publishedAt": "2026-11-19",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Purpose: Accurate 2D/3D registration is crucial for image-guided orthopedic interventions, enabling the alignment of preoperative 3D anatomy with intraoperative X-ray observations for surgical…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "ConRef: Auditing Reference Reliability in 2D/3D Registration Benchmarks",
+  "url": "https://arxiv.org/abs/2611.26758",
+  "use_case": ""
+}

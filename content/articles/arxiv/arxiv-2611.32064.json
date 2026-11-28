@@ -1,0 +1,27 @@
+{
+  "abstract": "Open-weight LLMs are competent software engineers, but they sometimes fail at tasks they are otherwise able to do. Often it is not a failure of reasoning. It is a few small missteps over a long trajectory (repeating a step that has already failed, or declaring the task done while a requirement is still unmet) that make the difference. Correcting this calls for a surgical weight update that steers the model toward the right actions without interfering with its reasoning. Such updates, typically learned with LoRA adapters, are often too small to survive merging into a released checkpoint. In our BF16 release, the median weight change is only 1.5% of a single rounding step, and merging loses roughly two thirds of the update's norm. When the same adapter is merged into the mixed FP8/NVFP4 release of the same model, 93% of the update disappears. Instead of increasing the size of the update, we directly train on the surviving part. We introduce merge-aware fine-tuning. Standard LoRA rounds the merged weights to the storage format only at export, so the loss never sees the rounded weights. We instead round the sum of base weights and adapter update to the release format at every training step, keeping the vendor's quantization scales, and compute the loss on these weights. The forward pass matches the serving engine numerics, and the gradient passes straight through the rounding, so the model we train is the model we ship. The loss optimizes only the model's actions and keeps its reasoning close to the base model. Applied to Nemotron-3.5, the recipe improves agentic coding in both the BF16 and the NVFP4 release, by up to 8.4 points on Terminal-Bench 2.1, and we publicly release both models.",
+  "abstract_ja": "",
+  "authors": [
+    "Sandeep Singh Sandha",
+    "Prann Bansal",
+    "Arvind Sundararajan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32064",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Open-weight LLMs are competent software engineers, but they sometimes fail at tasks they are otherwise able to do. Often it is not a failure of reasoning.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Fix How It Acts, Not How It Thinks: Surgical Fine-Tuning of Frontier LLMs",
+  "url": "https://arxiv.org/abs/2611.32064",
+  "use_case": ""
+}

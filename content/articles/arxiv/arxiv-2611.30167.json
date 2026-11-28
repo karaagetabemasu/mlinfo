@@ -1,0 +1,34 @@
+{
+  "abstract": "Pathologists reach a diagnosis by integrating morphological evidence across regions and magnifications along viewing trajectories. Existing pathology AI rarely reflects this process: models predict from selected image regions, answer questions within fixed visual contexts, or navigate slides autonomously. We formalize pathologist-led streaming diagnosis, in which the pathologist controls navigation while a copilot selectively describes incoming views and synthesizes accumulated evidence into a final diagnosis. We record five pathologists' viewing trajectories on 1,791 TCGA whole-slide images (WSIs) spanning ten organs, with response labels, morphological descriptions, and session-level findings and diagnoses. We construct PathStreamBench to assess response timing, morphological description, and session-level diagnosis, alongside auxiliary video understanding. We introduce PathStream, which jointly learns streaming responses and diagnosis through two-stage training, with a diagnosis-attention loss guiding attention during diagnosis to relevant visual and textual evidence accumulated as the examination unfolds. PathStream outperforms 14 vision-language models and three domain-fine-tuned baselines on the core tasks, achieving a trajectory WSI Relevance score of 77.87, surpassing the strongest domain-fine-tuned baseline's 62.76. Without additional training, its diagnostic capabilities generalize to new educational pathology videos, three external centers, and an unseen organ.",
+  "abstract_ja": "",
+  "authors": [
+    "Dankai Liao",
+    "YuFeng Wu",
+    "Ziyue Wang",
+    "Guanxi Liu",
+    "Tianyi Zhang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30167",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Pathologists reach a diagnosis by integrating morphological evidence across regions and magnifications along viewing trajectories. Existing pathology AI rarely reflects this process: models predict…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "PathStream: Towards Streaming Diagnostic Copilots for Whole-Slide Pathology",
+  "url": "https://arxiv.org/abs/2611.30167",
+  "use_case": ""
+}

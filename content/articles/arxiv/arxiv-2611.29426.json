@@ -1,0 +1,29 @@
+{
+  "abstract": "Staged robotic procedures may reuse a fixed-dimensional policy output even though the admissible motions and physical meanings of its coordinates change across phases. We call this action-semantic shift. To address it, we propose a phase-conditioned executable policy that separates learned action proposal from deterministic command formation. Phase-specific heads generate proposals, while an action contract removes inadmissible components, enforces state-dependent bounds, and decodes the remaining action into phase-dependent task-space commands. We further introduce failure-focused local repair and a read-only provenance trace for exact command replay and rule-level auditing. Across three held-out retinal-injection evaluation blocks, our method achieves $94.27\\pm0.64\\%$ procedural completion and $64.40\\pm2.43\\%$ success within $35\\,μ\\mathrm{m}$, with no hard violations. Applying the contract and decoder to the same frozen Correction network raises completion from $12.27\\%$ to $90.47\\%$. The trace exactly reconstructs 96,350 commands, and all 1,996 binding interventions follow their declared effects. These results show the importance of explicit executable action semantics for auditable staged microsurgical control.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiaxi You",
+    "Yiwei Shi",
+    "Yanlin Li",
+    "Rihui Song",
+    "Weibing Li"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29426",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Staged robotic procedures may reuse a fixed-dimensional policy output even though the admissible motions and physical meanings of its coordinates change across phases. We call this action-semantic…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Phase-Conditioned Action Contracts for Auditable Microsurgical Control",
+  "url": "https://arxiv.org/abs/2611.29426",
+  "use_case": ""
+}

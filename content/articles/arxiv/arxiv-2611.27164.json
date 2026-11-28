@@ -1,0 +1,37 @@
+{
+  "abstract": "Interactive video world models aim to predict how visual environments evolve in response to user interventions, including physically consistent state changes induced by applied forces. Existing methods often represent forces as motion trajectories, which may introduce inappropriate motion priors, causing the model to over-rely on encoded displacement patterns. More fundamentally, the model's internal representations do not reliably localize force-induced state changes, making it difficult to associate applied forces with their resulting physical responses. Also, limited force-annotated data make it difficult to produce physically consistent and temporally stable predictions in unseen scenarios. To address these limitations, we propose PhysForce, a two-stage framework that integrates supervised fine-tuning and reinforcement learning through three complementary components. During supervised fine-tuning, (1) the Latent Force Intervention Encoder maps force location, direction, and magnitude into the video latent space without exposing future motion; and (2) the Physics Attribution Network associates force interventions with localized changes in the latent state, strengthening the learning of physical responses to applied forces. During reinforcement learning, (3) Physics-Aware Reinforcement Learning uses self-supervised rewards on out-of-distribution videos to improve physical consistency and generalization. Extensive experiments show that PhysForce improves force responsiveness, physical consistency, and generalization, demonstrating its effectiveness for interactive video world models.",
+  "abstract_ja": "",
+  "authors": [
+    "Xuancheng Xu",
+    "Xiaofeng Wang",
+    "Yue Ma",
+    "Zheng Zhu",
+    "Bing-Kun Bao"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27164",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Interactive video world models aim to predict how visual environments evolve in response to user interventions, including physically consistent state changes induced by applied forces. Existing…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised",
+      "reinforcement"
+    ],
+    "modality": [
+      "image",
+      "video"
+    ],
+    "task": [
+      "anomaly-detection"
+    ]
+  },
+  "title": "PhysForce: Physics-aware Force Control for Interactive Video World Model",
+  "url": "https://arxiv.org/abs/2611.27164",
+  "use_case": ""
+}

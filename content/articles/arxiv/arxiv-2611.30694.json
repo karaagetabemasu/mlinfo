@@ -1,0 +1,33 @@
+{
+  "abstract": "Speech synthesized by text-to-speech engines is a low-cost substitute for recorded test sets in automatic speech recognition, yet an off-the-shelf synthetic test set is worth only a few dozen real recordings for estimating the real error rate of a recognizer. This paper examines which properties of real recordings are missing from synthetic speech and how much of the gap can be closed. For 507 Turkish Common Voice recordings, synthetic twins are built: a ladder of synthetic copies that adds, one factor at a time, the pitch of the speaker, a clone of the same speaker, the real recording channel and the speaking rate. At each step, the agreement between ASR behaviour on the copy and on the real recording is measured. Across three zero-shot cloning engines and panels of six and 19 recognizers, the speaker clone is the step that improves agreement on which sentences are hard, raising the Spearman correlation from .41 to .55 for Chatterbox. Matching the channel or adding generic noise corrects the error level when the synthetic speech is easier than real speech. The twin with the highest worth is equivalent to 70 to 122 real recordings, depending on the recognizer panel, compared with about 9 for a stock voice. The findings replicate on VoxForge, a second corpus in which speaker identity is known rather than inferred: the clone raises sentence agreement from .31 to .50 and the worth from 8 to about 50 recordings. Agreement on which sentences are hard is distinct from agreement on how hard they are. The paper concludes with a practical recipe and a reporting checklist for synthetic ASR test sets.",
+  "abstract_ja": "",
+  "authors": [
+    "Nur Yağmur Tuncer",
+    "Mustafa Sertaç Türkel",
+    "Fatma Nur Korkmaz",
+    "Ahmet Tuğrul Bayrak"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30694",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "Speech synthesized by text-to-speech engines is a low-cost substitute for recorded test sets in automatic speech recognition, yet an off-the-shelf synthetic test set is worth only a few dozen real…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "audio"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Synthetic Twins: Closing the Gap Between TTS Test Sets and Real Recordings in Turkish ASR Evaluation",
+  "url": "https://arxiv.org/abs/2611.30694",
+  "use_case": ""
+}

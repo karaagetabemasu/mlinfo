@@ -1,0 +1,31 @@
+{
+  "abstract": "Modern video object segmentation (VOS) relies on a two-stage inference paradigm: target initialization and memory-based propagation. However, existing adversarial attacks on VOS often overlook this structure. To bridge this gap, we propose AUV, an adversarial framework that Aligns with the Universal two-stage paradigm of VOS models. Specifically, AUV optimizes a universal adversarial perturbation (UAP) through decoupled training strategies tailored for both initialization and propagation stages. By disrupting the shared memory space, it achieves prompt-agnostic attacks across different modalities, including masks, points, boxes, and language. Extensive experiments show that AUV establishes state-of-the-art VOS attack performance, such as degrading mask-based SAM3 to only 8.4 J&F on DAVIS17-val (compared to 55.4 for the previous SOTA under the same training setup). It also exhibits superior temporal dynamics with the fastest onset, the most enduring persistence, and the support of any-time mid-video attacks. The AUV optimization framework is applicable to different VOS models, revealing vulnerabilities in real-world streaming VOS. Code is available at https://github.com/FudanCVL/AUV.",
+  "abstract_ja": "",
+  "authors": [
+    "Ruiqi Shen",
+    "Chang Liu",
+    "Henghui Ding"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/FudanCVL/AUV",
+  "hasCode": true,
+  "id": "arxiv-2611.32658",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Modern video object segmentation (VOS) relies on a two-stage inference paradigm: target initialization and memory-based propagation. However, existing adversarial attacks on VOS often overlook this…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "Attack-Inference Aligned Universal Adversarial Attacks on Video Object Segmentation",
+  "url": "https://arxiv.org/abs/2611.32658",
+  "use_case": ""
+}

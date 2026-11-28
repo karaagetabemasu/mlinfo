@@ -1,0 +1,26 @@
+{
+  "abstract": "Simple cellular automata (CAs) can be computationally universal, but their rules are designed by hand. We train Neural Cellular Automata (NCAs), which learn a local update rule by gradient descent, to compute exact digital logic. Bits are encoded as clusters of cells on a 2D grid, and a result reaches the output only by propagating through intermediate cells. One model is trained per task: logic gates, 4- and 8-bit ripple-carry adders, and a preliminary 8-bit arithmetic logic unit (ALU). All gate and adder models reach 100% bit correctness in 10 of 10 seeds, and exhaustive tests over all input pairs find at most 1 error in 256 (4-bit) and 7 in 65,536 (8-bit). Adders trained on operands of up to 3 bits generalize to 8 bits. The adders propagate the carry as a wave, with a delay of about 3.5 steps per bit of the carry chain. Outputs are correct only within the trained rollout length.",
+  "abstract_ja": "",
+  "authors": [
+    "Iliya Zhechev",
+    "Piotr Walas"
+  ],
+  "category": "math-theory",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32750",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "optimization",
+  "summary": "Simple cellular automata (CAs) can be computationally universal, but their rules are designed by hand. We train Neural Cellular Automata (NCAs), which learn a local update rule by gradient descent,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "NCPU: Towards Cell-Inspired Spatial Computing",
+  "url": "https://arxiv.org/abs/2611.32750",
+  "use_case": ""
+}

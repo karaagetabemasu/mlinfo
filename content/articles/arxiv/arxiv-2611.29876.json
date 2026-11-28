@@ -1,0 +1,32 @@
+{
+  "abstract": "Closed-form physics formulas can label synthetic microstructures at no cost, so supervised pretraining on those labels is an alternative to self-supervised pretraining when labels are scarce. One pre-specified protocol tests this on two public simulated benchmarks, two-phase conductivity and short-fiber stiffness: a ConvNeXt-Small is pretrained on 150,000 synthetic images by formula regression or masked reconstruction and fine-tuned on 100, 400, or 1,600 labels. Five fine-tuning seeds from one formula checkpoint have mean residual correlations of 0.994 (conductivity) and 0.999 (stiffness). On conductivity the formula network compresses its predictions (slope 0.64) and has four times the 400-label error of ImageNet initialization. Two confounds interact: the generator renders the low-conductivity phase with the opposite contrast polarity, and the exponential moving average (EMA; decay 0.995, no bias correction) still holds 16% of the initial weights after the 400-label schedule. Without the EMA the slope is 0.97, and over three subsets and five seeds the mismatched checkpoint has 1.4 times the ImageNet error (0.0119 versus 0.0084). Three pretraining runs per polarity leave the comparison inconclusive: matched means (0.0086, 0.0111, 0.0118) fall below mismatched means (0.0119, 0.0120, 0.0123) in aggregate (0.0105 versus 0.0121) but overlap on two of three subsets, and the matched spread (0.0032) exceeds the mismatched spread (0.0004). On stiffness without the EMA, formula pretraining lowers the 100-label error by 18% versus ImageNet over five seeds, including a re-initialized head, while ImageNet seeds also correlate at 0.992. Weight averages that start at the pretrained weights can dominate small-budget comparisons and should be rechecked at the last weights.",
+  "abstract_ja": "",
+  "authors": [
+    "Jonghyun Lee",
+    "Soojung Kang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29876",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Closed-form physics formulas can label synthetic microstructures at no cost, so supervised pretraining on those labels is an alternative to self-supervised pretraining when labels are scarce. One…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Weight Averaging at Small Budgets Confounds Formula-Labeled Pretraining in Microstructure-Property Regression: A Pre-Specified Study with Post Hoc Rechecks",
+  "url": "https://arxiv.org/abs/2611.29876",
+  "use_case": ""
+}

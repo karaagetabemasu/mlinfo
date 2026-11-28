@@ -1,0 +1,33 @@
+{
+  "abstract": "Accurate hyperspectral image (HSI) classification requires both the effective integration of broad spatial context and fine-grained spectral--spatial information surrounding target pixels. However, the reliability of these complementary representations may vary considerably across heterogeneous scenes, and uncertainty estimates obtained during feature fusion are rarely exploited to guide subsequent model compression. To address these challenges, we propose Kalman-Reliable Global--Local Learning with Group Fisher Pruning (KGLP-Net), a unified framework that couples uncertainty-aware feature fusion with reliability-guided structured pruning. Specifically, an asymmetric dual-view architecture employs a Global Mamba Encoder to capture long-range spatial dependencies and a Local CNN Encoder to extract fine-grained spectral--spatial features from target neighborhoods. To adaptively integrate these complementary representations, Kalman-Reliable Fusion (KRF) estimates their relative uncertainties in feature space and performs a Kalman-inspired posterior update, treating global features as a contextual prior and local features as an observation. Building upon the resulting posterior uncertainty, Kalman-Reliable Group Fisher Pruning (KRGF) quantifies group-level reliability through normalized posterior precision and integrates it with Group Fisher importance to identify and prune Kalman-coupled channel groups, enabling structurally consistent model compression. Experiments on four public HSI datasets demonstrate that the resulting Compact48 model, with a hidden width of 48, achieves the highest overall accuracy among ten representative competing classifiers. Compared with the unpruned Dense64 model, Compact48 reduces the number of parameters, FLOPs, and inference time by 38.5%, 34.8% and 37.6% on average, respectively, while incurring only a 0.03-percentage-point decrease in mean overall accuracy.",
+  "abstract_ja": "",
+  "authors": [
+    "Wenshuai Deng",
+    "Wen Xie",
+    "Abdel Hamid Soliman",
+    "Qianzheng Zhao"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29944",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Accurate hyperspectral image (HSI) classification requires both the effective integration of broad spatial context and fine-grained spectral--spatial information surrounding target pixels. However,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "KGLP-Net: Kalman-Reliable Global--Local Learning With Group Fisher Pruning for Hyperspectral Image Classification",
+  "url": "https://arxiv.org/abs/2611.29944",
+  "use_case": ""
+}

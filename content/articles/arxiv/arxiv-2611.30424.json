@@ -1,0 +1,35 @@
+{
+  "abstract": "Spatial reasoning requires a vision-language model~(VLM) to understand metric distances, three-dimensional relationships, and viewpoint-dependent geometry. Learning these capabilities typically requires externally curated training data. This paper introduces Spatial-Zero, a VLMs' training framework that can self-evolve through autonomous spatial exploration with zero data. Spatial-Zero addresses two key challenges in autonomous spatial exploration: reliably generating valid spatial interaction tasks and providing accurate supervision for learning from these tasks. Specifically, a proposer specifies object configurations and questions, and a Coder turns them into executable scene programs that produce multi-view images and explicit scene geometry. A Geometric Oracle checks spatial constraints, visibility, and answer uniqueness and derives ground-truth labels from executed geometry; these labels supervise the Solver and ground difficulty feedback, while validation outcomes guide subsequent task generation. Across six spatial reasoning benchmarks and three VLM backbones, Spatial-Zero yields consistent gains through iterative self-evolution. After three iterations, Qwen3.5-9B improves average accuracy by 3.23 percentage points; with Qwen3.5-4B, Spatial-Zero also outperforms existing VLM self-evolution methods. Our code is available at https://github.com/YutongLi2024/Spatial-Zero",
+  "abstract_ja": "",
+  "authors": [
+    "Yutong Li",
+    "Haoyu Zhao",
+    "Daoguo Dong",
+    "Ziyi Ye",
+    "Yugang Jiang"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/YutongLi2024/Spatial-Zero",
+  "hasCode": true,
+  "id": "arxiv-2611.30424",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Spatial reasoning requires a vision-language model~(VLM) to understand metric distances, three-dimensional relationships, and viewpoint-dependent geometry. Learning these capabilities typically…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Spatial-Zero: Self-Evolving Spatial Reasoning in Vision-Language Models from Zero Data",
+  "url": "https://arxiv.org/abs/2611.30424",
+  "use_case": ""
+}

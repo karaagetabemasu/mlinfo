@@ -1,0 +1,31 @@
+{
+  "abstract": "Cross-subject brain-to-image retrieval aims to identify viewed images from unseen subjects' brain signals. However, inter-subject variability hinders alignment of brain-image representations, while independent query ranking tends to concentrate predictions on a few candidates, making accurate retrieval difficult without target labels. We propose STAGE (Structured Test-Time Adaptation with Global Entropic Soft-coupling), a structured test-time adaptation framework for recovering cross-subject alignment from uncertain brain-image correspondences. Moment calibration reduces statistical discrepancies between features, while coupling-weighted initialization establishes initial alignment. Coupling-guided adaptation further refines residual feature mismatches, and soft-coupling ranking coordinates candidate competition across queries to prevent overly concentrated matching assignments. Using only unlabeled target batches, STAGE maintains consistent matching from feature calibration to image retrieval while keeping both encoders frozen. Experiments on three public datasets validate STAGE's retrieval performance. On THINGS-EEG2, STAGE achieves 68.25% Top-1 and 90.47% Top-5, improving Top-1 by 18.52 percentage points over SCORE recovery and CSLS on identical frozen NICE features. Calibrated on 200 queries and a 200-image gallery covering their identities, STAGE retains 42.05% Top-1 when ranking 1,854 images with the transform frozen.",
+  "abstract_ja": "",
+  "authors": [
+    "Yihang Zou",
+    "Ruixi Liang",
+    "Chunmei Qing",
+    "Junpeng Tan",
+    "Haichuan Wei"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29538",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "Cross-subject brain-to-image retrieval aims to identify viewed images from unseen subjects' brain signals. However, inter-subject variability hinders alignment of brain-image representations, while…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "STAGE: Structured Test-Time Adaptation with Global Entropic Soft-coupling for Cross-Subject Brain-to-Image Retrieval",
+  "url": "https://arxiv.org/abs/2611.29538",
+  "use_case": ""
+}

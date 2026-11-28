@@ -1,0 +1,34 @@
+{
+  "abstract": "Dense feed-forward networks are unaffected by how their neurons are grouped: every neuron is evaluated. Sparse execution makes this grouping consequential, because each input can access only a few experts. An arbitrary partition can therefore retain pretrained weights while separating computations that an input needs together. We argue that upcycling should organize neurons according to their responses to similar inputs. To establish this correspondence, we introduce a context-guided upcycling approach REACT, Response-based Expert Assembly from Contextual Trajectories, that uses frozen denoising trajectories to connect input contexts with pretrained neuron responses. We first identify contexts after timestep-wise centering to account for distribution shifts across noise levels, then use their associated responses to allocate intact neurons to routed experts. The same contexts initialize the corresponding router entries, aligning expert contents with their intended inputs, while global activation statistics select an always-active shared expert. Layer-wise reconstruction and end-to-end adaptation refine this initialization for sparse execution. On ImageNet-1K, our approach achieves better generation quality while activating only 37.5% of the original FFN parameters and reducing total per-token activated parameters by 27.6%.",
+  "abstract_ja": "",
+  "authors": [
+    "Hesen Yang",
+    "Yuxue Liu",
+    "Yanzhe Chen",
+    "Weibo Zhao",
+    "Junwei Su"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30366",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Dense feed-forward networks are unaffected by how their neurons are grouped: every neuron is evaluated. Sparse execution makes this grouping consequential, because each input can access only a few…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "REACT: Response-based Expert Assembly from Contextual Trajectories",
+  "url": "https://arxiv.org/abs/2611.30366",
+  "use_case": ""
+}

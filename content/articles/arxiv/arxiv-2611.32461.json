@@ -1,0 +1,34 @@
+{
+  "abstract": "Visual decision-making demands accurate judgments and timely responses. Yet for multiple questions sharing the same visual input, autoregressive multimodal large language models generate answers token by token, accumulating sequential decoding costs as question count grows and delaying completion of the decision set. Their predictions can also vary with question order. We introduce ViDM, which transforms multi-question visual inference into parallel decisions in a single forward pass, improving both accuracy and inference efficiency. ViDM organizes shared visual context, multiple questions, and question-specific decision slots into one sequence, reusing the native language-model head to produce all answer distributions simultaneously. A Decision-Query Mask aligns each decision query's direct attention with shared context and its corresponding question, while case-balanced multi-order training strengthens robustness to question reordering. Across nine benchmarks spanning image, multi-image, and video tasks, ViDM improves Qwen3.5-4B's average accuracy from 73.49% to 77.55% while achieving 8.4x the baseline's average end-to-end throughput. On GQA, where each evaluated image has 11.4 questions on average, the end-to-end speedup reaches 20.3x. ViDM also improves mean and worst-order accuracy while reducing order-induced variation across multiple benchmarks, with further validation on LLaVA-OneVision-7B and InternVL3.5-4B.",
+  "abstract_ja": "",
+  "authors": [
+    "Xudong Tan",
+    "Peng Ye",
+    "Chenyu Huang",
+    "Yaoxin Yang",
+    "Huafeng Qin"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32461",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Visual decision-making demands accurate judgments and timely responses. Yet for multiple questions sharing the same visual input, autoregressive multimodal large language models generate answers…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "ViDM: Efficient and Order-Robust Parallel Visual Decision Making",
+  "url": "https://arxiv.org/abs/2611.32461",
+  "use_case": ""
+}

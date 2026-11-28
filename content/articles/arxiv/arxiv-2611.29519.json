@@ -1,0 +1,31 @@
+{
+  "abstract": "Agent frameworks typically orchestrate language models through prompt-and-response interfaces. We propose a harness design that exposes intermediate model states and layer-level execution controls to the agent runtime. By connecting state collection, policy fitting, and execution, the design enables policies to allocate computation within and across models based on intermediate states. We demonstrate the approach with a prototype that learns stitching bridges and state-conditioned execution policies from paired model states, then applies them during inference to select among continue, exit, and stitch. For dispatcher supervision, we select the least-computation action whose full-vocabulary next-token prediction matches the source model's full-depth prediction, using continue when neither early action matches. We train these components on a frozen proxy corpus of 5,000 typed-decision items authored using source texts sampled from WildChat conversations, then evaluate the prototype on JevBench measuring task accuracy, agreement with full-model predictions, and end-to-end latency including runtime overhead. Preliminary results show an approximately 15% reduction in mean latency while maintaining task accuracy comparable to full-model inference.",
+  "abstract_ja": "",
+  "authors": [
+    "Ran Guan",
+    "Yiqi Lin",
+    "Xiangxi Tian",
+    "Yige Luo",
+    "Mi Zhou"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29519",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Agent frameworks typically orchestrate language models through prompt-and-response interfaces. We propose a harness design that exposes intermediate model states and layer-level execution controls to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Layer-Level Control of Language Model Execution in Agent Frameworks",
+  "url": "https://arxiv.org/abs/2611.29519",
+  "use_case": ""
+}

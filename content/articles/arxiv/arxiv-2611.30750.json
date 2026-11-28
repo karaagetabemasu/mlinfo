@@ -1,0 +1,31 @@
+{
+  "abstract": "The tools users approve for their AI agents keep changing their JSON input schemas. Of 8 surveyed MCP clients and scanners, none is observed or documented to re-approve a tool whose input schema widens (two not determinable). We define non-amplification over the coordinates visible in the schema (declared arguments and undeclared fields, on effective values) and a re-binding rule decided by subschema inclusion, trusting no field labels by default and conservative up to its checker and tested case analysis. Evidence: a Coq proof of composition; 48 regression tests; an exact-reference benchmark, where the reviewed version of the rule silently re-bound 27 amplifying changes, now fixed; and a pilot on 604 releases of 39 public MCP servers. There, 412 of 580 compatible schema changes widen some coordinate, yet compatibility re-binds them silently. The authors' adjudicated double annotation finds at least 76 that add or widen an authority-bearing argument (66 of the 84 a name-based labeller flags, plus 10 it misses). On existing tools, the rule asks 645 re-approvals, against 1,197 for pinning the input schema (2,004 with descriptions) and 617 for compatibility. Behaviour change behind an identical schema remains out of reach.",
+  "abstract_ja": "",
+  "authors": [
+    "Yulliwas Ameur",
+    "Samia Bouzefrane",
+    "Soumya Banerjee"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30750",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "The tools users approve for their AI agents keep changing their JSON input schemas. Of 8 surveyed MCP clients and scanners, none is observed or documented to re-approve a tool whose input schema…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "SchemaCaps: When a Compatible Tool Update Silently Widens an AI Agent's Authority",
+  "url": "https://arxiv.org/abs/2611.30750",
+  "use_case": ""
+}

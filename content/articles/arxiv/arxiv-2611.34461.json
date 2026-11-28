@@ -1,0 +1,35 @@
+{
+  "abstract": "Precise 9-DoF pose control is essential for visual content generation, enabling users to specify object location, size, and orientation in 3D space. However, existing methods typically focus on either text-to-image (T2I) or text-to-video (T2V) generation, with limitations in pose controllability and temporal coherence. We present SceneDesigner++, a unified framework for 9-DoF pose control across both T2I and T2V generation. We construct ObjectPose9D++, a dataset containing high-quality images and videos with accurate pose annotations. Trained on ObjectPose9D++, SceneDesigner++ combines absolute and relative pose encoding strategies to decouple frame-wise spatial grounding from inter-frame motion modeling. Specifically, absolute pose encoding leverages CNOCS map sequences to provide explicit, frame-wise 9-DoF pose guidance. Meanwhile, our relative pose encoding, termed VPRoPE, incorporates relative pose information into rotary position embeddings to explicitly model inter-frame pose transitions, thereby promoting temporally coherent object motion. A learnable orthogonal transformation is further introduced for each attention head, allowing different heads to capture complementary geometric relationships while preserving input feature norms to promote training stability. We further adopt a two-stage training strategy to learn the absolute and relative pose encoding mechanisms separately. Benefiting from this lightweight and decoupled design, SceneDesigner++ also supports integration with an independently trained camera-control module, enabling separate or joint control over object and camera motion. Finally, we introduce T2IVPoseEval, a benchmark for evaluating diverse object poses and motion patterns in both T2I and T2V tasks. Extensive experiments demonstrate that SceneDesigner++ consistently outperforms same-backbone baselines in pose fidelity and motion quality.",
+  "abstract_ja": "",
+  "authors": [
+    "Xincheng Shuai",
+    "Zhenyuan Qin",
+    "Henghui Ding",
+    "Dacheng Tao"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34461",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Precise 9-DoF pose control is essential for visual content generation, enabling users to specify object location, size, and orientation in 3D space. However, existing methods typically focus on…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video",
+      "3d"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "SceneDesigner++: A Unified 9-DoF Pose Control Framework for T2I and T2V Generation",
+  "url": "https://arxiv.org/abs/2611.34461",
+  "use_case": ""
+}

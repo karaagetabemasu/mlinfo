@@ -1,0 +1,27 @@
+{
+  "abstract": "When benchmark problems share sources, such as variants of one template or tasks from one repository, an evaluation budget must fix the number of sources as well as the number of problems. We ask whether pilot data or earlier evaluation results can predict, before an evaluation is run, how much the standard deviation (SD) of the score grows when the same budget is concentrated on fewer sources. We use the classical design effect with an intraclass correlation estimated on data disjoint from those used to check the prediction. On GSM-Symbolic, 100 problems drawn as 10 templates x 10 variants have an SD of 9.2 pp against 2.7 pp from 100 templates; pilot data on 15 other questions predict the ratio as 3.49 against 3.52 measured on held-out questions (medians over 20 splits; single splits err by -13% to +16%), once the actual sampling plan is included. On SWE-bench Verified, 10 randomly selected public submissions predict the median ratio for 119 other submissions within 3% for 2 or more repositories, and 3 submissions are nearly as good. Dropping the finite-population terms from the design prediction gives errors of 13-21% on GSM-Symbolic, where it reduces to the textbook formula, and 25-35% on SWE-bench. Widening iid intervals by the square root of the pilot design effect brings pass@1 coverage on concentrated designs to 0.93-0.98, but not pass@16 (0.85, 0.76). We also report two lessons for anyone validating such predictions: split pilot and held-out data by question source, not by difficulty version, and do not read a good fit of the formula as evidence of source clustering (MATH-500). The method is not new; we contribute a held-out test of its advance predictions and a recipe for using them. Code: https://github.com/Guang627/deff-eval",
+  "abstract_ja": "",
+  "authors": [
+    "Guang Qiu"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/Guang627/deff-eval",
+  "hasCode": true,
+  "id": "arxiv-2611.33622",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "When benchmark problems share sources, such as variants of one template or tasks from one repository, an evaluation budget must fix the number of sources as well as the number of problems. We ask…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "How Many Sources, Not Just How Many Problems: Planning the Precision of LLM Evaluations from Earlier Results",
+  "url": "https://arxiv.org/abs/2611.33622",
+  "use_case": ""
+}

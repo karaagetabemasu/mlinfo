@@ -1,0 +1,29 @@
+{
+  "abstract": "Selecting the order in which to process S-pairs is a crucial decision in Buchberger's algorithm for computing Groebner bases: this choice can change the cost by orders of magnitude. Recent work has shown that reinforcement learning agents viewing exponent vectors of the polynomials outperform classical heuristics on binomial ideals. We extend this line of work to general polynomial ideals by using statistical features. We introduce a 17-dimensional feature vector to describe a polynomial and use PPO to train policies on five distributions of random ideals. We find that using S-polynomial features significantly outperforms S-pair features on all five distributions. The new policies also outperform the retrained RL baseline on all five distributions, reducing algorithmic work by 41--53\\% relative to the degree heuristic on four distributions where learning helps. The additional cost of the feature engineering means that wall-clock cost remains similar to the baseline, but our new approach benefits from easier transfer to unseen distributions.",
+  "abstract_ja": "",
+  "authors": [
+    "Uzma Shafiq",
+    "Matthew England",
+    "Nayyar Zaidi"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34088",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "Selecting the order in which to process S-pairs is a crucial decision in Buchberger's algorithm for computing Groebner bases: this choice can change the cost by orders of magnitude. Recent work has…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": []
+  },
+  "title": "Feature Engineered Reinforcement Learning for S-pair Selection in Buchberger's Algorithm",
+  "url": "https://arxiv.org/abs/2611.34088",
+  "use_case": ""
+}

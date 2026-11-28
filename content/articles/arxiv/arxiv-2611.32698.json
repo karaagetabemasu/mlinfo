@@ -1,0 +1,31 @@
+{
+  "abstract": "Fast prediction of radio-wave propagation over irregular terrain is important for coverage analysis in mountainous environments, where many terrain and antenna configurations must be evaluated repeatedly. High-fidelity split-step parabolic equation (SSPE) solvers can capture terrain-induced shadowing and interference, but their computational cost is high for repeated planning studies. Learning-based surrogates reduce this cost, but direct field regression asks the network to learn both analytically tractable propagation trends and terrain-dependent residual structure. This paper proposes a hybrid analytical-neural residual surrogate that separates these two parts. A deterministic analytical baseline represents free-space spreading, antenna directivity, modified knife-edge diffraction, and terrain-aware specular reflection, while a compact coarse-to-fine neural network predicts the residual field. The network uses baseline-derived guidance channels, anisotropic convolutions, and feature-wise antenna conditioning to match the directional structure of terrain propagation fields. On synthetic SSPE data at 1.0 GHz, the proposed model achieves an MAE of 2.1061 dB, compared with 3.3955 dB for a standard U-Net and 3.2560 dB for a reproduced physics-guided CNN, while reducing the average inference time to 11.30 ms per sample. A zero-shot test at 1.8 GHz gives an MAE of 2.8692 dB without retraining, and a case study on the measured Hjorringvej terrain profile shows that the prediction remains consistent with the SSPE reference and follows the measured path-loss trend.",
+  "abstract_ja": "",
+  "authors": [
+    "Yongyuan Hu",
+    "Jiahao Li",
+    "Keqi Ni",
+    "Yuqi Ouyang",
+    "Hao Qin"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32698",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Fast prediction of radio-wave propagation over irregular terrain is important for coverage analysis in mountainous environments, where many terrain and antenna configurations must be evaluated…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "A Hybrid Analytical-Neural Residual Surrogate for Fast Radio Propagation Prediction over Irregular Terrain",
+  "url": "https://arxiv.org/abs/2611.32698",
+  "use_case": ""
+}

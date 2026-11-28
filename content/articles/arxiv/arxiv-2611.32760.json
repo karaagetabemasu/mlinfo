@@ -1,0 +1,30 @@
+{
+  "abstract": "Maritime Autonomous Surface Ships (MASS) must demonstrate safety before and during operations, necessitating online risk assessment to guide decision-making at sea. This paper presents a risk-informed Rapidly Exploring Random Tree Star (RRT*) path planner that integrates a Bayesian Belief Network (BBN) as an online risk model. The BBN evaluates the probability and severity distribution of hazardous events, which are aggregated into a bounded scalar risk index. During the search, this risk index is evaluated at sample points along candidate edges. The planner optimizes a composite cost function comprising path distance, heading change penalties, and accumulated risk, subject to a hard constraint enforcing a risk acceptance limit. Each search tree vertex stores the BBN posterior at its state, enabling the tree to function as an explainable risk map for individual hazards. We define design requirements for the BBN to serve as the risk model in this context and introduce a runtime model that translates replanning deadlines into strict limits on single risk calculation times. The planner is demonstrated in a simulated harbor entry scenario involving collision and grounding hazards. Measured run times validate that the planner operates within the computational bounds predicted by the runtime model for a single replanning cycle.",
+  "abstract_ja": "",
+  "authors": [
+    "Emir Cem Gezer",
+    "Ozan Kaya",
+    "Ingrid B. Utne",
+    "Roger Skjetne"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32760",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Maritime Autonomous Surface Ships (MASS) must demonstrate safety before and during operations, necessitating online risk assessment to guide decision-making at sea. This paper presents a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Risk-Informed Path Planning: Collision and Grounding Avoidance Application for Autonomous Surface Vessels",
+  "url": "https://arxiv.org/abs/2611.32760",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Robust image-text retrieval aims to maintain accurate cross-modal matching when image or text queries are incomplete, supporting reliable information access in real-world applications. However, existing methods typically focus on adapting to distribution shifts, without adequately addressing candidate discrimination for incomplete queries and ranking instability. To this end, we propose semantic projection and alignment with relational constraints (SPARC), which elicits latent multimodal knowledge from frozen encoders to improve candidate discrimination and ranking stability. Specifically, we first devise a semantic calibration module on a product of spheres that refines incomplete visual and textual features through tangent-space updates, maintaining the unit-sphere structure used for cosine similarity. Second, we introduce a robust semantic guidance module that combines latent multimodal knowledge encoded in complete image-text features with cross-modal semantic anchors to promote semantic alignment of the calibrated features. Finally, we introduce a matching relation constraint module that fuses original query features with their calibrated counterparts and applies a soft ranking constraint to penalize reductions in initially positive matching margins, thereby limiting ranking perturbations. Extensive experiments on Flickr30K and COCO demonstrate that SPARC outperforms competing methods under various image occlusion and word deletion settings, while achieving consistent gains across different pretrained backbones.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhongkuan Mao",
+    "Wenzhuo Zhao",
+    "Haidong Chen",
+    "Shangze Li",
+    "Yidong Wang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34344",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "multimodal",
+  "summary": "Robust image-text retrieval aims to maintain accurate cross-modal matching when image or text queries are incomplete, supporting reliable information access in real-world applications. However,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "SPARC: Semantic Calibration with Latent Multimodal Knowledge for Robust Image-Text Retrieval",
+  "url": "https://arxiv.org/abs/2611.34344",
+  "use_case": ""
+}

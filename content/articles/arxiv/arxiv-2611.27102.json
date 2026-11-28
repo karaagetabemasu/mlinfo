@@ -1,0 +1,30 @@
+{
+  "abstract": "A synoptic pathology report is a checklist of questions with fixed answer sets, many composed from others. Pathology foundation models answer them accurately with one classifier trained with labels for each, and frontier language models, which compose freely, cannot fit a slide of fourteen thousand tiles in their context. On 189 breast report questions, frontier models that read a written description of the slide or look at a thumbnail and tiles of it answer at 0.50 to 0.66, below the majority class at 0.67. A description is written before the question is known, and a look covers a handful of tiles. We present Opsis, which lets the model ask instead: a typed question interface on a frozen pathology encoder. A slide is encoded once, a question names an operator, arguments and candidates given at runtime, and the answer is a probability over the candidates. We build it as a 10 M parameter decoder on frozen Virchow2 tokens (Opsis-S) and inside Qwen3-VL-8B (Opsis-V). Asking Opsis-S, four frontier models answer the breast questions at 0.78 to 0.79, and on 3,797 pan cancer questions asking is 8.6 points above reading. On 995 composite questions that Opsis-S was never trained on, a frontier model composing its answers reaches 0.76, against 0.69 when it looks at the slide and 0.78 for ABMIL trained on each composite. On a pan cancer question set over 10,712 TCGA slides, one Opsis-S decoder matches linear probes trained per question on TITAN and PRISM2 embeddings (average accuracy 0.69 against 0.70 and 0.68). Opsis-S also separates CAMELYON16 metastases without training on that cohort (AUROC 0.86) and localises necrosis from report labels alone (tile AUROC 0.93).",
+  "abstract_ja": "",
+  "authors": [
+    "Zhixuan Ge",
+    "Wei Qiu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27102",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "A synoptic pathology report is a checklist of questions with fixed answer sets, many composed from others. Pathology foundation models answer them accurately with one classifier trained with labels…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "One state, many questions: Opsis gives a frontier model typed eyes for pathology",
+  "url": "https://arxiv.org/abs/2611.27102",
+  "use_case": ""
+}

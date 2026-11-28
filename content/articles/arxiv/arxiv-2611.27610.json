@@ -1,0 +1,31 @@
+{
+  "abstract": "Predictive coding networks perform credit assignment through an energy minimization process. Despite their ability to train models with arbitrary network topologies, they have mostly been used to train feedforward architectures to match the performance of backpropagation. However, they fail to do so when the models become too deep, because error signals become unstable or vanish as they travel through many layers. We address this limitation with circular networks, which get their depth directly from the energy minimization, rather than from stacking layers. Formally, we prove that convergence to an equilibrium of the energy functional of a circular predictive coding network approximates the fixed-point iteration process of a deep equilibrium model, showing that circularity alone suffices to unlock effective depth. Empirically, we show that circular models (i) outperform other predictive coding models of the same size on image classification tasks, matching the accuracy of state-of-the-art predictive coding ResNets and VGG networks despite having substantially fewer parameters; (ii) solve constraint satisfaction problems that require many steps of iterative reasoning, a task not feasible with feedforward models at all, reaching 99.3% test accuracy on Sudoku-hard via nested energy minimization loops; and (iii) scale to autoregressive language modeling by training a circular transformer on TinyStories and WikiText-103, before out of reach for predictive coding models. These results have direct implications for physical neural networks, where computational depth can be traded for recursion on a fixed-size circuit.",
+  "abstract_ja": "",
+  "authors": [
+    "Tommaso Salvatori",
+    "Matteo Forasassi"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27610",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Predictive coding networks perform credit assignment through an energy minimization process. Despite their ability to train models with arbitrary network topologies, they have mostly been used to…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Circular Predictive Coding Unlocks Effective Depth",
+  "url": "https://arxiv.org/abs/2611.27610",
+  "use_case": ""
+}

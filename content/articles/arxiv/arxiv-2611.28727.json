@@ -1,0 +1,26 @@
+{
+  "abstract": "The Littlestone dimension of a hypothesis class equals the smallest number of mistakes an online learner can guarantee against an adaptive adversary. For discrete intervals and unions of $j$ intervals on $m$ points, only its order of growth was known. We determine it exactly. For every switch budget $k$ (with both end labels fixed when $k$ is odd), the smallest size on which $d$ mistakes can be forced follows a three-regime law: $d+1$ while $d\\le k$, then $2d-k+1$, and beyond $d=\\lceil 3k/2\\rceil+k-1$ doubling the size adds exactly $k$ mistakes. Unions of $j$ intervals on $m$ points correspond to $k=2j$ and size $m+1$, and a single interval gives the thresholds $1,2,3,5,7,10,14,20,\\dots$. The natural learner that waits for a positive example and binary-searches both endpoints is not optimal: it can be forced into one extra mistake for 50,847 of the domain sizes below $10^5$. Upper bounds come from a gap potential and a block-pairing learner, and lower bounds from adversary strategies and a refinement step. These tools give an explicit optimal learner with $O(\\log m)$ time per round, which on random streams makes more mistakes on average than the natural learner. For randomised learners, we compute the randomised Littlestone dimension of thresholds exactly and prove that a greedy adversary forces an explicit closed-form number of expected mistakes on intervals; this bound is within $0.64$ of optimal and, we conjecture, exact (confirmed for $m\\le70$). Exact computation tests every result, and the formulas for every switch budget are machine-checked in Lean 4.",
+  "abstract_ja": "",
+  "authors": [
+    "Miit Daga",
+    "Swarna Priya Ramu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28727",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "The Littlestone dimension of a hypothesis class equals the smallest number of mistakes an online learner can guarantee against an adaptive adversary. For discrete intervals and unions of $j$…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "How many mistakes does it take to learn an interval? Exact Littlestone dimensions of intervals and their unions",
+  "url": "https://arxiv.org/abs/2611.28727",
+  "use_case": ""
+}

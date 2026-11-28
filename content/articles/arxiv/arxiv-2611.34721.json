@@ -1,0 +1,31 @@
+{
+  "abstract": "Alzheimer's disease is diagnosed from clinical, biospecimen and imaging evidence, but few patients undergo every test. Because these modalities are complementary, a missing one has many plausible values. Most existing methods leave it out or train on one estimate, so their classifier never sees its other values, and the estimate is never checked against the diagnosis. We address both gaps with on-policy distillation: the model fills in the missing modalities itself, and teachers with information available only in training grade these fills. Our method, Graded Rollout Imputation with Privileged teachers, draws several fills, one modality at a time. An imputation teacher that knows the diagnosis grades each step, bringing the outcome into the imputation as statistical practice recommends. A diagnosis teacher that sees all real modalities supplies a soft target. Trained on fills that vary, the model learns a confidence that reflects what the missing tests leave open, and it diagnoses from a single rollout. On the Alzheimer's Disease Neuroimaging Initiative cohort, it outperforms state-of-the-art baselines. On two external cohorts, it remains competitive in discrimination and, even after every method is recalibrated, its calibration error is level with the lowest on both. Added to three of these baselines, the teachers improve each of them. Our method offers a single, well-calibrated model for whatever combination of tests a patient has received.",
+  "abstract_ja": "",
+  "authors": [
+    "Vo Minh Khoi Nguyen",
+    "Dat Tien Chung",
+    "Quang Minh Khoa Le",
+    "Duc Khang Nguyen",
+    "Le Thien Phuc Nguyen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34721",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Alzheimer's disease is diagnosed from clinical, biospecimen and imaging evidence, but few patients undergo every test. Because these modalities are complementary, a missing one has many plausible…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Privileged On-Policy Distillation for Calibrated Alzheimer's Diagnosis With Missing Modalities",
+  "url": "https://arxiv.org/abs/2611.34721",
+  "use_case": ""
+}

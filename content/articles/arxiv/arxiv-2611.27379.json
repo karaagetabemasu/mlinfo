@@ -1,0 +1,32 @@
+{
+  "abstract": "Simulated LiDAR sensors play a crucial role in validating autonomous systems, yet achieving signal-level realism remains challenging due to simplified sensor models and limited configurability in common simulation environments. This paper presents a lightweight, platform-agnostic method to assess one observable aspect of LiDAR simulation fidelity: the range-dependent point density on annotated objects. The method uses only 3D bounding boxes and point clouds and does not require semantic labels, detailed maps, simulator internals, or perception models. To quantify agreement between real and simulated range-dependent point distributions, we formulate the Density Similarity Score (DSS), a bounded similarity representation derived from the Mean Absolute Percentage Error (MAPE) over discretized distance bins. The method is evaluated against a real-world LiDAR using three CARLA configurations of varying complexity. Results show that naive parameter matching based on sensor datasheets leads to systematic point-density deviations, particularly in the near field, while a custom configuration using the sensor's non-uniform vertical beam angles achieves the highest similarity in the evaluated scenario (DSS: 0.559--0.709). The proposed approach is intended as an early-stage, signal-level consistency check for identifying gross mismatches in simulated LiDAR configurations. It should be interpreted as a complementary validation step rather than a complete measure of simulation quality or downstream perception performance.",
+  "abstract_ja": "",
+  "authors": [
+    "Benedikt Degenstein",
+    "Michael Spengler",
+    "Julian Stähler",
+    "Carsten Markgraf"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27379",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Simulated LiDAR sensors play a crucial role in validating autonomous systems, yet achieving signal-level realism remains challenging due to simplified sensor models and limited configurability in…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "A Lightweight Method for Validating Simulated LiDAR Configurations Based on Point Density over Distance",
+  "url": "https://arxiv.org/abs/2611.27379",
+  "use_case": ""
+}

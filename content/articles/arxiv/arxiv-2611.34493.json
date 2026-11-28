@@ -1,0 +1,28 @@
+{
+  "abstract": "Models that predict events from operational logs, such as sepsis in ICU records or failures in hard drives, can score well by recognizing which patient or drive a record came from, or when it was recorded, instead of predicting the event. I introduce two simple audits that measure how much of this information a dataset carries before any event-prediction model is trained, and apply them to seven public datasets in six domains. One asks whether a classifier can tell that two records came from the same unit; the other asks which of two records from the same unit came later. Under the stated nulls, both have expected AUC 0.5. In ICU data, the identity audit flags a common preprocessing step: carrying the last measurement forward raises identity AUC from 0.916 to 0.993. On a 12-hour sepsis forecasting task, carrying forward makes a model look 0.163 AUC better than raw values when a patient's hours are split between training and test, but only 0.046 better when patients are held out. The exaggeration under patient overlap also appears in a second ICU dataset with mortality as the outcome. On the sepsis task, a chronological control with complete follow-up, in which training sees only a patient's earlier, resolved hours, shows no positive mean overlap gap. Timing is a strong predictor: with complete follow-up, hour of stay and measurement counts alone, with no clinical value, score 0.761 on held-out patients, and adding the raw clinical values changes that by +0.018. Outside the ICU, 95% of drives and 75% of loans have records on both sides of a calendar cut, and the overlap gap persists under a calendar split. The audits show which features and preprocessing choices to check; the evaluation protocol decides the consequences. I release the code, a library that runs the audits on any table with a unit column and a time column, and a guide to using the audits.",
+  "abstract_ja": "",
+  "authors": [
+    "Andrew Hendel"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34493",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Models that predict events from operational logs, such as sepsis in ICU records or failures in hard drives, can score well by recognizing which patient or drive a record came from, or when it was…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification",
+      "forecasting"
+    ]
+  },
+  "title": "Auditing Identity and Timing Signals in Operational Logs",
+  "url": "https://arxiv.org/abs/2611.34493",
+  "use_case": ""
+}

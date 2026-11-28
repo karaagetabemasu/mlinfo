@@ -1,0 +1,33 @@
+{
+  "abstract": "Free-text 3D grounding, segmenting in a CT volume the region described by one sentence of the radiology report, could link reports to images at scale, but it is unclear where current models fail. We analyse the publicly released VoxTell model on all 381 findings of the 200-scan ReXGroundingCT validation set, where it grounds 53.5% of findings. Its failures are rarely about which lesion or side is meant. No miss lies on the side opposite to the one named, and findings are almost never confused with one another. Instead, predictions are too large, land on a neighbouring lesion on the correct side, or are missing for small findings, and diffuse findings are rarely grounded. Removing location words halves performance, to the level of label-only prompting, and anatomical rules derived from the sentence never improve the full-sentence output. The same pattern holds on the hidden 300-scan test set. Further progress therefore depends on extent estimation and small-lesion sensitivity rather than on anatomical post-processing.",
+  "abstract_ja": "",
+  "authors": [
+    "Abdullah Arif Sheikh",
+    "Kamalaker Dadi",
+    "Raju S. Bapi"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33958",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Free-text 3D grounding, segmenting in a CT volume the region described by one sentence of the radiology report, could link reports to images at scale, but it is unclear where current models fail. We…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "Where Does Free-Text 3D Grounding Fail? An Error Analysis of Report-Sentence Segmentation in Chest CT",
+  "url": "https://arxiv.org/abs/2611.33958",
+  "use_case": ""
+}

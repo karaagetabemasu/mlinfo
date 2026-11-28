@@ -1,0 +1,28 @@
+{
+  "abstract": "Gradient perturbations are widely recognized as an effective defense against gradient inversion attacks in federated learning, but they are equally known to impair optimization, creating a persistent tension between privacy and utility. In this paper, we show that existing gradient perturbation defenses, despite their different formulations, can be unified under a controlled dynamics framework, providing a cohesive understanding of their optimization behavior and enabling the derivation of universal convergence and safety conditions without relying on case-specific analyses. Leveraging this observation, we propose ``Near Orthogonal Gradient Projection (NODE)'', which injects perturbations only along directions orthogonal to the original gradient so that the defended gradient maintains a fixed cosine similarity with the true gradient. By preserving the first-order descent direction, NODE substantially reduces the optimization cost of strong perturbations while maintaining effective protection against gradient inversion attacks. We theoretically establish convergence guarantees under standard optimization assumptions and further show that, under mild conditions on the gradient distribution, NODE remains effective in preventing inversion attacks. Comprehensive experiments on multiple benchmark datasets, including CIFAR-10, ImageNet, and Chest X-ray, together with a variety of gradient inversion attacks, demonstrate that the proposed framework achieves an improved privacy--utility trade-off over existing defenses across a broad range of training settings.",
+  "abstract_ja": "",
+  "authors": [
+    "Lianhai Ren",
+    "Chi Zhang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32174",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Gradient perturbations are widely recognized as an effective defense against gradient inversion attacks in federated learning, but they are equally known to impair optimization, creating a persistent…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "A Unified Control Framework for Gradient Inversion Defense in Federated Learning",
+  "url": "https://arxiv.org/abs/2611.32174",
+  "use_case": ""
+}

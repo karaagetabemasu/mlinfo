@@ -1,0 +1,29 @@
+{
+  "abstract": "Safe robot navigation in dynamic environments requires collision avoidance that respects motion constraints while remaining computationally efficient. Conventional velocity-obstacle (VO) methods characterize collision-inducing motions in velocity space. Although some formulations account for acceleration-limited velocity transitions, their collision constraints remain tied to specific velocity-tracking models. Acceleration obstacles (AO) address this limitation by representing collision-inducing inputs directly in acceleration space. However, existing AO methods either rely on conservative approximations or derive analytical structure expressions without verifying their geometric correspondence. To address this gap, this paper presents Geometric Acceleration Obstacles (GAO), which provides, to the best of our knowledge, the first unified and physically validated characterization of AO geometry and its supporting structure. Specifically, we derive configuration-dependent half-planes that globally support the collision set and establish their tightness, thereby separating certified collision-free acceleration inputs from collision-inducing parts. These geometric results yield unified affine safety constraints. Combined with actuator limits, these constraints define a quadratic program (QP) for real-time navigation. Extensive experiments demonstrate that GAO achieves competitive success rates and the lowest control effort among the evaluated methods, with millisecond-level computational latency. Further circle-interchange simulations demonstrate scalability to 1,000 agents. Physical experiments validate the approach in pedestrian encounters, reciprocal multi-agent navigation, and high-speed maneuvering.",
+  "abstract_ja": "",
+  "authors": [
+    "Xuheng Gao",
+    "Yuhan Pang",
+    "Bi-Ke Zhu",
+    "Ronghao Chen",
+    "Lingxiao Meng"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34586",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Safe robot navigation in dynamic environments requires collision avoidance that respects motion constraints while remaining computationally efficient. Conventional velocity-obstacle (VO) methods…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Geometric Acceleration Obstacles: Physical Boundary Structure and Affine Safety Certificates",
+  "url": "https://arxiv.org/abs/2611.34586",
+  "use_case": ""
+}

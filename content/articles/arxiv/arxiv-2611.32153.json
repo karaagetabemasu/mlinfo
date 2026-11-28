@@ -1,0 +1,32 @@
+{
+  "abstract": "Existing clip-based soccer commentary models often produce delayed, repeated, or poorly synchronized narration on untrimmed full-match videos. Recent streaming video-language models make low-latency full-match narration feasible, but they often favor general descriptions rather than professional, event-grounded soccer commentary. They may describe nearby actions while failing to mention key events such as goals, cards, substitutions, and offsides correctly and on time. In this paper, we present SoccerNarrate to bridge low-latency streaming narration with event-grounded professional soccer commentary across data, training, and evaluation. First, we construct SoccerNarrate-Data, a large-scale time-anchored dataset with word-level ASR alignment, quality filtering, and entity calibration. Second, we perform macro-window preference alignment (MWPA), which aligns the model with complete event-level commentary semantics by comparing causal multi-step rollouts from the same streaming prefix while keeping second-level inference unchanged. We further use event-mismatched human commentaries as counterfactual negatives to emphasize event semantics over commentary style. Third, we introduce SoccerNarrate-Eval, an event-centric benchmark based on temporally constrained event entailment. Full-match experiments show that SoccerNarrate improves event coverage and event-aligned precision over strong offline and streaming baselines. Code and models are released at https://github.com/MCG-NJU/SoccerNarrate.",
+  "abstract_ja": "",
+  "authors": [
+    "Zihan Jia",
+    "Zhilin Dai",
+    "Zhengming Zhang",
+    "Min Yang",
+    "Zhenpeng Huang"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/MCG-NJU/SoccerNarrate",
+  "hasCode": true,
+  "id": "arxiv-2611.32153",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Existing clip-based soccer commentary models often produce delayed, repeated, or poorly synchronized narration on untrimmed full-match videos. Recent streaming video-language models make low-latency…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "video"
+    ],
+    "task": []
+  },
+  "title": "SoccerNarrate: Event-Grounded Streaming Soccer Commentary with Macro-Window Preference Alignment",
+  "url": "https://arxiv.org/abs/2611.32153",
+  "use_case": ""
+}

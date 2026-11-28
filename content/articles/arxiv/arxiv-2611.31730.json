@@ -1,0 +1,30 @@
+{
+  "abstract": "Time series transformers have achieved strong forecasting performance, yet it remains unclear which of their components, attention or the feed-forward network (FFN), constructs temporal features, and how tokenization such as patching changes this. We propose a temporal probing framework that uses 15 token-level diagnostic tasks to measure feature construction as the gain in linear decodability of temporal properties from one sub-layer to the next (a matched MLP probe already saturates at the embedding). It targets models whose probed representations are read by a linear forecasting head. Applied to 5 supervised models trained on 8 long-term forecasting benchmarks, it finds that the constructing component is not fixed but allocated by the interaction of tokenization and architecture. Under patch tokenization (PatchTST), the FFN's gain exceeds attention's in probing on all 8 datasets, and its 8-dataset mean is 3.2x attention's. Without attention, the FFN alone reaches nearly the same total gain, both when attention is removed from a trained model and when PatchTST is trained without it, and the retrained model forecasts within a few percent of the full model. In probing, attention dominates under variate tokenization (iTransformer); in CATS, cross-attention is the only input path. In a controlled manipulation of PatchTST, single-scalar tokens (P=1) nearly eliminate the FFN's construction, while one more point per token (P=2) restores it. Our forecasting-side interventions (activation patching, knockout, and training without attention) establish component-level reliance and sufficiency. These results offer a representational reading of prior findings on the gains from patching, the competitiveness of self-attention-free models (TSMixer, PatchMLP), and the distinct role of cross-attention in CATS.",
+  "abstract_ja": "",
+  "authors": [
+    "Mingyu Kim",
+    "Doguk Kim"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31730",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Time series transformers have achieved strong forecasting performance, yet it remains unclear which of their components, attention or the feed-forward network (FFN), constructs temporal features, and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "time-series"
+    ],
+    "task": [
+      "forecasting"
+    ]
+  },
+  "title": "Tokenization and Architecture Jointly Allocate Component Roles in Time Series Transformers",
+  "url": "https://arxiv.org/abs/2611.31730",
+  "use_case": ""
+}

@@ -1,0 +1,35 @@
+{
+  "abstract": "Video corpus moment retrieval (VCMR) requires finding the video and time interval that match a text query in a corpus of videos. We present RELAY, a training-free framework for VCMR that shares memory across queries. RELAY processes a batch of queries in three stages: search with a query bank, ranking with video notes, and localization with video prompt caching. In the search stage, an embedding model scores each video by its best-matching frame. The query bank penalizes videos that score highly for many other queries in the batch. In the ranking stage, a vision-language model (VLM) writes notes on each candidate video's scenes, people, objects, and actions once. Then, a large language model (LLM) reranks the candidates from these notes. In the localization stage, a VLM predicts the time interval of the moment in the top-ranked video. When multiple queries select the same video, prompt caching lets the VLM reuse its frames. On the three VERIFIED benchmarks, RELAY outperforms the trained baselines in video retrieval R@1 without training. Without any labeled moment, its predicted intervals are shorter than the annotated ones. In VCMR, it achieves similar performance to VideoSearch-R1 on one benchmark and trails it at IoU 0.5 on the other two. Human annotators also mark shorter moments than the original annotations of the benchmarks. A single margin, calibrated on a few labeled queries, widens the predicted interval to the annotation convention of the benchmarks. With it, RELAY outperforms the trained baselines in VCMR at IoU 0.5.",
+  "abstract_ja": "",
+  "authors": [
+    "Chenwei Xu",
+    "Shang Wu",
+    "Zhenyu Pan",
+    "Jianshu Zhang",
+    "Pranav Maneriker"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29877",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Video corpus moment retrieval (VCMR) requires finding the video and time interval that match a text query in a corpus of videos. We present RELAY, a training-free framework for VCMR that shares…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Towards Agentic Video Corpus Moment Retrieval",
+  "url": "https://arxiv.org/abs/2611.29877",
+  "use_case": ""
+}

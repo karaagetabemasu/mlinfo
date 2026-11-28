@@ -1,0 +1,31 @@
+{
+  "abstract": "Deep learning models for chest X-ray analysis often achieve strong performance on benchmark datasets, but their reliability under cross-dataset deployment remains unclear. In clinical practice, models trained in one hospital system may be applied to data from another, where distributional and labeling differences can affect both prediction accuracy and model confidence. We conduct a controlled empirical study of model confidence under cross-dataset transfer. We train ResNet-50 and DenseNet-121 on CheXpert and evaluate them on MIMIC-CXR across five experimental settings, focusing on Pneumothorax and Pleural Effusion. We measure predictive performance using AUC and confidence reliability using Expected Calibration Error (ECE), Brier score, and average confidence on incorrect predictions, all reported with 95% bootstrap confidence intervals. We further evaluate post-hoc temperature scaling fit on the source validation set and use Grad-CAM to examine the mechanism behind cross-domain performance differences. Cross-domain AUC drops 7-13 percentage points, and the best in-domain model is not the best cross-domain model. Source-domain temperature scaling produces marginal ECE changes but systematically increases confidence on incorrect predictions across all four model-pathology combinations. Grad-CAM reveals that DenseNet relies on a concentrated spatial prior that fails to transfer, while ResNet's more distributed attention generalizes better. These findings argue for cross-site validation and safety-specific calibration metrics in medical AI evaluation.",
+  "abstract_ja": "",
+  "authors": [
+    "Haoran Zhang",
+    "Sarah Lam",
+    "Yuting Lin",
+    "Nuo Chen",
+    "Mingyang Li"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29955",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Deep learning models for chest X-ray analysis often achieve strong performance on benchmark datasets, but their reliability under cross-dataset deployment remains unclear. In clinical practice,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "When Should We Trust Medical Image Models? Evaluating Confidence Reliability under Cross-Dataset Shift",
+  "url": "https://arxiv.org/abs/2611.29955",
+  "use_case": ""
+}

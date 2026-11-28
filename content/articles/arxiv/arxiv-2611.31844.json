@@ -1,0 +1,32 @@
+{
+  "abstract": "Visual self-models learn from images how a robot moves under motor commands. Continuum robots need them even more, as they bend continuously without measured joint angles or fixed link geometry. Existing continuum self-models predict point clouds, image-space curves, or future images, but not the next 3D shape, appearance, and tip pose together from an observed body. 3D Gaussians offer a renderable representation of shape and appearance, yet articulated Gaussian self-models rely on joint angles to drive deformation. In this work, we propose BendGS, which uses a virtual backbone estimated from observation to drive command-conditioned Gaussian deformation, enabling next-state prediction for continuum robots without measured joint angles. In Gaussian modeling, a feed-forward network reconstructs the robot as 3D Gaussians from multi-view images, and the backbone, a chain of coordinate frames, is fitted to back-projected depth points to estimate the bending state. In transition, a network predicts its change under a relative motor command to deform the bound Gaussians. The deformed Gaussians render the next images and the 3D shape, and the distal frame gives the tip pose. Training losses use RGB-D images and masks, without bending or tip labels. On simulated and real robots, BendGS achieves the lowest Chamfer distance, best image quality, and lowest tip errors among the compared methods.",
+  "abstract_ja": "",
+  "authors": [
+    "Jeong Woon Lee",
+    "Doungjun Kim",
+    "Namho Kim",
+    "Seungheon Chae",
+    "Jongwoo Kim"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31844",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Visual self-models learn from images how a robot moves under motor commands. Continuum robots need them even more, as they bend continuously without measured joint angles or fixed link geometry.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "BendGS: Observation-Conditioned Gaussian Self-Modeling for Continuum Robots",
+  "url": "https://arxiv.org/abs/2611.31844",
+  "use_case": ""
+}

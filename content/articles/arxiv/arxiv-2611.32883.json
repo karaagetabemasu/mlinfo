@@ -1,0 +1,30 @@
+{
+  "abstract": "Tracking a fast-moving point in 3D is prohibitive when RGB frames are blurred or too far apart to reveal its motion. Event cameras record brightness changes between frames, providing measurements inside these temporal gaps. We introduce TrackAnyMotion, which combines monocular RGB frames and events to track arbitrary points in 2D and 3D, including at times when no RGB frame is available. The motion expected for a static point, given scene geometry and camera motion, provides a reference for identifying independently moving objects. An independent-motion decoder combines geometric motion cues with event guidance and 2D tracks, feeding its predictions back into iterative 2D and 3D refinement. We also introduce HyperEvent, a synthetic RGB--Event dataset with high-frequency 3D trajectories, geometry, and independent-motion labels. At RGB frame timestamps on this benchmark, TrackAnyMotion reduces 3D and 2D endpoint errors by 70\\% and 32\\%, respectively.",
+  "abstract_ja": "",
+  "authors": [
+    "Roberto Pellerito",
+    "Zijia Dai",
+    "Laurent Kneip",
+    "Davide Scaramuzza"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32883",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "3d",
+  "summary": "Tracking a fast-moving point in 3D is prohibitive when RGB frames are blurred or too far apart to reveal its motion. Event cameras record brightness changes between frames, providing measurements…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "3D Tracking Any Point with Events and Frames",
+  "url": "https://arxiv.org/abs/2611.32883",
+  "use_case": ""
+}

@@ -1,0 +1,35 @@
+{
+  "abstract": "Graphical user interface (GUI) agents translate screenshots and user instructions into executable actions. Most existing approaches rely on vision-language models to generate actions as text, often leading to substantial inference latency due to autoregressive decoding. To address this inefficiency, we propose GUI-PRISM, a hybrid action decoder that directly predicts action types and structured arguments while retaining language generation for open-ended text. Unlike existing spatial decoding methods that primarily focus on target localization, GUI-PRISM extends direct prediction to action types and their associated arguments, enabling complete GUI action prediction. Specifically, GUI-PRISM employs field-specific queries to extract action-relevant semantic and spatial information from a shared multimodal feature bank. It further models dependencies among action components through conditional queries. Gated residual cross-attention refines these predictions using fine-grained multimodal information. GUI-PRISM achieves 95.1\\% accuracy on ScreenSpot-v2, outperforming the strongest head-based spatial decoding method by 2.0 percentage points while delivering a 3.8$\\times$ inference speedup over the baseline. On AndroidControl-v2 and MM-Mind2Web-v2, it improves complete-action accuracy by 4.8 and 0.7 percentage points while achieving 2.7$\\times$ and 3.9$\\times$ inference speedups over the baseline, respectively. Our code is available on our project page.",
+  "abstract_ja": "",
+  "authors": [
+    "Enqi Liu",
+    "Zhi Gao",
+    "Liu Liu",
+    "Lifeng Fan",
+    "Liyuan Pan"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32097",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "attention",
+  "summary": "Graphical user interface (GUI) agents translate screenshots and user instructions into executable actions. Most existing approaches rely on vision-language models to generate actions as text, often…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "detection",
+      "generation"
+    ]
+  },
+  "title": "GUI-PRISM: Efficient Action Decoding for GUI Agents",
+  "url": "https://arxiv.org/abs/2611.32097",
+  "use_case": ""
+}

@@ -1,0 +1,32 @@
+{
+  "abstract": "Defect-free industrial samples can vary considerably in appearance, texture, and geometry. In few-shot anomaly detection, this variability has to be modeled from only a handful of images. SubspaceAD showed that a single principal subspace of foundation-model patch features is a strong training-free model of nominal appearance. However, a single subspace has to cover all of the nominal data's variability, so a deviation that is anomalous for one semantic region can be within the nominal variability of another. We propose LocalSubspaceAD, which extends SubspaceAD from a single subspace to a mixture of subspaces, assigning each group of patches with similar features its own subspace. The set of patch-features is partitioned using k-means, one subspace is fit per cluster, and each patch is scored by the minimum of re-projection residuals over all subspaces. The proposed method requires no training and no EM refinement. On MVTec AD, VisA and Real-IAD with 1, 2 and 4 shots, it improves over a single subspace (SubspaceAD) on both evaluated backbones: by 1.2 to 1.8 points image AUROC on DINOv2, and by 1.4 to 4.4 points in image AUROC, pixel AUPR and AUPRO on DINOv3. The gains are most pronounced on objects with heterogeneous nominal appearance, such as multi-instance categories and PCBs. Ablations show that the gains stem from a finer-grained model of variability through locally oriented subspaces, rather than from the subspace offsets (cluster means). We further show that the gains do not stem from added capacity alone: the local subspaces appear to capture the structure of coherent clusters in feature space, and the model does not merely act as a compressed memory bank.",
+  "abstract_ja": "",
+  "authors": [
+    "Daniel Pröll",
+    "Sebastian Hegenbart"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32424",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "Defect-free industrial samples can vary considerably in appearance, texture, and geometry. In few-shot anomaly detection, this variability has to be modeled from only a handful of images.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection",
+      "anomaly-detection"
+    ]
+  },
+  "title": "One Subspace Is Not Enough: LocalSubspaceAD for Training-Free Few-Shot Anomaly Detection",
+  "url": "https://arxiv.org/abs/2611.32424",
+  "use_case": ""
+}

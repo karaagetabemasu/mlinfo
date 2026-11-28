@@ -1,0 +1,26 @@
+{
+  "abstract": "When deploying an AI system, a developer can randomize over several candidate versions, sending each request to a version chosen at random, to balance the requirements of multiple stakeholders. We study a setting in which each of $n$ stakeholders reveals only whether a proposed lottery over $m$ candidates is acceptable, and each stakeholder's acceptable lotteries lie on one side of an unknown hyperplane. While previous work sought a lottery that every stakeholder accepts, such a lottery need not exist when, for instance, safety and helpfulness requirements are in conflict. We therefore minimize a power mean of the stakeholders' violations; since binary answers reveal neither the size of a violation nor how to compare violations across stakeholders, we measure each violation by a normalized distance to the stakeholder's acceptance boundary. We characterize exactly when accept/reject answers determine these distances. When they do, $\\mathcal{O}(nm\\log(1/\\varepsilon))$ queries suffice to learn them, where $\\varepsilon$ is the precision of the utilities, and this bound is tight; when they do not, a natural worst-case approach is optimal up to a constant factor, even compared with methods that make unlimited queries. For limited query budgets, we give a sampling algorithm whose number of queries for a given accuracy does not depend on $n$, and show that a deterministic algorithm cannot guarantee a small loss without querying almost all stakeholders. Synthetic experiments illustrate the resulting tradeoff between querying many stakeholders and learning each of them accurately.",
+  "abstract_ja": "",
+  "authors": [
+    "Nicholas Teh",
+    "Paul W. Goldberg"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29555",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "When deploying an AI system, a developer can randomize over several candidate versions, sending each request to a version chosen at random, to balance the requirements of multiple stakeholders. We…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Learning Acceptable Lotteries via Queries: Minimizing Aggregated Violation Distances",
+  "url": "https://arxiv.org/abs/2611.29555",
+  "use_case": ""
+}

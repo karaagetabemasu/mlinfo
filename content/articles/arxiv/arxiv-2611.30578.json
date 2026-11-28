@@ -1,0 +1,32 @@
+{
+  "abstract": "Perturbation-based attribution methods explain model predictions without accessing their internal representations, but scaling them to high-resolution images requires balancing perturbation granularity and computational cost. Fine-grained perturbations require many model evaluations, whereas coarse masks may overlook small but relevant evidence. We introduce Wavelet Find-and-Refine (WaFR), a model-agnostic attribution method combining adaptive hierarchical search with sparse multiscale regression. By selectively refining regions that influence the prediction, WaFR maintains fine-grained localisation with a computational cost that depends on the spatial distribution of the evidence. As image resolution increases to 8,192 pixels per side, WaFR maintains a Pointing Game score of at least .995 in controlled localisation experiments, including at matched forward-pass budgets. On gigapixel whole-slide images, it requires a median of 176 forward passes and achieves the highest mean patch-level AUROC among the evaluated perturbation-based methods (.949).",
+  "abstract_ja": "",
+  "authors": [
+    "Danilo Danese",
+    "Angela Lombardi",
+    "Tommaso Di Noia"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30578",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Perturbation-based attribution methods explain model predictions without accessing their internal representations, but scaling them to high-resolution images requires balancing perturbation…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "classification",
+      "regression"
+    ]
+  },
+  "title": "A Search Worth a Billion Pixels: Explaining Gigapixel Classifiers",
+  "url": "https://arxiv.org/abs/2611.30578",
+  "use_case": ""
+}

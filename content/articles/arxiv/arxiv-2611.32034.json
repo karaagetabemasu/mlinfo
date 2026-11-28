@@ -1,0 +1,35 @@
+{
+  "abstract": "Generating 3D garments for digital characters requires preserving a reference design while adapting the garment to the target body's shape and pose. Sewing-pattern methods can struggle to reproduce unfamiliar designs and fine details, while image-to-3D generators offer rich shape priors but typically lack explicit 3D body context. We present \\textbf{BodyWeave}, a framework that unifies garment generation and fitting through native 3D body conditioning. Building on 3D generative priors, BodyWeave uses the body as a spatial reference throughout geometry generation: a \\textbf{Global Body Adapter} guides garment placement and extent in the shared coordinate frame, while \\textbf{Local Body Attention} guides surface refinement using nearby body geometry. A \\textbf{Surface Penetration Loss} supervises decoded surfaces to reduce body intersections, and the resulting geometry conditions material synthesis to produce garments with physically based rendering attributes. To support learning across designs and wearers, we construct \\textbf{GarmentWeave3D} with 293K aligned garment--body observations, including 114K same-design cross-body pairs. Evaluations on out-of-domain \\textbf{Artist-Created Garments} demonstrate high geometric fidelity and low body penetration. Cross-body evaluations demonstrate accurate adaptation to new wearers with consistent garment--body spacing, while appearance comparisons show faithful fabric reproduction. Additional results and resources are available at https://gavin-jy.github.io/bodyweave-page/",
+  "abstract_ja": "",
+  "authors": [
+    "Junyi Zhang",
+    "Yuanchuan Wang",
+    "Qichao Wang",
+    "Wenzhe Qian",
+    "Shizhuo Cheng"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32034",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Generating 3D garments for digital characters requires preserving a reference design while adapting the garment to the target body's shape and pose. Sewing-pattern methods can struggle to reproduce…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "BodyWeave: Native Body-Conditioned 3D Garment Generation",
+  "url": "https://arxiv.org/abs/2611.32034",
+  "use_case": ""
+}

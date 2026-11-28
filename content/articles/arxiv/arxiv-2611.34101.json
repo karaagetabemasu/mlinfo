@@ -1,0 +1,32 @@
+{
+  "abstract": "Precipitation nowcasting requires accurate short-term predictions under rapidly evolving spatiotemporal dynamics. Generative diffusion models can produce detailed and competitive radar forecasts by modeling conditional distributions. However, most existing approaches rely on separately trained components, such as deterministic branches or latent compression modules. More fundamentally, distribution matching alone fails to explicitly optimize operational forecast skill. We propose AlignPre, a streamlined pixel-space nowcasting framework that bridges this gap via skill-aligned post-training (SAPT). AlignPre employs an end-to-end flow-matching forecaster with a hierarchical spatiotemporal architecture for distribution matching and direct radar-field synthesis, without latent compression. During post-training, SAPT exploits the analytic structure of forecast verification scores to construct a differentiable objective. By backpropagating gradients of this objective from radar fields to the generator, SAPT turns forecast verification into direct training feedback. Across three real-world benchmarks spanning different forecast horizons, AlignPre consistently surpasses state-of-the-art deterministic and generative baselines in forecast skill, demonstrating that aligning generative modeling with domain-specific verification provides an effective paradigm for meteorological forecasting.",
+  "abstract_ja": "",
+  "authors": [
+    "Demin Yu",
+    "Kenghong Lin",
+    "Xutao Li"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34101",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "video",
+  "summary": "Precipitation nowcasting requires accurate short-term predictions under rapidly evolving spatiotemporal dynamics. Generative diffusion models can produce detailed and competitive radar forecasts by…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "generation",
+      "forecasting"
+    ]
+  },
+  "title": "AlignPre: Skill-Aligned Post-Training for Latent-Free Generative Precipitation Nowcasting",
+  "url": "https://arxiv.org/abs/2611.34101",
+  "use_case": ""
+}

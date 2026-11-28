@@ -1,0 +1,31 @@
+{
+  "abstract": "Hyperdimensional computing (HDC) models deployed on edge hardware are valuable intellectual property that is easy to steal, since a trained classifier consolidates its learned knowledge into a compact set of class prototype hypervectors; yet protecting their ownership through watermarking remains largely unexplored. We present HDMark, the first model watermarking framework native to HDC, which encodes ownership in the same hyperdimensional algebra the model computes with. HDMark maps a multi-bit owner identity to secret quasi-orthogonal carriers, superimposes them holographically onto the trained class prototypes, and verifies ownership with a statistical test. Across four datasets and three HDC learning rules, HDMark leaves accuracy essentially unchanged and verifies a 64-bit identity in 99.8% of trials at p < 0.001. We derive closed-form expressions for prediction fidelity and bit recovery that match measurements within 0.4 pp mean absolute error. The watermark survives fine-tuning and low-bit quantization, while attempting to erase it through noise injection, pruning, or overwriting severely degrades model accuracy. We further identify a dimension-permutation attack specific to HDC, which reorders hypervector coordinates to evade verification without altering predictions, and counter it through encoder realignment. Finally, an AMD ZCU104 FPGA implementation confirms that HDMark adds no hardware overhead, remains bit-exact under aggressive undervolting, and stays verifiable under timing faults until the classifier itself fails.",
+  "abstract_ja": "",
+  "authors": [
+    "Hamed Poursiami",
+    "Ahmad Tahmasivand",
+    "Farshad Soleiman",
+    "Guojing Cong",
+    "Thomas Potok"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31781",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Hyperdimensional computing (HDC) models deployed on edge hardware are valuable intellectual property that is easy to steal, since a trained classifier consolidates its learned knowledge into a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "HDMark: Holographic Multi-Bit Model Watermarking for Intellectual Property Protection in Hyperdimensional Computing",
+  "url": "https://arxiv.org/abs/2611.31781",
+  "use_case": ""
+}

@@ -1,0 +1,32 @@
+{
+  "abstract": "We introduce a new model for real-time streaming captioning on a single GPU. YoloMT is a 449.8M-parameter streaming captioner that provides Pareto-frontier performance among generative vision models in its class. Distilled from a 27B teacher by SFT and GRPO, it leads every model under 1B parameters on OVO-Bench, MVBench, StreamingBench and Video-MME, answered from its captions, and beats LFM2.5-VL-1.6B and SmolVLM2-2.2B. YoloMT is designed to read more frames cheaply and make them informative, encoding each frame once and caching it as 16 tokens. This allows the model to incorporate and infer from past frames without additional vision passes, making it efficient and effective. We also provide a detailed recipe for training YoloMT, with its stages and data, as well as ablations that demonstrate the contribution of each component.",
+  "abstract_ja": "",
+  "authors": [
+    "Nessim Ben Abbes",
+    "Duc Han Le",
+    "Sabri Mtibaa",
+    "Van-Tam Nguyen"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34601",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "We introduce a new model for real-time streaming captioning on a single GPU. YoloMT is a 449.8M-parameter streaming captioner that provides Pareto-frontier performance among generative vision models…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "You Only Look Multiple Times: YoloMT, a Real-Time Streaming Model on a T4",
+  "url": "https://arxiv.org/abs/2611.34601",
+  "use_case": ""
+}

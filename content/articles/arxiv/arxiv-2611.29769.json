@@ -1,0 +1,30 @@
+{
+  "abstract": "The graph coloring problem can be solved to optimality by branch-and-price (B&P), but its performance hinges on the column generation (CG) step, where each iteration requires solving a maximum weight independent set (MWIS) pricing problem. The state-of-the-art machine-learning (ML) pricing heuristic follows a prediction-sampling paradigm: a learned model scores each vertex of a graph, and independent sets are sampled from the induced distribution. We observe, however, that the scoring procedure does not need to be learned, and critically assess the role of ML by replacing the learned scores with the dual solution of the restricted master problem, resulting in Dual-Weighted Sampling, a proposed lightweight alternative that requires no feature engineering or training. Within a unified CG and B&P framework that varies only the pricing oracle, Dual-Weighted Sampling outperforms MLPH, hand-crafted heuristics, and exact solvers on the established graph coloring benchmark in both runtime and solution quality. In particular, it remains competitive on the DIMACS random family, where MLPH was shown strongest in the original evaluation, while achieving more than a two-fold speedup in CG runtime on recursive-sparse and real-world graph families.",
+  "abstract_ja": "",
+  "authors": [
+    "Nikolai Antonov",
+    "Přemysl Šůcha",
+    "Mikoláš Janota",
+    "Jan Hůla"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29769",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "The graph coloring problem can be solved to optimality by branch-and-price (B&P), but its performance hinges on the column generation (CG) step, where each iteration requires solving a maximum weight…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "When Simpler Beats Learned: Dual-Weighted Sampling vs. Machine Learning for the Pricing Subproblem in Graph Coloring",
+  "url": "https://arxiv.org/abs/2611.29769",
+  "use_case": ""
+}

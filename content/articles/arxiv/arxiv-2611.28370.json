@@ -1,0 +1,27 @@
+{
+  "abstract": "Decentralized SGD minimizes a common objective by local gradient steps and neighbor averaging. Its statistical theory mostly concerns network averages, yet clients act on their own iterates, and one-sided decisions such as alarms use one tail of the local error. We show that a client's constant-step endpoint can have nearly nominal Gaussian coverage while both tails are badly miscalibrated. An exact noise-filter representation explains why: a quantity computable from the graph and stepsize decides whether the endpoint is asymptotically Gaussian, and when the number of clients outgrows the inverse stepsize on networks with summable return probabilities, such as lazy tori of dimension at least three and expanders, a few recent noise terms at nearby clients keep a fixed share of local variance. On these tori the limit is a non-Gaussian local field plus an independent Gaussian consensus term, and no reference distribution built from finitely many noise moments, including Edgeworth and Cornish--Fisher corrections, is calibrated at all levels uniformly over noise laws. We propose a hybrid reference that resamples the influential noise terms from their empirical law and replaces the rest by a Gaussian; its non-asymptotic coverage bound allows noise laws and curvature estimated from fresh gradients or the client's trajectory, and extends to nonlinear vector objectives. In full-network simulations it restores tail balance at essentially unchanged interval length, also under rare large shocks that break Cornish--Fisher intervals; gains vanish, as predicted, when consensus dominates.",
+  "abstract_ja": "",
+  "authors": [
+    "Xiaoli Li",
+    "Qianqian Lei",
+    "Wei Biao Wu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28370",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Decentralized SGD minimizes a common objective by local gradient steps and neighbor averaging. Its statistical theory mostly concerns network averages, yet clients act on their own iterates, and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Beyond Gaussian Calibration: Local Inference in Decentralized SGD",
+  "url": "https://arxiv.org/abs/2611.28370",
+  "use_case": ""
+}

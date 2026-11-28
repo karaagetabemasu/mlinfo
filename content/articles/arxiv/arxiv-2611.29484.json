@@ -1,0 +1,27 @@
+{
+  "abstract": "We study gradient-flow (GF) learning of tensors from vanishing initialization in canonical polyadic (CP) factorization models. For tensors of order $ν\\geq3$ whose targets are diagonal in mode-wise orthonormal bases, we prove that the limiting learning dynamics follows a simple greedy bipartite matching process. Each rank-one component of the model, called an atom, can potentially learn each rank-one component of the target, called a scalar sector. Every atom--sector pair has an initialization-dependent activation clock, representing the time at which the atom would grow to macroscopic size in that sector if the pair evolved in isolation. Processing these clocks in increasing order and selecting a pair whenever neither its atom nor its sector has been selected before determines the sequence of actual learning events. We prove that the GF trajectory converges to the corresponding staircase of learned target components. The task of learning modular addition by a CP model with complex weights falls exactly into this framework after Fourier diagonalization. Its activation clocks are independent and identically distributed, allowing us to combine the GF reduction with known random matching asymptotics and derive an explicit, distribution-free large-system loss curve after time reparametrization. We also obtain an asymptotic formula relating this curve to the original GF training time. For models with real weights, conjugate Fourier modes instead form two-dimensional blocks with richer internal structure. We characterize their rank and border-rank cascade and conjecture that the corresponding GF dynamics follows interleaved multi-stage learning processes.",
+  "abstract_ja": "",
+  "authors": [
+    "Dmitry Yarotsky",
+    "Eugene Golikov",
+    "Yaroslav Gusev"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29484",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "timeseries",
+  "summary": "We study gradient-flow (GF) learning of tensors from vanishing initialization in canonical polyadic (CP) factorization models. For tensors of order $ν\\geq3$ whose targets are diagonal in mode-wise…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Vanishing Initialization Turns Diagonal Tensor Gradient Flow into Greedy Matching",
+  "url": "https://arxiv.org/abs/2611.29484",
+  "use_case": ""
+}

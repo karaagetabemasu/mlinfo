@@ -1,0 +1,30 @@
+{
+  "abstract": "Pretrained antipodal grasping networks generalize well to canonical shapes but frequently fail zero-shot on novel objects with irregular mass distributions, thin rims, or unfamiliar handles. While episodic experience memory adapts a frozen base policy without retraining, naive retrieval suffers from visual appearance bias, negative transfer from overriding working base grasps, and degenerate closed-loop acquisition. We present VG-GP, a plug-and-play Visuo-Geometric Gaussian Process memory framework for closed-loop $SE(2)$ residual grasp transfer. First, we fuse color-invariant surface-normal DINOv2 features, canonical $SE(2)$ gripper-aligned 3D local heightmaps, and contact-geometry descriptors under a product kernel with Automatic Relevance Determination (ARD) lengthscales learned strictly on source objects. Second, we model the joint posterior over the base grasp and candidate $SE(2)$ alternatives, overriding the base policy only when the joint-covariance Lower Confidence Bound (LCB) clears a risk-sensitive threshold. Third, an online counterfactual curation gate using single-record necessity and sufficiency interventions quarantines source experiences causing negative transfer. Fourth, we close the acquisition loop via Bayesian Expected Improvement (EI) over equal-budget $SE(2)$ probes. Across 42 disjoint YCB objects in ManiSkill3 (20 source, 12 development, 10 held-out test), VG-GP wraps a pretrained GR-ConvNet base policy and raises physical lift rate across all 22 unseen objects from 38.6% (34/88) to 53.4% (47/88) with zero regressions (+13 rescues, 0 losses; object-clustered 95% CI [+6.8%, +22.7%], exact McNemar $p = 0.00024$). On the 10 held-out objects, EI active acquisition reaches 45.0% (18/40 vs. 32.5% base, 5/7 of oracle headroom), achieves 55.0% probe divergence over passive fallback, and monotonically reduces epistemic uncertainty.",
+  "abstract_ja": "",
+  "authors": [
+    "Yonglong Zhang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31826",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "Pretrained antipodal grasping networks generalize well to canonical shapes but frequently fail zero-shot on novel objects with irregular mass distributions, thin rims, or unfamiliar handles. While…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "VG-GP: Uncertainty-Gated Visuo-Geometric Memory for Negative-Transfer-Resistant Grasp Adaptation",
+  "url": "https://arxiv.org/abs/2611.31826",
+  "use_case": ""
+}

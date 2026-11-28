@@ -1,0 +1,27 @@
+{
+  "abstract": "We give small-loss regret bounds for online convex optimization (OCO), using one subgradient per round. Let $Δ_T^\\star$ denote the cumulative loss of the best fixed decision in hindsight, measured relative to the per-round minima. Our algorithm achieves the regret bound $O(1+\\sqrt{Δ_T^\\star})$ without knowing $Δ_T^\\star$, up to domain and gradient-scale factors. The bound is minimax optimal, including its domain dependence, on $\\ell_p$ balls for every $1\\le p\\le\\infty$. No smoothness or condition bounding gradient norms by loss values is assumed, and neither loss values nor the time horizon are needed. Algorithmically, we extend the metric-update revocation of Gupta et al. (2026), originally developed for online inverse optimization, to general OCO using the follow-the-regularized-leader framework and a mixture of multiple base learners. We also apply our algorithm to contextual search and online inverse optimization. In $d$-dimensional contextual search with comparison flips of unknown bias $κ>0$, we obtain minimax expected cumulative absolute error $Θ(\\sqrt{d}/κ^2)$ under Euclidean normalization using polynomially many arithmetic operations, resolving an open question of Liu et al. (2021). For online inverse optimization with the Euclidean unit-ball utility domain, our algorithm bounds the regret relative to observed actions by $O(\\sqrt{d}+d^{1/4}\\sqrt{D_T})$, where $D_T$ is their cumulative suboptimality; this matches the regret rate of Gupta et al. (2026) when $D_T=0$. Our guarantee extends to other utility domains; for example, on the probability simplex, the bound improves to $O(\\log(d+1)+\\sqrt{D_T\\log(d+1)})$.",
+  "abstract_ja": "",
+  "authors": [
+    "Shinsaku Sakaue"
+  ],
+  "category": "math-theory",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27572",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "optimization",
+  "summary": "We give small-loss regret bounds for online convex optimization (OCO), using one subgradient per round. Let $Δ_T^\\star$ denote the cumulative loss of the best fixed decision in hindsight, measured…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Minimax-Optimal Small-Loss Regret in Online Convex Optimization and Applications to Contextual Search and Online Inverse Optimization",
+  "url": "https://arxiv.org/abs/2611.27572",
+  "use_case": ""
+}

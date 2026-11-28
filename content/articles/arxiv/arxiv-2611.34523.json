@@ -1,0 +1,28 @@
+{
+  "abstract": "Classifying a whole-slide image requires encoding thousands of high-resolution tiles with a pathology foundation model, which accounts for most of the inference cost. Existing efficient methods reduce this cost by selecting fewer tiles, but typically train a new model around their selection strategy. A largely unexplored alternative is to keep an existing full-bag model frozen and run it on selected tiles at the same encoder cost. We introduce this comparison, alongside random tile sampling at matched cost. To select tiles, we fit a lightweight selector with 3.3K parameters to the attention of a frozen model, without additional slide labels. The selector ranks regions from a slide thumbnail, encodes the top K regions at 5x magnification, and selects b for processing at 20x. We evaluate seven frozen MIL aggregators on six tasks and compare them with nine efficient methods trained on the same features and splits. At a budget of (K,b)=(1000,10), encoding costs about 6.6% of the full bag and is 10-14x faster, excluding tiling. The AUROC drop is no more than 0.005 in 33 of 36 aggregator-task pairs. At (500,10), the cost falls to about 4% and inference is 13-22x faster, but AUROC drops by up to 0.035 on CAMELYON17, where small metastases are easily missed. Selection improves over random sampling by about 0.10 AUROC on tasks with focal lesions, while random sampling performs well on diffuse tasks. In our comparisons, the frozen model at (500,10) is ahead of nine efficient methods in 55 of 60 paired comparisons. Giving an existing WSI model fewer tiles is thus a baseline that a new efficient model should be compared with at matched encoder cost.",
+  "abstract_ja": "",
+  "authors": [
+    "Haoyu He",
+    "Mahdi S. Hosseini"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34523",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Classifying a whole-slide image requires encoding thousands of high-resolution tiles with a pathology foundation model, which accounts for most of the inference cost. Existing efficient methods…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "Rank Before You Encode: Reading a Few Percent of a Whole-Slide Image",
+  "url": "https://arxiv.org/abs/2611.34523",
+  "use_case": ""
+}

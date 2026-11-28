@@ -1,0 +1,27 @@
+{
+  "abstract": "Unlearning methods for language models are judged mainly by behaviour, but a model can stop producing an answer while still encoding it. Internal diagnostics such as linear probes, the logit lens and relearning speed are used to tell removal from suppression, yet none has been checked against cases where the answer is known. We build such cases. A present anchor learned a set of synthetic facts; an absent anchor is a never-taught oracle retrained without them; and suppressed anchors are unlearned with their lower layers frozen, so the facts stay encoded below the frozen block by construction. We compare these anchors with NPO, RMU and gradient difference at a matched operating point on GPT-2 Small and Qwen3-0.6B-Base, scoring every diagnostic per entity with AUROC against the oracle. Behaviour cannot separate the suppressed anchors from the oracle (AUROC 0.51 to 0.58), while probes, the logit lens and relearning gain can (0.65 to 1.00), and the oracle seeds stay near 0.5. Applied to NPO on both models and RMU on Qwen3, the validated diagnostics disagree: probes put the facts at the oracle's level, while the models still relearn them much faster than a never-taught model does. Every unlearned model, anchor or method, also assigns the forgotten answer a far lower log-probability than the oracle does, a black-box signal that flagged all of them. A drift-ratio specificity rule fails on known cases. Code, data and every run are at https://github.com/ArsalanKaleem/unlearning-audit.",
+  "abstract_ja": "",
+  "authors": [
+    "Arsalan Kaleem"
+  ],
+  "category": "nlp",
+  "codeUrl": "https://github.com/ArsalanKaleem/unlearning-audit",
+  "hasCode": true,
+  "id": "arxiv-2611.29285",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Unlearning methods for language models are judged mainly by behaviour, but a model can stop producing an answer while still encoding it. Internal diagnostics such as linear probes, the logit lens and…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Compared to What? Calibrating Machine-Unlearning Diagnostics with Present, Absent and Suppressed Anchors",
+  "url": "https://arxiv.org/abs/2611.29285",
+  "use_case": ""
+}

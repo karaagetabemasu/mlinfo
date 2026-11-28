@@ -1,0 +1,30 @@
+{
+  "abstract": "Many end-to-end spoken dialogue models can now converse in real time and full duplex, and turning them into 3D avatars requires full-body gestures, listening feedback, and turn-taking. Existing methods couple the motion generator tightly to one dialogue model by reading its internal states or training speech and motion jointly. The motion module must then be retrained whenever the dialogue model changes, cannot be attached to cloud APIs that expose only audio, and entangles role, voice, and motion style. We propose BASE, a backend-agnostic streaming embodiment layer whose only interface to the dialogue model is its emitted speech. First, a conversation state manager driven solely by audio handles speaking, listening, idling, barge-in, and proactive turns on one timeline, while role, voice, motion style, and 3D appearance are set independently. Second, to run an offline 2 s flow-matching gesture model on live audio, we reformulate inference as sliding-window continuation with overlapped look-ahead ensembling, which removes seam jitter. Third, we show that the remaining streaming gap comes from errors accumulating in the self-generated motion history rather than missing future speech; our Drift-Aware History Perturbation (DAHP) reduces this gap in about 50 min on one GPU by injecting inference-like drift into ground-truth training histories, and transfers to a second generator. On BEAT2, streaming BASE reaches an FGD of 0.342, on par with the tightly coupled MIBURI (0.333), and viewers prefer its body motion over MIBURI's in 82% of forced-choice judgments. Without retraining, the same layer drives a cascaded pipeline, three open full-duplex models, and a cloud API in real time.",
+  "abstract_ja": "",
+  "authors": [
+    "Chenye Yang",
+    "Jin Jiang",
+    "Shengcai Liao"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30388",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Many end-to-end spoken dialogue models can now converse in real time and full duplex, and turning them into 3D avatars requires full-body gestures, listening feedback, and turn-taking. Existing…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "audio",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "BASE: A Backend-Agnostic Streaming Embodiment Layer for Full-Duplex Conversational Avatars",
+  "url": "https://arxiv.org/abs/2611.30388",
+  "use_case": ""
+}

@@ -1,0 +1,29 @@
+{
+  "abstract": "When a large language model (LLM) is updated, its developer must decide whether accuracy improved, worsened or stayed within a tolerance. An LLM judge can assess every prompt cheaply but imperfectly, while human labels are costly. We propose Sequential Decisions with Optimal Labelling Designs (SOLD), which labels one prompt at a time, uses the judge to correct the estimate of the change in accuracy and to choose the prompts, and stops once the evidence is conclusive. A wrong decision has probability at most a prespecified level whenever labelling stops. The commonly used Neyman allocation minimises the variance of the estimate and therefore rarely labels prompts that the judge is confident about. It can need far more draws when the outcomes of these prompts could still fall far below the judge's prediction. We instead derive the design that gathers evidence fastest, which labels each prompt with probability at least proportional to how far its outcome could fall below the prediction. As the level tends to zero, no procedure based on the judge-corrected estimates needs fewer draws than SOLD. In simulations and on the EVOUNA and MMLU-Pro datasets, SOLD needed fewer labels than the other methods.",
+  "abstract_ja": "",
+  "authors": [
+    "Doudou Zhou",
+    "Jiahui Xie",
+    "Yue Liu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29416",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "When a large language model (LLM) is updated, its developer must decide whether accuracy improved, worsened or stayed within a tolerance. An LLM judge can assess every prompt cheaply but imperfectly,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Optimal Labelling Designs for Sequential Decisions on Language Model Updates",
+  "url": "https://arxiv.org/abs/2611.29416",
+  "use_case": ""
+}

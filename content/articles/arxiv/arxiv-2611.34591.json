@@ -1,0 +1,37 @@
+{
+  "abstract": "Industrial anomaly detection (IAD), the task of identifying and localizing deviations from normal product conditions, is essential to automated quality inspection in manufacturing. Many vision-language models for IAD rely on large domain-specific datasets for fine-tuning and make predictions in a single pass, leaving no opportunity to re-examine ambiguous regions. Although tool-using agents can revisit these regions, predefined tool interfaces limit how they can combine intermediate results in a follow-up check. When such checks are insufficient, models may miss subtle defects or misidentify the defect type. To address this limitation, we introduce ADClaw, an inspection agent that uses executable code to test anomaly hypotheses without task-specific fine-tuning. For each hypothesis, a Structured Normality Prior identifies the applicable rules and retrieves normal visual references for the inspection target. Guided by this prior, the agent writes and executes code in a persistent Inspection Workbench to combine masks, anomaly maps, and measurements from earlier steps into a new test of the suspected defect. After each check, Hypothesis-Guided Evidence Reasoning assesses whether the evidence supports the suspected defect and its location, using gaps or inconsistencies in that evidence to guide the next code action. ADClaw achieves competitive results in detection and localization across 2D and 3D industrial anomaly detection benchmarks and in anomaly understanding on MMAD.",
+  "abstract_ja": "",
+  "authors": [
+    "Xinyi Wu",
+    "Rongxin Gao",
+    "YuHui Lin",
+    "Yonglin Hong",
+    "Chu Li"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34591",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Industrial anomaly detection (IAD), the task of identifying and localizing deviations from normal product conditions, is essential to automated quality inspection in manufacturing. Many…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d",
+      "multimodal"
+    ],
+    "task": [
+      "detection",
+      "anomaly-detection"
+    ]
+  },
+  "title": "ADClaw: A Programmable Visual Agent for Industrial Anomaly Detection and Understanding",
+  "url": "https://arxiv.org/abs/2611.34591",
+  "use_case": ""
+}

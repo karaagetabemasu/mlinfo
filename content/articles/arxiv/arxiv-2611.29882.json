@@ -1,0 +1,29 @@
+{
+  "abstract": "Weight-Space Programming (WSP) edits network weights without backpropagation, yet directly editing converged object detectors stalls or collapses because set prediction penalizes duplicate boxes as false positives while compact parameterizations trap weights in an isotropic Euclidean minimum. We propose Inverse-Reparameterized Object-Detection WSP (IR-ODWSP), lifting detector layers via exact function-preserving operators (E, C) into decoupled moment, 2D-DCT, PCA, and Stiefel-Procrustes subspaces. Solving winner-exclusive updates and folding back (Delta Params=0%, Delta FLOPs=0%) induces an anisotropic Riemannian metric, improving all 26/26 MS COCO settings across 17 YOLO26, EdgeCrafter, and RF-DETR detectors (up to +0.31 APs), +1.42 mAP cross-basin COCO-O, zeroimage repair (+2.95 mAP), and label-free weather adaptation (+2.79 AP). Without retraining, IR-ODWSP supports -100% to +100% latency budgets across bridged contraction, 1.00x folding, dynamic (IR-ODWSP-DYN), and static (IR-ODWSP-SG) graphs: -10% retains 51.62 AP / 33.48 mAP, while positive budgets scale monotonically (+0.30 AP at +10%, +1.12 on RF-DETR-N; 54.83 AP at +100%; 55.91 AP / 35.44 mAP in IR-ODWSP+). Source code is released at https://github.com/WongKinYiu/ODWSP.",
+  "abstract_ja": "",
+  "authors": [
+    "Chien-Yao Wang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/WongKinYiu/ODWSP",
+  "hasCode": true,
+  "id": "arxiv-2611.29882",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "detection",
+  "summary": "Weight-Space Programming (WSP) edits network weights without backpropagation, yet directly editing converged object detectors stalls or collapses because set prediction penalizes duplicate boxes as…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Reparameterizing Your Object Detectors for Weight Space Programming",
+  "url": "https://arxiv.org/abs/2611.29882",
+  "use_case": ""
+}

@@ -1,0 +1,30 @@
+{
+  "abstract": "IEEE 802.15.4z-compliant impulse-radio ultra-wideband (IR-UWB) transceivers are increasingly built into consumer devices, enabling contactless, privacy-preserving human activity recognition (HAR) in healthcare. Before activity classification, the signal is typically converted into range-time, range-Doppler, or time-Doppler maps, each exposing different spatial and motion cues. Existing comparisons often apply shared processing across representations, leaving it unclear whether their rankings hold after independent tuning. It is also unknown whether rankings and fusion gains generalize across environments and activities, and at what computational cost. Consequently, practitioners lack guidance on which representation and processing suit a given HAR deployment. We release an open dataset of raw IR-UWB measurements collected by a ceiling-mounted radar from 44 participants during scripted activity sequences in 12 layouts across two bedrooms. Using a statistically guided, staged search, we independently tune each representation across five processing and deployment settings. We then compare individual and fused performance under layout and room shifts and quantify computational cost. Across over 1{,}000 cross-validated models, independent tuning proves essential, as optimal processing differs per representation and processing choices shift macro-F1 by up to 26 points, four times the gap between representations. Once tuned, the range-Doppler map leads for unseen layouts (85.1\\% macro-F1), while time-Doppler map does for unseen rooms (72.7\\%). Fusing all three maps raises these scores to 89.1\\% and 80.0\\%, respectively. Lower sampling rates and narrower Doppler bands reduce latency by 38--51\\% with at most a 1.5-point macro-F1 loss. The best representation for UWB HAR is therefore a deployment decision, not a fixed property.",
+  "abstract_ja": "",
+  "authors": [
+    "Jelle De Moerloose",
+    "Anton Lambrecht",
+    "Adnan Shahid",
+    "Eli De Poorter"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30033",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "IEEE 802.15.4z-compliant impulse-radio ultra-wideband (IR-UWB) transceivers are increasingly built into consumer devices, enabling contactless, privacy-preserving human activity recognition (HAR) in…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "One UWB Radar, Many Views: Comparing and Fusing Signal Representations for Human Activity Recognition",
+  "url": "https://arxiv.org/abs/2611.30033",
+  "use_case": ""
+}

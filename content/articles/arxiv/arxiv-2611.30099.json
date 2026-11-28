@@ -1,0 +1,28 @@
+{
+  "abstract": "Fine-tuning a robot policy for a new target task requires target demonstrations, but only a few are available. Demonstrations of other tasks can fill this gap, and demonstration curation selects the useful ones among these candidates. Retrieval-based curation selects the candidates that are most similar to the target demonstrations. Since it does not use the policy, any candidate that looks similar receives a high score. Performance-aware curation therefore estimates the effect of each candidate on the policy. However, this requires training on the candidates and takes a long time. We propose a third branch, policy-intrinsic curation, which uses the policy and still takes little time. It estimates this effect with forward passes of the pretrained policy and needs no training. We instantiate this branch with PICKER (Policy-Intrinsic Curation from Known Errors). It selects the candidates on which the policy makes errors that agree with those on the target demonstrations. PICKER reaches success rates comparable to those of performance-aware curation and takes about as long as retrieval-based curation. Its selection is also stable across seeds.",
+  "abstract_ja": "",
+  "authors": [
+    "Sunjae Jeong",
+    "Geunhyeok Yu",
+    "Dowoon Lee",
+    "Hyoseok Hwang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30099",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Fine-tuning a robot policy for a new target task requires target demonstrations, but only a few are available. Demonstrations of other tasks can fill this gap, and demonstration curation selects the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Policy-intrinsic Demonstration Curation",
+  "url": "https://arxiv.org/abs/2611.30099",
+  "use_case": ""
+}

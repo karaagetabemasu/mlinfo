@@ -1,0 +1,33 @@
+{
+  "abstract": "Online surface reconstruction from LiDAR scans requires observation models that respect the sensor's physical measurement geometry. Unlike unordered point sets, LiDAR returns carry anisotropic range noise along known rays, which also implicitly identify free space. We introduce the Occupancy Planar Patch (OPP), an incremental bounded planar patch representation that evaluates surface likelihoods and free space directly in range-space, allowing sensor noise, plane uncertainty, and ray clearance to be explicitly modelled during reconstruction. A single ray-to-patch association weight jointly updates plane geometry, refines surface boundaries, and blends camera imagery. The method is evaluated using six sequences from the Oxford Spires and Multi-Campus datasets. OPP achieves the highest precision and lowest reconstruction error among evaluated methods, while producing stored maps among the most compact. By conservatively admitting surfaces only where geometric evidence is certain, OPP prioritises structural precision over unconstrained completeness, which is well suited for architectural modelling. Geometric reconstruction operates in real time, requiring 81 ms per frame on a representative sequence, with texture projection adding 134 ms.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiahao Wang",
+    "Chaehyeon Song",
+    "Dongjiao He",
+    "Jan Quenzel",
+    "Lintong Zhang"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28403",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "timeseries",
+  "summary": "Online surface reconstruction from LiDAR scans requires observation models that respect the sensor's physical measurement geometry. Unlike unordered point sets, LiDAR returns carry anisotropic range…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d"
+    ],
+    "task": []
+  },
+  "title": "Occupancy Planar Patch: Incremental Probabilistic Bounded-Plane Reconstruction from LiDAR Data",
+  "url": "https://arxiv.org/abs/2611.28403",
+  "use_case": ""
+}

@@ -1,0 +1,27 @@
+{
+  "abstract": "Transfer learning seeks to improve efficiency in a target regression task by borrowing information from related external source dataset(s). Existing approaches achieve this by enforcing Euclidean proximity between the target and source regression parameters or, more recently, by encouraging their directional alignment through angle-based penalties. While such angle-based penalties mitigate the sensitivity of the transfer learning methods to the scale differences between source and target regression coefficients, they still rely on a point estimate of the source regression parameter and thus provide no direct mechanism to incorporate uncertainty in the source information. To that end, we propose a probabilistic framework for transfer learning that operates at the level of a \\emph{scale-invariant directional distribution} of the source regression parameter estimate, rather than its point estimate, to enable robust, scale-invariant and uncertainty aware transfer under heterogeneous source information. Specifically, we project the sampling distribution of the source regression estimate onto the unit sphere, thereby extracting its scale-free directional distribution. Transfer from source to target is then induced through a novel \\emph{angular cone prior} which shrinks the target regression parameter towards directions in which the source distribution assigns high probability, while allowing its magnitude to be learned exclusively from the target dataset. The proposed construction admits exact finite-sample characterizations of posterior angular concentration and posterior computation remains tractable via careful low-dimensional augmentation in the parameter space.",
+  "abstract_ja": "",
+  "authors": [
+    "Abhisek Chakraborty"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31948",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Transfer learning seeks to improve efficiency in a target regression task by borrowing information from related external source dataset(s). Existing approaches achieve this by enforcing Euclidean…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "DUST: Directional Uncertainty-aware and Scale-invariant Transfer Learning",
+  "url": "https://arxiv.org/abs/2611.31948",
+  "use_case": ""
+}

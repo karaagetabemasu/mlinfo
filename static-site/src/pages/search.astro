@@ -1,0 +1,4 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="記事を検索" noindex><h1>論文・記事を検索</h1><p class="lead">タイトル・短い要約・分類から検索できます。</p><div id="search-ui"><form id="static-search" role="search"><input id="query" name="q" maxlength="200" aria-label="検索キーワード" placeholder="RAG、材料、異常検知…"/><button>検索する</button></form><div class="search-filters"><label>出典 <select id="source-filter"><option value="">すべて</option><option>arxiv</option><option>huggingface</option><option>github</option></select></label></div><p id="search-status" role="status">キーワードを入力してください。</p><div id="search-results" class="grid"></div><button id="more-results" hidden>次の20件を表示</button></div><noscript><p>検索にはJavaScriptが必要です。<a href="/">カテゴリから探す</a>こともできます。</p></noscript><script src="../scripts/search.ts"></script></Base>

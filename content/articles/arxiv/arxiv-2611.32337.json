@@ -1,0 +1,34 @@
+{
+  "abstract": "Video generation models synthesize realistic imagery yet still struggle to produce physically plausible evolution. Existing methods guide generation with a motion trajectory predicted for the entire clip in advance, so prediction errors accumulate and degrade later frames. We propose STEP(Short-Term Event Planning), a training-free closed-loop framework that guides generation one short clip at a time. Each round consists of four steps: grounding measures the scene state from the latest frames, event planning predicts the next physical event and renders it into a control clip, latent-guided generation produces the next short clip under this control, and verification checks whether the event occurs and resamples the clip if it does not. Because each round is grounded in the frames actually generated, control relies only on reliable short-range predictions. STEP improves the physical plausibility of three frozen generators on Physics-IQ Verified and PhyGenBench, and can be applied to new generators without training.",
+  "abstract_ja": "",
+  "authors": [
+    "Hao Liu",
+    "Xiang Tang",
+    "Ruotong Li",
+    "Xiaopeng Fan",
+    "Yujiu Yang"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32337",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Video generation models synthesize realistic imagery yet still struggle to produce physically plausible evolution. Existing methods guide generation with a motion trajectory predicted for the entire…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Get the Next Moment Right: Short-Term Event Planning for Physically Plausible Video Generation",
+  "url": "https://arxiv.org/abs/2611.32337",
+  "use_case": ""
+}

@@ -1,0 +1,30 @@
+{
+  "abstract": "Semantic mapping of transmission corridors benefits from heterogeneous LiDAR and image-guided predictors, but replacing a strong ensemble with a learned router can damage rare electrical assets. We introduce CableMoE, a post-hoc mixture of four frozen segmentation experts. Its deployable prediction is a calibrated residual around availability-aware probability averaging, while a harm penalty discourages extra loss on points that the mean already classifies correctly. A matched component study shows why each design choice is needed: an unconstrained learned mixture loses 1.032 mIoU points relative to probability mean, harm regularization restores 0.359 points at fixed capacity, and removing an unnecessary point-wise gate slightly improves accuracy and stability. With three zones for fitting, two disjoint zones for residual-strength selection, and router-untouched t5b5 for final reporting, CableMoE obtains 84.906% mIoU and 98.140 % overall accuracy. This is +10.000 points over SPT and +0.263 over probability mean; all three seeds improve the latter. Across pylon, conductor, structural-cable, and insulator classes, macro-IoU rises from 84.517% for SPT and 97.153% for probability mean to 98.144 %. The results support conservative residual composition, not a claim of a new segmentation backbone or universal state of the art",
+  "abstract_ja": "",
+  "authors": [
+    "Shima Salehi"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30859",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Semantic mapping of transmission corridors benefits from heterogeneous LiDAR and image-guided predictors, but replacing a strong ensemble with a learned router can damage rare electrical assets. We…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "CableMoE: Harm-Regularized Mean-Residual Expert Fusion for Transmission-Corridor Segmentation",
+  "url": "https://arxiv.org/abs/2611.30859",
+  "use_case": ""
+}

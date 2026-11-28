@@ -1,0 +1,33 @@
+{
+  "abstract": "Cross-subject EEG-to-image retrieval suffers from substantial performance degradation on new subjects due to subject shift. Test-time adaptation (TTA) can mitigate this shift by adapting pretrained models with unlabeled target-subject EEG. However, most existing TTA methods struggle to match supervision granularity to each query's prediction confidence, leaving many queries without reliable pseudo-labels. To address this, we propose a novel framework named Hierarchical Selective Test-Time Adaptation (HSTTA). HSTTA builds a hierarchy over gallery image embeddings, uses hierarchical selective prediction to assign each EEG query a supervision granularity matching its current prediction confidence, and constructs adaptation objectives accordingly. We further propose Cross-Session Consistency Calibration (CSCC), an unsupervised method that calibrates the global confidence threshold to target a predefined accuracy level for hierarchical predictions. Moreover, we introduce Reciprocal Hierarchical Backoff (RHB), which moves queries lacking reverse-matching support to coarser nodes to mitigate error reinforcement. Experiments on two public benchmarks and ablation studies validate the effectiveness of HSTTA and its key components. On THINGS-EEG2, HSTTA outperforms the strongest EEG-specific TTA baseline by 17.9 (13.4) and 8.9 (3.7) percentage points in Top-1/Top-5 accuracy, respectively, under cosine (CSLS) ranking. Further analyses show that HSTTA yields more accurate pseudo-labels during adaptation, supporting more reliable model updates.",
+  "abstract_ja": "",
+  "authors": [
+    "Hongzhou Chen",
+    "Yuhao Wei",
+    "Lianghua He",
+    "Yihang Liu",
+    "Zengqiang Wang"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34153",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "embedding",
+  "summary": "Cross-subject EEG-to-image retrieval suffers from substantial performance degradation on new subjects due to subject shift. Test-time adaptation (TTA) can mitigate this shift by adapting pretrained…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "HSTTA: Hierarchical Selective Test-Time Adaptation for Label-Free Cross-Subject EEG-to-Image Retrieval",
+  "url": "https://arxiv.org/abs/2611.34153",
+  "use_case": ""
+}

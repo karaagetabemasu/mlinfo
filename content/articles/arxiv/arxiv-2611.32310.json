@@ -1,0 +1,35 @@
+{
+  "abstract": "Composed Image Retrieval (CIR) aims to retrieve a target image that satisfies user intent based on a multimodal query consisting of a reference image and a modification text. However, real-world training data are often corrupted by Noisy Triplet Correspondence (NTC), where the semantic correspondence among the reference image, modification text, and target image becomes unreliable. Existing methods implicitly assume that the correctness of triplet correspondence can be determined by fixed decision rules. However, under NTC, the authenticity of semantic correspondence is difficult to determine accurately, and different triplets exhibit varying degrees of semantic reliability rather than binary correctness. Consequently, deterministic confidence is insufficient to faithfully characterize correspondence reliability, often leading to overconfident supervision for unreliable triplets and progressively reinforcing noisy semantics during compositional representation learning. To address this challenge, we propose a Compositional Reliability learning framework with Evidential uncertainty and DiffusIon-guided refinemenT (CREDIT), which explicitly quantifies the uncertainty of triplet correspondence to estimate its reliability and suppress the propagation of noisy supervision. CREDIT consists of two complementary components: The Evidential Compositional Uncertainty Learning (ECUL) module explicitly models correspondence uncertainty via evidential learning, enabling uncertaintyaware reliability estimation to suppress noisy supervision. Building upon the reliable supervision provided by ECUL, the Diffusion-enhanced Reference Refinement (DRR) module further refines reference representations through textconditioned diffusion, producing more robust compositional query features. Extensive experiments demonstrate that CREDIT consistently outperforms existing methods under various settings.",
+  "abstract_ja": "",
+  "authors": [
+    "Tiancai Zhou",
+    "Yongxiang Li",
+    "Suimei Liu",
+    "Zhong Yuan",
+    "Dezhong Peng"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32310",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "multimodal",
+  "summary": "Composed Image Retrieval (CIR) aims to retrieve a target image that satisfies user intent based on a multimodal query consisting of a reference image and a modification text. However, real-world…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "embedding"
+    ]
+  },
+  "title": "CREDIT: Compositional Reliability Learning for Noisy Composed Image Retrieval",
+  "url": "https://arxiv.org/abs/2611.32310",
+  "use_case": ""
+}

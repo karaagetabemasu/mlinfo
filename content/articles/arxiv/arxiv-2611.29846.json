@@ -1,0 +1,27 @@
+{
+  "abstract": "Hyperparameters for an unseen domain are often selected using held-out examples from the available source domains. Withholding entire source domains during validation seems to better reflect deployment shift, but does this produce better selections on independent targets? We investigate this question through two complementary studies. A preliminary factorial experiment crosses particle swarm optimization and random search with pooled source validation and a leave-one-source-domain-out mean-minimum fitness on PACS and Multi-Domain Sentiment. The domain-aware fitness does not provide a consistent target advantage. We then separate selector development from confirmation using a shared pool of 64 configurations per task across four image benchmarks. Complete target-performance landscapes on VLCS and Office-Home inform one rule: retain the top 16 configurations by pooled source validation, then select the largest leave-one-source-domain-out mean-minus-standard-deviation score. The rule is frozen before evaluation on TerraIncognita and SVIRO. Across their 14 target domains, its equal-dataset-weighted balanced-accuracy difference from pooled validation is +0.097 percentage points (95% bootstrap interval [-0.685, +0.960]), with five wins and nine losses. Exploratory analyses reveal substantial variation across datasets, target domains, and training seeds. These results do not establish equivalence or a general failure of domain-aware validation. They show that the evaluated source-domain criteria did not establish reliable target gains under the tested protocols, and motivate assessing selection rules on datasets independent of those used to develop them.",
+  "abstract_ja": "",
+  "authors": [
+    "Veet Zaveri"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29846",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Hyperparameters for an unseen domain are often selected using held-out examples from the available source domains. Withholding entire source domains during validation seems to better reflect…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "When Source-Domain Validation Fails to Transfer: A Staged Study of Hyperparameter Selection",
+  "url": "https://arxiv.org/abs/2611.29846",
+  "use_case": ""
+}

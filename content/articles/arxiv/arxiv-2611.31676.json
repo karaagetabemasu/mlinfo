@@ -1,0 +1,28 @@
+{
+  "abstract": "Differentiable simulation enables gradient-based optimization in learning and control problems involving collisions, but its gradients are least reliable at the moment of impact, when the velocities jump. A fixed-step simulator detects a collision only after the bodies overlap, and some differentiable simulators correct for this with a linear estimate of the time of impact. In this paper, we study impacts between ellipsoids. We show that the gradient error of this estimate grows with the obliqueness of the collision, the curvature at contact, and the time step, and that ignoring spin adds a further error. Subsequently, we find the time of impact with continuous collision detection on the Perram Wertheim contact function and differentiate through the touching condition rather than the search. This gives exact gradients at any step size. We demonstrate our method on an optimal control problem and a system identification problem. In both, exact gradients recover the optimal control and the true parameters, while the linear estimate does not, even when it accounts for spin.",
+  "abstract_ja": "",
+  "authors": [
+    "Shamak Dutta",
+    "Biswadip Dey"
+  ],
+  "category": "math-theory",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31676",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "optimization",
+  "summary": "Differentiable simulation enables gradient-based optimization in learning and control problems involving collisions, but its gradients are least reliable at the moment of impact, when the velocities…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Exact Collision Gradients for Ellipsoids in Differentiable Simulation",
+  "url": "https://arxiv.org/abs/2611.31676",
+  "use_case": ""
+}

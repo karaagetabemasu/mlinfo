@@ -1,0 +1,31 @@
+{
+  "abstract": "Upgrading feed-forward geometry to metric scale with visual-inertial odometry (VIO) raises the question of which correction should align dense feed-forward prediction with sparse metric VIO anchors. Existing methods use either a similarity transformation, which cannot represent depth-dependent distortion, or a projective transformation, which alters pre-calibrated intrinsics. We prove that the transformations compatible with pre-calibrated intrinsics form a ten-dimensional manifold. Beyond Sim(3), this manifold contains three degrees of freedom (DoF) that locate the plane at infinity and leave residuals growing quadratically with depth range after any similarity alignment. These DoF are invisible in the image and can be resolved only by metric depth along viewing rays or by multi-view constraints. To estimate them, we propose ProManO, a probabilistic manifold optimization framework in which every anchor is weighted by its along-ray uncertainty and inlier probability within a single expectation-maximization (EM) procedure. ProManO certifies the similarity synchronization and refines the plane at infinity only where it is observable, which guarantees an objective value no worse than that of the optimal similarity alignment. Experiments on EuRoC, CID-SIMS, Oxford Spires, and KITTI-360 demonstrate that ProManO achieves the highest mean F1 and outperforms Sim(3) alignment on all four datasets. The project page is available at https://h0xg.github.io/ProManO/.",
+  "abstract_ja": "",
+  "authors": [
+    "Lingxiang Hu",
+    "Zhenjun Zhao",
+    "Qi Shao",
+    "Naima Ait Oufroukh",
+    "Fabien Bonardi"
+  ],
+  "category": "math-theory",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34480",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "optimization",
+  "summary": "Upgrading feed-forward geometry to metric scale with visual-inertial odometry (VIO) raises the question of which correction should align dense feed-forward prediction with sparse metric VIO anchors.…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "ProManO: Beyond Sim(3) for Metric Upgrade of Feed-Forward Geometry with Visual-Inertial Anchors",
+  "url": "https://arxiv.org/abs/2611.34480",
+  "use_case": ""
+}

@@ -1,0 +1,33 @@
+{
+  "abstract": "Self-attention over tens of thousands of tokens dominates the generation time of video diffusion transformers, because its cost grows quadratically with sequence length. The FP4 matrix products of modern GPUs can speed up attention, but the 4-bit rounding of the queries Q and the keys K introduces large errors. We show that the exponential in softmax amplifies the error of their product QK, which therefore dominates the attention error. We propose DeCo-Attention, a co-design of algorithm and system for low-precision attention. DeCo-Attention is training-free and compensates the rounding error of Q and K along a few principal directions found by a per-head eigendecomposition. The lightweight compensation terms are appended to Q and K as extra channels, so the FP4 matrix product corrects its own rounding error while it computes the attention scores. Once the products run in FP4, the softmax bounds the kernel, and we optimize the softmax so that the gain of FP4 computation translates into realized speedup. With QK in FP4, we implement DeCo-Attention with the rest of attention in FP8 on GB300 and VR200 and in FP4 on RTX PRO 6000. On Wan2.2, these kernels run 2.13x, 2.49x, and 2.82x faster than BF16 attention, and the whole generation runs 1.55x, 1.68x, and 1.80x faster. On four video generation models, the FP8 configuration achieves LPIPS comparable to prior 8-bit QK methods, and the fully FP4 configuration lower LPIPS than prior fully 4-bit kernels.",
+  "abstract_ja": "",
+  "authors": [
+    "Yuhang He",
+    "Harrison Zhang",
+    "Fanrong Li",
+    "Chang Liu",
+    "RuQing G. Xu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32035",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Self-attention over tens of thousands of tokens dominates the generation time of video diffusion transformers, because its cost grows quadratically with sequence length. The FP4 matrix products of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "video"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "DeCo-Attention: Decompose to Compensate for Low-Precision Attention",
+  "url": "https://arxiv.org/abs/2611.32035",
+  "use_case": ""
+}

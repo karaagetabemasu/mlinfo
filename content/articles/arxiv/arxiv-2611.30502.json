@@ -1,0 +1,33 @@
+{
+  "abstract": "MMORPGs continually face automated programs (bots) that disrupt gameplay balance and in-game economies. An unsupervised Transformer framework can mine collectively behaving bot groups, but its multi-GPU training is costly in live operations. We show that such GPU-trained sequence models are not strictly necessary for this task. Our CPU pipeline pairs zone embeddings learned from movement context, which place teleport-linked zones close together, with a training-free coordinate kernel, and then applies density clustering. It trains 3-5$\\times$ faster than the GPU-based Transformer (56-86$\\times$ on the same CPU) while matching its mining quality on two commercial MMORPGs, and has been deployed since late 2024. We also share deployment lessons on how to set the clustering threshold and when to retrain.",
+  "abstract_ja": "",
+  "authors": [
+    "Hyunsoo Kim",
+    "Jaeman Son",
+    "Sangdeok Seo",
+    "Ilhan Bang",
+    "Man Jae Cho"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30502",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "MMORPGs continually face automated programs (bots) that disrupt gameplay balance and in-game economies. An unsupervised Transformer framework can mine collectively behaving bot groups, but its…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "unsupervised"
+    ],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "A CPU-Only Framework for Mining Collectively-Behaving Bots in MMORPGs",
+  "url": "https://arxiv.org/abs/2611.30502",
+  "use_case": ""
+}

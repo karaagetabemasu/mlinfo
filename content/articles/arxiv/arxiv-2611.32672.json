@@ -1,0 +1,37 @@
+{
+  "abstract": "Few-shot adaptation of vision-language models has produced increasingly elaborate methods built on CLIP and on one shared principle: the zero-shot text classifier is the anchor, and labeled images only correct it. We argue that this principle reflects CLIP's visual features rather than a property of the task. We provide a simple Bayesian interpretation, in which a class name is worth exactly kappa = sigma^2 / tau^2 labeled images, the ratio between the visual spread of a class and the misalignment of its name. The Bayes classifier of this model counts text as kappa more samples. With modern frozen encoders, few-shot adaptation then reduces to a well-regularised convex probe. Specifically, we introduce TASP, a simple convex logistic regression on frozen features that incorporates class-name embeddings as weighted training examples and as a regularization prior. On the standard 11-dataset benchmark, TASP with frozen PE-Core-L features achieves 87.1% accuracy at 1 shot and 91.4% at 16 shots, outperforming state-of-the-art few-shot vision-language adaptation methods by 4.6 to 11.0 percentage points. While stronger representations explain much of this improvement, controlled comparisons on matched features show that existing frozen-encoder adaptation methods do not materially improve on this probe. We further find that the weight assigned to text matters more than how it is incorporated, and that combining self-supervised visual features with vision-language representations is most beneficial for weaker visual encoders. Together, these findings suggest that progress in few-shot vision-language adaptation depends more on representation quality and the appropriate use of text supervision than on increasingly complex adaptation mechanisms.",
+  "abstract_ja": "",
+  "authors": [
+    "Reda Bensaid",
+    "Ismail Ben Ayed",
+    "François Leduc-Primeau",
+    "Vincent Gripon"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32672",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "prompt",
+  "summary": "Few-shot adaptation of vision-language models has produced increasingly elaborate methods built on CLIP and on one shared principle: the zero-shot text classifier is the anchor, and labeled images…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "self-supervised"
+    ],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "classification",
+      "regression"
+    ]
+  },
+  "title": "Text Is Just Another Shot in Vision-Language Models: Simple Probes on Frozen Encoders Do It",
+  "url": "https://arxiv.org/abs/2611.32672",
+  "use_case": ""
+}

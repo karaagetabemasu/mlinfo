@@ -1,0 +1,34 @@
+{
+  "abstract": "Topological data analysis provides a collection of methods for analyzing data with shape structure, including point clouds, graphs, and images. Recent advances in topological vectorization have enabled the embedding of shape data into Euclidean spaces, facilitating comparisons and machine learning tasks. Vector summaries that effectively capture topological structures are particularly useful for shape classification and unsupervised learning tasks such as clustering. We investigate the use of vectorized topological data for clustering through k-means, which partitions observations into a fixed number of groups by minimizing a squared-error loss function. By incorporating an element-wise weight-update step into the iterative k-means algorithm, we improve clustering performance on both simulated and real-world shape datasets. We show that estimating these weights reduces to a least-squares problem, requiring minimal additional computation while allowing flexible coefficient constraints. Our approach also substantially strengthens the negative correlation between the loss and clustering accuracy, improving the effectiveness of selecting among multiple clustering solutions based on the lowest loss. These improvements remain robust to changes in vector length and the number of initializations. Furthermore, weighted topological vector summaries exhibit stability under small structural perturbations, particularly when weight constraints are imposed. The proposed method offers a flexible alternative for clustering topological data, accommodating different k-means variants, vectorization methods, and weight constraints.",
+  "abstract_ja": "",
+  "authors": [
+    "Jason Turk",
+    "Umar Islambekov"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28880",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Topological data analysis provides a collection of methods for analyzing data with shape structure, including point clouds, graphs, and images. Recent advances in topological vectorization have…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "supervised",
+      "unsupervised"
+    ],
+    "modality": [
+      "image",
+      "3d"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "A Novel Approach to Clustering Shape Data Using Iteratively Weighted Vectors with k-Means",
+  "url": "https://arxiv.org/abs/2611.28880",
+  "use_case": ""
+}

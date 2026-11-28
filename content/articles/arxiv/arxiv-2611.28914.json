@@ -1,0 +1,27 @@
+{
+  "abstract": "Sanctions screening raises name-based alerts that are mostly false positives, and level-1 analysts clear them by checking the customer's date of birth and name against a written policy. We test whether open-weight language models that a bank can run on its own premises can perform this level-1 disposition. From the UK and EU sanctions lists (7,103 natural persons) we built 12,200 synthetic customers: listed persons under six name conditions, including Turkish spellings of Arabic-origin names and Turkish romanisations of Cyrillic names, and two date-of-birth conditions, plus namesakes, near-name customers and a general population. A deterministic fuzzy and embedding screen raised 7,383 alerts, which three open models served on domestic infrastructure and three rule baselines dispositioned under the same policy. The models sent far fewer innocent customers to level 2 than a rule that applies the policy's date clause: 0.6 to 16.9 per 1,000 screened customers against 24.4, and they stated the date-of-birth status correctly in 98.3% to 98.5% of alerts. They also failed to escalate 1.5% to 2.2% of the listed persons. The pre-registered non-inferiority test against the rule was met, but only because of a construction error we found after the analysis: 21 customers in the \"minor discrepancy\" condition had dates that conflict under the policy. Without them the rule misses no listed person and no model meets the margin. The misses had model-specific causes: one model read minor date discrepancies as conflicts, one declared word-order and typing variants to be different names, and one discounted alerts that its own rationale said to escalate. Fuzzy matching found 69% of the Turkish spellings of Arabic-origin names; adding embeddings raised this to 74%. Open LLMs can cut level-1 workload, but on this evidence only behind a deterministic date check and with every name doubt escalated.",
+  "abstract_ja": "",
+  "authors": [
+    "Mehmet Murat Huyut"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28914",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Sanctions screening raises name-based alerts that are mostly false positives, and level-1 analysts clear them by checking the customer's date of birth and name against a written policy. We test…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Can Open LLMs Clear Sanctions-Screening Alerts? A Pre-registered Test on Public Sanctions Lists with Turkish Name Variants",
+  "url": "https://arxiv.org/abs/2611.28914",
+  "use_case": ""
+}

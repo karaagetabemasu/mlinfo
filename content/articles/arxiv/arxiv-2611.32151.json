@@ -1,0 +1,33 @@
+{
+  "abstract": "Training pixel diffusion models remains less straightforward, owing to the ad hoc training recipes and architecture designs, along with the sensitivity to hyper-parameter choices. We show that strong denoisers can be built by refining existing pixel-native designs from the literature. Specifically, we revisit the long skip connection in U-Net and find that the optimization benefit commonly attributed to it is not necessary for its denoising benefit. We further find that the conventional linear combination of features from the skip and main backbone is inadequate for regimes of various noise levels. Motivated by these observations, we introduce two core modifications. First, we adopt asymmetric long skips, which propagate fine-grained information from input embeddings to decoder layers. Second, we introduce adaGLU, a SwiGLU-like MLP block, in decoder layers to adaptively filter information from the embeddings before being added to main-branch features. The above designs give a simple pixel diffusion transformer architecture. When trained from scratch, it scales smoothly from small-scale baselines up to 1.6B parameters, achieving 1.62 and 1.70 FID on ImageNet-256 and -512, respectively. Besides, it natively supports multimodal inputs, such as text and images, yielding competitive performance in text-to-image generation. We release our codes at https://github.com/AMAP-ML/PiT",
+  "abstract_ja": "",
+  "authors": [
+    "Jiachen Lei",
+    "Jiahong Wu",
+    "XiangXiang Chu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "https://github.com/AMAP-ML/PiT",
+  "hasCode": true,
+  "id": "arxiv-2611.32151",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Training pixel diffusion models remains less straightforward, owing to the ad hoc training recipes and architecture designs, along with the sensitivity to hyper-parameter choices. We show that strong…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Let The Pixels Through: Rethinking Long Skip Connections for Scalable Pixel Diffusion",
+  "url": "https://arxiv.org/abs/2611.32151",
+  "use_case": ""
+}

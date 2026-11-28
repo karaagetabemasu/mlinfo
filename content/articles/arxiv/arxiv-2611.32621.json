@@ -1,0 +1,33 @@
+{
+  "abstract": "Given a reference asset and an instruction such as \"remove one armrest,\" a retriever must find variants that make the edit and preserve the other parts. This search is well established for images but remains underexplored for individual 3D assets. To study this problem, we introduce ShapeQuest and ShapeQuester, a new benchmark and model for edit-conditioned 3D asset retrieval. ShapeQuest's open-source pipeline edits textured meshes through part additions, removals, and material and colour changes. It controls edit granularity across five levels, defined by the fraction of the object's surface area each edit affects. It constructs multiple valid targets when an instruction leaves the choice of part open. A vision-language model judges each edit from views chosen to expose the edited parts, and human raters audit its judgments. ShapeQuest has 87,824 queries in 50 categories and a 50,919-shape gallery with competing edits. To distinguish these variants, ShapeQuester learns retrieval alongside reconstruction of the edited point cloud, with part masks supervising changed and preserved regions. With a frozen pretrained point encoder, ShapeQuester reaches 50.4 operation-macro mAP@10 on the test split, against 47.2 for the fusion baseline with the same inputs and 48.6 for the strongest baseline. Reconstruction adds 6.5 points on the validation split when the point encoder is trained from scratch, including 3.3 from part masks.",
+  "abstract_ja": "",
+  "authors": [
+    "Faris Abu-Ali",
+    "Sankalp Sinha",
+    "Didier Stricker",
+    "Muhammad Zeshan Afzal"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32621",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Given a reference asset and an instruction such as \"remove one armrest,\" a retriever must find variants that make the edit and preserve the other parts. This search is well established for images but…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "3d",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "ShapeQuest: Towards Granularity-Controlled Edit-Conditioned 3D Asset Retrieval",
+  "url": "https://arxiv.org/abs/2611.32621",
+  "use_case": ""
+}

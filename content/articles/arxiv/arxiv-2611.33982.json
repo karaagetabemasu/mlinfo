@@ -1,0 +1,34 @@
+{
+  "abstract": "Departing from the paradigm of diffusion and autoregressive models, Generative Refinement Networks (GRN) enables high-quality image generation through iterative refinements. However, this repeated processing over the entire visual representations results in substantial computation overhead. Furthermore, the binary representations and global refinement mechanism in GRN disable the direct application of acceleration strategies developed for other generative models. To accelerate GRN model, we first observe several key properties by analyzing the entire generative process. That includes the stage characteristic, dual branch similarity and more importantly, the $\\textbf{refinement redundancy}$. Motivated by the observations, we present $\\textbf{FasterGRN}$, a training-free acceleration method for the Generative Refinement Network. $\\textbf{FasterGRN}$ first divides the GRN into the semantic establishment stage and detail refinement stage according to its semantic establishment. For alleviating the refinement redundancy mainly resulting from the detail refinement stage, we propose Adaptive Retention Expansion ($\\textbf{ARE}$) and Selective Token Freezing ($\\textbf{STF}$) to shrink refinement steps and reduce token computations, respectively. In the experiments on GenEval and DPG-Bench benchmarks, our method $\\textbf{FasterGRN}$ achieves a $2.03\\times$ sampling speedup while largely preserving image generation performance. Our evaluation on COCO datasets additionally demonstrates that $\\textbf{FasterGRN}$ even outperforms the original GRN in image fidelity.",
+  "abstract_ja": "",
+  "authors": [
+    "Ziqian Zhang",
+    "Pengcheng Wang",
+    "Yulong Chen",
+    "Yaxing Wang",
+    "Senmao Li"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33982",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Departing from the paradigm of diffusion and autoregressive models, Generative Refinement Networks (GRN) enables high-quality image generation through iterative refinements. However, this repeated…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "FasterGRN: Reducing the Refinement Redundancy for Accelerating Generative Refinement Networks",
+  "url": "https://arxiv.org/abs/2611.33982",
+  "use_case": ""
+}

@@ -1,0 +1,27 @@
+{
+  "abstract": "How should step sizes be scheduled across a finite training horizon? Cosine and warmup-stable-decay (WSD) schedules are widely adopted in large-scale pretraining, yet their effect on optimization also depends on parameter norms. Normalization can make parameter groups scale invariant, so that the loss depends only on their direction, while their norms still affect how fast the parameters rotate. In this work, we formulate schedule design directly in the space of rotational motion. Working within a geodesically convex spherical setting, we derive a last-iterate convergence guarantee for arbitrary rotational schedules that separates their overall scale from their distribution over time. We derive the unique schedule that minimizes this bound and prove that it approaches linear decay as the horizon grows. Empirically, our rotational interpretation and idealized spherical analysis provide useful predictions for LLM pretraining in practice, including schedule comparisons missed by existing analyses. Our analysis predicts schedule ordering across model scales for both vanilla (Adam, Muon) and Hyperball-style (AdamH, MuonH) optimizers. Our Hyperball experiments support the predicted strong performance of linear LR decay and confirm our prediction that WSD underperforms in this setting. Accounting for parameter norm dynamics, we predict instead the strong performance of WSD for Adam and Muon shown in practice. Guided by our theoretical insights, we also derive a new LR schedule for Adam and Muon, which improves over the established cosine and WSD schedules. All in all, these results support the use of rotational dynamics to understand, predict, and ultimately guide scheduling in LLM pretraining.",
+  "abstract_ja": "",
+  "authors": [
+    "Jacopo Graldi",
+    "Antonio Orvieto",
+    "Anastasia Koloskova"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29579",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "How should step sizes be scheduled across a finite training horizon? Cosine and warmup-stable-decay (WSD) schedules are widely adopted in large-scale pretraining, yet their effect on optimization…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "From Learning Rates to Rotational Schedules: Finite-Horizon Theory on the Sphere",
+  "url": "https://arxiv.org/abs/2611.29579",
+  "use_case": ""
+}

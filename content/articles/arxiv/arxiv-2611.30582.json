@@ -1,0 +1,34 @@
+{
+  "abstract": "Medical image segmentation models can fail silently when clinical data differs from training data. Deployed models rarely ship with quality control, and are often black boxes. Prior methods that work in this post-hoc failure detection setting still need a separate regression or segmentation model, registration, or access to model internals. We instead propose two failure scores based on the Mahalanobis distance to a labeled reference set. The first uses radiomic shape features of the predicted mask. The second uses frozen foundation model (FM) features, made mask-aware by overlaying the mask on the image, encoding it with a frozen DINOv3, and pooling patch features with more weight on the mask region. We test on multi-site prostate and hippocampus MRI under imaging-protocol and population shift. Ranking cases by predicted failure risk within each site, both scores are competitive with the registration-based (Atlas-RCA) and ensemble-based (pairwise Dice) baselines, without registration that can fail silently or access to individual predictions. Our results show that pooling all test cases into one ranking, as prior work does, rewards ordering sites by difficulty, so a detector can rank sites well, miss failures within them, and still look strong. Within-site evaluation measures true per-case failure. The two evaluation schemes reward different behavior, so we recommend reporting both. The code is available at https://github.com/imigraz/fm-radiomics-failure-detection.",
+  "abstract_ja": "",
+  "authors": [
+    "Simon Johannes Joham",
+    "Gianluca Guglielmo",
+    "Mateusz Kozinski",
+    "Martin Urschler"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "https://github.com/imigraz/fm-radiomics-failure-detection",
+  "hasCode": true,
+  "id": "arxiv-2611.30582",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Medical image segmentation models can fail silently when clinical data differs from training data. Deployed models rarely ship with quality control, and are often black boxes.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection",
+      "segmentation",
+      "regression"
+    ]
+  },
+  "title": "Foundation Model and Radiomics Distance Scores for Post-Hoc Segmentation Failure Detection",
+  "url": "https://arxiv.org/abs/2611.30582",
+  "use_case": ""
+}

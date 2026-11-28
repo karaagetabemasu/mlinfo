@@ -1,0 +1,30 @@
+{
+  "abstract": "Decisions under uncertainty increasingly rest on fragmented evidence, such as samples from related but different populations, privacy-protected summary statistics, or complementary statistical descriptions of the same data. Distributionally robust optimization (DRO) can fuse such evidence by constructing one ambiguity set per source and hedging against all distributions in the intersection of these sets. This fusion approach is less conservative than aggregating the sources into a single ambiguity set, but it is computationally demanding. Exact reformulations grow exponentially with the number of sources, and even deciding whether the intersection is nonempty is NP-hard. We show that fusion DRO admits an exact reformulation in which the ambiguity sets are coupled only through functional Lagrange multipliers. Restricting these multipliers to affine decision rules yields upper bounds that decompose across the ambiguity sets, are exact for quadratic losses over Wasserstein balls around Gaussian references, and provably dominate aggregation-based relaxations such as Minkowski sums and balls around mixtures. The approximations admit finite conic reformulations in important special cases and subgradient methods for weakly convex losses, which makes fusion DRO applicable to neural network training. In portfolio, newsvendor, and binary classification experiments, the affine approximation stays close to the exact value wherever the latter is computable, scales far better than exact methods, and outperforms aggregation-based benchmarks out-of-sample.",
+  "abstract_ja": "",
+  "authors": [
+    "Buse Şen",
+    "Aras Selvi",
+    "Jean Pauphilet",
+    "Daniel Kuhn"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34495",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Decisions under uncertainty increasingly rest on fragmented evidence, such as samples from related but different populations, privacy-protected summary statistics, or complementary statistical…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Efficient Data Fusion in Distributionally Robust Optimization",
+  "url": "https://arxiv.org/abs/2611.34495",
+  "use_case": ""
+}

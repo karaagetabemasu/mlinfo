@@ -1,0 +1,32 @@
+{
+  "abstract": "Instruction-following robots need navigation policies that reach high accuracy and remain inexpensive to train and to run on a single graphics processing unit (GPU). The most accurate vision-language navigation policies for continuous environments rely on language models with 4 to 8 billion parameters, long observation histories, and large auxiliary corpora. Two properties of the standard training setup limit smaller policies. Imitation labels cover the states that an expert visits, whereas the running policy reaches states that its own errors produce. In addition, an image-plane waypoint exists only while the route lies inside the camera view. We present \\textbf{\\paper}, a monocular red-green-blue (RGB) policy with 2 billion (2B) parameters that addresses both limitations. \\paper adapts Qwen3-VL-2B with low-rank adapters and processes an eight-frame memory and the current view in one forward pass. The policy predicts the route direction as a bearing in the body frame of the agent, which remains defined for every heading, and a deterministic controller converts this bearing into motion. This design allows training to relabel the states that the policy itself visits. On-policy correction improves success, while bearing decoding outperforms image-plane waypoint scanning across all evaluated start headings with identical weights. On the \\valunseen split, \\paper achieves \\rFinSR\\% success on Room-to-Room in Continuous Environments (\\rtor), averaged over three seeds, and \\rRxFinSR\\% on its Room-Across-Room counterpart (\\rxr). Inference requires \\rDecMs\\,ms and \\rInferGB\\,GiB of memory, while training takes \\rCostTrainTyp\\ GPU-hours on one 12\\,GB consumer GPU.",
+  "abstract_ja": "",
+  "authors": [
+    "Reshad Ul Karim",
+    "Syeda Maliha Tabassum",
+    "Md. Khalilur Rhaman",
+    "Md Rashad Al Hasan Rony"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34561",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Instruction-following robots need navigation policies that reach high accuracy and remain inexpensive to train and to run on a single graphics processing unit (GPU). The most accurate vision-language…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": []
+  },
+  "title": "Compact Vision-Language Navigation in Continuous Environmentsvia On-Policy Training and Route-Bearing Output",
+  "url": "https://arxiv.org/abs/2611.34561",
+  "use_case": ""
+}

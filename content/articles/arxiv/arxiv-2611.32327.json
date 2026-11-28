@@ -1,0 +1,28 @@
+{
+  "abstract": "Fonts are natively represented as vector outlines. Many existing studies on vector font generation have relied on specialized generation or refinement mechanisms, bitmap representations, or externally pretrained models to address the challenges of learning vector representations. These approaches often increase system complexity, incur additional computational and implementation costs, and introduce dependencies on external resources. We show that scaling a simple model enables high-quality pure vector font generation without external pretraining. We propose FlowVecFont, a scalable model for vector font generation based on latent flow matching and trained solely on vector outlines. A Transformer-based variational autoencoder maps glyph sequences into fixed-length continuous latent tokens, enabling standard conditional flow matching for vector glyph generation. The model supports conditioning on class labels or reference glyphs, with the latter enabling generalization to unseen characters and fonts. Experiments on 5M glyphs collected across Google Fonts, including non-Latin characters, show that generation quality improves with model scale across conditioning strategies. In a comparison on Latin glyphs, the 800M-parameter FlowVecFont outperforms DeepVecFont-v2 and DesigNet and achieves quality competitive with the pretrained 27B-parameter VecGlypher. We also provide TorchFont, a machine learning library for vector fonts.",
+  "abstract_ja": "",
+  "authors": [
+    "Takumu Fujioka",
+    "Gouhei Tanaka"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32327",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Fonts are natively represented as vector outlines. Many existing studies on vector font generation have relied on specialized generation or refinement mechanisms, bitmap representations, or…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "FlowVecFont: Scalable Vector Font Generation via Latent Flow Matching",
+  "url": "https://arxiv.org/abs/2611.32327",
+  "use_case": ""
+}

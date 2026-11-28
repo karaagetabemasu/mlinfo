@@ -1,0 +1,29 @@
+{
+  "abstract": "Differentially private zeroth-order optimization (DPZO) is a promising approach for privacy-preserving LLM fine-tuning, offering exceptional memory efficiency. However, its utility is highly sensitive to the clipping threshold $C$, a key DP-specific hyperparameter that controls the trade-off between noise injection and clipping bias. Existing DPZO methods typically tune $C$ by repeatedly evaluating candidate values and reporting the best result, which is computationally expensive and incurs additional privacy cost that must be accounted for under DP. Designing a practical DP procedure for selecting $C$ in DPZO is challenging because no fixed choice performs well across settings, straightforward search-based strategies suffer from poor utility and efficiency, and existing clipping-selection methods for DPSGD do not transfer well to DPZO due to its fundamentally different error regime. In this paper, we propose AutoClip-DPZO, a practical DP method that automatically and efficiently selects $C$ for DPZO. Our key idea is to avoid fine-tuning-based search by reducing clipping selection to a private quantile estimation problem, where the target quantile depends only on public privacy and training parameters. To derive this selection rule, we develop a novel characterization of DPZO error as a function of $C$ that captures both noise variance and clipping bias while remaining accurate and easy to optimize. Experiments show that AutoClip-DPZO achieves utility comparable to that obtained with the optimal $C$, while avoiding repeated fine-tuning-based search and incurring negligible additional overhead. Moreover, AutoClip-DPZO does not rely on sensitive hyperparameters.",
+  "abstract_ja": "",
+  "authors": [
+    "Xinghe Chen",
+    "Haichao Sha",
+    "Zihao Wang",
+    "Xiaokui Xiao",
+    "XiaoFeng Wang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30352",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Differentially private zeroth-order optimization (DPZO) is a promising approach for privacy-preserving LLM fine-tuning, offering exceptional memory efficiency. However, its utility is highly…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "AutoClip-DPZO: Practical Private Clipping Selection for Differentially Private Zeroth-Order LLM Fine-Tuning",
+  "url": "https://arxiv.org/abs/2611.30352",
+  "use_case": ""
+}

@@ -1,0 +1,30 @@
+{
+  "abstract": "Learning latent actions from unlabeled video sequences offers a promising way to acquire reusable action representations without relying on embodiment-specific control annotations. However, existing latent-action pretraining approaches commonly couple the modeling of visual transitions with action inference, directly mapping paired observations or derived transition cues into latent action codes. This formulation leaves two distinct tasks entangled: characterizing the relational structure of an observed transition and abstracting it into a compact action representation. We propose RELACT, a relation-first framework that explicitly separates transition relation modeling from predictive action abstraction. RELACT first constructs a structured relation representation $R$ that captures how visual elements and their interactions evolve across observations. It then infers a compact, state-conditioned stochastic latent action $U$, whose predictive effects are learned through action-conditioned latent dynamics. The resulting action representation can be grounded in native control spaces for model-based planning or used to supervise downstream embodied policies. Extensive experiments across in-domain and out-of-domain image-goal navigation, goal-conditioned manipulation, and downstream policy adaptation demonstrate improved predictive action representations and consistent gains in planning and control, supporting the effectiveness and generality of relation-first latent action pretraining.",
+  "abstract_ja": "",
+  "authors": [
+    "Boning Zhang",
+    "Junyu Gao",
+    "Changsheng Xu"
+  ],
+  "category": "reinforcement-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32226",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "ppo",
+  "summary": "Learning latent actions from unlabeled video sequences offers a promising way to acquire reusable action representations without relying on embodiment-specific control annotations. However, existing…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "video"
+    ],
+    "task": []
+  },
+  "title": "Relation Before Action: Explicit Relation Modeling for Latent Action Pretraining",
+  "url": "https://arxiv.org/abs/2611.32226",
+  "use_case": ""
+}

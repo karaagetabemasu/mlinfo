@@ -1,0 +1,33 @@
+{
+  "abstract": "Emergent cross-modal classification and retrieval enable transfer between modalities without direct paired supervision. However, existing methods often prioritize sample-level alignment, overlooking local discriminative information and partwise statistical relations. To this end, we propose partwise reasoning across modalities (PRAM), which activates latent multimodal knowledge in frozen encoders by composing partwise statistical relations through a shared pivot modality. Specifically, we first present a multi-granularity covariance regularization module that estimates covariances from global and local vectors in two collections of modality-pivot pairs, stabilizing local estimates through adaptive blending with their cross-part means. Second, we devise a pivot-based spectral relational reasoning module that infers global and partwise statistical relations between target modalities through regularized covariance composition and extracts paired projection directions and their correlation strengths via whitening and spectral decomposition. Finally, we introduce a multi-granularity score fusion module that standardizes and fuses matching scores from global and local relations, incorporating task-specific information on pivot associations and class semantics for class prediction and candidate ranking. Extensive experiments across ten datasets demonstrate that PRAM achieves state-of-the-art performance in 16 classification settings and 19 retrieval settings, while exhibiting highly competitive performance in three sensing scenarios.",
+  "abstract_ja": "",
+  "authors": [
+    "Haidong Chen",
+    "Ying Guo",
+    "Shangze Li",
+    "Zhongkuan Mao",
+    "Linrui Xu"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34640",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Emergent cross-modal classification and retrieval enable transfer between modalities without direct paired supervision. However, existing methods often prioritize sample-level alignment, overlooking…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "multimodal"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "PRAM: Activating Latent Multimodal Knowledge through Partwise Reasoning",
+  "url": "https://arxiv.org/abs/2611.34640",
+  "use_case": ""
+}

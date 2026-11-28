@@ -1,0 +1,28 @@
+{
+  "abstract": "As Mixture-of-Experts (MoE) models scale, Expert Parallelism (EP) becomes increasingly important for distributing experts across devices. However, the resulting token dispatch and combine operations can become a major bottleneck during inference. Overlapping these communication phases with computation is constrained by the sequential dependencies of standard MoE architectures. We introduce BRAID-MoE, an architecture that pairs laddered residual connections with early routing to relax these dependencies. Laddered residuals enable each expert combine to be deferred to the following block, while early routing computes the next routing decision from the pre-combine residual, with experts still receiving the updated post-combine hidden state. This creates an extended communication window in which the preceding combine and next dispatch can execute back-to-back on a dedicated communication stream, overlapping attention computation. On Qwen3-shaped MoEs with 0.4B-A0.1B and 2.5B-A0.5B parameters, BRAID closely matches sequential training at matched compute, with validation-loss increases of only 1% and 0.5%, respectively. We further demonstrate that existing MoE checkpoints can be adapted to BRAID with limited additional training, largely recovering their original accuracy. On a converted Qwen3-30B-A3B model, BRAID achieves speedups of up to 1.29$\\times$ in prefill and 1.37$\\times$ in decode, and at least 1.12$\\times$ across diverse workloads and EP configurations on one or two four-H100 nodes. It outperforms competing overlap strategies in all tested settings, with the strongest gains when communication is a major latency bottleneck and its duration approaches the available computation window. These results demonstrate that early routing enables more effective communication-computation overlap in MoE inference at a modest cost in model quality.",
+  "abstract_ja": "",
+  "authors": [
+    "John Zarka",
+    "Danyal Ahmed",
+    "Eugene Belilovsky",
+    "Edouard Oyallon"
+  ],
+  "category": "machine-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32572",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "feature",
+  "summary": "As Mixture-of-Experts (MoE) models scale, Expert Parallelism (EP) becomes increasingly important for distributing experts across devices. However, the resulting token dispatch and combine operations…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Breaking Routing And Inter-device Dependencies in Mixture-of-Experts",
+  "url": "https://arxiv.org/abs/2611.32572",
+  "use_case": ""
+}

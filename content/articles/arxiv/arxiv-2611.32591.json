@@ -1,0 +1,31 @@
+{
+  "abstract": "Virtual staining synthesizes special-stain images from routine hematoxylin and eosin (H&E), extending the information available from an existing digital slide. However, a fixed inference rule can leave available real target-stain references unused, limiting query-specific correction of stain appearance at deployment. Test-time adaptation (TTA) provides a mechanism for this reference-guided, query-specific refinement without retraining the generator. We therefore propose FewRef-5, a reference-assisted TTA method for virtual staining built on StainPromptInversion. We extract tissue-masked optical-density means and standard deviations from five real Masson's trichrome (MAS) training patches and average them into a fixed stain target. A scheduled statistic-matching loss introduces this target into per-query visual-prompt optimization alongside our edge/Gram consistency penalties and the inherited reconstruction objectives. The target remains unchanged across queries, avoiding recursive dependence on earlier generated outputs while the pretrained generator stays fixed. On recorded H&E-to-MAS outputs for 1,989 queries, FewRef-5 reduces target-set FID from 183.201 to 166.904 and increases source-referenced SSIM from 0.92787 to 0.94996 relative to our Edge+Gram variant. Source PSNR and MS-SSIM decrease, showing an endpoint trade-off rather than uniformly better reconstruction.",
+  "abstract_ja": "",
+  "authors": [
+    "Wenxuan Wang",
+    "Liwen Wang",
+    "Mingmin Wu",
+    "Xingbo Dong",
+    "Zhe Jin"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32591",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Virtual staining synthesizes special-stain images from routine hematoxylin and eosin (H&E), extending the information available from an existing digital slide. However, a fixed inference rule can…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image"
+    ],
+    "task": []
+  },
+  "title": "FewRef-5: Fixed-Reference Test-Time Adaptation for Virtual Staining",
+  "url": "https://arxiv.org/abs/2611.32591",
+  "use_case": ""
+}

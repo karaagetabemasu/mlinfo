@@ -1,0 +1,26 @@
+{
+  "abstract": "View-graph calibration jointly estimates camera intrinsics from multiple pairwise fundamental matrices. The correct intrinsics transform each fundamental matrix into an essential matrix, casting the calibration problem as minimizing the distance to the essential manifold. We study how to represent this objective for nonlinear least squares. The conventional singular-value formulation collapses two independent essential-matrix constraints into one scalar residual. Its per-edge Gauss-Newton model is therefore rank deficient, which leads to poor convergence. We instead derive an isometric reduction to 2x2 matrices, where each branch of the nonlinear essential-matrix constraint becomes a linear subspace. This reduction yields a smooth two-dimensional residual whose squared norm is exactly the original manifold distance, whose Gauss-Newton approximation is generically full rank, and whose evaluation requires no per-edge singular value decomposition. Experiments show that the new residual retains the estimation accuracy of the geometric objective while converging in fewer, computationally cheaper iterations. Combined with robust initialization and optimization, it achieves state-of-the-art view-graph calibration accuracy at a runtime comparable to inexpensive algebraic objectives.",
+  "abstract_ja": "",
+  "authors": [
+    "Viktor Larsson",
+    "Johannes Schönberger"
+  ],
+  "category": "math-theory",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32540",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "optimization",
+  "summary": "View-graph calibration jointly estimates camera intrinsics from multiple pairwise fundamental matrices. The correct intrinsics transform each fundamental matrix into an essential matrix, casting the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Smooth Essential-Manifold Residuals for View-Graph Calibration",
+  "url": "https://arxiv.org/abs/2611.32540",
+  "use_case": ""
+}

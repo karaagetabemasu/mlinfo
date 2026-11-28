@@ -1,0 +1,31 @@
+{
+  "abstract": "NormAd-ETI scores a model's judgment of everyday actions as acceptable, unacceptable, or neither as the cultural context shrinks from a specific rule to a country name. We audit what that three-way score measures. It combines two decisions: whether a supplied norm applies, and whether the action conforms to it. Separating them shows that when only a country is shown, applicability falls to near chance while conformity stays well above it, because the prompt withholds the rule a Neutral label depends on. Because one answer carries both decisions, the score follows the steadier conformity and hides the weaker applicability, and no single prompt recovers the two separately. Dedicated forced-choice probes separate them for frontier models but not for small open models, where the applicability judgment still tracks the hidden acceptability label. Adding a written rationale reduces that conflation without removing it. We recommend reporting the two results separately and measuring the conflation gap.",
+  "abstract_ja": "",
+  "authors": [
+    "Aarav Singh",
+    "Animesh Pathak",
+    "Christian Hoang",
+    "Navyansh Singh",
+    "Avantika Singh"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32614",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "supervised",
+  "summary": "NormAd-ETI scores a model's judgment of everyday actions as acceptable, unacceptable, or neither as the cultural context shrinks from a specific rule to a country name. We audit what that three-way…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "When \"Neutral\" Means Irrelevant: A Construct-Validity Audit of NormAd-ETI",
+  "url": "https://arxiv.org/abs/2611.32614",
+  "use_case": ""
+}

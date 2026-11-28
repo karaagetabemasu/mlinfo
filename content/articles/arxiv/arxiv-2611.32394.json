@@ -1,0 +1,31 @@
+{
+  "abstract": "Image super-resolution aims to reconstruct a high-resolution image from a low-resolution input and is relevant for surveillance, satellite imagery, medical imaging, and object detection. This paper investigates SRCNN-based single-image super-resolution for a scale factor of x4, starting from a classical baseline and progressively introducing residual learning, Charbonnier loss, and adaptive loss functions. The proposed approach includes a three-region adaptive loss, where image areas are divided into smooth, texture, and edge regions using gradient information. The models are evaluated using PSNR, SSIM, LPIPS, and EdgeMAE in order to measure both reconstruction quality and structural detail preservation. In addition to reconstruction evaluation, the paper analyzes the impact of super-resolution on object detection. A YOLOv8 detector is applied to images processed through bicubic interpolation and SRCNN-based variants, using images from the COCO validation dataset. The results show that improved reconstruction quality does not always lead to better detection performance. However, for small objects, a detection-aware variant combined with residual scaling improves the F1 score compared to the bicubic baseline. These results highlight the importance of task-aware evaluation when super-resolution is used in computer vision pipelines.",
+  "abstract_ja": "",
+  "authors": [
+    "Cezica-Elena Luncanu",
+    "Stelian Spînu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32394",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Image super-resolution aims to reconstruct a high-resolution image from a low-resolution input and is relevant for surveillance, satellite imagery, medical imaging, and object detection. This paper…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": [
+      "detection"
+    ]
+  },
+  "title": "Adaptive and Detection-Aware Super-Resolution for Small Object Detection",
+  "url": "https://arxiv.org/abs/2611.32394",
+  "use_case": ""
+}

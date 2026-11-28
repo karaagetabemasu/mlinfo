@@ -1,0 +1,33 @@
+{
+  "abstract": "Vision-language models frequently describe objects absent from the image because of language priors. Yet the model itself is already a strong judge of its own output: asked separately whether an object is present, it rejects 44%-62% of its hallucinations, and its yes probability reaches an AUROC of 0.90-0.95 without training. This judgment, however, is not directly usable: (1) its probabilities lack a common scale across models; (2) for the remaining 38%-56%, the model still answers yes with probabilities that overlap those of real objects, so no threshold separates them. We therefore propose CLOSE, a Calibrated Label-free Online Self-Evaluating verifier that enforces this judgment during generation. Its threshold is a quantile of a memory rather than a probability and thus depends only on ranks; the memory is cold-started from unlabeled images and updated online. A scorer self-trained on pseudo-labels from four hidden-state signals is fused with self-asking by rank to separate what self-asking leaves mixed. Refused objects are rolled back and banned through a laddered back-off, and a recognition table intercepts their reappearance under other wordings. On COCO, refusing 20% and 40% of object mentions reduces the CHAIRs of LLaVA-1.5-7B by 42% and 87% (F1 +1.9 and -6.1 points); refusing 20% and 35% reduces the reachable hallucinations of Qwen3-VL-8B (official counts minus CHAIR-script miscounts) by 79% and 96% (F1 +0.5 and -5.3). An external vocabulary further extends the check beyond the official vocabulary.",
+  "abstract_ja": "",
+  "authors": [
+    "Zhaoxi Wang",
+    "Jiahao Lai"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28589",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "multimodal",
+  "summary": "Vision-language models frequently describe objects absent from the image because of language priors. Yet the model itself is already a strong judge of its own output: asked separately whether an…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "multimodal"
+    ],
+    "task": [
+      "classification",
+      "generation"
+    ]
+  },
+  "title": "CLOSE: A Calibrated Label-free Online Self-Evaluating Verifier for Object Hallucination in Vision-Language Models",
+  "url": "https://arxiv.org/abs/2611.28589",
+  "use_case": ""
+}

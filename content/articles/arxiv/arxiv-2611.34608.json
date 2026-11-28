@@ -1,0 +1,31 @@
+{
+  "abstract": "Dense global attention is crucial for capturing cross-view geometry in visual geometry foundation models, yet its quadratic complexity limits efficient inference on long image sequences. Existing sparse attention methods primarily select entries of the global attention matrix based on attention probabilities and construct masks independently across layers, overlooking value redundancy and cross-layer information reuse. By analyzing attention distributions and clustering value representations across layers, we reveal two forms of \\emph{cross-layer consistency}, characterized by highly similar attention probability distributions and localized changes in value redundancy structures. Building on these observations, we propose \\textbf{DuCo}, a training-free sparse attention framework that exploits historical attention information and value redundancy for efficient geometric inference. Specifically, DuCo leverages historical attention information to estimate current-layer dense attention probabilities and introduces value clustering to exploit redundancy, with clusters efficiently refined through local updates across layers. Both factors are integrated through probability-weighted value distortion to jointly optimize four cluster representation states under an attention budget for sparse mask construction. Experiments across three visual geometry foundation models and five benchmarks demonstrate favorable accuracy--efficiency trade-offs.",
+  "abstract_ja": "",
+  "authors": [
+    "Liangyu Xiang",
+    "Junyu Gao",
+    "Xiaofeng Wang",
+    "Changsheng Xu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34608",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "efficient",
+  "summary": "Dense global attention is crucial for capturing cross-view geometry in visual geometry foundation models, yet its quadratic complexity limits efficient inference on long image sequences. Existing…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": []
+  },
+  "title": "DuCo: Exploiting Dual Cross-Layer Consistency for Sparse Geometric Attention",
+  "url": "https://arxiv.org/abs/2611.34608",
+  "use_case": ""
+}

@@ -1,0 +1,32 @@
+{
+  "abstract": "Judging open-world robot manipulation is hard because layouts, articulated fixtures, and valid goal configurations vary widely. On RoboCasa365, simulator predicates agree with human judgments on only 69.09\\% of rollouts, and a frontier VLM judge on 86.12\\%. We present \\textbf{PROVE} (Predict-to-Specify, Observe-to-Verify), which first specifies what success should look like and then checks the outcome. PROVE refines success conditions from the instruction, the initial scene, a target-object reference image, and a generated goal image. The goal image only sharpens the conditions and never serves as evidence. On 6,500 human-annotated rollouts over 65 atomic actions, PROVE reaches \\textbf{96.83\\%} agreement. Applied to open-source policies, it reports far lower success than native checks and changes their ranking. To reduce evaluation overhead in policy learning, we distill PROVE into \\textbf{PROVE-Lite}, a 4B evaluator that needs no reference images. In one forward pass, PROVE-Lite predicts the outcome and the terminal state of each task condition. It reaches \\textbf{91.20\\%} agreement while running about 38$\\times$ faster than PROVE. Mapped to a severity-aware reward, its diagnoses improve PPO post-training over both simulator and binary rewards.",
+  "abstract_ja": "",
+  "authors": [
+    "Bowen Lyu",
+    "Yunan Liu",
+    "Liaoyuan Fan",
+    "Qinchuan Cheng",
+    "Jiafei Duan"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33733",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "multimodal",
+  "summary": "Judging open-world robot manipulation is hard because layouts, articulated fixtures, and valid goal configurations vary widely. On RoboCasa365, simulator predicates agree with human judgments on only…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text"
+    ],
+    "task": []
+  },
+  "title": "PROVE: Predict-to-Specify and Observe-to-Verify for Human-Aligned Evaluation of Mobile Manipulation",
+  "url": "https://arxiv.org/abs/2611.33733",
+  "use_case": ""
+}

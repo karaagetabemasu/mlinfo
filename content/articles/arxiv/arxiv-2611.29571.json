@@ -1,0 +1,33 @@
+{
+  "abstract": "Transformer-based large models require huge computational and storage costs. Quantum computation is expected to address that due to its potential to speed up classical algorithms exponentially. Key challenges of implementing quantum large models include the linear, unitary nature of qubit evolutions contrast with the non-unitary matrices and nonlinear functions in classical Transformers, as well as the difficulty of implementing gradient back-propagation on quantum hardware. Here we propose a fully quantum large model containing all the Transformer layers, implementing the non-unitary transformations through SVD-decomposition-based quantum circuits, and approximated nonlinear activation functions through pre-trained parameterized quantum circuits. We also propose a quantum circuit training algorithm based on multi-agent Reinforcement Learning, which can train large-scale parameterized quantum circuits without back-propagation. The dependency between the inference time complexity and the model's hidden dimension has been reduced from polynomial to logarithmic, showing an exponential advantage. The inference executions on the quantum hardware verify our model's 300-1000 times speed-up, and the measurements on the sequence-to-sequence tasks shows its learning ability. The training algorithm achieves only 25% complexity of the best SOTA quantum circuit training algorithms, especially this ratio decreases fast as the parameter scale increases. Our work not only proposes a quantum large model that can significantly reduce the computational cost, but also promotes the quantum computation towards general computing.",
+  "abstract_ja": "",
+  "authors": [
+    "Tianze Zhu",
+    "Xiaofeng Jiang",
+    "Min Liao",
+    "Luying Zhang",
+    "Ruixi Liu"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.29571",
+  "likes_count": 0,
+  "publishedAt": "2026-11-22",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Transformer-based large models require huge computational and storage costs. Quantum computation is expected to address that due to its potential to speed up classical algorithms exponentially.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Non unitary and nonlinear quantum generative large model design and fast large-scale training without back propagation",
+  "url": "https://arxiv.org/abs/2611.29571",
+  "use_case": ""
+}

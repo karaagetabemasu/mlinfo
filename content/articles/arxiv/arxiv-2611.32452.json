@@ -1,0 +1,29 @@
+{
+  "abstract": "Looped language models apply one shared transformer stack several times per token, and every loop is readable through the shared language-model head. Post-training them is hard. Reward-only reinforcement learning needs a verifier and learns from one sparse signal per response; spreading the reward over loops collapses the entropy of every loop; and cross-loop self-distillation, as in LoopOPD, can only teach intermediate loops, because the last loop cannot learn from its own frozen copy: the loss is zero at initialisation. We observe that a looped model already contains a policy that decodes better than its last loop: the next-token distribution extrapolated from the first loop through the last. ELPSD (Extrapolated-Loop Policy Self-Distillation) turns this distribution into a self-distillation target: a frozen copy of the model computes it, and the model's own last loop is distilled towards it on its own rollouts, using the exact reverse KL at every visited prefix. Teacher and student are the same model, so ELPSD needs no reward, no external teacher and no privileged context, and it leaves rollouts and decoding unchanged. We show that the objective pulls the last loop towards the base model's last loop with weight 1+w and away from the base model's first loop with weight w, and that the teacher must stay frozen, since an idealised teacher recomputed from the current model extrapolates without bound. We evaluate ELPSD on Ouro-1.4B-Thinking across five math benchmarks against the base model, GRPO, RLTT and OPSD. Without any reward, ELPSD raises the average avg@8 from 61.15 to 63.69 and is the best method on all five benchmarks, ahead of GRPO (62.32), which uses a verifier, and the self-distillation method OPSD (61.77), which needs reference solutions.",
+  "abstract_ja": "",
+  "authors": [
+    "Linghua Zhang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32452",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Looped language models apply one shared transformer stack several times per token, and every loop is readable through the shared language-model head. Post-training them is hard.",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "reinforcement"
+    ],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "The Teacher Is Already Inside: Self-Distilling Looped Language Models Beyond Their Last Loop",
+  "url": "https://arxiv.org/abs/2611.32452",
+  "use_case": ""
+}

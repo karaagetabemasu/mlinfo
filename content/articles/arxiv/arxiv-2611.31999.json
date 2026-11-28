@@ -1,0 +1,31 @@
+{
+  "abstract": "Language models are increasingly used to simulate how an audience will respond to a headline or a post, and such simulators are validated against what people say. We validate them against what people do. We call a model grounded in revealed audience behavior when it is fine-tuned on records of what audiences actually clicked, liked or watched, and we ask not only whether asking a model falls short of grounding it, as prior work found, but why and where. Why: the gap is a property of the training signal, not mainly of model size or prompting. The same 8B model is right about half the time when asked which headline readers will click and 86.5% of the time when grounded in the clicks; the strongest prompting we tried only matches a text classifier; a grounded 0.6B model beats every prompted frontier model in our runs; and whether the clicks are fitted as counts or as shares makes no detectable difference in a pre-registered test. The asked 8B model also reproduces stated-preference cues, favoring question headlines that in fact lower clicks. Where: across four behaviors, grounding wins where the text carries the signal (short-video likes, +20 points on 200 pre-registered videos), only ties an asked model given the reader's history (news clicks), and nothing text-only gets far from chance on watch time. Code, adapters and run outputs will be released.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiwoo Jung",
+    "Daecheol An"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31999",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "fine-tuning",
+  "summary": "Language models are increasingly used to simulate how an audience will respond to a headline or a post, and such simulators are validated against what people say. We validate them against what people…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "video"
+    ],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Grounding Language Models in Revealed Audience Behavior",
+  "url": "https://arxiv.org/abs/2611.31999",
+  "use_case": ""
+}

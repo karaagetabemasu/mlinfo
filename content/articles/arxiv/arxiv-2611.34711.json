@@ -1,0 +1,31 @@
+{
+  "abstract": "A language model can write the weights of a small MLP, CNN, RNN or GNN from a plain-language specification, with no data and no gradient step. We ask when such a network can be proved exact in the float32 arithmetic it actually runs in. A float-safety lemma makes exhaustive float32 enumeration a proof for any summation order, and a layered error bound covers networks whose weights are not short binary fractions. With dynamic programming, template checks, an SMT proof, breadth-first search and induction for weight-tied recurrences, this certifies 12 of 15 written networks (one after a single constant fix) on every input of a stated domain (up to $10^{16}$ inputs, or every graph or grid up to a size bound), in a minute of CPU or less each. The certificates also say where a network stops being exact: the shortest-path network is exact iff the distance is at most 4,096 and fails at the predicted hops. Thirty new specifications were each written by a fresh session of one model family (Claude Opus 5.5). Twenty-five first submissions are certified exact for any summation order; the five tax schedules stay within \\$0.11 of the true tax at every whole dollar in one fixed float32 run. An open 27B model passes 23 of the 30, and 25 with more thinking and code execution, so the method transfers in part. We also prove two limits of learning from examples: input coordinates never active in training cannot be learned from more in-range data, and Luhn-type checksums have exponentially small target-dependent gradient variance across their family. Tuned gradient descent on the same architectures agrees with both, which cover two of our five failure classes.",
+  "abstract_ja": "",
+  "authors": [
+    "Soumik Bhattacharjee",
+    "Musa Tur Farazi",
+    "Md Nasir Uddin",
+    "Tishna Sabrina",
+    "Chowdhury Mohammad Rakin Haider"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34711",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "A language model can write the weights of a small MLP, CNN, RNN or GNN from a plain-language specification, with no data and no gradient step. We ask when such a network can be proved exact in the…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Spec2Weights: Certifying Networks that a Language Model Writes from a Specification",
+  "url": "https://arxiv.org/abs/2611.34711",
+  "use_case": ""
+}

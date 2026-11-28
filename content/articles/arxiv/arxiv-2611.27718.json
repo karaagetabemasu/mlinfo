@@ -1,0 +1,33 @@
+{
+  "abstract": "Kernel PCA extends PCA to nonlinear dimensionality reduction by implicitly mapping data into a reproducing kernel Hilbert space (RKHS) via the kernel trick, with applications ranging from image denoising to out-of-distribution detection. While its projection map is well understood, appropriately defining the associated reconstruction map is a longstanding challenge since projecting back from the RKHS to the input space is non-trivial. This is known as the pre-image problem. Existing approaches have tackled this problem by either relying on nonlinear optimization, which is prone to numerical instabilities and sensitive to initialization, or by solving a separate supervised learning problem, incurring additional computational overhead. Furthermore, although the projection map of kernel PCA reduces to that of standard PCA when a linear kernel is used, most of these approaches are not guaranteed to recover PCA's reconstruction map in this case, a consistency property that one would naturally expect to hold. In this paper, we leverage the reproducing property of the RKHS to derive a reconstruction map for kernel PCA that is provably consistent. Our derivations rely on the mild assumption that the RKHS either contains linear functions or the kernel is universal, which holds for standard kernels. We further extend the method to the random Fourier features (RFFs) approximation of kernel PCA by introducing a corresponding notion of RFF reproducing property. Numerical experiments on synthetic and real-world datasets demonstrate that the proposed method performs comparably with state-of-the-art methods across kernel choices, while remaining more computationally efficient and maintaining consistent performance in settings where these baseline methods drastically fail.",
+  "abstract_ja": "",
+  "authors": [
+    "Joel-Pascal Ntwali N'konzi",
+    "Stefan Klus"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27718",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Kernel PCA extends PCA to nonlinear dimensionality reduction by implicitly mapping data into a reproducing kernel Hilbert space (RKHS) via the kernel trick, with applications ranging from image…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [
+      "supervised"
+    ],
+    "modality": [
+      "image"
+    ],
+    "task": [
+      "detection",
+      "anomaly-detection"
+    ]
+  },
+  "title": "Solving the pre-image problem in kernel PCA: The reproducing property is all you need",
+  "url": "https://arxiv.org/abs/2611.27718",
+  "use_case": ""
+}

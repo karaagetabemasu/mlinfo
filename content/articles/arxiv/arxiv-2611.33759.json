@@ -1,0 +1,26 @@
+{
+  "abstract": "Many deep learning models exhibit a double-descent phenomenon, where test loss exhibits a sharp peak near the interpolation threshold and then descends a second time as model size grows further, contrary to the U-shape predicted by the classical bias--variance tradeoff. The double-descent phenomenon has been found and explained in toy classical models, but is not well-understood in modern deep learning despite extensive empirical study. We interpret double descent through the novel lens of universal compression. Specifically, we upper bound the maximum-likelihood excess test loss as a sum of four terms: an approximation-and-shift term, a minimax batch regret, a prior cost, and an MLE-vs-Bayes gap. Under exact posterior sampling, we further show that the expected MLE-vs-ensemble gap lower-bounds the MLE-vs-Bayes gap in the well-specified setting. In our experiments, a Gaussian-prior SGLD approximation to the Bayes predictor, unlike SGD, shows no pronounced interpolation peak. Experiments with uniform random labels support this gap as a major contributor to the double-descent peak; here, the SGD cross-entropy is roughly four times the SGLD ensemble cross-entropy at the peak, while the ensemble cross-entropy remains near $\\log 10$.",
+  "abstract_ja": "",
+  "authors": [
+    "Jiaxuan Cheng",
+    "Addison Spiegel"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.33759",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "normalization",
+  "summary": "Many deep learning models exhibit a double-descent phenomenon, where test loss exhibits a sharp peak near the interpolation threshold and then descends a second time as model size grows further,…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Understanding Double Descent through Universal Compression",
+  "url": "https://arxiv.org/abs/2611.33759",
+  "use_case": ""
+}

@@ -1,0 +1,28 @@
+{
+  "abstract": "Causal algorithmic recourse recommends actions to reverse unfavorable decisions by modeling how interventions change an individual's features. Existing methods typically assume one causal graph that describes the system and account for uncertainty in the causal mechanisms. However, there usually exist several graphs that fit the same data but can predict different effects for the same action. Certain actions may achieve recourse across multiple graphs, but as the set of potential graphs grows, a single best action may become infeasible. We propose Worst-Case Recourse and Graph-Weighted Recourse to find a low-cost action that succeeds across all candidate graphs or a specified fraction of graph weight, respectively. Assuming a set of plausible graphs, for each graph we fit Gaussian process structural equations and assess success using the posterior mean--standard-deviation criterion. We use gradient-based search to determine minimal cost actions and check the validity of the actions on fresh posterior samples. In synthetic and semi-synthetic benchmarks, relaxing robustness, the requirement that an action succeed under every candidate graph, can increase the number of valid recommendations for recourse and lower costs of actions for both methods. In the 20-node GP benchmark, relaxation increases the number of factual instances offered recourse (coverage) from 341 to 436 out of 1,000, while the number of true successes, actions that flip the decision under the generating model, falls from 251 to 184, illustrating the coverage--validity trade-off. Accounting for graph ambiguity can help decision-makers recommend actions that remain effective even when the causal mechanisms of the system are not fully known.",
+  "abstract_ja": "",
+  "authors": [
+    "Muyan Anna Li",
+    "Juliette Sinnott",
+    "Mohammad Kohandel",
+    "Amir-Hossein Karimi"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.34723",
+  "likes_count": 0,
+  "publishedAt": "2026-11-25",
+  "source": "arxiv",
+  "subcategory": "rag",
+  "summary": "Causal algorithmic recourse recommends actions to reverse unfavorable decisions by modeling how interventions change an individual's features. Existing methods typically assume one causal graph that…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": []
+  },
+  "title": "Robust Recourse under Causal Graph Ambiguity",
+  "url": "https://arxiv.org/abs/2611.34723",
+  "use_case": ""
+}

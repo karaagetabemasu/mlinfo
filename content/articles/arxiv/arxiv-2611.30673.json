@@ -1,0 +1,34 @@
+{
+  "abstract": "Identifying subtle errors in generated videos is an important step toward automated video generation, where errors must be detected to assess and refine generated clips. Recent work shows that pretrained vision-language models (VLMs) can localise such errors, but their effectiveness depends strongly on the workflow used: choices about which frames to inspect, which tools and model calls to make, and how to combine predictions can lead to substantially different results. We study VLM harnesses for video error localisation. Instead of relying on manually designed harnesses, we propose Harness Search and Merge (HSM), an algorithm that automatically constructs them by searching over executable evaluation programs. An LLM orchestrator refines candidate harnesses independently on random training subsets, records findings in a memory, and constructively merges complementary candidates. We evaluate HSM on Spotlight, a recently proposed benchmark for localising errors in generated videos. HSM achieves 0.234 +- 0.012 F1, exceeding the strongest benchmark strategy (0.173 +- 0.016), and retains its lead on an unseen video generator (0.213 +- 0.008 versus 0.140 +- 0.003). On IPV-Bench, it achieves strong localisation performance with lower false-alarm rates than existing optimisation baselines. Together, these results show that searching over complete VLM harnesses can outperform existing evaluation strategies, transfer to an unseen video generator, and reduce false alarms on real videos.",
+  "abstract_ja": "",
+  "authors": [
+    "Ankit Yadav",
+    "Nikhil Cherian Kurian",
+    "Arpit Garg",
+    "Lingqiao Liu"
+  ],
+  "category": "nlp",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.30673",
+  "likes_count": 0,
+  "publishedAt": "2026-11-23",
+  "source": "arxiv",
+  "subcategory": "llm",
+  "summary": "Identifying subtle errors in generated videos is an important step toward automated video generation, where errors must be detected to assess and refine generated clips. Recent work shows that…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text",
+      "video",
+      "multimodal"
+    ],
+    "task": [
+      "generation"
+    ]
+  },
+  "title": "Optimising VLM Harnesses to Localise Errors in Generated Videos",
+  "url": "https://arxiv.org/abs/2611.30673",
+  "use_case": ""
+}

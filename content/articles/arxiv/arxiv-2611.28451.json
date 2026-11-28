@@ -1,0 +1,29 @@
+{
+  "abstract": "Classifier-free guidance (CFG) combines conditional and unconditional score estimates to steer diffusion sampling. The weighted-solenoidal component of each score error has no instantaneous effect on the evolution of its corresponding reference density. Because the guided density in CFG generally differs from both reference densities, the combination of these solenoidal components can affect the evolution of the guided marginals. We call this mechanism guidance-induced error activation. Using a weighted Helmholtz-Hodge decomposition, we identify the activated error field, quantify its magnitude, and characterize when it vanishes. At fixed noise time, the activated error field varies continuously with guidance strength. Its weak first-order variation has two terms, one from reweighting the errors and one from the change in the guided density. For finite score errors, ODE characteristics and an SDE Feynman-Kac formula connect error-activation to the generated densities. For a class of finite Gaussian mixtures, error-activation can account for most of the KL divergence between the generated distributions by learned-score and exact-score CFG ODE samplers under strong guidance. Ideal score filtering removes the weighted-solenoidal errors and eliminates error-activation. Controlled experiments with Gaussian and Gamma mixtures illustrate how activation affects the generated densities. Qualitative CIFAR-10 comparisons suggest that filtering can help preserve object structure under strong guidance.",
+  "abstract_ja": "",
+  "authors": [
+    "Pengyu Luo",
+    "Yisha Yao",
+    "Bolun Li"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.28451",
+  "likes_count": 0,
+  "publishedAt": "2026-11-21",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Classifier-free guidance (CFG) combines conditional and unconditional score estimates to steer diffusion sampling. The weighted-solenoidal component of each score error has no instantaneous effect on…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "classification"
+    ]
+  },
+  "title": "Guidance-Induced Activation of Score Estimation Errors in Diffusion Models",
+  "url": "https://arxiv.org/abs/2611.28451",
+  "use_case": ""
+}

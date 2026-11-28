@@ -1,0 +1,29 @@
+{
+  "abstract": "We give a proper learner for Lipschitz functions over the Gaussian distribution on $\\mathbb{R}^d$. Given random Gaussian examples labeled by a $λ$-Lipschitz function, $λ\\ge 1$, the learner returns a function $h:\\mathbb{R}^d\\to\\mathbb{R}$ that is globally $λ$-Lipschitz and has loss (absolute or squared) at most $\\varepsilon$. The sample complexity, running time, and representation size are \\[ (d+1)^{\\mathsf{poly}(λ/\\varepsilon)}. \\] The learning algorithm can be made \\emph{agnostic}, given a known bound on the variance of the label marginal distribution. Some known control of label scale is information-theoretically necessary. For arbitrary labels with variance at most $V^2 \\ge 1$, the complexity is \\[ (d+1)^{\\mathsf{poly}(Vλ/\\varepsilon)}, \\] and the error is $\\mathsf{opt} + \\varepsilon$, where $\\mathsf{opt}$ is the minimal error among Lipschitz approximators. Our approach combines $L_1$ polynomial regression under a convex gradient constraint with local correction of the Lipschitz property. The learner finds a polynomial that, after smoothing and clipping its range, is very close to a canonical Lipschitz correction of itself, the lower Lipschitz envelope. Our local corrector modifies the lower envelope by replacing distances to sublevel sets with a Gaussian sampling proxy, allowing the construction to be locally and stably estimated from samples.",
+  "abstract_ja": "",
+  "authors": [
+    "Jane Lange",
+    "Cassandra Marcussen",
+    "Arsen Vasilyan"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.27700",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "We give a proper learner for Lipschitz functions over the Gaussian distribution on $\\mathbb{R}^d$. Given random Gaussian examples labeled by a $λ$-Lipschitz function, $λ\\ge 1$, the learner returns a…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [],
+    "task": [
+      "regression"
+    ]
+  },
+  "title": "Geometrically Constrained Learning II: Agnostic Proper Learning of Lipschitz Functions",
+  "url": "https://arxiv.org/abs/2611.27700",
+  "use_case": ""
+}

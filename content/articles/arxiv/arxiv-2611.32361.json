@@ -1,0 +1,30 @@
+{
+  "abstract": "Many frameworks dealing with 3D (oriented) point clouds define locality in the ambient Euclidean space: $k$-nearest-neighbor graphs and radius balls in $\\mathbb{R}^3$ are critical to define which points are \"close to one another\" and should exchange information. This can unintentionally merge sampled surfaces that are close in space but geometrically distinct such as the two faces of a thin leaf. Then, features are more prone to leak across boundaries which hinder performance. To address this, we propose to define a sub-Riemannian contact metric on position-orientation space $\\mathbb{M}=\\mathbb{R}^3\\times \\mathbb{S}^2$: points are lifted to $(x,n)$ with $n$ a surface normal, and \"motion\" is constrained to a non-holonomic horizontal distribution in which spatial velocity must stay in the plane orthogonal to the normal which can reorient at a cost. From this, we derive an explicit score, which locally approximate the distance, to compare oriented points for downstream tasks. We report improved segmentation and correspondence accuracy near contact when using the score as a drop-in change inside PointNet++ aggregation mechanism as well as reduced leakage when using it to simulate heat diffusion on oriented points.",
+  "abstract_ja": "",
+  "authors": [
+    "Thomas Besnier",
+    "Stefan Sommer"
+  ],
+  "category": "computer-vision",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.32361",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "segmentation",
+  "summary": "Many frameworks dealing with 3D (oriented) point clouds define locality in the ambient Euclidean space: $k$-nearest-neighbor graphs and radius balls in $\\mathbb{R}^3$ are critical to define which…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "3d"
+    ],
+    "task": [
+      "segmentation"
+    ]
+  },
+  "title": "Sub-Riemannian structure for Oriented Point Clouds",
+  "url": "https://arxiv.org/abs/2611.32361",
+  "use_case": ""
+}

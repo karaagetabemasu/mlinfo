@@ -1,0 +1,31 @@
+{
+  "abstract": "Human visual perception is dynamically shaped by the recent past, a phenomenon known as serial dependence. Mechanistic models show that a residual memory trace can generate this dependency, yet its functional purpose (why the visual system should carry information forward in time at all) remains debated. We tested the hypothesis that serial dependence emerges as a normative consequence of optimizing vision for robustness against sensory noise. We trained recurrent autoencoders (a CNN encoder, a ConvGRU memory module, and a CNN decoder) to reconstruct natural videos corrupted by Gaussian noise, with no objective referring to perceptual history. Models that used their temporal memory achieved lower reconstruction error than memory-free counterparts, and this advantage widened as training noise increased, indicating that integrating past context is an adaptive denoising strategy. Probing the trained models with Gabor and dot sequences, we found that memory gave rise to serial dependence spontaneously: an attractive bias toward previous orientations and a spatial \"continuity field\" toward recently seen locations, both strengthening with training noise. Across temporal delays, the model's serial dependence was strongest for the immediately preceding stimulus and decayed monotonically. This profile quantitatively matched human orientation judgments, including an independent public dataset, once a known response-autocorrelation confound was controlled: an apparent non-monotonicity in one dataset reflected this measurement artifact rather than a genuine model-human mismatch. These findings suggest that serial dependence need not be an idiosyncratic quirk but can arise as a byproduct of optimizing for noise robustness, offering a normative account of perceptual history-dependence that complements existing mechanistic explanations and links behavior to an underlying computational objective.",
+  "abstract_ja": "",
+  "authors": [
+    "Hiroshi Higashi",
+    "Keigo Sugihara",
+    "Yuichi Tanaka"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.26949",
+  "likes_count": 0,
+  "publishedAt": "2026-11-20",
+  "source": "arxiv",
+  "subcategory": "cnn",
+  "summary": "Human visual perception is dynamically shaped by the recent past, a phenomenon known as serial dependence. Mechanistic models show that a residual memory trace can generate this dependency, yet its…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "image",
+      "text",
+      "video"
+    ],
+    "task": []
+  },
+  "title": "Serial Dependence Emerges from Optimizing Vision for Noise Robustness",
+  "url": "https://arxiv.org/abs/2611.26949",
+  "use_case": ""
+}

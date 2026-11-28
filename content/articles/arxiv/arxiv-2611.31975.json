@@ -1,0 +1,29 @@
+{
+  "abstract": "Cross-lingual transfer is uneven across tasks, succeeding for natural language understanding but often failing for mathematical reasoning. We argue that this asymmetry is governed by the geometry of parameter space. Specifically, cross-lingual generalization is determined by whether English and target-language LoRA adapters share a low-error basin. To test this, we use linear mode connectivity (LMC) between English and target-language adapters, evaluating on three tasks. We find that NLI and QA model-language pairs are mostly linearly connected, whereas mathematical reasoning (Math) pairs are not, indicating that basin geometry is task-dependent. Such disconnection in Math is ``local'' rather than global. A small target-language task sample, applied only to the English adapter's language encoding or semantic composition layers, is enough to repair it. Cross-lingual generalization is also factorizable into language-specific encoding and language-agnostic composition, each supplied separately from a cheaper signal. English task data routed to the composition layers and an unlabeled target-language corpus routed to the language encoding layers each alleviate it on their own for nearly every pair. Composition is the more influential of these, and it needs no target-language data. Together, these results suggest that cross-lingual generalization decomposes into language-specific and language-agnostic components in parameter space. This decomposition offers a practical route for low-resource cross-lingual adaptation.",
+  "abstract_ja": "",
+  "authors": [
+    "Yeoreum Lee",
+    "Jaeseong Lee",
+    "Seung-won Hwang"
+  ],
+  "category": "deep-learning",
+  "codeUrl": "",
+  "hasCode": false,
+  "id": "arxiv-2611.31975",
+  "likes_count": 0,
+  "publishedAt": "2026-11-24",
+  "source": "arxiv",
+  "subcategory": "transformer",
+  "summary": "Cross-lingual transfer is uneven across tasks, succeeding for natural language understanding but often failing for mathematical reasoning. We argue that this asymmetry is governed by the geometry of…",
+  "summary_ja": "",
+  "tags": {
+    "learning": [],
+    "modality": [
+      "text"
+    ],
+    "task": []
+  },
+  "title": "Localizing Cross-Lingual Generalization in Parameter Space",
+  "url": "https://arxiv.org/abs/2611.31975",
+  "use_case": ""
+}
